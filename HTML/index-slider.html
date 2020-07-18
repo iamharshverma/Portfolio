@@ -27,7 +27,8 @@
 
         <!--  Other Theme Code -->
       <!-- Vendor Css-->
-        <link rel="stylesheet" href="assets/css/vendor.css" />  
+        <link rel="stylesheet" href="assets/css/vendor.css"/>  
+        <!-- <link rel="stylesheet" href="assets/css/klee-light.css"/>   -->
 
         <!-- Vizion Theme CSS -->
 
@@ -66,9 +67,38 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 
 
+.b-box {
+    background: #f2f2f2;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    /* box-shadow: 10px 10px 36px rgb(0,0,0,0.5), -13px -13px 23px rgba(255,255,255, 0.03), inset 14px 14px 70px rgb(0,0,0,0.2), inset -15px -15px 30px rgba(255,255,255, 0.04); */
+    box-shadow: -5px -10px 15px white, 0px 4px 35px rgba(0, 0, 0, 0.15);
+    border-width: 1px 0px 0 1px;
+    margin-top: 30px !important;
+}
 
+.p-4 {
+    padding: 1.5rem!important;
+}
+
+.mt-4, .my-4 {
+    margin-top: 1.5rem!important;
+}
+::selection {
+    background: rgba(166, 175, 189, 0.3);
 }
 
 .iq-features {background-image: url(health_care/images/bg/04.png); background-repeat: no-repeat; overflow: hidden; background-position: 50% 65%; }
@@ -281,7 +311,7 @@
                                         <div class="about-desc-info">
                                             <i class="fas fa-graduation-cap" data-toggle="tooltip" data-placement="top" title="Degree"></i>
                                             <b>Degree : </b>
-                                            <span>Master's Computer Science</span>
+                                            <span>Master's CS</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
@@ -295,7 +325,7 @@
                                         <div class="about-desc-info">
                                             <i class="fas fa-phone-alt" data-toggle="tooltip" data-placement="top" title="Phone"></i>
                                             <b>Phone : </b>
-                                            <a href="mailto:harshverma59@gmail.com">Avaliable on request, click to email me for setting up a call !!</a>
+                                            <a href="mailto:harshverma59@gmail.com">Avaliable on request</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
@@ -615,14 +645,14 @@
             <div class="container">
                 <div class="section-head">
                     <!-- <span style="max-height: 100%; max-width: 100%;">Experience</span> -->
-                    <h2>My Experience & expertise</h2>
+                    <h2>My Experience & Expertise</h2>
                     <small>"Each Day Count towards Big Dreams !!"</small>
                 </div>
 
                 <div class="row mt-4">
                     <div class="col-sm-6 col-lg-6">
 <!--                         <h5 class="section-subHead mt-3"> My Experience</h5> -->
-                        <div class="resume-list b-box hover-state p-4 mt-4">
+                        <div class="resume-list b-box hover-state p-4 mt-4" style="display: block; content: "";padding-bottom: 100%;">
                             <div>
                                 <h6 class="badge badge-dark d-inline-block my-3">Aug 2020 - Present (Santa Clara, CA, USA) | Palo Alto Networks</h6>
                                 <h5>Staff Software Engineer</h5>                                
@@ -1884,6 +1914,8 @@
 
         <!-- Other template JS -->
         <script src="assets/js/vendor.js"></script>
+        <script src="assets/js/particlesjs-config.js"></script>
+        <script src="assets/js/particles.min.js"></script>
    
         <!-- Custom Js -->
         <script src="assets/js/custom.js"></script>
@@ -1892,16 +1924,7 @@
         <script src="vizion/revslider/js/jquery.themepunch.revolution.min.js"></script>
         <script src="vizion/js/jquery-3.3.1.min.js"></script>
 
-        <!-- healthcare template part -->
-         <!--  <script src="health_care/js/bootstrap.min.js"></script>
-         <script src="health_care/js/jquery-3.3.1.min.js"></script>
-         <script src="health_care/revslider/js/jquery.themepunch.revolution.min.js"></script>
-            <script src="health_care/js/retina.min.js"></script>
-             <script src="health_care/revslider/js/extensions/revolution.extension.parallax.min.js"></script>
-    
-              <script src="health_care/js/wow.min.js"></script>
 
-        <script src="health_care/revslider/js/extensions/revolution.extension.navigation.min.js"></script> -->
 
     </body>
 </html>
