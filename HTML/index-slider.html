@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Harsh Verma portfolio!!" />
         <meta name="keywords" content="Harsh Verma, Harsh, Website, Portfolio" />
-        <meta content="Zoyothemes" name="author" />
+        <meta content="Harsh Verma" name="author" />
         <!-- favicon -->
         <link rel="shortcut icon" href="images/favicon_new.ico">
         <!-- Bootstrap -->
@@ -32,12 +32,6 @@
         <!-- Vizion Theme CSS -->
 
       <!-- Typography CSS -->
-     <link rel="stylesheet" href="vizion/css/style.css">
-      <!-- <link rel="stylesheet" href="vizion/css/typography.css"> -->
-
- 
-
-        
 
         <style type="text/css">
             
@@ -72,15 +66,45 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
+
+
 }
-     
-        </style>
-        
 
-       
+.iq-features {background-image: url(health_care/images/bg/04.png); background-repeat: no-repeat; overflow: hidden; background-position: 50% 65%; }
+.iq-features .feature-box { padding: 30px 25px; text-align: center;     position: relative;
+    overflow: hidden; }
+.iq-features .feature-box:hover {box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.1); background: #ffffff; }
+.iq-features .feature-box img { -moz-transform: translate(3%, 0%); -webkit-transform: translate(3%, 0%); transform: translate(3%, 0%); transition: all .5s ease-in-out; transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out; -ms-transition: all .5s ease-in-out; -o-transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; }
+.iq-features .feature-box img { animation: animate1 8s infinite linear; transition: all .5s ease-in-out; transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out; -ms-transition: all .5s ease-in-out; -o-transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; }
+@keyframes animate1 {
+  0% { -moz-transform: translate(3%, 0%); -webkit-transform: translate(3%, 0%); transform: translate(3%, 0%); }
+  25% { -moz-transform: translate(0%, 3%); -webkit-transform: translate(0%, 3%); transform: translate(0%, 3%); }
+  50% { -moz-transform: translate(3%, 3%); -webkit-transform: translate(3%, 3%); transform: translate(3%, 3%); }
+  75% { -moz-transform: translate(0%, 3%); -webkit-transform: translate(0%, 3%); transform: translate(0%, 3%); }
+  100% { -moz-transform: translate(3%, 0%); -webkit-transform: translate(3%, 0%); transform: translate(3%, 0%); }
+}
+.iq-features .feature-box:hover .hover-icon{top: -32px; opacity: 1;}
+.iq-features .feature-box .hover-icon{position: absolute; top: -40px;right: 12px; opacity: 0; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s;}
+
+
+/*---------------------------------------------------------------------
+ Patent and Research paper CSS
+---------------------------------------------------------------------*/
+.iq-challange-box { padding: 75px 30px 30px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; position: relative; border: 2px dashed #d5d5d5; border-bottom: none; background: #ffffff; }
+.iq-challange-box::before { border-top: 2px dashed #d5d5d5; position: absolute; bottom: -24px; left: 0; transform: rotate(15deg); left: 0; content: ""; width: 50%; }
+.iq-challange-box::after { border-top: 2px dashed #d5d5d5; position: absolute; right: 0; bottom: -24px; content: ""; width: 50%; transform: rotate(-15deg); }
+.iq-challange-box:hover, .iq-challange-box:hover::before, .iq-challange-box:hover::after { border-color: #f14544; }
+.iq-challange-img { position: relative; }
+.iq-challange-img::before { height: 140px; width: 140px; position: absolute; left: 0; right: 0; margin: 0 auto; text-align: center; background: #f2f2f2; -webkit-border-radius: 90px; -moz-border-radius: 90px; border-radius: 90px; content: ""; top: 0; }
+.info-box { position: relative; z-index: 2; }
+.iq-challange-img img { z-index: 1; position: relative; -webkit-animation: bounce 5s infinite alternate; }
+
+</style>
+
+
     </head>
-
-    <body>
+        <body>
         <!-- Loader -->
         <div id="preloader">
             <div id="status">
@@ -350,15 +374,13 @@
                                         <span class="badge skill-badge education-badge margin-50 badge-light">July 2011 - April 2015</span>
                                         <p class="description text-light-muted mt-2">
                                             <b>B.Tech(Hons.)</b> in Computer Science & Engineering
-Academics : Among top 0.1 % students: Ranked 3rd in University(dean academics list).<br>
-<br>
-<b>Courses Taken:</b>
-<br>
-Artificial Intelligence, Design and Analysis Of Algorithms, Operating System, Data Structures, Advance Data Structure, Object-Oriented Programming, Advanced Java Programming, Data Base Management System
+                                            Academics : Among top 0.1 % students: Ranked 3rd in University(dean academics list).<br>
+                                            <br>
+                                            <b>Courses Taken:</b><br>
+                                                Artificial Intelligence, Design and Analysis Of Algorithms, Operating System, Data Structures, Advance Data Structure, Object-Oriented Programming, Advanced Java Programming, Data Base Management System.
                                         </p>
                                     </a>
                                 </div>
-                            
                             </div>
                         </div>
                     </div>
@@ -1327,10 +1349,6 @@ Artificial Intelligence, Design and Analysis Of Algorithms, Operating System, Da
         <!-- Projects End -->
 
 
-
-
-    
-
             <!-- START: TESTIMONY -->
         <section class="section section-light section-testimony bg-white" id="testimony">
             <div class="container">
@@ -1385,9 +1403,91 @@ Artificial Intelligence, Design and Analysis Of Algorithms, Operating System, Da
         </section>
         <!-- END: TESTIMONY -->
 
+         <!-- Our Features Start -->
+            <section class="iq-features bg-light"> 
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12"><br><br>
+                    <div class="section-title" style="text-align:center;">
+                        <h2 class="title">Honors & Awards</h2>
+                      <span style="color: #ff944d;">Few of my Professional Achievement are featured here !!</span>
+                    </div>
+                  </div>
+                </div>
+                <br><br><br>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="feature-box">
+                      <img src="health_care/images/features/odsc.png" class="img-fluid mb-4" alt="images">
+                      <h5 class="mb-3">Open Data Science Conference(ODSC) Boston</h5>
+                      <p class="mb-0">Selected to present the published research work on Secure Real-Time Heterogeneous IoT Data Management System vision paper at Open Data Science Conference ODSC(https://odsc.com/).</p>
+                      <div class="hover-icon">
+                        <img src="health_care/images/features/odsc.png" class="img-fluid" alt="#">
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <div class="col-lg-4 col-md-6 mb-5 ">
+                    <div class="feature-box">
+                      <img src="health_care/images/features/agagtr.png" class="img-fluid mb-4" alt="images">
+                      <h5 class="mb-3">ATAGTR-2017</h5>
+                      <p class="mb-0">Honored for speaking on developed Performance Tool HikeRunner at @#ATAGTR2017 http://agiletestingalliance.org/agileBlogs/atagtr2017-meet-our-speaker-series-harsh-verma/</p>
+                      <div class="hover-icon">
+                        <img src="health_care/images/features/agagtr.png" class="img-fluid" alt="#">
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="feature-box">
+                      <img src="health_care/images/features/lifepage.png" class="img-fluid mb-4" alt="images">
+                      <h5 class="mb-3">Life Page India</h5>
+                      <p class="mb-0">Honored to Interview with Life Page India to share experiences and talk about software development process http://www.lifepage.in/.</p>
+                      <div class="hover-icon">
+                        <img src="health_care/images/features/lifepage.png" class="img-fluid" alt="#">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                    <div class="feature-box">
+                      <img src="health_care/images/features/utu.png" class="img-fluid mb-4" alt="images">
+                      <h5 class="mb-3">Uttarakhand Technical University</h5>
+                      <p class="mb-0">Awarded Certificate of merit for securing 3rd Rank in Uttarakhand Technical university B.Tech(Hons) CSE program(2011-2015).</p>
+                      <div class="hover-icon">
+                        <img src="health_care/images/features/utu.png" class="img-fluid" alt="#">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-5 mb-md-0 mb-lg-0">
+                    <div class="feature-box">
+                      <img src="health_care/images/features/firefox.png" class="img-fluid mb-4" alt="images">
+                      <h5 class="mb-3">Mozilla Firefox
+                      </h5>
+                      <p class="mb-0">Appreciated for being Firefox Student Ambassador bridging the gap between campus and Mozilla firefox organization</p>
+                      <div class="hover-icon">
+                        <img src="health_care/images/features/firefox.png" class="img-fluid" alt="#">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="feature-box">
+                      <img src="health_care/images/features/cbse.png" class="img-fluid mb-4" alt="images">
+                      <h5 class="mb-3">Academics
+                      </h5>
+                      <p class="mb-0">Awarded Certificate of Merit from CBSE Board to be among top 0.1% of Achievers.</p>
+                      <div class="hover-icon">
+                        <img src="health_care/images/features/cbse.png" class="img-fluid" alt="#">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br><br><br>
+            </section>
+            <!-- Our Features End -->
+
 
         <!-- Challanges-->
-         <section class="iq-challanges pt-0 bg-light" style="padding-bottom: 2.9%">
+         <section class="section iq-challanges pt-0 bg-light" style="padding-bottom: 2.9%">
             <div class="container">
                <div class="row">
                   <div class="col-sm-12">
@@ -1440,6 +1540,9 @@ Artificial Intelligence, Design and Analysis Of Algorithms, Operating System, Da
                </div>
             </div>
          </section>
+
+
+         
 
 
         <!-- Blog Start -->
@@ -1788,6 +1891,17 @@ Artificial Intelligence, Design and Analysis Of Algorithms, Operating System, Da
         <!--  Vizion -->
         <script src="vizion/revslider/js/jquery.themepunch.revolution.min.js"></script>
         <script src="vizion/js/jquery-3.3.1.min.js"></script>
+
+        <!-- healthcare template part -->
+         <!--  <script src="health_care/js/bootstrap.min.js"></script>
+         <script src="health_care/js/jquery-3.3.1.min.js"></script>
+         <script src="health_care/revslider/js/jquery.themepunch.revolution.min.js"></script>
+            <script src="health_care/js/retina.min.js"></script>
+             <script src="health_care/revslider/js/extensions/revolution.extension.parallax.min.js"></script>
+    
+              <script src="health_care/js/wow.min.js"></script>
+
+        <script src="health_care/revslider/js/extensions/revolution.extension.navigation.min.js"></script> -->
 
     </body>
 </html>

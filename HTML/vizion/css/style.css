@@ -121,30 +121,6 @@ List Style
 .list-style li i { margin-right: 10px; font-size: 18px; }
 .easy-btn { padding: 10px 70px; }
 
-/*---------------------------------------------------------------------
-3 Features 
----------------------------------------------------------------------*/
-.iq-features { background: -moz-linear-gradient(0deg, rgb(33, 70, 105) 0%, rgb(9, 27, 47) 100%); background: -webkit-linear-gradient(0deg, rgb(33, 70, 105) 0%, rgb(9, 27, 47) 100%); background: -ms-linear-gradient(0deg, rgb(33, 70, 105) 0%, rgb(9, 27, 47) 100%); position: relative; margin-top: 100px; }
-.iq-features::before { height: 180px; width: 100%; position: absolute; top: -85px; left: 0; -ms-transform: skewY(-5deg); /* IE 9 */ -webkit-transform: skewY(-5deg); /* Safari 3-8 */ transform: skewY(-5deg); background: -moz-linear-gradient(0deg, rgb(33, 70, 105) 0%, rgb(9, 27, 47) 100%); background: -webkit-linear-gradient(0deg, rgb(33, 70, 105) 0%, rgb(9, 27, 47) 100%); background: -ms-linear-gradient(0deg, rgb(33, 70, 105) 0%, rgb(9, 27, 47) 100%); content: ""; }
-.iq-features::after { height: 180px; width: 100%; position: absolute; bottom: -85px; left: 0; -ms-transform: skewY(-5deg); /* IE 9 */ -webkit-transform: skewY(-5deg); /* Safari 3-8 */ transform: skewY(-5deg); background: -moz-linear-gradient(0deg, rgb(33, 70, 105) 0%, rgb(9, 27, 47) 100%); background: -webkit-linear-gradient(0deg, rgb(33, 70, 105) 0%, rgb(9, 27, 47) 100%); background: -ms-linear-gradient(0deg, rgb(33, 70, 105) 0%, rgb(9, 27, 47) 100%); content: ""; z-index: 1; }
-.feature-img { z-index: 2; position: relative; }
-.feature-one { position: absolute; top: -67px; left: 50px; z-index: 1; }
-.feature-two { position: absolute; bottom: -50px; right: 50px; z-index: 3; }
-.feature1 { padding-bottom: 250px; }
-.product-feature .feature1 { padding-bottom: 150px; }
-.iq-featurebox { border: 1px solid #4e6378; padding: 30px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;position: relative;z-index: 2; }
-.features-img { position: relative; }
-.features-img img {
-    z-index: 2;
-    position: relative;
-}
-.feature1 .features-img:after { z-index:1;width: 54%; height: 2px; bottom: -110px; left: 0; margin: 0 auto; right: 0; transform: rotate(90deg); content: ' '; position: absolute; background-image: linear-gradient(to right, white 50%, transparent 0%); background-size: 10px 1px; background-repeat: repeat-x; background-position: 0% bottom; animation-name: iq-work-before; animation-duration: 20s; animation-timing-function: linear; animation-iteration-count: infinite; }
-.feature1 .features-img.last-line:after { content: none; }
-@keyframes iq-work-before {
-  0% { background-position: 0% bottom; }
-  100% { background-position: 100% bottom; }
-}
-
 /*-------------------------------------------------------------------
 4 Awards 
 ---------------------------------------------------------------------*/
