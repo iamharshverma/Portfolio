@@ -91,7 +91,7 @@
 }
 
 .mt-4, .my-4 {
-    margin-top: 1.5rem!important;
+    margin-top: 0.8rem!important;
 }
 ::selection {
     background: rgba(166, 175, 189, 0.3);
@@ -125,6 +125,106 @@
 .iq-challange-img::before { height: 140px; width: 140px; position: absolute; left: 0; right: 0; margin: 0 auto; text-align: center; background: #f2f2f2; -webkit-border-radius: 90px; -moz-border-radius: 90px; border-radius: 90px; content: ""; top: 0; }
 .info-box { position: relative; z-index: 2; }
 .iq-challange-img img { z-index: 1; position: relative; -webkit-animation: bounce 5s infinite alternate; }
+
+
+/*Card Flip*/
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+ 
+}
+
+/* Style the back side */
+.flip-card-back{
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+/* About Me page CSS : */
+
+.about-desc-info b {
+    margin-right: 1%;
+}
+
+.about-desc-info i {
+    margin-right: 1%;
+    width: 50px;
+    box-shadow: 0px -6px 10px white, 0px 4px 15px rgba(0, 0, 0, 0.15);
+    line-height: 50px;
+    position: relative;
+    border-width: 1px 0px 0px 1px;
+    border-style: solid;
+    line-height: 50px;
+    border-radius: 50%;
+    height: 50px;
+    border-color: #fff;
+    text-align: center;
+    margin-bottom: 3%; 
+}
+
+.about-desc-info a {
+    text-decoration: underline;
+}
+
+.about-desc-info a {
+    font-size: 14px;
+    color: #333;
+}
+
+.about-social li {
+    margin-bottom: 15px;
+}
+
+.list-inline-item {
+    display: inline-block;
+}
+
+.about-btn {
+    margin-top: 2%;
+    padding: 15px 40px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.5s;
+    letter-spacing: 2px;
+    color: #333;
+    box-shadow: none;
+    text-transform: uppercase;
+    outline: none !important;
+    background-color: #f2f2f2;
+    border-radius: 50px;
+    min-width: 140px;
+    /* box-shadow: 10px 10px 36px rgb(0,0,0,0.5), -13px -13px 23px rgba(255,255,255, 0.03), inset 14px 14px 70px rgb(0,0,0,0.2), inset -15px -15px 30px rgba(255,255,255, 0.04); */
+    box-shadow: -5px -10px 15px white, 0px 4px 15px rgba(0, 0, 0, 0.15), inset 0px -2px 5px white, inset 0px 2px 10px rgba(0, 0, 0, 0.15);
+    border-width: 1px 0px 0px 1px;
+    border-style: solid;
+    border-color: #fff;
+}
+
 
 </style>
 
@@ -171,13 +271,13 @@
                             <a class="nav-link" href="#projects">Projects</a>
                         </li><!--end nav item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="#news">Blog</a>
+                            <a class="nav-link" href="#news">TechQuickie</a>
                         </li><!--end nav item-->
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li><!--end nav item-->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog
                             </a>
                             <div class="dropdown-menu rounded m-0" aria-labelledby="navbarDropdown">
                                 <div class="container ml-0 ml-md-0">
@@ -186,7 +286,7 @@
                                             <a class="dropdown-item" href="page-blog.html">Blog</a>
                                             <a class="dropdown-item" href="page-blog-detail.html">Blog Detail</a>
                                             <a class="dropdown-item" href="page-portfolio.html">Portfolio</a>
-                                            <a class="dropdown-item" href="page-portfolio-detail.html">Portfolio Detail</a>
+                                            <!-- <a class="dropdown-item" href="page-portfolio-detail.html">Portfolio Detail</a> -->
                                         </div><!--end col-->
                                     </div><!--end row-->
                                 </div><!--end container-->
@@ -242,7 +342,7 @@
                                                 <div class="bor-bottom mt-2 mb-2"></div>
                                                 <p class="text-muted mb-2 mt-3 font-14"><a href="javascript:void(0)" class="text-black">Email: </a> harshverma59@gmail.com</p>
                                                 <p class="text-muted mb-2 font-14"><a href="javascript:void(0)" class="text-black">Based in: </a> San Francisco Bay Area(CA), United States</p>
-                                                <p class="text-muted mb-2 font-14"><a href="javascript:void(0)" class="text-black">Languages: </a> English</p>
+                                                <p class="text-muted mb-2 font-14"><a href="javascript:void(0)" class="text-black">Languages: </a> English, Hindi</p>
                                                
                                             </div>
                                         </div>
@@ -300,14 +400,14 @@
                                         <div class="about-desc-info">
                                             <i class="fas fa-map-marked-alt" data-toggle="tooltip" data-placement="top" title="Location"></i>
                                             <b>Location : </b>
-                                            <span>California, CA</span>
+                                            <a>California, CA</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="about-desc-info">
                                             <i class="fas fa-graduation-cap" data-toggle="tooltip" data-placement="top" title="Degree"></i>
                                             <b>Degree : </b>
-                                            <span>Master's CS</span>
+                                            <a>Master's CS</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
@@ -334,9 +434,9 @@
                                     
                                 </div>
                             </div>
-                            <ul class="about-social mb-0 list-inline mt-4">
+                            <ul class="about-social mb-0 list-inline mt-4" style="padding-top: 2%;">
                                 <li class="list-inline-item">
-                                    <a href="#" class="btn downloadCV hover-state">
+                                    <a href="#" class="about-btn downloadCV hover-state">
                                         <i class="fas fa-download"></i>
                                         <span>Download CV</span>
                                     </a>
@@ -415,8 +515,6 @@
                 </div>
             </div><!-- end container -->
         </section><!-- end section -->
-
-
 
 
         <!-- Service Start -->
@@ -857,6 +955,7 @@
         <section class="section fan-fact" style="background-image:url('images/bg-pattern_new4.jpg')" id="about">
             <div class="container">
                 <div class="row" id="counter">
+
                     <div class="col-lg-3 col-6 my-3">
                         <div class="card counter-box border-0 shadow text-center rounded py-3">
                             <div class="card-body py-5">
@@ -887,7 +986,7 @@
                     <div class="col-lg-3 col-6 my-3">
                         <div class="card counter-box border-0 shadow text-center rounded py-3">
                             <div class="card-body py-5">
-                                <h2 class="mb-0"><span class="counter-value" data-count="6">1</span> + </h2>
+                                <h2 class="mb-0"><span class="counter-value" data-count="6">0</span> + </h2>
                                 <h5 class="counter-head mb-0">Years of Versatile Experience</h5>
                             </div>
                         </div>
@@ -1924,8 +2023,8 @@
 
         <!-- Other template JS -->
         <script src="assets/js/vendor.js"></script>
-        <script src="assets/js/particlesjs-config.js"></script>
-        <script src="assets/js/particles.min.js"></script>
+      <!--   <script src="assets/js/particlesjs-config.js"></script>
+        <script src="assets/js/particles.min.js"></script> -->
    
         <!-- Custom Js -->
         <script src="assets/js/custom.js"></script>
