@@ -1,0 +1,2390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30250521-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-30250521-4');
+    </script>
+    <meta charset="UTF-8">
+    <title>About Harsh Verma | Principal AI Engineer, Author & Advisor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Biography, leadership profile, honors, and verified digital presence of Harsh Verma — Principal Software Engineer in AI at Palo Alto Networks, Forbes Technology Council Member, IEEE Senior Member, and Author." />
+    <meta name="keywords" content="Harsh Verma, About Harsh Verma, Principal AI Engineer, Palo Alto Networks, Forbes Technology Council, IEEE Senior Member, Global Recognition Award, UC Berkeley Skydeck, AI Leadership, Agentic AI" />
+    <meta content="Harsh Verma" name="author" />
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon_new.ico">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Magnific -->
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Slider -->               
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/> 
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"/>
+    <!-- Flickity -->
+    <link href="css/flickity.css" rel="stylesheet" type="text/css" />
+    <!-- Main css File -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Dark Mode css File -->
+    <link href="css/dark-mode.css" rel="stylesheet" type="text/css" />
+    <script src="js/dark-mode.js"></script>
+
+    <style>
+        /* Executive About Page Styling */
+        .about-page-environment {
+            background-color: #f8fafc;
+            background-image: 
+                radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 40%, rgba(2, 132, 199, 0.06) 0%, transparent 45%),
+                radial-gradient(circle at 50% 90%, rgba(59, 130, 246, 0.04) 0%, transparent 50%);
+            min-height: 100vh;
+        }
+
+        /* Executive Hero Header */
+        .about-hero-card {
+            background: linear-gradient(135deg, #050914 0%, #0c1527 35%, #0f244a 70%, #1e3a8a 100%);
+            border-radius: 24px;
+            color: #ffffff;
+            padding: 44px 40px;
+            box-shadow: 0 20px 50px rgba(5, 9, 20, 0.4), 0 0 0 1px rgba(59, 130, 246, 0.2);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 36px;
+        }
+        .about-hero-card::before {
+            content: "";
+            position: absolute;
+            top: -120px;
+            right: -80px;
+            width: 480px;
+            height: 480px;
+            background: radial-gradient(circle, rgba(56, 189, 248, 0.22) 0%, rgba(37, 99, 235, 0.12) 50%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            filter: blur(20px);
+        }
+        .about-hero-card::after {
+            content: "";
+            position: absolute;
+            bottom: -100px;
+            left: -60px;
+            width: 360px;
+            height: 360px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.18) 0%, rgba(14, 165, 233, 0.08) 55%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            filter: blur(30px);
+        }
+
+        .portrait-frame {
+            position: relative;
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.12);
+            max-width: 300px;
+            margin: 0 auto;
+            background: #0b1120;
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+        .portrait-frame:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 26px 55px -10px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(56, 189, 248, 0.4);
+        }
+        .portrait-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.45s ease;
+        }
+        .portrait-frame:hover img {
+            transform: scale(1.04);
+        }
+        .portrait-status-pill {
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(15, 23, 42, 0.88);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            padding: 4px 12px;
+            display: inline-flex;
+            align-items: center;
+            font-size: 11.5px;
+            font-weight: 700;
+            color: #f1f5f9;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            z-index: 2;
+        }
+        .status-dot-pulse {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #10b981;
+            margin-right: 7px;
+            box-shadow: 0 0 8px #10b981;
+            display: inline-block;
+            animation: pulseGlow 2s infinite;
+        }
+        @keyframes pulseGlow {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+
+        .hero-badge-pill {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: #93c5fd;
+            border: 1px solid rgba(59, 130, 246, 0.35);
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            transition: all 0.2s ease;
+        }
+        .hero-badge-pill:hover {
+            transform: translateY(-1px);
+            border-color: rgba(56, 189, 248, 0.6);
+        }
+        .hero-badge-pill i {
+            margin-right: 6px;
+            font-size: 14px;
+        }
+
+        /* Hero Stat Boxes */
+        .hero-stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+            padding: 12px 14px;
+            text-align: center;
+            transition: all 0.25s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .hero-stat-card:hover {
+            background: rgba(255, 255, 255, 0.09);
+            border-color: rgba(56, 189, 248, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+        .hero-stat-num {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.1;
+            margin-bottom: 2px;
+            background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-stat-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: #94a3b8;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+        .hero-btn-primary {
+            background: linear-gradient(135deg, #2563eb 0%, #0284c7 100%);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+            transition: all 0.25s ease;
+            color: #ffffff !important;
+        }
+        .hero-btn-primary:hover {
+            background: linear-gradient(135deg, #1d4ed8 0%, #0369a1 100%);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+            transform: translateY(-2px);
+        }
+        .hero-btn-secondary {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(8px);
+            color: #f1f5f9 !important;
+            transition: all 0.25s ease;
+        }
+        .hero-btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.35);
+            transform: translateY(-2px);
+        }
+
+        /* Biography Section Card */
+        .executive-bio-box {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            padding: 36px;
+            box-shadow: 0 4px 24px rgba(15, 23, 42, 0.05);
+            margin-bottom: 36px;
+        }
+        .executive-bio-p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #334155;
+            margin-bottom: 20px;
+        }
+        .executive-bio-p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Honors & Awards Cards */
+        .award-highlight-card {
+            background: #ffffff;
+            border-radius: 14px;
+            border: 1px solid #e2e8f0;
+            padding: 24px;
+            height: 100%;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
+        }
+        .award-highlight-card:hover {
+            border-color: #2563eb;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 28px rgba(37, 99, 235, 0.09);
+        }
+        .award-icon-box {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        /* Strategic Focus Pillars */
+        .pillar-card {
+            background: #f8fafc;
+            border-radius: 14px;
+            border: 1px solid #e2e8f0;
+            padding: 22px;
+            height: 100%;
+            transition: all 0.25s ease;
+        }
+        .pillar-card:hover {
+            background: #ffffff;
+            border-color: #3b82f6;
+            box-shadow: 0 8px 24px rgba(59, 130, 246, 0.08);
+            transform: translateY(-2px);
+        }
+
+        /* Interactive Profile Hub Cards */
+        .profile-hub-box {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            padding: 34px;
+            box-shadow: 0 4px 24px rgba(15, 23, 42, 0.04);
+            margin-bottom: 36px;
+        }
+        .profile-search-input-wrap {
+            position: relative;
+            width: 100%;
+        }
+        .profile-search-input-wrap i {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #94a3b8;
+        }
+        .profile-search-input {
+            width: 100%;
+            padding: 12px 18px 12px 48px;
+            border-radius: 10px;
+            border: 1px solid #cbd5e1;
+            font-size: 14.5px;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+            background: #f8fafc;
+        }
+        .profile-search-input:focus {
+            outline: none;
+            border-color: #2563eb;
+            background: #ffffff;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+        }
+
+        .filter-btn-pill {
+            border: 1px solid #cbd5e1;
+            background: #ffffff;
+            color: #475569;
+            padding: 7px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .filter-btn-pill:hover {
+            background: #f1f5f9;
+            border-color: #94a3b8;
+            color: #0f172a;
+        }
+        .filter-btn-pill.active {
+            background: #2563eb;
+            color: #ffffff;
+            border-color: #2563eb;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+        }
+
+        .profile-hub-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.25s ease;
+            height: 100%;
+        }
+        .profile-hub-card:hover {
+            background: #ffffff;
+            border-color: #2563eb;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(37, 99, 235, 0.08);
+        }
+        .profile-card-icon-wrap {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(37, 99, 235, 0.08);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            flex-shrink: 0;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .profile-hub-card:hover .profile-card-icon-wrap {
+            transform: scale(1.06);
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.16);
+            border-color: rgba(37, 99, 235, 0.3);
+        }
+        .profile-card-thumb-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 11px;
+            transition: transform 0.25s ease;
+        }
+        .profile-category-pill {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #64748b;
+        }
+        .profile-card-title {
+            font-size: 15.5px;
+            font-weight: 700;
+            color: #0f172a;
+            line-height: 1.35;
+        }
+        .profile-card-desc {
+            font-size: 13.5px;
+            color: #475569;
+            line-height: 1.55;
+        }
+
+        .btn-hub-action {
+            padding: 6px 13px;
+            border-radius: 8px;
+            font-size: 12.5px;
+            font-weight: 600;
+            text-decoration: none !important;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+        .btn-hub-primary {
+            background: #2563eb;
+            color: #ffffff !important;
+        }
+        .btn-hub-primary:hover {
+            background: #1d4ed8;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+        }
+        .btn-hub-outline {
+            background: #ffffff;
+            color: #475569 !important;
+            border-color: #cbd5e1;
+        }
+        .btn-hub-outline:hover {
+            background: #f1f5f9;
+            color: #0f172a !important;
+            border-color: #94a3b8;
+        }
+
+        /* Dark mode overrides */
+        body.dark-mode .about-page-environment {
+            background-color: #080d1a;
+            background-image: 
+                radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 90% 40%, rgba(2, 132, 199, 0.08) 0%, transparent 45%),
+                radial-gradient(circle at 50% 90%, rgba(59, 130, 246, 0.06) 0%, transparent 50%);
+        }
+        body.dark-mode .executive-bio-box,
+        body.dark-mode .award-highlight-card,
+        body.dark-mode .profile-hub-box {
+            background: #111827;
+            border-color: #1f2937;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        }
+        body.dark-mode .executive-bio-p {
+            color: #cbd5e1;
+        }
+        body.dark-mode .pillar-card,
+        body.dark-mode .profile-hub-card {
+            background: #1a2234;
+            border-color: #243048;
+        }
+        body.dark-mode .profile-card-icon-wrap {
+            background: rgba(15, 23, 42, 0.8);
+            border-color: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        }
+        body.dark-mode .pillar-card:hover,
+        body.dark-mode .profile-hub-card:hover {
+            background: #1f293d;
+            border-color: #3b82f6;
+        }
+        body.dark-mode .profile-card-title {
+            color: #f3f4f6;
+        }
+        body.dark-mode .profile-card-desc {
+            color: #94a3b8;
+        }
+        body.dark-mode .profile-search-input {
+            background: #1f2937;
+            border-color: #374151;
+            color: #f3f4f6;
+        }
+        body.dark-mode .profile-search-input:focus {
+            background: #111827;
+            border-color: #3b82f6;
+        }
+        body.dark-mode .filter-btn-pill {
+            background: #1f2937;
+            border-color: #374151;
+            color: #cbd5e1;
+        }
+        body.dark-mode .filter-btn-pill:hover {
+            background: #374151;
+            color: #ffffff;
+        }
+        body.dark-mode .filter-btn-pill.active {
+            background: #2563eb;
+            color: #ffffff;
+            border-color: #2563eb;
+        }
+        body.dark-mode .btn-hub-outline {
+            background: #1f2937;
+            color: #cbd5e1 !important;
+            border-color: #374151;
+        }
+        body.dark-mode .btn-hub-outline:hover {
+            background: #374151;
+            color: #ffffff !important;
+        }
+
+    </style>
+    <!-- HV AI Copilot Styles -->
+    <link rel="stylesheet" href="css/hv-copilot.css" />
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky" id="navbar">
+        <div class="container">
+            <a class="navbar-brand brand-logo-wrap" href="index" title="Harsh Verma - Home">
+                <span class="brand-monogram-emblem">
+                    <svg class="brand-logo-svg" width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="hvNavGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#1e40af" />
+                                <stop offset="55%" stop-color="#2563eb" />
+                                <stop offset="100%" stop-color="#4f46e5" />
+                            </linearGradient>
+                            <linearGradient id="hvNavAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#38bdf8" />
+                                <stop offset="100%" stop-color="#818cf8" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="40" height="40" rx="10" fill="url(#hvNavGrad)" />
+                        <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+                        <path d="M11 12V28M11 20H19M19 12V28" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M23 12L28.5 28L34 12" stroke="url(#hvNavAccentGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="34" cy="12" r="1.75" fill="#38bdf8" />
+                    </svg>
+                </span>
+                <span class="brand-name-text">
+                    <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="page-about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-publications">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-awards">Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-memberships">Memberships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-events">Speaker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-books">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-blog">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More <i class="mdi mdi-chevron-down nav-dropdown-arrow"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right nav-custom-dropdown" aria-labelledby="navbarDropdown">
+                            <div class="nav-dropdown-header">
+                                <span>Extended Portfolios &amp; Hubs</span>
+                            </div>
+                            <a class="dropdown-item nav-dropdown-item" href="page-portfolio">
+                                <div class="dropdown-item-icon bg-soft-info"><i class="mdi mdi-cube-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Portfolio Projects</span>
+                                    <span class="dropdown-item-desc">Architectures, agent frameworks &amp; systems</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-smart-slides">
+                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-presentation-play"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Smart Slides <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">New</span></span>
+                                    <span class="dropdown-item-desc">Interactive executive &amp; research slide decks</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-social">
+                                <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
+                                    <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
+                                <div class="dropdown-item-icon bg-soft-warning"><i class="mdi mdi-shield-account-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">38 Verified Profiles Hub</span>
+                                    <span class="dropdown-item-desc">Academic, editorial &amp; executive registries</span>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider my-2"></div>
+                            <a class="dropdown-item nav-dropdown-item" href="index#contact">
+                                <div class="dropdown-item-icon bg-soft-danger"><i class="mdi mdi-email-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Contact Harsh</span>
+                                    <span class="dropdown-item-desc">Advisory, keynotes &amp; consultations</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
+                    <li class="list-inline-item mr-2">
+                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (22+ Papers)">
+                            <i class="mdi mdi-school"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="nav-social-btn" title="LinkedIn Profile">
+                            <i class="mdi mdi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://www.instagram.com/iamharshverma/" target="_blank" class="nav-social-btn" title="Instagram Profile">
+                            <i class="mdi mdi-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://github.com/iamharshverma" target="_blank" class="nav-social-btn" title="GitHub Profile">
+                            <i class="mdi mdi-github-face"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Main Content Start -->
+    <section class="section about-page-environment" style="padding-top: 130px; padding-bottom: 60px;">
+        <div class="container">
+            
+            <!-- Hero Header Start -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-hero-card" id="about-executive-hero">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                                <div class="portrait-frame">
+                                    <img src="images/harsh/infq_harsh.jpg" alt="Harsh Verma - Principal Software Engineer in AI">
+                                    <div class="portrait-status-pill">
+                                        <span class="status-dot-pulse"></span> Silicon Valley, CA
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="pl-lg-3">
+                                    <div class="d-flex flex-wrap align-items-center mb-2">
+                                        <span class="hero-badge-pill" style="background: rgba(14, 165, 233, 0.18); border-color: rgba(56, 189, 248, 0.45); color: #38bdf8;">
+                                            <i class="mdi mdi-shield-check"></i> Principal AI Engineer @ Palo Alto Networks
+                                        </span>
+                                        <span class="hero-badge-pill" style="background: rgba(99, 102, 241, 0.18); border-color: rgba(129, 140, 248, 0.45); color: #c7d2fe;">
+                                            <i class="mdi mdi-certificate"></i> IEEE Senior Member
+                                        </span>
+                                        <span class="hero-badge-pill" style="background: rgba(245, 158, 11, 0.18); border-color: rgba(251, 191, 36, 0.45); color: #fde047;">
+                                            <i class="mdi mdi-trophy"></i> Global Recognition Award 2026
+                                        </span>
+                                        <span class="hero-badge-pill" style="background: rgba(59, 130, 246, 0.18); border-color: rgba(96, 165, 250, 0.45); color: #93c5fd;">
+                                            <i class="mdi mdi-domain"></i> Forbes Technology Council
+                                        </span>
+                                    </div>
+
+                                    <h1 class="font-weight-bold text-white mb-2" style="font-size: 2.65rem; letter-spacing: -0.5px; line-height: 1.15;">Harsh Verma</h1>
+                                    <p class="lead text-white-50 mb-3" style="font-size: 1.15rem; line-height: 1.55; color: #cbd5e1 !important;">
+                                        Advancing Autonomous Agent Systems, AI Security &amp; Responsible Enterprise Scale
+                                    </p>
+
+                                    <div class="row mt-4 pt-3 border-top" style="border-color: rgba(255,255,255,0.12) !important;">
+                                        <div class="col-4 col-md-3 mb-2">
+                                            <div class="hero-stat-card">
+                                                <div class="hero-stat-num">12+</div>
+                                                <div class="hero-stat-label">Years in AI &amp; Tech</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 col-md-3 mb-2">
+                                            <div class="hero-stat-card">
+                                                <div class="hero-stat-num">22+</div>
+                                                <div class="hero-stat-label">Published Papers</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 col-md-3 mb-2">
+                                            <div class="hero-stat-card">
+                                                <div class="hero-stat-num">6</div>
+                                                <div class="hero-stat-label">Patents (1 Granted, 4 In Process)</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-3 mb-2 mt-2 mt-md-0 d-flex flex-column justify-content-center">
+                                            <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="btn hero-btn-primary btn-sm rounded-pill font-weight-bold px-3 py-2 w-100 mb-2 text-center">
+                                                <i class="mdi mdi-linkedin mr-1"></i> Connect on LinkedIn
+                                            </a>
+                                            <a href="#verified-profiles" class="btn hero-btn-secondary btn-sm rounded-pill font-weight-bold px-3 py-2 w-100 text-center" style="font-size: 12px;">
+                                                <i class="mdi mdi-web mr-1"></i> 38 Verified Hubs
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero Header End -->
+
+            <!-- Executive Biography Box -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="executive-bio-box">
+                        <div class="d-flex align-items-center mb-4">
+                            <span class="badge badge-pill text-white px-3 py-1 font-weight-bold mr-2" style="background: linear-gradient(135deg, #2563eb 0%, #0284c7 100%);">
+                                <i class="mdi mdi-account-card-details-outline mr-1"></i> Executive Biography
+                            </span>
+                            <h2 class="font-weight-bold text-dark mb-0 ml-2" style="font-size: 1.6rem;">About Harsh Verma</h2>
+                        </div>
+
+                        <div class="executive-bio-content">
+                            <p class="executive-bio-p">
+                                Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, focused on advancing autonomous agent systems and intelligent AI strategies. Harsh is also a Forbes Technology Council member and, as a speaker, mentor, and advisor, he brings both technical depth and strategic guidance to leaders adopting next-generation AI capabilities.  He drives responsible, scalable AI adoption. His work influences how enterprises innovate, secure, and operationalize the next generation of intelligent systems. Harsh specializes in offering scalable AI solutions, mentoring aspiring entrepreneurs, delivering impactful conference talks, and advising startups on their AI strategies. Whether it's navigating AI implementation or fostering innovation with AI, Harsh is committed to delivering meaningful results in the tech industry.
+                            </p>
+                            <p class="executive-bio-p">
+                                His contributions have been recognized through globally respected awards and institutions, reinforcing both impact and influence. He is a recipient of the Global Recognition Award (2026) for measurable advances in enterprise AI and cybersecurity, and also the Globee Awards, which recognize excellence &amp; innovation across global business leadership. He acts as a Senior Member of IEEE, which reflects peer-reviewed recognition of his sustained technical and professional contributions to the field, an honor reserved for individuals demonstrating significant performance and impact.
+                            </p>
+                            <p class="executive-bio-p">
+                                Beyond the enterprise, Harsh plays a visible role in shaping the broader Data &amp; AI ecosystem. Through advising and mentorship at leading accelerators, UC Berkeley Skydeck, judging global AI innovation forums, and publishing thought leadership in Forbes and Hackernoon as a Technical Council Member, he contributes to defining how AI leadership itself is evolving. His work influences not only the organizations he serves but also the next generation of AI systems, leaders, and standards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strategic Pillars & Awards Row -->
+            <div class="row mb-4">
+                <!-- Honors & Accreditations -->
+                <div class="col-lg-6 mb-4">
+                    <div class="h-100 p-4 bg-white rounded shadow-sm border">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge badge-pill text-white px-3 py-1 font-weight-bold mr-2" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%);">
+                                <i class="mdi mdi-trophy-outline mr-1"></i> Global Accreditations
+                            </span>
+                            <h3 class="font-weight-bold text-dark mb-0 ml-2" style="font-size: 1.3rem;">Honors &amp; Awards</h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <div class="award-highlight-card">
+                                    <div class="award-icon-box" style="background: rgba(234, 179, 8, 0.15); color: #d97706;">
+                                        <i class="mdi mdi-trophy-award"></i>
+                                    </div>
+                                    <h5 class="font-weight-bold text-dark mb-1" style="font-size: 15px;">Global Recognition Award (2026)</h5>
+                                    <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Honored for measurable advances in enterprise AI architectures and autonomous cybersecurity defense.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="award-highlight-card">
+                                    <div class="award-icon-box" style="background: rgba(37, 99, 235, 0.15); color: #2563eb;">
+                                        <i class="mdi mdi-certificate"></i>
+                                    </div>
+                                    <h5 class="font-weight-bold text-dark mb-1" style="font-size: 15px;">Globee Business Awards</h5>
+                                    <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Recognized for excellence and innovation across global business leadership and technology acceleration.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <div class="award-highlight-card">
+                                    <div class="award-icon-box" style="background: rgba(16, 185, 129, 0.15); color: #059669;">
+                                        <i class="mdi mdi-shield-check"></i>
+                                    </div>
+                                    <h5 class="font-weight-bold text-dark mb-1" style="font-size: 15px;">Senior Member of IEEE</h5>
+                                    <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Peer-reviewed recognition of sustained technical performance and lasting contributions to IEEE disciplines.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="award-highlight-card">
+                                    <div class="award-icon-box" style="background: rgba(124, 58, 237, 0.15); color: #7c3aed;">
+                                        <i class="mdi mdi-domain"></i>
+                                    </div>
+                                    <h5 class="font-weight-bold text-dark mb-1" style="font-size: 15px;">Forbes Technology Council</h5>
+                                    <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Invitation-only council for senior technology executives; contributing author on next-generation AI systems.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategic Focus Pillars -->
+                <div class="col-lg-6 mb-4">
+                    <div class="h-100 p-4 bg-white rounded shadow-sm border">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge badge-pill text-white px-3 py-1 font-weight-bold mr-2" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);">
+                                <i class="mdi mdi-compass-outline mr-1"></i> Core Domains
+                            </span>
+                            <h3 class="font-weight-bold text-dark mb-0 ml-2" style="font-size: 1.3rem;">Strategic Expertise</h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <div class="pillar-card">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="mdi mdi-robot mr-2 text-primary" style="font-size: 20px;"></i>
+                                        <h5 class="font-weight-bold text-dark mb-0" style="font-size: 15px;">Autonomous Agent Systems &amp; Multi-Agent Workflows</h5>
+                                    </div>
+                                    <p class="text-muted mb-0" style="font-size: 13.5px; line-height: 1.55;">Engineering resilient, goal-oriented agentic topologies, tool-calling pipelines, self-healing runtime orchestration, and deterministic validation harnesses.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <div class="pillar-card">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="mdi mdi-shield-lock-outline mr-2 text-success" style="font-size: 20px;"></i>
+                                        <h5 class="font-weight-bold text-dark mb-0" style="font-size: 15px;">Enterprise AI Security &amp; Cyber Defense</h5>
+                                    </div>
+                                    <p class="text-muted mb-0" style="font-size: 13.5px; line-height: 1.55;">Pioneering defensive AI guardrails, proactive adversarial mitigation, data governance, and secure AI adoption strategies at Palo Alto Networks.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="pillar-card">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="mdi mdi-rocket-launch-outline mr-2 text-warning" style="font-size: 20px;"></i>
+                                        <h5 class="font-weight-bold text-dark mb-0" style="font-size: 15px;">Executive Advisory &amp; UC Berkeley SkyDeck Mentorship</h5>
+                                    </div>
+                                    <p class="text-muted mb-0" style="font-size: 13.5px; line-height: 1.55;">Advising high-growth startups, judging global AI innovation forums, and mentoring the next generation of engineers through ADPList and global accelerators.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital Presence & Verified Profiles Hub -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="profile-hub-box" id="verified-profiles">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+                            <div>
+                                <span class="badge badge-pill text-white px-3 py-1 font-weight-bold mb-1" style="background: linear-gradient(135deg, #10b981 0%, #0284c7 100%);">
+                                    <i class="mdi mdi-check-decagram mr-1"></i> Verified Digital Directory
+                                </span>
+                                <h2 class="font-weight-bold text-dark mb-0 mt-1" style="font-size: 1.5rem;">
+                                    Verified Profiles &amp; Web Presence Hub <span class="badge badge-primary font-weight-bold ml-2">38 Profiles</span>
+                                </h2>
+                                <p class="text-muted mb-0 mt-1" style="font-size: 14px;">
+                                    Explore Harsh Verma's verified accreditations, executive councils, research indexes, developer ecosystems, and media features across the web.
+                                </p>
+                            </div>
+                            <a href="https://harshverma.bio/" target="_blank" class="btn btn-outline-primary btn-sm rounded font-weight-bold mt-3 mt-sm-0">
+                                <i class="mdi mdi-link-variant mr-1"></i> Visit HarshVerma.bio <i class="mdi mdi-open-in-new ml-1"></i>
+                            </a>
+                        </div>
+
+                        <!-- Search & Category Filters -->
+                        <div class="row mb-4">
+                            <div class="col-lg-5 mb-3 mb-lg-0">
+                                <div class="profile-search-input-wrap">
+                                    <i class="mdi mdi-magnify"></i>
+                                    <input type="text" id="profileSearchInput" class="profile-search-input" placeholder="Search profiles by platform, topic, or ID (e.g., Forbes, Scholar, Google, RSAC)...">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="d-flex flex-wrap align-items-center justify-content-lg-end" id="profileCategoryFilters">
+                                    <button type="button" class="filter-btn-pill active" data-filter="all">All (38)</button>
+                                    <button type="button" class="filter-btn-pill" data-filter="councils">Executive &amp; Councils</button>
+                                    <button type="button" class="filter-btn-pill" data-filter="research">Research &amp; Citations</button>
+                                    <button type="button" class="filter-btn-pill" data-filter="developer">Developer &amp; AI Hubs</button>
+                                    <button type="button" class="filter-btn-pill" data-filter="media">Media &amp; Press</button>
+                                    <button type="button" class="filter-btn-pill" data-filter="advisory">Advisory &amp; Mentorship</button>
+                                    <button type="button" class="filter-btn-pill" data-filter="direct">Direct Connect</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dynamic Profile Cards Grid -->
+                        <div class="row" id="profileCardsGrid">
+                            
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="councils" data-search="forbes technology council official council member council member executive profile on the forbes technology council — an invitation-only organization for senior-level technology executives. executive & tech councils">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/forbes.svg" class="profile-card-thumb-img" alt="Forbes Technology Council Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Executive & Tech Councils</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Forbes Technology Council</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Official Council Member
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Executive profile on the Forbes Technology Council — an invitation-only organization for senior-level technology executives.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://councils.forbes.com/profile/Harsh-Verma-Principal-Software-Engineer-AI-Palo-Alto-Networks/2a1e2c7a-5541-4c49-acee-0ec37da532a5" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Forbes Technology Council">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://councils.forbes.com/profile/Harsh-Verma-Principal-Software-Engineer-AI-Palo-Alto-Networks/2a1e2c7a-5541-4c49-acee-0ec37da532a5', 'Forbes Technology Council')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="councils" data-search="forbes author directory forbes contributor forbes author forbes contributor profile and published thought leadership on agentic ai, ai security, and enterprise architecture. executive & tech councils">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/forbes_author.svg" class="profile-card-thumb-img" alt="Forbes Author Directory Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Executive & Tech Councils</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Forbes Author Directory</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Forbes Contributor
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Forbes contributor profile and published thought leadership on Agentic AI, AI Security, and Enterprise Architecture.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://www.forbes.com/councils/forbestechcouncil/people/harshverma/" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Forbes Author Directory">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://www.forbes.com/councils/forbestechcouncil/people/harshverma/', 'Forbes Author Directory')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="councils" data-search="forttuna global 100 power list (2026) power list honoree global 100 honoree recognized among the forttuna global 100 power list 2026 honorees for outstanding global innovation and ai leadership. executive & tech councils">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/forttuna_global100.svg" class="profile-card-thumb-img" alt="Forttuna Global 100 Power List (2026) Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Executive & Tech Councils</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Forttuna Global 100 Power List (2026)</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Power List Honoree
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Recognized among the Forttuna Global 100 Power List 2026 honorees for outstanding global innovation and AI leadership.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://global100.forttuna.com/the-power-list-2026-honorees/profile?name=harsh-verma" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Forttuna Global 100 Power List (2026)">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://global100.forttuna.com/the-power-list-2026-honorees/profile?name=harsh-verma', 'Forttuna Global 100 Power List (2026)')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="councils" data-search="forttuna technology council council member council member official forttuna technology council member steering committee on next-gen enterprise technologies and scalable ai. executive & tech councils">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/forttuna_council.svg" class="profile-card-thumb-img" alt="Forttuna Technology Council Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Executive & Tech Councils</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Forttuna Technology Council</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Council Member
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Official Forttuna Technology Council member steering committee on next-gen enterprise technologies and scalable AI.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://councils.forttuna.com/council-member/harsh-verma/" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Forttuna Technology Council">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://councils.forttuna.com/council-member/harsh-verma/', 'Forttuna Technology Council')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="councils" data-search="marquis who's who in america biographical honoree who's who in america official biographical inclusion in marquis who's who in america for sustained contributions to artificial intelligence and engineering. executive & tech councils">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/marquis.svg" class="profile-card-thumb-img" alt="Marquis Who's Who in America Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Executive & Tech Councils</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Marquis Who's Who in America</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Biographical Honoree
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Official biographical inclusion in Marquis Who's Who in America for sustained contributions to artificial intelligence and engineering.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://mbo.marquiswhoswho.com/Biography/4005428487/fav" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Marquis Who's Who in America">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://mbo.marquiswhoswho.com/Biography/4005428487/fav', 'Marquis Who's Who in America')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="councils" data-search="rsa conference (rsac) expert speaker & cybersecurity expert rsac expert rsa conference verified expert directory profile focusing on ai-driven cybersecurity, defensive ai, and agent governance. executive & tech councils">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/rsac.svg" class="profile-card-thumb-img" alt="RSA Conference (RSAC) Expert Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Executive & Tech Councils</span>
+                        <h5 class="profile-card-title mb-0 mt-1">RSA Conference (RSAC) Expert</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Speaker & Cybersecurity Expert
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">RSA Conference verified expert directory profile focusing on AI-driven cybersecurity, defensive AI, and agent governance.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://www.rsaconference.com/experts/Harsh%20Verma" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit RSA Conference (RSAC) Expert">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://www.rsaconference.com/experts/Harsh%20Verma', 'RSA Conference (RSAC) Expert')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="research" data-search="google scholar scholar id: zst9ormaaaaj scholar profile author citation profile indexing 22+ peer-reviewed papers across ieee, cognitive ml, agentic ai, and cybersecurity. research & citations">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/google_scholar.svg" class="profile-card-thumb-img" alt="Google Scholar Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Research & Citations</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Google Scholar</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Scholar ID: zSt9oRMAAAAJ
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Author citation profile indexing 22+ peer-reviewed papers across IEEE, cognitive ML, agentic AI, and cybersecurity.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://scholar.google.com/citations?user=zSt9oRMAAAAJ&hl=en" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Google Scholar">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://scholar.google.com/citations?user=zSt9oRMAAAAJ&hl=en', 'Google Scholar')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="research" data-search="semantic scholar author id: 145004805 ai citation graph allen institute for ai semantic scholar profile with automated citation graphs and influential research metrics. research & citations">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/semantic_scholar.svg" class="profile-card-thumb-img" alt="Semantic Scholar Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Research & Citations</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Semantic Scholar</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Author ID: 145004805
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Allen Institute for AI Semantic Scholar profile with automated citation graphs and influential research metrics.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://www.semanticscholar.org/author/H.-Verma/145004805" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Semantic Scholar">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://www.semanticscholar.org/author/H.-Verma/145004805', 'Semantic Scholar')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="research" data-search="orcid registry 0000-0003-2134-2600 verified orcid persistent digital identifier connecting validated research outputs, ieee publications, and academic affiliations. research & citations">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/orcid.svg" class="profile-card-thumb-img" alt="ORCID Registry Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Research & Citations</span>
+                        <h5 class="profile-card-title mb-0 mt-1">ORCID Registry</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> 0000-0003-2134-2600
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Persistent digital identifier connecting validated research outputs, IEEE publications, and academic affiliations.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://orcid.org/0000-0003-2134-2600" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit ORCID Registry">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://orcid.org/0000-0003-2134-2600', 'ORCID Registry')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="research" data-search="openreview profile id: ~harsh_verma3 peer review id open scientific peer-review platform profile for machine learning research evaluations and academic submissions. research & citations">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/openreview.svg" class="profile-card-thumb-img" alt="OpenReview Profile Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Research & Citations</span>
+                        <h5 class="profile-card-title mb-0 mt-1">OpenReview Profile</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> ID: ~Harsh_Verma3
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Open scientific peer-review platform profile for machine learning research evaluations and academic submissions.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://openreview.net/profile?id=%7EHarsh_Verma3" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit OpenReview Profile">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://openreview.net/profile?id=%7EHarsh_Verma3', 'OpenReview Profile')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="research" data-search="researchgate harsh-verma-43 research network scientific network profile showcasing preprints, publications, citation metrics, and collaborative research projects. research & citations">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/researchgate.svg" class="profile-card-thumb-img" alt="ResearchGate Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Research & Citations</span>
+                        <h5 class="profile-card-title mb-0 mt-1">ResearchGate</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Harsh-Verma-43
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Scientific network profile showcasing preprints, publications, citation metrics, and collaborative research projects.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://www.researchgate.net/profile/Harsh-Verma-43" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit ResearchGate">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://www.researchgate.net/profile/Harsh-Verma-43', 'ResearchGate')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="research" data-search="ssrn (elsevier) author id: 11144549 elsevier ssrn social science research network author repository featuring papers on technology strategy, economics of ai, and cyber systems. research & citations">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/ssrn.svg" class="profile-card-thumb-img" alt="SSRN (Elsevier) Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Research & Citations</span>
+                        <h5 class="profile-card-title mb-0 mt-1">SSRN (Elsevier)</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Author ID: 11144549
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Social Science Research Network author repository featuring papers on technology strategy, economics of AI, and cyber systems.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=11144549" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit SSRN (Elsevier)">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=11144549', 'SSRN (Elsevier)')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="research" data-search="ijsrm journal author harshverma59 ijsrm author international journal of scientific research and management verified author page and published scholarly articles. research & citations">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/ijsrm.svg" class="profile-card-thumb-img" alt="IJSRM Journal Author Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Research & Citations</span>
+                        <h5 class="profile-card-title mb-0 mt-1">IJSRM Journal Author</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> harshverma59
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">International Journal of Scientific Research and Management verified author page and published scholarly articles.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://ijsrm.net/author/harshverma59" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit IJSRM Journal Author">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://ijsrm.net/author/harshverma59', 'IJSRM Journal Author')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="research" data-search="academia.edu stanford gsb / harshverma academic profile academic repository profile sharing research papers, case studies, and engineering briefs. research & citations">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/academia.svg" class="profile-card-thumb-img" alt="Academia.edu Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Research & Citations</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Academia.edu</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Stanford GSB / harshverma
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Academic repository profile sharing research papers, case studies, and engineering briefs.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://mygsb.academia.edu/harshverma" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Academia.edu">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://mygsb.academia.edu/harshverma', 'Academia.edu')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="developer" data-search="google developer profile u/harshverma59 google developer official google developer profile tracking cloud certifications, gemini/vertex ai badges, and ecosystem contributions. developer & cloud ecosystems">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/google_developers.svg" class="profile-card-thumb-img" alt="Google Developer Profile Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Developer & Cloud Ecosystems</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Google Developer Profile</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> u/harshverma59
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Official Google Developer profile tracking Cloud certifications, Gemini/Vertex AI badges, and ecosystem contributions.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://me.developers.google.com/u/harshverma59" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Google Developer Profile">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://me.developers.google.com/u/harshverma59', 'Google Developer Profile')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="developer" data-search="google developer group (gdg) community lead / speaker gdg community gdg community profile for tech talks, developer workshops, and google cloud ai mentorship events. developer & cloud ecosystems">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/gdg.svg" class="profile-card-thumb-img" alt="Google Developer Group (GDG) Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Developer & Cloud Ecosystems</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Google Developer Group (GDG)</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Community Lead / Speaker
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">GDG community profile for tech talks, developer workshops, and Google Cloud AI mentorship events.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://gdg.community.dev/u/mn4snq/#/about" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Google Developer Group (GDG)">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://gdg.community.dev/u/mn4snq/#/about', 'Google Developer Group (GDG)')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="developer" data-search="google skills hub skills.google google cloud skills google cloud and genai engineering learning path accreditations and technical badges. developer & cloud ecosystems">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/google_skills.svg" class="profile-card-thumb-img" alt="Google Skills Hub Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Developer & Cloud Ecosystems</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Google Skills Hub</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> skills.google
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Google Cloud and GenAI engineering learning path accreditations and technical badges.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://www.skills.google/" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Google Skills Hub">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://www.skills.google/', 'Google Skills Hub')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="developer" data-search="github iamharshverma open source code open-source repositories, ai toolkits, agent frameworks, and distributed cloud computing code samples. developer & cloud ecosystems">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/github.svg" class="profile-card-thumb-img" alt="GitHub Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Developer & Cloud Ecosystems</span>
+                        <h5 class="profile-card-title mb-0 mt-1">GitHub</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> iamharshverma
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Open-source repositories, AI toolkits, agent frameworks, and distributed cloud computing code samples.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://github.com/iamharshverma" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit GitHub">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://github.com/iamharshverma', 'GitHub')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="developer" data-search="devpost profile harshverma59 hackathons & builds portfolio of hackathon projects, prototype builds, and competitive engineering innovation submissions. developer & cloud ecosystems">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/devpost.svg" class="profile-card-thumb-img" alt="Devpost Profile Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Developer & Cloud Ecosystems</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Devpost Profile</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> harshverma59
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Portfolio of hackathon projects, prototype builds, and competitive engineering innovation submissions.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://devpost.com/harshverma59" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Devpost Profile">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://devpost.com/harshverma59', 'Devpost Profile')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="developer" data-search="substack newsletter @aiwithharsh ai with harsh author newsletter covering autonomous agent architectures, ai cybersecurity, and enterprise engineering practices. developer & cloud ecosystems">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/substack.svg" class="profile-card-thumb-img" alt="Substack Newsletter Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Developer & Cloud Ecosystems</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Substack Newsletter</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> @aiwithharsh
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Author newsletter covering autonomous agent architectures, AI cybersecurity, and enterprise engineering practices.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://substack.com/@aiwithharsh" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Substack Newsletter">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://substack.com/@aiwithharsh', 'Substack Newsletter')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="developer" data-search="medium publications @harshverma59 technical blog articles breaking down complex machine learning systems, multi-agent frameworks, and real-time distributed data pipelines. developer & cloud ecosystems">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/medium.svg" class="profile-card-thumb-img" alt="Medium Publications Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Developer & Cloud Ecosystems</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Medium Publications</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> @harshverma59
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Articles breaking down complex machine learning systems, multi-agent frameworks, and real-time distributed data pipelines.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://medium.com/@harshverma59" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Medium Publications">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://medium.com/@harshverma59', 'Medium Publications')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="developer" data-search="hackernoon tech contributor @harshverma59 hackernoon author technical council author profile publishing analyses on llm agent security, ai reliability, and enterprise cloud tooling. developer & cloud ecosystems">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/hackernoon.svg" class="profile-card-thumb-img" alt="HackerNoon Tech Contributor Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Developer & Cloud Ecosystems</span>
+                        <h5 class="profile-card-title mb-0 mt-1">HackerNoon Tech Contributor</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> @harshverma59
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Technical Council author profile publishing analyses on LLM agent security, AI reliability, and enterprise cloud tooling.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://hackernoon.com/u/harshverma59" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit HackerNoon Tech Contributor">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://hackernoon.com/u/harshverma59', 'HackerNoon Tech Contributor')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="media" data-search="new york weekly journal press feature press spotlight special feature article: 'the engineer rewriting the rules by thinking ai beyond the code: inside the world of harsh verma'. media features & press">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/nyweekly.svg" class="profile-card-thumb-img" alt="New York Weekly Journal Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Media Features & Press</span>
+                        <h5 class="profile-card-title mb-0 mt-1">New York Weekly Journal</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Press Feature
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Special feature article: 'The Engineer Rewriting the Rules by Thinking AI Beyond the Code: Inside the World of Harsh Verma'.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://nyweeklyjournal.com/blog/the-engineer-rewriting-the-rules-by-thinking-%E2%80%9Cai-beyond-the-code%E2%80%9D-inside-the-world-of-harsh-verma" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit New York Weekly Journal">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://nyweeklyjournal.com/blog/the-engineer-rewriting-the-rules-by-thinking-%E2%80%9Cai-beyond-the-code%E2%80%9D-inside-the-world-of-harsh-verma', 'New York Weekly Journal')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="media" data-search="xraised global interview series video episode global video feature featured video interview discussing ai engineering beyond code, autonomous system design, and the future of tech careers. media features & press">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/xraised.svg" class="profile-card-thumb-img" alt="xRaised Global Interview Series Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Media Features & Press</span>
+                        <h5 class="profile-card-title mb-0 mt-1">xRaised Global Interview Series</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Video Episode
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Featured video interview discussing AI Engineering beyond code, autonomous system design, and the future of tech careers.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://xraised.com/videos/ai-engineering-beyond-code/" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit xRaised Global Interview Series">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://xraised.com/videos/ai-engineering-beyond-code/', 'xRaised Global Interview Series')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="media" data-search="influencer magazine uk tech leader spotlight uk media feature executive profile spotlighting harsh's trajectory in ai innovation, thought leadership, and global business impact. media features & press">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/influencermagazine.svg" class="profile-card-thumb-img" alt="Influencer Magazine UK Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Media Features & Press</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Influencer Magazine UK</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Tech Leader Spotlight
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Executive profile spotlighting Harsh's trajectory in AI innovation, thought leadership, and global business impact.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://influencermagazine.uk/harsh-verma/" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Influencer Magazine UK">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://influencermagazine.uk/harsh-verma/', 'Influencer Magazine UK')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="media" data-search="lifepage india career talk career interview career mentorship in-depth career interview sharing insights on the software development lifecycle, ai skills, and engineering guidance. media features & press">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/lifepage.svg" class="profile-card-thumb-img" alt="LifePage India Career Talk Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Media Features & Press</span>
+                        <h5 class="profile-card-title mb-0 mt-1">LifePage India Career Talk</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Career Interview
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">In-depth career interview sharing insights on the software development lifecycle, AI skills, and engineering guidance.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://www.lifepage.in/page/harsh" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit LifePage India Career Talk">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://www.lifepage.in/page/harsh', 'LifePage India Career Talk')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="media" data-search="imdb profile imdb.me/harshverma official imdb official imdb profile cataloging technology podcast appearances, video series, and media credits. media features & press">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/imdb.svg" class="profile-card-thumb-img" alt="IMDb Profile Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Media Features & Press</span>
+                        <h5 class="profile-card-title mb-0 mt-1">IMDb Profile</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> imdb.me/harshverma
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Official IMDb profile cataloging technology podcast appearances, video series, and media credits.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://imdb.me/harshverma" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit IMDb Profile">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://imdb.me/harshverma', 'IMDb Profile')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="advisory" data-search="adplist executive mentor top ai mentor adplist mentor top-rated mentor on adplist providing 1-on-1 career guidance to engineers, ai practitioners, and tech leaders globally. advisory & mentorship">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/adplist.svg" class="profile-card-thumb-img" alt="ADPList Executive Mentor Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Advisory & Mentorship</span>
+                        <h5 class="profile-card-title mb-0 mt-1">ADPList Executive Mentor</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Top AI Mentor
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Top-rated mentor on ADPList providing 1-on-1 career guidance to engineers, AI practitioners, and tech leaders globally.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://adplist.org/mentors/harsh-verma" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit ADPList Executive Mentor">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://adplist.org/mentors/harsh-verma', 'ADPList Executive Mentor')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="advisory" data-search="masschallenge accelerator mentor & judge startup accelerator mentor and innovation judge for the global masschallenge startup accelerator supporting high-impact ai ventures. advisory & mentorship">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/masschallenge.svg" class="profile-card-thumb-img" alt="MassChallenge Accelerator Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Advisory & Mentorship</span>
+                        <h5 class="profile-card-title mb-0 mt-1">MassChallenge Accelerator</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Mentor & Judge
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Mentor and innovation judge for the global MassChallenge startup accelerator supporting high-impact AI ventures.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://accelerate.masschallenge.org/profile/" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit MassChallenge Accelerator">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://accelerate.masschallenge.org/profile/', 'MassChallenge Accelerator')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="advisory" data-search="f6s startup community harshverma59 f6s founder network f6s profile connecting with founders, early-stage ai startups, accelerator programs, and venture ecosystems. advisory & mentorship">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/f6s.svg" class="profile-card-thumb-img" alt="F6S Startup Community Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Advisory & Mentorship</span>
+                        <h5 class="profile-card-title mb-0 mt-1">F6S Startup Community</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> harshverma59
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">F6S profile connecting with founders, early-stage AI startups, accelerator programs, and venture ecosystems.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://www.f6s.com/harshverma59" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit F6S Startup Community">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://www.f6s.com/harshverma59', 'F6S Startup Community')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="advisory" data-search="founders creative harsh founders advisor author and advisory contributor helping early-stage founders scale technology roadmaps and architect ai solutions. advisory & mentorship">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/founderscreative.svg" class="profile-card-thumb-img" alt="Founders Creative Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Advisory & Mentorship</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Founders Creative</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> harsh
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Author and advisory contributor helping early-stage founders scale technology roadmaps and architect AI solutions.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://www.founderscreative.org/author/harsh/" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Founders Creative">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://www.founderscreative.org/author/harsh/', 'Founders Creative')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="direct" data-search="harshverma.bio universal bio hub official bio hub centralized universal bio link aggregating all books, speaking engagements, newsletters, and verified profiles. direct connect & networks">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/harshverma_bio.svg" class="profile-card-thumb-img" alt="HarshVerma.bio Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Direct Connect & Networks</span>
+                        <h5 class="profile-card-title mb-0 mt-1">HarshVerma.bio</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Universal Bio Hub
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Centralized universal bio link aggregating all books, speaking engagements, newsletters, and verified profiles.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://harshverma.bio/" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit HarshVerma.bio">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://harshverma.bio/', 'HarshVerma.bio')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="direct" data-search="linkedin profile in/harshverma59 primary professional principal software engineer in ai at palo alto networks. connect for industry insights, advisory, and keynote speaking. direct connect & networks">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/linkedin.svg" class="profile-card-thumb-img" alt="LinkedIn Profile Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Direct Connect & Networks</span>
+                        <h5 class="profile-card-title mb-0 mt-1">LinkedIn Profile</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> in/harshverma59
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Principal Software Engineer in AI at Palo Alto Networks. Connect for industry insights, advisory, and keynote speaking.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit LinkedIn Profile">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://www.linkedin.com/in/harshverma59/', 'LinkedIn Profile')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="direct" data-search="instagram @aiwithharsh visual ai insights daily bite-sized ai architecture breakdowns, book previews, speaking event highlights, and tech updates. direct connect & networks">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/instagram.svg" class="profile-card-thumb-img" alt="Instagram Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Direct Connect & Networks</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Instagram</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> @aiwithharsh
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Daily bite-sized AI architecture breakdowns, book previews, speaking event highlights, and tech updates.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://www.instagram.com/aiwithharsh" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Instagram">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://www.instagram.com/aiwithharsh', 'Instagram')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="direct" data-search="favikon creator spotlight harshverma59 creator ranking favikon creator spotlight scoring ranking top influential creators and thought leaders in artificial intelligence. direct connect & networks">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/favikon.svg" class="profile-card-thumb-img" alt="Favikon Creator Spotlight Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Direct Connect & Networks</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Favikon Creator Spotlight</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> harshverma59
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Favikon creator spotlight scoring ranking top influential creators and thought leaders in Artificial Intelligence.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://spotlight.favikon.com/harshverma59/" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Favikon Creator Spotlight">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://spotlight.favikon.com/harshverma59/', 'Favikon Creator Spotlight')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="direct" data-search="media kit & speaker bio @harshverma59 press & speaker kit official media kit with high-res headshots, keynote topics, speaking rider, and executive background briefs. direct connect & networks">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/mediakit.svg" class="profile-card-thumb-img" alt="Media Kit & Speaker Bio Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Direct Connect & Networks</span>
+                        <h5 class="profile-card-title mb-0 mt-1">Media Kit & Speaker Bio</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> @harshverma59
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Official media kit with high-res headshots, keynote topics, speaking rider, and executive background briefs.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://mediakit.bio/@harshverma59" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit Media Kit & Speaker Bio">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://mediakit.bio/@harshverma59', 'Media Kit & Speaker Bio')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="direct" data-search="rocketreach enterprise verification palo alto networks enterprise directory verified executive contact and professional record at palo alto networks on rocketreach. direct connect & networks">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/rocketreach.svg" class="profile-card-thumb-img" alt="RocketReach Enterprise Verification Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Direct Connect & Networks</span>
+                        <h5 class="profile-card-title mb-0 mt-1">RocketReach Enterprise Verification</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Palo Alto Networks
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">Verified executive contact and professional record at Palo Alto Networks on RocketReach.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://rocketreach.co/harsh-verma-email_54769519" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit RocketReach Enterprise Verification">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://rocketreach.co/harsh-verma-email_54769519', 'RocketReach Enterprise Verification')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4 profile-card-item" data-category="direct" data-search="contactout profile harsh-verma-1722953 professional contact contactout verified professional profile and enterprise ai engineering network directory. direct connect & networks">
+        <div class="profile-hub-card h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="profile-card-icon-wrap mr-3">
+                        <img src="images/profiles/contactout.svg" class="profile-card-thumb-img" alt="ContactOut Profile Thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="profile-category-pill">Direct Connect & Networks</span>
+                        <h5 class="profile-card-title mb-0 mt-1">ContactOut Profile</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-card-identifier mb-2">
+                <span class="badge badge-light border font-weight-bold text-dark px-2 py-1">
+                    <i class="mdi mdi-check-circle text-primary mr-1"></i> Harsh-Verma-1722953
+                </span>
+            </div>
+
+            <p class="profile-card-desc mb-3">ContactOut verified professional profile and enterprise AI engineering network directory.</p>
+
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                <a href="https://contactout.com/Harsh-Verma-1722953" target="_blank" class="btn-hub-action btn-hub-primary" title="Visit ContactOut Profile">
+                    <i class="mdi mdi-open-in-new mr-1"></i> Open Profile
+                </a>
+                <button type="button" class="btn-hub-action btn-hub-outline" onclick="copyLinkUrl('https://contactout.com/Harsh-Verma-1722953', 'ContactOut Profile')" title="Copy URL">
+                    <i class="mdi mdi-content-copy mr-1"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+    
+                        </div>
+
+                        <!-- Empty State Notice -->
+                        <div id="noProfilesFound" class="text-center py-5 d-none">
+                            <i class="mdi mdi-file-search-outline text-muted" style="font-size: 54px;"></i>
+                            <h5 class="font-weight-bold text-dark mt-3 mb-1">No matching profiles found</h5>
+                            <p class="text-muted mb-3" style="font-size: 14px;">Try searching for different keywords or clear your active category filter.</p>
+                            <button type="button" class="btn btn-outline-primary btn-sm rounded font-weight-bold" onclick="resetProfileFilters()">
+                                Reset Filters &amp; View All Profiles
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Quick CTAs -->
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 bg-white rounded border shadow-sm h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="badge badge-primary px-3 py-1 font-weight-bold mb-2">Authored Books</span>
+                            <h4 class="font-weight-bold text-dark mb-2">Explore Books on AI Leadership &amp; Cyber Defense</h4>
+                            <p class="text-muted" style="font-size: 14px;">Dive into "Beyond AI Engineering: From Creator to Curator" and "AI vs. AI: Engineering the Cybersecurity Counteroffensive".</p>
+                        </div>
+                        <div>
+                            <a href="page-books" class="btn btn-primary btn-sm rounded font-weight-bold px-3">
+                                Explore Authored Books <i class="mdi mdi-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 bg-white rounded border shadow-sm h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="badge badge-info text-white px-3 py-1 font-weight-bold mb-2">Research &amp; IP</span>
+                            <h4 class="font-weight-bold text-dark mb-2">Browse 22+ Published Papers &amp; 6 Patents</h4>
+                            <p class="text-muted" style="font-size: 14px;">Review peer-reviewed IEEE publications, CogML datasets, granted patents, and 4 in-process Palo Alto Networks patents on Agentic AI and Copilot Navigation.</p>
+                        </div>
+                        <div>
+                            <a href="page-publications" class="btn btn-outline-primary btn-sm rounded font-weight-bold px-3">
+                                Browse Publications &amp; Patents <i class="mdi mdi-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Main Content End -->
+
+            <!-- Footer Start -->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <a href="index" class="footer-logo brand-logo-wrap font-weight-bold d-inline-flex justify-content-center align-items-center" style="text-decoration: none;">
+                        <span class="brand-monogram-emblem">
+                            <svg class="brand-logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="hvFootGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#1e40af" />
+                                        <stop offset="55%" stop-color="#2563eb" />
+                                        <stop offset="100%" stop-color="#4f46e5" />
+                                    </linearGradient>
+                                    <linearGradient id="hvFootAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#38bdf8" />
+                                        <stop offset="100%" stop-color="#818cf8" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="40" height="40" rx="10" fill="url(#hvFootGrad)" />
+                                <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+                                <path d="M11 12V28M11 20H19M19 12V28" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 12L28.5 28L34 12" stroke="url(#hvFootAccentGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="34" cy="12" r="1.75" fill="#38bdf8" />
+                            </svg>
+                        </span>
+                        <span class="brand-name-text">
+                            <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
+                        </span>
+                    </a>
+                    <p class="para-desc mx-auto mt-4 text-black" style="max-width: 650px;">
+                        Principal Software Engineer in AI @ Palo Alto Networks • Forbes Technology Council Member • IEEE Senior Member • Stanford GSB Scholar
+                    </p>
+                    <ul class="list-unstyled mb-0 mt-4 social-icon">
+                        <li class="list-inline-item mr-1"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="rounded-circle" title="Google Scholar"><i class="mdi mdi-school"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="rounded-circle" title="LinkedIn"><i class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://github.com/iamharshverma" target="_blank" class="rounded-circle" title="GitHub"><i class="mdi mdi-github-face"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://medium.com/@harshverma59" target="_blank" class="rounded-circle" title="Medium"><i class="mdi mdi-medium"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://twitter.com/harshverma59" target="_blank" class="rounded-circle" title="Twitter"><i class="mdi mdi-twitter"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.instagram.com/aiwithharsh/" target="_blank" class="rounded-circle" title="Instagram"><i class="mdi mdi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer footer-bar bg-black">
+        <div class="container text-foot text-center">
+            <p class="mb-0 text-white-50">&copy; <script>document.write(new Date().getFullYear())</script> Harsh Verma. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to top -->
+    <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+
+    <!-- Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/feather.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+        // Interactive Profile Search and Filter Logic
+        $(document).ready(function() {
+            if (typeof feather !== 'undefined') {
+                feather.replace();
+            }
+
+            var currentCategory = "all";
+            var currentSearchQuery = "";
+
+            function applyFilters() {
+                var matchCount = 0;
+                $(".profile-card-item").each(function() {
+                    var cardCategory = $(this).attr("data-category");
+                    var searchData = $(this).attr("data-search") || "";
+
+                    var categoryMatch = (currentCategory === "all" || cardCategory === currentCategory);
+                    var searchMatch = (!currentSearchQuery || searchData.indexOf(currentSearchQuery.toLowerCase()) !== -1);
+
+                    if (categoryMatch && searchMatch) {
+                        $(this).fadeIn(150);
+                        matchCount++;
+                    } else {
+                        $(this).fadeOut(150);
+                    }
+                });
+
+                if (matchCount === 0) {
+                    $("#noProfilesFound").removeClass("d-none");
+                } else {
+                    $("#noProfilesFound").addClass("d-none");
+                }
+            }
+
+            // Category Filter Click
+            $(".filter-btn-pill").on("click", function() {
+                $(".filter-btn-pill").removeClass("active");
+                $(this).addClass("active");
+                currentCategory = $(this).attr("data-filter");
+                applyFilters();
+            });
+
+            // Search Input Event
+            $("#profileSearchInput").on("keyup input", function() {
+                currentSearchQuery = $(this).val().trim();
+                applyFilters();
+            });
+        });
+
+        function resetProfileFilters() {
+            $("#profileSearchInput").val("");
+            $(".filter-btn-pill").removeClass("active");
+            $(".filter-btn-pill[data-filter='all']").addClass("active");
+            $(".profile-card-item").fadeIn(150);
+            $("#noProfilesFound").addClass("d-none");
+        }
+
+        function copyLinkUrl(url, name) {
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(url).then(function() {
+                    alert("Copied " + name + " link to clipboard:\n" + url);
+                }).catch(function() {
+                    prompt("Copy link:", url);
+                });
+            } else {
+                prompt("Copy link:", url);
+            }
+        }
+    </script>
+    <!-- HV AI Copilot Assistant Engine -->
+    <script src="js/hv-copilot.js"></script>
+</body>
+</html>

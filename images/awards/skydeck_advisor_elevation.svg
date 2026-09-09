@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g-sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#002046"/>
+      <stop offset="100%" stop-color="#003262"/>
+    </linearGradient>
+    <linearGradient id="gold-sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDB515"/>
+      <stop offset="100%" stop-color="#C4820A"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#g-sky)"/>
+  <rect x="8" y="8" width="384" height="224" rx="12" fill="none" stroke="url(#gold-sky)" stroke-width="2"/>
+  <!-- SkyDeck Rocket / Star -->
+  <g transform="translate(200, 52) scale(0.85)" fill="url(#gold-sky)">
+    <path d="M0,-24 C10,-15 12,0 12,16 L0,12 L-12,16 C-12,0 -10,-15 0,-24 Z"/>
+    <polygon points="0,14 4,24 -4,24" fill="#EA580C"/>
+  </g>
+  <text x="200" y="120" fill="url(#gold-sky)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="2">UNIVERSITY OF CALIFORNIA, BERKELEY</text>
+  <text x="200" y="148" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="800" text-anchor="middle">GLOBAL ADVISOR &amp; SELECTION COMMITTEE</text>
+  <text x="200" y="174" fill="#FDE047" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle">ELEVATED FROM MENTOR · 2025–2026 BATCH</text>
+  <text x="200" y="202" fill="#93C5FD" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">UC Berkeley SkyDeck Global Startup Accelerator</text>
+</svg>

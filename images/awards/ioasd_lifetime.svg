@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g-ioasd-l" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022C22"/>
+      <stop offset="100%" stop-color="#064E3B"/>
+    </linearGradient>
+    <linearGradient id="gold-ioasd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#g-ioasd-l)"/>
+  <rect x="8" y="8" width="384" height="224" rx="12" fill="none" stroke="url(#gold-ioasd)" stroke-width="2"/>
+  <g transform="translate(200, 50) scale(0.85)" fill="url(#gold-ioasd)">
+    <circle cx="0" cy="0" r="26" fill="none" stroke="url(#gold-ioasd)" stroke-width="2"/>
+    <path d="M-15,-8 L0,-20 L15,-8 L15,15 L-15,15 Z"/>
+    <circle cx="0" cy="2" r="5" fill="#022C22"/>
+  </g>
+  <text x="200" y="118" fill="url(#gold-ioasd)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="2">IOASD ANNUAL AWARDS</text>
+  <text x="200" y="148" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" text-anchor="middle">LIFETIME ACHIEVEMENT AWARD</text>
+  <text x="200" y="174" fill="#6EE7B7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">HIGHEST SCIENTIFIC DISTINCTION</text>
+  <text x="200" y="202" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">Intl. Org. for Academic &amp; Scientific Development</text>
+</svg>

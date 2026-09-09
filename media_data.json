@@ -1,0 +1,1332 @@
+[
+  {
+    "id": "media-lifepage-interview",
+    "title": "Life Page India: Inside Software Development & Engineering Careers",
+    "outlet": "Life Page India",
+    "type": "interview",
+    "type_label": "Career Interview",
+    "year": "2018",
+    "date_display": "July 2018",
+    "badge_theme": "emerald",
+    "icon_svg": "lifepage_badge.svg",
+    "highlight": "Engineering Foundations",
+    "summary": "Honored to interview with Life Page India sharing pivotal life experiences, career transitions, and deep insights into the software engineering process, distributed system design, and continuous learning.",
+    "topics": [
+      "Software Engineering",
+      "Career Mentorship",
+      "Distributed Systems",
+      "Professional Growth"
+    ],
+    "stats": "Featured Career Guide",
+    "primary_url": "https://lifepage.app.link/20180731-0001",
+    "links": [
+      {
+        "label": "App Interview",
+        "url": "https://lifepage.app.link/20180731-0001",
+        "icon": "mdi-cellphone-link"
+      },
+      {
+        "label": "Career Profile",
+        "url": "https://www.lifepage.in/careers/software-engineering-and-development",
+        "icon": "mdi-account-tie"
+      },
+      {
+        "label": "LifePage Profile",
+        "url": "https://www.lifepage.in/page/harsh",
+        "icon": "mdi-open-in-new"
+      }
+    ],
+    "quote": "Building enduring engineering systems begins with discipline, curiosity, and continuous architectural refinement."
+  },
+  {
+    "id": "media-chai-coaching-cybersecurity",
+    "title": "Chai & Coaching: How to Build a Tech Career in Cybersecurity",
+    "outlet": "Chai & Coaching",
+    "type": "podcast",
+    "type_label": "Video Podcast",
+    "year": "2024",
+    "date_display": "2024",
+    "badge_theme": "red",
+    "icon_svg": "chai_coaching_badge.svg",
+    "highlight": "YouTube Feature",
+    "summary": "Featured in-depth conversation on the Chai & Coaching channel breaking down practical roadmaps, skill prerequisites, threat modeling fundamentals, and navigating career growth in enterprise cybersecurity.",
+    "topics": [
+      "Cybersecurity Roadmap",
+      "Cloud Defense",
+      "Career Strategy",
+      "Threat Analysis"
+    ],
+    "stats": "YouTube Masterclass",
+    "video_id": "bggw4JTFjgA",
+    "primary_url": "https://youtu.be/bggw4JTFjgA?si=Jw08RDQLpTuG3BYe",
+    "links": [
+      {
+        "label": "Watch on YouTube",
+        "url": "https://youtu.be/bggw4JTFjgA?si=Jw08RDQLpTuG3BYe",
+        "icon": "mdi-youtube"
+      }
+    ],
+    "quote": "In security engineering, proactive defense requires understanding both the code and the organizational incentives."
+  },
+  {
+    "id": "media-chai-coaching-interview-mastery",
+    "title": "Chai & Coaching: How to Control Your Job Interview & Convince Recruiters to Hire You",
+    "outlet": "Chai & Coaching",
+    "type": "podcast",
+    "type_label": "Career Masterclass",
+    "year": "2024",
+    "date_display": "2024",
+    "badge_theme": "amber",
+    "icon_svg": "chai_coaching_badge.svg",
+    "highlight": "Executive Strategy",
+    "summary": "Masterclass on high-stakes interview execution, framing architectural trade-offs, driving the conversation narrative, and demonstrating technical authority to hiring committees.",
+    "topics": [
+      "Interview Strategy",
+      "System Design Negotiation",
+      "Executive Communication",
+      "Recruiter Alignment"
+    ],
+    "stats": "Career Masterclass",
+    "video_id": "iZkx6Ewq6wU",
+    "primary_url": "https://youtu.be/iZkx6Ewq6wU?si=eYUUPFW4AKpR36a6",
+    "links": [
+      {
+        "label": "Watch on YouTube",
+        "url": "https://youtu.be/iZkx6Ewq6wU?si=eYUUPFW4AKpR36a6",
+        "icon": "mdi-youtube"
+      }
+    ],
+    "quote": "The best candidate doesn't just answer questions\u2014they elevate the interview into an architectural collaboration."
+  },
+  {
+    "id": "media-trueml-talks-35",
+    "title": "TrueML Talks #35: Big Data and ML Practices at Palo Alto Networks",
+    "outlet": "TrueML Talks / TrueFoundry",
+    "type": "keynote",
+    "type_label": "Technical Keynote",
+    "year": "2024",
+    "date_display": "2024",
+    "badge_theme": "blue",
+    "icon_svg": "trueml_badge.svg",
+    "highlight": "Palo Alto Networks ML",
+    "summary": "Deep architectural lecture detailing high-throughput data pipelines, feature store engineering, and machine learning operational workflows powering enterprise security telemetry at Palo Alto Networks.",
+    "topics": [
+      "MLOps",
+      "Big Data",
+      "Palo Alto Networks",
+      "Feature Engineering",
+      "High-Throughput ML"
+    ],
+    "stats": "Enterprise ML Keynote",
+    "video_id": "1DxjMiOe580",
+    "primary_url": "https://youtu.be/1DxjMiOe580?si=aI9Xlf9Z3oyUop6n",
+    "links": [
+      {
+        "label": "Watch Session",
+        "url": "https://youtu.be/1DxjMiOe580?si=aI9Xlf9Z3oyUop6n",
+        "icon": "mdi-youtube"
+      },
+      {
+        "label": "TrueFoundry Article",
+        "url": "https://www.truefoundry.com/blog/big-data-and-ml-practices-at-palo-alto-networks",
+        "icon": "mdi-newspaper-variant-outline"
+      }
+    ],
+    "quote": "Production ML is 90% data orchestration and reliability engineering; the model is only as robust as its pipeline."
+  },
+  {
+    "id": "media-sz179-quantum-cybersecurity",
+    "title": "SZ 179: The Digital Battleground \u2014 Quantum & Cyber Security",
+    "outlet": "Startup Zone / Top Voices Unite",
+    "type": "keynote",
+    "type_label": "Symposium Panel",
+    "year": "2025",
+    "date_display": "2025",
+    "badge_theme": "purple",
+    "icon_svg": "quantum_battleground_badge.svg",
+    "highlight": "Quantum & AI Panel",
+    "summary": "High-level panel summit exploring quantum computing vulnerabilities, post-quantum cryptographic standards, and the algorithmic race between offensive and defensive cybersecurity architectures.",
+    "topics": [
+      "Quantum Computing",
+      "Post-Quantum Cryptography",
+      "Enterprise Defense",
+      "Digital Battleground"
+    ],
+    "stats": "Symposium Series",
+    "video_id": "E6kA_o57DrM",
+    "primary_url": "https://youtu.be/E6kA_o57DrM?si=1YhXasLUtF94J5EZ",
+    "links": [
+      {
+        "label": "Watch Part 1",
+        "url": "https://youtu.be/E6kA_o57DrM?si=1YhXasLUtF94J5EZ",
+        "icon": "mdi-youtube"
+      },
+      {
+        "label": "Watch Part 2",
+        "url": "https://youtu.be/HsBk_PfRrMY?si=ROq5O8iASPVj-8We",
+        "icon": "mdi-youtube"
+      },
+      {
+        "label": "Luma Event Page",
+        "url": "https://luma.com/thedigitalbattleground?tk=WtnmqJ",
+        "icon": "mdi-calendar-check"
+      },
+      {
+        "label": "LinkedIn Discussion",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7341476106115432448/",
+        "icon": "mdi-linkedin"
+      }
+    ],
+    "quote": "Post-quantum defense isn't a future milestone\u2014it requires cryptographic agility embedded in today's microservices."
+  },
+  {
+    "id": "media-futureagi-talk",
+    "title": "FutureAGI: Powering Cybersecurity with GenAI & Intelligent Agents",
+    "outlet": "FutureAGI",
+    "type": "keynote",
+    "type_label": "AI Masterclass",
+    "year": "2025",
+    "date_display": "2025",
+    "badge_theme": "blue",
+    "icon_svg": "futureagi_badge.svg",
+    "highlight": "Agentic AI Keynote",
+    "summary": "Technical deep dive on architecting autonomous agentic loops, generative AI guardrails, deterministic policy verification, and defensive triage in multi-cloud infrastructure.",
+    "topics": [
+      "GenAI Defense",
+      "Intelligent Agents",
+      "Policy Verification",
+      "Autonomous SecOps"
+    ],
+    "stats": "Invited Keynote",
+    "video_id": "MPhFC1h5GIc",
+    "primary_url": "https://youtu.be/MPhFC1h5GIc?si=B5uQXexHIKw2dAk0",
+    "links": [
+      {
+        "label": "Watch Masterclass",
+        "url": "https://youtu.be/MPhFC1h5GIc?si=B5uQXexHIKw2dAk0",
+        "icon": "mdi-youtube"
+      },
+      {
+        "label": "Luma Invite",
+        "url": "https://luma.com/ozoptgmg",
+        "icon": "mdi-ticket-confirmation"
+      },
+      {
+        "label": "LinkedIn Feature",
+        "url": "https://www.linkedin.com/posts/harshverma59_cybersecurity-genai-aiinnovation-activity-7357580628168503296-q2sW",
+        "icon": "mdi-linkedin"
+      }
+    ],
+    "quote": "Intelligent agents must operate under strict deterministic governance; autonomy without bounded perimeters is a vulnerability."
+  },
+  {
+    "id": "media-skydeck-era-agentic-security",
+    "title": "UC Berkeley SkyDeck: The Era of Agentic Security (Batch 21 Keynote)",
+    "outlet": "UC Berkeley SkyDeck",
+    "type": "keynote",
+    "type_label": "Accelerator Keynote",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "gold",
+    "icon_svg": "skydeck_badge.svg",
+    "highlight": "UC Berkeley Official",
+    "summary": "Published on the official University of California, Berkeley SkyDeck channel: a keynote lecture defining the transition from rule-based monitoring to autonomous agentic reasoning and self-healing cloud perimeters.",
+    "topics": [
+      "UC Berkeley SkyDeck",
+      "Agentic Security",
+      "Autonomous Systems",
+      "Zero Trust",
+      "Startup Scalability"
+    ],
+    "stats": "Official UC Berkeley Keynote",
+    "video_id": "IZvHxEtMMnw",
+    "primary_url": "https://youtu.be/IZvHxEtMMnw?si=JqvMyLKF_PTfqFDI",
+    "links": [
+      {
+        "label": "Watch Berkeley Keynote",
+        "url": "https://youtu.be/IZvHxEtMMnw?si=JqvMyLKF_PTfqFDI",
+        "icon": "mdi-youtube"
+      },
+      {
+        "label": "LinkedIn Post",
+        "url": "https://www.linkedin.com/posts/harshverma59_b21-the-era-of-agentic-security-harsh-verma-activity-7430053931965382657-97p5",
+        "icon": "mdi-linkedin"
+      }
+    ],
+    "quote": "Agentic security isn't just about faster triage; it is about delegating verified decision loops to autonomous software."
+  },
+  {
+    "id": "media-xraised-beyond-code",
+    "title": "Xraised: Beyond the Code \u2014 The Future of AI & Cybersecurity",
+    "outlet": "Xraised / Spotify / Amazon Music",
+    "type": "podcast",
+    "type_label": "Broadcast Feature",
+    "year": "2026",
+    "date_display": "March 2026",
+    "badge_theme": "purple",
+    "icon_svg": "xraised_spotify_badge.svg",
+    "highlight": "Spotify & Amazon Music",
+    "summary": "Broadcast interview streamed globally across Xraised, Spotify, and Amazon Music exploring why AI system architecture, deterministic control planes, and governance supersede model size in production AI.",
+    "topics": [
+      "Engineering Beyond Code",
+      "Spotify Podcast",
+      "Amazon Music",
+      "AI Governance",
+      "Enterprise Architecture"
+    ],
+    "stats": "Global Multimedia Broadcast",
+    "primary_url": "https://xraised.com/videos/ai-engineering-beyond-code/",
+    "links": [
+      {
+        "label": "Watch on Xraised",
+        "url": "https://xraised.com/videos/ai-engineering-beyond-code/",
+        "icon": "mdi-video"
+      },
+      {
+        "label": "Listen on Spotify",
+        "url": "https://open.spotify.com/episode/39F8nE6WUBW1LInqZtPuCx?si=OIUJ9R2dSAaFbfW6He2FPQ",
+        "icon": "mdi-spotify"
+      },
+      {
+        "label": "Amazon Music",
+        "url": "https://music.amazon.com.mx/podcasts/04efeb4a-c716-440b-a935-0a38ad4e868f/episodes/052c82bf-ffa8-4732-b74e-7993a8c5daec/xraised-ai-engineering-beyond-code",
+        "icon": "mdi-music"
+      },
+      {
+        "label": "FinancialContent Article",
+        "url": "https://markets.financialcontent.com/stocks/article/marketersmedia-2026-3-25-harsh-verma-on-engineering-beyond-the-code-the-future-of-ai-and-cybersecurity",
+        "icon": "mdi-chart-line"
+      },
+      {
+        "label": "AI Journ Feature",
+        "url": "https://aijourn.com/harsh-verma-on-engineering-beyond-the-code-the-future-of-ai-and-cybersecurity/",
+        "icon": "mdi-newspaper"
+      }
+    ],
+    "quote": "The next decade belongs to engineers who can bridge stochastic foundation models with deterministic enterprise guarantees."
+  },
+  {
+    "id": "media-business-insider-gra-2026",
+    "title": "Business Insider: Harsh Verma Receives 2026 Global Recognition Award for Enterprise AI Advances",
+    "outlet": "Business Insider / Markets Insider",
+    "type": "press",
+    "type_label": "Tier 1 Press",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "blue",
+    "icon_svg": "business_insider_badge.svg",
+    "highlight": "Markets Insider Feature",
+    "summary": "Business Insider profiles Harsh Verma following his 2026 Global Recognition Award win, recognizing measurable technological breakthroughs in scalable enterprise AI, copilot architectures, and zero-trust cloud infrastructure at Palo Alto Networks.",
+    "topics": [
+      "Global Recognition Award",
+      "Business Insider",
+      "Palo Alto Networks",
+      "Enterprise AI",
+      "Market Leadership"
+    ],
+    "stats": "Tier 1 Business Press",
+    "primary_url": "https://markets.businessinsider.com/news/stocks/harsh-verma-receives-a-2026-global-recognition-award-for-measurable-advances-in-enterprise-ai-and-cybersecurity-1035986499",
+    "links": [
+      {
+        "label": "Read on Business Insider",
+        "url": "https://markets.businessinsider.com/news/stocks/harsh-verma-receives-a-2026-global-recognition-award-for-measurable-advances-in-enterprise-ai-and-cybersecurity-1035986499",
+        "icon": "mdi-open-in-new"
+      },
+      {
+        "label": "Official GRA Citation",
+        "url": "https://globalrecognitionawards.org/winners/2026/harsh-verma-recognized-with-a-2026-global-recognition-award/",
+        "icon": "mdi-trophy"
+      }
+    ],
+    "quote": "Verma's architectural leadership at Palo Alto Networks demonstrates how autonomous intelligence can be reliably embedded into mission-critical infrastructure."
+  },
+  {
+    "id": "media-ifgict-fellowship-timebusiness",
+    "title": "Time Business News: Harsh Verma Conferred Prestigious IFGICT Fellowship for Green ICT & AI Leadership",
+    "outlet": "Time Business News",
+    "type": "press",
+    "type_label": "Fellowship Feature",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "emerald",
+    "icon_svg": "time_business_badge.svg",
+    "highlight": "UN SDG & Green AI",
+    "summary": "Time Business News chronicles Harsh Verma's induction into the International Federation of Global Green ICT (IFGICT), spotlighting his advocacy for sustainable compute paradigms and energy-efficient AI architectures.",
+    "topics": [
+      "IFGICT Fellowship",
+      "Green ICT",
+      "Sustainable AI",
+      "UN SDGs",
+      "Global Recognition"
+    ],
+    "stats": "International Press",
+    "primary_url": "https://timebusinessnews.com/harsh-verma-ifgict/",
+    "links": [
+      {
+        "label": "Read Article",
+        "url": "https://timebusinessnews.com/harsh-verma-ifgict/",
+        "icon": "mdi-newspaper"
+      }
+    ],
+    "quote": "Sustainable compute is no longer a peripheral metric; it is an architectural requirement for scalable AI."
+  },
+  {
+    "id": "media-cybersecurity-excellence-awards-feature",
+    "title": "Cybersecurity Excellence Awards: AI Innovator of the Year Candidate Showcase",
+    "outlet": "Cybersecurity Excellence Awards",
+    "type": "press",
+    "type_label": "Official Showcase",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "purple",
+    "icon_svg": "cybersecurity_excellence_badge.svg",
+    "highlight": "AI Innovator Candidate",
+    "summary": "Official profile and nomination directory showcasing Verma's pioneering work in generative security operations, proactive threat prevention, and copilot tooling across the Palo Alto Networks ecosystem.",
+    "topics": [
+      "Cybersecurity Excellence",
+      "AI Innovator",
+      "Threat Prevention",
+      "Palo Alto Networks"
+    ],
+    "stats": "Official Award Candidate",
+    "primary_url": "https://cybersecurity-excellence-awards.com/candidates/ai-innovator-of-the-year-2026/?_se=aHZlcm1hQHBhbG9hbHRvbmV0d29ya3MuY29t",
+    "links": [
+      {
+        "label": "View Candidate Showcase",
+        "url": "https://cybersecurity-excellence-awards.com/candidates/ai-innovator-of-the-year-2026/?_se=aHZlcm1hQHBhbG9hbHRvbmV0d29ya3MuY29t",
+        "icon": "mdi-trophy-variant"
+      }
+    ],
+    "quote": "Bridging machine intelligence and security operations transforms security analysts from reactive firefighters into proactive policy architects."
+  },
+  {
+    "id": "media-nyweekly-journal-feature",
+    "title": "NY Weekly Journal: The Engineer Rewriting the Rules by Thinking \u201cAI Beyond the Code\u201d",
+    "outlet": "NY Weekly Journal",
+    "type": "interview",
+    "type_label": "Editorial Profile",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "gold",
+    "icon_svg": "nyweekly_badge.svg",
+    "highlight": "Executive Profile",
+    "summary": "Comprehensive magazine biography exploring Verma's career trajectory from academic honors to shaping Silicon Valley enterprise AI systems, illuminating his guiding philosophy on architectural determinism.",
+    "topics": [
+      "Career Biography",
+      "AI Beyond Code",
+      "Silicon Valley Leadership",
+      "Systems Thinking"
+    ],
+    "stats": "Magazine Feature",
+    "primary_url": "https://nyweeklyjournal.com/blog/the-engineer-rewriting-the-rules-by-thinking-%E2%80%9Cai-beyond-the-code%E2%80%9D-inside-the-world-of-harsh-verma",
+    "links": [
+      {
+        "label": "Read NY Weekly Feature",
+        "url": "https://nyweeklyjournal.com/blog/the-engineer-rewriting-the-rules-by-thinking-%E2%80%9Cai-beyond-the-code%E2%80%9D-inside-the-world-of-harsh-verma",
+        "icon": "mdi-book-open-page-variant"
+      }
+    ],
+    "quote": "True engineering craftsmanship is not measured by lines of code written, but by the resilience of the systems left standing."
+  },
+  {
+    "id": "media-health-tech-week-speaker",
+    "title": "Health Tech Week 2026: Featured Keynote Speaker & Clinical AI Authority",
+    "outlet": "Health Tech Week",
+    "type": "keynote",
+    "type_label": "Conference Speaker",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "blue",
+    "icon_svg": "healthtech_badge.svg",
+    "highlight": "Healthcare AI",
+    "summary": "Official speaker profile and keynote session on healthcare AI infrastructure, privacy-preserving machine learning, and safeguarding sensitive electronic telemetry under zero-trust paradigms.",
+    "topics": [
+      "Healthcare AI",
+      "HIPAA Compliance",
+      "Federated Privacy",
+      "Clinical Telemetry"
+    ],
+    "stats": "Keynote Speaker",
+    "primary_url": "https://healthtechweek.org/speakers/harsh-verma",
+    "links": [
+      {
+        "label": "Speaker Profile",
+        "url": "https://healthtechweek.org/speakers/harsh-verma",
+        "icon": "mdi-account-star"
+      }
+    ],
+    "quote": "In healthcare AI, privacy and verifiable determinism are not compliance checkboxes\u2014they are clinical imperatives."
+  },
+  {
+    "id": "media-noble-tech-awards-muse-world",
+    "title": "Noble Technology Awards & Muse World: 2026 Inaugural Gold Laureate Announcement",
+    "outlet": "Noble Technology Awards / Muse.world",
+    "type": "press",
+    "type_label": "Industry Award Press",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "gold",
+    "icon_svg": "noble_tech_badge.svg",
+    "highlight": "Gold Winner #145",
+    "summary": "International press release announcing Harsh Verma as Gold Winner (#145) at the inaugural Noble Technology Awards for ground-breaking multi-agent security frameworks and enterprise resilience.",
+    "topics": [
+      "Nobel Technology Awards",
+      "Globee Winner Circle",
+      "Gold Laureate",
+      "Agentic Defense"
+    ],
+    "stats": "International Award Press",
+    "primary_url": "https://nobletechnologyawards.com/winner.php?page=2&competition_id=&category=&rank=&review=",
+    "links": [
+      {
+        "label": "Noble Winners Directory",
+        "url": "https://nobletechnologyawards.com/winner.php?page=2&competition_id=&category=&rank=&review=",
+        "icon": "mdi-trophy"
+      },
+      {
+        "label": "Muse.world Feature",
+        "url": "https://www.muse.world/post/2026-noble-technology-awards-announces-inaugural-winners-of-the-year",
+        "icon": "mdi-newspaper"
+      }
+    ],
+    "quote": "Recognized among global laureates for redefining how security architectures interface with autonomous agent clusters."
+  },
+  {
+    "id": "media-twill-rocket-vibe-shift",
+    "title": "Twill x Rocket: Inside Vibe Shift \u2014 The Builders Behind the Models",
+    "outlet": "WeAreTwill / Rocket / YouTube",
+    "type": "podcast",
+    "type_label": "Panel & Podcast",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "blue",
+    "icon_svg": "twill_rocket_badge.svg",
+    "highlight": "Scaling AI Panel",
+    "summary": "High-impact panel conversation between top tech leaders on the cultural, operational, and engineering hurdles of transitioning generative models from prototype demos to enterprise-scale systems.",
+    "topics": [
+      "AI Builders",
+      "Threads & Community",
+      "Model Scaling",
+      "Engineering Culture"
+    ],
+    "stats": "Builder Podcast",
+    "video_id": "yXy_zYlhnfc",
+    "primary_url": "https://wearetwill.com/p/big-ideas-bigger-opportunities-join-threads-scaling-ai-explore-job-openings-at-the-bottom-of-this-em-f410",
+    "links": [
+      {
+        "label": "Twill Article",
+        "url": "https://wearetwill.com/p/big-ideas-bigger-opportunities-join-threads-scaling-ai-explore-job-openings-at-the-bottom-of-this-em-f410",
+        "icon": "mdi-newspaper"
+      },
+      {
+        "label": "Watch Full Video",
+        "url": "https://youtu.be/yXy_zYlhnfc?si=IOg2fCAtJFR7AQfZ",
+        "icon": "mdi-youtube"
+      },
+      {
+        "label": "LinkedIn Feature",
+        "url": "https://www.linkedin.com/feed/update/urn:li:share:7457860978379001856/",
+        "icon": "mdi-linkedin"
+      }
+    ],
+    "quote": "The hype focuses on raw parameters; the engineering focus must be on deterministic guardrails and latency bounds."
+  },
+  {
+    "id": "media-influencer-mag-nomination-times-square",
+    "title": "Influencer Magazine UK: Harsh Verma Nominated for Tech Excellence Award (Times Square NYC)",
+    "outlet": "Influencer Magazine UK / Times Square NYC",
+    "type": "press",
+    "type_label": "Times Square Feature",
+    "year": "2026",
+    "date_display": "May 2026",
+    "badge_theme": "gold",
+    "icon_svg": "influencer_uk_badge.svg",
+    "highlight": "Times Square NYC",
+    "summary": "Cover feature and Times Square billboard broadcast highlighting Verma's nomination for the prestigious 2026 Tech Excellence Award in London, celebrating his architectural leadership in autonomous human-AI collaboration.",
+    "topics": [
+      "Influencer Magazine UK",
+      "Times Square NYC",
+      "Tech Excellence",
+      "Global AI Leadership"
+    ],
+    "stats": "Times Square NYC Broadcast",
+    "primary_url": "https://influencermagazine.uk/2026/05/harsh-verma-nominated-for-tech-excellence-award-at-influencer-magazine-awards-2026-e2/",
+    "links": [
+      {
+        "label": "Influencer UK Article",
+        "url": "https://influencermagazine.uk/2026/05/harsh-verma-nominated-for-tech-excellence-award-at-influencer-magazine-awards-2026-e2/",
+        "icon": "mdi-newspaper"
+      },
+      {
+        "label": "Editorial Bio Page",
+        "url": "https://influencermagazine.uk/harsh-verma",
+        "icon": "mdi-account"
+      },
+      {
+        "label": "Instagram Post 1",
+        "url": "https://www.instagram.com/p/DYSEXmMswXj/",
+        "icon": "mdi-instagram"
+      },
+      {
+        "label": "Instagram Post 2",
+        "url": "https://www.instagram.com/p/DaPUPeoMjAg/",
+        "icon": "mdi-instagram"
+      },
+      {
+        "label": "X (Twitter) Post",
+        "url": "https://x.com/influencer_uk/status/2054569202019619214",
+        "icon": "mdi-twitter"
+      },
+      {
+        "label": "Times Square Footage",
+        "url": "https://drive.google.com/drive/folders/1uxPhb7qzNFYFcywEAkuI3CwnYFlReb_i",
+        "icon": "mdi-google-drive"
+      }
+    ],
+    "quote": "Broadcast live across Times Square Manhattan, celebrating a new standard for ethical, resilient enterprise AI architectures."
+  },
+  {
+    "id": "media-business-insider-agentic-framework",
+    "title": "Business Insider: Harsh Verma Publishes Nuanced Framework on Rise of Agentic AI & Enterprise System Era",
+    "outlet": "Business Insider / Markets Insider",
+    "type": "press",
+    "type_label": "Tier 1 Press",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "blue",
+    "icon_svg": "business_insider_badge.svg",
+    "highlight": "Architectural Manifesto",
+    "summary": "Nationally syndicated Business Insider feature covering Verma's groundbreaking treatise arguing that system-level integration, state evaluation, and cryptographic perimeter controls have officially replaced model building as the core discipline of enterprise AI.",
+    "topics": [
+      "Agentic AI Framework",
+      "Business Insider",
+      "System Era",
+      "Enterprise Paradigm Shift"
+    ],
+    "stats": "Tier 1 Thought Leadership",
+    "primary_url": "https://markets.businessinsider.com/news/stocks/harsh-verma-publishes-nuanced-framework-on-rise-of-agentic-ai-and-enterprise-system-era-arguing-ai-system-architecture-has-replaced-model-building-as-the-core-discipline-1036188755",
+    "links": [
+      {
+        "label": "Read on Business Insider",
+        "url": "https://markets.businessinsider.com/news/stocks/harsh-verma-publishes-nuanced-framework-on-rise-of-agentic-ai-and-enterprise-system-era-arguing-ai-system-architecture-has-replaced-model-building-as-the-core-discipline-1036188755",
+        "icon": "mdi-newspaper"
+      }
+    ],
+    "quote": "Model performance has commoditized; competitive advantage now resides in the determinism and observability of the orchestrating system."
+  },
+  {
+    "id": "media-forttuna-powerlist-times-square",
+    "title": "Forttuna Global 100: THE POWER LIST 2026 & Times Square NYC Mega-Screen Broadcast",
+    "outlet": "Forttuna Global 100 / Markets Insider",
+    "type": "press",
+    "type_label": "Global Power List",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "gold",
+    "icon_svg": "timessquare_forttuna_badge.svg",
+    "highlight": "Nasdaq & Times Square",
+    "summary": "Honored in the prestigious Forttuna Global 100: The Power List 2026 alongside international business leaders, accompanied by dedicated video broadcasts across Times Square NYC and official Council appointment.",
+    "topics": [
+      "Forttuna Global 100",
+      "Times Square NYC",
+      "Power List 2026",
+      "Global Councils",
+      "Business Insider"
+    ],
+    "stats": "Global 100 Honoree",
+    "primary_url": "https://global100.forttuna.com/the-power-list-2026-honorees/profile?name=harsh-verma",
+    "links": [
+      {
+        "label": "Forttuna Honoree Profile",
+        "url": "https://global100.forttuna.com/the-power-list-2026-honorees/profile?name=harsh-verma",
+        "icon": "mdi-account-star"
+      },
+      {
+        "label": "Global 100 Directory",
+        "url": "https://global100.forttuna.com/the-power-list-2026-honorees/",
+        "icon": "mdi-format-list-numbered"
+      },
+      {
+        "label": "Times Square Memories",
+        "url": "https://global100.forttuna.com/the-power-list-2026-memories",
+        "icon": "mdi-camera"
+      },
+      {
+        "label": "Council Profile",
+        "url": "https://councils.forttuna.com/council-member/harsh-verma/",
+        "icon": "mdi-shield-account"
+      },
+      {
+        "label": "Business Insider Release",
+        "url": "https://markets.businessinsider.com/news/stocks/the-forttuna-group-announces-the-anniversary-edition-of-forttuna-global-100-the-power-list-2026-celebrating-leadership-beyond-boundaries-1036222228",
+        "icon": "mdi-newspaper"
+      },
+      {
+        "label": "LinkedIn Announcement",
+        "url": "https://www.linkedin.com/posts/theforttunagroup_forttuna-global-100-the-power-list-2026-activity-7466651135668531200-7Pt4",
+        "icon": "mdi-linkedin"
+      },
+      {
+        "label": "Times Square Event Post",
+        "url": "https://www.linkedin.com/posts/forttunaglobal100-thepowerlist2026-timessquare-ugcPost-7468183704612343809-2fFk",
+        "icon": "mdi-linkedin"
+      }
+    ],
+    "quote": "Recognized in New York City's Times Square as one of the 100 visionary global leaders defining the future of AI and cybersecurity."
+  },
+  {
+    "id": "media-street-insider-human-ai",
+    "title": "Street Insider: Principal AI Engineer Harsh Verma Nominated for Tech Excellence as Human-AI Collaboration Gains Enterprise Attention",
+    "outlet": "Street Insider / MarketersMedia",
+    "type": "press",
+    "type_label": "Financial Wire",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "blue",
+    "icon_svg": "streetinsider_badge.svg",
+    "highlight": "Wall Street Wire",
+    "summary": "Financial wire publication dissecting Verma's research on interactive agent interfaces, multi-tiered supervisory loops, and human-in-the-loop governance models attracting Wall Street attention.",
+    "topics": [
+      "Human-AI Collaboration",
+      "Street Insider",
+      "Financial Capital",
+      "Supervisory Loops"
+    ],
+    "stats": "Financial News Wire",
+    "primary_url": "https://www.streetinsider.com/The+Financial+Capital/Principal+AI+Engineer+Harsh+Verma+Nominated+for+Tech+Excellence+Award+at+Influencer+Magazine+Awards+2026+as+His+Work+on+Human%E2%80%93AI+Collaboration+Gains+Enterprise+Attention/26595570.html",
+    "links": [
+      {
+        "label": "Read on Street Insider",
+        "url": "https://www.streetinsider.com/The+Financial+Capital/Principal+AI+Engineer+Harsh+Verma+Nominated+for+Tech+Excellence+Award+at+Influencer+Magazine+Awards+2026+as+His+Work+on+Human%E2%80%93AI+Collaboration+Gains+Enterprise+Attention/26595570.html",
+        "icon": "mdi-chart-bar"
+      },
+      {
+        "label": "MarketersMedia Release",
+        "url": "https://news.marketersmedia.com/principal-ai-engineer-harsh-verma-nominated-for-tech-excellence-award-at-influencer-magazine-awards-2026-as-his-work-on-human-ai-collaboration-gains-enterprise-attention/89193808",
+        "icon": "mdi-newspaper"
+      }
+    ],
+    "quote": "Autonomous AI should not displace human operators; it must augment situational awareness through verifiable copilot architectures."
+  },
+  {
+    "id": "media-influencer-uk-double-triumph",
+    "title": "Influencer Magazine UK: Harsh Verma \u2014 A Double Triumph in AI and Cybersecurity Innovation",
+    "outlet": "Influencer Magazine UK",
+    "type": "interview",
+    "type_label": "Magazine Feature",
+    "year": "2026",
+    "date_display": "July 2026",
+    "badge_theme": "purple",
+    "icon_svg": "influencer_uk_badge.svg",
+    "highlight": "Dual Winner Spotlight",
+    "summary": "Editorial deep-dive detailing Verma's dual victory at the 2026 Cybersecurity Excellence Awards (Community Choice & Silver Awards), highlighting his contributions to autonomous AI threat mitigation.",
+    "topics": [
+      "Double Triumph",
+      "Cybersecurity Excellence",
+      "Threat Mitigation",
+      "Influencer UK"
+    ],
+    "stats": "Feature Editorial",
+    "primary_url": "https://influencermagazine.uk/2026/07/harsh-verma-a-double-triumph-in-ai-and-cybersecurity-innovation/",
+    "links": [
+      {
+        "label": "Read Magazine Feature",
+        "url": "https://influencermagazine.uk/2026/07/harsh-verma-a-double-triumph-in-ai-and-cybersecurity-innovation/",
+        "icon": "mdi-book-open"
+      },
+      {
+        "label": "Instagram Feature",
+        "url": "https://www.instagram.com/influencermagazine_uk/p/DavYIGtDFus/",
+        "icon": "mdi-instagram"
+      }
+    ],
+    "quote": "The dual honor underscores that technical rigor and community recognition can unite around transformative security architectures."
+  },
+  {
+    "id": "media-hackernoon-production-gap",
+    "title": "HackerNoon: The Production Gap \u2014 Your AI Model Isn\u2019t as Reliable as You Think (Interview)",
+    "outlet": "HackerNoon",
+    "type": "interview",
+    "type_label": "Tech Interview",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "emerald",
+    "icon_svg": "hackernoon_badge.svg",
+    "highlight": "HackerNoon Exclusive",
+    "summary": "Front-page HackerNoon tech interview dissecting the 'Production Gap'\u2014the chasm between benchmark metrics and real-world failure modes, prompt regressions, and data drift in live enterprise deployments.",
+    "topics": [
+      "HackerNoon",
+      "AI Production Gap",
+      "Model Reliability",
+      "Prompt Regressions",
+      "ML Engineering"
+    ],
+    "stats": "HackerNoon Editorial",
+    "primary_url": "https://hackernoon.com/the-production-gap-your-ai-model-isnt-as-reliable-as-you-think-interview",
+    "links": [
+      {
+        "label": "Read Full Interview",
+        "url": "https://hackernoon.com/the-production-gap-your-ai-model-isnt-as-reliable-as-you-think-interview",
+        "icon": "mdi-code-braces"
+      },
+      {
+        "label": "HackerNoon Author Tag",
+        "url": "https://hackernoon.com/tagged/harsh-verma-interview",
+        "icon": "mdi-tag-outline"
+      }
+    ],
+    "quote": "If your AI deployment lacks deterministic guardrails, your system isn't production-ready\u2014it is merely an unmonitored experiment."
+  },
+  {
+    "id": "media-usa-today-identity-perimeters",
+    "title": "USA Today: Identity is Replacing Network Perimeters as the Foundation of Enterprise in the Age of AI Agents",
+    "outlet": "USA Today",
+    "type": "press",
+    "type_label": "Tier 1 Press",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "blue",
+    "icon_svg": "usatoday_badge.svg",
+    "highlight": "USA Today National Press",
+    "summary": "USA Today feature detailing Harsh Verma's thesis on the post-perimeter enterprise: as autonomous AI agents initiate API calls and negotiate credentials, cryptographic agent identity becomes the new security perimeter.",
+    "topics": [
+      "USA Today",
+      "Agent Identity",
+      "Zero Trust",
+      "Perimeter Defense",
+      "Cryptographic Trust"
+    ],
+    "stats": "National Wire Release",
+    "primary_url": "https://www.usatoday.com/press-release/story/36801/harsh-verma-principal-ai-engineer-highlights-personal-findings-on-why-identity-is-replacing-network-perimeters-as-the-foundation-of-enterprise-in-the-age-of-ai-agents/",
+    "links": [
+      {
+        "label": "Read on USA Today",
+        "url": "https://www.usatoday.com/press-release/story/36801/harsh-verma-principal-ai-engineer-highlights-personal-findings-on-why-identity-is-replacing-network-perimeters-as-the-foundation-of-enterprise-in-the-age-of-ai-agents/",
+        "icon": "mdi-newspaper"
+      }
+    ],
+    "quote": "Network boundaries evaporate when autonomous agents act on your behalf across distributed clouds. Identity is the only perimeter that survives."
+  },
+  {
+    "id": "media-ein-knox-news-tech-excellence",
+    "title": "EIN News & Knox News: Harsh Verma Wins Tech Excellence Award at Influencer Magazine Awards 2026",
+    "outlet": "EIN Presswire / Knox News / USA Today Network",
+    "type": "press",
+    "type_label": "Press Wire",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "gold",
+    "icon_svg": "ein_news_badge.svg",
+    "highlight": "Tech Excellence Winner",
+    "summary": "Official international press wire announcement confirming Harsh Verma as the Gold Winner of the Tech Excellence Award, syndicated across EIN Presswire, Knox News, and the USA Today Network.",
+    "topics": [
+      "EIN News",
+      "Knox News",
+      "Tech Excellence Winner",
+      "Cloud Architecture"
+    ],
+    "stats": "Syndicated Press Wire",
+    "primary_url": "https://tech.einnews.com/pr_news/920520116/harsh-verma-wins-tech-excellence-award-at-influencer-magazine-awards-2026",
+    "links": [
+      {
+        "label": "EIN News Release",
+        "url": "https://tech.einnews.com/pr_news/920520116/harsh-verma-wins-tech-excellence-award-at-influencer-magazine-awards-2026",
+        "icon": "mdi-newspaper"
+      },
+      {
+        "label": "Knox News Article",
+        "url": "https://www.knoxnews.com/press-release/story/202174/harsh-verma-wins-tech-excellence-award-at-influencer-magazine-awards-2026/",
+        "icon": "mdi-newspaper-variant"
+      }
+    ],
+    "quote": "Recognized for enduring contributions to large-scale enterprise systems, real-time data pipelines, and next-generation AI security."
+  },
+  {
+    "id": "media-newsbreak-unified-framework",
+    "title": "NewsBreak: AI Expert Harsh Verma Introduces Unified Framework for Enterprise AI: From Orchestration to Trust, Identity, and Observability",
+    "outlet": "NewsBreak / MarketersMedia",
+    "type": "press",
+    "type_label": "Syndicated Tech News",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "red",
+    "icon_svg": "newsbreak_badge.svg",
+    "highlight": "Four Pillars Framework",
+    "summary": "Tech wire analysis of Verma's unified architectural framework establishing the four non-negotiable pillars of enterprise AI: resilient orchestration, verifiable trust, cryptographic identity, and full-stack observability.",
+    "topics": [
+      "NewsBreak",
+      "Enterprise AI Framework",
+      "Observability",
+      "Cryptographic Trust",
+      "Orchestration"
+    ],
+    "stats": "Syndicated News",
+    "primary_url": "https://www.newsbreak.com/dmr-news-321522575/4771042688609-ai-expert-harsh-verma-introduces-unified-framework-for-enterprise-ai-from-orchestration-to-trust-identity-and-observability",
+    "links": [
+      {
+        "label": "Read on NewsBreak",
+        "url": "https://www.newsbreak.com/dmr-news-321522575/4771042688609-ai-expert-harsh-verma-introduces-unified-framework-for-enterprise-ai-from-orchestration-to-trust-identity-and-observability",
+        "icon": "mdi-newspaper"
+      },
+      {
+        "label": "MarketersMedia Wire",
+        "url": "https://news.marketersmedia.com/ai-expert-harsh-verma-introduces-unified-framework-for-enterprise-ai-from-orchestration-to-trust-identity-and-observability/89197847",
+        "icon": "mdi-open-in-new"
+      }
+    ],
+    "quote": "Building an AI framework without comprehensive observability is like flying a supersonic jet without instruments."
+  },
+  {
+    "id": "media-berkeley-skydeck-newsletter-july15",
+    "title": "UC Berkeley SkyDeck Newsletter: Spotlight on HackerNoon Interview on Agentic AI",
+    "outlet": "UC Berkeley SkyDeck Newsletter",
+    "type": "institutional",
+    "type_label": "Accelerator Newsletter",
+    "year": "2026",
+    "date_display": "July 15, 2026",
+    "badge_theme": "gold",
+    "icon_svg": "skydeck_badge.svg",
+    "highlight": "50K+ Tech Network",
+    "summary": "Highlighted in the official global newsletter of UC Berkeley SkyDeck to thousands of founders, institutional VCs, and engineers for his widely cited HackerNoon interview dissecting production AI vulnerabilities.",
+    "topics": [
+      "UC Berkeley SkyDeck",
+      "Newsletter Spotlight",
+      "Agentic AI",
+      "Founder Mentorship"
+    ],
+    "stats": "Institutional Spotlight",
+    "primary_url": "https://mailchi.mp/berkeley/skydecknewsletter-071526",
+    "links": [
+      {
+        "label": "View SkyDeck Newsletter",
+        "url": "https://mailchi.mp/berkeley/skydecknewsletter-071526",
+        "icon": "mdi-email-newsletter"
+      }
+    ],
+    "quote": "SkyDeck spotlights Harsh Verma's industry-leading insights on why production AI requires systemic reliability."
+  },
+  {
+    "id": "media-berkeley-skydeck-batch22-workshop",
+    "title": "UC Berkeley SkyDeck Workshop: Era of Agentic Security and Governance in the Age of Autonomy (Batch 22)",
+    "outlet": "UC Berkeley SkyDeck",
+    "type": "keynote",
+    "type_label": "Executive Masterclass",
+    "year": "2026",
+    "date_display": "June 22, 2026",
+    "badge_theme": "gold",
+    "icon_svg": "skydeck_badge.svg",
+    "highlight": "Batch 22 Masterclass",
+    "summary": "Specialized executive workshop delivered to Berkeley SkyDeck Batch 22 cohort founders, detailing practical blueprints for implementing runtime safety sandboxes, policy engines, and token-level authorization in multi-agent workflows.",
+    "topics": [
+      "SkyDeck Batch 22",
+      "Agentic Governance",
+      "UC Berkeley",
+      "Startup Security Architecture"
+    ],
+    "stats": "Executive Workshop",
+    "primary_url": "https://skydeck.berkeley.edu/",
+    "links": [
+      {
+        "label": "UC Berkeley SkyDeck",
+        "url": "https://skydeck.berkeley.edu/",
+        "icon": "mdi-school"
+      }
+    ],
+    "quote": "Founders must build security into their agent loops from day one; retrofitting guardrails into autonomous systems is ten times harder."
+  },
+  {
+    "id": "media-primeful-insights-industry-icon",
+    "title": "Primeful Insights: Industry Icon 2026 Feature & Cover Story",
+    "outlet": "Primeful Insights",
+    "type": "interview",
+    "type_label": "Cover Icon Feature",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "gold",
+    "icon_svg": "primeful_badge.svg",
+    "highlight": "Industry Icon 2026",
+    "summary": "Selected as an official Industry Icon of 2026 by Primeful Insights, celebrating executive thought leadership in enterprise AI, scalable software engineering, and technical mentorship across global ecosystems.",
+    "topics": [
+      "Industry Icon",
+      "Primeful Insights",
+      "Executive Leadership",
+      "AI Strategy"
+    ],
+    "stats": "Industry Icon Cover",
+    "primary_url": "https://primefulinsights.com/harsh-verma/",
+    "links": [
+      {
+        "label": "Icon Profile Page",
+        "url": "https://primefulinsights.com/harsh-verma/",
+        "icon": "mdi-account-star"
+      },
+      {
+        "label": "Industry Icons Directory",
+        "url": "https://primefulinsights.com/industry-icons/",
+        "icon": "mdi-trophy-variant"
+      },
+      {
+        "label": "LinkedIn Post 1",
+        "url": "https://www.linkedin.com/posts/primefulinsights-industryicon2026-harshverma-share-7488535397275238400-TnGA",
+        "icon": "mdi-linkedin"
+      },
+      {
+        "label": "LinkedIn Post 2",
+        "url": "https://www.linkedin.com/posts/primeful-insights-pvt-ltd_primefulinsights-industryicon2026-harshverma-activity-7488889672748802048-X8KW",
+        "icon": "mdi-linkedin"
+      },
+      {
+        "label": "Instagram Post",
+        "url": "https://instagram.com/p/DbacnmzEtwr/",
+        "icon": "mdi-instagram"
+      }
+    ],
+    "quote": "True industry leadership is about unlocking clarity in the midst of technical complexity and elevating those who build alongside you."
+  },
+  {
+    "id": "media-berkeley-skydeck-newsletter-aug5",
+    "title": "UC Berkeley SkyDeck Newsletter: Forbes AI Governance & Iterative Experimentation",
+    "outlet": "UC Berkeley SkyDeck Newsletter",
+    "type": "institutional",
+    "type_label": "Accelerator Newsletter",
+    "year": "2026",
+    "date_display": "August 5, 2026",
+    "badge_theme": "gold",
+    "icon_svg": "skydeck_badge.svg",
+    "highlight": "Forbes Research Spotlight",
+    "summary": "Spotlighted in UC Berkeley SkyDeck's August newsletter for his Forbes Technology Council research arguing that enterprises must treat early AI agents as iterative, bounded experiments rather than monolithic deliverables.",
+    "topics": [
+      "Forbes Technology Council",
+      "SkyDeck Newsletter",
+      "AI Risk Management",
+      "Iterative Governance"
+    ],
+    "stats": "Institutional Feature",
+    "primary_url": "https://mailchi.mp/berkeley/skydecknewsletter-080526?e=6a097303d2",
+    "links": [
+      {
+        "label": "View Newsletter",
+        "url": "https://mailchi.mp/berkeley/skydecknewsletter-080526?e=6a097303d2",
+        "icon": "mdi-email-open"
+      }
+    ],
+    "quote": "Treating AI agents as experiments prevents premature optimization and forces teams to establish concrete safety boundaries before broad rollout."
+  },
+  {
+    "id": "media-berkeley-skydeck-advisor-listing",
+    "title": "UC Berkeley SkyDeck: Official Global Advisory Council Listing",
+    "outlet": "UC Berkeley SkyDeck",
+    "type": "institutional",
+    "type_label": "Advisory Appointment",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "gold",
+    "icon_svg": "skydeck_badge.svg",
+    "highlight": "Berkeley SkyDeck Advisor",
+    "summary": "Officially listed on the University of California, Berkeley SkyDeck official advisor network, actively advising breakthrough deep-tech, AI, and cybersecurity startups across global cohorts.",
+    "topics": [
+      "SkyDeck Advisor",
+      "UC Berkeley",
+      "Venture Mentorship",
+      "Deep Tech Acceleration"
+    ],
+    "stats": "Official Advisor Listing",
+    "primary_url": "https://skydeck.berkeley.edu/advisors/",
+    "links": [
+      {
+        "label": "SkyDeck Advisors Directory",
+        "url": "https://skydeck.berkeley.edu/advisors/",
+        "icon": "mdi-account-supervisor-circle"
+      }
+    ],
+    "quote": "Mentoring the next generation of founders at UC Berkeley SkyDeck to engineer resilient, defensible enterprise platforms."
+  },
+  {
+    "id": "media-google-developer-expert-listing",
+    "title": "Google Developer Experts: Official Global GDE Directory Listing",
+    "outlet": "Google Developers",
+    "type": "institutional",
+    "type_label": "Google GDE Directory",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "blue",
+    "icon_svg": "google_experts_badge.svg",
+    "highlight": "Google Recognized Expert",
+    "summary": "Officially inducted and listed on the Google Developer Experts global directory for exemplary technical expertise, speaking, and community leadership in Google Cloud and Machine Learning architectures.",
+    "topics": [
+      "Google Developer Expert",
+      "GDE Directory",
+      "Google Cloud",
+      "Machine Learning",
+      "Community Leadership"
+    ],
+    "stats": "Official Google Directory",
+    "primary_url": "https://developers.google.com/community/experts/directory?text=Harsh%20Verma",
+    "links": [
+      {
+        "label": "Google GDE Directory Profile",
+        "url": "https://developers.google.com/community/experts/directory?text=Harsh%20Verma",
+        "icon": "mdi-google"
+      }
+    ],
+    "quote": "Empowering engineers globally through verified expertise in cloud scalability, AI pipelines, and distributed architectures."
+  },
+  {
+    "id": "media-influencer-uk-ai-production-gap",
+    "title": "Influencer Magazine UK: The AI Production Gap \u2014 Why Models Fail in the Real World",
+    "outlet": "Influencer Magazine UK",
+    "type": "interview",
+    "type_label": "Technical Editorial",
+    "year": "2026",
+    "date_display": "July 2026",
+    "badge_theme": "purple",
+    "icon_svg": "influencer_uk_badge.svg",
+    "highlight": "System Resilience",
+    "summary": "Technical deep-dive editorial exploring why state-of-the-art models degrade in high-concurrency enterprise settings, analyzing distribution shifts, latency tail-risks, and semantic drift.",
+    "topics": [
+      "AI Production Gap",
+      "Model Failure Modes",
+      "Enterprise Resilience",
+      "Influencer UK"
+    ],
+    "stats": "Editorial Deep Dive",
+    "primary_url": "https://influencermagazine.uk/2026/07/the-ai-production-gap-harsh-verma-on-why-models-fail-in-the-real-world/",
+    "links": [
+      {
+        "label": "Read Article",
+        "url": "https://influencermagazine.uk/2026/07/the-ai-production-gap-harsh-verma-on-why-models-fail-in-the-real-world/",
+        "icon": "mdi-newspaper"
+      },
+      {
+        "label": "Instagram Feature",
+        "url": "https://www.instagram.com/influencermagazine_uk/p/DbLc3K6iAHt/",
+        "icon": "mdi-instagram"
+      }
+    ],
+    "quote": "A model is an isolated statistical engine; production resilience comes from the surrounding validation architecture."
+  },
+  {
+    "id": "media-cio-insightful-top5-leaders",
+    "title": "CIO Insightful: Top 5 Most Dynamic Leaders Shaping the Future in 2026",
+    "outlet": "CIO Insightful",
+    "type": "press",
+    "type_label": "Executive Ranking",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "gold",
+    "icon_svg": "cio_insightful_badge.svg",
+    "highlight": "Top 5 Leader 2026",
+    "summary": "Named among the 'Top 5 Most Dynamic Leaders Shaping the Future in 2026' by CIO Insightful, recognizing visionary foresight in engineering scalable enterprise AI solutions and zero-trust cloud perimeters.",
+    "topics": [
+      "CIO Insightful",
+      "Dynamic Leaders 2026",
+      "Executive Vision",
+      "Enterprise Cloud"
+    ],
+    "stats": "Executive Leadership List",
+    "primary_url": "https://cioinsightful.com/top-5-most-dynamic-leaders-shaping-the-future-in-2026/",
+    "links": [
+      {
+        "label": "View CIO Ranking",
+        "url": "https://cioinsightful.com/top-5-most-dynamic-leaders-shaping-the-future-in-2026/",
+        "icon": "mdi-trophy-award"
+      }
+    ],
+    "quote": "Leading with architectural conviction to transform how modern enterprises protect, automate, and scale intelligent systems."
+  },
+  {
+    "id": "media-vlink-tech-talk-ep55",
+    "title": "Tech Talk with VLink (Ep. 55): Enterprise AI \u2014 Building Solutions for Security, Scale & Trust",
+    "outlet": "VLink Inc / YouTube / YouTube Music",
+    "type": "podcast",
+    "type_label": "Featured Podcast",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "blue",
+    "icon_svg": "vlink_podcast_badge.svg",
+    "highlight": "Hour-Long Deep Dive",
+    "summary": "Full-length guest interview on Episode 55 of Tech Talk with VLink analyzing architectural blueprints for high-throughput enterprise AI, zero-trust token brokering, and building stakeholder trust.",
+    "topics": [
+      "VLink Tech Talk",
+      "Enterprise AI Podcast",
+      "YouTube Music",
+      "Zero Trust Architecture",
+      "Scale & Security"
+    ],
+    "stats": "Full Episode Podcast",
+    "video_id": "nIgJ99Bihsw",
+    "primary_url": "https://vlinkinfo.com/podcast/enterprise-ai-building-solutions-for-security-scale-trust",
+    "links": [
+      {
+        "label": "VLink Podcast Page",
+        "url": "https://vlinkinfo.com/podcast/enterprise-ai-building-solutions-for-security-scale-trust",
+        "icon": "mdi-podcast"
+      },
+      {
+        "label": "Watch on YouTube",
+        "url": "https://www.youtube.com/watch?v=nIgJ99Bihsw",
+        "icon": "mdi-youtube"
+      },
+      {
+        "label": "YouTube Music",
+        "url": "https://music.youtube.com/podcast/nIgJ99Bihsw",
+        "icon": "mdi-music-box"
+      },
+      {
+        "label": "LinkedIn Feature",
+        "url": "https://www.linkedin.com/posts/vlink-inc_ep-55-techtalkwithvlink-full-podcast-activity-7486065422622978048-wg4T",
+        "icon": "mdi-linkedin"
+      },
+      {
+        "label": "Instagram Reel",
+        "url": "https://www.instagram.com/reels/DbnhXI9q3p5/",
+        "icon": "mdi-instagram"
+      }
+    ],
+    "quote": "Trust in enterprise AI is not earned through promotional benchmark scores; it is earned through rigorous determinism and zero-trust verification."
+  },
+  {
+    "id": "media-barchart-control-problem",
+    "title": "Barchart: Principal Software Engineer Harsh Verma Decodes Why Enterprise AI Has Moved From a Model Problem to a Control Problem",
+    "outlet": "Barchart.com / MarketersMedia",
+    "type": "press",
+    "type_label": "Financial Analysis",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "blue",
+    "icon_svg": "barchart_badge.svg",
+    "highlight": "Financial Market Wire",
+    "summary": "Barchart analysis examining the macroeconomic shift in software capital allocation: how the center of gravity in enterprise software has pivoted from training larger models to building deterministic control planes.",
+    "topics": [
+      "Barchart",
+      "Control Problem",
+      "Financial Markets",
+      "Deterministic Control",
+      "Enterprise Capital"
+    ],
+    "stats": "Market Analysis Feature",
+    "primary_url": "https://www.barchart.com/story/news/3615130/principal-software-engineer-harsh-verma-decodes-why-enterprise-ai-has-moved-from-a-model-problem-to-a-control-problem",
+    "links": [
+      {
+        "label": "Read on Barchart",
+        "url": "https://www.barchart.com/story/news/3615130/principal-software-engineer-harsh-verma-decodes-why-enterprise-ai-has-moved-from-a-model-problem-to-a-control-problem",
+        "icon": "mdi-chart-areaspline"
+      },
+      {
+        "label": "MarketersMedia Release",
+        "url": "https://news.marketersmedia.com/principal-software-engineer-harsh-verma-decodes-why-enterprise-ai-has-moved-from-a-model-problem-to-a-control-problem/89199430",
+        "icon": "mdi-newspaper"
+      }
+    ],
+    "quote": "Enterprises don't fail with AI because the model isn't smart enough; they fail because they lack the control plane to govern its outputs."
+  },
+  {
+    "id": "media-muse-world-next-gen-secure-ai",
+    "title": "Muse World & Noble Awards: Harsh Verma Innovates to Lead the Next Generation of Secure AI Innovation",
+    "outlet": "Muse.world / Noble Awards Global",
+    "type": "press",
+    "type_label": "Global Profile",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "gold",
+    "icon_svg": "noble_tech_badge.svg",
+    "highlight": "Next-Gen AI Security",
+    "summary": "Global profile exploring Verma's methodology for embedding zero-trust architectural invariants directly into agent execution layers and tool-calling sandboxes at enterprise scale.",
+    "topics": [
+      "Secure AI Innovation",
+      "Muse World",
+      "Noble Awards",
+      "Prompt Sandboxing"
+    ],
+    "stats": "Global Feature",
+    "primary_url": "https://www.muse.world/post/harsh-verma-innovates-to-lead-the-next-generation-of-secure-ai-innovation",
+    "links": [
+      {
+        "label": "Read Muse.world Feature",
+        "url": "https://www.muse.world/post/harsh-verma-innovates-to-lead-the-next-generation-of-secure-ai-innovation",
+        "icon": "mdi-newspaper"
+      },
+      {
+        "label": "LinkedIn Discussion",
+        "url": "https://lnkd.in/p/gxq2jS6C",
+        "icon": "mdi-linkedin"
+      },
+      {
+        "label": "Facebook Official Post",
+        "url": "https://www.facebook.com/thenobleawards/posts/winning-this-award-is-a-meaningful-validation-of-how-to-view-technological-progr/122204342414433338/",
+        "icon": "mdi-facebook"
+      }
+    ],
+    "quote": "Winning this recognition validates how we must view technical progress: not by speed of generation, but by the certainty of safety."
+  },
+  {
+    "id": "media-yahoo-finance-cybersecurity-excellence",
+    "title": "Yahoo Finance: Cybersecurity Excellence Awards 2026 Announces Dual Recognition for Principal AI Engineer Harsh Verma",
+    "outlet": "Yahoo Finance / Newsfile Corp",
+    "type": "press",
+    "type_label": "Tier 1 Wire",
+    "year": "2026",
+    "date_display": "2026",
+    "badge_theme": "purple",
+    "icon_svg": "yahoo_finance_badge.svg",
+    "highlight": "Yahoo Finance Wire",
+    "summary": "Global financial press distribution on Yahoo Finance highlighting Harsh Verma's dual recognition in the 2026 Cybersecurity Excellence Awards as part of the World's Top Cybersecurity Achievements.",
+    "topics": [
+      "Yahoo Finance",
+      "Cybersecurity Excellence",
+      "Dual Recognition",
+      "Newsfile Corp",
+      "Top Cyber Achievements"
+    ],
+    "stats": "Tier 1 Global Wire",
+    "primary_url": "https://finance.yahoo.com/technology/ai/articles/cybersecurity-excellence-awards-2026-announces-022700731.html",
+    "links": [
+      {
+        "label": "Read on Yahoo Finance",
+        "url": "https://finance.yahoo.com/technology/ai/articles/cybersecurity-excellence-awards-2026-announces-022700731.html",
+        "icon": "mdi-finance"
+      },
+      {
+        "label": "Newsfile Corp Wire",
+        "url": "https://www.newsfilecorp.com/release/309183/Cybersecurity-Excellence-Awards-2026-Announces-Dual-Recognition-for-Principal-AI-Engineer-Harsh-Verma",
+        "icon": "mdi-newspaper"
+      }
+    ],
+    "quote": "The Cybersecurity Excellence Awards recognize Harsh Verma's transformative contributions in merging machine intelligence with enterprise threat defense."
+  },
+  {
+    "id": "media-influencer-uk-forttuna-powerlist",
+    "title": "Influencer Magazine UK: Harsh Verma Named to Forttuna Global 100 \u2014 THE POWER LIST 2026",
+    "outlet": "Influencer Magazine UK",
+    "type": "interview",
+    "type_label": "Cover Feature",
+    "year": "2026",
+    "date_display": "August 2026",
+    "badge_theme": "gold",
+    "icon_svg": "influencer_uk_badge.svg",
+    "highlight": "Power List Cover",
+    "summary": "In-depth cover story analyzing Verma's induction into the Forttuna Global 100 Power List 2026, breaking down his vision for driving deterministic AI pipelines and autonomous cybersecurity infrastructure globally.",
+    "topics": [
+      "Forttuna Global 100",
+      "The Power List 2026",
+      "Deterministic AI",
+      "Autonomous Cybersecurity",
+      "Influencer UK"
+    ],
+    "stats": "Cover Editorial",
+    "primary_url": "https://influencermagazine.uk/2026/08/harsh-verma-named-to-forttuna-global-100-the-power-list-2026-driving-the-future-of-deterministic-ai-and-autonomous-cybersecurity/",
+    "links": [
+      {
+        "label": "Read Cover Story",
+        "url": "https://influencermagazine.uk/2026/08/harsh-verma-named-to-forttuna-global-100-the-power-list-2026-driving-the-future-of-deterministic-ai-and-autonomous-cybersecurity/",
+        "icon": "mdi-star-circle"
+      },
+      {
+        "label": "Author & Profile Bio",
+        "url": "https://influencermagazine.uk/harsh-verma/",
+        "icon": "mdi-account"
+      }
+    ],
+    "quote": "Named to the Forttuna Global 100 for championing deterministic AI systems and creating international benchmarks for autonomous resilience."
+  }
+]

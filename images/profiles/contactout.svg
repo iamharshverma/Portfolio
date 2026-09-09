@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+    <rect width="100" height="100" rx="18" fill="#059669"/>
+    <rect x="2" y="2" width="96" height="96" rx="16" stroke="#34d399" stroke-width="2" fill="none"/>
+    <circle cx="50" cy="40" r="14" fill="#ffffff" fill-opacity="0.2"/>
+    <path d="M50 30 C44 30 40 34 40 40 C40 47 50 56 50 56 C50 56 60 47 60 40 C60 34 56 30 50 30 Z M50 43 C48 43 46 41 46 39 C46 37 48 35 50 35 C52 35 54 37 54 39 C54 41 52 43 50 43 Z" fill="#ffffff"/>
+    <rect x="16" y="68" width="68" height="14" rx="7" fill="#064e3b"/>
+    <text x="50" y="78" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="7" font-weight="800" text-anchor="middle" letter-spacing="0.5">CONTACTOUT</text>
+  </svg>

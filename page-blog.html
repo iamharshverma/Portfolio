@@ -1,0 +1,2252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30250521-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-30250521-4');
+    </script>
+    <meta charset="UTF-8">
+    <title>Harsh Verma | Thought Leadership, Forbes Council & Tech Publications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore published articles, technical research, and thought leadership by Harsh Verma across Forbes Technology Council, HackerNoon, RSA Conference, The AI Journal, and Founders Creative." />
+    <meta name="keywords" content="Harsh Verma, Forbes Technology Council, HackerNoon, RSA Conference, The AI Journal, Agentic AI, AI Architecture, Cybersecurity, Zero Trust, Tech Publications" />
+    <meta content="Harsh Verma" name="author" />
+    <meta property="og:title" content="Harsh Verma | Thought Leadership, Forbes Council & Tech Publications" />
+    <meta property="og:description" content="Explore published articles, technical research, and thought leadership by Harsh Verma across Forbes Technology Council, HackerNoon, RSA Conference, The AI Journal, and Founders Creative." />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon_new.ico">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Main css File -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Dark Mode css File -->
+    <link href="css/dark-mode.css" rel="stylesheet" type="text/css" />
+    <script src="js/dark-mode.js"></script>
+    
+    <style>
+        /* Modern Blog Page Styles */
+        .blog-card {
+            background: #ffffff;
+            border: 1px solid rgba(226, 232, 240, 0.95);
+            border-radius: 18px;
+            box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+            transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.32s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.32s ease;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+            will-change: transform, box-shadow;
+        }
+        .blog-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0) 0%, rgba(79, 70, 229, 0.95) 30%, rgba(147, 51, 234, 0.95) 70%, rgba(147, 51, 234, 0) 100%);
+            opacity: 0;
+            transition: opacity 0.32s ease;
+            z-index: 10;
+            pointer-events: none;
+        }
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 22px 42px -10px rgba(15, 23, 42, 0.12), 0 0 24px 2px rgba(79, 70, 229, 0.12), 0 0 0 1px rgba(79, 70, 229, 0.22) !important;
+            border-color: rgba(79, 70, 229, 0.35);
+        }
+        .blog-card:hover::before {
+            opacity: 1;
+        }
+        .blog-thumbnail-wrap {
+            height: 205px;
+            background-color: #0f172a;
+            position: relative;
+            overflow: hidden;
+        }
+        .blog-thumbnail-wrap::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.02) 40%, rgba(15, 23, 42, 0.45) 100%);
+            pointer-events: none;
+            z-index: 1;
+            transition: opacity 0.3s ease;
+        }
+        .blog-card:hover .blog-thumbnail-wrap::after {
+            opacity: 0.8;
+        }
+        .blog-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .blog-card:hover .blog-img {
+            transform: scale(1.06);
+        }
+        .blog-platform-badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            padding: 5px 12px;
+            font-size: 11px;
+            font-weight: 700;
+            border-radius: 20px;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+            z-index: 2;
+            display: inline-flex;
+            align-items: center;
+        }
+        .badge-forbes {
+            background: rgba(17, 24, 39, 0.92);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+        .badge-hackernoon {
+            background: rgba(0, 48, 19, 0.92);
+            color: #00ea62;
+            border: 1px solid rgba(0, 234, 98, 0.6);
+        }
+        .badge-aijournal {
+            background: rgba(30, 58, 138, 0.92);
+            color: #93c5fd;
+            border: 1px solid rgba(147, 197, 253, 0.4);
+        }
+        .badge-rsac {
+            background: rgba(127, 29, 29, 0.92);
+            color: #fecaca;
+            border: 1px solid rgba(254, 202, 202, 0.4);
+        }
+        .badge-founderscreative {
+            background: rgba(124, 45, 18, 0.92);
+            color: #ffedd5;
+            border: 1px solid rgba(255, 237, 213, 0.4);
+        }
+        .blog-featured-ribbon {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: #ffffff;
+            padding: 4px 10px;
+            font-size: 10px;
+            font-weight: 800;
+            border-radius: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            z-index: 2;
+            box-shadow: 0 4px 10px rgba(217, 119, 6, 0.4);
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .blog-card .content {
+            padding: 1.35rem 1.4rem;
+        }
+        .card-title {
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1.42;
+            letter-spacing: -0.2px;
+            margin-bottom: 0.6rem;
+        }
+        .card-title a {
+            color: #0f172a;
+            text-decoration: none;
+            transition: color 0.22s ease;
+        }
+        .blog-card:hover .card-title a,
+        .card-title a:hover {
+            color: #4f46e5 !important;
+        }
+        .blog-desc {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: 13.5px;
+            line-height: 1.62;
+            color: #475569 !important;
+            margin-bottom: 0.9rem;
+        }
+        .blog-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 1rem;
+        }
+        .badge-light-custom {
+            background: #f8fafc;
+            color: #475569;
+            font-weight: 600;
+            font-size: 11px;
+            padding: 4px 9px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            cursor: pointer;
+            transition: all 0.18s ease;
+            user-select: none;
+        }
+        .badge-light-custom:hover {
+            background: #eef2ff;
+            color: #4338ca;
+            border-color: #c7d2fe;
+            transform: translateY(-1px);
+        }
+        .badge-spotify {
+            background: #1db954;
+            color: #000000;
+            font-weight: 700;
+            font-size: 11px;
+            padding: 4px 8px;
+            border-radius: 6px;
+            text-decoration: none !important;
+        }
+        .badge-substack {
+            background: #ff6600;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 11px;
+            padding: 4px 8px;
+            border-radius: 6px;
+            text-decoration: none !important;
+        }
+        .post-meta {
+            padding-top: 0.85rem;
+            border-top: 1px solid rgba(226, 232, 240, 0.85);
+            margin-top: auto;
+        }
+        .post-meta .btn-outline-primary {
+            border-color: rgba(79, 70, 229, 0.35);
+            color: #4f46e5;
+            background: rgba(79, 70, 229, 0.04);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 5px 14px;
+            border-radius: 20px;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+        .post-meta .btn-outline-primary i {
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+        .post-meta .btn-outline-primary:hover {
+            background: #4f46e5;
+            color: #ffffff !important;
+            border-color: #4f46e5;
+            box-shadow: 0 4px 14px rgba(79, 70, 229, 0.32);
+            transform: translateY(-1px);
+        }
+        .post-meta .btn-outline-primary:hover i {
+            transform: translate(2px, -2px);
+        }
+        .btn-filter {
+            background: #ffffff;
+            color: #475569;
+            border: 1px solid #e2e8f0;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 7px 16px;
+            transition: all 0.2s ease;
+        }
+        .btn-filter:hover {
+            background: #f8fafc;
+            color: #0f172a;
+            border-color: #cbd5e1;
+        }
+        .btn-filter.active {
+            background: #4f46e5 !important;
+            color: #ffffff !important;
+            border-color: #4f46e5 !important;
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.35);
+        }
+        .btn-filter .badge {
+            background: rgba(0, 0, 0, 0.1);
+            color: inherit;
+        }
+        .btn-filter.active .badge {
+            background: rgba(255, 255, 255, 0.25);
+            color: #ffffff;
+        }
+        .search-box-wrap {
+            position: relative;
+            max-width: 520px;
+        }
+        .search-box-wrap input {
+            height: 48px;
+            padding-left: 44px;
+            padding-right: 40px;
+            border-radius: 24px;
+            border: 1px solid #cbd5e1;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+        .search-box-wrap input:focus {
+            border-color: #4f46e5;
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+            outline: none;
+        }
+        .search-icon-pos {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+            font-size: 20px;
+            pointer-events: none;
+        }
+        .search-clear-btn {
+            position: absolute;
+            right: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #94a3b8;
+            font-size: 18px;
+            cursor: pointer;
+            display: none;
+            padding: 0;
+        }
+        .search-clear-btn:hover {
+            color: #475569;
+        }
+        .author-channel-card {
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            padding: 16px 20px;
+            transition: all 0.2s ease;
+            text-decoration: none !important;
+            display: flex;
+            align-items: center;
+        }
+        .author-channel-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+            border-color: rgba(79, 70, 229, 0.3);
+        }
+
+        /* Dark Mode Adjustments */
+        body.dark-mode .blog-card {
+            background: #1e293b;
+            border-color: #334155;
+            box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.5);
+        }
+        body.dark-mode .blog-card::before {
+            background: linear-gradient(90deg, rgba(129, 140, 248, 0) 0%, rgba(129, 140, 248, 0.95) 30%, rgba(192, 132, 252, 0.95) 70%, rgba(192, 132, 252, 0) 100%);
+        }
+        body.dark-mode .blog-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(129, 140, 248, 0.5) !important;
+            box-shadow: 0 22px 42px -10px rgba(0, 0, 0, 0.75), 0 0 24px 2px rgba(129, 140, 248, 0.2), 0 0 0 1px rgba(129, 140, 248, 0.32) !important;
+        }
+        body.dark-mode .card-title a {
+            color: #f8fafc;
+        }
+        body.dark-mode .card-title a:hover,
+        body.dark-mode .blog-card:hover .card-title a {
+            color: #a5b4fc !important;
+        }
+        body.dark-mode .blog-desc {
+            color: #94a3b8 !important;
+        }
+        body.dark-mode .post-meta {
+            border-top-color: #334155 !important;
+        }
+        body.dark-mode .post-meta a.text-muted {
+            color: #94a3b8 !important;
+        }
+        body.dark-mode .post-meta .btn-outline-primary {
+            color: #a5b4fc;
+            border-color: rgba(165, 180, 252, 0.4);
+            background: rgba(99, 102, 241, 0.08);
+        }
+        body.dark-mode .post-meta .btn-outline-primary:hover {
+            background: #6366f1;
+            color: #ffffff !important;
+            border-color: #6366f1;
+            box-shadow: 0 4px 14px rgba(99, 102, 241, 0.45);
+        }
+        body.dark-mode .badge-light-custom {
+            background: #334155;
+            color: #cbd5e1;
+        }
+        body.dark-mode .badge-light-custom:hover {
+            background: #475569;
+            color: #ffffff;
+        }
+        body.dark-mode .btn-filter {
+            background: #1e293b;
+            color: #cbd5e1;
+            border-color: #334155;
+        }
+        body.dark-mode .btn-filter:hover {
+            background: #334155;
+            color: #ffffff;
+        }
+        body.dark-mode .search-box-wrap input {
+            background: #1e293b;
+            color: #f1f5f9;
+            border-color: #334155;
+        }
+        body.dark-mode .search-box-wrap input:focus {
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+        }
+        body.dark-mode .author-channel-card {
+            background: #1e293b;
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+        body.dark-mode .author-channel-card:hover {
+            background: #24334a;
+            border-color: rgba(99, 102, 241, 0.4);
+        }
+        body.dark-mode .author-channel-card h6 {
+            color: #f1f5f9 !important;
+        }
+    </style>
+    <!-- HV AI Copilot Styles -->
+    <link rel="stylesheet" href="css/hv-copilot.css" />
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky" id="navbar">
+        <div class="container">
+            <a class="navbar-brand brand-logo-wrap" href="index" title="Harsh Verma - Home">
+                <span class="brand-monogram-emblem">
+                    <svg class="brand-logo-svg" width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="hvNavGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#1e40af" />
+                                <stop offset="55%" stop-color="#2563eb" />
+                                <stop offset="100%" stop-color="#4f46e5" />
+                            </linearGradient>
+                            <linearGradient id="hvNavAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#38bdf8" />
+                                <stop offset="100%" stop-color="#818cf8" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="40" height="40" rx="10" fill="url(#hvNavGrad)" />
+                        <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+                        <path d="M11 12V28M11 20H19M19 12V28" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M23 12L28.5 28L34 12" stroke="url(#hvNavAccentGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="34" cy="12" r="1.75" fill="#38bdf8" />
+                    </svg>
+                </span>
+                <span class="brand-name-text">
+                    <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-publications">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-awards">Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-memberships">Memberships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-events">Speaker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-books">Books</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="page-blog">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More <i class="mdi mdi-chevron-down nav-dropdown-arrow"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right nav-custom-dropdown" aria-labelledby="navbarDropdown">
+                            <div class="nav-dropdown-header">
+                                <span>Extended Portfolios &amp; Hubs</span>
+                            </div>
+                            <a class="dropdown-item nav-dropdown-item" href="page-portfolio">
+                                <div class="dropdown-item-icon bg-soft-info"><i class="mdi mdi-cube-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Portfolio Projects</span>
+                                    <span class="dropdown-item-desc">Architectures, agent frameworks &amp; systems</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-smart-slides">
+                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-presentation-play"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Smart Slides <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">New</span></span>
+                                    <span class="dropdown-item-desc">Interactive executive &amp; research slide decks</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-social">
+                                <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
+                                    <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
+                                <div class="dropdown-item-icon bg-soft-warning"><i class="mdi mdi-shield-account-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">38 Verified Profiles Hub</span>
+                                    <span class="dropdown-item-desc">Academic, editorial &amp; executive registries</span>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider my-2"></div>
+                            <a class="dropdown-item nav-dropdown-item" href="index#contact">
+                                <div class="dropdown-item-icon bg-soft-danger"><i class="mdi mdi-email-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Contact Harsh</span>
+                                    <span class="dropdown-item-desc">Advisory, keynotes &amp; consultations</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
+                    <li class="list-inline-item mr-2">
+                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (22+ Papers)">
+                            <i class="mdi mdi-school"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="nav-social-btn" title="LinkedIn Profile">
+                            <i class="mdi mdi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://www.instagram.com/iamharshverma/" target="_blank" class="nav-social-btn" title="Instagram Profile">
+                            <i class="mdi mdi-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://github.com/iamharshverma" target="_blank" class="nav-social-btn" title="GitHub Profile">
+                            <i class="mdi mdi-github-face"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section class="bg-half bg-light d-table w-100" style="background: url('images/home/hero-bg4_new.jpg') center center; background-size: cover;">
+        <div class="bg-overlay" style="background: rgba(15, 23, 42, 0.85);"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <div class="page-next-level">
+                        <div class="d-inline-flex align-items-center px-3 py-1 rounded-pill mb-3" style="background: rgba(99, 102, 241, 0.2); border: 1px solid rgba(99, 102, 241, 0.4); color: #c7d2fe; font-size: 13px; font-weight: 600;">
+                            <i class="mdi mdi-feather mr-1"></i> Thought Leadership &bull; Technical Architecture &bull; AI Security
+                        </div>
+                        <h1 class="title text-white font-weight-bold mb-3" style="font-size: 38px; letter-spacing: -0.5px;">Articles &amp; Thought Leadership</h1>
+                        <p class="text-white-50 mx-auto mb-4" style="max-width: 720px; font-size: 16px; line-height: 1.6;">
+                            Explorations in agentic systems architecture, zero-trust AI security, determinism, multi-agent orchestration, and enterprise technology strategy published across global platforms.
+                        </p>
+                        <div class="page-next">
+                            <nav aria-label="breadcrumb" class="d-inline-block">
+                                <ul class="breadcrumb rounded mb-0 mt-2" style="background: rgba(255, 255, 255, 0.1);">
+                                    <li class="breadcrumb-item"><a href="index" class="text-white">Home</a></li>
+                                    <li class="breadcrumb-item active text-primary font-weight-bold" aria-current="page">Blog &amp; Articles</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
+
+    <!-- Verified Contributor Profiles Hub -->
+    <section class="py-4 border-bottom" style="background: rgba(248, 250, 252, 0.8);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-md-3 mb-3 mb-md-0">
+                    <span class="text-uppercase small font-weight-bold text-muted" style="letter-spacing: 0.5px;">Verified Columnist:</span>
+                </div>
+                <div class="col-lg-10 col-md-9">
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-3 p-1">
+                            <a href="https://www.forbes.com/councils/forbestechcouncil/people/harshverma/" target="_blank" class="author-channel-card shadow-sm h-100">
+                                <i class="mdi mdi-shield-star text-dark mr-2" style="font-size: 22px;"></i>
+                                <div class="text-truncate">
+                                    <div class="font-weight-bold text-dark small">Forbes Council</div>
+                                    <div class="text-muted" style="font-size: 11px;">Author Profile &rarr;</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3 p-1">
+                            <a href="https://hackernoon.com/u/harshverma59" target="_blank" class="author-channel-card shadow-sm h-100">
+                                <i class="mdi mdi-code-braces mr-2" style="color: #00ea62; font-size: 22px;"></i>
+                                <div class="text-truncate">
+                                    <div class="font-weight-bold text-dark small">HackerNoon</div>
+                                    <div class="text-muted" style="font-size: 11px;">@harshverma59 &rarr;</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3 p-1">
+                            <a href="https://www.rsaconference.com/experts/Harsh%20Verma" target="_blank" class="author-channel-card shadow-sm h-100">
+                                <i class="mdi mdi-shield-check text-danger mr-2" style="font-size: 22px;"></i>
+                                <div class="text-truncate">
+                                    <div class="font-weight-bold text-dark small">RSA Conference</div>
+                                    <div class="text-muted" style="font-size: 11px;">RSAC Expert &rarr;</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3 p-1">
+                            <a href="https://open.spotify.com/episode/0aDrp6DxLSSlWQ6gwfbi0l" target="_blank" class="author-channel-card shadow-sm h-100">
+                                <i class="mdi mdi-spotify text-success mr-2" style="font-size: 22px;"></i>
+                                <div class="text-truncate">
+                                    <div class="font-weight-bold text-dark small">Spotify Podcast</div>
+                                    <div class="text-muted" style="font-size: 11px;">Tech Brief Audio &rarr;</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="section py-5">
+        <div class="container">
+            <!-- Search & Filter Controls -->
+            <div class="row justify-content-between align-items-center mb-4 pb-2">
+                <div class="col-lg-6 col-md-7 mb-3 mb-md-0">
+                    <div class="search-box-wrap">
+                        <i class="mdi mdi-magnify search-icon-pos"></i>
+                        <input type="text" id="blogSearchInput" class="form-control" placeholder="Search by topic, keyword (e.g. Agentic AI, Zero Trust, Forbes, Governance)..." autocomplete="off">
+                        <button type="button" id="blogSearchClear" class="search-clear-btn" title="Clear search">
+                            <i class="mdi mdi-close-circle"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5 d-flex justify-content-md-end align-items-center">
+                    <span id="resultsCountBadge" class="text-muted small mr-3 font-weight-medium">Showing all 27 publications</span>
+                    <div class="dropdown">
+                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle rounded-pill px-3 py-1 font-weight-medium" type="button" id="sortDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="mdi mdi-sort mr-1"></i>Sort By
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="sortDropdown">
+                            <a class="dropdown-item active" href="javascript:void(0)" onclick="sortArticles('featured')">Featured First</a>
+                            <a class="dropdown-item" href="javascript:void(0)" onclick="sortArticles('title')">Alphabetical Title</a>
+                            <a class="dropdown-item" href="javascript:void(0)" onclick="sortArticles('platform')">By Publication</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter Buttons Chips -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap align-items-center filter-chip-container">
+                        
+        <button type="button" class="btn btn-filter active mr-2 mb-2" data-filter="all">
+            <i class="mdi mdi-newspaper-variant-multiple mr-1"></i>All Publications 
+            <span class="badge badge-pill badge-dark ml-1">27</span>
+        </button>
+        
+        <button type="button" class="btn btn-filter  mr-2 mb-2" data-filter="Forbes">
+            <i class="mdi mdi-shield-star mr-1"></i>Forbes Tech Council 
+            <span class="badge badge-pill badge-dark ml-1">5</span>
+        </button>
+        
+        <button type="button" class="btn btn-filter  mr-2 mb-2" data-filter="HackerNoon">
+            <i class="mdi mdi-code-braces mr-1"></i>HackerNoon 
+            <span class="badge badge-pill badge-dark ml-1">12</span>
+        </button>
+        
+        <button type="button" class="btn btn-filter  mr-2 mb-2" data-filter="The AI Journal">
+            <i class="mdi mdi-newspaper-variant mr-1"></i>The AI Journal 
+            <span class="badge badge-pill badge-dark ml-1">6</span>
+        </button>
+        
+        <button type="button" class="btn btn-filter  mr-2 mb-2" data-filter="RSA Conference">
+            <i class="mdi mdi-shield-check mr-1"></i>RSA Conference 
+            <span class="badge badge-pill badge-dark ml-1">1</span>
+        </button>
+        
+        <button type="button" class="btn btn-filter  mr-2 mb-2" data-filter="Founders Creative">
+            <i class="mdi mdi-lightbulb-on-outline mr-1"></i>Founders Creative 
+            <span class="badge badge-pill badge-dark ml-1">1</span>
+        </button>
+        
+        <button type="button" class="btn btn-filter  mr-2 mb-2" data-filter="Interviews">
+            <i class="mdi mdi-microphone-variant mr-1"></i>Interviews & Podcasts 
+            <span class="badge badge-pill badge-dark ml-1">3</span>
+        </button>
+        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Articles Grid -->
+            <div class="row" id="blogArticlesGrid">
+                
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="Forbes" 
+             data-category="Engineering Leadership" 
+             data-featured="true"
+             data-search="beyond the code: the evolution of the next-generation engineer as code generation becomes commoditized, the next generation of engineers will differentiate through systems architecture, deterministic safety guardrails, prompt unit economics, and holistic cognitive system design. forbes forbes technology council engineering leadership forbes tech council next-gen engineer systems architecture ai evolution leadership">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/forbes-beyond-code.jpg" class="img-fluid w-100 blog-img" alt="Beyond The Code: The Evolution Of The Next-Generation Engineer" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-forbes">
+                        <i class="mdi mdi-shield-star mr-1"></i>Forbes Council
+                    </div>
+                    <div class="blog-featured-ribbon"><i class="mdi mdi-star"></i> Featured</div>
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>April 20, 2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>5 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/2026/04/20/beyond-the-code-the-evolution-of-the-next-generation-engineer/" target="_blank" class="title text-dark font-weight-bold" title="Beyond The Code: The Evolution Of The Next-Generation Engineer">
+                            Beyond The Code: The Evolution Of The Next-Generation Engineer
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        As code generation becomes commoditized, the next generation of engineers will differentiate through systems architecture, deterministic safety guardrails, prompt unit economics, and holistic cognitive system design.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Forbes Tech Council')">#Forbes Tech Council</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Next-Gen Engineer')">#Next-Gen Engineer</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Systems Architecture')">#Systems Architecture</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/people/harshverma/" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on Forbes">
+                            <i class="mdi mdi-shield-star mr-1 text-primary"></i>Forbes Technology Council
+                        </a>
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/2026/04/20/beyond-the-code-the-evolution-of-the-next-generation-engineer/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="Forbes" 
+             data-category="AI Economics & ROI" 
+             data-featured="true"
+             data-search="the intelligence per dollar metric: how influential leaders measure ai success moving past vanity parameter counts to evaluate enterprise ai investments through cost-performance efficiency, token roi, deterministic output density, and measurable business throughput. forbes forbes technology council ai economics & roi forbes tech council ai roi unit economics executive metrics cloud spend">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/forbes-intelligence-dollar.jpg" class="img-fluid w-100 blog-img" alt="The Intelligence Per Dollar Metric: How Influential Leaders Measure AI Success" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-forbes">
+                        <i class="mdi mdi-chart-line-variant mr-1"></i>Forbes Council
+                    </div>
+                    <div class="blog-featured-ribbon"><i class="mdi mdi-star"></i> Featured</div>
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>May 18, 2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>6 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/2026/05/18/the-intelligence-per-dollar-metric-how-influential-leaders-measure-ai-success/" target="_blank" class="title text-dark font-weight-bold" title="The Intelligence Per Dollar Metric: How Influential Leaders Measure AI Success">
+                            The Intelligence Per Dollar Metric: How Influential Leaders Measure AI Success
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        Moving past vanity parameter counts to evaluate enterprise AI investments through cost-performance efficiency, token ROI, deterministic output density, and measurable business throughput.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Forbes Tech Council')">#Forbes Tech Council</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('AI ROI')">#AI ROI</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Unit Economics')">#Unit Economics</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/people/harshverma/" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on Forbes">
+                            <i class="mdi mdi-chart-line-variant mr-1 text-primary"></i>Forbes Technology Council
+                        </a>
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/2026/05/18/the-intelligence-per-dollar-metric-how-influential-leaders-measure-ai-success/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="Forbes" 
+             data-category="Privacy & Security" 
+             data-featured="false"
+             data-search="personalized ai systems: the hidden trade-off behind smarter ai (personalization vs. privacy) an architectural examination of the fundamental tension between contextual user personalization and enterprise zero-trust data privacy in modern retrieval and agent ecosystems. forbes forbes technology council privacy & security forbes tech council privacy personalization data sovereignty zero trust">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/forbes-personalized-ai.jpg" class="img-fluid w-100 blog-img" alt="Personalized AI Systems: The Hidden Trade-Off Behind Smarter AI (Personalization vs. Privacy)" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-forbes">
+                        <i class="mdi mdi-lock-outline mr-1"></i>Forbes Council
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>June 11, 2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>5 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/2026/06/11/personalized-ai-systems-the-hidden-trade-off-behind-smarter-ai-personalization-vs-privacy/" target="_blank" class="title text-dark font-weight-bold" title="Personalized AI Systems: The Hidden Trade-Off Behind Smarter AI (Personalization vs. Privacy)">
+                            Personalized AI Systems: The Hidden Trade-Off Behind Smarter AI (Personalization vs. Privacy)
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        An architectural examination of the fundamental tension between contextual user personalization and enterprise zero-trust data privacy in modern retrieval and agent ecosystems.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Forbes Tech Council')">#Forbes Tech Council</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Privacy')">#Privacy</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Personalization')">#Personalization</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/people/harshverma/" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on Forbes">
+                            <i class="mdi mdi-lock-outline mr-1 text-primary"></i>Forbes Technology Council
+                        </a>
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/2026/06/11/personalized-ai-systems-the-hidden-trade-off-behind-smarter-ai-personalization-vs-privacy/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="Forbes" 
+             data-category="Agent Product Strategy" 
+             data-featured="false"
+             data-search="your first ai agent is an experiment, not a product autonomous agents behave like evolving operational actors rather than predictable static code. why founders and enterprise teams must adopt bounded experimental sandboxes before productizing. forbes forbes technology council agent product strategy forbes tech council agentic ai product strategy experimentation fail-safe design">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/forbes-first-agent-experiment.jpg" class="img-fluid w-100 blog-img" alt="Your First AI Agent Is An Experiment, Not A Product" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-forbes">
+                        <i class="mdi mdi-flask-outline mr-1"></i>Forbes Council
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>July 23, 2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>5 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/2026/07/23/your-first-ai-agent-is-an-experiment-not-a-product/" target="_blank" class="title text-dark font-weight-bold" title="Your First AI Agent Is An Experiment, Not A Product">
+                            Your First AI Agent Is An Experiment, Not A Product
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        Autonomous agents behave like evolving operational actors rather than predictable static code. Why founders and enterprise teams must adopt bounded experimental sandboxes before productizing.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Forbes Tech Council')">#Forbes Tech Council</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Agentic AI')">#Agentic AI</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Product Strategy')">#Product Strategy</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/people/harshverma/" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on Forbes">
+                            <i class="mdi mdi-flask-outline mr-1 text-primary"></i>Forbes Technology Council
+                        </a>
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/2026/07/23/your-first-ai-agent-is-an-experiment-not-a-product/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="Forbes" 
+             data-category="System Architecture" 
+             data-featured="true"
+             data-search="engineering the predictable: why pure determinism is becoming the new premium in ai architecture in mission-critical enterprise environments, repeatability and mathematical predictability command a higher commercial premium than stochastic creativity. how to design deterministic control layers over generative models. forbes forbes technology council system architecture forbes tech council determinism ai architecture enterprise security reliability">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/forbes-pure-determinism.jpg" class="img-fluid w-100 blog-img" alt="Engineering The Predictable: Why Pure Determinism Is Becoming The New Premium In AI Architecture" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-forbes">
+                        <i class="mdi mdi-cog-sync mr-1"></i>Forbes Council
+                    </div>
+                    <div class="blog-featured-ribbon"><i class="mdi mdi-star"></i> Featured</div>
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>August 25, 2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>6 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/2026/08/25/engineering-the-predictable-why-pure-determinism-is-becoming-the-new-premium-in-ai-architecture/" target="_blank" class="title text-dark font-weight-bold" title="Engineering The Predictable: Why Pure Determinism Is Becoming The New Premium In AI Architecture">
+                            Engineering The Predictable: Why Pure Determinism Is Becoming The New Premium In AI Architecture
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        In mission-critical enterprise environments, repeatability and mathematical predictability command a higher commercial premium than stochastic creativity. How to design deterministic control layers over generative models.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Forbes Tech Council')">#Forbes Tech Council</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Determinism')">#Determinism</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('AI Architecture')">#AI Architecture</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/people/harshverma/" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on Forbes">
+                            <i class="mdi mdi-cog-sync mr-1 text-primary"></i>Forbes Technology Council
+                        </a>
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/2026/08/25/engineering-the-predictable-why-pure-determinism-is-becoming-the-new-premium-in-ai-architecture/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="HackerNoon" 
+             data-category="Interviews" 
+             data-featured="true"
+             data-search="the production gap: your ai model isn’t as reliable as you think [feature interview] in-depth hackernoon interview breaking down the critical gap between benchmark performance and enterprise production reality, detailing architectural strategies for resilient model deployment. hackernoon hackernoon feature interview interviews hackernoon interview ai reliability production ml enterprise ai">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/hn-interview.png" class="img-fluid w-100 blog-img" alt="The Production Gap: Your AI Model Isn’t as Reliable as You Think [Feature Interview]" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-hackernoon">
+                        <i class="mdi mdi-account-voice mr-1"></i>Featured Interview
+                    </div>
+                    <div class="blog-featured-ribbon"><i class="mdi mdi-star"></i> Featured</div>
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>8 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://hackernoon.com/the-production-gap-your-ai-model-isnt-as-reliable-as-you-think-interview" target="_blank" class="title text-dark font-weight-bold" title="The Production Gap: Your AI Model Isn’t as Reliable as You Think [Feature Interview]">
+                            The Production Gap: Your AI Model Isn’t as Reliable as You Think [Feature Interview]
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        In-depth HackerNoon interview breaking down the critical gap between benchmark performance and enterprise production reality, detailing architectural strategies for resilient model deployment.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('HackerNoon')">#HackerNoon</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Interview')">#Interview</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('AI Reliability')">#AI Reliability</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://hackernoon.com/u/harshverma59" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on HackerNoon">
+                            <i class="mdi mdi-account-voice mr-1 text-primary"></i>HackerNoon Feature Interview
+                        </a>
+                        <a href="https://hackernoon.com/the-production-gap-your-ai-model-isnt-as-reliable-as-you-think-interview" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="HackerNoon" 
+             data-category="AI Security" 
+             data-featured="true"
+             data-search="identity is the new perimeter: managing ai agents as digital actors ai agents are transforming cybersecurity from network perimeter defenses to continuous identity-first authorization. featured on hackernoon's cybersecurity tech brief podcast on spotify. hackernoon hackernoon (spotify tech brief podcast) ai security hackernoon ai security identity access spotify podcast agent governance">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/hn-identity-perimeter.png" class="img-fluid w-100 blog-img" alt="Identity Is the New Perimeter: Managing AI Agents as Digital Actors" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-hackernoon">
+                        <i class="mdi mdi-podcast mr-1"></i>Article & Podcast
+                    </div>
+                    <div class="blog-featured-ribbon"><i class="mdi mdi-star"></i> Featured</div>
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>7 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://hackernoon.com/identity-is-the-new-perimeter-managing-ai-agents-as-digital-actors" target="_blank" class="title text-dark font-weight-bold" title="Identity Is the New Perimeter: Managing AI Agents as Digital Actors">
+                            Identity Is the New Perimeter: Managing AI Agents as Digital Actors
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        AI agents are transforming cybersecurity from network perimeter defenses to continuous identity-first authorization. Featured on HackerNoon's Cybersecurity Tech Brief podcast on Spotify.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('HackerNoon')">#HackerNoon</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('AI Security')">#AI Security</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Identity Access')">#Identity Access</span>
+                        
+            <a href="https://open.spotify.com/episode/0aDrp6DxLSSlWQ6gwfbi0l" target="_blank" class="badge badge-spotify ml-1" title="Listen on Spotify">
+                <i class="mdi mdi-spotify mr-1"></i>Spotify Podcast
+            </a>
+            
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://hackernoon.com/u/harshverma59" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on HackerNoon">
+                            <i class="mdi mdi-podcast mr-1 text-primary"></i>HackerNoon (Spotify Tech Brief Podcast)
+                        </a>
+                        <a href="https://hackernoon.com/identity-is-the-new-perimeter-managing-ai-agents-as-digital-actors" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="HackerNoon" 
+             data-category="Cybersecurity" 
+             data-featured="true"
+             data-search="the clean attack problem: when nothing looks wrong, but everything is compromised modern cyber threats no longer trigger noisy alarms. by abusing authorized api credentials and valid business logic, ai-driven attacks operate entirely within legitimate parameters. hackernoon hackernoon & rsac cybersecurity hackernoon cybersecurity zero trust silent exploits threat modeling">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/hn-clean-attack.png" class="img-fluid w-100 blog-img" alt="The Clean Attack Problem: When Nothing Looks Wrong, but Everything Is Compromised" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-hackernoon">
+                        <i class="mdi mdi-shield-alert mr-1"></i>HackerNoon
+                    </div>
+                    <div class="blog-featured-ribbon"><i class="mdi mdi-star"></i> Featured</div>
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>6 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://hackernoon.com/the-clean-attack-problem-when-nothing-looks-wrong-but-everything-is-compromised" target="_blank" class="title text-dark font-weight-bold" title="The Clean Attack Problem: When Nothing Looks Wrong, but Everything Is Compromised">
+                            The Clean Attack Problem: When Nothing Looks Wrong, but Everything Is Compromised
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        Modern cyber threats no longer trigger noisy alarms. By abusing authorized API credentials and valid business logic, AI-driven attacks operate entirely within legitimate parameters.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('HackerNoon')">#HackerNoon</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Cybersecurity')">#Cybersecurity</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Zero Trust')">#Zero Trust</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://hackernoon.com/u/harshverma59" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on HackerNoon">
+                            <i class="mdi mdi-shield-alert mr-1 text-primary"></i>HackerNoon & RSAC
+                        </a>
+                        <a href="https://hackernoon.com/the-clean-attack-problem-when-nothing-looks-wrong-but-everything-is-compromised" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="HackerNoon" 
+             data-category="System Architecture" 
+             data-featured="false"
+             data-search="the trade-off between speed and reliability in modern ai systems 'move fast and break things' causes catastrophic failure in mission-critical ai. why leading architectural teams prioritize deterministic verification over raw inference speed. hackernoon hackernoon system architecture hackernoon ai reliability latency vs quality deterministic guardrails">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/hn-speed-reliability.png" class="img-fluid w-100 blog-img" alt="The Trade-Off Between Speed and Reliability in Modern AI Systems" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-hackernoon">
+                        <i class="mdi mdi-speedometer mr-1"></i>HackerNoon
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>6 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://hackernoon.com/the-trade-off-between-speed-and-reliability-in-modern-ai-systems" target="_blank" class="title text-dark font-weight-bold" title="The Trade-Off Between Speed and Reliability in Modern AI Systems">
+                            The Trade-Off Between Speed and Reliability in Modern AI Systems
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        'Move fast and break things' causes catastrophic failure in mission-critical AI. Why leading architectural teams prioritize deterministic verification over raw inference speed.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('HackerNoon')">#HackerNoon</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('AI Reliability')">#AI Reliability</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Latency vs Quality')">#Latency vs Quality</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://hackernoon.com/u/harshverma59" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on HackerNoon">
+                            <i class="mdi mdi-speedometer mr-1 text-primary"></i>HackerNoon
+                        </a>
+                        <a href="https://hackernoon.com/the-trade-off-between-speed-and-reliability-in-modern-ai-systems" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="HackerNoon" 
+             data-category="Governance & Policy" 
+             data-featured="false"
+             data-search="ai governance is failing because we’re regulating models instead of behavior an analysis of why static model audits fail to capture multi-agent emergent behavior, and why runtime behavioral observability is the only defensible governance framework. hackernoon hackernoon governance & policy hackernoon ai governance compliance model audits behavioral safety">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/hn-governance.png" class="img-fluid w-100 blog-img" alt="AI Governance Is Failing Because We’re Regulating Models Instead of Behavior" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-hackernoon">
+                        <i class="mdi mdi-gavel mr-1"></i>HackerNoon
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>6 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://hackernoon.com/ai-governance-is-failing-because-were-regulating-models-instead-of-behavior" target="_blank" class="title text-dark font-weight-bold" title="AI Governance Is Failing Because We’re Regulating Models Instead of Behavior">
+                            AI Governance Is Failing Because We’re Regulating Models Instead of Behavior
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        An analysis of why static model audits fail to capture multi-agent emergent behavior, and why runtime behavioral observability is the only defensible governance framework.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('HackerNoon')">#HackerNoon</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('AI Governance')">#AI Governance</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Compliance')">#Compliance</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://hackernoon.com/u/harshverma59" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on HackerNoon">
+                            <i class="mdi mdi-gavel mr-1 text-primary"></i>HackerNoon
+                        </a>
+                        <a href="https://hackernoon.com/ai-governance-is-failing-because-were-regulating-models-instead-of-behavior" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="HackerNoon" 
+             data-category="Observability" 
+             data-featured="false"
+             data-search="the observability crisis in ai systems: why your logs are lying to you standard logging stacks report http 200s while models silently hallucinate, leak context, and drift. how semantic telemetry and cognitive tracing resolve the observability gap. hackernoon hackernoon observability hackernoon observability telemetry debugging ai tracing">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/hn-observability.png" class="img-fluid w-100 blog-img" alt="The Observability Crisis in AI Systems: Why Your Logs Are Lying to You" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-hackernoon">
+                        <i class="mdi mdi-eye-off-outline mr-1"></i>HackerNoon
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>7 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://hackernoon.com/the-observability-crisis-in-ai-systems-why-your-logs-are-lying-to-you" target="_blank" class="title text-dark font-weight-bold" title="The Observability Crisis in AI Systems: Why Your Logs Are Lying to You">
+                            The Observability Crisis in AI Systems: Why Your Logs Are Lying to You
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        Standard logging stacks report HTTP 200s while models silently hallucinate, leak context, and drift. How semantic telemetry and cognitive tracing resolve the observability gap.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('HackerNoon')">#HackerNoon</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Observability')">#Observability</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Telemetry')">#Telemetry</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://hackernoon.com/u/harshverma59" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on HackerNoon">
+                            <i class="mdi mdi-eye-off-outline mr-1 text-primary"></i>HackerNoon
+                        </a>
+                        <a href="https://hackernoon.com/the-observability-crisis-in-ai-systems-why-your-logs-are-lying-to-you" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="HackerNoon" 
+             data-category="Trust & Safety" 
+             data-featured="false"
+             data-search="reputation systems for ai agents: the missing layer of trust introducing behavioral scoring protocols and cryptographic audit trails to quantify trust before allowing autonomous agents to execute high-stakes cross-enterprise tasks. hackernoon hackernoon trust & safety hackernoon trust scores multi-agent reputation decentralized trust">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/hn-reputation.png" class="img-fluid w-100 blog-img" alt="Reputation Systems for AI Agents: The Missing Layer of Trust" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-hackernoon">
+                        <i class="mdi mdi-shield-star-outline mr-1"></i>HackerNoon
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>6 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://hackernoon.com/reputation-systems-for-ai-agents-the-missing-layer-of-trust" target="_blank" class="title text-dark font-weight-bold" title="Reputation Systems for AI Agents: The Missing Layer of Trust">
+                            Reputation Systems for AI Agents: The Missing Layer of Trust
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        Introducing behavioral scoring protocols and cryptographic audit trails to quantify trust before allowing autonomous agents to execute high-stakes cross-enterprise tasks.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('HackerNoon')">#HackerNoon</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Trust Scores')">#Trust Scores</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Multi-Agent')">#Multi-Agent</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://hackernoon.com/u/harshverma59" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on HackerNoon">
+                            <i class="mdi mdi-shield-star-outline mr-1 text-primary"></i>HackerNoon
+                        </a>
+                        <a href="https://hackernoon.com/reputation-systems-for-ai-agents-the-missing-layer-of-trust" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="HackerNoon" 
+             data-category="Distributed Systems" 
+             data-featured="false"
+             data-search="distributed intelligence: why multi-agent systems are the successor to microservices just as microservices decomposed monolithic codebases, autonomous multi-agent networks are decomposing complex reasoning workflows into distributed, collaborative nodes. hackernoon hackernoon distributed systems hackernoon multi-agent systems distributed intelligence microservices architecture">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/hn-distributed-intelligence.png" class="img-fluid w-100 blog-img" alt="Distributed Intelligence: Why Multi-Agent Systems Are the Successor to Microservices" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-hackernoon">
+                        <i class="mdi mdi-lan mr-1"></i>HackerNoon
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>7 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://hackernoon.com/distributed-intelligence-why-multi-agent-systems-are-the-successor-to-microservices-for-enterprise" target="_blank" class="title text-dark font-weight-bold" title="Distributed Intelligence: Why Multi-Agent Systems Are the Successor to Microservices">
+                            Distributed Intelligence: Why Multi-Agent Systems Are the Successor to Microservices
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        Just as microservices decomposed monolithic codebases, autonomous multi-agent networks are decomposing complex reasoning workflows into distributed, collaborative nodes.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('HackerNoon')">#HackerNoon</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Multi-Agent Systems')">#Multi-Agent Systems</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Distributed Intelligence')">#Distributed Intelligence</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://hackernoon.com/u/harshverma59" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on HackerNoon">
+                            <i class="mdi mdi-lan mr-1 text-primary"></i>HackerNoon
+                        </a>
+                        <a href="https://hackernoon.com/distributed-intelligence-why-multi-agent-systems-are-the-successor-to-microservices-for-enterprise" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="HackerNoon" 
+             data-category="Cybersecurity" 
+             data-featured="false"
+             data-search="from identity to intent: autonomous ai agents are the new insider threat when ai agents are granted access to internal production pipelines, authentication alone cannot prevent prompt injection or goal hijacking. we need continuous intent validation. hackernoon hackernoon cybersecurity hackernoon insider threat agent security zero trust intent analysis">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/hn-identity-intent.png" class="img-fluid w-100 blog-img" alt="From Identity to Intent: Autonomous AI Agents Are the New Insider Threat" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-hackernoon">
+                        <i class="mdi mdi-incognito mr-1"></i>HackerNoon
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>6 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://hackernoon.com/from-identity-to-intent-autonomous-ai-agents-are-the-new-insider-threat" target="_blank" class="title text-dark font-weight-bold" title="From Identity to Intent: Autonomous AI Agents Are the New Insider Threat">
+                            From Identity to Intent: Autonomous AI Agents Are the New Insider Threat
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        When AI agents are granted access to internal production pipelines, authentication alone cannot prevent prompt injection or goal hijacking. We need continuous intent validation.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('HackerNoon')">#HackerNoon</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Insider Threat')">#Insider Threat</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Agent Security')">#Agent Security</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://hackernoon.com/u/harshverma59" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on HackerNoon">
+                            <i class="mdi mdi-incognito mr-1 text-primary"></i>HackerNoon
+                        </a>
+                        <a href="https://hackernoon.com/from-identity-to-intent-autonomous-ai-agents-are-the-new-insider-threat" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="HackerNoon" 
+             data-category="Access Control" 
+             data-featured="false"
+             data-search="trust scores for ai: should agents earn permissions over time? trust isn’t granted, it’s earned a dynamic least-privilege architecture where autonomous digital actors start in sandboxed environments and earn higher api thresholds through validated track records. hackernoon hackernoon access control hackernoon dynamic permissions least privilege trust scoring agent policy">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/hn-trust-scores.png" class="img-fluid w-100 blog-img" alt="Trust Scores for AI: Should Agents Earn Permissions Over Time? Trust Isn’t Granted, It’s Earned" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-hackernoon">
+                        <i class="mdi mdi-certificate-outline mr-1"></i>HackerNoon
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>6 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://hackernoon.com/trust-scores-for-ai-should-agents-earn-permissions-over-time-trust-isnt-granted-its-earned" target="_blank" class="title text-dark font-weight-bold" title="Trust Scores for AI: Should Agents Earn Permissions Over Time? Trust Isn’t Granted, It’s Earned">
+                            Trust Scores for AI: Should Agents Earn Permissions Over Time? Trust Isn’t Granted, It’s Earned
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        A dynamic least-privilege architecture where autonomous digital actors start in sandboxed environments and earn higher API thresholds through validated track records.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('HackerNoon')">#HackerNoon</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Dynamic Permissions')">#Dynamic Permissions</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Least Privilege')">#Least Privilege</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://hackernoon.com/u/harshverma59" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on HackerNoon">
+                            <i class="mdi mdi-certificate-outline mr-1 text-primary"></i>HackerNoon
+                        </a>
+                        <a href="https://hackernoon.com/trust-scores-for-ai-should-agents-earn-permissions-over-time-trust-isnt-granted-its-earned" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="HackerNoon" 
+             data-category="Engineering Leadership" 
+             data-featured="false"
+             data-search="the rise of the ai orchestrator: the latest, most important enterprise role enterprises don't struggle to access llms; they struggle to orchestrate multiple models, routing state, memory, tool executions, and security guardrails across departments. hackernoon hackernoon engineering leadership hackernoon ai orchestration enterprise roles cognitive mesh workflow">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/hn-ai-orchestrator.png" class="img-fluid w-100 blog-img" alt="The Rise of the AI Orchestrator: The Latest, Most Important Enterprise Role" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-hackernoon">
+                        <i class="mdi mdi-account-cog mr-1"></i>HackerNoon
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>6 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://hackernoon.com/the-rise-of-the-ai-orchestrator-the-latest-most-important-enterprise-role" target="_blank" class="title text-dark font-weight-bold" title="The Rise of the AI Orchestrator: The Latest, Most Important Enterprise Role">
+                            The Rise of the AI Orchestrator: The Latest, Most Important Enterprise Role
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        Enterprises don't struggle to access LLMs; they struggle to orchestrate multiple models, routing state, memory, tool executions, and security guardrails across departments.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('HackerNoon')">#HackerNoon</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('AI Orchestration')">#AI Orchestration</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Enterprise Roles')">#Enterprise Roles</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://hackernoon.com/u/harshverma59" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on HackerNoon">
+                            <i class="mdi mdi-account-cog mr-1 text-primary"></i>HackerNoon
+                        </a>
+                        <a href="https://hackernoon.com/the-rise-of-the-ai-orchestrator-the-latest-most-important-enterprise-role" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="HackerNoon" 
+             data-category="Startups & Strategy" 
+             data-featured="false"
+             data-search="what most ai startup founders get wrong about ai agents: the autonomy trap unconstrained autonomy produces brittle demos that collapse in real customer deployments. why the most valuable agentic startups build scoped, deterministic workflows. hackernoon hackernoon startups & strategy hackernoon startup founders autonomy trap product design venture">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/hn-autonomy-trap.png" class="img-fluid w-100 blog-img" alt="What Most AI Startup Founders Get Wrong About AI Agents: The Autonomy Trap" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-hackernoon">
+                        <i class="mdi mdi-rocket-launch-outline mr-1"></i>HackerNoon
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>6 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://hackernoon.com/what-most-ai-startup-founders-get-wrong-about-ai-agents-the-autonomy-trap" target="_blank" class="title text-dark font-weight-bold" title="What Most AI Startup Founders Get Wrong About AI Agents: The Autonomy Trap">
+                            What Most AI Startup Founders Get Wrong About AI Agents: The Autonomy Trap
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        Unconstrained autonomy produces brittle demos that collapse in real customer deployments. Why the most valuable agentic startups build scoped, deterministic workflows.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('HackerNoon')">#HackerNoon</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Startup Founders')">#Startup Founders</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Autonomy Trap')">#Autonomy Trap</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://hackernoon.com/u/harshverma59" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on HackerNoon">
+                            <i class="mdi mdi-rocket-launch-outline mr-1 text-primary"></i>HackerNoon
+                        </a>
+                        <a href="https://hackernoon.com/what-most-ai-startup-founders-get-wrong-about-ai-agents-the-autonomy-trap" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="RSA Conference" 
+             data-category="Cybersecurity" 
+             data-featured="true"
+             data-search="the clean attack problem: when nothing looks wrong but everything is compromised published on rsa conference official library: how ai agents mimic legitimate human interactions, adapt to organizational context, and operate within approved api policies to evade legacy soc detection. rsa conference rsa conference expert library cybersecurity rsa conference rsac expert clean attacks behavioral security enterprise soc">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/hn-clean-attack.png" class="img-fluid w-100 blog-img" alt="The Clean Attack Problem: When Nothing Looks Wrong but Everything is Compromised" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-rsac">
+                        <i class="mdi mdi-shield-check mr-1"></i>RSA Conference
+                    </div>
+                    <div class="blog-featured-ribbon"><i class="mdi mdi-star"></i> Featured</div>
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>August 2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>7 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://www.rsaconference.com/library/blog/the-clean-attack-problem" target="_blank" class="title text-dark font-weight-bold" title="The Clean Attack Problem: When Nothing Looks Wrong but Everything is Compromised">
+                            The Clean Attack Problem: When Nothing Looks Wrong but Everything is Compromised
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        Published on RSA Conference official library: How AI agents mimic legitimate human interactions, adapt to organizational context, and operate within approved API policies to evade legacy SOC detection.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('RSA Conference')">#RSA Conference</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('RSAC Expert')">#RSAC Expert</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Clean Attacks')">#Clean Attacks</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://www.rsaconference.com/experts/Harsh%20Verma" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on RSA Conference">
+                            <i class="mdi mdi-shield-check mr-1 text-primary"></i>RSA Conference Expert Library
+                        </a>
+                        <a href="https://www.rsaconference.com/library/blog/the-clean-attack-problem" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="The AI Journal" 
+             data-category="System Architecture" 
+             data-featured="true"
+             data-search="harsh verma publishes nuanced framework on rise of agentic ai and enterprise system era argues that ai system architecture—context routing, deterministic verification, persistent memory, and latency orchestration—has decisively replaced raw model training as the primary core discipline. the ai journal the ai journal system architecture the ai journal agentic ai enterprise era system architecture framework">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/aij-agentic-framework.jpg" class="img-fluid w-100 blog-img" alt="Harsh Verma Publishes Nuanced Framework on Rise of Agentic AI and Enterprise System Era" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-aijournal">
+                        <i class="mdi mdi-newspaper-variant mr-1"></i>AI Journal
+                    </div>
+                    <div class="blog-featured-ribbon"><i class="mdi mdi-star"></i> Featured</div>
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>May 2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>6 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://aijourn.com/harsh-verma-publishes-nuanced-framework-on-rise-of-agentic-ai-and-enterprise-system-era-arguing-ai-system-architecture-has-replaced-model-building-as-the-core-discipline/" target="_blank" class="title text-dark font-weight-bold" title="Harsh Verma Publishes Nuanced Framework on Rise of Agentic AI and Enterprise System Era">
+                            Harsh Verma Publishes Nuanced Framework on Rise of Agentic AI and Enterprise System Era
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        Argues that AI system architecture—context routing, deterministic verification, persistent memory, and latency orchestration—has decisively replaced raw model training as the primary core discipline.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('The AI Journal')">#The AI Journal</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Agentic AI')">#Agentic AI</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Enterprise Era')">#Enterprise Era</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://aijourn.com/" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on The AI Journal">
+                            <i class="mdi mdi-newspaper-variant mr-1 text-primary"></i>The AI Journal
+                        </a>
+                        <a href="https://aijourn.com/harsh-verma-publishes-nuanced-framework-on-rise-of-agentic-ai-and-enterprise-system-era-arguing-ai-system-architecture-has-replaced-model-building-as-the-core-discipline/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="The AI Journal" 
+             data-category="Human-AI Collaboration" 
+             data-featured="false"
+             data-search="how ai agents will collaborate with human experts in high-stakes environments analyzing how human-in-the-loop and human-on-the-loop protocols should be structured across high-consequence domains including automated threat response, medicine, and critical infrastructure. the ai journal the ai journal human-ai collaboration the ai journal human-ai collaboration high stakes decision systems safety">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/aij-high-stakes.jpg" class="img-fluid w-100 blog-img" alt="How AI Agents Will Collaborate with Human Experts in High-Stakes Environments" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-aijournal">
+                        <i class="mdi mdi-account-group mr-1"></i>AI Journal
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>May 2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>6 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://aijourn.com/how-ai-agents-will-collaborate-with-human-experts-in-high-stakes-environments/" target="_blank" class="title text-dark font-weight-bold" title="How AI Agents Will Collaborate with Human Experts in High-Stakes Environments">
+                            How AI Agents Will Collaborate with Human Experts in High-Stakes Environments
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        Analyzing how human-in-the-loop and human-on-the-loop protocols should be structured across high-consequence domains including automated threat response, medicine, and critical infrastructure.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('The AI Journal')">#The AI Journal</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Human-AI Collaboration')">#Human-AI Collaboration</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('High Stakes')">#High Stakes</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://aijourn.com/" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on The AI Journal">
+                            <i class="mdi mdi-account-group mr-1 text-primary"></i>The AI Journal
+                        </a>
+                        <a href="https://aijourn.com/how-ai-agents-will-collaborate-with-human-experts-in-high-stakes-environments/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="The AI Journal" 
+             data-category="Interviews & Profiles" 
+             data-featured="false"
+             data-search="harsh verma on engineering beyond the code: the future of ai and cybersecurity featured conversation on the convergence of large-scale artificial intelligence, autonomous security operations, and the future career trajectory of ai systems engineers. the ai journal the ai journal interviews & profiles the ai journal feature profile cybersecurity next-gen engineering palo alto networks">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/aij-agentic-framework.jpg" class="img-fluid w-100 blog-img" alt="Harsh Verma on Engineering Beyond the Code: The Future of AI and Cybersecurity" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-aijournal">
+                        <i class="mdi mdi-shield-search mr-1"></i>AI Journal Feature
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>March 2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>7 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://aijourn.com/harsh-verma-on-engineering-beyond-the-code-the-future-of-ai-and-cybersecurity/" target="_blank" class="title text-dark font-weight-bold" title="Harsh Verma on Engineering Beyond the Code: The Future of AI and Cybersecurity">
+                            Harsh Verma on Engineering Beyond the Code: The Future of AI and Cybersecurity
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        Featured conversation on the convergence of large-scale artificial intelligence, autonomous security operations, and the future career trajectory of AI systems engineers.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('The AI Journal')">#The AI Journal</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Feature Profile')">#Feature Profile</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Cybersecurity')">#Cybersecurity</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://aijourn.com/" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on The AI Journal">
+                            <i class="mdi mdi-shield-search mr-1 text-primary"></i>The AI Journal
+                        </a>
+                        <a href="https://aijourn.com/harsh-verma-on-engineering-beyond-the-code-the-future-of-ai-and-cybersecurity/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="The AI Journal" 
+             data-category="Industry Recognition" 
+             data-featured="false"
+             data-search="principal ai engineer harsh verma nominated for tech excellence award at influencer magazine awards 2026 coverage of harsh verma's nomination for tech excellence award 2026, highlighting his research and architectural leadership in agentic trust models and enterprise human-ai collaboration. the ai journal the ai journal industry recognition the ai journal award nomination tech excellence industry leader recognition">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/aij-nomination.jpg" class="img-fluid w-100 blog-img" alt="Principal AI Engineer Harsh Verma Nominated for Tech Excellence Award at Influencer Magazine Awards 2026" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-aijournal">
+                        <i class="mdi mdi-trophy-award mr-1"></i>Award Recognition
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>June 2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>4 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://aijourn.com/principal-ai-engineer-harsh-verma-nominated-for-tech-excellence-award-at-influencer-magazine-awards-2026-as-his-work-on-human-ai-collaboration-gains-enterprise-attention/" target="_blank" class="title text-dark font-weight-bold" title="Principal AI Engineer Harsh Verma Nominated for Tech Excellence Award at Influencer Magazine Awards 2026">
+                            Principal AI Engineer Harsh Verma Nominated for Tech Excellence Award at Influencer Magazine Awards 2026
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        Coverage of Harsh Verma's nomination for Tech Excellence Award 2026, highlighting his research and architectural leadership in agentic trust models and enterprise human-AI collaboration.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('The AI Journal')">#The AI Journal</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Award Nomination')">#Award Nomination</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Tech Excellence')">#Tech Excellence</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://aijourn.com/" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on The AI Journal">
+                            <i class="mdi mdi-trophy-award mr-1 text-primary"></i>The AI Journal
+                        </a>
+                        <a href="https://aijourn.com/principal-ai-engineer-harsh-verma-nominated-for-tech-excellence-award-at-influencer-magazine-awards-2026-as-his-work-on-human-ai-collaboration-gains-enterprise-attention/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="The AI Journal" 
+             data-category="Management & Strategy" 
+             data-featured="false"
+             data-search="your first ai agent is your new intern: here’s how to manage it a grounded leadership guide for managing ai agents: establishing bounded roles, implementing stage-gated code reviews, and avoiding delegation traps in engineering organizations. the ai journal the ai journal management & strategy the ai journal agent management leadership mental models delegation">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/aij-intern-agent.png" class="img-fluid w-100 blog-img" alt="Your First AI Agent Is Your New Intern: Here’s How to Manage It" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-aijournal">
+                        <i class="mdi mdi-account-star mr-1"></i>AI Journal
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>June 2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>5 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://aijourn.com/your-first-ai-agent-is-your-new-intern-heres-how-to-manage-it/" target="_blank" class="title text-dark font-weight-bold" title="Your First AI Agent Is Your New Intern: Here’s How to Manage It">
+                            Your First AI Agent Is Your New Intern: Here’s How to Manage It
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        A grounded leadership guide for managing AI agents: establishing bounded roles, implementing stage-gated code reviews, and avoiding delegation traps in engineering organizations.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('The AI Journal')">#The AI Journal</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Agent Management')">#Agent Management</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Leadership')">#Leadership</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://aijourn.com/" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on The AI Journal">
+                            <i class="mdi mdi-account-star mr-1 text-primary"></i>The AI Journal
+                        </a>
+                        <a href="https://aijourn.com/your-first-ai-agent-is-your-new-intern-heres-how-to-manage-it/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="The AI Journal" 
+             data-category="Executive Leadership" 
+             data-featured="true"
+             data-search="designing the intelligence layer: why future tech leaders must be ai architects first why the modern cto and vp of engineering must evolve from managing cloud infrastructure to engineering the cognitive orchestration layer that powers all enterprise workflows. the ai journal the ai journal executive leadership the ai journal cto architecture intelligence layer executive leadership ai strategy">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/aij-future-cto.png" class="img-fluid w-100 blog-img" alt="Designing the Intelligence Layer: Why Future Tech Leaders Must Be AI Architects First" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-aijournal">
+                        <i class="mdi mdi-domain mr-1"></i>AI Journal
+                    </div>
+                    <div class="blog-featured-ribbon"><i class="mdi mdi-star"></i> Featured</div>
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>August 2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>6 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://aijourn.com/designing-the-intelligence-layer-why-future-tech-leaders-must-be-ai-architects-first/" target="_blank" class="title text-dark font-weight-bold" title="Designing the Intelligence Layer: Why Future Tech Leaders Must Be AI Architects First">
+                            Designing the Intelligence Layer: Why Future Tech Leaders Must Be AI Architects First
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        Why the modern CTO and VP of Engineering must evolve from managing cloud infrastructure to engineering the cognitive orchestration layer that powers all enterprise workflows.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('The AI Journal')">#The AI Journal</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('CTO Architecture')">#CTO Architecture</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Intelligence Layer')">#Intelligence Layer</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://aijourn.com/" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on The AI Journal">
+                            <i class="mdi mdi-domain mr-1 text-primary"></i>The AI Journal
+                        </a>
+                        <a href="https://aijourn.com/designing-the-intelligence-layer-why-future-tech-leaders-must-be-ai-architects-first/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="Founders Creative" 
+             data-category="Venture & Innovation" 
+             data-featured="true"
+             data-search="unlocking corporate–startup co-innovation with ai how enterprise corporations and agile venture-backed ai startups can build collaborative co-innovation loops, de-risking pilot integrations and unlocking rapid enterprise market validation. founders creative founders creative & substack venture & innovation founders creative substack corporate innovation startups venture capital">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/fc-co-innovation.png" class="img-fluid w-100 blog-img" alt="Unlocking Corporate–Startup Co-Innovation with AI" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-founderscreative">
+                        <i class="mdi mdi-lightbulb-on-outline mr-1"></i>Founders Creative
+                    </div>
+                    <div class="blog-featured-ribbon"><i class="mdi mdi-star"></i> Featured</div>
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>2026
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>5 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://www.founderscreative.org/unlocking-corporate-startup-co-innovation-with-ai/" target="_blank" class="title text-dark font-weight-bold" title="Unlocking Corporate–Startup Co-Innovation with AI">
+                            Unlocking Corporate–Startup Co-Innovation with AI
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        How enterprise corporations and agile venture-backed AI startups can build collaborative co-innovation loops, de-risking pilot integrations and unlocking rapid enterprise market validation.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Founders Creative')">#Founders Creative</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Substack')">#Substack</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Corporate Innovation')">#Corporate Innovation</span>
+                        
+            <a href="https://founderscreative.substack.com/p/unlocking-corporatestartup-co-innovation" target="_blank" class="badge badge-substack ml-1" title="Read on Substack">
+                <i class="mdi mdi-email-newsletter mr-1"></i>Substack
+            </a>
+            
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://www.founderscreative.org/author/harsh/" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on Founders Creative">
+                            <i class="mdi mdi-lightbulb-on-outline mr-1 text-primary"></i>Founders Creative & Substack
+                        </a>
+                        <a href="https://www.founderscreative.org/unlocking-corporate-startup-co-innovation-with-ai/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="Medium" 
+             data-category="Cloud Infrastructure" 
+             data-featured="false"
+             data-search="helm with yugabytedb: google kubernetes engine (gke) distributed deployment a comprehensive practical guide to managing distributed cloud-native relational databases on google kubernetes engine (gke) using helm package management. medium medium engineering cloud infrastructure medium kubernetes gke yugabytedb distributed sql">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/helm_blog.jpg" class="img-fluid w-100 blog-img" alt="Helm with YugabyteDB: Google Kubernetes Engine (GKE) Distributed Deployment" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-secondary">
+                        <i class="mdi mdi-kubernetes mr-1"></i>Technical Guide
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>Cloud Engineering
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>8 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://medium.com/@harshverma59/helm-with-yugabytedb-gke-google-kubernetes-engine-9099b62548cd" target="_blank" class="title text-dark font-weight-bold" title="Helm with YugabyteDB: Google Kubernetes Engine (GKE) Distributed Deployment">
+                            Helm with YugabyteDB: Google Kubernetes Engine (GKE) Distributed Deployment
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        A comprehensive practical guide to managing distributed cloud-native relational databases on Google Kubernetes Engine (GKE) using Helm package management.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Medium')">#Medium</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Kubernetes')">#Kubernetes</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('GKE')">#GKE</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://medium.com/@harshverma59" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on Medium">
+                            <i class="mdi mdi-kubernetes mr-1 text-primary"></i>Medium Engineering
+                        </a>
+                        <a href="https://medium.com/@harshverma59/helm-with-yugabytedb-gke-google-kubernetes-engine-9099b62548cd" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="LifePage" 
+             data-category="Interviews" 
+             data-featured="false"
+             data-search="software architecture, engineering process & career insights with lifepage comprehensive interview detailing software development lifecycles, navigating real-world architectural trade-offs, and career roadmap guidance for aspiring software engineers. lifepage lifepage career talks interviews lifepage career guidance software development mentorship">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/LifePage.png" class="img-fluid w-100 blog-img" alt="Software Architecture, Engineering Process & Career Insights with LifePage" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-secondary">
+                        <i class="mdi mdi-school-outline mr-1"></i>Career Talk
+                    </div>
+                    
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="d-flex align-items-center font-weight-medium">
+                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>Career Talk
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <i class="mdi mdi-clock-outline mr-1"></i>10 min read
+                        </span>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://www.lifepage.in/page/harsh" target="_blank" class="title text-dark font-weight-bold" title="Software Architecture, Engineering Process & Career Insights with LifePage">
+                            Software Architecture, Engineering Process & Career Insights with LifePage
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        Comprehensive interview detailing software development lifecycles, navigating real-world architectural trade-offs, and career roadmap guidance for aspiring software engineers.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('LifePage')">#LifePage</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Career Guidance')">#Career Guidance</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Software Development')">#Software Development</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://www.lifepage.in/page/harsh" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on LifePage">
+                            <i class="mdi mdi-school-outline mr-1 text-primary"></i>LifePage Career Talks
+                        </a>
+                        <a href="https://www.lifepage.in/page/harsh" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            </div>
+
+            <!-- No Results Message (Hidden by default) -->
+            <div id="noResultsBox" class="col-12 text-center py-5" style="display: none;">
+                <div class="p-5 rounded border bg-light-custom mx-auto" style="max-width: 500px;">
+                    <i class="mdi mdi-text-box-search-outline text-muted" style="font-size: 54px;"></i>
+                    <h5 class="mt-3 font-weight-bold text-dark">No Articles Found</h5>
+                    <p class="text-muted small">We couldn't find any articles matching your query. Try a different keyword or reset filters.</p>
+                    <button type="button" class="btn btn-primary btn-sm rounded-pill px-4" onclick="resetFilters()">
+                        <i class="mdi mdi-refresh mr-1"></i>Reset All Filters
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bottom Callout -->
+            <div class="row mt-5 pt-4">
+                <div class="col-12">
+                    <div class="p-4 p-md-5 rounded shadow-sm" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); color: #ffffff;">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8 mb-3 mb-lg-0">
+                                <h4 class="font-weight-bold text-white mb-2">Want to Collaborate or Feature an Article?</h4>
+                                <p class="text-white-50 mb-0">
+                                    Harsh Verma frequently authors in-depth architectural whitepapers, keynotes, and guest technical columns exploring the frontiers of agentic AI and enterprise cybersecurity.
+                                </p>
+                            </div>
+                            <div class="col-lg-4 text-lg-right">
+                                <a href="index#contact" class="btn btn-light rounded-pill font-weight-bold px-4 py-2 mr-2">
+                                    <i class="mdi mdi-email-outline mr-1"></i>Get In Touch
+                                </a>
+                                <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="btn btn-outline-light rounded-pill font-weight-bold px-3 py-2">
+                                    <i class="mdi mdi-linkedin mr-1"></i>Connect
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+            <!-- Footer Start -->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <a href="index" class="footer-logo brand-logo-wrap font-weight-bold d-inline-flex justify-content-center align-items-center" style="text-decoration: none;">
+                        <span class="brand-monogram-emblem">
+                            <svg class="brand-logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="hvFootGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#1e40af" />
+                                        <stop offset="55%" stop-color="#2563eb" />
+                                        <stop offset="100%" stop-color="#4f46e5" />
+                                    </linearGradient>
+                                    <linearGradient id="hvFootAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#38bdf8" />
+                                        <stop offset="100%" stop-color="#818cf8" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="40" height="40" rx="10" fill="url(#hvFootGrad)" />
+                                <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+                                <path d="M11 12V28M11 20H19M19 12V28" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 12L28.5 28L34 12" stroke="url(#hvFootAccentGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="34" cy="12" r="1.75" fill="#38bdf8" />
+                            </svg>
+                        </span>
+                        <span class="brand-name-text">
+                            <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
+                        </span>
+                    </a>
+                    <p class="para-desc mx-auto mt-4 text-black" style="max-width: 650px;">
+                        Principal Software Engineer in AI @ Palo Alto Networks • Forbes Technology Council Member • IEEE Senior Member • Stanford GSB Scholar
+                    </p>
+                    <ul class="list-unstyled mb-0 mt-4 social-icon">
+                        <li class="list-inline-item mr-1"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="rounded-circle" title="Google Scholar"><i class="mdi mdi-school"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="rounded-circle" title="LinkedIn"><i class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://github.com/iamharshverma" target="_blank" class="rounded-circle" title="GitHub"><i class="mdi mdi-github-face"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://medium.com/@harshverma59" target="_blank" class="rounded-circle" title="Medium"><i class="mdi mdi-medium"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://twitter.com/harshverma59" target="_blank" class="rounded-circle" title="Twitter"><i class="mdi mdi-twitter"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.instagram.com/aiwithharsh/" target="_blank" class="rounded-circle" title="Instagram"><i class="mdi mdi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer footer-bar bg-black">
+        <div class="container text-foot text-center">
+            <p class="mb-0 text-white-50">&copy; <script>document.write(new Date().getFullYear())</script> Harsh Verma. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+
+    <!-- Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/feather.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+    // Client-side Search and Filter Engine
+    let currentFilter = 'all';
+    let currentSearch = '';
+
+    function applyFilters() {
+        const searchInput = document.getElementById('blogSearchInput');
+        const clearBtn = document.getElementById('blogSearchClear');
+        const searchTerm = (searchInput ? searchInput.value : '').toLowerCase().trim();
+        currentSearch = searchTerm;
+
+        if (clearBtn) {
+            clearBtn.style.display = searchTerm ? 'block' : 'none';
+        }
+
+        const cards = document.querySelectorAll('.blog-card-item');
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+            const platform = card.getAttribute('data-platform');
+            const category = card.getAttribute('data-category');
+            const searchData = card.getAttribute('data-search') || '';
+
+            // Platform / category match
+            let matchesFilter = false;
+            if (currentFilter === 'all') {
+                matchesFilter = true;
+            } else if (currentFilter === 'Interviews') {
+                matchesFilter = (category === 'Interviews' || card.querySelector('.badge-spotify') !== null);
+            } else {
+                matchesFilter = (platform === currentFilter);
+            }
+
+            // Search text match
+            let matchesSearch = true;
+            if (searchTerm) {
+                matchesSearch = searchData.includes(searchTerm);
+            }
+
+            if (matchesFilter && matchesSearch) {
+                card.style.display = 'block';
+                visibleCount++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        // Update count badge
+        const badge = document.getElementById('resultsCountBadge');
+        const noResults = document.getElementById('noResultsBox');
+
+        if (badge) {
+            badge.innerText = `Showing ${visibleCount} of 27 publications`;
+        }
+
+        if (noResults) {
+            noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+    }
+
+    // Filter Buttons click handler
+    document.querySelectorAll('.btn-filter').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.btn-filter').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            currentFilter = this.getAttribute('data-filter');
+            applyFilters();
+        });
+    });
+
+    // Search Input listeners
+    const searchInput = document.getElementById('blogSearchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', applyFilters);
+    }
+
+    const clearBtn = document.getElementById('blogSearchClear');
+    if (clearBtn) {
+        clearBtn.addEventListener('click', function() {
+            searchInput.value = '';
+            applyFilters();
+            searchInput.focus();
+        });
+    }
+
+    function filterByTag(tag) {
+        const input = document.getElementById('blogSearchInput');
+        if (input) {
+            input.value = tag;
+            // set filter to all
+            document.querySelectorAll('.btn-filter').forEach(b => b.classList.remove('active'));
+            const allBtn = document.querySelector('.btn-filter[data-filter="all"]');
+            if (allBtn) allBtn.classList.add('active');
+            currentFilter = 'all';
+            applyFilters();
+            input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    }
+
+    function resetFilters() {
+        const input = document.getElementById('blogSearchInput');
+        if (input) input.value = '';
+        document.querySelectorAll('.btn-filter').forEach(b => b.classList.remove('active'));
+        const allBtn = document.querySelector('.btn-filter[data-filter="all"]');
+        if (allBtn) allBtn.classList.add('active');
+        currentFilter = 'all';
+        applyFilters();
+    }
+
+    function sortArticles(type) {
+        const grid = document.getElementById('blogArticlesGrid');
+        const cards = Array.from(grid.querySelectorAll('.blog-card-item'));
+
+        cards.sort((a, b) => {
+            if (type === 'featured') {
+                const aFeat = a.getAttribute('data-featured') === 'true' ? 1 : 0;
+                const bFeat = b.getAttribute('data-featured') === 'true' ? 1 : 0;
+                return bFeat - aFeat;
+            } else if (type === 'title') {
+                const aTitle = a.querySelector('.card-title a').innerText.trim().toLowerCase();
+                const bTitle = b.querySelector('.card-title a').innerText.trim().toLowerCase();
+                return aTitle.localeCompare(bTitle);
+            } else if (type === 'platform') {
+                const aPlat = a.getAttribute('data-platform').toLowerCase();
+                const bPlat = b.getAttribute('data-platform').toLowerCase();
+                return aPlat.localeCompare(bPlat);
+            }
+            return 0;
+        });
+
+        cards.forEach(card => grid.appendChild(card));
+        applyFilters();
+    }
+    </script>
+    <!-- HV AI Copilot Assistant Engine -->
+    <script src="js/hv-copilot.js"></script>
+</body>
+</html>

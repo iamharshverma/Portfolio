@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160">
+  <rect width="100%" height="100%" rx="16" fill="#1c1917"/>
+  <g transform="translate(45, 35)">
+    <rect x="10" y="10" width="65" height="65" rx="18" fill="#e11d48"/>
+    <text x="42" y="53" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="900" fill="#ffffff" text-anchor="middle">ADP</text>
+  </g>
+  <text x="145" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="800" fill="#ffffff">ADPList</text>
+  <rect x="145" y="76" width="170" height="26" rx="13" fill="#3f1d24" stroke="#f43f5e" stroke-width="1.5"/>
+  <text x="230" y="93" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="800" fill="#ffe4e6" text-anchor="middle" letter-spacing="1">TOP MENTOR (AI)</text>
+  <text x="145" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#fda4af">Global Mentorship Community</text>
+</svg>

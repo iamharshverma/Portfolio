@@ -1,0 +1,2177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30250521-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-30250521-4');
+    </script>
+    <meta charset="UTF-8">
+    <title>Publications & Research | Harsh Verma - Google Scholar Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Published research papers in IEEE, WJARR, IJSRM, IJEETR, IJRAI, and IJCA by Harsh Verma. Focus areas: AI Agentic Systems, AI Security, Autonomous Pipelines, Multi-Agent Deliberation, and Cloud Telemetry." />
+    <meta name="keywords" content="Harsh Verma, Google Scholar, IEEE, WJARR, IJSRM, IJEETR, IJRAI, IJCA, Research Papers, AI Agents, Multi-Agent Systems, AI Security, Explainable AI, IoT Edge" />
+    <meta content="Harsh Verma" name="author" />
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon_new.ico">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Magnific -->
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Slider -->               
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/> 
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"/>
+    <!-- Flickity -->
+    <link href="css/flickity.css" rel="stylesheet" type="text/css" />
+    <!-- Main css File -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Dark Mode css File -->
+    <link href="css/dark-mode.css" rel="stylesheet" type="text/css" />
+    <script src="js/dark-mode.js"></script>
+
+    <style>
+        .scholar-hero-card {
+            background: linear-gradient(135deg, #0a0f1d 0%, #0f172a 45%, #1e3a8a 100%);
+            border-radius: 16px;
+            color: #ffffff;
+            padding: 32px;
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.25);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+        .scholar-hero-card::before {
+            content: "";
+            position: absolute;
+            top: -40%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, rgba(14, 165, 233, 0.18) 45%, rgba(255, 255, 255, 0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .scholar-stat-box {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            padding: 14px 20px;
+            text-align: center;
+            backdrop-filter: blur(8px);
+            transition: all 0.3s ease;
+        }
+        .scholar-stat-box:hover {
+            background: rgba(255, 255, 255, 0.14);
+            transform: translateY(-2px);
+        }
+        .scholar-stat-number {
+            font-size: 26px;
+            font-weight: 800;
+            color: #38bdf8;
+            line-height: 1.2;
+        }
+        .scholar-stat-label {
+            font-size: 12px;
+            color: #cbd5e1;
+            margin-bottom: 0;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .pub-search-box {
+            position: relative;
+        }
+        .pub-search-box input {
+            padding-left: 44px;
+            height: 48px;
+            border-radius: 24px;
+            border: 1px solid #cbd5e1;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+        .pub-search-box input:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+        }
+        .pub-search-box i {
+            position: absolute;
+            left: 18px;
+            top: 14px;
+            font-size: 18px;
+            color: #94a3b8;
+        }
+        .filter-btn {
+            border: 1px solid #e2e8f0;
+            background: #ffffff;
+            color: #475569;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 4px;
+            transition: all 0.25s ease;
+            cursor: pointer;
+            outline: none !important;
+        }
+        .filter-btn:hover {
+            border-color: #2563eb;
+            color: #2563eb;
+            background: #eff6ff;
+        }
+        .filter-btn.active {
+            background: #2563eb;
+            color: #ffffff;
+            border-color: #2563eb;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+        .publication-card {
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid rgba(226, 232, 240, 0.9);
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+            padding: 26px;
+            margin-bottom: 22px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .publication-card:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-color: rgba(37, 99, 235, 0.45);
+            transform: translateY(-2px);
+        }
+        .pub-num-badge {
+            background: #eff6ff;
+            color: #1e40af;
+            font-weight: 700;
+            font-size: 13px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .pub-type-badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-right: 6px;
+        }
+        .badge-ieee {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            border: 1px solid #bae6fd;
+        }
+        .badge-journal {
+            background-color: #e0e7ff;
+            color: #3730a3;
+            border: 1px solid #c7d2fe;
+        }
+        .badge-topic {
+            background-color: #ede9fe;
+            color: #6d28d9;
+            border: 1px solid #ddd6fe;
+        }
+        .pub-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.45;
+            color: #0f172a;
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+        .pub-title a {
+            color: #0f172a;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .pub-title a:hover {
+            color: #2563eb;
+        }
+        .pub-venue {
+            font-size: 14px;
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 6px;
+        }
+        .pub-authors {
+            font-size: 13.5px;
+            color: #64748b;
+            margin-bottom: 12px;
+        }
+        .pub-authors strong {
+            color: #2563eb;
+            font-weight: 700;
+        }
+        .pub-abstract {
+            font-size: 14px;
+            color: #475569;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            background: #f8fafc;
+            border-left: 3px solid #2563eb;
+            padding: 10px 14px;
+            border-radius: 0 6px 6px 0;
+        }
+        .pub-tag {
+            display: inline-block;
+            font-size: 12px;
+            background: #f1f5f9;
+            color: #475569;
+            padding: 2px 10px;
+            border-radius: 12px;
+            margin-right: 6px;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        .btn-pub-action {
+            font-size: 13px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            margin-right: 8px;
+            margin-top: 6px;
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none !important;
+        }
+        .btn-pub-primary {
+            background-color: #2563eb;
+            color: #ffffff;
+            border: 1px solid #2563eb;
+        }
+        .btn-pub-primary:hover {
+            background-color: #1d4ed8;
+            color: #ffffff;
+            box-shadow: 0 3px 10px rgba(37, 99, 235, 0.35);
+        }
+        .btn-pub-outline {
+            background-color: transparent;
+            color: #475569;
+            border: 1px solid #cbd5e1;
+        }
+        .btn-pub-outline:hover {
+            background-color: #f1f5f9;
+            color: #0f172a;
+            border-color: #94a3b8;
+        }
+        .btn-pub-scholar {
+            background-color: #2563eb;
+            color: #ffffff;
+            border: 1px solid #2563eb;
+        }
+        .btn-pub-scholar:hover {
+            background-color: #1d4ed8;
+            color: #ffffff;
+        }
+
+        /* Citation Modal */
+        .bibtex-preview {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 16px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 13px;
+            white-space: pre-wrap;
+            word-break: break-all;
+            max-height: 280px;
+            overflow-y: auto;
+            border: 1px solid #334155;
+        }
+
+        /* Dark mode overrides */
+        body.dark-mode .scholar-hero-card {
+            background: linear-gradient(135deg, #070c18 0%, #0f172a 50%, #1e293b 100%);
+            border: 1px solid #334155;
+        }
+        body.dark-mode .publication-card {
+            background: #1f2937;
+            border-color: #374151;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+        }
+        body.dark-mode .pub-title,
+        body.dark-mode .pub-title a {
+            color: #f9fafb;
+        }
+        body.dark-mode .pub-venue {
+            color: #cbd5e1;
+        }
+        body.dark-mode .pub-authors {
+            color: #9ca3af;
+        }
+        body.dark-mode .pub-abstract {
+            background: #111827;
+            color: #d1d5db;
+            border-left-color: #3b82f6;
+        }
+        body.dark-mode .pub-tag {
+            background: #374151;
+            color: #e5e7eb;
+        }
+        body.dark-mode .pub-num-badge {
+            background: #1e3a8a;
+            color: #93c5fd;
+        }
+        body.dark-mode .filter-btn {
+            background: #1f2937;
+            color: #d1d5db;
+            border-color: #374151;
+        }
+        body.dark-mode .filter-btn:hover {
+            background: #374151;
+            color: #60a5fa;
+        }
+        body.dark-mode .filter-btn.active {
+            background: #2563eb;
+            color: #ffffff;
+            border-color: #2563eb;
+        }
+        body.dark-mode .pub-search-box input {
+            background: #1f2937;
+            border-color: #374151;
+            color: #f9fafb;
+        }
+        body.dark-mode .btn-pub-outline {
+            color: #cbd5e1;
+            border-color: #4b5563;
+        }
+        body.dark-mode .btn-pub-outline:hover {
+            background: #374151;
+            color: #ffffff;
+        }
+        .patent-showcase-box {
+            background: #ffffff;
+            border-radius: 14px;
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            padding: 26px;
+            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+            margin-bottom: 30px;
+        }
+        .patent-card {
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            padding: 22px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.25s ease;
+        }
+        .patent-card:hover {
+            border-color: #2563eb;
+            box-shadow: 0 8px 24px rgba(37, 99, 235, 0.08);
+            transform: translateY(-2px);
+        }
+        .patent-title {
+            font-size: 15.5px;
+            font-weight: 700;
+            line-height: 1.45;
+            color: #0f172a;
+            margin-top: 6px;
+            margin-bottom: 8px;
+        }
+        .patent-meta {
+            font-size: 13px;
+            color: #64748b;
+            margin-bottom: 10px;
+        }
+        .patent-number {
+            color: #2563eb;
+            font-weight: 700;
+        }
+        .patent-desc {
+            font-size: 13.5px;
+            color: #475569;
+            line-height: 1.6;
+        }
+        body.dark-mode .patent-showcase-box {
+            background: #111827;
+            border-color: rgba(59, 130, 246, 0.3);
+        }
+        body.dark-mode .patent-card {
+            background: #1f2937;
+            border-color: #374151;
+        }
+        body.dark-mode .patent-card:hover {
+            border-color: #3b82f6;
+        }
+        body.dark-mode .patent-title {
+            color: #f3f4f6;
+        }
+        body.dark-mode .patent-desc {
+            color: #cbd5e1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky" id="navbar">
+        <div class="container">
+            <a class="navbar-brand brand-logo-wrap" href="index" title="Harsh Verma - Home">
+                <span class="brand-monogram-emblem">
+                    <svg class="brand-logo-svg" width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="hvNavGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#1e40af" />
+                                <stop offset="55%" stop-color="#2563eb" />
+                                <stop offset="100%" stop-color="#4f46e5" />
+                            </linearGradient>
+                            <linearGradient id="hvNavAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#38bdf8" />
+                                <stop offset="100%" stop-color="#818cf8" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="40" height="40" rx="10" fill="url(#hvNavGrad)" />
+                        <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+                        <path d="M11 12V28M11 20H19M19 12V28" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M23 12L28.5 28L34 12" stroke="url(#hvNavAccentGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="34" cy="12" r="1.75" fill="#38bdf8" />
+                    </svg>
+                </span>
+                <span class="brand-name-text">
+                    <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-about">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="page-publications">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-awards">Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-memberships">Memberships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-events">Speaker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-books">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-blog">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More <i class="mdi mdi-chevron-down nav-dropdown-arrow"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right nav-custom-dropdown" aria-labelledby="navbarDropdown">
+                            <div class="nav-dropdown-header">
+                                <span>Extended Portfolios &amp; Hubs</span>
+                            </div>
+                            <a class="dropdown-item nav-dropdown-item" href="page-portfolio">
+                                <div class="dropdown-item-icon bg-soft-info"><i class="mdi mdi-cube-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Portfolio Projects</span>
+                                    <span class="dropdown-item-desc">Architectures, agent frameworks &amp; systems</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-smart-slides">
+                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-presentation-play"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Smart Slides <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">New</span></span>
+                                    <span class="dropdown-item-desc">Interactive executive &amp; research slide decks</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-social">
+                                <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
+                                    <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
+                                <div class="dropdown-item-icon bg-soft-warning"><i class="mdi mdi-shield-account-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">38 Verified Profiles Hub</span>
+                                    <span class="dropdown-item-desc">Academic, editorial &amp; executive registries</span>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider my-2"></div>
+                            <a class="dropdown-item nav-dropdown-item" href="index#contact">
+                                <div class="dropdown-item-icon bg-soft-danger"><i class="mdi mdi-email-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Contact Harsh</span>
+                                    <span class="dropdown-item-desc">Advisory, keynotes &amp; consultations</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
+                    <li class="list-inline-item mr-2">
+                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (22+ Papers)">
+                            <i class="mdi mdi-school"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="nav-social-btn" title="LinkedIn Profile">
+                            <i class="mdi mdi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://www.instagram.com/iamharshverma/" target="_blank" class="nav-social-btn" title="Instagram Profile">
+                            <i class="mdi mdi-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://github.com/iamharshverma" target="_blank" class="nav-social-btn" title="GitHub Profile">
+                            <i class="mdi mdi-github-face"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Header Start -->
+    <section class="section bg-light" style="padding-top: 130px; padding-bottom: 40px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="scholar-hero-card mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 mb-4 mb-lg-0">
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="badge badge-pill text-white px-3 py-2 font-weight-bold mr-2" style="background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);">
+                                        <i class="mdi mdi-school mr-1"></i> Academic Profile
+                                    </span>
+                                    <span class="text-white-50 small"><i class="mdi mdi-check-decagram text-info mr-1"></i> Verified Author</span>
+                                </div>
+                                <h1 class="text-white font-weight-bold mb-3 display-5" style="font-size: 2.2rem;">Research Publications & Scientific Contributions</h1>
+                                <p class="text-light mb-4" style="line-height: 1.7; font-size: 15.5px; opacity: 0.9;">
+                                    Peer-reviewed papers spanning <strong>Autonomous AI Agentic Architectures</strong>, <strong>Multi-Agent Security & Trust Graphs</strong>, <strong>Explainable AI (XAI)</strong>, <strong>Adversarial Machine Learning</strong>, and <strong>Real-Time Distributed Telemetry</strong>.
+                                </p>
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="btn btn-primary font-weight-bold rounded px-4 py-2 mr-3 mb-2 shadow" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); border: none;">
+                                        <i class="mdi mdi-school mr-1"></i> View on Google Scholar <i class="mdi mdi-open-in-new ml-1"></i>
+                                    </a>
+                                    <a href="https://mygsb.academia.edu/harshverma" target="_blank" class="btn btn-outline-light rounded px-3 py-2 mr-2 mb-2">
+                                        <i class="mdi mdi-school-outline mr-1"></i> Academia
+                                    </a>
+                                    <a href="https://www.researchgate.net/profile/Harsh-Verma-43" target="_blank" class="btn btn-outline-light rounded px-3 py-2 mb-2">
+                                        <i class="mdi mdi-earth mr-1"></i> ResearchGate
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <div class="row">
+                                    <div class="col-6 mb-3">
+                                        <div class="scholar-stat-box" id="scholar-stat-patents">
+                                            <div class="scholar-stat-number" id="scholar-stat-patents-count">6</div>
+                                            <div class="scholar-stat-label">Patents (1 Granted, 4 In Process)</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <div class="scholar-stat-box" id="scholar-stat-papers">
+                                            <div class="scholar-stat-number">22</div>
+                                            <div class="scholar-stat-label">Published Papers</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="scholar-stat-box" id="scholar-stat-journals">
+                                            <div class="scholar-stat-number">6+</div>
+                                            <div class="scholar-stat-label">Indexed Journals</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="scholar-stat-box" id="scholar-stat-span">
+                                            <div class="scholar-stat-number" style="font-size: clamp(18px, 1.8vw, 24px); white-space: nowrap;">2011-Present</div>
+                                            <div class="scholar-stat-label">Research Span</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Patents Showcase Section -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="patent-showcase-box">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="badge badge-pill text-white px-3 py-1 font-weight-bold mb-1" style="background: linear-gradient(135deg, #2563eb 0%, #16a34a 100%);">
+                                    <i class="mdi mdi-certificate mr-1"></i> Intellectual Property Portfolio (6 Patents Total)
+                                </span>
+                                <h3 class="font-weight-bold text-dark mb-0 mt-1" style="font-size: 1.4rem;">Patents &amp; Inventions</h3>
+                                <p class="text-muted mb-0 small">1 Granted Patent · 1 Published Application · 4 Pending/In-Process Applications at Palo Alto Networks</p>
+                            </div>
+                            <a href="https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/" target="_blank" class="btn btn-outline-primary btn-sm rounded font-weight-bold mt-2 mt-sm-0">
+                                <i class="mdi mdi-shield-search mr-1"></i> IP India Patent Search Portal <i class="mdi mdi-open-in-new ml-1"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="row">
+                            <!-- In-Process Patents Card: Palo Alto Networks -->
+                            <div class="col-12 mb-3">
+                                <div class="patent-card" style="border: 1.5px solid #6366f1; background: linear-gradient(180deg, rgba(99, 102, 241, 0.04) 0%, rgba(248, 250, 252, 1) 100%);">
+                                    <div>
+                                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <span class="badge text-white font-weight-bold px-2.5 py-1 mr-2 mb-1" style="background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%); font-size: 11.5px;">
+                                                    <i class="mdi mdi-progress-clock mr-1"></i> 4 Patents In Process · Undisclosed
+                                                </span>
+                                                <span class="badge badge-light border text-dark font-weight-bold mb-1" style="font-size: 11px;">
+                                                    <i class="mdi mdi-domain mr-1 text-primary"></i> Assignee: Palo Alto Networks
+                                                </span>
+                                            </div>
+                                            <span class="badge badge-warning text-dark font-weight-bold px-2 py-1 mb-1" style="font-size: 11px; background-color: #fef08a; border: 1px solid #fde047;">
+                                                <i class="mdi mdi-lock-outline mr-1"></i> Active Patent Office Review
+                                            </span>
+                                        </div>
+                                        
+                                        <h4 class="patent-title" style="color: #1e1b4b; font-size: 17px;">
+                                            AGENTIC AI, ENTERPRISE COPILOT SYSTEMS &amp; COPILOT NAVIGATION ARCHITECTURES
+                                        </h4>
+                                        
+                                        <div class="patent-meta d-flex flex-wrap align-items-center">
+                                            <span class="patent-number" style="color: #4f46e5;">
+                                                <i class="mdi mdi-file-tree-outline mr-1"></i> Suite: <strong>4 Patent Applications</strong>
+                                            </span>
+                                            <span class="mx-2 text-muted">•</span>
+                                            <span class="text-muted">Filing Organization: <strong>Palo Alto Networks</strong></span>
+                                            <span class="mx-2 text-muted">•</span>
+                                            <span class="text-muted">Domain: <strong>Agentic AI &amp; Copilot Navigation</strong></span>
+                                        </div>
+
+                                        <div class="patent-desc mb-3">
+                                            Proprietary suite of four in-process patent applications developing foundational intellectual property in autonomous <strong>Agentic AI</strong> orchestration workflows, <strong>Enterprise Copilot</strong> reasoning loops, and intelligent multi-modal <strong>Copilot Navigation</strong> architectures for automated contextual security operations and multi-tier enterprise decision execution.
+                                        </div>
+
+                                        <div class="d-flex flex-wrap align-items-center" style="gap: 6px;">
+                                            <span class="badge badge-pill badge-light border text-muted px-2.5 py-1 font-weight-bold" style="font-size: 11px;"># Agentic AI</span>
+                                            <span class="badge badge-pill badge-light border text-muted px-2.5 py-1 font-weight-bold" style="font-size: 11px;"># Enterprise Copilot Systems</span>
+                                            <span class="badge badge-pill badge-light border text-muted px-2.5 py-1 font-weight-bold" style="font-size: 11px;"># Copilot Navigation</span>
+                                            <span class="badge badge-pill badge-light border text-muted px-2.5 py-1 font-weight-bold" style="font-size: 11px;"># Contextual Security Operations</span>
+                                            <span class="badge badge-pill badge-light border text-muted px-2.5 py-1 font-weight-bold" style="font-size: 11px;"># Autonomous Execution</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-wrap justify-content-between align-items-center mt-3 pt-2 border-top">
+                                        <div class="small text-muted font-italic">
+                                            <i class="mdi mdi-information-outline mr-1"></i> Specific claims and filing serial identifiers remain non-disclosed under standard patent office review and enterprise IP protection protocols.
+                                        </div>
+                                        <span class="badge badge-pill badge-primary px-3 py-1 font-weight-bold" style="background-color: #4f46e5;">Palo Alto Networks IP</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Patent 1 -->
+                            <div class="col-lg-6 mb-3 mb-lg-0">
+                                <div class="patent-card">
+                                    <div>
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="badge badge-success font-weight-bold px-2 py-1" style="background-color: #16a34a;">
+                                                <i class="mdi mdi-check-decagram mr-1"></i> Granted Patent
+                                            </span>
+                                            <span class="badge badge-light border text-muted font-weight-bold">Issued Dec 3, 2024</span>
+                                        </div>
+                                        <h4 class="patent-title">SYSTEMS AND METHODS FOR PERFORMING LOAD TESTING OF A SOCIAL NETWORKING APPLICATION</h4>
+                                        <div class="patent-meta">
+                                            <span class="patent-number"><i class="mdi mdi-certificate mr-1"></i> Patent No: <strong>555747</strong></span>
+                                            <span class="ml-2 text-muted">• Status: <strong>Granted</strong></span>
+                                            <span class="ml-2 text-muted">• Authority: <strong>Indian Patent Office</strong></span>
+                                        </div>
+                                        <div class="patent-desc">
+                                            Novel architecture and methodology for orchestrating automated, high-throughput load simulation, performance stress benchmarking, and real-time telemetry testing across social networking applications and distributed service topologies.
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-wrap align-items-center mt-3 pt-2 border-top">
+                                        <a href="https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/" target="_blank" class="btn-pub-action btn-pub-primary">
+                                            <i class="mdi mdi-magnify mr-1"></i> Official Patent Search (555747) <i class="mdi mdi-open-in-new ml-1"></i>
+                                        </a>
+                                        <button type="button" class="btn-pub-action btn-pub-outline" onclick="copyPatentDetails('SYSTEMS AND METHODS FOR PERFORMING LOAD TESTING OF A SOCIAL NETWORKING APPLICATION', '555747', 'Dec 3, 2024', 'Granted')">
+                                            <i class="mdi mdi-content-copy mr-1"></i> Copy Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Patent 2 -->
+                            <div class="col-lg-6">
+                                <div class="patent-card">
+                                    <div>
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="badge text-white font-weight-bold px-2 py-1" style="background-color: #0284c7;">
+                                                <i class="mdi mdi-file-certificate mr-1"></i> Published Patent
+                                            </span>
+                                            <span class="badge badge-light border text-muted font-weight-bold">Published Jun 26, 2020</span>
+                                        </div>
+                                        <h4 class="patent-title">COVID PREVENTIVE AUTOMATED ENTRY POINT (COPAEP)</h4>
+                                        <div class="patent-meta">
+                                            <span class="patent-number" style="color: #0284c7;"><i class="mdi mdi-file-document-outline mr-1"></i> App No: <strong>IN 202011024968</strong></span>
+                                            <span class="ml-2 text-muted">• Status: <strong>Published</strong></span>
+                                            <span class="ml-2 text-muted">• Authority: <strong>Indian Patent Office</strong></span>
+                                        </div>
+                                        <div class="patent-desc">
+                                            Integrated automated screening checkpoint system incorporating multi-tier sensor subsystems for non-contact thermal scanning, sanitization misting, and intelligent automated entrance symptomatic verification.
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-wrap align-items-center mt-3 pt-2 border-top">
+                                        <a href="https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/" target="_blank" class="btn-pub-action btn-pub-primary" style="background-color: #0284c7; border-color: #0284c7;">
+                                            <i class="mdi mdi-magnify mr-1"></i> Official Patent Search (202011024968) <i class="mdi mdi-open-in-new ml-1"></i>
+                                        </a>
+                                        <button type="button" class="btn-pub-action btn-pub-outline" onclick="copyPatentDetails('COVID PREVENTIVE AUTOMATED ENTRY POINT (COPAEP)', 'IN 202011024968', 'Jun 26, 2020', 'Published')">
+                                            <i class="mdi mdi-content-copy mr-1"></i> Copy Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls: Search & Category Filters -->
+            <div class="row mt-2 mb-4">
+                <div class="col-lg-5 mb-3 mb-lg-0">
+                    <div class="pub-search-box">
+                        <i class="mdi mdi-magnify"></i>
+                        <input type="text" id="pubSearchInput" class="form-control" placeholder="Search by title, keyword, DOI, journal, or topic (e.g. Agent, Security, IEEE)...">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="d-flex flex-wrap align-items-center justify-content-lg-end" id="categoryFilters">
+                        <button class="filter-btn active" data-filter="all">All Papers (22)</button>
+                        <button class="filter-btn" data-filter="agents">AI Agentic Systems</button>
+                        <button class="filter-btn" data-filter="security">AI Security & Trust</button>
+                        <button class="filter-btn" data-filter="cloud_ai">Cloud & Infrastructure</button>
+                        <button class="filter-btn" data-filter="software_eng">Software Eng & Ethics</button>
+                        <button class="filter-btn" data-filter="iot">IoT & Performance</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publications Listing -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted font-weight-bold small text-uppercase" id="showingCount">Showing all 22 publications</span>
+                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="small text-primary font-weight-bold">
+                            Open Scholar Citations <i class="mdi mdi-open-in-new"></i>
+                        </a>
+                    </div>
+
+                    <div id="publicationsContainer">
+
+                        <!-- Publication #1 -->
+                        <div class="publication-card" data-topic="iot" data-category="conference" data-id="pub-1">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#1</span>
+                                    <span class="pub-type-badge badge-ieee">IEEE Conference</span>
+                                    <span class="pub-type-badge badge-topic">IoT & Edge Computing</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2019</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://ieeexplore.ieee.org/document/9014355" target="_blank">Secure Real Time Heterogeneous Data Management Tool</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                IEEE International Conference on Cognitive Machine Learning (CogML) (2019)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IEEE Xplore</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.1109/CogML.2019.9014355</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Presents a novel architecture addressing the complexity of ingesting, validating, and managing real-time streaming data from heterogeneous IoT devices in parallel. Formulates a secure, low-latency edge-computing ingestion pipeline capable of sub-millisecond dispatch and tamper-evident stream verification.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">IEEE</span><span class="pub-tag">IoT Edge Computing</span><span class="pub-tag">Data Management</span><span class="pub-tag">Real-Time Systems</span><span class="pub-tag">Security</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://ieeexplore.ieee.org/document/9014355" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.1109/CogML.2019.9014355" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(1, "Secure Real Time Heterogeneous Data Management Tool", "@inproceedings{verma2019secure,\n  title={Secure Real Time Heterogenous Data Management Tool},\n  author={Verma, Harsh},\n  booktitle={2019 IEEE International Conference on Cognitive Machine Learning (CogML)},\n  pages={1--6},\n  year={2019},\n  organization={IEEE},\n  doi={10.1109/CogML.2019.9014355}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #2 -->
+                        <div class="publication-card" data-topic="performance" data-category="journal" data-id="pub-2">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#2</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">Performance & Scaling</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2017</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://www.ijcaonline.org/archives/volume176/number2/28523-2017915532/" target="_blank">Real Time Analytics Performance Load Simulation and Scaling</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                International Journal of Computer Applications (IJCA) • Vol. 176, No. 2 (2017)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IJCA Online</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.5120/ijca2017915532</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Investigates performance benchmarking, simulated multi-tenant load characteristics, and horizontal auto-scaling algorithms for real-time analytics engines handling millions of concurrent metric streams with sustained throughput guarantees.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Load Simulation</span><span class="pub-tag">Real-Time Analytics</span><span class="pub-tag">Distributed Systems</span><span class="pub-tag">Cloud Scaling</span><span class="pub-tag">Benchmarking</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://www.ijcaonline.org/archives/volume176/number2/28523-2017915532/" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.5120/ijca2017915532" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(2, "Real Time Analytics Performance Load Simulation and Scaling", "@article{verma2017real,\n  title={Real Time Analytics Performance Load Simulation and Scaling},\n  author={Verma, Harsh},\n  journal={International Journal of Computer Applications},\n  volume={176},\n  number={2},\n  pages={1--7},\n  year={2017},\n  publisher={Foundation of Computer Science},\n  doi={10.5120/ijca2017915532}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #3 -->
+                        <div class="publication-card" data-topic="software_eng" data-category="journal" data-id="pub-3">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#3</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">Software Engineering & AI</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2024</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://www.ijircce.com/article/explainable-ai-xai-for-software-engineering-decision-making-18479" target="_blank">Explainable AI (XAI) for Software Engineering Decision-Making</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                International Journal of Innovative Research in Computer and Communication Engineering (IJIRCCE) (2024)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IJIRCCE / ResearchGate</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.15680/IJIRCCE.2024.1205018</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Explores interpretable machine learning frameworks integrated into DevOps, automated CI/CD code reviewing, and architecture decision-making, providing engineering leadership with actionable rationale and trust mechanisms behind automated AI recommendations.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Explainable AI</span><span class="pub-tag">XAI</span><span class="pub-tag">Software Engineering</span><span class="pub-tag">Decision Support</span><span class="pub-tag">DevOps AI</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://www.ijircce.com/article/explainable-ai-xai-for-software-engineering-decision-making-18479" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.15680/IJIRCCE.2024.1205018" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    <a href="https://www.researchgate.net/publication/401693316_Explainable_AI_XAI_for_Software_Engineering_Decision-Making" target="_blank" class="btn-pub-action btn-pub-outline">
+            <i class="mdi mdi-earth mr-1"></i> ResearchGate <i class="mdi mdi-open-in-new ml-1"></i>
+        </a>
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(3, "Explainable AI (XAI) for Software Engineering Decision-Making", "@article{verma2024explainable,\n  title={Explainable AI (XAI) for Software Engineering Decision-Making},\n  author={Verma, Harsh},\n  journal={International Journal of Innovative Research in Computer and Communication Engineering (IJIRCCE)},\n  volume={12},\n  pages={18479--18486},\n  year={2024},\n  publisher={IJIRCCE}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #4 -->
+                        <div class="publication-card" data-topic="ethics" data-category="journal" data-id="pub-4">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#4</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">AI Ethics & Governance</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2025</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://wjarr.com/content/ethical-challenges-and-bias-mitigation-artificial-intelligence-systems" target="_blank">Ethical Challenges and Bias Mitigation in Artificial Intelligence Systems</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                World Journal of Advanced Research and Reviews (WJARR) • Vol. 28, No. 3 (2025)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: WJARR</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.30574/wjarr.2025.28.3.3904</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Examines systemic algorithmic bias, training dataset imbalances, and demographic disparities in enterprise machine learning pipelines, proposing a mathematical governance framework for continuous fairness verification and bias mitigation at scale.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">AI Ethics</span><span class="pub-tag">Bias Mitigation</span><span class="pub-tag">Algorithmic Fairness</span><span class="pub-tag">AI Governance</span><span class="pub-tag">Responsible AI</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://wjarr.com/content/ethical-challenges-and-bias-mitigation-artificial-intelligence-systems" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.30574/wjarr.2025.28.3.3904" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(4, "Ethical Challenges and Bias Mitigation in Artificial Intelligence Systems", "@article{verma2025ethical,\n  title={Ethical Challenges and Bias Mitigation in Artificial Intelligence Systems},\n  author={Verma, Harsh},\n  journal={World Journal of Advanced Research and Reviews},\n  volume={28},\n  number={3},\n  pages={3904--3915},\n  year={2025},\n  publisher={WJARR},\n  doi={10.30574/wjarr.2025.28.3.3904}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #5 -->
+                        <div class="publication-card" data-topic="cloud_ai" data-category="journal" data-id="pub-5">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#5</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">Cloud & Infrastructure</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2026</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://wjarr.com/content/cloud-based-ai-systems-scalable-and-intelligent-software-applications" target="_blank">Cloud-Based AI Systems for Scalable and Intelligent Software Applications</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                World Journal of Advanced Research and Reviews (WJARR) • Vol. 29, No. 1 (2026)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: WJARR</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.30574/wjarr.2026.29.1.0077</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Proposes unified architectural patterns for deploying foundation models and deep learning inference workloads across distributed multi-region cloud infrastructures with sub-second response times and elastic compute orchestration.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Cloud AI</span><span class="pub-tag">Scalable Systems</span><span class="pub-tag">Distributed Compute</span><span class="pub-tag">Intelligent Applications</span><span class="pub-tag">MLOps</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://wjarr.com/content/cloud-based-ai-systems-scalable-and-intelligent-software-applications" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.30574/wjarr.2026.29.1.0077" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(5, "Cloud-Based AI Systems for Scalable and Intelligent Software Applications", "@article{verma2026cloud,\n  title={Cloud-Based AI Systems for Scalable and Intelligent Software Applications},\n  author={Verma, Harsh},\n  journal={World Journal of Advanced Research and Reviews},\n  volume={29},\n  number={1},\n  pages={77--89},\n  year={2026},\n  publisher={WJARR},\n  doi={10.30574/wjarr.2026.29.1.0077}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #6 -->
+                        <div class="publication-card" data-topic="security" data-category="journal" data-id="pub-6">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#6</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">Cybersecurity & Defenses</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2025</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://wjarr.com/content/ai-driven-cybersecurity-software-engineering" target="_blank">AI-Driven Cybersecurity in Software Engineering</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                World Journal of Advanced Research and Reviews (WJARR) • Vol. 27, No. 3 (2025)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: WJARR</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.30574/wjarr.2025.27.3.3347</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Analyzes the synergy between deep neural network anomaly detection and automated security pipelines in SDLC, demonstrating automated zero-day detection, code vulnerability identification, and intelligent threat remediation.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">AI Cybersecurity</span><span class="pub-tag">Software Security</span><span class="pub-tag">Vulnerability Detection</span><span class="pub-tag">SDLC Security</span><span class="pub-tag">Threat Intelligence</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://wjarr.com/content/ai-driven-cybersecurity-software-engineering" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.30574/wjarr.2025.27.3.3347" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(6, "AI-Driven Cybersecurity in Software Engineering", "@article{verma2025aidriven,\n  title={AI-Driven Cybersecurity in Software Engineering},\n  author={Verma, Harsh},\n  journal={World Journal of Advanced Research and Reviews},\n  volume={27},\n  number={3},\n  pages={3347--3358},\n  year={2025},\n  publisher={WJARR},\n  doi={10.30574/wjarr.2025.27.3.3347}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #7 -->
+                        <div class="publication-card" data-topic="leadership" data-category="journal" data-id="pub-7">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#7</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">Tech Leadership & Trends</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2025</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://www.ijeetr.com/index.php/ijeetr/article/view/925" target="_blank">Future Trends in AI, Machine Learning, and Big Data: Implications for Technical Leadership</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                International Journal of Engineering & Extended Technologies Research (IJEETR) • Vol. 7, No. 4 (2025)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IJEETR</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.15662/IJEETR.2025.0704017</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Provides a strategic roadmap for engineering executives and CTOs on navigating technological shifts in generative foundation models, high-volume streaming data architectures, and organizational multi-agent team transformations.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Technical Leadership</span><span class="pub-tag">AI Trends</span><span class="pub-tag">Big Data</span><span class="pub-tag">Engineering Strategy</span><span class="pub-tag">Future ML</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://www.ijeetr.com/index.php/ijeetr/article/view/925" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.15662/IJEETR.2025.0704017" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(7, "Future Trends in AI, Machine Learning, and Big Data: Implications for Technical Leadership", "@article{verma2025future,\n  title={Future Trends in AI, Machine Learning, and Big Data: Implications for Technical Leadership},\n  author={Verma, Harsh},\n  journal={International Journal of Engineering \\& Extended Technologies Research},\n  volume={7},\n  number={4},\n  pages={17--28},\n  year={2025},\n  publisher={IJEETR},\n  doi={10.15662/IJEETR.2025.0704017}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #8 -->
+                        <div class="publication-card" data-topic="agents" data-category="journal" data-id="pub-8">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#8</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">AI Agentic Systems</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2025</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://wjarr.com/content/agentic-workflows-end-end-software-engineering-automation" target="_blank">Agentic Workflows for End-to-End Software Engineering Automation</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                World Journal of Advanced Research and Reviews (WJARR) • Vol. 25, No. 3 (2025)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: WJARR</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.30574/wjarr.2025.25.3.0887</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Presents an end-to-end framework leveraging autonomous multi-agent systems to execute requirements engineering, architecture drafting, test-driven synthesis, and production deployment cycles without human-in-the-loop bottlenecks.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Agentic Workflows</span><span class="pub-tag">Software Automation</span><span class="pub-tag">Autonomous Agents</span><span class="pub-tag">Code Synthesis</span><span class="pub-tag">SDLC Automation</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://wjarr.com/content/agentic-workflows-end-end-software-engineering-automation" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.30574/wjarr.2025.25.3.0887" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(8, "Agentic Workflows for End-to-End Software Engineering Automation", "@article{verma2025agentic,\n  title={Agentic Workflows for End-to-End Software Engineering Automation},\n  author={Verma, Harsh},\n  journal={World Journal of Advanced Research and Reviews},\n  volume={25},\n  number={3},\n  pages={887--899},\n  year={2025},\n  publisher={WJARR},\n  doi={10.30574/wjarr.2025.25.3.0887}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #9 -->
+                        <div class="publication-card" data-topic="agents" data-category="journal" data-id="pub-9">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#9</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">AI Agentic Systems</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2025</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://wjarr.com/content/economic-impact-and-productivity-modeling-ai-agents" target="_blank">Economic Impact and Productivity Modeling of AI Agents</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                World Journal of Advanced Research and Reviews (WJARR) • Vol. 26, No. 3 (2025)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: WJARR</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.30574/wjarr.2025.26.3.2304</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Develops a quantitative econometric productivity model mapping the integration of autonomous AI agents across modern software enterprises, measuring developer velocity multipliers and total cost of ownership reductions.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Economic Impact</span><span class="pub-tag">Productivity Modeling</span><span class="pub-tag">AI Agents</span><span class="pub-tag">ROI Analysis</span><span class="pub-tag">Enterprise AI</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://wjarr.com/content/economic-impact-and-productivity-modeling-ai-agents" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.30574/wjarr.2025.26.3.2304" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(9, "Economic Impact and Productivity Modeling of AI Agents", "@article{verma2025economic,\n  title={Economic Impact and Productivity Modeling of AI Agents},\n  author={Verma, Harsh},\n  journal={World Journal of Advanced Research and Reviews},\n  volume={26},\n  number={3},\n  pages={2304--2317},\n  year={2025},\n  publisher={WJARR},\n  doi={10.30574/wjarr.2025.26.3.2304}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #10 -->
+                        <div class="publication-card" data-topic="agents" data-category="journal" data-id="pub-10">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#10</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">AI Agentic Systems</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2024</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://ijrai.org/index.php/ijrai/article/view/589" target="_blank">AI Agentic Architectures for Autonomous Data Engineering Pipelines</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                International Journal of Research and Applied Innovations (IJRAI) • Vol. 7, No. 6 (2024)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IJRAI</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.15662/IJRAI.2024.0706041</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Details dynamic autonomous agent configurations that automatically synthesize ETL/ELT pipelines, validate real-time schema drifts, reconcile corrupted data partitions, and optimize query workloads in cloud data lakes.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Data Engineering</span><span class="pub-tag">Autonomous ETL</span><span class="pub-tag">Agentic Architecture</span><span class="pub-tag">Schema Drift</span><span class="pub-tag">Data Lakehouse</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://ijrai.org/index.php/ijrai/article/view/589" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.15662/IJRAI.2024.0706041" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(10, "AI Agentic Architectures for Autonomous Data Engineering Pipelines", "@article{verma2024agenticdata,\n  title={AI Agentic Architectures for Autonomous Data Engineering Pipelines},\n  author={Verma, Harsh},\n  journal={International Journal of Research and Applied Innovations},\n  volume={7},\n  number={6},\n  pages={41--52},\n  year={2024},\n  publisher={IJRAI},\n  doi={10.15662/IJRAI.2024.0706041}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #11 -->
+                        <div class="publication-card" data-topic="agents" data-category="journal" data-id="pub-11">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#11</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">AI Agentic Systems</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2024</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://ijeetr.com/index.php/ijeetr/article/view/958/895" target="_blank">Autonomous Multi-Agent Systems for Enterprise Decision-Making</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                International Journal of Engineering & Extended Technologies Research (IJEETR) • Vol. 6, No. 5 (2024)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IJEETR</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.15662/IJEETR.2024.0605021</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Introduces a collaborative multi-agent voting and deliberation hierarchy designed for high-consequence enterprise decision scenarios, ensuring consensus formation, verification, and auditability across heterogeneous models.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Multi-Agent Systems</span><span class="pub-tag">Enterprise Decision-Making</span><span class="pub-tag">Consensus Protocol</span><span class="pub-tag">Autonomous AI</span><span class="pub-tag">Governance</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://ijeetr.com/index.php/ijeetr/article/view/958/895" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.15662/IJEETR.2024.0605021" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(11, "Autonomous Multi-Agent Systems for Enterprise Decision-Making", "@article{verma2024autonomousmultiagent,\n  title={Autonomous Multi-Agent Systems for Enterprise Decision-Making},\n  author={Verma, Harsh},\n  journal={International Journal of Engineering \\& Extended Technologies Research},\n  volume={6},\n  number={5},\n  pages={21--33},\n  year={2024},\n  publisher={IJEETR},\n  doi={10.15662/IJEETR.2024.0605021}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #12 -->
+                        <div class="publication-card" data-topic="security" data-category="journal" data-id="pub-12">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#12</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">AI Security & Trust</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2026</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://ijsrm.net/index.php/ijsrm/article/view/6666" target="_blank">Security in Multi-Agent AI Systems: Modeling Emergent Vulnerabilities via Trust Graphs</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                International Journal of Scientific Research and Management (IJSRM) • Vol. 14, No. 4 (2026)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IJSRM</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.18535/ijsrm/v14i04.ec04</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Constructs dynamic trust graph formalisms to evaluate privilege escalation, lateral prompt injection, and cascading failure propagation across distributed multi-agent collaborative networks.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Trust Graphs</span><span class="pub-tag">Multi-Agent Security</span><span class="pub-tag">Vulnerability Modeling</span><span class="pub-tag">Emergent Behavior</span><span class="pub-tag">Prompt Injection</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://ijsrm.net/index.php/ijsrm/article/view/6666" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.18535/ijsrm/v14i04.ec04" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(12, "Security in Multi-Agent AI Systems: Modeling Emergent Vulnerabilities via Trust Graphs", "@article{verma2026securitytrustgraphs,\n  title={Security in Multi-Agent AI Systems: Modeling Emergent Vulnerabilities via Trust Graphs},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={14},\n  number={4},\n  pages={ec04},\n  year={2026},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v14i04.ec04}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #13 -->
+                        <div class="publication-card" data-topic="security" data-category="journal" data-id="pub-13">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#13</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">AI Security & Trust</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2025</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://ijsrm.net/index.php/ijsrm/article/view/6755" target="_blank">Clean Attacks: Formalizing Semantically Valid Adversarial Behavior in Autonomous AI Agent Systems</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                International Journal of Scientific Research and Management (IJSRM) • Vol. 13, No. 10 (2025)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IJSRM</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.18535/ijsrm/v13i10.ec03</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Defines and categorizes 'Clean Attacks'—adversarial inputs that bypass syntactical and semantic guardrails by strictly obeying schema and policy specifications while manipulating agent objective functions.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Clean Attacks</span><span class="pub-tag">Adversarial AI</span><span class="pub-tag">Semantic Exploits</span><span class="pub-tag">Agent Safety</span><span class="pub-tag">Guardrails</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://ijsrm.net/index.php/ijsrm/article/view/6755" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.18535/ijsrm/v13i10.ec03" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(13, "Clean Attacks: Formalizing Semantically Valid Adversarial Behavior in Autonomous AI Agent Systems", "@article{verma2025cleanattacks,\n  title={Clean Attacks: Formalizing Semantically Valid Adversarial Behavior in Autonomous AI Agent Systems},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={13},\n  number={10},\n  pages={ec03},\n  year={2025},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v13i10.ec03}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #14 -->
+                        <div class="publication-card" data-topic="agents" data-category="journal" data-id="pub-14">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#14</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">AI Agentic Systems</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2026</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://ijsrm.net/index.php/ijsrm/article/view/6868" target="_blank">Designing Self-Healing AI Agentic Systems: A Framework for Autonomous Detection and Response</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                International Journal of Scientific Research and Management (IJSRM) • Vol. 14, No. 6 (2026)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IJSRM</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.18535/ijsrm/v14i06.ec3</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Develops closed-loop supervisory controller architectures allowing agent swarms to monitor runtime drift, self-quarantine compromised agents, and synthesize remediation routines dynamically.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Self-Healing Systems</span><span class="pub-tag">Autonomous Detection</span><span class="pub-tag">Fault Recovery</span><span class="pub-tag">Resilient AI</span><span class="pub-tag">Supervisory Control</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://ijsrm.net/index.php/ijsrm/article/view/6868" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.18535/ijsrm/v14i06.ec3" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(14, "Designing Self-Healing AI Agentic Systems: A Framework for Autonomous Detection and Response", "@article{verma2026selfhealing,\n  title={Designing Self-Healing AI Agentic Systems: A Framework for Autonomous Detection and Response},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={14},\n  number={6},\n  pages={ec3},\n  year={2026},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v14i06.ec3}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #15 -->
+                        <div class="publication-card" data-topic="security" data-category="journal" data-id="pub-15">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#15</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">AI Security & Trust</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2026</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://ijsrm.net/index.php/ijsrm/article/view/6977" target="_blank">Intent-Based Security: Replacing Identity-Centric Trust in Autonomous AI Agentic Systems</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                International Journal of Scientific Research and Management (IJSRM) • Vol. 14, No. 6 (2026)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IJSRM</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.18535/ijsrm/v14i06.ec3</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Proves that traditional identity and RBAC paradigms fail under dynamic agent delegation, proposing an intent-based cryptographic capability protocol that evaluates purpose before granting execution privileges.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Intent-Based Security</span><span class="pub-tag">Zero Trust</span><span class="pub-tag">Agent Identity</span><span class="pub-tag">Access Control</span><span class="pub-tag">Cryptographic Capabilities</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://ijsrm.net/index.php/ijsrm/article/view/6977" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.18535/ijsrm/v14i06.ec3" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(15, "Intent-Based Security: Replacing Identity-Centric Trust in Autonomous AI Agentic Systems", "@article{verma2026intentsecurity,\n  title={Intent-Based Security: Replacing Identity-Centric Trust in Autonomous AI Agentic Systems},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={14},\n  number={6},\n  pages={ec3},\n  year={2026},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v14i06.ec3}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #16 -->
+                        <div class="publication-card" data-topic="security" data-category="journal" data-id="pub-16">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#16</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">AI Security & Trust</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2025</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://ijsrm.net/index.php/ijsrm/article/view/6710" target="_blank">Policy Drift in Learning AI Agents: A Dynamical Systems Perspective on Security Degradation</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                International Journal of Scientific Research and Management (IJSRM) • Vol. 13, No. 7 (2025)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IJSRM</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.18535/ijsrm/v13i07.ec08</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Models online reinforcement learning agents through the lens of non-linear dynamical systems, quantifying how incremental reward exploitation leads to safety policy erosion and boundary violations over time.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Policy Drift</span><span class="pub-tag">Dynamical Systems</span><span class="pub-tag">Security Degradation</span><span class="pub-tag">Reinforcement Learning</span><span class="pub-tag">AI Safety</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://ijsrm.net/index.php/ijsrm/article/view/6710" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.18535/ijsrm/v13i07.ec08" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(16, "Policy Drift in Learning AI Agents: A Dynamical Systems Perspective on Security Degradation", "@article{verma2025policydrift,\n  title={Policy Drift in Learning AI Agents: A Dynamical Systems Perspective on Security Degradation},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={13},\n  number={7},\n  pages={ec08},\n  year={2025},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v13i07.ec08}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #17 -->
+                        <div class="publication-card" data-topic="security" data-category="journal" data-id="pub-17">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#17</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">AI Security & Trust</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2026</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://ijsrm.net/index.php/ijsrm/article/view/7251" target="_blank">Toward a Unified Security Systems Theory for Autonomous AI Systems</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                International Journal of Scientific Research and Management (IJSRM) • Vol. 14, No. 6 (2026)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IJSRM</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.18535/ijsrm/v14i06.ec4</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Synthesizes control theory, cybernetics, and computer security into a holistic mathematical foundation for evaluating invariants, failure bounds, and safety margins across autonomous AI software systems.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Security Systems Theory</span><span class="pub-tag">Unified Framework</span><span class="pub-tag">Autonomous AI</span><span class="pub-tag">Cybernetics</span><span class="pub-tag">Safety Bounds</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://ijsrm.net/index.php/ijsrm/article/view/7251" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.18535/ijsrm/v14i06.ec4" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(17, "Toward a Unified Security Systems Theory for Autonomous AI Systems", "@article{verma2026unifiedtheory,\n  title={Toward a Unified Security Systems Theory for Autonomous AI Systems},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={14},\n  number={6},\n  pages={ec4},\n  year={2026},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v14i06.ec4}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #18 -->
+                        <div class="publication-card" data-topic="cloud_ai" data-category="journal" data-id="pub-18">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#18</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">Cloud & Infrastructure</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2024</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://ijsrm.net/index.php/ijsrm/article/view/4774" target="_blank">AI-Powered Anomaly Detection in Cloud-Based Applications</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                International Journal of Scientific Research and Management (IJSRM) • Vol. 12, No. 1 (2024)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IJSRM</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.18535/ijsrm/v12i01.ec07</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Presents real-time unsupervised clustering algorithms applied to high-throughput cloud telemetry, achieving over 99.4% precision in catching infrastructure latency anomalies and resource contention.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Anomaly Detection</span><span class="pub-tag">Cloud Applications</span><span class="pub-tag">Unsupervised Learning</span><span class="pub-tag">Telemetry Analysis</span><span class="pub-tag">High Throughput</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://ijsrm.net/index.php/ijsrm/article/view/4774" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.18535/ijsrm/v12i01.ec07" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(18, "AI-Powered Anomaly Detection in Cloud-Based Applications", "@article{verma2024anomalydetection,\n  title={AI-Powered Anomaly Detection in Cloud-Based Applications},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={12},\n  number={1},\n  pages={ec07},\n  year={2024},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v12i01.ec07}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #19 -->
+                        <div class="publication-card" data-topic="security" data-category="journal" data-id="pub-19">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#19</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">AI Security & Trust</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2025</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://www.ijsrm.net/index.php/ijsrm/article/view/6677" target="_blank">Secure AI Systems: Protecting Machine Learning Models from Emerging Cyber Threats</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                International Journal of Scientific Research and Management (IJSRM) • Vol. 13, No. 10 (2025)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IJSRM</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.18535/ijsrm/v13i10.ec04</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Examines model extraction, membership inference, and training pipeline data poisoning vectors, formulating cryptographic watermarking and differential privacy bounds to preserve proprietary model integrity.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Model Protection</span><span class="pub-tag">Data Poisoning</span><span class="pub-tag">Differential Privacy</span><span class="pub-tag">Membership Inference</span><span class="pub-tag">Model Extraction</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://www.ijsrm.net/index.php/ijsrm/article/view/6677" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.18535/ijsrm/v13i10.ec04" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(19, "Secure AI Systems: Protecting Machine Learning Models from Emerging Cyber Threats", "@article{verma2025securesystems,\n  title={Secure AI Systems Protecting Machine Learning Models from Emerging Cyber Threats},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={13},\n  number={10},\n  pages={ec04},\n  year={2025},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v13i10.ec04}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #20 -->
+                        <div class="publication-card" data-topic="security" data-category="journal" data-id="pub-20">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#20</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">AI Security & Trust</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2026</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://www.ijsrm.net/index.php/ijsrm/article/view/7002" target="_blank">Adversarial Machine Learning: Security Risks and Defense Strategies in AI-Driven Applications</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                International Journal of Scientific Research and Management (IJSRM) • Vol. 14, No. 2 (2026)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IJSRM</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.18535/ijsrm/v14i02.ec04</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Comprehensive analysis of perturbation-based evasion attacks against vision, NLP, and tabular classifiers, detailing certified robust optimization and randomized smoothing defenses.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Adversarial ML</span><span class="pub-tag">Defense Strategies</span><span class="pub-tag">Robust Optimization</span><span class="pub-tag">Evasion Attacks</span><span class="pub-tag">Certified Robustness</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://www.ijsrm.net/index.php/ijsrm/article/view/7002" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.18535/ijsrm/v14i02.ec04" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(20, "Adversarial Machine Learning: Security Risks and Defense Strategies in AI-Driven Applications", "@article{verma2026adversarialml,\n  title={Adversarial Machine Learning: Security Risks and Defense Strategies in AI-Driven Applications},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={14},\n  number={2},\n  pages={ec04},\n  year={2026},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v14i02.ec04}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #21 -->
+                        <div class="publication-card" data-topic="security" data-category="journal" data-id="pub-21">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#21</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">AI Security & Trust</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2026</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://ijsrm.net/index.php/ijsrm/article/view/7958" target="_blank">Blockchain-Enabled Artificial Intelligence and AI Agents for Secure Data Sharing and Cybersecurity Applications</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                International Journal of Scientific Research and Management (IJSRM) • Vol. 14, No. 8 (2026)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IJSRM</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.18535/ijsrm/v14i08.ec03</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Combines decentralized ledger smart contracts with autonomous AI agents to construct zero-knowledge verifiable audit trails and secure cross-organizational data federation networks.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Blockchain AI</span><span class="pub-tag">Decentralized Agents</span><span class="pub-tag">Secure Data Sharing</span><span class="pub-tag">Smart Contracts</span><span class="pub-tag">Audit Trails</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://ijsrm.net/index.php/ijsrm/article/view/7958" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.18535/ijsrm/v14i08.ec03" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(21, "Blockchain-Enabled Artificial Intelligence and AI Agents for Secure Data Sharing and Cybersecurity Applications", "@article{verma2026blockchainai,\n  title={Blockchain-Enabled Artificial Intelligence and AI Agents for Secure Data Sharing and Cybersecurity Applications},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={14},\n  number={8},\n  pages={ec03},\n  year={2026},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v14i08.ec03}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+
+                        <!-- Publication #22 -->
+                        <div class="publication-card" data-topic="agents" data-category="journal" data-id="pub-22">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div>
+                                    <span class="pub-num-badge">#22</span>
+                                    <span class="pub-type-badge badge-journal">Journal Article</span>
+                                    <span class="pub-type-badge badge-topic">AI Agentic Systems</span>
+                                </div>
+                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">2026</span>
+                            </div>
+
+                            <h3 class="pub-title">
+                                <a href="https://ijsrm.net/index.php/ijsrm/article/view/7194" target="_blank">Automated Vulnerability Patching in Legacy Code Using LLMs and Multi-AI Agents</a>
+                            </h3>
+
+                            <div class="pub-venue">
+                                <i class="mdi mdi-book-open-page-variant mr-1 text-primary"></i>
+                                International Journal of Scientific Research and Management (IJSRM) • Vol. 14, No. 4 (2026)
+                            </div>
+
+                            <div class="pub-authors">
+                                <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
+                                Authors: <strong>Harsh Verma</strong>
+                                <span class="ml-2 text-muted">• Publisher: IJSRM</span>
+                                <span class="ml-2 text-muted">• DOI: <code>10.18535/ijsrm/v14i04.ec05</code></span>
+                            </div>
+
+                            <div class="pub-abstract">
+                                <strong>Abstract:</strong> Introduces an autonomous agentic refactoring engine that parses legacy codebases, pinpoints security vulnerabilities, synthesizes semantic patches using LLMs, and verifies regression-free builds with automated fuzzing suites.
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2">
+                                <div class="mb-2 mb-md-0">
+                                    <span class="pub-tag">Legacy Code Patching</span><span class="pub-tag">LLMs</span><span class="pub-tag">Multi-Agent Automation</span><span class="pub-tag">Security Vulnerabilities</span><span class="pub-tag">Automated Fuzzing</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://ijsrm.net/index.php/ijsrm/article/view/7194" target="_blank" class="btn-pub-action btn-pub-primary">
+                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+                                    </a>
+                                    <a href="https://doi.org/10.18535/ijsrm/v14i04.ec05" target="_blank" class="btn-pub-action btn-pub-outline">
+                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
+                                    </a>
+                                    
+                                    <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal(22, "Automated Vulnerability Patching in Legacy Code Using LLMs and Multi-AI Agents", "@article{verma2026automatedpatching,\n  title={Automated Vulnerability Patching in Legacy Code Using LLMs and Multi-AI Agents},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={14},\n  number={4},\n  pages={ec05},\n  year={2026},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v14i04.ec05}\n}")'>
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+
+                    <!-- No Results Fallback -->
+                    <div id="noResults" class="text-center py-5 d-none">
+                        <i class="mdi mdi-file-search-outline text-muted display-4"></i>
+                        <h4 class="mt-3 text-muted">No publications found</h4>
+                        <p class="text-muted">Try adjusting your search query or switching filter categories.</p>
+                        <button class="btn btn-outline-primary rounded" onclick="resetFilters()">Reset Filters</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Header End -->
+
+    <!-- Citation Modal -->
+    <div class="modal fade" id="citeModal" tabindex="-1" role="dialog" aria-labelledby="citeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold" id="citeModalLabel"><i class="mdi mdi-format-quote-close text-primary mr-1"></i> Export Citation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="font-weight-bold text-dark mb-2" id="citePaperTitle"></p>
+                    <p class="text-muted small mb-2">BibTeX format for LaTeX, Overleaf, Mendeley, and Zotero:</p>
+                    <pre class="bibtex-preview" id="bibtexContent"></pre>
+                    <div id="copyAlert" class="alert alert-success d-none py-2 px-3 small">
+                        <i class="mdi mdi-check mr-1"></i> BibTeX copied to clipboard!
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary rounded font-weight-bold" id="btnCopyBibtex" onclick="copyBibtexToClipboard()">
+                        <i class="mdi mdi-content-copy mr-1"></i> Copy BibTeX
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <a href="index" class="footer-logo brand-logo-wrap font-weight-bold d-inline-flex justify-content-center align-items-center" style="text-decoration: none;">
+                        <span class="brand-monogram-emblem">
+                            <svg class="brand-logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="hvFootGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#1e40af" />
+                                        <stop offset="55%" stop-color="#2563eb" />
+                                        <stop offset="100%" stop-color="#4f46e5" />
+                                    </linearGradient>
+                                    <linearGradient id="hvFootAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#38bdf8" />
+                                        <stop offset="100%" stop-color="#818cf8" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="40" height="40" rx="10" fill="url(#hvFootGrad)" />
+                                <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+                                <path d="M11 12V28M11 20H19M19 12V28" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 12L28.5 28L34 12" stroke="url(#hvFootAccentGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="34" cy="12" r="1.75" fill="#38bdf8" />
+                            </svg>
+                        </span>
+                        <span class="brand-name-text">
+                            <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
+                        </span>
+                    </a>
+                    <p class="para-desc mx-auto mt-4 text-black" style="max-width: 650px;">
+                        Principal Software Engineer in AI @ Palo Alto Networks • Forbes Technology Council Member • IEEE Senior Member • Stanford GSB Scholar
+                    </p>
+                    <ul class="list-unstyled mb-0 mt-4 social-icon">
+                        <li class="list-inline-item mr-1"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="rounded-circle" title="Google Scholar"><i class="mdi mdi-school"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="rounded-circle" title="LinkedIn"><i class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://github.com/iamharshverma" target="_blank" class="rounded-circle" title="GitHub"><i class="mdi mdi-github-face"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://medium.com/@harshverma59" target="_blank" class="rounded-circle" title="Medium"><i class="mdi mdi-medium"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://twitter.com/harshverma59" target="_blank" class="rounded-circle" title="Twitter"><i class="mdi mdi-twitter"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.instagram.com/aiwithharsh/" target="_blank" class="rounded-circle" title="Instagram"><i class="mdi mdi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer footer-bar bg-black">
+        <div class="container text-foot text-center">
+            <p class="mb-0 text-white-50">&copy; <script>document.write(new Date().getFullYear())</script> Harsh Verma. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to top -->    
+    <a href="#" class="back-to-top rounded text-center" id="back-to-top"> 
+        <i class="mdi mdi-chevron-up d-block"> </i> 
+    </a>
+    <!-- Back to top -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/feather.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+        var yearEl = document.getElementById('currentYear');
+        if (yearEl) yearEl.innerText = new Date().getFullYear();
+
+        var currentActiveBibtex = "";
+
+        function openCiteModal(id, title, bibtex) {
+            document.getElementById('citePaperTitle').innerText = title;
+            document.getElementById('bibtexContent').innerText = bibtex;
+            currentActiveBibtex = bibtex;
+            $('#copyAlert').addClass('d-none');
+            $('#citeModal').modal('show');
+        }
+
+        function copyPatentDetails(title, number, date, status) {{
+            var patentText = title + "\nPatent/App Number: " + number + "\nStatus: " + status + " (" + date + ")\nIssuing Authority: Indian Patent Office (IP India)\nSearch Portal: https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/";
+            
+            if (navigator.clipboard) {{
+                navigator.clipboard.writeText(patentText).then(function() {{
+                    alert("Patent details copied to clipboard:\n\n" + patentText);
+                }}).catch(function() {{
+                    prompt("Copy Patent Information:", patentText);
+                }});
+            }} else {{
+                prompt("Copy Patent Information:", patentText);
+            }}
+        }}
+
+        function copyBibtexToClipboard() {
+            if (!currentActiveBibtex) return;
+            navigator.clipboard.writeText(currentActiveBibtex).then(function() {
+                $('#copyAlert').removeClass('d-none');
+                setTimeout(function() {
+                    $('#copyAlert').addClass('d-none');
+                }, 3000);
+            }).catch(function(err) {
+                // Fallback for older browsers
+                var textArea = document.createElement("textarea");
+                textArea.value = currentActiveBibtex;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand("Copy");
+                textArea.remove();
+                $('#copyAlert').removeClass('d-none');
+                setTimeout(function() {
+                    $('#copyAlert').addClass('d-none');
+                }, 3000);
+            });
+        }
+
+        // Filtering and search logic
+        $(document).ready(function() {
+            var activeFilter = "all";
+
+            function filterPublications() {
+                var query = $('#pubSearchInput').val().toLowerCase().trim();
+                var visibleCount = 0;
+
+                $('.publication-card').each(function() {
+                    var $card = $(this);
+                    var topic = $card.attr('data-topic');
+                    var category = $card.attr('data-category');
+                    var cardText = $card.text().toLowerCase();
+
+                    var matchesCategory = false;
+                    if (activeFilter === "all") {
+                        matchesCategory = true;
+                    } else if (activeFilter === "agents") {
+                        matchesCategory = (topic === "agents");
+                    } else if (activeFilter === "security") {
+                        matchesCategory = (topic === "security");
+                    } else if (activeFilter === "cloud_ai") {
+                        matchesCategory = (topic === "cloud_ai");
+                    } else if (activeFilter === "software_eng") {
+                        matchesCategory = (topic === "software_eng" || topic === "ethics" || topic === "leadership");
+                    } else if (activeFilter === "iot") {
+                        matchesCategory = (topic === "iot" || topic === "performance");
+                    }
+
+                    var matchesQuery = (query === "" || cardText.indexOf(query) !== -1);
+
+                    if (matchesCategory && matchesQuery) {
+                        $card.show();
+                        visibleCount++;
+                    } else {
+                        $card.hide();
+                    }
+                });
+
+                $('#showingCount').text("Showing " + visibleCount + " of 22 publications");
+
+                if (visibleCount === 0) {
+                    $('#noResults').removeClass('d-none');
+                } else {
+                    $('#noResults').addClass('d-none');
+                }
+            }
+
+            $('.filter-btn').on('click', function() {
+                $('.filter-btn').removeClass('active');
+                $(this).addClass('active');
+                activeFilter = $(this).attr('data-filter');
+                filterPublications();
+            });
+
+            $('#pubSearchInput').on('keyup input', function() {
+                filterPublications();
+            });
+
+            window.resetFilters = function() {
+                $('#pubSearchInput').val('');
+                activeFilter = "all";
+                $('.filter-btn').removeClass('active');
+                $('.filter-btn[data-filter="all"]').addClass('active');
+                filterPublications();
+            };
+        });
+    </script>
+</body>
+</html>

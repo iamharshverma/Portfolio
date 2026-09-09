@@ -1,0 +1,1837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30250521-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-30250521-4');
+    </script>
+    <meta charset="UTF-8">
+    <title>Smart Slides &amp; Keynotes | Harsh Verma - EasyChair Smart Slide™ Presentations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore interactive EasyChair Smart Slide™ keynote presentations authored by Harsh Verma on Agentic AI Security, Autonomous SecOps, Governance in the Age of Autonomy, and GenAI Cybersecurity." />
+    <meta name="keywords" content="Harsh Verma, Smart Slides, EasyChair, Agentic AI, Autonomous Cybersecurity, Gen-AI, AI Governance, Hierarchy of Needs for AI, SecOps Automation, Explainable AI" />
+    <meta content="Harsh Verma" name="author" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Smart Slides: Interactive AI &amp; Cybersecurity Keynotes | Harsh Verma" />
+    <meta property="og:description" content="Interactive EasyChair Smart Slide™ keynote presentations by Harsh Verma exploring the transition from static rule-based security to autonomous, self-healing Agentic AI systems." />
+    <meta property="og:image" content="images/smart-slides/agentic-security-governance/slide-1.jpg" />
+    <meta property="og:type" content="website" />
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon_new.ico">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Magnific -->
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Main css File -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Dark Mode css File -->
+    <link href="css/dark-mode.css" rel="stylesheet" type="text/css" />
+    <!-- HV Copilot css File -->
+    <link href="css/hv-copilot.css" rel="stylesheet" type="text/css" />
+    <script src="js/dark-mode.js"></script>
+
+    <style>
+        /* Smart Slides Custom Styles */
+        .smart-slides-hero {
+            background: linear-gradient(135deg, #050b18 0%, #0c1833 45%, #182852 100%);
+            border-radius: 20px;
+            color: #ffffff;
+            padding: 38px 36px;
+            box-shadow: 0 20px 48px rgba(5, 11, 24, 0.35);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            margin-bottom: 36px;
+        }
+        .smart-slides-hero::before {
+            content: "";
+            position: absolute;
+            top: -30%;
+            right: -15%;
+            width: 460px;
+            height: 460px;
+            background: radial-gradient(circle, rgba(56, 189, 248, 0.25) 0%, rgba(99, 102, 241, 0.15) 50%, rgba(255, 255, 255, 0) 75%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .smart-badge-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 14px;
+            border-radius: 9999px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            background: rgba(56, 189, 248, 0.15);
+            border: 1px solid rgba(56, 189, 248, 0.4);
+            color: #38bdf8;
+            margin-bottom: 14px;
+        }
+        .smart-stat-box {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: 12px;
+            padding: 16px 14px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .smart-stat-box:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-2px);
+            border-color: rgba(56, 189, 248, 0.4);
+        }
+        .smart-stat-num {
+            font-size: 28px;
+            font-weight: 800;
+            color: #38bdf8;
+            line-height: 1.15;
+            margin-bottom: 4px;
+            letter-spacing: -0.5px;
+        }
+        .smart-stat-label {
+            font-size: 11.5px;
+            color: #cbd5e1;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0;
+        }
+
+        /* Deck Selector Switcher Cards */
+        .deck-switcher-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .deck-card {
+            background: #ffffff;
+            border: 2px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 22px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .deck-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(37, 99, 235, 0.12);
+            border-color: #93c5fd;
+        }
+        .deck-card.active {
+            border-color: #2563eb;
+            background: linear-gradient(180deg, #f8fafc 0%, #eff6ff 100%);
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.16);
+        }
+        body.dark-mode .deck-card {
+            background: #0f172a;
+            border-color: #1e293b;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+        }
+        body.dark-mode .deck-card:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 12px 28px rgba(59, 130, 246, 0.2);
+        }
+        body.dark-mode .deck-card.active {
+            border-color: #3b82f6;
+            background: linear-gradient(180deg, #131d36 0%, #0f172a 100%);
+        }
+        .deck-card-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+        .deck-card.active .deck-card-badge {
+            background: #2563eb;
+            color: #ffffff;
+        }
+        .deck-card:not(.active) .deck-card-badge {
+            background: #e2e8f0;
+            color: #475569;
+        }
+        body.dark-mode .deck-card:not(.active) .deck-card-badge {
+            background: #1e293b;
+            color: #94a3b8;
+        }
+        .deck-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0f172a;
+            line-height: 1.35;
+            margin-bottom: 8px;
+        }
+        body.dark-mode .deck-title {
+            color: #f8fafc;
+        }
+        .deck-desc {
+            font-size: 13.5px;
+            color: #64748b;
+            line-height: 1.5;
+            margin-bottom: 14px;
+        }
+        body.dark-mode .deck-desc {
+            color: #94a3b8;
+        }
+        .deck-meta-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12.5px;
+            color: #475569;
+            padding-top: 12px;
+            border-top: 1px solid #e2e8f0;
+        }
+        body.dark-mode .deck-meta-footer {
+            color: #94a3b8;
+            border-color: #1e293b;
+        }
+
+        /* Presentation Theater Frame */
+        .presentation-theater {
+            background: #090d16;
+            border: 1px solid #1e293b;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .theater-header {
+            background: #0e1526;
+            padding: 14px 22px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            color: #ffffff;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .theater-title-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .slide-counter-badge {
+            background: rgba(37, 99, 235, 0.25);
+            color: #60a5fa;
+            border: 1px solid rgba(96, 165, 250, 0.35);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 12.5px;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        .theater-slide-title {
+            font-size: 15.5px;
+            font-weight: 700;
+            color: #f1f5f9;
+            margin: 0;
+            max-width: 550px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .theater-tools {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .theater-btn {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #e2e8f0;
+            border-radius: 8px;
+            padding: 6px 12px;
+            font-size: 13px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .theater-btn:hover {
+            background: rgba(37, 99, 235, 0.4);
+            border-color: #3b82f6;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .theater-btn.active {
+            background: #2563eb;
+            border-color: #3b82f6;
+            color: #ffffff;
+        }
+        
+        /* Main Slide Stage */
+        .slide-stage-container {
+            position: relative;
+            background: #030712;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            min-height: 480px;
+            user-select: none;
+        }
+        .slide-main-image {
+            max-width: 100%;
+            max-height: 640px;
+            width: auto;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+            object-fit: contain;
+            transition: opacity 0.25s ease, transform 0.25s ease;
+        }
+        .slide-nav-overlay-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 54px;
+            height: 54px;
+            background: rgba(15, 23, 42, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            z-index: 10;
+            backdrop-filter: blur(8px);
+        }
+        .slide-nav-overlay-btn:hover {
+            background: #2563eb;
+            border-color: #60a5fa;
+            transform: translateY(-50%) scale(1.08);
+            box-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
+        }
+        .slide-nav-overlay-btn.btn-prev {
+            left: 20px;
+        }
+        .slide-nav-overlay-btn.btn-next {
+            right: 20px;
+        }
+
+        /* Progress Bar Scrubber */
+        .slide-progress-track {
+            width: 100%;
+            height: 6px;
+            background: #1e293b;
+            cursor: pointer;
+            position: relative;
+            transition: height 0.2s ease;
+        }
+        .slide-progress-track:hover {
+            height: 9px;
+        }
+        .slide-progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #2563eb 0%, #38bdf8 100%);
+            width: 4%;
+            transition: width 0.2s ease;
+        }
+
+        /* Theater Footer Bar */
+        .theater-footer {
+            background: #0e1526;
+            padding: 14px 22px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .theater-controls-center {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .ctrl-icon-btn {
+            width: 38px;
+            height: 38px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .ctrl-icon-btn:hover {
+            background: #2563eb;
+            border-color: #3b82f6;
+            color: #ffffff;
+        }
+        .ctrl-icon-btn:disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        .slide-quick-jump {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            border-radius: 8px;
+            padding: 7px 12px;
+            font-size: 13px;
+            font-weight: 500;
+            outline: none;
+            cursor: pointer;
+            max-width: 260px;
+        }
+        .slide-quick-jump option {
+            background: #0f172a;
+            color: #ffffff;
+        }
+
+        /* Thumbnail Filmstrip */
+        .filmstrip-wrapper {
+            background: #0a0f1d;
+            padding: 14px 18px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: thin;
+            scrollbar-color: #2563eb #0f172a;
+        }
+        .filmstrip-wrapper::-webkit-scrollbar {
+            height: 6px;
+        }
+        .filmstrip-wrapper::-webkit-scrollbar-thumb {
+            background: #2563eb;
+            border-radius: 3px;
+        }
+        .thumb-item {
+            display: inline-block;
+            width: 110px;
+            margin-right: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid transparent;
+            position: relative;
+            transition: all 0.2s ease;
+            background: #1e293b;
+        }
+        .thumb-item:hover {
+            transform: translateY(-2px);
+            border-color: #60a5fa;
+        }
+        .thumb-item.active {
+            border-color: #38bdf8;
+            box-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+        }
+        .thumb-item img {
+            width: 100%;
+            height: 65px;
+            object-fit: cover;
+            display: block;
+        }
+        .thumb-number {
+            position: absolute;
+            bottom: 3px;
+            left: 3px;
+            background: rgba(0, 0, 0, 0.75);
+            color: #ffffff;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 1px 6px;
+            border-radius: 4px;
+        }
+
+        /* Slide Executive Briefing Card */
+        .briefing-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 26px 28px;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+        body.dark-mode .briefing-card {
+            background: #0f172a;
+            border-color: #1e293b;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+        .briefing-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .briefing-tag {
+            font-size: 11.5px;
+            font-weight: 700;
+            color: #2563eb;
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            padding: 4px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        body.dark-mode .briefing-tag {
+            color: #60a5fa;
+            background: rgba(37, 99, 235, 0.18);
+            border-color: rgba(96, 165, 250, 0.35);
+        }
+        .briefing-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 12px;
+            line-height: 1.35;
+        }
+        body.dark-mode .briefing-title {
+            color: #f8fafc;
+        }
+        .briefing-list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 18px;
+        }
+        .briefing-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 8px;
+            font-size: 14.5px;
+            color: #334155;
+            line-height: 1.55;
+        }
+        body.dark-mode .briefing-list li {
+            color: #cbd5e1;
+        }
+        .briefing-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 1px;
+            font-weight: 800;
+            color: #2563eb;
+        }
+        body.dark-mode .briefing-list li::before {
+            color: #38bdf8;
+        }
+        .briefing-tags-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 12px;
+        }
+        .tag-chip {
+            font-size: 11.5px;
+            font-weight: 600;
+            color: #475569;
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            padding: 3px 10px;
+            border-radius: 6px;
+        }
+        body.dark-mode .tag-chip {
+            color: #94a3b8;
+            background: #1e293b;
+            border-color: #334155;
+        }
+
+        /* All Slides Grid View */
+        .all-slides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 24px;
+        }
+        .grid-slide-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+            cursor: pointer;
+            transition: all 0.25s ease;
+            position: relative;
+        }
+        .grid-slide-card:hover {
+            transform: translateY(-4px);
+            border-color: #2563eb;
+            box-shadow: 0 12px 28px rgba(37, 99, 235, 0.15);
+        }
+        body.dark-mode .grid-slide-card {
+            background: #0f172a;
+            border-color: #1e293b;
+        }
+        body.dark-mode .grid-slide-card:hover {
+            border-color: #38bdf8;
+            box-shadow: 0 12px 28px rgba(56, 189, 248, 0.18);
+        }
+        .grid-slide-img-wrap {
+            position: relative;
+            background: #000;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+        }
+        .grid-slide-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .grid-slide-card:hover .grid-slide-img-wrap img {
+            transform: scale(1.04);
+        }
+        .grid-slide-badge {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background: rgba(15, 23, 42, 0.85);
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 6px;
+            backdrop-filter: blur(4px);
+        }
+        .grid-slide-body {
+            padding: 14px 16px;
+        }
+        .grid-slide-cat {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #2563eb;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        body.dark-mode .grid-slide-cat {
+            color: #38bdf8;
+        }
+        .grid-slide-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 6px;
+            line-height: 1.35;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        body.dark-mode .grid-slide-title {
+            color: #f1f5f9;
+        }
+        .grid-slide-footer {
+            font-size: 12px;
+            color: #64748b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Filter Pills & Search */
+        .filter-controls-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 22px;
+        }
+        .filter-chip-btn {
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            color: #475569;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .filter-chip-btn:hover {
+            border-color: #2563eb;
+            color: #2563eb;
+            background: #eff6ff;
+        }
+        .filter-chip-btn.active {
+            background: #2563eb;
+            border-color: #2563eb;
+            color: #ffffff;
+        }
+        body.dark-mode .filter-chip-btn {
+            background: #1e293b;
+            border-color: #334155;
+            color: #cbd5e1;
+        }
+        body.dark-mode .filter-chip-btn:hover {
+            border-color: #38bdf8;
+            color: #38bdf8;
+            background: rgba(56, 189, 248, 0.1);
+        }
+        body.dark-mode .filter-chip-btn.active {
+            background: #2563eb;
+            border-color: #3b82f6;
+            color: #ffffff;
+        }
+        .search-slide-input {
+            position: relative;
+            min-width: 260px;
+        }
+        .search-slide-input input {
+            width: 100%;
+            height: 40px;
+            padding-left: 36px;
+            padding-right: 14px;
+            border-radius: 20px;
+            border: 1px solid #cbd5e1;
+            font-size: 13.5px;
+            outline: none;
+            transition: all 0.2s ease;
+            background: #ffffff;
+            color: #0f172a;
+        }
+        .search-slide-input input:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+        }
+        body.dark-mode .search-slide-input input {
+            background: #1e293b;
+            border-color: #334155;
+            color: #f1f5f9;
+        }
+        .search-slide-input i {
+            position: absolute;
+            left: 12px;
+            top: 11px;
+            font-size: 17px;
+            color: #94a3b8;
+        }
+
+        /* Fullscreen Overlay Mode */
+        .presentation-theater.is-fullscreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 99999;
+            border-radius: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .presentation-theater.is-fullscreen .slide-stage-container {
+            flex: 1;
+            height: calc(100vh - 120px);
+            padding: 10px;
+        }
+        .presentation-theater.is-fullscreen .slide-main-image {
+            max-height: calc(100vh - 140px);
+        }
+
+        /* Academic Citation Hub */
+        .citation-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 20px 24px;
+            margin-top: 30px;
+        }
+        body.dark-mode .citation-box {
+            background: #0f172a;
+            border-color: #1e293b;
+        }
+        .citation-code {
+            background: #090d16;
+            color: #38bdf8;
+            padding: 14px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 12px;
+            overflow-x: auto;
+            white-space: pre;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
+        <div class="container">
+            <a class="navbar-brand logo" href="index">
+                <span class="brand-logo-symbol">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="hvNavGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#0f172a" />
+                                <stop offset="55%" stop-color="#2563eb" />
+                                <stop offset="100%" stop-color="#4f46e5" />
+                            </linearGradient>
+                            <linearGradient id="hvNavAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#38bdf8" />
+                                <stop offset="100%" stop-color="#818cf8" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="40" height="40" rx="10" fill="url(#hvNavGrad)" />
+                        <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+                        <path d="M11 12V28M11 20H19M19 12V28" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M23 12L28.5 28L34 12" stroke="url(#hvNavAccentGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="34" cy="12" r="1.75" fill="#38bdf8" />
+                    </svg>
+                </span>
+                <span class="brand-name-text">
+                    <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-publications">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-awards">Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-memberships">Memberships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-events">Speaker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-books">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-blog">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More <i class="mdi mdi-chevron-down nav-dropdown-arrow"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right nav-custom-dropdown" aria-labelledby="navbarDropdown">
+                            <div class="nav-dropdown-header">
+                                <span>Extended Portfolios &amp; Hubs</span>
+                            </div>
+                            <a class="dropdown-item nav-dropdown-item active" href="page-smart-slides">
+                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-presentation-play"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Smart Slides <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Featured</span></span>
+                                    <span class="dropdown-item-desc">Interactive executive &amp; research slide decks</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-portfolio">
+                                <div class="dropdown-item-icon bg-soft-info"><i class="mdi mdi-cube-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Portfolio Projects</span>
+                                    <span class="dropdown-item-desc">Architectures, agent frameworks &amp; systems</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-social">
+                                <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
+                                    <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
+                                <div class="dropdown-item-icon bg-soft-warning"><i class="mdi mdi-shield-account-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">38 Verified Profiles Hub</span>
+                                    <span class="dropdown-item-desc">Academic, editorial &amp; executive registries</span>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider my-2"></div>
+                            <a class="dropdown-item nav-dropdown-item" href="index#contact">
+                                <div class="dropdown-item-icon bg-soft-danger"><i class="mdi mdi-email-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Contact Harsh</span>
+                                    <span class="dropdown-item-desc">Advisory, keynotes &amp; consultations</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
+                    <li class="list-inline-item mr-2">
+                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar">
+                            <i class="mdi mdi-school"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="nav-social-btn" title="LinkedIn Profile">
+                            <i class="mdi mdi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Main Content Start -->
+    <section class="section" style="padding-top: 130px; padding-bottom: 70px;">
+        <div class="container">
+            
+            <!-- Hero Header Card -->
+            <div class="smart-slides-hero" id="smart-slides-hero">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <span class="smart-badge-pill">
+                            <i class="mdi mdi-certificate"></i> EasyChair Smart Slide™ Verified Decks
+                        </span>
+                        <h1 class="font-weight-bold text-white mb-2" style="font-size: 2.5rem; letter-spacing: -0.5px; line-height: 1.2;">
+                            Smart Slides &amp; Keynote Hub
+                        </h1>
+                        <p class="lead mb-4" style="color: #cbd5e1; font-size: 1.12rem; max-width: 720px; line-height: 1.6;">
+                            Interactive executive presentations authored by Harsh Verma exploring the architectural transition from static rule-based security to autonomous, self-healing <strong>Agentic AI</strong> systems and enterprise governance.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <a href="#presentation-viewport" class="btn btn-primary btn-sm rounded-pill px-4 py-2 font-weight-600 mr-2 mb-2">
+                                <i class="mdi mdi-play-circle mr-1"></i> Launch Interactive Player
+                            </a>
+                            <a href="https://easychair.org/smart-slide/author/v5zJ" target="_blank" class="btn btn-outline-light btn-sm rounded-pill px-3 py-2 font-weight-600 mb-2">
+                                <i class="mdi mdi-open-in-new mr-1"></i> EasyChair Author Profile
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <div class="smart-stat-box">
+                                    <div class="smart-stat-num">2</div>
+                                    <div class="smart-stat-label">Keynote Decks</div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="smart-stat-box">
+                                    <div class="smart-stat-num">41</div>
+                                    <div class="smart-stat-label">Total Slides</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="smart-stat-box">
+                                    <div class="smart-stat-num">94%</div>
+                                    <div class="smart-stat-label">MTTR Reduction</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="smart-stat-box">
+                                    <div class="smart-stat-num">SecOps</div>
+                                    <div class="smart-stat-label">AI Governance</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deck Selector Cards -->
+            <div class="row mb-2">
+                <div class="col-12">
+                    <h4 class="font-weight-bold mb-3 d-flex align-items-center">
+                        <i class="mdi mdi-folder-multiple-image text-primary mr-2"></i> Select Keynote Presentation
+                    </h4>
+                </div>
+            </div>
+
+            <div class="deck-switcher-container" id="deck-selector">
+                <!-- Deck 1 Card -->
+                <div class="deck-card active" id="deck-card-ntzm5" onclick="selectDeck('ntzm5')">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="deck-card-badge">Deck 1 • EasyChair Ref: ntzm5</span>
+                            <span class="badge badge-pill badge-info" style="font-size: 11px;">24 Slides</span>
+                        </div>
+                        <h3 class="deck-title">The Era of Agentic Security: Governance in the Age of Autonomy</h3>
+                        <p class="deck-desc">
+                            Architecting autonomous security operations (SecOps), managing non-deterministic workflows, verifiable AI guardrails, and the Hierarchy of Needs for AI agents.
+                        </p>
+                    </div>
+                    <div class="deck-meta-footer">
+                        <span><i class="mdi mdi-account-check text-primary mr-1"></i> Author: Harsh Verma</span>
+                        <span><i class="mdi mdi-shield-check text-success mr-1"></i> Verified Academic Ref</span>
+                    </div>
+                </div>
+
+                <!-- Deck 2 Card -->
+                <div class="deck-card" id="deck-card-T45r" onclick="selectDeck('T45r')">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="deck-card-badge">Deck 2 • EasyChair Ref: T45r</span>
+                            <span class="badge badge-pill badge-info" style="font-size: 11px;">17 Slides</span>
+                        </div>
+                        <h3 class="deck-title">Powering Cybersecurity with Gen-AI and Intelligent Agents</h3>
+                        <p class="deck-desc">
+                            Addressing attack velocity (every 39 seconds) and $4.35M breach costs with autonomous self-healing agentic defense, threat summarizers, and Rakshak-AI.
+                        </p>
+                    </div>
+                    <div class="deck-meta-footer">
+                        <span><i class="mdi mdi-account-check text-primary mr-1"></i> Author: Harsh Verma</span>
+                        <span><i class="mdi mdi-chart-timeline-variant text-info mr-1"></i> Case Study Included</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View Mode Switcher & Filter Bar -->
+            <div class="filter-controls-row" id="presentation-viewport">
+                <div class="d-flex align-items-center flex-wrap gap-2">
+                    <div class="btn-group mr-3 mb-2" role="group" aria-label="View Mode">
+                        <button type="button" class="btn btn-sm btn-primary active" id="btn-view-theater" onclick="switchViewMode('theater')">
+                            <i class="mdi mdi-presentation-play mr-1"></i> Theater Player
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-view-grid" onclick="switchViewMode('grid')">
+                            <i class="mdi mdi-view-grid mr-1"></i> Grid View
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-view-embed" onclick="switchViewMode('embed')">
+                            <i class="mdi mdi-open-in-app mr-1"></i> Live EasyChair Frame
+                        </button>
+                    </div>
+
+                    <div class="d-inline-flex flex-wrap gap-1 mb-2" id="category-filter-chips">
+                        <button class="filter-chip-btn active" data-cat="all" onclick="filterCategory('all', this)">All Topics</button>
+                        <button class="filter-chip-btn" data-cat="Threat Landscape" onclick="filterCategory('Threat Landscape', this)">Threat Landscape</button>
+                        <button class="filter-chip-btn" data-cat="Hierarchy of Needs" onclick="filterCategory('Hierarchy of Needs', this)">Hierarchy of Needs</button>
+                        <button class="filter-chip-btn" data-cat="Architecture" onclick="filterCategory('Architecture', this)">Architecture</button>
+                        <button class="filter-chip-btn" data-cat="Governance" onclick="filterCategory('Governance', this)">Governance</button>
+                        <button class="filter-chip-btn" data-cat="Applications" onclick="filterCategory('Applications', this)">Applications &amp; Demos</button>
+                    </div>
+                </div>
+
+                <div class="search-slide-input mb-2">
+                    <i class="mdi mdi-magnify"></i>
+                    <input type="text" id="slide-search" placeholder="Search slides, concepts, stats..." oninput="handleSlideSearch()">
+                </div>
+            </div>
+
+            <!-- 1. THEATER VIEW CONTAINER -->
+            <div id="view-theater-container">
+                <div class="presentation-theater" id="theater-frame">
+                    <!-- Theater Top Bar -->
+                    <div class="theater-header">
+                        <div class="theater-title-info">
+                            <span class="slide-counter-badge" id="theater-counter-badge">Slide 1 of 24</span>
+                            <h2 class="theater-slide-title" id="theater-slide-title">Loading presentation...</h2>
+                        </div>
+                        <div class="theater-tools">
+                            <button class="theater-btn" id="btn-audio-speak" onclick="toggleSpeech()" title="Listen to slide briefing (Speech Synthesizer)">
+                                <i class="mdi mdi-volume-high" id="speak-icon"></i> <span id="speak-label">Read Aloud</span>
+                            </button>
+                            <button class="theater-btn" id="btn-autoplay" onclick="toggleAutoplay()" title="Auto-advance slides every 5s">
+                                <i class="mdi mdi-play" id="autoplay-icon"></i> <span id="autoplay-label">Autoplay</span>
+                            </button>
+                            <button class="theater-btn" onclick="toggleFullscreen()" title="Fullscreen presentation mode (Press F)">
+                                <i class="mdi mdi-fullscreen" id="fullscreen-icon"></i> Fullscreen
+                            </button>
+                            <a href="#" target="_blank" class="theater-btn" id="btn-direct-easychair" title="Open this exact slide on EasyChair Smart Slide">
+                                <i class="mdi mdi-open-in-new"></i> EasyChair #{sn:1}
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Slide Stage with Overlay Nav Arrows -->
+                    <div class="slide-stage-container">
+                        <button class="slide-nav-overlay-btn btn-prev" id="btn-overlay-prev" onclick="prevSlide()" title="Previous Slide (Left Arrow)">
+                            <i class="mdi mdi-chevron-left"></i>
+                        </button>
+                        
+                        <img src="" alt="Slide View" id="current-slide-img" class="slide-main-image" onclick="nextSlide()" title="Click to advance to next slide">
+
+                        <button class="slide-nav-overlay-btn btn-next" id="btn-overlay-next" onclick="nextSlide()" title="Next Slide (Right Arrow or Spacebar)">
+                            <i class="mdi mdi-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Progress Scrubber Track -->
+                    <div class="slide-progress-track" id="slide-progress-bar" onclick="handleProgressClick(event)" title="Click to scrub through presentation">
+                        <div class="slide-progress-fill" id="slide-progress-fill"></div>
+                    </div>
+
+                    <!-- Theater Footer Controls Bar -->
+                    <div class="theater-footer">
+                        <div class="d-flex align-items-center gap-2">
+                            <button class="ctrl-icon-btn" onclick="goToSlide(1)" title="Jump to First Slide (Home)">
+                                <i class="mdi mdi-page-first"></i>
+                            </button>
+                            <button class="ctrl-icon-btn" id="btn-footer-prev" onclick="prevSlide()" title="Previous Slide (Left Arrow)">
+                                <i class="mdi mdi-chevron-left"></i>
+                            </button>
+                            <button class="ctrl-icon-btn" id="btn-footer-next" onclick="nextSlide()" title="Next Slide (Right Arrow)">
+                                <i class="mdi mdi-chevron-right"></i>
+                            </button>
+                            <button class="ctrl-icon-btn" id="btn-footer-last" onclick="goToLastSlide()" title="Jump to Last Slide (End)">
+                                <i class="mdi mdi-page-last"></i>
+                            </button>
+                        </div>
+
+                        <div class="theater-controls-center">
+                            <span class="text-white-50 mr-2 font-weight-500" style="font-size: 13px;">Jump to:</span>
+                            <select class="slide-quick-jump" id="slide-jump-select" onchange="goToSlide(parseInt(this.value))">
+                                <!-- Populated dynamically -->
+                            </select>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2">
+                            <button class="theater-btn" onclick="copyCurrentSlideLink()" title="Copy link to this slide">
+                                <i class="mdi mdi-link-variant"></i> <span id="copy-link-label">Copy Link</span>
+                            </button>
+                            <a href="" id="btn-download-slide" download="slide.jpg" class="theater-btn" title="Download slide image">
+                                <i class="mdi mdi-download"></i> Slide Image
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Synchronized Filmstrip -->
+                    <div class="filmstrip-wrapper" id="filmstrip-scroller">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+
+                <!-- Slide Executive Briefing Card -->
+                <div class="briefing-card" id="slide-briefing-card">
+                    <div class="briefing-header">
+                        <div>
+                            <span class="briefing-tag" id="briefing-category">Architecture</span>
+                            <span class="text-muted ml-2" style="font-size: 13px;" id="briefing-deck-name">The Era of Agentic Security</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="badge badge-light border px-2 py-1" id="briefing-slide-index" style="font-size: 12px;">Slide 1 of 24</span>
+                        </div>
+                    </div>
+
+                    <h3 class="briefing-title" id="briefing-title">Powering Cybersecurity with GenAI &amp; Intelligent Agents</h3>
+                    
+                    <h6 class="font-weight-700 text-uppercase text-muted mb-2" style="font-size: 11px; letter-spacing: 0.5px;">Executive Takeaways &amp; Core Architecture:</h6>
+                    <ul class="briefing-list" id="briefing-takeaways">
+                        <!-- Populated dynamically -->
+                    </ul>
+
+                    <div class="pt-3 border-top d-flex justify-content-between align-items-center flex-wrap gap-2">
+                        <div class="briefing-tags-wrap" id="briefing-tags">
+                            <!-- Populated dynamically -->
+                        </div>
+                        <div class="text-muted" style="font-size: 12.5px;">
+                            <i class="mdi mdi-keyboard mr-1"></i> Tip: Use <strong>Left/Right Arrows</strong> or <strong>Spacebar</strong> to navigate. Press <strong>F</strong> for Fullscreen.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. ALL SLIDES GRID VIEW CONTAINER (Hidden by default) -->
+            <div id="view-grid-container" class="d-none">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="font-weight-bold mb-0">
+                        <span id="grid-deck-title">The Era of Agentic Security</span> 
+                        <span class="badge badge-pill badge-primary ml-2" id="grid-total-badge">24 Slides</span>
+                    </h4>
+                    <span class="text-muted" style="font-size: 13.5px;">Click any slide card to open in the interactive player</span>
+                </div>
+                <div class="all-slides-grid" id="grid-cards-container">
+                    <!-- Populated dynamically -->
+                </div>
+            </div>
+
+            <!-- 3. LIVE EASYCHAIR FRAME EMBED (Hidden by default) -->
+            <div id="view-embed-container" class="d-none">
+                <div class="card border-0 shadow-sm rounded-lg overflow-hidden mb-4">
+                    <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center py-3">
+                        <div>
+                            <i class="mdi mdi-web mr-1 text-info"></i> <strong>Live EasyChair Smart Slide Session</strong>
+                            <span class="badge badge-pill badge-info ml-2" id="embed-slug-badge">Ref: ntzm5</span>
+                        </div>
+                        <div>
+                            <a href="https://easychair.org/smart-slide/slide/ntzm5#{sn:1}" target="_blank" class="btn btn-sm btn-outline-light rounded-pill px-3" id="embed-external-link">
+                                <i class="mdi mdi-open-in-new mr-1"></i> Open EasyChair Window
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body p-0" style="background: #111;">
+                        <iframe id="easychair-live-frame" src="https://easychair.org/smart-slide/slide/ntzm5" style="width: 100%; height: 750px; border: none;" title="EasyChair Smart Slide Embed"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Academic Citation & Citation Hub -->
+            <div class="citation-box" id="academic-citation-hub">
+                <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+                    <h5 class="font-weight-bold mb-0">
+                        <i class="mdi mdi-school text-primary mr-1"></i> Academic Citation &amp; Provenance
+                    </h5>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-sm btn-outline-primary rounded-pill px-3" onclick="copyBibtexCitation()">
+                            <i class="mdi mdi-content-copy mr-1"></i> Copy BibTeX Citation
+                        </button>
+                    </div>
+                </div>
+                <p class="text-muted" style="font-size: 13.5px;">
+                    These presentations are peer-indexed and archived on <strong>EasyChair Smart Slide™</strong>, a scholarly platform for academic conferences, keynotes, and peer-reviewed technical slide presentations.
+                </p>
+                <div class="citation-code" id="bibtex-display">@misc{verma2026agenticsecurity,
+  author = {Verma, Harsh},
+  title = {The Era of Agentic Security: Governance in the Age of Autonomy},
+  howpublished = {EasyChair Smart Slide Series, Ref. ntzm5},
+  year = {2026},
+  url = {https://easychair.org/smart-slide/slide/ntzm5}
+}</div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Main Content End -->
+
+    <!-- Footer Start -->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <a href="index" class="footer-logo brand-logo-wrap font-weight-bold d-inline-flex justify-content-center align-items-center" style="text-decoration: none;">
+                        <span class="brand-monogram-emblem">
+                            <svg class="brand-logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="hvFootGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#1e40af" />
+                                        <stop offset="55%" stop-color="#2563eb" />
+                                        <stop offset="100%" stop-color="#4f46e5" />
+                                    </linearGradient>
+                                    <linearGradient id="hvFootAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#38bdf8" />
+                                        <stop offset="100%" stop-color="#818cf8" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="40" height="40" rx="10" fill="url(#hvFootGrad)" />
+                                <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+                                <path d="M11 12V28M11 20H19M19 12V28" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 12L28.5 28L34 12" stroke="url(#hvFootAccentGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="34" cy="12" r="1.75" fill="#38bdf8" />
+                            </svg>
+                        </span>
+                        <span class="brand-name-text">
+                            <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
+                        </span>
+                    </a>
+                    <p class="para-desc mx-auto mt-4 text-black" style="max-width: 650px;">
+                        Principal Software Engineer in AI @ Palo Alto Networks • Forbes Technology Council Member • IEEE Senior Member • Stanford GSB Scholar
+                    </p>
+                    <ul class="list-unstyled mb-0 mt-4 social-icon">
+                        <li class="list-inline-item mr-1"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="rounded-circle" title="Google Scholar"><i class="mdi mdi-school"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="rounded-circle" title="LinkedIn"><i class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://github.com/iamharshverma" target="_blank" class="rounded-circle" title="GitHub"><i class="mdi mdi-github-face"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://medium.com/@harshverma59" target="_blank" class="rounded-circle" title="Medium"><i class="mdi mdi-medium"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://twitter.com/harshverma59" target="_blank" class="rounded-circle" title="Twitter"><i class="mdi mdi-twitter"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.instagram.com/aiwithharsh/" target="_blank" class="rounded-circle" title="Instagram"><i class="mdi mdi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer footer-bar bg-black">
+        <div class="container text-foot text-center">
+            <p class="mb-0 text-white-50">&copy; <script>document.write(new Date().getFullYear())</script> Harsh Verma. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to top -->    
+    <a href="#" class="back-to-top rounded text-center" id="back-to-top"> 
+        <i class="mdi mdi-chevron-up d-block"> </i> 
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/feather.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/hv-copilot.js"></script>
+
+    <!-- Embedded Deck Data & Interactive Script -->
+    <script>
+        // Decks Configuration
+        var DECKS = {
+            'ntzm5': {
+                id: 'ntzm5',
+                folder: 'agentic-security-governance',
+                title: 'The Era of Agentic Security: Governance in the Age of Autonomy',
+                shortTitle: 'The Era of Agentic Security',
+                count: 24,
+                easyChairUrl: 'https://easychair.org/smart-slide/slide/ntzm5',
+                bibtex: `@misc{verma2026agenticsecurity,
+  author = {Verma, Harsh},
+  title = {The Era of Agentic Security: Governance in the Age of Autonomy},
+  howpublished = {EasyChair Smart Slide Series, Ref. ntzm5},
+  year = {2026},
+  url = {https://easychair.org/smart-slide/slide/ntzm5}
+}`,
+                slides: [] // Populated below
+            },
+            'T45r': {
+                id: 'T45r',
+                folder: 'powering-cybersecurity-genai',
+                title: 'Powering Cybersecurity with Gen-AI and Intelligent Agents',
+                shortTitle: 'Powering Cybersecurity with Gen-AI',
+                count: 17,
+                easyChairUrl: 'https://easychair.org/smart-slide/slide/T45r',
+                bibtex: `@misc{verma2026cybersecuritygenai,
+  author = {Verma, Harsh},
+  title = {Powering Cybersecurity with Gen-AI and Intelligent Agents},
+  howpublished = {EasyChair Smart Slide Series, Ref. T45r},
+  year = {2026},
+  url = {https://easychair.org/smart-slide/slide/T45r}
+}`,
+                slides: [] // Populated below
+            }
+        };
+
+        // Current Interactive State
+        var currentDeckId = 'ntzm5';
+        var currentSlideIndex = 1;
+        var autoplayInterval = null;
+        var currentViewMode = 'theater'; // 'theater', 'grid', 'embed'
+        var speechSynth = window.speechSynthesis || null;
+        var isSpeaking = false;
+
+        // Fetch deck slide metadata
+        async function loadDeckData() {
+            try {
+                var res1 = await fetch('data/agentic-security-governance.json');
+                if (res1.ok) DECKS['ntzm5'].slides = await res1.json();
+            } catch(e) { console.warn('Deck 1 fallback load'); }
+
+            try {
+                var res2 = await fetch('data/powering-cybersecurity-genai.json');
+                if (res2.ok) DECKS['T45r'].slides = await res2.json();
+            } catch(e) { console.warn('Deck 2 fallback load'); }
+
+            // Check URL hash for direct links e.g. #deck=T45r&slide=4 or #sn:4
+            parseUrlHash();
+
+            // Initialize views
+            renderSlide();
+            renderFilmstrip();
+            renderGrid();
+        }
+
+        function parseUrlHash() {
+            var hash = window.location.hash;
+            if (!hash) return;
+
+            // Check if #sn:X EasyChair format
+            var snMatch = hash.match(/sn:(\d+)/);
+            if (snMatch) {
+                currentSlideIndex = parseInt(snMatch[1]);
+            }
+
+            // Check if #deck=X&slide=Y
+            var deckMatch = hash.match(/deck=([a-zA-Z0-9_-]+)/);
+            if (deckMatch && DECKS[deckMatch[1]]) {
+                currentDeckId = deckMatch[1];
+            }
+            var slideMatch = hash.match(/slide=(\d+)/);
+            if (slideMatch) {
+                currentSlideIndex = parseInt(slideMatch[1]);
+            }
+        }
+
+        function selectDeck(deckId) {
+            if (!DECKS[deckId]) return;
+            currentDeckId = deckId;
+            currentSlideIndex = 1;
+            stopSpeech();
+            stopAutoplay();
+
+            // Update switcher cards
+            $('.deck-card').removeClass('active');
+            $('#deck-card-' + deckId).addClass('active');
+
+            // Update frame & citation
+            var deck = DECKS[deckId];
+            $('#bibtex-display').text(deck.bibtex);
+            $('#easychair-live-frame').attr('src', deck.easyChairUrl);
+            $('#embed-slug-badge').text('Ref: ' + deck.id);
+            $('#embed-external-link').attr('href', deck.easyChairUrl + '#{sn:1}');
+            $('#grid-deck-title').text(deck.title);
+            $('#grid-total-badge').text(deck.count + ' Slides');
+
+            renderSlide();
+            renderFilmstrip();
+            renderGrid();
+            updateHash();
+        }
+
+        function renderSlide() {
+            var deck = DECKS[currentDeckId];
+            var count = deck.count;
+            if (currentSlideIndex < 1) currentSlideIndex = 1;
+            if (currentSlideIndex > count) currentSlideIndex = count;
+
+            var slideData = (deck.slides && deck.slides[currentSlideIndex - 1]) || {
+                slide: currentSlideIndex,
+                title: deck.shortTitle + ' - Slide ' + currentSlideIndex,
+                takeaways: ['Key insights and architecture overview for slide ' + currentSlideIndex + '.'],
+                category: 'Overview',
+                tags: ['Keynote', 'Agentic AI']
+            };
+
+            // Image path
+            var imgPath = 'images/smart-slides/' + deck.folder + '/slide-' + currentSlideIndex + '.jpg';
+            $('#current-slide-img').attr('src', imgPath);
+            $('#btn-download-slide').attr('href', imgPath).attr('download', deck.folder + '-slide-' + currentSlideIndex + '.jpg');
+
+            // Header titles and badges
+            $('#theater-counter-badge').text('Slide ' + currentSlideIndex + ' of ' + count);
+            $('#theater-slide-title').text(slideData.title);
+            var ecSlideUrl = deck.easyChairUrl + '#{sn:' + currentSlideIndex + '}';
+            $('#btn-direct-easychair').attr('href', ecSlideUrl).html('<i class="mdi mdi-open-in-new"></i> EasyChair #{sn:' + currentSlideIndex + '}');
+
+            // Progress bar
+            var percent = (currentSlideIndex / count) * 100;
+            $('#slide-progress-fill').css('width', percent + '%');
+
+            // Button states
+            $('#btn-footer-prev, #btn-overlay-prev').prop('disabled', currentSlideIndex <= 1);
+            $('#btn-footer-next, #btn-overlay-next').prop('disabled', currentSlideIndex >= count);
+
+            // Populate jump select if not already
+            var $jump = $('#slide-jump-select');
+            $jump.empty();
+            for (var i = 1; i <= count; i++) {
+                var itemTitle = (deck.slides && deck.slides[i - 1]) ? deck.slides[i - 1].title : ('Slide ' + i);
+                var $opt = $('<option>').val(i).text(i + '. ' + itemTitle);
+                if (i === currentSlideIndex) $opt.prop('selected', true);
+                $jump.append($opt);
+            }
+
+            // Update Briefing Card
+            $('#briefing-category').text(slideData.category || 'Overview');
+            $('#briefing-deck-name').text(deck.title);
+            $('#briefing-slide-index').text('Slide ' + currentSlideIndex + ' of ' + count);
+            $('#briefing-title').text(slideData.title);
+
+            var $tList = $('#briefing-takeaways');
+            $tList.empty();
+            if (slideData.takeaways && slideData.takeaways.length > 0) {
+                slideData.takeaways.forEach(function(t) {
+                    $tList.append($('<li>').text(t));
+                });
+            } else {
+                $tList.append($('<li>').text('Key executive briefing for this presentation slide.'));
+            }
+
+            var $tags = $('#briefing-tags');
+            $tags.empty();
+            if (slideData.tags && slideData.tags.length > 0) {
+                slideData.tags.forEach(function(tag) {
+                    $tags.append($('<span>').addClass('tag-chip').text(tag));
+                });
+            }
+
+            // Sync filmstrip active
+            $('.thumb-item').removeClass('active');
+            var $activeThumb = $('#thumb-item-' + currentSlideIndex);
+            $activeThumb.addClass('active');
+            if ($activeThumb.length) {
+                var container = $('#filmstrip-scroller');
+                var scrollLeft = $activeThumb.position().left + container.scrollLeft() - (container.width() / 2) + ($activeThumb.width() / 2);
+                container.animate({ scrollLeft: scrollLeft }, 200);
+            }
+        }
+
+        function renderFilmstrip() {
+            var deck = DECKS[currentDeckId];
+            var count = deck.count;
+            var $scroller = $('#filmstrip-scroller');
+            $scroller.empty();
+
+            for (var i = 1; i <= count; i++) {
+                var thumbSrc = 'images/smart-slides/' + deck.folder + '/thumb-' + i + '.jpg';
+                var title = (deck.slides && deck.slides[i - 1]) ? deck.slides[i - 1].title : ('Slide ' + i);
+
+                var $item = $('<div>')
+                    .addClass('thumb-item')
+                    .attr('id', 'thumb-item-' + i)
+                    .attr('title', 'Slide ' + i + ': ' + title)
+                    .attr('onclick', 'goToSlide(' + i + ')');
+
+                if (i === currentSlideIndex) $item.addClass('active');
+
+                var $img = $('<img>').attr('src', thumbSrc).attr('alt', 'Thumb ' + i);
+                var $num = $('<span>').addClass('thumb-number').text(i);
+
+                $item.append($img).append($num);
+                $scroller.append($item);
+            }
+        }
+
+        function renderGrid() {
+            var deck = DECKS[currentDeckId];
+            var count = deck.count;
+            var $grid = $('#grid-cards-container');
+            $grid.empty();
+
+            for (var i = 1; i <= count; i++) {
+                var slideData = (deck.slides && deck.slides[i - 1]) || {
+                    slide: i,
+                    title: 'Slide ' + i,
+                    category: 'Overview'
+                };
+                var thumbSrc = 'images/smart-slides/' + deck.folder + '/thumb-' + i + '.jpg';
+
+                var cardHtml = `
+                    <div class="grid-slide-card" data-category="${slideData.category || ''}" data-title="${(slideData.title || '').toLowerCase()}" onclick="jumpFromGrid(${i})">
+                        <div class="grid-slide-img-wrap">
+                            <span class="grid-slide-badge">#${i}</span>
+                            <img src="${thumbSrc}" alt="Slide ${i}">
+                        </div>
+                        <div class="grid-slide-body">
+                            <div class="grid-slide-cat">${slideData.category || 'Overview'}</div>
+                            <div class="grid-slide-title">${slideData.title}</div>
+                            <div class="grid-slide-footer">
+                                <span><i class="mdi mdi-presentation mr-1 text-primary"></i> EasyChair Deck</span>
+                                <span class="text-primary font-weight-600">View <i class="mdi mdi-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                $grid.append(cardHtml);
+            }
+        }
+
+        function jumpFromGrid(idx) {
+            currentSlideIndex = idx;
+            switchViewMode('theater');
+            renderSlide();
+            $('html, body').animate({
+                scrollTop: $('#presentation-viewport').offset().top - 80
+            }, 300);
+        }
+
+        function nextSlide() {
+            var deck = DECKS[currentDeckId];
+            if (currentSlideIndex < deck.count) {
+                currentSlideIndex++;
+                renderSlide();
+                updateHash();
+                if (isSpeaking) speakCurrentSlide();
+            } else if (autoplayInterval) {
+                // Loop back to start in autoplay mode
+                currentSlideIndex = 1;
+                renderSlide();
+                updateHash();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlideIndex > 1) {
+                currentSlideIndex--;
+                renderSlide();
+                updateHash();
+                if (isSpeaking) speakCurrentSlide();
+            }
+        }
+
+        function goToSlide(idx) {
+            var deck = DECKS[currentDeckId];
+            if (idx >= 1 && idx <= deck.count) {
+                currentSlideIndex = idx;
+                renderSlide();
+                updateHash();
+                if (isSpeaking) speakCurrentSlide();
+            }
+        }
+
+        function goToLastSlide() {
+            goToSlide(DECKS[currentDeckId].count);
+        }
+
+        function handleProgressClick(e) {
+            var $bar = $('#slide-progress-bar');
+            var width = $bar.width();
+            var clickX = e.offsetX;
+            var ratio = clickX / width;
+            var target = Math.ceil(ratio * DECKS[currentDeckId].count);
+            goToSlide(target);
+        }
+
+        function updateHash() {
+            window.location.hash = 'deck=' + currentDeckId + '&slide=' + currentSlideIndex;
+        }
+
+        // View Mode Toggle
+        function switchViewMode(mode) {
+            currentViewMode = mode;
+            $('#btn-view-theater, #btn-view-grid, #btn-view-embed').removeClass('btn-primary active').addClass('btn-outline-secondary');
+
+            $('#view-theater-container').addClass('d-none');
+            $('#view-grid-container').addClass('d-none');
+            $('#view-embed-container').addClass('d-none');
+
+            if (mode === 'theater') {
+                $('#btn-view-theater').removeClass('btn-outline-secondary').addClass('btn-primary active');
+                $('#view-theater-container').removeClass('d-none');
+            } else if (mode === 'grid') {
+                $('#btn-view-grid').removeClass('btn-outline-secondary').addClass('btn-primary active');
+                $('#view-grid-container').removeClass('d-none');
+            } else if (mode === 'embed') {
+                $('#btn-view-embed').removeClass('btn-outline-secondary').addClass('btn-primary active');
+                $('#view-embed-container').removeClass('d-none');
+            }
+        }
+
+        // Autoplay presentation
+        function toggleAutoplay() {
+            if (autoplayInterval) {
+                stopAutoplay();
+            } else {
+                startAutoplay();
+            }
+        }
+
+        function startAutoplay() {
+            stopAutoplay();
+            autoplayInterval = setInterval(function() {
+                nextSlide();
+            }, 6000);
+            $('#autoplay-icon').removeClass('mdi-play').addClass('mdi-pause');
+            $('#autoplay-label').text('Pause');
+            $('#btn-autoplay').addClass('active');
+        }
+
+        function stopAutoplay() {
+            if (autoplayInterval) {
+                clearInterval(autoplayInterval);
+                autoplayInterval = null;
+            }
+            $('#autoplay-icon').removeClass('mdi-pause').addClass('mdi-play');
+            $('#autoplay-label').text('Autoplay');
+            $('#btn-autoplay').removeClass('active');
+        }
+
+        // Fullscreen Toggle
+        function toggleFullscreen() {
+            var theater = document.getElementById('theater-frame');
+            if (!document.fullscreenElement) {
+                if (theater.requestFullscreen) {
+                    theater.requestFullscreen();
+                } else if (theater.webkitRequestFullscreen) {
+                    theater.webkitRequestFullscreen();
+                }
+                $(theater).addClass('is-fullscreen');
+                $('#fullscreen-icon').removeClass('mdi-fullscreen').addClass('mdi-fullscreen-exit');
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+                $(theater).removeClass('is-fullscreen');
+                $('#fullscreen-icon').removeClass('mdi-fullscreen-exit').addClass('mdi-fullscreen');
+            }
+        }
+
+        document.addEventListener('fullscreenchange', function() {
+            if (!document.fullscreenElement) {
+                $('#theater-frame').removeClass('is-fullscreen');
+                $('#fullscreen-icon').removeClass('mdi-fullscreen-exit').addClass('mdi-fullscreen');
+            }
+        });
+
+        // Speech Synthesizer Briefing
+        function toggleSpeech() {
+            if (isSpeaking) {
+                stopSpeech();
+            } else {
+                speakCurrentSlide();
+            }
+        }
+
+        function speakCurrentSlide() {
+            if (!speechSynth) {
+                alert('Speech Synthesis not supported in this browser.');
+                return;
+            }
+            speechSynth.cancel();
+
+            var deck = DECKS[currentDeckId];
+            var slideData = (deck.slides && deck.slides[currentSlideIndex - 1]) || {};
+            var text = 'Slide ' + currentSlideIndex + '. ' + (slideData.title || '') + '. ';
+            if (slideData.takeaways) {
+                text += slideData.takeaways.join('. ');
+            }
+
+            var utterance = new SpeechSynthesisUtterance(text);
+            utterance.rate = 0.95;
+            utterance.pitch = 1.0;
+            utterance.onstart = function() {
+                isSpeaking = true;
+                $('#speak-icon').removeClass('mdi-volume-high').addClass('mdi-volume-off text-danger');
+                $('#speak-label').text('Stop');
+                $('#btn-audio-speak').addClass('active');
+            };
+            utterance.onend = function() {
+                isSpeaking = false;
+                $('#speak-icon').removeClass('mdi-volume-off text-danger').addClass('mdi-volume-high');
+                $('#speak-label').text('Read Aloud');
+                $('#btn-audio-speak').removeClass('active');
+            };
+            utterance.onerror = function() {
+                isSpeaking = false;
+                $('#speak-icon').removeClass('mdi-volume-off text-danger').addClass('mdi-volume-high');
+                $('#speak-label').text('Read Aloud');
+                $('#btn-audio-speak').removeClass('active');
+            };
+
+            speechSynth.speak(utterance);
+        }
+
+        function stopSpeech() {
+            if (speechSynth) speechSynth.cancel();
+            isSpeaking = false;
+            $('#speak-icon').removeClass('mdi-volume-off text-danger').addClass('mdi-volume-high');
+            $('#speak-label').text('Read Aloud');
+            $('#btn-audio-speak').removeClass('active');
+        }
+
+        // Copy BibTeX & Slide Links
+        function copyBibtexCitation() {
+            var text = DECKS[currentDeckId].bibtex;
+            navigator.clipboard.writeText(text).then(function() {
+                alert('BibTeX citation copied to clipboard!');
+            }).catch(function() {
+                prompt('Copy BibTeX Citation:', text);
+            });
+        }
+
+        function copyCurrentSlideLink() {
+            var url = window.location.origin + window.location.pathname + '#deck=' + currentDeckId + '&slide=' + currentSlideIndex;
+            navigator.clipboard.writeText(url).then(function() {
+                $('#copy-link-label').text('Copied!');
+                setTimeout(function() { $('#copy-link-label').text('Copy Link'); }, 2000);
+            }).catch(function() {
+                prompt('Copy Slide Link:', url);
+            });
+        }
+
+        // Search & Category Filters
+        function filterCategory(cat, btn) {
+            $('.filter-chip-btn').removeClass('active');
+            $(btn).addClass('active');
+
+            if (cat === 'all') {
+                $('.grid-slide-card').show();
+            } else {
+                $('.grid-slide-card').each(function() {
+                    var cardCat = $(this).attr('data-category');
+                    if (cardCat && cardCat.indexOf(cat) !== -1) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            }
+
+            // If user clicked a category while in theater mode, offer to switch to grid view
+            if (currentViewMode === 'theater') {
+                switchViewMode('grid');
+            }
+        }
+
+        function handleSlideSearch() {
+            var query = $('#slide-search').val().toLowerCase().trim();
+            if (currentViewMode === 'theater') {
+                switchViewMode('grid');
+            }
+            $('.grid-slide-card').each(function() {
+                var text = $(this).text().toLowerCase();
+                if (query === '' || text.indexOf(query) !== -1) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            // Ignore if typing in input
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') {
+                return;
+            }
+
+            if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.code === 'Space') {
+                e.preventDefault();
+                nextSlide();
+            } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+                e.preventDefault();
+                prevSlide();
+            } else if (e.key === 'Home') {
+                e.preventDefault();
+                goToSlide(1);
+            } else if (e.key === 'End') {
+                e.preventDefault();
+                goToLastSlide();
+            } else if (e.key === 'f' || e.key === 'F') {
+                e.preventDefault();
+                toggleFullscreen();
+            } else if (e.key === 'p' || e.key === 'P') {
+                e.preventDefault();
+                toggleAutoplay();
+            }
+        });
+
+        // Initialize on load
+        $(document).ready(function() {
+            loadDeckData();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Queue - Personal Portfolio Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
+        <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
+        <meta content="Zoyothemes" name="author" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Magnific -->
+        <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Slider -->               
+        <link rel="stylesheet" href="css/owl.carousel.min.css"/> 
+        <link rel="stylesheet" href="css/owl.theme.default.min.css"/>
+        <!-- Flickity -->
+        <link href="css/flickity.css" rel="stylesheet" type="text/css" />
+        <!-- Main css File -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <!-- Dark Mode css File -->
+        <link href="css/dark-mode.css" rel="stylesheet" type="text/css" />
+        <script src="js/dark-mode.js"></script>
+        <!-- HV AI Copilot Styles -->
+    <link rel="stylesheet" href="css/hv-copilot.css" />
+    <!-- Fullscreen Lightbox Modal Styles -->
+    <link rel="stylesheet" href="css/hv-lightbox.css" />
+</head>
+
+    <body>
+        <!-- Loader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Loader -->
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky" id="navbar">
+        <div class="container">
+            <a class="navbar-brand brand-logo-wrap" href="index" title="Harsh Verma - Home">
+                <span class="brand-monogram-emblem">
+                    <svg class="brand-logo-svg" width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="hvNavGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#1e40af" />
+                                <stop offset="55%" stop-color="#2563eb" />
+                                <stop offset="100%" stop-color="#4f46e5" />
+                            </linearGradient>
+                            <linearGradient id="hvNavAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#38bdf8" />
+                                <stop offset="100%" stop-color="#818cf8" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="40" height="40" rx="10" fill="url(#hvNavGrad)" />
+                        <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+                        <path d="M11 12V28M11 20H19M19 12V28" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M23 12L28.5 28L34 12" stroke="url(#hvNavAccentGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="34" cy="12" r="1.75" fill="#38bdf8" />
+                    </svg>
+                </span>
+                <span class="brand-name-text">
+                    <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-publications">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-awards">Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-memberships">Memberships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-events">Speaker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-books">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-blog">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More <i class="mdi mdi-chevron-down nav-dropdown-arrow"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right nav-custom-dropdown" aria-labelledby="navbarDropdown">
+                            <div class="nav-dropdown-header">
+                                <span>Extended Portfolios &amp; Hubs</span>
+                            </div>
+                            <a class="dropdown-item nav-dropdown-item active" href="page-portfolio">
+                                <div class="dropdown-item-icon bg-soft-info"><i class="mdi mdi-cube-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Portfolio Projects</span>
+                                    <span class="dropdown-item-desc">Architectures, agent frameworks &amp; systems</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-smart-slides">
+                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-presentation-play"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Smart Slides <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">New</span></span>
+                                    <span class="dropdown-item-desc">Interactive executive &amp; research slide decks</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
+                                <div class="dropdown-item-icon bg-soft-warning"><i class="mdi mdi-shield-account-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">38 Verified Profiles Hub</span>
+                                    <span class="dropdown-item-desc">Academic, editorial &amp; executive registries</span>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider my-2"></div>
+                            <a class="dropdown-item nav-dropdown-item" href="index#contact">
+                                <div class="dropdown-item-icon bg-soft-danger"><i class="mdi mdi-email-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Contact Harsh</span>
+                                    <span class="dropdown-item-desc">Advisory, keynotes &amp; consultations</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
+                    <li class="list-inline-item mr-2">
+                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (22+ Papers)">
+                            <i class="mdi mdi-school"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="nav-social-btn" title="LinkedIn Profile">
+                            <i class="mdi mdi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://github.com/iamharshverma" target="_blank" class="nav-social-btn" title="GitHub Profile">
+                            <i class="mdi mdi-github-face"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><!--end navbar-->
+        <!-- Navbar End -->
+
+        <!-- Hero Start -->
+        <section class="bg-half bg-light d-table w-100" style="background: url('images/bg-posted.jpg')center center;">
+            <div class="bg-overlay bg-overlay-white"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="page-next-level">
+                            <h4 class="title text-black"> Projects & Works </h4>
+                            <div class="page-next">
+                                <nav aria-label="breadcrumb" class="d-inline-block">
+                                    <ul class="breadcrumb rounded mb-0 mt-3">
+                                        <li class="breadcrumb-item"><a href="index">Harsh Verma</a></li>
+                                        <li class="breadcrumb-item"><a href="page-portfolio">Portfolio</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Portfolio Details</li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>  <!--end col-->
+                </div><!--end row-->
+            </div> <!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Blog STart -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <!-- WORK START -->
+                    <div class="col-lg-7 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="row mr-lg-4">
+                            <div class="col-lg-12">
+                                <div class="work-details rounded">
+                                    <h4 class="title mb-3 border-bottom pb-3">Project Name :</h4>
+                                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit totam atque dignissimos porro, exercitationem, neque alias ea aliquid quibusdam voluptates impedit maxime aut asperiores consequatur iste. Corporis fuga ducimus dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci non dolorem consequatur vitae hic.</p>
+                                    <p class="text-muted mb-0">Suscipit totam atque dignissimos porro, exercitationem, neque alias ea aliquid quibusdam voluptates impedit maxime aut asperiores consequatur iste. Corporis fuga ducimus dignissimos.</p>
+                                </div>
+                            </div><!--end col-->
+                            
+                            <div class="col-lg-12 mt-4 pt-2">
+                                <div class="work-details bg-light rounded">
+                                    <h4 class="title border-bottom pb-3 mb-3">Project Info :</h4>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mt-3">
+                                            <b>Client :</b>
+                                            <span>Alita Margarate</span>
+                                        </li>
+                                        <li class="mt-3">
+                                            <b>Category :</b>
+                                            <span>Web Design</span>
+                                        </li>
+                                        <li class="mt-3">
+                                            <b>Subject :</b>
+                                            <span>Web Design</span>
+                                        </li>
+                                        <li class="mt-3">
+                                            <b>Date :</b>
+                                            <span>28th April, 2020</span>
+                                        </li>
+                                        <li class="mt-3">
+                                            <b>Website :</b>
+                                            <span>www.yourdomain.com</span>
+                                        </li>
+                                        <li class="mt-3">
+                                            <b>Location :</b>
+                                            <span>3/2/64 Mongus Street, UK</span>
+                                        </li>
+                                    </ul>                          
+                                </div>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-5 col-md-6 order-1 order-md-2">
+                        <div class="port-images sticky-sidebar">
+                            <img src="images/portfolio/1.jpg" class="img-fluid mx-auto d-block rounded" alt="img">
+                            <img src="images/portfolio/2.jpg" class="img-fluid mx-auto d-block rounded mt-4" alt="img">
+                            <img src="images/portfolio/3.jpg" class="img-fluid mx-auto d-block rounded mt-4" alt="img">
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+                
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Blog End -->
+
+                <!-- Footer Start -->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <a href="index" class="footer-logo brand-logo-wrap font-weight-bold d-inline-flex justify-content-center align-items-center" style="text-decoration: none;">
+                        <span class="brand-monogram-emblem">
+                            <svg class="brand-logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="hvFootGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#1e40af" />
+                                        <stop offset="55%" stop-color="#2563eb" />
+                                        <stop offset="100%" stop-color="#4f46e5" />
+                                    </linearGradient>
+                                    <linearGradient id="hvFootAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#38bdf8" />
+                                        <stop offset="100%" stop-color="#818cf8" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="40" height="40" rx="10" fill="url(#hvFootGrad)" />
+                                <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+                                <path d="M11 12V28M11 20H19M19 12V28" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 12L28.5 28L34 12" stroke="url(#hvFootAccentGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="34" cy="12" r="1.75" fill="#38bdf8" />
+                            </svg>
+                        </span>
+                        <span class="brand-name-text">
+                            <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
+                        </span>
+                    </a>
+                    <p class="para-desc mx-auto mt-4 text-black" style="max-width: 650px;">
+                        Principal Software Engineer in AI @ Palo Alto Networks • Forbes Technology Council Member • IEEE Senior Member • Stanford GSB Scholar
+                    </p>
+                    <ul class="list-unstyled mb-0 mt-4 social-icon">
+                        <li class="list-inline-item mr-1"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="rounded-circle" title="Google Scholar"><i class="mdi mdi-school"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="rounded-circle" title="LinkedIn"><i class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://github.com/iamharshverma" target="_blank" class="rounded-circle" title="GitHub"><i class="mdi mdi-github-face"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://medium.com/@harshverma59" target="_blank" class="rounded-circle" title="Medium"><i class="mdi mdi-medium"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://twitter.com/harshverma59" target="_blank" class="rounded-circle" title="Twitter"><i class="mdi mdi-twitter"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.instagram.com/aiwithharsh/" target="_blank" class="rounded-circle" title="Instagram"><i class="mdi mdi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer footer-bar bg-black">
+        <div class="container text-foot text-center">
+            <p class="mb-0 text-white-50">&copy; <script>document.write(new Date().getFullYear())</script> Harsh Verma. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+        <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <!-- Back to top -->
+
+
+        <!-- Javascript -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/scrollspy.min.js"></script>
+
+        <!-- Magnific Js -->
+        <script src="js/isotope.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+
+        <!-- Feather icon -->
+        <script src="js/feather.min.js"></script>
+
+        <!-- Main Js -->
+        <script src="js/app.js"></script>
+
+        <!-- HV AI Copilot Assistant Engine -->
+    <script src="js/hv-copilot.js"></script>
+    <!-- Fullscreen Lightbox Modal System -->
+    <script src="js/hv-lightbox.js"></script>
+</body>
+</html>

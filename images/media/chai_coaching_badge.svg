@@ -1,0 +1,26 @@
+<svg width="600" height="340" viewBox="0 0 600 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradCC" x1="0" y1="0" x2="600" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#451a03" />
+      <stop offset="50%" stop-color="#78350f" />
+      <stop offset="100%" stop-color="#291002" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" rx="16" fill="url(#bgGradCC)" />
+  <rect x="1.5" y="1.5" width="597" height="337" rx="14.5" stroke="rgba(251,191,36,0.35)" stroke-width="3"/>
+  <circle cx="510" cy="90" r="130" fill="#f59e0b" opacity="0.12" />
+  
+  <rect x="205" y="38" width="190" height="28" rx="14" fill="rgba(251,191,36,0.25)" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="300" y="56" fill="#fde68a" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">YOUTUBE MASTERCLASS</text>
+  
+  <text text-anchor="middle" x="300" y="125" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="34" font-weight="900">CHAI &amp; COACHING</text>
+  <text text-anchor="middle" x="300" y="162" fill="#fbbf24" font-family="'Segoe UI', sans-serif" font-size="19" font-weight="700">Cybersecurity Careers &amp; Job Interview Mastery</text>
+  
+  <rect x="40" y="188" width="520" height="1.5" fill="rgba(255,255,255,0.15)" />
+  
+  <text text-anchor="middle" x="300" y="230" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="15.5" font-weight="600">2 Full Video Episodes • Tech Career Strategy &amp; Hiring</text>
+  <text text-anchor="middle" x="300" y="260" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="13.5">Harsh Verma • Convincing Recruiters &amp; System Leadership</text>
+  
+  <rect x="220" y="280" width="160" height="28" rx="6" fill="rgba(251,191,36,0.2)" stroke="#fbbf24" stroke-width="1"/>
+  <text x="300" y="299" fill="#fde68a" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">WATCH ON YOUTUBE</text>
+</svg>

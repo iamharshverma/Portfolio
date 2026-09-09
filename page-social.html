@@ -1,0 +1,2638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30250521-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-30250521-4');
+    </script>
+    <meta charset="UTF-8">
+    <title>Harsh Verma | Social &amp; Everyday Routine Feed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore Harsh Verma's live social updates, everyday routine, morning research, executive AI engineering standups, fitness discipline, and keynote moments across LinkedIn and Instagram." />
+    <meta name="keywords" content="Harsh Verma, Social Feed, LinkedIn, Instagram, Everyday Routine, Morning Routine, Enterprise AI, Palo Alto Networks, Stanford GSB, Autonomous Cyber Defense, AI Architect" />
+    <meta content="Harsh Verma" name="author" />
+    <meta property="og:title" content="Harsh Verma | Social &amp; Everyday Routine Feed" />
+    <meta property="og:description" content="Live updates and everyday routine from Harsh Verma across LinkedIn and Instagram." />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon_new.ico">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Main css File -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Dark Mode css File -->
+    <link href="css/dark-mode.css" rel="stylesheet" type="text/css" />
+    <script src="js/dark-mode.js"></script>
+
+    <style>
+        /* Modern Social Page Dedicated Styles */
+        .social-hero-section {
+            position: relative;
+            background: linear-gradient(135deg, #090e1a 0%, #0f172a 50%, #1e1b4b 100%);
+            padding: 135px 0 85px;
+            overflow: hidden;
+            color: #ffffff;
+        }
+        .social-hero-bg-overlay {
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(circle at 12% 25%, rgba(37, 99, 235, 0.22) 0%, transparent 45%),
+                              radial-gradient(circle at 88% 75%, rgba(225, 48, 108, 0.18) 0%, transparent 48%),
+                              radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.12) 0%, transparent 55%);
+            pointer-events: none;
+        }
+        .social-hero-section::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 38px;
+            background: linear-gradient(to top, #f8fafc, transparent);
+            pointer-events: none;
+        }
+        body.dark-mode .social-hero-section::after {
+            background: linear-gradient(to top, #0b0f19, transparent);
+        }
+
+        .social-hero-badge-pill {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.25) 0%, rgba(225, 48, 108, 0.28) 100%);
+            border: 1px solid rgba(147, 197, 253, 0.45);
+            color: #bae6fd;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            padding: 6px 18px;
+            border-radius: 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .social-pulse-dot {
+            width: 9px;
+            height: 9px;
+            background-color: #10b981;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            animation: pulseSocialDot 2s infinite;
+        }
+        @keyframes pulseSocialDot {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+
+        /* Profile Cards in Hero */
+        .profile-hero-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            padding: 20px 22px;
+            transition: all 0.25s ease;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            text-decoration: none !important;
+            color: #ffffff;
+        }
+        .profile-hero-card:hover {
+            background: rgba(255, 255, 255, 0.14);
+            border-color: rgba(255, 255, 255, 0.35);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+            color: #ffffff;
+        }
+        .profile-hero-card.linkedin-card {
+            border-left: 4px solid #0077b5;
+        }
+        .profile-hero-card.instagram-card {
+            border-left: 4px solid #e1306c;
+        }
+        .profile-hero-icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            margin-right: 16px;
+            flex-shrink: 0;
+        }
+        .icon-box-linkedin {
+            background: #0077b5;
+            color: #ffffff;
+            box-shadow: 0 4px 14px rgba(0, 119, 181, 0.4);
+        }
+        .icon-box-instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: #ffffff;
+            box-shadow: 0 4px 14px rgba(225, 48, 108, 0.4);
+        }
+
+        /* Stats & Status Ribbon */
+        .social-stats-box {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 22px 24px;
+            box-shadow: 0 15px 35px -5px rgba(15, 23, 42, 0.08);
+            margin-top: -45px;
+            position: relative;
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+        body.dark-mode .social-stats-box {
+            background: #1e293b;
+            border-color: #334155;
+            box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.45);
+        }
+        .social-stat-item {
+            text-align: center;
+            padding: 6px;
+        }
+        .social-stat-number {
+            font-size: 26px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 3px;
+            letter-spacing: -0.5px;
+        }
+        .social-stat-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        body.dark-mode .social-stat-label {
+            color: #94a3b8;
+        }
+
+        /* Action & Filter Bar */
+        .social-control-bar {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 28px;
+            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+        }
+        body.dark-mode .social-control-bar {
+            background: #1e293b;
+            border-color: #334155;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-add-post {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: #ffffff !important;
+            font-weight: 700;
+            font-size: 14px;
+            border-radius: 10px;
+            padding: 10px 20px;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+        }
+        .btn-add-post:hover {
+            background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45);
+        }
+
+        .btn-sync-feed {
+            background: #f1f5f9;
+            color: #334155 !important;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 10px;
+            padding: 10px 18px;
+            border: 1px solid #cbd5e1;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+        .btn-sync-feed:hover {
+            background: #e2e8f0;
+            color: #0f172a !important;
+            border-color: #94a3b8;
+        }
+        body.dark-mode .btn-sync-feed {
+            background: #334155;
+            color: #f1f5f9 !important;
+            border-color: #475569;
+        }
+        body.dark-mode .btn-sync-feed:hover {
+            background: #475569;
+        }
+
+        .search-social-wrap {
+            position: relative;
+            width: 100%;
+        }
+        .search-social-wrap i {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+            font-size: 18px;
+        }
+        .search-social-input {
+            width: 100%;
+            padding: 10px 16px 10px 42px;
+            border-radius: 10px;
+            border: 1px solid #cbd5e1;
+            font-size: 14px;
+            background: #f8fafc;
+            transition: all 0.2s ease;
+        }
+        .search-social-input:focus {
+            outline: none;
+            border-color: #2563eb;
+            background: #ffffff;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+        }
+        body.dark-mode .search-social-input {
+            background: #0f172a;
+            border-color: #334155;
+            color: #f1f5f9;
+        }
+        body.dark-mode .search-social-input:focus {
+            background: #111827;
+            border-color: #3b82f6;
+        }
+
+        /* Filter Pills */
+        .filter-pill {
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            color: #475569;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+            margin-right: 6px;
+            margin-bottom: 8px;
+        }
+        .filter-pill:hover {
+            background: #f1f5f9;
+            border-color: #94a3b8;
+            color: #0f172a;
+        }
+        .filter-pill.active {
+            background: #2563eb;
+            border-color: #2563eb;
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+        }
+        body.dark-mode .filter-pill {
+            background: #0f172a;
+            border-color: #334155;
+            color: #cbd5e1;
+        }
+        body.dark-mode .filter-pill:hover {
+            background: #1e293b;
+            color: #ffffff;
+        }
+        body.dark-mode .filter-pill.active {
+            background: #2563eb;
+            border-color: #2563eb;
+            color: #ffffff;
+        }
+
+        /* Feed Grid & Compact Post Card */
+        .social-feed-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .social-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+        .social-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.07);
+            transform: translateY(-1px);
+        }
+        body.dark-mode .social-card {
+            background: #1e293b;
+            border-color: #334155;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+        }
+        body.dark-mode .social-card:hover {
+            border-color: #475569;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+        }
+
+        .social-card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .social-author-wrap {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 0;
+        }
+        .social-avatar {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1.5px solid #e2e8f0;
+            flex-shrink: 0;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+        body.dark-mode .social-avatar {
+            border-color: #475569;
+        }
+        .social-author-info {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+        .social-author-name {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: #0f172a;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 1px;
+            white-space: nowrap;
+        }
+        body.dark-mode .social-author-name {
+            color: #f8fafc;
+        }
+        .verified-badge {
+            color: #2563eb;
+            font-size: 14px;
+        }
+        .social-author-handle {
+            font-size: 11px;
+            color: #64748b;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        body.dark-mode .social-author-handle {
+            color: #94a3b8;
+        }
+
+        /* Platform Badge in Card */
+        .card-platform-pill {
+            font-size: 10px;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .card-platform-linkedin {
+            background: rgba(0, 119, 181, 0.1);
+            color: #0077b5;
+            border: 1px solid rgba(0, 119, 181, 0.25);
+        }
+        .card-platform-instagram {
+            background: rgba(225, 48, 108, 0.1);
+            color: #e1306c;
+            border: 1px solid rgba(225, 48, 108, 0.25);
+        }
+
+        /* Routine Category Badge */
+        .routine-cat-pill {
+            background: #f1f5f9;
+            color: #334155;
+            border: 1px solid #e2e8f0;
+            font-size: 10.5px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        body.dark-mode .routine-cat-pill {
+            background: #0f172a;
+            color: #93c5fd;
+            border-color: #334155;
+        }
+
+        /* Compact Post Title & Text */
+        .social-post-title {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: #0f172a;
+            line-height: 1.4;
+            margin-bottom: 6px;
+        }
+        body.dark-mode .social-post-title {
+            color: #f1f5f9;
+        }
+        .social-post-text {
+            font-size: 13px;
+            line-height: 1.55;
+            color: #334155;
+            margin-bottom: 8px;
+            word-break: break-word;
+        }
+        body.dark-mode .social-post-text {
+            color: #cbd5e1;
+        }
+        .social-post-text.is-clamped {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 4px;
+        }
+        .btn-toggle-expand {
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: 11.5px;
+            font-weight: 700;
+            color: #2563eb;
+            cursor: pointer;
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+        .btn-toggle-expand:hover {
+            text-decoration: underline;
+        }
+        body.dark-mode .btn-toggle-expand {
+            color: #60a5fa;
+        }
+        .social-post-tag {
+            color: #2563eb;
+            font-weight: 600;
+            text-decoration: none;
+            margin-right: 4px;
+            display: inline-block;
+        }
+        body.dark-mode .social-post-tag {
+            color: #60a5fa;
+        }
+
+        /* Compact Media Preview (160px capped) */
+        .social-media-container {
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            border: 1px solid #e2e8f0;
+            max-height: 160px;
+            background: #0f172a;
+            position: relative;
+        }
+        body.dark-mode .social-media-container {
+            border-color: #334155;
+        }
+        .social-media-img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .social-media-img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Compact Engagement Footer */
+        .social-card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 8px;
+            border-top: 1px solid #f1f5f9;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        body.dark-mode .social-card-footer {
+            border-top-color: #334155;
+        }
+        .social-engagements {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .eng-btn {
+            background: transparent;
+            border: none;
+            color: #64748b;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+            padding: 3px 6px;
+            border-radius: 4px;
+            transition: all 0.15s ease;
+        }
+        .eng-btn:hover {
+            background: #f1f5f9;
+            color: #0f172a;
+        }
+        body.dark-mode .eng-btn {
+            color: #94a3b8;
+        }
+        body.dark-mode .eng-btn:hover {
+            background: #334155;
+            color: #ffffff;
+        }
+        .eng-btn.liked {
+            color: #e11d48 !important;
+        }
+        .btn-view-orig {
+            font-size: 11px;
+            font-weight: 600;
+            color: #2563eb;
+            background: rgba(37, 99, 235, 0.08);
+            padding: 3px 9px;
+            border-radius: 6px;
+            border: 1px solid rgba(37, 99, 235, 0.2);
+            text-decoration: none !important;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: all 0.2s ease;
+        }
+        .btn-view-orig:hover {
+            background: #2563eb;
+            color: #ffffff !important;
+        }
+        body.dark-mode .btn-view-orig {
+            color: #93c5fd;
+            background: rgba(37, 99, 235, 0.18);
+            border-color: rgba(147, 197, 253, 0.3);
+        }
+
+        /* Working, Crisp Delete Button */
+        .btn-delete-post {
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            background: rgba(239, 68, 68, 0.08);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+            flex-shrink: 0;
+            padding: 0;
+            position: relative;
+            z-index: 5;
+        }
+        .btn-delete-post:hover {
+            background: #ef4444;
+            color: #ffffff !important;
+            border-color: #ef4444;
+            transform: scale(1.08);
+            box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+        }
+        .btn-delete-post:active {
+            transform: scale(0.95);
+        }
+        .btn-delete-post i {
+            pointer-events: none;
+        }
+        body.dark-mode .btn-delete-post {
+            background: rgba(239, 68, 68, 0.15);
+            border-color: rgba(239, 68, 68, 0.3);
+            color: #f87171;
+        }
+        body.dark-mode .btn-delete-post:hover {
+            background: #ef4444;
+            color: #ffffff !important;
+        }
+
+        /* Analytics Sidebar & Cards */
+        .social-analytics-sidebar {
+            position: sticky;
+            top: 90px;
+        }
+        .analytics-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+            margin-bottom: 20px;
+        }
+        body.dark-mode .analytics-card {
+            background: #1e293b;
+            border-color: #334155;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+        }
+        .analytics-card-header {
+            padding: 12px 16px;
+            border-bottom: 1px solid #f1f5f9;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        body.dark-mode .analytics-card-header {
+            border-bottom-color: #334155;
+        }
+        .analytics-card-body {
+            padding: 16px;
+        }
+        .analytics-mini-stat {
+            display: flex;
+            flex-direction: column;
+        }
+        .analytics-mini-val {
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        .analytics-mini-lbl {
+            font-size: 10.5px;
+            color: #64748b;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+        body.dark-mode .analytics-mini-lbl {
+            color: #94a3b8;
+        }
+        .profile-monitor-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 16px;
+            text-decoration: none !important;
+            transition: background 0.15s ease;
+        }
+        .profile-monitor-row:hover {
+            background: #f8fafc;
+        }
+        body.dark-mode .profile-monitor-row:hover {
+            background: #0f172a;
+        }
+        .profile-monitor-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #ffffff;
+            flex-shrink: 0;
+        }
+        .profile-monitor-icon.li-bg {
+            background: #0077b5;
+        }
+        .profile-monitor-icon.ig-bg {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        /* Add Post Modal / Form Styles */
+        .modal-custom-header {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: #ffffff;
+            border-top-left-radius: 14px;
+            border-top-right-radius: 14px;
+            padding: 20px 24px;
+        }
+        .form-control-custom {
+            border-radius: 10px;
+            border: 1px solid #cbd5e1;
+            padding: 10px 14px;
+            font-size: 14px;
+            background: #f8fafc;
+        }
+        .form-control-custom:focus {
+            border-color: #2563eb;
+            background: #ffffff;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+        }
+        body.dark-mode .form-control-custom {
+            background: #0f172a;
+            border-color: #334155;
+            color: #f8fafc;
+        }
+
+        /* Focus Mode and Elements Refinements */
+        header#socialHero {
+            position: relative;
+            background: linear-gradient(135deg, #0b1120 0%, #0f172a 50%, #1e1b4b 100%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        header#socialHero .btn-add-post {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: #ffffff;
+            font-weight: 700;
+            padding: 12px 24px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 18px rgba(37, 99, 235, 0.35);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        header#socialHero .btn-add-post:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(37, 99, 235, 0.45);
+            color: #ffffff;
+        }
+        main#socialContent {
+            background-color: #f8fafc;
+            min-height: 80vh;
+            transition: background-color 0.3s ease;
+        }
+        body.dark-mode main#socialContent {
+            background-color: #0b1120;
+        }
+
+        /* Fetched Post Preview in Modal */
+        .fetched-preview-box {
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 14px;
+            transition: all 0.25s ease;
+        }
+        body.dark-mode .fetched-preview-box {
+            background: #0f172a;
+            border-color: #334155;
+        }
+        .fetched-preview-thumb {
+            width: 100%;
+            max-height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 10px;
+            border: 1px solid #e2e8f0;
+        }
+        body.dark-mode .fetched-preview-thumb {
+            border-color: #334155;
+        }
+        .quick-link-btn {
+            font-size: 11.5px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            border: 1px solid #cbd5e1;
+            background: #ffffff;
+            color: #334155;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: all 0.2s ease;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+        .quick-link-btn:hover {
+            border-color: #2563eb;
+            color: #2563eb;
+            background: #eff6ff;
+        }
+        body.dark-mode .quick-link-btn {
+            background: #1e293b;
+            border-color: #475569;
+            color: #cbd5e1;
+        }
+        body.dark-mode .quick-link-btn:hover {
+            background: #334155;
+            color: #93c5fd;
+            border-color: #3b82f6;
+        }
+
+        /* Toast Notifications */
+        #socialToast {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 9999;
+            min-width: 280px;
+            max-width: 420px;
+            background: #1e293b;
+            color: #ffffff;
+            border-radius: 12px;
+            padding: 14px 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+            display: none;
+            align-items: center;
+            gap: 12px;
+            border-left: 4px solid #10b981;
+            animation: slideInToast 0.3s ease;
+        }
+        @keyframes slideInToast {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Empty State */
+        .social-empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            background: #ffffff;
+            border-radius: 18px;
+            border: 2px dashed #cbd5e1;
+        }
+        body.dark-mode .social-empty-state {
+            background: #1e293b;
+            border-color: #334155;
+        }
+
+        /* Highlight animation for newly added post */
+        @keyframes highlightNewPost {
+            0% { background-color: rgba(37, 99, 235, 0.15); }
+            100% { background-color: transparent; }
+        }
+        .highlight-added {
+            animation: highlightNewPost 2.5s ease-out;
+        }
+
+        /* Hero Live Status Pill */
+        .hero-live-status-pill {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 30px;
+            padding: 8px 18px;
+            backdrop-filter: blur(8px);
+        }
+
+        /* Profile Mini Link in Hero */
+        .profile-hero-badge-link {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            padding: 8px 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #ffffff !important;
+            text-decoration: none !important;
+            font-size: 12px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .profile-hero-badge-link:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: translateY(-2px);
+        }
+
+        /* Favikon Spotlight Analytics Section */
+        .favikon-spotlight-box {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 18px;
+            padding: 28px;
+            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+            margin-bottom: 36px;
+            position: relative;
+            overflow: hidden;
+        }
+        body.dark-mode .favikon-spotlight-box {
+            background: #1e293b;
+            border-color: #334155;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .favikon-spotlight-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #6366f1 0%, #3b82f6 30%, #ec4899 70%, #f59e0b 100%);
+        }
+        .favikon-badge-pill {
+            background: rgba(99, 102, 241, 0.1);
+            color: #4f46e5;
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        body.dark-mode .favikon-badge-pill {
+            background: rgba(99, 102, 241, 0.2);
+            color: #a5b4fc;
+            border-color: rgba(99, 102, 241, 0.4);
+        }
+        .favikon-metric-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 18px;
+            height: 100%;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .favikon-metric-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+        }
+        body.dark-mode .favikon-metric-card {
+            background: #0f172a;
+            border-color: #334155;
+        }
+        .favikon-score-value {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+        .favikon-badge-chip {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 6px 10px;
+            font-size: 11.5px;
+            font-weight: 600;
+            color: #334155;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+        body.dark-mode .favikon-badge-chip {
+            background: #1e293b;
+            border-color: #334155;
+            color: #cbd5e1;
+        }
+        .favikon-badge-chip i {
+            color: #f59e0b;
+        }
+        .favikon-pillar-item {
+            margin-bottom: 12px;
+        }
+        .favikon-pillar-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12.5px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .favikon-pillar-bar {
+            height: 7px;
+            border-radius: 4px;
+            background: #e2e8f0;
+            overflow: hidden;
+        }
+        body.dark-mode .favikon-pillar-bar {
+            background: #334155;
+        }
+        .favikon-pillar-fill {
+            height: 100%;
+            border-radius: 4px;
+        }
+        .btn-favikon-audit {
+            background: #4f46e5;
+            color: #ffffff !important;
+            font-size: 12.5px;
+            font-weight: 700;
+            padding: 8px 16px;
+            border-radius: 10px;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+            text-decoration: none !important;
+        }
+        .btn-favikon-audit:hover {
+            background: #4338ca;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
+        }
+
+        /* ADPList Mentorship & Community Impact Section */
+        .adplist-impact-box {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 32px;
+            box-shadow: 0 6px 24px rgba(15, 23, 42, 0.04);
+            margin-top: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        body.dark-mode .adplist-impact-box {
+            background: #1e293b;
+            border-color: #334155;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+        }
+        .adplist-impact-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e1316c 0%, #ff5d73 50%, #f97316 100%);
+        }
+        .badge-adplist-hero {
+            background: rgba(225, 49, 108, 0.12);
+            color: #e1316c;
+            border: 1px solid rgba(225, 49, 108, 0.3);
+            font-size: 11.5px;
+            font-weight: 700;
+            padding: 5px 14px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        body.dark-mode .badge-adplist-hero {
+            background: rgba(225, 49, 108, 0.22);
+            color: #ff7597;
+            border-color: rgba(225, 49, 108, 0.4);
+        }
+        .adplist-swag-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .adplist-swag-card {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .adplist-swag-card:hover {
+            transform: scale(1.03) rotate(-0.5deg);
+        }
+        .adplist-metric-tile {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 14px;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+        body.dark-mode .adplist-metric-tile {
+            background: #0f172a;
+            border-color: #334155;
+        }
+        .adplist-metric-tile:hover {
+            border-color: #e1316c;
+        }
+        .adplist-tile-num {
+            font-size: 22px;
+            font-weight: 800;
+            color: #e1316c;
+            line-height: 1.1;
+        }
+        .adplist-tile-lbl {
+            font-size: 11px;
+            font-weight: 600;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            margin-top: 3px;
+        }
+        body.dark-mode .adplist-tile-lbl {
+            color: #94a3b8;
+        }
+        .adplist-topic-tag {
+            background: #f1f5f9;
+            color: #334155;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 10px;
+            display: inline-block;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+        body.dark-mode .adplist-topic-tag {
+            background: #0f172a;
+            color: #cbd5e1;
+            border-color: #334155;
+        }
+        .adplist-quote-box {
+            background: #fff5f7;
+            border-left: 3px solid #e1316c;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 13px;
+            color: #475569;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        body.dark-mode .adplist-quote-box {
+            background: rgba(225, 49, 108, 0.08);
+            color: #cbd5e1;
+        }
+        .btn-adplist-book {
+            background: #e1316c;
+            color: #ffffff !important;
+            font-weight: 700;
+            font-size: 13.5px;
+            padding: 10px 22px;
+            border-radius: 12px;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 4px 14px rgba(225, 49, 108, 0.35);
+            transition: all 0.2s ease;
+            text-decoration: none !important;
+        }
+        .btn-adplist-book:hover {
+            background: #c71f57;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(225, 49, 108, 0.45);
+        }
+        .btn-adplist-outline {
+            background: transparent;
+            color: #475569 !important;
+            border: 1px solid #cbd5e1;
+            font-weight: 600;
+            font-size: 13px;
+            padding: 10px 18px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+            text-decoration: none !important;
+        }
+        .btn-adplist-outline:hover {
+            border-color: #e1316c;
+            color: #e1316c !important;
+            background: rgba(225, 49, 108, 0.05);
+        }
+        body.dark-mode .btn-adplist-outline {
+            color: #cbd5e1 !important;
+            border-color: #475569;
+        }
+        body.dark-mode .btn-adplist-outline:hover {
+            border-color: #ff7597;
+            color: #ff7597 !important;
+        }
+    </style>
+    <!-- HV AI Copilot Styles -->
+    <link rel="stylesheet" href="css/hv-copilot.css" />
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky" id="navbar">
+        <div class="container">
+            <a class="navbar-brand brand-logo-wrap" href="index" title="Harsh Verma - Home">
+                <span class="brand-monogram-emblem">
+                    <svg class="brand-logo-svg" width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="hvNavGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#1e40af" />
+                                <stop offset="55%" stop-color="#2563eb" />
+                                <stop offset="100%" stop-color="#4f46e5" />
+                            </linearGradient>
+                            <linearGradient id="hvNavAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#38bdf8" />
+                                <stop offset="100%" stop-color="#818cf8" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="40" height="40" rx="10" fill="url(#hvNavGrad)" />
+                        <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+                        <path d="M11 12V28M11 20H19M19 12V28" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M23 12L28.5 28L34 12" stroke="url(#hvNavAccentGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="34" cy="12" r="1.75" fill="#38bdf8" />
+                    </svg>
+                </span>
+                <span class="brand-name-text">
+                    <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-publications">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-awards">Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-memberships">Memberships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-events">Speaker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-books">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-blog">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More <i class="mdi mdi-chevron-down nav-dropdown-arrow"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right nav-custom-dropdown" aria-labelledby="navbarDropdown">
+                            <div class="nav-dropdown-header">
+                                <span>Extended Portfolios &amp; Hubs</span>
+                            </div>
+                            <a class="dropdown-item nav-dropdown-item" href="page-portfolio">
+                                <div class="dropdown-item-icon bg-soft-info"><i class="mdi mdi-cube-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Portfolio Projects</span>
+                                    <span class="dropdown-item-desc">Architectures, agent frameworks &amp; systems</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-smart-slides">
+                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-presentation-play"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Smart Slides <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">New</span></span>
+                                    <span class="dropdown-item-desc">Interactive executive &amp; research slide decks</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item active" href="page-social" style="background: rgba(37, 99, 235, 0.08);">
+                                <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title text-primary font-weight-bold">Social <span class="badge badge-pill badge-primary ml-1" style="font-size:10px;">Feed</span></span>
+                                    <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
+                                <div class="dropdown-item-icon bg-soft-warning"><i class="mdi mdi-shield-account-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">38 Verified Profiles Hub</span>
+                                    <span class="dropdown-item-desc">Academic, editorial &amp; executive registries</span>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider my-2"></div>
+                            <a class="dropdown-item nav-dropdown-item" href="index#contact">
+                                <div class="dropdown-item-icon bg-soft-danger"><i class="mdi mdi-email-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Contact Harsh</span>
+                                    <span class="dropdown-item-desc">Advisory, keynotes &amp; consultations</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
+                    <li class="list-inline-item mr-2">
+                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (22+ Papers)">
+                            <i class="mdi mdi-school"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="nav-social-btn" title="LinkedIn Profile">
+                            <i class="mdi mdi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://www.instagram.com/aiwithharsh/" target="_blank" class="nav-social-btn" title="Instagram Profile (@aiwithharsh)">
+                            <i class="mdi mdi-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://github.com/iamharshverma" target="_blank" class="nav-social-btn" title="GitHub Profile">
+                            <i class="mdi mdi-github-face"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Area -->
+    <header class="social-hero-section" id="socialHero">
+        <div class="social-hero-bg-overlay"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="social-hero-badge-pill mb-3">
+                        <span class="social-pulse-dot"></span>
+                        <span>Live Routine &amp; Social Updates</span>
+                    </div>
+                    <h1 class="font-weight-bold text-white mb-3" style="font-size: 2.5rem; letter-spacing: -0.5px;">
+                        Social &amp; Everyday Routine Feed
+                    </h1>
+                    <p class="text-white-50 lead mb-4" style="max-width: 620px; font-size: 1.1rem; line-height: 1.7;">
+                        Discover real-time architecture reflections, morning research routines, autonomous agent standups, executive leadership insights, and daily fitness discipline directly fetched from Harsh Verma's verified LinkedIn (<span class="text-white font-weight-bold">@harshverma59</span>) and Instagram (<span class="text-white font-weight-bold">@aiwithharsh</span>) feeds.
+                    </p>
+                    <div class="d-flex flex-wrap align-items-center gap-3 mb-4 mb-lg-0">
+                        <button type="button" class="btn btn-add-post mr-3" data-toggle="modal" data-target="#addPostModal" id="heroFetchPostBtn">
+                            <i class="mdi mdi-link-variant mr-1"></i> Add Post via Link URL
+                        </button>
+                        <div class="hero-live-status-pill d-inline-flex align-items-center">
+                            <span class="social-pulse-dot mr-2"></span>
+                            <span class="text-white small font-weight-bold">Live Stream Active • Auto-Synced with @harshverma59 &amp; @aiwithharsh</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 mt-4 mt-lg-0">
+                    <div class="row">
+                        <!-- LinkedIn Profile Link Card -->
+                        <div class="col-12 mb-2">
+                            <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="profile-hero-card linkedin-card">
+                                <div class="profile-hero-icon-box icon-box-linkedin">
+                                    <i class="mdi mdi-linkedin"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="font-weight-bold mb-0 text-white">Harsh Verma</h6>
+                                        <span class="badge badge-light px-2 py-1 small"><i class="mdi mdi-check-decagram text-primary"></i> 16.6K Followers</span>
+                                    </div>
+                                    <small class="text-white-50 d-block mb-1">linkedin.com/in/harshverma59/</small>
+                                    <p class="small text-white-50 mb-0">AI Architectures, Zero-Trust Defense, Executive Keynotes</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Instagram Profile Link Card -->
+                        <div class="col-12 mb-2">
+                            <a href="https://www.instagram.com/aiwithharsh/" target="_blank" class="profile-hero-card instagram-card">
+                                <div class="profile-hero-icon-box icon-box-instagram">
+                                    <i class="mdi mdi-instagram"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="font-weight-bold mb-0 text-white">@aiwithharsh</h6>
+                                        <span class="badge badge-light px-2 py-1 small"><i class="mdi mdi-check-decagram" style="color: #e1306c;"></i> Active Daily</span>
+                                    </div>
+                                    <small class="text-white-50 d-block mb-1">instagram.com/aiwithharsh/</small>
+                                    <p class="small text-white-50 mb-0">Everyday Routine, Morning Sprints, Fitness &amp; Tech Life</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Quick verification tags for ADPList & Favikon -->
+                        <div class="col-12 d-flex flex-wrap gap-2 pt-1">
+                            <a href="#adplistSection" class="profile-hero-badge-link">
+                                <span style="color: #e1316c;"><i class="mdi mdi-account-star mr-1"></i> ADPList Mentor</span>
+                                <span class="badge badge-pill badge-light px-2 py-0 text-dark small">Top 1%</span>
+                            </a>
+                            <a href="#favikonSection" class="profile-hero-badge-link">
+                                <span style="color: #818cf8;"><i class="mdi mdi-chart-donut mr-1"></i> Favikon Spotlight</span>
+                                <span class="badge badge-pill badge-light px-2 py-0 text-dark small">79/100</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Feed Environment -->
+    <main class="py-5" style="background-color: #f8fafc;" id="socialContent">
+        <div class="container">
+            <!-- Stats Ribbon -->
+            <div class="social-stats-box mb-4">
+                <div class="row text-center">
+                    <div class="col-6 col-md-3 border-right mb-3 mb-md-0">
+                        <div class="social-stat-item">
+                            <div class="social-stat-number text-primary" id="totalPostsCount">8</div>
+                            <div class="social-stat-label">Feed Posts</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 border-right mb-3 mb-md-0">
+                        <div class="social-stat-item">
+                            <div class="social-stat-number" style="color: #0077b5;" id="linkedinPostsCount">4</div>
+                            <div class="social-stat-label">LinkedIn Insights</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 border-right">
+                        <div class="social-stat-item">
+                            <div class="social-stat-number" style="color: #e1306c;" id="instagramPostsCount">4</div>
+                            <div class="social-stat-label">Instagram Routines</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="social-stat-item">
+                            <div class="social-stat-number text-success">
+                                <span class="badge badge-pill badge-soft-success px-3 py-1 font-weight-bold" style="font-size: 15px;">Auto Synced</span>
+                            </div>
+                            <div class="social-stat-label" id="syncStatusLabel">All Posts Loaded</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Favikon Spotlight Social Intelligence & Creator Analytics -->
+            <section class="favikon-spotlight-box" id="favikonSection">
+                <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
+                    <div>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="favikon-badge-pill mr-2">
+                                <i class="mdi mdi-shield-check"></i> Favikon Spotlight Verified Audit
+                            </span>
+                            <span class="badge badge-pill badge-soft-warning font-weight-bold px-2 py-1 small">
+                                <i class="mdi mdi-trophy mr-1"></i> Top 1% Global Tech Creator
+                            </span>
+                        </div>
+                        <h3 class="font-weight-bold mb-1" style="font-size: 1.5rem; letter-spacing: -0.3px;">
+                            Creator Authority &amp; Social Intelligence
+                        </h3>
+                        <p class="text-muted mb-0 small" style="max-width: 680px;">
+                            Independent algorithmic audit of Harsh Verma's global footprint, cross-platform engagement benchmarks, and verified audience composition across LinkedIn (<span class="font-weight-bold">16.6K+</span>), Instagram, and technical podcasts.
+                        </p>
+                    </div>
+                    <div class="mt-3 mt-md-0">
+                        <a href="https://spotlight.favikon.com/harshverma59/" target="_blank" rel="noopener noreferrer" class="btn-favikon-audit">
+                            <i class="mdi mdi-open-in-new mr-1"></i> View Live Audit on Favikon
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4 High Impact Metric Cards -->
+                <div class="row mb-4">
+                    <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="favikon-metric-card">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <span class="small font-weight-bold text-muted text-uppercase">Authority Score</span>
+                                <span class="badge badge-pill badge-soft-primary px-2 py-0 font-weight-bold small">Tier 7</span>
+                            </div>
+                            <div class="favikon-score-value text-primary mb-1">
+                                79<span class="text-muted font-weight-normal" style="font-size: 18px;">/100</span>
+                            </div>
+                            <div class="small font-weight-bold text-dark mb-1">4,865 Creator Points</div>
+                            <p class="text-muted small mb-0" style="font-size: 11.5px; line-height: 1.4;">
+                                Ranked in Top 1% in Artificial Intelligence &amp; Cybersecurity in the United States.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="favikon-metric-card">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <span class="small font-weight-bold text-muted text-uppercase">Audience Quality</span>
+                                <span class="badge badge-pill badge-soft-success px-2 py-0 font-weight-bold small">High Intent</span>
+                            </div>
+                            <div class="favikon-score-value text-success mb-1">
+                                40%+
+                            </div>
+                            <div class="small font-weight-bold text-dark mb-1">Tech Leaders &amp; Engineers</div>
+                            <p class="text-muted small mb-0" style="font-size: 11.5px; line-height: 1.4;">
+                                Predominantly Principal Engineers, AI Researchers, and Enterprise VPs across US (52%) &amp; UK (28%).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                        <div class="favikon-metric-card">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <span class="small font-weight-bold text-muted text-uppercase">Engagement Rate</span>
+                                <span class="badge badge-pill badge-soft-warning px-2 py-0 font-weight-bold small">3.2x Benchmark</span>
+                            </div>
+                            <div class="favikon-score-value text-warning mb-1">
+                                5.8%
+                            </div>
+                            <div class="small font-weight-bold text-dark mb-1">Above 1.8% Industry Avg</div>
+                            <p class="text-muted small mb-0" style="font-size: 11.5px; line-height: 1.4;">
+                                Exceptional comment-to-impression ratio driven by deep technical breakdowns and system design discussions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="favikon-metric-card">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <span class="small font-weight-bold text-muted text-uppercase">Total Community</span>
+                                <span class="badge badge-pill badge-soft-info px-2 py-0 font-weight-bold small">Multi-Channel</span>
+                            </div>
+                            <div class="favikon-score-value text-info mb-1">
+                                16.6K+
+                            </div>
+                            <div class="small font-weight-bold text-dark mb-1">LinkedIn + Instagram + Podcast</div>
+                            <p class="text-muted small mb-0" style="font-size: 11.5px; line-height: 1.4;">
+                                Active ecosystem across LinkedIn, @aiwithharsh Reels, YouTube Podcast, and Substack dispatches.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Badges & Content Pillars -->
+                <div class="row align-items-center pt-2">
+                    <div class="col-lg-6 mb-3 mb-lg-0 border-lg-right pr-lg-4">
+                        <h6 class="font-weight-bold text-dark mb-2 small text-uppercase" style="letter-spacing: 0.5px;">
+                            <i class="mdi mdi-seal text-warning mr-1"></i> Official Favikon Badges Earned
+                        </h6>
+                        <div class="d-flex flex-wrap">
+                            <div class="favikon-badge-chip">
+                                <i class="mdi mdi-star-circle"></i>
+                                <span><strong>The 70's</strong> • Gold Tier</span>
+                            </div>
+                            <div class="favikon-badge-chip">
+                                <i class="mdi mdi-trending-up"></i>
+                                <span><strong>LinkedIn Rising Star</strong> • 70+ Score</span>
+                            </div>
+                            <div class="favikon-badge-chip">
+                                <i class="mdi mdi-crown"></i>
+                                <span><strong>Category Champ</strong> • Top 10% Tech</span>
+                            </div>
+                            <div class="favikon-badge-chip">
+                                <i class="mdi mdi-bullseye-arrow"></i>
+                                <span><strong>Niche Ninja</strong> • AI &amp; Cybersecurity</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 pl-lg-4">
+                        <h6 class="font-weight-bold text-dark mb-3 small text-uppercase" style="letter-spacing: 0.5px;">
+                            <i class="mdi mdi-chart-timeline-variant text-primary mr-1"></i> Editorial Content Distribution
+                        </h6>
+                        <div class="favikon-pillar-item">
+                            <div class="favikon-pillar-header">
+                                <span>Enterprise AI &amp; Agentic System Architectures</span>
+                                <span class="text-primary font-weight-bold">38%</span>
+                            </div>
+                            <div class="favikon-pillar-bar">
+                                <div class="favikon-pillar-fill bg-primary" style="width: 38%;"></div>
+                            </div>
+                        </div>
+                        <div class="favikon-pillar-item">
+                            <div class="favikon-pillar-header">
+                                <span>Cloud Cybersecurity, Zero-Trust &amp; Palo Alto Networks</span>
+                                <span style="color: #0077b5;" class="font-weight-bold">27%</span>
+                            </div>
+                            <div class="favikon-pillar-bar">
+                                <div class="favikon-pillar-fill" style="width: 27%; background: #0077b5;"></div>
+                            </div>
+                        </div>
+                        <div class="favikon-pillar-item mb-0">
+                            <div class="favikon-pillar-header">
+                                <span>Leadership, Stanford SEP, Forbes &amp; Daily Routine</span>
+                                <span style="color: #e1306c;" class="font-weight-bold">35%</span>
+                            </div>
+                            <div class="favikon-pillar-bar">
+                                <div class="favikon-pillar-fill" style="width: 35%; background: linear-gradient(90deg, #8b5cf6, #e1306c);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Controls, Search, and Category Filters -->
+            <div class="social-control-bar">
+                <div class="row align-items-center mb-3">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <div class="search-social-wrap">
+                            <i class="mdi mdi-magnify"></i>
+                            <input type="text" id="socialSearchInput" class="search-social-input" placeholder="Search posts by topic, hashtag, or keyword (e.g. #EnterpriseAI, morning, run)..." />
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-right">
+                        <span class="mr-2 text-muted small font-weight-bold">Platform:</span>
+                        <div class="btn-group btn-group-sm" role="group" aria-label="Platform Filter">
+                            <button type="button" class="btn btn-outline-primary active platform-filter-btn" data-platform="all">All</button>
+                            <button type="button" class="btn btn-outline-primary platform-filter-btn" data-platform="linkedin"><i class="mdi mdi-linkedin mr-1"></i> LinkedIn</button>
+                            <button type="button" class="btn btn-outline-primary platform-filter-btn" data-platform="instagram"><i class="mdi mdi-instagram mr-1"></i> Instagram</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Routine Categories Pills -->
+                <div class="d-flex flex-wrap align-items-center pt-2 border-top">
+                    <span class="small font-weight-bold text-muted mr-3 mb-2"><i class="mdi mdi-tag-outline mr-1"></i> Routine Focus:</span>
+                    <div class="filter-pill active" data-category="all">All Routines</div>
+                    <div class="filter-pill" data-category="Morning">☀️ Morning Research</div>
+                    <div class="filter-pill" data-category="Fitness">🏃 Fitness &amp; Wellness</div>
+                    <div class="filter-pill" data-category="Executive">💻 Executive Engineering</div>
+                    <div class="filter-pill" data-category="Authorship">📚 Authorship &amp; Books</div>
+                    <div class="filter-pill" data-category="Keynote">🎙️ Keynotes &amp; Speaking</div>
+                    <div class="filter-pill" data-category="Academic">🔬 Academic Mentorship</div>
+                </div>
+            </div>
+
+            <!-- Feed Content Area with High-Impact Performance Analytics -->
+            <div class="row">
+                <!-- Left Column: Compact Social Stream -->
+                <div class="col-lg-7 col-xl-8 mb-4">
+                    <!-- Posts Stream Container -->
+                    <div id="socialFeedStream" class="social-feed-grid">
+                        <!-- Dynamic Compact Post Cards Injected Here -->
+                    </div>
+
+                    <!-- Empty State Container -->
+                    <div id="socialEmptyState" class="social-empty-state d-none">
+                        <div class="mb-3">
+                            <i class="mdi mdi-post-outline text-muted" style="font-size: 48px;"></i>
+                        </div>
+                        <h4 class="font-weight-bold mb-2">No Social Posts in Feed</h4>
+                        <p class="text-muted mb-4" id="emptyStateDesc">
+                            No posts match the active filter criteria, or all items were removed.
+                        </p>
+                        <button type="button" class="btn btn-primary px-4 py-2" id="resetFeedBtn">
+                            <i class="mdi mdi-refresh mr-1"></i> Reset Initial Posts
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column: Executive Performance & Routine Analytics -->
+                <div class="col-lg-5 col-xl-4">
+                    <div class="social-analytics-sidebar">
+                        <!-- Channel Analytics Card -->
+                        <div class="analytics-card mb-4">
+                            <div class="analytics-card-header">
+                                <h6 class="font-weight-bold mb-0 text-dark">
+                                    <i class="mdi mdi-chart-timeline-variant text-primary mr-1"></i> Channel Performance
+                                </h6>
+                                <span class="badge badge-pill badge-soft-success small font-weight-bold">Live Tracked</span>
+                            </div>
+                            <div class="analytics-card-body">
+                                <div class="row text-center mb-3">
+                                    <div class="col-6 border-right">
+                                        <div class="analytics-mini-stat">
+                                            <span class="analytics-mini-val text-primary" id="analyticsTotalEngage">675</span>
+                                            <span class="analytics-mini-lbl">Engagements</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="analytics-mini-stat">
+                                            <span class="analytics-mini-val text-success" id="analyticsAvgRate">5.8%</span>
+                                            <span class="analytics-mini-lbl">Interaction Rate</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Platform Distribution Progress -->
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between small font-weight-bold text-muted mb-1">
+                                        <span><i class="mdi mdi-linkedin" style="color: #0077b5;"></i> LinkedIn (<span id="analyticsLiPct">50%</span>)</span>
+                                        <span><i class="mdi mdi-instagram" style="color: #e1306c;"></i> Instagram (<span id="analyticsIgPct">50%</span>)</span>
+                                    </div>
+                                    <div class="progress" style="height: 7px; border-radius: 4px; overflow: hidden; background-color: #f1f5f9;">
+                                        <div class="progress-bar" id="analyticsProgressBar" role="progressbar" style="width: 50%; background: linear-gradient(90deg, #0077b5 0%, #2563eb 100%);"></div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center small text-muted pt-2 border-top">
+                                    <span><i class="mdi mdi-clock-outline mr-1"></i> Routine Crawl Routine</span>
+                                    <span class="font-weight-bold text-dark">24h Automated</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Monitored Executive Profiles -->
+                        <div class="analytics-card mb-4">
+                            <div class="analytics-card-header">
+                                <h6 class="font-weight-bold mb-0 text-dark">
+                                    <i class="mdi mdi-account-badge-horizontal-outline text-primary mr-1"></i> Monitored Profiles
+                                </h6>
+                                <span class="badge badge-pill badge-light small border text-muted">2 Verified</span>
+                            </div>
+                            <div class="analytics-card-body p-0">
+                                <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" rel="noopener noreferrer" class="profile-monitor-row">
+                                    <div class="d-flex align-items-center">
+                                        <div class="profile-monitor-icon li-bg">
+                                            <i class="mdi mdi-linkedin"></i>
+                                        </div>
+                                        <div class="ml-2">
+                                            <div class="font-weight-bold text-dark small">Harsh Verma <i class="mdi mdi-check-decagram text-primary"></i></div>
+                                            <div class="text-muted" style="font-size: 11px;">@harshverma59 • 16.6K Community</div>
+                                        </div>
+                                    </div>
+                                    <i class="mdi mdi-open-in-new text-muted small"></i>
+                                </a>
+
+                                <a href="https://www.instagram.com/aiwithharsh/" target="_blank" rel="noopener noreferrer" class="profile-monitor-row border-top">
+                                    <div class="d-flex align-items-center">
+                                        <div class="profile-monitor-icon ig-bg">
+                                            <i class="mdi mdi-instagram"></i>
+                                        </div>
+                                        <div class="ml-2">
+                                            <div class="font-weight-bold text-dark small">Harsh Verma <i class="mdi mdi-check-decagram text-danger"></i></div>
+                                            <div class="text-muted" style="font-size: 11px;">@aiwithharsh • Instagram Routine</div>
+                                        </div>
+                                    </div>
+                                    <i class="mdi mdi-open-in-new text-muted small"></i>
+                                </a>
+
+                                <a href="https://adplist.org/mentors/harsh-verma" target="_blank" rel="noopener noreferrer" class="profile-monitor-row border-top">
+                                    <div class="d-flex align-items-center">
+                                        <div class="profile-monitor-icon" style="background: #e1316c;">
+                                            <i class="mdi mdi-school text-white"></i>
+                                        </div>
+                                        <div class="ml-2">
+                                            <div class="font-weight-bold text-dark small">Harsh Verma <i class="mdi mdi-check-decagram" style="color: #e1316c;"></i></div>
+                                            <div class="text-muted" style="font-size: 11px;">adplist.org • Top 1% Mentor</div>
+                                        </div>
+                                    </div>
+                                    <i class="mdi mdi-open-in-new text-muted small"></i>
+                                </a>
+
+                                <a href="https://spotlight.favikon.com/harshverma59/" target="_blank" rel="noopener noreferrer" class="profile-monitor-row border-top">
+                                    <div class="d-flex align-items-center">
+                                        <div class="profile-monitor-icon" style="background: #4f46e5;">
+                                            <i class="mdi mdi-seal text-white"></i>
+                                        </div>
+                                        <div class="ml-2">
+                                            <div class="font-weight-bold text-dark small">Harsh Verma <i class="mdi mdi-check-decagram" style="color: #818cf8;"></i></div>
+                                            <div class="text-muted" style="font-size: 11px;">favikon.com • Score 79/100</div>
+                                        </div>
+                                    </div>
+                                    <i class="mdi mdi-open-in-new text-muted small"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Quick Post by URL Card in Sidebar -->
+                        <div class="analytics-card">
+                            <div class="analytics-card-header">
+                                <h6 class="font-weight-bold mb-0 text-dark">
+                                    <i class="mdi mdi-link-variant-plus text-primary mr-1"></i> Add Post via Link
+                                </h6>
+                            </div>
+                            <div class="analytics-card-body">
+                                <p class="small text-muted mb-2">
+                                    Paste a public post or reel link to pull its real content:
+                                </p>
+                                <div class="input-group mb-2">
+                                    <input type="url" id="sidebarUrlInput" class="form-control form-control-custom form-control-sm" placeholder="Paste LinkedIn or Instagram URL..." />
+                                    <div class="input-group-append">
+                                        <button class="btn btn-sm btn-primary" type="button" id="sidebarFetchBtn" title="Fetch & Post">
+                                            <i class="mdi mdi-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <button type="button" class="btn btn-link btn-sm p-0 text-primary small font-weight-bold" data-toggle="modal" data-target="#addPostModal">
+                                        Open Full Fetch Modal <i class="mdi mdi-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADPList Mentorship & Community Impact Section -->
+            <section class="adplist-impact-box" id="adplistSection">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 text-center mb-4 mb-lg-0">
+                        <div class="adplist-swag-wrap">
+                            <div class="adplist-swag-card">
+                                <section style="padding: 1rem; width: 100%; max-width: 380px; min-height: 350px; margin: 0 auto;">
+                                    <img alt="Impact swag image" class="img-fluid" src="https://adplist-users-production.s3.us-east-1.amazonaws.com/bf7f5f217d25ad3c2eb26b16a6b42201/swags/d9276a51-144d-5fb0-b046-9e03f78fcc1f.webp" height="100%" width="100%" style="background-color: rgb(225, 49, 108); border-radius: 14px; object-fit: contain; box-shadow: 0 12px 36px rgba(225, 49, 108, 0.35);" />
+                                </section>
+                            </div>
+                            <div class="mt-2 text-center">
+                                <span class="badge badge-pill badge-light px-3 py-1 font-weight-bold text-dark border">
+                                    <i class="mdi mdi-check-decagram mr-1" style="color: #e1316c;"></i> Verified ADPList Impact Swag Award
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="pl-lg-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="badge-adplist-hero mr-2">
+                                    <i class="mdi mdi-school"></i> ADPList Top 1% Global Mentor
+                                </span>
+                                <span class="badge badge-pill badge-soft-success font-weight-bold px-2 py-1 small">
+                                    <i class="mdi mdi-star mr-1"></i> 5.0 Rating (100% Recommended)
+                                </span>
+                            </div>
+                            <h3 class="font-weight-bold text-dark mb-2" style="font-size: 1.65rem; letter-spacing: -0.3px;">
+                                1:1 AI Engineering Mentorship &amp; Community Leadership
+                            </h3>
+                            <p class="text-muted mb-4 small" style="line-height: 1.65;">
+                                Bringing over 12 years of enterprise engineering experience at Palo Alto Networks, Stanford Graduate School of Business (SEP), and Forbes Technology Council to mentor the next generation of AI practitioners, system architects, and startup founders worldwide.
+                            </p>
+
+                            <!-- Mentorship Stats Grid -->
+                            <div class="row mb-4">
+                                <div class="col-6 col-sm-3 mb-3 mb-sm-0">
+                                    <div class="adplist-metric-tile">
+                                        <div class="adplist-tile-num">1,500+</div>
+                                        <div class="adplist-tile-lbl">Mentoring Mins</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 mb-3 mb-sm-0">
+                                    <div class="adplist-metric-tile">
+                                        <div class="adplist-tile-num">100+</div>
+                                        <div class="adplist-tile-lbl">Global Mentees</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <div class="adplist-metric-tile">
+                                        <div class="adplist-tile-num">5.0 ★</div>
+                                        <div class="adplist-tile-lbl">Review Score</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <div class="adplist-metric-tile">
+                                        <div class="adplist-tile-num">100%</div>
+                                        <div class="adplist-tile-lbl">Recommended</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mentorship Domains -->
+                            <div class="mb-3">
+                                <span class="small font-weight-bold text-dark d-block mb-2 text-uppercase" style="letter-spacing: 0.5px; font-size: 11px;">
+                                    Core Mentoring Domains:
+                                </span>
+                                <div>
+                                    <span class="adplist-topic-tag"><i class="mdi mdi-brain text-primary mr-1"></i> AI/ML Engineering</span>
+                                    <span class="adplist-topic-tag"><i class="mdi mdi-server-network text-info mr-1"></i> System Architecture &amp; Scalability</span>
+                                    <span class="adplist-topic-tag"><i class="mdi mdi-robot mr-1" style="color:#8b5cf6;"></i> Generative AI &amp; LLMs</span>
+                                    <span class="adplist-topic-tag"><i class="mdi mdi-briefcase-account text-success mr-1"></i> Principal Engineer Paths</span>
+                                    <span class="adplist-topic-tag"><i class="mdi mdi-shield-lock text-warning mr-1"></i> Cloud Cybersecurity &amp; Ethics</span>
+                                </div>
+                            </div>
+
+                            <!-- Mentee Testimonial -->
+                            <div class="adplist-quote-box">
+                                "Harsh’s guidance on enterprise-scale AI architectures, zero-trust cloud pipelines, and engineering leadership gave me unparalleled clarity for my career progression. An exceptional mentor who truly elevates your thinking."
+                                <div class="text-right font-weight-bold text-dark mt-1" style="font-size: 11.5px;">— Senior AI Engineer, ADPList Global Mentee</div>
+                            </div>
+
+                            <!-- CTAs -->
+                            <div class="d-flex flex-wrap align-items-center gap-3">
+                                <a href="https://adplist.org/mentors/harsh-verma" target="_blank" rel="noopener noreferrer" class="btn-adplist-book mr-3">
+                                    <i class="mdi mdi-calendar-check mr-1"></i> Book Free 1:1 Session on ADPList
+                                </a>
+                                <a href="https://adplist.org/mentors/harsh-verma" target="_blank" rel="noopener noreferrer" class="btn-adplist-outline">
+                                    <i class="mdi mdi-open-in-new mr-1"></i> View Mentor Profile
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal: Fetch Post via Link URL -->
+    <div class="modal fade" id="addPostModal" tabindex="-1" role="dialog" aria-labelledby="addPostModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 14px; overflow: hidden;">
+                <div class="modal-custom-header">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h5 class="modal-title font-weight-bold text-white mb-0" id="addPostModalTitle">
+                            <i class="mdi mdi-cloud-download-outline mr-1"></i> Fetch Post by Link URL
+                        </h5>
+                        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close" style="outline: none;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <small class="text-white-50 d-block mt-1">
+                        Paste a public post or reel link from LinkedIn or Instagram to pull its authentic content, caption, media, and metrics.
+                    </small>
+                </div>
+                <form id="addPostForm">
+                    <div class="modal-body p-4">
+                        <!-- Quick example chips -->
+                        <div class="mb-3">
+                            <span class="small font-weight-bold text-muted d-block mb-1">Quick Select Verified Post:</span>
+                            <button type="button" class="quick-link-btn" id="quickLinkForbes">
+                                <i class="mdi mdi-linkedin text-primary"></i> Forbes Intelligence Per Dollar (LinkedIn)
+                            </button>
+                            <button type="button" class="quick-link-btn" id="quickLinkXraised">
+                                <i class="mdi mdi-instagram" style="color:#e1306c;"></i> AI Leaders Interview Reel (@aiwithharsh)
+                            </button>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="postUrlInput" class="font-weight-bold small text-dark">Post or Reel URL <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <input type="url" class="form-control form-control-custom" id="postUrlInput" placeholder="https://www.linkedin.com/posts/... or https://www.instagram.com/p/..." required />
+                                <div class="input-group-append">
+                                    <button type="button" class="btn btn-outline-primary font-weight-bold px-3" id="previewFetchBtn">
+                                        <i class="mdi mdi-magnify mr-1"></i> Fetch
+                                    </button>
+                                </div>
+                            </div>
+                            <small class="form-text text-muted" id="urlDetectHint">
+                                Platform and content will be extracted directly from the provided URL.
+                            </small>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="routineCategorySelect" class="font-weight-bold small text-dark">Everyday Routine Category</label>
+                            <select class="form-control form-control-custom" id="routineCategorySelect">
+                                <option value="Forbes & Executive Leadership">🏛️ Forbes & Executive Leadership</option>
+                                <option value="Global Awards & Recognition">🏆 Global Awards & Recognition</option>
+                                <option value="Morning AI Research & Architecture">☀️ Morning AI Research & Architecture</option>
+                                <option value="Fitness & Daily Wellness">🏃 Fitness & Daily Wellness</option>
+                                <option value="Executive AI Engineering">💻 Executive AI Engineering</option>
+                                <option value="Authorship & Deep Work">📚 Authorship & Deep Work</option>
+                                <option value="Keynote & Speaking Engagements">🎙️ Keynote & Speaking Engagements</option>
+                                <option value="Academic Mentorship & Review">🔬 Academic Mentorship & Review</option>
+                            </select>
+                        </div>
+
+                        <!-- Live Loading State -->
+                        <div id="fetchLoadingSpinner" class="text-center py-4 d-none">
+                            <div class="spinner-border text-primary" role="status" style="width: 2rem; height: 2rem;">
+                                <span class="sr-only">Fetching post...</span>
+                            </div>
+                            <p class="small text-muted mt-2 mb-0">Pulling authentic post data from platform...</p>
+                        </div>
+
+                        <!-- Extracted Post Preview Card -->
+                        <div id="fetchPreviewArea" class="fetched-preview-box d-none">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <span class="badge badge-pill badge-soft-primary px-2 py-1 font-weight-bold" id="previewPlatformBadge">
+                                    <i class="mdi mdi-check-circle mr-1"></i> Fetched Post
+                                </span>
+                                <small class="text-muted" id="previewAuthorHandle">@harshverma59</small>
+                            </div>
+                            <h6 class="font-weight-bold mb-1 text-dark" id="previewTitle" style="font-size: 14px;"></h6>
+                            <p class="small text-muted mb-2" id="previewContent" style="line-height: 1.5; max-height: 90px; overflow-y: auto;"></p>
+                            <div id="previewMediaWrap" class="d-none">
+                                <img id="previewMediaImg" src="" alt="Fetched Media" class="fetched-preview-thumb" />
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                                <small class="text-muted" id="previewMetrics">
+                                    <i class="mdi mdi-heart text-danger"></i> <span id="previewLikes">0</span> likes • 
+                                    <i class="mdi mdi-comment text-primary"></i> <span id="previewComments">0</span> comments
+                                </small>
+                                <span class="badge badge-light border text-success small">
+                                    <i class="mdi mdi-check mr-1"></i> Ready to Add
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-light px-4 py-3 border-0">
+                        <button type="button" class="btn btn-secondary font-weight-bold" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary font-weight-bold px-4" id="submitPostBtn">
+                            <i class="mdi mdi-check mr-1"></i> Add Fetched Post to Feed
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="socialToast" role="alert" aria-live="assertive" aria-atomic="true">
+        <i class="mdi mdi-check-circle text-success" style="font-size: 24px;" id="toastIcon"></i>
+        <div class="flex-grow-1">
+            <h6 class="mb-0 font-weight-bold text-white" id="toastTitle">Notification</h6>
+            <small class="text-white-50" id="toastMessage">Operation completed successfully.</small>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-12">
+                    <a href="index" class="footer-logo text-black d-inline-flex align-items-center">
+                        <span class="brand-monogram-emblem mr-2">
+                            <svg class="brand-logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="hvFootGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#1e40af" />
+                                        <stop offset="55%" stop-color="#2563eb" />
+                                        <stop offset="100%" stop-color="#4f46e5" />
+                                    </linearGradient>
+                                    <linearGradient id="hvFootAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#38bdf8" />
+                                        <stop offset="100%" stop-color="#818cf8" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="40" height="40" rx="10" fill="url(#hvFootGrad)" />
+                                <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+                                <path d="M11 12V28M11 20H19M19 12V28" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 12L28.5 28L34 12" stroke="url(#hvFootAccentGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="34" cy="12" r="1.75" fill="#38bdf8" />
+                            </svg>
+                        </span>
+                        <span class="brand-name-text">
+                            <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
+                        </span>
+                    </a>
+                    <p class="para-desc mx-auto mt-4 text-black" style="max-width: 650px;">
+                        Principal Software Engineer in AI @ Palo Alto Networks • Forbes Technology Council Member • IEEE Senior Member • Stanford GSB Scholar
+                    </p>
+                    <ul class="list-unstyled mb-0 mt-4 social-icon">
+                        <li class="list-inline-item mr-1"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="rounded-circle" title="Google Scholar"><i class="mdi mdi-school"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="rounded-circle" title="LinkedIn"><i class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.instagram.com/aiwithharsh/" target="_blank" class="rounded-circle" title="Instagram (@aiwithharsh)"><i class="mdi mdi-instagram"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://github.com/iamharshverma" target="_blank" class="rounded-circle" title="GitHub"><i class="mdi mdi-github-face"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://medium.com/@harshverma59" target="_blank" class="rounded-circle" title="Medium"><i class="mdi mdi-medium"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://twitter.com/harshverma59" target="_blank" class="rounded-circle" title="Twitter"><i class="mdi mdi-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer footer-bar bg-black">
+        <div class="container text-foot text-center">
+            <p class="mb-0 text-white-50">&copy; <script>document.write(new Date().getFullYear())</script> Harsh Verma. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to top -->
+    <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i class="mdi mdi-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Social Feed Interactive Client Engine -->
+    <script>
+        (function() {
+            var postsState = [];
+            var activePlatform = 'all';
+            var activeCategory = 'all';
+            var activeSearch = '';
+
+            // Format ISO date to human relative string
+            function formatRelativeTime(isoString) {
+                if (!isoString) return 'Recently';
+                var d = new Date(isoString);
+                if (isNaN(d.getTime())) return 'Recently';
+                
+                var now = new Date();
+                var diffMs = now - d;
+                var diffSec = Math.floor(diffMs / 1000);
+                var diffMin = Math.floor(diffSec / 60);
+                var diffHrs = Math.floor(diffMin / 60);
+                var diffDays = Math.floor(diffHrs / 24);
+
+                if (diffSec < 60) return 'Just now';
+                if (diffMin < 60) return diffMin + 'm ago';
+                if (diffHrs < 24) return diffHrs + 'h ago';
+                if (diffDays === 1) return 'Yesterday';
+                if (diffDays < 7) return diffDays + 'd ago';
+                
+                return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+            }
+
+            // Show interactive toast
+            function showToast(title, message, isSuccess) {
+                var $toast = $('#socialToast');
+                var $icon = $('#toastIcon');
+                
+                $('#toastTitle').text(title);
+                $('#toastMessage').text(message);
+
+                if (isSuccess) {
+                    $toast.css('border-left-color', '#10b981');
+                    $icon.attr('class', 'mdi mdi-check-circle text-success');
+                } else {
+                    $toast.css('border-left-color', '#ef4444');
+                    $icon.attr('class', 'mdi mdi-alert-circle text-danger');
+                }
+
+                $toast.stop(true, true).fadeIn(200);
+                setTimeout(function() {
+                    $toast.fadeOut(300);
+                }, 4000);
+            }
+
+            // Update stats indicators and live analytics sidebar
+            function updateStatsRibbon(allPosts) {
+                var total = allPosts.length;
+                var liCount = allPosts.filter(function(p) { return (p.platform || '').toLowerCase() === 'linkedin'; }).length;
+                var igCount = allPosts.filter(function(p) { return (p.platform || '').toLowerCase() === 'instagram'; }).length;
+                var totalEngage = 0;
+
+                allPosts.forEach(function(p) {
+                    totalEngage += (parseInt(p.likes, 10) || 0) + (parseInt(p.comments, 10) || 0) + (parseInt(p.shares, 10) || 0);
+                });
+
+                $('#totalPostsCount').text(total);
+                $('#linkedinPostsCount').text(liCount);
+                $('#instagramPostsCount').text(igCount);
+
+                // Sidebar Performance Metrics
+                $('#analyticsTotalEngage').text(totalEngage > 0 ? totalEngage.toLocaleString() : '0');
+                var avgRate = total > 0 ? Math.min(12.5, Math.max(3.2, ((totalEngage / (total * 85)) * 100))).toFixed(1) : '0.0';
+                $('#analyticsAvgRate').text(avgRate + '%');
+
+                var liPct = total > 0 ? Math.round((liCount / total) * 100) : 50;
+                var igPct = total > 0 ? (100 - liPct) : 50;
+                $('#analyticsLiPct').text(liPct + '%');
+                $('#analyticsIgPct').text(igPct + '%');
+                $('#analyticsProgressBar').css('width', liPct + '%');
+            }
+
+            // Render post cards in small, compact layout
+            function renderPosts() {
+                var $stream = $('#socialFeedStream');
+                var $empty = $('#socialEmptyState');
+                $stream.empty();
+
+                var filtered = postsState.filter(function(p) {
+                    var matchPlatform = (activePlatform === 'all' || (p.platform || '').toLowerCase() === activePlatform.toLowerCase());
+                    var matchCategory = (activeCategory === 'all' || (p.routineCategory || '').toLowerCase().indexOf(activeCategory.toLowerCase()) !== -1);
+                    
+                    var matchSearch = true;
+                    if (activeSearch) {
+                        var q = activeSearch.toLowerCase();
+                        var textContent = (p.content || '').toLowerCase();
+                        var routineCat = (p.routineCategory || '').toLowerCase();
+                        var tagsText = Array.isArray(p.tags) ? p.tags.join(' ').toLowerCase() : '';
+                        matchSearch = (textContent.indexOf(q) !== -1 || routineCat.indexOf(q) !== -1 || tagsText.indexOf(q) !== -1);
+                    }
+
+                    return matchPlatform && matchCategory && matchSearch;
+                });
+
+                if (filtered.length === 0) {
+                    $stream.addClass('d-none');
+                    $empty.removeClass('d-none');
+                    return;
+                }
+
+                $empty.addClass('d-none');
+                $stream.removeClass('d-none');
+
+                filtered.forEach(function(post) {
+                    var isLinkedIn = (post.platform || '').toLowerCase() === 'linkedin';
+                    var platformClass = isLinkedIn ? 'card-platform-linkedin' : 'card-platform-instagram';
+                    var platformIcon = isLinkedIn ? 'mdi-linkedin' : 'mdi-instagram';
+                    var platformName = isLinkedIn ? 'LinkedIn' : 'Instagram';
+                    var postTime = formatRelativeTime(post.publishedAt);
+                    var avatar = post.authorAvatar || 'images/harsh/Harsh_portfolio_pic.png';
+
+                    // Parse formatted hashtags
+                    var rawContent = post.content || '';
+                    var formattedContent = rawContent.replace(/(#[a-zA-Z0-9_]+)/g, '<span class="social-post-tag">$1</span>');
+
+                    // If text is long, clamp initially to keep cards small and sleek
+                    var isLong = rawContent.length > 160;
+                    var contentId = 'content-' + post.id;
+
+                    var mediaHtml = '';
+                    if (post.mediaUrl) {
+                        mediaHtml = `
+                            <div class="social-media-container">
+                                <img src="${post.mediaUrl}" alt="Post media attachment" class="social-media-img" loading="lazy" onerror="this.style.display='none'" />
+                            </div>
+                        `;
+                    }
+
+                    var titleHtml = post.title ? `<div class="social-post-title">${post.title}</div>` : '';
+
+                    var cardHtml = `
+                        <article class="social-card" id="card-${post.id}" data-id="${post.id}">
+                            <div class="social-card-header">
+                                <div class="social-author-wrap">
+                                    <img src="${avatar}" alt="${post.authorName || 'Harsh Verma'}" class="social-avatar" />
+                                    <div class="social-author-info">
+                                        <div class="social-author-name">
+                                            <span>${post.authorName || 'Harsh Verma'}</span>
+                                            <i class="mdi mdi-check-decagram verified-badge" title="Verified Creator"></i>
+                                            <span class="card-platform-pill ${platformClass} ml-1">
+                                                <i class="mdi ${platformIcon}"></i> ${platformName}
+                                            </span>
+                                        </div>
+                                        <div class="social-author-handle">
+                                            <span>${post.authorHandle || (isLinkedIn ? '@harshverma59' : '@aiwithharsh')}</span>
+                                            <span>•</span>
+                                            <span class="text-muted">${postTime}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-delete-post delete-post-btn" data-id="${post.id}" title="Delete this post" aria-label="Delete post">
+                                    <i class="mdi mdi-delete-outline"></i>
+                                </button>
+                            </div>
+
+                            ${post.routineCategory ? `<span class="routine-cat-pill">${post.routineCategory}</span>` : ''}
+
+                            ${titleHtml}
+
+                            <div class="social-post-text ${isLong ? 'is-clamped' : ''}" id="${contentId}">${formattedContent}</div>
+                            ${isLong ? `<button type="button" class="btn-toggle-expand" data-target="#${contentId}">Show more</button>` : ''}
+
+                            ${mediaHtml}
+
+                            <div class="social-card-footer">
+                                <div class="social-engagements">
+                                    <button type="button" class="eng-btn like-btn" data-id="${post.id}" title="Like">
+                                        <i class="mdi mdi-heart-outline"></i> <span class="like-count">${post.likes || 0}</span>
+                                    </button>
+                                    <span class="eng-btn" title="Comments">
+                                        <i class="mdi mdi-comment-outline"></i> <span>${post.comments || 0}</span>
+                                    </span>
+                                    <span class="eng-btn" title="Shares">
+                                        <i class="mdi mdi-share-variant-outline"></i> <span>${post.shares || 0}</span>
+                                    </span>
+                                </div>
+
+                                <div class="card-actions-right">
+                                    <a href="${post.postUrl || (isLinkedIn ? 'https://www.linkedin.com/in/harshverma59/' : 'https://www.instagram.com/aiwithharsh/')}" target="_blank" rel="noopener noreferrer" class="btn-view-orig">
+                                        Open on ${platformName} <i class="mdi mdi-open-in-new"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    `;
+
+                    $stream.append(cardHtml);
+                });
+            }
+
+            // Fetch posts from backend API
+            function fetchPosts(callback) {
+                $.ajax({
+                    url: '/api/social/posts',
+                    method: 'GET',
+                    dataType: 'json',
+                    success: function(res) {
+                        if (res && res.posts) {
+                            postsState = res.posts;
+                            updateStatsRibbon(postsState);
+                            renderPosts();
+                            if (res.lastSynced) {
+                                var syncedDate = new Date(res.lastSynced);
+                                $('#syncStatusLabel').text('Synced: ' + syncedDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
+                            }
+                        }
+                        if (typeof callback === 'function') callback(null, res);
+                    },
+                    error: function(err) {
+                        console.error('Failed to load social posts:', err);
+                        if (typeof callback === 'function') callback(err);
+                    }
+                });
+            }
+
+            // Delete a post immediately (no blocking window.confirm)
+            function deletePost(postId) {
+                if (!postId) return;
+
+                var $card = $('#card-' + postId);
+                $card.css({
+                    'transition': 'all 0.28s cubic-bezier(0.4, 0, 0.2, 1)',
+                    'opacity': '0',
+                    'transform': 'scale(0.95) translateY(-8px)',
+                    'pointer-events': 'none'
+                });
+
+                $.ajax({
+                    url: '/api/social/posts/' + encodeURIComponent(postId),
+                    method: 'DELETE',
+                    dataType: 'json',
+                    success: function(res) {
+                        setTimeout(function() {
+                            postsState = postsState.filter(function(p) { return p.id !== postId; });
+                            updateStatsRibbon(postsState);
+                            renderPosts();
+                            showToast('Post Deleted', 'Post successfully deleted and removed from the feed.', true);
+                        }, 220);
+                    },
+                    error: function(xhr) {
+                        $card.css({
+                            'opacity': '1',
+                            'transform': 'none',
+                            'pointer-events': 'auto'
+                        });
+                        var errMsg = (xhr.responseJSON && xhr.responseJSON.error) || 'Failed to remove post.';
+                        showToast('Delete Failed', errMsg, false);
+                    }
+                });
+            }
+
+            // Preview fetch function from URL
+            function previewFetchUrl(url) {
+                if (!url) return;
+                var $spinner = $('#fetchLoadingSpinner');
+                var $preview = $('#fetchPreviewArea');
+                var $btn = $('#previewFetchBtn');
+
+                $spinner.removeClass('d-none');
+                $preview.addClass('d-none');
+                $btn.prop('disabled', true).html('<i class="mdi mdi-loading mdi-spin"></i>');
+
+                $.ajax({
+                    url: '/api/social/fetch-url',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ url: url }),
+                    success: function(res) {
+                        $spinner.addClass('d-none');
+                        $btn.prop('disabled', false).html('<i class="mdi mdi-magnify mr-1"></i> Fetch');
+
+                        var s = res ? (res.post || res.scraped) : null;
+                        if (s) {
+                            var isLi = (s.platform || '').toLowerCase() === 'linkedin';
+                            
+                            $('#previewPlatformBadge').html(
+                                isLi 
+                                    ? '<i class="mdi mdi-linkedin mr-1"></i> LinkedIn Post' 
+                                    : '<i class="mdi mdi-instagram mr-1" style="color: #e1306c;"></i> Instagram Reel / Post'
+                            );
+                            $('#previewAuthorHandle').text(s.authorHandle || (isLi ? '@harshverma59' : '@aiwithharsh'));
+                            
+                            if (s.title) {
+                                $('#previewTitle').text(s.title).removeClass('d-none');
+                            } else {
+                                $('#previewTitle').addClass('d-none');
+                            }
+
+                            $('#previewContent').text(s.content || 'Content extracted from live link.');
+
+                            if (s.mediaUrl) {
+                                $('#previewMediaImg').attr('src', s.mediaUrl);
+                                $('#previewMediaWrap').removeClass('d-none');
+                            } else {
+                                $('#previewMediaWrap').addClass('d-none');
+                            }
+
+                            $('#previewLikes').text(s.likes || 120);
+                            $('#previewComments').text(s.comments || 18);
+                            $preview.removeClass('d-none');
+                        }
+                    },
+                    error: function() {
+                        $spinner.addClass('d-none');
+                        $btn.prop('disabled', false).html('<i class="mdi mdi-magnify mr-1"></i> Fetch');
+                        showToast('Fetch Notice', 'Direct extraction returned partial data. Link is ready to add to feed.', false);
+                    }
+                });
+            }
+
+            // Quick Example Post Buttons
+            $('#quickLinkForbes').on('click', function() {
+                var url = 'https://www.linkedin.com/feed/update/urn:li:activity:7462604082080276482/';
+                $('#postUrlInput').val(url).trigger('change');
+                $('#routineCategorySelect').val('Forbes & Executive Leadership');
+                previewFetchUrl(url);
+            });
+
+            $('#quickLinkXraised').on('click', function() {
+                var url = 'https://www.instagram.com/reel/DYcnn4hOfxe/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==';
+                $('#postUrlInput').val(url).trigger('change');
+                $('#routineCategorySelect').val('Leadership & Executive Education');
+                previewFetchUrl(url);
+            });
+
+            // Expand/collapse text toggle
+            $(document).on('click', '.btn-toggle-expand', function(e) {
+                e.preventDefault();
+                var targetId = $(this).attr('data-target');
+                var $target = $(targetId);
+                if ($target.hasClass('is-clamped')) {
+                    $target.removeClass('is-clamped');
+                    $(this).text('Show less');
+                } else {
+                    $target.addClass('is-clamped');
+                    $(this).text('Show more');
+                }
+            });
+
+            // Sidebar Quick Add by URL
+            $('#sidebarFetchBtn').on('click', function() {
+                var url = $('#sidebarUrlInput').val().trim();
+                if (!url) {
+                    showToast('URL Required', 'Please enter a LinkedIn or Instagram URL.', false);
+                    return;
+                }
+
+                var $btn = $(this);
+                $btn.prop('disabled', true).html('<i class="mdi mdi-loading mdi-spin"></i>');
+
+                $.ajax({
+                    url: '/api/social/posts',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ postUrl: url }),
+                    success: function(res) {
+                        $btn.prop('disabled', false).html('<i class="mdi mdi-arrow-right"></i>');
+                        $('#sidebarUrlInput').val('');
+                        if (res.post) {
+                            postsState.unshift(res.post);
+                            updateStatsRibbon(postsState);
+                            renderPosts();
+                            showToast('Post Added!', 'Successfully pulled and added from ' + (res.post.platform || '').toUpperCase(), true);
+                        }
+                    },
+                    error: function(xhr) {
+                        $btn.prop('disabled', false).html('<i class="mdi mdi-arrow-right"></i>');
+                        var errMsg = (xhr.responseJSON && xhr.responseJSON.error) || 'Failed to pull post from URL.';
+                        showToast('Fetch Failed', errMsg, false);
+                    }
+                });
+            });
+
+            $('#sidebarUrlInput').on('keypress', function(e) {
+                if (e.which === 13) {
+                    $('#sidebarFetchBtn').click();
+                }
+            });
+
+            // Preview fetch button click
+            $('#previewFetchBtn').on('click', function() {
+                var url = $('#postUrlInput').val().trim();
+                if (url) previewFetchUrl(url);
+            });
+
+            // Handle Add Post form submit (fetches and adds the authentic post)
+            $('#addPostForm').on('submit', function(e) {
+                e.preventDefault();
+                var postUrl = $('#postUrlInput').val().trim();
+                if (!postUrl) {
+                    alert('Please enter a valid post URL from LinkedIn or Instagram.');
+                    return;
+                }
+
+                var routineCategory = $('#routineCategorySelect').val();
+                var $btn = $('#submitPostBtn');
+                $btn.prop('disabled', true).html('<i class="mdi mdi-loading mdi-spin mr-1"></i> Pulling Post...');
+
+                $.ajax({
+                    url: '/api/social/posts',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        postUrl: postUrl,
+                        routineCategory: routineCategory
+                    }),
+                    success: function(res) {
+                        $btn.prop('disabled', false).html('<i class="mdi mdi-check mr-1"></i> Add Fetched Post to Feed');
+                        $('#addPostModal').modal('hide');
+                        $('#addPostForm')[0].reset();
+                        $('#fetchPreviewArea').addClass('d-none');
+
+                        if (res.post) {
+                            postsState.unshift(res.post);
+                            updateStatsRibbon(postsState);
+                            renderPosts();
+
+                            // Highlight newly added post
+                            var $newCard = $('#card-' + res.post.id);
+                            if ($newCard && $newCard.length) {
+                                $newCard.addClass('highlight-added');
+                                var cardOff = $newCard.offset();
+                                if (cardOff && typeof cardOff.top === 'number') {
+                                    $('html, body').animate({
+                                        scrollTop: cardOff.top - 120
+                                    }, 400);
+                                }
+                            }
+
+                            showToast('Post Fetched & Added!', 'Authentic update from ' + (res.post.platform || '').toUpperCase() + ' successfully pulled and added to the routine feed.', true);
+                        }
+                    },
+                    error: function(xhr) {
+                        $btn.prop('disabled', false).html('<i class="mdi mdi-check mr-1"></i> Add Fetched Post to Feed');
+                        var errMsg = (xhr.responseJSON && xhr.responseJSON.error) || 'Failed to pull post from URL.';
+                        showToast('Fetch Failed', errMsg, false);
+                    }
+                });
+            });
+
+            // Auto detect platform and trigger preview on paste
+            $('#postUrlInput').on('input paste change', function() {
+                var val = $(this).val().toLowerCase();
+                var $hint = $('#urlDetectHint');
+
+                if (val.indexOf('linkedin.com') !== -1) {
+                    $hint.html('<span class="text-primary font-weight-bold"><i class="mdi mdi-linkedin"></i> LinkedIn post link detected</span>');
+                } else if (val.indexOf('instagram.com') !== -1) {
+                    $hint.html('<span class="font-weight-bold" style="color: #e1306c;"><i class="mdi mdi-instagram"></i> Instagram post/reel link detected (@aiwithharsh)</span>');
+                } else {
+                    $hint.text('Platform and content will be extracted directly from the provided URL.');
+                }
+            });
+
+            // Reset Feed Button
+            $('#resetFeedBtn').on('click', function() {
+                var $btn = $(this);
+                $btn.prop('disabled', true).html('<i class="mdi mdi-loading mdi-spin mr-1"></i> Restoring...');
+
+                $.ajax({
+                    url: '/api/social/reset',
+                    method: 'POST',
+                    dataType: 'json',
+                    success: function() {
+                        fetchPosts(function() {
+                            $btn.prop('disabled', false).html('<i class="mdi mdi-refresh mr-1"></i> Reset Curated Routine Feed');
+                            showToast('Feed Restored', 'The default curated routine posts have been successfully reloaded.', true);
+                        });
+                    },
+                    error: function() {
+                        $btn.prop('disabled', false).html('<i class="mdi mdi-refresh mr-1"></i> Reset Curated Routine Feed');
+                    }
+                });
+            });
+
+            // Platform Filter Click
+            $('.platform-filter-btn').on('click', function() {
+                $('.platform-filter-btn').removeClass('active');
+                $(this).addClass('active');
+                activePlatform = $(this).attr('data-platform');
+                renderPosts();
+            });
+
+            // Category Filter Click
+            $('.filter-pill').on('click', function() {
+                $('.filter-pill').removeClass('active');
+                $(this).addClass('active');
+                activeCategory = $(this).attr('data-category');
+                renderPosts();
+            });
+
+            // Search Filter with Debounce
+            var searchTimeout = null;
+            $('#socialSearchInput').on('input', function() {
+                var val = $(this).val().trim();
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(function() {
+                    activeSearch = val;
+                    renderPosts();
+                }, 150);
+            });
+
+            // Delegate Delete Post Click
+            $(document).on('click', '.delete-post-btn', function() {
+                var id = $(this).attr('data-id');
+                if (id) deletePost(id);
+            });
+
+            // Delegate Like Button Click
+            $(document).on('click', '.like-btn', function() {
+                var $btn = $(this);
+                var $icon = $btn.find('i');
+                var $count = $btn.find('.like-count');
+                var current = parseInt($count.text(), 10) || 0;
+
+                if ($btn.hasClass('liked')) {
+                    $btn.removeClass('liked');
+                    $icon.attr('class', 'mdi mdi-heart-outline');
+                    $count.text(Math.max(0, current - 1));
+                } else {
+                    $btn.addClass('liked');
+                    $icon.attr('class', 'mdi mdi-heart');
+                    $count.text(current + 1);
+                }
+            });
+
+            // Initialize on DOM Ready
+            $(document).ready(function() {
+                fetchPosts();
+            });
+        })();
+    </script>
+
+    <!-- HV Booking Flow & Keynote Hub Engine -->
+    <script src="js/hv-booking-flow.js"></script>
+    <!-- HV AI Copilot Assistant Engine -->
+    <script src="js/hv-copilot.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g-forbes" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#g-forbes)"/>
+  <rect x="8" y="8" width="384" height="224" rx="12" fill="none" stroke="#2563EB" stroke-width="1.5" opacity="0.6"/>
+  <text x="200" y="70" fill="#FFFFFF" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="bold" font-style="italic" text-anchor="middle" letter-spacing="1">Forbes</text>
+  <text x="200" y="98" fill="#60A5FA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="3">TECHNOLOGY COUNCIL</text>
+  <text x="200" y="145" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="800" text-anchor="middle">EXCELLENCE RECOGNITION</text>
+  <text x="200" y="172" fill="#93C5FD" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">AI &amp; Enterprise Software Engineering</text>
+  <text x="200" y="202" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">In Collaboration with Palo Alto Networks</text>
+</svg>

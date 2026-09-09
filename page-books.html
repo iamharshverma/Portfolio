@@ -1,0 +1,2126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30250521-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-30250521-4');
+    </script>
+    <meta charset="UTF-8">
+    <title>Authored Books | Harsh Verma - AI Engineering & Cybersecurity Author</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Authored books by Harsh Verma: 'Beyond AI Engineering: From Creator to Curator' and 'AI vs. AI: Engineering the Cybersecurity Counteroffensive'. Exploring AI Agentic Leadership, Super Engineering, and Autonomous Cyber Defense." />
+    <meta name="keywords" content="Harsh Verma, Authored Books, Beyond AI Engineering, AI vs AI, AI Agent Revolution, Cybersecurity Counteroffensive, Super Engineer, AI Leadership, Books" />
+    <meta content="Harsh Verma" name="author" />
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon_new.ico">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Magnific -->
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Slider -->               
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/> 
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"/>
+    <!-- Flickity -->
+    <link href="css/flickity.css" rel="stylesheet" type="text/css" />
+    <!-- Main css File -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Dark Mode css File -->
+    <link href="css/dark-mode.css" rel="stylesheet" type="text/css" />
+    <script src="js/dark-mode.js"></script>
+
+    <style>
+        /* Book-Themed Background Environment */
+        .book-theme-environment {
+            background-color: #f8fafc;
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(37, 99, 235, 0.07) 0%, transparent 45%),
+                radial-gradient(circle at 85% 35%, rgba(2, 132, 199, 0.06) 0%, transparent 40%),
+                radial-gradient(circle at 50% 85%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+                url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232563eb' fill-opacity='0.038' fill-rule='evenodd'%3E%3C!-- Open Book 1 --%3E%3Cpath d='M25 35c8-3 20-3 27 3v38c-7-5-19-5-27-2V35zm31 3c7-6 19-6 27-3v38c-8-3-20-3-27 2V38zM28 42h18v2H28zm0 6h18v2H28zm0 6h12v2H28zm35-12h18v2H63zm0 6h18v2H63zm0 6h12v2H63z'/%3E%3C!-- Bookmark Ribbon --%3E%3Cpath d='M52 28v20l4-4 4 4V28z'/%3E%3C!-- Bookshelf Spines --%3E%3Cpath d='M105 25h8v45h-8zm11 5h10v40h-10zm13-8h7v48h-7zm10 6h9v42h-9zM100 70h58v3H100z'/%3E%3C!-- Open Book 2 --%3E%3Cpath d='M95 105c8-3 20-3 27 3v38c-7-5-19-5-27-2v-39zm31 3c7-6 19-6 27-3v38c-8-3-20-3-27 2v-37zM98 112h18v2H98zm0 6h18v2H98zm0 6h12v2H98zm35-12h18v2h-18zm0 6h18v2h-18zm0 6h12v2h-12z'/%3E%3C!-- Library Spines 2 --%3E%3Cpath d='M20 100h9v45h-9zm12 6h8v39h-8zm11-4h11v43H43zm14 8h7v35h-7zM15 145h52v3H15z'/%3E%3C/g%3E%3C/svg%3E");
+            position: relative;
+        }
+
+        /* Floating Literary Watermarks */
+        .book-watermark-icon {
+            position: absolute;
+            pointer-events: none;
+            color: rgba(37, 99, 235, 0.035);
+            z-index: 0;
+        }
+        .book-watermark-1 {
+            top: 220px;
+            right: 4%;
+            font-size: 260px;
+            transform: rotate(-12deg);
+        }
+        .book-watermark-2 {
+            top: 780px;
+            left: 2%;
+            font-size: 240px;
+            transform: rotate(8deg);
+        }
+        .book-watermark-3 {
+            bottom: 180px;
+            right: 5%;
+            font-size: 220px;
+            transform: rotate(-6deg);
+        }
+
+        /* Hero Header */
+        .books-hero-card {
+            background: linear-gradient(135deg, #070c18 0%, #0f172a 45%, #1e3a8a 100%);
+            background-image: 
+                radial-gradient(circle at 90% 20%, rgba(56, 189, 248, 0.22) 0%, transparent 45%),
+                linear-gradient(135deg, #070c18 0%, #0f172a 45%, #1e3a8a 100%);
+            border-radius: 16px;
+            color: #ffffff;
+            padding: 36px;
+            box-shadow: 0 16px 40px rgba(11, 17, 32, 0.3);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            z-index: 1;
+        }
+        .books-hero-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 20c4-2 10-2 14 2v20c-4-3-10-3-14-1V20zm16 2c4-4 10-4 14-2v20c-4-2-10-2-14 1V22z' fill='%2360a5fa' fill-opacity='0.05'/%3E%3C/svg%3E");
+            pointer-events: none;
+            opacity: 0.8;
+        }
+        .author-badge {
+            background: rgba(37, 99, 235, 0.18);
+            color: #60a5fa;
+            border: 1px solid rgba(59, 130, 246, 0.35);
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+        }
+        .author-stat-card {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+            padding: 16px 20px;
+            backdrop-filter: blur(8px);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .author-stat-card:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-2px);
+        }
+        .stat-val {
+            font-size: 26px;
+            font-weight: 800;
+            color: #38bdf8;
+            line-height: 1.2;
+        }
+        .stat-lbl {
+            font-size: 12px;
+            color: #cbd5e1;
+            margin-bottom: 0;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* 3D Realistic Book Mockups & Cover Art Experience */
+        .book-visual-showcase {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .book-view-switcher {
+            display: inline-flex;
+            background: rgba(15, 23, 42, 0.07);
+            padding: 4px;
+            border-radius: 30px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            gap: 4px;
+        }
+        body.dark-mode .book-view-switcher {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+        .book-view-tab {
+            border: none;
+            background: transparent;
+            font-size: 11.5px;
+            font-weight: 700;
+            padding: 6px 13px;
+            border-radius: 20px;
+            color: #64748b;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            white-space: nowrap;
+        }
+        body.dark-mode .book-view-tab {
+            color: #94a3b8;
+        }
+        .book-view-tab.active {
+            background: #2563eb;
+            color: #ffffff;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
+        }
+        .book-view-tab-cyan.active {
+            background: #0284c7;
+            color: #ffffff;
+            box-shadow: 0 2px 8px rgba(2, 132, 199, 0.4);
+        }
+        .book-3d-stage {
+            perspective: 1400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 10px 25px;
+            min-height: 400px;
+            position: relative;
+            width: 100%;
+        }
+        .book-3d {
+            width: 250px;
+            height: 375px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateY(-18deg) rotateX(4deg);
+            transition: transform 0.2s ease-out, box-shadow 0.3s ease;
+            box-shadow: 18px 24px 38px rgba(0, 0, 0, 0.42), 6px 8px 15px rgba(0, 0, 0, 0.28);
+            border-radius: 4px 14px 14px 4px;
+            cursor: grab;
+            user-select: none;
+        }
+        .book-3d:active {
+            cursor: grabbing;
+        }
+        .book-3d.flipping {
+            animation: bookSpin360 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        @keyframes bookSpin360 {
+            0% { transform: rotateY(-18deg) rotateX(4deg); }
+            50% { transform: rotateY(180deg) rotateX(0deg) scale(1.06); }
+            100% { transform: rotateY(342deg) rotateX(4deg); }
+        }
+        /* Hardcover spine depth and page edges */
+        .book-3d::before {
+            content: "";
+            position: absolute;
+            top: 4px;
+            bottom: 4px;
+            right: -15px;
+            width: 15px;
+            background: linear-gradient(to right, #f8fafc 0%, #e2e8f0 40%, #cbd5e1 70%, #94a3b8 100%);
+            transform: rotateY(90deg);
+            transform-origin: left;
+            border-radius: 0 2px 2px 0;
+            box-shadow: inset 0 0 4px rgba(0,0,0,0.25);
+        }
+        .book-3d::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 4px;
+            right: 4px;
+            height: 15px;
+            background: linear-gradient(to bottom, #f1f5f9 0%, #cbd5e1 100%);
+            transform: rotateX(90deg);
+            transform-origin: top;
+            box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+        }
+        .book-cover-img-wrap {
+            position: absolute;
+            inset: 0;
+            border-radius: 4px 14px 14px 4px;
+            overflow: hidden;
+            background-color: #0b1329;
+        }
+        .book-cover-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        /* Realistic book spine indentation and glossy reflection */
+        .book-spine-groove {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 18px;
+            background: linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0.18) 35%, rgba(0,0,0,0.35) 70%, rgba(0,0,0,0.05) 100%);
+            box-shadow: inset -1px 0 2px rgba(0,0,0,0.4);
+            pointer-events: none;
+            z-index: 2;
+        }
+        .book-gloss-overlay {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 65%);
+            pointer-events: none;
+            z-index: 3;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+        .book-zoom-badge {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            background: rgba(15, 23, 42, 0.88);
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            z-index: 4;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.25s ease;
+        }
+        .book-3d:hover .book-zoom-badge {
+            background: #2563eb;
+            transform: scale(1.05);
+        }
+
+        /* Full Jacket Panoramic Display Mode */
+        .book-jacket-wrapper {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: #020408;
+        }
+        body.dark-mode .book-jacket-wrapper {
+            border-color: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6);
+        }
+        .book-jacket-wrapper:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+        }
+        .book-jacket-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .jacket-banner-tag {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background: rgba(0, 0, 0, 0.75);
+            color: #38bdf8;
+            font-size: 10.5px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+        }
+
+        /* Audio Executive Briefing Widget */
+        .book-audio-player-box {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.9) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 12px;
+            padding: 10px 14px;
+            width: 100%;
+            max-width: 310px;
+            color: #ffffff;
+            margin-top: 14px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+        .audio-wave-bars {
+            display: flex;
+            align-items: center;
+            gap: 2.5px;
+            height: 18px;
+        }
+        .audio-wave-bar {
+            width: 3px;
+            background: #38bdf8;
+            border-radius: 2px;
+            height: 4px;
+            transition: height 0.2s ease;
+        }
+        .audio-playing .audio-wave-bar {
+            animation: soundWave 0.8s ease-in-out infinite alternate;
+        }
+        .audio-playing .audio-wave-bar:nth-child(2) { animation-delay: 0.15s; }
+        .audio-playing .audio-wave-bar:nth-child(3) { animation-delay: 0.3s; }
+        .audio-playing .audio-wave-bar:nth-child(4) { animation-delay: 0.45s; }
+        .audio-playing .audio-wave-bar:nth-child(5) { animation-delay: 0.2s; }
+        .audio-playing .audio-wave-bar:nth-child(6) { animation-delay: 0.35s; }
+        @keyframes soundWave {
+            0% { height: 4px; }
+            100% { height: 18px; }
+        }
+
+        /* Interactive Persona Selector */
+        .persona-filter-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 18px;
+        }
+        .persona-btn {
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            color: #475569;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .persona-btn:hover {
+            background: #e2e8f0;
+            color: #0f172a;
+        }
+        .persona-btn.active {
+            background: #2563eb;
+            color: #ffffff;
+            border-color: #2563eb;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+        }
+        .persona-btn-cyan.active {
+            background: #0284c7;
+            color: #ffffff;
+            border-color: #0284c7;
+            box-shadow: 0 2px 8px rgba(2, 132, 199, 0.3);
+        }
+        body.dark-mode .persona-btn {
+            background: #1e293b;
+            border-color: #334155;
+            color: #cbd5e1;
+        }
+        body.dark-mode .persona-btn:hover {
+            background: #334155;
+            color: #ffffff;
+        }
+
+        /* Interactive Chapter Accordion */
+        .chapter-accordion-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            background: #ffffff;
+            overflow: hidden;
+            transition: all 0.25s ease;
+        }
+        body.dark-mode .chapter-accordion-card {
+            background: #0d1322;
+            border-color: #1e293b;
+        }
+        .chapter-accordion-header {
+            padding: 12px 16px;
+            background: transparent;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 14px;
+            color: #0f172a;
+            user-select: none;
+        }
+        body.dark-mode .chapter-accordion-header {
+            color: #f1f5f9;
+        }
+        .chapter-accordion-header:hover {
+            background: rgba(37, 99, 235, 0.04);
+        }
+        body.dark-mode .chapter-accordion-header:hover {
+            background: rgba(255, 255, 255, 0.04);
+        }
+        .chapter-accordion-body {
+            padding: 0 16px 14px;
+            font-size: 13.5px;
+            color: #475569;
+            line-height: 1.6;
+            border-top: 1px dashed #e2e8f0;
+            padding-top: 10px;
+        }
+        body.dark-mode .chapter-accordion-body {
+            color: #94a3b8;
+            border-top-color: #1e293b;
+        }
+
+        /* Highlight pulse for persona matching */
+        .highlight-pillar {
+            animation: pulsePillar 1.2s ease-in-out infinite alternate;
+            border-color: #2563eb !important;
+            background: #eff6ff !important;
+        }
+        body.dark-mode .highlight-pillar {
+            background: #1e3a8a !important;
+            border-color: #60a5fa !important;
+        }
+        @keyframes pulsePillar {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.02); }
+        }
+
+        /* Chapter 1 Reader Modal */
+        .reader-modal-dialog {
+            max-width: 820px;
+        }
+        .reader-paper {
+            background: #faf8f5;
+            color: #2c2825;
+            font-family: 'Georgia', serif;
+            line-height: 1.85;
+            padding: 40px;
+            border-radius: 12px;
+            transition: background 0.3s, color 0.3s;
+        }
+        .reader-theme-dark .reader-paper {
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+        .reader-theme-sepia .reader-paper {
+            background: #f4ecd8;
+            color: #433422;
+        }
+        .reader-dropcap {
+            float: left;
+            font-size: 3.5rem;
+            line-height: 0.8;
+            padding-top: 4px;
+            padding-right: 8px;
+            padding-bottom: 0;
+            font-family: 'Georgia', serif;
+            font-weight: 700;
+            color: #2563eb;
+        }
+
+        /* Cover Lightbox Modal */
+        .cover-modal-body {
+            background: #090d16;
+            color: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            padding: 30px;
+        }
+        .cover-preview-img {
+            width: 100%;
+            max-height: 520px;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        /* Book Detail Container */
+        .book-showcase-card {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+            padding: 36px;
+            margin-bottom: 40px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .book-showcase-card:hover {
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+            border-color: rgba(37, 99, 235, 0.4);
+        }
+        .timeline-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 12.5px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+        .timeline-badge-blue {
+            background-color: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+        }
+        .timeline-badge-cyan {
+            background-color: #ecfeff;
+            color: #0e7490;
+            border: 1px solid #a5f3fc;
+        }
+        .book-heading {
+            font-size: 26px;
+            font-weight: 800;
+            color: #0f172a;
+            line-height: 1.35;
+            margin-bottom: 6px;
+        }
+        .book-subheading {
+            font-size: 17px;
+            font-weight: 600;
+            color: #2563eb;
+            margin-bottom: 16px;
+            line-height: 1.45;
+        }
+        .book-overview-box {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 16px 20px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 24px;
+            font-size: 15px;
+            line-height: 1.7;
+            color: #334155;
+        }
+        .pillar-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 16px;
+            height: 100%;
+            transition: all 0.25s ease;
+        }
+        .pillar-card:hover {
+            border-color: #2563eb;
+            background: #eff6ff;
+            transform: translateY(-2px);
+        }
+        .pillar-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 8px;
+            background: #eff6ff;
+            color: #2563eb;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .pillar-title {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 6px;
+        }
+        .pillar-desc {
+            font-size: 13px;
+            color: #64748b;
+            line-height: 1.55;
+            margin-bottom: 0;
+        }
+
+        /* Action Buttons */
+        .btn-waitlist {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: #ffffff !important;
+            font-weight: 700;
+            font-size: 14.5px;
+            padding: 10px 24px;
+            border-radius: 8px;
+            border: none;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+        .btn-waitlist:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45);
+            color: #ffffff !important;
+        }
+        .btn-outline-paper {
+            border: 1px solid #cbd5e1;
+            background: transparent;
+            color: #475569 !important;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+        .btn-outline-paper:hover {
+            background: #f1f5f9;
+            color: #0f172a !important;
+            border-color: #94a3b8;
+        }
+
+        /* Author Mission Section */
+        .author-mission-card {
+            background: linear-gradient(135deg, #070c18 0%, #0f172a 50%, #1e3a8a 100%);
+            border-radius: 16px;
+            padding: 40px;
+            color: #ffffff;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            position: relative;
+        }
+
+        /* Dark mode */
+        body.dark-mode .book-theme-environment {
+            background-color: #080d1a;
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(37, 99, 235, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 85% 35%, rgba(6, 182, 212, 0.1) 0%, transparent 45%),
+                radial-gradient(circle at 50% 85%, rgba(59, 130, 246, 0.08) 0%, transparent 55%),
+                url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2360a5fa' fill-opacity='0.045' fill-rule='evenodd'%3E%3C!-- Open Book 1 --%3E%3Cpath d='M25 35c8-3 20-3 27 3v38c-7-5-19-5-27-2V35zm31 3c7-6 19-6 27-3v38c-8-3-20-3-27 2V38zM28 42h18v2H28zm0 6h18v2H28zm0 6h12v2H28zm35-12h18v2H63zm0 6h18v2H63zm0 6h12v2H63z'/%3E%3C!-- Bookmark Ribbon --%3E%3Cpath d='M52 28v20l4-4 4 4V28z'/%3E%3C!-- Bookshelf Spines --%3E%3Cpath d='M105 25h8v45h-8zm11 5h10v40h-10zm13-8h7v48h-7zm10 6h9v42h-9zM100 70h58v3H100z'/%3E%3C!-- Open Book 2 --%3E%3Cpath d='M95 105c8-3 20-3 27 3v38c-7-5-19-5-27-2v-39zm31 3c7-6 19-6 27-3v38c-8-3-20-3-27 2v-37zM98 112h18v2H98zm0 6h18v2H98zm0 6h12v2H98zm35-12h18v2h-18zm0 6h18v2h-18zm0 6h12v2h-12z'/%3E%3C!-- Library Spines 2 --%3E%3Cpath d='M20 100h9v45h-9zm12 6h8v39h-8zm11-4h11v43H43zm14 8h7v35h-7zM15 145h52v3H15z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        body.dark-mode .book-watermark-icon {
+            color: rgba(96, 165, 250, 0.035);
+        }
+        body.dark-mode .book-showcase-card {
+            background: #111827;
+            border-color: #1f2937;
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+        }
+        body.dark-mode .book-showcase-card:hover {
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: 0 16px 45px rgba(0, 0, 0, 0.6);
+        }
+        body.dark-mode .book-heading {
+            color: #f9fafb;
+        }
+        body.dark-mode .book-overview-box {
+            background: #0f172a;
+            color: #d1d5db;
+            border-left-color: #3b82f6;
+        }
+        body.dark-mode .pillar-card {
+            background: #0b0f19;
+            border-color: #1f2937;
+        }
+        body.dark-mode .pillar-card:hover {
+            background: #1e293b;
+            border-color: #3b82f6;
+        }
+        body.dark-mode .pillar-title {
+            color: #f3f4f6;
+        }
+        body.dark-mode .pillar-desc {
+            color: #9ca3af;
+        }
+        body.dark-mode .btn-outline-paper {
+            color: #cbd5e1 !important;
+            border-color: #374151;
+            background: rgba(255, 255, 255, 0.04);
+        }
+        body.dark-mode .btn-outline-paper:hover {
+            background: #1f2937;
+            color: #ffffff !important;
+            border-color: #4b5563;
+        }
+        body.dark-mode .timeline-badge-blue {
+            background-color: rgba(37, 99, 235, 0.2);
+            color: #93c5fd;
+            border-color: rgba(59, 130, 246, 0.4);
+        }
+        body.dark-mode .timeline-badge-cyan {
+            background-color: rgba(6, 182, 212, 0.2);
+            color: #a5f3fc;
+            border-color: rgba(6, 182, 212, 0.4);
+        }
+    </style>
+    <!-- HV AI Copilot Styles -->
+    <link rel="stylesheet" href="css/hv-copilot.css" />
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky" id="navbar">
+        <div class="container">
+            <a class="navbar-brand brand-logo-wrap" href="index" title="Harsh Verma - Home">
+                <span class="brand-monogram-emblem">
+                    <svg class="brand-logo-svg" width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="hvNavGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#1e40af" />
+                                <stop offset="55%" stop-color="#2563eb" />
+                                <stop offset="100%" stop-color="#4f46e5" />
+                            </linearGradient>
+                            <linearGradient id="hvNavAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#38bdf8" />
+                                <stop offset="100%" stop-color="#818cf8" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="40" height="40" rx="10" fill="url(#hvNavGrad)" />
+                        <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+                        <path d="M11 12V28M11 20H19M19 12V28" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M23 12L28.5 28L34 12" stroke="url(#hvNavAccentGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="34" cy="12" r="1.75" fill="#38bdf8" />
+                    </svg>
+                </span>
+                <span class="brand-name-text">
+                    <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-publications">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-awards">Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-memberships">Memberships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-events">Speaker</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="page-books">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-blog">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More <i class="mdi mdi-chevron-down nav-dropdown-arrow"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right nav-custom-dropdown" aria-labelledby="navbarDropdown">
+                            <div class="nav-dropdown-header">
+                                <span>Extended Portfolios &amp; Hubs</span>
+                            </div>
+                            <a class="dropdown-item nav-dropdown-item" href="page-portfolio">
+                                <div class="dropdown-item-icon bg-soft-info"><i class="mdi mdi-cube-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Portfolio Projects</span>
+                                    <span class="dropdown-item-desc">Architectures, agent frameworks &amp; systems</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-smart-slides">
+                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-presentation-play"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Smart Slides <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">New</span></span>
+                                    <span class="dropdown-item-desc">Interactive executive &amp; research slide decks</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-social">
+                                <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
+                                    <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
+                                <div class="dropdown-item-icon bg-soft-warning"><i class="mdi mdi-shield-account-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">38 Verified Profiles Hub</span>
+                                    <span class="dropdown-item-desc">Academic, editorial &amp; executive registries</span>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider my-2"></div>
+                            <a class="dropdown-item nav-dropdown-item" href="index#contact">
+                                <div class="dropdown-item-icon bg-soft-danger"><i class="mdi mdi-email-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Contact Harsh</span>
+                                    <span class="dropdown-item-desc">Advisory, keynotes &amp; consultations</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
+                    <li class="list-inline-item mr-2">
+                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (22+ Papers)">
+                            <i class="mdi mdi-school"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="nav-social-btn" title="LinkedIn Profile">
+                            <i class="mdi mdi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://www.instagram.com/aiwithharsh/" target="_blank" class="nav-social-btn" title="Instagram Profile">
+                            <i class="mdi mdi-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                        <a href="https://github.com/iamharshverma" target="_blank" class="nav-social-btn" title="GitHub Profile">
+                            <i class="mdi mdi-github-face"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Books Content Section Start -->
+    <section class="section book-theme-environment overflow-hidden position-relative" style="padding-top: 130px; padding-bottom: 50px;">
+        <!-- Ambient Decorative Book Watermarks -->
+        <i class="mdi mdi-book-open-page-variant book-watermark-icon book-watermark-1" aria-hidden="true"></i>
+        <i class="mdi mdi-bookshelf book-watermark-icon book-watermark-2" aria-hidden="true"></i>
+        <i class="mdi mdi-feather book-watermark-icon book-watermark-3" aria-hidden="true"></i>
+
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="books-hero-card mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 mb-4 mb-lg-0">
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="author-badge mr-2">
+                                        <i class="mdi mdi-book-open-page-variant mr-1"></i> Authored Books
+                                    </span>
+                                    <span class="text-white-50 small"><i class="mdi mdi-shield-check text-info mr-1"></i> Harsh Verma Original Works</span>
+                                </div>
+                                <h1 class="text-white font-weight-bold mb-3 display-5" style="font-size: 2.25rem;">Books on AI Agentic Leadership & Cyber Counteroffensives</h1>
+                                <p class="text-light mb-4" style="line-height: 1.7; font-size: 15.5px; opacity: 0.9;">
+                                    Translating cutting-edge scientific research and production engineering into actionable playbooks for engineers, architects, founders, and security leaders navigating the AI agent revolution.
+                                </p>
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="#book1" class="btn btn-primary font-weight-bold rounded px-4 py-2 mr-3 mb-2 shadow" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); border: none;">
+                                        <i class="mdi mdi-robot mr-1"></i> Beyond AI Engineering
+                                    </a>
+                                    <a href="#book2" class="btn btn-outline-light rounded px-3 py-2 mr-3 mb-2">
+                                        <i class="mdi mdi-shield-bug mr-1"></i> AI vs. AI (Cybersecurity)
+                                    </a>
+                                    <a href="page-publications" class="btn btn-link text-white-50 px-2 py-2 mb-2">
+                                        <i class="mdi mdi-school mr-1"></i> View 22+ Published Papers &rarr;
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <div class="row">
+                                    <div class="col-6 mb-3">
+                                        <div class="author-stat-card">
+                                            <div class="stat-val">2</div>
+                                            <div class="stat-lbl">Upcoming Books</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <div class="author-stat-card">
+                                            <div class="stat-val">2026</div>
+                                            <div class="stat-lbl">Release Year</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="author-stat-card">
+                                            <div class="stat-val">22</div>
+                                            <div class="stat-lbl">Research Foundations</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="author-stat-card">
+                                            <div class="stat-val">100%</div>
+                                            <div class="stat-lbl">Original Insights</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 1: Beyond AI Engineering -->
+            <div class="row mt-4" id="book1">
+                <div class="col-lg-12">
+                    <div class="book-showcase-card">
+                        <div class="row align-items-center">
+                            <!-- 3D Book Graphic & Cover Showcase -->
+                            <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                                <div class="book-visual-showcase" id="showcase-book1">
+                                    <!-- View Switcher Tabs -->
+                                    <div class="book-view-switcher" role="tablist">
+                                        <button class="book-view-tab active" id="tab-3d-book1" onclick="switchBookView('book1', '3d')">
+                                            <i class="mdi mdi-cube-outline mr-1"></i> 3D Hardcover
+                                        </button>
+                                        <button class="book-view-tab" id="tab-jacket-book1" onclick="switchBookView('book1', 'jacket')">
+                                            <i class="mdi mdi-book-open-outline mr-1"></i> Full Jacket
+                                        </button>
+                                        <button class="book-view-tab" id="tab-sample-book1" onclick="openChapterReader('beyond-ai')">
+                                            <i class="mdi mdi-file-document-outline mr-1"></i> Sample Ch.1
+                                        </button>
+                                    </div>
+
+                                    <!-- 3D Interactive View -->
+                                    <div class="book-3d-stage" id="view-3d-book1">
+                                        <div class="book-3d" id="book-elem-book1" onclick="openCoverModal('beyond-ai')" title="Click to enlarge cover artwork or drag to tilt">
+                                            <div class="book-cover-img-wrap">
+                                                <img src="images/books/beyond_ai_engineering_cover.jpg" alt="Beyond AI Engineering Cover - Harsh Verma" class="book-cover-img" id="book1-cover-img" />
+                                            </div>
+                                            <div class="book-spine-groove"></div>
+                                            <div class="book-gloss-overlay" id="book1-gloss"></div>
+                                            <span class="book-zoom-badge"><i class="mdi mdi-magnify-plus-outline mr-1"></i> Enlarge Art</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Full Jacket Wrap View -->
+                                    <div class="book-3d-stage d-none" id="view-jacket-book1">
+                                        <div class="book-jacket-wrapper" onclick="openCoverModal('beyond-ai')" title="Click to inspect full panoramic jacket">
+                                            <span class="jacket-banner-tag"><i class="mdi mdi-panorama-horizontal mr-1"></i> Full Wrap (Back + Spine + Front)</span>
+                                            <img src="images/books/beyond_ai_engineering_full_jacket.jpg" alt="Beyond AI Engineering Full Jacket Artwork" class="book-jacket-img" />
+                                            <span class="book-zoom-badge"><i class="mdi mdi-arrow-expand-all mr-1"></i> Fullscreen Jacket</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Interactive Tool Actions -->
+                                    <div class="d-flex flex-wrap align-items-center justify-content-center mt-2 text-muted small" style="gap: 12px;">
+                                        <button class="btn btn-sm btn-outline-primary rounded-pill px-3 py-1 font-weight-bold" onclick="spinBook3D('book1')">
+                                            <i class="mdi mdi-rotate-3d-variant mr-1"></i> 360° Spin
+                                        </button>
+                                        <button class="btn btn-sm btn-link text-primary font-weight-bold p-0" onclick="openCoverModal('beyond-ai')">
+                                            <i class="mdi mdi-arrow-expand-all mr-1"></i> Inspect Art
+                                        </button>
+                                        <button class="btn btn-sm btn-link text-dark font-weight-bold p-0" onclick="openChapterReader('beyond-ai')">
+                                            <i class="mdi mdi-book-open-page-variant mr-1"></i> Read Excerpt
+                                        </button>
+                                    </div>
+
+                                    <!-- Embedded Audio Teaser Player -->
+                                    <div class="book-audio-player-box">
+                                        <div class="d-flex align-items-center justify-content-between mb-1">
+                                            <div class="d-flex align-items-center">
+                                                <button class="btn btn-sm btn-primary rounded-circle p-0 mr-2 d-flex align-items-center justify-content-center" id="audio-btn-book1" onclick="toggleAudioTeaser('book1')" style="width: 30px; height: 30px; background: #2563eb; border: none;" title="Play audio preview">
+                                                    <i class="mdi mdi-play text-white font-16" id="audio-icon-book1"></i>
+                                                </button>
+                                                <div>
+                                                    <div class="font-weight-bold small line-height-1">Executive Audio Teaser</div>
+                                                    <span class="text-white-50 small" style="font-size: 11px;">Author Voice Overview (2m 14s)</span>
+                                                </div>
+                                            </div>
+                                            <div class="audio-wave-bars" id="audio-wave-book1">
+                                                <div class="audio-wave-bar"></div>
+                                                <div class="audio-wave-bar"></div>
+                                                <div class="audio-wave-bar"></div>
+                                                <div class="audio-wave-bar"></div>
+                                                <div class="audio-wave-bar"></div>
+                                                <div class="audio-wave-bar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book Content & Details -->
+                            <div class="col-lg-8">
+                                <div class="d-flex flex-wrap align-items-center justify-content-between mb-2">
+                                    <span class="timeline-badge timeline-badge-blue">
+                                        <i class="mdi mdi-clock-outline mr-1"></i> Release: Q3/Q4 2026 Edition
+                                    </span>
+                                    <span class="badge badge-light text-muted border px-2 py-1 small">Category: AI Leadership & Career Engineering</span>
+                                </div>
+
+                                <h2 class="book-heading">Beyond AI Engineering: From Creator to Curator</h2>
+                                <h4 class="book-subheading">Mastering the Human and Strategic Dimensions of Curating AI Systems</h4>
+
+                                <div class="book-overview-box">
+                                    <p class="mb-0">
+                                        The engineers who thrive in the age of artificial intelligence will not simply be code-writers—they will become leaders, strategists, curators, and innovators. <strong>Beyond AI Engineering</strong> provides a definitive career blueprint for engineers and technical leaders to transition into a <strong>Super Engineer</strong> operating masterfully across <strong>Product Strategy, System Architecture, and Enterprise Authority</strong>.
+                                    </p>
+                                </div>
+
+                                <!-- Interactive Audience Matcher -->
+                                <div class="mb-3">
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <span class="text-muted small font-weight-bold">
+                                            <i class="mdi mdi-filter-variant text-primary mr-1"></i> Tailored Takeaways For Your Role:
+                                        </span>
+                                        <span class="badge badge-pill badge-light border text-muted small" id="persona-badge-book1">Click a role to filter</span>
+                                    </div>
+                                    <div class="persona-filter-group" id="persona-group-book1">
+                                        <button class="persona-btn active" onclick="filterBookPillars('book1', 'all', this)">All Perspectives</button>
+                                        <button class="persona-btn" onclick="filterBookPillars('book1', 'engineers', this)">AI & Software Engineers</button>
+                                        <button class="persona-btn" onclick="filterBookPillars('book1', 'leaders', this)">Tech Leads & Directors</button>
+                                        <button class="persona-btn" onclick="filterBookPillars('book1', 'architects', this)">Enterprise Architects</button>
+                                        <button class="persona-btn" onclick="filterBookPillars('book1', 'founders', this)">Founders & Strategists</button>
+                                    </div>
+                                </div>
+
+                                <!-- Key Pillars Grid -->
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="pillar-card" id="book1-pillar-1" data-tags="engineers leaders">
+                                            <div class="pillar-icon"><i class="mdi mdi-account-star-outline"></i></div>
+                                            <h6 class="pillar-title">From Creator to Curator</h6>
+                                            <p class="pillar-desc">Transitioning from writing raw lines of code to orchestrating, evaluating, and curating autonomous multi-agent pipelines with deterministic precision.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="pillar-card" id="book1-pillar-2" data-tags="engineers architects founders">
+                                            <div class="pillar-icon"><i class="mdi mdi-triangle-outline"></i></div>
+                                            <h6 class="pillar-title">The Super Engineer Trifecta</h6>
+                                            <p class="pillar-desc">Mastering the high-leverage intersection of Product Viability, Deep Technical Architecture, and High-Impact Sales/Solutions Engineering.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="pillar-card" id="book1-pillar-3" data-tags="leaders founders">
+                                            <div class="pillar-icon"><i class="mdi mdi-bullhorn-outline"></i></div>
+                                            <h6 class="pillar-title">Authentic Brand & Authority</h6>
+                                            <p class="pillar-desc">Building undeniable authority and a resilient personal brand in a crowded market flooded with automated, generic AI content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="pillar-card" id="book1-pillar-4" data-tags="engineers architects">
+                                            <div class="pillar-icon"><i class="mdi mdi-hexagon-multiple-outline"></i></div>
+                                            <h6 class="pillar-title">Cross-Domain Polymathy</h6>
+                                            <p class="pillar-desc">Accelerating multi-domain mastery through agentic workflows, synthesis frameworks, and real-world system delivery.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Interactive Chapter Syllabus Accordion -->
+                                <div class="chapter-breakdown-section mb-4">
+                                    <h5 class="font-weight-bold text-dark mb-3" style="font-size: 15px;">
+                                        <i class="mdi mdi-format-list-numbered text-primary mr-1"></i> Interactive Chapter Breakdown:
+                                    </h5>
+                                    
+                                    <div class="chapter-accordion-card">
+                                        <div class="chapter-accordion-header" onclick="toggleChapterAccordion('b1-ch1')">
+                                            <span><strong>Part I:</strong> The Curator Evolution — From Code Syntax to System Intent</span>
+                                            <i class="mdi mdi-chevron-down font-18 text-muted" id="icon-b1-ch1"></i>
+                                        </div>
+                                        <div class="chapter-accordion-body" id="body-b1-ch1">
+                                            Why prompt engineering is already transitioning into Intent Curation. Detailed frameworks on autonomous multi-agent pipelines, evaluation harnesses, and deterministic guardrails.
+                                        </div>
+                                    </div>
+
+                                    <div class="chapter-accordion-card">
+                                        <div class="chapter-accordion-header" onclick="toggleChapterAccordion('b1-ch2')">
+                                            <span><strong>Part II:</strong> The Super Engineer Trifecta — Architecture, Product & Value</span>
+                                            <i class="mdi mdi-chevron-down font-18 text-muted" id="icon-b1-ch2"></i>
+                                        </div>
+                                        <div class="chapter-accordion-body d-none" id="body-b1-ch2">
+                                            Operating at the strategic triangle of deep backend scalability, product-market validation, and technical sales engineering. How top 1% engineers multiply enterprise value 10x.
+                                        </div>
+                                    </div>
+
+                                    <div class="chapter-accordion-card">
+                                        <div class="chapter-accordion-header" onclick="toggleChapterAccordion('b1-ch3')">
+                                            <span><strong>Part III:</strong> Authority Engineering — Brand in the Age of Noise</span>
+                                            <i class="mdi mdi-chevron-down font-18 text-muted" id="icon-b1-ch3"></i>
+                                        </div>
+                                        <div class="chapter-accordion-body d-none" id="body-b1-ch3">
+                                            Constructing a defensible personal moat: peer-reviewed research, high-signal technical writing, LinkedIn presence optimization, and executive thought leadership.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Profile Acceleration & Diagnostic Tool Spotlight -->
+                                <div class="profile-tools-spotlight mb-4 p-3 p-md-4 rounded-lg border position-relative" style="background: linear-gradient(135deg, #f0fdf4 0%, #f8fafc 55%, #eff6ff 100%); border-color: #cbd5e1 !important; border-left: 5px solid #059669 !important;">
+                                    <div class="d-flex flex-wrap align-items-center justify-content-between mb-2">
+                                        <span class="badge badge-success px-3 py-1 font-weight-bold text-uppercase" style="font-size: 11px; letter-spacing: 0.5px; background: #059669;">
+                                            <i class="mdi mdi-tools mr-1"></i> Featured Diagnostic Companion in the Book
+                                        </span>
+                                        <span class="text-muted small font-weight-bold mt-1 mt-sm-0">
+                                            <i class="mdi mdi-linkedin text-primary mr-1 font-16"></i> LinkedIn Authority Engineering
+                                        </span>
+                                    </div>
+                                    
+                                    <h5 class="font-weight-bold text-dark mb-2" style="font-size: 16px;">
+                                        Profile Acceleration Platform: <a href="https://profilegenius.careeraccelerator.net/" target="_blank" rel="noopener noreferrer" class="text-primary font-weight-bold">ProfileGenius by Career Accelerator</a>
+                                    </h5>
+                                    
+                                    <p class="text-muted mb-3" style="font-size: 13.5px; line-height: 1.6;">
+                                        In <em>Beyond AI Engineering</em>, building an authentic professional brand is paired with practical toolchains. The book profiles platforms like <a href="https://profilegenius.careeraccelerator.net/" target="_blank" rel="noopener noreferrer" class="font-weight-bold text-primary">ProfileGenius</a> to systematically analyze and elevate your complete LinkedIn presence:
+                                    </p>
+
+                                    <div class="row">
+                                        <div class="col-md-4 mb-2 mb-md-0">
+                                            <div class="d-flex align-items-start p-2 rounded bg-white border h-100 shadow-none">
+                                                <i class="mdi mdi-clipboard-pulse-outline text-success font-22 mr-2 mt-1"></i>
+                                                <div>
+                                                    <strong class="d-block text-dark small font-weight-bold" style="font-size: 13px;">Profile Assessment</strong>
+                                                    <span class="text-muted small" style="font-size: 12px; line-height: 1.35; display: block;">Comprehensive diagnostic scan and score of your LinkedIn presence.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2 mb-md-0">
+                                            <div class="d-flex align-items-start p-2 rounded bg-white border h-100 shadow-none">
+                                                <i class="mdi mdi-target-account text-warning font-22 mr-2 mt-1"></i>
+                                                <div>
+                                                    <strong class="d-block text-dark small font-weight-bold" style="font-size: 13px;">Targeted Updates</strong>
+                                                    <span class="text-muted small" style="font-size: 12px; line-height: 1.35; display: block;">Pinpoints exact sections and narratives needing enhancement.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-start p-2 rounded bg-white border h-100 shadow-none">
+                                                <i class="mdi mdi-play-box-outline text-danger font-22 mr-2 mt-1"></i>
+                                                <div>
+                                                    <strong class="d-block text-dark small font-weight-bold" style="font-size: 13px;">Video Playbooks</strong>
+                                                    <span class="text-muted small" style="font-size: 12px; line-height: 1.35; display: block;">High-impact video guides illustrating high-conversion patterns.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-3 pt-2 d-flex flex-wrap align-items-center justify-content-between border-top" style="border-color: rgba(0,0,0,0.06) !important;">
+                                        <span class="text-muted small">
+                                            <i class="mdi mdi-check-circle text-success mr-1"></i> Free diagnostic scan available for readers
+                                        </span>
+                                        <a href="https://profilegenius.careeraccelerator.net/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success font-weight-bold rounded-pill px-3 mt-2 mt-sm-0">
+                                            <i class="mdi mdi-open-in-new mr-1"></i> Test Your Profile on ProfileGenius
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <button class="btn-waitlist mr-3 mb-2" onclick="openWaitlistModal('Beyond AI Engineering: From Creator to Curator')">
+                                        <i class="mdi mdi-bell-ring-outline mr-2"></i> Join VIP Waitlist &amp; Get Ch. 1 Free
+                                    </button>
+                                    <button class="btn btn-outline-primary rounded font-weight-bold px-3 py-2 mr-3 mb-2" onclick="openChapterReader('beyond-ai')">
+                                        <i class="mdi mdi-book-open-variant mr-1"></i> Read Chapter 1 Online
+                                    </button>
+                                    <button class="btn btn-outline-secondary rounded font-weight-bold px-3 py-2 mr-3 mb-2" onclick="openCoverModal('beyond-ai')">
+                                        <i class="mdi mdi-image-search-outline mr-1"></i> View Full Jacket Art
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 2: AI vs. AI: Cybersecurity Counteroffensive -->
+            <div class="row mt-2" id="book2">
+                <div class="col-lg-12">
+                    <div class="book-showcase-card">
+                        <div class="row align-items-center">
+                            <!-- 3D Book Graphic & Cover Showcase -->
+                            <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                                <div class="book-visual-showcase" id="showcase-book2">
+                                    <!-- View Switcher Tabs -->
+                                    <div class="book-view-switcher" role="tablist">
+                                        <button class="book-view-tab book-view-tab-cyan active" id="tab-3d-book2" onclick="switchBookView('book2', '3d')">
+                                            <i class="mdi mdi-cube-outline mr-1"></i> 3D Hardcover
+                                        </button>
+                                        <button class="book-view-tab book-view-tab-cyan" id="tab-jacket-book2" onclick="switchBookView('book2', 'jacket')">
+                                            <i class="mdi mdi-book-open-outline mr-1"></i> Full Jacket
+                                        </button>
+                                        <button class="book-view-tab book-view-tab-cyan" id="tab-sample-book2" onclick="openChapterReader('ai-vs-ai')">
+                                            <i class="mdi mdi-file-document-outline mr-1"></i> Sample Ch.1
+                                        </button>
+                                    </div>
+
+                                    <!-- 3D Interactive View -->
+                                    <div class="book-3d-stage" id="view-3d-book2">
+                                        <div class="book-3d" id="book-elem-book2" onclick="openCoverModal('ai-vs-ai')" title="Click to enlarge cover artwork or drag to tilt">
+                                            <div class="book-cover-img-wrap">
+                                                <img src="images/books/ai_vs_ai_cover.jpg" alt="AI vs. AI Book Cover - Harsh Verma" class="book-cover-img" id="book2-cover-img" />
+                                            </div>
+                                            <div class="book-spine-groove"></div>
+                                            <div class="book-gloss-overlay" id="book2-gloss"></div>
+                                            <span class="book-zoom-badge" style="background: rgba(2, 132, 199, 0.92);"><i class="mdi mdi-magnify-plus-outline mr-1"></i> Enlarge Art</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Full Jacket Wrap View -->
+                                    <div class="book-3d-stage d-none" id="view-jacket-book2">
+                                        <div class="book-jacket-wrapper" onclick="openCoverModal('ai-vs-ai')" title="Click to inspect full panoramic jacket">
+                                            <span class="jacket-banner-tag" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.4);"><i class="mdi mdi-panorama-horizontal mr-1"></i> Full Wrap (Back + Spine + Front)</span>
+                                            <img src="images/books/ai_vs_ai_full_jacket.jpg" alt="AI vs. AI Full Jacket Artwork" class="book-jacket-img" />
+                                            <span class="book-zoom-badge" style="background: rgba(2, 132, 199, 0.92);"><i class="mdi mdi-arrow-expand-all mr-1"></i> Fullscreen Jacket</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Interactive Tool Actions -->
+                                    <div class="d-flex flex-wrap align-items-center justify-content-center mt-2 text-muted small" style="gap: 12px;">
+                                        <button class="btn btn-sm btn-outline-info rounded-pill px-3 py-1 font-weight-bold" onclick="spinBook3D('book2')">
+                                            <i class="mdi mdi-rotate-3d-variant mr-1"></i> 360° Spin
+                                        </button>
+                                        <button class="btn btn-sm btn-link text-info font-weight-bold p-0" onclick="openCoverModal('ai-vs-ai')">
+                                            <i class="mdi mdi-arrow-expand-all mr-1"></i> Inspect Art
+                                        </button>
+                                        <button class="btn btn-sm btn-link text-dark font-weight-bold p-0" onclick="openChapterReader('ai-vs-ai')">
+                                            <i class="mdi mdi-book-open-page-variant mr-1"></i> Read Excerpt
+                                        </button>
+                                    </div>
+
+                                    <!-- Embedded Audio Teaser Player -->
+                                    <div class="book-audio-player-box" style="border-color: rgba(2, 132, 199, 0.35);">
+                                        <div class="d-flex align-items-center justify-content-between mb-1">
+                                            <div class="d-flex align-items-center">
+                                                <button class="btn btn-sm btn-info rounded-circle p-0 mr-2 d-flex align-items-center justify-content-center" id="audio-btn-book2" onclick="toggleAudioTeaser('book2')" style="width: 30px; height: 30px; background: #0284c7; border: none;" title="Play audio preview">
+                                                    <i class="mdi mdi-play text-white font-16" id="audio-icon-book2"></i>
+                                                </button>
+                                                <div>
+                                                    <div class="font-weight-bold small line-height-1">Cyber Warfare Teaser</div>
+                                                    <span class="text-white-50 small" style="font-size: 11px;">Author Voice Overview (2m 45s)</span>
+                                                </div>
+                                            </div>
+                                            <div class="audio-wave-bars" id="audio-wave-book2">
+                                                <div class="audio-wave-bar" style="background: #38bdf8;"></div>
+                                                <div class="audio-wave-bar" style="background: #f43f5e;"></div>
+                                                <div class="audio-wave-bar" style="background: #38bdf8;"></div>
+                                                <div class="audio-wave-bar" style="background: #f43f5e;"></div>
+                                                <div class="audio-wave-bar" style="background: #38bdf8;"></div>
+                                                <div class="audio-wave-bar" style="background: #f43f5e;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book Content & Details -->
+                            <div class="col-lg-8">
+                                <div class="d-flex flex-wrap align-items-center justify-content-between mb-2">
+                                    <span class="timeline-badge timeline-badge-cyan">
+                                        <i class="mdi mdi-calendar-clock mr-1"></i> Release: October 2026 Hardcover
+                                    </span>
+                                    <span class="badge badge-light text-muted border px-2 py-1 small">Category: AI Cybersecurity &amp; Threat Architecture</span>
+                                </div>
+
+                                <h2 class="book-heading">AI vs. AI: Engineering the Cybersecurity Counteroffensive</h2>
+                                <h4 class="book-subheading" style="color: #0284c7;">Architecting Autonomous AI Defenses Against Intelligent Adversaries</h4>
+
+                                <div class="book-overview-box" style="border-left-color: #0284c7;">
+                                    <p class="mb-0">
+                                        The next cyberattack won't be launched by a human. It will be launched by an AI—and it will adapt faster than static human defenses can respond. <strong>AI vs. AI</strong> provides the technical architecture for autonomous self-healing security meshes, dynamic deception graphs, and intelligent counteroffensive agents that neutralize threats at machine speed.
+                                    </p>
+                                </div>
+
+                                <!-- Interactive Audience Matcher -->
+                                <div class="mb-3">
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <span class="text-muted small font-weight-bold">
+                                            <i class="mdi mdi-filter-variant text-info mr-1"></i> Tailored Takeaways For Your Role:
+                                        </span>
+                                        <span class="badge badge-pill badge-light border text-muted small" id="persona-badge-book2">Click a role to filter</span>
+                                    </div>
+                                    <div class="persona-filter-group" id="persona-group-book2">
+                                        <button class="persona-btn persona-btn-cyan active" onclick="filterBookPillars('book2', 'all', this)">All Perspectives</button>
+                                        <button class="persona-btn persona-btn-cyan" onclick="filterBookPillars('book2', 'security', this)">CISOs &amp; SecOps</button>
+                                        <button class="persona-btn persona-btn-cyan" onclick="filterBookPillars('book2', 'architects', this)">Cloud &amp; Network Architects</button>
+                                        <button class="persona-btn persona-btn-cyan" onclick="filterBookPillars('book2', 'ai_researchers', this)">AI &amp; LLM Researchers</button>
+                                        <button class="persona-btn persona-btn-cyan" onclick="filterBookPillars('book2', 'executives', this)">Risk &amp; Compliance Leads</button>
+                                    </div>
+                                </div>
+
+                                <!-- Key Pillars Grid -->
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="pillar-card" id="book2-pillar-1" data-tags="security ai_researchers">
+                                            <div class="pillar-icon" style="background: #ecfeff; color: #0284c7;"><i class="mdi mdi-sword-cross"></i></div>
+                                            <h6 class="pillar-title">Machine-Speed Attack Dynamics</h6>
+                                            <p class="pillar-desc">Dissecting how adversaries weaponize LLMs for polymorphic payload generation, credential harvesting, and multi-agent reconnaissance.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="pillar-card" id="book2-pillar-2" data-tags="security architects">
+                                            <div class="pillar-icon" style="background: #ecfeff; color: #0284c7;"><i class="mdi mdi-graph-outline"></i></div>
+                                            <h6 class="pillar-title">Trust Graphs &amp; Emergent Risk</h6>
+                                            <p class="pillar-desc">Modeling multi-agent trust topologies and closing systemic privilege escalation vulnerabilities before they manifest.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="pillar-card" id="book2-pillar-3" data-tags="architects executives">
+                                            <div class="pillar-icon" style="background: #ecfeff; color: #0284c7;"><i class="mdi mdi-heart-pulse"></i></div>
+                                            <h6 class="pillar-title">Self-Healing Security Meshes</h6>
+                                            <p class="pillar-desc">Engineering autonomous detection and remediation loops that patch zero-day exploits and revert compromised state in real time.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="pillar-card" id="book2-pillar-4" data-tags="security ai_researchers executives">
+                                            <div class="pillar-icon" style="background: #ecfeff; color: #0284c7;"><i class="mdi mdi-fingerprint-off"></i></div>
+                                            <h6 class="pillar-title">Intent-Centric Zero Trust</h6>
+                                            <p class="pillar-desc">Shifting from static identity token validation to semantic intent verification across autonomous agentic executions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Interactive Chapter Syllabus Accordion -->
+                                <div class="chapter-breakdown-section mb-4">
+                                    <h5 class="font-weight-bold text-dark mb-3" style="font-size: 15px;">
+                                        <i class="mdi mdi-format-list-numbered text-info mr-1"></i> Interactive Chapter Breakdown:
+                                    </h5>
+                                    
+                                    <div class="chapter-accordion-card">
+                                        <div class="chapter-accordion-header" onclick="toggleChapterAccordion('b2-ch1')">
+                                            <span><strong>Part I:</strong> When Machines Attack — The Breakdown of Static Perimeters</span>
+                                            <i class="mdi mdi-chevron-down font-18 text-muted" id="icon-b2-ch1"></i>
+                                        </div>
+                                        <div class="chapter-accordion-body" id="body-b2-ch1">
+                                            Why traditional SOC playbooks fail against automated adversary swarms. Real telemetry from zero-day LLM evasion attacks and live adversarial benchmarking.
+                                        </div>
+                                    </div>
+
+                                    <div class="chapter-accordion-card">
+                                        <div class="chapter-accordion-header" onclick="toggleChapterAccordion('b2-ch2')">
+                                            <span><strong>Part II:</strong> Dynamic Deception &amp; Honeynet Multi-Agents</span>
+                                            <i class="mdi mdi-chevron-down font-18 text-muted" id="icon-b2-ch2"></i>
+                                        </div>
+                                        <div class="chapter-accordion-body d-none" id="body-b2-ch2">
+                                            Deploying autonomous decoy agents that dynamically generate deceptive cloud architectures, trapping attacker agents and harvesting their cognitive prompts in real time.
+                                        </div>
+                                    </div>
+
+                                    <div class="chapter-accordion-card">
+                                        <div class="chapter-accordion-header" onclick="toggleChapterAccordion('b2-ch3')">
+                                            <span><strong>Part III:</strong> Building the Autonomous Counteroffensive Mesh</span>
+                                            <i class="mdi mdi-chevron-down font-18 text-muted" id="icon-b2-ch3"></i>
+                                        </div>
+                                        <div class="chapter-accordion-body d-none" id="body-b2-ch3">
+                                            End-to-end reference blueprints for engineering autonomous mitigation pipelines with sub-second response latencies and verifiable human-in-the-loop oversight gates.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <button class="btn-waitlist mr-3 mb-2" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);" onclick="openWaitlistModal('AI vs. AI: Engineering the Cybersecurity Counteroffensive')">
+                                        <i class="mdi mdi-bell-ring-outline mr-2"></i> Join October Release Waitlist
+                                    </button>
+                                    <button class="btn btn-outline-info rounded font-weight-bold px-3 py-2 mr-3 mb-2" onclick="openChapterReader('ai-vs-ai')">
+                                        <i class="mdi mdi-book-open-variant mr-1"></i> Read Chapter 1 Online
+                                    </button>
+                                    <button class="btn btn-outline-secondary rounded font-weight-bold px-3 py-2 mr-3 mb-2" onclick="openCoverModal('ai-vs-ai')">
+                                        <i class="mdi mdi-image-search-outline mr-1"></i> View Full Jacket Art
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Author's Philosophy & Vision Banner -->
+            <div class="row mt-2 mb-5">
+                <div class="col-12">
+                    <div class="author-mission-card">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8 mb-4 mb-lg-0">
+                                <span class="badge text-white font-weight-bold px-3 py-1 mb-3" style="background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);">AUTHOR PERSPECTIVE</span>
+                                <h3 class="text-white font-weight-bold mb-3">Bridging Academic Rigor & Enterprise Production</h3>
+                                <p class="text-light mb-0" style="line-height: 1.8; opacity: 0.9;">
+                                    "The transition from isolated software systems to autonomous, multi-agent intelligence demands a complete reimagining of engineering careers, security postures, and authority. These books combine peer-reviewed empirical findings with real-world enterprise engineering to provide practitioners with actionable, defensible frameworks."
+                                </p>
+                            </div>
+                            <div class="col-lg-4 text-lg-right">
+                                <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="btn btn-outline-light rounded px-4 py-2 font-weight-bold mr-2 mb-2">
+                                    <i class="mdi mdi-school mr-1"></i> Google Scholar <i class="mdi mdi-open-in-new ml-1"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="btn btn-primary rounded px-4 py-2 font-weight-bold mb-2" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); border: none;">
+                                    <i class="mdi mdi-linkedin mr-1"></i> Connect on LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Hero Header End -->
+
+    <!-- Cover Art Lightbox Modal -->
+    <div class="modal fade" id="coverArtModal" tabindex="-1" role="dialog" aria-labelledby="coverArtModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content border-0 shadow-lg" style="background: #090d16; border-radius: 16px; overflow: hidden; border: 1px solid rgba(59, 130, 246, 0.3) !important;">
+                <div class="modal-header border-0 pb-0" style="background: transparent;">
+                    <div class="d-flex align-items-center">
+                        <span class="badge badge-primary px-3 py-1 font-weight-bold mr-2" id="coverModalBadge" style="background: #2563eb;">ORIGINAL JACKET ARTWORK</span>
+                        <span class="text-white-50 small"><i class="mdi mdi-book-open-page-variant mr-1"></i> Harsh Verma Original Cover &amp; Full Jacket</span>
+                    </div>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close" style="opacity: 0.8;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4 pt-2">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 text-center mb-3 mb-lg-0">
+                            <!-- Modal View Toggle -->
+                            <div class="d-inline-flex mb-3 p-1 rounded-pill" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15);">
+                                <button class="btn btn-sm btn-primary rounded-pill px-3 py-1 font-weight-bold mr-1" id="modal-tab-front" onclick="switchModalCoverView('front')">
+                                    <i class="mdi mdi-book-open-page-variant mr-1"></i> Front Hardcover
+                                </button>
+                                <button class="btn btn-sm btn-outline-light rounded-pill px-3 py-1 font-weight-bold" id="modal-tab-jacket" onclick="switchModalCoverView('jacket')">
+                                    <i class="mdi mdi-panorama-horizontal mr-1"></i> Full Panoramic Jacket Wrap
+                                </button>
+                            </div>
+
+                            <div class="position-relative d-inline-block p-2 rounded w-100" style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.1);">
+                                <img id="coverModalImg" src="images/books/beyond_ai_engineering_cover.jpg" alt="High Resolution Book Cover" class="cover-preview-img img-fluid rounded" style="max-height: 520px; width: auto; object-fit: contain;" />
+                            </div>
+                        </div>
+                        <div class="col-lg-5 text-white">
+                            <h4 class="font-weight-bold mb-2 text-white" id="coverModalTitle">Beyond AI Engineering</h4>
+                            <h6 class="text-info font-weight-bold mb-3" id="coverModalSubtitle">From Creator to Curator</h6>
+                            <p class="text-white-50 small mb-3" id="coverModalDesc" style="line-height: 1.6;">
+                                High-resolution original jacket cover art and typographic layout engineered for the upcoming 2026 hardcover publication.
+                            </p>
+                            <div class="p-3 rounded mb-3" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); font-size: 13px;">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="text-muted">Author:</span>
+                                    <strong class="text-white">Harsh Verma</strong>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="text-muted">Publication Year:</span>
+                                    <strong class="text-white">2026 Edition</strong>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="text-muted">Format:</span>
+                                    <strong class="text-white">Hardcover &amp; Digital</strong>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-muted">Status:</span>
+                                    <strong class="text-warning font-weight-bold"><i class="mdi mdi-clock-alert-outline mr-1"></i> Pre-Release / VIP Waitlist</strong>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap align-items-center">
+                                <button class="btn btn-primary btn-sm rounded font-weight-bold px-3 py-2 mr-2 mb-2" id="coverModalWaitlistBtn" onclick="openWaitlistFromCover()">
+                                    <i class="mdi mdi-bell-ring-outline mr-1"></i> Pre-Order &amp; Excerpt Waitlist
+                                </button>
+                                <button class="btn btn-outline-info btn-sm rounded font-weight-bold px-3 py-2 mr-2 mb-2" id="coverModalReaderBtn" onclick="openReaderFromCover()">
+                                    <i class="mdi mdi-book-open-variant mr-1"></i> Read Chapter 1
+                                </button>
+                                <a id="coverModalDownload" href="images/books/beyond_ai_engineering_cover.jpg" target="_blank" class="btn btn-outline-light btn-sm rounded px-3 py-2 mb-2">
+                                    <i class="mdi mdi-open-in-new mr-1"></i> Open Full Image
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chapter 1 Interactive Reader Modal -->
+    <div class="modal fade" id="chapterReaderModal" tabindex="-1" role="dialog" aria-labelledby="chapterReaderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg reader-modal-dialog" role="document">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 16px; overflow: hidden;">
+                <div class="modal-header bg-dark text-white px-4 py-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <i class="mdi mdi-book-open-page-variant text-info font-24 mr-2"></i>
+                        <div>
+                            <h6 class="modal-title font-weight-bold mb-0 text-white" id="readerModalBookTitle">Sample Chapter Preview</h6>
+                            <span class="text-white-50 small" id="readerModalSubTitle">Chapter 1: The Transition from Code Syntax to Intent</span>
+                        </div>
+                    </div>
+                    <!-- Reader Settings -->
+                    <div class="d-flex align-items-center">
+                        <div class="btn-group mr-3" role="group">
+                            <button class="btn btn-sm btn-outline-light" onclick="changeReaderFontSize(-1)" title="Smaller font">A-</button>
+                            <button class="btn btn-sm btn-outline-light" onclick="changeReaderFontSize(1)" title="Larger font">A+</button>
+                        </div>
+                        <div class="btn-group mr-3" role="group">
+                            <button class="btn btn-sm btn-light active" id="theme-btn-light" onclick="setReaderTheme('light')" title="Classic Paper">Light</button>
+                            <button class="btn btn-sm btn-warning" id="theme-btn-sepia" onclick="setReaderTheme('sepia')" title="Warm Sepia">Sepia</button>
+                            <button class="btn btn-sm btn-dark" id="theme-btn-dark" onclick="setReaderTheme('dark')" title="Dark Mode">Dark</button>
+                        </div>
+                        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-body p-0" id="readerContainer" style="max-height: 70vh; overflow-y: auto;">
+                    <div class="reader-paper" id="readerTextContent">
+                        <!-- Dynamic Reader Text populated by JS -->
+                    </div>
+                </div>
+
+                <div class="modal-footer bg-light px-4 py-3 d-flex align-items-center justify-content-between">
+                    <span class="text-muted small">
+                        <i class="mdi mdi-clock-outline mr-1"></i> Estimated reading time: ~6 minutes
+                    </span>
+                    <div>
+                        <button type="button" class="btn btn-outline-secondary rounded mr-2" data-dismiss="modal">Close Preview</button>
+                        <button type="button" class="btn btn-primary font-weight-bold rounded" onclick="openWaitlistFromReader()" style="background: #2563eb; border: none;">
+                            <i class="mdi mdi-bell-ring-outline mr-1"></i> Get Full Book Waitlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Waitlist Modal -->
+    <div class="modal fade" id="waitlistModal" tabindex="-1" role="dialog" aria-labelledby="waitlistModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold" id="waitlistModalLabel">
+                        <i class="mdi mdi-email-newsletter text-primary mr-1"></i> VIP Book Pre-Order &amp; Excerpt Waitlist
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-dark font-weight-bold mb-1" id="waitlistBookTitle">Selected Book</p>
+                    <p class="text-muted small mb-3">Be the first to receive exclusive preview chapters, early pre-order discounts, and author Q&amp;A invites.</p>
+
+                    <form id="waitlistForm" onsubmit="handleWaitlistSubmit(event)">
+                        <div class="form-group">
+                            <label class="font-weight-bold small text-muted">Your Name</label>
+                            <input type="text" id="waitlistName" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold small text-muted">Email Address</label>
+                            <input type="email" id="waitlistEmail" class="form-control" placeholder="name@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold small text-muted">Role / Industry (Optional)</label>
+                            <input type="text" id="waitlistRole" class="form-control" placeholder="e.g. AI Engineer, VP of Tech, CISO, Founder">
+                        </div>
+                        <div id="waitlistSuccess" class="alert alert-success d-none py-2 px-3 small">
+                            <i class="mdi mdi-check-circle mr-1"></i> Thank you! You're on the priority notification list. We'll send your preview chapters shortly.
+                        </div>
+                        <div class="text-right mt-3">
+                            <button type="button" class="btn btn-secondary rounded" data-dismiss="modal">Close</button>
+                            <button type="submit" id="waitlistSubmitBtn" class="btn btn-primary font-weight-bold rounded" style="background: #2563eb; border: none;">
+                                <i class="mdi mdi-send mr-1"></i> Join Waitlist
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <a href="index" class="footer-logo brand-logo-wrap font-weight-bold d-inline-flex justify-content-center align-items-center" style="text-decoration: none;">
+                        <span class="brand-monogram-emblem">
+                            <svg class="brand-logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="hvFootGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#1e40af" />
+                                        <stop offset="55%" stop-color="#2563eb" />
+                                        <stop offset="100%" stop-color="#4f46e5" />
+                                    </linearGradient>
+                                    <linearGradient id="hvFootAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#38bdf8" />
+                                        <stop offset="100%" stop-color="#818cf8" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="40" height="40" rx="10" fill="url(#hvFootGrad)" />
+                                <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+                                <path d="M11 12V28M11 20H19M19 12V28" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 12L28.5 28L34 12" stroke="url(#hvFootAccentGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="34" cy="12" r="1.75" fill="#38bdf8" />
+                            </svg>
+                        </span>
+                        <span class="brand-name-text">
+                            <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
+                        </span>
+                    </a>
+                    <p class="para-desc mx-auto mt-4 text-black" style="max-width: 650px;">
+                        Principal Software Engineer in AI @ Palo Alto Networks • Forbes Technology Council Member • IEEE Senior Member • Stanford GSB Scholar
+                    </p>
+                    <ul class="list-unstyled mb-0 mt-4 social-icon">
+                        <li class="list-inline-item mr-1"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="rounded-circle" title="Google Scholar"><i class="mdi mdi-school"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="rounded-circle" title="LinkedIn"><i class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://github.com/iamharshverma" target="_blank" class="rounded-circle" title="GitHub"><i class="mdi mdi-github-face"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://medium.com/@harshverma59" target="_blank" class="rounded-circle" title="Medium"><i class="mdi mdi-medium"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://twitter.com/harshverma59" target="_blank" class="rounded-circle" title="Twitter"><i class="mdi mdi-twitter"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.instagram.com/aiwithharsh/" target="_blank" class="rounded-circle" title="Instagram"><i class="mdi mdi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer footer-bar bg-black">
+        <div class="container text-foot text-center">
+            <p class="mb-0 text-white-50">&copy; <script>document.write(new Date().getFullYear())</script> Harsh Verma. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to top -->    
+    <a href="#" class="back-to-top rounded text-center" id="back-to-top"> 
+        <i class="mdi mdi-chevron-up d-block"> </i> 
+    </a>
+    <!-- Back to top -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/feather.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+        var yearEl = document.getElementById('currentYear');
+        if (yearEl) yearEl.innerText = new Date().getFullYear();
+
+        var selectedBook = "";
+        var activeCoverKey = "beyond-ai";
+        var currentReaderFontSize = 16;
+        var activeAudioPlaying = null;
+
+        var bookData = {
+            'beyond-ai': {
+                key: 'beyond-ai',
+                title: 'Beyond AI Engineering',
+                subtitle: 'From Creator to Curator: Build Your Authority and Lead the AI Agent Revolution',
+                desc: 'Original jacket artwork for the upcoming 2026 hardcover edition. Depicting the modern polymathic engineer orchestrating high-order agentic intelligence, product strategy, and architectural authority.',
+                frontImage: 'images/books/beyond_ai_engineering_cover.jpg',
+                jacketImage: 'images/books/beyond_ai_engineering_full_jacket.jpg',
+                badge: 'AI LEADERSHIP & CAREER ENGINEERING',
+                badgeColor: '#2563eb',
+                fullTitle: 'Beyond AI Engineering: From Creator to Curator',
+                chapterTitle: 'Chapter 1: The Transition from Code Syntax to Intent Curation',
+                chapterContent: `
+                    <h2 style="font-size: 26px; font-weight: bold; margin-bottom: 8px; color: #1e293b;">Chapter 1: The Transition from Code Syntax to Intent Curation</h2>
+                    <h5 style="color: #64748b; font-weight: 600; margin-bottom: 24px; font-style: italic;">Why the era of line-by-line programming is yielding to deterministic system choreography.</h5>
+                    
+                    <p><span class="reader-dropcap">F</span>or more than six decades, the primary currency of software engineering was raw implementation syntax. Success was defined by how fluently an engineer could translate human logical requirements into machine-executable instructions—C++, Java, Python, or Go. We took pride in the mechanical craftsmanship of writing algorithms, optimizing loops, and managing memory pointers.</p>
+                    
+                    <p>That paradigm has irreversibly shifted. With the emergence of advanced Large Language Models and autonomous multi-agent networks, the cost of generating syntactically valid code has plummeted asymptotically toward zero. When a machine can produce a complete microservice, test suite, and infrastructure-as-code configuration in under three seconds, typing code is no longer the bottleneck of enterprise innovation.</p>
+
+                    <div style="background: rgba(37, 99, 235, 0.08); border-left: 4px solid #2563eb; padding: 18px; margin: 24px 0; border-radius: 0 8px 8px 0;">
+                        <strong style="color: #1e40af; display: block; margin-bottom: 6px; font-size: 15px;">The Core Postulate of Beyond AI Engineering:</strong>
+                        <span style="font-size: 14.5px; line-height: 1.6; color: #334155;">"The engineer who merely writes code will face commoditization. The engineer who designs the evaluation harnesses, defines the intent topologies, and curates autonomous agents will command immense strategic leverage."</span>
+                    </div>
+
+                    <h4 style="font-size: 20px; font-weight: bold; margin-top: 30px; margin-bottom: 12px; color: #1e293b;">The Super Engineer Trifecta</h4>
+                    <p>To lead organizations through this transition, practitioners must transcend narrow domain specializations and adopt the Super Engineer Trifecta:</p>
+                    <ul style="padding-left: 20px; margin-bottom: 24px; line-height: 1.8;">
+                        <li><strong>Deep Technical Architecture:</strong> Designing fault-tolerant, low-latency, and horizontally scalable distributed foundations.</li>
+                        <li><strong>Product & Commercial Viability:</strong> Pinpointing the exact value vectors that turn AI capabilities into tangible business outcomes.</li>
+                        <li><strong>Enterprise Sales & Solutions Orchestration:</strong> Communicating complex technological transformations to C-suite stakeholders with compelling authority.</li>
+                    </ul>
+
+                    <p>As you progress through the following chapters, you will discover concrete methodologies, prompt-to-intent architectures, and real-world case studies designed to transform you into an authoritative leader in the AI agent revolution.</p>
+                `
+            },
+            'ai-vs-ai': {
+                key: 'ai-vs-ai',
+                title: 'AI vs. AI',
+                subtitle: 'Engineering the Cybersecurity Counteroffensive: Autonomous Defense & Battleground Systems',
+                desc: 'Original jacket artwork for the upcoming October 2026 edition. Depicting machine-speed adversarial dynamics, self-healing cyber meshes, dynamic deception graphs, and autonomous counteroffensive agents.',
+                frontImage: 'images/books/ai_vs_ai_cover.jpg',
+                jacketImage: 'images/books/ai_vs_ai_full_jacket.jpg',
+                badge: 'AI CYBERSECURITY & THREAT ARCHITECTURE',
+                badgeColor: '#0284c7',
+                fullTitle: 'AI vs. AI: Engineering the Cybersecurity Counteroffensive',
+                chapterTitle: 'Chapter 1: When Machines Attack — The Breakdown of Static Perimeters',
+                chapterContent: `
+                    <h2 style="font-size: 26px; font-weight: bold; margin-bottom: 8px; color: #0f172a;">Chapter 1: When Machines Attack — The Breakdown of Static Perimeters</h2>
+                    <h5 style="color: #64748b; font-weight: 600; margin-bottom: 24px; font-style: italic;">Understanding the asymmetry of machine-speed adversarial intelligence.</h5>
+                    
+                    <p><span class="reader-dropcap" style="color: #0284c7;">T</span>he premise of enterprise cybersecurity has long rested on a comfortable assumption: human adversaries operate at human latency. An attacker must perform reconnaissance, identify vulnerabilities, write payloads, and manually pivot across internal networks. This gave defensive security operations centers (SOCs) hours, or even days, to detect anomalies and respond.</p>
+                    
+                    <p>That assumption is dead. Modern autonomous offensive agents leverage recursive reasoning loops, polymorphic payload compilation, and distributed reconnaissance swarms that execute complete kill chains in mere fractions of a second. Against machine-speed adversaries, static firewalls, periodic penetration tests, and human-in-the-loop triage are fundamentally obsolete.</p>
+
+                    <div style="background: rgba(2, 132, 199, 0.08); border-left: 4px solid #0284c7; padding: 18px; margin: 24px 0; border-radius: 0 8px 8px 0;">
+                        <strong style="color: #0369a1; display: block; margin-bottom: 6px; font-size: 15px;">The Counteroffensive Mandate:</strong>
+                        <span style="font-size: 14.5px; line-height: 1.6; color: #334155;">"You cannot defend a machine-speed attack with human-speed response. Defense must be engineered as an active, autonomous counteroffensive mesh capable of real-time deception, self-healing, and dynamic trust renegotiation."</span>
+                    </div>
+
+                    <h4 style="font-size: 20px; font-weight: bold; margin-top: 30px; margin-bottom: 12px; color: #0f172a;">Architectural Foundations of Autonomous Defense</h4>
+                    <p>In this book, we construct the definitive blueprint for defending modern cloud infrastructure:</p>
+                    <ul style="padding-left: 20px; margin-bottom: 24px; line-height: 1.8;">
+                        <li><strong>Intent-Centric Zero Trust:</strong> Validating semantic intentions rather than ephemeral credentials.</li>
+                        <li><strong>Self-Healing Security Meshes:</strong> Automatically rolling back contaminated states and hot-patching runtime binaries.</li>
+                        <li><strong>Dynamic Honeynet Multi-Agents:</strong> Deceiving adversarial LLMs with synthetic environments that extract cognitive prompts.</li>
+                    </ul>
+
+                    <p>Prepare to explore the mechanics of the new cybersecurity battleground—where only intelligent machines can triumph over intelligent threats.</p>
+                `
+            }
+        };
+
+        // Switch 3D vs Jacket View for in-card showcase
+        function switchBookView(bookId, mode) {
+            var view3d = document.getElementById('view-3d-' + bookId);
+            var viewJacket = document.getElementById('view-jacket-' + bookId);
+            var tab3d = document.getElementById('tab-3d-' + bookId);
+            var tabJacket = document.getElementById('tab-jacket-' + bookId);
+
+            if (mode === '3d') {
+                if (view3d) view3d.classList.remove('d-none');
+                if (viewJacket) viewJacket.classList.add('d-none');
+                if (tab3d) tab3d.classList.add('active');
+                if (tabJacket) tabJacket.classList.remove('active');
+            } else if (mode === 'jacket') {
+                if (view3d) view3d.classList.add('d-none');
+                if (viewJacket) viewJacket.classList.remove('d-none');
+                if (tab3d) tab3d.classList.remove('active');
+                if (tabJacket) tabJacket.classList.add('active');
+            }
+        }
+
+        // Spin book in 3D
+        function spinBook3D(bookId) {
+            var bookElem = document.getElementById('book-elem-' + bookId);
+            if (!bookElem) return;
+            bookElem.classList.remove('flipping');
+            void bookElem.offsetWidth; // trigger reflow
+            bookElem.classList.add('flipping');
+            setTimeout(function() {
+                bookElem.classList.remove('flipping');
+            }, 1400);
+        }
+
+        // Interactive 3D Mouse Parallax and Tilt Tracking
+        function setup3DTilt(stageId, bookElemId, glossId) {
+            var stage = document.getElementById(stageId);
+            var book = document.getElementById(bookElemId);
+            var gloss = document.getElementById(glossId);
+            if (!stage || !book) return;
+
+            stage.addEventListener('mousemove', function(e) {
+                if (book.classList.contains('flipping')) return;
+                var rect = stage.getBoundingClientRect();
+                var x = e.clientX - rect.left; // x position within element
+                var y = e.clientY - rect.top;  // y position within element
+                var centerX = rect.width / 2;
+                var centerY = rect.height / 2;
+
+                var deltaX = (x - centerX) / centerX;
+                var deltaY = (y - centerY) / centerY;
+
+                var rotateY = -18 + (deltaX * 22); // range from -40deg to +4deg
+                var rotateX = 4 - (deltaY * 18);   // range from -14deg to +22deg
+
+                book.style.transform = 'rotateY(' + rotateY.toFixed(1) + 'deg) rotateX(' + rotateX.toFixed(1) + 'deg) translateY(-4px) scale(1.02)';
+
+                if (gloss) {
+                    var glossX = 50 + (deltaX * 30);
+                    var glossY = 50 + (deltaY * 30);
+                    gloss.style.background = 'radial-gradient(circle at ' + glossX + '% ' + glossY + '%, rgba(255,255,255,0.32) 0%, rgba(255,255,255,0) 65%)';
+                }
+            });
+
+            stage.addEventListener('mouseleave', function() {
+                if (book.classList.contains('flipping')) return;
+                book.style.transform = 'rotateY(-18deg) rotateX(4deg) translateY(0px) scale(1)';
+                if (gloss) {
+                    gloss.style.background = 'radial-gradient(circle at 50% 50%, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 65%)';
+                }
+            });
+        }
+
+        // Initialize 3D physics on document ready
+        document.addEventListener('DOMContentLoaded', function() {
+            setup3DTilt('view-3d-book1', 'book-elem-book1', 'book1-gloss');
+            setup3DTilt('view-3d-book2', 'book-elem-book2', 'book2-gloss');
+        });
+
+        // Audio preview teaser toggle with Speech Synthesis
+        var speechSynth = window.speechSynthesis || null;
+
+        function toggleAudioTeaser(bookId) {
+            var waveBox = document.getElementById('audio-wave-' + bookId);
+            var icon = document.getElementById('audio-icon-' + bookId);
+            
+            if (activeAudioPlaying === bookId) {
+                // Pause / Stop speech
+                if (speechSynth) speechSynth.cancel();
+                if (waveBox) waveBox.classList.remove('audio-playing');
+                if (icon) {
+                    icon.classList.remove('mdi-pause');
+                    icon.classList.add('mdi-play');
+                }
+                activeAudioPlaying = null;
+            } else {
+                // Stop other audio / speech
+                if (speechSynth) speechSynth.cancel();
+                if (activeAudioPlaying) {
+                    var oldWave = document.getElementById('audio-wave-' + activeAudioPlaying);
+                    var oldIcon = document.getElementById('audio-icon-' + activeAudioPlaying);
+                    if (oldWave) oldWave.classList.remove('audio-playing');
+                    if (oldIcon) {
+                        oldIcon.classList.remove('mdi-pause');
+                        oldIcon.classList.add('mdi-play');
+                    }
+                }
+                // Play new
+                if (waveBox) waveBox.classList.add('audio-playing');
+                if (icon) {
+                    icon.classList.remove('mdi-play');
+                    icon.classList.add('mdi-pause');
+                }
+                activeAudioPlaying = bookId;
+
+                if (speechSynth) {
+                    var text = (bookId === 'book1') 
+                        ? "Executive Audio Teaser for Beyond AI Engineering, authored by Harsh Verma. From Creator to Curator: Build your authority and lead the AI agent revolution. Discover why line-by-line coding is yielding to intent curation, mastering the super engineer trifecta, and designing autonomous evaluation harnesses."
+                        : "Cyber Warfare Teaser for AI versus AI, authored by Harsh Verma. Engineering the Cybersecurity Counteroffensive. Understanding the asymmetry of machine-speed adversarial intelligence, self-healing security meshes, and dynamic deception networks.";
+                    
+                    var utterance = new SpeechSynthesisUtterance(text);
+                    utterance.rate = 0.95;
+                    utterance.pitch = 1.0;
+                    utterance.onend = function() {
+                        if (waveBox) waveBox.classList.remove('audio-playing');
+                        if (icon) {
+                            icon.classList.remove('mdi-pause');
+                            icon.classList.add('mdi-play');
+                        }
+                        activeAudioPlaying = null;
+                    };
+                    utterance.onerror = function() {
+                        if (waveBox) waveBox.classList.remove('audio-playing');
+                        if (icon) {
+                            icon.classList.remove('mdi-pause');
+                            icon.classList.add('mdi-play');
+                        }
+                        activeAudioPlaying = null;
+                    };
+                    speechSynth.speak(utterance);
+                }
+            }
+        }
+
+        // Interactive Persona / Audience filter
+        function filterBookPillars(bookId, persona, btn) {
+            var group = document.getElementById('persona-group-' + bookId);
+            if (group) {
+                var buttons = group.querySelectorAll('.persona-btn');
+                buttons.forEach(function(b) { b.classList.remove('active'); });
+            }
+            if (btn) btn.classList.add('active');
+
+            var badge = document.getElementById('persona-badge-' + bookId);
+            if (badge) {
+                badge.innerText = persona === 'all' ? 'All Perspectives' : 'Filtered: ' + btn.innerText;
+            }
+
+            var pillars = document.querySelectorAll('#' + bookId + ' .pillar-card');
+            pillars.forEach(function(p) {
+                p.classList.remove('highlight-pillar');
+                if (persona === 'all') {
+                    p.style.opacity = '1';
+                } else {
+                    var tags = p.getAttribute('data-tags') || '';
+                    if (tags.indexOf(persona) !== -1) {
+                        p.style.opacity = '1';
+                        p.classList.add('highlight-pillar');
+                    } else {
+                        p.style.opacity = '0.45';
+                    }
+                }
+            });
+        }
+
+        // Toggle Chapter Breakdown Accordion
+        function toggleChapterAccordion(id) {
+            var body = document.getElementById('body-' + id);
+            var icon = document.getElementById('icon-' + id);
+            if (!body) return;
+
+            if (body.classList.contains('d-none')) {
+                body.classList.remove('d-none');
+                if (icon) {
+                    icon.classList.remove('mdi-chevron-down');
+                    icon.classList.add('mdi-chevron-up');
+                }
+            } else {
+                body.classList.add('d-none');
+                if (icon) {
+                    icon.classList.remove('mdi-chevron-up');
+                    icon.classList.add('mdi-chevron-down');
+                }
+            }
+        }
+
+        // Cover Lightbox Modal Controls
+        function openCoverModal(bookKey) {
+            var data = bookData[bookKey];
+            if (!data) return;
+
+            activeCoverKey = bookKey;
+            selectedBook = data.fullTitle;
+            document.getElementById('coverModalTitle').innerText = data.title;
+            document.getElementById('coverModalSubtitle').innerText = data.subtitle;
+            document.getElementById('coverModalDesc').innerText = data.desc;
+            document.getElementById('coverModalImg').src = data.frontImage;
+            document.getElementById('coverModalImg').alt = data.title + " Jacket Cover Art";
+            document.getElementById('coverModalDownload').href = data.frontImage;
+            
+            var badgeEl = document.getElementById('coverModalBadge');
+            if (badgeEl) {
+                badgeEl.innerText = data.badge;
+                badgeEl.style.backgroundColor = data.badgeColor;
+            }
+
+            // Reset modal tabs
+            switchModalCoverView('front');
+
+            $('#coverArtModal').modal('show');
+        }
+
+        function switchModalCoverView(mode) {
+            var data = bookData[activeCoverKey];
+            if (!data) return;
+
+            var tabFront = document.getElementById('modal-tab-front');
+            var tabJacket = document.getElementById('modal-tab-jacket');
+            var img = document.getElementById('coverModalImg');
+            var dl = document.getElementById('coverModalDownload');
+
+            if (mode === 'jacket') {
+                if (tabFront) { tabFront.classList.remove('btn-primary'); tabFront.classList.add('btn-outline-light'); }
+                if (tabJacket) { tabJacket.classList.remove('btn-outline-light'); tabJacket.classList.add('btn-primary'); }
+                if (img) img.src = data.jacketImage;
+                if (dl) dl.href = data.jacketImage;
+            } else {
+                if (tabFront) { tabFront.classList.remove('btn-outline-light'); tabFront.classList.add('btn-primary'); }
+                if (tabJacket) { tabJacket.classList.remove('btn-primary'); tabJacket.classList.add('btn-outline-light'); }
+                if (img) img.src = data.frontImage;
+                if (dl) dl.href = data.frontImage;
+            }
+        }
+
+        // Chapter 1 In-Browser Reader Modal Controls
+        function openChapterReader(bookKey) {
+            var data = bookData[bookKey];
+            if (!data) return;
+
+            activeCoverKey = bookKey;
+            selectedBook = data.fullTitle;
+            document.getElementById('readerModalBookTitle').innerText = data.title;
+            document.getElementById('readerModalSubTitle').innerText = data.chapterTitle;
+            document.getElementById('readerTextContent').innerHTML = data.chapterContent;
+            
+            $('#chapterReaderModal').modal('show');
+        }
+
+        function setReaderTheme(theme) {
+            var modalContent = document.querySelector('#chapterReaderModal .modal-content');
+            var btnLight = document.getElementById('theme-btn-light');
+            var btnSepia = document.getElementById('theme-btn-sepia');
+            var btnDark = document.getElementById('theme-btn-dark');
+
+            [btnLight, btnSepia, btnDark].forEach(function(b) { if (b) b.classList.remove('active'); });
+
+            modalContent.classList.remove('reader-theme-dark', 'reader-theme-sepia');
+            if (theme === 'dark') {
+                modalContent.classList.add('reader-theme-dark');
+                if (btnDark) btnDark.classList.add('active');
+            } else if (theme === 'sepia') {
+                modalContent.classList.add('reader-theme-sepia');
+                if (btnSepia) btnSepia.classList.add('active');
+            } else {
+                if (btnLight) btnLight.classList.add('active');
+            }
+        }
+
+        function changeReaderFontSize(delta) {
+            currentReaderFontSize += delta * 2;
+            if (currentReaderFontSize < 13) currentReaderFontSize = 13;
+            if (currentReaderFontSize > 24) currentReaderFontSize = 24;
+            var reader = document.getElementById('readerTextContent');
+            if (reader) {
+                reader.style.fontSize = currentReaderFontSize + 'px';
+            }
+        }
+
+        function openWaitlistFromCover() {
+            $('#coverArtModal').modal('hide');
+            setTimeout(function() {
+                openWaitlistModal(selectedBook);
+            }, 350);
+        }
+
+        function openReaderFromCover() {
+            $('#coverArtModal').modal('hide');
+            setTimeout(function() {
+                openChapterReader(activeCoverKey);
+            }, 350);
+        }
+
+        function openWaitlistFromReader() {
+            $('#chapterReaderModal').modal('hide');
+            setTimeout(function() {
+                openWaitlistModal(selectedBook);
+            }, 350);
+        }
+
+        function openWaitlistModal(bookTitle) {
+            selectedBook = bookTitle;
+            document.getElementById('waitlistBookTitle').innerText = "Book: " + bookTitle;
+            $('#waitlistSuccess').addClass('d-none');
+            $('#waitlistModal').modal('show');
+        }
+
+        function handleWaitlistSubmit(e) {
+            e.preventDefault();
+            var name = document.getElementById('waitlistName').value.trim();
+            var email = document.getElementById('waitlistEmail').value.trim();
+            var role = document.getElementById('waitlistRole').value.trim();
+
+            if (!email) return;
+
+            var waitlistData = {
+                name: name,
+                email: email,
+                role: role,
+                book: selectedBook,
+                timestamp: new Date().toISOString()
+            };
+
+            var existing = JSON.parse(localStorage.getItem('book_waitlists') || '[]');
+            existing.push(waitlistData);
+            localStorage.setItem('book_waitlists', JSON.stringify(existing));
+
+            // Show feedback
+            $('#waitlistSuccess').removeClass('d-none');
+            document.getElementById('waitlistSubmitBtn').disabled = true;
+            document.getElementById('waitlistSubmitBtn').innerHTML = '<i class="mdi mdi-check mr-1"></i> Registered!';
+
+            setTimeout(function() {
+                $('#waitlistModal').modal('hide');
+                document.getElementById('waitlistForm').reset();
+                document.getElementById('waitlistSubmitBtn').disabled = false;
+                document.getElementById('waitlistSubmitBtn').innerHTML = '<i class="mdi mdi-send mr-1"></i> Join Waitlist';
+            }, 2500);
+        }
+    </script>
+    <!-- HV AI Copilot Assistant Engine -->
+    <script src="js/hv-copilot.js"></script>
+</body>
+</html>

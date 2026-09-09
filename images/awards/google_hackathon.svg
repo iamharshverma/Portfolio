@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g-ghack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#g-ghack)"/>
+  <rect x="8" y="8" width="384" height="224" rx="12" fill="none" stroke="#4285F4" stroke-width="1.5" opacity="0.6"/>
+  <!-- Google 4-Color Shield -->
+  <g transform="translate(200, 58) scale(0.85)">
+    <circle cx="-30" cy="0" r="10" fill="#4285F4"/>
+    <circle cx="-10" cy="0" r="10" fill="#EA4335"/>
+    <circle cx="10" cy="0" r="10" fill="#FBBC05"/>
+    <circle cx="30" cy="0" r="10" fill="#34A853"/>
+    <path d="M0,-25 L15,-10 L-15,-10 Z" fill="#60A5FA"/>
+  </g>
+  <text x="200" y="125" fill="#93C5FD" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="2">GOOGLE &amp; HACKMAKERS GLOBAL HACK</text>
+  <text x="200" y="156" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" text-anchor="middle">LEAD HACKATHON MENTOR</text>
+  <text x="200" y="180" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">DIGITAL DEFENSE WORLD HACK</text>
+  <text x="200" y="206" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">Verified on Badgr &amp; Global Hack Registry</text>
+</svg>
