@@ -950,13 +950,13 @@
                         <div class="row">
                             <div class="col-6 mb-3">
                                 <div class="smart-stat-box">
-                                    <div class="smart-stat-num">2</div>
+                                    <div class="smart-stat-num">4</div>
                                     <div class="smart-stat-label">Keynote Decks</div>
                                 </div>
                             </div>
                             <div class="col-6 mb-3">
                                 <div class="smart-stat-box">
-                                    <div class="smart-stat-num">41</div>
+                                    <div class="smart-stat-num">87</div>
                                     <div class="smart-stat-label">Total Slides</div>
                                 </div>
                             </div>
@@ -1020,6 +1020,42 @@
                     <div class="deck-meta-footer">
                         <span><i class="mdi mdi-account-check text-primary mr-1"></i> Author: Harsh Verma</span>
                         <span><i class="mdi mdi-chart-timeline-variant text-info mr-1"></i> Case Study Included</span>
+                    </div>
+                </div>
+
+                <!-- Deck 3 Card -->
+                <div class="deck-card" id="deck-card-r92g" onclick="selectDeck('r92g')">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="deck-card-badge">Deck 3 • EasyChair Ref: r92g</span>
+                            <span class="badge badge-pill badge-info" style="font-size: 11px;">13 Slides</span>
+                        </div>
+                        <h3 class="deck-title">When Enterprises Become Multi-Agent Systems</h3>
+                        <p class="deck-desc">
+                            Rethinking security, trust boundaries, multi-agent orchestration, deterministic vs non-deterministic workflows, and enterprise governance in autonomous ecosystems.
+                        </p>
+                    </div>
+                    <div class="deck-meta-footer">
+                        <span><i class="mdi mdi-account-check text-primary mr-1"></i> Author: Harsh Verma</span>
+                        <span><i class="mdi mdi-server-network text-warning mr-1"></i> Multi-Agent Architecture</span>
+                    </div>
+                </div>
+
+                <!-- Deck 4 Card -->
+                <div class="deck-card" id="deck-card-GxwP" onclick="selectDeck('GxwP')">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="deck-card-badge">Deck 4 • EasyChair Ref: GxwP</span>
+                            <span class="badge badge-pill badge-info" style="font-size: 11px;">33 Slides</span>
+                        </div>
+                        <h3 class="deck-title">Agentic Security: When AI Becomes Both Defender and Threat</h3>
+                        <p class="deck-desc">
+                            Exploring the cybersecurity battlefield, the new agentic attack surface, prompt injection defenses, multi-agent risk multiplication, and runtime intent enforcement.
+                        </p>
+                    </div>
+                    <div class="deck-meta-footer">
+                        <span><i class="mdi mdi-account-check text-primary mr-1"></i> Author: Harsh Verma</span>
+                        <span><i class="mdi mdi-shield-alert text-danger mr-1"></i> Threat & Defense Playbook</span>
                     </div>
                 </div>
             </div>
@@ -1331,6 +1367,38 @@
   url = {https://easychair.org/smart-slide/slide/T45r}
 }`,
                 slides: [] // Populated below
+            },
+            'r92g': {
+                id: 'r92g',
+                folder: 'enterprises-multi-agent-systems',
+                title: 'When Enterprises Become Multi-Agent Systems',
+                shortTitle: 'Enterprises as Multi-Agent Systems',
+                count: 13,
+                easyChairUrl: 'https://easychair.org/smart-slide/slide/r92g',
+                bibtex: `@misc{verma2026enterprisemultiagent,
+  author = {Verma, Harsh},
+  title = {When Enterprises Become Multi-Agent Systems},
+  howpublished = {EasyChair Smart Slide Series, Ref. r92g},
+  year = {2026},
+  url = {https://easychair.org/smart-slide/slide/r92g}
+}`,
+                slides: [] // Populated below
+            },
+            'GxwP': {
+                id: 'GxwP',
+                folder: 'agentic-security-defender-threat',
+                title: 'Agentic Security: When AI Becomes Both Defender and Threat',
+                shortTitle: 'Agentic Security: Defender and Threat',
+                count: 33,
+                easyChairUrl: 'https://easychair.org/smart-slide/slide/GxwP',
+                bibtex: `@misc{verma2026agenticthreatdefender,
+  author = {Verma, Harsh},
+  title = {Agentic Security: When AI Becomes Both Defender and Threat},
+  howpublished = {EasyChair Smart Slide Series, Ref. GxwP},
+  year = {2026},
+  url = {https://easychair.org/smart-slide/slide/GxwP}
+}`,
+                slides: [] // Populated below
             }
         };
 
@@ -1345,16 +1413,50 @@
         // Fetch deck slide metadata
         async function loadDeckData() {
             try {
-                var res1 = await fetch('data/agentic-security-governance.json');
-                if (res1.ok) DECKS['ntzm5'].slides = await res1.json();
-            } catch(e) { console.warn('Deck 1 fallback load'); }
+                var apiRes = await fetch('/api/smart-slides');
+                if (apiRes.ok) {
+                    var apiData = await apiRes.json();
+                    if (apiData && apiData.decks) {
+                        for (var key in apiData.decks) {
+                            if (DECKS[key] && apiData.decks[key].slides && apiData.decks[key].slides.length > 0) {
+                                DECKS[key].slides = apiData.decks[key].slides;
+                                DECKS[key].count = apiData.decks[key].slides.length;
+                            }
+                        }
+                    }
+                }
+            } catch(e) { console.warn('API load fallback'); }
 
-            try {
-                var res2 = await fetch('data/powering-cybersecurity-genai.json');
-                if (res2.ok) DECKS['T45r'].slides = await res2.json();
-            } catch(e) { console.warn('Deck 2 fallback load'); }
+            // Fallback direct JSON loading if needed
+            if (!DECKS['ntzm5'].slides.length) {
+                try {
+                    var res1 = await fetch('data/agentic-security-governance.json');
+                    if (res1.ok) DECKS['ntzm5'].slides = await res1.json();
+                } catch(e) { console.warn('Deck 1 fallback load'); }
+            }
 
-            // Check URL hash for direct links e.g. #deck=T45r&slide=4 or #sn:4
+            if (!DECKS['T45r'].slides.length) {
+                try {
+                    var res2 = await fetch('data/powering-cybersecurity-genai.json');
+                    if (res2.ok) DECKS['T45r'].slides = await res2.json();
+                } catch(e) { console.warn('Deck 2 fallback load'); }
+            }
+
+            if (!DECKS['r92g'].slides.length) {
+                try {
+                    var res3 = await fetch('data/enterprises-multi-agent-systems.json');
+                    if (res3.ok) DECKS['r92g'].slides = await res3.json();
+                } catch(e) { console.warn('Deck 3 fallback load'); }
+            }
+
+            if (!DECKS['GxwP'].slides.length) {
+                try {
+                    var res4 = await fetch('data/agentic-security-defender-threat.json');
+                    if (res4.ok) DECKS['GxwP'].slides = await res4.json();
+                } catch(e) { console.warn('Deck 4 fallback load'); }
+            }
+
+            // Check URL hash for direct links e.g. #deck=r92g&slide=1 or #r92g#{sn:1}
             parseUrlHash();
 
             // Initialize views
@@ -1367,6 +1469,16 @@
             var hash = window.location.hash;
             if (!hash) return;
 
+            // Direct deck match in hash (e.g. #r92g or #GxwP or #deck=GxwP)
+            for (var dId in DECKS) {
+                if (hash.indexOf(dId) !== -1) {
+                    currentDeckId = dId;
+                    $('.deck-card').removeClass('active');
+                    $('#deck-card-' + dId).addClass('active');
+                    break;
+                }
+            }
+
             // Check if #sn:X EasyChair format
             var snMatch = hash.match(/sn:(\d+)/);
             if (snMatch) {
@@ -1377,6 +1489,8 @@
             var deckMatch = hash.match(/deck=([a-zA-Z0-9_-]+)/);
             if (deckMatch && DECKS[deckMatch[1]]) {
                 currentDeckId = deckMatch[1];
+                $('.deck-card').removeClass('active');
+                $('#deck-card-' + currentDeckId).addClass('active');
             }
             var slideMatch = hash.match(/slide=(\d+)/);
             if (slideMatch) {

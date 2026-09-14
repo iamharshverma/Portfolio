@@ -37,6 +37,9 @@
         <!-- Dark Mode css File -->
         <link href="css/dark-mode.css" rel="stylesheet" type="text/css" />
         <script src="js/dark-mode.js"></script>
+    <!-- Chart.js for interactive portfolio analytics & graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
         <!-- HV AI Copilot Styles -->
     <link rel="stylesheet" href="css/hv-copilot.css" />
     <!-- Fullscreen Lightbox Modal Styles -->
@@ -658,6 +661,584 @@
             background: #2563eb;
             color: #ffffff;
         }
+
+        /* =========================================================
+           Projects Section & Modern Project Cards Enhancements
+           ========================================================= */
+        .projects-wrapper {
+            margin-top: 15px;
+        }
+
+        .portfolio-project-card {
+            background-color: #ffffff;
+            border: 1px solid rgba(226, 232, 240, 0.95);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .portfolio-project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 32px -8px rgba(15, 23, 42, 0.12), 0 0 1px 1px rgba(37, 99, 235, 0.25);
+            border-color: rgba(37, 99, 235, 0.35);
+        }
+
+        .portfolio-thumb-wrap {
+            height: 200px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            background: #0b0f19;
+            border-top-left-radius: 13px;
+            border-top-right-radius: 13px;
+            border-bottom: 1px solid rgba(226, 232, 240, 0.85);
+        }
+
+        .portfolio-thumb-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.45s ease;
+        }
+
+        .portfolio-project-card:hover .portfolio-thumb-img {
+            transform: scale(1.05);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            background: rgba(11, 15, 25, 0.82);
+            backdrop-filter: blur(2px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        .portfolio-project-card:hover .portfolio-overlay {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .portfolio-card-body {
+            padding: 22px 20px 18px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .proj-domain-badge {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #2563eb;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .proj-metric-badge {
+            font-size: 11px;
+            font-weight: 600;
+            color: #059669;
+            background: rgba(5, 150, 105, 0.08);
+            border: 1px solid rgba(5, 150, 105, 0.2);
+            border-radius: 9999px;
+            padding: 2px 8px;
+            white-space: nowrap;
+        }
+
+        .proj-card-title {
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1.35;
+            margin-top: 4px;
+            margin-bottom: 8px;
+        }
+
+        .proj-title-link {
+            color: #0f172a;
+            text-decoration: none !important;
+            transition: color 0.2s ease;
+        }
+
+        .proj-title-link:hover {
+            color: #2563eb;
+        }
+
+        .proj-card-desc {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #64748b;
+            margin-bottom: 14px;
+            min-height: 60px;
+        }
+
+        .proj-tags-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: auto;
+            margin-bottom: 14px;
+        }
+
+        .proj-tag-pill {
+            font-size: 11px;
+            font-weight: 500;
+            padding: 3px 8px;
+            border-radius: 6px;
+            background: #f1f5f9;
+            color: #475569;
+            border: 1px solid rgba(226, 232, 240, 0.9);
+            white-space: nowrap;
+        }
+
+        .proj-card-actions {
+            padding-top: 14px;
+            border-top: 1px solid rgba(226, 232, 240, 0.85);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+        .btn-proj-github {
+            font-size: 12.5px;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            background: #2563eb;
+            color: #ffffff !important;
+            border: 1px solid #2563eb;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
+            text-decoration: none !important;
+        }
+
+        .btn-proj-github:hover {
+            background: #1d4ed8;
+            border-color: #1d4ed8;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+            transform: translateY(-1px);
+        }
+
+        .btn-proj-preview {
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 9999px;
+            background: #ffffff;
+            color: #475569 !important;
+            border: 1px solid #cbd5e1;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.2s ease;
+            text-decoration: none !important;
+        }
+
+        .btn-proj-preview:hover {
+            background: #f8fafc;
+            color: #0f172a !important;
+            border-color: #94a3b8;
+        }
+
+        /* Project Grid Filler Widget Cards */
+        .project-widget-card {
+            border: 1px solid rgba(37, 99, 235, 0.22);
+            background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+            position: relative;
+        }
+
+        .project-widget-card:hover {
+            border-color: rgba(37, 99, 235, 0.55);
+            box-shadow: 0 18px 32px -8px rgba(37, 99, 235, 0.15), 0 0 1px 1px rgba(37, 99, 235, 0.3);
+        }
+
+        .border-primary-subtle {
+            border-color: rgba(37, 99, 235, 0.25) !important;
+        }
+
+        .border-success-subtle {
+            border-color: rgba(5, 150, 105, 0.25) !important;
+        }
+
+        /* Dark Mode Overrides for Projects */
+        body.dark-mode .portfolio-project-card {
+            background-color: #111827;
+            border-color: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+        }
+
+        body.dark-mode .project-widget-card {
+            background: linear-gradient(180deg, #111827 0%, #0f172a 100%);
+            border-color: rgba(96, 165, 250, 0.25) !important;
+        }
+
+        body.dark-mode .project-widget-card:hover {
+            border-color: rgba(96, 165, 250, 0.5) !important;
+            box-shadow: 0 18px 32px -8px rgba(0, 0, 0, 0.6), 0 0 1px 1px rgba(96, 165, 250, 0.4);
+        }
+
+        body.dark-mode .portfolio-project-card:hover {
+            box-shadow: 0 18px 32px -8px rgba(0, 0, 0, 0.5), 0 0 1px 1px rgba(96, 165, 250, 0.35);
+            border-color: rgba(96, 165, 250, 0.4);
+        }
+
+        body.dark-mode .portfolio-thumb-wrap {
+            border-bottom-color: rgba(255, 255, 255, 0.08);
+        }
+
+        body.dark-mode .proj-title-link {
+            color: #f8fafc;
+        }
+
+        body.dark-mode .proj-title-link:hover {
+            color: #60a5fa;
+        }
+
+        body.dark-mode .proj-domain-badge {
+            color: #60a5fa;
+        }
+
+        body.dark-mode .proj-metric-badge {
+            color: #34d399;
+            background: rgba(16, 185, 129, 0.12);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        body.dark-mode .proj-card-desc {
+            color: #94a3b8;
+        }
+
+        body.dark-mode .proj-tag-pill {
+            background: #1e293b;
+            color: #cbd5e1;
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        body.dark-mode .proj-card-actions {
+            border-top-color: rgba(255, 255, 255, 0.08);
+        }
+
+        body.dark-mode .btn-proj-preview {
+            background: #1e293b;
+            color: #e2e8f0 !important;
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        body.dark-mode .btn-proj-preview:hover {
+            background: #334155;
+            color: #ffffff !important;
+        }
+
+        body.dark-mode .categories-filter a.categories {
+            color: #cbd5e1 !important;
+            border-color: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        body.dark-mode .categories-filter a.categories.active,
+        body.dark-mode .categories-filter a.categories:hover {
+            color: #3b82f6 !important;
+            border-color: #3b82f6 !important;
+        }
+
+
+        /* Visual Status Badges on Project Card Corners */
+        .proj-status-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            z-index: 6;
+            display: inline-flex;
+            align-items: center;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 6px;
+            backdrop-filter: blur(6px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            pointer-events: none;
+            line-height: 1.3;
+        }
+
+        .proj-status-badge i {
+            font-size: 13px;
+            margin-right: 4px;
+        }
+
+        .status-open-source {
+            background: rgba(16, 185, 129, 0.94);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+        }
+
+        .status-research {
+            background: rgba(99, 102, 241, 0.94);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+        }
+
+        .status-specialization {
+            background: rgba(217, 119, 6, 0.94);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+        }
+
+        body.dark-mode .status-open-source {
+            background: rgba(16, 185, 129, 0.88);
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+        }
+
+        body.dark-mode .status-research {
+            background: rgba(99, 102, 241, 0.88);
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+        }
+
+        body.dark-mode .status-specialization {
+            background: rgba(217, 119, 6, 0.88);
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Portfolio Analytics Dashboard (Matching Media Page) */
+        .portfolio-analytics-panel {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 26px 24px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        body.dark-mode .portfolio-analytics-panel {
+            background: #111827;
+            border-color: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        .portfolio-stat-ribbon {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 991px) {
+            .portfolio-stat-ribbon {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 575px) {
+            .portfolio-stat-ribbon {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .portfolio-stat-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 16px 18px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            transition: all 0.25s ease;
+            cursor: pointer;
+        }
+
+        .portfolio-stat-box:hover {
+            transform: translateY(-2px);
+            border-color: #3b82f6;
+            box-shadow: 0 6px 18px rgba(37, 99, 235, 0.08);
+        }
+
+        body.dark-mode .portfolio-stat-box {
+            background: #1e293b;
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        body.dark-mode .portfolio-stat-box:hover {
+            border-color: #60a5fa;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+        }
+
+        .stat-icon-wrap {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            flex-shrink: 0;
+        }
+
+        .stat-icon-blue { background: rgba(37, 99, 235, 0.12); color: #2563eb; }
+        .stat-icon-green { background: rgba(16, 185, 129, 0.12); color: #059669; }
+        .stat-icon-purple { background: rgba(124, 58, 237, 0.12); color: #7c3aed; }
+        .stat-icon-amber { background: rgba(217, 119, 6, 0.12); color: #d97706; }
+
+        body.dark-mode .stat-icon-blue { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+        body.dark-mode .stat-icon-green { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+        body.dark-mode .stat-icon-purple { background: rgba(167, 139, 250, 0.2); color: #c4b5fd; }
+        body.dark-mode .stat-icon-amber { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+
+        .stat-meta-num {
+            font-size: 22px;
+            font-weight: 800;
+            line-height: 1.15;
+            color: #0f172a;
+        }
+
+        body.dark-mode .stat-meta-num {
+            color: #f8fafc;
+        }
+
+        .stat-meta-label {
+            font-size: 11.5px;
+            font-weight: 600;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+
+        body.dark-mode .stat-meta-label {
+            color: #94a3b8;
+        }
+
+        .portfolio-chart-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.25s ease;
+        }
+
+        .portfolio-chart-card:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.08);
+        }
+
+        body.dark-mode .portfolio-chart-card {
+            background: #0f172a;
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        body.dark-mode .portfolio-chart-card:hover {
+            border-color: #60a5fa;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .portfolio-chart-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        body.dark-mode .portfolio-chart-title {
+            color: #f8fafc;
+        }
+
+        .portfolio-chart-subtitle {
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 12px;
+        }
+
+        body.dark-mode .portfolio-chart-subtitle {
+            color: #94a3b8;
+        }
+
+        .portfolio-chart-canvas-wrap {
+            position: relative;
+            flex-grow: 1;
+            min-height: 220px;
+            width: 100%;
+        }
+
+        /* Toggle Portfolio Analytics Button */
+        #btnTogglePortfolioAnalytics {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            font-size: 12.5px;
+            font-weight: 600;
+            line-height: 1.4;
+            padding: 6px 16px;
+            border-radius: 20px;
+            border: 1.5px solid rgba(37, 99, 235, 0.35);
+            background: rgba(37, 99, 235, 0.06);
+            color: #2563eb;
+            box-shadow: 0 1px 3px rgba(37, 99, 235, 0.08);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            outline: none;
+            user-select: none;
+        }
+
+        #btnTogglePortfolioAnalytics:hover {
+            background: #2563eb;
+            color: #ffffff;
+            border-color: #2563eb;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+            transform: translateY(-1px);
+        }
+
+        #btnTogglePortfolioAnalytics:active {
+            transform: translateY(0);
+            box-shadow: 0 1px 3px rgba(37, 99, 235, 0.2);
+        }
+
+        #btnTogglePortfolioAnalytics .btn-toggle-icon {
+            font-size: 16px;
+            line-height: 1;
+            transition: transform 0.25s ease;
+        }
+
+        body.dark-mode #btnTogglePortfolioAnalytics {
+            border-color: rgba(96, 165, 250, 0.4);
+            background: rgba(96, 165, 250, 0.12);
+            color: #93c5fd;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        body.dark-mode #btnTogglePortfolioAnalytics:hover {
+            background: #3b82f6;
+            color: #ffffff;
+            border-color: #3b82f6;
+            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);
+        }
+
     </style>
 </head>
 
@@ -840,17 +1421,122 @@
         </section><!--end section-->
         <!-- Hero End -->
 
-        <!-- Blog STart -->
-        <section class="section">
-            <div class="section-head">
-                    <h2><center><b>Professional Work & Certifications</b></center></h2>
-                    <center>All related professional projects and certification are featured below, filters helps them to sort based on specific technical domain !!</center><br>
-                </div>
-            <div class="section-head" style="padding-top: 3%;">
-                    <h2><center><b>Projects</b></center></h2>
-                    <small><center>"Each Day Count towards Big Dreams !!"</center></small><br>
-                </div>
+        <!-- Projects Section Start -->
+        <section class="section" id="projects-section">
+            <div class="section-head text-center mb-2">
+                <span class="badge badge-pill badge-soft-primary px-3 py-2 font-weight-bold text-uppercase" style="letter-spacing: 0.5px; font-size: 11.5px;">Engineering Portfolio</span>
+                <h2 class="title font-weight-bold mt-2 mb-1">Featured Systems &amp; AI Projects</h2>
+            </div>
+            <div class="section-head text-center mb-4">
+                <p class="text-muted mx-auto mb-0" style="max-width: 680px; font-size: 15px;">Production-grade distributed systems, agentic security frameworks, and deep learning architectures with full open-source implementations.</p>
+            </div>
             <div class="container">
+                <!-- Interactive Technical Analytics & Domain Intelligence Hub -->
+                <div class="portfolio-analytics-panel mb-4" id="portfolioAnalyticsHub">
+                    <div class="d-flex align-items-center justify-content-between flex-wrap mb-3">
+                        <div>
+                            <h4 class="font-weight-bold mb-1 d-flex align-items-center" style="color: #0f172a;">
+                                <i class="mdi mdi-chart-box-outline text-primary mr-2" style="font-size: 24px;"></i>
+                                Technical Domain &amp; Credentials Analytics
+                            </h4>
+                            <p class="text-muted mb-0" style="font-size: 13.5px;">Comparative intelligence across hands-on engineering systems, deep learning research, and verified certifications.</p>
+                        </div>
+                        <div class="mt-2 mt-md-0 d-flex align-items-center" style="gap: 8px;">
+                            <span class="badge badge-light border text-muted px-2 py-1 small"><i class="mdi mdi-cursor-default-click-outline mr-1 text-primary"></i> Click graph segments to filter</span>
+                            <button type="button" class="btn btn-sm" onclick="togglePortfolioAnalytics(event)" id="btnTogglePortfolioAnalytics" aria-expanded="true" aria-controls="portfolioAnalyticsCollapseContainer">
+                                <i class="mdi mdi-chevron-up btn-toggle-icon" id="togglePortfolioAnalyticsIcon"></i>
+                                <span id="togglePortfolioAnalyticsText">Collapse</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Stats Ribbon -->
+                    <div class="portfolio-stat-ribbon">
+                        <div class="portfolio-stat-box" onclick="filterProjectsByDomain('*')" title="Click to show all projects">
+                            <div class="stat-icon-wrap stat-icon-blue">
+                                <i class="mdi mdi-briefcase-check"></i>
+                            </div>
+                            <div>
+                                <div class="stat-meta-num">13</div>
+                                <div class="stat-meta-label">Featured Projects</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-stat-box" onclick="document.getElementById('certifications').scrollIntoView({behavior: 'smooth'})" title="Click to view certifications">
+                            <div class="stat-icon-wrap stat-icon-green">
+                                <i class="mdi mdi-certificate"></i>
+                            </div>
+                            <div>
+                                <div class="stat-meta-num">24</div>
+                                <div class="stat-meta-label">Verified Certs</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-stat-box" onclick="filterProjectsByDomain('.ai')" title="Click to filter AI domain">
+                            <div class="stat-icon-wrap stat-icon-purple">
+                                <i class="mdi mdi-brain"></i>
+                            </div>
+                            <div>
+                                <div class="stat-meta-num">5</div>
+                                <div class="stat-meta-label">Core Domains</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-stat-box" onclick="filterProjectsByDomain('.software')" title="Click to filter Software domain">
+                            <div class="stat-icon-wrap stat-icon-amber">
+                                <i class="mdi mdi-source-branch"></i>
+                            </div>
+                            <div>
+                                <div class="stat-meta-num">100%</div>
+                                <div class="stat-meta-label">Open Source &amp; Verified</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="portfolioAnalyticsCollapseContainer">
+                        <div class="row">
+                            <!-- Chart 1: Domain Distribution Comparison -->
+                            <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+                                <div class="portfolio-chart-card">
+                                    <div class="portfolio-chart-title">
+                                        <span><i class="mdi mdi-chart-bar text-primary mr-1"></i> Domain Breakdown: Projects vs Certs</span>
+                                        <span class="badge badge-primary badge-pill font-weight-normal" style="font-size: 11px;">5 Areas</span>
+                                    </div>
+                                    <div class="portfolio-chart-subtitle">Direct comparison across core technical specialties</div>
+                                    <div class="portfolio-chart-canvas-wrap">
+                                        <canvas id="domainComparisonChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Chart 2: Project Architecture Breakdown -->
+                            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                                <div class="portfolio-chart-card">
+                                    <div class="portfolio-chart-title">
+                                        <span><i class="mdi mdi-chart-donut text-info mr-1"></i> Project Focus</span>
+                                        <span class="badge badge-info badge-pill font-weight-normal" style="font-size: 11px;">13 Total</span>
+                                    </div>
+                                    <div class="portfolio-chart-subtitle">Open Source systems vs research models</div>
+                                    <div class="portfolio-chart-canvas-wrap">
+                                        <canvas id="projectFocusChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Chart 3: Verified Credential Tracks -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="portfolio-chart-card">
+                                    <div class="portfolio-chart-title">
+                                        <span><i class="mdi mdi-seal text-warning mr-1"></i> Certified Specializations</span>
+                                        <span class="badge badge-warning badge-pill font-weight-normal" style="font-size: 11px;">24 Credentials</span>
+                                    </div>
+                                    <div class="portfolio-chart-subtitle">Deep learning, GCP MLOps &amp; distributed systems</div>
+                                    <div class="portfolio-chart-canvas-wrap">
+                                        <canvas id="certDistributionChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
                     <ul class="col container-filter list-unstyled categories-filter text-center mb-0" id="filter">
                         <li class="list-inline-item"><a class="categories border d-block text-dark rounded active" data-filter="*">All</a></li>
@@ -863,235 +1549,650 @@
                 </div>
 
                 <div class="row projects-wrapper">
-                    <!-- Flagship Project: Agentic Security & NHI Guardrails -->
+                    <!-- Project: Agentic Security & NHI Guardrails -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 ai software" data-description="Zero-Trust Non-Human Identity (NHI) boundary and runtime prompt firewall protecting autonomous multi-agent tool execution with cryptographic SPIFFE/SPIRE attestation and policy enforcement." data-tags="Agentic AI,SPIFFE/SPIRE,Zero-Trust,FastAPI">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded shadow-sm">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/agentic_security_thumb.svg" class="img-fluid" alt="Agentic Security & NHI Guardrails">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="https://github.com/iamharshverma" target="_blank" class="text-white title">Agentic Security &amp; NHI Guardrails</a></h5>
-                                    <h6 class="text-light tag mb-0">AI Security</h6>
+                        <div class="portfolio-project-card">
+                            <div class="portfolio-thumb-wrap">
+                                <span class="proj-status-badge status-open-source"><i class="mdi mdi-shield-check"></i>Open Source</span>
+                                <img src="images/portfolio/agentic_security_thumb.svg" class="portfolio-thumb-img" alt="Agentic Security &amp; NHI Guardrails">
+                                <div class="portfolio-overlay">
+                                    <a href="https://github.com/iamharshverma" target="_blank" class="btn btn-sm btn-light rounded-pill px-3 mr-2 font-weight-bold shadow-sm">
+                                        <i class="mdi mdi-github-face mr-1 font-14"></i> GitHub
+                                    </a>
+                                    <a href="images/portfolio/agentic_security_thumb.svg" class="btn btn-sm btn-outline-light rounded-pill px-3 font-weight-bold mfp-image" title="Inspect Agentic Security &amp; NHI Guardrails Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-sm mr-1"></i> Preview
+                                    </a>
                                 </div>
-                                <div class="icons text-center">
-                                    <a href="images/portfolio/agentic_security_thumb.svg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image" title="Inspect Agentic Security Architecture"><i data-feather="maximize-2" class="fea icon-sm"></i></a>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="proj-domain-badge"><i class="mdi mdi-circle-medium mr-1 text-primary font-14"></i>Agentic AI • Zero Trust</span>
+                                    <span class="proj-metric-badge">Enterprise Grade</span>
+                                </div>
+                                <h5 class="proj-card-title">
+                                    <a href="https://github.com/iamharshverma" target="_blank" class="proj-title-link">Agentic Security &amp; NHI Guardrails</a>
+                                </h5>
+                                <p class="proj-card-desc mb-3">Zero-Trust Non-Human Identity (NHI) boundary and runtime prompt firewall protecting autonomous multi-agent tool execution with cryptographic SPIFFE/SPIRE attestation and policy enforcement.</p>
+                                <div class="proj-tags-list">
+                                <span class="proj-tag-pill">Agentic AI</span>
+                                <span class="proj-tag-pill">SPIFFE/SPIRE</span>
+                                <span class="proj-tag-pill">Zero-Trust</span>
+                                <span class="proj-tag-pill">FastAPI</span>
+                                </div>
+                                <div class="proj-card-actions">
+                                    <a href="https://github.com/iamharshverma" target="_blank" class="btn-proj-github">
+                                        <i class="mdi mdi-github-face mr-1 font-16"></i> View Project <i class="mdi mdi-open-in-new ml-1 font-12"></i>
+                                    </a>
+                                    <a href="images/portfolio/agentic_security_thumb.svg" class="btn-proj-preview mfp-image" title="Inspect Agentic Security &amp; NHI Guardrails Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-xs mr-1"></i> Preview
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div><!--end col-->
 
-                    <!-- Project 2: PySpark Streaming MultiNews Classification -->
+                    <!-- Project: PySpark Streaming MultiNews Classification -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 bigdata" data-description="Distributed Apache Spark Streaming architecture with Kafka event ingestion, tokenization DAG, and real-time multilingual topic classification across worker nodes." data-tags="PySpark,Apache Kafka,NLP DAG,Micro-batch">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded shadow-sm">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/spark_streaming_thumb.svg" class="img-fluid" alt="PySpark Streaming MultiNews Classification">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="https://github.com/iamharshverma/PySparkStreaming-MultiNewsClassification" target="_blank" class="text-white title">PySpark Streaming MultiNews Classification</a></h5>
-                                    <h6 class="text-light tag mb-0">Big Data</h6>
+                        <div class="portfolio-project-card">
+                            <div class="portfolio-thumb-wrap">
+                                <span class="proj-status-badge status-open-source"><i class="mdi mdi-lightning-bolt"></i>Open Source</span>
+                                <img src="images/portfolio/spark_streaming_thumb.svg" class="portfolio-thumb-img" alt="PySpark Streaming MultiNews Classification">
+                                <div class="portfolio-overlay">
+                                    <a href="https://github.com/iamharshverma/PySparkStreaming-MultiNewsClassification" target="_blank" class="btn btn-sm btn-light rounded-pill px-3 mr-2 font-weight-bold shadow-sm">
+                                        <i class="mdi mdi-github-face mr-1 font-14"></i> GitHub
+                                    </a>
+                                    <a href="images/portfolio/spark_streaming_thumb.svg" class="btn btn-sm btn-outline-light rounded-pill px-3 font-weight-bold mfp-image" title="Inspect PySpark Streaming MultiNews Classification Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-sm mr-1"></i> Preview
+                                    </a>
                                 </div>
-                                <div class="icons text-center">
-                                    <a href="images/portfolio/spark_streaming_thumb.svg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image" title="Inspect PySpark Streaming DAG Architecture"><i data-feather="maximize-2" class="fea icon-sm"></i></a>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="proj-domain-badge"><i class="mdi mdi-circle-medium mr-1 text-primary font-14"></i>Big Data • Distributed Streaming</span>
+                                    <span class="proj-metric-badge">Real-Time DAG</span>
+                                </div>
+                                <h5 class="proj-card-title">
+                                    <a href="https://github.com/iamharshverma/PySparkStreaming-MultiNewsClassification" target="_blank" class="proj-title-link">PySpark Streaming MultiNews Classification</a>
+                                </h5>
+                                <p class="proj-card-desc mb-3">Distributed Apache Spark Streaming architecture with Kafka event ingestion, tokenization DAG, and real-time multilingual topic classification across worker nodes.</p>
+                                <div class="proj-tags-list">
+                                <span class="proj-tag-pill">PySpark</span>
+                                <span class="proj-tag-pill">Apache Kafka</span>
+                                <span class="proj-tag-pill">NLP DAG</span>
+                                <span class="proj-tag-pill">Micro-batch</span>
+                                </div>
+                                <div class="proj-card-actions">
+                                    <a href="https://github.com/iamharshverma/PySparkStreaming-MultiNewsClassification" target="_blank" class="btn-proj-github">
+                                        <i class="mdi mdi-github-face mr-1 font-16"></i> View Project <i class="mdi mdi-open-in-new ml-1 font-12"></i>
+                                    </a>
+                                    <a href="images/portfolio/spark_streaming_thumb.svg" class="btn-proj-preview mfp-image" title="Inspect PySpark Streaming MultiNews Classification Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-xs mr-1"></i> Preview
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div><!--end col-->
-                    
-                    <!-- Project 3: NLP Automatic Speech Recognition -->
+
+                    <!-- Project: NLP Automatic Speech Recognition -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 nlp ai" data-description="End-to-end acoustic spectrogram feature extraction and Connectionist Temporal Classification (CTC) neural speech-to-text decoding engine." data-tags="PyTorch,CTC Loss,Spectrogram,Transformers">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded shadow-sm">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/speech_ai_thumb.svg" class="img-fluid" alt="NLP Automatic Speech Recognition">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="https://github.com/iamharshverma/NLP-Automatic-Speech-Recognization" target="_blank" class="text-white title">NLP Automatic Speech Recognition</a></h5>
-                                    <h6 class="text-light tag mb-0">Speech AI</h6>
+                        <div class="portfolio-project-card">
+                            <div class="portfolio-thumb-wrap">
+                                <span class="proj-status-badge status-research"><i class="mdi mdi-flask"></i>Research</span>
+                                <img src="images/portfolio/speech_ai_thumb.svg" class="portfolio-thumb-img" alt="NLP Automatic Speech Recognition">
+                                <div class="portfolio-overlay">
+                                    <a href="https://github.com/iamharshverma/NLP-Automatic-Speech-Recognization" target="_blank" class="btn btn-sm btn-light rounded-pill px-3 mr-2 font-weight-bold shadow-sm">
+                                        <i class="mdi mdi-github-face mr-1 font-14"></i> GitHub
+                                    </a>
+                                    <a href="images/portfolio/speech_ai_thumb.svg" class="btn btn-sm btn-outline-light rounded-pill px-3 font-weight-bold mfp-image" title="Inspect NLP Automatic Speech Recognition Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-sm mr-1"></i> Preview
+                                    </a>
                                 </div>
-                                <div class="icons text-center">
-                                    <a href="images/portfolio/speech_ai_thumb.svg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image" title="Inspect Speech AI Deep Neural Architecture"><i data-feather="maximize-2" class="fea icon-sm"></i></a>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="proj-domain-badge"><i class="mdi mdi-circle-medium mr-1 text-primary font-14"></i>Speech AI • Neural Acoustics</span>
+                                    <span class="proj-metric-badge">CTC Neural Net</span>
+                                </div>
+                                <h5 class="proj-card-title">
+                                    <a href="https://github.com/iamharshverma/NLP-Automatic-Speech-Recognization" target="_blank" class="proj-title-link">NLP Automatic Speech Recognition</a>
+                                </h5>
+                                <p class="proj-card-desc mb-3">End-to-end acoustic spectrogram feature extraction and Connectionist Temporal Classification (CTC) neural speech-to-text decoding engine.</p>
+                                <div class="proj-tags-list">
+                                <span class="proj-tag-pill">PyTorch</span>
+                                <span class="proj-tag-pill">CTC Loss</span>
+                                <span class="proj-tag-pill">Spectrogram</span>
+                                <span class="proj-tag-pill">Transformers</span>
+                                </div>
+                                <div class="proj-card-actions">
+                                    <a href="https://github.com/iamharshverma/NLP-Automatic-Speech-Recognization" target="_blank" class="btn-proj-github">
+                                        <i class="mdi mdi-github-face mr-1 font-16"></i> View Project <i class="mdi mdi-open-in-new ml-1 font-12"></i>
+                                    </a>
+                                    <a href="images/portfolio/speech_ai_thumb.svg" class="btn-proj-preview mfp-image" title="Inspect NLP Automatic Speech Recognition Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-xs mr-1"></i> Preview
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div><!--end col-->
-                    
-                    <!-- Project 4: NLP BiLSTM Sentiment Analysis -->
+
+                    <!-- Project: NLP BiLSTM Sentiment Analysis -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 nlp ai" data-description="Bidirectional LSTM recurrent network paired with self-attention mechanisms for deep contextual sentiment polarity evaluation." data-tags="BiLSTM,Attention,TensorFlow,Word Embeddings">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded shadow-sm">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/bilstm_sentiment_thumb.svg" class="img-fluid" alt="NLP BiLSTM Sentiment Analysis">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="https://github.com/iamharshverma/NLP-BiLSTM_SentimentAnalysis" target="_blank" class="text-white title">NLP BiLSTM Sentiment Analysis</a></h5>
-                                    <h6 class="text-light tag mb-0">NLP</h6>
+                        <div class="portfolio-project-card">
+                            <div class="portfolio-thumb-wrap">
+                                <span class="proj-status-badge status-research"><i class="mdi mdi-brain"></i>Research</span>
+                                <img src="images/portfolio/bilstm_sentiment_thumb.svg" class="portfolio-thumb-img" alt="NLP BiLSTM Sentiment Analysis">
+                                <div class="portfolio-overlay">
+                                    <a href="https://github.com/iamharshverma/NLP-BiLSTM_SentimentAnalysis" target="_blank" class="btn btn-sm btn-light rounded-pill px-3 mr-2 font-weight-bold shadow-sm">
+                                        <i class="mdi mdi-github-face mr-1 font-14"></i> GitHub
+                                    </a>
+                                    <a href="images/portfolio/bilstm_sentiment_thumb.svg" class="btn btn-sm btn-outline-light rounded-pill px-3 font-weight-bold mfp-image" title="Inspect NLP BiLSTM Sentiment Analysis Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-sm mr-1"></i> Preview
+                                    </a>
                                 </div>
-                                <div class="icons text-center">
-                                    <a href="images/portfolio/bilstm_sentiment_thumb.svg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image" title="Inspect BiLSTM Neural Network Architecture"><i data-feather="maximize-2" class="fea icon-sm"></i></a>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="proj-domain-badge"><i class="mdi mdi-circle-medium mr-1 text-primary font-14"></i>NLP • Deep Learning</span>
+                                    <span class="proj-metric-badge">Self-Attention</span>
+                                </div>
+                                <h5 class="proj-card-title">
+                                    <a href="https://github.com/iamharshverma/NLP-BiLSTM_SentimentAnalysis" target="_blank" class="proj-title-link">NLP BiLSTM Sentiment Analysis</a>
+                                </h5>
+                                <p class="proj-card-desc mb-3">Bidirectional LSTM recurrent network paired with self-attention mechanisms for deep contextual sentiment polarity evaluation.</p>
+                                <div class="proj-tags-list">
+                                <span class="proj-tag-pill">BiLSTM</span>
+                                <span class="proj-tag-pill">Attention</span>
+                                <span class="proj-tag-pill">TensorFlow</span>
+                                <span class="proj-tag-pill">Word Embeddings</span>
+                                </div>
+                                <div class="proj-card-actions">
+                                    <a href="https://github.com/iamharshverma/NLP-BiLSTM_SentimentAnalysis" target="_blank" class="btn-proj-github">
+                                        <i class="mdi mdi-github-face mr-1 font-16"></i> View Project <i class="mdi mdi-open-in-new ml-1 font-12"></i>
+                                    </a>
+                                    <a href="images/portfolio/bilstm_sentiment_thumb.svg" class="btn-proj-preview mfp-image" title="Inspect NLP BiLSTM Sentiment Analysis Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-xs mr-1"></i> Preview
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div><!--end col-->
-                    
-                    <!-- Project 5: PySpark Cross-Language Duplication Detection -->
+
+                    <!-- Project: PySpark Cross-Language Duplication Detection -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 bigdata" data-description="Distributed MinHash Locality-Sensitive Hashing (LSH) and Jaccard similarity DAG in Apache Spark for high-throughput multilingual document deduplication." data-tags="PySpark,MinHash LSH,Jaccard Similarity,Big Data">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded shadow-sm">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/cross_lingual_spark_thumb.svg" class="img-fluid" alt="PySpark Cross-Language Duplication Detection">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="https://github.com/iamharshverma/PySpark-LargeScaleDataCollection_Preprocessing_Cross_language_Articles_Duplication_Detection" target="_blank" class="text-white title">PySpark Cross-Language Duplication Detection</a></h5>
-                                    <h6 class="text-light tag mb-0">Big Data</h6>
+                        <div class="portfolio-project-card">
+                            <div class="portfolio-thumb-wrap">
+                                <span class="proj-status-badge status-research"><i class="mdi mdi-file-find"></i>Research</span>
+                                <img src="images/portfolio/cross_lingual_spark_thumb.svg" class="portfolio-thumb-img" alt="PySpark Cross-Language Duplication Detection">
+                                <div class="portfolio-overlay">
+                                    <a href="https://github.com/iamharshverma/PySpark-LargeScaleDataCollection_Preprocessing_Cross_language_Articles_Duplication_Detection" target="_blank" class="btn btn-sm btn-light rounded-pill px-3 mr-2 font-weight-bold shadow-sm">
+                                        <i class="mdi mdi-github-face mr-1 font-14"></i> GitHub
+                                    </a>
+                                    <a href="images/portfolio/cross_lingual_spark_thumb.svg" class="btn btn-sm btn-outline-light rounded-pill px-3 font-weight-bold mfp-image" title="Inspect PySpark Cross-Language Duplication Detection Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-sm mr-1"></i> Preview
+                                    </a>
                                 </div>
-                                <div class="icons text-center">
-                                    <a href="images/portfolio/cross_lingual_spark_thumb.svg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image" title="Inspect MinHash LSH Spark Pipeline"><i data-feather="maximize-2" class="fea icon-sm"></i></a>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="proj-domain-badge"><i class="mdi mdi-circle-medium mr-1 text-primary font-14"></i>Distributed Computing • LSH</span>
+                                    <span class="proj-metric-badge">MinHash LSH</span>
+                                </div>
+                                <h5 class="proj-card-title">
+                                    <a href="https://github.com/iamharshverma/PySpark-LargeScaleDataCollection_Preprocessing_Cross_language_Articles_Duplication_Detection" target="_blank" class="proj-title-link">PySpark Cross-Language Duplication Detection</a>
+                                </h5>
+                                <p class="proj-card-desc mb-3">Distributed MinHash Locality-Sensitive Hashing (LSH) and Jaccard similarity DAG in Apache Spark for high-throughput multilingual document deduplication.</p>
+                                <div class="proj-tags-list">
+                                <span class="proj-tag-pill">PySpark</span>
+                                <span class="proj-tag-pill">MinHash LSH</span>
+                                <span class="proj-tag-pill">Jaccard Similarity</span>
+                                <span class="proj-tag-pill">Big Data</span>
+                                </div>
+                                <div class="proj-card-actions">
+                                    <a href="https://github.com/iamharshverma/PySpark-LargeScaleDataCollection_Preprocessing_Cross_language_Articles_Duplication_Detection" target="_blank" class="btn-proj-github">
+                                        <i class="mdi mdi-github-face mr-1 font-16"></i> View Project <i class="mdi mdi-open-in-new ml-1 font-12"></i>
+                                    </a>
+                                    <a href="images/portfolio/cross_lingual_spark_thumb.svg" class="btn-proj-preview mfp-image" title="Inspect PySpark Cross-Language Duplication Detection Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-xs mr-1"></i> Preview
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div><!--end col-->
-                    
-                    <!-- Project 6: Yelp Business & Social-Network Analysis -->
+
+                    <!-- Project: Yelp Business & Social Network Graph Analytics -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 bigdata" data-description="Large-scale graph analytics using Apache Spark GraphX and Pregel API for PageRank influence calculation, community detection, and geospatial clustering." data-tags="Spark GraphX,Pregel API,PageRank,Community Detection">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded shadow-sm">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/graph_analytics_thumb.svg" class="img-fluid" alt="Big Data Yelp Business & Social Network Analysis">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="https://github.com/iamharshverma/BigData-Yelp-Business-Data-and-Social-Network-Analysis" target="_blank" class="text-white title">Yelp Business &amp; Social Network Graph Analytics</a></h5>
-                                    <h6 class="text-light tag mb-0">Big Data</h6>
+                        <div class="portfolio-project-card">
+                            <div class="portfolio-thumb-wrap">
+                                <span class="proj-status-badge status-research"><i class="mdi mdi-graphql"></i>Research</span>
+                                <img src="images/portfolio/graph_analytics_thumb.svg" class="portfolio-thumb-img" alt="Yelp Business &amp; Social Network Graph Analytics">
+                                <div class="portfolio-overlay">
+                                    <a href="https://github.com/iamharshverma/BigData-Yelp-Business-Data-and-Social-Network-Analysis" target="_blank" class="btn btn-sm btn-light rounded-pill px-3 mr-2 font-weight-bold shadow-sm">
+                                        <i class="mdi mdi-github-face mr-1 font-14"></i> GitHub
+                                    </a>
+                                    <a href="images/portfolio/graph_analytics_thumb.svg" class="btn btn-sm btn-outline-light rounded-pill px-3 font-weight-bold mfp-image" title="Inspect Yelp Business &amp; Social Network Graph Analytics Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-sm mr-1"></i> Preview
+                                    </a>
                                 </div>
-                                <div class="icons text-center">
-                                    <a href="images/portfolio/graph_analytics_thumb.svg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image" title="Inspect GraphX & Pregel Topology"><i data-feather="maximize-2" class="fea icon-sm"></i></a>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="proj-domain-badge"><i class="mdi mdi-circle-medium mr-1 text-primary font-14"></i>Graph Analytics • Spark GraphX</span>
+                                    <span class="proj-metric-badge">Pregel API</span>
+                                </div>
+                                <h5 class="proj-card-title">
+                                    <a href="https://github.com/iamharshverma/BigData-Yelp-Business-Data-and-Social-Network-Analysis" target="_blank" class="proj-title-link">Yelp Business &amp; Social Network Graph Analytics</a>
+                                </h5>
+                                <p class="proj-card-desc mb-3">Large-scale graph analytics using Apache Spark GraphX and Pregel API for PageRank influence calculation, community detection, and geospatial clustering.</p>
+                                <div class="proj-tags-list">
+                                <span class="proj-tag-pill">Spark GraphX</span>
+                                <span class="proj-tag-pill">Pregel API</span>
+                                <span class="proj-tag-pill">PageRank</span>
+                                <span class="proj-tag-pill">Community Detection</span>
+                                </div>
+                                <div class="proj-card-actions">
+                                    <a href="https://github.com/iamharshverma/BigData-Yelp-Business-Data-and-Social-Network-Analysis" target="_blank" class="btn-proj-github">
+                                        <i class="mdi mdi-github-face mr-1 font-16"></i> View Project <i class="mdi mdi-open-in-new ml-1 font-12"></i>
+                                    </a>
+                                    <a href="images/portfolio/graph_analytics_thumb.svg" class="btn-proj-preview mfp-image" title="Inspect Yelp Business &amp; Social Network Graph Analytics Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-xs mr-1"></i> Preview
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div><!--end col-->
-                    
-                    <!-- Project 7: Certificates Accomplishment & Specializations -->
+
+                    <!-- Project: Certificates Accomplishment & Specializations -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 ai software" data-description="Curated repository of 30+ completed specializations spanning DeepLearning.AI, Google Cloud MLOps, Stanford GSB Executive Education, and Big Data Architecture." data-tags="Stanford GSB,Google Cloud,DeepLearning.AI,MLOps">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded shadow-sm">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/certificates_accomplishment_thumb.svg" class="img-fluid" alt="Certificates Accomplishment & AI Specializations">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="https://github.com/iamharshverma/CertificatesAccomplishment" target="_blank" class="text-white title">Certificates Accomplishment &amp; Specializations</a></h5>
-                                    <h6 class="text-light tag mb-0">Certification</h6>
+                        <div class="portfolio-project-card">
+                            <div class="portfolio-thumb-wrap">
+                                <span class="proj-status-badge status-specialization"><i class="mdi mdi-certificate"></i>Specialization</span>
+                                <img src="images/portfolio/certificates_accomplishment_thumb.svg" class="portfolio-thumb-img" alt="Certificates Accomplishment &amp; Specializations">
+                                <div class="portfolio-overlay">
+                                    <a href="https://github.com/iamharshverma/CertificatesAccomplishment" target="_blank" class="btn btn-sm btn-light rounded-pill px-3 mr-2 font-weight-bold shadow-sm">
+                                        <i class="mdi mdi-github-face mr-1 font-14"></i> GitHub
+                                    </a>
+                                    <a href="images/portfolio/certificates_accomplishment_thumb.svg" class="btn btn-sm btn-outline-light rounded-pill px-3 font-weight-bold mfp-image" title="Inspect Certificates Accomplishment &amp; Specializations Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-sm mr-1"></i> Preview
+                                    </a>
                                 </div>
-                                <div class="icons text-center">
-                                    <a href="images/portfolio/certificates_accomplishment_thumb.svg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image" title="Inspect Verified Specializations Portfolio"><i data-feather="maximize-2" class="fea icon-sm"></i></a>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="proj-domain-badge"><i class="mdi mdi-circle-medium mr-1 text-primary font-14"></i>Professional Credentials</span>
+                                    <span class="proj-metric-badge">30+ Verified</span>
+                                </div>
+                                <h5 class="proj-card-title">
+                                    <a href="https://github.com/iamharshverma/CertificatesAccomplishment" target="_blank" class="proj-title-link">Certificates Accomplishment &amp; Specializations</a>
+                                </h5>
+                                <p class="proj-card-desc mb-3">Curated repository of 30+ completed specializations spanning DeepLearning.AI, Google Cloud MLOps, Stanford GSB Executive Education, and Big Data Architecture.</p>
+                                <div class="proj-tags-list">
+                                <span class="proj-tag-pill">Stanford GSB</span>
+                                <span class="proj-tag-pill">Google Cloud</span>
+                                <span class="proj-tag-pill">DeepLearning.AI</span>
+                                <span class="proj-tag-pill">MLOps</span>
+                                </div>
+                                <div class="proj-card-actions">
+                                    <a href="https://github.com/iamharshverma/CertificatesAccomplishment" target="_blank" class="btn-proj-github">
+                                        <i class="mdi mdi-github-face mr-1 font-16"></i> View Project <i class="mdi mdi-open-in-new ml-1 font-12"></i>
+                                    </a>
+                                    <a href="images/portfolio/certificates_accomplishment_thumb.svg" class="btn-proj-preview mfp-image" title="Inspect Certificates Accomplishment &amp; Specializations Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-xs mr-1"></i> Preview
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div><!--end col-->
-                
-                    <!-- Project 8: Deep Learning CNN MultiClass Image Classifier -->
+
+                    <!-- Project: Deep Learning CNN Image Classifier -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 vision ai" data-description="Multi-layer convolutional neural network featuring automated feature map extraction, batch normalization, spatial dropout, and dense softmax classification." data-tags="CNN,Computer Vision,Feature Maps,TensorFlow">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded shadow-sm">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/cnn_vision_thumb.svg" class="img-fluid" alt="Deep Learning CNN MultiClass Image Classifier">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="https://github.com/iamharshverma/Deep_Learning-CNN_MultiClass_ImageClassifier" target="_blank" class="text-white title">Deep Learning CNN Image Classifier</a></h5>
-                                    <h6 class="text-light tag mb-0">Computer Vision</h6>
+                        <div class="portfolio-project-card">
+                            <div class="portfolio-thumb-wrap">
+                                <span class="proj-status-badge status-research"><i class="mdi mdi-eye"></i>Research</span>
+                                <img src="images/portfolio/cnn_vision_thumb.svg" class="portfolio-thumb-img" alt="Deep Learning CNN Image Classifier">
+                                <div class="portfolio-overlay">
+                                    <a href="https://github.com/iamharshverma/Deep_Learning-CNN_MultiClass_ImageClassifier" target="_blank" class="btn btn-sm btn-light rounded-pill px-3 mr-2 font-weight-bold shadow-sm">
+                                        <i class="mdi mdi-github-face mr-1 font-14"></i> GitHub
+                                    </a>
+                                    <a href="images/portfolio/cnn_vision_thumb.svg" class="btn btn-sm btn-outline-light rounded-pill px-3 font-weight-bold mfp-image" title="Inspect Deep Learning CNN Image Classifier Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-sm mr-1"></i> Preview
+                                    </a>
                                 </div>
-                                <div class="icons text-center">
-                                    <a href="images/portfolio/cnn_vision_thumb.svg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image" title="Inspect Convolutional Feature Map Pipeline"><i data-feather="maximize-2" class="fea icon-sm"></i></a>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="proj-domain-badge"><i class="mdi mdi-circle-medium mr-1 text-primary font-14"></i>Computer Vision • CNN</span>
+                                    <span class="proj-metric-badge">Feature Maps</span>
+                                </div>
+                                <h5 class="proj-card-title">
+                                    <a href="https://github.com/iamharshverma/Deep_Learning-CNN_MultiClass_ImageClassifier" target="_blank" class="proj-title-link">Deep Learning CNN Image Classifier</a>
+                                </h5>
+                                <p class="proj-card-desc mb-3">Multi-layer convolutional neural network featuring automated feature map extraction, batch normalization, spatial dropout, and dense softmax classification.</p>
+                                <div class="proj-tags-list">
+                                <span class="proj-tag-pill">CNN</span>
+                                <span class="proj-tag-pill">Computer Vision</span>
+                                <span class="proj-tag-pill">Feature Maps</span>
+                                <span class="proj-tag-pill">TensorFlow</span>
+                                </div>
+                                <div class="proj-card-actions">
+                                    <a href="https://github.com/iamharshverma/Deep_Learning-CNN_MultiClass_ImageClassifier" target="_blank" class="btn-proj-github">
+                                        <i class="mdi mdi-github-face mr-1 font-16"></i> View Project <i class="mdi mdi-open-in-new ml-1 font-12"></i>
+                                    </a>
+                                    <a href="images/portfolio/cnn_vision_thumb.svg" class="btn-proj-preview mfp-image" title="Inspect Deep Learning CNN Image Classifier Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-xs mr-1"></i> Preview
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div><!--end col-->
 
-                    <!-- Project 9: API Micro-Service for WordDoc Frequency Count -->
+                    <!-- Project: API Micro-Service WordDoc Counter -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 software" data-description="High-concurrency RESTful microservice gateway with Redis inverted-index caching, thread-pool worker distribution, and MapReduce-style frequency aggregation." data-tags="Microservices,Redis Cache,Reverse Proxy,Worker Pool">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded shadow-sm">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/microservice_gateway_thumb.svg" class="img-fluid" alt="API Micro-Service for WordDoc Frequency Count">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="https://github.com/iamharshverma/APIMicroServiceForWordDocFrequencyCount" target="_blank" class="text-white title">API Micro-Service WordDoc Counter</a></h5>
-                                    <h6 class="text-light tag mb-0">Microservices</h6>
+                        <div class="portfolio-project-card">
+                            <div class="portfolio-thumb-wrap">
+                                <span class="proj-status-badge status-open-source"><i class="mdi mdi-server-network"></i>Open Source</span>
+                                <img src="images/portfolio/microservice_gateway_thumb.svg" class="portfolio-thumb-img" alt="API Micro-Service WordDoc Counter">
+                                <div class="portfolio-overlay">
+                                    <a href="https://github.com/iamharshverma/APIMicroServiceForWordDocFrequencyCount" target="_blank" class="btn btn-sm btn-light rounded-pill px-3 mr-2 font-weight-bold shadow-sm">
+                                        <i class="mdi mdi-github-face mr-1 font-14"></i> GitHub
+                                    </a>
+                                    <a href="images/portfolio/microservice_gateway_thumb.svg" class="btn btn-sm btn-outline-light rounded-pill px-3 font-weight-bold mfp-image" title="Inspect API Micro-Service WordDoc Counter Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-sm mr-1"></i> Preview
+                                    </a>
                                 </div>
-                                <div class="icons text-center">
-                                    <a href="images/portfolio/microservice_gateway_thumb.svg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image" title="Inspect Microservice Distributed Architecture"><i data-feather="maximize-2" class="fea icon-sm"></i></a>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="proj-domain-badge"><i class="mdi mdi-circle-medium mr-1 text-primary font-14"></i>Distributed Systems • Microservices</span>
+                                    <span class="proj-metric-badge">Sub-ms Latency</span>
+                                </div>
+                                <h5 class="proj-card-title">
+                                    <a href="https://github.com/iamharshverma/APIMicroServiceForWordDocFrequencyCount" target="_blank" class="proj-title-link">API Micro-Service WordDoc Counter</a>
+                                </h5>
+                                <p class="proj-card-desc mb-3">High-concurrency RESTful microservice gateway with Redis inverted-index caching, thread-pool worker distribution, and MapReduce-style frequency aggregation.</p>
+                                <div class="proj-tags-list">
+                                <span class="proj-tag-pill">Microservices</span>
+                                <span class="proj-tag-pill">Redis Cache</span>
+                                <span class="proj-tag-pill">Reverse Proxy</span>
+                                <span class="proj-tag-pill">Worker Pool</span>
+                                </div>
+                                <div class="proj-card-actions">
+                                    <a href="https://github.com/iamharshverma/APIMicroServiceForWordDocFrequencyCount" target="_blank" class="btn-proj-github">
+                                        <i class="mdi mdi-github-face mr-1 font-16"></i> View Project <i class="mdi mdi-open-in-new ml-1 font-12"></i>
+                                    </a>
+                                    <a href="images/portfolio/microservice_gateway_thumb.svg" class="btn-proj-preview mfp-image" title="Inspect API Micro-Service WordDoc Counter Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-xs mr-1"></i> Preview
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div><!--end col-->
-                    
-                    <!-- Project 10: BigData Hadoop Social Network -->
+
+                    <!-- Project: BigData Hadoop Distributed Social Graph -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 bigdata" data-description="Multi-node Apache Hadoop cluster architecture running custom MapReduce jobs for social graph traversal, mutual friend recommendation, and degree distribution." data-tags="Hadoop HDFS,MapReduce,Cluster Topology,Social Graph">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded shadow-sm">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/hadoop_cluster_thumb.svg" class="img-fluid" alt="BigData Hadoop Social Network">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="https://github.com/iamharshverma/BigData-Hadoop_SocialNetwork" target="_blank" class="text-white title">BigData Hadoop Distributed Social Graph</a></h5>
-                                    <h6 class="text-light tag mb-0">Big Data</h6>
+                        <div class="portfolio-project-card">
+                            <div class="portfolio-thumb-wrap">
+                                <span class="proj-status-badge status-open-source"><i class="mdi mdi-database"></i>Open Source</span>
+                                <img src="images/portfolio/hadoop_cluster_thumb.svg" class="portfolio-thumb-img" alt="BigData Hadoop Distributed Social Graph">
+                                <div class="portfolio-overlay">
+                                    <a href="https://github.com/iamharshverma/BigData-Hadoop_SocialNetwork" target="_blank" class="btn btn-sm btn-light rounded-pill px-3 mr-2 font-weight-bold shadow-sm">
+                                        <i class="mdi mdi-github-face mr-1 font-14"></i> GitHub
+                                    </a>
+                                    <a href="images/portfolio/hadoop_cluster_thumb.svg" class="btn btn-sm btn-outline-light rounded-pill px-3 font-weight-bold mfp-image" title="Inspect BigData Hadoop Distributed Social Graph Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-sm mr-1"></i> Preview
+                                    </a>
                                 </div>
-                                <div class="icons text-center">
-                                    <a href="images/portfolio/hadoop_cluster_thumb.svg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image" title="Inspect Hadoop HDFS Cluster Architecture"><i data-feather="maximize-2" class="fea icon-sm"></i></a>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="proj-domain-badge"><i class="mdi mdi-circle-medium mr-1 text-primary font-14"></i>Big Data • Hadoop HDFS</span>
+                                    <span class="proj-metric-badge">MapReduce DAG</span>
+                                </div>
+                                <h5 class="proj-card-title">
+                                    <a href="https://github.com/iamharshverma/BigData-Hadoop_SocialNetwork" target="_blank" class="proj-title-link">BigData Hadoop Distributed Social Graph</a>
+                                </h5>
+                                <p class="proj-card-desc mb-3">Multi-node Apache Hadoop cluster architecture running custom MapReduce jobs for social graph traversal, mutual friend recommendation, and degree distribution.</p>
+                                <div class="proj-tags-list">
+                                <span class="proj-tag-pill">Hadoop HDFS</span>
+                                <span class="proj-tag-pill">MapReduce</span>
+                                <span class="proj-tag-pill">Cluster Topology</span>
+                                <span class="proj-tag-pill">Social Graph</span>
+                                </div>
+                                <div class="proj-card-actions">
+                                    <a href="https://github.com/iamharshverma/BigData-Hadoop_SocialNetwork" target="_blank" class="btn-proj-github">
+                                        <i class="mdi mdi-github-face mr-1 font-16"></i> View Project <i class="mdi mdi-open-in-new ml-1 font-12"></i>
+                                    </a>
+                                    <a href="images/portfolio/hadoop_cluster_thumb.svg" class="btn-proj-preview mfp-image" title="Inspect BigData Hadoop Distributed Social Graph Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-xs mr-1"></i> Preview
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div><!--end col-->
 
-                    <!-- Project 11: Java Lock-Free HashTable Custom Implementation -->
+                    <!-- Project: Lock-Free Concurrent Hash Table -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 software" data-description="High-performance non-blocking concurrent hash table utilizing atomic Compare-And-Swap (CAS) primitives, striped memory buckets, and dynamic thread-safe resizing." data-tags="Lock-Free,CAS Atomics,Memory Striping,Concurrency">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded shadow-sm">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/lockfree_hashtable_thumb.svg" class="img-fluid" alt="Java HashTable Custom Implementation">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="https://github.com/iamharshverma/JavaHashTableCustomImplementation" target="_blank" class="text-white title">Lock-Free Concurrent Hash Table</a></h5>
-                                    <h6 class="text-light tag mb-0">Systems</h6>
+                        <div class="portfolio-project-card">
+                            <div class="portfolio-thumb-wrap">
+                                <span class="proj-status-badge status-open-source"><i class="mdi mdi-cpu-64-bit"></i>Open Source</span>
+                                <img src="images/portfolio/lockfree_hashtable_thumb.svg" class="portfolio-thumb-img" alt="Lock-Free Concurrent Hash Table">
+                                <div class="portfolio-overlay">
+                                    <a href="https://github.com/iamharshverma/JavaHashTableCustomImplementation" target="_blank" class="btn btn-sm btn-light rounded-pill px-3 mr-2 font-weight-bold shadow-sm">
+                                        <i class="mdi mdi-github-face mr-1 font-14"></i> GitHub
+                                    </a>
+                                    <a href="images/portfolio/lockfree_hashtable_thumb.svg" class="btn btn-sm btn-outline-light rounded-pill px-3 font-weight-bold mfp-image" title="Inspect Lock-Free Concurrent Hash Table Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-sm mr-1"></i> Preview
+                                    </a>
                                 </div>
-                                <div class="icons text-center">
-                                    <a href="images/portfolio/lockfree_hashtable_thumb.svg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image" title="Inspect Lock-Free CAS Concurrency Model"><i data-feather="maximize-2" class="fea icon-sm"></i></a>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="proj-domain-badge"><i class="mdi mdi-circle-medium mr-1 text-primary font-14"></i>Systems • High Concurrency</span>
+                                    <span class="proj-metric-badge">CAS Lock-Free</span>
+                                </div>
+                                <h5 class="proj-card-title">
+                                    <a href="https://github.com/iamharshverma/JavaHashTableCustomImplementation" target="_blank" class="proj-title-link">Lock-Free Concurrent Hash Table</a>
+                                </h5>
+                                <p class="proj-card-desc mb-3">High-performance non-blocking concurrent hash table utilizing atomic Compare-And-Swap (CAS) primitives, striped memory buckets, and dynamic thread-safe resizing.</p>
+                                <div class="proj-tags-list">
+                                <span class="proj-tag-pill">Lock-Free</span>
+                                <span class="proj-tag-pill">CAS Atomics</span>
+                                <span class="proj-tag-pill">Memory Striping</span>
+                                <span class="proj-tag-pill">Concurrency</span>
+                                </div>
+                                <div class="proj-card-actions">
+                                    <a href="https://github.com/iamharshverma/JavaHashTableCustomImplementation" target="_blank" class="btn-proj-github">
+                                        <i class="mdi mdi-github-face mr-1 font-16"></i> View Project <i class="mdi mdi-open-in-new ml-1 font-12"></i>
+                                    </a>
+                                    <a href="images/portfolio/lockfree_hashtable_thumb.svg" class="btn-proj-preview mfp-image" title="Inspect Lock-Free Concurrent Hash Table Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-xs mr-1"></i> Preview
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div><!--end col-->
 
-                    <!-- Project 12: Information Retrieval Tokenizer & Stemming -->
+                    <!-- Project: Lexical Tokenizer & Porter Stemmer -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 nlp software" data-description="Finite-state lexical tokenizer and Porter Stemming automaton designed for high-speed indexing, stopword elimination, and inverted posting list generation." data-tags="Lexer,Porter Stemmer,Inverted Index,IR">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded shadow-sm">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/ir_tokenizer_thumb.svg" class="img-fluid" alt="Tokanize and Stemming">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="https://github.com/iamharshverma/TokanizeAndStemming" target="_blank" class="text-white title">Lexical Tokenizer &amp; Porter Stemmer</a></h5>
-                                    <h6 class="text-light tag mb-0">NLP</h6>
+                        <div class="portfolio-project-card">
+                            <div class="portfolio-thumb-wrap">
+                                <span class="proj-status-badge status-open-source"><i class="mdi mdi-code-braces"></i>Open Source</span>
+                                <img src="images/portfolio/ir_tokenizer_thumb.svg" class="portfolio-thumb-img" alt="Lexical Tokenizer &amp; Porter Stemmer">
+                                <div class="portfolio-overlay">
+                                    <a href="https://github.com/iamharshverma/TokanizeAndStemming" target="_blank" class="btn btn-sm btn-light rounded-pill px-3 mr-2 font-weight-bold shadow-sm">
+                                        <i class="mdi mdi-github-face mr-1 font-14"></i> GitHub
+                                    </a>
+                                    <a href="images/portfolio/ir_tokenizer_thumb.svg" class="btn btn-sm btn-outline-light rounded-pill px-3 font-weight-bold mfp-image" title="Inspect Lexical Tokenizer &amp; Porter Stemmer Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-sm mr-1"></i> Preview
+                                    </a>
                                 </div>
-                                <div class="icons text-center">
-                                    <a href="images/portfolio/ir_tokenizer_thumb.svg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image" title="Inspect Lexer & Stemming Automaton"><i data-feather="maximize-2" class="fea icon-sm"></i></a>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="proj-domain-badge"><i class="mdi mdi-circle-medium mr-1 text-primary font-14"></i>NLP • Information Retrieval</span>
+                                    <span class="proj-metric-badge">Porter Stemmer</span>
+                                </div>
+                                <h5 class="proj-card-title">
+                                    <a href="https://github.com/iamharshverma/TokanizeAndStemming" target="_blank" class="proj-title-link">Lexical Tokenizer &amp; Porter Stemmer</a>
+                                </h5>
+                                <p class="proj-card-desc mb-3">Finite-state lexical tokenizer and Porter Stemming automaton designed for high-speed indexing, stopword elimination, and inverted posting list generation.</p>
+                                <div class="proj-tags-list">
+                                <span class="proj-tag-pill">Lexer</span>
+                                <span class="proj-tag-pill">Porter Stemmer</span>
+                                <span class="proj-tag-pill">Inverted Index</span>
+                                <span class="proj-tag-pill">IR</span>
+                                </div>
+                                <div class="proj-card-actions">
+                                    <a href="https://github.com/iamharshverma/TokanizeAndStemming" target="_blank" class="btn-proj-github">
+                                        <i class="mdi mdi-github-face mr-1 font-16"></i> View Project <i class="mdi mdi-open-in-new ml-1 font-12"></i>
+                                    </a>
+                                    <a href="images/portfolio/ir_tokenizer_thumb.svg" class="btn-proj-preview mfp-image" title="Inspect Lexical Tokenizer &amp; Porter Stemmer Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-xs mr-1"></i> Preview
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div><!--end col-->
 
-                    <!-- Project 13: Skip-List Probabilistic Index Implementation -->
+                    <!-- Project: Skip-List Probabilistic Index -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 software" data-description="Multi-level probabilistic skip-list indexing engine achieving O(log n) search, insertion, and deletion complexity with optimal cache line locality." data-tags="Skip-List,Probabilistic Index,O(log n),Cache Locality">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded shadow-sm">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/skiplist_index_thumb.svg" class="img-fluid" alt="Skip-List Implementation">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="https://github.com/iamharshverma/SkipLists" target="_blank" class="text-white title">Skip-List Probabilistic Index</a></h5>
-                                    <h6 class="text-light tag mb-0">Algorithms</h6>
+                        <div class="portfolio-project-card">
+                            <div class="portfolio-thumb-wrap">
+                                <span class="proj-status-badge status-open-source"><i class="mdi mdi-layers"></i>Open Source</span>
+                                <img src="images/portfolio/skiplist_index_thumb.svg" class="portfolio-thumb-img" alt="Skip-List Probabilistic Index">
+                                <div class="portfolio-overlay">
+                                    <a href="https://github.com/iamharshverma/SkipLists" target="_blank" class="btn btn-sm btn-light rounded-pill px-3 mr-2 font-weight-bold shadow-sm">
+                                        <i class="mdi mdi-github-face mr-1 font-14"></i> GitHub
+                                    </a>
+                                    <a href="images/portfolio/skiplist_index_thumb.svg" class="btn btn-sm btn-outline-light rounded-pill px-3 font-weight-bold mfp-image" title="Inspect Skip-List Probabilistic Index Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-sm mr-1"></i> Preview
+                                    </a>
                                 </div>
-                                <div class="icons text-center">
-                                    <a href="images/portfolio/skiplist_index_thumb.svg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image" title="Inspect Skip-List Pointer Architecture"><i data-feather="maximize-2" class="fea icon-sm"></i></a>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="proj-domain-badge"><i class="mdi mdi-circle-medium mr-1 text-primary font-14"></i>Data Structures • Algorithms</span>
+                                    <span class="proj-metric-badge">O(log N)</span>
+                                </div>
+                                <h5 class="proj-card-title">
+                                    <a href="https://github.com/iamharshverma/SkipLists" target="_blank" class="proj-title-link">Skip-List Probabilistic Index</a>
+                                </h5>
+                                <p class="proj-card-desc mb-3">Multi-level probabilistic skip-list indexing engine achieving O(log n) search, insertion, and deletion complexity with optimal cache line locality.</p>
+                                <div class="proj-tags-list">
+                                <span class="proj-tag-pill">Skip-List</span>
+                                <span class="proj-tag-pill">Probabilistic Index</span>
+                                <span class="proj-tag-pill">O(log n)</span>
+                                <span class="proj-tag-pill">Cache Locality</span>
+                                </div>
+                                <div class="proj-card-actions">
+                                    <a href="https://github.com/iamharshverma/SkipLists" target="_blank" class="btn-proj-github">
+                                        <i class="mdi mdi-github-face mr-1 font-16"></i> View Project <i class="mdi mdi-open-in-new ml-1 font-12"></i>
+                                    </a>
+                                    <a href="images/portfolio/skiplist_index_thumb.svg" class="btn-proj-preview mfp-image" title="Inspect Skip-List Probabilistic Index Architecture">
+                                        <i data-feather="maximize-2" class="fea icon-xs mr-1"></i> Preview
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div><!--end col-->
 
-
-                    <div class="col-12 mt-4 pt-2">
-                        <div class="text-center">
-                            <a href="https://github.com/iamharshverma" target="_blank" class="btn btn btn-primary rounded">See Full Code in Github <i class="mdi mdi-chevron-right"></i></a>
+                    <!-- Widget 1: GitHub Engineering Ecosystem & Live Activity (Fills open slot adjacent to single card) -->
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 project-grid-filler-widget ai bigdata vision" id="projectWidgetGithub" data-widget="github-pulse">
+                        <div class="portfolio-project-card project-widget-card border-primary-subtle">
+                            <div class="portfolio-thumb-wrap">
+                                <span class="proj-status-badge status-open-source" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: #fff; box-shadow: 0 2px 8px rgba(37,99,235,0.4);">
+                                    <i class="mdi mdi-github-face mr-1"></i>Open Source Hub
+                                </span>
+                                <img src="images/portfolio/widget_github_pulse.svg" class="portfolio-thumb-img" alt="GitHub Engineering Ecosystem &amp; Activity">
+                                <div class="portfolio-overlay">
+                                    <a href="https://github.com/iamharshverma" target="_blank" class="btn btn-sm btn-light rounded-pill px-3 mr-2 font-weight-bold shadow-sm">
+                                        <i class="mdi mdi-github-face mr-1 font-14"></i> View Org
+                                    </a>
+                                    <a href="images/portfolio/widget_github_pulse.svg" class="btn btn-sm btn-outline-light rounded-pill px-3 font-weight-bold mfp-image" title="Inspect GitHub Architecture &amp; Contribution Metrics">
+                                        <i data-feather="maximize-2" class="fea icon-sm mr-1"></i> Preview
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="proj-domain-badge"><i class="mdi mdi-circle-medium mr-1 text-primary font-14"></i>Engineering Activity • Open Source</span>
+                                    <span class="proj-metric-badge" style="background: rgba(37,99,235,0.08); border-color: rgba(37,99,235,0.25); color: #2563eb;">60+ Repos</span>
+                                </div>
+                                <h5 class="proj-card-title">
+                                    <a href="https://github.com/iamharshverma" target="_blank" class="proj-title-link">GitHub Systems &amp; AI Repositories Hub</a>
+                                </h5>
+                                <p class="proj-card-desc mb-3">Comprehensive open-source repositories spanning zero-trust agentic security, high-throughput distributed streaming, probabilistic algorithms, and reproducible research baselines.</p>
+                                <div class="proj-tags-list">
+                                    <span class="proj-tag-pill">60+ Repositories</span>
+                                    <span class="proj-tag-pill">Python &amp; Go</span>
+                                    <span class="proj-tag-pill">CI/CD Pipelines</span>
+                                    <span class="proj-tag-pill">MIT / Apache-2.0</span>
+                                </div>
+                                <div class="proj-card-actions">
+                                    <a href="https://github.com/iamharshverma" target="_blank" class="btn-proj-github">
+                                        <i class="mdi mdi-github-face mr-1 font-16"></i> Explore Repos <i class="mdi mdi-open-in-new ml-1 font-12"></i>
+                                    </a>
+                                    <a href="images/portfolio/widget_github_pulse.svg" class="btn-proj-preview mfp-image" title="Inspect GitHub Architecture &amp; Contribution Metrics">
+                                        <i data-feather="maximize-2" class="fea icon-xs mr-1"></i> Preview
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div><!--end col-->
 
-                </div><!--end row-->
+                    <!-- Widget 2: AI Systems & Technical Advisory (Fills open slot adjacent to single card) -->
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 project-grid-filler-widget bigdata vision" id="projectWidgetAdvisory" data-widget="research-advisory">
+                        <div class="portfolio-project-card project-widget-card border-success-subtle">
+                            <div class="portfolio-thumb-wrap">
+                                <span class="proj-status-badge status-open-source" style="background: linear-gradient(135deg, #059669, #047857); color: #fff; box-shadow: 0 2px 8px rgba(5,150,105,0.4);">
+                                    <i class="mdi mdi-seal mr-1"></i>Technical Advisory
+                                </span>
+                                <img src="images/portfolio/widget_research_advisory.svg" class="portfolio-thumb-img" alt="Research Collaboration &amp; Technical Advisory">
+                                <div class="portfolio-overlay">
+                                    <a href="mailto:harshverma59@gmail.com" class="btn btn-sm btn-light rounded-pill px-3 mr-2 font-weight-bold shadow-sm">
+                                        <i class="mdi mdi-email-outline mr-1 font-14"></i> Inquire
+                                    </a>
+                                    <a href="images/portfolio/widget_research_advisory.svg" class="btn btn-sm btn-outline-light rounded-pill px-3 font-weight-bold mfp-image" title="Inspect Research &amp; Advisory Credentials">
+                                        <i data-feather="maximize-2" class="fea icon-sm mr-1"></i> Preview
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="proj-domain-badge" style="color: #059669;"><i class="mdi mdi-circle-medium mr-1 text-success font-14"></i>Advisory • Peer-Reviewed Research</span>
+                                    <span class="proj-metric-badge">IEEE Senior</span>
+                                </div>
+                                <h5 class="proj-card-title">
+                                    <a href="mailto:harshverma59@gmail.com" class="proj-title-link">Research Collaboration &amp; AI Security Advisory</a>
+                                </h5>
+                                <p class="proj-card-desc mb-3">Collaborative research opportunities in autonomous agent safety, non-human identity frameworks, SecOps runtime defenses, and executive technical mentorship.</p>
+                                <div class="proj-tags-list">
+                                    <span class="proj-tag-pill">Forbes Tech Council</span>
+                                    <span class="proj-tag-pill">IEEE Senior Member</span>
+                                    <span class="proj-tag-pill">Stanford GSB</span>
+                                    <span class="proj-tag-pill">SecOps Audits</span>
+                                </div>
+                                <div class="proj-card-actions">
+                                    <a href="mailto:harshverma59@gmail.com" class="btn-proj-github" style="background: rgba(5,150,105,0.1); color: #059669; border-color: rgba(5,150,105,0.25);">
+                                        <i class="mdi mdi-lightbulb-on-outline mr-1 font-16"></i> Propose Research <i class="mdi mdi-arrow-right ml-1 font-12"></i>
+                                    </a>
+                                    <a href="images/portfolio/widget_research_advisory.svg" class="btn-proj-preview mfp-image" title="Inspect Research &amp; Advisory Credentials">
+                                        <i data-feather="maximize-2" class="fea icon-xs mr-1"></i> Preview
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                </div><!--end row projects-wrapper -->
+
+                <!-- All Repositories Centered Action Row -->
+                <div class="row mt-4 pt-2">
+                    <div class="col-12 text-center">
+                        <a href="https://github.com/iamharshverma" target="_blank" class="btn btn-primary rounded-pill px-4 py-2 font-weight-bold shadow-sm d-inline-flex align-items-center">
+                            <i class="mdi mdi-github-face mr-2 font-18"></i> Explore All 60+ Repositories on GitHub <i class="mdi mdi-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
             </div><!--end container-->
         </section><!--end section-->
         <!-- Blog End -->
@@ -2026,6 +3127,418 @@
                     searchQuery = val;
                     applyCertFilters();
                 }, 150);
+            });
+
+        // =========================================================
+        // Portfolio Interactive Analytics & Chart.js Engine
+        // =========================================================
+        var domainCompChartInstance = null;
+        var projectFocusChartInstance = null;
+        var certDistChartInstance = null;
+
+        var isTogglingAnalytics = false;
+
+        window.togglePortfolioAnalytics = function(e) {
+            if (e) {
+                if (typeof e.preventDefault === 'function') e.preventDefault();
+                if (typeof e.stopPropagation === 'function') e.stopPropagation();
+            }
+            if (isTogglingAnalytics) return;
+
+            var $container = $('#portfolioAnalyticsCollapseContainer');
+            var $btn = $('#btnTogglePortfolioAnalytics');
+            var $icon = $('#togglePortfolioAnalyticsIcon');
+            var $text = $('#togglePortfolioAnalyticsText');
+            if (!$container.length) return;
+
+            isTogglingAnalytics = true;
+
+            var isHidden = $container.is(':hidden') || $container.css('display') === 'none';
+
+            if (isHidden) {
+                // Expanding the graphs container
+                $container.css({ overflow: 'hidden' }).stop(true, true).slideDown(280, function() {
+                    $container.css({ display: 'block', overflow: 'visible' });
+                    isTogglingAnalytics = false;
+                    // Re-initialize and size charts with correct container dimensions
+                    if (typeof initPortfolioCharts === 'function') {
+                        initPortfolioCharts();
+                    }
+                    if (typeof window.safelyRefreshIsotope === 'function') {
+                        window.safelyRefreshIsotope();
+                    }
+                });
+                if ($icon.length) {
+                    $icon.attr('class', 'mdi mdi-chevron-up btn-toggle-icon');
+                }
+                if ($text.length) {
+                    $text.text('Collapse');
+                } else if ($btn.length) {
+                    $btn.html('<i class="mdi mdi-chevron-up btn-toggle-icon" id="togglePortfolioAnalyticsIcon"></i> <span id="togglePortfolioAnalyticsText">Collapse</span>');
+                }
+                $btn.attr('aria-expanded', 'true');
+            } else {
+                // Collapsing the graphs container
+                $container.css({ overflow: 'hidden' }).stop(true, true).slideUp(280, function() {
+                    $container.css({ display: 'none' });
+                    isTogglingAnalytics = false;
+                    if (typeof window.safelyRefreshIsotope === 'function') {
+                        window.safelyRefreshIsotope();
+                    }
+                });
+                if ($icon.length) {
+                    $icon.attr('class', 'mdi mdi-chevron-down btn-toggle-icon');
+                }
+                if ($text.length) {
+                    $text.text('Expand Graphs');
+                } else if ($btn.length) {
+                    $btn.html('<i class="mdi mdi-chevron-down btn-toggle-icon" id="togglePortfolioAnalyticsIcon"></i> <span id="togglePortfolioAnalyticsText">Expand Graphs</span>');
+                }
+                $btn.attr('aria-expanded', 'false');
+            }
+        };
+
+        window.filterProjectsByDomain = function(filterSelector) {
+            var $filter = $('#filter');
+            var $targetLink = $filter.find('a[data-filter="' + filterSelector + '"]');
+            if ($targetLink.length) {
+                $targetLink.trigger('click');
+            } else {
+                // Trigger isotope directly if initialized
+                var $container = $('.projects-wrapper');
+                if ($container.length && typeof $.fn.isotope !== 'undefined' && $container.data('isotope')) {
+                    $container.isotope({ filter: filterSelector });
+                }
+            }
+
+            // Balance filler widgets for the chosen filter
+            if (typeof window.balanceProjectWidgets === 'function') {
+                window.balanceProjectWidgets(filterSelector);
+            }
+
+            // Smooth scroll to projects section
+            var projSec = document.getElementById('projects-section');
+            if (projSec) {
+                var offset = 100;
+                var bodyRect = document.body.getBoundingClientRect().top;
+                var elementRect = projSec.getBoundingClientRect().top;
+                var elementPosition = elementRect - bodyRect;
+                var offsetPosition = elementPosition - offset;
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        };
+
+        function initPortfolioCharts() {
+            if (typeof Chart === 'undefined') return;
+
+            var isDark = document.documentElement.classList.contains('dark-mode') || (document.body && document.body.classList.contains('dark-mode'));
+            var textColor = isDark ? '#94a3b8' : '#64748b';
+            var headingColor = isDark ? '#f8fafc' : '#0f172a';
+            var gridColor = isDark ? 'rgba(255, 255, 255, 0.07)' : 'rgba(0, 0, 0, 0.05)';
+
+            // 1. Grouped Bar Chart: Projects vs Certifications
+            var ctxDomain = document.getElementById('domainComparisonChart');
+            if (ctxDomain) {
+                if (domainCompChartInstance) domainCompChartInstance.destroy();
+                domainCompChartInstance = new Chart(ctxDomain, {
+                    type: 'bar',
+                    data: {
+                        labels: ['AI & ML', 'Systems', 'Big Data', 'NLP/Speech', 'Vision'],
+                        datasets: [
+                            {
+                                label: 'Projects (13)',
+                                data: [5, 5, 4, 3, 1],
+                                backgroundColor: isDark ? 'rgba(96, 165, 250, 0.85)' : 'rgba(37, 99, 235, 0.85)',
+                                borderColor: isDark ? '#60a5fa' : '#2563eb',
+                                borderWidth: 1.5,
+                                borderRadius: 6,
+                                maxBarThickness: 26
+                            },
+                            {
+                                label: 'Certifications (24)',
+                                data: [7, 6, 5, 3, 2],
+                                backgroundColor: isDark ? 'rgba(52, 211, 153, 0.85)' : 'rgba(5, 150, 105, 0.85)',
+                                borderColor: isDark ? '#34d399' : '#059669',
+                                borderWidth: 1.5,
+                                borderRadius: 6,
+                                maxBarThickness: 26
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        interaction: {
+                            mode: 'index',
+                            intersect: false
+                        },
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                                labels: {
+                                    boxWidth: 12,
+                                    boxHeight: 12,
+                                    borderRadius: 3,
+                                    useBorderRadius: true,
+                                    color: textColor,
+                                    font: { size: 11, weight: '600', family: 'system-ui, sans-serif' }
+                                }
+                            },
+                            tooltip: {
+                                backgroundColor: isDark ? '#1e293b' : '#0f172a',
+                                titleColor: '#f8fafc',
+                                bodyColor: '#cbd5e1',
+                                borderColor: isDark ? '#334155' : '#cbd5e1',
+                                borderWidth: 1,
+                                padding: 10,
+                                cornerRadius: 8
+                            }
+                        },
+                        scales: {
+                            x: {
+                                grid: { display: false },
+                                ticks: { color: textColor, font: { size: 11, weight: '600' } }
+                            },
+                            y: {
+                                beginAtZero: true,
+                                max: 8,
+                                grid: { color: gridColor },
+                                ticks: {
+                                    stepSize: 2,
+                                    color: textColor,
+                                    font: { size: 11 }
+                                }
+                            }
+                        },
+                        onClick: function(evt, activeEls) {
+                            if (activeEls && activeEls.length > 0) {
+                                var idx = activeEls[0].index;
+                                var filterClasses = ['.ai', '.software', '.bigdata', '.nlp', '.vision'];
+                                if (filterClasses[idx]) {
+                                    filterProjectsByDomain(filterClasses[idx]);
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 2. Project Focus Doughnut Chart
+            var ctxFocus = document.getElementById('projectFocusChart');
+            if (ctxFocus) {
+                if (projectFocusChartInstance) projectFocusChartInstance.destroy();
+                projectFocusChartInstance = new Chart(ctxFocus, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Open Source (7)', 'Research (5)', 'Track (1)'],
+                        datasets: [{
+                            data: [7, 5, 1],
+                            backgroundColor: [
+                                '#10b981', // Emerald for Open Source
+                                '#6366f1', // Indigo for Research
+                                '#f59e0b'  // Amber for Track
+                            ],
+                            borderColor: isDark ? '#0f172a' : '#ffffff',
+                            borderWidth: 2,
+                            hoverOffset: 6
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        cutout: '66%',
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    boxWidth: 10,
+                                    boxHeight: 10,
+                                    borderRadius: 3,
+                                    useBorderRadius: true,
+                                    color: textColor,
+                                    font: { size: 10.5, weight: '600' }
+                                }
+                            },
+                            tooltip: {
+                                backgroundColor: isDark ? '#1e293b' : '#0f172a',
+                                titleColor: '#f8fafc',
+                                bodyColor: '#cbd5e1',
+                                padding: 10,
+                                cornerRadius: 8
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 3. Certified Specializations Horizontal Bar Chart
+            var ctxCert = document.getElementById('certDistributionChart');
+            if (ctxCert) {
+                if (certDistChartInstance) certDistChartInstance.destroy();
+                certDistChartInstance = new Chart(ctxCert, {
+                    type: 'bar',
+                    data: {
+                        labels: ['AI & Deep Learning', 'Google Cloud GCP', 'Software & DevOps', 'Data & Big Data'],
+                        datasets: [{
+                            label: 'Credentials',
+                            data: [7, 6, 6, 5],
+                            backgroundColor: [
+                                isDark ? 'rgba(167, 139, 250, 0.85)' : 'rgba(124, 58, 237, 0.85)',
+                                isDark ? 'rgba(56, 189, 248, 0.85)' : 'rgba(2, 132, 199, 0.85)',
+                                isDark ? 'rgba(52, 211, 153, 0.85)' : 'rgba(5, 150, 105, 0.85)',
+                                isDark ? 'rgba(251, 146, 60, 0.85)' : 'rgba(234, 88, 12, 0.85)'
+                            ],
+                            borderColor: isDark ? ['#a78bfa', '#38bdf8', '#34d399', '#fb923c'] : ['#7c3aed', '#0284c7', '#059669', '#ea580c'],
+                            borderWidth: 1.5,
+                            borderRadius: 6,
+                            maxBarThickness: 20
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: {
+                                backgroundColor: isDark ? '#1e293b' : '#0f172a',
+                                titleColor: '#f8fafc',
+                                bodyColor: '#cbd5e1',
+                                padding: 10,
+                                cornerRadius: 8
+                            }
+                        },
+                        scales: {
+                            x: {
+                                beginAtZero: true,
+                                max: 8,
+                                grid: { color: gridColor },
+                                ticks: { stepSize: 2, color: textColor, font: { size: 10 } }
+                            },
+                            y: {
+                                grid: { display: false },
+                                ticks: { color: textColor, font: { size: 10.5, weight: '600' } }
+                            }
+                        },
+                        onClick: function(evt, activeEls) {
+                            if (activeEls && activeEls.length > 0) {
+                                var certSec = document.getElementById('certifications');
+                                if (certSec) {
+                                    certSec.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        }
+
+            // Ensure Feather icons are replaced
+            if (typeof feather !== 'undefined') {
+                feather.replace();
+            }
+
+            // Initialize Portfolio Analytics Charts
+            initPortfolioCharts();
+
+            // Safe Isotope layout helper that only executes if isotope has already been initialized
+            function safelyRefreshIsotope() {
+                var $projGrid = $('.projects-wrapper');
+                if ($projGrid.length && typeof $.fn.isotope !== 'undefined' && $projGrid.data('isotope')) {
+                    $projGrid.isotope('layout');
+                }
+            }
+            window.safelyRefreshIsotope = safelyRefreshIsotope;
+
+            // Dynamic Project Grid Widget Balancer:
+            // Ensures no single card is left with adjacent white space across all categories and screen sizes.
+            function balanceProjectWidgets(activeFilter) {
+                activeFilter = activeFilter || $('#filter a.active').attr('data-filter') || '*';
+                var $container = $('.projects-wrapper');
+                if (!$container.length) return;
+
+                var width = $(window).width();
+                var cols = (width >= 992) ? 3 : ((width >= 768) ? 2 : 1);
+
+                var $w1 = $('#projectWidgetGithub');
+                var $w2 = $('#projectWidgetAdvisory');
+
+                if (cols === 1) {
+                    // On mobile single column, no horizontal white space exists
+                    $w1.show();
+                    $w2.show();
+                    safelyRefreshIsotope();
+                    return;
+                }
+
+                // Count matching non-widget project cards
+                var $cards = $container.children('.col-lg-4').not('.project-grid-filler-widget');
+                var matchCount = 0;
+                $cards.each(function() {
+                    if (activeFilter === '*' || $(this).is(activeFilter)) {
+                        matchCount++;
+                    }
+                });
+
+                var rem = matchCount % cols;
+                var needed = (rem === 0) ? 0 : (cols - rem);
+
+                if (needed === 0) {
+                    $w1.hide();
+                    $w2.hide();
+                } else if (needed === 1) {
+                    $w1.show();
+                    $w2.hide();
+                } else if (needed >= 2) {
+                    $w1.show();
+                    $w2.show();
+                }
+
+                safelyRefreshIsotope();
+            }
+            window.balanceProjectWidgets = balanceProjectWidgets;
+
+            // Hook filter clicks to dynamically rebalance widgets
+            $('#filter a').on('click', function() {
+                var flt = $(this).attr('data-filter');
+                setTimeout(function() {
+                    balanceProjectWidgets(flt);
+                }, 80);
+            });
+
+            // Window resize handler with debounce for responsive column shifts
+            var resizeTimer = null;
+            $(window).on('resize', function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function() {
+                    balanceProjectWidgets();
+                }, 150);
+            });
+
+            // On window load (when isotope is initialized by app.js)
+            $(window).on('load', function() {
+                balanceProjectWidgets('*');
+                safelyRefreshIsotope();
+                if (typeof feather !== 'undefined') {
+                    feather.replace();
+                }
+            });
+
+            // Observe dark mode toggle to update chart colors
+            var themeObserver = new MutationObserver(function(mutations) {
+                mutations.forEach(function(m) {
+                    if (m.attributeName === 'class') {
+                        setTimeout(initPortfolioCharts, 100);
+                    }
+                });
+            });
+            if (document.body) themeObserver.observe(document.body, { attributes: true });
+            themeObserver.observe(document.documentElement, { attributes: true });
+            window.addEventListener('themeChanged', function() {
+                setTimeout(initPortfolioCharts, 100);
             });
         });
     </script>

@@ -1086,6 +1086,11 @@ app.get('/api/smart-slides', (req, res) => {
   try {
     const deck1 = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'agentic-security-governance.json'), 'utf8'));
     const deck2 = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'powering-cybersecurity-genai.json'), 'utf8'));
+    const deck3Path = path.join(__dirname, 'data', 'enterprises-multi-agent-systems.json');
+    const deck4Path = path.join(__dirname, 'data', 'agentic-security-defender-threat.json');
+    const deck3 = fs.existsSync(deck3Path) ? JSON.parse(fs.readFileSync(deck3Path, 'utf8')) : [];
+    const deck4 = fs.existsSync(deck4Path) ? JSON.parse(fs.readFileSync(deck4Path, 'utf8')) : [];
+
     res.json({
       success: true,
       decks: {
@@ -1104,6 +1109,24 @@ app.get('/api/smart-slides', (req, res) => {
           count: deck2.length,
           easyChairUrl: 'https://easychair.org/smart-slide/slide/T45r',
           slides: deck2
+        },
+        'r92g': {
+          id: 'r92g',
+          title: 'When Enterprises Become Multi-Agent Systems',
+          subtitle: 'Rethinking Security, Trust, and Control in the Agentic Era',
+          folder: 'enterprises-multi-agent-systems',
+          count: deck3.length,
+          easyChairUrl: 'https://easychair.org/smart-slide/slide/r92g#{sn:1}',
+          slides: deck3
+        },
+        'GxwP': {
+          id: 'GxwP',
+          title: 'Agentic Security: When AI Becomes Both Defender and Threat',
+          subtitle: 'Cybersecurity Paradigms for Autonomous Systems',
+          folder: 'agentic-security-defender-threat',
+          count: deck4.length,
+          easyChairUrl: 'https://easychair.org/smart-slide/slide/GxwP#{sn:1}',
+          slides: deck4
         }
       }
     });
