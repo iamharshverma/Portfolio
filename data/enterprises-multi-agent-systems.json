@@ -1,0 +1,185 @@
+[
+  {
+    "slide": 1,
+    "title": "When Enterprises Become Multi-Agent Systems",
+    "takeaways": [
+      "Focuses on architecting, scaling, and securing autonomous AI agent networks across dynamic enterprise infrastructure.",
+      "Serves as a strategic roadmap and zero-trust security blueprint for enterprise-level multi-agent AI adoption."
+    ],
+    "category": "Overview",
+    "tags": [
+      "Multi-Agent Systems",
+      "Zero-Trust Security",
+      "Autonomous AI"
+    ]
+  },
+  {
+    "slide": 2,
+    "title": "From Monolithic AI to Active Agent Networks",
+    "takeaways": [
+      "Enterprise AI is shifting from passive, siloed tools to an active mesh of autonomous agents executing end-to-end workflows.",
+      "This paradigm shift enables autonomous task decomposition, peer-to-peer delegation across enterprise boundaries, and self-organizing systemic intelligence."
+    ],
+    "category": "Overview",
+    "tags": [
+      "Paradigm Shift",
+      "Agent Networks",
+      "Autonomous Agents"
+    ]
+  },
+  {
+    "slide": 3,
+    "title": "Multi-Agent Orchestration Patterns",
+    "takeaways": [
+      "Identifies four distinct system topologies for multi-agent coordination: Orchestrator-Worker, Hierarchical Teams, Dynamic Router, and Peer Swarms.",
+      "Spans structures from centralized delegation and tiered management to context-driven routing and decentralized peer collaboration."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Orchestration",
+      "System Topology",
+      "Multi-Agent Patterns"
+    ]
+  },
+  {
+    "slide": 4,
+    "title": "High-Impact Industry Adoption",
+    "takeaways": [
+      "Multi-agent systems are actively deployed vertically across critical domain-specific enterprise functions.",
+      "Cybersecurity SOCs leverage agents for autonomous incident triage, threat hunting, and rapid remediation.",
+      "Financial operations and healthcare utilize multi-agent workflows for risk scoring, fraud detection, and multi-specialty patient synthesis."
+    ],
+    "category": "Applications",
+    "tags": [
+      "Industry Adoption",
+      "Vertical Deployment",
+      "Use Cases"
+    ]
+  },
+  {
+    "slide": 5,
+    "title": "Unprecedented Scale & Speed",
+    "takeaways": [
+      "By 2026, 40% of enterprise applications are expected to integrate task-specific AI agents.",
+      "Parallel execution across multi-agent workflows drives a 10x boost in throughput.",
+      "Accelerated multi-step reasoning and retrieval lead to a 95% reduction in latency."
+    ],
+    "category": "Overview",
+    "tags": [
+      "Enterprise Impact",
+      "Throughput",
+      "Latency"
+    ]
+  },
+  {
+    "slide": 6,
+    "title": "Emergent Multi-Agent Risk Surfaces",
+    "takeaways": [
+      "Agent-to-agent interactions introduce vulnerabilities such as cascading prompt injections and unverified permission inheritance during execution.",
+      "Delegation across boundaries risks identity spoofing and boundary loss, allowing multi-agent decisions to bypass standard governance controls."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Risk Surfaces",
+      "Prompt Injection",
+      "Identity Spoofing"
+    ]
+  },
+  {
+    "slide": 7,
+    "title": "Slide 7: When Enterprises Become Multi-Agent Systems : Rethinking Security, Trust, and Control in the Agentic Era",
+    "takeaways": [
+      "Key architectural insights and analysis for this presentation slide."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Agentic AI",
+      "Enterprise",
+      "Security"
+    ]
+  },
+  {
+    "slide": 8,
+    "title": "Slide 8: When Enterprises Become Multi-Agent Systems : Rethinking Security, Trust, and Control in the Agentic Era",
+    "takeaways": [
+      "Key architectural insights and analysis for this presentation slide."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Agentic AI",
+      "Enterprise",
+      "Security"
+    ]
+  },
+  {
+    "slide": 9,
+    "title": "Slide 9: When Enterprises Become Multi-Agent Systems : Rethinking Security, Trust, and Control in the Agentic Era",
+    "takeaways": [
+      "Key architectural insights and analysis for this presentation slide."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Agentic AI",
+      "Enterprise",
+      "Security"
+    ]
+  },
+  {
+    "slide": 10,
+    "title": "Human-in-the-Loop Safeguards",
+    "takeaways": [
+      "Automate referral of low-confidence agent scenarios through boundary escalation.",
+      "Require mandatory human signatures and dual-control approvals for high-impact actions.",
+      "Optimize agent playbooks continuously through ongoing analyst feedback loop tuning."
+    ],
+    "category": "Governance",
+    "tags": [
+      "Human-in-the-Loop",
+      "Governance",
+      "Dual-Control"
+    ]
+  },
+  {
+    "slide": 11,
+    "title": "Enterprise Maturity Roadmap",
+    "takeaways": [
+      "Outlines a four-phase execution plan moving from initial agent discovery to scaling autonomous operations.",
+      "Prioritizes establishing identity boundaries, policy enforcement, and central gateway orchestration with audit tracing.",
+      "Enables safe scaling by incorporating human-in-the-loop oversight at advanced operational levels."
+    ],
+    "category": "Governance",
+    "tags": [
+      "Roadmap",
+      "IAM",
+      "Governance"
+    ]
+  },
+  {
+    "slide": 12,
+    "title": "Trust as the Foundational Layer of Autonomous Enterprise Infrastructure",
+    "takeaways": [
+      "Moving beyond single-model AI requires building secure ecosystems where inter-agent trust is engineered, verified, and continuously governed.",
+      "Core requirements for autonomous enterprise infrastructure include managed infrastructure, graph security, and continuous observability."
+    ],
+    "category": "Conclusion",
+    "tags": [
+      "Enterprise Trust",
+      "Agentic Ecosystems",
+      "Autonomous Infrastructure"
+    ]
+  },
+  {
+    "slide": 13,
+    "title": "Image Sources",
+    "takeaways": [
+      "Provides direct URLs and citations for visual assets used throughout the presentation.",
+      "Attributes stock imagery to platforms including Depositphotos, iStockphoto, and Vision Platform."
+    ],
+    "category": "Conclusion",
+    "tags": [
+      "Image Sources",
+      "Attribution",
+      "References"
+    ]
+  }
+]

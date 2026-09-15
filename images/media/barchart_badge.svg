@@ -1,0 +1,26 @@
+<svg width="600" height="340" viewBox="0 0 600 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradBC" x1="0" y1="0" x2="600" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f2942" />
+      <stop offset="50%" stop-color="#1e4e79" />
+      <stop offset="100%" stop-color="#0a1c2e" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" rx="16" fill="url(#bgGradBC)" />
+  <rect x="1.5" y="1.5" width="597" height="337" rx="14.5" stroke="rgba(56,189,248,0.35)" stroke-width="3"/>
+  <circle cx="510" cy="90" r="130" fill="#38bdf8" opacity="0.12" />
+  
+  <rect x="210" y="38" width="180" height="28" rx="14" fill="rgba(56,189,248,0.25)" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="300" y="56" fill="#bae6fd" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">BARCHART FINANCIAL</text>
+  
+  <text text-anchor="middle" x="300" y="125" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="34" font-weight="900">BARCHART.COM</text>
+  <text text-anchor="middle" x="300" y="162" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="18.5" font-weight="700">From a Model Problem to a Control Problem</text>
+  
+  <rect x="40" y="188" width="520" height="1.5" fill="rgba(255,255,255,0.15)" />
+  
+  <text text-anchor="middle" x="300" y="230" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="15.5" font-weight="600">Financial Markets Analysis of Enterprise AI Infrastructure</text>
+  <text text-anchor="middle" x="300" y="260" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="13.5">Principal Software Engineer Harsh Verma • MarketersMedia</text>
+  
+  <rect x="220" y="280" width="160" height="28" rx="6" fill="rgba(56,189,248,0.2)" stroke="#38bdf8" stroke-width="1"/>
+  <text x="300" y="299" fill="#bae6fd" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">READ ARTICLE</text>
+</svg>

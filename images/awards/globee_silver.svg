@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g-globee" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#4C1D95"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#g-globee)"/>
+  <rect x="8" y="8" width="384" height="224" rx="12" fill="none" stroke="#A78BFA" stroke-width="1.5" opacity="0.8"/>
+  <!-- Globe / AI Icon -->
+  <g transform="translate(200, 52) scale(0.85)" stroke="#A78BFA" stroke-width="2" fill="none">
+    <circle cx="0" cy="0" r="22"/>
+    <ellipse cx="0" cy="0" rx="10" ry="22"/>
+    <line x1="-22" y1="0" x2="22" y2="0"/>
+    <circle cx="0" cy="0" r="4" fill="#F59E0B"/>
+  </g>
+  <text x="200" y="120" fill="#DDD6FE" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="2">2ND ANNUAL 2026 GLOBEE AWARDS FOR AI</text>
+  <text x="200" y="148" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" text-anchor="middle">INTELLIGENT SOFTWARE SYSTEMS</text>
+  <text x="200" y="174" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="1">SILVER GLOBEE® WINNER</text>
+  <text x="200" y="202" fill="#C4B5FD" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">AI Expertise &amp; Innovation Excellence</text>
+</svg>

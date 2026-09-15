@@ -1,0 +1,261 @@
+[
+  {
+    "slide": 1,
+    "title": "The Era of Agentic Security",
+    "takeaways": [
+      "Exploration of how generative AI and autonomous agents are changing security operations.",
+      "The presentation focuses on governance in an age of autonomy."
+    ],
+    "category": "Overview",
+    "tags": ["GenAI", "Security Operations", "Governance"]
+  },
+  {
+    "slide": 2,
+    "title": "It's not who can build now, it is who you trust - From Creator to Curator Economy",
+    "takeaways": [
+      "The focus is shifting from simple creation to the importance of trust.",
+      "A transition is occurring toward a curator economy."
+    ],
+    "category": "Overview",
+    "tags": ["Trust", "Economy", "Curator"]
+  },
+  {
+    "slide": 3,
+    "title": "Agenda",
+    "takeaways": [
+      "Covers the introduction of GenAI, intelligent agents, autonomous security, and practical applications.",
+      "Addresses challenges, ethics, future trends, and required skills."
+    ],
+    "category": "Overview",
+    "tags": ["Agenda", "GenAI", "Cybersecurity"]
+  },
+  {
+    "slide": 4,
+    "title": "Today's Cybersecurity Battlefield",
+    "takeaways": [
+      "Cyberattacks occur every 39 seconds worldwide.",
+      "Average cost of a data breach is $4.35M.",
+      "Ransomware payments have increased 3,900% since 2018."
+    ],
+    "category": "Threat Landscape",
+    "tags": ["Breach", "Ransomware", "Cost"]
+  },
+  {
+    "slide": 5,
+    "title": "Al Agents Hierarchy of Needs",
+    "takeaways": [
+      "Highlights the hierarchy from base infrastructure and data storage up to agentic systems.",
+      "Identifies a 3.4 million security professional shortage.",
+      "Highlights 5.4 billion malware attacks in 2023."
+    ],
+    "category": "Hierarchy of Needs",
+    "tags": ["AI Agents", "Infrastructure", "Talent Gap"]
+  },
+  {
+    "slide": 6,
+    "title": "The Evolution of Cyber Threats",
+    "takeaways": [
+      "Traditional security relied on rule-based, manual analysis.",
+      "AI-enhanced security uses ML for patterns but requires human guidance.",
+      "Agentic AI security moves toward autonomous, proactive defense."
+    ],
+    "category": "Architecture",
+    "tags": ["Automation", "Proactive", "Evolution"]
+  },
+  {
+    "slide": 7,
+    "title": "Unique Security Challenges for Startups",
+    "takeaways": [
+      "Startups face resource constraints and pressure for velocity that clashes with security.",
+      "Complex cloud-native architectures increase the attack surface.",
+      "Inconsistent processes lead to significant audit readiness gaps."
+    ],
+    "category": "Overview",
+    "tags": ["Startups", "Risk", "Security"]
+  },
+  {
+    "slide": 8,
+    "title": "Why Security is a Startup's Competitive Advantage",
+    "takeaways": [
+      "60% of small companies fail within 6 months of a cyber attack.",
+      "Early security investments build trust and accelerate enterprise sales.",
+      "Security acts as a market differentiator for investor confidence."
+    ],
+    "category": "Overview",
+    "tags": ["Strategy", "Competitive Advantage", "Startup"]
+  },
+  {
+    "slide": 9,
+    "title": "Automate and Codify Security Controls",
+    "takeaways": [
+      "Embed policies directly into the codebase and leverage Infrastructure as Code (IaC).",
+      "Deploy automated compliance and continuous monitoring (IAM, GuardDuty).",
+      "Avoid 'security theater' and prioritize meaningful, risk-reducing controls."
+    ],
+    "category": "Governance",
+    "tags": ["Automation", "Compliance", "Infrastructure"]
+  },
+  {
+    "slide": 10,
+    "title": "Build a Security Culture & Shared Responsibility",
+    "takeaways": [
+      "Security must be a shared priority across leadership, operations, engineering, and product.",
+      "Founders should champion security as a core value.",
+      "Aligned incentives connect security goals with customer needs."
+    ],
+    "category": "Governance",
+    "tags": ["Culture", "Shared Responsibility", "Leadership"]
+  },
+  {
+    "slide": 11,
+    "title": "Real-World Example: Robin Al & Pavlov Startups",
+    "takeaways": [
+      "Startups can implement SOC 2 and GDPR early without sacrificing speed.",
+      "Security compliance can function as a sales accelerator and investor signal.",
+      "Security builds trust when approached strategically from the start."
+    ],
+    "category": "Overview",
+    "tags": ["Case Study", "Compliance", "Growth"]
+  },
+  {
+    "slide": 12,
+    "title": "Secure Foundations Build Scalable Startups",
+    "takeaways": [
+      "Security is a strategic enabler and growth catalyst.",
+      "Start early by automating and building a security-first culture.",
+      "Leverage proven frameworks and expert guidance to scale securely."
+    ],
+    "category": "Overview",
+    "tags": ["Growth", "Strategy", "Scalability"]
+  },
+  {
+    "slide": 13,
+    "title": "Achieving Full Agentic Systems",
+    "takeaways": [
+      "Goals include self-healing systems and transparent reasoning for auditability.",
+      "Design for 'graceful failure' to prevent catastrophic outcomes.",
+      "Objective is independent, proactive defense without constant human intervention."
+    ],
+    "category": "Architecture",
+    "tags": ["Agentic", "Autonomous", "Resilience"]
+  },
+  {
+    "slide": 14,
+    "title": "Practical Applications in Cybersecurity",
+    "takeaways": [
+      "Applications include zero-day identification and pattern recognition for threat detection.",
+      "Enables automated triage, containment, and real-time forensics.",
+      "Supports secure development via code scanning and automated remediation."
+    ],
+    "category": "Architecture",
+    "tags": ["Threat Detection", "Incident Response", "AppSec"]
+  },
+  {
+    "slide": 15,
+    "title": "Case Study: Autonomous Incident Response",
+    "takeaways": [
+      "Financial services case showed 94% reduction in MTTR and 65% in analyst time saved.",
+      "Automated detection of ransomware in seconds enabled immediate system isolation.",
+      "Resulted in $3.2M annual savings from efficiency and breach impact reduction."
+    ],
+    "category": "Overview",
+    "tags": ["Case Study", "Ransomware", "Efficiency"]
+  },
+  {
+    "slide": 16,
+    "title": "Organizational Risks",
+    "takeaways": [
+      "Key risks include over-reliance on AI, skill gaps, and legacy infrastructure integration.",
+      "Balancing autonomous systems with human oversight remains critical.",
+      "Questions the necessity and role of 'human-in-the-loop' systems."
+    ],
+    "category": "Governance",
+    "tags": ["Risk", "Human-in-the-loop", "Integration"]
+  },
+  {
+    "slide": 17,
+    "title": "Enable Agentic Scale Without Sacrificing Systemic Integrity.",
+    "takeaways": [
+      "Apply the principle of Least Privilege to limit agent permissions.",
+      "Implement memory hygiene to protect against data exfiltration and poisoning.",
+      "Continuously red-team agentic systems to anticipate adversarial inputs."
+    ],
+    "category": "Governance",
+    "tags": ["Security by Design", "Least Privilege", "Red Teaming"]
+  },
+  {
+    "slide": 18,
+    "title": "Infrastructure & Governance",
+    "takeaways": [
+      "Deployment requires agent isolation in sandboxes to limit blast radius.",
+      "Implement secure identity management (A2A authentication) for all agents.",
+      "Ensure observability through continuous monitoring of decision logs."
+    ],
+    "category": "Governance",
+    "tags": ["Infrastructure", "Identity", "Observability"]
+  },
+  {
+    "slide": 19,
+    "title": "Building a Culture of Secure Autonomy",
+    "takeaways": [
+      "Shift from reactive patching to proactive, AI-specific threat modeling.",
+      "Integrate security into the full SDLC including model layers and orchestration.",
+      "Establish governance for agent discovery and behavioral monitoring."
+    ],
+    "category": "Governance",
+    "tags": ["Culture", "SDLC", "Governance"]
+  },
+  {
+    "slide": 20,
+    "title": "Startup To-Do List: The Foundations",
+    "takeaways": [
+      "Map every tool, database, and API the agent can access.",
+      "Create unique, scoped credentials; never reuse admin tokens.",
+      "Require human approval for high-impact actions like financial transactions."
+    ],
+    "category": "Governance",
+    "tags": ["Checklist", "Security", "Operations"]
+  },
+  {
+    "slide": 21,
+    "title": "Secure Your Future",
+    "takeaways": [
+      "Integrate adversarial testing into the standard SDLC.",
+      "Adopt Zero Trust principles for agent-to-agent communications.",
+      "Shift from autonomous, silent risk to verifiable, transparent execution."
+    ],
+    "category": "Conclusion",
+    "tags": ["Zero Trust", "Adversarial", "Strategy"]
+  },
+  {
+    "slide": 22,
+    "title": "Emerging Trends",
+    "takeaways": [
+      "Evolution toward multi-agent collaboration (2025-2026) and generative adversarial systems (2026-2027).",
+      "Focus areas: Prompt engineering, agent orchestration, AI ethics, and model evaluation.",
+      "Long-term trend toward cognitive security frameworks with multi-modal analysis."
+    ],
+    "category": "Overview",
+    "tags": ["Trends", "AI Ethics", "Orchestration"]
+  },
+  {
+    "slide": 23,
+    "title": "Reference :",
+    "takeaways": [
+      "Provides links to Hackernoon, Forbes, and LinkedIn for further reading.",
+      "Direct links to the presenter's work and professional profiles."
+    ],
+    "category": "Overview",
+    "tags": ["Reference", "Links"]
+  },
+  {
+    "slide": 24,
+    "title": "Q & A",
+    "takeaways": [
+      "Open floor for questions.",
+      "Signals the conclusion of the workshop."
+    ],
+    "category": "Conclusion",
+    "tags": ["Q&A"]
+  }
+]

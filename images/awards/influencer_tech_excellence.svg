@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g-influencer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#881337"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="rose-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDA4AF"/>
+      <stop offset="100%" stop-color="#FB7185"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#g-influencer)"/>
+  <rect x="8" y="8" width="384" height="224" rx="12" fill="none" stroke="url(#rose-gold)" stroke-width="2"/>
+  <!-- Award Diamond -->
+  <g transform="translate(200, 52) scale(0.85)" fill="url(#rose-gold)">
+    <polygon points="0,-22 22,0 0,22 -22,0"/>
+    <polygon points="0,-12 12,0 0,12 -12,0" fill="#881337"/>
+  </g>
+  <text x="200" y="120" fill="#FDA4AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="2">INFLUENCER MAGAZINE AWARDS UK 2026</text>
+  <text x="200" y="150" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" text-anchor="middle">TECH EXCELLENCE AWARD</text>
+  <text x="200" y="176" fill="#FECDD3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle">DOUBLE TRIUMPH IN AI &amp; CYBERSECURITY</text>
+  <text x="200" y="204" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">Featured on AI Journ, EIN News, Knox News</text>
+</svg>

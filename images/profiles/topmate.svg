@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="topmateGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E11D48" />
+      <stop offset="100%" stop-color="#FF5A5F" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="18" fill="url(#topmateGrad)" />
+  <rect x="2" y="2" width="96" height="96" rx="16" stroke="rgba(255,255,255,0.25)" stroke-width="2" fill="none" />
+  <!-- Topmate Stylized 'top' / 'mate' emblem -->
+  <path d="M35 34h30M50 34v20M40 44l10 10 10-10" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <text x="50" y="70" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="900" text-anchor="middle" letter-spacing="0.5">TOPMATE</text>
+  <rect x="20" y="76" width="60" height="13" rx="6.5" fill="#FFFFFF" />
+  <text x="50" y="85.5" fill="#E11D48" font-family="system-ui, -apple-system, sans-serif" font-size="7.5" font-weight="900" text-anchor="middle" letter-spacing="0.4">1:1 MENTORSHIP</text>
+</svg>
