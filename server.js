@@ -1066,6 +1066,11 @@ app.post('/api/social/reset', (req, res) => {
   });
 });
 
+// Explicit route for Media Distribution Analytics Page
+app.get(['/media-distribution-analytics', '/page-media-distribution-analytics', '/page-media-distribution-analytics.html', '/media-analytics', '/page-media-analytics'], (req, res) => {
+  res.sendFile(path.join(__dirname, 'page-media-distribution-analytics.html'));
+});
+
 // Explicit route for Social Page
 app.get(['/social', '/page-social', '/page-social.html'], (req, res) => {
   res.sendFile(path.join(__dirname, 'page-social.html'));

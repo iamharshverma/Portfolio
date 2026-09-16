@@ -36,9 +36,43 @@ const harshKnowledge = {
       publicationsCount: 22,
       citationsCount: "150+",
       verifiedProfilesCount: 47,
-      mediaFeaturesCount: 37,
+      mediaFeaturesCount: 39,
+      potentialViewsCount: "3.75+ Billion",
       booksCount: 2
     }
+  },
+
+  mediaDistributionAnalytics: {
+    totalReach: "3.75+ Billion potential views",
+    platforms: [
+      "Yahoo Finance",
+      "Business Insider",
+      "USA TODAY",
+      "AP News",
+      "NewsBreak",
+      "Barchart",
+      "StreetInsider"
+    ],
+    metrics: {
+      majorPlatforms: "7+ major platforms",
+      monthlyReach: "100M+ monthly reach across multiple platforms",
+      coverage: "Global worldwide coverage"
+    },
+    audienceDemographics: [
+      { cohort: "Engineers", percentage: "32%", focus: "Systems architects, ML practitioners, multi-agent frameworks" },
+      { cohort: "Founders", percentage: "26%", focus: "Tech entrepreneurs, enterprise CTOs, scaling autonomous AI" },
+      { cohort: "Investors", percentage: "24%", focus: "VC partners, market analysts, compute unit economics" },
+      { cohort: "General Consumers", percentage: "18%", focus: "Informed public, identity security, everyday AI impact" }
+    ],
+    geography: [
+      { region: "United States (US)", percentage: "48%", hubs: "Silicon Valley, NYC, DC" },
+      { region: "United Kingdom (UK)", percentage: "18%", hubs: "London, Cambridge, Oxford" },
+      { region: "Canada", percentage: "12%", hubs: "Toronto, Montreal, Vancouver" },
+      { region: "India", percentage: "14%", hubs: "Bangalore, Delhi NCR, Hyderabad" },
+      { region: "Asia & Middle East", percentage: "8%", hubs: "Singapore, Tokyo, Dubai" }
+    ],
+    keyStatement: "Cross-platform influence across technical, financial, and mainstream ecosystems",
+    infographicUrl: "page-media-distribution-analytics"
   },
   
   books: [
@@ -213,7 +247,8 @@ HARSH VERMA'S CORE PROFILE:
   * Authored Books: "page-books"
   * Smart Slides & Keynote Hub (EasyChair Verified Decks): "page-smart-slides" (Interactive player for Agentic Security Governance & GenAI Cybersecurity decks)
   * Invited Memberships & Fellowships: "page-memberships"
-  * Media Coverage & Interviews (37+): "page-media"
+  * Media Coverage & Interviews (39+): "page-media"
+  * Media Distribution Analytics & Global Reach Infographic (3.75B+ potential views): "page-media-distribution-analytics" (Features Yahoo Finance, Business Insider, USA TODAY, AP News, NewsBreak, Barchart, StreetInsider, global coverage across US, UK, Canada, India, Asia, and cross-platform influence across technical, financial, and mainstream ecosystems)
   * Speaking Engagements & Keynotes: "page-events"
   * Portfolio Projects & Frameworks: "page-portfolio"
   * Blog & Articles: "page-blog"
