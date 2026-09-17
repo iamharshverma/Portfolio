@@ -967,13 +967,13 @@
                         <div class="row">
                             <div class="col-6 mb-3">
                                 <div class="smart-stat-box">
-                                    <div class="smart-stat-num">4</div>
+                                    <div class="smart-stat-num">7</div>
                                     <div class="smart-stat-label">Keynote Decks</div>
                                 </div>
                             </div>
                             <div class="col-6 mb-3">
                                 <div class="smart-stat-box">
-                                    <div class="smart-stat-num">87</div>
+                                    <div class="smart-stat-num">123</div>
                                     <div class="smart-stat-label">Total Slides</div>
                                 </div>
                             </div>
@@ -1075,6 +1075,70 @@
                         <span><i class="mdi mdi-shield-alert text-danger mr-1"></i> Threat & Defense Playbook</span>
                     </div>
                 </div>
+
+                <!-- Deck 5 Card: 8WpM -->
+                <div class="deck-card" id="deck-card-8WpM" onclick="selectDeck('8WpM')">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="deck-card-badge">Deck 5 • EasyChair Ref: 8WpM</span>
+                            <span class="badge badge-pill badge-info" style="font-size: 11px;">11 Slides</span>
+                        </div>
+                        <h3 class="deck-title">HikeRunner: LoadTestFramework</h3>
+                        <p class="deck-desc">
+                            In-house distributed load testing framework to simulate real-world messaging user journeys, vertically &amp; horizontally stressing backend DBs, caches, queues, and CI/CD pipelines.
+                        </p>
+                    </div>
+                    <div class="deck-meta-footer">
+                        <span><i class="mdi mdi-account-check text-primary mr-1"></i> Author: Harsh Verma</span>
+                        <span><i class="mdi mdi-speedometer text-success mr-1"></i> Performance Engineering</span>
+                    </div>
+                </div>
+
+                <!-- Deck 6 Card: tHbS -->
+                <div class="deck-card" id="deck-card-tHbS" onclick="selectDeck('tHbS')">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="deck-card-badge">Deck 6 • EasyChair Ref: tHbS</span>
+                            <span class="badge badge-pill badge-info" style="font-size: 11px;">9 Slides</span>
+                        </div>
+                        <h3 class="deck-title">The Evolution of Cybersecurity: From Anomaly Detection to Intent-Based Security</h3>
+                        <p class="deck-desc">
+                            The Clean Attack Problem: When nothing looks wrong but everything is compromised. Shifting from anomaly detection to intent reasoning, behavioral sequencing, and runtime decision analysis.
+                        </p>
+                        <div class="mt-2 mb-2">
+                            <a href="https://www.rsaconference.com/library/blog/the-clean-attack-problem" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="btn btn-sm btn-outline-danger font-weight-bold px-2 py-1 d-inline-flex align-items-center" style="font-size: 11.5px; border-radius: 6px;" title="Read linked RSA Conference Blog Post">
+                                <i class="mdi mdi-shield-check mr-1 text-danger"></i> Linked RSA Article <i class="mdi mdi-open-in-new ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="deck-meta-footer">
+                        <span><i class="mdi mdi-account-check text-primary mr-1"></i> Author: Harsh Verma</span>
+                        <span><i class="mdi mdi-shield-search text-warning mr-1"></i> Intent-Based Security</span>
+                    </div>
+                </div>
+
+                <!-- Deck 7 Card: xJKk -->
+                <div class="deck-card" id="deck-card-xJKk" onclick="selectDeck('xJKk')">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="deck-card-badge">Deck 7 • EasyChair Ref: xJKk</span>
+                            <span class="badge badge-pill badge-info" style="font-size: 11px;">16 Slides</span>
+                        </div>
+                        <h3 class="deck-title">The Death of Authentication: Why Identity Isn't Enough for AI Systems</h3>
+                        <p class="deck-desc">
+                            Addressing post-authentication risk and trusted-agent misuse. Why Zero Trust must evolve beyond static identity verification toward continuous behavioral monitoring and runtime intent analysis.
+                        </p>
+                        <div class="mt-2 mb-2">
+                            <a href="https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="btn btn-sm btn-outline-danger font-weight-bold px-2 py-1 d-inline-flex align-items-center" style="font-size: 11.5px; border-radius: 6px;" title="Read linked RSA Conference Blog Post">
+                                <i class="mdi mdi-shield-check mr-1 text-danger"></i> Linked RSA Article <i class="mdi mdi-open-in-new ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="deck-meta-footer">
+                        <span><i class="mdi mdi-account-check text-primary mr-1"></i> Author: Harsh Verma</span>
+                        <span><i class="mdi mdi-account-key text-danger mr-1"></i> Zero Trust Evolution</span>
+                    </div>
+                </div>
             </div>
 
             <!-- View Mode Switcher & Filter Bar -->
@@ -1129,6 +1193,9 @@
                             </button>
                             <a href="#" target="_blank" class="theater-btn" id="btn-direct-easychair" title="Open this exact slide on EasyChair Smart Slide">
                                 <i class="mdi mdi-open-in-new"></i> EasyChair #{sn:1}
+                            </a>
+                            <a href="#" target="_blank" class="theater-btn text-danger font-weight-bold" id="btn-linked-blog" style="display:none;" title="Read linked RSA Conference publication">
+                                <i class="mdi mdi-shield-check text-danger"></i> <span id="btn-linked-blog-label">RSA Article</span>
                             </a>
                         </div>
                     </div>
@@ -1277,6 +1344,17 @@
   year = {2026},
   url = {https://easychair.org/smart-slide/slide/ntzm5}
 }</div>
+                <div id="deck-linked-article-box" class="mt-3 pt-3 border-top" style="display:none;">
+                    <div class="d-flex align-items-center justify-content-between flex-wrap">
+                        <div class="mb-2 mb-md-0">
+                            <span class="badge badge-danger mr-2 py-1 px-2"><i class="mdi mdi-shield-check mr-1"></i>Linked Publication</span>
+                            <span class="font-weight-bold text-dark" id="deck-linked-article-title">RSA Conference Official Library</span>
+                        </div>
+                        <a href="#" id="deck-linked-article-link" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-danger rounded-pill px-3 font-weight-bold">
+                            Read Full Article on RSA Conference <i class="mdi mdi-open-in-new ml-1"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -1416,6 +1494,58 @@
   url = {https://easychair.org/smart-slide/slide/GxwP}
 }`,
                 slides: [] // Populated below
+            },
+            '8WpM': {
+                id: '8WpM',
+                folder: 'hikerunner-loadtest-framework',
+                title: 'HikeRunner: LoadTestFramework',
+                shortTitle: 'HikeRunner: LoadTestFramework',
+                count: 11,
+                easyChairUrl: 'https://easychair.org/smart-slide/slide/8WpM',
+                bibtex: `@misc{verma2026hikerunner,
+  author = {Verma, Harsh},
+  title = {HikeRunner: LoadTestFramework},
+  howpublished = {EasyChair Smart Slide Series, Ref. 8WpM},
+  year = {2026},
+  url = {https://easychair.org/smart-slide/slide/8WpM}
+}`,
+                slides: [] // Populated below
+            },
+            'tHbS': {
+                id: 'tHbS',
+                folder: 'cybersecurity-evolution-clean-attack',
+                title: 'The Evolution of Cybersecurity: From Anomaly Detection to Intent-Based Security. The Clean Attack Problem: When Nothing Looks Wrong but Everything Is Compromised',
+                shortTitle: 'The Evolution of Cybersecurity: Clean Attack Problem',
+                count: 9,
+                easyChairUrl: 'https://easychair.org/smart-slide/slide/tHbS',
+                blogUrl: 'https://www.rsaconference.com/library/blog/the-clean-attack-problem',
+                blogTitle: 'RSA Conference: The Clean Attack Problem',
+                bibtex: `@misc{verma2026cybersecuritycleanattack,
+  author = {Verma, Harsh},
+  title = {The Evolution of Cybersecurity: From Anomaly Detection to Intent-Based Security. The Clean Attack Problem: When Nothing Looks Wrong but Everything Is Compromised},
+  howpublished = {EasyChair Smart Slide Series, Ref. tHbS},
+  year = {2026},
+  url = {https://easychair.org/smart-slide/slide/tHbS}
+}`,
+                slides: [] // Populated below
+            },
+            'xJKk': {
+                id: 'xJKk',
+                folder: 'death-of-authentication-ai-systems',
+                title: 'The Death of Authentication: Why Identity Isn\'T Enough for AI Systems',
+                shortTitle: 'The Death of Authentication: Identity Isn\'t Enough',
+                count: 16,
+                easyChairUrl: 'https://easychair.org/smart-slide/slide/xJKk',
+                blogUrl: 'https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems',
+                blogTitle: 'RSA Conference: The Death of Authentication',
+                bibtex: `@misc{verma2026deathofauthentication,
+  author = {Verma, Harsh},
+  title = {The Death of Authentication: Why Identity Isn\'T Enough for AI Systems},
+  howpublished = {EasyChair Smart Slide Series, Ref. xJKk},
+  year = {2026},
+  url = {https://easychair.org/smart-slide/slide/xJKk}
+}`,
+                slides: [] // Populated below
             }
         };
 
@@ -1471,6 +1601,27 @@
                     var res4 = await fetch('data/agentic-security-defender-threat.json');
                     if (res4.ok) DECKS['GxwP'].slides = await res4.json();
                 } catch(e) { console.warn('Deck 4 fallback load'); }
+            }
+
+            if (!DECKS['8WpM'].slides.length) {
+                try {
+                    var res5 = await fetch('data/hikerunner-loadtest-framework.json');
+                    if (res5.ok) DECKS['8WpM'].slides = await res5.json();
+                } catch(e) { console.warn('Deck 5 fallback load'); }
+            }
+
+            if (!DECKS['tHbS'].slides.length) {
+                try {
+                    var res6 = await fetch('data/cybersecurity-evolution-clean-attack.json');
+                    if (res6.ok) DECKS['tHbS'].slides = await res6.json();
+                } catch(e) { console.warn('Deck 6 fallback load'); }
+            }
+
+            if (!DECKS['xJKk'].slides.length) {
+                try {
+                    var res7 = await fetch('data/death-of-authentication-ai-systems.json');
+                    if (res7.ok) DECKS['xJKk'].slides = await res7.json();
+                } catch(e) { console.warn('Deck 7 fallback load'); }
             }
 
             // Check URL hash for direct links e.g. #deck=r92g&slide=1 or #r92g#{sn:1}
@@ -1535,6 +1686,15 @@
             $('#grid-deck-title').text(deck.title);
             $('#grid-total-badge').text(deck.count + ' Slides');
 
+            // Update linked publication box
+            if (deck.blogUrl) {
+                $('#deck-linked-article-box').show();
+                $('#deck-linked-article-title').text(deck.blogTitle || 'RSA Conference Official Library Article');
+                $('#deck-linked-article-link').attr('href', deck.blogUrl);
+            } else {
+                $('#deck-linked-article-box').hide();
+            }
+
             renderSlide();
             renderFilmstrip();
             renderGrid();
@@ -1565,6 +1725,13 @@
             $('#theater-slide-title').text(slideData.title);
             var ecSlideUrl = deck.easyChairUrl + '#{sn:' + currentSlideIndex + '}';
             $('#btn-direct-easychair').attr('href', ecSlideUrl).html('<i class="mdi mdi-open-in-new"></i> EasyChair #{sn:' + currentSlideIndex + '}');
+
+            // Theater linked blog button
+            if (deck.blogUrl) {
+                $('#btn-linked-blog').attr('href', deck.blogUrl).attr('title', 'Read linked publication: ' + (deck.blogTitle || 'RSA Conference Article')).show();
+            } else {
+                $('#btn-linked-blog').hide();
+            }
 
             // Progress bar
             var percent = (currentSlideIndex / count) * 100;

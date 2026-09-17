@@ -166,7 +166,7 @@
             <i class="mdi mdi-book-open-variant mr-1"></i> Authored Books
           </button>
           <button class="hv-chip-btn" data-query="What are his key research publications & academic citations?">
-            <i class="mdi mdi-school mr-1"></i> 22+ Papers
+            <i class="mdi mdi-school mr-1"></i> 23+ Papers
           </button>
           <button class="hv-chip-btn" data-query="How can I invite Harsh for a keynote, panel, or advisory role?">
             <i class="mdi mdi-microphone mr-1"></i> Keynotes &amp; Advisory
@@ -669,7 +669,7 @@
     if (messageHistory.length === 0) {
       // Welcome message
       const welcomeContent = `### 👋 Welcome to Harsh Verma's AI Copilot!
-I am your intelligent liaison grounded in Harsh Verma's **24 Global Awards**, **22+ Research Publications**, **Authored Books on AI Agents**, and executive advisory background.
+I am your intelligent liaison grounded in Harsh Verma's **24 Global Awards**, **23+ Research Publications**, **Authored Books on AI Agents**, and executive advisory background.
 
 How can I assist you today? You can ask about:
 - **Executive Biography & Technical Focus**

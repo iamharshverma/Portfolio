@@ -121,16 +121,17 @@ Harsh Verma has authored authoritative volumes bridging academic rigor and missi
   }
 
   if (q.includes('paper') || q.includes('publication') || q.includes('research') || q.includes('scholar') || q.includes('citation') || q.includes('ieee') || q.includes('springer')) {
-    return `### 🔬 22+ Peer-Reviewed Research Publications & Academic Citations
+    return `### 🔬 23+ Peer-Reviewed Research Publications & Academic Citations
 
-Harsh Verma has published **22+ peer-reviewed papers** across leading IEEE conferences, Springer Nature, and international computer science journals with over **150+ academic citations**:
+Harsh Verma has published **23+ peer-reviewed and conference papers** across leading IEEE conferences, ICACCM, Springer Nature, and international computer science journals with over **150+ academic citations**:
 
+- **Multi-Agent Systems & Trajectory Planning** for Delay-Tolerant Wireless Sensor Networks (ICACCM 2026).
 - **Explainable AI (XAI)** for Software Engineering Decision-Making & Risk Reduction.
 - **Secure Real-Time Heterogeneous Data Management** in Distributed Cloud Systems.
 - **Real-Time Analytics Performance Load Simulation & Scaling** for High-Frequency FinTech.
 - **Autonomous Zero-Trust Defense Protocols** for Cloud Microservice Ecosystems.
 
-👉 Access full abstracts, DOIs, and citation downloads: **[Explore 22+ Research Publications](page-publications)** or review the **[Google Scholar Profile](https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ)**.`;
+👉 Access full abstracts, DOIs, and citation downloads: **[Explore 23+ Research Publications](page-publications)** or review the **[Google Scholar Profile](https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ)**.`;
   }
 
   if (q.includes('member') || q.includes('fellow') || q.includes('harvard') || q.includes('ieee') || q.includes('bcs') || q.includes('association') || q.includes('forbes')) {
@@ -202,12 +203,12 @@ All verified inquiries submitted through this portfolio are delivered directly w
 
 - **Specializations**: Enterprise Generative AI, Multi-Agent Architectures, Zero-Trust Cyber Resilience, and Cloud Distributed Systems.
 - **Recognitions**: **24 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
-- **Academic Impact**: **22+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **38 Verified Academic/Professional Registries**.
+- **Academic Impact**: **23+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **38 Verified Academic/Professional Registries**.
 - **Fellowships**: Harvard Square Leaders Excellence Fellow, IEEE Senior Member, and Forbes Technology Council Member.
 
 **Explore further:**
 - 🏆 **[24 Prestigious Awards](page-awards)**
-- 🔬 **[22+ Research Publications](page-publications)**
+- 🔬 **[23+ Research Publications](page-publications)**
 - 💼 **[Professional Experience & Roles](index#experience)**
 - 📚 **[Authored Books](page-books)**
 - 👥 **[Invited Memberships](page-memberships)**
@@ -1093,8 +1094,14 @@ app.get('/api/smart-slides', (req, res) => {
     const deck2 = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'powering-cybersecurity-genai.json'), 'utf8'));
     const deck3Path = path.join(__dirname, 'data', 'enterprises-multi-agent-systems.json');
     const deck4Path = path.join(__dirname, 'data', 'agentic-security-defender-threat.json');
+    const deck5Path = path.join(__dirname, 'data', 'hikerunner-loadtest-framework.json');
+    const deck6Path = path.join(__dirname, 'data', 'cybersecurity-evolution-clean-attack.json');
+    const deck7Path = path.join(__dirname, 'data', 'death-of-authentication-ai-systems.json');
     const deck3 = fs.existsSync(deck3Path) ? JSON.parse(fs.readFileSync(deck3Path, 'utf8')) : [];
     const deck4 = fs.existsSync(deck4Path) ? JSON.parse(fs.readFileSync(deck4Path, 'utf8')) : [];
+    const deck5 = fs.existsSync(deck5Path) ? JSON.parse(fs.readFileSync(deck5Path, 'utf8')) : [];
+    const deck6 = fs.existsSync(deck6Path) ? JSON.parse(fs.readFileSync(deck6Path, 'utf8')) : [];
+    const deck7 = fs.existsSync(deck7Path) ? JSON.parse(fs.readFileSync(deck7Path, 'utf8')) : [];
 
     res.json({
       success: true,
@@ -1132,6 +1139,32 @@ app.get('/api/smart-slides', (req, res) => {
           count: deck4.length,
           easyChairUrl: 'https://easychair.org/smart-slide/slide/GxwP#{sn:1}',
           slides: deck4
+        },
+        '8WpM': {
+          id: '8WpM',
+          title: 'HikeRunner: LoadTestFramework',
+          folder: 'hikerunner-loadtest-framework',
+          count: deck5.length,
+          easyChairUrl: 'https://easychair.org/smart-slide/slide/8WpM#{sn:1}',
+          slides: deck5
+        },
+        'tHbS': {
+          id: 'tHbS',
+          title: 'The Evolution of Cybersecurity: From Anomaly Detection to Intent-Based Security. The Clean Attack Problem: When Nothing Looks Wrong but Everything Is Compromised',
+          folder: 'cybersecurity-evolution-clean-attack',
+          count: deck6.length,
+          easyChairUrl: 'https://easychair.org/smart-slide/slide/tHbS#{sn:1}',
+          blogUrl: 'https://www.rsaconference.com/library/blog/the-clean-attack-problem',
+          slides: deck6
+        },
+        'xJKk': {
+          id: 'xJKk',
+          title: 'The Death of Authentication: Why Identity Isn\'T Enough for AI Systems',
+          folder: 'death-of-authentication-ai-systems',
+          count: deck7.length,
+          easyChairUrl: 'https://easychair.org/smart-slide/slide/xJKk#{sn:1}',
+          blogUrl: 'https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems',
+          slides: deck7
         }
       }
     });

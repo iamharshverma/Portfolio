@@ -186,6 +186,16 @@ html_template = """<!DOCTYPE html>
             color: #6d28d9;
             border: 1px solid #ddd6fe;
         }
+        .badge-conference {
+            background-color: #fef3c7;
+            color: #92400e;
+            border: 1px solid #fde68a;
+        }
+        .badge-upcoming {
+            background-color: #ecfdf5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+        }
         .pub-title {
             font-size: 18px;
             font-weight: 700;
@@ -500,11 +510,25 @@ html_template = """<!DOCTYPE html>
                             <div class="nav-dropdown-header">
                                 <span>Extended Portfolios &amp; Hubs</span>
                             </div>
+                            <a class="dropdown-item nav-dropdown-item" href="page-media-distribution-analytics">
+                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-chart-box-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Distribution Analytics <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">3.75B+</span></span>
+                                    <span class="dropdown-item-desc">Publication reach &amp; influence pyramid</span>
+                                </div>
+                            </a>
                             <a class="dropdown-item nav-dropdown-item" href="page-portfolio">
                                 <div class="dropdown-item-icon bg-soft-info"><i class="mdi mdi-cube-outline"></i></div>
                                 <div class="dropdown-item-content">
                                     <span class="dropdown-item-title">Portfolio Projects</span>
                                     <span class="dropdown-item-desc">Architectures, agent frameworks &amp; systems</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-smart-slides">
+                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-presentation-play"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Smart Slides <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">New</span></span>
+                                    <span class="dropdown-item-desc">Interactive executive &amp; research slide decks</span>
                                 </div>
                             </a>
                             <a class="dropdown-item nav-dropdown-item" href="page-social">
@@ -607,8 +631,8 @@ html_template = """<!DOCTYPE html>
                                     </div>
                                     <div class="col-6 mb-3">
                                         <div class="scholar-stat-box" id="scholar-stat-papers">
-                                            <div class="scholar-stat-number">22</div>
-                                            <div class="scholar-stat-label">Published Papers</div>
+                                            <div class="scholar-stat-number">23</div>
+                                            <div class="scholar-stat-label">Published &amp; Forthcoming Papers</div>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -777,7 +801,7 @@ html_template = """<!DOCTYPE html>
                 </div>
                 <div class="col-lg-7">
                     <div class="d-flex flex-wrap align-items-center justify-content-lg-end" id="categoryFilters">
-                        <button class="filter-btn active" data-filter="all">All Papers (22)</button>
+                        <button class="filter-btn active" data-filter="all">All Papers (23)</button>
                         <button class="filter-btn" data-filter="agents">AI Agentic Systems</button>
                         <button class="filter-btn" data-filter="security">AI Security & Trust</button>
                         <button class="filter-btn" data-filter="cloud_ai">Cloud & Infrastructure</button>
@@ -791,7 +815,7 @@ html_template = """<!DOCTYPE html>
             <div class="row">
                 <div class="col-12">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <span class="text-muted font-weight-bold small text-uppercase" id="showingCount">Showing all 22 publications</span>
+                        <span class="text-muted font-weight-bold small text-uppercase" id="showingCount">Showing all 23 publications</span>
                         <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="small text-primary font-weight-bold">
                             Open Scholar Citations <i class="mdi mdi-open-in-new"></i>
                         </a>
@@ -808,13 +832,35 @@ for idx, p in enumerate(papers, 1):
     doi_str = p.get('doi', '')
     doi_url = f"https://doi.org/{doi_str}" if not doi_str.startswith("http") else doi_str
     
-    badge_class = "badge-ieee" if p.get("category") == "conference" else "badge-journal"
+    if "ICACCM" in p.get("category_label", ""):
+        badge_class = "badge-conference"
+    elif p.get("category") == "conference":
+        badge_class = "badge-ieee"
+    else:
+        badge_class = "badge-journal"
+
+    upcoming_badge = f'<span class="pub-type-badge badge-upcoming"><i class="mdi mdi-clock-check-outline mr-1"></i>{p["status"]}</span>' if p.get("status") else ""
     
     alt_link_btn = ""
     if p.get("alt_link"):
         alt_link_btn = f'''<a href="{p['alt_link']}" target="_blank" class="btn-pub-action btn-pub-outline">
             <i class="mdi mdi-earth mr-1"></i> {p.get('alt_label', 'ResearchGate')} <i class="mdi mdi-open-in-new ml-1"></i>
         </a>'''
+
+    if p.get("status"):
+        main_action_btn = f'''<a href="{p['link']}" target="_blank" rel="noopener noreferrer" class="btn-pub-action btn-pub-primary">
+            <i class="mdi mdi-open-in-new mr-1"></i> Conference Portal (ICACCM 2026)
+        </a>'''
+        doi_btn = f'''<a href="{p['link']}" target="_blank" rel="noopener noreferrer" class="btn-pub-action btn-pub-outline">
+            <i class="mdi mdi-web mr-1"></i> Official Portal
+        </a>'''
+    else:
+        main_action_btn = f'''<a href="{p['link']}" target="_blank" class="btn-pub-action btn-pub-primary">
+            <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
+        </a>'''
+        doi_btn = f'''<a href="{doi_url}" target="_blank" class="btn-pub-action btn-pub-outline">
+            <i class="mdi mdi-link-variant mr-1"></i> DOI
+        </a>''' if doi_str else ''
 
     bibtex_json = json.dumps(p['bibtex'])
 
@@ -826,12 +872,13 @@ for idx, p in enumerate(papers, 1):
                                     <span class="pub-num-badge">#{idx}</span>
                                     <span class="pub-type-badge {badge_class}">{p.get('category_label', 'Journal')}</span>
                                     <span class="pub-type-badge badge-topic">{p.get('topic_label', 'AI')}</span>
+                                    {upcoming_badge}
                                 </div>
-                                <span class="badge badge-light text-muted font-weight-bold py-1 px-2 border">{p['year']}</span>
+                                <span class="badge badge-light text-primary font-weight-bold py-1 px-2 border"><i class="mdi mdi-calendar-blank mr-1"></i>{p['year']}</span>
                             </div>
 
                             <h3 class="pub-title">
-                                <a href="{p['link']}" target="_blank">{p['title']}</a>
+                                <a href="{p['link']}" target="_blank" rel="noopener noreferrer">{p['title']}</a>
                             </h3>
 
                             <div class="pub-venue">
@@ -842,7 +889,7 @@ for idx, p in enumerate(papers, 1):
                             <div class="pub-authors">
                                 <i class="mdi mdi-account-multiple mr-1 text-muted"></i>
                                 Authors: <strong>{p['authors']}</strong>
-                                <span class="ml-2 text-muted">• Publisher: {p['publisher']}</span>
+                                <span class="ml-2 text-muted">• Publisher / Organization: {p['publisher']}</span>
                                 {f'<span class="ml-2 text-muted">• DOI: <code>{doi_str}</code></span>' if doi_str else ''}
                             </div>
 
@@ -856,15 +903,11 @@ for idx, p in enumerate(papers, 1):
                                 </div>
 
                                 <div class="d-flex flex-wrap align-items-center">
-                                    <a href="{p['link']}" target="_blank" class="btn-pub-action btn-pub-primary">
-                                        <i class="mdi mdi-open-in-new mr-1"></i> Read Paper
-                                    </a>
-                                    <a href="{doi_url}" target="_blank" class="btn-pub-action btn-pub-outline">
-                                        <i class="mdi mdi-link-variant mr-1"></i> DOI
-                                    </a>
+                                    {main_action_btn}
+                                    {doi_btn}
                                     {alt_link_btn}
                                     <button class="btn-pub-action btn-pub-outline btn-cite" onclick='openCiteModal({idx}, {json.dumps(p["title"])}, {bibtex_json})'>
-                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite
+                                        <i class="mdi mdi-format-quote-close mr-1"></i> Cite / BibTeX
                                     </button>
                                 </div>
                             </div>
@@ -1052,15 +1095,15 @@ html_template += """
                     if (activeFilter === "all") {
                         matchesCategory = true;
                     } else if (activeFilter === "agents") {
-                        matchesCategory = (topic === "agents");
+                        matchesCategory = (topic.indexOf("agents") !== -1);
                     } else if (activeFilter === "security") {
-                        matchesCategory = (topic === "security");
+                        matchesCategory = (topic.indexOf("security") !== -1);
                     } else if (activeFilter === "cloud_ai") {
-                        matchesCategory = (topic === "cloud_ai");
+                        matchesCategory = (topic.indexOf("cloud_ai") !== -1);
                     } else if (activeFilter === "software_eng") {
-                        matchesCategory = (topic === "software_eng" || topic === "ethics" || topic === "leadership");
+                        matchesCategory = (topic.indexOf("software_eng") !== -1 || topic.indexOf("ethics") !== -1 || topic.indexOf("leadership") !== -1);
                     } else if (activeFilter === "iot") {
-                        matchesCategory = (topic === "iot" || topic === "performance");
+                        matchesCategory = (topic.indexOf("iot") !== -1 || topic.indexOf("performance") !== -1);
                     }
 
                     var matchesQuery = (query === "" || cardText.indexOf(query) !== -1);
@@ -1073,7 +1116,7 @@ html_template += """
                     }
                 });
 
-                $('#showingCount').text("Showing " + visibleCount + " of 22 publications");
+                $('#showingCount').text("Showing " + visibleCount + " of " + $('.publication-card').length + " publications");
 
                 if (visibleCount === 0) {
                     $('#noResults').removeClass('d-none');

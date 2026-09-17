@@ -612,6 +612,40 @@ papers = [
   publisher={IJSRM},
   doi={10.18535/ijsrm/v14i04.ec05}
 }"""
+    },
+    {
+        "id": "pub-23",
+        "title": "Multi-Agent Differential Evolution-Based Trajectory Planning (MA-DEBTP) for Delay-Sensitive Data Collection in Intermittently Connected Delay Tolerant Wireless Sensor Networks",
+        "venue": "International Conference on Advances in Computing, Communication and Materials (ICACCM) 2026",
+        "year": "Nov 2026",
+        "status": "Upcoming / Forthcoming",
+        "volume": "Conference Proceedings",
+        "authors": "Harsh Verma",
+        "category": "conference",
+        "category_label": "ICACCM 2026",
+        "topic": "agents iot",
+        "topic_label": "Multi-Agent Systems & WSN",
+        "doi": "",
+        "link": "https://www.icaccm.in/index.php",
+        "publisher": "ICACCM 2026",
+        "abstract": "Proposes a Multi-Agent Differential Evolution-Based Trajectory Planning (MA-DEBTP) framework for mobile data collectors (MDCs) operating in intermittently connected, delay-tolerant wireless sensor networks (DT-WSNs). The architecture leverages decentralized multi-agent coordination coupled with differential evolution optimization to compute energy-efficient, latency-bounded trajectories. By dynamically adapting to intermittent connectivity, non-uniform node distribution, and strict buffer deadlines, the MA-DEBTP framework minimizes packet drop ratios while maximizing data gathering throughput across dispersed sensor fields.",
+        "tags": [
+            "Multi-Agent Systems",
+            "Differential Evolution",
+            "Trajectory Planning",
+            "Delay Tolerant Networks",
+            "Wireless Sensor Networks",
+            "ICACCM 2026"
+        ],
+        "bibtex": """@inproceedings{verma2026madebtp,
+  title={Multi-Agent Differential Evolution-Based Trajectory Planning (MA-DEBTP) for Delay-Sensitive Data Collection in Intermittently Connected Delay Tolerant Wireless Sensor Networks},
+  author={Verma, Harsh},
+  booktitle={2026 International Conference on Advances in Computing, Communication and Materials (ICACCM)},
+  year={2026},
+  month={November},
+  organization={ICACCM},
+  url={https://www.icaccm.in/index.php}
+}"""
     }
 ]
 

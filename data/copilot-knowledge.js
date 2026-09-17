@@ -33,7 +33,7 @@ const harshKnowledge = {
     ],
     summaryStats: {
       awardsCount: 24,
-      publicationsCount: 22,
+      publicationsCount: 23,
       citationsCount: "150+",
       verifiedProfilesCount: 47,
       mediaFeaturesCount: 39,
@@ -97,7 +97,7 @@ const harshKnowledge = {
       title: "Senior Member, IEEE & IEEE Computer Society",
       organization: "Institute of Electrical and Electronics Engineers",
       badge: "Senior Member (SMIEEE)",
-      details: "Top tier professional standing achieved by fewer than 10% of IEEE members worldwide (Member ID: 95132014)."
+      details: "Top tier professional standing achieved by fewer than 10% of IEEE members worldwide (Member ID: 95132014, IEEE Collabratec Profile: https://ieee-collabratec.ieee.org/app/p/HarshVerma59)."
     },
     {
       title: "IEEE Technical Societies Member",
@@ -177,7 +177,7 @@ const harshKnowledge = {
   })),
 
   verifiedProfiles: [
-    { name: "Google Scholar", url: "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ", count: "22+ Papers" },
+    { name: "Google Scholar", url: "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ", count: "23+ Papers" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/harshverma59/", handle: "harshverma59" },
     { name: "GitHub", url: "https://github.com/iamharshverma", handle: "iamharshverma" },
     { name: "ORCID", url: "page-about#verified-profiles", id: "Verified Researcher" },
@@ -243,7 +243,7 @@ HARSH VERMA'S CORE PROFILE:
 - Main Website Pages:
   * Biography & Profiles: "page-about" (or "page-about#verified-profiles" for the 38 Verified Academic & Industry Hubs)
   * 24 Prestigious Awards: "page-awards"
-  * 22+ Peer-Reviewed Publications: "page-publications"
+  * 23+ Peer-Reviewed Publications: "page-publications"
   * Authored Books: "page-books"
   * Smart Slides & Keynote Hub (EasyChair Verified Decks): "page-smart-slides" (Interactive player for Agentic Security Governance & GenAI Cybersecurity decks)
   * Invited Memberships & Fellowships: "page-memberships"
@@ -256,7 +256,7 @@ HARSH VERMA'S CORE PROFILE:
 
 KEY ACHIEVEMENTS & DATA TO DRAW FROM:
 1. 24 Prestigious Awards: Includes Forttuna Global 100 Power List (2026), Nobel Technology Awards Gold Winner (2026), Global Recognition Award AI Innovator of the Year (2026), Globee Leadership Awards, Stevie International Business Awards, Brandon Hall Group Honors, and Tech Titans.
-2. 22+ Peer-Reviewed Publications: Key topics in Autonomous Multi-Agent Frameworks, Explainable AI (XAI), Heterogeneous Distributed Data Management, Real-Time Load Simulation, Zero-Trust Threat Modeling, and Cloud Microservice Security. (Available on Google Scholar & IEEE).
+2. 23+ Peer-Reviewed & Conference Publications: Key topics in Autonomous Multi-Agent Frameworks, Trajectory Planning in Delay Tolerant Wireless Sensor Networks (ICACCM 2026), Explainable AI (XAI), Heterogeneous Distributed Data Management, Real-Time Load Simulation, Zero-Trust Threat Modeling, and Cloud Microservice Security. (Available on Google Scholar, IEEE & ICACCM).
 3. Authored Books:
    - "Enterprise AI Agents: Build Your Authority and Lead the AI Agent Revolution"
    - "Autonomous Cyber Defense: Adversarial Intelligence and Battleground Systems"
@@ -266,7 +266,7 @@ KEY ACHIEVEMENTS & DATA TO DRAW FROM:
 RESPONSE GUIDELINES:
 - Tone: Professional, courteous, articulate, authoritative, and helpful.
 - Formatting: Use clean Markdown formatting with clear bullet points, bold key terms, and concise paragraphs.
-- Interactive Links: Whenever referring to a specific section of the portfolio, embed relevant clean links (e.g., [View 24 Awards](page-awards), [Read Authored Books](page-books), [Explore 22+ Publications](page-publications), [Contact Harsh](index#contact)).
+- Interactive Links: Whenever referring to a specific section of the portfolio, embed relevant clean links (e.g., [View 24 Awards](page-awards), [Read Authored Books](page-books), [Explore 23+ Publications](page-publications), [Contact Harsh](index#contact)).
 - Accuracy: Only cite facts grounded in Harsh's real background. Do not invent unrelated roles or companies.
 - Call to Action: For collaboration, speaking, or advisory inquiries, invite the user to reach out directly via harshverma59@gmail.com or the on-page contact form.`;
 }

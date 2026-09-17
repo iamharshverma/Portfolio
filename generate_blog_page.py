@@ -341,6 +341,24 @@ articles_data = [
         "description": "Published on RSA Conference official library: How AI agents mimic legitimate human interactions, adapt to organizational context, and operate within approved API policies to evade legacy SOC detection.",
         "tags": ["RSA Conference", "RSAC Expert", "Clean Attacks", "Behavioral Security", "Enterprise SOC"]
     },
+    {
+        "id": "rsac-death-of-authentication",
+        "title": "The Death of Authentication: Why Identity Isn't Enough for AI Systems",
+        "platform": "RSA Conference",
+        "platform_full": "RSA Conference Expert Library",
+        "platform_badge": "RSA Conference",
+        "platform_icon": "mdi-shield-check",
+        "platform_color": "#c41230",
+        "category": "Cybersecurity",
+        "url": "https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems",
+        "author_profile": "https://www.rsaconference.com/experts/Harsh%20Verma",
+        "thumbnail": "images/blog/thumbnails/rsac-death-of-authentication.jpg",
+        "date": "September 2026",
+        "read_time": "8 min read",
+        "featured": True,
+        "description": "Published on RSA Conference official library: For decades cybersecurity assumed verifying identity ensures legitimate behavior. In autonomous AI workflows, attacks happen with valid credentials and approved permissions. Why Zero Trust must evolve to continuous behavioral monitoring and runtime intent analysis.",
+        "tags": ["RSA Conference", "RSAC Expert", "Zero Trust", "AI Security", "Intent Analysis"]
+    },
 
     # --- The AI Journal (aijourn.com) ---
     {
