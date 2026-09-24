@@ -35,7 +35,7 @@ const harshKnowledge = {
       awardsCount: 24,
       publicationsCount: 23,
       citationsCount: "150+",
-      verifiedProfilesCount: 47,
+      verifiedProfilesCount: 52,
       mediaFeaturesCount: 39,
       potentialViewsCount: "3.75+ Billion",
       booksCount: 2
@@ -261,7 +261,7 @@ KEY ACHIEVEMENTS & DATA TO DRAW FROM:
 3. Authored Books:
    - "Enterprise AI Agents: Build Your Authority and Lead the AI Agent Revolution"
    - "Autonomous Cyber Defense: Adversarial Intelligence and Battleground Systems"
-4. Fellowships & Memberships (25+ Invited Appointments): Fellow of IFGICT (Fellow Number: 06042Z26HV), Senior Member of IEEE (SMIEEE 95132014) & IEEE Technical Societies (CIS011, YP060, IEEE500), IEEE Xplore Verified Author (ID: 37089143797), Python Software Foundation Contributing Member (harshverma59), OWASP Global Member (3981139), ISACA Member & Verified Expert / Volunteer (2394223), Forbes Technology Council, Fellow of Royal Society of Arts (FRSA), Full Elected Member of Sigma Xi, and Fellow of BCS (FBCS). Listed on page-memberships.
+4. Fellowships & Memberships (27+ Invited Appointments): Fellow of BCS (FBCS), Fellow of IFGICT (Fellow Number: 06042Z26HV), Senior Member of IEEE (SMIEEE 95132014) & IEEE Technical Societies (CIS011, YP060, IEEE500), IEEE Xplore Verified Author (ID: 37089143797), Peer Reviewer for Oxford University Press Interacting with Computers via ScholarOne Manuscripts, Palo Alto Networks verified organization profile on The Org (theorg.com/org/palo-alto-networks/person/harsh-verma), Python Software Foundation Contributing Member (harshverma59), OWASP Global Member (3981139), ISACA Member & Verified Expert / Volunteer (2394223), Forbes Technology Council, Fellow of Royal Society of Arts (FRSA), and Full Elected Member of Sigma Xi. Listed on page-memberships and page-about.
 5. Inquiries & Booking: Inquiries for executive advisory, enterprise consulting, keynote speeches, or media interviews should be sent to harshverma59@gmail.com or submitted through the portfolio contact form (index#contact).
 
 RESPONSE GUIDELINES:
