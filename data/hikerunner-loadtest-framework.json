@@ -1,0 +1,112 @@
+[
+  {
+    "slide": 1,
+    "title": "HikeRunner: LoadTestFramework",
+    "takeaways": [
+      "Presents HikeRunner, an in-house enterprise load testing framework engineered for high-throughput mobile messaging ecosystems.",
+      "Addresses the limitations of off-the-shelf testing suites by introducing an analytics-driven approach to real-time user journey simulation."
+    ],
+    "category": "Overview",
+    "tags": ["Load Testing", "Performance Engineering", "HikeRunner"]
+  },
+  {
+    "slide": 2,
+    "title": "The Challenge: Scale in Real-Time Messaging",
+    "takeaways": [
+      "Modern messaging applications with millions of active users encounter extreme spikes and complex distributed state variations.",
+      "Traditional testing tools fail to mimic real user behavior patterns across multiple interactive communication services."
+    ],
+    "category": "Problem Statement",
+    "tags": ["Scale", "Distributed Systems", "Bottlenecks"]
+  },
+  {
+    "slide": 3,
+    "title": "Motivation & Gaps in Existing Tools",
+    "takeaways": [
+      "Commercial and open-source tools do not provide a generic, protocol-agnostic interface for full-stack stress testing.",
+      "Need for simultaneous vertical and horizontal stress testing across databases, caches, queues, and network proxies."
+    ],
+    "category": "Analysis",
+    "tags": ["Tooling", "Infrastructure", "Stress Testing"]
+  },
+  {
+    "slide": 4,
+    "title": "HikeRunner Architecture Overview",
+    "takeaways": [
+      "Modular design patterns allowing pluggable protocol engines, task executors, and dynamic metrics aggregators.",
+      "Coherent orchestration between scenario generators, agent workers, and real-time telemetry reporters."
+    ],
+    "category": "Architecture",
+    "tags": ["System Architecture", "Design Patterns", "Framework Design"]
+  },
+  {
+    "slide": 5,
+    "title": "Analytics-Driven User Journey Simulation",
+    "takeaways": [
+      "Derives load profiles directly from production analytics to accurately weight user actions and probability distributions.",
+      "Accurately captures real-world user paths rather than synthetic, unrealistic endpoint hammer tests."
+    ],
+    "category": "Methodology",
+    "tags": ["Analytics-Driven", "User Journeys", "Simulation"]
+  },
+  {
+    "slide": 6,
+    "title": "Multi-Protocol Support: MQTT, HTTP & Caches",
+    "takeaways": [
+      "Native support for asynchronous MQTT socket channels, RESTful HTTP APIs, and direct cache/database protocols.",
+      "Enables end-to-end verification across the entire communication pipeline from client connect to database commit."
+    ],
+    "category": "Protocols",
+    "tags": ["MQTT", "HTTP", "Protocols", "Sockets"]
+  },
+  {
+    "slide": 7,
+    "title": "Vertical & Horizontal Stress Topologies",
+    "takeaways": [
+      "Horizontal testing scales load across hundreds of microservices; vertical testing isolates single-node saturation points.",
+      "Pinpoints exact database lock contention, memory leaks, connection pool exhaustion, and cache eviction cliffs."
+    ],
+    "category": "Testing Strategy",
+    "tags": ["Vertical Scaling", "Horizontal Scaling", "Stress Testing"]
+  },
+  {
+    "slide": 8,
+    "title": "Static Hooking & Task Assignment",
+    "takeaways": [
+      "Static hooking mechanisms allow engineers to attach custom assertion logic and deterministic payload generators.",
+      "Ensures repeatable, deterministic regression tests before deploying code to staging environments."
+    ],
+    "category": "Implementation",
+    "tags": ["Task Hooks", "Determinism", "Regression Testing"]
+  },
+  {
+    "slide": 9,
+    "title": "CI/CD Pipeline Automation with Jenkins & Git",
+    "takeaways": [
+      "Automated execution within the continuous integration pipeline triggered via Jenkins jobs and Git hooks.",
+      "Enforces automated performance gates preventing build merges that violate strict SLA and latency thresholds."
+    ],
+    "category": "DevOps",
+    "tags": ["CI/CD", "Automation", "Jenkins", "DevOps"]
+  },
+  {
+    "slide": 10,
+    "title": "Latency, Throughput & Soak Benchmarking",
+    "takeaways": [
+      "Comprehensive telemetry tracking P90, P99, and P99.9 latencies under sustained and burst load conditions.",
+      "Long-running soak tests detect slow memory degradation and resource leaks across multi-day test runs."
+    ],
+    "category": "Benchmarking",
+    "tags": ["Latency", "Throughput", "SLA", "Soak Testing"]
+  },
+  {
+    "slide": 11,
+    "title": "Summary, Impact & Future Roadmap",
+    "takeaways": [
+      "HikeRunner established resilient release stability, cut regression test times by over 60%, and prevented major outages.",
+      "Future enhancements focus on autonomous load generation, AI-driven anomaly detection, and automated root-cause isolation."
+    ],
+    "category": "Conclusion",
+    "tags": ["Summary", "Production Impact", "Future Work"]
+  }
+]

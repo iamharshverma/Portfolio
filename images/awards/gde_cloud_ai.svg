@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g-gde" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#202124"/>
+      <stop offset="100%" stop-color="#171717"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#g-gde)"/>
+  <rect x="8" y="8" width="384" height="224" rx="12" fill="none" stroke="#4285F4" stroke-width="1.5" opacity="0.8"/>
+  <!-- Google Expert Icon -->
+  <g transform="translate(200, 52) scale(0.9)">
+    <polygon points="0,-22 20,-10 20,12 0,22 -20,12 -20,-10" fill="#4285F4"/>
+    <text x="0" y="7" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">&lt;/&gt;</text>
+  </g>
+  <text x="200" y="120" fill="#93C5FD" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="2">GOOGLE DEVELOPERS</text>
+  <text x="200" y="148" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" text-anchor="middle">GOOGLE DEVELOPER EXPERT (GDE)</text>
+  <text x="200" y="174" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">CLOUD AI · TOP 100 WORLDWIDE</text>
+  <text x="200" y="202" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">Global Recognition for Incident Response &amp; AI</text>
+</svg>

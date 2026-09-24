@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+    <defs>
+      <linearGradient id="boldProGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#18181b"/>
+        <stop offset="100%" stop-color="#09090b"/>
+      </linearGradient>
+      <linearGradient id="boldAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b"/>
+        <stop offset="100%" stop-color="#d97706"/>
+      </linearGradient>
+    </defs>
+    <rect width="100" height="100" rx="18" fill="url(#boldProGrad)"/>
+    <rect x="2" y="2" width="96" height="96" rx="16" stroke="#3f3f46" stroke-width="1.5" fill="none"/>
+    <text x="36" y="50" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="900" text-anchor="middle" letter-spacing="-0.5">bold</text>
+    <rect x="52" y="32" width="34" height="20" rx="6" fill="url(#boldAccentGrad)"/>
+    <text x="69" y="46.5" fill="#000000" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" text-anchor="middle" letter-spacing="0.5">PRO</text>
+    <rect x="14" y="68" width="72" height="15" rx="7.5" fill="rgba(255,255,255,0.08)" stroke="rgba(245,158,11,0.3)" stroke-width="0.75"/>
+    <text x="50" y="78.5" fill="#fde68a" font-family="system-ui, -apple-system, sans-serif" font-size="7" font-weight="800" text-anchor="middle" letter-spacing="0.6">EXECUTIVE CV</text>
+</svg>
