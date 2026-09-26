@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g-jrtcse" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#g-jrtcse)"/>
+  <rect x="8" y="8" width="384" height="224" rx="12" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.7"/>
+  <!-- Journal Book Icon -->
+  <g transform="translate(200, 52) scale(0.85)" fill="#F59E0B">
+    <path d="M-22,-16 L0,-8 L22,-16 L22,14 L0,22 L-22,14 Z"/>
+    <line x1="0" y1="-8" x2="0" y2="22" stroke="#1E3A8A" stroke-width="2"/>
+  </g>
+  <text x="200" y="120" fill="#FDE68A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="2">JRTCSE JOURNAL</text>
+  <text x="200" y="148" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" text-anchor="middle">CERTIFICATE OF EXCELLENCE</text>
+  <text x="200" y="174" fill="#93C5FD" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Peer Review &amp; Editorial Research Contribution</text>
+  <text x="200" y="202" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">Journal of Recent Trends in Computer Science &amp; Eng.</text>
+</svg>

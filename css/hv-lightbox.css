@@ -1,0 +1,546 @@
+/* ==========================================================================
+   Harsh Verma Portfolio - Fullscreen Lightbox Modal System
+   High-performance technical diagram & screenshot viewer with zoom & pan
+   ========================================================================== */
+
+/* Prevent body scroll when lightbox is active */
+body.hv-lightbox-open {
+    overflow: hidden !important;
+    touch-action: none;
+}
+
+/* Lightbox Modal Root Container */
+.hv-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(6, 10, 20, 0.96);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    color: #f8fafc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.28s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.28s ease;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.hv-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Native Fullscreen Container Mode */
+.hv-lightbox:fullscreen,
+.hv-lightbox:-webkit-full-screen,
+.hv-lightbox:-moz-full-screen,
+.hv-lightbox:-ms-fullscreen {
+    width: 100vw;
+    height: 100vh;
+    background: #060a14;
+}
+
+/* --------------------------------------------------------------------------
+   Top Toolbar / Header
+   -------------------------------------------------------------------------- */
+.hv-lb-header {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 24px;
+    background: linear-gradient(180deg, rgba(11, 17, 32, 0.88) 0%, rgba(11, 17, 32, 0.4) 80%, transparent 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    gap: 16px;
+}
+
+.hv-lb-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    flex: 1;
+}
+
+.hv-lb-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    background: rgba(59, 130, 246, 0.18);
+    border: 1px solid rgba(96, 165, 250, 0.35);
+    color: #93c5fd;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.hv-lb-counter {
+    display: inline-flex;
+    align-items: center;
+    font-size: 12.5px;
+    color: #94a3b8;
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 3px 8px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.hv-lb-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    letter-spacing: -0.2px;
+}
+
+/* Action Toolbar Buttons */
+.hv-lb-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.hv-lb-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 38px;
+    min-width: 38px;
+    padding: 0 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #e2e8f0;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    text-decoration: none;
+}
+
+.hv-lb-btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.28);
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+
+.hv-lb-btn:active {
+    transform: translateY(0);
+}
+
+.hv-lb-btn.icon-only {
+    padding: 0;
+    width: 38px;
+}
+
+.hv-lb-btn-close {
+    background: rgba(239, 68, 68, 0.15);
+    border-color: rgba(239, 68, 68, 0.35);
+    color: #fca5a5;
+}
+
+.hv-lb-btn-close:hover {
+    background: rgba(239, 68, 68, 0.3);
+    color: #ffffff;
+    border-color: rgba(239, 68, 68, 0.5);
+}
+
+.hv-lb-btn-repo {
+    background: rgba(99, 102, 241, 0.2);
+    border-color: rgba(129, 140, 248, 0.35);
+    color: #c7d2fe;
+}
+
+.hv-lb-btn-repo:hover {
+    background: rgba(99, 102, 241, 0.35);
+    color: #ffffff;
+    border-color: rgba(129, 140, 248, 0.6);
+}
+
+.hv-lb-zoom-level {
+    font-size: 12px;
+    font-weight: 700;
+    color: #94a3b8;
+    min-width: 44px;
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Stage / Viewport (Main Canvas Area)
+   -------------------------------------------------------------------------- */
+.hv-lb-stage {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: none;
+}
+
+.hv-lb-image-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 94vw;
+    max-height: 82vh;
+    transition: transform 0.15s ease-out;
+    transform-origin: center center;
+    cursor: default;
+}
+
+.hv-lb-image-wrap.can-drag {
+    cursor: grab;
+}
+
+.hv-lb-image-wrap.is-dragging {
+    cursor: grabbing;
+    transition: none !important;
+}
+
+.hv-lb-image {
+    display: block;
+    max-width: 100%;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.08);
+    transition: opacity 0.25s ease, filter 0.25s ease;
+}
+
+.hv-lb-image.loading {
+    opacity: 0.3;
+    filter: blur(8px);
+}
+
+/* Spinner */
+.hv-lb-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    border: 3px solid rgba(255, 255, 255, 0.12);
+    border-top-color: #38bdf8;
+    border-radius: 50%;
+    animation: hv-lb-spin 0.75s linear infinite;
+    pointer-events: none;
+    display: none;
+    z-index: 10;
+}
+
+.hv-lb-loader.active {
+    display: block;
+}
+
+@keyframes hv-lb-spin {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Navigation Arrow Controls */
+.hv-lb-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 25;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(15, 23, 42, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: #f8fafc;
+    font-size: 28px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.hv-lb-nav-btn:hover {
+    background: rgba(30, 41, 59, 0.95);
+    border-color: rgba(56, 189, 248, 0.6);
+    color: #38bdf8;
+    transform: translateY(-50%) scale(1.08);
+}
+
+.hv-lb-nav-btn:active {
+    transform: translateY(-50%) scale(0.96);
+}
+
+.hv-lb-prev {
+    left: 20px;
+}
+
+.hv-lb-next {
+    right: 20px;
+}
+
+.hv-lb-nav-btn[disabled] {
+    opacity: 0.2;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   Bottom Information Bar & Captions
+   -------------------------------------------------------------------------- */
+.hv-lb-footer {
+    position: relative;
+    z-index: 20;
+    padding: 16px 24px 18px;
+    background: linear-gradient(0deg, rgba(8, 12, 22, 0.98) 0%, rgba(8, 12, 22, 0.85) 80%, transparent 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hv-lb-caption-content {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hv-lb-caption-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+    letter-spacing: -0.2px;
+}
+
+.hv-lb-caption-desc {
+    font-size: 13.5px;
+    color: #cbd5e1;
+    line-height: 1.5;
+    margin: 0 0 10px;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hv-lb-caption-tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.hv-lb-tag {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #94a3b8;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hv-lb-footer-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* --------------------------------------------------------------------------
+   Thumbnail Strip Drawer
+   -------------------------------------------------------------------------- */
+.hv-lb-thumbs-wrap {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hv-lb-thumbs-strip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 4px 10px;
+    max-width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.hv-lb-thumbs-strip::-webkit-scrollbar {
+    height: 4px;
+}
+.hv-lb-thumbs-strip::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.hv-lb-thumb-item {
+    position: relative;
+    width: 60px;
+    height: 38px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    cursor: pointer;
+    flex-shrink: 0;
+    opacity: 0.55;
+    transition: all 0.18s ease;
+    background: #0b1120;
+}
+
+.hv-lb-thumb-item:hover {
+    opacity: 0.9;
+    border-color: rgba(255, 255, 255, 0.35);
+    transform: translateY(-2px);
+}
+
+.hv-lb-thumb-item.active {
+    opacity: 1;
+    border-color: #38bdf8;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.45);
+    transform: translateY(-2px);
+}
+
+.hv-lb-thumb-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Floating Diagram Inspector Badge on Cards (Interactive Triggers)
+   -------------------------------------------------------------------------- */
+.hv-diagram-expand-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 5;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    background: rgba(11, 17, 32, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    color: #e2e8f0;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    text-decoration: none !important;
+}
+
+.hv-diagram-expand-badge:hover {
+    background: #2563eb;
+    border-color: #60a5fa;
+    color: #ffffff !important;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.45);
+}
+
+.hv-diagram-expand-badge i {
+    font-size: 14px;
+}
+
+/* Hover prompt overlay on thumbnails */
+.proj-thumb-wrapper:hover .hv-diagram-expand-badge,
+.work-container:hover .hv-diagram-expand-badge {
+    border-color: rgba(56, 189, 248, 0.5);
+    color: #38bdf8;
+}
+
+/* Cursor indicator for clickable diagram cards */
+.hv-lightbox-clickable {
+    cursor: zoom-in;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Rules
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .hv-lb-header {
+        padding: 10px 14px;
+        gap: 8px;
+    }
+    .hv-lb-title {
+        max-width: 140px;
+        font-size: 13.5px;
+    }
+    .hv-lb-btn.hide-mobile {
+        display: none !important;
+    }
+    .hv-lb-btn {
+        height: 34px;
+        min-width: 34px;
+        padding: 0 8px;
+        font-size: 12px;
+    }
+    .hv-lb-btn.icon-only {
+        width: 34px;
+    }
+    .hv-lb-nav-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 22px;
+    }
+    .hv-lb-prev {
+        left: 8px;
+    }
+    .hv-lb-next {
+        right: 8px;
+    }
+    .hv-lb-footer {
+        padding: 12px 14px 14px;
+    }
+    .hv-lb-caption-title {
+        font-size: 15px;
+    }
+    .hv-lb-caption-desc {
+        font-size: 12px;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .hv-lb-thumbs-wrap {
+        display: none; /* Hide thumbnails on small mobile screens to preserve viewport */
+    }
+}

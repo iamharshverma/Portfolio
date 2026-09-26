@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160">
+  <defs>
+    <linearGradient id="iwcBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#001833"/>
+      <stop offset="50%" stop-color="#002147"/>
+      <stop offset="100%" stop-color="#07335c"/>
+    </linearGradient>
+    <linearGradient id="iwcGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" rx="16" fill="url(#iwcBgGrad)" stroke="rgba(245, 158, 11, 0.35)" stroke-width="1.5"/>
+  
+  <g transform="translate(36, 32)">
+    <!-- Oxford Crest Shield -->
+    <path d="M4 6 H72 V48 C72 74 38 90 38 90 C38 90 4 74 4 48 Z" fill="#001226" stroke="url(#iwcGoldGrad)" stroke-width="2.5"/>
+    <path d="M18 28 C26 24 35 25 38 28 C41 25 50 24 58 28 V54 C50 51 41 52 38 55 C35 52 26 51 18 54 Z" fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M38 28 V55" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="38" cy="16" r="3.5" fill="#fbbf24"/>
+    <text x="38" y="74" font-family="'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="900" fill="#93c5fd" text-anchor="middle" letter-spacing="1">IwC</text>
+  </g>
+  
+  <text x="132" y="52" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="20" font-weight="800" fill="#ffffff" letter-spacing="0.5">INTERACTING WITH COMPUTERS</text>
+  
+  <rect x="132" y="66" width="220" height="26" rx="13" fill="rgba(245, 158, 11, 0.16)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="242" y="83" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="11" font-weight="800" fill="#fde68a" text-anchor="middle" letter-spacing="0.8">OXFORD UNIVERSITY PRESS / BCS</text>
+  
+  <text x="132" y="116" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1" letter-spacing="0.2">ScholarOne Manuscripts Peer Reviewer · Oxford Academic</text>
+</svg>

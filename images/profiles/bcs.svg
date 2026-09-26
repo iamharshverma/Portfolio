@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bcsProfBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#041829"/>
+      <stop offset="100%" stop-color="#0a2a44"/>
+    </linearGradient>
+    <linearGradient id="bcsProfTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00a887"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="18" fill="url(#bcsProfBg)"/>
+  <rect x="2" y="2" width="96" height="96" rx="16" stroke="rgba(0, 168, 135, 0.4)" stroke-width="1.5" fill="none"/>
+  
+  <!-- Crest Emblem -->
+  <g transform="translate(25, 14)">
+    <rect x="0" y="0" width="50" height="52" rx="10" fill="#072338" stroke="url(#bcsProfTeal)" stroke-width="2"/>
+    <text x="25" y="32" font-family="'Segoe UI', -apple-system, sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">BCS</text>
+    <circle cx="25" cy="42" r="3" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Badge Pill -->
+  <rect x="14" y="73" width="72" height="17" rx="8.5" fill="#00a887" stroke="rgba(255, 255, 255, 0.3)" stroke-width="0.75"/>
+  <text x="50" y="84.5" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="800" text-anchor="middle" letter-spacing="0.6">FELLOW (FBCS)</text>
+</svg>

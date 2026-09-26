@@ -1,0 +1,171 @@
+[
+  {
+    "slide": 1,
+    "title": "Powering Cybersecurity with GenAI & Intelligent Agents",
+    "takeaways": [
+      "Introduction to the transformative role of Generative AI and autonomous agents in modern security operations.",
+      "Presented by Harsh Verma, Principal AI Engineer."
+    ],
+    "category": "Introduction",
+    "tags": ["GenAI", "Cybersecurity", "Intelligent Agents"]
+  },
+  {
+    "slide": 2,
+    "title": "Agenda",
+    "takeaways": [
+      "Outlines the 6-part roadmap for the presentation.",
+      "Covers topics from fundamental concepts to future trends and ethics."
+    ],
+    "category": "Overview",
+    "tags": ["Roadmap", "Agenda"]
+  },
+  {
+    "slide": 3,
+    "title": "The Evolution of Cyber Threats",
+    "takeaways": [
+      "Traces progression from traditional rule-based security to agentic AI security.",
+      "Emphasizes the need to shift from reactive to proactive, autonomous defense."
+    ],
+    "category": "Threat Landscape",
+    "tags": ["Evolution", "Autonomous Security"]
+  },
+  {
+    "slide": 4,
+    "title": "Today's Cybersecurity Battlefield",
+    "takeaways": [
+      "Highlights high threat frequency (every 39 seconds) and severe financial impact.",
+      "Notes long dwell times and dramatic increases in ransomware payments."
+    ],
+    "category": "Threat Landscape",
+    "tags": ["Cyber Attacks", "Cost", "Statistics"]
+  },
+  {
+    "slide": 5,
+    "title": "Al Agents Hierarchy of Needs",
+    "takeaways": [
+      "Presents a structured hierarchy for building agentic security systems.",
+      "Addresses industry-wide challenges like malware volume and the skills gap."
+    ],
+    "category": "Hierarchy of Needs",
+    "tags": ["AI Agents", "Tech Stack", "Skills Gap"]
+  },
+  {
+    "slide": 6,
+    "title": "Intelligent Agents: Beyond Traditional Automation",
+    "takeaways": [
+      "Contrasts static, rule-based automation with dynamic, goal-driven Agentic AI.",
+      "Emphasizes self-learning and proactive threat hunting capabilities."
+    ],
+    "category": "Architecture",
+    "tags": ["Automation", "Agentic AI"]
+  },
+  {
+    "slide": 7,
+    "title": "Where GenAI Meets Cybersecurity",
+    "takeaways": [
+      "Defines the core cycle of Agentic AI: Detect, Analyze, Decide, Defend.",
+      "Focuses on autonomous systems that require minimal human intervention."
+    ],
+    "category": "Architecture",
+    "tags": ["GenAI", "Lifecycle"]
+  },
+  {
+    "slide": 8,
+    "title": "Understanding Agents in Cybersecurity",
+    "takeaways": [
+      "Categorizes agents into Rule-Based, Learning, and Autonomous.",
+      "Examples include SIEM triggers, behavioral analytics, and self-healing networks."
+    ],
+    "category": "Architecture",
+    "tags": ["Classification", "Autonomous Agents"]
+  },
+  {
+    "slide": 9,
+    "title": "Autonomous Cyber Defense in Action",
+    "takeaways": [
+      "Introduces practical agent roles: Threat Intel Summarizers, SOC Sidekicks, and Deception Agents.",
+      "Focuses on real-time adaptation to attacker behavior."
+    ],
+    "category": "Applications",
+    "tags": ["Threat Hunting", "SOC", "Deception"]
+  },
+  {
+    "slide": 10,
+    "title": "Practical Applications in Cybersecurity",
+    "takeaways": [
+      "Covers applications in threat detection, incident response, and secure development.",
+      "Highlights automated triage and code vulnerability remediation."
+    ],
+    "category": "Applications",
+    "tags": ["Incident Response", "DevSecOps"]
+  },
+  {
+    "slide": 11,
+    "title": "Case Study: Autonomous Incident Response",
+    "takeaways": [
+      "Demonstrates a 94% reduction in Mean Time to Respond (MTTR) for a financial services provider.",
+      "Highlights the efficiency gain of freeing up analysts for strategic initiatives."
+    ],
+    "category": "Case Study",
+    "tags": ["Finance", "Metrics", "ROI"]
+  },
+  {
+    "slide": 12,
+    "title": "Challenges and Ethical Considerations",
+    "takeaways": [
+      "Discusses technical hurdles like explainability and adversarial attacks.",
+      "Addresses ethical concerns regarding accountability and misuse."
+    ],
+    "category": "Governance",
+    "tags": ["Ethics", "Governance", "Risk"]
+  },
+  {
+    "slide": 13,
+    "title": "Organizational Risks",
+    "takeaways": [
+      "Identifies risks like overreliance on AI and legacy infrastructure integration.",
+      "Raises the question of the human role in the loop."
+    ],
+    "category": "Governance",
+    "tags": ["Risk Management", "Human-in-the-loop"]
+  },
+  {
+    "slide": 14,
+    "title": "The Future Security Professional",
+    "takeaways": [
+      "Outlines essential skills: AI literacy, prompt engineering, and agent supervision.",
+      "Reiterates that human expertise amplified by AI is the ultimate advantage."
+    ],
+    "category": "Future Trends",
+    "tags": ["Professional Development", "Skills"]
+  },
+  {
+    "slide": 15,
+    "title": "Emerging Trends",
+    "takeaways": [
+      "Projects a roadmap from 2024 to 2027+ for multi-agent systems and cognitive frameworks.",
+      "Lists core focus areas including agent orchestration and model evaluation."
+    ],
+    "category": "Future Trends",
+    "tags": ["Roadmap", "Technology Roadmap"]
+  },
+  {
+    "slide": 16,
+    "title": "Demo of Security rules configuration using Agent",
+    "takeaways": [
+      "Showcases 'Rakshak-AI', a tool for defining secure network rules.",
+      "Demonstrates practical implementation of an intelligent network security agent."
+    ],
+    "category": "Applications",
+    "tags": ["Demo", "Rakshak-AI"]
+  },
+  {
+    "slide": 17,
+    "title": "Q & A",
+    "takeaways": [
+      "Closing slide for audience interaction and discussion."
+    ],
+    "category": "Conclusion",
+    "tags": ["Q&A"]
+  }
+]
