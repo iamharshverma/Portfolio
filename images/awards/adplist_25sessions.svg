@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g-adp2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
+    <linearGradient id="adp-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#9333EA"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#g-adp2)"/>
+  <rect x="8" y="8" width="384" height="224" rx="12" fill="none" stroke="url(#adp-purple)" stroke-width="2"/>
+  <!-- Sessions Checkmarks Icon -->
+  <g transform="translate(200, 50) scale(0.85)" fill="url(#adp-purple)">
+    <circle cx="0" cy="0" r="22" fill="none" stroke="url(#adp-purple)" stroke-width="3"/>
+    <polyline points="-10,0 -3,8 11,-6" fill="none" stroke="url(#adp-purple)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="200" y="118" fill="url(#adp-purple)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="2">ADPLIST GLOBAL MENTORSHIP</text>
+  <text x="200" y="148" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" text-anchor="middle">25+ MENTORSHIP SESSIONS</text>
+  <text x="200" y="174" fill="#DDD6FE" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle">MILESTONE CERTIFICATE OF ACHIEVEMENT</text>
+  <text x="200" y="202" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">Volunteer Mentorship to 1M+ Global Learning Community</text>
+</svg>

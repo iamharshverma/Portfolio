@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160">
+  <rect width="100%" height="100%" rx="16" fill="#0f172a"/>
+  <!-- Python Logo Symbol -->
+  <g transform="translate(42, 36)">
+    <!-- Blue snake -->
+    <path d="M40,10 C25,10 18,16 18,25 L18,34 L42,34 L42,38 L14,38 C5,38 0,44 0,55 C0,67 7,72 18,72 L24,72 L24,63 C24,54 31,48 40,48 L56,48 C62,48 66,43 66,37 L66,23 C66,13 58,10 40,10 Z M28,20 C31,20 33,22 33,25 C33,28 31,30 28,30 C25,30 23,28 23,25 C23,22 25,20 28,20 Z" fill="#387eb8"/>
+    <!-- Yellow snake -->
+    <path d="M40,82 C55,82 62,76 62,67 L62,58 L38,58 L38,54 L66,54 C75,54 80,48 80,37 C80,25 73,20 62,20 L56,20 L56,29 C56,38 49,44 40,44 L24,44 C18,44 14,49 14,55 L14,69 C14,79 22,82 40,82 Z M52,72 C49,72 47,70 47,67 C47,64 49,62 52,62 C55,62 57,64 57,67 C57,70 55,72 52,72 Z" fill="#ffe052"/>
+  </g>
+  <text x="148" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#ffffff" letter-spacing="1">PYTHON</text>
+  <text x="148" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="1.5">SOFTWARE FOUNDATION</text>
+  <rect x="148" y="96" width="180" height="24" rx="6" fill="#1e3a5f"/>
+  <text x="238" y="112" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#60a5fa" text-anchor="middle">CONTRIBUTING MEMBER</text>
+</svg>

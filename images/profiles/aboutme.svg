@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+    <defs>
+      <linearGradient id="aboutMeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0f172a"/>
+        <stop offset="100%" stop-color="#1e293b"/>
+      </linearGradient>
+      <linearGradient id="meAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#06b6d4"/>
+        <stop offset="100%" stop-color="#0284c7"/>
+      </linearGradient>
+    </defs>
+    <rect width="100" height="100" rx="18" fill="url(#aboutMeGrad)"/>
+    <rect x="2" y="2" width="96" height="96" rx="16" stroke="#334155" stroke-width="1.5" fill="none"/>
+    <g transform="translate(10, 32)">
+      <text x="36" y="18" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="end" letter-spacing="-0.5">about</text>
+      <rect x="39" y="3" width="37" height="19" rx="6" fill="url(#meAccentGrad)"/>
+      <text x="57.5" y="16.5" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="900" text-anchor="middle">.me</text>
+    </g>
+    <rect x="14" y="68" width="72" height="15" rx="7.5" fill="rgba(6, 182, 212, 0.12)" stroke="rgba(6, 182, 212, 0.35)" stroke-width="0.75"/>
+    <text x="50" y="78.5" fill="#67e8f9" font-family="system-ui, -apple-system, sans-serif" font-size="7" font-weight="800" text-anchor="middle" letter-spacing="0.6">PERSONAL BIO</text>
+</svg>

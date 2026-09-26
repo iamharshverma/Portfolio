@@ -1,0 +1,162 @@
+[
+  {
+    "slide": 1,
+    "title": "The Death of Authentication: Why Identity Isn't Enough for AI Systems",
+    "takeaways": [
+      "Examines why traditional authentication is breaking down as autonomous AI systems enter enterprise workflows.",
+      "Argues that verifying identity is no longer sufficient when systems can be fully authorized yet still cause severe harm."
+    ],
+    "category": "Overview",
+    "tags": ["Authentication", "Identity", "AI Systems", "Zero Trust"]
+  },
+  {
+    "slide": 2,
+    "title": "The Fallacy of Static Trust",
+    "takeaways": [
+      "Decades of cybersecurity have equated successful authentication with operational trustworthiness.",
+      "In modern AI architectures, identity verification only answers 'who is acting', never 'is the outcome safe or intended?'"
+    ],
+    "category": "Foundations",
+    "tags": ["Static Trust", "Perimeter Security", "Trust Models"]
+  },
+  {
+    "slide": 3,
+    "title": "The Rise of Autonomous Enterprise AI Agents",
+    "takeaways": [
+      "AI agents are rapidly granted API keys, service credentials, database privileges, and autonomous tool-use capabilities.",
+      "Agents operate autonomously across distributed SaaS platforms, microservices, and internal corporate databases."
+    ],
+    "category": "Technology Shift",
+    "tags": ["Autonomous Agents", "Tool Use", "Enterprise AI"]
+  },
+  {
+    "slide": 4,
+    "title": "The Trusted-Agent Misuse Dilemma",
+    "takeaways": [
+      "Introduces 'Trusted-Agent Misuse'—where harmful outcomes happen entirely within permitted operational boundaries.",
+      "The attacker does not need to compromise or forge credentials; they simply manipulate the agent's goal-seeking logic."
+    ],
+    "category": "Threat Vector",
+    "tags": ["Trusted Agent Misuse", "Prompt Injection", "Logic Exploitation"]
+  },
+  {
+    "slide": 5,
+    "title": "Beyond Identity: The Post-Authentication Threat Landscape",
+    "takeaways": [
+      "Once an agent clears OAuth, SSO, or mTLS authentication, traditional access controls become completely blind to malicious actions.",
+      "Threats shift downstream from entry points to runtime execution, state mutations, and data exfiltration."
+    ],
+    "category": "Post-Auth Security",
+    "tags": ["Post-Authentication", "Threat Landscape", "Runtime Risk"]
+  },
+  {
+    "slide": 6,
+    "title": "Breakdown of Traditional Perimeter & RBAC Controls",
+    "takeaways": [
+      "Role-Based Access Control (RBAC) was designed for human users with predictable, bounded interaction patterns.",
+      "AI agents execute non-deterministic combinatorial workflows that render coarse-grained role permissions ineffective."
+    ],
+    "category": "Access Control",
+    "tags": ["RBAC Limitations", "Granular Access", "Non-Deterministic Systems"]
+  },
+  {
+    "slide": 7,
+    "title": "Lessons from High-Profile Identity Breaches",
+    "takeaways": [
+      "Case study analysis (including the Uber breach) illustrating how valid credentials become weaponized conduits.",
+      "Demonstrates that an adversary operating inside authenticated channels faces almost zero friction from legacy tools."
+    ],
+    "category": "Case Studies",
+    "tags": ["Uber Breach", "Credential Abuse", "Breach Analysis"]
+  },
+  {
+    "slide": 8,
+    "title": "Process Manipulation & Workflow Escalation",
+    "takeaways": [
+      "Adversaries trigger subtle deviations in agent planning loops that escalate blast radiuses without tripping alarms.",
+      "Manipulating input embeddings, memory banks, or tool responses produces unauthorized outputs using authorized privileges."
+    ],
+    "category": "Attack Mechanics",
+    "tags": ["Workflow Escalation", "Blast Radius", "Planning Loops"]
+  },
+  {
+    "slide": 9,
+    "title": "Anatomy of an In-Bounds Autonomous Attack",
+    "takeaways": [
+      "Step-by-step breakdown of how an agent can be steered to exfiltrate proprietary data or corrupt records without violating ACLs.",
+      "Every single HTTP request, SQL query, and API call appears syntactically valid and cryptographically signed."
+    ],
+    "category": "Attack Mechanics",
+    "tags": ["In-Bounds Attacks", "Valid Requests", "Stealth Exfiltration"]
+  },
+  {
+    "slide": 10,
+    "title": "Evolving Zero Trust: From Identity to Intent Governance",
+    "takeaways": [
+      "Zero Trust Architecture (ZTA) must evolve from 'never trust, always verify identity' to 'never trust, continuously verify intent'.",
+      "Establishes continuous cognitive evaluation throughout the entire agent execution lifecycle."
+    ],
+    "category": "Zero Trust Evolution",
+    "tags": ["Zero Trust", "Intent Governance", "ZTA Evolution"]
+  },
+  {
+    "slide": 11,
+    "title": "Continuous Behavioral Monitoring & Runtime Evaluation",
+    "takeaways": [
+      "Implements real-time telemetry pipelines monitoring agent reasoning traces, semantic drift, and action side-effects.",
+      "Detects anomalous reasoning jumps and out-of-character tool invocations before irreversible mutations occur."
+    ],
+    "category": "Runtime Monitoring",
+    "tags": ["Behavioral Monitoring", "Reasoning Traces", "Semantic Drift"]
+  },
+  {
+    "slide": 12,
+    "title": "Context-Aware & Temporal Authorization Models",
+    "takeaways": [
+      "Transitions from static tokens to micro-scoped, ephemeral authorizations valid only for specific, verifiable micro-tasks.",
+      "Incorporate organizational context, time-to-live restrictions, and strict environmental boundaries."
+    ],
+    "category": "Authorization",
+    "tags": ["Temporal Auth", "Ephemeral Tokens", "Context-Aware"]
+  },
+  {
+    "slide": 13,
+    "title": "Intent Verification vs. Permission Checking",
+    "takeaways": [
+      "Compares syntactic permission checks against semantic intent verification engines.",
+      "Intent engines answer: 'Does this agent's proposed action logically follow from the user's validated initial prompt?'"
+    ],
+    "category": "Core Architecture",
+    "tags": ["Intent Verification", "Semantic Checkpoints", "Intent Engines"]
+  },
+  {
+    "slide": 14,
+    "title": "Guardrails for Autonomous Multi-Agent Workflows",
+    "takeaways": [
+      "Dual-layered guardrails: external proxy interceptors and internal model alignment constraints.",
+      "Includes circuit breakers, consensus mechanisms, and human-in-the-loop escalation thresholds for high-stakes actions."
+    ],
+    "category": "Guardrails",
+    "tags": ["AI Guardrails", "Multi-Agent Safety", "Circuit Breakers"]
+  },
+  {
+    "slide": 15,
+    "title": "Strategic Architecture for Post-Authentication Security",
+    "takeaways": [
+      "Comprehensive reference architecture integrating identity providers, intent evaluators, and runtime enforcement.",
+      "Provides zero-trust security leaders with a concrete roadmap for securing agentic AI deployments."
+    ],
+    "category": "Architecture",
+    "tags": ["Reference Architecture", "Enterprise Blueprint", "Security Leadership"]
+  },
+  {
+    "slide": 16,
+    "title": "Conclusion: Verifying Outcomes, Not Just Credentials",
+    "takeaways": [
+      "The future of cybersecurity rests on measuring and guaranteeing outcomes rather than relying on identity gates.",
+      "Organizations that master intent-based security will unlock the full power of autonomous AI with safety and confidence."
+    ],
+    "category": "Conclusion",
+    "tags": ["Outcome Verification", "Future of Security", "Executive Summary"]
+  }
+]

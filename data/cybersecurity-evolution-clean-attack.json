@@ -1,0 +1,92 @@
+[
+  {
+    "slide": 1,
+    "title": "The Evolution of Cybersecurity: From Anomaly Detection to Intent-Based Security",
+    "takeaways": [
+      "Explores the fundamental paradigm shift from legacy anomaly-based detection to autonomous intent-based cybersecurity.",
+      "Introduces the 'Clean Attack Problem'—where malicious actions are carried out entirely within valid credentials and trusted workflows."
+    ],
+    "category": "Overview",
+    "tags": ["Intent-Based Security", "Clean Attack", "Cybersecurity Evolution"]
+  },
+  {
+    "slide": 2,
+    "title": "The Historical Foundation & Limits of Anomaly Detection",
+    "takeaways": [
+      "Traditional cybersecurity assumes malicious activity deviates from established baseline behaviors.",
+      "Signature rules, threshold alerts, and statistical outliers fail when adversaries emulate legitimate system patterns."
+    ],
+    "category": "Foundation",
+    "tags": ["Anomaly Detection", "Baseline Modeling", "Legacy Defenses"]
+  },
+  {
+    "slide": 3,
+    "title": "The Clean Attack Problem Defined",
+    "takeaways": [
+      "Clean attacks use authorized credentials, invoke approved APIs, and navigate standard user flows with zero abnormal signatures.",
+      "When nothing looks wrong, traditional defenses report 100% green health while critical assets are actively compromised."
+    ],
+    "category": "Core Concept",
+    "tags": ["Clean Attack", "Stealth Threats", "Threat Modeling"]
+  },
+  {
+    "slide": 4,
+    "title": "AI Agents as Adversarial Multipliers",
+    "takeaways": [
+      "Generative and autonomous agents can dynamically adapt attack trajectories in real time to blend into normal enterprise traffic.",
+      "Static heuristics and rate limits are trivial to circumvent via multi-agent coordinated stealth operations."
+    ],
+    "category": "AI Threats",
+    "tags": ["AI Agents", "Adversarial AI", "Autonomous Threat"]
+  },
+  {
+    "slide": 5,
+    "title": "Case Studies: When Legitimate Workflows Turn Hostile",
+    "takeaways": [
+      "Analysis of real-world breaches where attackers hijacked legitimate communication and administrative conduits.",
+      "Demonstrates how identity verification at the perimeter provides zero guarantee of safe post-auth operation."
+    ],
+    "category": "Case Studies",
+    "tags": ["Breach Analysis", "Post-Auth Threats", "Case Studies"]
+  },
+  {
+    "slide": 6,
+    "title": "The Paradigm Shift: From Behavior to Intent",
+    "takeaways": [
+      "Shifts focus from 'Is this action authorized?' to 'What is the underlying purpose and eventual outcome of this action sequence?'",
+      "Introduces dynamic reasoning engines that evaluate operational legitimacy rather than static permissions."
+    ],
+    "category": "Paradigm Shift",
+    "tags": ["Intent Reasoning", "Behavior vs Intent", "Dynamic Security"]
+  },
+  {
+    "slide": 7,
+    "title": "Behavioral Sequencing & Contextual Awareness",
+    "takeaways": [
+      "Evaluates full chains of multi-step interactions across time rather than isolated individual transactions.",
+      "Constructs contextual semantic graphs linking user roles, business logic, temporal patterns, and data flows."
+    ],
+    "category": "Architecture",
+    "tags": ["Behavioral Sequencing", "Context Graph", "Runtime Awareness"]
+  },
+  {
+    "slide": 8,
+    "title": "Dynamic Workflow Legitimacy & Reasoning Frameworks",
+    "takeaways": [
+      "Real-time intent validation evaluates whether state transitions align with verifiable organizational objectives.",
+      "Enforces policy checkpoints that intercept authorized accounts attempting anomalous goal-oriented trajectories."
+    ],
+    "category": "Framework",
+    "tags": ["Workflow Legitimacy", "Intent Validation", "Policy Enforcement"]
+  },
+  {
+    "slide": 9,
+    "title": "Building Resilient, Adaptive AI-Era Cybersecurity",
+    "takeaways": [
+      "Architectural blueprint for transitioning enterprise defense from static gatekeeping to cognitive, intent-aware resilience.",
+      "Provides actionable steps for deploying runtime intent guardrails, adaptive trust scoring, and autonomous mitigation."
+    ],
+    "category": "Strategy",
+    "tags": ["Adaptive Defense", "Resilience", "Strategic Roadmap"]
+  }
+]

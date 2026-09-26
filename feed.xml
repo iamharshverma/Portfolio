@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+     xmlns:atom="http://www.w3.org/2005/Atom" 
+     xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Harsh Verma • Tech Articles &amp; AI Engineering Insights</title>
+    <link>https://harshverma.com/page-blog</link>
+    <description>Technical articles, architectural deep dives on Agentic AI, Autonomous Copilots, Zero-Trust Cyber Defense, and High-Scale Enterprise Systems by Harsh Verma (Principal AI Engineer @ Palo Alto Networks, Forbes Technology Council, IEEE Senior Member).</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Sep 2026 01:54:02 GMT</lastBuildDate>
+    <pubDate>Sat, 26 Sep 2026 01:54:02 GMT</pubDate>
+    <ttl>60</ttl>
+    <managingEditor>harshverma59@gmail.com (Harsh Verma)</managingEditor>
+    <webMaster>harshverma59@gmail.com (Harsh Verma)</webMaster>
+    <atom:link href="https://harshverma.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://harshverma.com/images/favicon.ico</url>
+      <title>Harsh Verma • Tech Articles</title>
+      <link>https://harshverma.com/page-blog</link>
+    </image>
+    <item>
+      <title>Beyond The Code: The Evolution Of The Next-Generation Engineer</title>
+      <link>https://www.forbes.com/councils/forbestechcouncil/2026/04/20/beyond-the-code-the-evolution-of-the-next-generation-engineer/</link>
+      <guid isPermaLink="true">https://www.forbes.com/councils/forbestechcouncil/2026/04/20/beyond-the-code-the-evolution-of-the-next-generation-engineer/</guid>
+      <pubDate>Mon, 20 Apr 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Engineering Leadership</category>
+      <category>Forbes Tech Council</category>
+      <category>Next-Gen Engineer</category>
+      <category>Systems Architecture</category>
+      <category>AI Evolution</category>
+      <category>Leadership</category>
+      <description>As code generation becomes commoditized, the next generation of engineers will differentiate through systems architecture, deterministic safety guardrails, prompt unit economics, and holistic cognitive system design.</description>
+      <content:encoded><![CDATA[<p>As code generation becomes commoditized, the next generation of engineers will differentiate through systems architecture, deterministic safety guardrails, prompt unit economics, and holistic cognitive system design.</p>
+<p><strong>Published in:</strong> Forbes Technology Council • <strong>Read Time:</strong> 5 min read</p>
+<p><a href="https://www.forbes.com/councils/forbestechcouncil/2026/04/20/beyond-the-code-the-evolution-of-the-next-generation-engineer/" target="_blank" rel="noopener noreferrer">Read Full Article on Forbes Technology Council →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Intelligence Per Dollar Metric: How Influential Leaders Measure AI Success</title>
+      <link>https://www.forbes.com/councils/forbestechcouncil/2026/05/18/the-intelligence-per-dollar-metric-how-influential-leaders-measure-ai-success/</link>
+      <guid isPermaLink="true">https://www.forbes.com/councils/forbestechcouncil/2026/05/18/the-intelligence-per-dollar-metric-how-influential-leaders-measure-ai-success/</guid>
+      <pubDate>Mon, 18 May 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>AI Economics &amp; ROI</category>
+      <category>Forbes Tech Council</category>
+      <category>AI ROI</category>
+      <category>Unit Economics</category>
+      <category>Executive Metrics</category>
+      <category>Cloud Spend</category>
+      <description>Moving past vanity parameter counts to evaluate enterprise AI investments through cost-performance efficiency, token ROI, deterministic output density, and measurable business throughput.</description>
+      <content:encoded><![CDATA[<p>Moving past vanity parameter counts to evaluate enterprise AI investments through cost-performance efficiency, token ROI, deterministic output density, and measurable business throughput.</p>
+<p><strong>Published in:</strong> Forbes Technology Council • <strong>Read Time:</strong> 6 min read</p>
+<p><a href="https://www.forbes.com/councils/forbestechcouncil/2026/05/18/the-intelligence-per-dollar-metric-how-influential-leaders-measure-ai-success/" target="_blank" rel="noopener noreferrer">Read Full Article on Forbes Technology Council →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Personalized AI Systems: The Hidden Trade-Off Behind Smarter AI (Personalization vs. Privacy)</title>
+      <link>https://www.forbes.com/councils/forbestechcouncil/2026/06/11/personalized-ai-systems-the-hidden-trade-off-behind-smarter-ai-personalization-vs-privacy/</link>
+      <guid isPermaLink="true">https://www.forbes.com/councils/forbestechcouncil/2026/06/11/personalized-ai-systems-the-hidden-trade-off-behind-smarter-ai-personalization-vs-privacy/</guid>
+      <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Privacy &amp; Security</category>
+      <category>Forbes Tech Council</category>
+      <category>Privacy</category>
+      <category>Personalization</category>
+      <category>Data Sovereignty</category>
+      <category>Zero Trust</category>
+      <description>An architectural examination of the fundamental tension between contextual user personalization and enterprise zero-trust data privacy in modern retrieval and agent ecosystems.</description>
+      <content:encoded><![CDATA[<p>An architectural examination of the fundamental tension between contextual user personalization and enterprise zero-trust data privacy in modern retrieval and agent ecosystems.</p>
+<p><strong>Published in:</strong> Forbes Technology Council • <strong>Read Time:</strong> 5 min read</p>
+<p><a href="https://www.forbes.com/councils/forbestechcouncil/2026/06/11/personalized-ai-systems-the-hidden-trade-off-behind-smarter-ai-personalization-vs-privacy/" target="_blank" rel="noopener noreferrer">Read Full Article on Forbes Technology Council →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Your First AI Agent Is An Experiment, Not A Product</title>
+      <link>https://www.forbes.com/councils/forbestechcouncil/2026/07/23/your-first-ai-agent-is-an-experiment-not-a-product/</link>
+      <guid isPermaLink="true">https://www.forbes.com/councils/forbestechcouncil/2026/07/23/your-first-ai-agent-is-an-experiment-not-a-product/</guid>
+      <pubDate>Thu, 23 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Agent Product Strategy</category>
+      <category>Forbes Tech Council</category>
+      <category>Agentic AI</category>
+      <category>Product Strategy</category>
+      <category>Experimentation</category>
+      <category>Fail-Safe Design</category>
+      <description>Autonomous agents behave like evolving operational actors rather than predictable static code. Why founders and enterprise teams must adopt bounded experimental sandboxes before productizing.</description>
+      <content:encoded><![CDATA[<p>Autonomous agents behave like evolving operational actors rather than predictable static code. Why founders and enterprise teams must adopt bounded experimental sandboxes before productizing.</p>
+<p><strong>Published in:</strong> Forbes Technology Council • <strong>Read Time:</strong> 5 min read</p>
+<p><a href="https://www.forbes.com/councils/forbestechcouncil/2026/07/23/your-first-ai-agent-is-an-experiment-not-a-product/" target="_blank" rel="noopener noreferrer">Read Full Article on Forbes Technology Council →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Engineering The Predictable: Why Pure Determinism Is Becoming The New Premium In AI Architecture</title>
+      <link>https://www.forbes.com/councils/forbestechcouncil/2026/08/25/engineering-the-predictable-why-pure-determinism-is-becoming-the-new-premium-in-ai-architecture/</link>
+      <guid isPermaLink="true">https://www.forbes.com/councils/forbestechcouncil/2026/08/25/engineering-the-predictable-why-pure-determinism-is-becoming-the-new-premium-in-ai-architecture/</guid>
+      <pubDate>Tue, 25 Aug 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>System Architecture</category>
+      <category>Forbes Tech Council</category>
+      <category>Determinism</category>
+      <category>AI Architecture</category>
+      <category>Enterprise Security</category>
+      <category>Reliability</category>
+      <description>In mission-critical enterprise environments, repeatability and mathematical predictability command a higher commercial premium than stochastic creativity. How to design deterministic control layers over generative models.</description>
+      <content:encoded><![CDATA[<p>In mission-critical enterprise environments, repeatability and mathematical predictability command a higher commercial premium than stochastic creativity. How to design deterministic control layers over generative models.</p>
+<p><strong>Published in:</strong> Forbes Technology Council • <strong>Read Time:</strong> 6 min read</p>
+<p><a href="https://www.forbes.com/councils/forbestechcouncil/2026/08/25/engineering-the-predictable-why-pure-determinism-is-becoming-the-new-premium-in-ai-architecture/" target="_blank" rel="noopener noreferrer">Read Full Article on Forbes Technology Council →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Production Gap: Your AI Model Isn’t as Reliable as You Think [Feature Interview]</title>
+      <link>https://hackernoon.com/the-production-gap-your-ai-model-isnt-as-reliable-as-you-think-interview</link>
+      <guid isPermaLink="true">https://hackernoon.com/the-production-gap-your-ai-model-isnt-as-reliable-as-you-think-interview</guid>
+      <pubDate>Wed, 20 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Interviews</category>
+      <category>HackerNoon</category>
+      <category>Interview</category>
+      <category>AI Reliability</category>
+      <category>Production ML</category>
+      <category>Enterprise AI</category>
+      <description>In-depth HackerNoon interview breaking down the critical gap between benchmark performance and enterprise production reality, detailing architectural strategies for resilient model deployment.</description>
+      <content:encoded><![CDATA[<p>In-depth HackerNoon interview breaking down the critical gap between benchmark performance and enterprise production reality, detailing architectural strategies for resilient model deployment.</p>
+<p><strong>Published in:</strong> HackerNoon Feature Interview • <strong>Read Time:</strong> 8 min read</p>
+<p><a href="https://hackernoon.com/the-production-gap-your-ai-model-isnt-as-reliable-as-you-think-interview" target="_blank" rel="noopener noreferrer">Read Full Article on HackerNoon Feature Interview →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Identity Is the New Perimeter: Managing AI Agents as Digital Actors</title>
+      <link>https://hackernoon.com/identity-is-the-new-perimeter-managing-ai-agents-as-digital-actors</link>
+      <guid isPermaLink="true">https://hackernoon.com/identity-is-the-new-perimeter-managing-ai-agents-as-digital-actors</guid>
+      <pubDate>Wed, 19 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>AI Security</category>
+      <category>HackerNoon</category>
+      <category>AI Security</category>
+      <category>Identity Access</category>
+      <category>Spotify Podcast</category>
+      <category>Agent Governance</category>
+      <description>AI agents are transforming cybersecurity from network perimeter defenses to continuous identity-first authorization. Featured on HackerNoon&#x27;s Cybersecurity Tech Brief podcast on Spotify.</description>
+      <content:encoded><![CDATA[<p>AI agents are transforming cybersecurity from network perimeter defenses to continuous identity-first authorization. Featured on HackerNoon&#x27;s Cybersecurity Tech Brief podcast on Spotify.</p>
+<p><strong>Published in:</strong> HackerNoon (Spotify Tech Brief Podcast) • <strong>Read Time:</strong> 7 min read</p>
+<p><a href="https://hackernoon.com/identity-is-the-new-perimeter-managing-ai-agents-as-digital-actors" target="_blank" rel="noopener noreferrer">Read Full Article on HackerNoon (Spotify Tech Brief Podcast) →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Clean Attack Problem: When Nothing Looks Wrong, but Everything Is Compromised</title>
+      <link>https://hackernoon.com/the-clean-attack-problem-when-nothing-looks-wrong-but-everything-is-compromised</link>
+      <guid isPermaLink="true">https://hackernoon.com/the-clean-attack-problem-when-nothing-looks-wrong-but-everything-is-compromised</guid>
+      <pubDate>Wed, 18 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Cybersecurity</category>
+      <category>HackerNoon</category>
+      <category>Cybersecurity</category>
+      <category>Zero Trust</category>
+      <category>Silent Exploits</category>
+      <category>Threat Modeling</category>
+      <description>Modern cyber threats no longer trigger noisy alarms. By abusing authorized API credentials and valid business logic, AI-driven attacks operate entirely within legitimate parameters.</description>
+      <content:encoded><![CDATA[<p>Modern cyber threats no longer trigger noisy alarms. By abusing authorized API credentials and valid business logic, AI-driven attacks operate entirely within legitimate parameters.</p>
+<p><strong>Published in:</strong> HackerNoon &amp; RSAC • <strong>Read Time:</strong> 6 min read</p>
+<p><a href="https://hackernoon.com/the-clean-attack-problem-when-nothing-looks-wrong-but-everything-is-compromised" target="_blank" rel="noopener noreferrer">Read Full Article on HackerNoon &amp; RSAC →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Trade-Off Between Speed and Reliability in Modern AI Systems</title>
+      <link>https://hackernoon.com/the-trade-off-between-speed-and-reliability-in-modern-ai-systems</link>
+      <guid isPermaLink="true">https://hackernoon.com/the-trade-off-between-speed-and-reliability-in-modern-ai-systems</guid>
+      <pubDate>Wed, 17 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>System Architecture</category>
+      <category>HackerNoon</category>
+      <category>AI Reliability</category>
+      <category>Latency vs Quality</category>
+      <category>Deterministic Guardrails</category>
+      <description>&#x27;Move fast and break things&#x27; causes catastrophic failure in mission-critical AI. Why leading architectural teams prioritize deterministic verification over raw inference speed.</description>
+      <content:encoded><![CDATA[<p>&#x27;Move fast and break things&#x27; causes catastrophic failure in mission-critical AI. Why leading architectural teams prioritize deterministic verification over raw inference speed.</p>
+<p><strong>Published in:</strong> HackerNoon • <strong>Read Time:</strong> 6 min read</p>
+<p><a href="https://hackernoon.com/the-trade-off-between-speed-and-reliability-in-modern-ai-systems" target="_blank" rel="noopener noreferrer">Read Full Article on HackerNoon →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>AI Governance Is Failing Because We’re Regulating Models Instead of Behavior</title>
+      <link>https://hackernoon.com/ai-governance-is-failing-because-were-regulating-models-instead-of-behavior</link>
+      <guid isPermaLink="true">https://hackernoon.com/ai-governance-is-failing-because-were-regulating-models-instead-of-behavior</guid>
+      <pubDate>Wed, 16 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Governance &amp; Policy</category>
+      <category>HackerNoon</category>
+      <category>AI Governance</category>
+      <category>Compliance</category>
+      <category>Model Audits</category>
+      <category>Behavioral Safety</category>
+      <description>An analysis of why static model audits fail to capture multi-agent emergent behavior, and why runtime behavioral observability is the only defensible governance framework.</description>
+      <content:encoded><![CDATA[<p>An analysis of why static model audits fail to capture multi-agent emergent behavior, and why runtime behavioral observability is the only defensible governance framework.</p>
+<p><strong>Published in:</strong> HackerNoon • <strong>Read Time:</strong> 6 min read</p>
+<p><a href="https://hackernoon.com/ai-governance-is-failing-because-were-regulating-models-instead-of-behavior" target="_blank" rel="noopener noreferrer">Read Full Article on HackerNoon →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Observability Crisis in AI Systems: Why Your Logs Are Lying to You</title>
+      <link>https://hackernoon.com/the-observability-crisis-in-ai-systems-why-your-logs-are-lying-to-you</link>
+      <guid isPermaLink="true">https://hackernoon.com/the-observability-crisis-in-ai-systems-why-your-logs-are-lying-to-you</guid>
+      <pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Observability</category>
+      <category>HackerNoon</category>
+      <category>Observability</category>
+      <category>Telemetry</category>
+      <category>Debugging AI</category>
+      <category>Tracing</category>
+      <description>Standard logging stacks report HTTP 200s while models silently hallucinate, leak context, and drift. How semantic telemetry and cognitive tracing resolve the observability gap.</description>
+      <content:encoded><![CDATA[<p>Standard logging stacks report HTTP 200s while models silently hallucinate, leak context, and drift. How semantic telemetry and cognitive tracing resolve the observability gap.</p>
+<p><strong>Published in:</strong> HackerNoon • <strong>Read Time:</strong> 7 min read</p>
+<p><a href="https://hackernoon.com/the-observability-crisis-in-ai-systems-why-your-logs-are-lying-to-you" target="_blank" rel="noopener noreferrer">Read Full Article on HackerNoon →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Reputation Systems for AI Agents: The Missing Layer of Trust</title>
+      <link>https://hackernoon.com/reputation-systems-for-ai-agents-the-missing-layer-of-trust</link>
+      <guid isPermaLink="true">https://hackernoon.com/reputation-systems-for-ai-agents-the-missing-layer-of-trust</guid>
+      <pubDate>Wed, 14 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Trust &amp; Safety</category>
+      <category>HackerNoon</category>
+      <category>Trust Scores</category>
+      <category>Multi-Agent</category>
+      <category>Reputation</category>
+      <category>Decentralized Trust</category>
+      <description>Introducing behavioral scoring protocols and cryptographic audit trails to quantify trust before allowing autonomous agents to execute high-stakes cross-enterprise tasks.</description>
+      <content:encoded><![CDATA[<p>Introducing behavioral scoring protocols and cryptographic audit trails to quantify trust before allowing autonomous agents to execute high-stakes cross-enterprise tasks.</p>
+<p><strong>Published in:</strong> HackerNoon • <strong>Read Time:</strong> 6 min read</p>
+<p><a href="https://hackernoon.com/reputation-systems-for-ai-agents-the-missing-layer-of-trust" target="_blank" rel="noopener noreferrer">Read Full Article on HackerNoon →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Distributed Intelligence: Why Multi-Agent Systems Are the Successor to Microservices</title>
+      <link>https://hackernoon.com/distributed-intelligence-why-multi-agent-systems-are-the-successor-to-microservices-for-enterprise</link>
+      <guid isPermaLink="true">https://hackernoon.com/distributed-intelligence-why-multi-agent-systems-are-the-successor-to-microservices-for-enterprise</guid>
+      <pubDate>Wed, 13 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Distributed Systems</category>
+      <category>HackerNoon</category>
+      <category>Multi-Agent Systems</category>
+      <category>Distributed Intelligence</category>
+      <category>Microservices</category>
+      <category>Architecture</category>
+      <description>Just as microservices decomposed monolithic codebases, autonomous multi-agent networks are decomposing complex reasoning workflows into distributed, collaborative nodes.</description>
+      <content:encoded><![CDATA[<p>Just as microservices decomposed monolithic codebases, autonomous multi-agent networks are decomposing complex reasoning workflows into distributed, collaborative nodes.</p>
+<p><strong>Published in:</strong> HackerNoon • <strong>Read Time:</strong> 7 min read</p>
+<p><a href="https://hackernoon.com/distributed-intelligence-why-multi-agent-systems-are-the-successor-to-microservices-for-enterprise" target="_blank" rel="noopener noreferrer">Read Full Article on HackerNoon →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>From Identity to Intent: Autonomous AI Agents Are the New Insider Threat</title>
+      <link>https://hackernoon.com/from-identity-to-intent-autonomous-ai-agents-are-the-new-insider-threat</link>
+      <guid isPermaLink="true">https://hackernoon.com/from-identity-to-intent-autonomous-ai-agents-are-the-new-insider-threat</guid>
+      <pubDate>Wed, 12 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Cybersecurity</category>
+      <category>HackerNoon</category>
+      <category>Insider Threat</category>
+      <category>Agent Security</category>
+      <category>Zero Trust</category>
+      <category>Intent Analysis</category>
+      <description>When AI agents are granted access to internal production pipelines, authentication alone cannot prevent prompt injection or goal hijacking. We need continuous intent validation.</description>
+      <content:encoded><![CDATA[<p>When AI agents are granted access to internal production pipelines, authentication alone cannot prevent prompt injection or goal hijacking. We need continuous intent validation.</p>
+<p><strong>Published in:</strong> HackerNoon • <strong>Read Time:</strong> 6 min read</p>
+<p><a href="https://hackernoon.com/from-identity-to-intent-autonomous-ai-agents-are-the-new-insider-threat" target="_blank" rel="noopener noreferrer">Read Full Article on HackerNoon →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Trust Scores for AI: Should Agents Earn Permissions Over Time? Trust Isn’t Granted, It’s Earned</title>
+      <link>https://hackernoon.com/trust-scores-for-ai-should-agents-earn-permissions-over-time-trust-isnt-granted-its-earned</link>
+      <guid isPermaLink="true">https://hackernoon.com/trust-scores-for-ai-should-agents-earn-permissions-over-time-trust-isnt-granted-its-earned</guid>
+      <pubDate>Wed, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Access Control</category>
+      <category>HackerNoon</category>
+      <category>Dynamic Permissions</category>
+      <category>Least Privilege</category>
+      <category>Trust Scoring</category>
+      <category>Agent Policy</category>
+      <description>A dynamic least-privilege architecture where autonomous digital actors start in sandboxed environments and earn higher API thresholds through validated track records.</description>
+      <content:encoded><![CDATA[<p>A dynamic least-privilege architecture where autonomous digital actors start in sandboxed environments and earn higher API thresholds through validated track records.</p>
+<p><strong>Published in:</strong> HackerNoon • <strong>Read Time:</strong> 6 min read</p>
+<p><a href="https://hackernoon.com/trust-scores-for-ai-should-agents-earn-permissions-over-time-trust-isnt-granted-its-earned" target="_blank" rel="noopener noreferrer">Read Full Article on HackerNoon →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Rise of the AI Orchestrator: The Latest, Most Important Enterprise Role</title>
+      <link>https://hackernoon.com/the-rise-of-the-ai-orchestrator-the-latest-most-important-enterprise-role</link>
+      <guid isPermaLink="true">https://hackernoon.com/the-rise-of-the-ai-orchestrator-the-latest-most-important-enterprise-role</guid>
+      <pubDate>Wed, 10 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Engineering Leadership</category>
+      <category>HackerNoon</category>
+      <category>AI Orchestration</category>
+      <category>Enterprise Roles</category>
+      <category>Cognitive Mesh</category>
+      <category>Workflow</category>
+      <description>Enterprises don&#x27;t struggle to access LLMs; they struggle to orchestrate multiple models, routing state, memory, tool executions, and security guardrails across departments.</description>
+      <content:encoded><![CDATA[<p>Enterprises don&#x27;t struggle to access LLMs; they struggle to orchestrate multiple models, routing state, memory, tool executions, and security guardrails across departments.</p>
+<p><strong>Published in:</strong> HackerNoon • <strong>Read Time:</strong> 6 min read</p>
+<p><a href="https://hackernoon.com/the-rise-of-the-ai-orchestrator-the-latest-most-important-enterprise-role" target="_blank" rel="noopener noreferrer">Read Full Article on HackerNoon →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>What Most AI Startup Founders Get Wrong About AI Agents: The Autonomy Trap</title>
+      <link>https://hackernoon.com/what-most-ai-startup-founders-get-wrong-about-ai-agents-the-autonomy-trap</link>
+      <guid isPermaLink="true">https://hackernoon.com/what-most-ai-startup-founders-get-wrong-about-ai-agents-the-autonomy-trap</guid>
+      <pubDate>Wed, 09 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Startups &amp; Strategy</category>
+      <category>HackerNoon</category>
+      <category>Startup Founders</category>
+      <category>Autonomy Trap</category>
+      <category>Product Design</category>
+      <category>Venture</category>
+      <description>Unconstrained autonomy produces brittle demos that collapse in real customer deployments. Why the most valuable agentic startups build scoped, deterministic workflows.</description>
+      <content:encoded><![CDATA[<p>Unconstrained autonomy produces brittle demos that collapse in real customer deployments. Why the most valuable agentic startups build scoped, deterministic workflows.</p>
+<p><strong>Published in:</strong> HackerNoon • <strong>Read Time:</strong> 6 min read</p>
+<p><a href="https://hackernoon.com/what-most-ai-startup-founders-get-wrong-about-ai-agents-the-autonomy-trap" target="_blank" rel="noopener noreferrer">Read Full Article on HackerNoon →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Clean Attack Problem: When Nothing Looks Wrong but Everything is Compromised</title>
+      <link>https://www.rsaconference.com/library/blog/the-clean-attack-problem</link>
+      <guid isPermaLink="true">https://www.rsaconference.com/library/blog/the-clean-attack-problem</guid>
+      <pubDate>Tue, 18 Aug 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Cybersecurity</category>
+      <category>RSA Conference</category>
+      <category>RSAC Expert</category>
+      <category>Clean Attacks</category>
+      <category>Behavioral Security</category>
+      <category>Enterprise SOC</category>
+      <description>Published on RSA Conference official library: How AI agents mimic legitimate human interactions, adapt to organizational context, and operate within approved API policies to evade legacy SOC detection.</description>
+      <content:encoded><![CDATA[<p>Published on RSA Conference official library: How AI agents mimic legitimate human interactions, adapt to organizational context, and operate within approved API policies to evade legacy SOC detection.</p>
+<p><strong>Published in:</strong> RSA Conference Expert Library • <strong>Read Time:</strong> 7 min read</p>
+<p><a href="https://www.rsaconference.com/library/blog/the-clean-attack-problem" target="_blank" rel="noopener noreferrer">Read Full Article on RSA Conference Expert Library →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Death of Authentication: Why Identity Isn&#x27;t Enough for AI Systems</title>
+      <link>https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems</link>
+      <guid isPermaLink="true">https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems</guid>
+      <pubDate>Thu, 17 Sep 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Cybersecurity</category>
+      <category>RSA Conference</category>
+      <category>RSAC Expert</category>
+      <category>Zero Trust</category>
+      <category>AI Security</category>
+      <category>Intent Analysis</category>
+      <description>Published on RSA Conference official library: For decades cybersecurity assumed verifying identity ensures legitimate behavior. In autonomous AI workflows, attacks happen with valid credentials and approved permissions. Why Zero Trust must evolve to continuous behavioral monitoring and runtime intent analysis.</description>
+      <content:encoded><![CDATA[<p>Published on RSA Conference official library: For decades cybersecurity assumed verifying identity ensures legitimate behavior. In autonomous AI workflows, attacks happen with valid credentials and approved permissions. Why Zero Trust must evolve to continuous behavioral monitoring and runtime intent analysis.</p>
+<p><strong>Published in:</strong> RSA Conference Expert Library • <strong>Read Time:</strong> 8 min read</p>
+<p><a href="https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems" target="_blank" rel="noopener noreferrer">Read Full Article on RSA Conference Expert Library →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Agents Don&#x27;t Break Rules, They Redefine Them</title>
+      <link>https://www.rsaconference.com/Library/blog/agents-dont-break-rules-they-redefine-them</link>
+      <guid isPermaLink="true">https://www.rsaconference.com/Library/blog/agents-dont-break-rules-they-redefine-them</guid>
+      <pubDate>Thu, 24 Sep 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Cybersecurity</category>
+      <category>RSA Conference</category>
+      <category>RSAC Expert</category>
+      <category>Agentic AI</category>
+      <category>Policy Drift</category>
+      <category>Continuous Governance</category>
+      <category>AI Security</category>
+      <description>Published on RSA Conference official library: Autonomous AI agents don&#x27;t fail by breaking rules—they follow instructions literally while circumventing intent through blind optimization and policy drift. Why AI security requires continuous runtime governance instead of static boundaries.</description>
+      <content:encoded><![CDATA[<p>Published on RSA Conference official library: Autonomous AI agents don&#x27;t fail by breaking rules—they follow instructions literally while circumventing intent through blind optimization and policy drift. Why AI security requires continuous runtime governance instead of static boundaries.</p>
+<p><strong>Published in:</strong> RSA Conference Expert Library • <strong>Read Time:</strong> 7 min read</p>
+<p><a href="https://www.rsaconference.com/Library/blog/agents-dont-break-rules-they-redefine-them" target="_blank" rel="noopener noreferrer">Read Full Article on RSA Conference Expert Library →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Harsh Verma Publishes Nuanced Framework on Rise of Agentic AI and Enterprise System Era</title>
+      <link>https://aijourn.com/harsh-verma-publishes-nuanced-framework-on-rise-of-agentic-ai-and-enterprise-system-era-arguing-ai-system-architecture-has-replaced-model-building-as-the-core-discipline/</link>
+      <guid isPermaLink="true">https://aijourn.com/harsh-verma-publishes-nuanced-framework-on-rise-of-agentic-ai-and-enterprise-system-era-arguing-ai-system-architecture-has-replaced-model-building-as-the-core-discipline/</guid>
+      <pubDate>Fri, 15 May 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>System Architecture</category>
+      <category>The AI Journal</category>
+      <category>Agentic AI</category>
+      <category>Enterprise Era</category>
+      <category>System Architecture</category>
+      <category>Framework</category>
+      <description>Argues that AI system architecture—context routing, deterministic verification, persistent memory, and latency orchestration—has decisively replaced raw model training as the primary core discipline.</description>
+      <content:encoded><![CDATA[<p>Argues that AI system architecture—context routing, deterministic verification, persistent memory, and latency orchestration—has decisively replaced raw model training as the primary core discipline.</p>
+<p><strong>Published in:</strong> The AI Journal • <strong>Read Time:</strong> 6 min read</p>
+<p><a href="https://aijourn.com/harsh-verma-publishes-nuanced-framework-on-rise-of-agentic-ai-and-enterprise-system-era-arguing-ai-system-architecture-has-replaced-model-building-as-the-core-discipline/" target="_blank" rel="noopener noreferrer">Read Full Article on The AI Journal →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>How AI Agents Will Collaborate with Human Experts in High-Stakes Environments</title>
+      <link>https://aijourn.com/how-ai-agents-will-collaborate-with-human-experts-in-high-stakes-environments/</link>
+      <guid isPermaLink="true">https://aijourn.com/how-ai-agents-will-collaborate-with-human-experts-in-high-stakes-environments/</guid>
+      <pubDate>Thu, 14 May 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Human-AI Collaboration</category>
+      <category>The AI Journal</category>
+      <category>Human-AI Collaboration</category>
+      <category>High Stakes</category>
+      <category>Decision Systems</category>
+      <category>Safety</category>
+      <description>Analyzing how human-in-the-loop and human-on-the-loop protocols should be structured across high-consequence domains including automated threat response, medicine, and critical infrastructure.</description>
+      <content:encoded><![CDATA[<p>Analyzing how human-in-the-loop and human-on-the-loop protocols should be structured across high-consequence domains including automated threat response, medicine, and critical infrastructure.</p>
+<p><strong>Published in:</strong> The AI Journal • <strong>Read Time:</strong> 6 min read</p>
+<p><a href="https://aijourn.com/how-ai-agents-will-collaborate-with-human-experts-in-high-stakes-environments/" target="_blank" rel="noopener noreferrer">Read Full Article on The AI Journal →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Harsh Verma on Engineering Beyond the Code: The Future of AI and Cybersecurity</title>
+      <link>https://aijourn.com/harsh-verma-on-engineering-beyond-the-code-the-future-of-ai-and-cybersecurity/</link>
+      <guid isPermaLink="true">https://aijourn.com/harsh-verma-on-engineering-beyond-the-code-the-future-of-ai-and-cybersecurity/</guid>
+      <pubDate>Fri, 13 Mar 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Interviews &amp; Profiles</category>
+      <category>The AI Journal</category>
+      <category>Feature Profile</category>
+      <category>Cybersecurity</category>
+      <category>Next-Gen Engineering</category>
+      <category>Palo Alto Networks</category>
+      <description>Featured conversation on the convergence of large-scale artificial intelligence, autonomous security operations, and the future career trajectory of AI systems engineers.</description>
+      <content:encoded><![CDATA[<p>Featured conversation on the convergence of large-scale artificial intelligence, autonomous security operations, and the future career trajectory of AI systems engineers.</p>
+<p><strong>Published in:</strong> The AI Journal • <strong>Read Time:</strong> 7 min read</p>
+<p><a href="https://aijourn.com/harsh-verma-on-engineering-beyond-the-code-the-future-of-ai-and-cybersecurity/" target="_blank" rel="noopener noreferrer">Read Full Article on The AI Journal →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Principal AI Engineer Harsh Verma Nominated for Tech Excellence Award at Influencer Magazine Awards 2026</title>
+      <link>https://aijourn.com/principal-ai-engineer-harsh-verma-nominated-for-tech-excellence-award-at-influencer-magazine-awards-2026-as-his-work-on-human-ai-collaboration-gains-enterprise-attention/</link>
+      <guid isPermaLink="true">https://aijourn.com/principal-ai-engineer-harsh-verma-nominated-for-tech-excellence-award-at-influencer-magazine-awards-2026-as-his-work-on-human-ai-collaboration-gains-enterprise-attention/</guid>
+      <pubDate>Fri, 12 Jun 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Industry Recognition</category>
+      <category>The AI Journal</category>
+      <category>Award Nomination</category>
+      <category>Tech Excellence</category>
+      <category>Industry Leader</category>
+      <category>Recognition</category>
+      <description>Coverage of Harsh Verma&#x27;s nomination for Tech Excellence Award 2026, highlighting his research and architectural leadership in agentic trust models and enterprise human-AI collaboration.</description>
+      <content:encoded><![CDATA[<p>Coverage of Harsh Verma&#x27;s nomination for Tech Excellence Award 2026, highlighting his research and architectural leadership in agentic trust models and enterprise human-AI collaboration.</p>
+<p><strong>Published in:</strong> The AI Journal • <strong>Read Time:</strong> 4 min read</p>
+<p><a href="https://aijourn.com/principal-ai-engineer-harsh-verma-nominated-for-tech-excellence-award-at-influencer-magazine-awards-2026-as-his-work-on-human-ai-collaboration-gains-enterprise-attention/" target="_blank" rel="noopener noreferrer">Read Full Article on The AI Journal →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Your First AI Agent Is Your New Intern: Here’s How to Manage It</title>
+      <link>https://aijourn.com/your-first-ai-agent-is-your-new-intern-heres-how-to-manage-it/</link>
+      <guid isPermaLink="true">https://aijourn.com/your-first-ai-agent-is-your-new-intern-heres-how-to-manage-it/</guid>
+      <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Management &amp; Strategy</category>
+      <category>The AI Journal</category>
+      <category>Agent Management</category>
+      <category>Leadership</category>
+      <category>Mental Models</category>
+      <category>Delegation</category>
+      <description>A grounded leadership guide for managing AI agents: establishing bounded roles, implementing stage-gated code reviews, and avoiding delegation traps in engineering organizations.</description>
+      <content:encoded><![CDATA[<p>A grounded leadership guide for managing AI agents: establishing bounded roles, implementing stage-gated code reviews, and avoiding delegation traps in engineering organizations.</p>
+<p><strong>Published in:</strong> The AI Journal • <strong>Read Time:</strong> 5 min read</p>
+<p><a href="https://aijourn.com/your-first-ai-agent-is-your-new-intern-heres-how-to-manage-it/" target="_blank" rel="noopener noreferrer">Read Full Article on The AI Journal →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Designing the Intelligence Layer: Why Future Tech Leaders Must Be AI Architects First</title>
+      <link>https://aijourn.com/designing-the-intelligence-layer-why-future-tech-leaders-must-be-ai-architects-first/</link>
+      <guid isPermaLink="true">https://aijourn.com/designing-the-intelligence-layer-why-future-tech-leaders-must-be-ai-architects-first/</guid>
+      <pubDate>Mon, 10 Aug 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Executive Leadership</category>
+      <category>The AI Journal</category>
+      <category>CTO Architecture</category>
+      <category>Intelligence Layer</category>
+      <category>Executive Leadership</category>
+      <category>AI Strategy</category>
+      <description>Why the modern CTO and VP of Engineering must evolve from managing cloud infrastructure to engineering the cognitive orchestration layer that powers all enterprise workflows.</description>
+      <content:encoded><![CDATA[<p>Why the modern CTO and VP of Engineering must evolve from managing cloud infrastructure to engineering the cognitive orchestration layer that powers all enterprise workflows.</p>
+<p><strong>Published in:</strong> The AI Journal • <strong>Read Time:</strong> 6 min read</p>
+<p><a href="https://aijourn.com/designing-the-intelligence-layer-why-future-tech-leaders-must-be-ai-architects-first/" target="_blank" rel="noopener noreferrer">Read Full Article on The AI Journal →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Unlocking Corporate–Startup Co-Innovation with AI</title>
+      <link>https://www.founderscreative.org/unlocking-corporate-startup-co-innovation-with-ai/</link>
+      <guid isPermaLink="true">https://www.founderscreative.org/unlocking-corporate-startup-co-innovation-with-ai/</guid>
+      <pubDate>Wed, 19 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Venture &amp; Innovation</category>
+      <category>Founders Creative</category>
+      <category>Substack</category>
+      <category>Corporate Innovation</category>
+      <category>Startups</category>
+      <category>Venture Capital</category>
+      <description>How enterprise corporations and agile venture-backed AI startups can build collaborative co-innovation loops, de-risking pilot integrations and unlocking rapid enterprise market validation.</description>
+      <content:encoded><![CDATA[<p>How enterprise corporations and agile venture-backed AI startups can build collaborative co-innovation loops, de-risking pilot integrations and unlocking rapid enterprise market validation.</p>
+<p><strong>Published in:</strong> Founders Creative &amp; Substack • <strong>Read Time:</strong> 5 min read</p>
+<p><a href="https://www.founderscreative.org/unlocking-corporate-startup-co-innovation-with-ai/" target="_blank" rel="noopener noreferrer">Read Full Article on Founders Creative &amp; Substack →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Helm with YugabyteDB: Google Kubernetes Engine (GKE) Distributed Deployment</title>
+      <link>https://medium.com/@harshverma59/helm-with-yugabytedb-gke-google-kubernetes-engine-9099b62548cd</link>
+      <guid isPermaLink="true">https://medium.com/@harshverma59/helm-with-yugabytedb-gke-google-kubernetes-engine-9099b62548cd</guid>
+      <pubDate>Tue, 15 Jan 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Cloud Infrastructure</category>
+      <category>Medium</category>
+      <category>Kubernetes</category>
+      <category>GKE</category>
+      <category>YugabyteDB</category>
+      <category>Distributed SQL</category>
+      <description>A comprehensive practical guide to managing distributed cloud-native relational databases on Google Kubernetes Engine (GKE) using Helm package management.</description>
+      <content:encoded><![CDATA[<p>A comprehensive practical guide to managing distributed cloud-native relational databases on Google Kubernetes Engine (GKE) using Helm package management.</p>
+<p><strong>Published in:</strong> Medium Engineering • <strong>Read Time:</strong> 8 min read</p>
+<p><a href="https://medium.com/@harshverma59/helm-with-yugabytedb-gke-google-kubernetes-engine-9099b62548cd" target="_blank" rel="noopener noreferrer">Read Full Article on Medium Engineering →</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Software Architecture, Engineering Process &amp; Career Insights with LifePage</title>
+      <link>https://www.lifepage.in/page/harsh</link>
+      <guid isPermaLink="true">https://www.lifepage.in/page/harsh</guid>
+      <pubDate>Tue, 15 Jan 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Harsh Verma</dc:creator>
+      <category>Interviews</category>
+      <category>LifePage</category>
+      <category>Career Guidance</category>
+      <category>Software Development</category>
+      <category>Mentorship</category>
+      <description>Comprehensive interview detailing software development lifecycles, navigating real-world architectural trade-offs, and career roadmap guidance for aspiring software engineers.</description>
+      <content:encoded><![CDATA[<p>Comprehensive interview detailing software development lifecycles, navigating real-world architectural trade-offs, and career roadmap guidance for aspiring software engineers.</p>
+<p><strong>Published in:</strong> LifePage Career Talks • <strong>Read Time:</strong> 10 min read</p>
+<p><a href="https://www.lifepage.in/page/harsh" target="_blank" rel="noopener noreferrer">Read Full Article on LifePage Career Talks →</a></p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,487 @@
+[
+  {
+    "slide": 1,
+    "title": "Agentic Security: When AI Becomes Both Defender and Threat",
+    "takeaways": [
+      "Introduces the concept of Agentic Security, where autonomous AI serves dual roles as a protective measure and a potential security risk.",
+      "Examines key cybersecurity paradigms for autonomous systems, specifically focusing on trust, control, and resilience.",
+      "Serves as an introductory student guide to understanding modern AI-driven threat landscapes and defense mechanisms."
+    ],
+    "category": "Overview",
+    "tags": [
+      "Agentic Security",
+      "Autonomous AI",
+      "Cybersecurity"
+    ]
+  },
+  {
+    "slide": 2,
+    "title": "It's not who can build now, it is who you trust - From Creator to Curator Economy",
+    "takeaways": [
+      "The competitive differentiator in AI has shifted from technical building capability to trust and reliability.",
+      "The technology landscape is transitioning from a Creator Economy toward a Curator Economy centered on trusted oversight."
+    ],
+    "category": "Overview",
+    "tags": [
+      "Trust",
+      "Curator Economy",
+      "AI Governance"
+    ]
+  },
+  {
+    "slide": 3,
+    "title": "Agenda",
+    "takeaways": [
+      "Outlines key topics bridging generative AI, intelligent agent architectures, and autonomous defense systems.",
+      "Examines real-world applications, ethical challenges, and future skills required for AI-powered security."
+    ],
+    "category": "Overview",
+    "tags": [
+      "Agenda",
+      "Cybersecurity",
+      "Agentic AI"
+    ]
+  },
+  {
+    "slide": 4,
+    "title": "Today's Cybersecurity Battlefield",
+    "takeaways": [
+      "The modern cybersecurity landscape is rapidly escalating in both complexity and scale.",
+      "Critical metrics show high-frequency attacks occurring every 39 seconds and average breach costs hitting a record $4.45M.",
+      "Threat actors maintain a long presence within compromised networks, with an average of 287 days before detection."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Cybersecurity",
+      "Data Breach",
+      "Threat Statistics"
+    ]
+  },
+  {
+    "slide": 5,
+    "title": "AI Agents Hierarchy of Needs",
+    "takeaways": [
+      "Modern cybersecurity faces systemic strain, highlighted by 5.4 billion annual malware attacks and a massive workforce shortage.",
+      "The 'Hierarchy of Needs' framework maps the stack required to build agentic systems, from base infrastructure and foundation models to specialized LLM security and observability.",
+      "Generative AI provides a critical path forward by enabling autonomous security monitoring, detection, and response to offset human talent gaps."
+    ],
+    "category": "Hierarchy of Needs",
+    "tags": [
+      "Cybersecurity",
+      "Agentic AI",
+      "Infrastructure"
+    ]
+  },
+  {
+    "slide": 6,
+    "title": "The Evolution of Cyber Threats",
+    "takeaways": [
+      "Security is shifting from reactive, rule-based traditional methods to autonomous, self-improving agentic AI systems.",
+      "The evolution follows a three-stage path: Traditional (manual/reactive), AI-Enhanced (pattern detection), and Agentic (fully autonomous decision-making)."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "AI Evolution",
+      "Cybersecurity",
+      "Autonomous Systems"
+    ]
+  },
+  {
+    "slide": 7,
+    "title": "The New Attack Surface",
+    "takeaways": [
+      "AI systems introduce new vulnerabilities through model behaviors, data exposure risks, and complex API integrations.",
+      "The interconnected nature of AI agent toolchains significantly expands the potential blast radius of security exploits.",
+      "Core security pillars—Confidentiality, Integrity, and Availability (CIA)—are the primary targets within this evolving AI threat landscape."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Attack Surface",
+      "CIA Triad",
+      "AI Vulnerabilities"
+    ]
+  },
+  {
+    "slide": 8,
+    "title": "Common Adversarial Tactics",
+    "takeaways": [
+      "Prompt injection is the primary threat to LLMs, allowing malicious inputs to override system instructions.",
+      "Data leakage risks include the exposure of sensitive PII, internal documents, and proprietary logic by models.",
+      "Over-permissioning AI agents can transform minor security exploits into critical, system-wide failures."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Prompt Injection",
+      "Data Privacy",
+      "Access Control"
+    ]
+  },
+  {
+    "slide": 9,
+    "title": "Why Traditional Security Fails",
+    "takeaways": [
+      "Conventional tools fail because AI systems are non-deterministic and dynamic, causing threats to evolve faster than traditional patch cycles.",
+      "Effective AI security requires shifting from static scanners and signature-based detection to runtime interaction monitoring, adaptive defenses, and continuous red-teaming."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Traditional Security",
+      "AI Security",
+      "Runtime Monitoring"
+    ]
+  },
+  {
+    "slide": 10,
+    "title": "From Chat to Action: Why Security Rules Suddenly Fail",
+    "takeaways": [
+      "Agentic AI executes multi-step tasks using tools and identity with real-world side effects beyond passive text generation.",
+      "Legacy security systems fail because persistent, acting agents create entirely new attack surfaces.",
+      "Security controls must shift from simple input filtering ('prompt safety') to runtime 'workflow safety'."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Agentic AI",
+      "Workflow Safety",
+      "Attack Surface"
+    ]
+  },
+  {
+    "slide": 11,
+    "title": "The New Threats in the Agentic Stack",
+    "takeaways": [
+      "Tool misuse occurs when agents combine valid tools into harmful workflows that bypass static security checks due to injected or ambiguous intent.",
+      "Identity and privilege abuse escalates the classic 'confused deputy' problem to machine scale via credential inheritance across task boundaries.",
+      "Dynamic trust exploitation creates fragile trust chains as agents interact with unverified dynamic tools, MCP endpoints, and other agents."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Tool Misuse",
+      "Privilege Abuse",
+      "Dynamic Trust"
+    ]
+  },
+  {
+    "slide": 12,
+    "title": "Multi-Agent Systems: Risk Multiplies, Observability Blinds",
+    "takeaways": [
+      "Multi-agent environments introduce emergent trust boundaries where agents delegate to each other, propagating risk beyond single-agent boundaries.",
+      "System risks multiply due to cascading failures, non-deterministic emergent behaviors, and vulnerabilities in shared memory, context, and tools.",
+      "A single poisoned context can rapidly spread malicious logic across an entire agent mesh in seconds."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Multi-Agent Systems",
+      "Cascading Failures",
+      "Trust Boundaries"
+    ]
+  },
+  {
+    "slide": 13,
+    "title": "When Governance Breaks: Supply Chain & Dynamic Dependencies",
+    "takeaways": [
+      "Runtime dynamic loading of tools and endpoints often lacks cryptographic verification and provenance checks.",
+      "Poisoned context and malicious logic injected into tool responses propagate silently through decision chains.",
+      "Unverified agent-to-agent delegation creates supply chain vulnerabilities without clear identity, intent, or manifest verification."
+    ],
+    "category": "Governance",
+    "tags": [
+      "Supply Chain",
+      "Dynamic Tool Loading",
+      "Agent Trust"
+    ]
+  },
+  {
+    "slide": 14,
+    "title": "The Governance Shift: Static Checks → Intent + Runtime Enforcement",
+    "takeaways": [
+      "AI governance is shifting away from static checks toward a model focused on intent verification and runtime enforcement.",
+      "Effective security governance relies on three nested layers: Core Intent (signed goals and verification), Runtime Controls (sandboxing and approvals), and a Standards Layer (MCP protocols and SOC integration)."
+    ],
+    "category": "Governance",
+    "tags": [
+      "AI Governance",
+      "Runtime Controls",
+      "Intent Verification"
+    ]
+  },
+  {
+    "slide": 15,
+    "title": "Permission Creep via \"Citizen\" Agents",
+    "takeaways": [
+      "Over 80% of Fortune 500 enterprises deploy AI agents without adequate governance, driving 'Shadow Agent' risks.",
+      "Autonomous agent deployment creates missing audit trails, undefined ownership, and ungoverned access permissions.",
+      "Mitigating permission creep requires Discovery, Permission Mapping, Behavioral Baselines, and Lifecycle Governance."
+    ],
+    "category": "Case Study",
+    "tags": [
+      "Shadow Agents",
+      "Permission Creep",
+      "AI Governance"
+    ]
+  },
+  {
+    "slide": 16,
+    "title": "Agentic Tooling + Governance Controls Win",
+    "takeaways": [
+      "Strict enforcement of MCP-based governance and tool-scoping policies resulted in an 85% reduction in unauthorized agent actions.",
+      "Implementing protocol-level verification and standards-driven orchestration achieved a 70% improvement in threat detection time.",
+      "Effective security requires constraining tool usage and treating MCP (Model Context Protocol) governance as the primary security perimeter."
+    ],
+    "category": "Case Study",
+    "tags": [
+      "MCP",
+      "Governance",
+      "Automation"
+    ]
+  },
+  {
+    "slide": 17,
+    "title": "Security as a Startup Competitive Advantage",
+    "takeaways": [
+      "Startups face significant security challenges due to resource constraints, rapid deployment velocities, and complex, expanding cloud-native attack surfaces.",
+      "Lack of formal security processes often leads to inconsistent controls and audit readiness gaps.",
+      "The cost of failure is high, with 60% of small companies failing within six months following a cyber attack."
+    ],
+    "category": "Overview",
+    "tags": [
+      "Startup Security",
+      "Risk Management",
+      "Cyber Resilience"
+    ]
+  },
+  {
+    "slide": 18,
+    "title": "Automate, Codify & Build Security Culture",
+    "takeaways": [
+      "Integrate security into CI/CD pipelines and infrastructure as code (IaC) to ensure auditability and reduce human error.",
+      "Prioritize practical security controls over 'security theater' and align incentives to make security a shared business value.",
+      "Cultivate a resilient organizational culture where security is seen as a competitive advantage rather than a compliance burden."
+    ],
+    "category": "Governance",
+    "tags": [
+      "DevSecOps",
+      "Security Culture",
+      "Automation"
+    ]
+  },
+  {
+    "slide": 19,
+    "title": "Real-World Example: Robin AI & Pavlov Startups",
+    "takeaways": [
+      "Security readiness, such as SOC 2 and GDPR, acts as a strategic business accelerator rather than an operational bottleneck.",
+      "Proactive, founder-led security programs serve as powerful signals for both enterprise customer acquisition and investor confidence.",
+      "Integrating security from day one builds foundational trust and enables faster scaling without sacrificing innovation velocity."
+    ],
+    "category": "Case Study",
+    "tags": [
+      "Compliance",
+      "Startup Strategy",
+      "Security ROI"
+    ]
+  },
+  {
+    "slide": 20,
+    "title": "Challenges, Ethics & Governance",
+    "takeaways": [
+      "Organizations face significant risks including overreliance on AI, workforce skills gaps, and legacy infrastructure integration hurdles.",
+      "Balancing autonomous security operations with essential human oversight remains a critical governance challenge."
+    ],
+    "category": "Governance",
+    "tags": [
+      "AI Ethics",
+      "Organizational Risk",
+      "Human-in-the-loop"
+    ]
+  },
+  {
+    "slide": 21,
+    "title": "Organizational Risks",
+    "takeaways": [
+      "Adopting autonomous security introduces risks including overreliance, skills gaps, and legacy infrastructure integration challenges.",
+      "Organizations must navigate the critical challenge of balancing automated AI-driven security with necessary human oversight."
+    ],
+    "category": "Governance",
+    "tags": [
+      "AI Governance",
+      "Human-in-the-loop",
+      "Risk Management"
+    ]
+  },
+  {
+    "slide": 22,
+    "title": "Startup To-Do List: Foundational Controls",
+    "takeaways": [
+      "Establish strict security foundations by mapping all agent-accessible tools and enforcing least-privilege credentials.",
+      "Implement human-in-the-loop oversight for high-impact actions and sanitize RAG data to secure model memory.",
+      "Ensure deployment infrastructure includes isolation, robust identity management, and continuous behavioral monitoring."
+    ],
+    "category": "Governance",
+    "tags": [
+      "Foundational Controls",
+      "Agent Security",
+      "Risk Mitigation"
+    ]
+  },
+  {
+    "slide": 23,
+    "title": "Designing Secure AI Systems",
+    "takeaways": [
+      "Implement the principle of least privilege for all AI tool calls and API interactions.",
+      "Adopt a defense-in-depth approach by layering security guardrails and PII detection.",
+      "Ensure safe-by-design principles through modular architecture and strict component-level privilege separation."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Security Architecture",
+      "Least Privilege",
+      "Defense-in-Depth"
+    ]
+  },
+  {
+    "slide": 24,
+    "title": "A Practical Reference Model: Identity-First, Least Privilege, Telemetry",
+    "takeaways": [
+      "Treat AI agents as distinct identities with full authentication and accountability rather than anonymous scripts.",
+      "Implement fine-grained, just-in-time delegation that limits tool access by task, time, and revocability.",
+      "Utilize continuous behavioral telemetry to monitor agent actions and detect deviations from established security baselines in real time."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Identity Management",
+      "Least Privilege",
+      "Agent Security"
+    ]
+  },
+  {
+    "slide": 25,
+    "title": "Automate and Codify Security Controls",
+    "takeaways": [
+      "Integrate security policies directly into version-controlled infrastructure and CI/CD pipelines to eliminate manual error and maintain velocity.",
+      "Prioritize substantive, risk-reducing controls over 'security theater' and embed incident recovery planning into the design phase.",
+      "Utilize Infrastructure as Code (IaC), automated compliance checks, and open-source security frameworks to ensure consistent, repeatable protection."
+    ],
+    "category": "Governance",
+    "tags": [
+      "DevSecOps",
+      "Automation",
+      "Infrastructure as Code"
+    ]
+  },
+  {
+    "slide": 26,
+    "title": "Build a Security Culture & Shared Responsibility",
+    "takeaways": [
+      "Security must be treated as a core organizational priority involving everyone from leadership to engineering and operations teams.",
+      "Cultivating long-term resilience requires embedding security into company culture through regular training and clear communication.",
+      "Effective security strategies rely on strong leadership commitment and aligning security goals with overall business and customer objectives."
+    ],
+    "category": "Governance",
+    "tags": [
+      "Security Culture",
+      "Shared Responsibility",
+      "Organizational Resilience"
+    ]
+  },
+  {
+    "slide": 27,
+    "title": "Student Action Plan: Learn & Build",
+    "takeaways": [
+      "Develop prompt injection defense skills using interactive platforms like Lakera Gandalf.",
+      "Prioritize security by executing untrusted agent code exclusively in isolated sandboxes, away from production environments.",
+      "Deepen understanding of AI safety by studying model alignment techniques such as DPO and Constitutional AI."
+    ],
+    "category": "Applications",
+    "tags": [
+      "AI Safety",
+      "Prompt Injection",
+      "Model Alignment"
+    ]
+  },
+  {
+    "slide": 28,
+    "title": "What to Follow",
+    "takeaways": [
+      "Prioritize industry-standard vulnerability references like the OWASP LLM Top 10.",
+      "Adopt emerging federal guidance such as NIST AI 100-1 for secure and resilient AI deployment.",
+      "Monitor ongoing research and safety frameworks from authoritative bodies like Berkeley RDI and Frontier Labs."
+    ],
+    "category": "Governance",
+    "tags": [
+      "Compliance",
+      "Frameworks",
+      "Standards"
+    ]
+  },
+  {
+    "slide": 29,
+    "title": "Your Playbook: Projects, Checklist & Career Path",
+    "takeaways": [
+      "Implement hands-on capstone projects focusing on incident-response agents and agent registry prototypes to build practical expertise.",
+      "Adopt a robust governance framework that emphasizes least privilege, environment isolation, and continuous red teaming for AI agents.",
+      "Develop specialized skills in agentic threat modeling to identify and mitigate risks like tool misuse, memory poisoning, and supply chain vulnerabilities."
+    ],
+    "category": "Conclusion",
+    "tags": [
+      "Agentic Security",
+      "Threat Modeling",
+      "Governance"
+    ]
+  },
+  {
+    "slide": 30,
+    "title": "What Is Next: The Agentic Frontier",
+    "takeaways": [
+      "Future AI systems will require a hybrid approach, blending symbolic and non-symbolic components to mitigate emerging architectural risks.",
+      "As AI scales beyond human oversight, implementing formal verification and provable security becomes critical for maintaining system integrity.",
+      "Security engineers must proactively adopt a strategy that combines adversarial thinking with rigorous design to ensure systems remain reliable and corrigible."
+    ],
+    "category": "Conclusion",
+    "tags": [
+      "Hybrid AI",
+      "Formal Verification",
+      "Agentic Security"
+    ]
+  },
+  {
+    "slide": 31,
+    "title": "Emerging Trends",
+    "takeaways": [
+      "The security roadmap transitions from foundational prompt engineering and orchestration toward explainable, generative adversarial systems and multi-modal cognitive frameworks by 2027.",
+      "Critical focus areas include managing agent coordination, ensuring AI ethics, and maintaining robust model evaluation to protect against emerging manipulation tactics."
+    ],
+    "category": "Overview",
+    "tags": [
+      "Roadmap",
+      "Future-proofing",
+      "AI Governance"
+    ]
+  },
+  {
+    "slide": 32,
+    "title": "Reference",
+    "takeaways": [
+      "Provides external resources for further reading and author attribution.",
+      "Lists professional profiles and publications on Hackernoon, Forbes, and LinkedIn."
+    ],
+    "category": "Conclusion",
+    "tags": [
+      "Resources",
+      "Bibliography",
+      "Author Profiles"
+    ]
+  },
+  {
+    "slide": 33,
+    "title": "Q & A",
+    "takeaways": [
+      "Opportunity for audience interaction and clarification on agentic security concepts.",
+      "Open forum to address specific concerns regarding AI as both a defender and a threat."
+    ],
+    "category": "Conclusion",
+    "tags": [
+      "Q&A",
+      "Engagement",
+      "Summary"
+    ]
+  }
+]

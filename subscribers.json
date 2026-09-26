@@ -1,0 +1,34 @@
+[
+  {
+    "id": "SUB-MUF9MQ34",
+    "email": "sarah.connor@cyberdyne-ai.io",
+    "topics": [
+      "Agentic AI & Autonomous Copilots",
+      "Zero-Trust Cyber Defense & Adversarial AI"
+    ],
+    "source": "blog_page_modal",
+    "createdAt": "2026-09-24T08:24:09.616Z",
+    "status": "active"
+  },
+  {
+    "id": "SUB-MUF9BO24",
+    "email": "alex.chen@enterpriseai.org",
+    "topics": [
+      "Agentic AI & Autonomous Copilots",
+      "Enterprise Cloud & High-Scale Systems"
+    ],
+    "subscribedAt": "2026-09-24T08:15:33.772Z",
+    "source": "blog-footer",
+    "status": "active"
+  },
+  {
+    "id": "SUB-MUF9LXT8",
+    "email": "test.visitor@ai-research.org",
+    "topics": [
+      "Agentic AI & Autonomous Copilots"
+    ],
+    "subscribedAt": "2026-09-24T08:23:33.000Z",
+    "source": "blog_modal_test",
+    "status": "active"
+  }
+]
