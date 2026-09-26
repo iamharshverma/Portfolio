@@ -6113,7 +6113,45 @@ html.dark-mode .exp-progress-bar {
         </section><!--end section-->
         <!-- Contact End -->
 
-                <!-- Footer Start -->
+        <!-- Executive Tech Dispatch Subscription Section Start -->
+        <section class="section tech-dispatch-section" id="dispatchSubscribeSection" style="padding: 70px 0; border-top: 1px solid #e2e8f0;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 col-12">
+                        <div class="footer-subscribe-card shadow-sm">
+                            <span class="badge badge-pill badge-primary-soft text-primary font-weight-bold px-3 py-1 mb-2">
+                                <i class="mdi mdi-email-newsletter mr-1"></i> Executive Tech Dispatch
+                            </span>
+                            <h3 class="footer-subscribe-title font-weight-bold mb-2">
+                                Subscribe to Technical Articles &amp; AI Briefings
+                            </h3>
+                            <p class="footer-subscribe-desc text-muted mb-4" style="max-width: 580px;">
+                                Join 3,240+ technology executives and engineers. Subscribe to receive cutting-edge analyses on agentic workflows, deterministic AI governance, and distributed systems via email or standard RSS readers.
+                            </p>
+                            <form class="footer-newsletter-form" id="footerNewsletterForm" onsubmit="return handleFooterNewsletterSubmit(event)">
+                                <div class="footer-form-row d-flex flex-column flex-sm-row align-items-stretch justify-content-center">
+                                    <div class="footer-input-wrap flex-grow-1 position-relative mr-sm-2 mb-2 mb-sm-0">
+                                        <i class="mdi mdi-email-outline footer-input-icon"></i>
+                                        <input type="email" class="form-control footer-email-input" id="footerNewsletterEmail" placeholder="Enter your business email address..." required autocomplete="email" aria-label="Enter email to subscribe to tech articles">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary footer-subscribe-btn px-4 mb-2 mb-sm-0 mr-sm-2 font-weight-medium text-nowrap" id="footerSubscribeBtn">
+                                        <span class="btn-text"><i class="mdi mdi-send mr-1"></i> Subscribe</span>
+                                        <span class="btn-spinner d-none"><i class="mdi mdi-loading mdi-spin mr-1"></i> Subscribing...</span>
+                                    </button>
+                                    <a href="rss.xml" class="btn footer-rss-btn px-3 mb-2 mb-sm-0 font-weight-medium text-nowrap" id="footerRssBtn" title="Follow tech articles via RSS Feed (Feedly, Inoreader, RSS readers)" target="_blank" rel="noopener noreferrer" onclick="handleFooterRssClick(event)">
+                                        <i class="mdi mdi-rss mr-1 rss-icon"></i> <span class="rss-text">RSS Feed</span>
+                                    </a>
+                                </div>
+                                <div id="footerNewsletterFeedback" class="footer-newsletter-feedback mt-2 text-center small font-weight-medium" style="display: none;"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Executive Tech Dispatch Subscription Section End -->
+
+        <!-- Footer Start -->
     <footer class="footer bg-light">
         <div class="container">
             <div class="row justify-content-center">
@@ -6146,41 +6184,6 @@ html.dark-mode .exp-progress-bar {
                     <p class="para-desc mx-auto mt-4 text-black" style="max-width: 650px;">
                         Principal Software Engineer in AI @ Palo Alto Networks • Forbes Technology Council Member • IEEE Senior Member • Stanford GSB Scholar
                     </p>
-
-                    <!-- Footer Newsletter Subscription Input & RSS Feed Button -->
-                    <div class="footer-subscribe-wrapper my-4">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8 col-md-10 col-12">
-                                <div class="footer-subscribe-card">
-                                    <span class="badge badge-pill badge-primary-soft text-primary font-weight-bold px-3 py-1 mb-2">
-                                        <i class="mdi mdi-email-newsletter mr-1"></i> Executive Tech Dispatch
-                                    </span>
-                                    <h5 class="footer-subscribe-title font-weight-bold mb-1">
-                                        Subscribe to Technical Articles &amp; AI Briefings
-                                    </h5>
-                                    <p class="footer-subscribe-desc text-muted small mb-3">
-                                        Join 3,240+ technology executives and engineers. Subscribe via email or follow directly via RSS readers.
-                                    </p>
-                                    <form class="footer-newsletter-form" id="footerNewsletterForm" onsubmit="return handleFooterNewsletterSubmit(event)">
-                                        <div class="footer-form-row d-flex flex-column flex-sm-row align-items-stretch justify-content-center">
-                                            <div class="footer-input-wrap flex-grow-1 position-relative mr-sm-2 mb-2 mb-sm-0">
-                                                <i class="mdi mdi-email-outline footer-input-icon"></i>
-                                                <input type="email" class="form-control footer-email-input" id="footerNewsletterEmail" placeholder="Enter your business email address..." required autocomplete="email" aria-label="Enter email to subscribe to tech articles">
-                                            </div>
-                                            <button type="submit" class="btn btn-primary footer-subscribe-btn px-4 mb-2 mb-sm-0 mr-sm-2 font-weight-medium text-nowrap" id="footerSubscribeBtn">
-                                                <span class="btn-text"><i class="mdi mdi-send mr-1"></i> Subscribe</span>
-                                                <span class="btn-spinner d-none"><i class="mdi mdi-loading mdi-spin mr-1"></i> Subscribing...</span>
-                                            </button>
-                                            <a href="rss.xml" class="btn footer-rss-btn px-3 mb-2 mb-sm-0 font-weight-medium text-nowrap" id="footerRssBtn" title="Follow tech articles via RSS Feed (Feedly, Inoreader, RSS readers)" target="_blank" rel="noopener noreferrer" onclick="handleFooterRssClick(event)">
-                                                <i class="mdi mdi-rss mr-1 rss-icon"></i> <span class="rss-text">RSS Feed</span>
-                                            </a>
-                                        </div>
-                                        <div id="footerNewsletterFeedback" class="footer-newsletter-feedback mt-2 text-center small font-weight-medium" style="display: none;"></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <ul class="list-unstyled mb-0 mt-4 social-icon">
                         <li class="list-inline-item mr-1"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="rounded-circle" title="Google Scholar"><i class="mdi mdi-school"></i></a></li>
