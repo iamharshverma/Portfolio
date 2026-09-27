@@ -99,6 +99,24 @@
           <i class="mdi mdi-close" style="font-size: 18px;"></i>
         </button>
 
+        <!-- Newsletter Hero Thumbnail Banner -->
+        <div class="hv-newsletter-thumbnail-wrap">
+          <img src="images/blog/thumbnails/forbes-intelligence-dollar.jpg" 
+               alt="Harsh Verma - AI Systems &amp; Architecture Dispatch" 
+               class="hv-newsletter-thumbnail-img" 
+               loading="eager"
+               onerror="this.onerror=null; this.src='images/blog/thumbnails/rsac-death-of-authentication.jpg';" />
+          <div class="hv-newsletter-thumbnail-overlay"></div>
+          <div class="hv-newsletter-thumbnail-content">
+            <span class="hv-newsletter-thumbnail-badge">
+              <i class="mdi mdi-newspaper-variant-outline mr-1"></i> Executive Tech Dispatch
+            </span>
+            <span class="hv-newsletter-thumbnail-meta">
+              Harsh Verma &bull; Author &amp; Advisor
+            </span>
+          </div>
+        </div>
+
         <div class="hv-newsletter-body">
           <!-- Form View -->
           <div id="hvNewsletterFormPane">
@@ -118,7 +136,7 @@
 
             <p class="hv-newsletter-subtitle">
               Exclusive architectural breakdowns, zero-trust cybersecurity frameworks, and enterprise agentic blueprints authored by 
-              <span class="hv-newsletter-author-ref">Harsh Verma</span> (Principal AI Engineer @ Palo Alto Networks &amp; Forbes Tech Council).
+              <span class="hv-newsletter-author-ref">Harsh Verma</span> (Principal AI Engineer @ Palo Alto Networks, Author, Advisor &amp; Forbes Tech Council).
             </p>
 
             <ul class="hv-newsletter-perks">
@@ -165,6 +183,9 @@
                   </button>
                   <button type="button" class="hv-newsletter-topic-btn selected" data-topic="Enterprise Cloud &amp; High-Scale Systems">
                     <i class="mdi mdi-check"></i> Enterprise Systems
+                  </button>
+                  <button type="button" class="hv-newsletter-topic-btn" data-topic="Startup Advisory &amp; Venture Innovation">
+                    <i class="mdi mdi-check"></i> Startup Advisory
                   </button>
                 </div>
               </div>

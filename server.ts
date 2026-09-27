@@ -792,13 +792,13 @@ async function fetchPostFromUrl(rawUrl) {
     if (cleanUrl.includes('7462604082080276482')) {
       title = 'The Intelligence Per Dollar Metric: How Leaders Measure AI Success';
       description = 'As AI moves from experimentation to enterprise-scale deployment, the conversation is shifting from: "How powerful is the model?" to "How much real business intelligence are we generating per dollar spent?". The topic I believe will define the next era of enterprise AI adoption is: "The Intelligence Per Dollar Metric: How Influential Leaders Measure AI Success." As an Official Member of Forbes Technology Council, exploring how engineering is being redefined in the AI era. The article talks about why Intelligence Per Dollar may become one of the most important leadership metrics for AI-first organizations.';
-      imageUrl = 'https://media.licdn.com/dms/image/sync/v2/D4D27AQFJaKWFWgTgWg/articleshare-shrink_800/B56Z5B.jiEIsAQ-/0/1779223378877?e=2147483647&v=beta&t=Pn8Dn4Fuy3q79g4A8_KsmF3z4EefJG43XU6G0d7RrdM';
+      imageUrl = 'images/blog/thumbnails/forbes-intelligence-dollar.jpg';
       likes = 348;
       comments = 42;
     } else if (cleanUrl.includes('DYSEXmMswXj')) {
       title = "Harsh Verma Nominated for 'Tech Excellence Award' at Influencer Magazine Awards";
       description = "Harsh Verma Nominated for 'Tech Excellence Award' at Influencer Magazine Awards 2026 (E2). Exploring mission-critical AI engineering, zero-trust architectures, and enterprise innovation.";
-      imageUrl = 'https://scontent-fra5-2.cdninstagram.com/v/t51.82787-15/692516148_18461543713104220_4601170059700014870_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74';
+      imageUrl = 'images/blog/thumbnails/aij-nomination.jpg';
       likes = 778;
       comments = 24;
     } else {
@@ -807,7 +807,7 @@ async function fetchPostFromUrl(rawUrl) {
       const slugText = slugMatch ? slugMatch[1].replace(/[-_]/g, ' ') : (isInstagram ? 'Instagram Update' : 'LinkedIn Professional Update');
       title = `${isInstagram ? 'Instagram Reel & Update' : 'LinkedIn Enterprise Update'}`;
       description = `Public post fetched from ${isInstagram ? '@aiwithharsh on Instagram' : '@harshverma59 on LinkedIn'}: ${slugText}. Exploring autonomous AI architectures, continuous learning, and engineering leadership.`;
-      imageUrl = isInstagram ? 'images/harsh_stanford.jpg' : 'images/blog/01.jpg';
+      imageUrl = isInstagram ? 'images/harsh_stanford.jpg' : 'images/blog/thumbnails/rsac-death-of-authentication.jpg';
       likes = 210;
       comments = 18;
     }
@@ -862,7 +862,7 @@ async function fetchPostFromUrl(rawUrl) {
     comments: comments || Math.floor(Math.random() * 20) + 14,
     shares: Math.floor(Math.random() * 15) + 8,
     mediaType: imageUrl ? 'image' : 'text',
-    mediaUrl: imageUrl || (isInstagram ? 'images/harsh_stanford.jpg' : 'images/blog/01.jpg'),
+    mediaUrl: imageUrl || (isInstagram ? 'images/harsh_stanford.jpg' : 'images/blog/thumbnails/rsac-death-of-authentication.jpg'),
     isPinned: false,
     source: 'fetched_from_url'
   };

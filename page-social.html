@@ -510,28 +510,33 @@
             color: #60a5fa;
         }
 
-        /* Compact Media Preview (160px capped) */
+        /* Professional Media Preview (190px capped, premium rounded ratio) */
         .social-media-container {
-            border-radius: 8px;
+            border-radius: 10px;
             overflow: hidden;
-            margin-bottom: 10px;
+            margin-top: 8px;
+            margin-bottom: 12px;
             border: 1px solid #e2e8f0;
-            max-height: 160px;
-            background: #0f172a;
+            max-height: 190px;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             position: relative;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
         }
         body.dark-mode .social-media-container {
             border-color: #334155;
+            background: #0b1120;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
         }
         .social-media-img {
             width: 100%;
-            height: 160px;
+            height: 190px;
             object-fit: cover;
+            object-position: center;
             display: block;
-            transition: transform 0.3s ease;
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
         }
         .social-media-img:hover {
-            transform: scale(1.02);
+            transform: scale(1.025);
         }
 
         /* Compact Engagement Footer */
@@ -2197,6 +2202,49 @@
                 $('#analyticsProgressBar').css('width', liPct + '%');
             }
 
+            // Contextual high-quality thumbnail fallback mapping
+            function getContextualSocialFallback(post) {
+                var text = ((post.title || '') + ' ' + (post.content || '') + ' ' + (post.routineCategory || '')).toLowerCase();
+                if (text.includes('zero-trust') || text.includes('zero trust') || text.includes('authentication') || text.includes('identity') || text.includes('security') || text.includes('cyber')) {
+                    return 'images/blog/thumbnails/rsac-death-of-authentication.jpg';
+                }
+                if (text.includes('forbes') || text.includes('intelligence per dollar') || text.includes('metric') || text.includes('dollar')) {
+                    return 'images/blog/thumbnails/forbes-intelligence-dollar.jpg';
+                }
+                if (text.includes('award') || text.includes('nominated') || text.includes('recognition') || text.includes('excellence')) {
+                    return 'images/blog/thumbnails/aij-nomination.jpg';
+                }
+                if (text.includes('book') || text.includes('author') || text.includes('manuscript') || text.includes('volume')) {
+                    return 'images/books/beyond_ai_engineering_cover.jpg';
+                }
+                if (text.includes('xraised') || text.includes('podcast') || text.includes('interview') || text.includes('beyond code')) {
+                    return 'images/blog/thumbnails/forbes-beyond-code.jpg';
+                }
+                if (text.includes('keynote') || text.includes('ieee') || text.includes('multi-agent') || text.includes('cloud')) {
+                    return 'images/blog/thumbnails/hn-distributed-intelligence.png';
+                }
+                if (text.includes('stanford') || text.includes('trail') || text.includes('run') || text.includes('routine') || text.includes('wellness') || text.includes('fitness')) {
+                    return 'images/harsh_stanford.jpg';
+                }
+                return (post.platform || '').toLowerCase() === 'instagram' 
+                    ? 'images/harsh_stanford.jpg' 
+                    : 'images/blog/thumbnails/forbes-intelligence-dollar.jpg';
+            }
+
+            // Ensure every post has a proper, verified image and never a placeholder
+            function getResolvedSocialImage(post) {
+                var raw = (post.mediaUrl || '').trim();
+                // Never use placeholder template images or expired CDN links
+                if (!raw || raw.includes('01.jpg') || raw.includes('placeholder') || raw.includes('800x600') || raw.includes('800*600')) {
+                    return getContextualSocialFallback(post);
+                }
+                // If it is an expired Instagram CDN URL, switch to authentic local asset
+                if (raw.includes('cdninstagram.com')) {
+                    return getContextualSocialFallback(post);
+                }
+                return raw;
+            }
+
             // Render post cards in small, compact layout
             function renderPosts() {
                 var $stream = $('#socialFeedStream');
@@ -2244,14 +2292,14 @@
                     var isLong = rawContent.length > 160;
                     var contentId = 'content-' + post.id;
 
-                    var mediaHtml = '';
-                    if (post.mediaUrl) {
-                        mediaHtml = `
-                            <div class="social-media-container">
-                                <img src="${post.mediaUrl}" alt="Post media attachment" class="social-media-img" loading="lazy" onerror="this.style.display='none'" />
-                            </div>
-                        `;
-                    }
+                    // Always ensure a crisp, authentic, high-quality post image
+                    var resolvedMediaUrl = getResolvedSocialImage(post);
+                    var fallbackMediaUrl = getContextualSocialFallback(post);
+                    var mediaHtml = `
+                        <div class="social-media-container">
+                            <img src="${resolvedMediaUrl}" alt="${post.title || 'Social post attachment'}" class="social-media-img" loading="lazy" onerror="this.onerror=null; this.src='${fallbackMediaUrl}';" />
+                        </div>
+                    `;
 
                     var titleHtml = post.title ? `<div class="social-post-title">${post.title}</div>` : '';
 
