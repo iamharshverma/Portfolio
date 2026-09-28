@@ -3748,4 +3748,109 @@ html:not(.dark-mode) .section-head span {
   align-items: center !important;
 }
 
+/* ==========================================================================
+   Hero Section Subtle Entrance Animations
+   Enhances initial landing user experience with staggered, silky entrance
+   ========================================================================== */
+
+@keyframes heroAvatarPop {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0) scale(0.92);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -3px, 0) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes heroBadgeSlide {
+  0% {
+    opacity: 0;
+    transform: translate3d(8px, 12px, 0) scale(0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes heroFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes heroCardFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 28px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.hero-anim-avatar-wrap {
+  animation: heroAvatarPop 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity;
+}
+
+.hero-anim-badge {
+  animation: heroBadgeSlide 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.35s backwards;
+  will-change: transform, opacity;
+}
+
+.hero-anim-title {
+  animation: heroFadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.18s backwards;
+  will-change: transform, opacity;
+}
+
+.hero-anim-designation {
+  animation: heroFadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.32s backwards;
+  will-change: transform, opacity;
+}
+
+.hero-anim-cta {
+  animation: heroFadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.46s backwards;
+  will-change: transform, opacity;
+}
+
+.hero-anim-profile-card {
+  animation: heroCardFadeIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.6s backwards;
+  will-change: transform, opacity;
+}
+
+.hero-avatar-ring {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.hero-avatar-ring:hover {
+  transform: scale(1.035);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.55), 0 0 25px rgba(59, 130, 246, 0.5) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-anim-avatar-wrap,
+  .hero-anim-badge,
+  .hero-anim-title,
+  .hero-anim-designation,
+  .hero-anim-cta,
+  .hero-anim-profile-card {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 /**
  * Dark Mode Manager for Harsh Verma Portfolio
  * Handles theme toggling, persistence, and accessibility.
+ * Default theme is Light Mode.
  */
 
 (function () {
@@ -8,15 +9,14 @@
 
   var THEME_KEY = 'portfolio_theme';
 
-  // Get current stored theme or system preference
+  // Get current stored theme - explicitly defaults to light mode
   function getPreferredTheme() {
     var storedTheme = localStorage.getItem(THEME_KEY);
-    if (storedTheme) {
-      return storedTheme;
+    if (storedTheme === 'dark') {
+      return 'dark';
     }
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark'
-      : 'light';
+    // Default mode is light mode
+    return 'light';
   }
 
   // Apply theme to document (both html and body for full CSS selector compatibility)
@@ -58,7 +58,7 @@
     applyTheme(newTheme);
   }
 
-  // Initial application immediately (can also run before DOM is fully parsed)
+  // Initial application immediately (defaults to light mode)
   var initialTheme = getPreferredTheme();
   applyTheme(initialTheme);
 
@@ -74,15 +74,6 @@
         toggleTheme();
       }
     });
-
-    // Listen to system preference changes if user hasn't chosen manually
-    if (window.matchMedia) {
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
-        if (!localStorage.getItem(THEME_KEY)) {
-          applyTheme(e.matches ? 'dark' : 'light');
-        }
-      });
-    }
   }
 
   if (document.readyState === 'loading') {
