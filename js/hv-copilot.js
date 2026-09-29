@@ -669,7 +669,7 @@
     if (messageHistory.length === 0) {
       // Welcome message
       const welcomeContent = `### 👋 Welcome to Harsh Verma's AI Copilot!
-I am your intelligent liaison grounded in Harsh Verma's **24 Global Awards**, **23+ Research Publications**, **Authored Books on AI Agents**, and executive advisory background.
+I am your intelligent liaison grounded in Harsh Verma's **24 Global Awards**, **24+ Research Publications**, **Authored Books on AI Agents**, and executive advisory background.
 
 How can I assist you today? You can ask about:
 - **Executive Biography & Technical Focus**
@@ -815,6 +815,10 @@ How can I assist you today? You can ask about:
         })
       });
 
+      if (!response.ok) {
+        throw new Error(`Server returned HTTP ${response.status}`);
+      }
+
       const data = await response.json();
       removeTypingIndicator();
 
@@ -823,14 +827,20 @@ How can I assist you today? You can ask about:
         appendMessageToDOM('assistant', data.reply);
         saveHistory();
       } else {
-        const errorMsg = "I'm sorry, I encountered an unexpected error while preparing the answer. Please feel free to try again or reach out directly to harshverma59@gmail.com.";
-        appendMessageToDOM('assistant', errorMsg);
+        // Fallback to embedded client-side knowledge engine
+        const fallbackReply = resolveClientKnowledge(userText);
+        messageHistory.push({ role: 'assistant', content: fallbackReply });
+        appendMessageToDOM('assistant', fallbackReply);
+        saveHistory();
       }
     } catch (err) {
       removeTypingIndicator();
-      console.error('Copilot request error:', err);
-      const networkErrorMsg = "Unable to reach the AI server right now. Please explore the portfolio navigation directly or email **[harshverma59@gmail.com](mailto:harshverma59@gmail.com)**.";
-      appendMessageToDOM('assistant', networkErrorMsg);
+      console.warn('Backend /api/copilot is unavailable (e.g. static hosting or network offline). Activating embedded client knowledge engine:', err.message);
+      // Autonomous seamless fallback grounded in Harsh Verma's portfolio
+      const fallbackReply = resolveClientKnowledge(userText);
+      messageHistory.push({ role: 'assistant', content: fallbackReply });
+      appendMessageToDOM('assistant', fallbackReply);
+      saveHistory();
     } finally {
       isGenerating = false;
       if (sendBtn) sendBtn.disabled = false;
@@ -853,27 +863,342 @@ How can I assist you today? You can ask about:
     }
   }
 
+  const DEFAULT_SUGGESTIONS = [
+    { text: "Give me an executive summary of Harsh's career & expertise", category: "Bio & Overview" },
+    { text: "What are Harsh's top awards and global recognitions?", category: "Honors & Awards" },
+    { text: "Summarize his authored books on AI Agents & Cyber Defense", category: "Authored Books" },
+    { text: "What are his key research publications & academic citations?", category: "Research & Papers" },
+    { text: "Tell me about his interactive EasyChair Smart Slides keynotes", category: "Smart Slides" },
+    { text: "How can I invite Harsh for a keynote, panel, or advisory role?", category: "Speaking & Contact" }
+  ];
+
   async function fetchSuggestions() {
+    const bar = document.getElementById('hvSuggestionsBar');
+    if (!bar) return;
+
     try {
       const res = await fetch('/api/copilot/suggestions');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       if (data && data.suggestions && data.suggestions.length > 0) {
-        const bar = document.getElementById('hvSuggestionsBar');
-        if (bar) {
-          bar.innerHTML = data.suggestions
-            .map(
-              (s) => `
-            <button class="hv-chip-btn" data-query="${escapeHtml(s.text)}">
-              <i class="mdi mdi-lightning-bolt mr-1"></i> ${escapeHtml(s.category || s.text.slice(0, 24))}
-            </button>
-          `
-            )
-            .join('');
-        }
+        renderSuggestionChips(data.suggestions);
+        return;
       }
     } catch (e) {
-      // Fallback chips already in DOM
+      // Static hosting fallback
     }
+
+    // Default suggestions when running statically
+    renderSuggestionChips(DEFAULT_SUGGESTIONS);
+  }
+
+  function renderSuggestionChips(suggestions) {
+    const bar = document.getElementById('hvSuggestionsBar');
+    if (!bar || !suggestions) return;
+    bar.innerHTML = suggestions
+      .map(
+        (s) => `
+      <button class="hv-chip-btn" data-query="${escapeHtml(s.text)}">
+        <i class="mdi mdi-lightning-bolt mr-1"></i> ${escapeHtml(s.category || s.text.slice(0, 24))}
+      </button>
+    `
+      )
+      .join('');
+  }
+
+  // Autonomous embedded client-side knowledge engine
+  function resolveClientKnowledge(query) {
+    const q = (query || '').toLowerCase().trim();
+
+    // 1. Awards & Recognitions
+    if (
+      q.includes('award') ||
+      q.includes('recognition') ||
+      q.includes('honor') ||
+      q.includes('globee') ||
+      q.includes('stevie') ||
+      q.includes('nobel') ||
+      q.includes('forttuna') ||
+      q.includes('titans') ||
+      q.includes('brandon') ||
+      q.includes('achievement') ||
+      q.includes('winner')
+    ) {
+      return `### 🏆 Harsh Verma — 24 Prestigious Global Awards & Honors
+
+Harsh Verma has received **24 international awards and recognitions** celebrating breakthrough innovations in Enterprise AI, Autonomous Multi-Agent Architectures, and Cyber Defense:
+
+- **Forttuna Global 100 Power List (2026)**: Honored among the world's top 100 technology luminaries shaping the future of autonomous intelligence.
+- **Nobel Technology Awards (2026)**: Gold Winner (#145) for pioneering scalable multi-agent systems and real-time enterprise platforms.
+- **Global Recognition Award (2026)**: AI Innovator of the Year honoring sustained technical leadership and patent-worthy architectures.
+- **Globee & Stevie International Business Awards**: Multiple Gold & Silver honors for Enterprise Technology and AI Breakthroughs.
+- **Brandon Hall Group & Tech Titans Honors**: Excellence in High-Impact Engineering Leadership.
+
+👉 Explore the full dossier of honors with official verification credentials: **[View All 24 Awards](page-awards)**`;
+    }
+
+    // 2. Books & Authorship
+    if (
+      q.includes('book') ||
+      q.includes('author') ||
+      q.includes('agent revolution') ||
+      q.includes('published book') ||
+      q.includes('writing') ||
+      q.includes('cyber defense') ||
+      q.includes('enterprise ai agent')
+    ) {
+      return `### 📚 Authored Books by Harsh Verma
+
+Harsh Verma is the author of two definitive technical volumes bridging academic rigor and mission-critical enterprise engineering:
+
+1. **Enterprise AI Agents: Build Your Authority and Lead the AI Agent Revolution**
+   - *Focus*: Architectural patterns, production protocols, deterministic guardrails, and memory graphs for enterprise multi-agent systems.
+   - *Target Readers*: AI architects, engineering leaders, and enterprise strategists.
+
+2. **Autonomous Cyber Defense: Adversarial Intelligence and Battleground Systems**
+   - *Focus*: Zero-Trust architectures, threat vector modeling, and autonomous threat mitigation in high-throughput distributed networks.
+
+👉 Read chapter outlines and access reading previews: **[Explore Authored Books](page-books)**`;
+    }
+
+    // 3. Publications & Academic Citations
+    if (
+      q.includes('paper') ||
+      q.includes('publication') ||
+      q.includes('research') ||
+      q.includes('scholar') ||
+      q.includes('citation') ||
+      q.includes('ieee') ||
+      q.includes('springer') ||
+      q.includes('icaccm') ||
+      q.includes('ejcsit') ||
+      q.includes('hikerunner') ||
+      q.includes('article') ||
+      q.includes('journal')
+    ) {
+      return `### 🔬 24+ Peer-Reviewed Research Publications & Academic Citations
+
+Harsh Verma has published **24+ peer-reviewed and conference papers** across leading IEEE conferences, ICACCM, Springer Nature, and international computer science journals with over **150+ academic citations**:
+
+- **Data Quality, Feature Engineering, and Model Reliability in Large-Scale AI Multi-Agentic Systems** (EJCSIT, May 30, 2021).
+- **Multi-Agent Systems & Trajectory Planning** for Delay-Tolerant Wireless Sensor Networks (ICACCM 2026).
+- **Explainable AI (XAI)** for Software Engineering Decision-Making & Risk Reduction.
+- **Secure Real-Time Heterogeneous Data Management** in Distributed Cloud Systems.
+- **Real-Time Analytics Performance Load Simulation & Scaling** for High-Frequency FinTech.
+- **Autonomous Zero-Trust Defense Protocols** for Cloud Microservice Ecosystems.
+
+👉 Access full abstracts, DOIs, and citation downloads: **[Explore 24+ Research Publications](page-publications)** or review the **[Google Scholar Profile](https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ)**.`;
+    }
+
+    // 4. Fellowships & Professional Memberships
+    if (
+      q.includes('member') ||
+      q.includes('fellow') ||
+      q.includes('harvard') ||
+      q.includes('ieee') ||
+      q.includes('bcs') ||
+      q.includes('forbes') ||
+      q.includes('sigma xi') ||
+      q.includes('owasp') ||
+      q.includes('acm') ||
+      q.includes('association') ||
+      q.includes('credential') ||
+      q.includes('certification') ||
+      q.includes('society')
+    ) {
+      return `### 🎖️ Invited Fellowships & Professional Memberships
+
+Harsh Verma holds prestigious fellowships and elected senior memberships across elite international scientific, computing, and executive institutions:
+
+- **Harvard Square Leaders Excellence Fellow** (Cambridge, MA)
+- **Senior Member of IEEE (SMIEEE 95132014)** (Institute of Electrical and Electronics Engineers)
+- **Fellow of The British Computer Society (FBCS, Chartered IT Professional)**
+- **Official Member, Forbes Technology Council** (Published Thought Leader)
+- **Fellow of The Royal Society of Arts (FRSA)**
+- **Full Elected Member of Sigma Xi** (The Scientific Research Honor Society)
+- **OWASP Global Member & Cloud Security Alliance (CSA) Member**
+
+👉 Deep dive into all citations, certifications, and appointments on the **[Invited Memberships Page](page-memberships)** and **[38 Verified Academic & Industry Hubs](page-about#verified-profiles)**.`;
+    }
+
+    // 5. Professional Career & Experience
+    if (
+      q.includes('experience') ||
+      q.includes('career') ||
+      q.includes('role') ||
+      q.includes('job') ||
+      q.includes('work') ||
+      q.includes('history') ||
+      q.includes('background') ||
+      q.includes('palo alto') ||
+      q.includes('company') ||
+      q.includes('resume') ||
+      q.includes('cv') ||
+      q.includes('who is') ||
+      q.includes('profile')
+    ) {
+      return `### 💼 Harsh Verma — Professional Career & Experience
+
+Harsh Verma brings over **12+ years of proven technical leadership** across enterprise engineering, cloud distributed systems, and AI innovation:
+
+- **Principal AI/ML Engineer & Enterprise Architect**: Spearheading autonomous agent intelligence, AI security guardrails, and mission-critical cloud pipelines at **Palo Alto Networks**.
+- **Enterprise Engineering Leadership**: Architecting mission-critical platforms, streaming data backbones, and Zero-Trust frameworks.
+- **R&D and Open Source Roots**: Former R&D Engineer Intern at **ISRO** (Spatial Computing & GIS) and **Mozilla Firefox Ambassador**.
+- **10 Structured Roles**: Covering enterprise engineering, tech leadership, research, and high-impact innovation.
+
+👉 Explore the interactive experience timeline and tech stacks: **[Experience Section](index#experience)** or read the full biography on **[About Harsh](page-about)**.`;
+    }
+
+    // 6. Smart Slides & Keynote Decks
+    if (
+      q.includes('slide') ||
+      q.includes('presentation') ||
+      q.includes('deck') ||
+      q.includes('easychair') ||
+      q.includes('powerpoint')
+    ) {
+      return `### 📊 EasyChair Smart Slides & Keynote Decks
+
+Harsh's verified keynote slide decks are available via an interactive slide player with slide-by-slide citations and downloads:
+
+- **Agentic Security Governance**: Production protocols and deterministic safety boundaries for enterprise multi-agent networks.
+- **GenAI Cybersecurity & Cyber Defense**: Zero-Trust battleground systems against adversarial AI threats.
+- **HikeRunner: LoadTestFramework**: Distributed performance benchmarking for microservices and real-time streams.
+
+👉 Launch the interactive slide viewer: **[Open Smart Slides Hub](page-smart-slides)**`;
+    }
+
+    // 7. Keynotes & Speaking Engagements
+    if (
+      q.includes('speak') ||
+      q.includes('event') ||
+      q.includes('keynote') ||
+      q.includes('conference') ||
+      q.includes('panel') ||
+      q.includes('talk') ||
+      q.includes('booking') ||
+      q.includes('agenda') ||
+      q.includes('retreat') ||
+      q.includes('ata') ||
+      q.includes('gtr')
+    ) {
+      return `### 🎙️ Keynotes, Panels & Speaking Engagements
+
+Harsh Verma is an international keynote speaker on:
+- **Enterprise AI Agent Orchestration**: Scaling autonomous agents with deterministic controls.
+- **Autonomous Cyber Defense**: Battleground machine learning against zero-day threats.
+- **High-Throughput Cloud Distributed Architectures**: Lessons from enterprise-scale data platforms.
+- **Featured Appearances**: Keynote speaker at @#ATAGTR2017 (Global Testing Retreat), IEEE Symposia, and global engineering conferences.
+
+👉 Review past appearances: **[Speaking Engagements](page-events)** or book an executive hold: **[Contact & Booking Form](index#contact)**.`;
+    }
+
+    // 8. Media Coverage & Distribution Analytics
+    if (
+      q.includes('media') ||
+      q.includes('press') ||
+      q.includes('news') ||
+      q.includes('interview') ||
+      q.includes('views') ||
+      q.includes('reach') ||
+      q.includes('distribution') ||
+      q.includes('yahoo') ||
+      q.includes('business insider') ||
+      q.includes('usa today') ||
+      q.includes('ap news')
+    ) {
+      return `### 📰 Media Coverage & Global Distribution Reach
+
+Harsh Verma's technical thought leadership has reached an aggregate global audience of over **3.75+ Billion potential views** across **39+ media features**:
+
+- **Major Syndication Platforms**: Featured on **Yahoo Finance, Business Insider, USA TODAY, AP News, NewsBreak, Barchart, and StreetInsider**.
+- **Geographic Reach**: 48% US, 18% UK, 14% India, 12% Canada, 8% Asia & Middle East.
+- **Audience Demographics**: Engineers & Systems Architects (32%), Founders & CTOs (26%), Investors & VCs (24%).
+
+👉 Deep dive into the reach metrics: **[Media Distribution Analytics](page-media-distribution-analytics)** or browse full articles on **[Media Coverage](page-media)**.`;
+    }
+
+    // 9. Everyday Routine & Social Feeds
+    if (
+      q.includes('routine') ||
+      q.includes('social') ||
+      q.includes('post') ||
+      q.includes('feed') ||
+      q.includes('instagram') ||
+      q.includes('linkedin') ||
+      q.includes('daily') ||
+      q.includes('fitness') ||
+      q.includes('wellness')
+    ) {
+      return `### ⚡ Everyday Routine & Social Feed
+
+Harsh shares active insights on engineering leadership, daily discipline, and enterprise architectures:
+
+- **LinkedIn (@harshverma59)**: Deep dives into AI Agent systems, Forbes Tech Council articles, and enterprise architecture.
+- **Instagram (@aiwithharsh)**: Visual reels on AI engineering beyond code, daily routine, and wellness.
+
+👉 Check out the interactive feed: **[Everyday Routine & Social Hub](index#routine)**`;
+    }
+
+    // 10. Newsletter & Dispatch
+    if (
+      q.includes('newsletter') ||
+      q.includes('dispatch') ||
+      q.includes('subscribe') ||
+      q.includes('monthly')
+    ) {
+      return `### 📬 The Agentic Systems & AI Dispatch
+
+A monthly curated executive newsletter by Harsh Verma covering deep dives on Agentic AI & Autonomous Copilots, Zero-Trust Cyber Defense, and Enterprise High-Scale Systems Architecture.
+
+- Read by over **3,240+ engineers, researchers, and technology executives**.
+- Published monthly with actionable architectural breakdowns.
+
+👉 Read recent articles and subscribe for free: **[Explore Blog & Dispatch](page-blog)**`;
+    }
+
+    // 11. Contact & Collaboration
+    if (
+      q.includes('contact') ||
+      q.includes('email') ||
+      q.includes('collaborate') ||
+      q.includes('hire') ||
+      q.includes('advisory') ||
+      q.includes('consult') ||
+      q.includes('reach') ||
+      q.includes('message') ||
+      q.includes('touch') ||
+      q.includes('inquiry')
+    ) {
+      return `### ✉️ Get in Touch with Harsh Verma
+
+Harsh Verma is available for executive advisory, enterprise AI architecture consulting, keynote engagements, and research collaborations:
+
+- **Direct Email**: [harshverma59@gmail.com](mailto:harshverma59@gmail.com)
+- **LinkedIn**: [linkedin.com/in/harshverma59/](https://www.linkedin.com/in/harshverma59/)
+- **GitHub**: [github.com/iamharshverma](https://github.com/iamharshverma)
+- **Direct Portfolio Contact Form**: **[Send a Message to Harsh](index#contact)**
+
+All verified inquiries submitted through this portfolio are delivered directly with a guaranteed 24-hour response window.`;
+    }
+
+    // Default executive bio
+    return `### 🌟 Harsh Verma — Executive Overview
+
+**Harsh Verma** is an internationally recognized **Enterprise AI Architect, Principal Technologist, and Author** based in the San Francisco Bay Area with over 12+ years of pioneering achievements:
+
+- **Specializations**: Enterprise Generative AI, Autonomous Multi-Agent Architectures, Zero-Trust Cyber Resilience, and Cloud Distributed Systems.
+- **Recognitions**: **24 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
+- **Academic Impact**: **24+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **38 Verified Academic/Professional Registries**.
+- **Fellowships**: Harvard Square Leaders Excellence Fellow, IEEE Senior Member, and Forbes Technology Council Member.
+
+**Explore further:**
+- 🏆 **[24 Prestigious Awards](page-awards)**
+- 🔬 **[24+ Research Publications](page-publications)**
+- 💼 **[Professional Experience & Roles](index#experience)**
+- 📚 **[Authored Books](page-books)**
+- 👥 **[Invited Memberships](page-memberships)**
+- ✉️ **[Get in Touch / Book a Keynote](index#contact)**`;
   }
 
   // Lightweight robust Markdown parser
