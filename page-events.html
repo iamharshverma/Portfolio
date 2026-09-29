@@ -246,46 +246,6 @@
             box-shadow: 0 2px 8px rgba(79, 70, 229, 0.2);
         }
 
-        .event-cert-box {
-            background: rgba(16, 185, 129, 0.07);
-            border: 1px solid rgba(16, 185, 129, 0.28);
-            border-radius: 10px;
-            padding: 8px 12px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            transition: all 0.2s ease;
-        }
-        .event-cert-box:hover {
-            border-color: rgba(16, 185, 129, 0.5);
-            background: rgba(16, 185, 129, 0.12);
-        }
-        .event-cert-text {
-            color: #065f46;
-            font-size: 12.5px;
-            font-weight: 600;
-        }
-        .event-cert-code {
-            font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-            font-weight: 700;
-            color: #047857;
-            background: rgba(16, 185, 129, 0.12);
-            padding: 2px 6px;
-            border-radius: 4px;
-        }
-        .btn-event-cert {
-            background: rgba(16, 185, 129, 0.1);
-            border: 1px solid rgba(16, 185, 129, 0.35);
-            color: #047857 !important;
-            font-weight: 700;
-        }
-        .btn-event-cert:hover {
-            background: #10b981 !important;
-            border-color: #10b981 !important;
-            color: #ffffff !important;
-            box-shadow: 0 3px 10px rgba(16, 185, 129, 0.35);
-        }
-
         .copy-event-btn {
             border-radius: 8px;
             padding: 4px 8px;
@@ -297,27 +257,6 @@
         }
 
         /* Dark Mode Overrides */
-        body.dark-mode .event-cert-box {
-            background: rgba(16, 185, 129, 0.1);
-            border-color: rgba(16, 185, 129, 0.3);
-        }
-        body.dark-mode .event-cert-text {
-            color: #6ee7b7;
-        }
-        body.dark-mode .event-cert-code {
-            color: #34d399;
-            background: rgba(16, 185, 129, 0.2);
-        }
-        body.dark-mode .btn-event-cert {
-            background: rgba(16, 185, 129, 0.15);
-            border-color: rgba(16, 185, 129, 0.4);
-            color: #6ee7b7 !important;
-        }
-        body.dark-mode .btn-event-cert:hover {
-            background: #10b981 !important;
-            border-color: #10b981 !important;
-            color: #ffffff !important;
-        }
         body.dark-mode .events-page-wrapper {
             background-color: #090e17;
             background-image: 
@@ -380,159 +319,79 @@
             background: #1e293b;
             border-color: #334155;
         }
-
-        /* Navbar Header & Nav Link Visibility */
-        </style>
-    <!-- HV AI Copilot Styles -->
-    <link rel="stylesheet" href="css/hv-copilot.css" />
-    <!-- HV Executive Keynote Hub & Booking Flow Styles -->
-    <link rel="stylesheet" href="css/hv-keynote-hub.css" />
+    </style>
 </head>
 
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky" id="navbar">
-        <a rel="me" href="https://mastodon.social/@harshverma59" class="sr-only">Mastodon</a>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
         <div class="container">
-            <a class="navbar-brand brand-logo-wrap" href="index" title="Harsh Verma - Home">
-                <span class="brand-monogram-emblem">
-                    <svg class="brand-logo-svg" width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="hvNavGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#1e40af" />
-                                <stop offset="55%" stop-color="#2563eb" />
-                                <stop offset="100%" stop-color="#4f46e5" />
-                            </linearGradient>
-                            <linearGradient id="hvNavAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#38bdf8" />
-                                <stop offset="100%" stop-color="#818cf8" />
-                            </linearGradient>
-                        </defs>
-                        <rect width="40" height="40" rx="10" fill="url(#hvNavGrad)" />
-                        <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
-                        <path d="M11 12V28M11 20H19M19 12V28" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M23 12L28.5 28L34 12" stroke="url(#hvNavAccentGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="34" cy="12" r="1.75" fill="#38bdf8" />
-                    </svg>
-                </span>
-                <span class="brand-name-text">
-                    <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
-                </span>
+            <a class="navbar-brand" href="index">
+                <span class="text-primary font-weight-bold" style="font-size: 22px; letter-spacing: -0.5px;">Harsh Verma</span>
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="mdi mdi-menu"></i>
-            </button>
+            <div class="d-flex align-items-center d-lg-none">
+                <button type="button" class="theme-toggle-btn mr-2" aria-label="Toggle dark mode" title="Toggle theme">
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span data-feather="menu" class="fea icon-md"></span>
+                </button>
+            </div>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+            <div class="collapse navbar-collapse navigation" id="navbarCollapse">
+                <ul class="navbar-nav navbar-nav-link ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index">Home</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="page-about">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="page-events">Speaking Engagements</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="page-publications">Publications</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page-awards">Awards</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="page-memberships">Memberships</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="page-media">Media</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="page-events">Speaker</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="page-books">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="page-blog">Blog</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index#contact">Contact</a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            More <i class="mdi mdi-chevron-down nav-dropdown-arrow"></i>
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right nav-custom-dropdown" aria-labelledby="navbarDropdown">
-                            <div class="nav-dropdown-header">
-                                <span>Extended Portfolios &amp; Hubs</span>
+                        <div class="dropdown-menu rounded m-0" aria-labelledby="navbarDropdown">
+                            <div class="container ml-0 ml-md-0">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a class="dropdown-item" href="page-about">Biography &amp; Profiles</a>
+                                        <a class="dropdown-item" href="page-events">Speaking Engagements</a>
+                                        <a class="dropdown-item" href="page-books">Authored Books</a>
+                                        <a class="dropdown-item" href="page-publications">Publications &amp; Research</a>
+                                        <a class="dropdown-item" href="page-portfolio">Portfolio Projects</a>
+                                        <a class="dropdown-item" href="page-blog">Blog &amp; Articles</a>
+                                        <a class="dropdown-item" href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank">Google Scholar Profile <i class="mdi mdi-open-in-new ml-1"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                            <a class="dropdown-item nav-dropdown-item" href="page-media-distribution-analytics">
-                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-chart-box-outline"></i></div>
-                                <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Distribution Analytics <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">3.75B+</span></span>
-                                    <span class="dropdown-item-desc">Publication reach &amp; influence pyramid</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item nav-dropdown-item" href="page-portfolio">
-                                <div class="dropdown-item-icon bg-soft-info"><i class="mdi mdi-cube-outline"></i></div>
-                                <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Portfolio Projects</span>
-                                    <span class="dropdown-item-desc">Architectures, agent frameworks &amp; systems</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item nav-dropdown-item" href="page-smart-slides">
-                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-presentation-play"></i></div>
-                                <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Smart Slides <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">New</span></span>
-                                    <span class="dropdown-item-desc">Interactive executive &amp; research slide decks</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item nav-dropdown-item" href="page-social">
-                                <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
-                                <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
-                                    <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
-                                <div class="dropdown-item-icon bg-soft-warning"><i class="mdi mdi-shield-account-outline"></i></div>
-                                <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">42 Verified Profiles Hub</span>
-                                    <span class="dropdown-item-desc">Academic, editorial &amp; executive registries</span>
-                                </div>
-                            </a>
-                            <div class="dropdown-divider my-2"></div>
-                            <a class="dropdown-item nav-dropdown-item" href="index#contact">
-                                <div class="dropdown-item-icon bg-soft-danger"><i class="mdi mdi-email-outline"></i></div>
-                                <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Contact Harsh</span>
-                                    <span class="dropdown-item-desc">Advisory, keynotes &amp; consultations</span>
-                                </div>
-                            </a>
                         </div>
                     </li>
                 </ul>
 
-                <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
-                    <li class="list-inline-item mr-2">
-                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (23+ Papers)">
-                            <i class="mdi mdi-school"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mr-2">
-                        <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="nav-social-btn" title="LinkedIn Profile">
-                            <i class="mdi mdi-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mr-2">
-                        <a href="https://www.instagram.com/iamharshverma/" target="_blank" class="nav-social-btn" title="Instagram Profile">
-                            <i class="mdi mdi-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mr-2">
-                        <a href="https://github.com/iamharshverma" target="_blank" class="nav-social-btn" title="GitHub Profile">
-                            <i class="mdi mdi-github-face"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mr-2">
-                        <a rel="me" href="https://mastodon.social/@harshverma59" target="_blank" class="nav-social-btn" title="Mastodon Profile (@harshverma59)" aria-label="Mastodon">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: -2px;" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.509.91 5.313.34 8.046.2 11.458.232 14.398c.036 3.23.36 6.438 3.197 7.223 2.11.583 4.295.66 6.435.485.495-.04 1.05-.1 1.58-.19.04-.01.07-.02.1-.03l.03-.01.02-.01c.21-.05.42-.1.62-.17.15-.05.31-.11.46-.17v-2.02c-.41.13-.82.24-1.24.32-.42.08-.85.13-1.28.15-2.03.11-4.08-.03-4.32-.82-.04-.15-.07-.33-.08-.54l.01-.01c.27.08.55.15.83.21 1.77.38 3.6.43 5.42.15 1.51-.23 3.01-.69 4.37-1.39 1.95-.99 2.54-2.67 2.68-4.06.31-3.03.25-6.52-.09-9.17zM18.8 13.91h-2.12V7.79c0-1.29-.54-1.95-1.63-1.95-1.2 0-1.8.78-1.8 2.33v3.37h-2.13V8.17c0-1.55-.6-2.33-1.8-2.33-1.09 0-1.63.66-1.63 1.95v6.12H5.56V7.65c0-1.29.33-2.31 1-3.06.67-.75 1.55-1.14 2.64-1.14 1.26 0 2.22.49 2.87 1.46l.57.96.57-.96c.65-.97 1.61-1.46 2.87-1.46 1.09 0 1.97.39 2.64 1.14.67.75 1 1.77 1 3.06v6.26z"/>
-                            </svg>
-                        </a>
-                    </li>
+                <ul class="top-right text-right list-unstyled list-inline mb-0 mt-2 mt-sm-0 nav-social d-flex align-items-center justify-content-end">
+                    <li class="list-inline-item mr-2"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" title="Google Scholar Profile"><i class="mdi mdi-school"></i></a></li>
+                    <li class="list-inline-item mr-2"><a href="https://www.linkedin.com/in/harshverma59/" target="_blank" title="LinkedIn Profile"><i class="mdi mdi-linkedin"></i></a></li>
+                    <li class="list-inline-item mr-2"><a href="https://github.com/iamharshverma" target="_blank" title="GitHub Profile"><i class="mdi mdi-github-face"></i></a></li>
+                    <li class="list-inline-item mr-2"><a rel="me" href="https://mastodon.social/@harshverma59" target="_blank" title="Mastodon Profile (@harshverma59)" aria-label="Mastodon"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: -2px;" xmlns="http://www.w3.org/2000/svg"><path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.509.91 5.313.34 8.046.2 11.458.232 14.398c.036 3.23.36 6.438 3.197 7.223 2.11.583 4.295.66 6.435.485.495-.04 1.05-.1 1.58-.19.04-.01.07-.02.1-.03l.03-.01.02-.01c.21-.05.42-.1.62-.17.15-.05.31-.11.46-.17v-2.02c-.41.13-.82.24-1.24.32-.42.08-.85.13-1.28.15-2.03.11-4.08-.03-4.32-.82-.04-.15-.07-.33-.08-.54l.01-.01c.27.08.55.15.83.21 1.77.38 3.6.43 5.42.15 1.51-.23 3.01-.69 4.37-1.39 1.95-.99 2.54-2.67 2.68-4.06.31-3.03.25-6.52-.09-9.17zM18.8 13.91h-2.12V7.79c0-1.29-.54-1.95-1.63-1.95-1.2 0-1.8.78-1.8 2.33v3.37h-2.13V8.17c0-1.55-.6-2.33-1.8-2.33-1.09 0-1.63.66-1.63 1.95v6.12H5.56V7.65c0-1.29.33-2.31 1-3.06.67-.75 1.55-1.14 2.64-1.14 1.26 0 2.22.49 2.87 1.46l.57.96.57-.96c.65-.97 1.61-1.46 2.87-1.46 1.09 0 1.97.39 2.64 1.14.67.75 1 1.77 1 3.06v6.26z"/></svg></a></li>
                     <li class="list-inline-item">
                         <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
                             <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
@@ -582,361 +441,13 @@
                     </div>
                     <div class="col-lg-4 text-center mt-4 mt-lg-0">
                         <div class="p-3 rounded border border-secondary" style="background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(10px);">
-                            <img src="images/harsh/infq_harsh.jpg" alt="Harsh Verma" class="rounded shadow-sm mb-3" style="max-height: 180px; object-fit: cover; border: 2px solid rgba(255,255,255,0.2);">
+                            <img src="images/SectaAI_BTRPHBqq~2.jpg" alt="Harsh Verma" class="rounded shadow-sm mb-3" style="max-height: 180px; object-fit: cover; border: 2px solid rgba(255,255,255,0.2);">
                             <h6 class="text-white font-weight-bold mb-1">Harsh Verma</h6>
                             <p class="text-muted mb-2" style="font-size: 12.5px;">Principal Software Engineer in AI @ Palo Alto Networks &bull; Forbes Tech Council</p>
-                            <div class="d-flex flex-column gap-2">
-                                <button type="button" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-2 text-white shadow-sm mb-2" onclick="window.openBookingModal()" style="background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%); border: none;">
-                                    <i class="mdi mdi-calendar-star mr-1"></i> Book for Keynote / Advisory
-                                </button>
-                                <a href="#executivePressKitSection" class="btn btn-sm btn-outline-light rounded font-weight-bold px-3 py-1" style="font-size: 12px;">
-                                    <i class="mdi mdi-newspaper-variant-multiple-outline mr-1"></i> Press Kit &amp; Media Assets
-                                </a>
-                            </div>
+                            <a href="mailto:harshverma59@gmail.com?subject=Speaking%20or%20Judging%20Invitation" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1" style="background: #4f46e5; border: none;">
+                                <i class="mdi mdi-email-send-outline mr-1"></i> Invite for Keynote / Panel
+                            </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- EXECUTIVE KEYNOTE VIDEO STAGE & THEATRE -->
-            <div class="hv-keynote-feature-banner">
-                <div class="row align-items-center mb-4">
-                    <div class="col-lg-8">
-                        <span class="hv-badge-gold mb-2">
-                            <i class="mdi mdi-video-vintage"></i> Featured Executive Keynote Stage
-                        </span>
-                        <h2 class="font-weight-bold text-white mb-2" style="font-size: 26px;">
-                            Keynote Deliveries &amp; Masterclasses
-                        </h2>
-                        <p class="text-light mb-0" style="opacity: 0.88; font-size: 14.5px; max-width: 650px;">
-                            High-impact keynote addresses, university venture accelerator masterclasses, and executive briefings on Autonomous Agentic Security, Distributed AI Platforms, and Resilient Cloud Defenses.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 text-lg-right mt-3 mt-lg-0">
-                        <button class="btn btn-sm btn-light font-weight-bold px-3 py-2 rounded-pill shadow-sm" onclick="window.openBookingModal('Keynote Speech', 'Keynote Speech')">
-                            <i class="mdi mdi-microphone mr-1 text-primary"></i> Request Keynote Availability
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Keynote Pinning & Display Controls -->
-                <div class="hv-video-stage-toolbar">
-                    <div class="hv-stage-filter-group">
-                        <button type="button" class="hv-stage-filter-pill active" id="btnFilterPinnedOnly" onclick="window.setKeynoteViewMode('pinned')">
-                            <i class="mdi mdi-pin"></i> Pinned Videos (<span id="pinnedVideoCount">2</span>)
-                        </button>
-                        <button type="button" class="hv-stage-filter-pill" id="btnFilterAllVideos" onclick="window.setKeynoteViewMode('all')">
-                            <i class="mdi mdi-view-grid"></i> All Keynotes (7)
-                        </button>
-                    </div>
-                    <div class="hv-quick-select-wrap">
-                        <label for="hvKeynoteSelector" class="text-white-50 small mb-0 font-weight-bold d-none d-sm-inline">
-                            <i class="mdi mdi-movie-star mr-1"></i>Feature Keynote:
-                        </label>
-                        <select id="hvKeynoteSelector" class="hv-quick-select" onchange="window.onKeynoteDropdownChange(this.value)">
-                            <option value="pinned-view">⭐ Showing Pinned Only</option>
-                            <option value="all-view">🎬 Show All (7)</option>
-                            <option value="RS_BKcbeV3o">📌 ACM Sacramento Keynote</option>
-                            <option value="IZvHxEtMMnw">📌 UC Berkeley SkyDeck Keynote</option>
-                            <option value="MPhFC1h5GIc">📌 FutureAGI Global Keynote</option>
-                            <option value="E6kA_o57DrM">📌 Startup Zone Symposium</option>
-                            <option value="1DxjMiOe580">📌 TrueML Talks • Palo Alto Networks</option>
-                            <option value="yXy_zYlhnfc">📌 Inside Vibe Shift • Twill x Rocket</option>
-                            <option value="nIgJ99Bihsw">📌 Tech Talk with VLink • Ep. 55</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="hv-video-stage-grid" id="hvVideoStageGrid">
-                    <!-- Keynote 1: UC Berkeley SkyDeck -->
-                    <div class="hv-video-card" data-video-id="IZvHxEtMMnw">
-                        <button type="button" class="hv-video-pin-btn" onclick="window.togglePinKeynote('IZvHxEtMMnw', event)" title="Pin or unpin video">
-                            <i class="mdi mdi-pin"></i> <span class="pin-label">Pin</span>
-                        </button>
-                        <div class="hv-video-thumb-wrap" onclick="window.openKeynoteVideoModal('IZvHxEtMMnw', 'The Era of Agentic Security: Autonomous Cloud Defense', 'UC Berkeley SkyDeck Batch 21', 'Keynote address delivered to venture founders and research fellows at UC Berkeley SkyDeck Batch 21, exploring deterministic agentic security architectures.')">
-                            <img src="https://img.youtube.com/vi/IZvHxEtMMnw/maxresdefault.jpg" alt="UC Berkeley SkyDeck Keynote" class="hv-video-thumb-img" onerror="this.src='https://img.youtube.com/vi/IZvHxEtMMnw/hqdefault.jpg'" />
-                            <div class="hv-video-play-overlay">
-                                <div class="hv-play-circle-btn"><i class="mdi mdi-play"></i></div>
-                            </div>
-                            <span class="hv-video-duration-tag"><i class="mdi mdi-clock-outline mr-1"></i>Keynote</span>
-                        </div>
-                        <div class="hv-video-body">
-                            <div class="hv-video-outlet"><i class="mdi mdi-school mr-1"></i> UC Berkeley SkyDeck &bull; Batch 21</div>
-                            <h4 class="hv-video-title">The Era of Agentic Security: Autonomous Cloud Defense</h4>
-                            <p class="hv-video-desc">
-                                Architectural framework for deploying autonomous multi-agent reasoning, self-healing perimeters, and deterministic policy guardrails across high-stakes cloud infrastructures.
-                            </p>
-                            <div class="hv-video-meta-tags">
-                                <span class="hv-video-tag">Agentic AI</span>
-                                <span class="hv-video-tag">Zero Trust</span>
-                                <span class="hv-video-tag">Berkeley SkyDeck</span>
-                            </div>
-                            <div class="hv-video-actions">
-                                <button class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1" onclick="window.openKeynoteVideoModal('IZvHxEtMMnw', 'The Era of Agentic Security: Autonomous Cloud Defense', 'UC Berkeley SkyDeck Batch 21', 'Keynote address delivered at UC Berkeley SkyDeck Batch 21.')">
-                                    <i class="mdi mdi-play mr-1"></i> Watch Video
-                                </button>
-                                <button class="btn btn-sm btn-light border rounded-pill font-weight-bold px-3 py-1 text-primary" onclick="window.openBookingModal('The Era of Agentic Security', 'Keynote Speech')">
-                                    <i class="mdi mdi-calendar-star mr-1"></i> Book Topic
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Keynote 2: FutureAGI Keynote -->
-                    <div class="hv-video-card" data-video-id="MPhFC1h5GIc">
-                        <button type="button" class="hv-video-pin-btn" onclick="window.togglePinKeynote('MPhFC1h5GIc', event)" title="Pin or unpin video">
-                            <i class="mdi mdi-pin"></i> <span class="pin-label">Pin</span>
-                        </button>
-                        <div class="hv-video-thumb-wrap" onclick="window.openKeynoteVideoModal('MPhFC1h5GIc', 'Powering Cybersecurity with GenAI &amp; Intelligent Agents', 'FutureAGI Global Keynote', 'Keynote presentation detailing how generative AI and deterministic autonomous agents revolutionize threat detection and mitigation.')">
-                            <img src="https://img.youtube.com/vi/MPhFC1h5GIc/maxresdefault.jpg" alt="FutureAGI Keynote" class="hv-video-thumb-img" onerror="this.src='https://img.youtube.com/vi/MPhFC1h5GIc/hqdefault.jpg'" />
-                            <div class="hv-video-play-overlay">
-                                <div class="hv-play-circle-btn"><i class="mdi mdi-play"></i></div>
-                            </div>
-                            <span class="hv-video-duration-tag"><i class="mdi mdi-clock-outline mr-1"></i>Keynote</span>
-                        </div>
-                        <div class="hv-video-body">
-                            <div class="hv-video-outlet"><i class="mdi mdi-shield-crown mr-1"></i> FutureAGI Keynote Series</div>
-                            <h4 class="hv-video-title">Powering Cybersecurity with GenAI &amp; Intelligent Agents</h4>
-                            <p class="hv-video-desc">
-                                Strategic deep-dive into LLM-assisted SOC automation, real-time threat detection models, and preventing hallucinations in mission-critical defensive workflows.
-                            </p>
-                            <div class="hv-video-meta-tags">
-                                <span class="hv-video-tag">Generative AI</span>
-                                <span class="hv-video-tag">SecOps</span>
-                                <span class="hv-video-tag">Intelligent Agents</span>
-                            </div>
-                            <div class="hv-video-actions">
-                                <button class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1" onclick="window.openKeynoteVideoModal('MPhFC1h5GIc', 'Powering Cybersecurity with GenAI &amp; Intelligent Agents', 'FutureAGI Global Keynote', 'Keynote presentation on GenAI and Intelligent Agents in Cybersecurity.')">
-                                    <i class="mdi mdi-play mr-1"></i> Watch Video
-                                </button>
-                                <button class="btn btn-sm btn-light border rounded-pill font-weight-bold px-3 py-1 text-primary" onclick="window.openBookingModal('Powering Cybersecurity with GenAI & Intelligent Agents', 'Keynote Speech')">
-                                    <i class="mdi mdi-calendar-star mr-1"></i> Book Topic
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Keynote 3: Startup Zone Symposium -->
-                    <div class="hv-video-card" data-video-id="E6kA_o57DrM">
-                        <button type="button" class="hv-video-pin-btn" onclick="window.togglePinKeynote('E6kA_o57DrM', event)" title="Pin or unpin video">
-                            <i class="mdi mdi-pin"></i> <span class="pin-label">Pin</span>
-                        </button>
-                        <div class="hv-video-thumb-wrap" onclick="window.openKeynoteVideoModal('E6kA_o57DrM', 'The Digital Battleground: Quantum &amp; Cyber Security', 'Startup Zone Symposium', 'Keynote exploration of quantum-resistant cryptography, adversarial attack vectors, and next-gen enterprise architecture.')">
-                            <img src="https://img.youtube.com/vi/E6kA_o57DrM/maxresdefault.jpg" alt="Startup Zone Keynote" class="hv-video-thumb-img" onerror="this.src='https://img.youtube.com/vi/E6kA_o57DrM/hqdefault.jpg'" />
-                            <div class="hv-video-play-overlay">
-                                <div class="hv-play-circle-btn"><i class="mdi mdi-play"></i></div>
-                            </div>
-                            <span class="hv-video-duration-tag"><i class="mdi mdi-clock-outline mr-1"></i>Symposium</span>
-                        </div>
-                        <div class="hv-video-body">
-                            <div class="hv-video-outlet"><i class="mdi mdi-atom mr-1"></i> Startup Zone Symposium</div>
-                            <h4 class="hv-video-title">The Digital Battleground: Quantum &amp; Cyber Security</h4>
-                            <p class="hv-video-desc">
-                                Preparing enterprise infrastructure for quantum decryption threats, implementing post-quantum cryptography, and designing resilient zero-trust architectures.
-                            </p>
-                            <div class="hv-video-meta-tags">
-                                <span class="hv-video-tag">Quantum Security</span>
-                                <span class="hv-video-tag">Cryptography</span>
-                                <span class="hv-video-tag">Enterprise Defense</span>
-                            </div>
-                            <div class="hv-video-actions">
-                                <button class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1" onclick="window.openKeynoteVideoModal('E6kA_o57DrM', 'The Digital Battleground: Quantum &amp; Cyber Security', 'Startup Zone Symposium', 'Keynote exploration of quantum-resistant cryptography.')">
-                                    <i class="mdi mdi-play mr-1"></i> Watch Video
-                                </button>
-                                <button class="btn btn-sm btn-light border rounded-pill font-weight-bold px-3 py-1 text-primary" onclick="window.openBookingModal('Quantum & Cyber Security Battleground', 'Keynote Speech')">
-                                    <i class="mdi mdi-calendar-star mr-1"></i> Book Topic
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Keynote 4: TrueML Talks Keynote -->
-                    <div class="hv-video-card" data-video-id="1DxjMiOe580">
-                        <button type="button" class="hv-video-pin-btn" onclick="window.togglePinKeynote('1DxjMiOe580', event)" title="Pin or unpin video">
-                            <i class="mdi mdi-pin"></i> <span class="pin-label">Pin</span>
-                        </button>
-                        <div class="hv-video-thumb-wrap" onclick="window.openKeynoteVideoModal('1DxjMiOe580', 'Big Data and ML Practices at Palo Alto Networks', 'TrueML Talks &bull; TrueFoundry', 'Deep architectural lecture detailing high-throughput data pipelines, feature store engineering, and machine learning operational workflows powering enterprise security telemetry at Palo Alto Networks.')">
-                            <img src="https://img.youtube.com/vi/1DxjMiOe580/maxresdefault.jpg" alt="TrueML Talks Keynote" class="hv-video-thumb-img" onerror="this.src='https://img.youtube.com/vi/1DxjMiOe580/hqdefault.jpg'" />
-                            <div class="hv-video-play-overlay">
-                                <div class="hv-play-circle-btn"><i class="mdi mdi-play"></i></div>
-                            </div>
-                            <span class="hv-video-duration-tag"><i class="mdi mdi-clock-outline mr-1"></i>Keynote</span>
-                        </div>
-                        <div class="hv-video-body">
-                            <div class="hv-video-outlet"><i class="mdi mdi-database-cog mr-1"></i> TrueML Talks &bull; TrueFoundry</div>
-                            <h4 class="hv-video-title">Big Data and ML Practices at Palo Alto Networks</h4>
-                            <p class="hv-video-desc">
-                                Deep architectural lecture detailing high-throughput data pipelines, feature store engineering, and machine learning operational workflows powering enterprise security telemetry at Palo Alto Networks.
-                            </p>
-                            <div class="hv-video-meta-tags">
-                                <span class="hv-video-tag">MLOps</span>
-                                <span class="hv-video-tag">Big Data</span>
-                                <span class="hv-video-tag">Palo Alto Networks</span>
-                            </div>
-                            <div class="hv-video-actions">
-                                <button class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1" onclick="window.openKeynoteVideoModal('1DxjMiOe580', 'Big Data and ML Practices at Palo Alto Networks', 'TrueML Talks &bull; TrueFoundry', 'Deep architectural lecture detailing high-throughput data pipelines and ML practices at Palo Alto Networks.')">
-                                    <i class="mdi mdi-play mr-1"></i> Watch Video
-                                </button>
-                                <button class="btn btn-sm btn-light border rounded-pill font-weight-bold px-3 py-1 text-primary" onclick="window.openBookingModal('Big Data & ML Practices in Enterprise AI', 'Keynote Speech')">
-                                    <i class="mdi mdi-calendar-star mr-1"></i> Book Topic
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Keynote 5: Inside Vibe Shift -->
-                    <div class="hv-video-card" data-video-id="yXy_zYlhnfc">
-                        <button type="button" class="hv-video-pin-btn" onclick="window.togglePinKeynote('yXy_zYlhnfc', event)" title="Pin or unpin video">
-                            <i class="mdi mdi-pin"></i> <span class="pin-label">Pin</span>
-                        </button>
-                        <div class="hv-video-thumb-wrap" onclick="window.openKeynoteVideoModal('yXy_zYlhnfc', 'Inside Vibe Shift: The Builders Behind the Models', 'Twill &bull; Rocket', 'Engineering exploration into applied AI architectures, developer velocity, autonomous code generation, and the shift toward agentic software workflows.')">
-                            <img src="https://img.youtube.com/vi/yXy_zYlhnfc/maxresdefault.jpg" alt="Inside Vibe Shift" class="hv-video-thumb-img" onerror="this.src='https://img.youtube.com/vi/yXy_zYlhnfc/hqdefault.jpg'" />
-                            <div class="hv-video-play-overlay">
-                                <div class="hv-play-circle-btn"><i class="mdi mdi-play"></i></div>
-                            </div>
-                            <span class="hv-video-duration-tag"><i class="mdi mdi-clock-outline mr-1"></i>Panel</span>
-                        </div>
-                        <div class="hv-video-body">
-                            <div class="hv-video-outlet"><i class="mdi mdi-rocket-launch mr-1"></i> Twill &bull; Rocket Panel</div>
-                            <h4 class="hv-video-title">Inside Vibe Shift: The Builders Behind the Models</h4>
-                            <p class="hv-video-desc">
-                                Engineering exploration into applied AI architectures, developer velocity, autonomous code generation, and the shift toward agentic software workflows.
-                            </p>
-                            <div class="hv-video-meta-tags">
-                                <span class="hv-video-tag">Applied AI</span>
-                                <span class="hv-video-tag">Agentic Coding</span>
-                                <span class="hv-video-tag">Model Engineering</span>
-                            </div>
-                            <div class="hv-video-actions">
-                                <button class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1" onclick="window.openKeynoteVideoModal('yXy_zYlhnfc', 'Inside Vibe Shift: The Builders Behind the Models', 'Twill &bull; Rocket', 'Engineering exploration into applied AI architectures and agentic software workflows.')">
-                                    <i class="mdi mdi-play mr-1"></i> Watch Video
-                                </button>
-                                <button class="btn btn-sm btn-light border rounded-pill font-weight-bold px-3 py-1 text-primary" onclick="window.openBookingModal('Applied AI & Agentic Workflows', 'Keynote Speech')">
-                                    <i class="mdi mdi-calendar-star mr-1"></i> Book Topic
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Keynote 6: Tech Talk with VLink -->
-                    <div class="hv-video-card" data-video-id="nIgJ99Bihsw">
-                        <button type="button" class="hv-video-pin-btn" onclick="window.togglePinKeynote('nIgJ99Bihsw', event)" title="Pin or unpin video">
-                            <i class="mdi mdi-pin"></i> <span class="pin-label">Pin</span>
-                        </button>
-                        <div class="hv-video-thumb-wrap" onclick="window.openKeynoteVideoModal('nIgJ99Bihsw', 'Enterprise AI: Building Solutions for Security, Scale &amp; Trust', 'Tech Talk with VLink &bull; Ep. 55', 'In-depth keynote podcast interview breaking down scalable enterprise AI adoption, zero-trust cybersecurity perimeters, and avoiding hallucinations in mission-critical applications.')">
-                            <img src="https://img.youtube.com/vi/nIgJ99Bihsw/maxresdefault.jpg" alt="Tech Talk with VLink" class="hv-video-thumb-img" onerror="this.src='https://img.youtube.com/vi/nIgJ99Bihsw/hqdefault.jpg'" />
-                            <div class="hv-video-play-overlay">
-                                <div class="hv-play-circle-btn"><i class="mdi mdi-play"></i></div>
-                            </div>
-                            <span class="hv-video-duration-tag"><i class="mdi mdi-clock-outline mr-1"></i>Broadcast</span>
-                        </div>
-                        <div class="hv-video-body">
-                            <div class="hv-video-outlet"><i class="mdi mdi-podcast mr-1"></i> Tech Talk with VLink &bull; Ep. 55</div>
-                            <h4 class="hv-video-title">Enterprise AI: Building Solutions for Security, Scale &amp; Trust</h4>
-                            <p class="hv-video-desc">
-                                In-depth keynote podcast interview breaking down scalable enterprise AI adoption, zero-trust cybersecurity perimeters, and avoiding hallucinations in mission-critical applications.
-                            </p>
-                            <div class="hv-video-meta-tags">
-                                <span class="hv-video-tag">Enterprise AI</span>
-                                <span class="hv-video-tag">Zero Trust</span>
-                                <span class="hv-video-tag">Scalability</span>
-                            </div>
-                            <div class="hv-video-actions">
-                                <button class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1" onclick="window.openKeynoteVideoModal('nIgJ99Bihsw', 'Enterprise AI: Building Solutions for Security, Scale &amp; Trust', 'Tech Talk with VLink &bull; Ep. 55', 'In-depth keynote podcast interview breaking down enterprise AI adoption and trust.')">
-                                    <i class="mdi mdi-play mr-1"></i> Watch Video
-                                </button>
-                                <button class="btn btn-sm btn-light border rounded-pill font-weight-bold px-3 py-1 text-primary" onclick="window.openBookingModal('Enterprise AI Solutions for Security & Trust', 'Keynote Speech')">
-                                    <i class="mdi mdi-calendar-star mr-1"></i> Book Topic
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Keynote 7: ACM Sacramento Keynote -->
-                    <div class="hv-video-card" data-video-id="RS_BKcbeV3o">
-                        <button type="button" class="hv-video-pin-btn" onclick="window.togglePinKeynote('RS_BKcbeV3o', event)" title="Pin or unpin video">
-                            <i class="mdi mdi-pin"></i> <span class="pin-label">Pin</span>
-                        </button>
-                        <div class="hv-video-thumb-wrap" onclick="window.openKeynoteVideoModal('RS_BKcbeV3o', 'ACM Sacramento Keynote: Secure &amp; Trustworthy ML/AI', 'ACM Sacramento Chapter', 'Distinguished Keynote Address titled &quot;Secure and Trustworthy Machine Learning and AI for Multi-Domain Applications&quot;, analyzing enterprise LLM defense, zero-trust validation, adversarial robustness, and autonomous agent alignment.')">
-                            <img src="https://img.youtube.com/vi/RS_BKcbeV3o/maxresdefault.jpg" alt="ACM Sacramento Keynote" class="hv-video-thumb-img" onerror="this.src='https://img.youtube.com/vi/RS_BKcbeV3o/hqdefault.jpg'" />
-                            <div class="hv-video-play-overlay">
-                                <div class="hv-play-circle-btn"><i class="mdi mdi-play"></i></div>
-                            </div>
-                            <span class="hv-video-duration-tag"><i class="mdi mdi-clock-outline mr-1"></i>Keynote</span>
-                        </div>
-                        <div class="hv-video-body">
-                            <div class="hv-video-outlet"><i class="mdi mdi-shield-check mr-1"></i> ACM Sacramento Chapter</div>
-                            <h4 class="hv-video-title">ACM Sacramento Keynote: Secure &amp; Trustworthy ML/AI</h4>
-                            <p class="hv-video-desc">
-                                Distinguished Keynote Address titled 'Secure and Trustworthy Machine Learning and AI for Multi-Domain Applications', analyzing enterprise LLM defense, zero-trust validation, and agent alignment.
-                            </p>
-                            <div class="hv-video-meta-tags">
-                                <span class="hv-video-tag">ACM</span>
-                                <span class="hv-video-tag">Secure AI</span>
-                                <span class="hv-video-tag">Trustworthy ML</span>
-                            </div>
-                            <div class="hv-video-actions">
-                                <button class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1" onclick="window.openKeynoteVideoModal('RS_BKcbeV3o', 'ACM Sacramento Keynote: Secure &amp; Trustworthy ML/AI', 'ACM Sacramento Chapter', 'Distinguished Keynote Address titled &quot;Secure and Trustworthy Machine Learning and AI for Multi-Domain Applications&quot;, analyzing enterprise LLM defense, zero-trust validation, and agent alignment.')">
-                                    <i class="mdi mdi-play mr-1"></i> Watch Video
-                                </button>
-                                <a href="https://youtu.be/RS_BKcbeV3o" target="_blank" class="btn btn-sm btn-light border rounded-pill font-weight-bold px-3 py-1 text-danger" title="Open in YouTube">
-                                    <i class="mdi mdi-youtube mr-1"></i> YouTube
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- EXECUTIVE PRESS KIT & MEDIA ASSETS SECTION -->
-            <div class="hv-press-kit-box" id="executivePressKitSection">
-                <div class="row align-items-center mb-4">
-                    <div class="col-lg-8">
-                        <span class="badge badge-pill badge-primary font-weight-bold px-3 py-1 mb-2" style="background:#4f46e5;">
-                            <i class="mdi mdi-briefcase-account mr-1"></i> Conference &amp; Press Resources
-                        </span>
-                        <h3 class="font-weight-bold mb-1" style="font-size: 22px;">
-                            Executive Press Kit &amp; Speaker Bio
-                        </h3>
-                        <p class="text-muted mb-0" style="font-size: 14px;">
-                            Pre-approved executive bios, verified honors, high-resolution official photography, and speaker intro scripts for conference programs and media coverage.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 text-lg-right mt-3 mt-lg-0">
-                        <button class="btn btn-primary font-weight-bold px-3 py-2 rounded-pill shadow-sm" onclick="window.openBookingModal()" style="background:#4f46e5; border:none;">
-                            <i class="mdi mdi-calendar-star mr-1"></i> Book Advisory / Keynote
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Bio Selectors -->
-                <div class="hv-bio-tab-nav">
-                    <button class="hv-bio-tab-btn active" onclick="switchPressBioTab('medium', this)">
-                        Standard Bio (150 Words)
-                    </button>
-                    <button class="hv-bio-tab-btn" onclick="switchPressBioTab('short', this)">
-                        Short Bio (75 Words)
-                    </button>
-                    <button class="hv-bio-tab-btn" onclick="switchPressBioTab('full', this)">
-                        Comprehensive Bio (300 Words)
-                    </button>
-                </div>
-
-                <div class="hv-bio-content-area position-relative" id="hvPressBioContent">
-                    Harsh Verma is an internationally recognized Enterprise AI Architect, Principal Software Engineer in AI at Palo Alto Networks, and Forbes Technology Council Member. With over a decade of systems leadership, Harsh has authored 2 seminal industry books on Enterprise AI Agents and Autonomous Cyber Defense, published 23+ peer-reviewed and conference papers on IEEE, ICACCM, and international journals with 150+ academic citations, and earned 24 global technology honors including the Forttuna Global 100 Power List, Nobel Technology Awards Gold (#145), and Global Recognition Award for AI Innovation. He serves as an elected Fellow of Harvard Square Leaders Excellence and IEEE Senior Member. Harsh is a distinguished keynote speaker—frequently headlining UC Berkeley SkyDeck, international AI summits, and venture accelerators on agentic security architectures, distributed AI infrastructure, and autonomous enterprise defense.
-                </div>
-
-                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
-                    <div class="d-flex flex-wrap gap-2">
-                        <button class="btn btn-sm btn-outline-primary font-weight-bold px-3 py-2 rounded" onclick="window.copyPressBio(window.currentBioTab || 'medium')" style="border-radius: 8px;">
-                            <i class="mdi mdi-content-copy mr-1"></i> Copy Active Bio Text
-                        </button>
-                        <a href="images/harsh/infq_harsh.jpg" download="Harsh_Verma_Official_Headshot.jpg" class="btn btn-sm btn-outline-secondary font-weight-bold px-3 py-2 rounded" style="border-radius: 8px;">
-                            <i class="mdi mdi-download mr-1"></i> Download High-Res Headshot (JPG)
-                        </a>
-                        </div>
-                    <div class="text-muted small">
-                        <i class="mdi mdi-check-decagram text-success mr-1"></i> Official press assets approved for conference agendas &amp; publications.
                     </div>
                 </div>
             </div>
@@ -976,8 +487,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="Techstars">
-                        <img src="images/events/techstars.svg" alt="Techstars" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=techstars.com&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #d9770615; color: #d97706; border: 1px solid #d9770630;">
+                        <i class="mdi mdi-rocket-launch"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #d97706; font-size: 11px;">
@@ -1021,8 +532,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="Techstars">
-                        <img src="images/events/techstars.svg" alt="Techstars" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=techstars.com&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #2563eb15; color: #2563eb; border: 1px solid #2563eb30;">
+                        <i class="mdi mdi-account-star"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #2563eb; font-size: 11px;">
@@ -1066,8 +577,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="UC Berkeley SkyDeck">
-                        <img src="images/media/skydeck_badge.svg" alt="UC Berkeley SkyDeck" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=skydeck.berkeley.edu&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #0284c715; color: #0284c7; border: 1px solid #0284c730;">
+                        <i class="mdi mdi-school"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #0284c7; font-size: 11px;">
@@ -1111,8 +622,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="UC Berkeley SkyDeck">
-                        <img src="images/media/skydeck_badge.svg" alt="UC Berkeley SkyDeck" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=skydeck.berkeley.edu&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #4338ca15; color: #4338ca; border: 1px solid #4338ca30;">
+                        <i class="mdi mdi-checkbox-marked-circle-outline"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #4338ca; font-size: 11px;">
@@ -1156,8 +667,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="Mayfield Fund">
-                        <img src="images/events/mayfield.svg" alt="Mayfield Fund" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=mayfield.com&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #05966915; color: #059669; border: 1px solid #05966930;">
+                        <i class="mdi mdi-currency-usd"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #059669; font-size: 11px;">
@@ -1201,8 +712,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="GenLabX">
-                        <img src="images/events/genlabx.svg" alt="GenLabX" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=luma.com&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #7c3aed15; color: #7c3aed; border: 1px solid #7c3aed30;">
+                        <i class="mdi mdi-trophy-variant"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #7c3aed; font-size: 11px;">
@@ -1246,8 +757,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="LoveHackathon">
-                        <img src="images/events/lovehack.svg" alt="LoveHackathon" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=lu.ma&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #e11d4815; color: #e11d48; border: 1px solid #e11d4830;">
+                        <i class="mdi mdi-heart-flash"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #e11d48; font-size: 11px;">
@@ -1291,8 +802,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="Future of Work">
-                        <img src="images/events/future_of_work.svg" alt="Future of Work" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=lu.ma&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #0891b215; color: #0891b2; border: 1px solid #0891b230;">
+                        <i class="mdi mdi-robot"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #0891b2; font-size: 11px;">
@@ -1340,8 +851,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="Future of Work">
-                        <img src="images/events/future_of_work.svg" alt="Future of Work" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=lu.ma&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #1d4ed815; color: #1d4ed8; border: 1px solid #1d4ed830;">
+                        <i class="mdi mdi-domain"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #1d4ed8; font-size: 11px;">
@@ -1389,8 +900,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="Future of Work">
-                        <img src="images/events/future_of_work.svg" alt="Future of Work" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=lu.ma&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #0d948815; color: #0d9488; border: 1px solid #0d948830;">
+                        <i class="mdi mdi-hospital-box"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #0d9488; font-size: 11px;">
@@ -1430,12 +941,12 @@
         </div>
     </div>
     
-    <div class="col-lg-6 col-md-12 mb-4 event-card-item" data-category="judging" data-search="techpioneer hackathon 2.0 ai & cybersecurity judge techpioneers pro  expert panel industry judge hackathon judging global / virtual cybersecurity ai hackathon industry judge techpioneer verified certificate verify TPH2026-FC1EC8-4008">
+    <div class="col-lg-6 col-md-12 mb-4 event-card-item" data-category="judging" data-search="techpioneer hackathon 2.0 ai & cybersecurity judge techpioneers pro  expert panel industry judge hackathon judging global / virtual cybersecurity ai hackathon industry judge techpioneer verified credential #tph2026-fc1ec8-4008">
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="TechPioneers Pro">
-                        <img src="images/events/techpioneers.svg" alt="TechPioneers Pro" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=techpioneerspro.com&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #b91c1c15; color: #b91c1c; border: 1px solid #b91c1c30;">
+                        <i class="mdi mdi-shield-check"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #b91c1c; font-size: 11px;">
@@ -1461,30 +972,20 @@
                 Evaluated cutting-edge hackathon submissions in Artificial Intelligence and Cybersecurity at TechPioneer Hackathon 2.0, judging threat-detection models, autonomous agent security, and zero-trust engineering.
             </p>
 
-            <!-- Verified Credential Box -->
-            <div class="event-cert-box mb-3">
-                <div class="d-flex align-items-center text-truncate mr-2">
-                    <i class="mdi mdi-check-decagram text-success mr-2" style="font-size: 18px;"></i>
-                    <span class="event-cert-text">
-                        Verified Credential: <span class="event-cert-code ml-1">TPH2026-FC1EC8-4008</span>
-                    </span>
-                </div>
-                <a href="https://techpioneerspro.com/2.0/certificate/TPH2026-FC1EC8-4008" target="_blank" class="badge btn-event-cert px-2 py-1 text-decoration-none shadow-sm flex-shrink-0" title="View Certificate">
-                    <i class="mdi mdi-shield-check mr-1"></i>Verify ID
-                </a>
-            </div>
-
             <div class="event-tags-wrap mb-3">
-                <span class="event-tag-pill">Cybersecurity</span><span class="event-tag-pill">AI Hackathon</span><span class="event-tag-pill">Industry Judge</span><span class="event-tag-pill">TechPioneer</span><span class="event-tag-pill font-weight-bold" style="color: #047857;"><i class="mdi mdi-certificate mr-1 text-success"></i>ID: TPH2026-FC1EC8-4008</span>
+                <span class="event-tag-pill">Cybersecurity</span><span class="event-tag-pill">AI Hackathon</span><span class="event-tag-pill">Industry Judge</span><span class="event-tag-pill">TechPioneer</span><span class="event-tag-pill">Verified Credential #TPH2026-FC1EC8-4008</span>
             </div>
 
             <div class="event-card-footer mt-auto pt-3 border-top d-flex flex-wrap align-items-center">
-                <a href="https://techpioneerspro.com/2.0/certificate/TPH2026-FC1EC8-4008" target="_blank" class="btn-event-link mr-2 mb-2 font-weight-bold" style="background: rgba(16, 185, 129, 0.09); border-color: rgba(16, 185, 129, 0.35); color: #047857;" title="Verified Certificate (ID: TPH2026-FC1EC8-4008)">
-                    <i class="mdi mdi-check-decagram text-success mr-1"></i> Verified Certificate <span class="small font-weight-normal text-muted ml-1">(TPH2026-FC1EC8-4008)</span>
-                </a>
-                <a href="https://techpioneerspro.com/2.0/judges" target="_blank" class="btn-event-link mr-2 mb-2" title="Official Judges Page">
-                    <i class="mdi mdi-shield-account mr-1"></i> Official Judges Page
-                </a>
+                
+        <a href="https://techpioneerspro.com/2.0/certificate/TPH2026-FC1EC8-4008" target="_blank" class="btn-event-link mr-2 mb-2" title="Verified Certificate">
+            <i class="mdi mdi-check-decagram mr-1"></i> Verified Certificate
+        </a>
+        
+        <a href="https://techpioneerspro.com/2.0/judges" target="_blank" class="btn-event-link mr-2 mb-2" title="Official Judges Page">
+            <i class="mdi mdi-shield-account mr-1"></i> Official Judges Page
+        </a>
+        
             </div>
         </div>
     </div>
@@ -1493,8 +994,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="VC-Conf">
-                        <img src="images/events/vc_conf.svg" alt="VC-Conf" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=linkedin.com&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #04785715; color: #047857; border: 1px solid #04785730;">
+                        <i class="mdi mdi-cash-multiple"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #047857; font-size: 11px;">
@@ -1538,8 +1039,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="Hackmakers">
-                        <img src="images/communities/hackmakers.png" alt="Hackmakers" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=hackmakers.com&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #0284c715; color: #0284c7; border: 1px solid #0284c730;">
+                        <i class="mdi mdi-account-group"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #0284c7; font-size: 11px;">
@@ -1583,8 +1084,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="Progressive Ventures">
-                        <img src="images/events/progressive_ventures.svg" alt="Progressive Ventures" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=lu.ma&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #33415515; color: #334155; border: 1px solid #33415530;">
+                        <i class="mdi mdi-briefcase-check"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #334155; font-size: 11px;">
@@ -1628,8 +1129,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="Founders' Creative">
-                        <img src="images/profiles/founderscreative.svg" alt="Founders' Creative" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=lu.ma&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #6d28d915; color: #6d28d9; border: 1px solid #6d28d930;">
+                        <i class="mdi mdi-clipboard-text-search"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #6d28d9; font-size: 11px;">
@@ -1673,8 +1174,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="Dent Community">
-                        <img src="images/events/dent.svg" alt="Dent Community" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=dentthefuture.com&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #b4530915; color: #b45309; border: 1px solid #b4530930;">
+                        <i class="mdi mdi-lightbulb-on"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #b45309; font-size: 11px;">
@@ -1718,8 +1219,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="Packt Publishing">
-                        <img src="images/events/packt.svg" alt="Packt Publishing" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=packtpub.com&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #ea580c15; color: #ea580c; border: 1px solid #ea580c30;">
+                        <i class="mdi mdi-book-open-page-variant"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #ea580c; font-size: 11px;">
@@ -1767,8 +1268,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="IEEE">
-                        <img src="images/communities/ieee.png" alt="IEEE" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=ieee.org&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #1e3a8a15; color: #1e3a8a; border: 1px solid #1e3a8a30;">
+                        <i class="mdi mdi-check-decagram"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #1e3a8a; font-size: 11px;">
@@ -1812,8 +1313,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="IJEETR Journal">
-                        <img src="images/events/ijeetr.svg" alt="IJEETR Journal" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=ijeetr.com&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #47556915; color: #475569; border: 1px solid #47556930;">
+                        <i class="mdi mdi-file-find"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #475569; font-size: 11px;">
@@ -1857,8 +1358,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="JRTCSE Journal">
-                        <img src="images/events/jrtcse.svg" alt="JRTCSE Journal" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=jrtcse.com&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #0369a115; color: #0369a1; border: 1px solid #0369a130;">
+                        <i class="mdi mdi-file-check"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #0369a1; font-size: 11px;">
@@ -1899,167 +1400,157 @@
     </div>
     
                 
-    <div class="col-lg-6 col-md-12 mb-4 event-card-item" data-category="conferences" data-search="upes & ieee icacsdf 2026 keynote speaker technical session chair session chair keynote talk when enterprises become multi-agent systems smart slides r92g international conference on advancement in cyber security and digital forensics (icacsdf 2026) keynote speaker & technical reviewer dehradun, india / hybrid ieee icacsdf cybersecurity keynote digital forensics">
-        <div class="event-hub-card h-100" id="card-conf-ieee-icacsdf-2026" style="border: 1px solid rgba(29, 78, 216, 0.4); box-shadow: 0 4px 20px rgba(29, 78, 216, 0.08); position: relative;">
+    <div class="col-lg-6 col-md-12 mb-4 event-card-item" data-category="conferences" data-search="upes & ieee icacsdf 2026 keynote & technical session chair  international conference on advancement in cyber security and digital forensics (icacsdf 2026) keynote speaker, technical session chair & reviewer keynote speaker, technical session chair & reviewer dehradun, india / hybrid ieee icacsdf technical session chair keynote talk cybersecurity digital forensics multi-agent systems">
+        <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="ICACSDF 2026 & UPES" style="border-color: rgba(29, 78, 216, 0.3);">
-                        <img src="images/events/icacsdf.svg" alt="ICACSDF 2026" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=icacsdf.org&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #1d4ed815; color: #1d4ed8; border: 1px solid #1d4ed830;">
+                        <i class="mdi mdi-microphone-variant"></i>
                     </div>
                     <div>
-                        <div class="d-flex flex-wrap align-items-center mb-1" style="gap: 4px;">
-                            <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #1d4ed8; font-size: 11px;">
-                                <i class="mdi mdi-microphone mr-1"></i>Keynote Speaker
-                            </span>
-                            <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #0284c7; font-size: 11px;">
-                                <i class="mdi mdi-account-tie mr-1"></i>Technical Session Chair
-                            </span>
-                            <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #475569; font-size: 11px;">
-                                <i class="mdi mdi-file-check mr-1"></i>Reviewer
-                            </span>
-                        </div>
+                        <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #1d4ed8; font-size: 11px;">
+                            Keynote Speaker, Technical Session Chair & Reviewer
+                        </span>
                         <div class="event-org-name font-weight-bold mt-1 text-muted" style="font-size: 13px;">
                             <i class="mdi mdi-map-marker-outline mr-1"></i> Dehradun, India / Hybrid &bull; <i class="mdi mdi-calendar-outline ml-1 mr-1"></i> 2026
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-sm btn-light border copy-event-btn" onclick="copyEventInfo('conf-ieee-icacsdf-2026', 'UPES &amp; IEEE ICACSDF 2026 Keynote &amp; Technical Session Chair')" title="Copy Event Details" aria-label="Copy Details">
+                <button class="btn btn-sm btn-light border copy-event-btn" onclick="copyEventInfo('conf-ieee-icacsdf-2026', 'UPES & IEEE ICACSDF 2026 Keynote & Technical Session Chair')" title="Copy Event Details" aria-label="Copy Details">
                     <i class="mdi mdi-content-copy text-muted"></i>
                 </button>
             </div>
 
             <h4 class="event-card-title mb-2">
-                UPES &amp; IEEE ICACSDF 2026 Keynote &amp; Technical Session Chair
+                UPES & IEEE ICACSDF 2026 Keynote & Technical Session Chair
             </h4>
 
-            <div class="event-card-org mb-2"><i class="mdi mdi-domain text-primary mr-1"></i> <strong>International Conference on Advancement in Cyber Security and Digital Forensics (ICACSDF 2026)</strong> &bull; <span class="text-primary font-weight-600">Keynote Speaker, Technical Session Chair &amp; Reviewer</span></div>
+            <div class="event-card-org mb-2"><i class="mdi mdi-domain text-primary mr-1"></i> <strong>International Conference on Advancement in Cyber Security and Digital Forensics (ICACSDF 2026)</strong> &bull; <span class="text-primary font-weight-600">Keynote Speaker, Technical Session Chair & Reviewer</span></div>
 
             <p class="event-card-desc mb-3">
-                Delivered keynote address exploring <em>'When Enterprises Become Multi-Agent Systems'</em>, analyzing adversarial resilience, security perimeters, and autonomous decisioning in modern enterprise AI. Also presided as <strong>Technical Session Chair</strong> presiding over conference research paper presentations, alongside evaluating manuscripts on the Microsoft CMT research review board.
+                Delivered keynote address on 'When Enterprises Become Multi-Agent Systems', analyzing adversarial resilience, security perimeters, and autonomous decisioning in modern enterprise AI. Also served as Technical Session Chair presiding over conference research paper presentations, alongside evaluating manuscripts on the Microsoft CMT research review board.
             </p>
 
             <div class="event-tags-wrap mb-3">
-                <span class="event-tag-pill">IEEE ICACSDF</span><span class="event-tag-pill" style="background: rgba(2, 132, 199, 0.1); color: #0284c7; border-color: rgba(2, 132, 199, 0.25); font-weight: 600;"><i class="mdi mdi-account-tie mr-1"></i>Technical Session Chair</span><span class="event-tag-pill" style="background: rgba(29, 78, 216, 0.1); color: #1d4ed8; border-color: rgba(29, 78, 216, 0.25); font-weight: 600;"><i class="mdi mdi-presentation mr-1"></i>Keynote Talk</span><span class="event-tag-pill">Cybersecurity</span><span class="event-tag-pill">Digital Forensics</span><span class="event-tag-pill">Multi-Agent Systems</span>
+                <span class="event-tag-pill">IEEE ICACSDF</span><span class="event-tag-pill">Technical Session Chair</span><span class="event-tag-pill">Keynote Talk</span><span class="event-tag-pill">Cybersecurity</span><span class="event-tag-pill">Digital Forensics</span><span class="event-tag-pill">Multi-Agent Systems</span>
             </div>
 
             <div class="event-card-footer mt-auto pt-3 border-top d-flex flex-wrap align-items-center">
-                <a href="https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1" target="_blank" class="btn-event-link mr-2 mb-2" style="background: #1d4ed8; color: #ffffff !important; border-color: #1d4ed8; font-weight: 600; box-shadow: 0 2px 8px rgba(29, 78, 216, 0.25);" title="Open Keynote Smart Slides (Deck r92g)">
-                    <i class="mdi mdi-presentation-play mr-1"></i> Keynote Smart Slides (Deck r92g)
-                </a>
-                <a href="https://www.icacsdf.org/keynotes.html" target="_blank" class="btn-event-link mr-2 mb-2" title="ICACSDF Keynote Page">
-                    <i class="mdi mdi-web mr-1"></i> ICACSDF Keynote Page
-                </a>
-                <a href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F" target="_blank" class="btn-event-link mr-2 mb-2" title="Microsoft CMT Portal">
-                    <i class="mdi mdi-microsoft mr-1"></i> Microsoft CMT Portal
-                </a>
+                
+        <a href="https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1" target="_blank" class="btn-event-link mr-2 mb-2" title="Keynote Smart Slides (Deck r92g)">
+            <i class="mdi mdi-presentation-play mr-1"></i> Keynote Smart Slides (Deck r92g)
+        </a>
+        
+        <a href="https://www.icacsdf.org/keynotes.html" target="_blank" class="btn-event-link mr-2 mb-2" title="ICACSDF Keynote Page">
+            <i class="mdi mdi-web mr-1"></i> ICACSDF Keynote Page
+        </a>
+        
+        <a href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F" target="_blank" class="btn-event-link mr-2 mb-2" title="Microsoft CMT Portal">
+            <i class="mdi mdi-microsoft mr-1"></i> Microsoft CMT Portal
+        </a>
+        
             </div>
         </div>
     </div>
     
-    <div class="col-lg-6 col-md-12 mb-4 event-card-item" data-category="conferences" data-search="acm sacramento keynote: secure & trustworthy ml/ai association for computing machinery (acm) sacramento chapter keynote speaker smart slides GxwP keynote talk secure ai trustworthy ml youtube video recording https://youtu.be/RS_BKcbeV3o RS_BKcbeV3o">
-        <div class="event-hub-card h-100" id="card-conf-acm-sacramento-2026" style="border: 1px solid rgba(15, 118, 110, 0.4); box-shadow: 0 4px 20px rgba(15, 118, 110, 0.08); position: relative;">
+    <div class="col-lg-6 col-md-12 mb-4 event-card-item" data-category="conferences" data-search="acm sacramento keynote: secure & trustworthy ml/ai  association for computing machinery (acm) sacramento chapter keynote speaker keynote speaker sacramento, ca / online acm smart slides: gxwp keynote secure ai trustworthy ml youtube keynote">
+        <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="ACM Sacramento" style="border-color: rgba(15, 118, 110, 0.3);">
-                        <img src="images/events/acm.svg" alt="ACM Sacramento" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=acm.org&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #0f766e15; color: #0f766e; border: 1px solid #0f766e30;">
+                        <i class="mdi mdi-shield-lock"></i>
                     </div>
                     <div>
-                        <div class="d-flex flex-wrap align-items-center mb-1" style="gap: 4px;">
-                            <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #0f766e; font-size: 11px;">
-                                <i class="mdi mdi-microphone mr-1"></i>Keynote Speaker
-                            </span>
-                            <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #0284c7; font-size: 11px;">
-                                <i class="mdi mdi-presentation mr-1"></i>Keynote Smart Slides
-                            </span>
-                        </div>
+                        <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #0f766e; font-size: 11px;">
+                            Keynote Speaker
+                        </span>
                         <div class="event-org-name font-weight-bold mt-1 text-muted" style="font-size: 13px;">
                             <i class="mdi mdi-map-marker-outline mr-1"></i> Sacramento, CA / Online &bull; <i class="mdi mdi-calendar-outline ml-1 mr-1"></i> September 10, 2026
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-sm btn-light border copy-event-btn" onclick="copyEventInfo('conf-acm-sacramento-2026', 'ACM Sacramento Keynote: Secure &amp; Trustworthy ML/AI')" title="Copy Event Details" aria-label="Copy Details">
+                <button class="btn btn-sm btn-light border copy-event-btn" onclick="copyEventInfo('conf-acm-sacramento-2026', 'ACM Sacramento Keynote: Secure & Trustworthy ML/AI')" title="Copy Event Details" aria-label="Copy Details">
                     <i class="mdi mdi-content-copy text-muted"></i>
                 </button>
             </div>
 
             <h4 class="event-card-title mb-2">
-                ACM Sacramento Keynote: Secure &amp; Trustworthy ML/AI
+                ACM Sacramento Keynote: Secure & Trustworthy ML/AI
             </h4>
 
-            <div class="event-card-org mb-2"><i class="mdi mdi-domain text-primary mr-1"></i> <strong>Association for Computing Machinery (ACM) Sacramento Chapter</strong> &bull; <span class="text-primary font-weight-600">Distinguished Keynote Speaker</span></div>
+            <div class="event-card-org mb-2"><i class="mdi mdi-domain text-primary mr-1"></i> <strong>Association for Computing Machinery (ACM) Sacramento Chapter</strong> &bull; <span class="text-primary font-weight-600">Keynote Speaker</span></div>
 
             <p class="event-card-desc mb-3">
-                Distinguished Keynote Address titled <em>'Secure and Trustworthy Machine Learning and AI for Multi-Domain Applications'</em>, analyzing enterprise LLM defense, zero-trust validation, and agent alignment. Keynote slides are published and presented in interactive Smart Slides format (Deck GxwP).
+                Distinguished Keynote Address titled 'Secure and Trustworthy Machine Learning and AI for Multi-Domain Applications', analyzing enterprise LLM defense, zero-trust validation, and agent alignment. Keynote slides published in interactive Smart Slides format (Deck GxwP).
             </p>
 
             <div class="event-tags-wrap mb-3">
-                <span class="event-tag-pill">ACM</span><span class="event-tag-pill" style="background: rgba(15, 118, 110, 0.1); color: #0f766e; border-color: rgba(15, 118, 110, 0.25); font-weight: 600;"><i class="mdi mdi-presentation mr-1"></i>Smart Slides: GxwP</span><span class="event-tag-pill">Keynote</span><span class="event-tag-pill">Secure AI</span><span class="event-tag-pill">Trustworthy ML</span><span class="event-tag-pill" style="background: rgba(239, 68, 68, 0.08); color: #dc2626; border-color: rgba(239, 68, 68, 0.25);"><i class="mdi mdi-youtube mr-1"></i>YouTube Keynote</span>
+                <span class="event-tag-pill">ACM</span><span class="event-tag-pill">Smart Slides: GxwP</span><span class="event-tag-pill">Keynote</span><span class="event-tag-pill">Secure AI</span><span class="event-tag-pill">Trustworthy ML</span><span class="event-tag-pill">YouTube Keynote</span>
             </div>
 
             <div class="event-card-footer mt-auto pt-3 border-top d-flex flex-wrap align-items-center">
-                <a href="https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1" target="_blank" class="btn-event-link mr-2 mb-2" style="background: #0f766e; color: #ffffff !important; border-color: #0f766e; font-weight: 600; box-shadow: 0 2px 8px rgba(15, 118, 110, 0.25);" title="Open Keynote Smart Slides (Deck GxwP)">
-                    <i class="mdi mdi-presentation-play mr-1"></i> Keynote Smart Slides (Deck GxwP)
-                </a>
-                <a href="https://youtu.be/RS_BKcbeV3o" target="_blank" class="btn-event-link mr-2 mb-2 font-weight-bold" style="background: rgba(239, 68, 68, 0.08); border-color: rgba(239, 68, 68, 0.3); color: #dc2626;" title="Watch Keynote on YouTube">
-                    <i class="mdi mdi-youtube mr-1" style="font-size: 16px; vertical-align: middle;"></i> Watch Keynote (YouTube)
-                </a>
-                <button type="button" class="btn-event-link mr-2 mb-2" onclick="window.openKeynoteVideoModal('RS_BKcbeV3o', 'ACM Sacramento Keynote: Secure &amp; Trustworthy ML/AI', 'ACM Sacramento Chapter', 'Distinguished Keynote Address titled \'Secure and Trustworthy Machine Learning and AI for Multi-Domain Applications\', analyzing enterprise LLM defense, zero-trust validation, and agent alignment.')" title="Watch Keynote Video in Modal">
-                    <i class="mdi mdi-play-circle-outline mr-1 text-primary"></i> Watch Video
-                </button>
-                <a href="https://tikkl.com/acmsacramentochapter/c/harshverma59/?" target="_blank" class="btn-event-link mr-2 mb-2" title="ACM Event Page & Registration">
-                    <i class="mdi mdi-ticket-confirmation mr-1"></i> ACM Event Page &amp; Registration
-                </a>
+                
+        <a href="https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1" target="_blank" class="btn-event-link mr-2 mb-2" title="Keynote Smart Slides (Deck GxwP)">
+            <i class="mdi mdi-presentation-play mr-1"></i> Keynote Smart Slides (Deck GxwP)
+        </a>
+        
+        <a href="https://youtu.be/RS_BKcbeV3o" target="_blank" class="btn-event-link mr-2 mb-2" title="Watch Keynote (YouTube)">
+            <i class="mdi mdi-youtube mr-1"></i> Watch Keynote (YouTube)
+        </a>
+        
+        <a href="https://tikkl.com/acmsacramentochapter/c/harshverma59/?" target="_blank" class="btn-event-link mr-2 mb-2" title="ACM Event Page & Registration">
+            <i class="mdi mdi-ticket-confirmation mr-1"></i> ACM Event Page & Registration
+        </a>
+        
             </div>
         </div>
     </div>
     
-    <div class="col-lg-6 col-md-12 mb-4 event-card-item" data-category="conferences" data-search="iciotcaa-2026 keynote: ai-enhanced enterprise security fellow member science tech xplore international conference on internet of things, computing, and ai applications (iciotcaa-2026) distinguished keynote speaker fellow member international / virtual iciotcaa iot enterprise security keynote fellow-members1.php">
-        <div class="event-hub-card h-100" id="card-conf-iciotcaa-2026" style="border: 1px solid rgba(13, 148, 136, 0.4); box-shadow: 0 4px 20px rgba(13, 148, 136, 0.08); position: relative;">
+    <div class="col-lg-6 col-md-12 mb-4 event-card-item" data-category="conferences" data-search="iciotcaa-2026 keynote & fellow member: ai-enhanced enterprise security  international conference on internet of things, computing, and ai applications (iciotcaa-2026) distinguished keynote speaker & inducted fellow member distinguished keynote speaker & inducted fellow member international / virtual iciotcaa fellow member enterprise security keynote science tech xplore">
+        <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="ICIoTCAA 2026 & Science Tech Xplore" style="border-color: rgba(13, 148, 136, 0.3);">
-                        <img src="images/events/iciotcaa.svg" alt="ICIoTCAA 2026" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=sciencetechxplore.org&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #6b21a815; color: #6b21a8; border: 1px solid #6b21a830;">
+                        <i class="mdi mdi-presentation-play"></i>
                     </div>
                     <div>
-                        <div class="d-flex flex-wrap align-items-center mb-1" style="gap: 4px;">
-                            <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #6b21a8; font-size: 11px;">
-                                Distinguished Keynote Speaker
-                            </span>
-                            <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #0d9488; font-size: 11px;">
-                                <i class="mdi mdi-seal mr-1"></i>Fellow Member
-                            </span>
-                        </div>
+                        <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #6b21a8; font-size: 11px;">
+                            Distinguished Keynote Speaker & Inducted Fellow Member
+                        </span>
                         <div class="event-org-name font-weight-bold mt-1 text-muted" style="font-size: 13px;">
                             <i class="mdi mdi-map-marker-outline mr-1"></i> International / Virtual &bull; <i class="mdi mdi-calendar-outline ml-1 mr-1"></i> 2026
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-sm btn-light border copy-event-btn" onclick="copyEventInfo('conf-iciotcaa-2026', 'ICIoTCAA-2026 Keynote &amp; Fellow Member: AI-Enhanced Enterprise Security')" title="Copy Event Details" aria-label="Copy Details">
+                <button class="btn btn-sm btn-light border copy-event-btn" onclick="copyEventInfo('conf-iciotcaa-2026', 'ICIoTCAA-2026 Keynote & Fellow Member: AI-Enhanced Enterprise Security')" title="Copy Event Details" aria-label="Copy Details">
                     <i class="mdi mdi-content-copy text-muted"></i>
                 </button>
             </div>
 
             <h4 class="event-card-title mb-2">
-                ICIoTCAA-2026 Keynote &amp; Fellow Member: AI-Enhanced Enterprise Security
+                ICIoTCAA-2026 Keynote & Fellow Member: AI-Enhanced Enterprise Security
             </h4>
 
-            <div class="event-card-org mb-2"><i class="mdi mdi-domain text-primary mr-1"></i> <strong>International Conference on Internet of Things, Computing, and AI Applications (ICIoTCAA-2026)</strong> &bull; <span class="text-primary font-weight-600">Distinguished Keynote Speaker &amp; Inducted Fellow Member</span></div>
+            <div class="event-card-org mb-2"><i class="mdi mdi-domain text-primary mr-1"></i> <strong>International Conference on Internet of Things, Computing, and AI Applications (ICIoTCAA-2026)</strong> &bull; <span class="text-primary font-weight-600">Distinguished Keynote Speaker & Inducted Fellow Member</span></div>
 
             <p class="event-card-desc mb-3">
                 Keynote presentation titled 'Building an AI-Enhanced Enterprise Security Solution Using Artificial Intelligence in Cybersecurity', demonstrating real-time behavioral anomaly detection and threat isolation. Inducted as an official Fellow Member at Science Tech Xplore / ICIoTCAA in recognition of advanced contributions to cybersecurity, artificial intelligence, and computing systems.
             </p>
 
             <div class="event-tags-wrap mb-3">
-                <span class="event-tag-pill">ICIoTCAA</span><span class="event-tag-pill" style="background: rgba(13, 148, 136, 0.1); color: #0d9488; border-color: rgba(13, 148, 136, 0.25); font-weight: 600;"><i class="mdi mdi-check-decagram mr-1"></i>Fellow Member</span><span class="event-tag-pill">Enterprise Security</span><span class="event-tag-pill">Keynote</span><span class="event-tag-pill">Science Tech Xplore</span>
+                <span class="event-tag-pill">ICIoTCAA</span><span class="event-tag-pill">Fellow Member</span><span class="event-tag-pill">Enterprise Security</span><span class="event-tag-pill">Keynote</span><span class="event-tag-pill">Science Tech Xplore</span>
             </div>
 
             <div class="event-card-footer mt-auto pt-3 border-top d-flex flex-wrap align-items-center">
-                <a href="https://sciencetechxplore.org/fellow-members1.php" target="_blank" class="btn-event-link mr-2 mb-2" style="background: #0d9488; color: #ffffff !important; border-color: #0d9488; font-weight: 600;" title="Verify Fellow Membership on Science Tech Xplore">
-                    <i class="mdi mdi-certificate mr-1"></i> Fellow Member Directory
-                </a>
-                <a href="https://sciencetechxplore.org/conference/keynoteby-ICIoTCAA-2026.php" target="_blank" class="btn-event-link mr-2 mb-2" title="Keynote Announcement">
-                    <i class="mdi mdi-bullhorn mr-1"></i> Keynote Announcement
-                </a>
+                
+        <a href="https://sciencetechxplore.org/fellow-members1.php" target="_blank" class="btn-event-link mr-2 mb-2" title="Fellow Member Directory">
+            <i class="mdi mdi-certificate mr-1"></i> Fellow Member Directory
+        </a>
+        
+        <a href="https://sciencetechxplore.org/conference/keynoteby-ICIoTCAA-2026.php" target="_blank" class="btn-event-link mr-2 mb-2" title="Keynote Announcement">
+            <i class="mdi mdi-bullhorn mr-1"></i> Keynote Announcement
+        </a>
+        
             </div>
         </div>
     </div>
@@ -2068,8 +1559,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="AI Engineering Salon">
-                        <img src="images/events/ai_salon.svg" alt="AI Engineering Salon" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=lu.ma&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #0284c715; color: #0284c7; border: 1px solid #0284c730;">
+                        <i class="mdi mdi-brain"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #0284c7; font-size: 11px;">
@@ -2113,8 +1604,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="AI Engineering Salon">
-                        <img src="images/events/ai_salon.svg" alt="AI Engineering Salon" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=lu.ma&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #4f46e515; color: #4f46e5; border: 1px solid #4f46e530;">
+                        <i class="mdi mdi-chart-line"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #4f46e5; font-size: 11px;">
@@ -2158,8 +1649,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="AI Engineering Salon">
-                        <img src="images/events/ai_salon.svg" alt="AI Engineering Salon" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=lu.ma&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #d9770615; color: #d97706; border: 1px solid #d9770630;">
+                        <i class="mdi mdi-hammer-wrench"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #d97706; font-size: 11px;">
@@ -2203,8 +1694,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="ATA GTR">
-                        <img src="images/awards/ata_gtr.svg" alt="ATA GTR" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=testingalliance.com&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #33415515; color: #334155; border: 1px solid #33415530;">
+                        <i class="mdi mdi-speedometer"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #334155; font-size: 11px;">
@@ -2236,6 +1727,10 @@
 
             <div class="event-card-footer mt-auto pt-3 border-top d-flex flex-wrap align-items-center">
                 
+        <a href="https://gtr2017.agiletestingalliance.org/speakers/#harshv" target="_blank" class="btn-event-link mr-2 mb-2" title="Conference Speakers Profile">
+            <i class="mdi mdi-web mr-1"></i> Conference Speakers Profile
+        </a>
+        
         <a href="https://www.slideshare.net/ATASlides/atagtr2017-hikerunner-load-test-framework" target="_blank" class="btn-event-link mr-2 mb-2" title="SlideShare Deck">
             <i class="mdi mdi-file-powerpoint mr-1"></i> SlideShare Deck
         </a>
@@ -2249,8 +1744,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="Founders' Creative">
-                        <img src="images/profiles/founderscreative.svg" alt="Founders' Creative" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=lu.ma&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #7e22ce15; color: #7e22ce; border: 1px solid #7e22ce30;">
+                        <i class="mdi mdi-account-voice"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #7e22ce; font-size: 11px;">
@@ -2302,8 +1797,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="The Agentic">
-                        <img src="images/events/the_agentic.svg" alt="The Agentic" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=lu.ma&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #04785715; color: #047857; border: 1px solid #04785730;">
+                        <i class="mdi mdi-shield-check"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #047857; font-size: 11px;">
@@ -2351,8 +1846,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="Progressive Ventures">
-                        <img src="images/events/progressive_ventures.svg" alt="Progressive Ventures" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=lu.ma&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #1d4ed815; color: #1d4ed8; border: 1px solid #1d4ed830;">
+                        <i class="mdi mdi-account-tie"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #1d4ed8; font-size: 11px;">
@@ -2404,8 +1899,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="Twill x Rocket">
-                        <img src="images/media/twill_rocket_badge.svg" alt="Twill x Rocket" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=wearetwill.com&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #be185d15; color: #be185d; border: 1px solid #be185d30;">
+                        <i class="mdi mdi-code-braces"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #be185d; font-size: 11px;">
@@ -2461,8 +1956,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="Health Tech Week">
-                        <img src="images/media/healthtech_badge.svg" alt="Health Tech Week" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=healthtechweek.org&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #0f766e15; color: #0f766e; border: 1px solid #0f766e30;">
+                        <i class="mdi mdi-medical-bag"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #0f766e; font-size: 11px;">
@@ -2522,8 +2017,8 @@
         <div class="event-hub-card h-100">
             <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="event-thumb-badge mr-3" title="Founders' Creative">
-                        <img src="images/profiles/founderscreative.svg" alt="Founders' Creative" class="event-org-thumb" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=lu.ma&sz=128';" />
+                    <div class="event-icon-badge mr-3" style="background: #3730a315; color: #3730a3; border: 1px solid #3730a330;">
+                        <i class="mdi mdi-scale-balance"></i>
                     </div>
                     <div>
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: #3730a3; font-size: 11px;">
@@ -2580,7 +2075,7 @@
         </div>
     </div>
 
-            <!-- Footer Start -->
+    <!-- Footer Start -->
     <footer class="footer bg-light">
         <div class="container">
             <div class="row justify-content-center">
@@ -2613,7 +2108,6 @@
                     <p class="para-desc mx-auto mt-4 text-black" style="max-width: 650px;">
                         Principal Software Engineer in AI @ Palo Alto Networks • Forbes Technology Council Member • IEEE Senior Member • Stanford GSB Scholar
                     </p>
-
                     <ul class="list-unstyled mb-0 mt-4 social-icon">
                         <li class="list-inline-item mr-1"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="rounded-circle" title="Google Scholar"><i class="mdi mdi-school"></i></a></li>
                         <li class="list-inline-item mr-1"><a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="rounded-circle" title="LinkedIn"><i class="mdi mdi-linkedin"></i></a></li>
@@ -2707,147 +2201,6 @@
                 prompt("Copy event summary:", textToCopy);
             }
         }
-
-        window.currentBioTab = 'medium';
-        function switchPressBioTab(type, btn) {
-            window.currentBioTab = type;
-            $('.hv-bio-tab-btn').removeClass('active');
-            $(btn).addClass('active');
-            var bios = {
-                short: "Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, Forbes Technology Council Member, IEEE Senior Member, and author of two books on Enterprise AI. Recognized on the Forttuna Global 100 Power List and Nobel Technology Awards Gold (#145), he architects deterministic agentic systems, zero-trust cloud perimeters, and high-throughput data platforms, keynoting across UC Berkeley SkyDeck and international AI symposiums.",
-                medium: "Harsh Verma is an internationally recognized Enterprise AI Architect, Principal Software Engineer in AI at Palo Alto Networks, and Forbes Technology Council Member. With over a decade of systems leadership, Harsh has authored 2 seminal industry books on Enterprise AI Agents and Autonomous Cyber Defense, published 23+ peer-reviewed and conference papers on IEEE, ICACCM, and international journals with 150+ academic citations, and earned 24 global technology honors including the Forttuna Global 100 Power List, Nobel Technology Awards Gold (#145), and Global Recognition Award for AI Innovation. He serves as an elected Fellow of Harvard Square Leaders Excellence and IEEE Senior Member. Harsh is a distinguished keynote speaker—frequently headlining UC Berkeley SkyDeck, international AI summits, and venture accelerators on agentic security architectures, distributed AI infrastructure, and autonomous enterprise defense.",
-                full: "Harsh Verma is a distinguished Enterprise AI Architect, Principal Software Engineer in AI at Palo Alto Networks, Forbes Technology Council Member, and prolific author. A pioneer in agentic security architectures and deterministic AI guardrails, Harsh has architected mission-critical data platforms, distributed feature pipelines, and autonomous defense perimeters protecting global enterprise networks.\n\nHe is the recipient of 24 international honors including the Forttuna Global 100 Power List (2026), Nobel Technology Awards Gold (#145), Global Recognition Award for Enterprise AI Innovation, and multiple Globee & Stevie Awards. A dedicated researcher and thought leader, Harsh has published 23+ peer-reviewed and conference papers across IEEE, ICACCM, and international engineering journals, accumulating over 150+ academic citations, alongside authoring two seminal books on Enterprise AI Agents and Autonomous Cyber Defense. He holds senior fellowships including Harvard Square Leaders Excellence Fellow and IEEE Senior Member.\n\nAs an invited keynote speaker and technical advisor, Harsh headlines major technology symposiums, university venture accelerators including UC Berkeley SkyDeck, and global executive forums, delivering actionable frameworks on generative AI, zero-trust cloud security, and resilient autonomous systems."
-            };
-            $('#hvPressBioContent').text(bios[type] || bios.medium);
-        }
     </script>
-    
-    <!-- Keynote Pinning & Custom Controls Script -->
-    <script>
-        (function() {
-            var defaultPinned = ['IZvHxEtMMnw', 'MPhFC1h5GIc'];
-            var storageKey = 'hv_pinned_keynotes_v1';
-
-            function getPinnedVideos() {
-                try {
-                    var saved = localStorage.getItem(storageKey);
-                    if (saved) {
-                        var parsed = JSON.parse(saved);
-                        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
-                    }
-                } catch(e) {}
-                return defaultPinned.slice();
-            }
-
-            function savePinnedVideos(list) {
-                try {
-                    localStorage.setItem(storageKey, JSON.stringify(list));
-                } catch(e) {}
-            }
-
-            var currentMode = 'pinned'; // 'pinned' or 'all' or specific video id
-
-            window.setKeynoteViewMode = function(mode) {
-                currentMode = mode;
-                var pinnedList = getPinnedVideos();
-
-                if (mode === 'pinned') {
-                    $('#btnFilterPinnedOnly').addClass('active');
-                    $('#btnFilterAllVideos').removeClass('active');
-                    $('#hvKeynoteSelector').val('pinned-view');
-                    $('.hv-video-card').each(function() {
-                        var vid = $(this).attr('data-video-id');
-                        if (pinnedList.indexOf(vid) !== -1) {
-                            $(this).fadeIn(200);
-                        } else {
-                            $(this).hide();
-                        }
-                    });
-                } else if (mode === 'all') {
-                    $('#btnFilterAllVideos').addClass('active');
-                    $('#btnFilterPinnedOnly').removeClass('active');
-                    $('#hvKeynoteSelector').val('all-view');
-                    $('.hv-video-card').fadeIn(200);
-                } else {
-                    // Specific video selected
-                    $('#btnFilterPinnedOnly').removeClass('active');
-                    $('#btnFilterAllVideos').removeClass('active');
-                    $('.hv-video-card').each(function() {
-                        var vid = $(this).attr('data-video-id');
-                        if (vid === mode) {
-                            $(this).fadeIn(200);
-                        } else {
-                            $(this).hide();
-                        }
-                    });
-                }
-                updatePinUI();
-            };
-
-            window.onKeynoteDropdownChange = function(val) {
-                if (val === 'pinned-view') {
-                    window.setKeynoteViewMode('pinned');
-                } else if (val === 'all-view') {
-                    window.setKeynoteViewMode('all');
-                } else {
-                    window.setKeynoteViewMode(val);
-                }
-            };
-
-            window.togglePinKeynote = function(vid, evt) {
-                if (evt) {
-                    evt.stopPropagation();
-                    evt.preventDefault();
-                }
-                var pinnedList = getPinnedVideos();
-                var idx = pinnedList.indexOf(vid);
-                if (idx !== -1) {
-                    // Unpin (keep at least 1 pinned)
-                    if (pinnedList.length <= 1) {
-                        alert('Keep at least 1 video pinned as your featured keynote.');
-                        return;
-                    }
-                    pinnedList.splice(idx, 1);
-                } else {
-                    pinnedList.push(vid);
-                }
-                savePinnedVideos(pinnedList);
-                updatePinUI();
-                if (currentMode === 'pinned') {
-                    window.setKeynoteViewMode('pinned');
-                }
-            };
-
-            function updatePinUI() {
-                var pinnedList = getPinnedVideos();
-                $('#pinnedVideoCount').text(pinnedList.length);
-
-                $('.hv-video-card').each(function() {
-                    var vid = $(this).attr('data-video-id');
-                    var isPinned = pinnedList.indexOf(vid) !== -1;
-                    var btn = $(this).find('.hv-video-pin-btn');
-                    if (isPinned) {
-                        $(this).addClass('is-pinned');
-                        btn.addClass('pinned').find('.pin-label').text('Pinned');
-                        btn.attr('title', 'Click to unpin this video');
-                    } else {
-                        $(this).removeClass('is-pinned');
-                        btn.removeClass('pinned').find('.pin-label').text('Pin');
-                        btn.attr('title', 'Click to pin to featured keynotes');
-                    }
-                });
-            }
-
-            $(document).ready(function() {
-                updatePinUI();
-                window.setKeynoteViewMode('pinned');
-            });
-        })();
-    </script>
-
-    <!-- HV Booking Flow & Keynote Hub Engine -->
-    <script src="js/hv-booking-flow.js"></script>
-    <!-- HV AI Copilot Assistant Engine -->
-    <script src="js/hv-copilot.js"></script>
 </body>
 </html>

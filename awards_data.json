@@ -696,6 +696,11 @@
     ],
     "links": [
       {
+        "label": "Conference Speaker Profile (#ATAGTR2017)",
+        "url": "https://gtr2017.agiletestingalliance.org/speakers/#harshv",
+        "icon": "mdi-web"
+      },
+      {
         "label": "ATA Meet Our Speaker Series",
         "url": "http://agiletestingalliance.org/agileBlogs/atagtr2017-meet-our-speaker-series-harsh-verma/",
         "icon": "mdi-microphone"

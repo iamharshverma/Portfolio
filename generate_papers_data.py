@@ -646,6 +646,43 @@ papers = [
   organization={ICACCM},
   url={https://www.icaccm.in/index.php}
 }"""
+    },
+    {
+        "id": "pub-24",
+        "title": "Data Quality, Feature Engineering, and Model Reliability in Large-Scale AI Multi-Agentic Systems",
+        "venue": "European Journal of Computer Science and Information Technology (EJCSIT)",
+        "year": "2021",
+        "publication_date": "May 30, 2021",
+        "volume": "Vol. 9, Issue 4, pp. 91-110",
+        "authors": "Harsh Verma",
+        "category": "journal",
+        "category_label": "Journal Article",
+        "topic": "agents software_eng",
+        "topic_label": "AI Multi-Agent Systems",
+        "doi": "10.37745/ejcsit.2013/vol9n491110",
+        "link": "https://eajournals.org/ejcsit/vol-9-issue-4-2021/data-quality-feature-engineering-and-model-reliability-in-large-scale-ai-multi-agentic-systems/",
+        "publisher": "European Centre for Research Training and Development UK (ECRTD)",
+        "abstract": "Investigates the foundational interplay between input data quality, automated feature engineering pipelines, and runtime model reliability across large-scale artificial intelligence multi-agentic systems. Formulates rigorous statistical validation heuristics, drift-detection boundaries, and fault-tolerant orchestration protocols that prevent cascading hallucination, epistemic uncertainty amplification, and consensus degradation in distributed enterprise agent ecosystems.",
+        "tags": [
+            "Multi-Agent Systems",
+            "Data Quality",
+            "Feature Engineering",
+            "Model Reliability",
+            "Distributed AI",
+            "EJCSIT"
+        ],
+        "bibtex": """@article{verma2021dataquality,
+  title={Data Quality, Feature Engineering, and Model Reliability in Large-Scale AI Multi-Agentic Systems},
+  author={Verma, Harsh},
+  journal={European Journal of Computer Science and Information Technology},
+  volume={9},
+  number={4},
+  pages={91--110},
+  year={2021},
+  month={May},
+  publisher={European Centre for Research Training and Development UK},
+  doi={10.37745/ejcsit.2013/vol9n491110}
+}"""
     }
 ]
 

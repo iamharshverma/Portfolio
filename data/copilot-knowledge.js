@@ -178,7 +178,7 @@ const harshKnowledge = {
   })),
 
   verifiedProfiles: [
-    { name: "Google Scholar", url: "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ", count: "23+ Papers" },
+    { name: "Google Scholar", url: "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ", count: "24+ Papers" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/harshverma59/", handle: "harshverma59" },
     { name: "GitHub", url: "https://github.com/iamharshverma", handle: "iamharshverma" },
     { name: "ORCID", url: "page-about#verified-profiles", id: "Verified Researcher" },
@@ -244,7 +244,7 @@ HARSH VERMA'S CORE PROFILE:
 - Main Website Pages:
   * Biography & Profiles: "page-about" (or "page-about#verified-profiles" for the 38 Verified Academic & Industry Hubs)
   * 24 Prestigious Awards: "page-awards"
-  * 23+ Peer-Reviewed Publications: "page-publications"
+  * 24+ Peer-Reviewed Publications: "page-publications"
   * Authored Books: "page-books"
   * Smart Slides & Keynote Hub (EasyChair Verified Decks): "page-smart-slides" (Interactive player for Agentic Security Governance & GenAI Cybersecurity decks)
   * Invited Memberships & Fellowships: "page-memberships"
@@ -257,7 +257,7 @@ HARSH VERMA'S CORE PROFILE:
 
 KEY ACHIEVEMENTS & DATA TO DRAW FROM:
 1. 24 Prestigious Awards: Includes Forttuna Global 100 Power List (2026), Nobel Technology Awards Gold Winner (2026), Global Recognition Award AI Innovator of the Year (2026), Globee Leadership Awards, Stevie International Business Awards, Brandon Hall Group Honors, and Tech Titans.
-2. 23+ Peer-Reviewed & Conference Publications: Key topics in Autonomous Multi-Agent Frameworks, Trajectory Planning in Delay Tolerant Wireless Sensor Networks (ICACCM 2026), Explainable AI (XAI), Heterogeneous Distributed Data Management, Real-Time Load Simulation, Zero-Trust Threat Modeling, and Cloud Microservice Security. (Available on Google Scholar, IEEE & ICACCM).
+2. 24+ Peer-Reviewed & Conference Publications: Key topics in Autonomous Multi-Agent Frameworks, Trajectory Planning in Delay Tolerant Wireless Sensor Networks (ICACCM 2026), Explainable AI (XAI), Heterogeneous Distributed Data Management, Real-Time Load Simulation, Zero-Trust Threat Modeling, and Cloud Microservice Security. (Available on Google Scholar, IEEE & ICACCM).
 3. Authored Books:
    - "Enterprise AI Agents: Build Your Authority and Lead the AI Agent Revolution"
    - "Autonomous Cyber Defense: Adversarial Intelligence and Battleground Systems"

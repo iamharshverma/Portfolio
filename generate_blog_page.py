@@ -550,6 +550,64 @@ articles_data = [
 
 def generate_blog_html():
     total_articles = len(articles_data)
+
+    # Core Research Domain Mapping (Category Filter)
+    MAIN_CATEGORY_MAP = {
+        # Forbes (5)
+        "forbes-beyond-code": "Engineering",
+        "forbes-intelligence-dollar": "AI Research",
+        "forbes-personalized-ai": "Cybersecurity",
+        "forbes-first-agent-experiment": "AI Research",
+        "forbes-pure-determinism": "Engineering",
+        # HackerNoon (12)
+        "hn-production-gap": "Interviews",
+        "hn-identity-perimeter": "Cybersecurity",
+        "hn-clean-attack": "Cybersecurity",
+        "hn-speed-reliability": "AI Research",
+        "hn-ai-governance": "AI Research",
+        "hn-observability-crisis": "AI Research",
+        "hn-reputation-systems": "AI Research",
+        "hn-distributed-intelligence": "Engineering",
+        "hn-identity-intent": "Cybersecurity",
+        "hn-trust-scores": "Cybersecurity",
+        "hn-ai-orchestrator": "Engineering",
+        "hn-startup-autonomy": "AI Research",
+        # RSA Conference (3)
+        "rsac-clean-attack": "Cybersecurity",
+        "rsac-death-auth": "Cybersecurity",
+        "rsac-agents-rules": "Cybersecurity",
+        # The AI Journal (6)
+        "aij-agentic-framework": "AI Research",
+        "aij-high-stakes": "AI Research",
+        "aij-beyond-code": "Interviews",
+        "aij-nomination": "Interviews",
+        "aij-intern-agent": "AI Research",
+        "aij-future-cto": "Engineering",
+        # Founders Creative (1)
+        "fc-co-innovation": "Engineering",
+        # Medium (1)
+        "medium-helm-gke": "Engineering",
+        # LifePage (1)
+        "lifepage-interview": "Interviews"
+    }
+
+    for art in articles_data:
+        art['main_category'] = MAIN_CATEGORY_MAP.get(art['id'], 'AI Research')
+
+    # Category counts
+    ai_count = sum(1 for a in articles_data if a['main_category'] == 'AI Research')
+    cyber_count = sum(1 for a in articles_data if a['main_category'] == 'Cybersecurity')
+    eng_count = sum(1 for a in articles_data if a['main_category'] == 'Engineering')
+    interview_count = sum(1 for a in articles_data if a['main_category'] == 'Interviews')
+
+    categories_summary = [
+        {"name": "All Categories", "filter": "all", "count": total_articles, "icon": "mdi-view-grid-outline"},
+        {"name": "AI Research", "filter": "AI Research", "count": ai_count, "icon": "mdi-brain"},
+        {"name": "Cybersecurity", "filter": "Cybersecurity", "count": cyber_count, "icon": "mdi-shield-lock-outline"},
+        {"name": "Engineering", "filter": "Engineering", "count": eng_count, "icon": "mdi-cog-sync"},
+        {"name": "Interviews & Spotlights", "filter": "Interviews", "count": interview_count, "icon": "mdi-microphone-variant"}
+    ]
+
     forbes_count = sum(1 for a in articles_data if a['platform'] == 'Forbes')
     hn_count = sum(1 for a in articles_data if a['platform'] == 'HackerNoon')
     aij_count = sum(1 for a in articles_data if a['platform'] == 'The AI Journal')
@@ -559,13 +617,13 @@ def generate_blog_html():
 
     # Platform pills HTML
     platforms_summary = [
-        {"name": "All Publications", "filter": "all", "count": total_articles, "icon": "mdi-newspaper-variant-multiple"},
+        {"name": "All Platforms", "filter": "all", "count": total_articles, "icon": "mdi-newspaper-variant-multiple"},
         {"name": "Forbes Tech Council", "filter": "Forbes", "count": forbes_count, "icon": "mdi-shield-star"},
         {"name": "HackerNoon", "filter": "HackerNoon", "count": hn_count, "icon": "mdi-code-braces"},
         {"name": "The AI Journal", "filter": "The AI Journal", "count": aij_count, "icon": "mdi-newspaper-variant"},
         {"name": "RSA Conference", "filter": "RSA Conference", "count": rsac_count, "icon": "mdi-shield-check"},
         {"name": "Founders Creative", "filter": "Founders Creative", "count": fc_count, "icon": "mdi-lightbulb-on-outline"},
-        {"name": "Interviews & Podcasts", "filter": "Interviews", "count": audio_count, "icon": "mdi-microphone-variant"}
+        {"name": "Interviews & Media", "filter": "Interviews", "count": audio_count, "icon": "mdi-microphone-variant"}
     ]
 
     cards_html = []
@@ -573,7 +631,22 @@ def generate_blog_html():
         platform_class = f"platform-{art['platform'].lower().replace(' ', '-')}"
         category_class = f"cat-{art['category'].lower().replace(' ', '-').replace('&', 'and')}"
         tags_str = " ".join([f"tag-{t.lower().replace(' ', '-')}" for t in art['tags']])
-        search_terms = f"{art['title']} {art['description']} {art['platform']} {art['platform_full']} {art['category']} {' '.join(art['tags'])}".lower()
+        search_terms = f"{art['title']} {art['description']} {art['platform']} {art['platform_full']} {art['main_category']} {art['category']} {' '.join(art['tags'])}".lower()
+
+        # Category topic badge styling
+        main_cat = art['main_category']
+        if main_cat == 'AI Research':
+            topic_icon = 'mdi-brain'
+            topic_badge_class = 'topic-ai'
+        elif main_cat == 'Cybersecurity':
+            topic_icon = 'mdi-shield-lock-outline'
+            topic_badge_class = 'topic-cyber'
+        elif main_cat == 'Engineering':
+            topic_icon = 'mdi-cog-sync'
+            topic_badge_class = 'topic-eng'
+        else:
+            topic_icon = 'mdi-microphone-variant'
+            topic_badge_class = 'topic-interview'
 
         # Platform badge color styling
         badge_style = ""
@@ -612,6 +685,7 @@ def generate_blog_html():
         <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
              data-platform="{art['platform']}" 
              data-category="{art['category']}" 
+             data-main-category="{art['main_category']}"
              data-featured="{'true' if art.get('featured') else 'false'}"
              data-search="{search_terms}">
             <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
@@ -624,12 +698,17 @@ def generate_blog_html():
                 </div>
                 <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
                     <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
-                        <span class="d-flex align-items-center font-weight-medium">
-                            <i class="mdi mdi-calendar-blank-outline mr-1"></i>{art['date']}
+                        <span class="badge badge-topic-pill {topic_badge_class}" onclick="filterByCategory('{main_cat}')" title="Filter by category: {main_cat}" style="cursor: pointer;">
+                            <i class="mdi {topic_icon} mr-1"></i>{main_cat}
                         </span>
-                        <span class="d-flex align-items-center">
-                            <i class="mdi mdi-clock-outline mr-1"></i>{art['read_time']}
-                        </span>
+                        <div class="d-flex align-items-center text-muted">
+                            <span class="d-flex align-items-center font-weight-medium mr-2">
+                                <i class="mdi mdi-calendar-blank-outline mr-1"></i>{art['date']}
+                            </span>
+                            <span class="d-flex align-items-center">
+                                <i class="mdi mdi-clock-outline mr-1"></i>{art['read_time']}
+                            </span>
+                        </div>
                     </div>
                     <h5 class="card-title mb-2">
                         <a href="{art['url']}" target="_blank" class="title text-dark font-weight-bold" title="{art['title']}">
@@ -659,17 +738,28 @@ def generate_blog_html():
 
     cards_joined = "\n".join(cards_html)
 
-    # Filter chips HTML
-    filter_chips_html = []
-    for p in platforms_summary:
-        active_class = "active" if p['filter'] == 'all' else ""
-        filter_chips_html.append(f'''
-        <button type="button" class="btn btn-filter {active_class} mr-2 mb-2" data-filter="{p['filter']}">
-            <i class="mdi {p['icon']} mr-1"></i>{p['name']} 
-            <span class="badge badge-pill badge-dark ml-1">{p['count']}</span>
+    # Category chips HTML
+    category_chips_html = []
+    for c in categories_summary:
+        active_class = "active" if c['filter'] == 'all' else ""
+        category_chips_html.append(f'''
+        <button type="button" class="btn btn-category-pill {active_class} mr-2 mb-2" data-category-filter="{c['filter']}">
+            <i class="mdi {c['icon']} mr-1"></i>{c['name']} 
+            <span class="badge badge-pill badge-dark ml-1">{c['count']}</span>
         </button>
         ''')
-    filter_chips_joined = "".join(filter_chips_html)
+    category_chips_joined = "".join(category_chips_html)
+
+    # Platform secondary filter chips HTML
+    platform_chips_html = []
+    for p in platforms_summary:
+        active_class = "active" if p['filter'] == 'all' else ""
+        platform_chips_html.append(f'''
+        <button type="button" class="btn btn-sm btn-platform-chip {active_class} mr-1 mb-2" data-platform-filter="{p['filter']}">
+            {p['name']} <span class="badge badge-pill badge-light ml-1">{p['count']}</span>
+        </button>
+        ''')
+    platform_chips_joined = "".join(platform_chips_html)
 
     html_content = f'''<!DOCTYPE html>
 <html lang="en">
@@ -835,34 +925,112 @@ def generate_blog_html():
             border-radius: 6px;
             text-decoration: none !important;
         }}
-        .btn-filter {{
+        /* Category and Platform Filter Styling */
+        .category-filter-card {{
             background: #ffffff;
-            color: #475569;
-            border: 1px solid #e2e8f0;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 18px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        }}
+        .btn-category-pill {{
+            background: #ffffff;
+            color: #334155;
+            border: 1.5px solid #e2e8f0;
             border-radius: 30px;
-            font-size: 13px;
+            font-size: 13.5px;
             font-weight: 600;
-            padding: 7px 16px;
+            padding: 8px 18px;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            display: inline-flex;
+            align-items: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+        }}
+        .btn-category-pill:hover {{
+            background: #f8fafc;
+            color: #1e1b4b;
+            border-color: #94a3b8;
+            transform: translateY(-1px);
+        }}
+        .btn-category-pill.active {{
+            background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%) !important;
+            color: #ffffff !important;
+            border-color: #2563eb !important;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+        }}
+        .btn-category-pill .badge {{
+            background: rgba(0, 0, 0, 0.08);
+            color: inherit;
+            font-weight: 700;
+            font-size: 11px;
+            padding: 3px 8px;
+        }}
+        .btn-category-pill.active .badge {{
+            background: rgba(255, 255, 255, 0.28);
+            color: #ffffff;
+        }}
+        .btn-platform-chip {{
+            background: #f1f5f9;
+            color: #475569;
+            border: 1px solid #cbd5e1;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 12px;
             transition: all 0.2s ease;
         }}
-        .btn-filter:hover {{
-            background: #f8fafc;
+        .btn-platform-chip:hover {{
+            background: #e2e8f0;
             color: #0f172a;
-            border-color: #cbd5e1;
         }}
-        .btn-filter.active {{
-            background: #4f46e5 !important;
+        .btn-platform-chip.active {{
+            background: #0f172a !important;
             color: #ffffff !important;
-            border-color: #4f46e5 !important;
-            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.35);
+            border-color: #0f172a !important;
         }}
-        .btn-filter .badge {{
+        .btn-platform-chip .badge {{
             background: rgba(0, 0, 0, 0.1);
             color: inherit;
+            font-size: 10px;
+            padding: 2px 6px;
         }}
-        .btn-filter.active .badge {{
+        .btn-platform-chip.active .badge {{
             background: rgba(255, 255, 255, 0.25);
             color: #ffffff;
+        }}
+
+        /* Category Topic Badges on Cards */
+        .badge-topic-pill {{
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            padding: 4px 10px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.2s ease;
+        }}
+        .badge-topic-pill:hover {{
+            transform: scale(1.04);
+        }}
+        .badge-topic-pill.topic-ai {{
+            background: rgba(99, 102, 241, 0.12);
+            color: #4f46e5;
+            border: 1px solid rgba(99, 102, 241, 0.3);
+        }}
+        .badge-topic-pill.topic-cyber {{
+            background: rgba(225, 29, 72, 0.12);
+            color: #e11d48;
+            border: 1px solid rgba(225, 29, 72, 0.3);
+        }}
+        .badge-topic-pill.topic-eng {{
+            background: rgba(14, 165, 233, 0.12);
+            color: #0284c7;
+            border: 1px solid rgba(14, 165, 233, 0.3);
+        }}
+        .badge-topic-pill.topic-interview {{
+            background: rgba(16, 185, 129, 0.12);
+            color: #059669;
+            border: 1px solid rgba(16, 185, 129, 0.3);
         }}
         .search-box-wrap {{
             position: relative;
@@ -949,14 +1117,64 @@ def generate_blog_html():
             background: #475569;
             color: #ffffff;
         }}
-        body.dark-mode .btn-filter {{
+        body.dark-mode .category-filter-card {{
+            background: #1e293b;
+            border-color: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }}
+        body.dark-mode .btn-category-pill {{
             background: #1e293b;
             color: #cbd5e1;
             border-color: #334155;
         }}
-        body.dark-mode .btn-filter:hover {{
+        body.dark-mode .btn-category-pill:hover {{
             background: #334155;
             color: #ffffff;
+            border-color: #475569;
+        }}
+        body.dark-mode .btn-category-pill.active {{
+            background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%) !important;
+            border-color: #3b82f6 !important;
+            color: #ffffff !important;
+            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);
+        }}
+        body.dark-mode .btn-platform-chip {{
+            background: #0f172a;
+            color: #94a3b8;
+            border-color: #334155;
+        }}
+        body.dark-mode .btn-platform-chip:hover {{
+            background: #1e293b;
+            color: #f1f5f9;
+        }}
+        body.dark-mode .btn-platform-chip.active {{
+            background: #38bdf8 !important;
+            color: #0f172a !important;
+            border-color: #38bdf8 !important;
+        }}
+        body.dark-mode .btn-platform-chip.active .badge {{
+            background: rgba(15, 23, 42, 0.3);
+            color: #0f172a;
+        }}
+        body.dark-mode .badge-topic-pill.topic-ai {{
+            background: rgba(99, 102, 241, 0.22);
+            color: #a5b4fc;
+            border-color: rgba(99, 102, 241, 0.45);
+        }}
+        body.dark-mode .badge-topic-pill.topic-cyber {{
+            background: rgba(225, 29, 72, 0.22);
+            color: #fda4af;
+            border-color: rgba(225, 29, 72, 0.45);
+        }}
+        body.dark-mode .badge-topic-pill.topic-eng {{
+            background: rgba(14, 165, 233, 0.22);
+            color: #7dd3fc;
+            border-color: rgba(14, 165, 233, 0.45);
+        }}
+        body.dark-mode .badge-topic-pill.topic-interview {{
+            background: rgba(16, 185, 129, 0.22);
+            color: #6ee7b7;
+            border-color: rgba(16, 185, 129, 0.45);
         }}
         body.dark-mode .search-box-wrap input {{
             background: #1e293b;
@@ -1198,11 +1416,44 @@ def generate_blog_html():
                 </div>
             </div>
 
-            <!-- Filter Buttons Chips -->
+            <!-- Category and Platform Filters -->
             <div class="row mb-4">
                 <div class="col-12">
-                    <div class="d-flex flex-wrap align-items-center filter-chip-container">
-                        {filter_chips_joined}
+                    <div class="category-filter-card p-3 p-md-4 rounded-xl border bg-white shadow-sm mb-2" style="border-radius: 16px;">
+                        <!-- Category Filter Bar (Primary Navigation) -->
+                        <div class="d-flex align-items-center justify-content-between flex-wrap pb-3 border-bottom mb-3">
+                            <div class="d-flex align-items-center mb-2 mb-md-0">
+                                <span class="badge badge-pill badge-primary px-3 py-1 font-weight-bold text-uppercase mr-2" style="font-size: 11px; letter-spacing: 0.8px; background-color: #2563eb;">
+                                    <i class="mdi mdi-filter-variant mr-1"></i> Topic Domain
+                                </span>
+                                <span class="font-weight-bold text-dark" style="font-size: 14.5px;">Filter by Core Research Area:</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <button type="button" class="btn btn-sm btn-link text-muted font-weight-bold p-0" onclick="resetFilters()" title="Reset all category and platform filters">
+                                    <i class="mdi mdi-refresh mr-1"></i>Reset Filters
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Category Buttons Pills -->
+                        <div class="d-flex flex-wrap align-items-center category-filter-container mb-3" id="categoryFilterContainer">
+                            {category_chips_joined}
+                        </div>
+
+                        <!-- Platform Secondary Filter Row -->
+                        <div class="pt-2 border-top d-flex align-items-center justify-content-between flex-wrap">
+                            <div class="d-flex align-items-center flex-wrap pt-2">
+                                <span class="small font-weight-bold text-muted mr-2 mb-2 text-uppercase" style="letter-spacing: 0.5px; font-size: 11px;">
+                                    <i class="mdi mdi-newspaper mr-1 text-primary"></i>Publication Source:
+                                </span>
+                                <div class="d-flex flex-wrap align-items-center platform-chips-container">
+                                    {platform_chips_joined}
+                                </div>
+                            </div>
+                            <div class="pt-2 text-muted small" id="activeFilterSummary">
+                                <span class="badge badge-light-custom"><i class="mdi mdi-check mr-1 text-success"></i>All Categories &bull; All Platforms</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1348,8 +1599,9 @@ def generate_blog_html():
     <script src="js/app.js"></script>
 
     <script>
-    // Client-side Search and Filter Engine
-    let currentFilter = 'all';
+    // Client-side Search and Dual Category/Platform Filter Engine
+    let currentCategoryFilter = 'all';
+    let currentPlatformFilter = 'all';
     let currentSearch = '';
 
     function applyFilters() {{
@@ -1366,18 +1618,29 @@ def generate_blog_html():
         let visibleCount = 0;
 
         cards.forEach(card => {{
-            const platform = card.getAttribute('data-platform');
-            const category = card.getAttribute('data-category');
+            const platform = card.getAttribute('data-platform') || '';
+            const category = card.getAttribute('data-category') || '';
+            const mainCategory = card.getAttribute('data-main-category') || '';
             const searchData = card.getAttribute('data-search') || '';
 
-            // Platform / category match
-            let matchesFilter = false;
-            if (currentFilter === 'all') {{
-                matchesFilter = true;
-            }} else if (currentFilter === 'Interviews') {{
-                matchesFilter = (category === 'Interviews' || card.querySelector('.badge-spotify') !== null);
+            // Category match
+            let matchesCategory = false;
+            if (currentCategoryFilter === 'all') {{
+                matchesCategory = true;
+            }} else if (currentCategoryFilter === 'Interviews') {{
+                matchesCategory = (mainCategory === 'Interviews' || category === 'Interviews' || card.querySelector('.badge-spotify') !== null);
             }} else {{
-                matchesFilter = (platform === currentFilter);
+                matchesCategory = (mainCategory === currentCategoryFilter);
+            }}
+
+            // Platform match
+            let matchesPlatform = false;
+            if (currentPlatformFilter === 'all') {{
+                matchesPlatform = true;
+            }} else if (currentPlatformFilter === 'Interviews') {{
+                matchesPlatform = (mainCategory === 'Interviews' || category === 'Interviews' || card.querySelector('.badge-spotify') !== null);
+            }} else {{
+                matchesPlatform = (platform === currentPlatformFilter);
             }}
 
             // Search text match
@@ -1386,7 +1649,7 @@ def generate_blog_html():
                 matchesSearch = searchData.includes(searchTerm);
             }}
 
-            if (matchesFilter && matchesSearch) {{
+            if (matchesCategory && matchesPlatform && matchesSearch) {{
                 card.style.display = 'block';
                 visibleCount++;
             }} else {{
@@ -1394,12 +1657,20 @@ def generate_blog_html():
             }}
         }});
 
-        // Update count badge
+        // Update count badge & active filter summary
         const badge = document.getElementById('resultsCountBadge');
         const noResults = document.getElementById('noResultsBox');
+        const summary = document.getElementById('activeFilterSummary');
 
         if (badge) {{
-            badge.innerText = `Showing ${{visibleCount}} of {total_articles} publications`;
+            let catLabel = currentCategoryFilter === 'all' ? '' : `${{currentCategoryFilter}} `;
+            badge.innerText = `Showing ${{visibleCount}} of {total_articles} ${{catLabel}}publications`;
+        }}
+
+        if (summary) {{
+            let catText = currentCategoryFilter === 'all' ? 'All Categories' : currentCategoryFilter;
+            let platText = currentPlatformFilter === 'all' ? 'All Platforms' : currentPlatformFilter;
+            summary.innerHTML = `<span class="badge badge-light-custom"><i class="mdi mdi-check mr-1 text-success"></i>${{catText}} &bull; ${{platText}}</span>`;
         }}
 
         if (noResults) {{
@@ -1407,15 +1678,44 @@ def generate_blog_html():
         }}
     }}
 
-    // Filter Buttons click handler
-    document.querySelectorAll('.btn-filter').forEach(btn => {{
+    // Category Buttons click handler
+    document.querySelectorAll('.btn-category-pill').forEach(btn => {{
         btn.addEventListener('click', function() {{
-            document.querySelectorAll('.btn-filter').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.btn-category-pill').forEach(b => b.classList.remove('active'));
             this.classList.add('active');
-            currentFilter = this.getAttribute('data-filter');
+            currentCategoryFilter = this.getAttribute('data-category-filter');
             applyFilters();
         }});
     }});
+
+    // Platform Chips click handler
+    document.querySelectorAll('.btn-platform-chip').forEach(btn => {{
+        btn.addEventListener('click', function() {{
+            document.querySelectorAll('.btn-platform-chip').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            currentPlatformFilter = this.getAttribute('data-platform-filter');
+            applyFilters();
+        }});
+    }});
+
+    // Quick filter directly by Category
+    function filterByCategory(cat) {{
+        document.querySelectorAll('.btn-category-pill').forEach(b => b.classList.remove('active'));
+        const targetBtn = document.querySelector(`.btn-category-pill[data-category-filter="${{cat}}"]`);
+        if (targetBtn) {{
+            targetBtn.classList.add('active');
+            currentCategoryFilter = cat;
+        }} else {{
+            const allBtn = document.querySelector('.btn-category-pill[data-category-filter="all"]');
+            if (allBtn) allBtn.classList.add('active');
+            currentCategoryFilter = 'all';
+        }}
+        applyFilters();
+        const container = document.getElementById('categoryFilterContainer');
+        if (container) {{
+            container.scrollIntoView({{ behavior: 'smooth', block: 'nearest' }});
+        }}
+    }}
 
     // Search Input listeners
     const searchInput = document.getElementById('blogSearchInput');
@@ -1436,11 +1736,17 @@ def generate_blog_html():
         const input = document.getElementById('blogSearchInput');
         if (input) {{
             input.value = tag;
-            // set filter to all
-            document.querySelectorAll('.btn-filter').forEach(b => b.classList.remove('active'));
-            const allBtn = document.querySelector('.btn-filter[data-filter="all"]');
-            if (allBtn) allBtn.classList.add('active');
-            currentFilter = 'all';
+            // Reset categories to all so tag results are not restricted
+            document.querySelectorAll('.btn-category-pill').forEach(b => b.classList.remove('active'));
+            const allCatBtn = document.querySelector('.btn-category-pill[data-category-filter="all"]');
+            if (allCatBtn) allCatBtn.classList.add('active');
+            currentCategoryFilter = 'all';
+
+            document.querySelectorAll('.btn-platform-chip').forEach(b => b.classList.remove('active'));
+            const allPlatBtn = document.querySelector('.btn-platform-chip[data-platform-filter="all"]');
+            if (allPlatBtn) allPlatBtn.classList.add('active');
+            currentPlatformFilter = 'all';
+
             applyFilters();
             input.scrollIntoView({{ behavior: 'smooth', block: 'center' }});
         }}
@@ -1449,10 +1755,17 @@ def generate_blog_html():
     function resetFilters() {{
         const input = document.getElementById('blogSearchInput');
         if (input) input.value = '';
-        document.querySelectorAll('.btn-filter').forEach(b => b.classList.remove('active'));
-        const allBtn = document.querySelector('.btn-filter[data-filter="all"]');
-        if (allBtn) allBtn.classList.add('active');
-        currentFilter = 'all';
+        
+        document.querySelectorAll('.btn-category-pill').forEach(b => b.classList.remove('active'));
+        const allCatBtn = document.querySelector('.btn-category-pill[data-category-filter="all"]');
+        if (allCatBtn) allCatBtn.classList.add('active');
+        currentCategoryFilter = 'all';
+
+        document.querySelectorAll('.btn-platform-chip').forEach(b => b.classList.remove('active'));
+        const allPlatBtn = document.querySelector('.btn-platform-chip[data-platform-filter="all"]');
+        if (allPlatBtn) allPlatBtn.classList.add('active');
+        currentPlatformFilter = 'all';
+
         applyFilters();
     }}
 
@@ -1480,6 +1793,25 @@ def generate_blog_html():
         cards.forEach(card => grid.appendChild(card));
         applyFilters();
     }}
+
+    // Check URL parameters or hash on load (e.g. #cybersecurity, #ai-research, #engineering)
+    document.addEventListener('DOMContentLoaded', function() {{
+        try {{
+            const urlParams = new URLSearchParams(window.location.search);
+            const catParam = urlParams.get('category') || (window.location.hash ? window.location.hash.replace('#', '') : '');
+            if (catParam) {{
+                const clean = catParam.toLowerCase().replace(/[^a-z]/g, '');
+                const pills = document.querySelectorAll('.btn-category-pill');
+                for (let pill of pills) {{
+                    const val = pill.getAttribute('data-category-filter').toLowerCase().replace(/[^a-z]/g, '');
+                    if (val === clean || (clean === 'ai' && val === 'airesearch') || (clean === 'cyber' && val === 'cybersecurity')) {{
+                        pill.click();
+                        break;
+                    }}
+                }}
+            }}
+        }} catch(e) {{}}
+    }});
     </script>
     <!-- HV AI Copilot Assistant Engine -->
     <script src="js/hv-copilot.js"></script>

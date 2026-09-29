@@ -471,6 +471,7 @@ events_data = {
             "location": "International / Online",
             "description": "Presented research on 'HikeRunner Load Test Framework', detailing high-concurrency distributed load testing, microservices resilience testing, and automated performance profiling.",
             "links": [
+                {"name": "Conference Speakers Profile", "url": "https://gtr2017.agiletestingalliance.org/speakers/#harshv", "icon": "mdi-web"},
                 {"name": "SlideShare Deck", "url": "https://www.slideshare.net/ATASlides/atagtr2017-hikerunner-load-test-framework", "icon": "mdi-file-powerpoint"}
             ],
             "tags": ["ATAGTR", "HikeRunner", "Distributed Systems", "Load Testing"],

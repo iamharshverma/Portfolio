@@ -422,6 +422,7 @@ awards_data = [
         "description": "Awarded Certificate of Honour for speaking on the proprietary high-throughput performance testing framework 'HikeRunner' at @#ATAGTR2017 (Global Testing Retreat 2017), introducing distributed microservice benchmarking concepts.",
         "tags": ["ATA GTR2017", "HikeRunner", "Keynote Speaker", "Agile Testing Alliance"],
         "links": [
+            {"label": "Conference Speaker Profile (#ATAGTR2017)", "url": "https://gtr2017.agiletestingalliance.org/speakers/#harshv", "icon": "mdi-web"},
             {"label": "ATA Meet Our Speaker Series", "url": "http://agiletestingalliance.org/agileBlogs/atagtr2017-meet-our-speaker-series-harsh-verma/", "icon": "mdi-microphone"}
         ],
         "citation": "Verma, H. (2017). Certificate of Honour for Keynote Presentation on 'HikeRunner' Performance Framework. Agile Testing Alliance #ATAGTR2017."

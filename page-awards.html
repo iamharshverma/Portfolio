@@ -227,41 +227,18 @@
         /* Award Cards */
         .award-card {
             background: #ffffff;
-            border: 1px solid rgba(226, 232, 240, 0.95);
+            border: 1px solid rgba(226, 232, 240, 0.9);
             border-radius: 18px;
-            transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.32s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.32s ease;
+            transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s ease;
             overflow: hidden;
             display: flex;
             flex-direction: column;
             height: 100%;
-            position: relative;
-            z-index: 1;
-            will-change: transform, box-shadow;
-        }
-        .award-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, rgba(37, 99, 235, 0) 0%, rgba(37, 99, 235, 0.9) 30%, rgba(245, 158, 11, 0.9) 70%, rgba(245, 158, 11, 0) 100%);
-            opacity: 0;
-            transition: opacity 0.32s ease;
-            z-index: 10;
-            pointer-events: none;
         }
         .award-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 38px -10px rgba(15, 23, 42, 0.12), 0 0 24px 2px rgba(37, 99, 235, 0.12), 0 0 0 1px rgba(37, 99, 235, 0.18) !important;
-            border-color: rgba(37, 99, 235, 0.38);
-        }
-        .award-card:hover::before {
-            opacity: 1;
-        }
-        .award-card:hover .award-title {
-            color: #1d4ed8;
-            transition: color 0.25s ease;
+            transform: translateY(-6px);
+            box-shadow: 0 22px 40px -12px rgba(15, 23, 42, 0.14), 0 8px 16px -6px rgba(15, 23, 42, 0.06) !important;
+            border-color: rgba(245, 158, 11, 0.4);
         }
         .award-header-badge {
             position: relative;
@@ -561,16 +538,9 @@
             background: #1e293b;
             border-color: #334155;
         }
-        body.dark-mode .award-card::before {
-            background: linear-gradient(90deg, rgba(56, 189, 248, 0) 0%, rgba(56, 189, 248, 0.95) 30%, rgba(251, 191, 36, 0.95) 70%, rgba(251, 191, 36, 0) 100%);
-        }
         body.dark-mode .award-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 22px 42px -10px rgba(0, 0, 0, 0.7), 0 0 28px 3px rgba(56, 189, 248, 0.18), 0 0 0 1px rgba(56, 189, 248, 0.32) !important;
-            border-color: rgba(56, 189, 248, 0.45) !important;
-        }
-        body.dark-mode .award-card:hover .award-title {
-            color: #38bdf8;
+            border-color: #f59e0b;
+            box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.6) !important;
         }
         body.dark-mode .btn-filter-pill {
             background: #1e293b;
@@ -602,17 +572,46 @@
         }
 
         /* Navbar Header & Nav Link Visibility */
-        </style>
-    <!-- HV AI Copilot Styles -->
-    <link rel="stylesheet" href="css/hv-copilot.css" />
+        .navbar-custom {
+            background-color: rgba(255, 255, 255, 0.96) !important;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+            padding: 16px 0;
+            transition: all 0.3s ease;
+        }
+        .navbar-custom .navigation .navbar-nav-link .nav-item .nav-link {
+            color: #334155 !important;
+            font-weight: 600;
+            font-size: 14.5px;
+            transition: color 0.2s ease;
+        }
+        .navbar-custom .navigation .navbar-nav-link .nav-item:hover .nav-link,
+        .navbar-custom .navigation .navbar-nav-link .nav-item.active .nav-link {
+            color: #2563eb !important;
+            font-weight: 700;
+        }
+        body.dark-mode .navbar-custom {
+            background-color: rgba(11, 15, 25, 0.96) !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+        body.dark-mode .navbar-custom .navigation .navbar-nav-link .nav-item .nav-link {
+            color: #cbd5e1 !important;
+        }
+        body.dark-mode .navbar-custom .navigation .navbar-nav-link .nav-item:hover .nav-link,
+        body.dark-mode .navbar-custom .navigation .navbar-nav-link .nav-item.active .nav-link {
+            color: #60a5fa !important;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky" id="navbar">
-        <a rel="me" href="https://mastodon.social/@harshverma59" class="sr-only">Mastodon</a>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
         <div class="container">
-            <a class="navbar-brand brand-logo-wrap" href="index" title="Harsh Verma - Home">
+                        <a class="navbar-brand font-weight-bold brand-logo-wrap" href="index">
                 <span class="brand-monogram-emblem">
                     <svg class="brand-logo-svg" width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <defs>
@@ -637,18 +636,24 @@
                     <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
                 </span>
             </a>
+            
+            <div class="d-flex align-items-center ml-auto d-lg-none">
+                <button type="button" class="theme-toggle-btn mr-2" aria-label="Toggle dark mode" title="Toggle theme">
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span data-feather="menu" class="fea icon-md"></span>
+                </button>
+            </div>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="mdi mdi-menu"></i>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+            <div class="collapse navbar-collapse navigation" id="navbarCollapse">
+                <ul class="navbar-nav navbar-nav-link ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="page-about">About</a>
+                        <a class="nav-link" href="index">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page-publications">Publications</a>
+                        <a class="nav-link" href="page-about">About</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="page-awards">Awards</a>
@@ -657,107 +662,31 @@
                         <a class="nav-link" href="page-memberships">Memberships</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page-media">Media</a>
+                        <a class="nav-link" href="page-publications">Publications</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page-events">Speaker</a>
+                        <a class="nav-link" href="page-portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="page-books">Books</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="page-events">Speaking</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="page-blog">Blog</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            More <i class="mdi mdi-chevron-down nav-dropdown-arrow"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right nav-custom-dropdown" aria-labelledby="navbarDropdown">
-                            <div class="nav-dropdown-header">
-                                <span>Extended Portfolios &amp; Hubs</span>
-                            </div>
-                            <a class="dropdown-item nav-dropdown-item" href="page-media-distribution-analytics">
-                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-chart-box-outline"></i></div>
-                                <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Distribution Analytics <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">3.75B+</span></span>
-                                    <span class="dropdown-item-desc">Publication reach &amp; influence pyramid</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item nav-dropdown-item" href="page-portfolio">
-                                <div class="dropdown-item-icon bg-soft-info"><i class="mdi mdi-cube-outline"></i></div>
-                                <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Portfolio Projects</span>
-                                    <span class="dropdown-item-desc">Architectures, agent frameworks &amp; systems</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item nav-dropdown-item" href="page-smart-slides">
-                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-presentation-play"></i></div>
-                                <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Smart Slides <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">New</span></span>
-                                    <span class="dropdown-item-desc">Interactive executive &amp; research slide decks</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item nav-dropdown-item" href="page-social">
-                                <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
-                                <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
-                                    <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
-                                <div class="dropdown-item-icon bg-soft-warning"><i class="mdi mdi-shield-account-outline"></i></div>
-                                <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">42 Verified Profiles Hub</span>
-                                    <span class="dropdown-item-desc">Academic, editorial &amp; executive registries</span>
-                                </div>
-                            </a>
-                            <div class="dropdown-divider my-2"></div>
-                            <a class="dropdown-item nav-dropdown-item" href="index#contact">
-                                <div class="dropdown-item-icon bg-soft-danger"><i class="mdi mdi-email-outline"></i></div>
-                                <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Contact Harsh</span>
-                                    <span class="dropdown-item-desc">Advisory, keynotes &amp; consultations</span>
-                                </div>
-                            </a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index#contact">Contact</a>
                     </li>
                 </ul>
 
-                <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
-                    <li class="list-inline-item mr-2">
-                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (23+ Papers)">
-                            <i class="mdi mdi-school"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mr-2">
-                        <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="nav-social-btn" title="LinkedIn Profile">
-                            <i class="mdi mdi-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mr-2">
-                        <a href="https://www.instagram.com/iamharshverma/" target="_blank" class="nav-social-btn" title="Instagram Profile">
-                            <i class="mdi mdi-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mr-2">
-                        <a href="https://github.com/iamharshverma" target="_blank" class="nav-social-btn" title="GitHub Profile">
-                            <i class="mdi mdi-github-face"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mr-2">
-                        <a rel="me" href="https://mastodon.social/@harshverma59" target="_blank" class="nav-social-btn" title="Mastodon Profile (@harshverma59)" aria-label="Mastodon">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: -2px;" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.509.91 5.313.34 8.046.2 11.458.232 14.398c.036 3.23.36 6.438 3.197 7.223 2.11.583 4.295.66 6.435.485.495-.04 1.05-.1 1.58-.19.04-.01.07-.02.1-.03l.03-.01.02-.01c.21-.05.42-.1.62-.17.15-.05.31-.11.46-.17v-2.02c-.41.13-.82.24-1.24.32-.42.08-.85.13-1.28.15-2.03.11-4.08-.03-4.32-.82-.04-.15-.07-.33-.08-.54l.01-.01c.27.08.55.15.83.21 1.77.38 3.6.43 5.42.15 1.51-.23 3.01-.69 4.37-1.39 1.95-.99 2.54-2.67 2.68-4.06.31-3.03.25-6.52-.09-9.17zM18.8 13.91h-2.12V7.79c0-1.29-.54-1.95-1.63-1.95-1.2 0-1.8.78-1.8 2.33v3.37h-2.13V8.17c0-1.55-.6-2.33-1.8-2.33-1.09 0-1.63.66-1.63 1.95v6.12H5.56V7.65c0-1.29.33-2.31 1-3.06.67-.75 1.55-1.14 2.64-1.14 1.26 0 2.22.49 2.87 1.46l.57.96.57-.96c.65-.97 1.61-1.46 2.87-1.46 1.09 0 1.97.39 2.64 1.14.67.75 1 1.77 1 3.06v6.26z"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
-                            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-                            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                        </button>
-                    </li>
-                </ul>
+                <div class="d-none d-lg-flex align-items-center ml-2">
+                    <button type="button" class="theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle theme">
+                        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -841,40 +770,26 @@
                 </button>
             </div>
 
-            <!-- Tabbed Filter UI -->
-            <div class="awards-tab-filter-container">
-                <div class="awards-tab-list" role="tablist" aria-label="Awards Category Filter">
-                    <button type="button" role="tab" aria-selected="true" class="awards-tab-btn active btn-filter-pill" onclick="setCategoryFilter('all', this)">
-                        <i class="mdi mdi-view-grid-outline tab-icon"></i>
-                        <span class="tab-label">All Honors</span>
-                        <span class="tab-badge filter-count" id="count-all">24</span>
-                    </button>
-                    <button type="button" role="tab" aria-selected="false" class="awards-tab-btn btn-filter-pill" onclick="setCategoryFilter('leadership', this)">
-                        <i class="mdi mdi-crown-outline tab-icon"></i>
-                        <span class="tab-label">Global Leadership</span>
-                        <span class="tab-badge filter-count" id="count-lead">2</span>
-                    </button>
-                    <button type="button" role="tab" aria-selected="false" class="awards-tab-btn btn-filter-pill" onclick="setCategoryFilter('cybersecurity', this)">
-                        <i class="mdi mdi-shield-lock-outline tab-icon"></i>
-                        <span class="tab-label">Cybersecurity</span>
-                        <span class="tab-badge filter-count" id="count-ai">7</span>
-                    </button>
-                    <button type="button" role="tab" aria-selected="false" class="awards-tab-btn btn-filter-pill" onclick="setCategoryFilter('academic', this)">
-                        <i class="mdi mdi-school-outline tab-icon"></i>
-                        <span class="tab-label">Academic</span>
-                        <span class="tab-badge filter-count" id="count-acad">7</span>
-                    </button>
-                    <button type="button" role="tab" aria-selected="false" class="awards-tab-btn btn-filter-pill" onclick="setCategoryFilter('mentorship-advisory', this)">
-                        <i class="mdi mdi-account-multiple-outline tab-icon"></i>
-                        <span class="tab-label">Mentorship</span>
-                        <span class="tab-badge filter-count" id="count-mentor">5</span>
-                    </button>
-                    <button type="button" role="tab" aria-selected="false" class="awards-tab-btn btn-filter-pill" onclick="setCategoryFilter('media-speaking', this)">
-                        <i class="mdi mdi-bullhorn-outline tab-icon"></i>
-                        <span class="tab-label">Keynotes &amp; Media</span>
-                        <span class="tab-badge filter-count" id="count-media">3</span>
-                    </button>
-                </div>
+            <!-- Category Filter Pills -->
+            <div class="filter-nav-wrap">
+                <button type="button" class="btn-filter-pill active" onclick="setCategoryFilter('all', this)">
+                    <i class="mdi mdi-apps"></i> All Honors <span class="filter-count" id="count-all">24</span>
+                </button>
+                <button type="button" class="btn-filter-pill" onclick="setCategoryFilter('ai-cyber', this)">
+                    <i class="mdi mdi-shield-lock-outline"></i> AI &amp; Cybersecurity Innovation <span class="filter-count" id="count-ai">7</span>
+                </button>
+                <button type="button" class="btn-filter-pill" onclick="setCategoryFilter('leadership', this)">
+                    <i class="mdi mdi-crown-outline"></i> Global Leadership &amp; Power Lists <span class="filter-count" id="count-lead">2</span>
+                </button>
+                <button type="button" class="btn-filter-pill" onclick="setCategoryFilter('academic-fellowships', this)">
+                    <i class="mdi mdi-school-outline"></i> Academic &amp; Fellowships <span class="filter-count" id="count-acad">7</span>
+                </button>
+                <button type="button" class="btn-filter-pill" onclick="setCategoryFilter('mentorship-advisory', this)">
+                    <i class="mdi mdi-account-multiple-outline"></i> Mentorship &amp; Advisory <span class="filter-count" id="count-mentor">5</span>
+                </button>
+                <button type="button" class="btn-filter-pill" onclick="setCategoryFilter('media-speaking', this)">
+                    <i class="mdi mdi-bullhorn-outline"></i> Media, Keynotes &amp; Journals <span class="filter-count" id="count-media">3</span>
+                </button>
             </div>
 
             <!-- Results Count Bar -->
@@ -1799,7 +1714,9 @@
 
                 <div class="award-actions-footer pt-3 border-top">
                     <div class="award-links-grid mb-2">
-                        <a href="http://agiletestingalliance.org/agileBlogs/atagtr2017-meet-our-speaker-series-harsh-verma/" target="_blank" rel="noopener noreferrer" class="btn-award-link">
+                        <a href="https://gtr2017.agiletestingalliance.org/speakers/#harshv" target="_blank" rel="noopener noreferrer" class="btn-award-link">
+            <i class="mdi mdi-web"></i> Conference Speaker Profile (#ATAGTR2017)
+        </a><a href="http://agiletestingalliance.org/agileBlogs/atagtr2017-meet-our-speaker-series-harsh-verma/" target="_blank" rel="noopener noreferrer" class="btn-award-link">
             <i class="mdi mdi-microphone"></i> ATA Meet Our Speaker Series
         </a>
                     </div>
@@ -1834,7 +1751,7 @@
                         </span>
                         <h3 class="font-weight-bold text-white mb-2" style="font-size: 1.6rem;">Explore Connected Research &amp; Governance</h3>
                         <p class="text-light mb-0" style="opacity: 0.9; font-size: 14.5px; line-height: 1.6;">
-                            Review Harsh Verma's portfolio of 6 patents (1 granted, 4 in-process at Palo Alto Networks), 23+ peer-reviewed &amp; conference publications, and senior council fellowships across IEEE, Forbes Technology Council, and Sigma Xi.
+                            Review Harsh Verma's portfolio of 6 patents (1 granted, 4 in-process at Palo Alto Networks), 22+ IEEE publications, and senior council fellowships across IEEE, Forbes Technology Council, and Sigma Xi.
                         </p>
                     </div>
                     <div class="col-lg-4 text-lg-right">
@@ -1855,7 +1772,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
-                    <a href="index" class="footer-logo brand-logo-wrap font-weight-bold d-inline-flex justify-content-center align-items-center" style="text-decoration: none;">
+                                        <a href="index" class="footer-logo brand-logo-wrap font-weight-bold d-inline-flex justify-content-center align-items-center" style="text-decoration: none;">
                         <span class="brand-monogram-emblem">
                             <svg class="brand-logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
@@ -1883,7 +1800,6 @@
                     <p class="para-desc mx-auto mt-4 text-black" style="max-width: 650px;">
                         Principal Software Engineer in AI @ Palo Alto Networks • Forbes Technology Council Member • IEEE Senior Member • Stanford GSB Scholar
                     </p>
-
                     <ul class="list-unstyled mb-0 mt-4 social-icon">
                         <li class="list-inline-item mr-1"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="rounded-circle" title="Google Scholar"><i class="mdi mdi-school"></i></a></li>
                         <li class="list-inline-item mr-1"><a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="rounded-circle" title="LinkedIn"><i class="mdi mdi-linkedin"></i></a></li>
@@ -1962,15 +1878,13 @@
         function setCategoryFilter(category, buttonElement) {
             currentCategory = category;
             
-            // Update active pill and ARIA
-            var pills = document.querySelectorAll('.awards-tab-btn, .btn-filter-pill');
+            // Update active pill
+            var pills = document.querySelectorAll('.btn-filter-pill');
             pills.forEach(function(pill) {
                 pill.classList.remove('active');
-                pill.setAttribute('aria-selected', 'false');
             });
             if (buttonElement) {
                 buttonElement.classList.add('active');
-                buttonElement.setAttribute('aria-selected', 'true');
             }
 
             filterAwards();
@@ -2011,19 +1925,7 @@
                 var cardCat = card.getAttribute('data-category');
                 var cardSearch = card.getAttribute('data-search');
 
-                var matchesCat = false;
-                if (currentCategory === 'all') {
-                    matchesCat = true;
-                } else if (currentCategory === 'leadership' && cardCat === 'leadership') {
-                    matchesCat = true;
-                } else if ((currentCategory === 'cybersecurity' || currentCategory === 'ai-cyber') && (cardCat === 'ai-cyber' || cardCat === 'cybersecurity')) {
-                    matchesCat = true;
-                } else if ((currentCategory === 'academic' || currentCategory === 'academic-fellowships') && (cardCat === 'academic' || cardCat === 'academic-fellowships')) {
-                    matchesCat = true;
-                } else if (cardCat === currentCategory) {
-                    matchesCat = true;
-                }
-
+                var matchesCat = (currentCategory === 'all') || (cardCat === currentCategory);
                 var matchesQuery = (query === '') || (cardSearch.indexOf(query) !== -1);
 
                 if (matchesCat && matchesQuery) {
@@ -2079,8 +1981,5 @@
             }, 3000);
         }
     </script>
-    <script src="js/app.js"></script>
-    <!-- HV AI Copilot Assistant Engine -->
-    <script src="js/hv-copilot.js"></script>
 </body>
 </html>
