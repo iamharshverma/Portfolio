@@ -32,6 +32,8 @@
     <link rel="alternate" type="application/rss+xml" title="Harsh Verma - Tech Articles &amp; AI Engineering RSS Feed" href="rss.xml" />
     <!-- Blog Newsletter Subscription Modal Styles -->
     <link href="css/hv-blog-newsletter.css" rel="stylesheet" type="text/css" />
+    <!-- HV AI Copilot Styles -->
+    <link rel="stylesheet" href="css/hv-copilot.css" />
     
     <style>
         /* Modern Blog Page Styles */
@@ -448,7 +450,7 @@
     </div>
     <!-- Loader -->
 
-        <!-- Navbar Start -->
+    <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky" id="navbar">
         <a rel="me" href="https://mastodon.social/@harshverma59" class="sr-only">Mastodon</a>
         <div class="container">
@@ -709,100 +711,7 @@
                 </div>
             </div>
 
-            <!-- Category and Platform Filters -->
-            <div class="row mb-4">
-                <div class="col-12">
-                    <div class="category-filter-card p-3 p-md-4 rounded-xl border bg-white shadow-sm mb-2" style="border-radius: 16px;">
-                        <!-- Category Filter Bar (Primary Navigation) -->
-                        <div class="d-flex align-items-center justify-content-between flex-wrap pb-3 border-bottom mb-3">
-                            <div class="d-flex align-items-center mb-2 mb-md-0">
-                                <span class="badge badge-pill badge-primary px-3 py-1 font-weight-bold text-uppercase mr-2" style="font-size: 11px; letter-spacing: 0.8px; background-color: #2563eb;">
-                                    <i class="mdi mdi-filter-variant mr-1"></i> Topic Domain
-                                </span>
-                                <span class="font-weight-bold text-dark" style="font-size: 14.5px;">Filter by Core Research Area:</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <button type="button" class="btn btn-sm btn-link text-muted font-weight-bold p-0" onclick="resetFilters()" title="Reset all category and platform filters">
-                                    <i class="mdi mdi-refresh mr-1"></i>Reset Filters
-                                </button>
-                            </div>
-                        </div>
 
-                        <!-- Category Buttons Pills -->
-                        <div class="d-flex flex-wrap align-items-center category-filter-container mb-3" id="categoryFilterContainer">
-                            
-        <button type="button" class="btn btn-category-pill active mr-2 mb-2" data-category-filter="all">
-            <i class="mdi mdi-view-grid-outline mr-1"></i>All Categories 
-            <span class="badge badge-pill badge-dark ml-1">29</span>
-        </button>
-        
-        <button type="button" class="btn btn-category-pill  mr-2 mb-2" data-category-filter="AI Research">
-            <i class="mdi mdi-brain mr-1"></i>AI Research 
-            <span class="badge badge-pill badge-dark ml-1">12</span>
-        </button>
-        
-        <button type="button" class="btn btn-category-pill  mr-2 mb-2" data-category-filter="Cybersecurity">
-            <i class="mdi mdi-shield-lock-outline mr-1"></i>Cybersecurity 
-            <span class="badge badge-pill badge-dark ml-1">7</span>
-        </button>
-        
-        <button type="button" class="btn btn-category-pill  mr-2 mb-2" data-category-filter="Engineering">
-            <i class="mdi mdi-cog-sync mr-1"></i>Engineering 
-            <span class="badge badge-pill badge-dark ml-1">7</span>
-        </button>
-        
-        <button type="button" class="btn btn-category-pill  mr-2 mb-2" data-category-filter="Interviews">
-            <i class="mdi mdi-microphone-variant mr-1"></i>Interviews & Spotlights 
-            <span class="badge badge-pill badge-dark ml-1">3</span>
-        </button>
-        
-                        </div>
-
-                        <!-- Platform Secondary Filter Row -->
-                        <div class="pt-2 border-top d-flex align-items-center justify-content-between flex-wrap">
-                            <div class="d-flex align-items-center flex-wrap pt-2">
-                                <span class="small font-weight-bold text-muted mr-2 mb-2 text-uppercase" style="letter-spacing: 0.5px; font-size: 11px;">
-                                    <i class="mdi mdi-newspaper mr-1 text-primary"></i>Publication Source:
-                                </span>
-                                <div class="d-flex flex-wrap align-items-center platform-chips-container">
-                                    
-        <button type="button" class="btn btn-sm btn-platform-chip active mr-1 mb-2" data-platform-filter="all">
-            All Platforms <span class="badge badge-pill badge-light ml-1">29</span>
-        </button>
-        
-        <button type="button" class="btn btn-sm btn-platform-chip  mr-1 mb-2" data-platform-filter="Forbes">
-            Forbes Tech Council <span class="badge badge-pill badge-light ml-1">5</span>
-        </button>
-        
-        <button type="button" class="btn btn-sm btn-platform-chip  mr-1 mb-2" data-platform-filter="HackerNoon">
-            HackerNoon <span class="badge badge-pill badge-light ml-1">12</span>
-        </button>
-        
-        <button type="button" class="btn btn-sm btn-platform-chip  mr-1 mb-2" data-platform-filter="The AI Journal">
-            The AI Journal <span class="badge badge-pill badge-light ml-1">6</span>
-        </button>
-        
-        <button type="button" class="btn btn-sm btn-platform-chip  mr-1 mb-2" data-platform-filter="RSA Conference">
-            RSA Conference <span class="badge badge-pill badge-light ml-1">3</span>
-        </button>
-        
-        <button type="button" class="btn btn-sm btn-platform-chip  mr-1 mb-2" data-platform-filter="Founders Creative">
-            Founders Creative <span class="badge badge-pill badge-light ml-1">1</span>
-        </button>
-        
-        <button type="button" class="btn btn-sm btn-platform-chip  mr-1 mb-2" data-platform-filter="Interviews">
-            Interviews & Media <span class="badge badge-pill badge-light ml-1">3</span>
-        </button>
-        
-                                </div>
-                            </div>
-                            <div class="pt-2 text-muted small" id="activeFilterSummary">
-                                <span class="badge badge-light-custom"><i class="mdi mdi-check mr-1 text-success"></i>All Categories &bull; All Platforms</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!-- Articles Grid -->
             <div class="row" id="blogArticlesGrid">
@@ -2392,7 +2301,7 @@
         </div>
     </section>
 
-        <!-- Footer Start -->
+    <!-- Footer Start -->
     <footer class="footer bg-light">
         <div class="container">
             <div class="row justify-content-center">
@@ -2425,13 +2334,48 @@
                     <p class="para-desc mx-auto mt-4 text-black" style="max-width: 650px;">
                         Principal Software Engineer in AI @ Palo Alto Networks • Forbes Technology Council Member • IEEE Senior Member • Stanford GSB Scholar
                     </p>
+
+                    <!-- Footer Newsletter Subscription Input & RSS Feed Button -->
+                    <div class="footer-subscribe-wrapper my-4">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-10 col-12">
+                                <div class="footer-subscribe-card">
+                                    <span class="badge badge-pill badge-primary-soft text-primary font-weight-bold px-3 py-1 mb-2">
+                                        <i class="mdi mdi-email-newsletter mr-1"></i> Executive Tech Dispatch
+                                    </span>
+                                    <h5 class="footer-subscribe-title font-weight-bold mb-1">
+                                        Subscribe to Technical Articles &amp; AI Briefings
+                                    </h5>
+                                    <p class="footer-subscribe-desc text-muted small mb-3">
+                                        Join 3,240+ technology executives and engineers. Subscribe via email or follow directly via RSS readers.
+                                    </p>
+                                    <form class="footer-newsletter-form" id="footerNewsletterForm" onsubmit="return handleFooterNewsletterSubmit(event)">
+                                        <div class="footer-form-row d-flex flex-column flex-sm-row align-items-stretch justify-content-center">
+                                            <div class="footer-input-wrap flex-grow-1 position-relative mr-sm-2 mb-2 mb-sm-0">
+                                                <i class="mdi mdi-email-outline footer-input-icon"></i>
+                                                <input type="email" class="form-control footer-email-input" id="footerNewsletterEmail" placeholder="Enter your business email address..." required autocomplete="email" aria-label="Enter email to subscribe to tech articles">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary footer-subscribe-btn px-4 mb-2 mb-sm-0 mr-sm-2 font-weight-medium text-nowrap" id="footerSubscribeBtn">
+                                                <span class="btn-text"><i class="mdi mdi-send mr-1"></i> Subscribe</span>
+                                                <span class="btn-spinner d-none"><i class="mdi mdi-loading mdi-spin mr-1"></i> Subscribing...</span>
+                                            </button>
+                                            <a href="rss.xml" class="btn footer-rss-btn px-3 mb-2 mb-sm-0 font-weight-medium text-nowrap" id="footerRssBtn" title="Follow tech articles via RSS Feed (Feedly, Inoreader, RSS readers)" target="_blank" rel="noopener noreferrer" onclick="handleFooterRssClick(event)">
+                                                <i class="mdi mdi-rss mr-1 rss-icon"></i> <span class="rss-text">RSS Feed</span>
+                                            </a>
+                                        </div>
+                                        <div id="footerNewsletterFeedback" class="footer-newsletter-feedback mt-2 text-center small font-weight-medium" style="display: none;"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <ul class="list-unstyled mb-0 mt-4 social-icon">
-                        <li class="list-inline-item mr-1"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="rounded-circle" title="Google Scholar"><i class="mdi mdi-school"></i></a></li>
-                        <li class="list-inline-item mr-1"><a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="rounded-circle" title="LinkedIn"><i class="mdi mdi-linkedin"></i></a></li>
-                        <li class="list-inline-item mr-1"><a href="https://github.com/iamharshverma" target="_blank" class="rounded-circle" title="GitHub"><i class="mdi mdi-github-face"></i></a></li>
-                        <li class="list-inline-item mr-1"><a href="https://medium.com/@harshverma59" target="_blank" class="rounded-circle" title="Medium"><i class="mdi mdi-medium"></i></a></li>
-                        <li class="list-inline-item mr-1"><a href="https://twitter.com/harshverma59" target="_blank" class="rounded-circle" title="Twitter"><i class="mdi mdi-twitter"></i></a></li>
-                        <li class="list-inline-item mr-1"><a href="https://www.instagram.com/aiwithharsh/" target="_blank" class="rounded-circle" title="Instagram"><i class="mdi mdi-instagram"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="rounded-circle"><i class="mdi mdi-school"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="rounded-circle"><i class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://github.com/iamharshverma" target="_blank" class="rounded-circle"><i class="mdi mdi-github-face"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://twitter.com/harshverma59" target="_blank" class="rounded-circle"><i class="mdi mdi-twitter"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://medium.com/@harshverma59" target="_blank" class="rounded-circle"><i class="mdi mdi-medium"></i></a></li>
                     </ul>
                 </div>
             </div>

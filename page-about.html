@@ -254,6 +254,97 @@
             margin-bottom: 0;
         }
 
+        /* Career Infographic & Timeline Component */
+        .career-infographic-card {
+            background: #ffffff;
+            border-radius: 20px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 6px 30px rgba(15, 23, 42, 0.05);
+            transition: all 0.3s ease;
+        }
+        .career-timeline-svg-wrapper {
+            background: radial-gradient(circle at 50% 50%, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 0.7) 100%);
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 22px 14px;
+            position: relative;
+        }
+        .timeline-svg-node {
+            cursor: pointer;
+            transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease;
+        }
+        .timeline-svg-node:hover {
+            filter: drop-shadow(0 6px 14px rgba(37, 99, 235, 0.35));
+            transform: translateY(-2px);
+        }
+        .timeline-svg-node.active-node circle.main-node-circle {
+            stroke: #f59e0b !important;
+            stroke-width: 3.5px !important;
+            filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.6));
+        }
+        .timeline-node-tab-btn {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            color: #475569;
+            padding: 8px 16px;
+            border-radius: 24px;
+            font-size: 12.5px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            margin: 4px;
+        }
+        .timeline-node-tab-btn:hover {
+            background: #f1f5f9;
+            color: #0f172a;
+            border-color: #cbd5e1;
+        }
+        .timeline-node-tab-btn.active {
+            background: #1e293b;
+            color: #ffffff;
+            border-color: #1e293b;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.18);
+        }
+        .milestone-spotlight-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 28px;
+            transition: all 0.3s ease;
+        }
+        .milestone-badge-pill {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .milestone-tech-chip {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            color: #334155;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+        @keyframes pulseTrack {
+            0% { stroke-dashoffset: 0; }
+            100% { stroke-dashoffset: -40; }
+        }
+        .pulse-track-line {
+            animation: pulseTrack 2.5s linear infinite;
+        }
+
         /* Honors & Awards Cards */
         .award-highlight-card {
             background: #ffffff;
@@ -714,6 +805,9 @@
                                             <i class="mdi mdi-certificate"></i> IEEE Senior Member
                                         </span>
                                         <span class="hero-badge-pill" style="background: rgba(245, 158, 11, 0.18); border-color: rgba(251, 191, 36, 0.45); color: #fde047;">
+                                            <i class="mdi mdi-earth"></i> Most Admire Global Indians 2026
+                                        </span>
+                                        <span class="hero-badge-pill" style="background: rgba(245, 158, 11, 0.18); border-color: rgba(251, 191, 36, 0.45); color: #fde047;">
                                             <i class="mdi mdi-trophy"></i> Global Recognition Award 2026
                                         </span>
                                         <span class="hero-badge-pill" style="background: rgba(59, 130, 246, 0.18); border-color: rgba(96, 165, 250, 0.45); color: #93c5fd;">
@@ -797,6 +891,213 @@
                 </div>
             </div>
 
+            <!-- Career Evolution & Infographic Trajectory Section -->
+            <div class="row mb-5" id="career-trajectory-section">
+                <div class="col-12">
+                    <div class="career-infographic-card p-4 p-md-5">
+                        <!-- Section Header -->
+                        <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 pb-3 border-bottom">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="badge badge-pill text-white px-3 py-1 font-weight-bold mr-2" style="background: linear-gradient(135deg, #1e3a8a 0%, #0284c7 100%); letter-spacing: 0.5px; font-size: 11px;">
+                                        <i class="mdi mdi-timeline-clock-outline mr-1"></i> Executive Career Evolution
+                                    </span>
+                                    <span class="text-muted small font-weight-bold text-uppercase" style="letter-spacing: 0.8px;">Infographic Journey</span>
+                                </div>
+                                <h2 class="font-weight-bold text-dark mb-1" style="font-size: 1.7rem; letter-spacing: -0.3px;">
+                                    From ISRO to Palo Alto Networks: An Engineering Odyssey
+                                </h2>
+                                <p class="text-muted mb-0" style="font-size: 14.5px; max-width: 820px; line-height: 1.6;">
+                                    A decade-long progression from satellite geospatial computing at India's space agency to architecting autonomous agentic AI defense platforms protecting global enterprise perimeters.
+                                </p>
+                            </div>
+                            <div class="mt-3 mt-md-0 d-flex align-items-center">
+                                <span class="badge badge-light border text-muted px-3 py-2 font-weight-medium" style="font-size: 12px; border-radius: 8px;">
+                                    <i class="mdi mdi-cursor-default-click mr-1 text-primary"></i> Interactive: Click nodes to explore milestones
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- SVG Horizontal Infographic Canvas Container -->
+                        <div class="career-timeline-svg-wrapper mb-4" style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+                            <svg viewBox="0 0 1160 210" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="min-width: 960px; display: block;" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="spineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#1e3a8a"/>
+                                        <stop offset="20%" stop-color="#0284c7"/>
+                                        <stop offset="42%" stop-color="#d97706"/>
+                                        <stop offset="65%" stop-color="#059669"/>
+                                        <stop offset="84%" stop-color="#7c3aed"/>
+                                        <stop offset="100%" stop-color="#2563eb"/>
+                                    </linearGradient>
+                                    <linearGradient id="glowSpine" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+                                        <stop offset="50%" stop-color="#60a5fa" stop-opacity="0.7"/>
+                                        <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.8"/>
+                                    </linearGradient>
+                                </defs>
+
+                                <!-- Base Track Line -->
+                                <line x1="70" y1="105" x2="1090" y2="105" stroke="#e2e8f0" stroke-width="8" stroke-linecap="round"/>
+                                <!-- Flowing Colored Gradient Spine -->
+                                <line x1="70" y1="105" x2="1090" y2="105" stroke="url(#spineGrad)" stroke-width="4" stroke-linecap="round"/>
+                                <!-- Kinetic Energy Pulse Line -->
+                                <line x1="70" y1="105" x2="1090" y2="105" stroke="url(#glowSpine)" stroke-width="2.5" stroke-dasharray="10 26" class="pulse-track-line" stroke-linecap="round"/>
+
+                                <!-- MILESTONE 1: ISRO (2015) -->
+                                <g class="timeline-svg-node" id="svgNode-0" onclick="selectCareerMilestone(0)">
+                                    <rect x="52" y="24" width="76" height="26" rx="13" fill="#1e3a8a"/>
+                                    <text x="90" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">2015</text>
+                                    <line x1="90" y1="50" x2="90" y2="82" stroke="#1e3a8a" stroke-width="2" stroke-dasharray="2 3"/>
+                                    <circle cx="90" cy="105" r="23" fill="#ffffff" stroke="#1e3a8a" stroke-width="2.5" class="main-node-circle"/>
+                                    <circle cx="90" cy="105" r="16" fill="#1e3a8a"/>
+                                    <path d="M84,101 L96,101 M90,95 L90,107 M86,97 L94,105 M94,97 L86,105" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+                                    <text x="90" y="146" fill="#0f172a" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" text-anchor="middle">ISRO (IIRS)</text>
+                                    <text x="90" y="164" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">Spatial Computing</text>
+                                    <text x="90" y="180" fill="#0284c7" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">R&amp;D INTERN</text>
+                                </g>
+
+                                <!-- MILESTONE 2: HIKE MESSENGER (2015-2018) -->
+                                <g class="timeline-svg-node" id="svgNode-1" onclick="selectCareerMilestone(1)">
+                                    <rect x="246" y="24" width="88" height="26" rx="13" fill="#0891b2"/>
+                                    <text x="290" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">2015 – 2018</text>
+                                    <line x1="290" y1="50" x2="290" y2="82" stroke="#0891b2" stroke-width="2" stroke-dasharray="2 3"/>
+                                    <circle cx="290" cy="105" r="23" fill="#ffffff" stroke="#0891b2" stroke-width="2.5" class="main-node-circle"/>
+                                    <circle cx="290" cy="105" r="16" fill="#0891b2"/>
+                                    <rect x="284" y="99" width="12" height="4" rx="1" fill="#ffffff"/>
+                                    <rect x="284" y="105" width="12" height="4" rx="1" fill="#ffffff"/>
+                                    <circle cx="294" cy="101" r="0.8" fill="#0891b2"/>
+                                    <circle cx="294" cy="107" r="0.8" fill="#0891b2"/>
+                                    <text x="290" y="146" fill="#0f172a" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Hike Messenger</text>
+                                    <text x="290" y="164" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">Distributed Systems</text>
+                                    <text x="290" y="180" fill="#0891b2" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">100M+ USERS</text>
+                                </g>
+
+                                <!-- MILESTONE 3: RELIANCE JIO / UT-DESIGN (2018-2019) -->
+                                <g class="timeline-svg-node" id="svgNode-2" onclick="selectCareerMilestone(2)">
+                                    <rect x="446" y="24" width="88" height="26" rx="13" fill="#d97706"/>
+                                    <text x="490" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">2018 – 2019</text>
+                                    <line x1="490" y1="50" x2="490" y2="82" stroke="#d97706" stroke-width="2" stroke-dasharray="2 3"/>
+                                    <circle cx="490" cy="105" r="23" fill="#ffffff" stroke="#d97706" stroke-width="2.5" class="main-node-circle"/>
+                                    <circle cx="490" cy="105" r="16" fill="#d97706"/>
+                                    <path d="M485,106 C484,103 487,100 490,100 C492,98 496,99 497,102 C499,102 500,104 499,106 Z" fill="#ffffff"/>
+                                    <line x1="486" y1="109" x2="494" y2="109" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+                                    <text x="490" y="146" fill="#0f172a" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Reliance Jio &bull; UT</text>
+                                    <text x="490" y="164" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">Cloud AI &amp; DCAE</text>
+                                    <text x="490" y="180" fill="#d97706" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">FACULTY ADVISOR</text>
+                                </g>
+
+                                <!-- MILESTONE 4: UTD BIG DATA & PANW INTERN (2019-2020) -->
+                                <g class="timeline-svg-node" id="svgNode-3" onclick="selectCareerMilestone(3)">
+                                    <rect x="646" y="24" width="88" height="26" rx="13" fill="#059669"/>
+                                    <text x="690" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">2019 – 2020</text>
+                                    <line x1="690" y1="50" x2="690" y2="82" stroke="#059669" stroke-width="2" stroke-dasharray="2 3"/>
+                                    <circle cx="690" cy="105" r="23" fill="#ffffff" stroke="#059669" stroke-width="2.5" class="main-node-circle"/>
+                                    <circle cx="690" cy="105" r="16" fill="#059669"/>
+                                    <path d="M687,100 L693,100 L695,108 L685,108 Z" fill="#ffffff"/>
+                                    <circle cx="690" cy="98" r="1.5" fill="#ffffff"/>
+                                    <text x="690" y="146" fill="#0f172a" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" text-anchor="middle">UTD &amp; PANW Intern</text>
+                                    <text x="690" y="164" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">Big Data &amp; IoT ML</text>
+                                    <text x="690" y="180" fill="#059669" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">RESEARCH &amp; SPARK</text>
+                                </g>
+
+                                <!-- MILESTONE 5: WORLDS & HYPERGIANT (2020) -->
+                                <g class="timeline-svg-node" id="svgNode-4" onclick="selectCareerMilestone(4)">
+                                    <rect x="852" y="24" width="76" height="26" rx="13" fill="#7c3aed"/>
+                                    <text x="890" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">2020</text>
+                                    <line x1="890" y1="50" x2="890" y2="82" stroke="#7c3aed" stroke-width="2" stroke-dasharray="2 3"/>
+                                    <circle cx="890" cy="105" r="23" fill="#ffffff" stroke="#7c3aed" stroke-width="2.5" class="main-node-circle"/>
+                                    <circle cx="890" cy="105" r="16" fill="#7c3aed"/>
+                                    <rect x="885" y="100" width="10" height="10" fill="none" stroke="#ffffff" stroke-width="1.6"/>
+                                    <circle cx="890" cy="105" r="1.5" fill="#ffffff"/>
+                                    <text x="890" y="146" fill="#0f172a" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Worlds &bull; Hypergiant</text>
+                                    <text x="890" y="164" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">Spatial AI &amp; Vector</text>
+                                    <text x="890" y="180" fill="#7c3aed" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">FAISS &amp; COMPUTER VISION</text>
+                                </g>
+
+                                <!-- MILESTONE 6: PALO ALTO NETWORKS (2020-PRESENT) -->
+                                <g class="timeline-svg-node active-node" id="svgNode-5" onclick="selectCareerMilestone(5)">
+                                    <circle cx="1070" cy="105" r="32" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.3" stroke-dasharray="4 4"/>
+                                    <rect x="1018" y="24" width="104" height="26" rx="13" fill="#2563eb"/>
+                                    <text x="1070" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" text-anchor="middle">2020 – PRESENT</text>
+                                    <line x1="1070" y1="50" x2="1070" y2="80" stroke="#2563eb" stroke-width="2.5"/>
+                                    <circle cx="1070" cy="105" r="25" fill="#ffffff" stroke="#f59e0b" stroke-width="3" class="main-node-circle"/>
+                                    <circle cx="1070" cy="105" r="18" fill="url(#spineGrad)"/>
+                                    <path d="M1065,99 L1075,99 L1075,106 C1075,110 1070,113 1070,113 C1070,113 1065,110 1065,106 Z" fill="#ffffff"/>
+                                    <circle cx="1070" cy="105" r="1.5" fill="#f59e0b"/>
+                                    <text x="1070" y="146" fill="#0f172a" font-family="-apple-system, sans-serif" font-size="13.5" font-weight="800" text-anchor="middle">Palo Alto Networks</text>
+                                    <text x="1070" y="164" fill="#1e40af" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Principal AI Engineer</text>
+                                    <text x="1070" y="180" fill="#f59e0b" font-family="-apple-system, sans-serif" font-size="10" font-weight="800" text-anchor="middle">&#9733; ENTERPRISE FLAGSHIP</text>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <!-- Milestone Quick Switcher Buttons -->
+                        <div class="d-flex flex-wrap align-items-center justify-content-center mb-4" id="milestoneTabsContainer">
+                            <button type="button" class="timeline-node-tab-btn" onclick="selectCareerMilestone(0)">
+                                <i class="mdi mdi-satellite-variant mr-1 text-primary"></i> 2015: ISRO
+                            </button>
+                            <button type="button" class="timeline-node-tab-btn" onclick="selectCareerMilestone(1)">
+                                <i class="mdi mdi-server-network mr-1 text-info"></i> 2015-18: Hike
+                            </button>
+                            <button type="button" class="timeline-node-tab-btn" onclick="selectCareerMilestone(2)">
+                                <i class="mdi mdi-transit-connection-variant mr-1 text-warning"></i> 2018-19: Reliance Jio
+                            </button>
+                            <button type="button" class="timeline-node-tab-btn" onclick="selectCareerMilestone(3)">
+                                <i class="mdi mdi-flask mr-1 text-success"></i> 2019-20: UTD &amp; PANW
+                            </button>
+                            <button type="button" class="timeline-node-tab-btn" onclick="selectCareerMilestone(4)">
+                                <i class="mdi mdi-cube-scan mr-1" style="color: #7c3aed;"></i> 2020: Worlds &amp; Hypergiant
+                            </button>
+                            <button type="button" class="timeline-node-tab-btn active" onclick="selectCareerMilestone(5)">
+                                <i class="mdi mdi-shield-check mr-1 text-primary"></i> 2020-Pres: Palo Alto Networks
+                            </button>
+                        </div>
+
+                        <!-- Interactive Milestone Spotlight Detail Box -->
+                        <div class="milestone-spotlight-box" id="milestoneSpotlightBox">
+                            <!-- Filled dynamically by JavaScript with initial fallback -->
+                            <div class="row align-items-center">
+                                <div class="col-lg-8">
+                                    <div class="d-flex flex-wrap align-items-center mb-2">
+                                        <span class="milestone-badge-pill mr-2" style="background: rgba(37, 99, 235, 0.12); color: #1d4ed8; border: 1px solid rgba(37, 99, 235, 0.25);">
+                                            <i class="mdi mdi-star-circle mr-1"></i> Phase 06: Flagship AI Systems Leadership
+                                        </span>
+                                        <span class="text-muted small"><i class="mdi mdi-map-marker text-primary mr-1"></i>Santa Clara, CA, USA &bull; Aug 2020 - Present</span>
+                                    </div>
+                                    <h4 class="font-weight-bold text-dark mb-1" style="font-size: 1.35rem;">Principal Software Engineer in AI | ML</h4>
+                                    <h6 class="text-primary font-weight-bold mb-3" style="font-size: 14px;">Palo Alto Networks &bull; Enterprise Cloud Security &amp; Autonomous Systems</h6>
+                                    <p class="text-muted mb-3" style="font-size: 14.5px; line-height: 1.65;">
+                                        Pioneering enterprise AI and machine learning architectures at the intersection of cybersecurity, big data science, and distributed autonomous agents. Architecting mission-critical Firewall ML models, scalable cloud defense pipelines, and real-time policy engines. Author of 2 books on AI Agents and Autonomous Cyber Defense, 23+ published papers across IEEE/ACM, and 6 patents.
+                                    </p>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="text-muted small font-weight-bold mr-2"><i class="mdi mdi-code-tags text-primary mr-1"></i>Core Stack:</span>
+                                        <span class="milestone-tech-chip"><i class="mdi mdi-robot mr-1 text-primary"></i>Autonomous Agent Systems</span>
+                                        <span class="milestone-tech-chip">Apache Spark</span>
+                                        <span class="milestone-tech-chip">Apache Kafka</span>
+                                        <span class="milestone-tech-chip">GCP &amp; Distributed Cloud</span>
+                                        <span class="milestone-tech-chip">Machine Learning</span>
+                                        <span class="milestone-tech-chip">Zero-Trust Guardrails</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-3 mt-lg-0 text-center border-left">
+                                    <div class="p-3">
+                                        <div class="mb-2">
+                                            <span class="badge badge-pill badge-primary px-3 py-1 font-weight-bold" style="font-size: 12px;">Scale &amp; Impact</span>
+                                        </div>
+                                        <div class="h2 font-weight-bold text-dark mb-1">Global 2000</div>
+                                        <p class="text-muted small mb-3">Enterprise perimeter protection powered by real-time ML &amp; distributed streaming engines</p>
+                                        <a href="page-portfolio" class="btn btn-outline-primary btn-sm rounded font-weight-bold px-3 py-1">
+                                            <i class="mdi mdi-briefcase-outline mr-1"></i> View Key Projects
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Strategic Pillars & Awards Row -->
             <div class="row mb-4">
                 <!-- Honors & Accreditations -->
@@ -810,6 +1111,15 @@
                         </div>
 
                         <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <div class="award-highlight-card">
+                                    <div class="award-icon-box" style="background: rgba(245, 158, 11, 0.15); color: #d97706;">
+                                        <i class="mdi mdi-earth"></i>
+                                    </div>
+                                    <h5 class="font-weight-bold text-dark mb-1" style="font-size: 15px;">Most Admire Global Indians 2026</h5>
+                                    <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Honored among visionary Indian-origin leaders globally for transformative enterprise AI &amp; cybersecurity defense.</p>
+                                </div>
+                            </div>
                             <div class="col-sm-6 mb-3">
                                 <div class="award-highlight-card">
                                     <div class="award-icon-box" style="background: rgba(234, 179, 8, 0.15); color: #d97706;">
@@ -828,7 +1138,7 @@
                                     <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Recognized for excellence and innovation across global business leadership and technology acceleration.</p>
                                 </div>
                             </div>
-                            <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="col-sm-6 mb-3">
                                 <div class="award-highlight-card">
                                     <div class="award-icon-box" style="background: rgba(16, 185, 129, 0.15); color: #059669;">
                                         <i class="mdi mdi-shield-check"></i>
@@ -837,13 +1147,22 @@
                                     <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Peer-reviewed recognition of sustained technical performance and lasting contributions to IEEE disciplines.</p>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
                                 <div class="award-highlight-card">
                                     <div class="award-icon-box" style="background: rgba(124, 58, 237, 0.15); color: #7c3aed;">
                                         <i class="mdi mdi-domain"></i>
                                     </div>
                                     <h5 class="font-weight-bold text-dark mb-1" style="font-size: 15px;">Forbes Technology Council</h5>
                                     <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Invitation-only council for senior technology executives; contributing author on next-generation AI systems.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="award-highlight-card">
+                                    <div class="award-icon-box" style="background: rgba(225, 29, 72, 0.15); color: #e11d48;">
+                                        <i class="mdi mdi-star-circle"></i>
+                                    </div>
+                                    <h5 class="font-weight-bold text-dark mb-1" style="font-size: 15px;">Forttuna Global 100 Power List</h5>
+                                    <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Named in The Power List 2026 celebrating influential global leaders shaping the future of AI and innovation.</p>
                                 </div>
                             </div>
                         </div>
@@ -2864,6 +3183,170 @@
             } else {
                 prompt("Copy link:", url);
             }
+        }
+
+        // Career Growth Timeline Infographic Interactive Engine
+        const careerMilestones = [
+            {
+                phase: "Phase 01: Foundational Space Computing",
+                role: "R&D Engineer - Intern",
+                organization: "Indian Space Research Organization (ISRO) · IIRS Dehradun",
+                period: "Jan 2015 – April 2015",
+                location: "IIRS, Dehradun, India",
+                badgeBg: "rgba(30, 58, 138, 0.12)",
+                badgeColor: "#1e3a8a",
+                badgeBorder: "rgba(30, 58, 138, 0.25)",
+                icon: "mdi-satellite-variant",
+                description: "Conducted spatial computing R&D under eminent scientist <strong>Dr. Harish Chandra Karnatak</strong> focused on Big Data Analytics in GIS. Architected spatial databases and integrated modular geospatial maps with OpenLayers API, GeoServer, and PostgreSQL. Engineered high-accuracy location coordinate tracing APIs and navigation search services integrating Bhuvan and Google Maps spatial frameworks.",
+                stack: ["Advanced Java", "PostgreSQL", "GIS & Spatial DBs", "GeoServer", "OpenLayers API", "Bhuvan Geodesy"],
+                highlightTitle: "Space R&D",
+                highlightMetric: "National Space GIS",
+                highlightDesc: "Pioneered spatial database engines and satellite mapping interfaces for India's space program.",
+                actionLabel: "Explore Publications",
+                actionLink: "page-publications"
+            },
+            {
+                phase: "Phase 02: High-Throughput Distributed Platforms",
+                role: "Software Engineer",
+                organization: "Hike Messenger · Core Backend & Data Platforms",
+                period: "May 2015 – July 2018",
+                location: "New Delhi, India",
+                badgeBg: "rgba(8, 145, 178, 0.12)",
+                badgeColor: "#0891b2",
+                badgeBorder: "rgba(8, 145, 178, 0.25)",
+                icon: "mdi-server-network",
+                description: "Architected core Big Data technologies, low-latency caching systems, and machine learning models operating at hyper-scale for over 100M+ users. Built a modular automated deployment pipeline for microservices utilizing Jenkins, Fabric, and Supervisor. Developed real-time telemetry observation consoles and spearheaded backend traffic telemetry monitoring and classification using FastText and DenseNet.",
+                stack: ["Java", "Python", "Redis", "MongoDB", "Apache Kafka", "InfluxDB", "Jenkins", "FastText / DenseNet"],
+                highlightTitle: "Hyper-Scale",
+                highlightMetric: "100M+ Users",
+                highlightDesc: "Handled sub-millisecond caching tiers, massive message queues, and high-throughput real-time streaming.",
+                actionLabel: "View Engineering Tech",
+                actionLink: "page-portfolio"
+            },
+            {
+                phase: "Phase 03: Cloud AI & Systems Mentorship",
+                role: "Faculty Advisor & Software Developer",
+                organization: "UT-Design : @Reliance Jio · Cloud AI Systems",
+                period: "Sept 2018 – April 2019",
+                location: "Texas, USA",
+                badgeBg: "rgba(217, 119, 6, 0.12)",
+                badgeColor: "#d97706",
+                badgeBorder: "rgba(217, 119, 6, 0.25)",
+                icon: "mdi-transit-connection-variant",
+                description: "Mentored senior undergraduate engineers in building real-time applications solving clinical challenges using ML, Blockchain, and Big Data. Architected and developed Data Collection Analytics and Events (DCAE) modules executing seamlessly on AWS cloud infrastructure, enabling robust telemetry aggregation and autonomous event ingestion across telecom networks.",
+                stack: ["Java", "Python3", "AWS Cloud", "DCAE Architecture", "Big Data", "Distributed Telecom"],
+                highlightTitle: "Ecosystem Impact",
+                highlightMetric: "DCAE & Mentorship",
+                highlightDesc: "Guided emerging engineering teams while architecting cloud analytics modules for telecom infrastructure.",
+                actionLabel: "View Advisory Roles",
+                actionLink: "page-memberships"
+            },
+            {
+                phase: "Phase 04: Big Data ML & IoT Cyber Defense",
+                role: "Big Data SWE Intern & Graduate Researcher",
+                organization: "Palo Alto Networks & University of Texas at Dallas",
+                period: "May 2019 – Jan 2020",
+                location: "Santa Clara, CA & Richardson, TX",
+                badgeBg: "rgba(5, 150, 105, 0.12)",
+                badgeColor: "#059669",
+                badgeBorder: "rgba(5, 150, 105, 0.25)",
+                icon: "mdi-flask-outline",
+                description: "At Palo Alto Networks (May-Aug 2019), developed distributed machine learning systems for multi App-ID prediction over massive network traffic logs and scaled streaming pipelines across distributed cloud nodes. Concurrently at UTD Big Data Lab with Prof. Dr. Latifur Khan, conducted secure IoT and drone telemetry deep learning research, authoring peer-reviewed IEEE/ACM contributions.",
+                stack: ["Apache Spark", "Scala", "Java", "TensorFlow", "Elasticsearch", "GCP", "IoT Edge", "ACM / IEEE"],
+                highlightTitle: "Academic & Industry",
+                highlightMetric: "Multi-TB ML",
+                highlightDesc: "Bridged theoretical doctoral lab discoveries with high-velocity production cloud telemetry pipelines.",
+                actionLabel: "Read IEEE Papers",
+                actionLink: "page-publications"
+            },
+            {
+                phase: "Phase 05: Spatial AI & Vector Similarity Retrieval",
+                role: "Machine Learning Engineer",
+                organization: "Worlds Enterprises Inc. & Hypergiant Sensory Science",
+                period: "Sept 2019 – May 2020",
+                location: "Dallas & Austin, TX, USA",
+                badgeBg: "rgba(124, 58, 237, 0.12)",
+                badgeColor: "#7c3aed",
+                badgeBorder: "rgba(124, 58, 237, 0.25)",
+                icon: "mdi-cube-scan",
+                description: "Pioneered real-time streaming Object Tracking, Detection, and Spatial Analytics ML systems. Boosted Multiple Object Tracking Accuracy (MOTA) by designing end-to-end evaluation benchmark harnesses across distributed Spark clusters. At Hypergiant, built high-performance video and image similarity retrieval modules powered by FAISS vector embeddings and ResNet-50 deep neural representations.",
+                stack: ["Python3", "FAISS", "PyTorch", "ResNet-50", "YOLO-v3", "DeepSort", "Spark", "Computer Vision"],
+                highlightTitle: "Vision & Vector",
+                highlightMetric: "High MOTA & FAISS",
+                highlightDesc: "Pioneered low-latency visual inferencing and million-scale vector similarity search.",
+                actionLabel: "View Innovations",
+                actionLink: "page-portfolio"
+            },
+            {
+                phase: "Phase 06: Flagship AI Systems Leadership",
+                role: "Principal Software Engineer in AI | ML",
+                organization: "Palo Alto Networks · Enterprise Cloud Security & Autonomous Intelligence",
+                period: "Aug 2020 – Present",
+                location: "Santa Clara, California, USA",
+                badgeBg: "rgba(37, 99, 235, 0.12)",
+                badgeColor: "#1d4ed8",
+                badgeBorder: "rgba(37, 99, 235, 0.25)",
+                icon: "mdi-shield-check",
+                description: "Spearheading enterprise AI and machine learning architectures at the intersection of cybersecurity, big data science, and distributed autonomous agents. Architecting mission-critical Firewall ML models, scalable cloud defense pipelines, and real-time policy engines. Author of 2 books on AI Agents and Autonomous Cyber Defense, 23+ published papers across IEEE/ACM, and 6 patents.",
+                stack: ["Autonomous Agent Systems", "Apache Spark", "Apache Kafka", "GCP & Distributed Cloud", "Machine Learning", "Zero-Trust Guardrails"],
+                highlightTitle: "Scale & Impact",
+                highlightMetric: "Global 2000",
+                highlightDesc: "Enterprise perimeter protection powered by real-time ML & distributed streaming engines.",
+                actionLabel: "View Key Projects",
+                actionLink: "page-portfolio"
+            }
+        ];
+
+        function selectCareerMilestone(idx) {
+            if (idx < 0 || idx >= careerMilestones.length) return;
+            const data = careerMilestones[idx];
+
+            // Update SVG Node highlights
+            $(".timeline-svg-node").removeClass("active-node");
+            $("#svgNode-" + idx).addClass("active-node");
+
+            // Update Tab Button highlights
+            $(".timeline-node-tab-btn").removeClass("active");
+            $(".timeline-node-tab-btn").eq(idx).addClass("active");
+
+            // Build tech chips
+            const techChips = data.stack.map(s => `<span class="milestone-tech-chip">${s}</span>`).join("");
+
+            // Render spotlight box
+            const html = `
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="d-flex flex-wrap align-items-center mb-2">
+                            <span class="milestone-badge-pill mr-2" style="background: ${data.badgeBg}; color: ${data.badgeColor}; border: 1px solid ${data.badgeBorder};">
+                                <i class="mdi ${data.icon} mr-1"></i> ${data.phase}
+                            </span>
+                            <span class="text-muted small"><i class="mdi mdi-map-marker text-primary mr-1"></i>${data.location} &bull; ${data.period}</span>
+                        </div>
+                        <h4 class="font-weight-bold text-dark mb-1" style="font-size: 1.35rem;">${data.role}</h4>
+                        <h6 class="text-primary font-weight-bold mb-3" style="font-size: 14px;">${data.organization}</h6>
+                        <p class="text-muted mb-3" style="font-size: 14.5px; line-height: 1.65;">
+                            ${data.description}
+                        </p>
+                        <div class="d-flex flex-wrap align-items-center">
+                            <span class="text-muted small font-weight-bold mr-2"><i class="mdi mdi-code-tags text-primary mr-1"></i>Core Stack:</span>
+                            ${techChips}
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-3 mt-lg-0 text-center border-left">
+                        <div class="p-3">
+                            <div class="mb-2">
+                                <span class="badge badge-pill badge-primary px-3 py-1 font-weight-bold" style="font-size: 12px;">${data.highlightTitle}</span>
+                            </div>
+                            <div class="h2 font-weight-bold text-dark mb-1">${data.highlightMetric}</div>
+                            <p class="text-muted small mb-3">${data.highlightDesc}</p>
+                            <a href="${data.actionLink}" class="btn btn-outline-primary btn-sm rounded font-weight-bold px-3 py-1">
+                                <i class="mdi mdi-arrow-right-circle-outline mr-1"></i> ${data.actionLabel}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            $("#milestoneSpotlightBox").html(html);
         }
     </script>
     <!-- HV AI Copilot Assistant Engine -->

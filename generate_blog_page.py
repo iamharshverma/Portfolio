@@ -795,6 +795,8 @@ def generate_blog_html():
     <link rel="alternate" type="application/rss+xml" title="Harsh Verma - Tech Articles &amp; AI Engineering RSS Feed" href="rss.xml" />
     <!-- Blog Newsletter Subscription Modal Styles -->
     <link href="css/hv-blog-newsletter.css" rel="stylesheet" type="text/css" />
+    <!-- HV AI Copilot Styles -->
+    <link rel="stylesheet" href="css/hv-copilot.css" />
     
     <style>
         /* Modern Blog Page Styles */
@@ -1472,47 +1474,7 @@ def generate_blog_html():
                 </div>
             </div>
 
-            <!-- Category and Platform Filters -->
-            <div class="row mb-4">
-                <div class="col-12">
-                    <div class="category-filter-card p-3 p-md-4 rounded-xl border bg-white shadow-sm mb-2" style="border-radius: 16px;">
-                        <!-- Category Filter Bar (Primary Navigation) -->
-                        <div class="d-flex align-items-center justify-content-between flex-wrap pb-3 border-bottom mb-3">
-                            <div class="d-flex align-items-center mb-2 mb-md-0">
-                                <span class="badge badge-pill badge-primary px-3 py-1 font-weight-bold text-uppercase mr-2" style="font-size: 11px; letter-spacing: 0.8px; background-color: #2563eb;">
-                                    <i class="mdi mdi-filter-variant mr-1"></i> Topic Domain
-                                </span>
-                                <span class="font-weight-bold text-dark" style="font-size: 14.5px;">Filter by Core Research Area:</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <button type="button" class="btn btn-sm btn-link text-muted font-weight-bold p-0" onclick="resetFilters()" title="Reset all category and platform filters">
-                                    <i class="mdi mdi-refresh mr-1"></i>Reset Filters
-                                </button>
-                            </div>
-                        </div>
 
-                        <!-- Category Buttons Pills -->
-                        <div class="d-flex flex-wrap align-items-center category-filter-container mb-3" id="categoryFilterContainer">
-                            {category_chips_joined}
-                        </div>
-
-                        <!-- Platform Secondary Filter Row -->
-                        <div class="pt-2 border-top d-flex align-items-center justify-content-between flex-wrap">
-                            <div class="d-flex align-items-center flex-wrap pt-2">
-                                <span class="small font-weight-bold text-muted mr-2 mb-2 text-uppercase" style="letter-spacing: 0.5px; font-size: 11px;">
-                                    <i class="mdi mdi-newspaper mr-1 text-primary"></i>Publication Source:
-                                </span>
-                                <div class="d-flex flex-wrap align-items-center platform-chips-container">
-                                    {platform_chips_joined}
-                                </div>
-                            </div>
-                            <div class="pt-2 text-muted small" id="activeFilterSummary">
-                                <span class="badge badge-light-custom"><i class="mdi mdi-check mr-1 text-success"></i>All Categories &bull; All Platforms</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!-- Articles Grid -->
             <div class="row" id="blogArticlesGrid">

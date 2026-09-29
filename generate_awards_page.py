@@ -3,6 +3,25 @@ import html
 
 awards_data = [
     {
+        "id": "award-most-admire-global-indians-2026",
+        "title": "Most Admire Global Indians 2026",
+        "organization": "Global Indian Leadership Forum · International Leadership Honors",
+        "category": "leadership",
+        "category_label": "Global Leadership & Power Lists",
+        "tier": "Global Honoree",
+        "tier_class": "tier-gold",
+        "year": "2026",
+        "image": "images/awards/most_admire_global_indians.svg",
+        "description": "Conferred inclusion in the 'Most Admire Global Indians 2026' honors, celebrating visionary Indian-origin leaders, technologists, and scientists worldwide who are driving monumental impact across enterprise artificial intelligence, cybersecurity defense, and autonomous systems architectures.",
+        "tags": ["Most Admire Global Indians", "Global Indian Honoree", "Enterprise AI & Defense", "Executive Leadership"],
+        "links": [
+            {"label": "Global Leadership Honorees", "url": "https://www.passionvista.com/", "icon": "mdi-earth"},
+            {"label": "Executive Citation", "url": "https://harshverma.bio/", "icon": "mdi-certificate"},
+            {"label": "LinkedIn Profile", "url": "https://www.linkedin.com/in/harshverma59/", "icon": "mdi-linkedin"}
+        ],
+        "citation": "Verma, H. (2026). Most Admire Global Indians 2026 Honoree: Transforming Enterprise AI and Scalable Autonomous Systems. Global Indian Leadership Forum."
+    },
+    {
         "id": "award-forttuna-powerlist-2026",
         "title": "Forttuna Global 100: THE POWER LIST 2026!",
         "organization": "Forttuna Global Foundation & Leadership Councils",
