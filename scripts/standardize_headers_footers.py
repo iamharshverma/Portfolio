@@ -1,50 +1,8 @@
-<!DOCTYPE html>
-    <html lang="en">
+#!/usr/bin/env python3
+import os
+import re
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Queue - Personal Portfolio Template</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
-        <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
-        <meta content="Zoyothemes" name="author" />
-        <!-- favicon -->
-        <link rel="shortcut icon" href="images/favicon.ico">
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <!-- Magnific -->
-        <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
-        <!-- Icons -->
-        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
-        <!-- Slider -->               
-        <link rel="stylesheet" href="css/owl.carousel.min.css"/> 
-        <link rel="stylesheet" href="css/owl.theme.default.min.css"/>
-        <!-- Flickity -->
-        <link href="css/flickity.css" rel="stylesheet" type="text/css" />
-        <!-- Main css File -->
-        <link href="css/style.css" rel="stylesheet" type="text/css" />
-        <!-- Dark Mode css File -->
-        <link href="css/dark-mode.css" rel="stylesheet" type="text/css" />
-        <script src="js/dark-mode.js"></script>
-        <!-- HV AI Copilot Styles -->
-    <link rel="stylesheet" href="css/hv-copilot.css" />
-    <!-- Fullscreen Lightbox Modal Styles -->
-    <link rel="stylesheet" href="css/hv-lightbox.css" />
-</head>
-
-    <body>
-        <!-- Loader -->
-        <div id="preloader">
-            <div id="status">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
-            </div>
-        </div>
-        <!-- Loader -->
-
-                <!-- Navbar Start -->
+NAVBAR_TEMPLATE = """    <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky" id="navbar">
         <a rel="me" href="https://mastodon.social/@harshverma59" class="sr-only">Mastodon</a>
         <div class="container">
@@ -78,31 +36,31 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
-                    <li class="nav-item">
+                    <li class="nav-item{ABOUT_CLASS}">
                         <a class="nav-link" href="page-about">About</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item{PUBLICATIONS_CLASS}">
                         <a class="nav-link" href="page-publications">Publications</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item{AWARDS_CLASS}">
                         <a class="nav-link" href="page-awards">Awards</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item{MEMBERSHIPS_CLASS}">
                         <a class="nav-link" href="page-memberships">Memberships</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item{MEDIA_CLASS}">
                         <a class="nav-link" href="page-media">Media</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item{SPEAKER_CLASS}">
                         <a class="nav-link" href="page-events">Speaker</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item{BOOKS_CLASS}">
                         <a class="nav-link" href="page-books">Books</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item{BLOG_CLASS}">
                         <a class="nav-link" href="page-blog">Blog</a>
                     </li>
-                    <li class="nav-item dropdown active">
+                    <li class="nav-item dropdown{DROPDOWN_CLASS}">
                         <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             More <i class="mdi mdi-chevron-down nav-dropdown-arrow"></i>
                         </a>
@@ -110,28 +68,28 @@
                             <div class="nav-dropdown-header">
                                 <span>Extended Portfolios &amp; Hubs</span>
                             </div>
-                            <a class="dropdown-item nav-dropdown-item" href="page-media-distribution-analytics">
+                            <a class="dropdown-item nav-dropdown-item{ANALYTICS_CLASS}" href="page-media-distribution-analytics">
                                 <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-chart-box-outline"></i></div>
                                 <div class="dropdown-item-content">
                                     <span class="dropdown-item-title">Distribution Analytics <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">3.75B+</span></span>
                                     <span class="dropdown-item-desc">Publication reach &amp; influence pyramid</span>
                                 </div>
                             </a>
-                            <a class="dropdown-item nav-dropdown-item active" href="page-portfolio">
+                            <a class="dropdown-item nav-dropdown-item{PORTFOLIO_CLASS}" href="page-portfolio">
                                 <div class="dropdown-item-icon bg-soft-info"><i class="mdi mdi-cube-outline"></i></div>
                                 <div class="dropdown-item-content">
                                     <span class="dropdown-item-title">Portfolio Projects</span>
                                     <span class="dropdown-item-desc">Architectures, agent frameworks &amp; systems</span>
                                 </div>
                             </a>
-                            <a class="dropdown-item nav-dropdown-item" href="page-smart-slides">
+                            <a class="dropdown-item nav-dropdown-item{SLIDES_CLASS}" href="page-smart-slides">
                                 <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-presentation-play"></i></div>
                                 <div class="dropdown-item-content">
                                     <span class="dropdown-item-title">Smart Slides <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">New</span></span>
                                     <span class="dropdown-item-desc">Interactive executive &amp; research slide decks</span>
                                 </div>
                             </a>
-                            <a class="dropdown-item nav-dropdown-item" href="page-social">
+                            <a class="dropdown-item nav-dropdown-item{SOCIAL_CLASS}" href="page-social">
                                 <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
                                 <div class="dropdown-item-content">
                                     <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
@@ -194,95 +152,9 @@
             </div>
         </div>
     </nav>
-    <!-- Navbar End -->
+    <!-- Navbar End -->"""
 
-        <!-- Hero Start -->
-        <section class="bg-half bg-light d-table w-100" style="background: url('images/bg-posted.jpg')center center;">
-            <div class="bg-overlay bg-overlay-white"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12 text-center">
-                        <div class="page-next-level">
-                            <h4 class="title text-black"> Projects & Works </h4>
-                            <div class="page-next">
-                                <nav aria-label="breadcrumb" class="d-inline-block">
-                                    <ul class="breadcrumb rounded mb-0 mt-3">
-                                        <li class="breadcrumb-item"><a href="index">Harsh Verma</a></li>
-                                        <li class="breadcrumb-item"><a href="page-portfolio">Portfolio</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Portfolio Details</li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>  <!--end col-->
-                </div><!--end row-->
-            </div> <!--end container-->
-        </section><!--end section-->
-        <!-- Hero End -->
-
-        <!-- Blog STart -->
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <!-- WORK START -->
-                    <div class="col-lg-7 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="row mr-lg-4">
-                            <div class="col-lg-12">
-                                <div class="work-details rounded">
-                                    <h4 class="title mb-3 border-bottom pb-3">Project Name :</h4>
-                                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit totam atque dignissimos porro, exercitationem, neque alias ea aliquid quibusdam voluptates impedit maxime aut asperiores consequatur iste. Corporis fuga ducimus dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci non dolorem consequatur vitae hic.</p>
-                                    <p class="text-muted mb-0">Suscipit totam atque dignissimos porro, exercitationem, neque alias ea aliquid quibusdam voluptates impedit maxime aut asperiores consequatur iste. Corporis fuga ducimus dignissimos.</p>
-                                </div>
-                            </div><!--end col-->
-                            
-                            <div class="col-lg-12 mt-4 pt-2">
-                                <div class="work-details bg-light rounded">
-                                    <h4 class="title border-bottom pb-3 mb-3">Project Info :</h4>
-                                    <ul class="list-unstyled mb-0">
-                                        <li class="mt-3">
-                                            <b>Client :</b>
-                                            <span>Alita Margarate</span>
-                                        </li>
-                                        <li class="mt-3">
-                                            <b>Category :</b>
-                                            <span>Web Design</span>
-                                        </li>
-                                        <li class="mt-3">
-                                            <b>Subject :</b>
-                                            <span>Web Design</span>
-                                        </li>
-                                        <li class="mt-3">
-                                            <b>Date :</b>
-                                            <span>28th April, 2020</span>
-                                        </li>
-                                        <li class="mt-3">
-                                            <b>Website :</b>
-                                            <span>www.yourdomain.com</span>
-                                        </li>
-                                        <li class="mt-3">
-                                            <b>Location :</b>
-                                            <span>3/2/64 Mongus Street, UK</span>
-                                        </li>
-                                    </ul>                          
-                                </div>
-                            </div><!--end col-->
-                        </div><!--end row-->
-                    </div><!--end col-->
-
-                    <div class="col-lg-5 col-md-6 order-1 order-md-2">
-                        <div class="port-images sticky-sidebar">
-                            <img src="images/portfolio/1.jpg" class="img-fluid mx-auto d-block rounded" alt="img">
-                            <img src="images/portfolio/2.jpg" class="img-fluid mx-auto d-block rounded mt-4" alt="img">
-                            <img src="images/portfolio/3.jpg" class="img-fluid mx-auto d-block rounded mt-4" alt="img">
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-                
-            </div><!--end container-->
-        </section><!--end section-->
-        <!-- Blog End -->
-
-                        <!-- Footer Start -->
+FOOTER_TEMPLATE = """    <!-- Footer Start -->
     <footer class="footer bg-light">
         <div class="container">
             <div class="row justify-content-center">
@@ -332,31 +204,96 @@
             <p class="mb-0 text-white-50">&copy; <script>document.write(new Date().getFullYear())</script> Harsh Verma. All rights reserved.</p>
         </div>
     </footer>
-    <!-- Footer End -->
+    <!-- Footer End -->"""
 
-        <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <!-- Back to top -->
+def build_navbar(active_key):
+    dropdown_keys = ["analytics", "portfolio", "slides", "social"]
+    return (
+        NAVBAR_TEMPLATE
+        .replace("{ABOUT_CLASS}", " active" if active_key == "about" else "")
+        .replace("{PUBLICATIONS_CLASS}", " active" if active_key == "publications" else "")
+        .replace("{AWARDS_CLASS}", " active" if active_key == "awards" else "")
+        .replace("{MEMBERSHIPS_CLASS}", " active" if active_key == "memberships" else "")
+        .replace("{MEDIA_CLASS}", " active" if active_key == "media" else "")
+        .replace("{SPEAKER_CLASS}", " active" if active_key == "speaker" else "")
+        .replace("{BOOKS_CLASS}", " active" if active_key == "books" else "")
+        .replace("{BLOG_CLASS}", " active" if active_key == "blog" else "")
+        .replace("{DROPDOWN_CLASS}", " active" if active_key in dropdown_keys else "")
+        .replace("{ANALYTICS_CLASS}", " active" if active_key == "analytics" else "")
+        .replace("{PORTFOLIO_CLASS}", " active" if active_key == "portfolio" else "")
+        .replace("{SLIDES_CLASS}", " active" if active_key == "slides" else "")
+        .replace("{SOCIAL_CLASS}", " active" if active_key == "social" else "")
+    )
 
+PAGES_MAP = {
+    "index.html": "none",
+    "page-about.html": "about",
+    "page-publications.html": "publications",
+    "page-awards.html": "awards",
+    "page-memberships.html": "memberships",
+    "page-media.html": "media",
+    "page-events.html": "speaker",
+    "page-books.html": "books",
+    "page-blog.html": "blog",
+    "page-portfolio.html": "portfolio",
+    "page-smart-slides.html": "slides",
+    "page-slides.html": "slides",
+    "page-media-distribution-analytics.html": "analytics",
+    "page-social.html": "social",
+    "page-blog-detail.html": "blog",
+    "page-portfolio-detail.html": "portfolio"
+}
 
-        <!-- Javascript -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/scrollspy.min.js"></script>
+def standardize_file(filepath, active_key):
+    if not os.path.exists(filepath):
+        print(f"Skipping {filepath} (does not exist)")
+        return
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
 
-        <!-- Magnific Js -->
-        <script src="js/isotope.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
+    # 1. Replace Navbar
+    nav_pattern = re.compile(r"<!-- Navbar Start -->.*?<!-- Navbar End -->", re.DOTALL | re.IGNORECASE)
+    if nav_pattern.search(content):
+        new_nav = build_navbar(active_key)
+        content = nav_pattern.sub(new_nav, content)
+    else:
+        # Fallback to <nav ...> ... </nav>
+        generic_nav = re.compile(r"<nav[^>]*class=[\"'][^\"']*navbar-custom[^\"']*[\"'][^>]*>.*?</nav>", re.DOTALL | re.IGNORECASE)
+        if generic_nav.search(content):
+            new_nav = build_navbar(active_key)
+            content = generic_nav.sub(new_nav, content)
 
-        <!-- Feather icon -->
-        <script src="js/feather.min.js"></script>
+    # 2. Replace Footer
+    footer_pattern = re.compile(r"<!-- Footer Start -->.*?<!-- Footer End -->", re.DOTALL | re.IGNORECASE)
+    if footer_pattern.search(content):
+        content = footer_pattern.sub(FOOTER_TEMPLATE, content)
 
-        <!-- Main Js -->
-        <script src="js/app.js"></script>
+    # 3. Specific fixes
+    # Fix broken hero image on events / speaker
+    content = content.replace("images/SectaAI_BTRPHBqq~2.jpg", "images/harsh/Harsh_portfolio_pic.png")
 
-        <!-- HV AI Copilot Assistant Engine -->
-    <script src="js/hv-copilot.js"></script>
-    <!-- Fullscreen Lightbox Modal System -->
-    <script src="js/hv-lightbox.js"></script>
-</body>
-</html>
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(content)
+    print(f"Updated {filepath} (active: {active_key})")
+
+def main():
+    for filename, active_key in PAGES_MAP.items():
+        standardize_file(filename, active_key)
+
+    # Also create page-speaker.html and speaker.html if page-events.html exists
+    if os.path.exists("page-events.html"):
+        with open("page-events.html", "r", encoding="utf-8") as f:
+            events_html = f.read()
+        
+        # Write page-speaker.html
+        with open("page-speaker.html", "w", encoding="utf-8") as f:
+            f.write(events_html)
+        print("Created page-speaker.html as identical mirror of page-events.html")
+
+        # Write speaker.html
+        with open("speaker.html", "w", encoding="utf-8") as f:
+            f.write(events_html)
+        print("Created speaker.html as identical mirror of page-events.html")
+
+if __name__ == "__main__":
+    main()
