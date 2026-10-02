@@ -641,9 +641,9 @@ media_items = [
         "summary": "Officially inducted and listed on the Google Developer Experts global directory for exemplary technical expertise, speaking, and community leadership in Google Cloud and Machine Learning architectures.",
         "topics": ["Google Developer Expert", "GDE Directory", "Google Cloud", "Machine Learning", "Community Leadership"],
         "stats": "Official Google Directory",
-        "primary_url": "https://developers.google.com/community/experts/directory?text=Harsh%20Verma",
+        "primary_url": "https://me.developers.google.com/communities/experts?q=harsh%20verma",
         "links": [
-            {"label": "Google GDE Directory Profile", "url": "https://developers.google.com/community/experts/directory?text=Harsh%20Verma", "icon": "mdi-google"}
+            {"label": "Google GDE Directory Profile", "url": "https://me.developers.google.com/communities/experts?q=harsh%20verma", "icon": "mdi-google"}
         ],
         "quote": "Empowering engineers globally through verified expertise in cloud scalability, AI pipelines, and distributed architectures."
     },

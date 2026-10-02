@@ -683,6 +683,44 @@ papers = [
   publisher={European Centre for Research Training and Development UK},
   doi={10.37745/ejcsit.2013/vol9n491110}
 }"""
+    },
+    {
+        "id": "pub-25",
+        "title": "Scalable Real-Time Data Pipelines for AI and Machine Learning–Driven Enterprise Systems",
+        "venue": "European Journal of Computer Science and Information Technology (EJCSIT)",
+        "year": "2020",
+        "publication_date": "December 30, 2020",
+        "volume": "Vol. 8, Issue 5, pp. 69-86",
+        "authors": "Harsh Verma",
+        "category": "journal",
+        "category_label": "Journal Article",
+        "topic": "cloud_ai iot",
+        "topic_label": "Real-Time Data Pipelines & Enterprise AI",
+        "doi": "10.37745/ejcsit.2013/vol8n56986",
+        "link": "https://eajournals.org/ejcsit/vol-8-issue-5-november-2020/scalable-real-time-data-pipelines-for-ai-and-machine-learning-driven-enterprise-systems/",
+        "publisher": "European Centre for Research Training and Development UK (ECRTD)",
+        "abstract": "The growth of enterprise data volumes across the 2000s and 2010s pushed traditional batch-oriented data processing infrastructures past their practical limits, motivating a sustained shift toward distributed, stream-based architectures capable of supporting real-time analytics and machine learning (ML). This article synthesizes foundational and applied research on distributed batch processing, distributed structured and key-value storage, early continuous query engines, in-memory cluster computing, micro-batch and internet-scale stream processing, log-based messaging, and unified batch/streaming programming models, to examine how scalable real-time data pipelines can be designed to support artificial intelligence (AI) and ML-driven enterprise systems. Proposes a five-layer architectural framework—ingestion, stream processing, batch/model training, durable storage, and analytics/serving—and evaluates quantitative performance, scalability mechanisms, fault-tolerance strategies, and enterprise implementation challenges across modern AI infrastructure.",
+        "tags": [
+            "Real-Time Data Pipelines",
+            "Enterprise AI & ML",
+            "Stream Processing",
+            "Distributed Systems",
+            "Data Engineering",
+            "EJCSIT"
+        ],
+        "bibtex": """@article{verma2020scalable,
+  title={Scalable Real-Time Data Pipelines for AI and Machine Learning--Driven Enterprise Systems},
+  author={Verma, Harsh},
+  journal={European Journal of Computer Science and Information Technology},
+  volume={8},
+  number={5},
+  pages={69--86},
+  year={2020},
+  month={December},
+  publisher={European Centre for Research Training and Development UK},
+  doi={10.37745/ejcsit.2013/vol8n56986},
+  url={https://eajournals.org/ejcsit/vol-8-issue-5-november-2020/scalable-real-time-data-pipelines-for-ai-and-machine-learning-driven-enterprise-systems/}
+}"""
     }
 ]
 

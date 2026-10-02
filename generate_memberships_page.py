@@ -1044,7 +1044,7 @@ html_content = '''<!DOCTYPE html>
                                 <span class="membership-tag">#AICommunity</span>
                             </div>
                             <div class="membership-footer">
-                                <a href="https://developers.google.com/community/experts/directory?text=Harsh%20Verma" target="_blank" class="btn-verify">
+                                <a href="https://me.developers.google.com/communities/experts?q=harsh%20verma" target="_blank" class="btn-verify">
                                     <i class="mdi mdi-open-in-new"></i> Google GDE Directory
                                 </a>
                             </div>

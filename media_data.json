@@ -1061,11 +1061,11 @@
       "Community Leadership"
     ],
     "stats": "Official Google Directory",
-    "primary_url": "https://developers.google.com/community/experts/directory?text=Harsh%20Verma",
+    "primary_url": "https://me.developers.google.com/communities/experts?q=harsh%20verma",
     "links": [
       {
         "label": "Google GDE Directory Profile",
-        "url": "https://developers.google.com/community/experts/directory?text=Harsh%20Verma",
+        "url": "https://me.developers.google.com/communities/experts?q=harsh%20verma",
         "icon": "mdi-google"
       }
     ],

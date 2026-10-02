@@ -142,20 +142,35 @@ Harsh Verma has authored authoritative volumes bridging academic rigor and missi
   }
 
   if (q.includes('paper') || q.includes('publication') || q.includes('research') || q.includes('scholar') || q.includes('citation') || q.includes('ieee') || q.includes('springer')) {
-    return `### 🔬 23+ Peer-Reviewed Research Publications & Academic Citations
+    return `### 🔬 25+ Peer-Reviewed Research Publications & Academic Citations
 
-Harsh Verma has published **23+ peer-reviewed and conference papers** across leading IEEE conferences, ICACCM, Springer Nature, and international computer science journals with over **150+ academic citations**:
+Harsh Verma has published **25+ peer-reviewed and conference papers** across leading IEEE conferences, ICACCM, Springer Nature, and international computer science journals with over **150+ academic citations**:
 
+- **Data Quality, Feature Engineering, and Model Reliability in Large-Scale AI Multi-Agentic Systems** (EJCSIT, May 30, 2021).
+- **Scalable Real-Time Data Pipelines for AI and Machine Learning–Driven Enterprise Systems** (EJCSIT, December 30, 2020).
 - **Multi-Agent Systems & Trajectory Planning** for Delay-Tolerant Wireless Sensor Networks (ICACCM 2026).
 - **Explainable AI (XAI)** for Software Engineering Decision-Making & Risk Reduction.
 - **Secure Real-Time Heterogeneous Data Management** in Distributed Cloud Systems.
 - **Real-Time Analytics Performance Load Simulation & Scaling** for High-Frequency FinTech.
 - **Autonomous Zero-Trust Defense Protocols** for Cloud Microservice Ecosystems.
 
-👉 Access full abstracts, DOIs, and citation downloads: **[Explore 24+ Research Publications](page-publications)** or review the **[Google Scholar Profile](https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ)**.`;
+👉 Access full abstracts, DOIs, and citation downloads: **[Explore 25+ Research Publications](page-publications)** or review the **[Google Scholar Profile](https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ)**.`;
   }
 
   if (q.includes('member') || q.includes('fellow') || q.includes('harvard') || q.includes('ieee') || q.includes('bcs') || q.includes('association') || q.includes('forbes')) {
+    if (q.includes('blog') || q.includes('article') || q.includes('moat') || q.includes('orchestration') || q.includes('read') || q.includes('post')) {
+      return `### ✍️ Articles & Thought Leadership (30 Publications)
+
+Harsh Verma actively authors high-impact technical articles across major global publications including **Forbes Technology Council**, **HackerNoon**, **The AI Journal**, and **RSA Conference**:
+
+- **Latest Forbes Council Article (Oct 2, 2026)**: **[The Real AI Moat: Why Models Are Cheap But Data Orchestration Is Priceless](https://www.forbes.com/councils/forbestechcouncil/2026/10/02/the-real-ai-moat-why-models-are-cheap-but-data-orchestration-is-priceless/)**
+- **Engineering The Predictable**: Why Pure Determinism Is Becoming The New Premium In AI Architecture (*Forbes*)
+- **The Intelligence Per Dollar Metric**: How Influential Leaders Measure AI Success (*Forbes*)
+- **Your First AI Agent Is An Experiment, Not A Product** (*Forbes*)
+- **Beyond The Code**: The Evolution Of The Next-Generation Engineer (*Forbes*)
+
+👉 Explore all 30 articles and syndicated feeds: **[Visit Blog & Articles Hub](page-blog)**`;
+    }
     return `### 🎖️ Invited Fellowships & Professional Memberships
 
 Harsh Verma holds prestigious fellowships and senior leadership appointments across global technology and scientific bodies:
@@ -193,15 +208,17 @@ Harsh shares active insights on engineering leadership, daily discipline, and en
 👉 Check out the interactive feed: **[Everyday Routine & Social Hub](index#routine)**`;
   }
 
-  if (q.includes('speak') || q.includes('event') || q.includes('keynote') || q.includes('conference') || q.includes('panel') || q.includes('talk') || q.includes('booking')) {
+  if (q.includes('speak') || q.includes('event') || q.includes('keynote') || q.includes('conference') || q.includes('panel') || q.includes('talk') || q.includes('booking') || q.includes('sf tech week') || q.includes('dim sum') || q.includes('dent')) {
     return `### 🎙️ Keynotes, Panels & Speaking Engagements
 
-Harsh Verma is a sought-after international keynote speaker and panellist on:
+Harsh Verma is a sought-after international keynote speaker, panelist, and startup judge:
+- **Demos & Dim Sum — #SFTechWeek (Oct 7, 2026)**: Serving on the official Dent Expert Network judging panel (*Dent Capital, The MBA Fund, Deel & Manatt*).
+- **AI × Security during SF Tech Week (Oct 6, 2026)**: Securing the AI Supply Chain & Autonomous Agent Ecosystem (*Hosted by AI Insiders with Pebblebed*).
 - **Enterprise AI Agent Orchestration**: Scaling autonomous agents with deterministic controls.
 - **Autonomous Cyber Defense**: Battleground machine learning against zero-day threats.
 - **High-Throughput Cloud Distributed Architectures**: Lessons from enterprise-scale data platforms.
 
-👉 Review past appearances: **[Speaking Engagements](page-events)** or book an executive hold: **[Contact & Booking Form](index#contact)**.`;
+👉 Review 35+ appearances across keynotes, panels & hackathon judging: **[Speaking Engagements](page-events)** or book an executive hold: **[Contact & Booking Form](index#contact)**.`;
   }
 
   if (q.includes('contact') || q.includes('email') || q.includes('collaborate') || q.includes('hire') || q.includes('advisory') || q.includes('consult')) {
@@ -224,12 +241,12 @@ All verified inquiries submitted through this portfolio are delivered directly w
 
 - **Specializations**: Enterprise Generative AI, Multi-Agent Architectures, Zero-Trust Cyber Resilience, and Cloud Distributed Systems.
 - **Recognitions**: **24 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
-- **Academic Impact**: **24+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **38 Verified Academic/Professional Registries**.
+- **Academic Impact**: **25+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **38 Verified Academic/Professional Registries**.
 - **Fellowships**: Harvard Square Leaders Excellence Fellow, IEEE Senior Member, and Forbes Technology Council Member.
 
 **Explore further:**
 - 🏆 **[24 Prestigious Awards](page-awards)**
-- 🔬 **[24+ Research Publications](page-publications)**
+- 🔬 **[25+ Research Publications](page-publications)**
 - 💼 **[Professional Experience & Roles](index#experience)**
 - 📚 **[Authored Books](page-books)**
 - 👥 **[Invited Memberships](page-memberships)**
@@ -1273,6 +1290,9 @@ app.use(express.static(__dirname, {
 
 // Route fallback
 app.get('*', (req, res) => {
+  if (/\.(js|css|json|map|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot)$/i.test(req.path)) {
+    return res.status(404).type('text/plain').send('Not found');
+  }
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 

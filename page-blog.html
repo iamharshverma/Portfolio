@@ -564,7 +564,7 @@
                 </ul>
                 <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
                     <li class="list-inline-item mr-2">
-                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (24+ Papers)">
+                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (25+ Papers)">
                             <i class="mdi mdi-school"></i>
                         </a>
                     </li>
@@ -697,7 +697,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-5 d-flex justify-content-md-end align-items-center">
-                    <span id="resultsCountBadge" class="text-muted small mr-3 font-weight-medium">Showing all 29 publications</span>
+                    <span id="resultsCountBadge" class="text-muted small mr-3 font-weight-medium">Showing all 30 publications</span>
                     <div class="dropdown">
                         <button class="btn btn-sm btn-outline-secondary dropdown-toggle rounded-pill px-3 py-1 font-weight-medium" type="button" id="sortDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="mdi mdi-sort mr-1"></i>Sort By
@@ -716,6 +716,59 @@
             <!-- Articles Grid -->
             <div class="row" id="blogArticlesGrid">
                 
+        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
+             data-platform="Forbes" 
+             data-category="Enterprise AI Strategy" 
+             data-main-category="AI Research"
+             data-featured="true"
+             data-search="the real ai moat: why models are cheap but data orchestration is priceless as frontier models commoditize and open-source alternatives catch up, owning raw models offers little defensibility. the true enterprise ai moat lies in continuous data orchestration, clean operational governance, domain-specific data pipelines, and high-fidelity contextual retrieval. forbes forbes technology council ai research enterprise ai strategy forbes tech council data orchestration ai moat enterprise ai systems architecture">
+            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
+                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
+                    <img src="images/blog/thumbnails/forbes-real-ai-moat.jpg" class="img-fluid w-100 blog-img" alt="The Real AI Moat: Why Models Are Cheap But Data Orchestration Is Priceless" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
+                    <div class="blog-platform-badge badge-forbes">
+                        <i class="mdi mdi-database-sync mr-1"></i>Forbes Council
+                    </div>
+                    <div class="blog-featured-ribbon"><i class="mdi mdi-star"></i> Featured</div>
+                </div>
+                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
+                        <span class="badge badge-topic-pill topic-ai" onclick="filterByCategory('AI Research')" title="Filter by category: AI Research" style="cursor: pointer;">
+                            <i class="mdi mdi-brain mr-1"></i>AI Research
+                        </span>
+                        <div class="d-flex align-items-center text-muted">
+                            <span class="d-flex align-items-center font-weight-medium mr-2">
+                                <i class="mdi mdi-calendar-blank-outline mr-1"></i>October 2, 2026
+                            </span>
+                            <span class="d-flex align-items-center">
+                                <i class="mdi mdi-clock-outline mr-1"></i>6 min read
+                            </span>
+                        </div>
+                    </div>
+                    <h5 class="card-title mb-2">
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/2026/10/02/the-real-ai-moat-why-models-are-cheap-but-data-orchestration-is-priceless/" target="_blank" class="title text-dark font-weight-bold" title="The Real AI Moat: Why Models Are Cheap But Data Orchestration Is Priceless">
+                            The Real AI Moat: Why Models Are Cheap But Data Orchestration Is Priceless
+                        </a>
+                    </h5>
+                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
+                        As frontier models commoditize and open-source alternatives catch up, owning raw models offers little defensibility. The true enterprise AI moat lies in continuous data orchestration, clean operational governance, domain-specific data pipelines, and high-fidelity contextual retrieval.
+                    </p>
+                    <div class="blog-tags mb-3">
+                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Forbes Tech Council')">#Forbes Tech Council</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Data Orchestration')">#Data Orchestration</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('AI Moat')">#AI Moat</span>
+                        
+                    </div>
+                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/people/harshverma/" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on Forbes">
+                            <i class="mdi mdi-database-sync mr-1 text-primary"></i>Forbes Technology Council
+                        </a>
+                        <a href="https://www.forbes.com/councils/forbestechcouncil/2026/10/02/the-real-ai-moat-why-models-are-cheap-but-data-orchestration-is-priceless/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
+                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
         <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
              data-platform="Forbes" 
              data-category="Engineering Leadership" 
@@ -2463,7 +2516,7 @@
 
         if (badge) {
             let catLabel = currentCategoryFilter === 'all' ? '' : `${currentCategoryFilter} `;
-            badge.innerText = `Showing ${visibleCount} of 29 ${catLabel}publications`;
+            badge.innerText = `Showing ${visibleCount} of 30 ${catLabel}publications`;
         }
 
         if (summary) {

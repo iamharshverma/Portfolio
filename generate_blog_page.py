@@ -11,6 +11,24 @@ import os
 articles_data = [
     # --- Forbes Technology Council ---
     {
+        "id": "forbes-real-ai-moat",
+        "title": "The Real AI Moat: Why Models Are Cheap But Data Orchestration Is Priceless",
+        "platform": "Forbes",
+        "platform_full": "Forbes Technology Council",
+        "platform_badge": "Forbes Council",
+        "platform_icon": "mdi-database-sync",
+        "platform_color": "#111827",
+        "category": "Enterprise AI Strategy",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2026/10/02/the-real-ai-moat-why-models-are-cheap-but-data-orchestration-is-priceless/",
+        "author_profile": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/",
+        "thumbnail": "images/blog/thumbnails/forbes-real-ai-moat.jpg",
+        "date": "October 2, 2026",
+        "read_time": "6 min read",
+        "featured": True,
+        "description": "As frontier models commoditize and open-source alternatives catch up, owning raw models offers little defensibility. The true enterprise AI moat lies in continuous data orchestration, clean operational governance, domain-specific data pipelines, and high-fidelity contextual retrieval.",
+        "tags": ["Forbes Tech Council", "Data Orchestration", "AI Moat", "Enterprise AI", "Systems Architecture"]
+    },
+    {
         "id": "forbes-beyond-code",
         "title": "Beyond The Code: The Evolution Of The Next-Generation Engineer",
         "platform": "Forbes",
@@ -553,7 +571,8 @@ def generate_blog_html():
 
     # Core Research Domain Mapping (Category Filter)
     MAIN_CATEGORY_MAP = {
-        # Forbes (5)
+        # Forbes (6)
+        "forbes-real-ai-moat": "AI Research",
         "forbes-beyond-code": "Engineering",
         "forbes-intelligence-dollar": "AI Research",
         "forbes-personalized-ai": "Cybersecurity",
@@ -1327,7 +1346,7 @@ def generate_blog_html():
                 </ul>
                 <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
                     <li class="list-inline-item mr-2">
-                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (24+ Papers)">
+                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (25+ Papers)">
                             <i class="mdi mdi-school"></i>
                         </a>
                     </li>

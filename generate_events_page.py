@@ -14,6 +14,24 @@ import os
 events_data = {
     "judging": [
         {
+            "id": "judge-dent-demos-dimsum",
+            "title": "Demos & Dim Sum — #SFTechWeek",
+            "organization": "Dent Capital, The MBA Fund, Deel & Manatt",
+            "role": "Dent Expert Network Judging Panel",
+            "category": "Demo Day & Venture Judging",
+            "date": "October 7, 2026",
+            "location": "Chinatown, San Francisco, CA",
+            "description": "Serving on the official Dent Expert Network judging panel for 'Demos & Dim Sum' during SF Tech Week, co-hosted with Dent Capital, The MBA Fund, Deel, and Manatt. Evaluating live startup demos from high-growth founders across AI, enterprise software, and frontier technologies.",
+            "links": [
+                {"name": "Partiful Event Page", "url": "https://partiful.com/e/WBHEUDs7uFJo6xSAyN2S", "icon": "mdi-ticket-confirmation"},
+                {"name": "LinkedIn Announcement", "url": "https://www.linkedin.com/posts/dentcapital_rsvp-to-demos-dim-sum-sftechweek-partiful-activity-7508645069487263744-Wioj", "icon": "mdi-linkedin"}
+            ],
+            "tags": ["SF Tech Week", "Dent Capital", "Dent Expert Network", "Demos & Dim Sum", "Startup Judging", "San Francisco"],
+            "gradient": "from-amber-600 to-yellow-500",
+            "badge_color": "#d97706",
+            "icon": "mdi-gavel"
+        },
+        {
             "id": "judge-techstars-sf",
             "title": "Techstars San Francisco Startup Mentor",
             "organization": "Techstars SF",
@@ -481,6 +499,24 @@ events_data = {
         }
     ],
     "panels": [
+        {
+            "id": "panel-ai-security-sftechweek",
+            "title": "AI × Security during SF Tech Week: Securing the AI Supply Chain",
+            "event_name": "Hosted by AI Insiders in SF Tech Week (with Pebblebed)",
+            "role": "Featured Panel Speaker",
+            "category": "AI Security Panel",
+            "date": "October 6, 2026",
+            "location": "San Francisco, CA",
+            "description": "Featured speaker on 'YOUR AGENT INSTALLED WHAT? SECURING THE NEW AI SUPPLY CHAIN' hosted by AI Insiders with Pebblebed during SF Tech Week. Addressed emerging threats across the agentic supply chain: unauthorized plugin and skill installations, MCP integration risks, runtime agent sandboxing, prompt provenance, and zero-trust controls.",
+            "links": [
+                {"name": "Partiful Event Page", "url": "https://partiful.com/e/8LNyv0WyX7dTHjUUJmm0", "icon": "mdi-ticket-confirmation"},
+                {"name": "LinkedIn Announcement", "url": "https://lnkd.in/p/eyfEarGz", "icon": "mdi-linkedin"}
+            ],
+            "tags": ["SF Tech Week", "AI Insiders", "Securing AI Supply Chain", "Pebblebed", "Agent Security", "Zero Trust", "San Francisco"],
+            "gradient": "from-rose-600 to-indigo-700",
+            "badge_color": "#e11d48",
+            "icon": "mdi-shield-lock-outline"
+        },
         {
             "id": "panel-autonomy-ai-agents",
             "title": "The Autonomy of AI Agents (Founders' Creative)",
@@ -1116,7 +1152,7 @@ def build_full_page():
                 </ul>
                 <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
                     <li class="list-inline-item mr-2">
-                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (24+ Papers)">
+                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (25+ Papers)">
                             <i class="mdi mdi-school"></i>
                         </a>
                     </li>

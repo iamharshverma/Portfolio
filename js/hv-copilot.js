@@ -166,7 +166,7 @@
             <i class="mdi mdi-book-open-variant mr-1"></i> Authored Books
           </button>
           <button class="hv-chip-btn" data-query="What are his key research publications & academic citations?">
-            <i class="mdi mdi-school mr-1"></i> 23+ Papers
+            <i class="mdi mdi-school mr-1"></i> 25+ Papers
           </button>
           <button class="hv-chip-btn" data-query="How can I invite Harsh for a keynote, panel, or advisory role?">
             <i class="mdi mdi-microphone mr-1"></i> Keynotes &amp; Advisory
@@ -669,7 +669,7 @@
     if (messageHistory.length === 0) {
       // Welcome message
       const welcomeContent = `### 👋 Welcome to Harsh Verma's AI Copilot!
-I am your intelligent liaison grounded in Harsh Verma's **24 Global Awards**, **24+ Research Publications**, **Authored Books on AI Agents**, and executive advisory background.
+I am your intelligent liaison grounded in Harsh Verma's **24 Global Awards**, **25+ Research Publications**, **Authored Books on AI Agents**, and executive advisory background.
 
 How can I assist you today? You can ask about:
 - **Executive Biography & Technical Focus**
@@ -976,21 +976,43 @@ Harsh Verma is the author of two definitive technical volumes bridging academic 
       q.includes('article') ||
       q.includes('journal')
     ) {
-      return `### 🔬 24+ Peer-Reviewed Research Publications & Academic Citations
+      return `### 🔬 25+ Peer-Reviewed Research Publications & Academic Citations
 
-Harsh Verma has published **24+ peer-reviewed and conference papers** across leading IEEE conferences, ICACCM, Springer Nature, and international computer science journals with over **150+ academic citations**:
+Harsh Verma has published **25+ peer-reviewed and conference papers** across leading IEEE conferences, ICACCM, Springer Nature, and international computer science journals with over **150+ academic citations**:
 
 - **Data Quality, Feature Engineering, and Model Reliability in Large-Scale AI Multi-Agentic Systems** (EJCSIT, May 30, 2021).
+- **Scalable Real-Time Data Pipelines for AI and Machine Learning–Driven Enterprise Systems** (EJCSIT, December 30, 2020).
 - **Multi-Agent Systems & Trajectory Planning** for Delay-Tolerant Wireless Sensor Networks (ICACCM 2026).
 - **Explainable AI (XAI)** for Software Engineering Decision-Making & Risk Reduction.
 - **Secure Real-Time Heterogeneous Data Management** in Distributed Cloud Systems.
 - **Real-Time Analytics Performance Load Simulation & Scaling** for High-Frequency FinTech.
 - **Autonomous Zero-Trust Defense Protocols** for Cloud Microservice Ecosystems.
 
-👉 Access full abstracts, DOIs, and citation downloads: **[Explore 24+ Research Publications](page-publications)** or review the **[Google Scholar Profile](https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ)**.`;
+👉 Access full abstracts, DOIs, and citation downloads: **[Explore 25+ Research Publications](page-publications)** or review the **[Google Scholar Profile](https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ)**.`;
     }
 
-    // 4. Fellowships & Professional Memberships
+    // 4. Articles & Thought Leadership
+    if (
+      q.includes('blog') ||
+      q.includes('article') ||
+      q.includes('moat') ||
+      q.includes('orchestration') ||
+      (q.includes('forbes') && (q.includes('post') || q.includes('article') || q.includes('read') || q.includes('write')))
+    ) {
+      return `### ✍️ Articles & Thought Leadership (30 Publications)
+
+Harsh Verma actively authors high-impact technical articles across major global publications including **Forbes Technology Council**, **HackerNoon**, **The AI Journal**, and **RSA Conference**:
+
+- **Latest Forbes Council Article (Oct 2, 2026)**: **[The Real AI Moat: Why Models Are Cheap But Data Orchestration Is Priceless](https://www.forbes.com/councils/forbestechcouncil/2026/10/02/the-real-ai-moat-why-models-are-cheap-but-data-orchestration-is-priceless/)**
+- **Engineering The Predictable**: Why Pure Determinism Is Becoming The New Premium In AI Architecture (*Forbes*)
+- **The Intelligence Per Dollar Metric**: How Influential Leaders Measure AI Success (*Forbes*)
+- **Your First AI Agent Is An Experiment, Not A Product** (*Forbes*)
+- **Beyond The Code**: The Evolution Of The Next-Generation Engineer (*Forbes*)
+
+👉 Explore all 30 articles and syndicated feeds: **[Visit Blog & Articles Hub](page-blog)**`;
+    }
+
+    // 5. Fellowships & Professional Memberships
     if (
       q.includes('member') ||
       q.includes('fellow') ||
@@ -1080,17 +1102,22 @@ Harsh's verified keynote slide decks are available via an interactive slide play
       q.includes('agenda') ||
       q.includes('retreat') ||
       q.includes('ata') ||
-      q.includes('gtr')
+      q.includes('gtr') ||
+      q.includes('sf tech week') ||
+      q.includes('dim sum') ||
+      q.includes('dent')
     ) {
       return `### 🎙️ Keynotes, Panels & Speaking Engagements
 
-Harsh Verma is an international keynote speaker on:
+Harsh Verma is an international keynote speaker, panelist, and startup judge:
+- **Demos & Dim Sum — #SFTechWeek (Oct 7, 2026)**: Serving on the official Dent Expert Network judging panel (*Dent Capital, The MBA Fund, Deel & Manatt*).
+- **AI × Security during SF Tech Week (Oct 6, 2026)**: Securing the AI Supply Chain & Autonomous Agent Ecosystem (*Hosted by AI Insiders with Pebblebed*).
 - **Enterprise AI Agent Orchestration**: Scaling autonomous agents with deterministic controls.
 - **Autonomous Cyber Defense**: Battleground machine learning against zero-day threats.
 - **High-Throughput Cloud Distributed Architectures**: Lessons from enterprise-scale data platforms.
 - **Featured Appearances**: Keynote speaker at @#ATAGTR2017 (Global Testing Retreat), IEEE Symposia, and global engineering conferences.
 
-👉 Review past appearances: **[Speaking Engagements](page-events)** or book an executive hold: **[Contact & Booking Form](index#contact)**.`;
+👉 Review 35+ appearances across keynotes, panels & hackathon judging: **[Speaking Engagements](page-events)** or book an executive hold: **[Contact & Booking Form](index#contact)**.`;
     }
 
     // 8. Media Coverage & Distribution Analytics
@@ -1189,12 +1216,12 @@ All verified inquiries submitted through this portfolio are delivered directly w
 
 - **Specializations**: Enterprise Generative AI, Autonomous Multi-Agent Architectures, Zero-Trust Cyber Resilience, and Cloud Distributed Systems.
 - **Recognitions**: **24 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
-- **Academic Impact**: **24+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **38 Verified Academic/Professional Registries**.
+- **Academic Impact**: **25+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **38 Verified Academic/Professional Registries**.
 - **Fellowships**: Harvard Square Leaders Excellence Fellow, IEEE Senior Member, and Forbes Technology Council Member.
 
 **Explore further:**
 - 🏆 **[24 Prestigious Awards](page-awards)**
-- 🔬 **[24+ Research Publications](page-publications)**
+- 🔬 **[25+ Research Publications](page-publications)**
 - 💼 **[Professional Experience & Roles](index#experience)**
 - 📚 **[Authored Books](page-books)**
 - 👥 **[Invited Memberships](page-memberships)**

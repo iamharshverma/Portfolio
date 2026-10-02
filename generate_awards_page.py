@@ -268,7 +268,7 @@ awards_data = [
         "description": "Selected and featured as a Google Developer Expert (GDE) in Cloud AI. Globally there are only ~1,500 total GDEs across all domains, and fewer than 100 recognized worldwide in Cloud AI, honoring elite expertise in scalable AI infrastructure, GCP architectures, and incident intelligence.",
         "tags": ["Google GDE", "Cloud AI", "Top 100 Globally", "Google Developers"],
         "links": [
-            {"label": "Google GDE Directory", "url": "https://developers.google.com/community/experts/directory?text=Harsh%20Verma", "icon": "mdi-google"}
+            {"label": "Google GDE Directory", "url": "https://me.developers.google.com/communities/experts?q=harsh%20verma", "icon": "mdi-google"}
         ],
         "citation": "Verma, H. (2025). Google Developer Expert (GDE) in Cloud AI. Google Developers Expert Community."
     },
@@ -1248,7 +1248,7 @@ html_page = f'''<!DOCTYPE html>
                 </ul>
                 <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
                     <li class="list-inline-item mr-2">
-                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (24+ Papers)">
+                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (25+ Papers)">
                             <i class="mdi mdi-school"></i>
                         </a>
                     </li>
