@@ -975,6 +975,32 @@ header_part = """<!DOCTYPE html>
     <!-- Main Content Section -->
     <section class="section" style="padding-top: 0; padding-bottom: 90px;">
         <div class="container">
+            <!-- Dedicated Callout for Media Distribution Analytics Page -->
+            <div class="media-analytics-banner-wrap" style="margin-top: -30px; margin-bottom: 30px; position: relative; z-index: 11;">
+                <div class="d-flex align-items-center justify-content-between flex-wrap p-3 px-md-4 rounded-lg border shadow-sm" style="background: linear-gradient(135deg, #090e1a 0%, #0f172a 60%, #1e1b4b 100%); border-color: rgba(56, 189, 248, 0.45) !important; border-radius: 16px; color: #ffffff;">
+                    <div class="d-flex align-items-center mb-2 mb-md-0" style="gap: 14px;">
+                        <div class="badge-icon-box d-flex align-items-center justify-content-center" style="width: 46px; height: 46px; min-width: 46px; background: #0f172a; border: 1px solid rgba(56, 189, 248, 0.45); border-radius: 8px; overflow: hidden; padding: 0; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);">
+                            <img src="images/media/distribution_analytics_thumb.svg" alt="Analytics Thumbnail" style="width: 100%; height: 100%; object-fit: cover; border-radius: 7px;" />
+                        </div>
+                        <div>
+                            <div class="d-flex align-items-center flex-wrap gap-2" style="gap: 8px;">
+                                <span class="badge badge-pill badge-primary px-2.5 py-0.5 font-weight-bold" style="font-size: 11px; letter-spacing: 0.5px;">NEW INFOGRAPHIC</span>
+                                <span class="font-weight-bold text-white" style="font-size: 16px;">Media Distribution Analytics &amp; Publication Impact</span>
+                                <span class="badge badge-pill badge-warning text-dark font-weight-bold px-2 py-0.5" style="font-size: 11px;">3.75+ Billion Views</span>
+                            </div>
+                            <div class="text-white-50 small mt-1" style="font-size: 13px; line-height: 1.4;">
+                                Syndication audit across Yahoo Finance, Business Insider, USA TODAY, AP News, NewsBreak, Barchart, and StreetInsider.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="page-media-distribution-analytics" class="btn btn-primary btn-sm px-3 py-2 font-weight-bold shadow-sm" style="border-radius: 8px; font-size: 13px;">
+                            <i class="mdi mdi-chart-donut mr-1"></i> Explore Distribution Analytics <i class="mdi mdi-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <!-- Stats Ribbon with Quick-Filter Actions -->
             <div class="media-stats-box">
                 <div class="row">
@@ -1946,7 +1972,28 @@ footer_part = """
 
 full_html = header_part + cards_full_html + footer_part
 
+# Compute dynamic counts
+total_count = len(media_items)
+press_count = sum(1 for x in media_items if x.get('type') == 'press')
+podcast_count = sum(1 for x in media_items if x.get('type') == 'podcast')
+keynote_count = sum(1 for x in media_items if x.get('type') == 'keynote')
+interview_count = sum(1 for x in media_items if x.get('type') == 'interview')
+institutional_count = sum(1 for x in media_items if x.get('type') == 'institutional')
+
+full_html = full_html.replace('Explore 37+ media features', f'Explore {total_count}+ media features')
+full_html = full_html.replace('archive of <strong>37+</strong>', f'archive of <strong>{total_count}+</strong>')
+full_html = full_html.replace('<div class="media-stat-number" id="totalMediaStat">37+</div>', f'<div class="media-stat-number" id="totalMediaStat">{total_count}+</div>')
+full_html = full_html.replace('All Media <span class="filter-count-badge">37</span>', f'All Media <span class="filter-count-badge">{total_count}</span>')
+full_html = full_html.replace('Top Tier Press <span class="filter-count-badge">12</span>', f'Top Tier Press <span class="filter-count-badge">{press_count}</span>')
+full_html = full_html.replace('Podcasts &amp; Shows <span class="filter-count-badge">8</span>', f'Podcasts &amp; Shows <span class="filter-count-badge">{podcast_count}</span>')
+full_html = full_html.replace('Keynotes &amp; Talks <span class="filter-count-badge">6</span>', f'Keynotes &amp; Talks <span class="filter-count-badge">{keynote_count}</span>')
+full_html = full_html.replace('In-Depth Interviews <span class="filter-count-badge">8</span>', f'In-Depth Interviews <span class="filter-count-badge">{interview_count}</span>')
+full_html = full_html.replace('Institutional <span class="filter-count-badge">3</span>', f'Institutional <span class="filter-count-badge">{institutional_count}</span>')
+full_html = full_html.replace('Showing <span id="visibleCount" class="text-primary font-weight-bold">37</span> of 37 Media Features', f'Showing <span id="visibleCount" class="text-primary font-weight-bold">{total_count}</span> of {total_count} Media Features')
+full_html = full_html.replace("labels: ['Top Tier Press (12)', 'Podcasts (8)', 'In-Depth Interviews (8)', 'Keynotes (6)', 'Institutional (3)']", f"labels: ['Top Tier Press ({press_count})', 'Podcasts ({podcast_count})', 'In-Depth Interviews ({interview_count})', 'Keynotes ({keynote_count})', 'Institutional ({institutional_count})']")
+full_html = full_html.replace("data: [12, 8, 8, 6, 3]", f"data: [{press_count}, {podcast_count}, {interview_count}, {keynote_count}, {institutional_count}]")
+
 with open('page-media.html', 'w', encoding='utf-8') as f:
     f.write(full_html)
 
-print(f"page-media.html regenerated successfully! File size: {len(full_html)} bytes.")
+print(f"page-media.html regenerated successfully with {total_count} items! File size: {len(full_html)} bytes.")

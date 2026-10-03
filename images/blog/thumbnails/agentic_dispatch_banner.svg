@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320" style="background:#090d16; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; display:block;">
+  <defs>
+    <!-- Deep Space Cyber Gradient -->
+    <linearGradient id="dispatchBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a12" />
+      <stop offset="45%" stop-color="#0f172a" />
+      <stop offset="80%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0c1d37" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="neonCyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+
+    <linearGradient id="accentGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <!-- Precision Grid Pattern -->
+    <pattern id="dispatchGrid" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <circle cx="28" cy="28" r="0.8" fill="rgba(56,189,248,0.2)"/>
+    </pattern>
+
+    <!-- Glow Filters -->
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="800" height="320" fill="url(#dispatchBgGrad)" />
+  <rect width="800" height="320" fill="url(#dispatchGrid)" />
+
+  <!-- Radial Glow Spots -->
+  <circle cx="160" cy="160" r="140" fill="#38bdf8" fill-opacity="0.08" filter="url(#cyanGlow)" />
+  <circle cx="680" cy="90" r="120" fill="#818cf8" fill-opacity="0.09" filter="url(#cyanGlow)" />
+
+  <!-- Top Accent Beam -->
+  <line x1="0" y1="2" x2="800" y2="2" stroke="url(#neonCyanGrad)" stroke-width="3" />
+
+  <!-- Tech Geometric Circuits / Agent Graph (Left Side) -->
+  <g opacity="0.85">
+    <!-- Connecting Data Pathways -->
+    <path d="M 50 200 L 110 140 L 190 140 L 240 90" fill="none" stroke="rgba(56,189,248,0.3)" stroke-width="1.5" stroke-dasharray="4,4" />
+    <path d="M 110 140 L 150 220 L 220 220" fill="none" stroke="rgba(129,140,248,0.3)" stroke-width="1.5" />
+    
+    <!-- Nodes -->
+    <circle cx="50" cy="200" r="4" fill="#38bdf8" />
+    <circle cx="110" cy="140" r="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2" />
+    <circle cx="190" cy="140" r="5" fill="#818cf8" />
+    <circle cx="240" cy="90" r="4" fill="#10b981" />
+    <circle cx="150" cy="220" r="5" fill="#38bdf8" />
+    <circle cx="220" cy="220" r="4" fill="#818cf8" />
+  </g>
+
+  <!-- Executive Dispatch Emblem / Shield Badge (Left Center) -->
+  <g transform="translate(68, 80)">
+    <!-- Outer Glow Ring -->
+    <circle cx="60" cy="70" r="56" fill="rgba(59,130,246,0.12)" stroke="rgba(56,189,248,0.4)" stroke-width="1.5" />
+    <circle cx="60" cy="70" r="46" fill="#0f172a" stroke="url(#shieldGrad)" stroke-width="2.5" />
+    
+    <!-- Central Shield & Agent Core -->
+    <path d="M60 40 L84 52 V78 C84 94 60 104 60 104 C60 104 36 94 36 78 V52 Z" fill="url(#shieldGrad)" fill-opacity="0.3" stroke="#38bdf8" stroke-width="2" />
+    
+    <!-- Central Dispatch Icon: Envelope + Lightning / Agent -->
+    <path d="M48 60 L60 70 L72 60" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <rect x="46" y="58" width="28" height="20" rx="3" fill="none" stroke="#ffffff" stroke-width="2" />
+    <circle cx="60" cy="85" r="3.5" fill="#10b981" />
+    <path d="M55 85 h10" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Typography & Executive Content (Right Side) -->
+  <g transform="translate(220, 52)">
+    <!-- Pill Badge: Verified Monthly Briefing -->
+    <rect x="0" y="0" width="220" height="24" rx="12" fill="rgba(56,189,248,0.12)" stroke="rgba(56,189,248,0.35)" stroke-width="1" />
+    <circle cx="12" cy="12" r="3.5" fill="#10b981" />
+    <text x="24" y="16" fill="#38bdf8" font-size="10" font-weight="800" letter-spacing="1">EXECUTIVE TECH DISPATCH</text>
+
+    <!-- Main Title -->
+    <text x="0" y="56" fill="#ffffff" font-size="28" font-weight="800" letter-spacing="-0.5">THE AGENTIC SYSTEMS</text>
+    <text x="0" y="88" fill="url(#neonCyanGrad)" font-size="26" font-weight="800" letter-spacing="-0.5">&amp; AI DISPATCH</text>
+
+    <!-- Subtitle / Mission -->
+    <text x="0" y="118" fill="#94a3b8" font-size="12.5" font-weight="500">
+      Curated Monthly Architectural Intelligence by <tspan fill="#ffffff" font-weight="700">Harsh Verma</tspan>
+    </text>
+
+    <!-- Core Pillar Badges -->
+    <g transform="translate(0, 134)">
+      <rect x="0" y="0" width="140" height="22" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      <text x="70" y="15" fill="#e2e8f0" font-size="9" font-weight="600" text-anchor="middle">AUTONOMOUS AGENTS</text>
+
+      <rect x="148" y="0" width="130" height="22" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      <text x="213" y="15" fill="#e2e8f0" font-size="9" font-weight="600" text-anchor="middle">ZERO-TRUST CYBER</text>
+
+      <rect x="286" y="0" width="134" height="22" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      <text x="353" y="15" fill="#e2e8f0" font-size="9" font-weight="600" text-anchor="middle">LLM ORCHESTRATION</text>
+    </g>
+
+    <!-- Audience Stat Callout -->
+    <g transform="translate(0, 172)">
+      <text x="0" y="14" fill="#64748b" font-size="11">
+        Read by <tspan fill="#38bdf8" font-weight="700">3,200+</tspan> CTOs, Principal AI Engineers &amp; Tech Executives
+      </text>
+    </g>
+  </g>
+
+  <!-- High-Tech Corner Frame Accents -->
+  <path d="M 12 28 L 12 12 L 28 12" fill="none" stroke="rgba(56,189,248,0.4)" stroke-width="1.5" />
+  <path d="M 788 28 L 788 12 L 772 12" fill="none" stroke="rgba(56,189,248,0.4)" stroke-width="1.5" />
+  <path d="M 12 292 L 12 308 L 28 308" fill="none" stroke="rgba(56,189,248,0.4)" stroke-width="1.5" />
+  <path d="M 788 292 L 788 308 L 772 308" fill="none" stroke="rgba(56,189,248,0.4)" stroke-width="1.5" />
+</svg>

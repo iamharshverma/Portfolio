@@ -55,6 +55,18 @@
     var currentIsDark = document.documentElement.classList.contains('dark-mode');
     var newTheme = currentIsDark ? 'light' : 'dark';
     localStorage.setItem(THEME_KEY, newTheme);
+
+    // Trigger spring transition animation on toggle buttons
+    var toggleButtons = document.querySelectorAll('.theme-toggle-btn');
+    toggleButtons.forEach(function (btn) {
+      btn.classList.remove('theme-toggle-animating');
+      void btn.offsetWidth; // force reflow for smooth re-trigger
+      btn.classList.add('theme-toggle-animating');
+      setTimeout(function () {
+        btn.classList.remove('theme-toggle-animating');
+      }, 450);
+    });
+
     applyTheme(newTheme);
   }
 

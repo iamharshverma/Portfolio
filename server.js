@@ -1188,7 +1188,12 @@ app.get(['/social', '/page-social', '/page-social.html'], (req, res) => {
 });
 
 // Explicit route for Speaker Page
-app.get(['/speaker', '/page-speaker', '/page-speaker.html', '/events', '/page-events', '/page-events.html'], (req, res) => {
+app.get(['/speaker', '/page-speaker', '/page-speaker.html'], (req, res) => {
+  res.sendFile(path.join(__dirname, 'page-speaker.html'));
+});
+
+// Explicit route for Events Page
+app.get(['/events', '/page-events', '/page-events.html'], (req, res) => {
   res.sendFile(path.join(__dirname, 'page-events.html'));
 });
 

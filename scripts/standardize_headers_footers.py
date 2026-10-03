@@ -52,7 +52,7 @@ NAVBAR_TEMPLATE = """    <!-- Navbar Start -->
                         <a class="nav-link" href="page-media">Media</a>
                     </li>
                     <li class="nav-item{SPEAKER_CLASS}">
-                        <a class="nav-link" href="page-events">Speaker</a>
+                        <a class="nav-link" href="page-speaker">Speaker</a>
                     </li>
                     <li class="nav-item{BOOKS_CLASS}">
                         <a class="nav-link" href="page-books">Books</a>
@@ -233,6 +233,8 @@ PAGES_MAP = {
     "page-memberships.html": "memberships",
     "page-media.html": "media",
     "page-events.html": "speaker",
+    "page-speaker.html": "speaker",
+    "speaker.html": "speaker",
     "page-books.html": "books",
     "page-blog.html": "blog",
     "page-portfolio.html": "portfolio",
@@ -280,20 +282,7 @@ def main():
     for filename, active_key in PAGES_MAP.items():
         standardize_file(filename, active_key)
 
-    # Also create page-speaker.html and speaker.html if page-events.html exists
-    if os.path.exists("page-events.html"):
-        with open("page-events.html", "r", encoding="utf-8") as f:
-            events_html = f.read()
-        
-        # Write page-speaker.html
-        with open("page-speaker.html", "w", encoding="utf-8") as f:
-            f.write(events_html)
-        print("Created page-speaker.html as identical mirror of page-events.html")
-
-        # Write speaker.html
-        with open("speaker.html", "w", encoding="utf-8") as f:
-            f.write(events_html)
-        print("Created speaker.html as identical mirror of page-events.html")
+    print("\nHeader & Footer Standardization Complete across all pages.")
 
 if __name__ == "__main__":
     main()

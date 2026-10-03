@@ -1366,7 +1366,7 @@
   },
   {
     "id": "media-apnews-marketersmedia-tech-excellence-2026",
-    "title": "Harsh Verma on AI Agents ‘The Clean Attack’ Challenge Signals a Shift in Cybersecurity Strategy",
+    "title": "Harsh Verma on AI Agents \u2018The Clean Attack\u2019 Challenge Signals a Shift in Cybersecurity Strategy",
     "outlet": "AP News / MarketersMEDIA",
     "type": "press",
     "type_label": "National Press Wire",
@@ -1393,5 +1393,47 @@
       }
     ],
     "quote": "Recognized across AP News and MarketersMEDIA for breakthrough contributions to AI engineering, human-AI collaboration, and enterprise cybersecurity innovation at Palo Alto Networks."
+  },
+  {
+    "id": "media-marketersmedia-bcs-fellowship-rsa",
+    "title": "Principal Software Engineer Harsh Verma Awarded BCS Fellowship and Publishes RSA Conference Analysis on Why Identity Alone Can No Longer Secure AI Systems",
+    "outlet": "MarketersMEDIA Wire",
+    "type": "press",
+    "type_label": "Global Press Wire",
+    "year": "2026",
+    "date_display": "October 2026",
+    "badge_theme": "cyan",
+    "icon_svg": "marketersmedia_bcs_rsa_badge.svg",
+    "highlight": "BCS Fellowship & RSA Conference",
+    "summary": "Global press release on MarketersMEDIA detailing Harsh Verma's election as a Fellow of the British Computer Society (FBCS) and his dual RSA Conference technical analyses proving why traditional identity perimeters fail against autonomous agentic divergence and trusted-agent misuse.",
+    "topics": [
+      "MarketersMEDIA Wire",
+      "BCS Fellowship",
+      "RSA Conference",
+      "Agentic Security",
+      "Identity & Access Management",
+      "Palo Alto Networks",
+      "Continuous Behavioral Defense"
+    ],
+    "stats": "Global Syndicated Wire",
+    "primary_url": "https://news.marketersmedia.com/principal-software-engineer-harsh-verma-awarded-bcs-fellowship-and-publishes-rsa-conference-analysis-on-why-identity-alone-can-no-longer-secure-ai-systems/89205125",
+    "links": [
+      {
+        "label": "Read on MarketersMEDIA",
+        "url": "https://news.marketersmedia.com/principal-software-engineer-harsh-verma-awarded-bcs-fellowship-and-publishes-rsa-conference-analysis-on-why-identity-alone-can-no-longer-secure-ai-systems/89205125",
+        "icon": "mdi-newspaper"
+      },
+      {
+        "label": "RSA Analysis: Death of Authentication",
+        "url": "https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems",
+        "icon": "mdi-shield-lock-outline"
+      },
+      {
+        "label": "RSA Analysis: Agents & Rules",
+        "url": "https://www.rsaconference.com/Library/blog/agents-dont-break-rules-they-redefine-them",
+        "icon": "mdi-robot"
+      }
+    ],
+    "quote": "Traditional authentication models designed for human users cannot govern autonomous AI agents; continuous behavioral defense must replace static identity perimeters."
   }
 ]

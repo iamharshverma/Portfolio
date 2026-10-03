@@ -797,6 +797,69 @@ media_items = [
             {"label": "Author & Profile Bio", "url": "https://influencermagazine.uk/harsh-verma/", "icon": "mdi-account"}
         ],
         "quote": "Named to the Forttuna Global 100 for championing deterministic AI systems and creating international benchmarks for autonomous resilience."
+    },
+    {
+        "id": "media-xraised-publication-programme-2026",
+        "title": "xraised: Principal AI Engineer Harsh Verma Expands Peer-Reviewed Publication Programme Across Leading AI and Research Journals in 2026",
+        "outlet": "xraised / Over 100 Journals (AP News, NBC, FOX, CBS)",
+        "type": "press",
+        "type_label": "Global Syndicate",
+        "year": "2026",
+        "date_display": "September 2026",
+        "badge_theme": "purple",
+        "icon_svg": "xraised_over_100_journals.png",
+        "highlight": "Over 100 Journals",
+        "summary": "Recognized across over 100 journals (AP News, NBC, FOX, CBS) for pioneering AI-native security architectures, autonomous multi-agent defense, and expanding peer-reviewed research programmes in 2026.",
+        "topics": ["xraised News", "Over 100 Journals", "AP News & FOX", "AI Security Innovator", "Autonomous Defense"],
+        "stats": "Global Press Syndicate",
+        "primary_url": "https://xraised-agent-production.up.railway.app/news/principal-ai-engineer-harsh-verma-expands-peer-reviewed-publication-programme",
+        "links": [
+            {"label": "Read Full Story on xraised", "url": "https://xraised-agent-production.up.railway.app/news/principal-ai-engineer-harsh-verma-expands-peer-reviewed-publication-programme", "icon": "mdi-newspaper"},
+            {"label": "Over 100 Outlets", "url": "https://xraised-agent-production.up.railway.app/news/outlet/over-100-journals.png?v=3", "icon": "mdi-network"}
+        ],
+        "quote": "Recognized across over 100 journals (AP News, NBC, FOX, CBS) for pioneering AI-native security architectures, autonomous multi-agent defense, and expanding peer-reviewed research programmes in 2026."
+    },
+    {
+        "id": "media-apnews-marketersmedia-tech-excellence-2026",
+        "title": "Harsh Verma on AI Agents ‘The Clean Attack’ Challenge Signals a Shift in Cybersecurity Strategy",
+        "outlet": "AP News / MarketersMEDIA",
+        "type": "press",
+        "type_label": "National Press Wire",
+        "year": "2026",
+        "date_display": "June 2026",
+        "badge_theme": "red",
+        "icon_svg": "ap_news_marketersmedia_badge.svg",
+        "highlight": "Associated Press Wire",
+        "summary": "Recognized across AP News and MarketersMEDIA for breakthrough contributions to AI engineering, human-AI collaboration, and enterprise cybersecurity innovation at Palo Alto Networks.",
+        "topics": ["AP News", "MarketersMEDIA", "Tech Excellence Award", "Human-AI Collaboration", "Cybersecurity Innovation"],
+        "stats": "Associated Press Wire",
+        "primary_url": "https://apnews.com/press-release/marketersmedia/press-release-f6ee56b5c4a73732b75c8339658e29f2",
+        "links": [
+            {"label": "Read on AP News", "url": "https://apnews.com/press-release/marketersmedia/press-release-f6ee56b5c4a73732b75c8339658e29f2", "icon": "mdi-newspaper"}
+        ],
+        "quote": "Recognized across AP News and MarketersMEDIA for breakthrough contributions to AI engineering, human-AI collaboration, and enterprise cybersecurity innovation at Palo Alto Networks."
+    },
+    {
+        "id": "media-marketersmedia-bcs-fellowship-rsa",
+        "title": "Principal Software Engineer Harsh Verma Awarded BCS Fellowship and Publishes RSA Conference Analysis on Why Identity Alone Can No Longer Secure AI Systems",
+        "outlet": "MarketersMEDIA Wire",
+        "type": "press",
+        "type_label": "Global Press Wire",
+        "year": "2026",
+        "date_display": "October 2026",
+        "badge_theme": "cyan",
+        "icon_svg": "marketersmedia_bcs_rsa_badge.svg",
+        "highlight": "BCS Fellowship & RSA Conference",
+        "summary": "Global press release on MarketersMEDIA detailing Harsh Verma's election as a Fellow of the British Computer Society (FBCS) and his dual RSA Conference technical analyses proving why traditional identity perimeters fail against autonomous agentic divergence and trusted-agent misuse.",
+        "topics": ["MarketersMEDIA Wire", "BCS Fellowship", "RSA Conference", "Agentic Security", "Identity & Access Management", "Palo Alto Networks", "Continuous Behavioral Defense"],
+        "stats": "Global Syndicated Wire",
+        "primary_url": "https://news.marketersmedia.com/principal-software-engineer-harsh-verma-awarded-bcs-fellowship-and-publishes-rsa-conference-analysis-on-why-identity-alone-can-no-longer-secure-ai-systems/89205125",
+        "links": [
+            {"label": "Read on MarketersMEDIA", "url": "https://news.marketersmedia.com/principal-software-engineer-harsh-verma-awarded-bcs-fellowship-and-publishes-rsa-conference-analysis-on-why-identity-alone-can-no-longer-secure-ai-systems/89205125", "icon": "mdi-newspaper"},
+            {"label": "RSA Analysis: Death of Authentication", "url": "https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems", "icon": "mdi-shield-lock-outline"},
+            {"label": "RSA Analysis: Agents & Rules", "url": "https://www.rsaconference.com/Library/blog/agents-dont-break-rules-they-redefine-them", "icon": "mdi-robot"}
+        ],
+        "quote": "Traditional authentication models designed for human users cannot govern autonomous AI agents; continuous behavioral defense must replace static identity perimeters."
     }
 ]
 

@@ -101,15 +101,15 @@
 
         <!-- Newsletter Hero Thumbnail Banner -->
         <div class="hv-newsletter-thumbnail-wrap">
-          <img src="images/blog/thumbnails/forbes-intelligence-dollar.jpg" 
-               alt="Harsh Verma - AI Systems &amp; Architecture Dispatch" 
+          <img src="/images/blog/thumbnails/agentic_dispatch_banner.svg" 
+               alt="Harsh Verma - The Agentic Systems &amp; AI Dispatch" 
                class="hv-newsletter-thumbnail-img" 
                loading="eager"
-               onerror="this.onerror=null; this.src='images/blog/thumbnails/rsac-death-of-authentication.jpg';" />
+               onerror="this.onerror=null; this.src='images/blog/thumbnails/agentic_dispatch_banner.svg';" />
           <div class="hv-newsletter-thumbnail-overlay"></div>
           <div class="hv-newsletter-thumbnail-content">
             <span class="hv-newsletter-thumbnail-badge">
-              <i class="mdi mdi-newspaper-variant-outline mr-1"></i> Executive Tech Dispatch
+              <i class="mdi mdi-newspaper mr-1"></i> Executive Tech Dispatch
             </span>
             <span class="hv-newsletter-thumbnail-meta">
               Harsh Verma &bull; Author &amp; Advisor
@@ -122,7 +122,10 @@
           <div id="hvNewsletterFormPane">
             <div class="hv-newsletter-header-row">
               <div class="hv-newsletter-icon-wrap">
-                <i class="mdi mdi-email-seal-outline"></i>
+                <img src="/images/blog/thumbnails/agentic_dispatch_icon.svg" 
+                     alt="The Agentic Systems &amp; AI Dispatch Thumbnail" 
+                     class="hv-newsletter-header-thumb" 
+                     onerror="this.onerror=null; this.src='images/blog/thumbnails/agentic_dispatch_icon.svg';" />
               </div>
               <div>
                 <span class="hv-newsletter-meta-label">
@@ -192,7 +195,7 @@
 
               <!-- Submit Button -->
               <button type="submit" class="hv-newsletter-submit-btn" id="hvNewsletterSubmitBtn">
-                <i class="mdi mdi-send-check-outline mr-2"></i> Subscribe to Dispatch
+                <i class="mdi mdi-send mr-2"></i> Subscribe to Dispatch
               </button>
 
               <!-- Footer with Trust Badge & Dismiss -->

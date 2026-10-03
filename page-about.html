@@ -259,28 +259,37 @@
             background: #ffffff;
             border-radius: 20px;
             border: 1px solid #e2e8f0;
-            box-shadow: 0 6px 30px rgba(15, 23, 42, 0.05);
+            box-shadow: 0 8px 32px rgba(15, 23, 42, 0.05);
             transition: all 0.3s ease;
         }
         .career-timeline-svg-wrapper {
-            background: radial-gradient(circle at 50% 50%, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 0.7) 100%);
+            background: radial-gradient(circle at 50% 50%, rgba(248, 250, 252, 0.98) 0%, rgba(241, 245, 249, 0.85) 100%);
             border: 1px solid #e2e8f0;
             border-radius: 16px;
-            padding: 22px 14px;
+            padding: 24px 16px;
             position: relative;
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.02);
         }
         .timeline-svg-node {
             cursor: pointer;
             transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease;
         }
         .timeline-svg-node:hover {
-            filter: drop-shadow(0 6px 14px rgba(37, 99, 235, 0.35));
+            filter: drop-shadow(0 6px 16px rgba(37, 99, 235, 0.4));
             transform: translateY(-2px);
         }
         .timeline-svg-node.active-node circle.main-node-circle {
             stroke: #f59e0b !important;
             stroke-width: 3.5px !important;
-            filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.6));
+            filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.7));
+        }
+        .timeline-svg-node.active-node .node-halo-ring {
+            opacity: 0.8 !important;
+            animation: haloPulse 2s ease-in-out infinite;
+        }
+        @keyframes haloPulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 0.4; }
         }
         .timeline-node-tab-btn {
             background: #f8fafc;
@@ -305,21 +314,22 @@
             background: #1e293b;
             color: #ffffff;
             border-color: #1e293b;
-            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.18);
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.2);
         }
         .milestone-spotlight-box {
             background: #f8fafc;
             border: 1px solid #e2e8f0;
             border-radius: 16px;
-            padding: 28px;
+            padding: 30px;
             transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
         }
         .milestone-badge-pill {
-            font-size: 11px;
+            font-size: 11.5px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.6px;
-            padding: 4px 12px;
+            padding: 5px 14px;
             border-radius: 20px;
             display: inline-flex;
             align-items: center;
@@ -336,6 +346,14 @@
             align-items: center;
             margin-right: 6px;
             margin-bottom: 6px;
+            transition: all 0.2s ease;
+        }
+        .milestone-metric-box {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
         }
         @keyframes pulseTrack {
             0% { stroke-dashoffset: 0; }
@@ -546,75 +564,262 @@
         }
 
         /* Dark mode overrides */
+        html.dark-mode .about-page-environment,
         body.dark-mode .about-page-environment {
-            background-color: #080d1a;
+            background-color: #070b14 !important;
             background-image: 
-                radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.1) 0%, transparent 40%),
-                radial-gradient(circle at 90% 40%, rgba(2, 132, 199, 0.08) 0%, transparent 45%),
-                radial-gradient(circle at 50% 90%, rgba(59, 130, 246, 0.06) 0%, transparent 50%);
+                radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.12) 0%, transparent 45%),
+                radial-gradient(circle at 90% 35%, rgba(2, 132, 199, 0.1) 0%, transparent 45%),
+                radial-gradient(circle at 50% 90%, rgba(99, 102, 241, 0.08) 0%, transparent 50%) !important;
+            color: #f1f5f9;
         }
+
+        html.dark-mode .text-dark,
+        body.dark-mode .text-dark {
+            color: #f8fafc !important;
+        }
+
+        html.dark-mode .text-muted,
+        body.dark-mode .text-muted {
+            color: #94a3b8 !important;
+        }
+
+        html.dark-mode .bg-white,
+        body.dark-mode .bg-white,
+        html.dark-mode .executive-bio-box,
         body.dark-mode .executive-bio-box,
-        body.dark-mode .award-highlight-card,
-        body.dark-mode .profile-hub-box {
-            background: #111827;
-            border-color: #1f2937;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        html.dark-mode .profile-hub-box,
+        body.dark-mode .profile-hub-box,
+        html.dark-mode .executive-section-card,
+        body.dark-mode .executive-section-card {
+            background-color: #0f172a !important;
+            border-color: #1e293b !important;
+            box-shadow: 0 10px 32px rgba(0, 0, 0, 0.45) !important;
+            color: #f8fafc !important;
         }
+
+        html.dark-mode .executive-bio-p,
         body.dark-mode .executive-bio-p {
-            color: #cbd5e1;
-        }
-        body.dark-mode .pillar-card,
-        body.dark-mode .profile-hub-card {
-            background: #1a2234;
-            border-color: #243048;
-        }
-        body.dark-mode .profile-card-icon-wrap {
-            background: rgba(15, 23, 42, 0.8);
-            border-color: rgba(255, 255, 255, 0.12);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-        }
-        body.dark-mode .pillar-card:hover,
-        body.dark-mode .profile-hub-card:hover {
-            background: #1f293d;
-            border-color: #3b82f6;
-        }
-        body.dark-mode .profile-card-title {
-            color: #f3f4f6;
-        }
-        body.dark-mode .profile-card-desc {
-            color: #94a3b8;
-        }
-        body.dark-mode .profile-search-input {
-            background: #1f2937;
-            border-color: #374151;
-            color: #f3f4f6;
-        }
-        body.dark-mode .profile-search-input:focus {
-            background: #111827;
-            border-color: #3b82f6;
-        }
-        body.dark-mode .filter-btn-pill {
-            background: #1f2937;
-            border-color: #374151;
-            color: #cbd5e1;
-        }
-        body.dark-mode .filter-btn-pill:hover {
-            background: #374151;
-            color: #ffffff;
-        }
-        body.dark-mode .filter-btn-pill.active {
-            background: #2563eb;
-            color: #ffffff;
-            border-color: #2563eb;
-        }
-        body.dark-mode .btn-hub-outline {
-            background: #1f2937;
             color: #cbd5e1 !important;
-            border-color: #374151;
         }
-        body.dark-mode .btn-hub-outline:hover {
-            background: #374151;
+
+        html.dark-mode .award-highlight-card,
+        body.dark-mode .award-highlight-card {
+            background: #141e33 !important;
+            border-color: #223252 !important;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35) !important;
+            color: #f8fafc !important;
+        }
+
+        html.dark-mode .award-highlight-card:hover,
+        body.dark-mode .award-highlight-card:hover {
+            background: #1a2742 !important;
+            border-color: #3b82f6 !important;
+        }
+
+        html.dark-mode .pillar-card,
+        body.dark-mode .pillar-card {
+            background: #141e33 !important;
+            border-color: #223252 !important;
+            color: #f8fafc !important;
+        }
+
+        html.dark-mode .pillar-card:hover,
+        body.dark-mode .pillar-card:hover {
+            background: #1a2742 !important;
+            border-color: #38bdf8 !important;
+        }
+
+        /* Career Trajectory & Horizontal SVG Infographic in Dark Mode */
+        html.dark-mode .career-infographic-card,
+        body.dark-mode .career-infographic-card {
+            background: linear-gradient(135deg, #090f1d 0%, #0f172a 60%, #131d33 100%) !important;
+            border-color: rgba(99, 102, 241, 0.3) !important;
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
+            color: #f8fafc !important;
+        }
+
+        html.dark-mode .career-timeline-svg-wrapper,
+        body.dark-mode .career-timeline-svg-wrapper {
+            background: radial-gradient(circle at 50% 50%, rgba(11, 17, 32, 0.98) 0%, rgba(7, 11, 20, 0.95) 100%) !important;
+            border-color: #1e293b !important;
+            box-shadow: inset 0 2px 12px rgba(0, 0, 0, 0.6) !important;
+        }
+
+        html.dark-mode .career-svg-text-title,
+        body.dark-mode .career-svg-text-title {
+            fill: #f8fafc !important;
+        }
+
+        html.dark-mode .career-svg-text-sub,
+        body.dark-mode .career-svg-text-sub {
+            fill: #94a3b8 !important;
+        }
+
+        html.dark-mode .career-svg-track-base,
+        body.dark-mode .career-svg-track-base {
+            stroke: #1e293b !important;
+        }
+
+        html.dark-mode .career-svg-node-bg,
+        body.dark-mode .career-svg-node-bg {
+            fill: #0f172a !important;
+            stroke: #334155 !important;
+        }
+
+        html.dark-mode .timeline-node-tab-btn,
+        body.dark-mode .timeline-node-tab-btn {
+            background: #131d33 !important;
+            border-color: #223252 !important;
+            color: #94a3b8 !important;
+        }
+
+        html.dark-mode .timeline-node-tab-btn:hover,
+        body.dark-mode .timeline-node-tab-btn:hover {
+            background: #1e293b !important;
+            border-color: #3b82f6 !important;
+            color: #f8fafc !important;
+        }
+
+        html.dark-mode .timeline-node-tab-btn.active,
+        body.dark-mode .timeline-node-tab-btn.active {
+            background: #2563eb !important;
+            border-color: #3b82f6 !important;
             color: #ffffff !important;
+            box-shadow: 0 4px 16px rgba(37, 99, 235, 0.45) !important;
+        }
+
+        html.dark-mode .milestone-spotlight-box,
+        body.dark-mode .milestone-spotlight-box {
+            background: #111a2e !important;
+            border-color: #1e293b !important;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4) !important;
+            color: #f8fafc !important;
+        }
+
+        html.dark-mode .milestone-spotlight-box h4,
+        body.dark-mode .milestone-spotlight-box h4 {
+            color: #f8fafc !important;
+        }
+
+        html.dark-mode .milestone-spotlight-box p,
+        body.dark-mode .milestone-spotlight-box p {
+            color: #cbd5e1 !important;
+        }
+
+        html.dark-mode .milestone-metric-box,
+        body.dark-mode .milestone-metric-box {
+            background: #16223b !important;
+            border-color: #24355a !important;
+            color: #f8fafc !important;
+        }
+
+        html.dark-mode .milestone-metric-box .h2,
+        body.dark-mode .milestone-metric-box .h2 {
+            color: #f8fafc !important;
+        }
+
+        html.dark-mode .milestone-tech-chip,
+        body.dark-mode .milestone-tech-chip {
+            background: #17233c !important;
+            border-color: #283a60 !important;
+            color: #e2e8f0 !important;
+        }
+
+        /* Profile Hub Dark Mode */
+        html.dark-mode .profile-hub-card,
+        body.dark-mode .profile-hub-card {
+            background: #141e33 !important;
+            border-color: #223252 !important;
+        }
+
+        html.dark-mode .profile-card-icon-wrap,
+        body.dark-mode .profile-card-icon-wrap {
+            background: rgba(15, 23, 42, 0.8) !important;
+            border-color: rgba(255, 255, 255, 0.12) !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4) !important;
+        }
+
+        html.dark-mode .profile-hub-card:hover,
+        body.dark-mode .profile-hub-card:hover {
+            background: #1a2742 !important;
+            border-color: #3b82f6 !important;
+        }
+
+        html.dark-mode .profile-card-title,
+        body.dark-mode .profile-card-title {
+            color: #f3f4f6 !important;
+        }
+
+        html.dark-mode .profile-card-desc,
+        body.dark-mode .profile-card-desc {
+            color: #94a3b8 !important;
+        }
+
+        html.dark-mode .profile-search-input,
+        body.dark-mode .profile-search-input {
+            background: #141e33 !important;
+            border-color: #223252 !important;
+            color: #f3f4f6 !important;
+        }
+
+        html.dark-mode .profile-search-input:focus,
+        body.dark-mode .profile-search-input:focus {
+            background: #0f172a !important;
+            border-color: #3b82f6 !important;
+        }
+
+        html.dark-mode .filter-btn-pill,
+        body.dark-mode .filter-btn-pill {
+            background: #141e33 !important;
+            border-color: #223252 !important;
+            color: #cbd5e1 !important;
+        }
+
+        html.dark-mode .filter-btn-pill:hover,
+        body.dark-mode .filter-btn-pill:hover {
+            background: #1e293b !important;
+            border-color: #3b82f6 !important;
+            color: #ffffff !important;
+        }
+
+        html.dark-mode .filter-btn-pill.active,
+        body.dark-mode .filter-btn-pill.active {
+            background: #2563eb !important;
+            color: #ffffff !important;
+            border-color: #2563eb !important;
+        }
+
+        html.dark-mode .btn-hub-outline,
+        body.dark-mode .btn-hub-outline {
+            background: #141e33 !important;
+            color: #cbd5e1 !important;
+            border-color: #223252 !important;
+        }
+
+        html.dark-mode .btn-hub-outline:hover,
+        body.dark-mode .btn-hub-outline:hover {
+            background: #1e293b !important;
+            border-color: #3b82f6 !important;
+            color: #ffffff !important;
+        }
+
+        html.dark-mode .border,
+        body.dark-mode .border,
+        html.dark-mode .border-bottom,
+        body.dark-mode .border-bottom,
+        html.dark-mode .border-left,
+        body.dark-mode .border-left,
+        html.dark-mode .border-top,
+        body.dark-mode .border-top {
+            border-color: #1e293b !important;
+        }
+
+        html.dark-mode .badge-light,
+        body.dark-mode .badge-light {
+            background: #1e293b !important;
+            border-color: #334155 !important;
+            color: #cbd5e1 !important;
         }
 
     </style>
@@ -673,7 +878,7 @@
                         <a class="nav-link" href="page-media">Media</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page-events">Speaker</a>
+                        <a class="nav-link" href="page-speaker">Speaker</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="page-books">Books</a>
@@ -866,25 +1071,25 @@
             <!-- Hero Header End -->
 
             <!-- Executive Biography Box -->
-            <div class="row">
+            <div class="row mb-5" id="executive-bio-row">
                 <div class="col-12">
-                    <div class="executive-bio-box">
+                    <div class="executive-bio-box p-4 p-md-5">
                         <div class="d-flex align-items-center mb-4">
-                            <span class="badge badge-pill text-white px-3 py-1 font-weight-bold mr-2" style="background: linear-gradient(135deg, #2563eb 0%, #0284c7 100%);">
+                            <span class="badge badge-pill text-white px-3 py-1 font-weight-bold mr-2" style="background: linear-gradient(135deg, #2563eb 0%, #0284c7 100%); letter-spacing: 0.3px;">
                                 <i class="mdi mdi-account-card-details-outline mr-1"></i> Executive Biography
                             </span>
-                            <h2 class="font-weight-bold text-dark mb-0 ml-2" style="font-size: 1.6rem;">About Harsh Verma</h2>
+                            <h2 class="font-weight-bold text-dark mb-0 ml-2" style="font-size: 1.65rem; letter-spacing: -0.3px;">About Harsh Verma</h2>
                         </div>
 
                         <div class="executive-bio-content">
-                            <p class="executive-bio-p">
-                                Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, focused on advancing autonomous agent systems and intelligent AI strategies. Harsh is also a Forbes Technology Council member and, as a speaker, mentor, and advisor, he brings both technical depth and strategic guidance to leaders adopting next-generation AI capabilities.  He drives responsible, scalable AI adoption. His work influences how enterprises innovate, secure, and operationalize the next generation of intelligent systems. Harsh specializes in offering scalable AI solutions, mentoring aspiring entrepreneurs, delivering impactful conference talks, and advising startups on their AI strategies. Whether it's navigating AI implementation or fostering innovation with AI, Harsh is committed to delivering meaningful results in the tech industry.
+                            <p class="executive-bio-p" style="font-size: 16px; line-height: 1.8; margin-bottom: 22px;">
+                                Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, focused on advancing autonomous agent systems, multi-agent reasoning topologies, and intelligent AI strategies. Harsh is also an official Forbes Technology Council member and, as an international keynote speaker, mentor, and advisor, he brings technical depth and strategic guidance to enterprise leaders adopting next-generation AI capabilities. He drives responsible, scalable AI adoption, shaping how enterprises innovate, secure, and operationalize the next generation of intelligent systems. Harsh specializes in offering scalable AI solutions, mentoring aspiring entrepreneurs, delivering impactful conference talks, and advising startups on their AI strategies.
                             </p>
-                            <p class="executive-bio-p">
-                                His contributions have been recognized through globally respected awards and institutions, reinforcing both impact and influence. He is a recipient of the Global Recognition Award (2026) for measurable advances in enterprise AI and cybersecurity, and also the Globee Awards, which recognize excellence &amp; innovation across global business leadership. He acts as a Senior Member of IEEE, which reflects peer-reviewed recognition of his sustained technical and professional contributions to the field, an honor reserved for individuals demonstrating significant performance and impact.
+                            <p class="executive-bio-p" style="font-size: 16px; line-height: 1.8; margin-bottom: 22px;">
+                                His contributions have been recognized through globally respected awards and institutions, reinforcing both impact and influence. He is an elected <strong>Fellow of the British Computer Society (FBCS)</strong>, the UK Royal Chartered institute for IT. He is a recipient of the <strong>Global Recognition Award (2026)</strong> for measurable advances in enterprise AI architectures and autonomous cybersecurity defense, named in the <strong>Most Admire Global Indians 2026</strong>, and honored with the <strong>Globee Business Awards</strong> for innovation in global business leadership. He serves as a <strong>Senior Member of IEEE</strong>, reflecting peer-reviewed recognition of sustained technical excellence and lasting contributions to computer science and AI.
                             </p>
-                            <p class="executive-bio-p">
-                                Beyond the enterprise, Harsh plays a visible role in shaping the broader Data &amp; AI ecosystem. Through advising and mentorship at leading accelerators, UC Berkeley Skydeck, judging global AI innovation forums, and publishing thought leadership in Forbes and Hackernoon as a Technical Council Member, he contributes to defining how AI leadership itself is evolving. His work influences not only the organizations he serves but also the next generation of AI systems, leaders, and standards.
+                            <p class="executive-bio-p" style="font-size: 16px; line-height: 1.8; margin-bottom: 0;">
+                                Beyond the enterprise, Harsh plays a visible role shaping the global AI &amp; deep-tech ecosystem. Through advising and mentorship at <strong>UC Berkeley SkyDeck</strong>, judging global AI innovation forums, and publishing thought leadership in Forbes and HackerNoon, he actively contributes to defining how AI leadership evolves. His research and architectural frameworks influence not only the organizations he serves, but also the broader community of AI practitioners, autonomous agent systems, and enterprise security standards worldwide.
                             </p>
                         </div>
                     </div>
@@ -904,130 +1109,140 @@
                                     </span>
                                     <span class="text-muted small font-weight-bold text-uppercase" style="letter-spacing: 0.8px;">Infographic Journey</span>
                                 </div>
-                                <h2 class="font-weight-bold text-dark mb-1" style="font-size: 1.7rem; letter-spacing: -0.3px;">
+                                <h2 class="font-weight-bold text-dark mb-1" style="font-size: 1.75rem; letter-spacing: -0.3px;">
                                     From ISRO to Palo Alto Networks: An Engineering Odyssey
                                 </h2>
-                                <p class="text-muted mb-0" style="font-size: 14.5px; max-width: 820px; line-height: 1.6;">
+                                <p class="text-muted mb-0" style="font-size: 14.5px; max-width: 840px; line-height: 1.6;">
                                     A decade-long progression from satellite geospatial computing at India's space agency to architecting autonomous agentic AI defense platforms protecting global enterprise perimeters.
                                 </p>
                             </div>
                             <div class="mt-3 mt-md-0 d-flex align-items-center">
                                 <span class="badge badge-light border text-muted px-3 py-2 font-weight-medium" style="font-size: 12px; border-radius: 8px;">
-                                    <i class="mdi mdi-cursor-default-click mr-1 text-primary"></i> Interactive: Click nodes to explore milestones
+                                    <i class="mdi mdi-cursor-default-click mr-1 text-primary"></i> Interactive: Click nodes or years to explore milestones
                                 </span>
                             </div>
                         </div>
 
                         <!-- SVG Horizontal Infographic Canvas Container -->
                         <div class="career-timeline-svg-wrapper mb-4" style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
-                            <svg viewBox="0 0 1160 210" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="min-width: 960px; display: block;" xmlns="http://www.w3.org/2000/svg">
+                            <svg viewBox="0 0 1200 240" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="min-width: 980px; display: block;" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
-                                    <linearGradient id="spineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <linearGradient id="careerSpineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
                                         <stop offset="0%" stop-color="#1e3a8a"/>
-                                        <stop offset="20%" stop-color="#0284c7"/>
-                                        <stop offset="42%" stop-color="#d97706"/>
-                                        <stop offset="65%" stop-color="#059669"/>
-                                        <stop offset="84%" stop-color="#7c3aed"/>
+                                        <stop offset="18%" stop-color="#0284c7"/>
+                                        <stop offset="38%" stop-color="#d97706"/>
+                                        <stop offset="60%" stop-color="#059669"/>
+                                        <stop offset="80%" stop-color="#7c3aed"/>
                                         <stop offset="100%" stop-color="#2563eb"/>
                                     </linearGradient>
-                                    <linearGradient id="glowSpine" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <linearGradient id="glowPulseBeam" x1="0%" y1="0%" x2="100%" y2="0%">
                                         <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
-                                        <stop offset="50%" stop-color="#60a5fa" stop-opacity="0.7"/>
-                                        <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.8"/>
+                                        <stop offset="50%" stop-color="#818cf8" stop-opacity="0.8"/>
+                                        <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.9"/>
                                     </linearGradient>
+                                    <filter id="nodeDropShadow" x="-30%" y="-30%" width="160%" height="160%">
+                                        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.25"/>
+                                    </filter>
                                 </defs>
 
                                 <!-- Base Track Line -->
-                                <line x1="70" y1="105" x2="1090" y2="105" stroke="#e2e8f0" stroke-width="8" stroke-linecap="round"/>
+                                <line x1="80" y1="110" x2="1120" y2="110" stroke="#e2e8f0" stroke-width="8" stroke-linecap="round" class="career-svg-track-base"/>
                                 <!-- Flowing Colored Gradient Spine -->
-                                <line x1="70" y1="105" x2="1090" y2="105" stroke="url(#spineGrad)" stroke-width="4" stroke-linecap="round"/>
+                                <line x1="80" y1="110" x2="1120" y2="110" stroke="url(#careerSpineGrad)" stroke-width="4.5" stroke-linecap="round"/>
                                 <!-- Kinetic Energy Pulse Line -->
-                                <line x1="70" y1="105" x2="1090" y2="105" stroke="url(#glowSpine)" stroke-width="2.5" stroke-dasharray="10 26" class="pulse-track-line" stroke-linecap="round"/>
+                                <line x1="80" y1="110" x2="1120" y2="110" stroke="url(#glowPulseBeam)" stroke-width="2.5" stroke-dasharray="12 28" class="pulse-track-line" stroke-linecap="round"/>
 
                                 <!-- MILESTONE 1: ISRO (2015) -->
                                 <g class="timeline-svg-node" id="svgNode-0" onclick="selectCareerMilestone(0)">
-                                    <rect x="52" y="24" width="76" height="26" rx="13" fill="#1e3a8a"/>
-                                    <text x="90" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">2015</text>
-                                    <line x1="90" y1="50" x2="90" y2="82" stroke="#1e3a8a" stroke-width="2" stroke-dasharray="2 3"/>
-                                    <circle cx="90" cy="105" r="23" fill="#ffffff" stroke="#1e3a8a" stroke-width="2.5" class="main-node-circle"/>
-                                    <circle cx="90" cy="105" r="16" fill="#1e3a8a"/>
-                                    <path d="M84,101 L96,101 M90,95 L90,107 M86,97 L94,105 M94,97 L86,105" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
-                                    <text x="90" y="146" fill="#0f172a" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" text-anchor="middle">ISRO (IIRS)</text>
-                                    <text x="90" y="164" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">Spatial Computing</text>
-                                    <text x="90" y="180" fill="#0284c7" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">R&amp;D INTERN</text>
+                                    <rect x="62" y="24" width="76" height="26" rx="13" fill="#1e3a8a"/>
+                                    <text x="100" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">2015</text>
+                                    <line x1="100" y1="50" x2="100" y2="86" stroke="#1e3a8a" stroke-width="2" stroke-dasharray="2 3" class="career-svg-dash-connector"/>
+                                    <circle cx="100" cy="110" r="23" fill="#ffffff" stroke="#1e3a8a" stroke-width="2.5" class="career-svg-node-bg main-node-circle"/>
+                                    <circle cx="100" cy="110" r="16" fill="#1e3a8a"/>
+                                    <!-- Satellite Vector Icon -->
+                                    <path d="M94,106 L106,106 M100,100 L100,112 M96,102 L104,118 M104,102 L96,118" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+                                    <text x="100" y="154" class="career-svg-text-title" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="700" text-anchor="middle">ISRO (IIRS)</text>
+                                    <text x="100" y="172" class="career-svg-text-sub" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">Spatial Computing &amp; GIS</text>
+                                    <text x="100" y="190" fill="#0284c7" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">R&amp;D INTERN</text>
                                 </g>
 
                                 <!-- MILESTONE 2: HIKE MESSENGER (2015-2018) -->
                                 <g class="timeline-svg-node" id="svgNode-1" onclick="selectCareerMilestone(1)">
-                                    <rect x="246" y="24" width="88" height="26" rx="13" fill="#0891b2"/>
-                                    <text x="290" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">2015 – 2018</text>
-                                    <line x1="290" y1="50" x2="290" y2="82" stroke="#0891b2" stroke-width="2" stroke-dasharray="2 3"/>
-                                    <circle cx="290" cy="105" r="23" fill="#ffffff" stroke="#0891b2" stroke-width="2.5" class="main-node-circle"/>
-                                    <circle cx="290" cy="105" r="16" fill="#0891b2"/>
-                                    <rect x="284" y="99" width="12" height="4" rx="1" fill="#ffffff"/>
-                                    <rect x="284" y="105" width="12" height="4" rx="1" fill="#ffffff"/>
-                                    <circle cx="294" cy="101" r="0.8" fill="#0891b2"/>
-                                    <circle cx="294" cy="107" r="0.8" fill="#0891b2"/>
-                                    <text x="290" y="146" fill="#0f172a" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Hike Messenger</text>
-                                    <text x="290" y="164" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">Distributed Systems</text>
-                                    <text x="290" y="180" fill="#0891b2" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">100M+ USERS</text>
+                                    <rect x="256" y="24" width="88" height="26" rx="13" fill="#0891b2"/>
+                                    <text x="300" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">2015 – 2018</text>
+                                    <line x1="300" y1="50" x2="300" y2="86" stroke="#0891b2" stroke-width="2" stroke-dasharray="2 3" class="career-svg-dash-connector"/>
+                                    <circle cx="300" cy="110" r="23" fill="#ffffff" stroke="#0891b2" stroke-width="2.5" class="career-svg-node-bg main-node-circle"/>
+                                    <circle cx="300" cy="110" r="16" fill="#0891b2"/>
+                                    <!-- Distributed Chat Vector Icon -->
+                                    <rect x="294" y="104" width="12" height="9" rx="2" fill="#ffffff"/>
+                                    <path d="M297,113 L295,116 L300,113 Z" fill="#ffffff"/>
+                                    <circle cx="298" cy="108.5" r="1" fill="#0891b2"/>
+                                    <circle cx="302" cy="108.5" r="1" fill="#0891b2"/>
+                                    <text x="300" y="154" class="career-svg-text-title" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="700" text-anchor="middle">Hike Messenger</text>
+                                    <text x="300" y="172" class="career-svg-text-sub" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">Distributed Systems</text>
+                                    <text x="300" y="190" fill="#0891b2" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">100M+ USERS</text>
                                 </g>
 
                                 <!-- MILESTONE 3: RELIANCE JIO / UT-DESIGN (2018-2019) -->
                                 <g class="timeline-svg-node" id="svgNode-2" onclick="selectCareerMilestone(2)">
-                                    <rect x="446" y="24" width="88" height="26" rx="13" fill="#d97706"/>
-                                    <text x="490" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">2018 – 2019</text>
-                                    <line x1="490" y1="50" x2="490" y2="82" stroke="#d97706" stroke-width="2" stroke-dasharray="2 3"/>
-                                    <circle cx="490" cy="105" r="23" fill="#ffffff" stroke="#d97706" stroke-width="2.5" class="main-node-circle"/>
-                                    <circle cx="490" cy="105" r="16" fill="#d97706"/>
-                                    <path d="M485,106 C484,103 487,100 490,100 C492,98 496,99 497,102 C499,102 500,104 499,106 Z" fill="#ffffff"/>
-                                    <line x1="486" y1="109" x2="494" y2="109" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
-                                    <text x="490" y="146" fill="#0f172a" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Reliance Jio &bull; UT</text>
-                                    <text x="490" y="164" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">Cloud AI &amp; DCAE</text>
-                                    <text x="490" y="180" fill="#d97706" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">FACULTY ADVISOR</text>
+                                    <rect x="456" y="24" width="88" height="26" rx="13" fill="#d97706"/>
+                                    <text x="500" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">2018 – 2019</text>
+                                    <line x1="500" y1="50" x2="500" y2="86" stroke="#d97706" stroke-width="2" stroke-dasharray="2 3" class="career-svg-dash-connector"/>
+                                    <circle cx="500" cy="110" r="23" fill="#ffffff" stroke="#d97706" stroke-width="2.5" class="career-svg-node-bg main-node-circle"/>
+                                    <circle cx="500" cy="110" r="16" fill="#d97706"/>
+                                    <!-- Cloud & Telemetry Vector Icon -->
+                                    <path d="M495,113 C493,110 496,106 500,106 C502,103 507,104 508,108 C511,108 512,111 510,113 Z" fill="#ffffff"/>
+                                    <circle cx="500" cy="110" r="1.5" fill="#d97706"/>
+                                    <text x="500" y="154" class="career-svg-text-title" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="700" text-anchor="middle">Reliance Jio &bull; UT</text>
+                                    <text x="500" y="172" class="career-svg-text-sub" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">Cloud AI &amp; DCAE</text>
+                                    <text x="500" y="190" fill="#d97706" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">FACULTY ADVISOR</text>
                                 </g>
 
                                 <!-- MILESTONE 4: UTD BIG DATA & PANW INTERN (2019-2020) -->
                                 <g class="timeline-svg-node" id="svgNode-3" onclick="selectCareerMilestone(3)">
-                                    <rect x="646" y="24" width="88" height="26" rx="13" fill="#059669"/>
-                                    <text x="690" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">2019 – 2020</text>
-                                    <line x1="690" y1="50" x2="690" y2="82" stroke="#059669" stroke-width="2" stroke-dasharray="2 3"/>
-                                    <circle cx="690" cy="105" r="23" fill="#ffffff" stroke="#059669" stroke-width="2.5" class="main-node-circle"/>
-                                    <circle cx="690" cy="105" r="16" fill="#059669"/>
-                                    <path d="M687,100 L693,100 L695,108 L685,108 Z" fill="#ffffff"/>
-                                    <circle cx="690" cy="98" r="1.5" fill="#ffffff"/>
-                                    <text x="690" y="146" fill="#0f172a" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" text-anchor="middle">UTD &amp; PANW Intern</text>
-                                    <text x="690" y="164" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">Big Data &amp; IoT ML</text>
-                                    <text x="690" y="180" fill="#059669" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">RESEARCH &amp; SPARK</text>
+                                    <rect x="656" y="24" width="88" height="26" rx="13" fill="#059669"/>
+                                    <text x="700" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">2019 – 2020</text>
+                                    <line x1="700" y1="50" x2="700" y2="86" stroke="#059669" stroke-width="2" stroke-dasharray="2 3" class="career-svg-dash-connector"/>
+                                    <circle cx="700" cy="110" r="23" fill="#ffffff" stroke="#059669" stroke-width="2.5" class="career-svg-node-bg main-node-circle"/>
+                                    <circle cx="700" cy="110" r="16" fill="#059669"/>
+                                    <!-- Spark / Flask Research Vector Icon -->
+                                    <path d="M697,104 L703,104 L706,114 L694,114 Z" fill="#ffffff"/>
+                                    <circle cx="700" cy="111" r="1.5" fill="#059669"/>
+                                    <text x="700" y="154" class="career-svg-text-title" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="700" text-anchor="middle">UTD &amp; PANW Intern</text>
+                                    <text x="700" y="172" class="career-svg-text-sub" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">Big Data &amp; IoT ML</text>
+                                    <text x="700" y="190" fill="#059669" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">RESEARCH &amp; SPARK</text>
                                 </g>
 
                                 <!-- MILESTONE 5: WORLDS & HYPERGIANT (2020) -->
                                 <g class="timeline-svg-node" id="svgNode-4" onclick="selectCareerMilestone(4)">
-                                    <rect x="852" y="24" width="76" height="26" rx="13" fill="#7c3aed"/>
-                                    <text x="890" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">2020</text>
-                                    <line x1="890" y1="50" x2="890" y2="82" stroke="#7c3aed" stroke-width="2" stroke-dasharray="2 3"/>
-                                    <circle cx="890" cy="105" r="23" fill="#ffffff" stroke="#7c3aed" stroke-width="2.5" class="main-node-circle"/>
-                                    <circle cx="890" cy="105" r="16" fill="#7c3aed"/>
-                                    <rect x="885" y="100" width="10" height="10" fill="none" stroke="#ffffff" stroke-width="1.6"/>
-                                    <circle cx="890" cy="105" r="1.5" fill="#ffffff"/>
-                                    <text x="890" y="146" fill="#0f172a" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Worlds &bull; Hypergiant</text>
-                                    <text x="890" y="164" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">Spatial AI &amp; Vector</text>
-                                    <text x="890" y="180" fill="#7c3aed" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">FAISS &amp; COMPUTER VISION</text>
+                                    <rect x="862" y="24" width="76" height="26" rx="13" fill="#7c3aed"/>
+                                    <text x="900" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">2020</text>
+                                    <line x1="900" y1="50" x2="900" y2="86" stroke="#7c3aed" stroke-width="2" stroke-dasharray="2 3" class="career-svg-dash-connector"/>
+                                    <circle cx="900" cy="110" r="23" fill="#ffffff" stroke="#7c3aed" stroke-width="2.5" class="career-svg-node-bg main-node-circle"/>
+                                    <circle cx="900" cy="110" r="16" fill="#7c3aed"/>
+                                    <!-- 4D Vector Cube Icon -->
+                                    <polygon points="900,103 908,107 900,111 892,107" fill="#ffffff" opacity="0.95"/>
+                                    <polygon points="892,107 900,111 900,119 892,115" fill="#c4b5fd"/>
+                                    <polygon points="908,107 900,111 900,119 908,115" fill="#a78bfa"/>
+                                    <text x="900" y="154" class="career-svg-text-title" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="700" text-anchor="middle">Worlds &bull; Hypergiant</text>
+                                    <text x="900" y="172" class="career-svg-text-sub" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">Spatial AI &amp; Vector</text>
+                                    <text x="900" y="190" fill="#7c3aed" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">FAISS &amp; COMPUTER VISION</text>
                                 </g>
 
-                                <!-- MILESTONE 6: PALO ALTO NETWORKS (2020-PRESENT) -->
+                                <!-- MILESTONE 6: PALO ALTO NETWORKS (2020-PRESENT FLAGSHIP) -->
                                 <g class="timeline-svg-node active-node" id="svgNode-5" onclick="selectCareerMilestone(5)">
-                                    <circle cx="1070" cy="105" r="32" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.3" stroke-dasharray="4 4"/>
-                                    <rect x="1018" y="24" width="104" height="26" rx="13" fill="#2563eb"/>
-                                    <text x="1070" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" text-anchor="middle">2020 – PRESENT</text>
-                                    <line x1="1070" y1="50" x2="1070" y2="80" stroke="#2563eb" stroke-width="2.5"/>
-                                    <circle cx="1070" cy="105" r="25" fill="#ffffff" stroke="#f59e0b" stroke-width="3" class="main-node-circle"/>
-                                    <circle cx="1070" cy="105" r="18" fill="url(#spineGrad)"/>
-                                    <path d="M1065,99 L1075,99 L1075,106 C1075,110 1070,113 1070,113 C1070,113 1065,110 1065,106 Z" fill="#ffffff"/>
-                                    <circle cx="1070" cy="105" r="1.5" fill="#f59e0b"/>
-                                    <text x="1070" y="146" fill="#0f172a" font-family="-apple-system, sans-serif" font-size="13.5" font-weight="800" text-anchor="middle">Palo Alto Networks</text>
-                                    <text x="1070" y="164" fill="#1e40af" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Principal AI Engineer</text>
-                                    <text x="1070" y="180" fill="#f59e0b" font-family="-apple-system, sans-serif" font-size="10" font-weight="800" text-anchor="middle">&#9733; ENTERPRISE FLAGSHIP</text>
+                                    <circle cx="1100" cy="110" r="34" fill="none" stroke="#2563eb" stroke-width="1.8" opacity="0.4" stroke-dasharray="4 4" class="node-halo-ring"/>
+                                    <rect x="1046" y="24" width="108" height="26" rx="13" fill="#2563eb"/>
+                                    <text x="1100" y="41" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" text-anchor="middle">2020 – PRESENT</text>
+                                    <line x1="1100" y1="50" x2="1100" y2="84" stroke="#2563eb" stroke-width="2.5" class="career-svg-dash-connector"/>
+                                    <circle cx="1100" cy="110" r="26" fill="#ffffff" stroke="#f59e0b" stroke-width="3.5" class="career-svg-node-bg main-node-circle"/>
+                                    <circle cx="1100" cy="110" r="19" fill="url(#careerSpineGrad)"/>
+                                    <!-- Cyber Shield & AI Star Icon -->
+                                    <path d="M1094,103 L1106,103 L1106,111 C1106,116 1100,119 1100,119 C1100,119 1094,116 1094,111 Z" fill="#ffffff"/>
+                                    <polygon points="1100,106 1101.5,109 1105,109.5 1102.5,111.5 1103.5,115 1100,113 1096.5,115 1097.5,111.5 1095,109.5 1098.5,109" fill="#f59e0b"/>
+                                    <text x="1100" y="154" class="career-svg-text-title" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle">Palo Alto Networks</text>
+                                    <text x="1100" y="172" class="career-svg-text-sub" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Principal AI Engineer</text>
+                                    <text x="1100" y="190" fill="#f59e0b" font-family="-apple-system, sans-serif" font-size="10" font-weight="800" text-anchor="middle">&#9733; ENTERPRISE FLAGSHIP</text>
                                 </g>
                             </svg>
                         </div>
