@@ -495,10 +495,152 @@ events_data = {
             "tags": ["ATAGTR", "HikeRunner", "Distributed Systems", "Load Testing"],
             "gradient": "from-slate-700 to-blue-800",
             "badge_color": "#334155",
-            "icon": "mdi-speedometer"
+            "icon": "mdi-speedometer",
+            "thumbnail": "images/events/atagtr.svg"
+        },
+        {
+            "id": "conf-skydeck-agentic-security",
+            "title": "UC Berkeley SkyDeck Keynote: The Era of Agentic Security",
+            "event_name": "UC Berkeley SkyDeck Series (Batch 21 & 22)",
+            "role": "Distinguished Keynote Speaker & Advisor",
+            "category": "Keynote Speaker",
+            "date": "2025",
+            "location": "Berkeley, CA & Global",
+            "description": "Keynote presentation at UC Berkeley SkyDeck detailing autonomous agent divergence, runtime safety guardrails, prompt provenance, and enterprise cybersecurity architectures for venture-backed AI founders.",
+            "links": [
+                {"name": "Watch Keynote (YouTube)", "url": "https://www.youtube.com/watch?v=IZvHxEtMMnw", "icon": "mdi-youtube"},
+                {"name": "Smart Slides (u8k2)", "url": "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1", "icon": "mdi-presentation-play"}
+            ],
+            "tags": ["UC Berkeley", "Agentic Security", "SkyDeck", "Enterprise AI", "Smart Slides"],
+            "gradient": "from-amber-600 to-blue-800",
+            "badge_color": "#0284c7",
+            "icon": "mdi-school",
+            "thumbnail": "images/events/skydeck.svg"
+        },
+        {
+            "id": "conf-futureagi-enterprise-agentic",
+            "title": "FutureAGI Keynote: Enterprise Agentic Security & Multi-Model Orchestration",
+            "event_name": "FutureAGI Global Keynote Summit",
+            "role": "Global Keynote Speaker",
+            "category": "Keynote Speaker",
+            "date": "2026",
+            "location": "San Francisco, CA / Online",
+            "description": "Delivered global keynote on enterprise agentic security, multi-model orchestration frameworks, deterministic evaluation harnesses, and securing autonomous agent communication channels.",
+            "links": [
+                {"name": "Watch Keynote (YouTube)", "url": "https://www.youtube.com/watch?v=bggw4JTFjgA", "icon": "mdi-youtube"},
+                {"name": "Smart Slides (r92g)", "url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1", "icon": "mdi-presentation-play"}
+            ],
+            "tags": ["FutureAGI", "Multi-Agent Systems", "Orchestration", "Zero-Trust", "Smart Slides"],
+            "gradient": "from-violet-700 to-indigo-800",
+            "badge_color": "#7c3aed",
+            "icon": "mdi-robot",
+            "thumbnail": "images/events/futureagi.svg"
+        },
+        {
+            "id": "conf-vlink-enterprise-ai",
+            "title": "Enterprise AI: Building Solutions for Security, Scale & Trust",
+            "event_name": "TechTalk with VLink (Episode 55)",
+            "role": "Distinguished Keynote Guest",
+            "category": "Keynote Speaker",
+            "date": "2026",
+            "location": "Online Broadcast",
+            "description": "Deep-dive executive presentation covering enterprise AI architectures, scaling multi-agent workloads, identity boundaries, and real-time behavioral defense across cloud perimeters.",
+            "links": [
+                {"name": "Watch Keynote (YouTube)", "url": "https://www.youtube.com/watch?v=nIgJ99Bihsw", "icon": "mdi-youtube"},
+                {"name": "Smart Slides (m74k)", "url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1", "icon": "mdi-presentation-play"}
+            ],
+            "tags": ["Enterprise AI", "VLink Keynote", "Security & Scale", "Trustworthy Systems", "Smart Slides"],
+            "gradient": "from-blue-600 to-cyan-600",
+            "badge_color": "#2563eb",
+            "icon": "mdi-video-vintage",
+            "thumbnail": "images/events/vlink.svg"
+        },
+        {
+            "id": "conf-trueml-talks-35",
+            "title": "TrueML Keynote: Big Data & ML Practices at Palo Alto Networks",
+            "event_name": "TrueML Talks #35 (TrueFoundry)",
+            "role": "Keynote Speaker & Principal AI Engineer",
+            "category": "Keynote Speaker",
+            "date": "2025",
+            "location": "Online Broadcast",
+            "description": "Production machine learning engineering patterns, distributed feature pipelines, streaming Kafka telemetry, and zero-trust validation in high-throughput enterprise security systems.",
+            "links": [
+                {"name": "Watch Keynote (YouTube)", "url": "https://www.youtube.com/watch?v=iZkx6Ewq6wU", "icon": "mdi-youtube"},
+                {"name": "Smart Slides (GxwP)", "url": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1", "icon": "mdi-presentation-play"}
+            ],
+            "tags": ["Palo Alto Networks", "TrueML", "Feature Pipelines", "Big Data ML", "Smart Slides"],
+            "gradient": "from-sky-700 to-blue-800",
+            "badge_color": "#0284c7",
+            "icon": "mdi-database",
+            "thumbnail": "images/events/trueml.svg"
+        },
+        {
+            "id": "conf-sf-techweek-masterclass",
+            "title": "SF Tech Week Masterclass: Scaling AI & Enterprise Systems",
+            "event_name": "SF Tech Week Keynote Series",
+            "role": "Masterclass Keynote Lead",
+            "category": "Masterclass Keynote",
+            "date": "2025",
+            "location": "San Francisco, CA",
+            "description": "Executive keynote during SF Tech Week on scaling AI infrastructure, mitigating agentic risk, runtime sandboxing, and driving enterprise AI adoption across Silicon Valley.",
+            "links": [
+                {"name": "Watch Keynote (YouTube)", "url": "https://www.youtube.com/watch?v=MPhFC1h5GIc", "icon": "mdi-youtube"},
+                {"name": "Smart Slides (u8k2)", "url": "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1", "icon": "mdi-presentation-play"}
+            ],
+            "tags": ["SF Tech Week", "Masterclass", "AI Infrastructure", "Executive Keynote", "Smart Slides"],
+            "gradient": "from-amber-600 to-orange-700",
+            "badge_color": "#d97706",
+            "icon": "mdi-teach",
+            "thumbnail": "images/events/sf_tech_week.svg",
+            "youtube_id": "MPhFC1h5GIc"
+        },
+        {
+            "id": "conf-silicon-zombies-sz179",
+            "title": "SZ 179: The Digital Battleground — Quantum & Cyber Security",
+            "organization": "Silicon Zombies (Top Voices Unite)",
+            "event_name": "Silicon Zombies Global Keynote Symposium",
+            "role": "Featured Keynote Speaker & Cyber Authority",
+            "category": "Keynote Symposium",
+            "date": "June 17, 2025",
+            "location": "San Francisco, CA (Silicon Valley)",
+            "description": "Authoritative keynote address on Silicon Zombies Episode 179 alongside Rebecca Krauthamer (CEO of QuSecure). Delivered an in-depth architectural analysis on the evolving cyber threat matrix, quantum computing vulnerabilities, post-quantum cryptographic perimeters, and autonomous enterprise defense systems.",
+            "links": [
+                {"name": "Watch Keynote (YouTube)", "url": "https://youtu.be/E6kA_o57DrM", "icon": "mdi-youtube"},
+                {"name": "Smart Slides Deck", "url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1", "icon": "mdi-presentation-play"},
+                {"name": "Luma Event Page", "url": "https://luma.com/thedigitalbattleground?tk=WtnmqJ", "icon": "mdi-calendar-check"},
+                {"name": "LinkedIn Discussion", "url": "https://www.linkedin.com/feed/update/urn:li:activity:7341476106115432448/", "icon": "mdi-linkedin"}
+            ],
+            "tags": ["Silicon Zombies", "SZ 179", "Quantum Security", "Cyber Defense", "AI Battleground", "Palo Alto Networks"],
+            "gradient": "from-purple-800 to-indigo-900",
+            "badge_color": "#7c3aed",
+            "icon": "mdi-shield-lock-outline",
+            "youtube_id": "E6kA_o57DrM",
+            "thumbnail": "https://img.youtube.com/vi/E6kA_o57DrM/hqdefault.jpg"
         }
     ],
     "panels": [
+        {
+            "id": "panel-silicon-zombies-sz179",
+            "title": "SZ 179: The Digital Battleground — Quantum & Cyber Security",
+            "event_name": "Silicon Zombies (Top Voices Unite & Startup Zone)",
+            "role": "Featured Keynote Panelist & Authority",
+            "category": "Keynote Panel",
+            "date": "June 17, 2025",
+            "location": "Silicon Valley, CA / Online",
+            "description": "Featured guest panelist on Silicon Zombies Episode 179 alongside Rebecca Krauthamer (CEO of QuSecure). Delivered an authoritative keynote analysis on the evolving cyber threat landscape, the collision of post-quantum cryptography with enterprise AI perimeters, autonomous agent security, and practical architectural defenses.",
+            "links": [
+                {"name": "Watch on YouTube", "url": "https://youtu.be/E6kA_o57DrM?si=1YhXasLUtF94J5EZ", "icon": "mdi-youtube"},
+                {"name": "Smart Slides Deck", "url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1", "icon": "mdi-presentation-play"},
+                {"name": "Luma Event Page", "url": "https://luma.com/thedigitalbattleground?tk=WtnmqJ", "icon": "mdi-calendar-check"},
+                {"name": "LinkedIn Discussion", "url": "https://www.linkedin.com/feed/update/urn:li:activity:7341476106115432448/", "icon": "mdi-linkedin"}
+            ],
+            "tags": ["Silicon Zombies", "SZ 179", "Quantum Security", "Cyber Defense", "AI Battleground", "Palo Alto Networks"],
+            "gradient": "from-purple-800 to-indigo-900",
+            "badge_color": "#7c3aed",
+            "icon": "mdi-shield-lock-outline",
+            "youtube_id": "E6kA_o57DrM",
+            "thumbnail": "https://img.youtube.com/vi/E6kA_o57DrM/hqdefault.jpg"
+        },
         {
             "id": "panel-ai-security-sftechweek",
             "title": "AI × Security during SF Tech Week: Securing the AI Supply Chain",
@@ -579,6 +721,7 @@ events_data = {
             "location": "San Francisco, CA",
             "description": "Expert panel discussion on foundational model ergonomics, LLMOps, model evaluation datasets, context-caching, and fine-tuning pipelines with top industry practitioners.",
             "links": [
+                {"name": "Watch on YouTube", "url": "https://youtu.be/yXy_zYlhnfc", "icon": "mdi-youtube"},
                 {"name": "Luma Event Link", "url": "https://luma.com/8rdw6gga?tk=nxAN0Z", "icon": "mdi-calendar-check"},
                 {"name": "Twill Feature Post 1", "url": "https://www.linkedin.com/posts/wearetwill_aiengineering-mlops-aiobservability-ugcPost-7429227974249353217-LiE4", "icon": "mdi-linkedin"},
                 {"name": "Twill Feature Post 2", "url": "https://www.linkedin.com/posts/wearetwill_ai-enterpriseai-machinelearning-ugcPost-7427861664626069505-ANT4", "icon": "mdi-linkedin"},
@@ -587,7 +730,9 @@ events_data = {
             "tags": ["Twill", "LLMOps", "Builders Behind Models", "Observability"],
             "gradient": "from-pink-700 to-rose-600",
             "badge_color": "#be185d",
-            "icon": "mdi-code-braces"
+            "icon": "mdi-code-braces",
+            "youtube_id": "yXy_zYlhnfc",
+            "thumbnail": "https://img.youtube.com/vi/yXy_zYlhnfc/hqdefault.jpg"
         },
         {
             "id": "panel-health-tech-week",
@@ -654,6 +799,18 @@ keynote_videos_data = [
         "tags": ["UC Berkeley", "Agentic Security", "SkyDeck", "Enterprise AI"]
     },
     {
+        "id": "E6kA_o57DrM",
+        "title": "SZ 179: The Digital Battleground — Quantum & Cyber Security",
+        "outlet": "Silicon Zombies (Startup Zone / Top Voices Unite)",
+        "date": "June 2025 Keynote Symposium",
+        "duration": "52:14",
+        "category": "zombies",
+        "thumb": "https://img.youtube.com/vi/E6kA_o57DrM/hqdefault.jpg",
+        "desc": "Featured keynote symposium on Silicon Zombies Episode 179 alongside Rebecca Krauthamer (CEO of QuSecure), analyzing quantum computing vulnerabilities, post-quantum cryptographic perimeters, and autonomous AI defense systems.",
+        "slides_url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1",
+        "tags": ["Silicon Zombies", "SZ 179", "Quantum Security", "Autonomous Defense"]
+    },
+    {
         "id": "bggw4JTFjgA",
         "title": "FutureAGI Keynote: Enterprise Agentic Security & Multi-Model Orchestration",
         "outlet": "FutureAGI Global Keynote",
@@ -668,7 +825,7 @@ keynote_videos_data = [
     {
         "id": "nIgJ99Bihsw",
         "title": "Enterprise AI: Building Solutions for Security, Scale & Trust",
-        "outlet": "TechTalk with VLink Keynote",
+        "outlet": "TechTalk with VLink Keynote (Ep. 55)",
         "date": "2026 Keynote Episode",
         "duration": "46:18",
         "category": "agentic",
@@ -676,6 +833,18 @@ keynote_videos_data = [
         "desc": "Deep-dive executive presentation covering enterprise AI architectures, scaling multi-agent workloads, identity boundaries, and real-time behavioral defense.",
         "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1",
         "tags": ["Enterprise AI", "VLink Keynote", "Security & Scale", "Trustworthy Systems"]
+    },
+    {
+        "id": "yXy_zYlhnfc",
+        "title": "Inside Vibe Shift: The Builders Behind the Models",
+        "outlet": "Rocket & Twill Special Keynote Session",
+        "date": "2026 Keynote Session",
+        "duration": "31:40",
+        "category": "agentic",
+        "thumb": "https://img.youtube.com/vi/yXy_zYlhnfc/hqdefault.jpg",
+        "desc": "Keynote presentation at Rocket & Twill's 'Vibe Shift' summit analyzing consumer tech inflection points, LLMOps, model evaluation datasets, and scalable enterprise architectures.",
+        "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1",
+        "tags": ["Rocket & Twill", "Vibe Shift", "Builders Behind Models", "Observability"]
     },
     {
         "id": "iZkx6Ewq6wU",
@@ -692,7 +861,7 @@ keynote_videos_data = [
     {
         "id": "MPhFC1h5GIc",
         "title": "SF Tech Week Masterclass: Scaling AI & Enterprise Systems",
-        "outlet": "SF Tech Week Keynote",
+        "outlet": "SF Tech Week Keynote Masterclass",
         "date": "SF Tech Week Masterclass",
         "duration": "48:30",
         "category": "bigdata",
@@ -841,14 +1010,17 @@ def render_keynote_hub():
                         <button type="button" class="hv-stage-filter-pill active" onclick="filterKeynoteVideos('all', this)">
                             <i class="mdi mdi-view-grid-outline"></i> All Keynotes ({len(keynote_videos_data)})
                         </button>
+                        <button type="button" class="hv-stage-filter-pill" onclick="filterKeynoteVideos('zombies', this)">
+                            <i class="mdi mdi-shield-lock-outline"></i> Silicon Zombies &amp; Cyber
+                        </button>
                         <button type="button" class="hv-stage-filter-pill" onclick="filterKeynoteVideos('acm', this)">
                             <i class="mdi mdi-school"></i> ACM &amp; SkyDeck
                         </button>
                         <button type="button" class="hv-stage-filter-pill" onclick="filterKeynoteVideos('agentic', this)">
-                            <i class="mdi mdi-robot"></i> Agentic AI &amp; Security
+                            <i class="mdi mdi-robot"></i> Agentic AI &amp; Scale
                         </button>
                         <button type="button" class="hv-stage-filter-pill" onclick="filterKeynoteVideos('bigdata', this)">
-                            <i class="mdi mdi-database"></i> Big Data &amp; Systems
+                            <i class="mdi mdi-database"></i> Big Data &amp; ML
                         </button>
                     </div>
                     <div class="d-flex align-items-center gap-2">
@@ -967,6 +1139,78 @@ def render_tags(tags):
         html += f"""<span class="event-tag-pill">{tag}</span>"""
     return html
 
+def get_event_thumbnail(item):
+    if item.get("thumbnail"):
+        return item["thumbnail"]
+    
+    # Check if this item has a recorded video or youtube link
+    yid = item.get("youtube_id")
+    if not yid:
+        for link in item.get("links", []):
+            url = link.get("url", "")
+            if "youtube.com/watch?v=" in url:
+                yid = url.split("v=")[1].split("&")[0].split("?")[0]
+                break
+            elif "youtu.be/" in url:
+                yid = url.split("youtu.be/")[1].split("?")[0].split("&")[0]
+                break
+    if yid:
+        return f"https://img.youtube.com/vi/{yid}/hqdefault.jpg"
+
+    eid = item.get("id", "").lower()
+    org = (item.get("organization", "") + " " + item.get("event_name", "") + " " + item.get("title", "")).lower()
+    
+    mapping = [
+        ("silicon-zombies", "images/events/silicon_zombies.svg"),
+        ("silicon zombies", "images/events/silicon_zombies.svg"),
+        ("zombie", "images/events/silicon_zombies.svg"),
+        ("skydeck", "images/events/skydeck.svg"),
+        ("berkeley", "images/events/skydeck.svg"),
+        ("dent", "images/events/dent.svg"),
+        ("techstars", "images/events/techstars.svg"),
+        ("mayfield", "images/events/mayfield.svg"),
+        ("genlabx", "images/events/genlabx.svg"),
+        ("lovehack", "images/events/lovehack.svg"),
+        ("future of work", "images/events/future_of_work.svg"),
+        ("fow", "images/events/future_of_work.svg"),
+        ("techpioneer", "images/events/techpioneers.svg"),
+        ("vc-conf", "images/events/vc_conf.svg"),
+        ("vc_conf", "images/events/vc_conf.svg"),
+        ("hackmakers", "images/events/hackmakers.svg"),
+        ("buildwithai", "images/events/hackmakers.svg"),
+        ("progressive", "images/events/progressive_ventures.svg"),
+        ("ai-salon", "images/events/ai_salon.svg"),
+        ("deepseek", "images/events/ai_salon.svg"),
+        ("salon", "images/events/ai_salon.svg"),
+        ("founders", "images/events/founders_creative.svg"),
+        ("packt", "images/events/packt.svg"),
+        ("icacsdf", "images/events/icacsdf.svg"),
+        ("acm", "images/events/acm.svg"),
+        ("iciotcaa", "images/events/iciotcaa.svg"),
+        ("atagtr", "images/events/atagtr.svg"),
+        ("hikerunner", "images/events/atagtr.svg"),
+        ("ai-security", "images/events/ai_insiders.svg"),
+        ("insiders", "images/events/ai_insiders.svg"),
+        ("pebblebed", "images/events/ai_insiders.svg"),
+        ("the agentic", "images/events/the_agentic.svg"),
+        ("agentic", "images/events/the_agentic.svg"),
+        ("twill", "images/events/twill_rocket.svg"),
+        ("rocket", "images/events/twill_rocket.svg"),
+        ("health", "images/events/healthtech.svg"),
+        ("trueml", "images/events/trueml.svg"),
+        ("vlink", "images/events/vlink.svg"),
+        ("futureagi", "images/events/futureagi.svg"),
+        ("sf-techweek", "images/events/sf_tech_week.svg"),
+        ("sf tech week", "images/events/sf_tech_week.svg"),
+        ("ijeetr", "images/events/ijeetr.svg"),
+        ("jrtcse", "images/events/jrtcse.svg"),
+        ("ieee", "images/events/ieee.svg")
+    ]
+    for key, path in mapping:
+        if key in eid or key in org:
+            return path
+    return "images/events/acm.svg"
+
 def generate_card(item, event_type):
     badge_type_text = {
         "judging": "Judging & Mentorship",
@@ -978,49 +1222,96 @@ def generate_card(item, event_type):
     category = item.get("category") or item.get("role") or badge_type_text
     search_keywords = f"{item['title']} {item.get('organization', '')} {item.get('event_name', '')} {item.get('role', '')} {category} {item['location']} {' '.join(item.get('tags', []))}".lower()
 
+    # Determine if this item has a recorded video
+    yid = item.get("youtube_id")
+    if not yid:
+        for link in item.get("links", []):
+            url = link.get("url", "")
+            if "youtube.com/watch?v=" in url:
+                yid = url.split("v=")[1].split("&")[0].split("?")[0]
+                break
+            elif "youtu.be/" in url:
+                yid = url.split("youtu.be/")[1].split("?")[0].split("&")[0]
+                break
+
+    thumb_img = get_event_thumbnail(item)
     links_html = render_links(item.get("links", []))
     tags_html = render_tags(item.get("tags", []))
-    
     org_or_event = item.get("organization") or item.get("event_name") or ""
-    
-    return f"""
-    <div class="col-lg-6 col-md-12 mb-4 event-card-item" data-category="{event_type}" data-search="{search_keywords}">
-        <div class="event-hub-card h-100">
-            <div class="event-card-header d-flex justify-content-between align-items-start mb-3">
-                <div class="d-flex align-items-center">
-                    <div class="event-icon-badge mr-3" style="background: {badge_bg}15; color: {badge_bg}; border: 1px solid {badge_bg}30;">
-                        <i class="mdi {item.get('icon', 'mdi-star')}"></i>
+
+    if yid:
+        escaped_title = item['title'].replace("'", "\\'")
+        escaped_org = org_or_event.replace("'", "\\'")
+        escaped_desc = item['description'][:140].replace("'", "\\'")
+        header_html = f"""
+            <!-- Event Card Video Thumbnail Banner -->
+            <div class="event-card-video-banner" onclick="openKeynoteVideoModal('{yid}', '{escaped_title}', '{escaped_org}', '{escaped_desc}')" title="Click to Watch Recording">
+                <img src="https://img.youtube.com/vi/{yid}/hqdefault.jpg" alt="{item['title']}" class="event-card-video-cover" loading="lazy">
+                <div class="event-card-video-overlay">
+                    <div class="event-video-play-btn">
+                        <i class="mdi mdi-play"></i>
                     </div>
-                    <div>
+                    <span class="event-video-play-label">WATCH RECORDING</span>
+                </div>
+                <div class="event-card-video-top-meta">
+                    <span class="badge badge-danger font-weight-bold px-2 py-1 event-video-badge shadow-sm">
+                        <i class="mdi mdi-youtube mr-1"></i> Recorded Keynote
+                    </span>
+                    <span class="badge badge-pill text-white font-weight-bold px-2 py-1 shadow-sm" style="background: {badge_bg}; font-size: 11px;">
+                        {category}
+                    </span>
+                </div>
+                <div class="event-card-video-bottom-meta">
+                    <span class="event-meta-badge"><i class="mdi mdi-map-marker-outline mr-1"></i> {item['location']}</span>
+                    <span class="event-meta-badge"><i class="mdi mdi-calendar-outline mr-1"></i> {item['date']}</span>
+                </div>
+            </div>
+        """
+    else:
+        header_html = f"""
+            <!-- Event Card Branded Header -->
+            <div class="event-card-branded-header">
+                <div class="event-card-org-logo-box">
+                    <img src="{thumb_img}" alt="{org_or_event or item['title']}" class="event-card-org-logo-img" loading="lazy" onerror="this.onerror=null; this.src='images/events/acm.svg';">
+                </div>
+                <div class="event-card-header-meta flex-grow-1 min-w-0">
+                    <div class="d-flex align-items-center justify-content-between mb-1">
                         <span class="badge badge-pill text-white font-weight-bold px-2 py-1" style="background: {badge_bg}; font-size: 11px;">
                             {category}
                         </span>
-                        <div class="event-org-name font-weight-bold mt-1 text-muted" style="font-size: 13px;">
-                            <i class="mdi mdi-map-marker-outline mr-1"></i> {item['location']} &bull; <i class="mdi mdi-calendar-outline ml-1 mr-1"></i> {item['date']}
-                        </div>
+                        <button class="btn btn-sm btn-light border copy-event-btn" onclick="copyEventInfo('{item['id']}', '{item['title']}')" title="Copy Event Details" aria-label="Copy Details">
+                            <i class="mdi mdi-content-copy text-muted"></i>
+                        </button>
+                    </div>
+                    <div class="event-org-name font-weight-bold text-muted text-truncate" style="font-size: 12.5px;">
+                        <i class="mdi mdi-map-marker-outline mr-1 text-primary"></i> {item['location']} &bull; <i class="mdi mdi-calendar-outline ml-1 mr-1 text-primary"></i> {item['date']}
                     </div>
                 </div>
-                <button class="btn btn-sm btn-light border copy-event-btn" onclick="copyEventInfo('{item['id']}', '{item['title']}')" title="Copy Event Details" aria-label="Copy Details">
-                    <i class="mdi mdi-content-copy text-muted"></i>
-                </button>
             </div>
+        """
 
-            <h4 class="event-card-title mb-2">
-                {item['title']}
-            </h4>
+    return f"""
+    <div class="col-lg-6 col-md-12 mb-4 event-card-item" data-category="{event_type}" data-search="{search_keywords}">
+        <div class="event-hub-card h-100 d-flex flex-column">
+            {header_html}
+            <div class="event-card-body p-4 d-flex flex-column flex-grow-1">
+                <h4 class="event-card-title mb-2">
+                    {item['title']}
+                </h4>
 
-            {f'<div class="event-card-org mb-2"><i class="mdi mdi-domain text-primary mr-1"></i> <strong>{org_or_event}</strong> &bull; <span class="text-primary font-weight-600">{item.get("role", "")}</span></div>' if org_or_event else ''}
+                {f'<div class="event-card-org mb-2"><i class="mdi mdi-domain text-primary mr-1"></i> <strong>{org_or_event}</strong> &bull; <span class="text-primary font-weight-600">{item.get("role", "")}</span></div>' if org_or_event else ''}
 
-            <p class="event-card-desc mb-3">
-                {item['description']}
-            </p>
+                <p class="event-card-desc mb-3">
+                    {item['description']}
+                </p>
 
-            <div class="event-tags-wrap mb-3">
-                {tags_html}
-            </div>
+                <div class="event-tags-wrap mb-3">
+                    {tags_html}
+                </div>
 
-            <div class="event-card-footer mt-auto pt-3 border-top d-flex flex-wrap align-items-center">
-                {links_html}
+                <div class="event-card-footer mt-auto pt-3 border-top d-flex flex-wrap align-items-center">
+                    {links_html}
+                </div>
             </div>
         </div>
     </div>
@@ -1209,19 +1500,155 @@ def build_full_page():
         .event-hub-card {{
             background: #ffffff;
             border: 1px solid #e2e8f0;
-            border-radius: 16px;
-            padding: 24px;
+            border-radius: 18px;
+            padding: 0;
+            overflow: hidden;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: all 0.25s ease;
-            box-shadow: 0 2px 12px rgba(15, 23, 42, 0.03);
+            transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease, border-color 0.28s ease;
+            box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
             position: relative;
         }}
         .event-hub-card:hover {{
             border-color: #6366f1;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 28px rgba(79, 70, 229, 0.09);
+            transform: translateY(-4px);
+            box-shadow: 0 16px 36px rgba(79, 70, 229, 0.12);
+        }}
+
+        /* Video Banner Header for Recorded Keynotes */
+        .event-card-video-banner {{
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            max-height: 220px;
+            background: #090e1a;
+            overflow: hidden;
+            cursor: pointer;
+        }}
+        .event-card-video-cover {{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), filter 0.35s ease;
+        }}
+        .event-card-video-banner:hover .event-card-video-cover {{
+            transform: scale(1.05);
+            filter: brightness(1.08);
+        }}
+        .event-card-video-overlay {{
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(9, 14, 26, 0.2) 0%, rgba(9, 14, 26, 0.72) 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.25s ease;
+            z-index: 1;
+        }}
+        .event-card-video-banner:hover .event-card-video-overlay {{
+            background: linear-gradient(180deg, rgba(9, 14, 26, 0.08) 0%, rgba(9, 14, 26, 0.55) 100%);
+        }}
+        .event-video-play-btn {{
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: rgba(220, 38, 38, 0.95);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            box-shadow: 0 0 24px rgba(220, 38, 38, 0.65);
+            transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease;
+        }}
+        .event-card-video-banner:hover .event-video-play-btn {{
+            transform: scale(1.15);
+            background: #ef4444;
+        }}
+        .event-video-play-label {{
+            margin-top: 8px;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }}
+        .event-card-video-top-meta {{
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            pointer-events: none;
+            z-index: 2;
+        }}
+        .event-card-video-bottom-meta {{
+            position: absolute;
+            bottom: 10px;
+            left: 12px;
+            right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: rgba(255, 255, 255, 0.92);
+            font-size: 11.5px;
+            font-weight: 600;
+            pointer-events: none;
+            z-index: 2;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
+        }}
+        .event-meta-badge {{
+            background: rgba(15, 23, 42, 0.72);
+            backdrop-filter: blur(4px);
+            padding: 3px 9px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }}
+
+        /* Branded Header for Non-Video Events */
+        .event-card-branded-header {{
+            padding: 18px 22px;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }}
+        .event-card-org-logo-box {{
+            width: 56px;
+            height: 56px;
+            min-width: 56px;
+            border-radius: 14px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+            flex-shrink: 0;
+            padding: 8px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }}
+        .event-hub-card:hover .event-card-org-logo-box {{
+            transform: scale(1.06);
+            border-color: #cbd5e1;
+        }}
+        .event-card-org-logo-img {{
+            width: 38px;
+            height: 38px;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            display: block;
+        }}
+        .event-card-header-meta {{
+            flex-grow: 1;
+            min-width: 0;
         }}
 
         .event-icon-badge {{
@@ -1309,6 +1736,19 @@ def build_full_page():
             background: #0f172a;
             border-color: #1e293b;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }}
+        body.dark-mode .event-hub-card:hover {{
+            border-color: #818cf8;
+            box-shadow: 0 16px 36px rgba(99, 102, 241, 0.2);
+        }}
+        body.dark-mode .event-card-branded-header {{
+            background: #0b1120;
+            border-bottom-color: #1e293b;
+        }}
+        body.dark-mode .event-card-org-logo-box {{
+            background: #1e293b;
+            border-color: #334155;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
         }}
         body.dark-mode .event-card-title {{
             color: #f1f5f9;
