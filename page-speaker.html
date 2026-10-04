@@ -556,20 +556,20 @@
             </div>
 
             <!-- In-Page Featured Video Player Frame -->
-            <div class="mt-4 p-3 rounded" style="background: rgba(11, 15, 25, 0.85); border: 1px solid rgba(99, 102, 241, 0.35); border-radius: 14px;">
+            <div class="mt-4 p-3 rounded" style="background: rgba(11, 15, 25, 0.92); border: 1px solid rgba(99, 102, 241, 0.4); border-radius: 16px; box-shadow: 0 14px 40px rgba(0,0,0,0.6);">
                 <div class="row align-items-center">
                     <div class="col-xl-8 col-lg-7">
                         <div class="hv-video-modal-player-wrap rounded" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-                            <iframe id="keynoteStagePlayer" src="https://www.youtube-nocookie.com/embed/RS_BKcbeV3o?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                            <iframe id="keynoteStagePlayer" src="https://www.youtube-nocookie.com/embed/RS_BKcbeV3o?rel=0&enablejsapi=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-5 mt-3 mt-lg-0 d-flex flex-column justify-content-between">
                         <div class="p-2">
                             <div class="d-flex align-items-center justify-content-between mb-2">
                                 <span class="badge badge-pill badge-danger font-weight-bold px-3 py-1" id="stageCurrentBadge">
-                                    <i class="mdi mdi-television-play mr-1"></i> Now Playing on Stage
+                                    <span class="live-indicator-dot"></span> NOW PLAYING ON STAGE
                                 </span>
-                                <span class="text-light small" id="stageDurationTag" style="opacity: 0.85;">38:42</span>
+                                <span class="text-light small font-weight-bold" id="stageDurationTag" style="opacity: 0.95;">38:42</span>
                             </div>
                             <h4 class="font-weight-bold text-white mb-2" id="stageVideoTitle" style="font-size: 1.25rem; line-height: 1.35;">
                                 ACM Sacramento Keynote: Secure & Trustworthy ML/AI
@@ -577,7 +577,7 @@
                             <div class="text-primary font-weight-600 small mb-2" id="stageVideoOutlet">
                                 <i class="mdi mdi-microphone-variant mr-1"></i> ACM Distinguished Keynote Session
                             </div>
-                            <p class="text-light small mb-3" id="stageVideoDesc" style="opacity: 0.85; line-height: 1.6; max-height: 130px; overflow-y: auto;">
+                            <p class="text-light small mb-3" id="stageVideoDesc" style="opacity: 0.88; line-height: 1.6; max-height: 120px; overflow-y: auto;">
                                 Distinguished Keynote Address titled 'Secure and Trustworthy Machine Learning and AI for Multi-Domain Applications', analyzing enterprise LLM defense, zero-trust validation, and autonomous agent alignment.
                             </p>
                             <div class="d-flex flex-wrap gap-1 mb-3" id="stageVideoTags">
@@ -585,8 +585,11 @@
                             </div>
                         </div>
                         <div class="pt-2 border-top border-secondary d-flex flex-wrap align-items-center">
+                            <a id="stageWatchRecordingBtn" href="https://www.youtube.com/watch?v=RS_BKcbeV3o" target="_blank" class="btn btn-sm btn-danger font-weight-bold px-3 py-2 mr-2 mb-2" style="border-radius: 8px;">
+                                <i class="mdi mdi-youtube mr-1"></i> Watch on YouTube
+                            </a>
                             <a id="stageSlidesBtn" href="https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1" target="_blank" class="btn btn-sm btn-outline-info font-weight-bold px-3 py-2 mr-2 mb-2" style="border-radius: 8px;">
-                                <i class="mdi mdi-presentation-play mr-1"></i> View Keynote Smart Slides
+                                <i class="mdi mdi-presentation-play mr-1"></i> Smart Slides
                             </a>
                             <button type="button" class="btn btn-sm btn-outline-light font-weight-bold px-3 py-2 mb-2" onclick="openKeynoteTheaterMode()" style="border-radius: 8px;">
                                 <i class="mdi mdi-fullscreen mr-1"></i> Theater Modal
@@ -596,7 +599,7 @@
                 </div>
             </div>
 
-            <!-- Stage Toolbar & Video Selector Grid -->
+            <!-- Keynote Carousel Toolbar & Track -->
             <div class="mt-4 pt-3 border-top border-secondary">
                 <div class="hv-video-stage-toolbar my-2">
                     <div class="hv-stage-filter-group">
@@ -613,23 +616,37 @@
                             <i class="mdi mdi-database"></i> Big Data &amp; Systems
                         </button>
                     </div>
-                    <div class="hv-quick-select-wrap">
-                        <span class="text-light small font-weight-bold"><i class="mdi mdi-swap-horizontal text-warning"></i> Jump to:</span>
-                        <select class="hv-quick-select" onchange="if(this.value!=='') switchKeynoteVideo(parseInt(this.value));">
-                            <option value="0">ACM Distinguished Keynote Session: ACM Sacramento Keynote: Secure & Trust...</option><option value="1">UC Berkeley SkyDeck Series: UC Berkeley SkyDeck Keynote: The Era o...</option><option value="2">FutureAGI Global Keynote: FutureAGI Keynote: Enterprise Agentic ...</option><option value="3">TechTalk with VLink Keynote: Enterprise AI: Building Solutions for ...</option><option value="4">TrueML Talks #35: TrueML Keynote: Big Data & ML Practice...</option><option value="5">SF Tech Week Keynote: SF Tech Week Masterclass: Scaling AI &...</option>
-                        </select>
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="hv-quick-select-wrap mr-2">
+                            <span class="text-light small font-weight-bold d-none d-sm-inline"><i class="mdi mdi-swap-horizontal text-warning"></i> Jump to:</span>
+                            <select class="hv-quick-select" onchange="if(this.value!=='') switchKeynoteVideo(parseInt(this.value));">
+                                <option value="0">ACM Distinguished Keynote Session: ACM Sacramento Keynote: Secure & Tru...</option><option value="1">UC Berkeley SkyDeck Series: UC Berkeley SkyDeck Keynote: The Era...</option><option value="2">FutureAGI Global Keynote: FutureAGI Keynote: Enterprise Agenti...</option><option value="3">TechTalk with VLink Keynote: Enterprise AI: Building Solutions fo...</option><option value="4">TrueML Talks #35: TrueML Keynote: Big Data & ML Practi...</option><option value="5">SF Tech Week Keynote: SF Tech Week Masterclass: Scaling AI...</option>
+                            </select>
+                        </div>
+                        <div class="hv-carousel-controls">
+                            <button type="button" class="hv-carousel-nav-btn prev" onclick="scrollKeynoteCarousel(-1)" aria-label="Previous Keynote">
+                                <i class="mdi mdi-chevron-left"></i>
+                            </button>
+                            <button type="button" class="hv-carousel-nav-btn next" onclick="scrollKeynoteCarousel(1)" aria-label="Next Keynote">
+                                <i class="mdi mdi-chevron-right"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row" id="keynoteVideosGrid">
-                    
-        <div class="col-lg-4 col-md-6 mb-3 keynote-video-item" data-category="acm">
+                <!-- Visually Immersive Keynote Carousel Track -->
+                <div class="hv-carousel-wrapper">
+                    <div class="hv-carousel-track" id="keynoteCarouselTrack">
+                        
+        <div class="hv-carousel-item keynote-video-item" data-category="acm" id="carouselItem-0">
             <div class="hv-video-card h-100 is-pinned" id="keynoteCard-0">
-                <button type="button" class="hv-video-pin-btn pinned" id="pinBtn-0" onclick="togglePinKeynote(0, event)" title="Pin/Play this Keynote on Stage">
+                <button type="button" class="hv-video-pin-btn pinned" id="pinBtn-0" onclick="togglePinKeynote(0, event)" title="Pin this Keynote to Main Stage">
                     <i class="mdi mdi-pin mr-1"></i> <span class="pin-label-text">Pinned</span>
                 </button>
-                <div class="hv-video-thumb-wrap" onclick="switchKeynoteVideo(0)">
+                <div class="hv-video-thumb-wrap" onmouseenter="handleKeynoteHoverStart(0, this)" onmouseleave="handleKeynoteHoverEnd(0, this)" onclick="switchKeynoteVideo(0)">
                     <img src="https://img.youtube.com/vi/RS_BKcbeV3o/hqdefault.jpg" alt="ACM Sacramento Keynote: Secure & Trustworthy ML/AI" class="hv-video-thumb-img" loading="lazy">
+                    <div class="hv-hover-preview-container" id="hoverPreview-0"></div>
+                    <span class="hv-hover-preview-badge"><i class="mdi mdi-play"></i> Hover to Preview</span>
                     <div class="hv-video-play-overlay">
                         <div class="hv-play-circle-btn">
                             <i class="mdi mdi-play"></i>
@@ -650,9 +667,12 @@
                         <span class="hv-video-tag">ACM Keynote</span><span class="hv-video-tag">Secure AI</span><span class="hv-video-tag">Trustworthy ML</span>
                     </div>
                     <div class="hv-video-actions">
-                        <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="switchKeynoteVideo(0)">
+                        <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="switchKeynoteVideo(0)" title="Play on Stage">
                             <i class="mdi mdi-play-circle-outline mr-1"></i> Play On Stage
                         </button>
+                        <a href="https://www.youtube.com/watch?v=RS_BKcbeV3o" target="_blank" class="btn btn-sm btn-outline-danger font-weight-bold" title="Watch full recording on YouTube">
+                            <i class="mdi mdi-youtube mr-1"></i> Recording
+                        </a>
                         <a href="https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1" target="_blank" class="btn btn-sm btn-outline-info font-weight-bold" title="Smart Slides">
                             <i class="mdi mdi-presentation-play mr-1"></i> Slides
                         </a>
@@ -661,13 +681,15 @@
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 mb-3 keynote-video-item" data-category="acm">
+        <div class="hv-carousel-item keynote-video-item" data-category="acm" id="carouselItem-1">
             <div class="hv-video-card h-100 " id="keynoteCard-1">
-                <button type="button" class="hv-video-pin-btn " id="pinBtn-1" onclick="togglePinKeynote(1, event)" title="Pin/Play this Keynote on Stage">
+                <button type="button" class="hv-video-pin-btn " id="pinBtn-1" onclick="togglePinKeynote(1, event)" title="Pin this Keynote to Main Stage">
                     <i class="mdi mdi-pin mr-1"></i> <span class="pin-label-text">Pin Keynote</span>
                 </button>
-                <div class="hv-video-thumb-wrap" onclick="switchKeynoteVideo(1)">
+                <div class="hv-video-thumb-wrap" onmouseenter="handleKeynoteHoverStart(1, this)" onmouseleave="handleKeynoteHoverEnd(1, this)" onclick="switchKeynoteVideo(1)">
                     <img src="https://img.youtube.com/vi/IZvHxEtMMnw/hqdefault.jpg" alt="UC Berkeley SkyDeck Keynote: The Era of Agentic Security" class="hv-video-thumb-img" loading="lazy">
+                    <div class="hv-hover-preview-container" id="hoverPreview-1"></div>
+                    <span class="hv-hover-preview-badge"><i class="mdi mdi-play"></i> Hover to Preview</span>
                     <div class="hv-video-play-overlay">
                         <div class="hv-play-circle-btn">
                             <i class="mdi mdi-play"></i>
@@ -688,9 +710,12 @@
                         <span class="hv-video-tag">UC Berkeley</span><span class="hv-video-tag">Agentic Security</span><span class="hv-video-tag">SkyDeck</span>
                     </div>
                     <div class="hv-video-actions">
-                        <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="switchKeynoteVideo(1)">
+                        <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="switchKeynoteVideo(1)" title="Play on Stage">
                             <i class="mdi mdi-play-circle-outline mr-1"></i> Play On Stage
                         </button>
+                        <a href="https://www.youtube.com/watch?v=IZvHxEtMMnw" target="_blank" class="btn btn-sm btn-outline-danger font-weight-bold" title="Watch full recording on YouTube">
+                            <i class="mdi mdi-youtube mr-1"></i> Recording
+                        </a>
                         <a href="https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1" target="_blank" class="btn btn-sm btn-outline-info font-weight-bold" title="Smart Slides">
                             <i class="mdi mdi-presentation-play mr-1"></i> Slides
                         </a>
@@ -699,13 +724,15 @@
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 mb-3 keynote-video-item" data-category="agentic">
+        <div class="hv-carousel-item keynote-video-item" data-category="agentic" id="carouselItem-2">
             <div class="hv-video-card h-100 " id="keynoteCard-2">
-                <button type="button" class="hv-video-pin-btn " id="pinBtn-2" onclick="togglePinKeynote(2, event)" title="Pin/Play this Keynote on Stage">
+                <button type="button" class="hv-video-pin-btn " id="pinBtn-2" onclick="togglePinKeynote(2, event)" title="Pin this Keynote to Main Stage">
                     <i class="mdi mdi-pin mr-1"></i> <span class="pin-label-text">Pin Keynote</span>
                 </button>
-                <div class="hv-video-thumb-wrap" onclick="switchKeynoteVideo(2)">
+                <div class="hv-video-thumb-wrap" onmouseenter="handleKeynoteHoverStart(2, this)" onmouseleave="handleKeynoteHoverEnd(2, this)" onclick="switchKeynoteVideo(2)">
                     <img src="https://img.youtube.com/vi/bggw4JTFjgA/hqdefault.jpg" alt="FutureAGI Keynote: Enterprise Agentic Security & Multi-Model Orchestration" class="hv-video-thumb-img" loading="lazy">
+                    <div class="hv-hover-preview-container" id="hoverPreview-2"></div>
+                    <span class="hv-hover-preview-badge"><i class="mdi mdi-play"></i> Hover to Preview</span>
                     <div class="hv-video-play-overlay">
                         <div class="hv-play-circle-btn">
                             <i class="mdi mdi-play"></i>
@@ -726,9 +753,12 @@
                         <span class="hv-video-tag">FutureAGI</span><span class="hv-video-tag">Multi-Agent Systems</span><span class="hv-video-tag">Orchestration</span>
                     </div>
                     <div class="hv-video-actions">
-                        <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="switchKeynoteVideo(2)">
+                        <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="switchKeynoteVideo(2)" title="Play on Stage">
                             <i class="mdi mdi-play-circle-outline mr-1"></i> Play On Stage
                         </button>
+                        <a href="https://www.youtube.com/watch?v=bggw4JTFjgA" target="_blank" class="btn btn-sm btn-outline-danger font-weight-bold" title="Watch full recording on YouTube">
+                            <i class="mdi mdi-youtube mr-1"></i> Recording
+                        </a>
                         <a href="https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1" target="_blank" class="btn btn-sm btn-outline-info font-weight-bold" title="Smart Slides">
                             <i class="mdi mdi-presentation-play mr-1"></i> Slides
                         </a>
@@ -737,13 +767,15 @@
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 mb-3 keynote-video-item" data-category="agentic">
+        <div class="hv-carousel-item keynote-video-item" data-category="agentic" id="carouselItem-3">
             <div class="hv-video-card h-100 " id="keynoteCard-3">
-                <button type="button" class="hv-video-pin-btn " id="pinBtn-3" onclick="togglePinKeynote(3, event)" title="Pin/Play this Keynote on Stage">
+                <button type="button" class="hv-video-pin-btn " id="pinBtn-3" onclick="togglePinKeynote(3, event)" title="Pin this Keynote to Main Stage">
                     <i class="mdi mdi-pin mr-1"></i> <span class="pin-label-text">Pin Keynote</span>
                 </button>
-                <div class="hv-video-thumb-wrap" onclick="switchKeynoteVideo(3)">
+                <div class="hv-video-thumb-wrap" onmouseenter="handleKeynoteHoverStart(3, this)" onmouseleave="handleKeynoteHoverEnd(3, this)" onclick="switchKeynoteVideo(3)">
                     <img src="https://img.youtube.com/vi/nIgJ99Bihsw/hqdefault.jpg" alt="Enterprise AI: Building Solutions for Security, Scale & Trust" class="hv-video-thumb-img" loading="lazy">
+                    <div class="hv-hover-preview-container" id="hoverPreview-3"></div>
+                    <span class="hv-hover-preview-badge"><i class="mdi mdi-play"></i> Hover to Preview</span>
                     <div class="hv-video-play-overlay">
                         <div class="hv-play-circle-btn">
                             <i class="mdi mdi-play"></i>
@@ -764,9 +796,12 @@
                         <span class="hv-video-tag">Enterprise AI</span><span class="hv-video-tag">VLink Keynote</span><span class="hv-video-tag">Security & Scale</span>
                     </div>
                     <div class="hv-video-actions">
-                        <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="switchKeynoteVideo(3)">
+                        <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="switchKeynoteVideo(3)" title="Play on Stage">
                             <i class="mdi mdi-play-circle-outline mr-1"></i> Play On Stage
                         </button>
+                        <a href="https://www.youtube.com/watch?v=nIgJ99Bihsw" target="_blank" class="btn btn-sm btn-outline-danger font-weight-bold" title="Watch full recording on YouTube">
+                            <i class="mdi mdi-youtube mr-1"></i> Recording
+                        </a>
                         <a href="https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1" target="_blank" class="btn btn-sm btn-outline-info font-weight-bold" title="Smart Slides">
                             <i class="mdi mdi-presentation-play mr-1"></i> Slides
                         </a>
@@ -775,13 +810,15 @@
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 mb-3 keynote-video-item" data-category="bigdata">
+        <div class="hv-carousel-item keynote-video-item" data-category="bigdata" id="carouselItem-4">
             <div class="hv-video-card h-100 " id="keynoteCard-4">
-                <button type="button" class="hv-video-pin-btn " id="pinBtn-4" onclick="togglePinKeynote(4, event)" title="Pin/Play this Keynote on Stage">
+                <button type="button" class="hv-video-pin-btn " id="pinBtn-4" onclick="togglePinKeynote(4, event)" title="Pin this Keynote to Main Stage">
                     <i class="mdi mdi-pin mr-1"></i> <span class="pin-label-text">Pin Keynote</span>
                 </button>
-                <div class="hv-video-thumb-wrap" onclick="switchKeynoteVideo(4)">
+                <div class="hv-video-thumb-wrap" onmouseenter="handleKeynoteHoverStart(4, this)" onmouseleave="handleKeynoteHoverEnd(4, this)" onclick="switchKeynoteVideo(4)">
                     <img src="https://img.youtube.com/vi/iZkx6Ewq6wU/hqdefault.jpg" alt="TrueML Keynote: Big Data & ML Practices at Palo Alto Networks" class="hv-video-thumb-img" loading="lazy">
+                    <div class="hv-hover-preview-container" id="hoverPreview-4"></div>
+                    <span class="hv-hover-preview-badge"><i class="mdi mdi-play"></i> Hover to Preview</span>
                     <div class="hv-video-play-overlay">
                         <div class="hv-play-circle-btn">
                             <i class="mdi mdi-play"></i>
@@ -802,9 +839,12 @@
                         <span class="hv-video-tag">Palo Alto Networks</span><span class="hv-video-tag">TrueML</span><span class="hv-video-tag">Feature Pipelines</span>
                     </div>
                     <div class="hv-video-actions">
-                        <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="switchKeynoteVideo(4)">
+                        <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="switchKeynoteVideo(4)" title="Play on Stage">
                             <i class="mdi mdi-play-circle-outline mr-1"></i> Play On Stage
                         </button>
+                        <a href="https://www.youtube.com/watch?v=iZkx6Ewq6wU" target="_blank" class="btn btn-sm btn-outline-danger font-weight-bold" title="Watch full recording on YouTube">
+                            <i class="mdi mdi-youtube mr-1"></i> Recording
+                        </a>
                         <a href="https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1" target="_blank" class="btn btn-sm btn-outline-info font-weight-bold" title="Smart Slides">
                             <i class="mdi mdi-presentation-play mr-1"></i> Slides
                         </a>
@@ -813,13 +853,15 @@
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 mb-3 keynote-video-item" data-category="bigdata">
+        <div class="hv-carousel-item keynote-video-item" data-category="bigdata" id="carouselItem-5">
             <div class="hv-video-card h-100 " id="keynoteCard-5">
-                <button type="button" class="hv-video-pin-btn " id="pinBtn-5" onclick="togglePinKeynote(5, event)" title="Pin/Play this Keynote on Stage">
+                <button type="button" class="hv-video-pin-btn " id="pinBtn-5" onclick="togglePinKeynote(5, event)" title="Pin this Keynote to Main Stage">
                     <i class="mdi mdi-pin mr-1"></i> <span class="pin-label-text">Pin Keynote</span>
                 </button>
-                <div class="hv-video-thumb-wrap" onclick="switchKeynoteVideo(5)">
+                <div class="hv-video-thumb-wrap" onmouseenter="handleKeynoteHoverStart(5, this)" onmouseleave="handleKeynoteHoverEnd(5, this)" onclick="switchKeynoteVideo(5)">
                     <img src="https://img.youtube.com/vi/MPhFC1h5GIc/hqdefault.jpg" alt="SF Tech Week Masterclass: Scaling AI & Enterprise Systems" class="hv-video-thumb-img" loading="lazy">
+                    <div class="hv-hover-preview-container" id="hoverPreview-5"></div>
+                    <span class="hv-hover-preview-badge"><i class="mdi mdi-play"></i> Hover to Preview</span>
                     <div class="hv-video-play-overlay">
                         <div class="hv-play-circle-btn">
                             <i class="mdi mdi-play"></i>
@@ -840,9 +882,12 @@
                         <span class="hv-video-tag">SF Tech Week</span><span class="hv-video-tag">Masterclass</span><span class="hv-video-tag">AI Infrastructure</span>
                     </div>
                     <div class="hv-video-actions">
-                        <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="switchKeynoteVideo(5)">
+                        <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="switchKeynoteVideo(5)" title="Play on Stage">
                             <i class="mdi mdi-play-circle-outline mr-1"></i> Play On Stage
                         </button>
+                        <a href="https://www.youtube.com/watch?v=MPhFC1h5GIc" target="_blank" class="btn btn-sm btn-outline-danger font-weight-bold" title="Watch full recording on YouTube">
+                            <i class="mdi mdi-youtube mr-1"></i> Recording
+                        </a>
                         <a href="https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1" target="_blank" class="btn btn-sm btn-outline-info font-weight-bold" title="Smart Slides">
                             <i class="mdi mdi-presentation-play mr-1"></i> Slides
                         </a>
@@ -851,6 +896,36 @@
             </div>
         </div>
         
+                    </div>
+                    <div class="hv-carousel-dots" id="keynoteCarouselDots">
+                        <button type="button" class="hv-carousel-dot active" onclick="scrollKeynoteToDot(0)" aria-label="Go to keynote 1"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(1)" aria-label="Go to keynote 2"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(2)" aria-label="Go to keynote 3"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(3)" aria-label="Go to keynote 4"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(4)" aria-label="Go to keynote 5"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(5)" aria-label="Go to keynote 6"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Theater Video Modal Component -->
+        <div class="hv-video-modal-overlay" id="keynoteTheaterModal" onclick="closeKeynoteVideoModal(event)">
+            <div class="hv-video-modal-card" onclick="event.stopPropagation()">
+                <div class="d-flex justify-content-between align-items-center p-3 border-bottom border-secondary bg-dark text-white">
+                    <div class="d-flex align-items-center">
+                        <span class="badge badge-warning text-dark font-weight-bold px-2 py-1 mr-2" style="font-size: 11px;">
+                            <i class="mdi mdi-video-vintage mr-1"></i> THEATER MODE
+                        </span>
+                        <h5 class="mb-0 font-weight-bold text-truncate" id="theaterModalTitle" style="max-width: 580px; font-size: 15px;">Keynote Cinema</h5>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-light rounded-circle" onclick="closeKeynoteVideoModal()" style="width: 32px; height: 32px; padding: 0;" title="Close Modal">
+                        <i class="mdi mdi-close"></i>
+                    </button>
+                </div>
+                <div class="hv-video-modal-player-wrap">
+                    <iframe id="theaterModalIframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="p-3 bg-dark text-light border-top border-secondary d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="small text-muted" id="theaterModalOutlet">Featured Keynote Presentation</div>
+                    <a id="theaterModalRecordingLink" href="#" target="_blank" class="btn btn-sm btn-danger font-weight-bold px-3 py-1">
+                        <i class="mdi mdi-youtube mr-1"></i> Open in YouTube
+                    </a>
                 </div>
             </div>
         </div>
@@ -2695,6 +2770,7 @@
                 duration: "38:42",
                 desc: "Distinguished Keynote Address titled 'Secure and Trustworthy Machine Learning and AI for Multi-Domain Applications', analyzing enterprise LLM defense, zero-trust validation, and autonomous agent alignment.",
                 slides_url: "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1",
+                recording_url: "https://www.youtube.com/watch?v=RS_BKcbeV3o",
                 tags: ["ACM Keynote", "Secure AI", "Trustworthy ML", "Smart Slides: GxwP"]
             },
             {
@@ -2705,16 +2781,18 @@
                 duration: "42:15",
                 desc: "Keynote presentation at UC Berkeley SkyDeck detailing autonomous agent divergence, runtime safety guardrails, prompt provenance, and enterprise cybersecurity architectures.",
                 slides_url: "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1",
+                recording_url: "https://www.youtube.com/watch?v=IZvHxEtMMnw",
                 tags: ["UC Berkeley", "Agentic Security", "SkyDeck", "Enterprise AI"]
             },
             {
-                id: "0wQv7T8fF8g",
-                title: "FutureAGI Keynote: Enterprise Agentic Security & Orchestration",
+                id: "bggw4JTFjgA",
+                title: "FutureAGI Keynote: Enterprise Agentic Security & Multi-Model Orchestration",
                 outlet: "FutureAGI Global Keynote",
                 date: "2026 Virtual Keynote",
                 duration: "35:20",
                 desc: "Keynote on enterprise agentic security, multi-model orchestration frameworks, deterministic evaluation, and securing autonomous agent communication channels.",
                 slides_url: "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1",
+                recording_url: "https://www.youtube.com/watch?v=bggw4JTFjgA",
                 tags: ["FutureAGI", "Multi-Agent Systems", "Orchestration", "Zero-Trust"]
             },
             {
@@ -2725,6 +2803,7 @@
                 duration: "46:18",
                 desc: "Deep-dive executive presentation covering enterprise AI architectures, scaling multi-agent workloads, identity boundaries, and real-time behavioral defense.",
                 slides_url: "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1",
+                recording_url: "https://www.youtube.com/watch?v=nIgJ99Bihsw",
                 tags: ["Enterprise AI", "VLink Keynote", "Security & Scale", "Trustworthy Systems"]
             },
             {
@@ -2735,6 +2814,7 @@
                 duration: "40:05",
                 desc: "Production machine learning engineering patterns, distributed feature pipelines, and zero-trust validation in high-throughput enterprise security systems.",
                 slides_url: "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1",
+                recording_url: "https://www.youtube.com/watch?v=iZkx6Ewq6wU",
                 tags: ["Palo Alto Networks", "TrueML", "Feature Pipelines", "Big Data ML"]
             },
             {
@@ -2745,6 +2825,7 @@
                 duration: "48:30",
                 desc: "Executive keynote during SF Tech Week on scaling AI infrastructure, mitigating agentic risk, and driving enterprise AI adoption across Silicon Valley.",
                 slides_url: "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1",
+                recording_url: "https://www.youtube.com/watch?v=MPhFC1h5GIc",
                 tags: ["SF Tech Week", "Masterclass", "AI Infrastructure", "Executive Keynote"]
             }
         ];
@@ -2758,7 +2839,7 @@
 
             var player = document.getElementById('keynoteStagePlayer');
             if (player) {
-                player.src = 'https://www.youtube-nocookie.com/embed/' + v.id + '?autoplay=1&rel=0';
+                player.src = 'https://www.youtube-nocookie.com/embed/' + v.id + '?autoplay=1&rel=0&enablejsapi=1';
             }
 
             var titleEl = document.getElementById('stageVideoTitle');
@@ -2775,6 +2856,9 @@
 
             var slidesBtn = document.getElementById('stageSlidesBtn');
             if (slidesBtn) slidesBtn.href = v.slides_url;
+
+            var recordingBtn = document.getElementById('stageWatchRecordingBtn');
+            if (recordingBtn) recordingBtn.href = v.recording_url || ('https://www.youtube.com/watch?v=' + v.id);
 
             var tagsEl = document.getElementById('stageVideoTags');
             if (tagsEl) {
@@ -2794,8 +2878,19 @@
             $('#pinBtn-' + idx).addClass('pinned').find('.pin-label-text').text('Pinned');
             $('#pinnedBadge-' + idx).removeClass('d-none');
 
+            // Scroll carousel item into view
+            var carouselItem = document.getElementById('carouselItem-' + idx);
+            var carouselTrack = document.getElementById('keynoteCarouselTrack');
+            if (carouselItem && carouselTrack) {
+                carouselTrack.scrollTo({
+                    left: carouselItem.offsetLeft - carouselTrack.offsetLeft,
+                    behavior: 'smooth'
+                });
+                updateCarouselDots();
+            }
+
             var stageHub = document.getElementById('keynote-video-hub');
-            if (stageHub && window.scrollY > stageHub.offsetTop + 400) {
+            if (stageHub && window.scrollY > stageHub.offsetTop + 420) {
                 stageHub.scrollIntoView({ behavior: 'smooth' });
             }
         }
@@ -2805,6 +2900,72 @@
                 evt.stopPropagation();
             }
             switchKeynoteVideo(idx);
+        }
+
+        function togglePinCurrentStage() {
+            togglePinKeynote(activeKeynoteIndex);
+        }
+
+        // Responsive Video Play-On-Hover Mechanics
+        var hoverPreviewTimer = null;
+        function handleKeynoteHoverStart(idx, el) {
+            clearTimeout(hoverPreviewTimer);
+            hoverPreviewTimer = setTimeout(function() {
+                var previewBox = document.getElementById('hoverPreview-' + idx);
+                if (previewBox && !previewBox.classList.contains('is-previewing')) {
+                    var v = keynoteVideosList[idx];
+                    previewBox.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + v.id + '?autoplay=1&mute=1&controls=0&modestbranding=1&loop=1&playlist=' + v.id + '" allow="autoplay" loading="lazy"></iframe>';
+                    previewBox.classList.add('is-previewing');
+                }
+            }, 320);
+        }
+
+        function handleKeynoteHoverEnd(idx, el) {
+            clearTimeout(hoverPreviewTimer);
+            var previewBox = document.getElementById('hoverPreview-' + idx);
+            if (previewBox) {
+                previewBox.innerHTML = '';
+                previewBox.classList.remove('is-previewing');
+            }
+        }
+
+        // Keynote Carousel Controls
+        function scrollKeynoteCarousel(dir) {
+            var track = document.getElementById('keynoteCarouselTrack');
+            if (!track) return;
+            var item = track.querySelector('.hv-carousel-item');
+            var cardWidth = item ? item.offsetWidth + 18 : 340;
+            track.scrollBy({ left: dir * cardWidth, behavior: 'smooth' });
+            setTimeout(updateCarouselDots, 300);
+        }
+
+        function scrollKeynoteToDot(idx) {
+            var track = document.getElementById('keynoteCarouselTrack');
+            var item = document.getElementById('carouselItem-' + idx);
+            if (track && item) {
+                track.scrollTo({ left: item.offsetLeft - track.offsetLeft, behavior: 'smooth' });
+                updateCarouselDots();
+            }
+        }
+
+        function updateCarouselDots() {
+            var track = document.getElementById('keynoteCarouselTrack');
+            if (!track) return;
+            var scrollLeft = track.scrollLeft;
+            var item = track.querySelector('.hv-carousel-item');
+            var cardWidth = item ? item.offsetWidth + 18 : 340;
+            var activeIdx = Math.round(scrollLeft / cardWidth);
+            if (activeIdx < 0) activeIdx = 0;
+            if (activeIdx >= keynoteVideosList.length) activeIdx = keynoteVideosList.length - 1;
+            $('.hv-carousel-dot').removeClass('active');
+            $('.hv-carousel-dot').eq(activeIdx).addClass('active');
+        }
+
+        var carouselTrackEl = document.getElementById('keynoteCarouselTrack');
+        if (carouselTrackEl) {
+            carouselTrackEl.addEventListener('scroll', function() {
+                updateCarouselDots();
+            }, { passive: true });
         }
 
         function filterKeynoteVideos(category, btn) {
@@ -2823,14 +2984,46 @@
                     }
                 });
             }
+            setTimeout(updateCarouselDots, 250);
         }
 
+        // Theater Modal Functions
         function openKeynoteTheaterMode() {
             var v = keynoteVideosList[activeKeynoteIndex];
-            if (window.openKeynoteVideoModal) {
-                window.openKeynoteVideoModal(v.id, v.title, v.outlet, v.desc);
-            }
+            window.openKeynoteVideoModal(v.id, v.title, v.outlet, v.desc);
         }
+
+        window.openKeynoteVideoModal = function(id, title, outlet, desc) {
+            var modal = document.getElementById('keynoteTheaterModal');
+            var iframe = document.getElementById('theaterModalIframe');
+            var titleEl = document.getElementById('theaterModalTitle');
+            var outletEl = document.getElementById('theaterModalOutlet');
+            var recLink = document.getElementById('theaterModalRecordingLink');
+            if (modal && iframe) {
+                iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+                if (titleEl) titleEl.innerText = title;
+                if (outletEl) outletEl.innerText = outlet;
+                if (recLink) recLink.href = 'https://www.youtube.com/watch?v=' + id;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        };
+
+        window.closeKeynoteVideoModal = function(e) {
+            var modal = document.getElementById('keynoteTheaterModal');
+            var iframe = document.getElementById('theaterModalIframe');
+            if (modal) {
+                modal.classList.remove('active');
+                if (iframe) iframe.src = '';
+                document.body.style.overflow = '';
+            }
+        };
+
+        $(document).keyup(function(e) {
+            if (e.key === "Escape") {
+                window.closeKeynoteVideoModal();
+            }
+        });
 
         var speakerBios = {
             short: "Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, Forbes Technology Council Member, IEEE Senior Member, and author of two books on Enterprise AI. Recognized on the Forttuna Global 100 Power List and Nobel Technology Awards Gold (#145), he architects deterministic agentic systems, zero-trust cloud perimeters, and high-throughput data platforms, keynoting across UC Berkeley SkyDeck and international AI symposiums.",
@@ -2862,10 +3055,6 @@
                 prompt("Copy Speaker Bio:", text);
             }
         }
-
-    <script>
-        var yearEl = document.getElementById('currentYear');
-        if (yearEl) yearEl.innerText = new Date().getFullYear();
 
         // Search & Filter Logic
         $(document).ready(function() {

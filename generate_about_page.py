@@ -944,71 +944,358 @@ def generate_html():
             border-color: #94a3b8;
         }}
 
-        /* Dark mode overrides */
+        /* Dark mode overrides - Comprehensive & High-Contrast */
+        html.dark-mode .about-page-environment,
         body.dark-mode .about-page-environment {{
-            background-color: #080d1a;
+            background-color: #070b14 !important;
             background-image: 
-                radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.1) 0%, transparent 40%),
-                radial-gradient(circle at 90% 40%, rgba(2, 132, 199, 0.08) 0%, transparent 45%),
-                radial-gradient(circle at 50% 90%, rgba(59, 130, 246, 0.06) 0%, transparent 50%);
+                radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.12) 0%, transparent 45%),
+                radial-gradient(circle at 90% 35%, rgba(2, 132, 199, 0.10) 0%, transparent 45%),
+                radial-gradient(circle at 50% 90%, rgba(99, 102, 241, 0.08) 0%, transparent 50%) !important;
+            color: #f1f5f9 !important;
         }}
+
+        html.dark-mode h1, body.dark-mode h1,
+        html.dark-mode h2, body.dark-mode h2,
+        html.dark-mode h3, body.dark-mode h3,
+        html.dark-mode h4, body.dark-mode h4,
+        html.dark-mode h5, body.dark-mode h5,
+        html.dark-mode h6, body.dark-mode h6,
+        html.dark-mode .text-dark,
+        body.dark-mode .text-dark {{
+            color: #f8fafc !important;
+        }}
+
+        html.dark-mode p,
+        body.dark-mode p {{
+            color: #cbd5e1;
+        }}
+
+        html.dark-mode .text-muted,
+        body.dark-mode .text-muted {{
+            color: #94a3b8 !important;
+        }}
+
+        html.dark-mode .bg-white,
+        body.dark-mode .bg-white,
+        html.dark-mode .about-content-card,
+        body.dark-mode .about-content-card,
+        html.dark-mode .executive-bio-box,
         body.dark-mode .executive-bio-box,
-        body.dark-mode .award-highlight-card,
-        body.dark-mode .profile-hub-box {{
-            background: #111827;
-            border-color: #1f2937;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        html.dark-mode .profile-hub-box,
+        body.dark-mode .profile-hub-box,
+        html.dark-mode .executive-section-card,
+        body.dark-mode .executive-section-card {{
+            background-color: #0f172a !important;
+            border-color: #1e293b !important;
+            box-shadow: 0 10px 32px rgba(0, 0, 0, 0.45) !important;
+            color: #f8fafc !important;
         }}
-        body.dark-mode .executive-bio-p {{
-            color: #cbd5e1;
+
+        html.dark-mode .about-hero-card,
+        body.dark-mode .about-hero-card {{
+            background: linear-gradient(135deg, #090e1a 0%, #0f172a 45%, #171d33 100%) !important;
+            border: 1px solid rgba(99, 102, 241, 0.35) !important;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5) !important;
         }}
-        body.dark-mode .pillar-card,
-        body.dark-mode .profile-hub-card {{
-            background: #1a2234;
-            border-color: #243048;
+
+        html.dark-mode .hero-stat-card,
+        body.dark-mode .hero-stat-card {{
+            background: rgba(15, 23, 42, 0.75) !important;
+            border: 1px solid rgba(255, 255, 255, 0.12) !important;
         }}
-        body.dark-mode .pillar-card:hover,
-        body.dark-mode .profile-hub-card:hover {{
-            background: #1f293d;
-            border-color: #3b82f6;
+
+        html.dark-mode .hero-stat-num,
+        body.dark-mode .hero-stat-num {{
+            color: #38bdf8 !important;
         }}
-        body.dark-mode .profile-card-title {{
-            color: #f3f4f6;
-        }}
-        body.dark-mode .profile-card-desc {{
-            color: #94a3b8;
-        }}
-        body.dark-mode .profile-search-input {{
-            background: #1f2937;
-            border-color: #374151;
-            color: #f3f4f6;
-        }}
-        body.dark-mode .profile-search-input:focus {{
-            background: #111827;
-            border-color: #3b82f6;
-        }}
-        body.dark-mode .filter-btn-pill {{
-            background: #1f2937;
-            border-color: #374151;
-            color: #cbd5e1;
-        }}
-        body.dark-mode .filter-btn-pill:hover {{
-            background: #374151;
-            color: #ffffff;
-        }}
-        body.dark-mode .filter-btn-pill.active {{
-            background: #2563eb;
-            color: #ffffff;
-            border-color: #2563eb;
-        }}
-        body.dark-mode .btn-hub-outline {{
-            background: #1f2937;
+
+        html.dark-mode .hero-stat-label,
+        body.dark-mode .hero-stat-label {{
             color: #cbd5e1 !important;
-            border-color: #374151;
         }}
-        body.dark-mode .btn-hub-outline:hover {{
-            background: #374151;
+
+        html.dark-mode .executive-bio-p,
+        body.dark-mode .executive-bio-p {{
+            color: #cbd5e1 !important;
+        }}
+
+        html.dark-mode .executive-bio-p strong,
+        body.dark-mode .executive-bio-p strong {{
             color: #ffffff !important;
+        }}
+
+        html.dark-mode .award-highlight-card,
+        body.dark-mode .award-highlight-card {{
+            background: #141e33 !important;
+            border: 1px solid #223252 !important;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35) !important;
+            color: #f8fafc !important;
+        }}
+
+        html.dark-mode .award-highlight-card:hover,
+        body.dark-mode .award-highlight-card:hover {{
+            background: #1a2742 !important;
+            border-color: #3b82f6 !important;
+        }}
+
+        html.dark-mode .award-highlight-card h5,
+        body.dark-mode .award-highlight-card h5 {{
+            color: #f8fafc !important;
+        }}
+
+        html.dark-mode .award-highlight-card p,
+        body.dark-mode .award-highlight-card p {{
+            color: #cbd5e1 !important;
+        }}
+
+        html.dark-mode .pillar-card,
+        body.dark-mode .pillar-card {{
+            background: #141e33 !important;
+            border: 1px solid #223252 !important;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35) !important;
+            color: #f8fafc !important;
+        }}
+
+        html.dark-mode .pillar-card:hover,
+        body.dark-mode .pillar-card:hover {{
+            background: #1a2742 !important;
+            border-color: #38bdf8 !important;
+        }}
+
+        html.dark-mode .pillar-card h5,
+        body.dark-mode .pillar-card h5 {{
+            color: #f8fafc !important;
+        }}
+
+        html.dark-mode .pillar-card p,
+        body.dark-mode .pillar-card p {{
+            color: #cbd5e1 !important;
+        }}
+
+        /* Career Trajectory & Horizontal SVG Infographic in Dark Mode */
+        html.dark-mode .career-infographic-card,
+        body.dark-mode .career-infographic-card {{
+            background: linear-gradient(135deg, #090f1d 0%, #0f172a 60%, #131d33 100%) !important;
+            border: 1px solid rgba(99, 102, 241, 0.35) !important;
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
+            color: #f8fafc !important;
+        }}
+
+        html.dark-mode .career-timeline-svg-wrapper,
+        body.dark-mode .career-timeline-svg-wrapper {{
+            background: radial-gradient(circle at 50% 50%, rgba(11, 17, 32, 0.98) 0%, rgba(7, 11, 20, 0.95) 100%) !important;
+            border: 1px solid #1e293b !important;
+            box-shadow: inset 0 2px 12px rgba(0, 0, 0, 0.6) !important;
+        }}
+
+        html.dark-mode .career-svg-text-title,
+        body.dark-mode .career-svg-text-title {{
+            fill: #f8fafc !important;
+        }}
+
+        html.dark-mode .career-svg-text-sub,
+        body.dark-mode .career-svg-text-sub {{
+            fill: #94a3b8 !important;
+        }}
+
+        html.dark-mode .career-svg-track-base,
+        body.dark-mode .career-svg-track-base {{
+            stroke: #1e293b !important;
+        }}
+
+        html.dark-mode .career-svg-node-bg,
+        body.dark-mode .career-svg-node-bg {{
+            fill: #0f172a !important;
+            stroke: #334155 !important;
+        }}
+
+        html.dark-mode .timeline-node-tab-btn,
+        body.dark-mode .timeline-node-tab-btn {{
+            background: #131d33 !important;
+            border-color: #223252 !important;
+            color: #94a3b8 !important;
+        }}
+
+        html.dark-mode .timeline-node-tab-btn:hover,
+        body.dark-mode .timeline-node-tab-btn:hover {{
+            background: #1e293b !important;
+            border-color: #3b82f6 !important;
+            color: #f8fafc !important;
+        }}
+
+        html.dark-mode .timeline-node-tab-btn.active,
+        body.dark-mode .timeline-node-tab-btn.active {{
+            background: #2563eb !important;
+            border-color: #3b82f6 !important;
+            color: #ffffff !important;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4) !important;
+        }}
+
+        html.dark-mode .milestone-spotlight-box,
+        body.dark-mode .milestone-spotlight-box {{
+            background: #111a2e !important;
+            border: 1px solid #1e293b !important;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4) !important;
+            color: #f8fafc !important;
+        }}
+
+        html.dark-mode .milestone-spotlight-box h4,
+        body.dark-mode .milestone-spotlight-box h4 {{
+            color: #f8fafc !important;
+        }}
+
+        html.dark-mode .milestone-spotlight-box h6,
+        body.dark-mode .milestone-spotlight-box h6 {{
+            color: #60a5fa !important;
+        }}
+
+        html.dark-mode .milestone-spotlight-box p,
+        body.dark-mode .milestone-spotlight-box p {{
+            color: #cbd5e1 !important;
+        }}
+
+        html.dark-mode .milestone-metric-box,
+        body.dark-mode .milestone-metric-box {{
+            background: #16223b !important;
+            border: 1px solid #24355a !important;
+        }}
+
+        html.dark-mode .milestone-metric-box .h2,
+        body.dark-mode .milestone-metric-box .h2,
+        html.dark-mode .milestone-metric-box .metric-value,
+        body.dark-mode .milestone-metric-box .metric-value {{
+            color: #f8fafc !important;
+        }}
+
+        html.dark-mode .milestone-metric-box p,
+        body.dark-mode .milestone-metric-box p {{
+            color: #94a3b8 !important;
+        }}
+
+        html.dark-mode .milestone-tech-chip,
+        body.dark-mode .milestone-tech-chip {{
+            background: #17233c !important;
+            border: 1px solid #283a60 !important;
+            color: #e2e8f0 !important;
+        }}
+
+        html.dark-mode .profile-hub-card,
+        body.dark-mode .profile-hub-card {{
+            background: #141e33 !important;
+            border: 1px solid #223252 !important;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35) !important;
+        }}
+
+        html.dark-mode .profile-hub-card:hover,
+        body.dark-mode .profile-hub-card:hover {{
+            background: #1a2742 !important;
+            border-color: #3b82f6 !important;
+            transform: translateY(-3px) !important;
+        }}
+
+        html.dark-mode .profile-card-icon-wrap,
+        body.dark-mode .profile-card-icon-wrap {{
+            background: #1c2b48 !important;
+            border-color: #2b3d63 !important;
+            color: #60a5fa !important;
+        }}
+
+        html.dark-mode .profile-category-pill,
+        body.dark-mode .profile-category-pill {{
+            color: #38bdf8 !important;
+        }}
+
+        html.dark-mode .profile-card-title,
+        body.dark-mode .profile-card-title {{
+            color: #f8fafc !important;
+        }}
+
+        html.dark-mode .profile-card-desc,
+        body.dark-mode .profile-card-desc {{
+            color: #cbd5e1 !important;
+        }}
+
+        html.dark-mode .profile-card-identifier .badge,
+        body.dark-mode .profile-card-identifier .badge,
+        html.dark-mode .badge-light,
+        body.dark-mode .badge-light {{
+            background: #1e293b !important;
+            border-color: #334155 !important;
+            color: #f1f5f9 !important;
+        }}
+
+        html.dark-mode .profile-search-input,
+        body.dark-mode .profile-search-input {{
+            background: #141e33 !important;
+            border: 1px solid #223252 !important;
+            color: #f8fafc !important;
+        }}
+
+        html.dark-mode .profile-search-input::placeholder,
+        body.dark-mode .profile-search-input::placeholder {{
+            color: #64748b !important;
+        }}
+
+        html.dark-mode .profile-search-input:focus,
+        body.dark-mode .profile-search-input:focus {{
+            background: #101a2e !important;
+            border-color: #3b82f6 !important;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25) !important;
+        }}
+
+        html.dark-mode .filter-btn-pill,
+        body.dark-mode .filter-btn-pill {{
+            background: #141e33 !important;
+            border-color: #223252 !important;
+            color: #94a3b8 !important;
+        }}
+
+        html.dark-mode .filter-btn-pill:hover,
+        body.dark-mode .filter-btn-pill:hover {{
+            background: #1a2742 !important;
+            border-color: #3b82f6 !important;
+            color: #f8fafc !important;
+        }}
+
+        html.dark-mode .filter-btn-pill.active,
+        body.dark-mode .filter-btn-pill.active {{
+            background: #2563eb !important;
+            color: #ffffff !important;
+            border-color: #3b82f6 !important;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4) !important;
+        }}
+
+        html.dark-mode .btn-hub-outline,
+        body.dark-mode .btn-hub-outline {{
+            background: #141e33 !important;
+            color: #cbd5e1 !important;
+            border-color: #223252 !important;
+        }}
+
+        html.dark-mode .btn-hub-outline:hover,
+        body.dark-mode .btn-hub-outline:hover {{
+            background: #1e293b !important;
+            border-color: #3b82f6 !important;
+            color: #ffffff !important;
+        }}
+
+        html.dark-mode .btn-hub-outline[style*="#fff5f5"],
+        body.dark-mode .btn-hub-outline[style*="#fff5f5"] {{
+            background: #2c1214 !important;
+            color: #f87171 !important;
+            border-color: #7f1d1d !important;
+        }}
+
+        html.dark-mode .border,
+        body.dark-mode .border,
+        html.dark-mode .border-bottom,
+        body.dark-mode .border-bottom,
+        html.dark-mode .border-top,
+        body.dark-mode .border-top,
+        html.dark-mode .border-left,
+        body.dark-mode .border-left {{
+            border-color: #1e293b !important;
         }}
     </style>
 </head>
