@@ -113,9 +113,9 @@ function generateKnowledgeFallback(query) {
   const q = (query || '').toLowerCase();
 
   if (q.includes('award') || q.includes('recognition') || q.includes('honor') || q.includes('globee') || q.includes('stevie') || q.includes('nobel') || q.includes('forttuna')) {
-    return `### 🏆 Harsh Verma — 24 Prestigious Global Awards & Honors
+    return `### 🏆 Harsh Verma — 25 Prestigious Global Awards & Honors
 
-Harsh Verma has received **24 international awards and recognitions** celebrating his breakthrough innovations in Enterprise AI, Autonomous Architectures, and Cyber Defense:
+Harsh Verma has received **25 international awards and recognitions** celebrating his breakthrough innovations in Enterprise AI, Autonomous Architectures, and Cyber Defense:
 
 - **Forttuna Global 100 Power List (2026)**: Named among the top global technology leaders shaping next-generation artificial intelligence.
 - **Nobel Technology Awards (2026)**: Gold Winner (#145) for pioneering scalable multi-agent systems and real-time enterprise platforms.
@@ -123,7 +123,7 @@ Harsh Verma has received **24 international awards and recognitions** celebratin
 - **Globee & Stevie International Business Awards**: Gold and Silver honors for Enterprise Technology and AI Breakthroughs.
 - **Brandon Hall Group & Tech Titans Honors**: Excellence in High-Impact Engineering Leadership.
 
-👉 Explore the full list of honors with official verification credentials: **[View All 24 Awards](page-awards)**`;
+👉 Explore the full list of honors with official verification credentials: **[View All 25 Awards](page-awards)**`;
   }
 
   if (q.includes('book') || q.includes('author') || q.includes('agent revolution') || q.includes('published book') || q.includes('writing')) {
@@ -142,9 +142,10 @@ Harsh Verma has authored authoritative volumes bridging academic rigor and missi
   }
 
   if (q.includes('paper') || q.includes('publication') || q.includes('research') || q.includes('scholar') || q.includes('citation') || q.includes('ieee') || q.includes('springer')) {
-    return `### 🔬 25+ Peer-Reviewed Research Publications & Academic Citations
+    const paperCount = (harshKnowledge && harshKnowledge.papersSummary && harshKnowledge.papersSummary.length) || 25;
+    return `### 🔬 ${paperCount}+ Peer-Reviewed Research Publications & Academic Citations
 
-Harsh Verma has published **25+ peer-reviewed and conference papers** across leading IEEE conferences, ICACCM, Springer Nature, and international computer science journals with over **150+ academic citations**:
+Harsh Verma has published **${paperCount}+ peer-reviewed and conference papers** across leading IEEE conferences, ICACCM, Springer Nature, and international computer science journals with over **150+ academic citations**:
 
 - **Data Quality, Feature Engineering, and Model Reliability in Large-Scale AI Multi-Agentic Systems** (EJCSIT, May 30, 2021).
 - **Scalable Real-Time Data Pipelines for AI and Machine Learning–Driven Enterprise Systems** (EJCSIT, December 30, 2020).
@@ -154,7 +155,7 @@ Harsh Verma has published **25+ peer-reviewed and conference papers** across lea
 - **Real-Time Analytics Performance Load Simulation & Scaling** for High-Frequency FinTech.
 - **Autonomous Zero-Trust Defense Protocols** for Cloud Microservice Ecosystems.
 
-👉 Access full abstracts, DOIs, and citation downloads: **[Explore 25+ Research Publications](page-publications)** or review the **[Google Scholar Profile](https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ)**.`;
+👉 Access full abstracts, DOIs, and citation downloads: **[Explore ${paperCount}+ Research Publications](page-publications)** or review the **[Google Scholar Profile](https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ)**.`;
   }
 
   if (q.includes('member') || q.includes('fellow') || q.includes('harvard') || q.includes('ieee') || q.includes('bcs') || q.includes('association') || q.includes('forbes')) {
@@ -240,12 +241,12 @@ All verified inquiries submitted through this portfolio are delivered directly w
 **Harsh Verma** is an internationally recognized **Enterprise AI Architect, Principal Technologist, and Author** with over a decade of pioneering achievements:
 
 - **Specializations**: Enterprise Generative AI, Multi-Agent Architectures, Zero-Trust Cyber Resilience, and Cloud Distributed Systems.
-- **Recognitions**: **24 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
-- **Academic Impact**: **25+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **38 Verified Academic/Professional Registries**.
+- **Recognitions**: **25 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
+- **Academic Impact**: **25+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **47 Verified Academic/Professional Registries**.
 - **Fellowships**: Harvard Square Leaders Excellence Fellow, IEEE Senior Member, and Forbes Technology Council Member.
 
 **Explore further:**
-- 🏆 **[24 Prestigious Awards](page-awards)**
+- 🏆 **[25 Prestigious Awards](page-awards)**
 - 🔬 **[25+ Research Publications](page-publications)**
 - 💼 **[Professional Experience & Roles](index#experience)**
 - 📚 **[Authored Books](page-books)**
@@ -604,6 +605,16 @@ app.get('/api/newsletter/stats', (req, res) => {
     success: true,
     totalCommunity: 3240 + newsletterSubscribers.length,
     activeSubscribers: newsletterSubscribers.length
+  });
+});
+
+// Endpoint for uniform paper count synchronization across clients
+app.get('/api/papers/count', (req, res) => {
+  const count = (harshKnowledge && harshKnowledge.papersSummary && harshKnowledge.papersSummary.length) || 25;
+  res.json({
+    success: true,
+    count: count,
+    formatted: `${count}+`
   });
 });
 

@@ -32,7 +32,7 @@ const harshKnowledge = {
       "Explainable AI (XAI) & Ethical Machine Learning Governance"
     ],
     summaryStats: {
-      awardsCount: 24,
+      awardsCount: 25,
       publicationsCount: 25,
       citationsCount: "150+",
       verifiedProfilesCount: 52,
@@ -242,8 +242,8 @@ HARSH VERMA'S CORE PROFILE:
 - Professional Roles: Enterprise AI Architect, Principal Technologist, Author, Keynote Speaker, and Fellow.
 - Contact Email: harshverma59@gmail.com
 - Main Website Pages:
-  * Biography & Profiles: "page-about" (or "page-about#verified-profiles" for the 38 Verified Academic & Industry Hubs)
-  * 24 Prestigious Awards: "page-awards"
+  * Biography & Profiles: "page-about" (or "page-about#verified-profiles" for the 47 Verified Academic &amp; Industry Hubs)
+  * 25 Prestigious Awards: "page-awards"
   * 25+ Peer-Reviewed Publications: "page-publications"
   * Authored Books: "page-books"
   * Smart Slides & Keynote Hub (EasyChair Verified Decks): "page-smart-slides" (Interactive player for Agentic Security Governance & GenAI Cybersecurity decks)
@@ -256,7 +256,7 @@ HARSH VERMA'S CORE PROFILE:
   * Direct Contact Form: "index#contact"
 
 KEY ACHIEVEMENTS & DATA TO DRAW FROM:
-1. 24 Prestigious Awards: Includes Forttuna Global 100 Power List (2026), Nobel Technology Awards Gold Winner (2026), Global Recognition Award AI Innovator of the Year (2026), Globee Leadership Awards, Stevie International Business Awards, Brandon Hall Group Honors, and Tech Titans.
+1. 25 Prestigious Awards: Includes Forttuna Global 100 Power List (2026), Nobel Technology Awards Gold Winner (2026), Global Recognition Award AI Innovator of the Year (2026), Globee Leadership Awards, Stevie International Business Awards, Brandon Hall Group Honors, and Tech Titans.
 2. 25+ Peer-Reviewed & Conference Publications: Key topics in Autonomous Multi-Agent Frameworks, Trajectory Planning in Delay Tolerant Wireless Sensor Networks (ICACCM 2026), Explainable AI (XAI), Heterogeneous Distributed Data Management, Real-Time Load Simulation, Zero-Trust Threat Modeling, and Cloud Microservice Security. (Available on Google Scholar, IEEE & ICACCM).
 3. Authored Books:
    - "Enterprise AI Agents: Build Your Authority and Lead the AI Agent Revolution"

@@ -134,7 +134,7 @@
               </div>
               <div class="hv-header-status">
                 <span class="hv-status-dot"></span>
-                <span>Grounded in 24 Awards, Books &amp; Research</span>
+                <span>Grounded in 25 Awards, Books &amp; Research</span>
               </div>
             </div>
           </div>
@@ -185,7 +185,7 @@
               class="hv-input-textarea"
               id="hvInputTextarea"
               rows="1"
-              placeholder="Ask about Harsh's AI books, 24 awards, papers, or speaking..."
+              placeholder="Ask about Harsh's AI books, 25 awards, papers, or speaking..."
               aria-label="Message to HV Copilot"
             ></textarea>
             <button type="submit" class="hv-send-btn" id="hvSendBtn" aria-label="Send message">
@@ -669,11 +669,11 @@
     if (messageHistory.length === 0) {
       // Welcome message
       const welcomeContent = `### 👋 Welcome to Harsh Verma's AI Copilot!
-I am your intelligent liaison grounded in Harsh Verma's **24 Global Awards**, **25+ Research Publications**, **Authored Books on AI Agents**, and executive advisory background.
+I am your intelligent liaison grounded in Harsh Verma's **25 Global Awards**, **25+ Research Publications**, **Authored Books on AI Agents**, and executive advisory background.
 
 How can I assist you today? You can ask about:
 - **Executive Biography & Technical Focus**
-- **24 Prestigious Recognitions & Fellowships**
+- **25 Prestigious Recognitions & Fellowships**
 - **Authored AI Agent & Cyber Defense Books**
 - **Speaking Engagements & Keynote Bookings**`;
 
@@ -924,9 +924,9 @@ How can I assist you today? You can ask about:
       q.includes('achievement') ||
       q.includes('winner')
     ) {
-      return `### 🏆 Harsh Verma — 24 Prestigious Global Awards & Honors
+      return `### 🏆 Harsh Verma — 25 Prestigious Global Awards & Honors
 
-Harsh Verma has received **24 international awards and recognitions** celebrating breakthrough innovations in Enterprise AI, Autonomous Multi-Agent Architectures, and Cyber Defense:
+Harsh Verma has received **25 international awards and recognitions** celebrating breakthrough innovations in Enterprise AI, Autonomous Multi-Agent Architectures, and Cyber Defense:
 
 - **Forttuna Global 100 Power List (2026)**: Honored among the world's top 100 technology luminaries shaping the future of autonomous intelligence.
 - **Nobel Technology Awards (2026)**: Gold Winner (#145) for pioneering scalable multi-agent systems and real-time enterprise platforms.
@@ -934,7 +934,7 @@ Harsh Verma has received **24 international awards and recognitions** celebratin
 - **Globee & Stevie International Business Awards**: Multiple Gold & Silver honors for Enterprise Technology and AI Breakthroughs.
 - **Brandon Hall Group & Tech Titans Honors**: Excellence in High-Impact Engineering Leadership.
 
-👉 Explore the full dossier of honors with official verification credentials: **[View All 24 Awards](page-awards)**`;
+👉 Explore the full dossier of honors with official verification credentials: **[View All 25 Awards](page-awards)**`;
     }
 
     // 2. Books & Authorship
@@ -1040,7 +1040,7 @@ Harsh Verma holds prestigious fellowships and elected senior memberships across 
 - **Full Elected Member of Sigma Xi** (The Scientific Research Honor Society)
 - **OWASP Global Member & Cloud Security Alliance (CSA) Member**
 
-👉 Deep dive into all citations, certifications, and appointments on the **[Invited Memberships Page](page-memberships)** and **[38 Verified Academic & Industry Hubs](page-about#verified-profiles)**.`;
+👉 Deep dive into all citations, certifications, and appointments on the **[Invited Memberships Page](page-memberships)** and **[47 Verified Academic &amp; Industry Hubs](page-about#verified-profiles)**.`;
     }
 
     // 5. Professional Career & Experience
@@ -1136,7 +1136,7 @@ Harsh Verma is an international keynote speaker, panelist, and startup judge:
     ) {
       return `### 📰 Media Coverage & Global Distribution Reach
 
-Harsh Verma's technical thought leadership has reached an aggregate global audience of over **3.75+ Billion potential views** across **39+ media features**:
+Harsh Verma's technical thought leadership has reached an aggregate global audience of over **3.75+ Billion potential views** across **40+ media features**:
 
 - **Major Syndication Platforms**: Featured on **Yahoo Finance, Business Insider, USA TODAY, AP News, NewsBreak, Barchart, and StreetInsider**.
 - **Geographic Reach**: 48% US, 18% UK, 14% India, 12% Canada, 8% Asia & Middle East.
@@ -1215,12 +1215,12 @@ All verified inquiries submitted through this portfolio are delivered directly w
 **Harsh Verma** is an internationally recognized **Enterprise AI Architect, Principal Technologist, and Author** based in the San Francisco Bay Area with over 12+ years of pioneering achievements:
 
 - **Specializations**: Enterprise Generative AI, Autonomous Multi-Agent Architectures, Zero-Trust Cyber Resilience, and Cloud Distributed Systems.
-- **Recognitions**: **24 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
-- **Academic Impact**: **25+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **38 Verified Academic/Professional Registries**.
+- **Recognitions**: **25 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
+- **Academic Impact**: **25+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **47 Verified Academic/Professional Registries**.
 - **Fellowships**: Harvard Square Leaders Excellence Fellow, IEEE Senior Member, and Forbes Technology Council Member.
 
 **Explore further:**
-- 🏆 **[24 Prestigious Awards](page-awards)**
+- 🏆 **[25 Prestigious Awards](page-awards)**
 - 🔬 **[25+ Research Publications](page-publications)**
 - 💼 **[Professional Experience & Roles](index#experience)**
 - 📚 **[Authored Books](page-books)**

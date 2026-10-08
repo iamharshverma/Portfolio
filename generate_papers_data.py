@@ -727,3 +727,12 @@ papers = [
 with open('papers_data.json', 'w') as f:
     json.dump(papers, f, indent=2)
 print(f"Saved {len(papers)} papers.")
+
+# Automatically keep paper counters uniform across the site
+try:
+    import sys
+    sys.path.insert(0, '.')
+    from scripts.sync_paper_counts import sync_paper_counts
+    sync_paper_counts(len(papers))
+except Exception as e:
+    print(f"Notice: Automated paper count sync encountered: {e}")

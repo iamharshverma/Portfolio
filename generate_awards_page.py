@@ -1231,7 +1231,7 @@ html_page = f'''<!DOCTYPE html>
                             <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
                                 <div class="dropdown-item-icon bg-soft-warning"><i class="mdi mdi-shield-account-outline"></i></div>
                                 <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">42 Verified Profiles Hub</span>
+                                    <span class="dropdown-item-title">47 Verified Profiles Hub</span>
                                     <span class="dropdown-item-desc">Academic, editorial &amp; executive registries</span>
                                 </div>
                             </a>
@@ -1424,7 +1424,7 @@ html_page = f'''<!DOCTYPE html>
                         </span>
                         <h3 class="font-weight-bold text-white mb-2" style="font-size: 1.6rem;">Explore Connected Research &amp; Governance</h3>
                         <p class="text-light mb-0" style="opacity: 0.9; font-size: 14.5px; line-height: 1.6;">
-                            Review Harsh Verma's portfolio of 6 patents (1 granted, 4 in-process at Palo Alto Networks), 22+ IEEE publications, and senior council fellowships across IEEE, Forbes Technology Council, and Sigma Xi.
+                            Review Harsh Verma's portfolio of 6 patents (1 granted, 4 in-process at Palo Alto Networks), <span data-stat="papers-count" data-stat-format="plus">25+</span> IEEE publications, and senior council fellowships across IEEE, Forbes Technology Council, and Sigma Xi.
                         </p>
                     </div>
                     <div class="col-lg-4 text-lg-right">

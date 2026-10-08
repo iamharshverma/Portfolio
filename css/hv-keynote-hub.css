@@ -1119,3 +1119,457 @@ body.dark-mode .event-card-org-logo-box {
   min-width: 0;
 }
 
+/* Speaker Profile Frame (Hero Profile Card matching screenshot) */
+.hv-speaker-profile-frame-wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.hv-speaker-profile-frame {
+  position: relative;
+  width: 100%;
+  max-width: 370px;
+  min-height: 520px;
+  height: 100%;
+  border-radius: 22px;
+  border: 1.5px solid rgba(255, 255, 255, 0.85) !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+  background: #0f172a !important;
+  background-color: #0f172a !important;
+  padding: 28px 24px 26px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
+}
+
+.hv-speaker-profile-frame:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.65), 0 0 30px rgba(37, 99, 235, 0.25);
+  border-color: #ffffff !important;
+}
+
+.hv-speaker-profile-img {
+  width: 215px;
+  max-width: 215px;
+  height: 230px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 16px;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.4s ease;
+}
+
+.hv-speaker-profile-frame:hover .hv-speaker-profile-img {
+  transform: scale(1.02);
+}
+
+.hv-speaker-card-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.hv-speaker-title-row {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.hv-speaker-card-name,
+h3.hv-speaker-card-name,
+.hv-speaker-profile-frame h3,
+.hv-speaker-profile-frame .hv-speaker-card-name {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+  letter-spacing: -0.2px !important;
+  line-height: 1.25 !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6) !important;
+}
+
+html:not(.dark-mode) .hv-speaker-card-name,
+body:not(.dark-mode) .hv-speaker-card-name,
+html:not(.dark-mode) .hv-speaker-profile-frame h3,
+body:not(.dark-mode) .hv-speaker-profile-frame h3 {
+  color: #ffffff !important;
+}
+
+/* Animated Highlighter Speaker Tag */
+.hv-speaker-highlighter-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 11px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #e0f2fe;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.4) 0%, rgba(56, 189, 248, 0.45) 50%, rgba(99, 102, 241, 0.4) 100%);
+  background-size: 200% 200%;
+  border: 1.5px solid #38bdf8;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.45), inset 0 0 8px rgba(56, 189, 248, 0.2);
+  animation: speakerHighlighterGlow 2.5s infinite ease-in-out, highlighterSweep 4s ease infinite;
+  white-space: nowrap;
+}
+
+@keyframes speakerHighlighterGlow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.4), 0 0 16px rgba(37, 99, 235, 0.25);
+    border-color: #38bdf8;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(56, 189, 248, 0.75), 0 0 26px rgba(99, 102, 241, 0.45), inset 0 0 10px rgba(56, 189, 248, 0.25);
+    border-color: #7dd3fc;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes highlighterSweep {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.speaker-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #38bdf8;
+  box-shadow: 0 0 8px #38bdf8;
+  display: inline-block;
+  animation: speakerDotPulse 1.8s infinite ease-in-out;
+}
+
+@keyframes speakerDotPulse {
+  0%, 100% { transform: scale(0.9); opacity: 0.8; box-shadow: 0 0 4px #38bdf8; }
+  50% { transform: scale(1.3); opacity: 1; box-shadow: 0 0 10px #38bdf8, 0 0 15px #38bdf8; }
+}
+
+.hv-speaker-card-sub {
+  font-size: 13.5px;
+  color: #94a3b8;
+  line-height: 1.45;
+  margin-bottom: 18px;
+  max-width: 285px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hv-speaker-inline-invite-btn,
+.hv-speaker-card-btn {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  border-radius: 12px !important;
+  padding: 13px 26px !important;
+  border: none !important;
+  width: 100% !important;
+  max-width: 290px !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35) !important;
+  transition: all 0.25s ease !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none !important;
+  margin-top: 8px;
+}
+
+.hv-speaker-inline-invite-btn:hover,
+.hv-speaker-card-btn:hover {
+  background: #1d4ed8 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.55) !important;
+}
+
+#keynoteStagePlayerWrap {
+  min-height: 380px;
+}
+
+@media (max-width: 575px) {
+  .hv-speaker-frame-inline-bar {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+  .hv-speaker-inline-invite-btn {
+    width: 100%;
+  }
+}
+
+/* Video Stage Player Wrapper Supports Both IFRAME and VIDEO */
+.hv-video-modal-player-wrap video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000000;
+}
+
+/* Refined 3-Button Layout for Keynote Cards */
+.hv-video-actions {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr 0.95fr;
+  gap: 6px;
+  align-items: center;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 10px;
+  margin-top: auto;
+}
+
+.hv-card-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 5px 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  border-radius: 7px;
+  line-height: 1.2;
+  text-decoration: none !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.hv-card-action-btn .hv-btn-icon {
+  font-size: 13.5px;
+  line-height: 1;
+}
+
+.hv-btn-stage {
+  background: #2563eb;
+  color: #ffffff !important;
+  border-color: #1d4ed8;
+}
+
+.hv-btn-stage:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(37, 99, 235, 0.35);
+  color: #ffffff !important;
+}
+
+.hv-btn-youtube {
+  background: #fff1f2;
+  color: #e11d48 !important;
+  border-color: #fecdd3;
+}
+
+.hv-btn-youtube:hover {
+  background: #ffe4e6;
+  color: #be123c !important;
+  border-color: #fda4af;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(225, 29, 72, 0.2);
+}
+
+.hv-btn-external {
+  background: #f8fafc;
+  color: #334155 !important;
+  border-color: #cbd5e1;
+}
+
+.hv-btn-external:hover {
+  background: #f1f5f9;
+  color: #0f172a !important;
+  border-color: #94a3b8;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(51, 65, 85, 0.15);
+}
+
+.hv-btn-slides {
+  background: #f0f9ff;
+  color: #0369a1 !important;
+  border-color: #bae6fd;
+}
+
+.hv-btn-slides:hover {
+  background: #e0f2fe;
+  color: #075985 !important;
+  border-color: #7dd3fc;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(14, 165, 233, 0.2);
+}
+
+/* ==========================================================================
+   LIGHT MODE THEME TUNING
+   ========================================================================== */
+html:not(.dark-mode) .hv-keynote-feature-banner {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 55%, #eef2ff 100%) !important;
+  border: 1px solid #e0e7ff !important;
+  color: #0f172a !important;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.07) !important;
+}
+
+html:not(.dark-mode) .hv-keynote-feature-banner h2 {
+  color: #0f172a !important;
+}
+
+html:not(.dark-mode) .hv-keynote-feature-banner p.text-light {
+  color: #475569 !important;
+}
+
+html:not(.dark-mode) .hv-badge-indigo {
+  background: #e0e7ff !important;
+  color: #4338ca !important;
+  border: 1px solid #c7d2fe !important;
+}
+
+html:not(.dark-mode) .hv-keynote-stage-player-card {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08) !important;
+}
+
+html:not(.dark-mode) #stageVideoTitle {
+  color: #0f172a !important;
+}
+
+html:not(.dark-mode) #stageVideoDesc {
+  color: #475569 !important;
+}
+
+html:not(.dark-mode) #stageDurationTag {
+  color: #64748b !important;
+}
+
+html:not(.dark-mode) .hv-keynote-stage-player-card .border-secondary {
+  border-color: #e2e8f0 !important;
+}
+
+html:not(.dark-mode) .hv-video-stage-toolbar {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04) !important;
+}
+
+html:not(.dark-mode) .hv-stage-filter-pill {
+  background: #f1f5f9 !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #334155 !important;
+}
+
+html:not(.dark-mode) .hv-stage-filter-pill:hover {
+  background: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+html:not(.dark-mode) .hv-stage-filter-pill.active {
+  background: #f59e0b !important;
+  color: #0f172a !important;
+  border-color: #f59e0b !important;
+}
+
+html:not(.dark-mode) .hv-quick-select {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+html:not(.dark-mode) .hv-quick-select option {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
+
+html:not(.dark-mode) .hv-carousel-nav-btn {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #334155 !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06) !important;
+}
+
+html:not(.dark-mode) .hv-carousel-nav-btn:hover {
+  background: #f59e0b !important;
+  color: #0f172a !important;
+  border-color: #f59e0b !important;
+}
+
+html:not(.dark-mode) .hv-carousel-dot {
+  background: #cbd5e1 !important;
+}
+
+html:not(.dark-mode) .hv-carousel-dot.active {
+  background: #f59e0b !important;
+}
+
+html:not(.dark-mode) .hv-carousel-track::-webkit-scrollbar-track {
+  background: #f1f5f9 !important;
+}
+
+html:not(.dark-mode) .hv-carousel-track::-webkit-scrollbar-thumb {
+  background: #cbd5e1 !important;
+}
+
+html:not(.dark-mode) .hv-speaker-profile-frame {
+  border-color: rgba(255, 255, 255, 0.85) !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55) !important;
+  background: #0f172a !important;
+}
+
+html:not(.dark-mode) .hv-speaker-frame-top-pill {
+  background: rgba(255, 255, 255, 0.94) !important;
+  color: #0f172a !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Dark mode overrides for card actions */
+body.dark-mode .hv-video-actions,
+html.dark-mode .hv-video-actions {
+  border-top-color: #1e293b !important;
+}
+
+body.dark-mode .hv-btn-youtube,
+html.dark-mode .hv-btn-youtube {
+  background: rgba(225, 29, 72, 0.16) !important;
+  color: #fda4af !important;
+  border-color: rgba(225, 29, 72, 0.35) !important;
+}
+
+body.dark-mode .hv-btn-external,
+html.dark-mode .hv-btn-external {
+  background: rgba(148, 163, 184, 0.14) !important;
+  color: #cbd5e1 !important;
+  border-color: rgba(148, 163, 184, 0.28) !important;
+}
+
+body.dark-mode .hv-btn-slides,
+html.dark-mode .hv-btn-slides {
+  background: rgba(14, 165, 233, 0.16) !important;
+  color: #7dd3fc !important;
+  border-color: rgba(14, 165, 233, 0.35) !important;
+}
+
+

@@ -351,3 +351,63 @@ function fallbackCopy(input, btnText) {
         } catch (e) {}
     }
 }
+
+// Uniform Site-Wide Research Paper Counter Synchronization
+(function() {
+    function applyPaperCounters(count) {
+        if (!count || typeof count !== 'number' || count <= 0) count = 25;
+        var countPlus = count + '+';
+        var countRaw = count.toString();
+
+        // Elements with explicit data-stat attributes
+        document.querySelectorAll('[data-stat="papers-count"]').forEach(function(el) {
+            var format = el.getAttribute('data-stat-format');
+            el.textContent = (format === 'raw') ? countRaw : countPlus;
+        });
+
+        document.querySelectorAll('[data-stat="papers-link"]').forEach(function(link) {
+            var span = link.querySelector('[data-stat="papers-count"]');
+            if (span) {
+                span.textContent = countPlus;
+            } else {
+                link.innerHTML = '<i class="mdi mdi-school mr-1"></i> View ' + countPlus + ' Published Papers &rarr;';
+            }
+        });
+
+        var booksHeroCount = document.getElementById('books-hero-paper-count');
+        if (booksHeroCount) booksHeroCount.textContent = countPlus;
+
+        document.querySelectorAll('.author-stat-card').forEach(function(card) {
+            var lbl = card.querySelector('.stat-lbl');
+            var val = card.querySelector('.stat-val');
+            if (lbl && val && /research\s+papers/i.test(lbl.textContent.trim())) {
+                val.textContent = countPlus;
+            }
+        });
+
+        var scholarStatBox = document.getElementById('scholar-stat-papers');
+        if (scholarStatBox) {
+            var numEl = scholarStatBox.querySelector('.scholar-stat-number');
+            if (numEl) numEl.textContent = countRaw;
+        }
+
+        document.querySelectorAll('a.nav-social-btn[href*="scholar.google.com"], a[title*="Google Scholar"]').forEach(function(link) {
+            link.setAttribute('title', 'Google Scholar (' + countPlus + ' Papers)');
+            link.setAttribute('aria-label', 'Google Scholar (' + countPlus + ' Papers)');
+        });
+    }
+
+    if (window.SiteStats && typeof window.SiteStats.sync === 'function') {
+        window.SiteStats.sync();
+    } else {
+        fetch('papers_data.json')
+            .then(function(r) { return r.json(); })
+            .then(function(d) {
+                var c = Array.isArray(d) ? d.length : (d && Array.isArray(d.papers) ? d.papers.length : 25);
+                applyPaperCounters(c);
+            })
+            .catch(function() {
+                applyPaperCounters(25);
+            });
+    }
+})();

@@ -541,7 +541,7 @@ html_template = """<!DOCTYPE html>
                             <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
                                 <div class="dropdown-item-icon bg-soft-warning"><i class="mdi mdi-shield-account-outline"></i></div>
                                 <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">42 Verified Profiles Hub</span>
+                                    <span class="dropdown-item-title">47 Verified Profiles Hub</span>
                                     <span class="dropdown-item-desc">Academic, editorial &amp; executive registries</span>
                                 </div>
                             </a>
@@ -629,7 +629,7 @@ html_template = """<!DOCTYPE html>
                                     <div class="col-6 mb-3">
                                         <div class="scholar-stat-box" id="scholar-stat-patents">
                                             <div class="scholar-stat-number" id="scholar-stat-patents-count">6</div>
-                                            <div class="scholar-stat-label">Patents (1 Granted, 4 In Process)</div>
+                                            <div class="scholar-stat-label">Patents (1 Granted, 1 Published, 4 Pending)</div>
                                         </div>
                                     </div>
                                     <div class="col-6 mb-3">

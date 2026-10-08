@@ -1429,7 +1429,7 @@ def generate_html():
                                         </div>
                                         <div class="col-4 col-md-3 mb-2">
                                             <h4 class="font-weight-bold text-white mb-0">6</h4>
-                                            <small class="text-white-50 font-weight-bold">Patents (1 Granted, 4 In Process)</small>
+                                            <small class="text-white-50 font-weight-bold">Patents (1 Granted, 1 Published, 4 Pending)</small>
                                         </div>
                                         <div class="col-12 col-md-3 mb-2 mt-2 mt-md-0 d-flex align-items-center justify-content-center">
                                             <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="btn btn-primary btn-sm rounded font-weight-bold px-3 w-100" style="background: linear-gradient(135deg, #2563eb 0%, #0284c7 100%); border: none;">
@@ -1475,93 +1475,126 @@ def generate_html():
             <div class="row mb-4">
                 <!-- Honors & Accreditations -->
                 <div class="col-lg-6 mb-4">
-                    <div class="h-100 p-4 bg-white rounded shadow-sm border">
-                        <div class="d-flex align-items-center mb-3">
-                            <span class="badge badge-pill text-white px-3 py-1 font-weight-bold mr-2" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%);">
-                                <i class="mdi mdi-trophy-outline mr-1"></i> Global Accreditations
-                            </span>
-                            <h3 class="font-weight-bold text-dark mb-0 ml-2" style="font-size: 1.3rem;">Honors &amp; Awards</h3>
+                    <div class="h-100 p-4 p-md-5 about-content-card executive-section-card rounded shadow-sm border d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge badge-pill text-white px-3 py-1 font-weight-bold mr-2" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%);">
+                                    <i class="mdi mdi-trophy-outline mr-1"></i> Global Accreditations
+                                </span>
+                                <h3 class="font-weight-bold text-dark mb-0 ml-2" style="font-size: 1.3rem;">Honors &amp; Awards</h3>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <div class="award-highlight-card">
+                                        <div class="award-icon-box" style="background: rgba(245, 158, 11, 0.15); color: #d97706;">
+                                            <i class="mdi mdi-earth"></i>
+                                        </div>
+                                        <h5 class="font-weight-bold text-dark mb-1" style="font-size: 15px;">Most Admire Global Indians 2026</h5>
+                                        <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Honored among visionary Indian-origin leaders globally for transformative enterprise AI &amp; cybersecurity defense.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="award-highlight-card">
+                                        <div class="award-icon-box" style="background: rgba(234, 179, 8, 0.15); color: #d97706;">
+                                            <i class="mdi mdi-trophy-award"></i>
+                                        </div>
+                                        <h5 class="font-weight-bold text-dark mb-1" style="font-size: 15px;">Global Recognition Award (2026)</h5>
+                                        <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Honored for measurable advances in enterprise AI architectures and autonomous cybersecurity defense.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                    <div class="award-highlight-card">
+                                        <div class="award-icon-box" style="background: rgba(16, 185, 129, 0.15); color: #059669;">
+                                            <i class="mdi mdi-shield-check"></i>
+                                        </div>
+                                        <h5 class="font-weight-bold text-dark mb-1" style="font-size: 15px;">Senior Member of IEEE</h5>
+                                        <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Peer-reviewed recognition of sustained technical performance and lasting contributions to IEEE disciplines.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="award-highlight-card">
+                                        <div class="award-icon-box" style="background: rgba(124, 58, 237, 0.15); color: #7c3aed;">
+                                            <i class="mdi mdi-domain"></i>
+                                        </div>
+                                        <h5 class="font-weight-bold text-dark mb-1" style="font-size: 15px;">Forbes Technology Council</h5>
+                                        <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Invitation-only council for senior technology executives; contributing author on next-generation AI systems.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-sm-6 mb-3">
-                                <div class="award-highlight-card">
-                                    <div class="award-icon-box" style="background: rgba(234, 179, 8, 0.15); color: #d97706;">
-                                        <i class="mdi mdi-trophy-award"></i>
-                                    </div>
-                                    <h5 class="font-weight-bold text-dark mb-1" style="font-size: 15px;">Global Recognition Award (2026)</h5>
-                                    <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Honored for measurable advances in enterprise AI architectures and autonomous cybersecurity defense.</p>
-                                </div>
+                        <div class="mt-3 pt-3 border-top d-flex flex-wrap align-items-center justify-content-between">
+                            <div class="d-flex align-items-center mb-2 mb-sm-0 text-muted small">
+                                <i class="mdi mdi-trophy-variant text-warning mr-2" style="font-size: 18px;"></i>
+                                <span><strong>24+ Major Accreditations</strong> across IEEE, Stevie®, Globee &amp; Cyber Defense</span>
                             </div>
-                            <div class="col-sm-6 mb-3">
-                                <div class="award-highlight-card">
-                                    <div class="award-icon-box" style="background: rgba(37, 99, 235, 0.15); color: #2563eb;">
-                                        <i class="mdi mdi-certificate"></i>
-                                    </div>
-                                    <h5 class="font-weight-bold text-dark mb-1" style="font-size: 15px;">Globee Business Awards</h5>
-                                    <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Recognized for excellence and innovation across global business leadership and technology acceleration.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                <div class="award-highlight-card">
-                                    <div class="award-icon-box" style="background: rgba(16, 185, 129, 0.15); color: #059669;">
-                                        <i class="mdi mdi-shield-check"></i>
-                                    </div>
-                                    <h5 class="font-weight-bold text-dark mb-1" style="font-size: 15px;">Senior Member of IEEE</h5>
-                                    <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Peer-reviewed recognition of sustained technical performance and lasting contributions to IEEE disciplines.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="award-highlight-card">
-                                    <div class="award-icon-box" style="background: rgba(124, 58, 237, 0.15); color: #7c3aed;">
-                                        <i class="mdi mdi-domain"></i>
-                                    </div>
-                                    <h5 class="font-weight-bold text-dark mb-1" style="font-size: 15px;">Forbes Technology Council</h5>
-                                    <p class="text-muted mb-0" style="font-size: 13px; line-height: 1.5;">Invitation-only council for senior technology executives; contributing author on next-generation AI systems.</p>
-                                </div>
-                            </div>
+                            <a href="page-awards" class="btn btn-outline-warning btn-sm rounded font-weight-bold px-3 py-1">
+                                Explore All Honors <i class="mdi mdi-arrow-right ml-1"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Strategic Focus Pillars -->
                 <div class="col-lg-6 mb-4">
-                    <div class="h-100 p-4 bg-white rounded shadow-sm border">
-                        <div class="d-flex align-items-center mb-3">
-                            <span class="badge badge-pill text-white px-3 py-1 font-weight-bold mr-2" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);">
-                                <i class="mdi mdi-compass-outline mr-1"></i> Core Domains
-                            </span>
-                            <h3 class="font-weight-bold text-dark mb-0 ml-2" style="font-size: 1.3rem;">Strategic Expertise</h3>
+                    <div class="h-100 p-4 p-md-5 about-content-card executive-section-card rounded shadow-sm border d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge badge-pill text-white px-3 py-1 font-weight-bold mr-2" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);">
+                                    <i class="mdi mdi-compass-outline mr-1"></i> Core Domains
+                                </span>
+                                <h3 class="font-weight-bold text-dark mb-0 ml-2" style="font-size: 1.3rem;">Strategic Expertise</h3>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <div class="pillar-card">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <i class="mdi mdi-robot mr-2 text-primary" style="font-size: 20px;"></i>
+                                            <h5 class="font-weight-bold text-dark mb-0" style="font-size: 15px;">Autonomous Agent Systems &amp; Multi-Agent Workflows</h5>
+                                        </div>
+                                        <p class="text-muted mb-0" style="font-size: 13.5px; line-height: 1.55;">Engineering resilient, goal-oriented agentic topologies, tool-calling pipelines, self-healing runtime orchestration, and deterministic validation harnesses.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="pillar-card">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <i class="mdi mdi-shield-lock-outline mr-2 text-success" style="font-size: 20px;"></i>
+                                            <h5 class="font-weight-bold text-dark mb-0" style="font-size: 15px;">Enterprise AI Security &amp; Cyber Defense</h5>
+                                        </div>
+                                        <p class="text-muted mb-0" style="font-size: 13.5px; line-height: 1.55;">Pioneering defensive AI guardrails, proactive adversarial mitigation, data governance, and secure AI adoption strategies at Palo Alto Networks.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="pillar-card">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <i class="mdi mdi-server-network mr-2 text-info" style="font-size: 20px;"></i>
+                                            <h5 class="font-weight-bold text-dark mb-0" style="font-size: 15px;">Distributed Cloud Systems &amp; Real-Time AI Infrastructure</h5>
+                                        </div>
+                                        <p class="text-muted mb-0" style="font-size: 13.5px; line-height: 1.55;">Architecting high-throughput distributed backends, petabyte-scale streaming pipelines with Apache Spark &amp; Kafka, low-latency inference fabrics, and fault-tolerant compute clusters.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="pillar-card">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <i class="mdi mdi-rocket-launch-outline mr-2 text-warning" style="font-size: 20px;"></i>
+                                            <h5 class="font-weight-bold text-dark mb-0" style="font-size: 15px;">Executive Advisory &amp; UC Berkeley SkyDeck Mentorship</h5>
+                                        </div>
+                                        <p class="text-muted mb-0" style="font-size: 13.5px; line-height: 1.55;">Advising high-growth startups, judging global AI innovation forums, and mentoring the next generation of engineers through ADPList and global accelerators.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-12 mb-3">
-                                <div class="pillar-card">
-                                    <div class="d-flex align-items-center mb-1">
-                                        <i class="mdi mdi-robot mr-2 text-primary" style="font-size: 20px;"></i>
-                                        <h5 class="font-weight-bold text-dark mb-0" style="font-size: 15px;">Autonomous Agent Systems &amp; Multi-Agent Workflows</h5>
-                                    </div>
-                                    <p class="text-muted mb-0" style="font-size: 13.5px; line-height: 1.55;">Engineering resilient, goal-oriented agentic topologies, tool-calling pipelines, self-healing runtime orchestration, and deterministic validation harnesses.</p>
-                                </div>
+                        <div class="mt-3 pt-3 border-top d-flex flex-wrap align-items-center justify-content-between">
+                            <div class="d-flex align-items-center mb-2 mb-sm-0 text-muted small">
+                                <i class="mdi mdi-compass text-primary mr-2" style="font-size: 18px;"></i>
+                                <span><strong>4 Core Strategic Pillars</strong> guiding enterprise scale &amp; AI reliability</span>
                             </div>
-                            <div class="col-12 mb-3">
-                                <div class="pillar-card">
-                                    <div class="d-flex align-items-center mb-1">
-                                        <i class="mdi mdi-shield-lock-outline mr-2 text-success" style="font-size: 20px;"></i>
-                                        <h5 class="font-weight-bold text-dark mb-0" style="font-size: 15px;">Enterprise AI Security &amp; Cyber Defense</h5>
-                                    </div>
-                                    <p class="text-muted mb-0" style="font-size: 13.5px; line-height: 1.55;">Pioneering defensive AI guardrails, proactive adversarial mitigation, data governance, and secure AI adoption strategies at Palo Alto Networks.</p>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="pillar-card">
-                                    <div class="d-flex align-items-center mb-1">
-                                        <i class="mdi mdi-rocket-launch-outline mr-2 text-warning" style="font-size: 20px;"></i>
-                                        <h5 class="font-weight-bold text-dark mb-0" style="font-size: 15px;">Executive Advisory &amp; UC Berkeley SkyDeck Mentorship</h5>
-                                    </div>
-                                    <p class="text-muted mb-0" style="font-size: 13.5px; line-height: 1.55;">Advising high-growth startups, judging global AI innovation forums, and mentoring the next generation of engineers through ADPList and global accelerators.</p>
-                                </div>
-                            </div>
+                            <a href="page-portfolio" class="btn btn-outline-primary btn-sm rounded font-weight-bold px-3 py-1">
+                                View Architecture <i class="mdi mdi-arrow-right ml-1"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

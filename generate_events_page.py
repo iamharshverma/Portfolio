@@ -395,25 +395,8 @@ events_data = {
             "tags": ["IEEE ICACSDF", "Technical Session Chair", "Keynote Talk", "Cybersecurity", "Digital Forensics", "Multi-Agent Systems"],
             "gradient": "from-blue-700 to-indigo-800",
             "badge_color": "#1d4ed8",
-            "icon": "mdi-microphone-variant"
-        },
-        {
-            "id": "conf-acm-sacramento-2026",
-            "title": "ACM Sacramento Keynote: Secure & Trustworthy ML/AI",
-            "event_name": "Association for Computing Machinery (ACM) Sacramento Chapter",
-            "role": "Keynote Speaker",
-            "date": "September 10, 2026",
-            "location": "Sacramento, CA / Online",
-            "description": "Distinguished Keynote Address titled 'Secure and Trustworthy Machine Learning and AI for Multi-Domain Applications', analyzing enterprise LLM defense, zero-trust validation, and agent alignment. Keynote slides published in interactive Smart Slides format (Deck GxwP).",
-            "links": [
-                {"name": "Keynote Smart Slides (Deck GxwP)", "url": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1", "icon": "mdi-presentation-play"},
-                {"name": "Watch Keynote (YouTube)", "url": "https://youtu.be/RS_BKcbeV3o", "icon": "mdi-youtube"},
-                {"name": "ACM Event Page & Registration", "url": "https://tikkl.com/acmsacramentochapter/c/harshverma59/?", "icon": "mdi-ticket-confirmation"}
-            ],
-            "tags": ["ACM", "Smart Slides: GxwP", "Keynote", "Secure AI", "Trustworthy ML", "YouTube Keynote"],
-            "gradient": "from-teal-700 to-cyan-700",
-            "badge_color": "#0f766e",
-            "icon": "mdi-shield-lock"
+            "icon": "mdi-microphone-variant",
+            "thumbnail": "images/events/icacsdf.svg"
         },
         {
             "id": "conf-iciotcaa-2026",
@@ -430,7 +413,8 @@ events_data = {
             "tags": ["ICIoTCAA", "Fellow Member", "Enterprise Security", "Keynote", "Science Tech Xplore"],
             "gradient": "from-purple-800 to-indigo-800",
             "badge_color": "#6b21a8",
-            "icon": "mdi-presentation-play"
+            "icon": "mdi-presentation-play",
+            "thumbnail": "images/events/iciotcaa.svg"
         },
         {
             "id": "conf-ai-salon-deepseek",
@@ -446,7 +430,8 @@ events_data = {
             "tags": ["DeepSeek", "Foundational Models", "MoE", "AI Salon"],
             "gradient": "from-blue-600 to-emerald-600",
             "badge_color": "#0284c7",
-            "icon": "mdi-brain"
+            "icon": "mdi-brain",
+            "thumbnail": "images/events/ai_salon.svg"
         },
         {
             "id": "conf-ai-salon-trends-2025",
@@ -462,7 +447,8 @@ events_data = {
             "tags": ["AI Trends 2025", "Engineering Leaders", "Enterprise Scale", "Founders Creative"],
             "gradient": "from-indigo-600 to-violet-600",
             "badge_color": "#4f46e5",
-            "icon": "mdi-chart-line"
+            "icon": "mdi-chart-line",
+            "thumbnail": "images/events/ai_salon.svg"
         },
         {
             "id": "conf-ai-agent-workshop",
@@ -478,7 +464,8 @@ events_data = {
             "tags": ["Agent Workshop", "Multi-Agent", "Hands-on", "Tool Calling"],
             "gradient": "from-amber-600 to-rose-600",
             "badge_color": "#d97706",
-            "icon": "mdi-hammer-wrench"
+            "icon": "mdi-hammer-wrench",
+            "thumbnail": "images/events/ai_salon.svg"
         },
         {
             "id": "conf-atagtr-hikerunner",
@@ -497,150 +484,9 @@ events_data = {
             "badge_color": "#334155",
             "icon": "mdi-speedometer",
             "thumbnail": "images/events/atagtr.svg"
-        },
-        {
-            "id": "conf-skydeck-agentic-security",
-            "title": "UC Berkeley SkyDeck Keynote: The Era of Agentic Security",
-            "event_name": "UC Berkeley SkyDeck Series (Batch 21 & 22)",
-            "role": "Distinguished Keynote Speaker & Advisor",
-            "category": "Keynote Speaker",
-            "date": "2025",
-            "location": "Berkeley, CA & Global",
-            "description": "Keynote presentation at UC Berkeley SkyDeck detailing autonomous agent divergence, runtime safety guardrails, prompt provenance, and enterprise cybersecurity architectures for venture-backed AI founders.",
-            "links": [
-                {"name": "Watch Keynote (YouTube)", "url": "https://www.youtube.com/watch?v=IZvHxEtMMnw", "icon": "mdi-youtube"},
-                {"name": "Smart Slides (u8k2)", "url": "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1", "icon": "mdi-presentation-play"}
-            ],
-            "tags": ["UC Berkeley", "Agentic Security", "SkyDeck", "Enterprise AI", "Smart Slides"],
-            "gradient": "from-amber-600 to-blue-800",
-            "badge_color": "#0284c7",
-            "icon": "mdi-school",
-            "thumbnail": "images/events/skydeck.svg"
-        },
-        {
-            "id": "conf-futureagi-enterprise-agentic",
-            "title": "FutureAGI Keynote: Enterprise Agentic Security & Multi-Model Orchestration",
-            "event_name": "FutureAGI Global Keynote Summit",
-            "role": "Global Keynote Speaker",
-            "category": "Keynote Speaker",
-            "date": "2026",
-            "location": "San Francisco, CA / Online",
-            "description": "Delivered global keynote on enterprise agentic security, multi-model orchestration frameworks, deterministic evaluation harnesses, and securing autonomous agent communication channels.",
-            "links": [
-                {"name": "Watch Keynote (YouTube)", "url": "https://www.youtube.com/watch?v=bggw4JTFjgA", "icon": "mdi-youtube"},
-                {"name": "Smart Slides (r92g)", "url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1", "icon": "mdi-presentation-play"}
-            ],
-            "tags": ["FutureAGI", "Multi-Agent Systems", "Orchestration", "Zero-Trust", "Smart Slides"],
-            "gradient": "from-violet-700 to-indigo-800",
-            "badge_color": "#7c3aed",
-            "icon": "mdi-robot",
-            "thumbnail": "images/events/futureagi.svg"
-        },
-        {
-            "id": "conf-vlink-enterprise-ai",
-            "title": "Enterprise AI: Building Solutions for Security, Scale & Trust",
-            "event_name": "TechTalk with VLink (Episode 55)",
-            "role": "Distinguished Keynote Guest",
-            "category": "Keynote Speaker",
-            "date": "2026",
-            "location": "Online Broadcast",
-            "description": "Deep-dive executive presentation covering enterprise AI architectures, scaling multi-agent workloads, identity boundaries, and real-time behavioral defense across cloud perimeters.",
-            "links": [
-                {"name": "Watch Keynote (YouTube)", "url": "https://www.youtube.com/watch?v=nIgJ99Bihsw", "icon": "mdi-youtube"},
-                {"name": "Smart Slides (m74k)", "url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1", "icon": "mdi-presentation-play"}
-            ],
-            "tags": ["Enterprise AI", "VLink Keynote", "Security & Scale", "Trustworthy Systems", "Smart Slides"],
-            "gradient": "from-blue-600 to-cyan-600",
-            "badge_color": "#2563eb",
-            "icon": "mdi-video-vintage",
-            "thumbnail": "images/events/vlink.svg"
-        },
-        {
-            "id": "conf-trueml-talks-35",
-            "title": "TrueML Keynote: Big Data & ML Practices at Palo Alto Networks",
-            "event_name": "TrueML Talks #35 (TrueFoundry)",
-            "role": "Keynote Speaker & Principal AI Engineer",
-            "category": "Keynote Speaker",
-            "date": "2025",
-            "location": "Online Broadcast",
-            "description": "Production machine learning engineering patterns, distributed feature pipelines, streaming Kafka telemetry, and zero-trust validation in high-throughput enterprise security systems.",
-            "links": [
-                {"name": "Watch Keynote (YouTube)", "url": "https://www.youtube.com/watch?v=iZkx6Ewq6wU", "icon": "mdi-youtube"},
-                {"name": "Smart Slides (GxwP)", "url": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1", "icon": "mdi-presentation-play"}
-            ],
-            "tags": ["Palo Alto Networks", "TrueML", "Feature Pipelines", "Big Data ML", "Smart Slides"],
-            "gradient": "from-sky-700 to-blue-800",
-            "badge_color": "#0284c7",
-            "icon": "mdi-database",
-            "thumbnail": "images/events/trueml.svg"
-        },
-        {
-            "id": "conf-sf-techweek-masterclass",
-            "title": "SF Tech Week Masterclass: Scaling AI & Enterprise Systems",
-            "event_name": "SF Tech Week Keynote Series",
-            "role": "Masterclass Keynote Lead",
-            "category": "Masterclass Keynote",
-            "date": "2025",
-            "location": "San Francisco, CA",
-            "description": "Executive keynote during SF Tech Week on scaling AI infrastructure, mitigating agentic risk, runtime sandboxing, and driving enterprise AI adoption across Silicon Valley.",
-            "links": [
-                {"name": "Watch Keynote (YouTube)", "url": "https://www.youtube.com/watch?v=MPhFC1h5GIc", "icon": "mdi-youtube"},
-                {"name": "Smart Slides (u8k2)", "url": "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1", "icon": "mdi-presentation-play"}
-            ],
-            "tags": ["SF Tech Week", "Masterclass", "AI Infrastructure", "Executive Keynote", "Smart Slides"],
-            "gradient": "from-amber-600 to-orange-700",
-            "badge_color": "#d97706",
-            "icon": "mdi-teach",
-            "thumbnail": "images/events/sf_tech_week.svg",
-            "youtube_id": "MPhFC1h5GIc"
-        },
-        {
-            "id": "conf-silicon-zombies-sz179",
-            "title": "SZ 179: The Digital Battleground — Quantum & Cyber Security",
-            "organization": "Silicon Zombies (Top Voices Unite)",
-            "event_name": "Silicon Zombies Global Keynote Symposium",
-            "role": "Featured Keynote Speaker & Cyber Authority",
-            "category": "Keynote Symposium",
-            "date": "June 17, 2025",
-            "location": "San Francisco, CA (Silicon Valley)",
-            "description": "Authoritative keynote address on Silicon Zombies Episode 179 alongside Rebecca Krauthamer (CEO of QuSecure). Delivered an in-depth architectural analysis on the evolving cyber threat matrix, quantum computing vulnerabilities, post-quantum cryptographic perimeters, and autonomous enterprise defense systems.",
-            "links": [
-                {"name": "Watch Keynote (YouTube)", "url": "https://youtu.be/E6kA_o57DrM", "icon": "mdi-youtube"},
-                {"name": "Smart Slides Deck", "url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1", "icon": "mdi-presentation-play"},
-                {"name": "Luma Event Page", "url": "https://luma.com/thedigitalbattleground?tk=WtnmqJ", "icon": "mdi-calendar-check"},
-                {"name": "LinkedIn Discussion", "url": "https://www.linkedin.com/feed/update/urn:li:activity:7341476106115432448/", "icon": "mdi-linkedin"}
-            ],
-            "tags": ["Silicon Zombies", "SZ 179", "Quantum Security", "Cyber Defense", "AI Battleground", "Palo Alto Networks"],
-            "gradient": "from-purple-800 to-indigo-900",
-            "badge_color": "#7c3aed",
-            "icon": "mdi-shield-lock-outline",
-            "youtube_id": "E6kA_o57DrM",
-            "thumbnail": "https://img.youtube.com/vi/E6kA_o57DrM/hqdefault.jpg"
         }
     ],
     "panels": [
-        {
-            "id": "panel-silicon-zombies-sz179",
-            "title": "SZ 179: The Digital Battleground — Quantum & Cyber Security",
-            "event_name": "Silicon Zombies (Top Voices Unite & Startup Zone)",
-            "role": "Featured Keynote Panelist & Authority",
-            "category": "Keynote Panel",
-            "date": "June 17, 2025",
-            "location": "Silicon Valley, CA / Online",
-            "description": "Featured guest panelist on Silicon Zombies Episode 179 alongside Rebecca Krauthamer (CEO of QuSecure). Delivered an authoritative keynote analysis on the evolving cyber threat landscape, the collision of post-quantum cryptography with enterprise AI perimeters, autonomous agent security, and practical architectural defenses.",
-            "links": [
-                {"name": "Watch on YouTube", "url": "https://youtu.be/E6kA_o57DrM?si=1YhXasLUtF94J5EZ", "icon": "mdi-youtube"},
-                {"name": "Smart Slides Deck", "url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1", "icon": "mdi-presentation-play"},
-                {"name": "Luma Event Page", "url": "https://luma.com/thedigitalbattleground?tk=WtnmqJ", "icon": "mdi-calendar-check"},
-                {"name": "LinkedIn Discussion", "url": "https://www.linkedin.com/feed/update/urn:li:activity:7341476106115432448/", "icon": "mdi-linkedin"}
-            ],
-            "tags": ["Silicon Zombies", "SZ 179", "Quantum Security", "Cyber Defense", "AI Battleground", "Palo Alto Networks"],
-            "gradient": "from-purple-800 to-indigo-900",
-            "badge_color": "#7c3aed",
-            "icon": "mdi-shield-lock-outline",
-            "youtube_id": "E6kA_o57DrM",
-            "thumbnail": "https://img.youtube.com/vi/E6kA_o57DrM/hqdefault.jpg"
-        },
         {
             "id": "panel-ai-security-sftechweek",
             "title": "AI × Security during SF Tech Week: Securing the AI Supply Chain",
@@ -713,28 +559,6 @@ events_data = {
             "icon": "mdi-account-tie"
         },
         {
-            "id": "panel-twill-vibe-shift",
-            "title": "Rocket & Twill Present 'Vibe Shift: The Builders Behind the Models'",
-            "event_name": "Twill & Rocket AI Engineering Conference",
-            "role": "Featured Panelist",
-            "date": "2026",
-            "location": "San Francisco, CA",
-            "description": "Expert panel discussion on foundational model ergonomics, LLMOps, model evaluation datasets, context-caching, and fine-tuning pipelines with top industry practitioners.",
-            "links": [
-                {"name": "Watch on YouTube", "url": "https://youtu.be/yXy_zYlhnfc", "icon": "mdi-youtube"},
-                {"name": "Luma Event Link", "url": "https://luma.com/8rdw6gga?tk=nxAN0Z", "icon": "mdi-calendar-check"},
-                {"name": "Twill Feature Post 1", "url": "https://www.linkedin.com/posts/wearetwill_aiengineering-mlops-aiobservability-ugcPost-7429227974249353217-LiE4", "icon": "mdi-linkedin"},
-                {"name": "Twill Feature Post 2", "url": "https://www.linkedin.com/posts/wearetwill_ai-enterpriseai-machinelearning-ugcPost-7427861664626069505-ANT4", "icon": "mdi-linkedin"},
-                {"name": "Twill Feature Post 3", "url": "https://www.linkedin.com/posts/wearetwill_agentic-ai-is-moving-fast-but-deploying-it-activity-7423138900010860544-zDMb", "icon": "mdi-linkedin"}
-            ],
-            "tags": ["Twill", "LLMOps", "Builders Behind Models", "Observability"],
-            "gradient": "from-pink-700 to-rose-600",
-            "badge_color": "#be185d",
-            "icon": "mdi-code-braces",
-            "youtube_id": "yXy_zYlhnfc",
-            "thumbnail": "https://img.youtube.com/vi/yXy_zYlhnfc/hqdefault.jpg"
-        },
-        {
             "id": "panel-health-tech-week",
             "title": "Health Tech Week / Health Tech Summit: AI & Cybersecurity in Healthcare",
             "event_name": "Health Tech Week San Francisco (aiify.io & HealthTechWeek)",
@@ -776,27 +600,29 @@ events_data = {
 keynote_videos_data = [
     {
         "id": "RS_BKcbeV3o",
-        "title": "ACM Sacramento Keynote: Secure & Trustworthy ML/AI",
+        "title": "ACM Sacramento Keynote: When Enterprises Become Multi-Agent Systems",
         "outlet": "ACM Distinguished Keynote Session",
         "date": "2026 Keynote Session",
         "duration": "38:42",
         "category": "acm",
         "thumb": "https://img.youtube.com/vi/RS_BKcbeV3o/hqdefault.jpg",
-        "desc": "Distinguished Keynote Address titled 'Secure and Trustworthy Machine Learning and AI for Multi-Domain Applications', analyzing enterprise LLM defense, zero-trust validation, and autonomous agent alignment.",
+        "recording_url": "https://www.youtube.com/watch?v=RS_BKcbeV3o",
+        "desc": "Distinguished Keynote Address titled 'When Enterprises Become Multi-Agent Systems: Secure and Trustworthy Machine Learning & AI for Multi-Domain Applications', analyzing enterprise LLM defense, zero-trust validation, and autonomous agent alignment.",
         "slides_url": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1",
-        "tags": ["ACM Keynote", "Secure AI", "Trustworthy ML", "Smart Slides"]
+        "tags": ["ACM Keynote", "Secure AI", "Multi-Agent Systems", "Smart Slides"]
     },
     {
         "id": "IZvHxEtMMnw",
         "title": "UC Berkeley SkyDeck Keynote: The Era of Agentic Security",
-        "outlet": "UC Berkeley SkyDeck Series",
+        "outlet": "UC Berkeley SkyDeck Series (B21)",
         "date": "2025 Keynote Series",
         "duration": "42:15",
         "category": "acm",
         "thumb": "https://img.youtube.com/vi/IZvHxEtMMnw/hqdefault.jpg",
+        "recording_url": "https://www.youtube.com/watch?v=IZvHxEtMMnw",
         "desc": "Keynote presentation at UC Berkeley SkyDeck detailing autonomous agent divergence, runtime safety guardrails, prompt provenance, and enterprise cybersecurity architectures.",
         "slides_url": "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1",
-        "tags": ["UC Berkeley", "Agentic Security", "SkyDeck", "Enterprise AI"]
+        "tags": ["UC Berkeley", "Agentic Security", "SkyDeck B21", "Enterprise AI"]
     },
     {
         "id": "E6kA_o57DrM",
@@ -806,21 +632,38 @@ keynote_videos_data = [
         "duration": "52:14",
         "category": "zombies",
         "thumb": "https://img.youtube.com/vi/E6kA_o57DrM/hqdefault.jpg",
+        "recording_url": "https://www.youtube.com/watch?v=E6kA_o57DrM",
         "desc": "Featured keynote symposium on Silicon Zombies Episode 179 alongside Rebecca Krauthamer (CEO of QuSecure), analyzing quantum computing vulnerabilities, post-quantum cryptographic perimeters, and autonomous AI defense systems.",
         "slides_url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1",
         "tags": ["Silicon Zombies", "SZ 179", "Quantum Security", "Autonomous Defense"]
     },
     {
-        "id": "bggw4JTFjgA",
-        "title": "FutureAGI Keynote: Enterprise Agentic Security & Multi-Model Orchestration",
-        "outlet": "FutureAGI Global Keynote",
-        "date": "2026 Virtual Keynote",
-        "duration": "35:20",
+        "id": "xraised-ai-beyond-code",
+        "title": "xRaised Global Leadership: AI Engineering Beyond Code",
+        "outlet": "xRaised Global Leadership Series",
+        "date": "2026 Executive Series",
+        "duration": "28:45",
         "category": "agentic",
-        "thumb": "https://img.youtube.com/vi/bggw4JTFjgA/hqdefault.jpg",
-        "desc": "Keynote on enterprise agentic security, multi-model orchestration frameworks, deterministic evaluation, and securing autonomous agent communication channels.",
-        "slides_url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1",
-        "tags": ["FutureAGI", "Multi-Agent Systems", "Orchestration", "Zero-Trust"]
+        "thumb": "images/events/xraised_ai_engineering.jpg",
+        "stream_url": "https://xraised.com/videos/ai-engineering-beyond-code/stream",
+        "recording_url": "https://xraised.com/videos/ai-engineering-beyond-code/",
+        "type": "video",
+        "desc": "Executive keynote interview with Harsh Verma on 'Beyond the Code: The Evolution of the Next-Generation Engineer' — exploring autonomous agent architectures, multi-model production scaling, engineering leadership, and proactive cybersecurity in frontier AI systems.",
+        "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1",
+        "tags": ["xRaised Feature", "AI Engineering", "Autonomous Systems", "Beyond Code"]
+    },
+    {
+        "id": "MPhFC1h5GIc",
+        "title": "FutureAGI Keynote: Powering Cybersecurity with GenAI & Intelligent Agents",
+        "outlet": "FutureAGI Global Keynote / SF Tech Week",
+        "date": "2026 Global Keynote",
+        "duration": "48:30",
+        "category": "agentic",
+        "thumb": "https://img.youtube.com/vi/MPhFC1h5GIc/hqdefault.jpg",
+        "recording_url": "https://www.youtube.com/watch?v=MPhFC1h5GIc",
+        "desc": "Keynote during SF Tech Week on scaling AI infrastructure, mitigating agentic risk, powering cybersecurity with generative AI, and driving enterprise AI adoption across Silicon Valley.",
+        "slides_url": "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1",
+        "tags": ["FutureAGI", "GenAI Cybersecurity", "Intelligent Agents", "SF Tech Week"]
     },
     {
         "id": "nIgJ99Bihsw",
@@ -830,6 +673,7 @@ keynote_videos_data = [
         "duration": "46:18",
         "category": "agentic",
         "thumb": "https://img.youtube.com/vi/nIgJ99Bihsw/hqdefault.jpg",
+        "recording_url": "https://www.youtube.com/watch?v=nIgJ99Bihsw",
         "desc": "Deep-dive executive presentation covering enterprise AI architectures, scaling multi-agent workloads, identity boundaries, and real-time behavioral defense.",
         "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1",
         "tags": ["Enterprise AI", "VLink Keynote", "Security & Scale", "Trustworthy Systems"]
@@ -842,6 +686,7 @@ keynote_videos_data = [
         "duration": "31:40",
         "category": "agentic",
         "thumb": "https://img.youtube.com/vi/yXy_zYlhnfc/hqdefault.jpg",
+        "recording_url": "https://www.youtube.com/watch?v=yXy_zYlhnfc",
         "desc": "Keynote presentation at Rocket & Twill's 'Vibe Shift' summit analyzing consumer tech inflection points, LLMOps, model evaluation datasets, and scalable enterprise architectures.",
         "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1",
         "tags": ["Rocket & Twill", "Vibe Shift", "Builders Behind Models", "Observability"]
@@ -854,21 +699,23 @@ keynote_videos_data = [
         "duration": "40:05",
         "category": "bigdata",
         "thumb": "https://img.youtube.com/vi/iZkx6Ewq6wU/hqdefault.jpg",
+        "recording_url": "https://www.youtube.com/watch?v=iZkx6Ewq6wU",
         "desc": "Production machine learning engineering patterns, distributed feature pipelines, and zero-trust validation in high-throughput enterprise security systems.",
         "slides_url": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1",
         "tags": ["Palo Alto Networks", "TrueML", "Feature Pipelines", "Big Data ML"]
     },
     {
-        "id": "MPhFC1h5GIc",
-        "title": "SF Tech Week Masterclass: Scaling AI & Enterprise Systems",
-        "outlet": "SF Tech Week Keynote Masterclass",
-        "date": "SF Tech Week Masterclass",
-        "duration": "48:30",
-        "category": "bigdata",
-        "thumb": "https://img.youtube.com/vi/MPhFC1h5GIc/hqdefault.jpg",
-        "desc": "Executive keynote during SF Tech Week on scaling AI infrastructure, mitigating agentic risk, and driving enterprise AI adoption across Silicon Valley.",
-        "slides_url": "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1",
-        "tags": ["SF Tech Week", "Masterclass", "AI Infrastructure", "Executive Keynote"]
+        "id": "bggw4JTFjgA",
+        "title": "FutureAGI Keynote: Enterprise Agentic Security & Multi-Model Orchestration",
+        "outlet": "FutureAGI Global Keynote",
+        "date": "2026 Virtual Keynote",
+        "duration": "35:20",
+        "category": "agentic",
+        "thumb": "https://img.youtube.com/vi/bggw4JTFjgA/hqdefault.jpg",
+        "recording_url": "https://www.youtube.com/watch?v=bggw4JTFjgA",
+        "desc": "Keynote on enterprise agentic security, multi-model orchestration frameworks, deterministic evaluation, and securing autonomous agent communication channels.",
+        "slides_url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1",
+        "tags": ["FutureAGI", "Multi-Agent Systems", "Orchestration", "Zero-Trust"]
     }
 ]
 
@@ -879,7 +726,7 @@ def render_keynote_hub():
         pin_btn_cls = "pinned" if idx == 0 else ""
         pin_btn_txt = "Pinned" if idx == 0 else "Pin Keynote"
         tags_badges = "".join([f'<span class="hv-video-tag">{t}</span>' for t in v["tags"][:3]])
-        recording_url = f"https://www.youtube.com/watch?v={v['id']}"
+        recording_url = v.get("recording_url") or f"https://www.youtube.com/watch?v={v['id']}"
         cards_html += f"""
         <div class="hv-carousel-item keynote-video-item" data-category="{v.get('category', 'all')}" id="carouselItem-{idx}">
             <div class="hv-video-card h-100 {active_class}" id="keynoteCard-{idx}">
@@ -904,20 +751,22 @@ def render_keynote_hub():
                             <i class="mdi mdi-pin"></i> PINNED STAGE
                         </span>
                     </div>
-                    <h5 class="hv-video-title" title="{v['title']}">{v['title']}</h5>
+                    <h5 class="hv-video-title" onclick="switchKeynoteVideo({idx})" style="cursor: pointer;" title="{v['title']}">{v['title']}</h5>
                     <p class="hv-video-desc">{v['desc']}</p>
                     <div class="hv-video-meta-tags">
                         {tags_badges}
                     </div>
                     <div class="hv-video-actions">
-                        <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="switchKeynoteVideo({idx})" title="Play on Stage">
-                            <i class="mdi mdi-play-circle-outline mr-1"></i> Play On Stage
+                        <button type="button" class="hv-card-action-btn hv-btn-stage" onclick="switchKeynoteVideo({idx})" title="Watch on Stage">
+                            <i class="mdi mdi-television-play hv-btn-icon"></i> <span>Stage</span>
                         </button>
-                        <a href="{recording_url}" target="_blank" class="btn btn-sm btn-outline-danger font-weight-bold" title="Watch full recording on YouTube">
-                            <i class="mdi mdi-youtube mr-1"></i> Recording
-                        </a>
-                        <a href="{v['slides_url']}" target="_blank" class="btn btn-sm btn-outline-info font-weight-bold" title="Smart Slides">
-                            <i class="mdi mdi-presentation-play mr-1"></i> Slides
+                        {f'''<a href="{recording_url}" target="_blank" class="hv-card-action-btn hv-btn-youtube allow-external-nav" title="Watch on YouTube">
+                            <i class="mdi mdi-youtube hv-btn-icon text-danger"></i> <span>YouTube</span>
+                        </a>''' if (v.get('type') != 'video' and ('youtube.com' in recording_url or 'youtu.be' in recording_url)) else f'''<a href="{recording_url}" target="_blank" class="hv-card-action-btn hv-btn-external allow-external-nav" title="Watch on External Platform">
+                            <i class="mdi mdi-open-in-new hv-btn-icon"></i> <span>External</span>
+                        </a>'''}
+                        <a href="{v['slides_url']}" target="_blank" class="hv-card-action-btn hv-btn-slides allow-external-nav" title="View Keynote Slides">
+                            <i class="mdi mdi-presentation hv-btn-icon"></i> <span>Slides</span>
                         </a>
                     </div>
                 </div>
@@ -927,7 +776,7 @@ def render_keynote_hub():
 
     first_video = keynote_videos_data[0]
     first_tags = "".join([f'<span class="hv-video-tag">{t}</span>' for t in first_video["tags"]])
-    first_recording = f"https://www.youtube.com/watch?v={first_video['id']}"
+    first_recording = first_video.get("recording_url") or f"https://www.youtube.com/watch?v={first_video['id']}"
     dots_html = "".join([f'<button type="button" class="hv-carousel-dot { "active" if i == 0 else "" }" onclick="scrollKeynoteToDot({i})" aria-label="Go to keynote {i+1}"></button>' for i in range(len(keynote_videos_data))])
 
     return f"""
@@ -949,22 +798,22 @@ def render_keynote_hub():
                         International Keynotes, AI Summits &amp; Executive Masterclasses
                     </h2>
                     <p class="text-light mb-0" style="font-size: 14.5px; opacity: 0.9; max-width: 720px; line-height: 1.6;">
-                        Watch recorded keynote presentations delivered by Harsh Verma across ACM, UC Berkeley SkyDeck, FutureAGI, TechTalks, and Silicon Valley venture summits. Pin any keynote or click play to watch live on stage.
+                        Watch recorded keynote presentations delivered by Harsh Verma across ACM, UC Berkeley SkyDeck, xRaised Global Series, FutureAGI, TechTalks, and Silicon Valley venture summits. Pin any keynote or click play to watch live on stage.
                     </p>
                 </div>
                 <div class="col-lg-4 text-lg-right mt-3 mt-lg-0">
-                    <button type="button" class="btn btn-warning font-weight-bold px-4 py-2 text-dark shadow-sm" onclick="window.openKeynoteBooking ? window.openKeynoteBooking() : window.location.href='mailto:harshverma59@gmail.com?subject=Keynote%20Invitation'" style="border-radius: 24px; font-size: 13.5px;">
+                    <button type="button" class="btn btn-warning font-weight-bold px-4 py-2 text-dark shadow-sm" onclick="if(window.openBookingModal){{window.openBookingModal('Executive Keynote & Advisory Consultation', 'Keynote Speech');}}else if(window.openKeynoteBooking){{window.openKeynoteBooking();}}return false;" data-booking-trigger="true" data-type="Keynote Speech" data-topic="Executive Keynote & Advisory Consultation" style="border-radius: 24px; font-size: 13.5px;">
                         <i class="mdi mdi-calendar-star mr-1"></i> Book for Keynote / Advisory
                     </button>
                 </div>
             </div>
 
             <!-- In-Page Featured Video Player Frame -->
-            <div class="mt-4 p-3 rounded" style="background: rgba(11, 15, 25, 0.92); border: 1px solid rgba(99, 102, 241, 0.4); border-radius: 16px; box-shadow: 0 14px 40px rgba(0,0,0,0.6);">
+            <div class="mt-4 p-3 rounded hv-keynote-stage-player-card" style="background: rgba(11, 15, 25, 0.92); border: 1px solid rgba(99, 102, 241, 0.4); border-radius: 16px; box-shadow: 0 14px 40px rgba(0,0,0,0.6);">
                 <div class="row align-items-center">
                     <div class="col-xl-8 col-lg-7">
-                        <div class="hv-video-modal-player-wrap rounded" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-                            <iframe id="keynoteStagePlayer" src="https://www.youtube-nocookie.com/embed/{first_video['id']}?rel=0&enablejsapi=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                        <div class="hv-video-modal-player-wrap rounded" id="keynoteStagePlayerWrap" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                            <iframe id="keynoteStagePlayer" src="https://www.youtube.com/embed/{first_video['id']}?rel=0&enablejsapi=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-5 mt-3 mt-lg-0 d-flex flex-column justify-content-between">
@@ -989,11 +838,14 @@ def render_keynote_hub():
                             </div>
                         </div>
                         <div class="pt-2 border-top border-secondary d-flex flex-wrap align-items-center">
-                            <a id="stageWatchRecordingBtn" href="{first_recording}" target="_blank" class="btn btn-sm btn-danger font-weight-bold px-3 py-2 mr-2 mb-2" style="border-radius: 8px;">
-                                <i class="mdi mdi-youtube mr-1"></i> Watch on YouTube
+                            <button type="button" class="btn btn-sm btn-primary font-weight-bold px-3 py-2 mr-2 mb-2" onclick="retriggerStagePlay()" style="border-radius: 8px;">
+                                <i class="mdi mdi-television-play mr-1"></i> Watch On Stage
+                            </button>
+                            <a id="stageWatchRecordingBtn" href="{first_recording}" target="_blank" class="btn btn-sm btn-outline-danger font-weight-bold px-3 py-2 mr-2 mb-2 allow-external-nav" style="border-radius: 8px;">
+                                <i class="mdi {'mdi-youtube' if 'youtube.com' in first_recording or 'youtu.be' in first_recording else 'mdi-open-in-new'} mr-1"></i> {'Watch on YouTube' if 'youtube.com' in first_recording or 'youtu.be' in first_recording else 'Watch External'} <i class="mdi mdi-open-in-new ml-1" style="font-size: 11px;"></i>
                             </a>
-                            <a id="stageSlidesBtn" href="{first_video['slides_url']}" target="_blank" class="btn btn-sm btn-outline-info font-weight-bold px-3 py-2 mr-2 mb-2" style="border-radius: 8px;">
-                                <i class="mdi mdi-presentation-play mr-1"></i> Smart Slides
+                            <a id="stageSlidesBtn" href="{first_video['slides_url']}" target="_blank" class="btn btn-sm btn-outline-info font-weight-bold px-3 py-2 mr-2 mb-2 allow-external-nav" style="border-radius: 8px;">
+                                <i class="mdi mdi-presentation mr-1"></i> Smart Slides
                             </a>
                             <button type="button" class="btn btn-sm btn-outline-light font-weight-bold px-3 py-2 mb-2" onclick="openKeynoteTheaterMode()" style="border-radius: 8px;">
                                 <i class="mdi mdi-fullscreen mr-1"></i> Theater Modal
@@ -1017,10 +869,10 @@ def render_keynote_hub():
                             <i class="mdi mdi-school"></i> ACM &amp; SkyDeck
                         </button>
                         <button type="button" class="hv-stage-filter-pill" onclick="filterKeynoteVideos('agentic', this)">
-                            <i class="mdi mdi-robot"></i> Agentic AI &amp; Scale
+                            <i class="mdi mdi-robot"></i> Agentic AI &amp; xRaised
                         </button>
                         <button type="button" class="hv-stage-filter-pill" onclick="filterKeynoteVideos('bigdata', this)">
-                            <i class="mdi mdi-database"></i> Big Data &amp; ML
+                            <i class="mdi mdi-database"></i> Big Data &amp; Systems
                         </button>
                     </div>
                     <div class="d-flex align-items-center gap-2">
@@ -1126,8 +978,17 @@ def render_keynote_hub():
 def render_links(links):
     html = ""
     for link in links:
-        html += f"""
-        <a href="{link['url']}" target="_blank" class="btn-event-link mr-2 mb-2" title="{link['name']}">
+        url = link.get('url', '')
+        is_video = 'youtube.com' in url or 'youtu.be' in url or 'xraised.com/videos' in url
+        if is_video:
+            html += f"""
+        <a href="{url}" onclick="playUrlOnStage('{url}'); return false;" class="btn-event-link mr-2 mb-2" title="Play on Keynote Stage: {link['name']}">
+            <i class="mdi {link['icon']} mr-1"></i> {link['name']}
+        </a>
+        """
+        else:
+            html += f"""
+        <a href="{url}" target="_blank" class="btn-event-link mr-2 mb-2" title="{link['name']}">
             <i class="mdi {link['icon']} mr-1"></i> {link['name']}
         </a>
         """
@@ -1161,6 +1022,7 @@ def get_event_thumbnail(item):
     org = (item.get("organization", "") + " " + item.get("event_name", "") + " " + item.get("title", "")).lower()
     
     mapping = [
+        ("xraised", "images/events/xraised_ai_engineering.jpg"),
         ("silicon-zombies", "images/events/silicon_zombies.svg"),
         ("silicon zombies", "images/events/silicon_zombies.svg"),
         ("zombie", "images/events/silicon_zombies.svg"),
@@ -1245,13 +1107,13 @@ def generate_card(item, event_type):
         escaped_desc = item['description'][:140].replace("'", "\\'")
         header_html = f"""
             <!-- Event Card Video Thumbnail Banner -->
-            <div class="event-card-video-banner" onclick="openKeynoteVideoModal('{yid}', '{escaped_title}', '{escaped_org}', '{escaped_desc}')" title="Click to Watch Recording">
+            <div class="event-card-video-banner" onclick="playUrlOnStage('https://www.youtube.com/watch?v={yid}')" title="Click to Play on Keynote Stage">
                 <img src="https://img.youtube.com/vi/{yid}/hqdefault.jpg" alt="{item['title']}" class="event-card-video-cover" loading="lazy">
                 <div class="event-card-video-overlay">
                     <div class="event-video-play-btn">
                         <i class="mdi mdi-play"></i>
                     </div>
-                    <span class="event-video-play-label">WATCH RECORDING</span>
+                    <span class="event-video-play-label">WATCH ON STAGE</span>
                 </div>
                 <div class="event-card-video-top-meta">
                     <span class="badge badge-danger font-weight-bold px-2 py-1 event-video-badge shadow-sm">
@@ -1318,14 +1180,38 @@ def generate_card(item, event_type):
     """
 
 def build_full_page():
-    all_judging = "".join([generate_card(item, "judging") for item in events_data["judging"]])
-    all_confs = "".join([generate_card(item, "conferences") for item in events_data["conferences"]])
-    all_panels = "".join([generate_card(item, "panels") for item in events_data["panels"]])
+    # Deduplicate: recorded keynotes from the top section must NOT appear as cards below!
+    featured_keynote_ids = {v['id'] for v in keynote_videos_data}
+    featured_keynote_urls = {v.get('recording_url', '') for v in keynote_videos_data} | {f"https://www.youtube.com/watch?v={v['id']}" for v in keynote_videos_data}
 
-    total_events = len(events_data["judging"]) + len(events_data["conferences"]) + len(events_data["panels"])
-    total_judging = len(events_data["judging"])
-    total_confs = len(events_data["conferences"])
-    total_panels = len(events_data["panels"])
+    def is_featured_in_top(item):
+        if item.get('youtube_id') in featured_keynote_ids:
+            return True
+        if item.get('id') in ['panel-silicon-zombies-sz179', 'panel-twill-vibe-shift', 'conf-acm-sacramento-2026', 'conf-skydeck-agentic-security', 'conf-silicon-zombies-sz179', 'conf-futureagi-enterprise-agentic', 'conf-vlink-techtalk-55', 'conf-trueml-paloaltonetworks', 'conf-sf-techweek-masterclass', 'conf-xraised-ai-beyond-code']:
+            return True
+        for link in item.get('links', []):
+            url = link.get('url', '')
+            if url in featured_keynote_urls:
+                return True
+            for kid in featured_keynote_ids:
+                if kid and kid in url:
+                    return True
+        return False
+
+    filtered_judging = [item for item in events_data["judging"] if not is_featured_in_top(item)]
+    filtered_confs = [item for item in events_data["conferences"] if not is_featured_in_top(item)]
+    filtered_panels = [item for item in events_data["panels"] if not is_featured_in_top(item)]
+
+    all_judging = "".join([generate_card(item, "judging") for item in filtered_judging])
+    all_confs = "".join([generate_card(item, "conferences") for item in filtered_confs])
+    all_panels = "".join([generate_card(item, "panels") for item in filtered_panels])
+
+    total_events = len(filtered_judging) + len(filtered_confs) + len(filtered_panels) + len(keynote_videos_data)
+    total_judging = len(filtered_judging)
+    total_confs = len(filtered_confs)
+    total_panels = len(filtered_panels)
+    total_keynotes = len(keynote_videos_data)
+    keynote_json = json.dumps(keynote_videos_data)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -1381,16 +1267,16 @@ def build_full_page():
             min-height: 100vh;
         }}
 
-        /* Hero Banner */
+        /* Hero Banner (Original Dark Navy Theme) */
         .events-hero-card {{
             background: linear-gradient(135deg, #090e17 0%, #0f172a 45%, #1e1b4b 100%);
             border-radius: 20px;
             color: #ffffff;
             padding: 42px 36px;
-            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.25);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
             position: relative;
             overflow: hidden;
-            border: 1px solid rgba(99, 102, 241, 0.25);
+            border: 1px solid rgba(99, 102, 241, 0.35);
             margin-bottom: 36px;
         }}
         .events-hero-card::before {{
@@ -1400,9 +1286,21 @@ def build_full_page():
             right: -20%;
             width: 480px;
             height: 480px;
-            background: radial-gradient(circle, rgba(99, 102, 241, 0.3) 0%, rgba(14, 165, 233, 0.15) 50%, transparent 70%);
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.25) 0%, rgba(14, 165, 233, 0.12) 50%, transparent 70%);
             border-radius: 50%;
             pointer-events: none;
+        }}
+        .events-hero-title {{
+            color: #ffffff !important;
+        }}
+        .hero-subtitle {{
+            color: #cbd5e1 !important;
+            opacity: 0.95;
+        }}
+        .hero-lead-badge {{
+            background: rgba(99, 102, 241, 0.3) !important;
+            border: 1px solid rgba(165, 180, 252, 0.35) !important;
+            color: #ffffff !important;
         }}
 
         .stat-metric-pill {{
@@ -1411,7 +1309,7 @@ def build_full_page():
             border-radius: 12px;
             padding: 12px 18px;
             display: inline-block;
-            backdrop-filter: blur(8px);
+            box-shadow: none;
             margin-right: 12px;
             margin-bottom: 12px;
             text-align: center;
@@ -1724,6 +1622,42 @@ def build_full_page():
         }}
 
         /* Dark Mode Overrides */
+        body.dark-mode .events-hero-card,
+        html.dark-mode .events-hero-card {{
+            background: linear-gradient(135deg, #090e17 0%, #0f172a 45%, #1e1b4b 100%) !important;
+            border-color: rgba(99, 102, 241, 0.35) !important;
+            color: #ffffff !important;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5) !important;
+        }}
+        body.dark-mode .events-hero-title,
+        html.dark-mode .events-hero-title {{
+            color: #ffffff !important;
+        }}
+        body.dark-mode .hero-subtitle,
+        html.dark-mode .hero-subtitle {{
+            color: #cbd5e1 !important;
+        }}
+        body.dark-mode .hero-lead-badge,
+        html.dark-mode .hero-lead-badge {{
+            background: rgba(99, 102, 241, 0.35) !important;
+            border-color: rgba(165, 180, 252, 0.4) !important;
+            color: #ffffff !important;
+        }}
+        body.dark-mode .stat-metric-pill,
+        html.dark-mode .stat-metric-pill {{
+            background: rgba(255, 255, 255, 0.08) !important;
+            border-color: rgba(255, 255, 255, 0.15) !important;
+            box-shadow: none !important;
+        }}
+        body.dark-mode .stat-metric-val,
+        html.dark-mode .stat-metric-val {{
+            color: #60a5fa !important;
+        }}
+        body.dark-mode .stat-metric-label,
+        html.dark-mode .stat-metric-label {{
+            color: #cbd5e1 !important;
+        }}
+
         body.dark-mode .events-page-wrapper {{
             background-color: #090e17;
             background-image: 
@@ -1900,7 +1834,7 @@ def build_full_page():
                             <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
                                 <div class="dropdown-item-icon bg-soft-warning"><i class="mdi mdi-shield-account-outline"></i></div>
                                 <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">42 Verified Profiles Hub</span>
+                                    <span class="dropdown-item-title">47 Verified Profiles Hub</span>
                                     <span class="dropdown-item-desc">Academic, editorial &amp; executive registries</span>
                                 </div>
                             </a>
@@ -1961,14 +1895,14 @@ def build_full_page():
             <!-- Hero Card -->
             <div class="events-hero-card">
                 <div class="row align-items-center">
-                    <div class="col-lg-8">
-                        <span class="badge badge-pill font-weight-bold px-3 py-1 mb-3 text-white" style="background: rgba(99, 102, 241, 0.35); border: 1px solid rgba(165, 180, 252, 0.4);">
+                    <div class="col-lg-7 col-xl-8">
+                        <span class="badge badge-pill font-weight-bold px-3 py-1 mb-3 hero-lead-badge">
                             <i class="mdi mdi-microphone-variant mr-1"></i> Speaking Engagements &amp; Ecosystem Leadership
                         </span>
-                        <h1 class="font-weight-bold text-white mb-2" style="font-size: 32px; letter-spacing: -0.5px;">
+                        <h1 class="font-weight-bold mb-2 events-hero-title" style="font-size: 32px; letter-spacing: -0.5px;">
                             Speaking Engagements &amp; Keynotes
                         </h1>
-                        <p class="text-light mb-4" style="font-size: 15.5px; line-height: 1.7; max-width: 680px; opacity: 0.9;">
+                        <p class="hero-subtitle mb-4" style="font-size: 15.5px; line-height: 1.7; max-width: 680px;">
                             Active ecosystem engagement across tier-1 venture accelerators, global hackathons, IEEE/ACM international conferences, and executive AI engineering summits. Dedicated to mentoring founders, reviewing peer scholarship, and defining autonomous AI standards.
                         </p>
                         <div class="d-flex flex-wrap align-items-center">
@@ -1985,19 +1919,33 @@ def build_full_page():
                                 <div class="stat-metric-label">Panel Discussions</div>
                             </div>
                             <div class="stat-metric-pill">
+                                <div class="stat-metric-val">{total_keynotes}</div>
+                                <div class="stat-metric-label">Featured Keynotes</div>
+                            </div>
+                            <div class="stat-metric-pill">
                                 <div class="stat-metric-val">{total_events}+</div>
                                 <div class="stat-metric-label">Total Engagements</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 text-center mt-4 mt-lg-0">
-                        <div class="p-3 rounded border border-secondary" style="background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(10px);">
-                            <img src="images/harsh/Harsh_portfolio_pic.png" alt="Harsh Verma" class="rounded shadow-sm mb-3" style="max-height: 180px; object-fit: cover; border: 2px solid rgba(255,255,255,0.2);">
-                            <h6 class="text-white font-weight-bold mb-1">Harsh Verma</h6>
-                            <p class="text-muted mb-2" style="font-size: 12.5px;">Principal Software Engineer in AI @ Palo Alto Networks &bull; Forbes Tech Council</p>
-                            <a href="mailto:harshverma59@gmail.com?subject=Speaking%20or%20Judging%20Invitation" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1" style="background: #4f46e5; border: none;">
-                                <i class="mdi mdi-email-send-outline mr-1"></i> Invite for Keynote / Panel
-                            </a>
+                    <div class="col-lg-5 col-xl-4 mt-4 mt-lg-0">
+                        <div class="hv-speaker-profile-frame-wrap">
+                            <div class="hv-speaker-profile-frame">
+                                <img src="images/harsh/Harsh_portfolio_pic.png" alt="Harsh Verma - Keynote Speaker & Principal AI Engineer" class="hv-speaker-profile-img">
+                                <div class="hv-speaker-card-content">
+                                    <div class="hv-speaker-title-row">
+                                        <h3 class="hv-speaker-card-name text-white font-weight-bold" style="color: #ffffff !important; font-size: 24px; font-weight: 700; letter-spacing: -0.2px; text-shadow: 0 2px 8px rgba(0,0,0,0.6); margin: 0;">Harsh Verma</h3>
+                                        <span class="hv-speaker-highlighter-badge" title="Featured Keynote Speaker">
+                                            <span class="speaker-pulse-dot"></span>
+                                            Speaker
+                                        </span>
+                                    </div>
+                                    <p class="hv-speaker-card-sub">Principal Software Engineer in AI @ Palo Alto Networks &bull; Forbes Tech Council</p>
+                                    <button type="button" class="btn btn-primary font-weight-bold hv-speaker-inline-invite-btn" onclick="if(window.openBookingModal){{window.openBookingModal('Keynote Speech & Strategic Advisory', 'Keynote Speech');}}else if(window.openKeynoteBooking){{window.openKeynoteBooking();}}return false;" data-booking-trigger="true" data-type="Keynote Speech" data-topic="Keynote Speech & Strategic Advisory" title="Invite for Keynote / Panel">
+                                        Invite for Keynote / Panel
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2121,75 +2069,8 @@ def build_full_page():
         var yearEl = document.getElementById('currentYear');
         if (yearEl) yearEl.innerText = new Date().getFullYear();
 
-        // Keynote Video Stage Data
-        var keynoteVideosList = [
-            {{
-                id: "RS_BKcbeV3o",
-                title: "ACM Sacramento Keynote: Secure & Trustworthy ML/AI",
-                outlet: "ACM Distinguished Keynote Session",
-                date: "2026 Keynote Session",
-                duration: "38:42",
-                desc: "Distinguished Keynote Address titled 'Secure and Trustworthy Machine Learning and AI for Multi-Domain Applications', analyzing enterprise LLM defense, zero-trust validation, and autonomous agent alignment.",
-                slides_url: "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1",
-                recording_url: "https://www.youtube.com/watch?v=RS_BKcbeV3o",
-                tags: ["ACM Keynote", "Secure AI", "Trustworthy ML", "Smart Slides: GxwP"]
-            }},
-            {{
-                id: "IZvHxEtMMnw",
-                title: "UC Berkeley SkyDeck Keynote: The Era of Agentic Security",
-                outlet: "UC Berkeley SkyDeck Series",
-                date: "2025 Keynote Series",
-                duration: "42:15",
-                desc: "Keynote presentation at UC Berkeley SkyDeck detailing autonomous agent divergence, runtime safety guardrails, prompt provenance, and enterprise cybersecurity architectures.",
-                slides_url: "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1",
-                recording_url: "https://www.youtube.com/watch?v=IZvHxEtMMnw",
-                tags: ["UC Berkeley", "Agentic Security", "SkyDeck", "Enterprise AI"]
-            }},
-            {{
-                id: "bggw4JTFjgA",
-                title: "FutureAGI Keynote: Enterprise Agentic Security & Multi-Model Orchestration",
-                outlet: "FutureAGI Global Keynote",
-                date: "2026 Virtual Keynote",
-                duration: "35:20",
-                desc: "Keynote on enterprise agentic security, multi-model orchestration frameworks, deterministic evaluation, and securing autonomous agent communication channels.",
-                slides_url: "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1",
-                recording_url: "https://www.youtube.com/watch?v=bggw4JTFjgA",
-                tags: ["FutureAGI", "Multi-Agent Systems", "Orchestration", "Zero-Trust"]
-            }},
-            {{
-                id: "nIgJ99Bihsw",
-                title: "Enterprise AI: Building Solutions for Security, Scale & Trust",
-                outlet: "TechTalk with VLink Keynote",
-                date: "2026 Keynote Episode",
-                duration: "46:18",
-                desc: "Deep-dive executive presentation covering enterprise AI architectures, scaling multi-agent workloads, identity boundaries, and real-time behavioral defense.",
-                slides_url: "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1",
-                recording_url: "https://www.youtube.com/watch?v=nIgJ99Bihsw",
-                tags: ["Enterprise AI", "VLink Keynote", "Security & Scale", "Trustworthy Systems"]
-            }},
-            {{
-                id: "iZkx6Ewq6wU",
-                title: "TrueML Keynote: Big Data & ML Practices at Palo Alto Networks",
-                outlet: "TrueML Talks #35",
-                date: "Production ML Keynote",
-                duration: "40:05",
-                desc: "Production machine learning engineering patterns, distributed feature pipelines, and zero-trust validation in high-throughput enterprise security systems.",
-                slides_url: "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1",
-                recording_url: "https://www.youtube.com/watch?v=iZkx6Ewq6wU",
-                tags: ["Palo Alto Networks", "TrueML", "Feature Pipelines", "Big Data ML"]
-            }},
-            {{
-                id: "MPhFC1h5GIc",
-                title: "SF Tech Week Masterclass: Scaling AI & Enterprise Systems",
-                outlet: "SF Tech Week Keynote",
-                date: "SF Tech Week Masterclass",
-                duration: "48:30",
-                desc: "Executive keynote during SF Tech Week on scaling AI infrastructure, mitigating agentic risk, and driving enterprise AI adoption across Silicon Valley.",
-                slides_url: "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1",
-                recording_url: "https://www.youtube.com/watch?v=MPhFC1h5GIc",
-                tags: ["SF Tech Week", "Masterclass", "AI Infrastructure", "Executive Keynote"]
-            }}
-        ];
+        // Keynote Video Stage Data (Dynamically synchronized from keynote_videos_data)
+        var keynoteVideosList = {keynote_json};
 
         var activeKeynoteIndex = 0;
 
@@ -2198,9 +2079,17 @@ def build_full_page():
             activeKeynoteIndex = idx;
             var v = keynoteVideosList[idx];
 
-            var player = document.getElementById('keynoteStagePlayer');
-            if (player) {{
-                player.src = 'https://www.youtube-nocookie.com/embed/' + v.id + '?autoplay=1&rel=0&enablejsapi=1';
+            var playerWrap = document.getElementById('keynoteStagePlayerWrap');
+            if (playerWrap) {{
+                if (v.stream_url || v.type === 'video') {{
+                    playerWrap.innerHTML = '<video id="keynoteStagePlayer" controls autoplay playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; background: #000;" poster="' + (v.thumb || '') + '" src="' + v.stream_url + '"></video>';
+                    var vidEl = document.getElementById('keynoteStagePlayer');
+                    if (vidEl) {{
+                        vidEl.play().catch(function(e) {{ console.log('Autoplay deferred:', e); }});
+                    }}
+                }} else {{
+                    playerWrap.innerHTML = '<iframe id="keynoteStagePlayer" src="https://www.youtube.com/embed/' + v.id + '?autoplay=1&rel=0&enablejsapi=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>';
+                }}
             }}
 
             var titleEl = document.getElementById('stageVideoTitle');
@@ -2219,12 +2108,20 @@ def build_full_page():
             if (slidesBtn) slidesBtn.href = v.slides_url;
 
             var recordingBtn = document.getElementById('stageWatchRecordingBtn');
-            if (recordingBtn) recordingBtn.href = v.recording_url || ('https://www.youtube.com/watch?v=' + v.id);
+            if (recordingBtn) {{
+                var recUrl = v.recording_url || ('https://www.youtube.com/watch?v=' + v.id);
+                recordingBtn.href = recUrl;
+                if (v.stream_url || v.type === 'video') {{
+                    recordingBtn.innerHTML = '<i class="mdi mdi-video mr-1"></i> Watch on xRaised <i class="mdi mdi-open-in-new ml-1" style="font-size: 11px;"></i>';
+                }} else {{
+                    recordingBtn.innerHTML = '<i class="mdi mdi-youtube mr-1"></i> Watch on YouTube <i class="mdi mdi-open-in-new ml-1" style="font-size: 11px;"></i>';
+                }}
+            }}
 
             var tagsEl = document.getElementById('stageVideoTags');
             if (tagsEl) {{
                 var html = '';
-                v.tags.forEach(function(t) {{
+                (v.tags || []).forEach(function(t) {{
                     html += '<span class="hv-video-tag">' + t + '</span> ';
                 }});
                 tagsEl.innerHTML = html;
@@ -2239,6 +2136,9 @@ def build_full_page():
             $('#pinBtn-' + idx).addClass('pinned').find('.pin-label-text').text('Pinned');
             $('#pinnedBadge-' + idx).removeClass('d-none');
 
+            // Sync quick select dropdown
+            $('.hv-quick-select').val(idx);
+
             // Scroll carousel item into view
             var carouselItem = document.getElementById('carouselItem-' + idx);
             var carouselTrack = document.getElementById('keynoteCarouselTrack');
@@ -2250,9 +2150,46 @@ def build_full_page():
                 updateCarouselDots();
             }}
 
+            // Smooth scroll stage into view so user sees it playing!
             var stageHub = document.getElementById('keynote-video-hub');
-            if (stageHub && window.scrollY > stageHub.offsetTop + 420) {{
-                stageHub.scrollIntoView({{ behavior: 'smooth' }});
+            if (stageHub) {{
+                stageHub.scrollIntoView({{ behavior: 'smooth', block: 'center' }});
+            }}
+        }}
+
+        function retriggerStagePlay() {{
+            switchKeynoteVideo(activeKeynoteIndex);
+        }}
+
+        function playUrlOnStage(url) {{
+            if (!url) return;
+            for (var i = 0; i < keynoteVideosList.length; i++) {{
+                var kv = keynoteVideosList[i];
+                if ((kv.id && url.indexOf(kv.id) !== -1) || 
+                    (kv.recording_url && url.indexOf(kv.recording_url) !== -1) || 
+                    (kv.stream_url && url.indexOf(kv.stream_url) !== -1) || 
+                    (url.indexOf('ai-engineering-beyond-code') !== -1 && kv.id === 'xraised-ai-beyond-code')) {{
+                    switchKeynoteVideo(i);
+                    return;
+                }}
+            }}
+
+            var yid = null;
+            if (url.indexOf('youtube.com/watch?v=') !== -1) {{
+                yid = url.split('v=')[1].split('&')[0].split('?')[0];
+            }} else if (url.indexOf('youtu.be/') !== -1) {{
+                yid = url.split('youtu.be/')[1].split('?')[0].split('&')[0];
+            }}
+
+            if (yid) {{
+                var playerWrap = document.getElementById('keynoteStagePlayerWrap');
+                if (playerWrap) {{
+                    playerWrap.innerHTML = '<iframe id="keynoteStagePlayer" src="https://www.youtube.com/embed/' + yid + '?autoplay=1&rel=0&enablejsapi=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>';
+                }}
+                var stageHub = document.getElementById('keynote-video-hub');
+                if (stageHub) {{
+                    stageHub.scrollIntoView({{ behavior: 'smooth', block: 'center' }});
+                }}
             }}
         }}
 
@@ -2275,7 +2212,11 @@ def build_full_page():
                 var previewBox = document.getElementById('hoverPreview-' + idx);
                 if (previewBox && !previewBox.classList.contains('is-previewing')) {{
                     var v = keynoteVideosList[idx];
-                    previewBox.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + v.id + '?autoplay=1&mute=1&controls=0&modestbranding=1&loop=1&playlist=' + v.id + '" allow="autoplay" loading="lazy"></iframe>';
+                    if (v.stream_url || v.type === 'video') {{
+                        previewBox.innerHTML = '<video src="' + v.stream_url + '" autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;"></video>';
+                    }} else {{
+                        previewBox.innerHTML = '<iframe src="https://www.youtube.com/embed/' + v.id + '?autoplay=1&mute=1&controls=0&modestbranding=1&loop=1&playlist=' + v.id + '" allow="autoplay" loading="lazy"></iframe>';
+                    }}
                     previewBox.classList.add('is-previewing');
                 }}
             }}, 320);
@@ -2351,20 +2292,31 @@ def build_full_page():
         // Theater Modal Functions
         function openKeynoteTheaterMode() {{
             var v = keynoteVideosList[activeKeynoteIndex];
-            window.openKeynoteVideoModal(v.id, v.title, v.outlet, v.desc);
+            window.openKeynoteVideoModal(v.id, v.title, v.outlet, v.desc, v.stream_url);
         }}
 
-        window.openKeynoteVideoModal = function(id, title, outlet, desc) {{
+        window.openKeynoteVideoModal = function(id, title, outlet, desc, streamUrl) {{
             var modal = document.getElementById('keynoteTheaterModal');
-            var iframe = document.getElementById('theaterModalIframe');
+            var wrap = modal ? modal.querySelector('.hv-video-modal-player-wrap') : null;
             var titleEl = document.getElementById('theaterModalTitle');
             var outletEl = document.getElementById('theaterModalOutlet');
             var recLink = document.getElementById('theaterModalRecordingLink');
-            if (modal && iframe) {{
-                iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+            if (modal && wrap) {{
+                if (streamUrl) {{
+                    wrap.innerHTML = '<video controls autoplay playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; background: #000;" src="' + streamUrl + '"></video>';
+                    if (recLink) {{
+                        recLink.href = 'https://xraised.com/videos/ai-engineering-beyond-code/';
+                        recLink.innerHTML = '<i class="mdi mdi-video mr-1"></i> Open on xRaised';
+                    }}
+                }} else {{
+                    wrap.innerHTML = '<iframe id="theaterModalIframe" src="https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0&enablejsapi=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>';
+                    if (recLink) {{
+                        recLink.href = 'https://www.youtube.com/watch?v=' + id;
+                        recLink.innerHTML = '<i class="mdi mdi-youtube mr-1"></i> Open in YouTube';
+                    }}
+                }}
                 if (titleEl) titleEl.innerText = title;
                 if (outletEl) outletEl.innerText = outlet;
-                if (recLink) recLink.href = 'https://www.youtube.com/watch?v=' + id;
                 modal.classList.add('active');
                 document.body.style.overflow = 'hidden';
             }}
@@ -2372,10 +2324,10 @@ def build_full_page():
 
         window.closeKeynoteVideoModal = function(e) {{
             var modal = document.getElementById('keynoteTheaterModal');
-            var iframe = document.getElementById('theaterModalIframe');
             if (modal) {{
+                var wrap = modal.querySelector('.hv-video-modal-player-wrap');
+                if (wrap) wrap.innerHTML = '';
                 modal.classList.remove('active');
-                if (iframe) iframe.src = '';
                 document.body.style.overflow = '';
             }}
         }};
@@ -2386,10 +2338,19 @@ def build_full_page():
             }}
         }});
 
+        // Intercept any video link on page to play on stage
+        $(document).on('click', 'a[href*="youtube.com"], a[href*="youtu.be"], a[href*="xraised.com/videos"]', function(e) {{
+            if (e.ctrlKey || e.metaKey || $(this).hasClass('allow-external-nav')) {{
+                return;
+            }}
+            e.preventDefault();
+            playUrlOnStage($(this).attr('href'));
+        }});
+
         var speakerBios = {{
             short: "Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, Forbes Technology Council Member, IEEE Senior Member, and author of two books on Enterprise AI. Recognized on the Forttuna Global 100 Power List and Nobel Technology Awards Gold (#145), he architects deterministic agentic systems, zero-trust cloud perimeters, and high-throughput data platforms, keynoting across UC Berkeley SkyDeck and international AI symposiums.",
-            medium: "Harsh Verma is an internationally recognized Enterprise AI Architect, Principal Software Engineer in AI at Palo Alto Networks, and Forbes Technology Council Member. With over a decade of systems leadership, Harsh has authored 2 seminal industry books on Enterprise AI Agents and Autonomous Cyber Defense, published 25+ peer-reviewed papers on IEEE and international journals with 150+ academic citations, and earned 24 global technology honors including the Forttuna Global 100 Power List, Nobel Technology Awards Gold (#145), and Global Recognition Award for AI Innovation. He serves as an elected Fellow of Harvard Square Leaders Excellence and IEEE Senior Member. Harsh is a distinguished keynote speaker—frequently headlining UC Berkeley SkyDeck, international AI summits, and venture accelerators on agentic security architectures, distributed AI infrastructure, and autonomous enterprise defense.",
-            full: "Harsh Verma is a distinguished Enterprise AI Architect, Principal Software Engineer in AI at Palo Alto Networks, Forbes Technology Council Member, and prolific author. A pioneer in agentic security architectures and deterministic AI guardrails, Harsh has architected mission-critical data platforms, distributed feature pipelines, and autonomous defense perimeters protecting global enterprise networks.\\n\\nHe is the recipient of 24 international honors including the Forttuna Global 100 Power List (2026), Nobel Technology Awards Gold (#145), Global Recognition Award for Enterprise AI Innovation, and multiple Globee & Stevie Awards. A dedicated researcher and thought leader, Harsh has published 25+ peer-reviewed papers across IEEE and international engineering journals, accumulating over 150+ academic citations, alongside authoring two seminal books on Enterprise AI Agents and Autonomous Cyber Defense. He holds senior fellowships including Harvard Square Leaders Excellence Fellow and IEEE Senior Member.\\n\\nAs an invited keynote speaker and technical advisor, Harsh headlines major technology symposiums, university venture accelerators including UC Berkeley SkyDeck, and global executive forums, delivering actionable frameworks on generative AI, zero-trust cloud security, and resilient autonomous systems."
+            medium: "Harsh Verma is an internationally recognized Enterprise AI Architect, Principal Software Engineer in AI at Palo Alto Networks, and Forbes Technology Council Member. With over a decade of systems leadership, Harsh has authored 2 seminal industry books on Enterprise AI Agents and Autonomous Cyber Defense, published 25+ peer-reviewed papers on IEEE and international journals with 150+ academic citations, and earned 25 global technology honors including the Forttuna Global 100 Power List, Nobel Technology Awards Gold (#145), and Global Recognition Award for AI Innovation. He serves as an elected Fellow of Harvard Square Leaders Excellence and IEEE Senior Member. Harsh is a distinguished keynote speaker—frequently headlining UC Berkeley SkyDeck, international AI summits, and venture accelerators on agentic security architectures, distributed AI infrastructure, and autonomous enterprise defense.",
+            full: "Harsh Verma is a distinguished Enterprise AI Architect, Principal Software Engineer in AI at Palo Alto Networks, Forbes Technology Council Member, and prolific author. A pioneer in agentic security architectures and deterministic AI guardrails, Harsh has architected mission-critical data platforms, distributed feature pipelines, and autonomous defense perimeters protecting global enterprise networks.\\n\\nHe is the recipient of 25 international honors including the Forttuna Global 100 Power List (2026), Nobel Technology Awards Gold (#145), Global Recognition Award for Enterprise AI Innovation, and multiple Globee & Stevie Awards. A dedicated researcher and thought leader, Harsh has published 25+ peer-reviewed papers across IEEE and international engineering journals, accumulating over 150+ academic citations, alongside authoring two seminal books on Enterprise AI Agents and Autonomous Cyber Defense. He holds senior fellowships including Harvard Square Leaders Excellence Fellow and IEEE Senior Member.\\n\\nAs an invited keynote speaker and technical advisor, Harsh headlines major technology symposiums, university venture accelerators including UC Berkeley SkyDeck, and global executive forums, delivering actionable frameworks on generative AI, zero-trust cloud security, and resilient autonomous systems."
         }};
 
         var currentBioType = 'short';

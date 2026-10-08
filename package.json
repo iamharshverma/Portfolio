@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "description": "Harsh Verma Portfolio Website",
-  "main": "server.js",
+  "main": "server.ts",
   "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js",
-    "build": "echo 'Build complete'",
+    "dev": "node server.ts",
+    "start": "node server.ts",
+    "build": "python3 scripts/sync_site_stats.py && echo 'Build complete'",
     "lint": "node -e \"console.log('No linting errors found')\""
   },
   "dependencies": {
