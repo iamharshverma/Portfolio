@@ -206,6 +206,13 @@ def sync_html_and_generators(stats):
                 content
             )
 
+            # 5b. Update copilot chip "<i class="mdi mdi-school mr-1"></i> XX+ Papers"
+            content = re.sub(
+                r'(<i class="mdi mdi-school mr-1"></i>\s*)\d+\+?(\s*Papers)',
+                rf'\g<1>{p_disp}\g<2>',
+                content
+            )
+
             # 6. Update "Showing all XX publications" in publications page
             content = re.sub(
                 r'(\bShowing all\s+)\d+(\s+publications\b)',

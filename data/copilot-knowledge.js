@@ -178,7 +178,7 @@ const harshKnowledge = {
   })),
 
   verifiedProfiles: [
-    { name: "Google Scholar", url: "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ", count: "25+ Papers" },
+    { name: "Google Scholar", url: "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ", count: "26+ Papers" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/harshverma59/", handle: "harshverma59" },
     { name: "GitHub", url: "https://github.com/iamharshverma", handle: "iamharshverma" },
     { name: "ORCID", url: "page-about#verified-profiles", id: "Verified Researcher" },

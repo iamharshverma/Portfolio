@@ -7,8 +7,8 @@
     'use strict';
 
     window.HV_SITE_STATS = {
-        researchPapers: 25,
-        researchPapersDisplay: "25+",
+        researchPapers: 26,
+        researchPapersDisplay: "26+",
         awardsCount: 25,
         awardsDisplay: "25",
         awardsDisplayPlus: "25+",

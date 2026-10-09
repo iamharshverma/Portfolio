@@ -721,6 +721,45 @@ papers = [
   doi={10.37745/ejcsit.2013/vol8n56986},
   url={https://eajournals.org/ejcsit/vol-8-issue-5-november-2020/scalable-real-time-data-pipelines-for-ai-and-machine-learning-driven-enterprise-systems/}
 }"""
+    },
+    {
+        "id": "pub-26",
+        "title": "Beyond Models: Building Trusted AI in the Age of Autonomous Agents",
+        "venue": "Proceedings of the Raptors Conference (Raptors Conference 2026)",
+        "year": "2026",
+        "publication_date": "Sep 2026",
+        "volume": "Vol. 1",
+        "authors": "Harsh Verma",
+        "category": "conference",
+        "category_label": "Conference Journal",
+        "topic": "agents security",
+        "topic_label": "Agentic AI & Security",
+        "doi": "10.68495/rc.2026.C025",
+        "link": "https://proceedings.raptors.dev/verma-trusted-ai-autonomous-agents/",
+        "alt_link": "https://proceedings.raptors.dev/pdf/verma-trusted-ai-autonomous-agents.pdf",
+        "alt_label": "PDF Full Text",
+        "publisher": "Hackathon Raptors (Raptors.Dev)",
+        "abstract": "Introduces the emerging paradigm of multi-agentic AI in cybersecurity, where systems evolve from passive tools to autonomous decision-making entities. Explores the rise of agentic AI and its transformative impact on modern cybersecurity. As AI systems evolve from assistive tools into autonomous agents capable of independent decision-making and action, they introduce a new class of dynamic, fast-moving, and highly adaptive threats. Examines the architecture and behavior of these agents, highlighting critical vulnerabilities that emerge from autonomy, orchestration, and trust dependencies, presenting the concept of a 'lethal trifecta' of risks that redefine traditional security boundaries. Outlines a defense-first approach grounded in observability, governance, and secure infrastructure design, emphasizing a shift toward 'secure-by-design' principles and actionable frameworks to design resilient, trustworthy agentic systems.",
+        "tags": [
+            "Agentic AI",
+            "Autonomous Agents",
+            "Cybersecurity",
+            "Trusted AI",
+            "Multi-Agent Systems",
+            "Raptors Conference",
+            "Secure-by-Design"
+        ],
+        "bibtex": """@inproceedings{verma2026beyondmodels,
+  title={Beyond Models: Building Trusted AI in the Age of Autonomous Agents},
+  author={Verma, Harsh},
+  booktitle={Proceedings of the Raptors Conference (Raptors Conference 2026)},
+  volume={1},
+  year={2026},
+  month={September},
+  publisher={Hackathon Raptors},
+  doi={10.68495/rc.2026.C025},
+  url={https://proceedings.raptors.dev/verma-trusted-ai-autonomous-agents/}
+}"""
     }
 ]
 

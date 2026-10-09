@@ -532,7 +532,7 @@ def generate_books_html():
                 </ul>
                 <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
                     <li class="list-inline-item mr-2">
-                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (25+ Papers)">
+                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (26+ Papers)">
                             <i class="mdi mdi-school"></i>
                         </a>
                     </li>
@@ -607,7 +607,7 @@ def generate_books_html():
                             </div>
                             <div class="col-6 col-md-3 border-right mb-3 mb-md-0">
                                 <a href="page-publications" class="text-decoration-none">
-                                    <div class="stat-val text-dark" style="font-size: 28px; font-weight: 800;" data-stat="research-papers">25+</div>
+                                    <div class="stat-val text-dark" style="font-size: 28px; font-weight: 800;" data-stat="research-papers">26+</div>
                                     <div class="stat-lbl text-primary small text-uppercase font-weight-bold">Research Papers &rarr;</div>
                                 </a>
                             </div>
