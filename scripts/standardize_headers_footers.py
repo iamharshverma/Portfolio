@@ -46,7 +46,7 @@ NAVBAR_TEMPLATE = """    <!-- Navbar Start -->
                         <a class="nav-link" href="page-awards">Awards</a>
                     </li>
                     <li class="nav-item{MEMBERSHIPS_CLASS}">
-                        <a class="nav-link" href="page-memberships">Memberships</a>
+                        <a class="nav-link" href="page-memberships">Associations</a>
                     </li>
                     <li class="nav-item{MEDIA_CLASS}">
                         <a class="nav-link" href="page-media">Media</a>
