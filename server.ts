@@ -112,18 +112,19 @@ function getGenAI() {
 function generateKnowledgeFallback(query) {
   const q = (query || '').toLowerCase();
 
-  if (q.includes('award') || q.includes('recognition') || q.includes('honor') || q.includes('globee') || q.includes('stevie') || q.includes('nobel') || q.includes('forttuna')) {
-    return `### 🏆 Harsh Verma — 25 Prestigious Global Awards & Honors
+  if (q.includes('award') || q.includes('recognition') || q.includes('honor') || q.includes('globee') || q.includes('stevie') || q.includes('nobel') || q.includes('forttuna') || q.includes('nvtc')) {
+    return `### 🏆 Harsh Verma — 26 Prestigious Global Awards & Honors
 
-Harsh Verma has received **25 international awards and recognitions** celebrating his breakthrough innovations in Enterprise AI, Autonomous Architectures, and Cyber Defense:
+Harsh Verma has received **26 international awards and recognitions** celebrating his breakthrough innovations in Enterprise AI, Autonomous Architectures, and Cyber Defense:
 
+- **2026 NVTC Cyber50 Honoree**: Recognized by the Northern Virginia Technology Council for making an impact across the cybersecurity community and advancing defense architectures.
 - **Forttuna Global 100 Power List (2026)**: Named among the top global technology leaders shaping next-generation artificial intelligence.
 - **Nobel Technology Awards (2026)**: Gold Winner (#145) for pioneering scalable multi-agent systems and real-time enterprise platforms.
 - **Global Recognition Award (2026)**: AI Innovator of the Year honoring sustained technical leadership and patent-worthy architectures.
 - **Globee & Stevie International Business Awards**: Gold and Silver honors for Enterprise Technology and AI Breakthroughs.
 - **Brandon Hall Group & Tech Titans Honors**: Excellence in High-Impact Engineering Leadership.
 
-👉 Explore the full list of honors with official verification credentials: **[View All 25 Awards](page-awards)**`;
+👉 Explore the full list of honors with official verification credentials: **[View All 26 Awards](page-awards)**`;
   }
 
   if (q.includes('book') || q.includes('author') || q.includes('agent revolution') || q.includes('published book') || q.includes('writing')) {
@@ -241,13 +242,13 @@ All verified inquiries submitted through this portfolio are delivered directly w
 **Harsh Verma** is an internationally recognized **Enterprise AI Architect, Principal Technologist, and Author** with over a decade of pioneering achievements:
 
 - **Specializations**: Enterprise Generative AI, Multi-Agent Architectures, Zero-Trust Cyber Resilience, and Cloud Distributed Systems.
-- **Recognitions**: **25 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
-- **Academic Impact**: **25+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **47 Verified Academic/Professional Registries**.
+- **Recognitions**: **26 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
+- **Academic Impact**: **26+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **47 Verified Academic/Professional Registries**.
 - **Fellowships**: Harvard Square Leaders Excellence Fellow, IEEE Senior Member, and Forbes Technology Council Member.
 
 **Explore further:**
-- 🏆 **[25 Prestigious Awards](page-awards)**
-- 🔬 **[25+ Research Publications](page-publications)**
+- 🏆 **[26 Prestigious Awards](page-awards)**
+- 🔬 **[26+ Research Publications](page-publications)**
 - 💼 **[Professional Experience & Roles](index#experience)**
 - 📚 **[Authored Books](page-books)**
 - 👥 **[Invited Memberships](page-memberships)**

@@ -113,6 +113,42 @@
     "citation": "Verma, H. (2026). Gold Winner: Secure AI Next-Generation Innovation. Nobel Technology Awards & Globee Awards (Credential ID: d8cf660f-402b-44b5-a217-3e4bab2d5e42)."
   },
   {
+    "id": "award-nvtc-cyber50-honoree-2026",
+    "title": "2026 NVTC Cyber50 Honoree",
+    "organization": "Northern Virginia Technology Council (NVTC)",
+    "category": "ai-cyber",
+    "category_label": "AI & Cybersecurity Innovation",
+    "tier": "Cyber50 Honoree",
+    "tier_class": "tier-gold",
+    "year": "2026",
+    "image": "images/awards/nvtc_cyber50.svg",
+    "description": "Selected as a 2026 NVTC Cyber50 Honoree by the Northern Virginia Technology Council, celebrating individuals making an impact across the cybersecurity community, advancing cybersecurity excellence, and recognizing distinguished accomplishments in enterprise AI defense, secure architectures, and mission-critical systems engineering.",
+    "tags": [
+      "NVTC Cyber50",
+      "Cyber50 Honoree",
+      "Cybersecurity Leadership",
+      "Enterprise Defense & AI"
+    ],
+    "links": [
+      {
+        "label": "NVTC Website Announcement",
+        "url": "https://www.nvtc.org/press-releases/nvtc-announces-2026-cyber50-honorees/",
+        "icon": "mdi-newspaper-variant"
+      },
+      {
+        "label": "Awards Event Invitation",
+        "url": "https://nvtc.glueup.com/event/nvtc-cyber-summit-cyber50-awards-186181/",
+        "icon": "mdi-ticket"
+      },
+      {
+        "label": "LinkedIn Announcement",
+        "url": "https://lnkd.in/p/ggY4pcdT",
+        "icon": "mdi-linkedin"
+      }
+    ],
+    "citation": "Verma, H. (2026). 2026 NVTC Cyber50 Honoree: Celebrating Groundbreaking Accomplishments and Impact across the Cybersecurity Community. Northern Virginia Technology Council (NVTC)."
+  },
+  {
     "id": "award-global-recognition-2026",
     "title": "2026 Global Recognition Award: AI Innovator of the Year",
     "organization": "Global Recognition Awards\u2122 \u00b7 Palo Alto Networks",

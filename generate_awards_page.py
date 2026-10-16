@@ -61,6 +61,25 @@ awards_data = [
         "citation": "Verma, H. (2026). Gold Winner: Secure AI Next-Generation Innovation. Nobel Technology Awards & Globee Awards (Credential ID: d8cf660f-402b-44b5-a217-3e4bab2d5e42)."
     },
     {
+        "id": "award-nvtc-cyber50-honoree-2026",
+        "title": "2026 NVTC Cyber50 Honoree",
+        "organization": "Northern Virginia Technology Council (NVTC)",
+        "category": "ai-cyber",
+        "category_label": "AI & Cybersecurity Innovation",
+        "tier": "Cyber50 Honoree",
+        "tier_class": "tier-gold",
+        "year": "2026",
+        "image": "images/awards/nvtc_cyber50.svg",
+        "description": "Selected as a 2026 NVTC Cyber50 Honoree by the Northern Virginia Technology Council, celebrating individuals making an impact across the cybersecurity community, advancing cybersecurity excellence, and recognizing distinguished accomplishments in enterprise AI defense, secure architectures, and mission-critical systems engineering.",
+        "tags": ["NVTC Cyber50", "Cyber50 Honoree", "Cybersecurity Leadership", "Enterprise Defense & AI"],
+        "links": [
+            {"label": "NVTC Website Announcement", "url": "https://www.nvtc.org/press-releases/nvtc-announces-2026-cyber50-honorees/", "icon": "mdi-newspaper-variant"},
+            {"label": "Awards Event Invitation", "url": "https://nvtc.glueup.com/event/nvtc-cyber-summit-cyber50-awards-186181/", "icon": "mdi-ticket"},
+            {"label": "LinkedIn Announcement", "url": "https://lnkd.in/p/ggY4pcdT", "icon": "mdi-linkedin"}
+        ],
+        "citation": "Verma, H. (2026). 2026 NVTC Cyber50 Honoree: Celebrating Groundbreaking Accomplishments and Impact across the Cybersecurity Community. Northern Virginia Technology Council (NVTC)."
+    },
+    {
         "id": "award-global-recognition-2026",
         "title": "2026 Global Recognition Award: AI Innovator of the Year",
         "organization": "Global Recognition Awards™ · Palo Alto Networks",
@@ -457,6 +476,11 @@ global_titles = sum(1 for a in awards_data if a["year"] == "2026")
 gold_medals = sum(1 for a in awards_data if "gold" in a["tier_class"] or "Gold" in a["tier"] or "Winner" in a["tier"])
 academic_honors = sum(1 for a in awards_data if a["category"] in ["academic-fellowships", "leadership"])
 mentorship_hours = "1,000+"
+count_ai = sum(1 for a in awards_data if a["category"] == "ai-cyber")
+count_lead = sum(1 for a in awards_data if a["category"] == "leadership")
+count_acad = sum(1 for a in awards_data if a["category"] == "academic-fellowships")
+count_mentor = sum(1 for a in awards_data if a["category"] == "mentorship-advisory")
+count_media = sum(1 for a in awards_data if a["category"] == "media-speaking")
 
 def build_card_html(award):
     aid = award["id"]
@@ -1178,7 +1202,7 @@ html_page = f'''<!DOCTYPE html>
                         <a class="nav-link" href="page-awards">Awards</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page-memberships">Memberships</a>
+                        <a class="nav-link" href="page-memberships">Associations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="page-media">Media</a>
@@ -1307,7 +1331,7 @@ html_page = f'''<!DOCTYPE html>
                             <i class="mdi mdi-trophy-award mr-1"></i> Explore {total_awards} Honors
                         </a>
                         <a href="page-memberships" class="btn btn-outline-light rounded font-weight-bold px-4 py-2">
-                            <i class="mdi mdi-account-group mr-1"></i> View Memberships &amp; Fellowships
+                            <i class="mdi mdi-account-group mr-1"></i> View Associations &amp; Fellowships
                         </a>
                     </div>
                 </div>
@@ -1370,19 +1394,19 @@ html_page = f'''<!DOCTYPE html>
                     <i class="mdi mdi-apps"></i> All Honors <span class="filter-count" id="count-all">{total_awards}</span>
                 </button>
                 <button type="button" class="btn-filter-pill" onclick="setCategoryFilter('ai-cyber', this)">
-                    <i class="mdi mdi-shield-lock-outline"></i> AI &amp; Cybersecurity Innovation <span class="filter-count" id="count-ai">7</span>
+                    <i class="mdi mdi-shield-lock-outline"></i> AI &amp; Cybersecurity Innovation <span class="filter-count" id="count-ai">{count_ai}</span>
                 </button>
                 <button type="button" class="btn-filter-pill" onclick="setCategoryFilter('leadership', this)">
-                    <i class="mdi mdi-crown-outline"></i> Global Leadership &amp; Power Lists <span class="filter-count" id="count-lead">2</span>
+                    <i class="mdi mdi-crown-outline"></i> Global Leadership &amp; Power Lists <span class="filter-count" id="count-lead">{count_lead}</span>
                 </button>
                 <button type="button" class="btn-filter-pill" onclick="setCategoryFilter('academic-fellowships', this)">
-                    <i class="mdi mdi-school-outline"></i> Academic &amp; Fellowships <span class="filter-count" id="count-acad">7</span>
+                    <i class="mdi mdi-school-outline"></i> Academic &amp; Fellowships <span class="filter-count" id="count-acad">{count_acad}</span>
                 </button>
                 <button type="button" class="btn-filter-pill" onclick="setCategoryFilter('mentorship-advisory', this)">
-                    <i class="mdi mdi-account-multiple-outline"></i> Mentorship &amp; Advisory <span class="filter-count" id="count-mentor">5</span>
+                    <i class="mdi mdi-account-multiple-outline"></i> Mentorship &amp; Advisory <span class="filter-count" id="count-mentor">{count_mentor}</span>
                 </button>
                 <button type="button" class="btn-filter-pill" onclick="setCategoryFilter('media-speaking', this)">
-                    <i class="mdi mdi-bullhorn-outline"></i> Media, Keynotes &amp; Journals <span class="filter-count" id="count-media">3</span>
+                    <i class="mdi mdi-bullhorn-outline"></i> Media, Keynotes &amp; Journals <span class="filter-count" id="count-media">{count_media}</span>
                 </button>
             </div>
 
@@ -1654,6 +1678,10 @@ html_page = f'''<!DOCTYPE html>
             }}, 3000);
         }}
     </script>
+    <!-- HV AI Copilot Assistant Engine -->
+    <script src="js/hv-copilot.js"></script>
+    <script src="js/site-stats.js"></script>
+    <script src="js/hv-site-stats.js"></script>
 </body>
 </html>
 '''

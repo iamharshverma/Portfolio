@@ -34,7 +34,7 @@ def load_canonical_stats():
             awards = json.load(f)
             awards_count = len(awards)
     else:
-        awards_count = 25
+        awards_count = 26
 
     # 3. Media items count from media_data.json
     media_path = os.path.join(ROOT_DIR, "media_data.json")
@@ -263,92 +263,102 @@ def sync_html_and_generators(stats):
             # --- AWARDS & HONORS METRICS ---
             # 12. Update "24+ Honors" or "24+ Global Honors & Citations"
             content = re.sub(
-                r'(\b(?:24|24\+)\s+Global Honors\s*(?:&amp;|&)\s*Citations\b)',
+                r'(\b(?:24|25|26)\+?\s+Global Honors\s*(?:&amp;|&)\s*Citations\b)',
                 f'{a_disp_plus} Global Honors &amp; Citations',
                 content
             )
             content = re.sub(
-                r'(<div class="home-metric-value"[^>]*><i class="mdi mdi-trophy-variant-outline mr-1 text-warning"></i>)\s*24\+?\s*(</div>)',
+                r'(<div class="home-metric-value"[^>]*><i class="mdi mdi-trophy-variant-outline mr-1 text-warning"></i>)\s*(?:24|25|26)\+?\s*(</div>)',
                 rf'\g<1>{a_disp_plus}\g<2>',
                 content
             )
 
             # 13. Update "Looking for All 24+ Verified Honors & Fellowships?"
             content = re.sub(
-                r'Looking for All\s+24\+?\s+Verified Honors',
+                r'Looking for All\s+(?:24|25|26)\+?\s+Verified Honors',
                 f'Looking for All {a_disp_plus} Verified Honors',
                 content
             )
 
             # 14. Update "View Full 24+ Awards" and "View All 24 Awards"
             content = re.sub(
-                r'(\bView Full\s+)24\+?(\s+Awards\b)',
+                r'(\bView Full\s+)(?:24|25|26)\+?(\s+Awards\b)',
                 rf'\g<1>{a_disp_plus}\g<2>',
                 content
             )
             content = re.sub(
-                r'(\bView All\s+)24(\s+Awards\b)',
+                r'(\bView All\s+)(?:24|25|26)(\s+Awards\b)',
                 rf'\g<1>{a_num}\g<2>',
                 content
             )
 
             # 15. Update "24 Prestigious Global Awards & Honors"
             content = re.sub(
-                r'24\s+Prestigious Global Awards\s*&amp;\s*Honors',
+                r'(?:24|25|26)\s+Prestigious Global Awards\s*&amp;\s*Honors',
                 f'{a_num} Prestigious Global Awards &amp; Honors',
                 content
             )
             content = re.sub(
-                r'24\s+Prestigious Global Awards\s*&\s*Honors',
+                r'(?:24|25|26)\s+Prestigious Global Awards\s*&\s*Honors',
                 f'{a_num} Prestigious Global Awards & Honors',
                 content
             )
             content = re.sub(
-                r'\b24\s+international awards and recognitions\b',
+                r'\b(?:24|25|26)\s+international awards and recognitions\b',
                 f'{a_num} international awards and recognitions',
                 content
             )
             content = re.sub(
-                r'\b24\s+Global Awards\b',
+                r'\b(?:24|25|26)\s+Global Awards\b',
                 f'{a_num} Global Awards',
                 content
             )
             content = re.sub(
-                r'\b24\s+Prestigious Recognitions\b',
+                r'\b(?:24|25|26)\s+Prestigious Recognitions\b',
                 f'{a_num} Prestigious Recognitions',
                 content
             )
             content = re.sub(
-                r'\b24\s+Prestigious Awards\b',
+                r'\b(?:24|25|26)\s+Prestigious Awards\b',
                 f'{a_num} Prestigious Awards',
+                content
+            )
+            content = re.sub(
+                r'\b(?:24|25|26)\+?\s+Major Accreditations\b',
+                f'{a_disp_plus} Major Accreditations',
                 content
             )
 
             # 16. Update "earned 24 global technology honors" & "recipient of 24 international honors"
             content = re.sub(
-                r'\bearned\s+24\s+global technology honors\b',
+                r'\bearned\s+(?:24|25|26)\s+global technology honors\b',
                 f'earned {a_num} global technology honors',
                 content
             )
             content = re.sub(
-                r'\brecipient of\s+24\s+international honors\b',
+                r'\brecipient of\s+(?:24|25|26)\s+international honors\b',
                 f'recipient of {a_num} international honors',
                 content
             )
 
             # 17. Update copilot placeholder and status line
             content = re.sub(
-                r'(\bAsk about Harsh\'s AI books,\s*)24(\s*awards,\s*papers,\s*or\s*speaking\b)',
+                r'(\bAsk about Harsh\'s AI books,\s*)(?:24|25|26)(\s*awards,\s*papers,\s*or\s*speaking\b)',
                 rf'\g<1>{a_num}\g<2>',
                 content
             )
             content = re.sub(
-                r'Grounded in\s*24\s*Awards,\s*Books',
+                r'Grounded in\s*(?:24|25|26)\s*Awards,\s*Books',
                 f'Grounded in {a_num} Awards, Books',
                 content
             )
             content = re.sub(
-                r'\bawardsCount:\s*24\b',
+                r'(<i class="mdi mdi-trophy-award mr-1"></i>\s*)(?:24|25|26)(\s*Awards)',
+                rf'\g<1>{a_num}\g<2>',
+                content
+            )
+            content = re.sub(
+                r'\bawardsCount:\s*(?:24|25|26)\b',
                 f'awardsCount: {a_num}',
                 content
             )

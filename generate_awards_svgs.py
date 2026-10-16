@@ -569,6 +569,48 @@ badges = {
   <text x="200" y="148" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" text-anchor="middle">25+ MENTORSHIP SESSIONS</text>
   <text x="200" y="174" fill="#DDD6FE" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle">MILESTONE CERTIFICATE OF ACHIEVEMENT</text>
   <text x="200" y="202" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">Volunteer Mentorship to 1M+ Global Learning Community</text>
+</svg>''',
+    "nvtc_cyber50.svg": '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-nvtc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e1e"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="gold-nvtc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="35%" stop-color="#FBBF24"/>
+      <stop offset="70%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="cyan-nvtc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="glow-nvtc" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#bg-nvtc)"/>
+  <rect x="8" y="8" width="384" height="224" rx="12" fill="none" stroke="url(#gold-nvtc)" stroke-width="2" stroke-opacity="0.9"/>
+  
+  <!-- Cyber / Shield Emblem with Star & 50 Motif -->
+  <g transform="translate(200, 50) scale(0.95)">
+    <!-- Outer Shield Glow -->
+    <path d="M0,-28 L24,-14 L24,10 C24,24 0,34 0,34 C0,34 -24,24 -24,10 L-24,-14 Z" fill="none" stroke="url(#cyan-nvtc)" stroke-width="2" opacity="0.6"/>
+    <!-- Inner Shield -->
+    <path d="M0,-24 L20,-12 L20,8 C20,20 0,28 0,28 C0,28 -20,20 -20,8 L-20,-12 Z" fill="#0F172A" stroke="url(#gold-nvtc)" stroke-width="2"/>
+    <!-- Central Star / Key Motif -->
+    <path d="M0,-12 L3,-3 L12,-3 L5,2 L8,11 L0,6 L-8,11 L-5,2 L-12,-3 L-3,-3 Z" fill="url(#gold-nvtc)"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="200" y="112" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" letter-spacing="2">NORTHERN VIRGINIA TECHNOLOGY COUNCIL</text>
+  <text x="200" y="140" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" text-anchor="middle" letter-spacing="0.5">2026 NVTC CYBER50</text>
+  <text x="200" y="168" fill="url(#gold-nvtc)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="1.5">CYBER50 HONOREE · EXECUTIVE LEADER</text>
+  <text x="200" y="196" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">National Capital Region · Impact in Cybersecurity</text>
+  <text x="200" y="214" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" text-anchor="middle">Advancing Autonomous AI Security &amp; Enterprise Defense</text>
 </svg>'''
 }
 
