@@ -1276,13 +1276,13 @@ def generate_blog_html():
                         <a class="nav-link" href="page-awards">Awards</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page-memberships">Memberships</a>
+                        <a class="nav-link" href="page-memberships">Associations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="page-media">Media</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page-events">Speaker</a>
+                        <a class="nav-link" href="page-speaker">Speaker</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="page-books">Books</a>

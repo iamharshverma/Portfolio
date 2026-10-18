@@ -24,7 +24,8 @@ events_data = {
             "description": "Serving on the official Dent Expert Network judging panel for 'Demos & Dim Sum' during SF Tech Week, co-hosted with Dent Capital, The MBA Fund, Deel, and Manatt. Evaluating live startup demos from high-growth founders across AI, enterprise software, and frontier technologies.",
             "links": [
                 {"name": "Partiful Event Page", "url": "https://partiful.com/e/WBHEUDs7uFJo6xSAyN2S", "icon": "mdi-ticket-confirmation"},
-                {"name": "LinkedIn Announcement", "url": "https://www.linkedin.com/posts/dentcapital_rsvp-to-demos-dim-sum-sftechweek-partiful-activity-7508645069487263744-Wioj", "icon": "mdi-linkedin"}
+                {"name": "LinkedIn Announcement", "url": "https://www.linkedin.com/posts/dentcapital_rsvp-to-demos-dim-sum-sftechweek-partiful-activity-7508645069487263744-Wioj", "icon": "mdi-linkedin"},
+                {"name": "After-Event LinkedIn Post", "url": "https://lnkd.in/p/g-7V6cT6", "icon": "mdi-linkedin"}
             ],
             "tags": ["SF Tech Week", "Dent Capital", "Dent Expert Network", "Demos & Dim Sum", "Startup Judging", "San Francisco"],
             "gradient": "from-amber-600 to-yellow-500",
@@ -498,7 +499,9 @@ events_data = {
             "description": "Featured speaker on 'YOUR AGENT INSTALLED WHAT? SECURING THE NEW AI SUPPLY CHAIN' hosted by AI Insiders with Pebblebed during SF Tech Week. Addressed emerging threats across the agentic supply chain: unauthorized plugin and skill installations, MCP integration risks, runtime agent sandboxing, prompt provenance, and zero-trust controls.",
             "links": [
                 {"name": "Partiful Event Page", "url": "https://partiful.com/e/8LNyv0WyX7dTHjUUJmm0", "icon": "mdi-ticket-confirmation"},
-                {"name": "LinkedIn Announcement", "url": "https://lnkd.in/p/eyfEarGz", "icon": "mdi-linkedin"}
+                {"name": "LinkedIn Announcement", "url": "https://lnkd.in/p/eyfEarGz", "icon": "mdi-linkedin"},
+                {"name": "After-Event LinkedIn Post", "url": "https://lnkd.in/p/gntaFHpP", "icon": "mdi-linkedin"},
+                {"name": "LinkedIn Video Post", "url": "https://lnkd.in/p/gDX4uXQ8", "icon": "mdi-video"}
             ],
             "tags": ["SF Tech Week", "AI Insiders", "Securing AI Supply Chain", "Pebblebed", "Agent Security", "Zero Trust", "San Francisco"],
             "gradient": "from-rose-600 to-indigo-700",
@@ -1734,6 +1737,8 @@ def build_full_page():
             border-color: #334155;
         }}
     </style>
+    <!-- HV AI Copilot Styles -->
+    <link rel="stylesheet" href="css/hv-copilot.css" />
 </head>
 
 <body>
@@ -1787,7 +1792,7 @@ def build_full_page():
                         <a class="nav-link" href="page-media">Media</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="page-events">Speaker</a>
+                        <a class="nav-link" href="page-speaker">Speaker</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="page-books">Books</a>
@@ -2349,8 +2354,8 @@ def build_full_page():
 
         var speakerBios = {{
             short: "Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, Forbes Technology Council Member, IEEE Senior Member, and author of two books on Enterprise AI. Recognized on the Forttuna Global 100 Power List and Nobel Technology Awards Gold (#145), he architects deterministic agentic systems, zero-trust cloud perimeters, and high-throughput data platforms, keynoting across UC Berkeley SkyDeck and international AI symposiums.",
-            medium: "Harsh Verma is an internationally recognized Enterprise AI Architect, Principal Software Engineer in AI at Palo Alto Networks, and Forbes Technology Council Member. With over a decade of systems leadership, Harsh has authored 2 seminal industry books on Enterprise AI Agents and Autonomous Cyber Defense, published 26+ peer-reviewed papers on IEEE and international journals with 150+ academic citations, and earned 26 global technology honors including the 2026 NVTC Cyber50 Honoree, Forttuna Global 100 Power List, Nobel Technology Awards Gold (#145), and Global Recognition Award for AI Innovation. He serves as an elected Fellow of Harvard Square Leaders Excellence and IEEE Senior Member. Harsh is a distinguished keynote speaker—frequently headlining UC Berkeley SkyDeck, international AI summits, and venture accelerators on agentic security architectures, distributed AI infrastructure, and autonomous enterprise defense.",
-            full: "Harsh Verma is a distinguished Enterprise AI Architect, Principal Software Engineer in AI at Palo Alto Networks, Forbes Technology Council Member, and prolific author. A pioneer in agentic security architectures and deterministic AI guardrails, Harsh has architected mission-critical data platforms, distributed feature pipelines, and autonomous defense perimeters protecting global enterprise networks.\\n\\nHe is the recipient of 26 international honors including the 2026 NVTC Cyber50 Honoree, Forttuna Global 100 Power List (2026), Nobel Technology Awards Gold (#145), Global Recognition Award for Enterprise AI Innovation, and multiple Globee & Stevie Awards. A dedicated researcher and thought leader, Harsh has published 26+ peer-reviewed papers across IEEE and international engineering journals, accumulating over 150+ academic citations, alongside authoring two seminal books on Enterprise AI Agents and Autonomous Cyber Defense. He holds senior fellowships including Harvard Square Leaders Excellence Fellow and IEEE Senior Member.\\n\\nAs an invited keynote speaker and technical advisor, Harsh headlines major technology symposiums, university venture accelerators including UC Berkeley SkyDeck, and global executive forums, delivering actionable frameworks on generative AI, zero-trust cloud security, and resilient autonomous systems."
+            medium: "Harsh Verma is an internationally recognized Enterprise AI Architect, Principal Software Engineer in AI at Palo Alto Networks, and Forbes Technology Council Member. With over a decade of systems leadership, Harsh has authored 2 seminal industry books on Enterprise AI Agents and Autonomous Cyber Defense, published 26+ peer-reviewed papers on IEEE and international journals with 150+ academic citations, and earned 27 global technology honors including the 2026 NVTC Cyber50 Honoree, Forttuna Global 100 Power List, Nobel Technology Awards Gold (#145), and Global Recognition Award for AI Innovation. He serves as an elected Fellow of Harvard Square Leaders Excellence and IEEE Senior Member. Harsh is a distinguished keynote speaker—frequently headlining UC Berkeley SkyDeck, international AI summits, and venture accelerators on agentic security architectures, distributed AI infrastructure, and autonomous enterprise defense.",
+            full: "Harsh Verma is a distinguished Enterprise AI Architect, Principal Software Engineer in AI at Palo Alto Networks, Forbes Technology Council Member, and prolific author. A pioneer in agentic security architectures and deterministic AI guardrails, Harsh has architected mission-critical data platforms, distributed feature pipelines, and autonomous defense perimeters protecting global enterprise networks.\\n\\nHe is the recipient of 27 international honors including the 2026 NVTC Cyber50 Honoree, Forttuna Global 100 Power List (2026), Nobel Technology Awards Gold (#145), Global Recognition Award for Enterprise AI Innovation, and multiple Globee & Stevie Awards. A dedicated researcher and thought leader, Harsh has published 26+ peer-reviewed papers across IEEE and international engineering journals, accumulating over 150+ academic citations, alongside authoring two seminal books on Enterprise AI Agents and Autonomous Cyber Defense. He holds senior fellowships including Harvard Square Leaders Excellence Fellow and IEEE Senior Member.\\n\\nAs an invited keynote speaker and technical advisor, Harsh headlines major technology symposiums, university venture accelerators including UC Berkeley SkyDeck, and global executive forums, delivering actionable frameworks on generative AI, zero-trust cloud security, and resilient autonomous systems."
         }};
 
         var currentBioType = 'short';
@@ -2441,6 +2446,9 @@ def build_full_page():
             }}
         }}
     </script>
+    <!-- HV AI Copilot Assistant Engine -->
+    <script src="js/hv-copilot.js"></script>
+    <script src="js/hv-site-stats.js"></script>
 </body>
 </html>
 """

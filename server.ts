@@ -112,11 +112,12 @@ function getGenAI() {
 function generateKnowledgeFallback(query) {
   const q = (query || '').toLowerCase();
 
-  if (q.includes('award') || q.includes('recognition') || q.includes('honor') || q.includes('globee') || q.includes('stevie') || q.includes('nobel') || q.includes('forttuna') || q.includes('nvtc')) {
-    return `### 🏆 Harsh Verma — 26 Prestigious Global Awards & Honors
+  if (q.includes('award') || q.includes('recognition') || q.includes('honor') || q.includes('globee') || q.includes('stevie') || q.includes('nobel') || q.includes('forttuna') || q.includes('nvtc') || q.includes('titan')) {
+    return `### 🏆 Harsh Verma — 27 Prestigious Global Awards & Honors
 
-Harsh Verma has received **26 international awards and recognitions** celebrating his breakthrough innovations in Enterprise AI, Autonomous Architectures, and Cyber Defense:
+Harsh Verma has received **27 international awards and recognitions** celebrating his breakthrough innovations in Enterprise AI, Autonomous Architectures, and Cyber Defense:
 
+- **2026 TITAN Innovation Awards**: AI Innovation & Leadership Impact Award (Category: AI Innovation & Transformation) by International Awards Associate (IAA) for autonomous enterprise AI and 'AI vs AI' defense architectures.
 - **2026 NVTC Cyber50 Honoree**: Recognized by the Northern Virginia Technology Council for making an impact across the cybersecurity community and advancing defense architectures.
 - **Forttuna Global 100 Power List (2026)**: Named among the top global technology leaders shaping next-generation artificial intelligence.
 - **Nobel Technology Awards (2026)**: Gold Winner (#145) for pioneering scalable multi-agent systems and real-time enterprise platforms.
@@ -124,7 +125,7 @@ Harsh Verma has received **26 international awards and recognitions** celebratin
 - **Globee & Stevie International Business Awards**: Gold and Silver honors for Enterprise Technology and AI Breakthroughs.
 - **Brandon Hall Group & Tech Titans Honors**: Excellence in High-Impact Engineering Leadership.
 
-👉 Explore the full list of honors with official verification credentials: **[View All 26 Awards](page-awards)**`;
+👉 Explore the full list of honors with official verification credentials: **[View All 27 Awards](page-awards)**`;
   }
 
   if (q.includes('book') || q.includes('author') || q.includes('agent revolution') || q.includes('published book') || q.includes('writing')) {
@@ -242,12 +243,12 @@ All verified inquiries submitted through this portfolio are delivered directly w
 **Harsh Verma** is an internationally recognized **Enterprise AI Architect, Principal Technologist, and Author** with over a decade of pioneering achievements:
 
 - **Specializations**: Enterprise Generative AI, Multi-Agent Architectures, Zero-Trust Cyber Resilience, and Cloud Distributed Systems.
-- **Recognitions**: **26 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
+- **Recognitions**: **27 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
 - **Academic Impact**: **26+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **47 Verified Academic/Professional Registries**.
 - **Fellowships**: Harvard Square Leaders Excellence Fellow, IEEE Senior Member, and Forbes Technology Council Member.
 
 **Explore further:**
-- 🏆 **[26 Prestigious Awards](page-awards)**
+- 🏆 **[27 Prestigious Awards](page-awards)**
 - 🔬 **[26+ Research Publications](page-publications)**
 - 💼 **[Professional Experience & Roles](index#experience)**
 - 📚 **[Authored Books](page-books)**
@@ -301,7 +302,7 @@ app.post('/api/copilot', async (req, res) => {
       });
 
       // Priority list of standard valid Google GenAI models
-      const candidateModels = ['gemini-3.8-flash', 'gemini-flash-latest', 'gemini-3.1-flash-lite'];
+      const candidateModels = ['gemini-2.5-flash', 'gemini-3.1-flash-lite', 'gemini-2.0-flash'];
 
       for (const modelName of candidateModels) {
         try {
@@ -315,7 +316,7 @@ app.post('/api/copilot', async (req, res) => {
             }
           });
 
-          const response = await withTimeout(generatePromise, 10000);
+          const response = await withTimeout(generatePromise, 4000);
           const replyText = response && response.text ? response.text.trim() : '';
 
           if (replyText) {
@@ -1224,11 +1225,13 @@ app.get('/api/smart-slides', (req, res) => {
     const deck5Path = path.join(__dirname, 'data', 'hikerunner-loadtest-framework.json');
     const deck6Path = path.join(__dirname, 'data', 'cybersecurity-evolution-clean-attack.json');
     const deck7Path = path.join(__dirname, 'data', 'death-of-authentication-ai-systems.json');
+    const deck8Path = path.join(__dirname, 'data', 'agents-dont-break-rules-they-redefine-them.json');
     const deck3 = fs.existsSync(deck3Path) ? JSON.parse(fs.readFileSync(deck3Path, 'utf8')) : [];
     const deck4 = fs.existsSync(deck4Path) ? JSON.parse(fs.readFileSync(deck4Path, 'utf8')) : [];
     const deck5 = fs.existsSync(deck5Path) ? JSON.parse(fs.readFileSync(deck5Path, 'utf8')) : [];
     const deck6 = fs.existsSync(deck6Path) ? JSON.parse(fs.readFileSync(deck6Path, 'utf8')) : [];
     const deck7 = fs.existsSync(deck7Path) ? JSON.parse(fs.readFileSync(deck7Path, 'utf8')) : [];
+    const deck8 = fs.existsSync(deck8Path) ? JSON.parse(fs.readFileSync(deck8Path, 'utf8')) : [];
 
     res.json({
       success: true,
@@ -1292,6 +1295,15 @@ app.get('/api/smart-slides', (req, res) => {
           easyChairUrl: 'https://easychair.org/smart-slide/slide/xJKk#{sn:1}',
           blogUrl: 'https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems',
           slides: deck7
+        },
+        'X2qH': {
+          id: 'X2qH',
+          title: "Agents Don't Break Rules, They Redefine Them",
+          folder: 'agents-dont-break-rules-they-redefine-them',
+          count: deck8.length,
+          easyChairUrl: 'https://easychair.org/smart-slide/slide/X2qH#{sn:1}',
+          blogUrl: 'https://www.rsaconference.com/Library/blog/agents-dont-break-rules-they-redefine-them',
+          slides: deck8
         }
       }
     });

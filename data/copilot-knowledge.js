@@ -32,7 +32,7 @@ const harshKnowledge = {
       "Explainable AI (XAI) & Ethical Machine Learning Governance"
     ],
     summaryStats: {
-      awardsCount: 26,
+      awardsCount: 27,
       publicationsCount: 26,
       citationsCount: "150+",
       verifiedProfilesCount: 52,
@@ -199,6 +199,14 @@ const harshKnowledge = {
 
   smartSlides: [
     {
+      title: "Agents Don't Break Rules, They Redefine Them",
+      slidesCount: 9,
+      easyChairUrl: "https://easychair.org/smart-slide/slide/X2qH#{sn:1}",
+      articleUrl: "https://www.rsaconference.com/Library/blog/agents-dont-break-rules-they-redefine-them",
+      pageUrl: "page-smart-slides#deck=X2qH",
+      summary: "9 slides published in conjunction with RSA Conference official library analysis examining why autonomous AI agents don't fail by breaking rules—they follow instructions literally while circumventing intent through policy drift and specification gaming. Covers continuous runtime governance and behavioral invariants."
+    },
+    {
       title: "The Era of Agentic Security: Governance in the Age of Autonomy",
       slidesCount: 24,
       easyChairUrl: "https://easychair.org/smart-slide/slide/ntzm5",
@@ -243,7 +251,7 @@ HARSH VERMA'S CORE PROFILE:
 - Contact Email: harshverma59@gmail.com
 - Main Website Pages:
   * Biography & Profiles: "page-about" (or "page-about#verified-profiles" for the 47 Verified Academic &amp; Industry Hubs)
-  * 26 Prestigious Awards: "page-awards"
+  * 27 Prestigious Awards: "page-awards"
   * 26+ Peer-Reviewed Publications: "page-publications"
   * Authored Books: "page-books"
   * Smart Slides & Keynote Hub (EasyChair Verified Decks): "page-smart-slides" (Interactive player for Agentic Security Governance & GenAI Cybersecurity decks)
@@ -256,7 +264,7 @@ HARSH VERMA'S CORE PROFILE:
   * Direct Contact Form: "index#contact"
 
 KEY ACHIEVEMENTS & DATA TO DRAW FROM:
-1. 26 Prestigious Awards: Includes 2026 NVTC Cyber50 Honoree, Forttuna Global 100 Power List (2026), Nobel Technology Awards Gold Winner (2026), Global Recognition Award AI Innovator of the Year (2026), Globee Leadership Awards, Stevie International Business Awards, Brandon Hall Group Honors, and Tech Titans.
+1. 27 Prestigious Awards: Includes 2026 TITAN Innovation Awards (AI Innovation & Leadership Impact Award), 2026 NVTC Cyber50 Honoree, Forttuna Global 100 Power List (2026), Nobel Technology Awards Gold Winner (2026), Global Recognition Award AI Innovator of the Year (2026), Globee Leadership Awards, Stevie International Business Awards, Brandon Hall Group Honors, and Tech Titans.
 2. 26+ Peer-Reviewed & Conference Publications: Key topics in Autonomous Multi-Agent Frameworks, Trajectory Planning in Delay Tolerant Wireless Sensor Networks (ICACCM 2026), Explainable AI (XAI), Heterogeneous Distributed Data Management, Real-Time Load Simulation, Zero-Trust Threat Modeling, and Cloud Microservice Security. (Available on Google Scholar, IEEE & ICACCM).
 3. Authored Books:
    - "Enterprise AI Agents: Build Your Authority and Lead the AI Agent Revolution"
@@ -268,7 +276,7 @@ KEY ACHIEVEMENTS & DATA TO DRAW FROM:
 RESPONSE GUIDELINES:
 - Tone: Professional, courteous, articulate, authoritative, and helpful.
 - Formatting: Use clean Markdown formatting with clear bullet points, bold key terms, and concise paragraphs.
-- Interactive Links: Whenever referring to a specific section of the portfolio, embed relevant clean links (e.g., [View 26 Awards](page-awards), [Read Authored Books](page-books), [Explore 26+ Publications](page-publications), [Contact Harsh](index#contact)).
+- Interactive Links: Whenever referring to a specific section of the portfolio, embed relevant clean links (e.g., [View 27 Awards](page-awards), [Read Authored Books](page-books), [Explore 26+ Publications](page-publications), [Contact Harsh](index#contact)).
 - Accuracy: Only cite facts grounded in Harsh's real background. Do not invent unrelated roles or companies.
 - Call to Action: For collaboration, speaking, or advisory inquiries, invite the user to reach out directly via harshverma59@gmail.com or the on-page contact form.`;
 }

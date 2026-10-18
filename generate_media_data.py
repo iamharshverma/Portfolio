@@ -768,12 +768,13 @@ media_items = [
         "icon_svg": "yahoo_finance_badge.svg",
         "highlight": "Yahoo Finance Wire",
         "summary": "Global financial press distribution on Yahoo Finance highlighting Harsh Verma's dual recognition in the 2026 Cybersecurity Excellence Awards as part of the World's Top Cybersecurity Achievements.",
-        "topics": ["Yahoo Finance", "Cybersecurity Excellence", "Dual Recognition", "Newsfile Corp", "Top Cyber Achievements"],
+        "topics": ["Yahoo Finance", "Cybersecurity Excellence", "Dual Recognition", "Newsfile Corp", "Top Cyber Achievements", "National Cyber Security"],
         "stats": "Tier 1 Global Wire",
         "primary_url": "https://finance.yahoo.com/technology/ai/articles/cybersecurity-excellence-awards-2026-announces-022700731.html",
         "links": [
             {"label": "Read on Yahoo Finance", "url": "https://finance.yahoo.com/technology/ai/articles/cybersecurity-excellence-awards-2026-announces-022700731.html", "icon": "mdi-finance"},
-            {"label": "Newsfile Corp Wire", "url": "https://www.newsfilecorp.com/release/309183/Cybersecurity-Excellence-Awards-2026-Announces-Dual-Recognition-for-Principal-AI-Engineer-Harsh-Verma", "icon": "mdi-newspaper"}
+            {"label": "Newsfile Corp Wire", "url": "https://www.newsfilecorp.com/release/309183/Cybersecurity-Excellence-Awards-2026-Announces-Dual-Recognition-for-Principal-AI-Engineer-Harsh-Verma", "icon": "mdi-newspaper"},
+            {"label": "National Cyber Security", "url": "https://nationalcybersecurity.com/cybersecurity-excellence-awards-2026-announces-dual-recognition-for-principal-ai-engineer-harsh-verma-hacking-cybersecurity-infosec-comptia-pentest-ransomware", "icon": "mdi-shield-check"}
         ],
         "quote": "The Cybersecurity Excellence Awards recognize Harsh Verma's transformative contributions in merging machine intelligence with enterprise threat defense."
     },
@@ -851,11 +852,12 @@ media_items = [
         "icon_svg": "marketersmedia_bcs_rsa_badge.svg",
         "highlight": "BCS Fellowship & RSA Conference",
         "summary": "Global press release on MarketersMEDIA detailing Harsh Verma's election as a Fellow of the British Computer Society (FBCS) and his dual RSA Conference technical analyses proving why traditional identity perimeters fail against autonomous agentic divergence and trusted-agent misuse.",
-        "topics": ["MarketersMEDIA Wire", "BCS Fellowship", "RSA Conference", "Agentic Security", "Identity & Access Management", "Palo Alto Networks", "Continuous Behavioral Defense"],
+        "topics": ["MarketersMEDIA Wire", "BCS Fellowship", "RSA Conference", "Agentic Security", "Identity & Access Management", "Palo Alto Networks", "Continuous Behavioral Defense", "Barchart"],
         "stats": "Global Syndicated Wire",
         "primary_url": "https://news.marketersmedia.com/principal-software-engineer-harsh-verma-awarded-bcs-fellowship-and-publishes-rsa-conference-analysis-on-why-identity-alone-can-no-longer-secure-ai-systems/89205125",
         "links": [
             {"label": "Read on MarketersMEDIA", "url": "https://news.marketersmedia.com/principal-software-engineer-harsh-verma-awarded-bcs-fellowship-and-publishes-rsa-conference-analysis-on-why-identity-alone-can-no-longer-secure-ai-systems/89205125", "icon": "mdi-newspaper"},
+            {"label": "Read on Barchart", "url": "https://www.barchart.com/press-releases/4945300/principal-software-engineer-harsh-verma-awarded-bcs-fellowship-and-publishes-rsa-conference-analysis-on-why-identity-alone-can-no-longer-secure-ai-systems", "icon": "mdi-chart-areaspline"},
             {"label": "RSA Analysis: Death of Authentication", "url": "https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems", "icon": "mdi-shield-lock-outline"},
             {"label": "RSA Analysis: Agents & Rules", "url": "https://www.rsaconference.com/Library/blog/agents-dont-break-rules-they-redefine-them", "icon": "mdi-robot"}
         ],

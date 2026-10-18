@@ -34,7 +34,7 @@ def load_canonical_stats():
             awards = json.load(f)
             awards_count = len(awards)
     else:
-        awards_count = 26
+        awards_count = 27
 
     # 3. Media items count from media_data.json
     media_path = os.path.join(ROOT_DIR, "media_data.json")
@@ -263,102 +263,102 @@ def sync_html_and_generators(stats):
             # --- AWARDS & HONORS METRICS ---
             # 12. Update "24+ Honors" or "24+ Global Honors & Citations"
             content = re.sub(
-                r'(\b(?:24|25|26)\+?\s+Global Honors\s*(?:&amp;|&)\s*Citations\b)',
+                r'(\b(?:24|25|26|27)\+?\s+Global Honors\s*(?:&amp;|&)\s*Citations\b)',
                 f'{a_disp_plus} Global Honors &amp; Citations',
                 content
             )
             content = re.sub(
-                r'(<div class="home-metric-value"[^>]*><i class="mdi mdi-trophy-variant-outline mr-1 text-warning"></i>)\s*(?:24|25|26)\+?\s*(</div>)',
+                r'(<div class="home-metric-value"[^>]*><i class="mdi mdi-trophy-variant-outline mr-1 text-warning"></i>)\s*(?:24|25|26|27)\+?\s*(</div>)',
                 rf'\g<1>{a_disp_plus}\g<2>',
                 content
             )
 
             # 13. Update "Looking for All 24+ Verified Honors & Fellowships?"
             content = re.sub(
-                r'Looking for All\s+(?:24|25|26)\+?\s+Verified Honors',
+                r'Looking for All\s+(?:24|25|26|27)\+?\s+Verified Honors',
                 f'Looking for All {a_disp_plus} Verified Honors',
                 content
             )
 
             # 14. Update "View Full 24+ Awards" and "View All 24 Awards"
             content = re.sub(
-                r'(\bView Full\s+)(?:24|25|26)\+?(\s+Awards\b)',
+                r'(\bView Full\s+)(?:24|25|26|27)\+?(\s+Awards\b)',
                 rf'\g<1>{a_disp_plus}\g<2>',
                 content
             )
             content = re.sub(
-                r'(\bView All\s+)(?:24|25|26)(\s+Awards\b)',
+                r'(\bView All\s+)(?:24|25|26|27)(\s+Awards\b)',
                 rf'\g<1>{a_num}\g<2>',
                 content
             )
 
             # 15. Update "24 Prestigious Global Awards & Honors"
             content = re.sub(
-                r'(?:24|25|26)\s+Prestigious Global Awards\s*&amp;\s*Honors',
+                r'(?:24|25|26|27)\s+Prestigious Global Awards\s*&amp;\s*Honors',
                 f'{a_num} Prestigious Global Awards &amp; Honors',
                 content
             )
             content = re.sub(
-                r'(?:24|25|26)\s+Prestigious Global Awards\s*&\s*Honors',
+                r'(?:24|25|26|27)\s+Prestigious Global Awards\s*&\s*Honors',
                 f'{a_num} Prestigious Global Awards & Honors',
                 content
             )
             content = re.sub(
-                r'\b(?:24|25|26)\s+international awards and recognitions\b',
+                r'\b(?:24|25|26|27)\s+international awards and recognitions\b',
                 f'{a_num} international awards and recognitions',
                 content
             )
             content = re.sub(
-                r'\b(?:24|25|26)\s+Global Awards\b',
+                r'\b(?:24|25|26|27)\s+Global Awards\b',
                 f'{a_num} Global Awards',
                 content
             )
             content = re.sub(
-                r'\b(?:24|25|26)\s+Prestigious Recognitions\b',
+                r'\b(?:24|25|26|27)\s+Prestigious Recognitions\b',
                 f'{a_num} Prestigious Recognitions',
                 content
             )
             content = re.sub(
-                r'\b(?:24|25|26)\s+Prestigious Awards\b',
+                r'\b(?:24|25|26|27)\s+Prestigious Awards\b',
                 f'{a_num} Prestigious Awards',
                 content
             )
             content = re.sub(
-                r'\b(?:24|25|26)\+?\s+Major Accreditations\b',
+                r'\b(?:24|25|26|27)\+?\s+Major Accreditations\b',
                 f'{a_disp_plus} Major Accreditations',
                 content
             )
 
             # 16. Update "earned 24 global technology honors" & "recipient of 24 international honors"
             content = re.sub(
-                r'\bearned\s+(?:24|25|26)\s+global technology honors\b',
+                r'\bearned\s+(?:24|25|26|27)\s+global technology honors\b',
                 f'earned {a_num} global technology honors',
                 content
             )
             content = re.sub(
-                r'\brecipient of\s+(?:24|25|26)\s+international honors\b',
+                r'\brecipient of\s+(?:24|25|26|27)\s+international honors\b',
                 f'recipient of {a_num} international honors',
                 content
             )
 
             # 17. Update copilot placeholder and status line
             content = re.sub(
-                r'(\bAsk about Harsh\'s AI books,\s*)(?:24|25|26)(\s*awards,\s*papers,\s*or\s*speaking\b)',
+                r'(\bAsk about Harsh\'s AI books,\s*)(?:24|25|26|27)(\s*awards,\s*papers,\s*or\s*speaking\b)',
                 rf'\g<1>{a_num}\g<2>',
                 content
             )
             content = re.sub(
-                r'Grounded in\s*(?:24|25|26)\s*Awards,\s*Books',
+                r'Grounded in\s*(?:24|25|26|27)\s*Awards,\s*Books',
                 f'Grounded in {a_num} Awards, Books',
                 content
             )
             content = re.sub(
-                r'(<i class="mdi mdi-trophy-award mr-1"></i>\s*)(?:24|25|26)(\s*Awards)',
+                r'(<i class="mdi mdi-trophy-award mr-1"></i>\s*)(?:24|25|26|27)(\s*Awards)',
                 rf'\g<1>{a_num}\g<2>',
                 content
             )
             content = re.sub(
-                r'\bawardsCount:\s*(?:24|25|26)\b',
+                r'\bawardsCount:\s*(?:24|25|26|27)\b',
                 f'awardsCount: {a_num}',
                 content
             )
@@ -416,9 +416,106 @@ def sync_html_and_generators(stats):
                 content
             )
 
-            # 23. Ensure hv-site-stats.js is included in HTML files
+            # 23. Ensure favicon_new.ico is used
+            if filepath.endswith(".html"):
+                content = content.replace('href="images/favicon.ico"', 'href="images/favicon_new.ico"')
+
+            # 24. Ensure hv-copilot.css is included in head
+            if filepath.endswith(".html") and "css/hv-copilot.css" not in content and "</head>" in content and "index_old.html" not in filepath:
+                content = content.replace("</head>", "    <!-- HV AI Copilot Styles -->\n    <link rel=\"stylesheet\" href=\"css/hv-copilot.css\" />\n</head>")
+
+            # 25. Ensure hv-copilot.js is included before </body>
+            if filepath.endswith(".html") and "js/hv-copilot.js" not in content and "</body>" in content and "index_old.html" not in filepath:
+                content = content.replace("</body>", "    <!-- HV AI Copilot Assistant Engine -->\n    <script src=\"js/hv-copilot.js\"></script>\n</body>")
+
+            # 26. Ensure hv-site-stats.js is included in HTML files
             if filepath.endswith(".html") and "js/hv-site-stats.js" not in content and "</body>" in content:
                 content = content.replace("</body>", "    <script src=\"js/hv-site-stats.js\"></script>\n</body>")
+
+            # 27. Ensure consistent navbar labels and links across all pages
+            if filepath.endswith(".html") and "index_old.html" not in filepath:
+                content = content.replace('<a class="nav-link" href="page-memberships">Memberships</a>', '<a class="nav-link" href="page-memberships">Associations</a>')
+                content = content.replace('<a class="nav-link" href="page-events">Speaker</a>', '<a class="nav-link" href="page-speaker">Speaker</a>')
+
+            # 28. Ensure full Extended Portfolios & Hubs dropdown is present with all 6 items
+            if filepath.endswith(".html") and "index_old.html" not in filepath:
+                required_hubs = [
+                    'page-media-distribution-analytics',
+                    'page-portfolio',
+                    'page-smart-slides',
+                    'page-social',
+                    'page-about#verified-profiles',
+                    'index#contact'
+                ]
+                drop_match = re.search(r'(<li class=\"nav-item dropdown[^\"]*\">.*?</li>\s*</ul>)', content, re.DOTALL)
+                if drop_match:
+                    drop_block = drop_match.group(1)
+                    if any(hub not in drop_block for hub in required_hubs):
+                        fname = os.path.basename(filepath)
+                        is_drop_active = any(hub_prefix in fname for hub_prefix in [
+                            'page-media-distribution-analytics', 'page-portfolio', 'page-smart-slides', 'page-social', 'page-slides'
+                        ])
+                        drop_li_class = "nav-item dropdown active" if is_drop_active else "nav-item dropdown"
+                        
+                        def get_item_active(url):
+                            base_url = url.split('#')[0]
+                            return " active" if base_url and base_url in fname else ""
+
+                        canonical_hubs_dropdown = f'''<li class="{drop_li_class}">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More <i class="mdi mdi-chevron-down nav-dropdown-arrow"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right nav-custom-dropdown" aria-labelledby="navbarDropdown">
+                            <div class="nav-dropdown-header">
+                                <span>Extended Portfolios &amp; Hubs</span>
+                            </div>
+                            <a class="dropdown-item nav-dropdown-item{get_item_active('page-media-distribution-analytics')}" href="page-media-distribution-analytics">
+                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-chart-box-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Distribution Analytics <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">3.75B+</span></span>
+                                    <span class="dropdown-item-desc">Publication reach &amp; influence pyramid</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item{get_item_active('page-portfolio')}" href="page-portfolio">
+                                <div class="dropdown-item-icon bg-soft-info"><i class="mdi mdi-cube-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Portfolio Projects</span>
+                                    <span class="dropdown-item-desc">Architectures, agent frameworks &amp; systems</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item{get_item_active('page-smart-slides')}" href="page-smart-slides">
+                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-presentation-play"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Smart Slides <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">New</span></span>
+                                    <span class="dropdown-item-desc">Interactive executive &amp; research slide decks</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item{get_item_active('page-social')}" href="page-social">
+                                <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
+                                    <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
+                                <div class="dropdown-item-icon bg-soft-warning"><i class="mdi mdi-shield-account-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">47 Verified Profiles Hub</span>
+                                    <span class="dropdown-item-desc">Academic, editorial &amp; executive registries</span>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider my-2"></div>
+                            <a class="dropdown-item nav-dropdown-item" href="index#contact">
+                                <div class="dropdown-item-icon bg-soft-danger"><i class="mdi mdi-email-outline"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Contact Harsh</span>
+                                    <span class="dropdown-item-desc">Advisory, keynotes &amp; consultations</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>'''
+                        content = content[:drop_match.start(1)] + canonical_hubs_dropdown + content[drop_match.end(1):]
 
             if content != original:
                 with open(filepath, "w", encoding="utf-8") as f:
@@ -427,6 +524,29 @@ def sync_html_and_generators(stats):
                 updated_files.append(rel_path)
 
     return updated_files
+
+def verify_extended_hubs():
+    import glob
+    required_hubs = [
+        'page-media-distribution-analytics',
+        'page-portfolio',
+        'page-smart-slides',
+        'page-social',
+        'page-about#verified-profiles',
+        'index#contact'
+    ]
+    html_files = [f for f in sorted(glob.glob(os.path.join(ROOT_DIR, '*.html'))) if 'index_old.html' not in f]
+    all_ok = True
+    for f in html_files:
+        with open(f, 'r', encoding='utf-8') as fh:
+            c = fh.read()
+        drop_match = re.search(r'(<li class=\"nav-item dropdown[^\"]*\">.*?</li>\s*</ul>)', c, re.DOTALL)
+        if not drop_match or any(h not in drop_match.group(1) for h in required_hubs):
+            print(f"  [WARNING] Incomplete Extended Hubs in {os.path.basename(f)}")
+            all_ok = False
+    if all_ok:
+        print(f"Canonical Extended Portfolios & Hubs Check: [Verified] All {len(html_files)} pages contain complete 6-item menu.")
+    return all_ok
 
 def main():
     print("--- Harmonizing Portfolio Metrics Across Site ---")
@@ -438,6 +558,7 @@ def main():
     
     update_client_stats_js(stats)
     updated = sync_html_and_generators(stats)
+    verify_extended_hubs()
     
     print(f"Synchronized {len(updated)} files:")
     for f in updated:

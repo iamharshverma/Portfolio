@@ -611,6 +611,41 @@ badges = {
   <text x="200" y="168" fill="url(#gold-nvtc)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="1.5">CYBER50 HONOREE · EXECUTIVE LEADER</text>
   <text x="200" y="196" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">National Capital Region · Impact in Cybersecurity</text>
   <text x="200" y="214" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" text-anchor="middle">Advancing Autonomous AI Security &amp; Enterprise Defense</text>
+</svg>''',
+    "titan_innovation_awards.svg": '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-titan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="gold-titan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB"/>
+      <stop offset="25%" stop-color="#FDE68A"/>
+      <stop offset="60%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="cyan-titan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67E8F9"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#bg-titan)"/>
+  <rect x="8" y="8" width="384" height="224" rx="12" fill="none" stroke="url(#gold-titan)" stroke-width="2" stroke-opacity="0.9"/>
+  <g transform="translate(200, 48) scale(0.75)">
+    <path d="M-40,-15 C-55,2 -45,28 -18,40 C-8,30 -18,12 -28,-2 Z" fill="url(#gold-titan)" opacity="0.9"/>
+    <path d="M-52,12 C-65,30 -50,56 -24,64 C-16,52 -24,36 -34,22 Z" fill="url(#gold-titan)" opacity="0.8"/>
+    <path d="M40,-15 C55,2 45,28 18,40 C8,30 18,12 28,-2 Z" fill="url(#gold-titan)" opacity="0.9"/>
+    <path d="M52,12 C65,30 50,56 24,64 C16,52 24,36 34,22 Z" fill="url(#gold-titan)" opacity="0.8"/>
+    <path d="M0,-24 L18,-10 L18,12 C18,24 0,34 0,34 C0,34 -18,24 -18,12 L-18,-10 Z" fill="#0F172A" stroke="url(#gold-titan)" stroke-width="2.5"/>
+    <polygon points="0,-10 6,0 0,10 -6,0" fill="url(#cyan-titan)"/>
+    <circle cx="0" cy="0" r="2.5" fill="#FFFFFF"/>
+  </g>
+  <text x="200" y="112" fill="url(#gold-titan)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="2.2">TITAN INNOVATION AWARDS 2026</text>
+  <text x="200" y="138" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="900" text-anchor="middle" letter-spacing="0.5">AI INNOVATION &amp; LEADERSHIP IMPACT</text>
+  <text x="200" y="164" fill="#67E8F9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" letter-spacing="1">CATEGORY: AI INNOVATION &amp; TRANSFORMATION</text>
+  <text x="200" y="192" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">International Awards Associate (IAA) · Winner #3442</text>
+  <text x="200" y="212" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" text-anchor="middle">Pioneering Agentic AI &amp; Autonomous Cybersecurity Architectures</text>
 </svg>'''
 }
 

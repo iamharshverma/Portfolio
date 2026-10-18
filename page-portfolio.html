@@ -3075,7 +3075,7 @@
             // Initialize or refresh Fullscreen Lightbox Modal
             if (typeof window.HVLightbox !== 'undefined') {
                 window.HVLightbox.refresh();
-            } else if (typeof $.fn.magnificPopup !== 'undefined') {
+            } else if (typeof window.$ !== 'undefined' && window.$.fn && typeof window.$.fn.magnificPopup !== 'undefined') {
                 $('.mfp-image').magnificPopup({
                     type: 'image',
                     closeOnContentClick: true,

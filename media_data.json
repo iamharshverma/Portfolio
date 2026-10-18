@@ -1276,7 +1276,8 @@
       "Cybersecurity Excellence",
       "Dual Recognition",
       "Newsfile Corp",
-      "Top Cyber Achievements"
+      "Top Cyber Achievements",
+      "National Cyber Security"
     ],
     "stats": "Tier 1 Global Wire",
     "primary_url": "https://finance.yahoo.com/technology/ai/articles/cybersecurity-excellence-awards-2026-announces-022700731.html",
@@ -1290,6 +1291,11 @@
         "label": "Newsfile Corp Wire",
         "url": "https://www.newsfilecorp.com/release/309183/Cybersecurity-Excellence-Awards-2026-Announces-Dual-Recognition-for-Principal-AI-Engineer-Harsh-Verma",
         "icon": "mdi-newspaper"
+      },
+      {
+        "label": "National Cyber Security",
+        "url": "https://nationalcybersecurity.com/cybersecurity-excellence-awards-2026-announces-dual-recognition-for-principal-ai-engineer-harsh-verma-hacking-cybersecurity-infosec-comptia-pentest-ransomware",
+        "icon": "mdi-shield-check"
       }
     ],
     "quote": "The Cybersecurity Excellence Awards recognize Harsh Verma's transformative contributions in merging machine intelligence with enterprise threat defense."
@@ -1413,7 +1419,8 @@
       "Agentic Security",
       "Identity & Access Management",
       "Palo Alto Networks",
-      "Continuous Behavioral Defense"
+      "Continuous Behavioral Defense",
+      "Barchart"
     ],
     "stats": "Global Syndicated Wire",
     "primary_url": "https://news.marketersmedia.com/principal-software-engineer-harsh-verma-awarded-bcs-fellowship-and-publishes-rsa-conference-analysis-on-why-identity-alone-can-no-longer-secure-ai-systems/89205125",
@@ -1422,6 +1429,11 @@
         "label": "Read on MarketersMEDIA",
         "url": "https://news.marketersmedia.com/principal-software-engineer-harsh-verma-awarded-bcs-fellowship-and-publishes-rsa-conference-analysis-on-why-identity-alone-can-no-longer-secure-ai-systems/89205125",
         "icon": "mdi-newspaper"
+      },
+      {
+        "label": "Read on Barchart",
+        "url": "https://www.barchart.com/press-releases/4945300/principal-software-engineer-harsh-verma-awarded-bcs-fellowship-and-publishes-rsa-conference-analysis-on-why-identity-alone-can-no-longer-secure-ai-systems",
+        "icon": "mdi-chart-areaspline"
       },
       {
         "label": "RSA Analysis: Death of Authentication",

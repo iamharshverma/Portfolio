@@ -1298,6 +1298,8 @@ def generate_html():
             border-color: #1e293b !important;
         }}
     </style>
+    <!-- HV AI Copilot Styles -->
+    <link rel="stylesheet" href="css/hv-copilot.css" />
 </head>
 
 <body>
@@ -1527,7 +1529,7 @@ def generate_html():
                         <div class="mt-3 pt-3 border-top d-flex flex-wrap align-items-center justify-content-between">
                             <div class="d-flex align-items-center mb-2 mb-sm-0 text-muted small">
                                 <i class="mdi mdi-trophy-variant text-warning mr-2" style="font-size: 18px;"></i>
-                                <span><strong>26+ Major Accreditations</strong> across IEEE, Stevie®, Globee &amp; Cyber Defense</span>
+                                <span><strong>27+ Major Accreditations</strong> across IEEE, Stevie®, Globee &amp; Cyber Defense</span>
                             </div>
                             <a href="page-awards" class="btn btn-outline-warning btn-sm rounded font-weight-bold px-3 py-1">
                                 Explore All Honors <i class="mdi mdi-arrow-right ml-1"></i>
@@ -1804,6 +1806,9 @@ def generate_html():
             }}
         }}
     </script>
+    <!-- HV AI Copilot Assistant Engine -->
+    <script src="js/hv-copilot.js"></script>
+    <script src="js/hv-site-stats.js"></script>
 </body>
 </html>
 """

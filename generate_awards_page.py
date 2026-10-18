@@ -80,6 +80,24 @@ awards_data = [
         "citation": "Verma, H. (2026). 2026 NVTC Cyber50 Honoree: Celebrating Groundbreaking Accomplishments and Impact across the Cybersecurity Community. Northern Virginia Technology Council (NVTC)."
     },
     {
+        "id": "award-titan-innovation-awards-2026",
+        "title": "TITAN Innovation Awards: AI Innovation & Leadership Impact Award",
+        "organization": "TITAN Innovation Awards · International Awards Associate (IAA)",
+        "category": "ai-cyber",
+        "category_label": "AI & Cybersecurity Innovation",
+        "tier": "Gold Winner",
+        "tier_class": "tier-gold",
+        "year": "2026",
+        "image": "images/awards/titan_innovation_awards.svg",
+        "description": "Winner of the AI Innovation & Leadership Impact Award at the 2026 TITAN Innovation Awards (Category: AI Innovation & Transformation) by the International Awards Associate (IAA). Honored for pioneering agentic AI and autonomous cybersecurity systems at enterprise scale, introducing an adaptive 'AI vs AI' defense paradigm, and leading production-grade AI architectures that automate critical decision-making workflows with proven operational efficiency.",
+        "tags": ["TITAN Innovation Awards", "AI Innovation & Leadership", "Agentic AI", "Enterprise Defense", "IAA Winner"],
+        "links": [
+            {"label": "TITAN Winner Profile", "url": "https://titaninnovationawards.com/winner-info.php?id=3442", "icon": "mdi-trophy-award"},
+            {"label": "TITAN Innovation Awards", "url": "https://titaninnovationawards.com/innovation-awards.php", "icon": "mdi-web"}
+        ],
+        "citation": "Verma, H. (2026). AI Innovation & Leadership Impact Award: Category AI Innovation & Transformation. TITAN Innovation Awards & International Awards Associate (IAA) (Winner ID: 3442)."
+    },
+    {
         "id": "award-global-recognition-2026",
         "title": "2026 Global Recognition Award: AI Innovator of the Year",
         "organization": "Global Recognition Awards™ · Palo Alto Networks",
@@ -1155,6 +1173,8 @@ html_page = f'''<!DOCTYPE html>
             color: #60a5fa !important;
         }}
     </style>
+    <!-- HV AI Copilot Styles -->
+    <link rel="stylesheet" href="css/hv-copilot.css" />
 </head>
 
 <body>
@@ -1208,7 +1228,7 @@ html_page = f'''<!DOCTYPE html>
                         <a class="nav-link" href="page-media">Media</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page-events">Speaker</a>
+                        <a class="nav-link" href="page-speaker">Speaker</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="page-books">Books</a>

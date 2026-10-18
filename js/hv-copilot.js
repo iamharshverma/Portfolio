@@ -134,7 +134,7 @@
               </div>
               <div class="hv-header-status">
                 <span class="hv-status-dot"></span>
-                <span>Grounded in 26 Awards, Books &amp; Research</span>
+                <span>Grounded in 27 Awards, Books &amp; Research</span>
               </div>
             </div>
           </div>
@@ -160,7 +160,7 @@
             <i class="mdi mdi-account-tie mr-1"></i> Executive Bio
           </button>
           <button class="hv-chip-btn" data-query="What are Harsh's top awards and global recognitions?">
-            <i class="mdi mdi-trophy-award mr-1"></i> 26 Awards
+            <i class="mdi mdi-trophy-award mr-1"></i> 27 Awards
           </button>
           <button class="hv-chip-btn" data-query="Summarize his authored books on AI Agents & Cyber Defense">
             <i class="mdi mdi-book-open-variant mr-1"></i> Authored Books
@@ -185,7 +185,7 @@
               class="hv-input-textarea"
               id="hvInputTextarea"
               rows="1"
-              placeholder="Ask about Harsh's AI books, 26 awards, papers, or speaking..."
+              placeholder="Ask about Harsh's AI books, 27 awards, papers, or speaking..."
               aria-label="Message to HV Copilot"
             ></textarea>
             <button type="submit" class="hv-send-btn" id="hvSendBtn" aria-label="Send message">
@@ -669,11 +669,11 @@
     if (messageHistory.length === 0) {
       // Welcome message
       const welcomeContent = `### 👋 Welcome to Harsh Verma's AI Copilot!
-I am your intelligent liaison grounded in Harsh Verma's **26 Global Awards**, **25+ Research Publications**, **Authored Books on AI Agents**, and executive advisory background.
+I am your intelligent liaison grounded in Harsh Verma's **27 Global Awards**, **25+ Research Publications**, **Authored Books on AI Agents**, and executive advisory background.
 
 How can I assist you today? You can ask about:
 - **Executive Biography & Technical Focus**
-- **26 Prestigious Recognitions & Fellowships**
+- **27 Prestigious Recognitions & Fellowships**
 - **Authored AI Agent & Cyber Defense Books**
 - **Speaking Engagements & Keynote Bookings**`;
 
@@ -924,10 +924,11 @@ How can I assist you today? You can ask about:
       q.includes('achievement') ||
       q.includes('winner')
     ) {
-      return `### 🏆 Harsh Verma — 26 Prestigious Global Awards & Honors
+      return `### 🏆 Harsh Verma — 27 Prestigious Global Awards & Honors
 
-Harsh Verma has received **26 international awards and recognitions** celebrating breakthrough innovations in Enterprise AI, Autonomous Multi-Agent Architectures, and Cyber Defense:
+Harsh Verma has received **27 international awards and recognitions** celebrating breakthrough innovations in Enterprise AI, Autonomous Multi-Agent Architectures, and Cyber Defense:
 
+- **2026 TITAN Innovation Awards**: AI Innovation & Leadership Impact Award (Category: AI Innovation & Transformation) by International Awards Associate (IAA) for autonomous enterprise AI and 'AI vs AI' defense architectures.
 - **2026 NVTC Cyber50 Honoree**: Recognized by Northern Virginia Technology Council for notable impact across the cybersecurity community and advancing national cybersecurity architectures.
 - **Forttuna Global 100 Power List (2026)**: Honored among the world's top 100 technology luminaries shaping the future of autonomous intelligence.
 - **Nobel Technology Awards (2026)**: Gold Winner (#145) for pioneering scalable multi-agent systems and real-time enterprise platforms.
@@ -935,7 +936,7 @@ Harsh Verma has received **26 international awards and recognitions** celebratin
 - **Globee & Stevie International Business Awards**: Multiple Gold & Silver honors for Enterprise Technology and AI Breakthroughs.
 - **Brandon Hall Group & Tech Titans Honors**: Excellence in High-Impact Engineering Leadership.
 
-👉 Explore the full dossier of honors with official verification credentials: **[View All 26 Awards](page-awards)**`;
+👉 Explore the full dossier of honors with official verification credentials: **[View All 27 Awards](page-awards)**`;
     }
 
     // 2. Books & Authorship
@@ -1084,9 +1085,12 @@ Harsh Verma brings over **12+ years of proven technical leadership** across ente
 
 Harsh's verified keynote slide decks are available via an interactive slide player with slide-by-slide citations and downloads:
 
-- **Agentic Security Governance**: Production protocols and deterministic safety boundaries for enterprise multi-agent networks.
-- **GenAI Cybersecurity & Cyber Defense**: Zero-Trust battleground systems against adversarial AI threats.
-- **HikeRunner: LoadTestFramework**: Distributed performance benchmarking for microservices and real-time streams.
+- **Agents Don't Break Rules, They Redefine Them**: RSA Conference analysis on autonomous AI agents, policy drift, and continuous runtime governance (EasyChair: X2qH).
+- **The Death of Authentication**: Why identity isn't enough for AI systems (EasyChair: xJKk).
+- **The Clean Attack Problem**: From anomaly detection to intent-based security (EasyChair: tHbS).
+- **Agentic Security Governance**: Production protocols and deterministic safety boundaries for enterprise multi-agent networks (EasyChair: ntzm5).
+- **GenAI Cybersecurity & Cyber Defense**: Zero-Trust battleground systems against adversarial AI threats (EasyChair: T45r).
+- **HikeRunner: LoadTestFramework**: Distributed performance benchmarking for microservices and real-time streams (EasyChair: 8WpM).
 
 👉 Launch the interactive slide viewer: **[Open Smart Slides Hub](page-smart-slides)**`;
     }
@@ -1216,12 +1220,12 @@ All verified inquiries submitted through this portfolio are delivered directly w
 **Harsh Verma** is an internationally recognized **Enterprise AI Architect, Principal Technologist, and Author** based in the San Francisco Bay Area with over 12+ years of pioneering achievements:
 
 - **Specializations**: Enterprise Generative AI, Autonomous Multi-Agent Architectures, Zero-Trust Cyber Resilience, and Cloud Distributed Systems.
-- **Recognitions**: **26 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
+- **Recognitions**: **27 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
 - **Academic Impact**: **25+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **47 Verified Academic/Professional Registries**.
 - **Fellowships**: Harvard Square Leaders Excellence Fellow, IEEE Senior Member, and Forbes Technology Council Member.
 
 **Explore further:**
-- 🏆 **[26 Prestigious Awards](page-awards)**
+- 🏆 **[27 Prestigious Awards](page-awards)**
 - 🔬 **[25+ Research Publications](page-publications)**
 - 💼 **[Professional Experience & Roles](index#experience)**
 - 📚 **[Authored Books](page-books)**

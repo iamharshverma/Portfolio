@@ -9,9 +9,9 @@
     window.HV_SITE_STATS = {
         researchPapers: 26,
         researchPapersDisplay: "26+",
-        awardsCount: 26,
-        awardsDisplay: "26",
-        awardsDisplayPlus: "26+",
+        awardsCount: 27,
+        awardsDisplay: "27",
+        awardsDisplayPlus: "27+",
         booksCount: 2,
         booksReviewed: 6,
         patentsCount: 6,

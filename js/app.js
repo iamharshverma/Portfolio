@@ -18,6 +18,7 @@
 
 ! function($) {
     "use strict"; 
+    if (!$ || typeof $ !== 'function') return;
     // Loader 
     $(window).on('load', function() {
         $('#status').fadeOut();
@@ -162,7 +163,7 @@
         }
     });
     
-}(jQuery);
+}(window.jQuery || window.$);
 
 /* ==========================================================================
    Footer Newsletter Subscription & RSS Feed Reader Modal Logic

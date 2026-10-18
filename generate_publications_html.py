@@ -429,6 +429,8 @@ html_template = """<!DOCTYPE html>
             color: #cbd5e1;
         }
     </style>
+    <!-- HV AI Copilot Styles -->
+    <link rel="stylesheet" href="css/hv-copilot.css" />
 </head>
 
 <body>
@@ -488,13 +490,13 @@ html_template = """<!DOCTYPE html>
                         <a class="nav-link" href="page-awards">Awards</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page-memberships">Memberships</a>
+                        <a class="nav-link" href="page-memberships">Associations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="page-media">Media</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page-events">Speaker</a>
+                        <a class="nav-link" href="page-speaker">Speaker</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="page-books">Books</a>
@@ -1150,6 +1152,9 @@ html_template += """
             };
         });
     </script>
+    <!-- HV AI Copilot Assistant Engine -->
+    <script src="js/hv-copilot.js"></script>
+    <script src="js/hv-site-stats.js"></script>
 </body>
 </html>
 """
