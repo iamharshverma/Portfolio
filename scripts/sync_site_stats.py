@@ -460,6 +460,13 @@ def sync_html_and_generators(stats):
             if filepath.endswith(".html") and "index_old.html" not in filepath:
                 content = content.replace('<a class="nav-link" href="page-memberships">Memberships</a>', '<a class="nav-link" href="page-memberships">Associations</a>')
                 content = content.replace('<a class="nav-link" href="page-events">Speaker</a>', '<a class="nav-link" href="page-speaker">Speaker</a>')
+                content = content.replace('Invited Memberships &amp; Fellowships', 'Invited Associations &amp; Fellowships')
+                content = content.replace('Invited Memberships & Fellowships', 'Invited Associations & Fellowships')
+                content = re.sub(
+                    r'Explore All \d+\+? Invited Memberships &amp; Fellowships',
+                    'Explore All 27+ Invited Associations &amp; Fellowships',
+                    content
+                )
 
             # 28. Ensure full Extended Portfolios & Hubs dropdown is present with all 6 items
             if filepath.endswith(".html") and "index_old.html" not in filepath:
