@@ -12,6 +12,14 @@ try {
   console.warn('[Build] Warning during sync_site_stats:', err.message);
 }
 
+// 1b. Generate Board Biography PDF
+try {
+  console.log('[Build] Generating Board Biography PDF...');
+  execSync('python3 scripts/create_board_bio_pdf.py', { stdio: 'inherit' });
+} catch (err) {
+  console.warn('[Build] Warning during create_board_bio_pdf:', err.message);
+}
+
 // 2. Prepare output directories
 const rootDir = path.resolve(__dirname, '..');
 const distDir = path.join(rootDir, 'dist');

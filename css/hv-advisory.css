@@ -2,6 +2,7 @@
  * hv-advisory.css
  * Dedicated executive styling for the Board & Strategic Advisory Hub (page-advisory.html)
  * Follows the Universal Frontend Design Constitution (60-30-10 palette, zero-pill discipline, optical hierarchy)
+ * Optimized for conciseness, visual infographics, and robust dark/light themes.
  */
 
 /* ==========================================================================
@@ -23,12 +24,12 @@
     background: linear-gradient(135deg, #090e17 0%, #0f172a 45%, #1e1b4b 100%);
     border-radius: 20px;
     color: #ffffff;
-    padding: 44px 38px;
+    padding: 38px 34px;
     box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(99, 102, 241, 0.35);
-    margin-bottom: 36px;
+    margin-bottom: 30px;
 }
 
 .advisory-hero-card::before {
@@ -49,30 +50,30 @@
     background: rgba(99, 102, 241, 0.25);
     border: 1px solid rgba(165, 180, 252, 0.35);
     color: #cbd5e1;
-    font-size: 12px;
+    font-size: 11.5px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 6px 14px;
+    padding: 5px 14px;
     border-radius: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .advisory-hero-title {
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 800;
     color: #ffffff !important;
     line-height: 1.25;
     letter-spacing: -0.6px;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 
 .advisory-hero-subtitle {
-    font-size: 16px;
-    line-height: 1.7;
+    font-size: 15px;
+    line-height: 1.6;
     color: #cbd5e1;
     max-width: 720px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 /* Executive Portrait Frame */
@@ -89,13 +90,13 @@
     background: #0b1120;
     border: 1px solid rgba(147, 197, 253, 0.3);
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.55);
-    max-width: 320px;
+    max-width: 300px;
     width: 100%;
 }
 
 .advisory-profile-img {
     width: 100%;
-    height: 340px;
+    height: 310px;
     object-fit: cover;
     object-position: top center;
     display: block;
@@ -112,22 +113,22 @@
     left: 0;
     right: 0;
     background: linear-gradient(180deg, transparent 0%, rgba(9, 14, 23, 0.95) 85%);
-    padding: 20px 18px 16px;
+    padding: 18px 16px 14px;
     color: #ffffff;
 }
 
 .advisory-profile-name {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 800;
     color: #ffffff;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     letter-spacing: -0.3px;
 }
 
 .advisory-profile-role {
-    font-size: 12.5px;
+    font-size: 12px;
     color: #93c5fd;
-    line-height: 1.4;
+    line-height: 1.35;
     margin-bottom: 0;
 }
 
@@ -137,8 +138,8 @@
     color: #ffffff !important;
     border: none;
     border-radius: 24px;
-    padding: 11px 24px;
-    font-size: 14.5px;
+    padding: 10px 20px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: -0.2px;
     box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
@@ -158,8 +159,8 @@
     color: #0f172a !important;
     border: none;
     border-radius: 24px;
-    padding: 11px 22px;
-    font-size: 14px;
+    padding: 10px 20px;
+    font-size: 13.5px;
     font-weight: 800;
     box-shadow: 0 4px 14px rgba(217, 119, 6, 0.3);
     transition: all 0.25s ease;
@@ -179,8 +180,8 @@
     background: rgba(255, 255, 255, 0.06);
     color: #ffffff !important;
     border-radius: 24px;
-    padding: 11px 22px;
-    font-size: 14px;
+    padding: 10px 20px;
+    font-size: 13.5px;
     font-weight: 600;
     transition: all 0.25s ease;
     display: inline-flex;
@@ -200,23 +201,23 @@
     background: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 18px;
-    padding: 28px 24px;
-    margin-bottom: 36px;
+    padding: 24px 20px;
+    margin-bottom: 30px;
     box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
 }
 
 .advisory-metric-card {
     text-align: center;
-    padding: 8px 12px;
+    padding: 6px 10px;
 }
 
 .advisory-metric-num {
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 850;
     color: #1e3a8a;
     letter-spacing: -0.8px;
     line-height: 1.1;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     font-feature-settings: "tnum";
     font-variant-numeric: tabular-nums;
 }
@@ -227,19 +228,19 @@
 }
 
 .advisory-metric-label {
-    font-size: 13px;
+    font-size: 12.5px;
     font-weight: 700;
     color: #0f172a;
     text-transform: uppercase;
     letter-spacing: 0.6px;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 .advisory-metric-sub {
-    font-size: 12px;
+    font-size: 11.5px;
     color: #64748b;
     margin-bottom: 0;
-    line-height: 1.4;
+    line-height: 1.35;
 }
 
 /* ==========================================================================
@@ -249,14 +250,14 @@
     background: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 20px;
-    padding: 38px 34px;
-    margin-bottom: 36px;
+    padding: 32px 28px;
+    margin-bottom: 30px;
     box-shadow: 0 4px 25px rgba(15, 23, 42, 0.04);
     position: relative;
 }
 
 .hv-advisory-section-header {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
 .advisory-section-badge {
@@ -265,48 +266,238 @@
     background: rgba(37, 99, 235, 0.08);
     color: #1d4ed8;
     border: 1px solid rgba(37, 99, 235, 0.2);
-    font-size: 11.5px;
+    font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.8px;
-    padding: 4px 12px;
+    padding: 3px 12px;
     border-radius: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .advisory-section-title {
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 800;
     color: #0f172a;
     letter-spacing: -0.4px;
     line-height: 1.25;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .advisory-lead-quote {
-    font-size: 21px;
-    font-weight: 850 !important;
+    font-size: 18px;
+    font-weight: 800 !important;
     color: #1d4ed8;
-    letter-spacing: -0.4px;
-    line-height: 1.4;
-    margin-bottom: 8px;
+    letter-spacing: -0.3px;
+    line-height: 1.35;
+    margin-bottom: 6px;
 }
 
 .advisory-section-desc {
-    font-size: 14.5px;
+    font-size: 13.5px;
     color: #64748b;
-    line-height: 1.6;
-    max-width: 760px;
+    line-height: 1.5;
+    max-width: 720px;
 }
 
 /* ==========================================================================
-   5. AREAS OF STRATEGIC EXPERTISE (6 CARDS)
+   5. INFOGRAPHIC 1: INTERACTIVE GOVERNANCE & MOAT FLYWHEEL
+   ========================================================================== */
+.hv-flywheel-wrap {
+    background: linear-gradient(135deg, #090e17 0%, #0f172a 60%, #1e293b 100%);
+    border-radius: 18px;
+    padding: 28px 24px;
+    color: #ffffff;
+    border: 1px solid rgba(147, 197, 253, 0.25);
+    margin-bottom: 24px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.flywheel-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .flywheel-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.flywheel-quadrant {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 18px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.flywheel-quadrant:hover,
+.flywheel-quadrant.active {
+    background: rgba(37, 99, 235, 0.15);
+    border-color: #60a5fa;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.25);
+}
+
+.quadrant-tag {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #f59e0b;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.quadrant-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.quadrant-bullets {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.quadrant-bullets li {
+    font-size: 12px;
+    color: #cbd5e1;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.quadrant-bullets li i {
+    color: #38bdf8;
+    margin-right: 6px;
+    font-size: 13px;
+}
+
+/* ==========================================================================
+   6. INFOGRAPHIC 2: AUTONOMOUS AGENT GOVERNANCE HIERARCHY
+   ========================================================================== */
+.hv-hierarchy-wrap {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 22px;
+    margin-bottom: 24px;
+}
+
+.hierarchy-tier {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 12px 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+    border-left: 4px solid #2563eb;
+}
+
+.hierarchy-tier:hover {
+    border-color: #2563eb;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.08);
+}
+
+.hierarchy-tier.tier-4 { border-left-color: #d97706; }
+.hierarchy-tier.tier-3 { border-left-color: #2563eb; }
+.hierarchy-tier.tier-2 { border-left-color: #4f46e5; }
+.hierarchy-tier.tier-1 { border-left-color: #059669; }
+
+.tier-label {
+    font-size: 10.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #64748b;
+    margin-bottom: 2px;
+}
+
+.tier-title {
+    font-size: 14.5px;
+    font-weight: 750;
+    color: #0f172a;
+    margin-bottom: 0;
+}
+
+.tier-meta {
+    font-size: 12px;
+    color: #475569;
+    text-align: right;
+}
+
+/* ==========================================================================
+   7. INFOGRAPHIC 3: ADVISORY CADENCE & BOARD TIMELINE
+   ========================================================================== */
+.hv-cadence-timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 14px;
+}
+
+@media (max-width: 991px) {
+    .hv-cadence-timeline {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 575px) {
+    .hv-cadence-timeline {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cadence-step-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 16px 14px;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.02);
+}
+
+.step-phase-badge {
+    font-size: 10px;
+    font-weight: 800;
+    color: #2563eb;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 4px;
+}
+
+.step-phase-title {
+    font-size: 13.5px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.step-phase-desc {
+    font-size: 11.5px;
+    color: #64748b;
+    line-height: 1.45;
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   8. AREAS OF STRATEGIC EXPERTISE (6 CARDS - CONCISE)
    ========================================================================== */
 .advisory-expertise-card {
     background: #f8fafc;
     border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    padding: 24px 22px;
+    border-radius: 14px;
+    padding: 20px 18px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -316,22 +507,22 @@
 
 .advisory-expertise-card:hover {
     background: #ffffff;
-    transform: translateY(-4px);
+    transform: translateY(-3px);
     border-color: rgba(37, 99, 235, 0.4);
-    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.1);
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.09);
 }
 
 .advisory-card-icon-badge {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 22px;
+    font-size: 19px;
     color: #ffffff;
-    margin-bottom: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 .badge-grad-blue { background: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%); }
@@ -342,124 +533,116 @@
 .badge-grad-rose { background: linear-gradient(135deg, #e11d48 0%, #f43f5e 100%); }
 
 .advisory-card-title {
-    font-size: 18px;
+    font-size: 16.5px;
     font-weight: 800;
     color: #0f172a;
     letter-spacing: -0.3px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     line-height: 1.3;
 }
 
 .advisory-card-tagline {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     color: #2563eb;
-    margin-bottom: 10px;
-    line-height: 1.4;
+    margin-bottom: 8px;
+    line-height: 1.35;
 }
 
 .advisory-card-desc {
-    font-size: 13.5px;
-    line-height: 1.6;
+    font-size: 12.5px;
+    line-height: 1.5;
     color: #475569;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     flex-grow: 1;
 }
 
 .advisory-card-deliverables {
     list-style: none;
     padding-left: 0;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
 }
 
 .advisory-card-deliverables li {
-    font-size: 12.5px;
+    font-size: 11.5px;
     color: #334155;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     display: flex;
     align-items: baseline;
-    line-height: 1.45;
+    line-height: 1.35;
 }
 
 .advisory-card-deliverables li i {
     color: #2563eb;
-    margin-right: 8px;
-    font-size: 14px;
+    margin-right: 6px;
+    font-size: 12px;
 }
 
 .advisory-card-footer {
-    padding-top: 12px;
+    padding-top: 10px;
     border-top: 1px solid #e2e8f0;
-    font-size: 11.5px;
+    font-size: 11px;
     color: #64748b;
     display: flex;
     align-items: center;
 }
 
 /* ==========================================================================
-   6. ADVISORY CASE STUDIES (CHALLENGE -> CONTRIBUTION -> OUTCOME)
+   9. ADVISORY CASE STUDIES (CONCISE CARDS)
    ========================================================================== */
 .hv-case-study-card {
     background: #f8fafc;
     border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    padding: 24px;
+    border-radius: 14px;
+    padding: 20px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.02);
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.02);
     transition: all 0.25s ease;
 }
 
 .hv-case-study-card:hover {
     background: #ffffff;
     border-color: rgba(37, 99, 235, 0.4);
-    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
-    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+    transform: translateY(-2px);
 }
 
 .case-study-tag {
-    font-size: 11px;
+    font-size: 10.5px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.6px;
     color: #d97706;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .case-study-title {
-    font-size: 17.5px;
+    font-size: 16px;
     font-weight: 800;
     color: #0f172a;
     letter-spacing: -0.3px;
-    margin-bottom: 14px;
-    line-height: 1.35;
+    margin-bottom: 12px;
+    line-height: 1.3;
 }
 
 .case-step-box {
-    margin-bottom: 12px;
-    padding-left: 12px;
+    margin-bottom: 10px;
+    padding-left: 10px;
     border-left: 2px solid #cbd5e1;
 }
 
-.case-step-box.challenge {
-    border-left-color: #f43f5e;
-}
-
-.case-step-box.contribution {
-    border-left-color: #3b82f6;
-}
-
-.case-step-box.outcome {
-    border-left-color: #10b981;
-}
+.case-step-box.challenge { border-left-color: #f43f5e; }
+.case-step-box.contribution { border-left-color: #3b82f6; }
+.case-step-box.outcome { border-left-color: #10b981; }
 
 .case-step-label {
-    font-size: 11px;
+    font-size: 10.5px;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.6px;
-    margin-bottom: 3px;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
 }
 
 .case-step-label.challenge { color: #e11d48; }
@@ -467,46 +650,38 @@
 .case-step-label.outcome { color: #059669; }
 
 .case-step-text {
-    font-size: 13px;
-    line-height: 1.55;
+    font-size: 12px;
+    line-height: 1.45;
     color: #475569;
     margin-bottom: 0;
 }
 
 /* ==========================================================================
-   7. GOVERNANCE PHILOSOPHY (EDITORIAL FEATURE)
+   10. GOVERNANCE PHILOSOPHY (EDITORIAL FEATURE)
    ========================================================================== */
 .advisory-philosophy-box {
     background: linear-gradient(135deg, #090e17 0%, #0f172a 60%, #1e293b 100%);
     border-radius: 18px;
     color: #ffffff;
-    padding: 40px 36px;
-    margin-bottom: 30px;
+    padding: 34px 30px;
+    margin-bottom: 24px;
     border: 1px solid rgba(147, 197, 253, 0.25);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
-}
-
-.philosophy-quote-symbol {
-    font-size: 54px;
-    color: #f59e0b;
-    line-height: 1;
-    font-family: Georgia, serif;
-    opacity: 0.8;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
 }
 
 .philosophy-featured-statement {
-    font-size: 26px;
+    font-size: 23px;
     font-weight: 800;
-    line-height: 1.4;
+    line-height: 1.35;
     color: #ffffff;
     letter-spacing: -0.4px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .philosophy-subtext {
-    font-size: 15px;
+    font-size: 14px;
     color: #cbd5e1;
-    line-height: 1.6;
+    line-height: 1.55;
     max-width: 800px;
     margin-bottom: 0;
 }
@@ -514,10 +689,10 @@
 .philosophy-pillar-card {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 14px;
-    padding: 22px 20px;
+    border-radius: 12px;
+    padding: 16px 14px;
     height: 100%;
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
 }
 
 .philosophy-pillar-card:hover {
@@ -527,173 +702,110 @@
 }
 
 .pillar-num {
-    font-size: 11px;
+    font-size: 10.5px;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     color: #f59e0b;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .pillar-title {
-    font-size: 16.5px;
+    font-size: 15px;
     font-weight: 800;
     color: #ffffff;
-    margin-bottom: 8px;
-    letter-spacing: -0.2px;
+    margin-bottom: 6px;
 }
 
 .pillar-desc {
-    font-size: 13px;
-    line-height: 1.55;
+    font-size: 12px;
+    line-height: 1.45;
     color: #cbd5e1;
     margin-bottom: 0;
 }
 
 /* ==========================================================================
-   8. THOUGHT LEADERSHIP & BOARDROOM INSIGHTS
-   ========================================================================== */
-.board-insight-card {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    padding: 22px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.25s ease;
-}
-
-.board-insight-card:hover {
-    background: #ffffff;
-    border-color: #93c5fd;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.08);
-}
-
-.insight-channel {
-    font-size: 11.5px;
-    font-weight: 700;
-    color: #1d4ed8;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 6px;
-    display: flex;
-    align-items: center;
-}
-
-.insight-title {
-    font-size: 16px;
-    font-weight: 750;
-    color: #0f172a;
-    line-height: 1.4;
-    margin-bottom: 8px;
-}
-
-.insight-excerpt {
-    font-size: 13px;
-    color: #475569;
-    line-height: 1.55;
-    margin-bottom: 14px;
-    flex-grow: 1;
-}
-
-.insight-link {
-    font-size: 12.5px;
-    font-weight: 700;
-    color: #2563eb;
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none !important;
-}
-
-.insight-link:hover {
-    color: #1d4ed8;
-    text-decoration: underline !important;
-}
-
-/* ==========================================================================
-   9. BOARD ENGAGEMENT CATEGORIES (6 TIERS)
+   11. BOARD ENGAGEMENT MANDATES (6 TIERS - CONCISE)
    ========================================================================== */
 .advisory-mandate-card {
     background: #ffffff;
     border: 1px solid #cbd5e1;
-    border-radius: 16px;
-    padding: 22px 20px;
+    border-radius: 14px;
+    padding: 18px 16px;
     height: 100%;
     display: flex;
     flex-direction: column;
     transition: all 0.25s ease;
-    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.02);
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.02);
 }
 
 .advisory-mandate-card:hover {
     border-color: #2563eb;
-    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.1);
-    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.08);
+    transform: translateY(-2px);
 }
 
 .mandate-badge {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 800;
     color: #2563eb;
     text-transform: uppercase;
     letter-spacing: 0.6px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .mandate-title {
-    font-size: 17px;
+    font-size: 15.5px;
     font-weight: 800;
     color: #0f172a;
-    margin-bottom: 8px;
-    line-height: 1.35;
+    margin-bottom: 6px;
+    line-height: 1.3;
 }
 
 .mandate-desc {
-    font-size: 13px;
+    font-size: 12px;
     color: #475569;
-    line-height: 1.55;
-    margin-bottom: 14px;
+    line-height: 1.45;
+    margin-bottom: 10px;
     flex-grow: 1;
 }
 
 .mandate-terms {
-    font-size: 11.5px;
+    font-size: 11px;
     color: #64748b;
-    padding-top: 10px;
+    padding-top: 8px;
     border-top: 1px solid #f1f5f9;
 }
 
 /* ==========================================================================
-   10. BOARD BIOGRAPHY DOWNLOAD CALLOUT
+   12. BOARD BIOGRAPHY DOWNLOAD CALLOUT
    ========================================================================== */
 .advisory-biography-callout {
     background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    border-radius: 18px;
-    padding: 32px 30px;
+    border-radius: 16px;
+    padding: 26px 24px;
     color: #ffffff;
     border: 1px solid rgba(99, 102, 241, 0.3);
-    margin-top: 30px;
+    margin-top: 24px;
 }
 
 .bio-callout-title {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 800;
     color: #ffffff;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .bio-callout-desc {
-    font-size: 14px;
+    font-size: 13px;
     color: #cbd5e1;
-    line-height: 1.6;
+    line-height: 1.5;
     margin-bottom: 0;
     max-width: 680px;
 }
 
 /* ==========================================================================
-   11. ADVISORY INQUIRY MODAL STYLES
+   13. MODAL STYLING
    ========================================================================== */
 .hv-advisory-modal .modal-content {
     border-radius: 18px;
@@ -706,36 +818,36 @@
     background: linear-gradient(135deg, #090e17 0%, #0f172a 100%);
     color: #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 22px 26px;
+    padding: 18px 22px;
 }
 
 .hv-advisory-modal .modal-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 800;
     color: #ffffff;
     letter-spacing: -0.3px;
 }
 
 .hv-advisory-modal .modal-body {
-    padding: 26px;
+    padding: 22px;
     background: #ffffff;
 }
 
 .mandate-select-pill-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 16px;
+    gap: 6px;
+    margin-bottom: 14px;
 }
 
 .mandate-pill-opt {
     border: 1px solid #cbd5e1;
     background: #f8fafc;
     color: #334155;
-    font-size: 12.5px;
+    font-size: 11.5px;
     font-weight: 600;
-    padding: 6px 14px;
-    border-radius: 16px;
+    padding: 5px 12px;
+    border-radius: 14px;
     cursor: pointer;
     transition: all 0.2s ease;
 }
@@ -748,11 +860,11 @@
 }
 
 /* ==========================================================================
-   12. DARK MODE OVERRIDES
+   14. DARK MODE OVERRIDES (COMPREHENSIVE)
    ========================================================================== */
 body.dark-mode .advisory-page-wrapper,
 html.dark-mode .advisory-page-wrapper {
-    background-color: #070b14;
+    background-color: #070b14 !important;
     background-image: 
         radial-gradient(circle at 10% 12%, rgba(37, 99, 235, 0.08) 0%, transparent 45%),
         radial-gradient(circle at 90% 25%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
@@ -772,10 +884,12 @@ body.dark-mode .advisory-card-title,
 html.dark-mode .advisory-card-title,
 body.dark-mode .case-study-title,
 html.dark-mode .case-study-title,
-body.dark-mode .insight-title,
-html.dark-mode .insight-title,
 body.dark-mode .mandate-title,
-html.dark-mode .mandate-title {
+html.dark-mode .mandate-title,
+body.dark-mode .step-phase-title,
+html.dark-mode .step-phase-title,
+body.dark-mode .tier-title,
+html.dark-mode .tier-title {
     color: #f8fafc !important;
 }
 
@@ -790,10 +904,10 @@ body.dark-mode .advisory-card-desc,
 html.dark-mode .advisory-card-desc,
 body.dark-mode .case-step-text,
 html.dark-mode .case-step-text,
-body.dark-mode .insight-excerpt,
-html.dark-mode .insight-excerpt,
 body.dark-mode .mandate-desc,
-html.dark-mode .mandate-desc {
+html.dark-mode .mandate-desc,
+body.dark-mode .step-phase-desc,
+html.dark-mode .step-phase-desc {
     color: #94a3b8 !important;
 }
 
@@ -801,22 +915,35 @@ body.dark-mode .advisory-expertise-card,
 html.dark-mode .advisory-expertise-card,
 body.dark-mode .hv-case-study-card,
 html.dark-mode .hv-case-study-card,
-body.dark-mode .board-insight-card,
-html.dark-mode .board-insight-card,
 body.dark-mode .advisory-mandate-card,
-html.dark-mode .advisory-mandate-card {
+html.dark-mode .advisory-mandate-card,
+body.dark-mode .hv-hierarchy-wrap,
+html.dark-mode .hv-hierarchy-wrap,
+body.dark-mode .cadence-step-box,
+html.dark-mode .cadence-step-box {
     background: #131d35 !important;
     border-color: rgba(51, 65, 85, 0.8) !important;
+}
+
+body.dark-mode .hierarchy-tier,
+html.dark-mode .hierarchy-tier {
+    background: #0f172a !important;
+    border-color: #334155 !important;
+}
+
+body.dark-mode .tier-meta,
+html.dark-mode .tier-meta {
+    color: #94a3b8 !important;
 }
 
 body.dark-mode .advisory-expertise-card:hover,
 html.dark-mode .advisory-expertise-card:hover,
 body.dark-mode .hv-case-study-card:hover,
 html.dark-mode .hv-case-study-card:hover,
-body.dark-mode .board-insight-card:hover,
-html.dark-mode .board-insight-card:hover,
 body.dark-mode .advisory-mandate-card:hover,
-html.dark-mode .advisory-mandate-card:hover {
+html.dark-mode .advisory-mandate-card:hover,
+body.dark-mode .cadence-step-box:hover,
+html.dark-mode .cadence-step-box:hover {
     background: #172340 !important;
     border-color: #60a5fa !important;
 }
@@ -853,4 +980,33 @@ html.dark-mode .hv-advisory-modal .form-control {
     background: #1e293b !important;
     border-color: #334155 !important;
     color: #ffffff !important;
+}
+
+body.dark-mode .mandate-pill-opt,
+html.dark-mode .mandate-pill-opt {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+    color: #cbd5e1 !important;
+}
+
+body.dark-mode .mandate-pill-opt.active,
+html.dark-mode .mandate-pill-opt.active {
+    background: #2563eb !important;
+    color: #ffffff !important;
+    border-color: #2563eb !important;
+}
+
+body.dark-mode .bg-light,
+html.dark-mode .bg-light {
+    background-color: #131d35 !important;
+}
+
+body.dark-mode .text-dark,
+html.dark-mode .text-dark {
+    color: #f8fafc !important;
+}
+
+body.dark-mode .text-muted,
+html.dark-mode .text-muted {
+    color: #94a3b8 !important;
 }

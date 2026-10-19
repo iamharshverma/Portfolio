@@ -1,7 +1,7 @@
 /**
  * hv-advisory.js
  * Client-side interactivity for Board & Strategic Advisory Hub
- * Manages counter animations, mandate inquiry modal, and bio modal interactions
+ * Manages counter animations, mandate inquiry modal, bio modal, and interactive infographics
  */
 
 (function () {
@@ -18,8 +18,7 @@
                     var el = entry.target;
                     var target = parseInt(el.getAttribute('data-target'), 10) || 0;
                     var suffix = el.getAttribute('data-suffix') || '+';
-                    var duration = 1600;
-                    var start = 0;
+                    var duration = 1500;
                     var startTime = null;
 
                     function step(timestamp) {
@@ -45,13 +44,57 @@
         });
     }
 
-    // 2. Open Advisory Modal with pre-selected mandate
+    // 2. Interactive Strategic Flywheel Quadrant Selector
+    window.selectFlywheelQuadrant = function (qNum) {
+        var quadrants = document.querySelectorAll('.flywheel-quadrant');
+        quadrants.forEach(function (q) {
+            if (parseInt(q.getAttribute('data-quadrant'), 10) === qNum) {
+                q.classList.add('active');
+            } else {
+                q.classList.remove('active');
+            }
+        });
+
+        var details = {
+            1: {
+                title: "Frontier Technical Moat Architecture",
+                deliverables: "Proprietary streaming data pipelines, custom regression eval datasets, vendor lock-in mitigation, and non-wrapper software defensibility.",
+                boardFocus: "Strategic Technology Planning & IP Protection"
+            },
+            2: {
+                title: "Zero-Trust Autonomous Security",
+                deliverables: "Ephemeral agent execution sandboxes, continuous behavioral authorization, prompt injection defense, and MCP tool isolation.",
+                boardFocus: "Cybersecurity & Enterprise Risk Oversight"
+            },
+            3: {
+                title: "Institutional AI Governance & Safety",
+                deliverables: "Automated red-teaming harnesses, algorithmic drift telemetry, EU AI Act compliance, and NIST AI RMF certification audits.",
+                boardFocus: "Corporate Governance, Ethics & Audit Committees"
+            },
+            4: {
+                title: "Capital Efficiency & Scaling Velocity",
+                deliverables: "Multi-cloud model routing, token cost optimization (40%+ reduction), engineering talent acquisition, and syndicate investor readiness.",
+                boardFocus: "Compensation, Growth & Capital Allocation"
+            }
+        };
+
+        var detailBox = document.getElementById('flywheelDetailBox');
+        if (detailBox && details[qNum]) {
+            detailBox.innerHTML = '<div class="d-flex align-items-center justify-content-between mb-1">' +
+                '<strong class="text-warning small text-uppercase" style="letter-spacing:0.8px;">' + details[qNum].boardFocus + '</strong>' +
+                '<span class="badge badge-pill badge-primary px-2" style="font-size:10px;">Quadrant ' + qNum + '</span>' +
+                '</div>' +
+                '<h5 class="text-white font-weight-bold mb-2">' + details[qNum].title + '</h5>' +
+                '<p class="text-light small mb-0" style="opacity:0.9;">' + details[qNum].deliverables + '</p>';
+        }
+    };
+
+    // 3. Open Advisory Modal with pre-selected mandate
     window.openAdvisoryModal = function (mandateName) {
         var modalEl = document.getElementById('advisoryInquiryModal');
         if (!modalEl) return;
 
         if (mandateName) {
-            // Update select or active pill
             var selectEl = document.getElementById('advisoryMandateSelect');
             if (selectEl) {
                 for (var i = 0; i < selectEl.options.length; i++) {
@@ -73,7 +116,6 @@
             });
         }
 
-        // Reset any prior submission message
         var form = document.getElementById('advisoryInquiryForm');
         var successBox = document.getElementById('advisorySuccessBox');
         if (form) form.style.display = 'block';
@@ -111,15 +153,12 @@
         }
     };
 
-    // 3. Form Submission Handling
+    // 4. Form Submission Handling
     window.handleAdvisorySubmit = function (event) {
         event.preventDefault();
-        var form = event.target;
         var nameInput = document.getElementById('advName');
         var orgInput = document.getElementById('advOrg');
         var emailInput = document.getElementById('advEmail');
-        var mandateInput = document.getElementById('advisoryMandateSelect');
-        var notesInput = document.getElementById('advNotes');
 
         if (!nameInput.value.trim() || !emailInput.value.trim() || !orgInput.value.trim()) {
             alert('Please provide your name, organization, and business email.');
@@ -133,7 +172,8 @@
         }
 
         setTimeout(function () {
-            form.style.display = 'none';
+            var form = document.getElementById('advisoryInquiryForm');
+            if (form) form.style.display = 'none';
             var successBox = document.getElementById('advisorySuccessBox');
             if (successBox) {
                 successBox.style.display = 'block';
@@ -145,13 +185,13 @@
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = 'Submit Advisory Mandate Inquiry';
             }
-            form.reset();
-        }, 800);
+            if (form) form.reset();
+        }, 600);
 
         return false;
     };
 
-    // 4. Board Biography Modal / Download Handling
+    // 5. Board Biography Modal / Download Handling
     window.openBoardBioModal = function () {
         var modalEl = document.getElementById('boardBioModal');
         if (!modalEl) return;
