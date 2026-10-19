@@ -1,0 +1,856 @@
+/**
+ * hv-advisory.css
+ * Dedicated executive styling for the Board & Strategic Advisory Hub (page-advisory.html)
+ * Follows the Universal Frontend Design Constitution (60-30-10 palette, zero-pill discipline, optical hierarchy)
+ */
+
+/* ==========================================================================
+   1. PAGE WRAPPER & AMBIENT CANVAS
+   ========================================================================== */
+.advisory-page-wrapper {
+    background-color: #f8fafc;
+    background-image: 
+        radial-gradient(circle at 10% 12%, rgba(37, 99, 235, 0.05) 0%, transparent 45%),
+        radial-gradient(circle at 90% 25%, rgba(99, 102, 241, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 50% 85%, rgba(14, 165, 233, 0.04) 0%, transparent 50%);
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   2. EXECUTIVE HERO BANNER
+   ========================================================================== */
+.advisory-hero-card {
+    background: linear-gradient(135deg, #090e17 0%, #0f172a 45%, #1e1b4b 100%);
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 44px 38px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(99, 102, 241, 0.35);
+    margin-bottom: 36px;
+}
+
+.advisory-hero-card::before {
+    content: "";
+    position: absolute;
+    top: -35%;
+    right: -15%;
+    width: 520px;
+    height: 520px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.22) 0%, rgba(14, 165, 233, 0.1) 50%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.advisory-lead-kicker {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(99, 102, 241, 0.25);
+    border: 1px solid rgba(165, 180, 252, 0.35);
+    color: #cbd5e1;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.advisory-hero-title {
+    font-size: 34px;
+    font-weight: 800;
+    color: #ffffff !important;
+    line-height: 1.25;
+    letter-spacing: -0.6px;
+    margin-bottom: 14px;
+}
+
+.advisory-hero-subtitle {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #cbd5e1;
+    max-width: 720px;
+    margin-bottom: 24px;
+}
+
+/* Executive Portrait Frame */
+.advisory-profile-frame-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advisory-profile-frame {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #0b1120;
+    border: 1px solid rgba(147, 197, 253, 0.3);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.55);
+    max-width: 320px;
+    width: 100%;
+}
+
+.advisory-profile-img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.advisory-profile-frame:hover .advisory-profile-img {
+    transform: scale(1.03);
+}
+
+.advisory-profile-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(9, 14, 23, 0.95) 85%);
+    padding: 20px 18px 16px;
+    color: #ffffff;
+}
+
+.advisory-profile-name {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 4px;
+    letter-spacing: -0.3px;
+}
+
+.advisory-profile-role {
+    font-size: 12.5px;
+    color: #93c5fd;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+/* Executive Hero CTAs */
+.btn-advisory-primary {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: #ffffff !important;
+    border: none;
+    border-radius: 24px;
+    padding: 11px 24px;
+    font-size: 14.5px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-advisory-primary:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45);
+}
+
+.btn-advisory-gold {
+    background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+    color: #0f172a !important;
+    border: none;
+    border-radius: 24px;
+    padding: 11px 22px;
+    font-size: 14px;
+    font-weight: 800;
+    box-shadow: 0 4px 14px rgba(217, 119, 6, 0.3);
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-advisory-gold:hover {
+    background: linear-gradient(135deg, #b45309 0%, #d97706 100%);
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(217, 119, 6, 0.4);
+}
+
+.btn-advisory-outline-light {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.06);
+    color: #ffffff !important;
+    border-radius: 24px;
+    padding: 11px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-advisory-outline-light:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   3. VERIFIED METRICS STRIP (ANIMATED)
+   ========================================================================== */
+.advisory-metrics-strip {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    padding: 28px 24px;
+    margin-bottom: 36px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+}
+
+.advisory-metric-card {
+    text-align: center;
+    padding: 8px 12px;
+}
+
+.advisory-metric-num {
+    font-size: 34px;
+    font-weight: 850;
+    color: #1e3a8a;
+    letter-spacing: -0.8px;
+    line-height: 1.1;
+    margin-bottom: 6px;
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+}
+
+.advisory-metric-num .plus-accent {
+    color: #d97706;
+    font-weight: 800;
+}
+
+.advisory-metric-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #0f172a;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 4px;
+}
+
+.advisory-metric-sub {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+/* ==========================================================================
+   4. WHITE CONTENT SECTION CARDS (SIGNATURE PORTFOLIO THEME)
+   ========================================================================== */
+.hv-advisory-white-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 38px 34px;
+    margin-bottom: 36px;
+    box-shadow: 0 4px 25px rgba(15, 23, 42, 0.04);
+    position: relative;
+}
+
+.hv-advisory-section-header {
+    margin-bottom: 30px;
+}
+
+.advisory-section-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(37, 99, 235, 0.08);
+    color: #1d4ed8;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    font-size: 11.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 4px 12px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+
+.advisory-section-title {
+    font-size: 27px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.4px;
+    line-height: 1.25;
+    margin-bottom: 8px;
+}
+
+.advisory-lead-quote {
+    font-size: 21px;
+    font-weight: 850 !important;
+    color: #1d4ed8;
+    letter-spacing: -0.4px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.advisory-section-desc {
+    font-size: 14.5px;
+    color: #64748b;
+    line-height: 1.6;
+    max-width: 760px;
+}
+
+/* ==========================================================================
+   5. AREAS OF STRATEGIC EXPERTISE (6 CARDS)
+   ========================================================================== */
+.advisory-expertise-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px 22px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.02);
+}
+
+.advisory-expertise-card:hover {
+    background: #ffffff;
+    transform: translateY(-4px);
+    border-color: rgba(37, 99, 235, 0.4);
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.1);
+}
+
+.advisory-card-icon-badge {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.badge-grad-blue { background: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%); }
+.badge-grad-emerald { background: linear-gradient(135deg, #059669 0%, #10b981 100%); }
+.badge-grad-amber { background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%); }
+.badge-grad-indigo { background: linear-gradient(135deg, #4338ca 0%, #6366f1 100%); }
+.badge-grad-purple { background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%); }
+.badge-grad-rose { background: linear-gradient(135deg, #e11d48 0%, #f43f5e 100%); }
+
+.advisory-card-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.advisory-card-tagline {
+    font-size: 13px;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.advisory-card-desc {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #475569;
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+.advisory-card-deliverables {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 14px;
+}
+
+.advisory-card-deliverables li {
+    font-size: 12.5px;
+    color: #334155;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: baseline;
+    line-height: 1.45;
+}
+
+.advisory-card-deliverables li i {
+    color: #2563eb;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.advisory-card-footer {
+    padding-top: 12px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 11.5px;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+}
+
+/* ==========================================================================
+   6. ADVISORY CASE STUDIES (CHALLENGE -> CONTRIBUTION -> OUTCOME)
+   ========================================================================== */
+.hv-case-study-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.02);
+    transition: all 0.25s ease;
+}
+
+.hv-case-study-card:hover {
+    background: #ffffff;
+    border-color: rgba(37, 99, 235, 0.4);
+    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
+    transform: translateY(-3px);
+}
+
+.case-study-tag {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #d97706;
+    margin-bottom: 6px;
+}
+
+.case-study-title {
+    font-size: 17.5px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+    margin-bottom: 14px;
+    line-height: 1.35;
+}
+
+.case-step-box {
+    margin-bottom: 12px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.case-step-box.challenge {
+    border-left-color: #f43f5e;
+}
+
+.case-step-box.contribution {
+    border-left-color: #3b82f6;
+}
+
+.case-step-box.outcome {
+    border-left-color: #10b981;
+}
+
+.case-step-label {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 3px;
+}
+
+.case-step-label.challenge { color: #e11d48; }
+.case-step-label.contribution { color: #2563eb; }
+.case-step-label.outcome { color: #059669; }
+
+.case-step-text {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #475569;
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   7. GOVERNANCE PHILOSOPHY (EDITORIAL FEATURE)
+   ========================================================================== */
+.advisory-philosophy-box {
+    background: linear-gradient(135deg, #090e17 0%, #0f172a 60%, #1e293b 100%);
+    border-radius: 18px;
+    color: #ffffff;
+    padding: 40px 36px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(147, 197, 253, 0.25);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+}
+
+.philosophy-quote-symbol {
+    font-size: 54px;
+    color: #f59e0b;
+    line-height: 1;
+    font-family: Georgia, serif;
+    opacity: 0.8;
+}
+
+.philosophy-featured-statement {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.4;
+    color: #ffffff;
+    letter-spacing: -0.4px;
+    margin-bottom: 12px;
+}
+
+.philosophy-subtext {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-bottom: 0;
+}
+
+.philosophy-pillar-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 22px 20px;
+    height: 100%;
+    transition: all 0.25s ease;
+}
+
+.philosophy-pillar-card:hover {
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(245, 158, 11, 0.4);
+    transform: translateY(-2px);
+}
+
+.pillar-num {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f59e0b;
+    margin-bottom: 6px;
+}
+
+.pillar-title {
+    font-size: 16.5px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
+    letter-spacing: -0.2px;
+}
+
+.pillar-desc {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #cbd5e1;
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   8. THOUGHT LEADERSHIP & BOARDROOM INSIGHTS
+   ========================================================================== */
+.board-insight-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 22px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.25s ease;
+}
+
+.board-insight-card:hover {
+    background: #ffffff;
+    border-color: #93c5fd;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.08);
+}
+
+.insight-channel {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #1d4ed8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.insight-title {
+    font-size: 16px;
+    font-weight: 750;
+    color: #0f172a;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.insight-excerpt {
+    font-size: 13px;
+    color: #475569;
+    line-height: 1.55;
+    margin-bottom: 14px;
+    flex-grow: 1;
+}
+
+.insight-link {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #2563eb;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+.insight-link:hover {
+    color: #1d4ed8;
+    text-decoration: underline !important;
+}
+
+/* ==========================================================================
+   9. BOARD ENGAGEMENT CATEGORIES (6 TIERS)
+   ========================================================================== */
+.advisory-mandate-card {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 16px;
+    padding: 22px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.02);
+}
+
+.advisory-mandate-card:hover {
+    border-color: #2563eb;
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.1);
+    transform: translateY(-3px);
+}
+
+.mandate-badge {
+    font-size: 11px;
+    font-weight: 800;
+    color: #2563eb;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 6px;
+}
+
+.mandate-title {
+    font-size: 17px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 8px;
+    line-height: 1.35;
+}
+
+.mandate-desc {
+    font-size: 13px;
+    color: #475569;
+    line-height: 1.55;
+    margin-bottom: 14px;
+    flex-grow: 1;
+}
+
+.mandate-terms {
+    font-size: 11.5px;
+    color: #64748b;
+    padding-top: 10px;
+    border-top: 1px solid #f1f5f9;
+}
+
+/* ==========================================================================
+   10. BOARD BIOGRAPHY DOWNLOAD CALLOUT
+   ========================================================================== */
+.advisory-biography-callout {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border-radius: 18px;
+    padding: 32px 30px;
+    color: #ffffff;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    margin-top: 30px;
+}
+
+.bio-callout-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.bio-callout-desc {
+    font-size: 14px;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 0;
+    max-width: 680px;
+}
+
+/* ==========================================================================
+   11. ADVISORY INQUIRY MODAL STYLES
+   ========================================================================== */
+.hv-advisory-modal .modal-content {
+    border-radius: 18px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.35);
+    overflow: hidden;
+}
+
+.hv-advisory-modal .modal-header {
+    background: linear-gradient(135deg, #090e17 0%, #0f172a 100%);
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 22px 26px;
+}
+
+.hv-advisory-modal .modal-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.3px;
+}
+
+.hv-advisory-modal .modal-body {
+    padding: 26px;
+    background: #ffffff;
+}
+
+.mandate-select-pill-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.mandate-pill-opt {
+    border: 1px solid #cbd5e1;
+    background: #f8fafc;
+    color: #334155;
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.mandate-pill-opt.active,
+.mandate-pill-opt:hover {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+}
+
+/* ==========================================================================
+   12. DARK MODE OVERRIDES
+   ========================================================================== */
+body.dark-mode .advisory-page-wrapper,
+html.dark-mode .advisory-page-wrapper {
+    background-color: #070b14;
+    background-image: 
+        radial-gradient(circle at 10% 12%, rgba(37, 99, 235, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 90% 25%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 50% 85%, rgba(14, 165, 233, 0.06) 0%, transparent 50%);
+}
+
+body.dark-mode .hv-advisory-white-card,
+html.dark-mode .hv-advisory-white-card {
+    background: #0f172a !important;
+    border-color: #1e293b !important;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-mode .advisory-section-title,
+html.dark-mode .advisory-section-title,
+body.dark-mode .advisory-card-title,
+html.dark-mode .advisory-card-title,
+body.dark-mode .case-study-title,
+html.dark-mode .case-study-title,
+body.dark-mode .insight-title,
+html.dark-mode .insight-title,
+body.dark-mode .mandate-title,
+html.dark-mode .mandate-title {
+    color: #f8fafc !important;
+}
+
+body.dark-mode .advisory-lead-quote,
+html.dark-mode .advisory-lead-quote {
+    color: #60a5fa !important;
+}
+
+body.dark-mode .advisory-section-desc,
+html.dark-mode .advisory-section-desc,
+body.dark-mode .advisory-card-desc,
+html.dark-mode .advisory-card-desc,
+body.dark-mode .case-step-text,
+html.dark-mode .case-step-text,
+body.dark-mode .insight-excerpt,
+html.dark-mode .insight-excerpt,
+body.dark-mode .mandate-desc,
+html.dark-mode .mandate-desc {
+    color: #94a3b8 !important;
+}
+
+body.dark-mode .advisory-expertise-card,
+html.dark-mode .advisory-expertise-card,
+body.dark-mode .hv-case-study-card,
+html.dark-mode .hv-case-study-card,
+body.dark-mode .board-insight-card,
+html.dark-mode .board-insight-card,
+body.dark-mode .advisory-mandate-card,
+html.dark-mode .advisory-mandate-card {
+    background: #131d35 !important;
+    border-color: rgba(51, 65, 85, 0.8) !important;
+}
+
+body.dark-mode .advisory-expertise-card:hover,
+html.dark-mode .advisory-expertise-card:hover,
+body.dark-mode .hv-case-study-card:hover,
+html.dark-mode .hv-case-study-card:hover,
+body.dark-mode .board-insight-card:hover,
+html.dark-mode .board-insight-card:hover,
+body.dark-mode .advisory-mandate-card:hover,
+html.dark-mode .advisory-mandate-card:hover {
+    background: #172340 !important;
+    border-color: #60a5fa !important;
+}
+
+body.dark-mode .advisory-metrics-strip,
+html.dark-mode .advisory-metrics-strip {
+    background: #0f172a !important;
+    border-color: #1e293b !important;
+}
+
+body.dark-mode .advisory-metric-num,
+html.dark-mode .advisory-metric-num {
+    color: #60a5fa !important;
+}
+
+body.dark-mode .advisory-metric-label,
+html.dark-mode .advisory-metric-label {
+    color: #f8fafc !important;
+}
+
+body.dark-mode .advisory-card-deliverables li,
+html.dark-mode .advisory-card-deliverables li {
+    color: #cbd5e1 !important;
+}
+
+body.dark-mode .hv-advisory-modal .modal-body,
+html.dark-mode .hv-advisory-modal .modal-body {
+    background: #0f172a !important;
+    color: #f8fafc !important;
+}
+
+body.dark-mode .hv-advisory-modal .form-control,
+html.dark-mode .hv-advisory-modal .form-control {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+    color: #ffffff !important;
+}

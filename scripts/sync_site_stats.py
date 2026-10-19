@@ -468,9 +468,10 @@ def sync_html_and_generators(stats):
                     content
                 )
 
-            # 28. Ensure full Extended Portfolios & Hubs dropdown is present with all 6 items
+            # 28. Ensure full Extended Portfolios & Hubs dropdown is present with all 7 items
             if filepath.endswith(".html") and "index_old.html" not in filepath:
                 required_hubs = [
+                    'page-advisory',
                     'page-media-distribution-analytics',
                     'page-portfolio',
                     'page-smart-slides',
@@ -484,7 +485,7 @@ def sync_html_and_generators(stats):
                     if any(hub not in drop_block for hub in required_hubs):
                         fname = os.path.basename(filepath)
                         is_drop_active = any(hub_prefix in fname for hub_prefix in [
-                            'page-media-distribution-analytics', 'page-portfolio', 'page-smart-slides', 'page-social', 'page-slides'
+                            'page-advisory', 'advisory', 'board', 'page-media-distribution-analytics', 'page-portfolio', 'page-smart-slides', 'page-social', 'page-slides'
                         ])
                         drop_li_class = "nav-item dropdown active" if is_drop_active else "nav-item dropdown"
                         
@@ -500,6 +501,13 @@ def sync_html_and_generators(stats):
                             <div class="nav-dropdown-header">
                                 <span>Extended Portfolios &amp; Hubs</span>
                             </div>
+                            <a class="dropdown-item nav-dropdown-item{get_item_active('page-advisory')}" href="page-advisory">
+                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-shield-account"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Board &amp; Strategic Advisory <span class="badge badge-pill badge-warning text-dark ml-1" style="font-size: 10px;">Executive</span></span>
+                                    <span class="dropdown-item-desc">Corporate governance, councils &amp; startup boards</span>
+                                </div>
+                            </a>
                             <a class="dropdown-item nav-dropdown-item{get_item_active('page-media-distribution-analytics')}" href="page-media-distribution-analytics">
                                 <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-chart-box-outline"></i></div>
                                 <div class="dropdown-item-content">
@@ -559,6 +567,7 @@ def sync_html_and_generators(stats):
 def verify_extended_hubs():
     import glob
     required_hubs = [
+        'page-advisory',
         'page-media-distribution-analytics',
         'page-portfolio',
         'page-smart-slides',
@@ -576,7 +585,7 @@ def verify_extended_hubs():
             print(f"  [WARNING] Incomplete Extended Hubs in {os.path.basename(f)}")
             all_ok = False
     if all_ok:
-        print(f"Canonical Extended Portfolios & Hubs Check: [Verified] All {len(html_files)} pages contain complete 6-item menu.")
+        print(f"Canonical Extended Portfolios & Hubs Check: [Verified] All {len(html_files)} pages contain complete 7-item menu.")
     return all_ok
 
 def main():
