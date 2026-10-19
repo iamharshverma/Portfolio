@@ -499,6 +499,7 @@ events_data = {
             "description": "Featured speaker on 'YOUR AGENT INSTALLED WHAT? SECURING THE NEW AI SUPPLY CHAIN' hosted by AI Insiders with Pebblebed during SF Tech Week. Addressed emerging threats across the agentic supply chain: unauthorized plugin and skill installations, MCP integration risks, runtime agent sandboxing, prompt provenance, and zero-trust controls.",
             "links": [
                 {"name": "Partiful Event Page", "url": "https://partiful.com/e/8LNyv0WyX7dTHjUUJmm0", "icon": "mdi-ticket-confirmation"},
+                {"name": "AI Insiders Feature Post", "url": "https://lnkd.in/p/g_G7h98m", "icon": "mdi-linkedin"},
                 {"name": "LinkedIn Announcement", "url": "https://lnkd.in/p/eyfEarGz", "icon": "mdi-linkedin"},
                 {"name": "After-Event LinkedIn Post", "url": "https://lnkd.in/p/gntaFHpP", "icon": "mdi-linkedin"},
                 {"name": "LinkedIn Video Post", "url": "https://lnkd.in/p/gDX4uXQ8", "icon": "mdi-video"}
