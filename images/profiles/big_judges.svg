@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bigJudgesGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F76814" />
+      <stop offset="100%" stop-color="#D9480F" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="18" fill="url(#bigJudgesGrad)" />
+  <rect x="2" y="2" width="96" height="96" rx="16" stroke="rgba(255,255,255,0.25)" stroke-width="2" fill="none" />
+  <!-- Gavel / Scales of Judgment icon -->
+  <path d="M30 36l18-18 8 8-18 18z" fill="#FFFFFF" opacity="0.95" />
+  <rect x="42" y="38" width="8" height="26" rx="3" transform="rotate(45 46 51)" fill="#FFFFFF" />
+  <circle cx="68" cy="32" r="12" fill="none" stroke="#FFFFFF" stroke-width="3" />
+  <path d="M68 25v14M61 32h14" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+  <text x="50" y="70" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="900" text-anchor="middle" letter-spacing="0.5">BIG JUDGES</text>
+  <rect x="18" y="76" width="64" height="13" rx="6.5" fill="#FFFFFF" />
+  <text x="50" y="85.5" fill="#D9480F" font-family="system-ui, -apple-system, sans-serif" font-size="7" font-weight="900" text-anchor="middle" letter-spacing="0.4">AWARDS PANEL</text>
+</svg>

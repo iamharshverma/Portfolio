@@ -56,8 +56,8 @@ def load_canonical_stats():
         "patents_count": 6,
         "media_count": media_count,
         "media_display": f"{media_count}+",
-        "profiles_count": 47,
-        "profiles_display": "47"
+        "profiles_count": 49,
+        "profiles_display": "49"
     }
 
 def update_client_stats_js(stats):
@@ -364,28 +364,28 @@ def sync_html_and_generators(stats):
             )
 
             # --- VERIFIED PROFILES METRICS ---
-            # 18. Update navbar dropdown "42 Verified Profiles Hub" -> "47 Verified Profiles Hub"
+            # 18. Update navbar dropdown "49 Verified Profiles Hub"
             content = re.sub(
-                r'(<span class="dropdown-item-title">)\s*(?:38|42|52)\+?\s*Verified Profiles Hub\s*(</span>)',
+                r'(<span class="dropdown-item-title">)\s*(?:38|42|47|49|52)\+?\s*Verified Profiles Hub\s*(</span>)',
                 rf'\g<1>{prof_num} Verified Profiles Hub\g<2>',
                 content
             )
 
-            # 19. Update "38 Verified Academic & Industry Hubs" / "38 Verified Academic/Professional Registries"
+            # 19. Update "49 Verified Academic & Industry Hubs" / "49 Verified Academic/Professional Registries"
             content = re.sub(
-                r'\b(?:38|42)\s+Verified Academic\s*(?:&amp;|&)\s*Industry Hubs\b',
+                r'\b(?:38|42|47|49|52)\s+Verified Academic\s*(?:&amp;|&)\s*Industry Hubs\b',
                 f'{prof_num} Verified Academic &amp; Industry Hubs',
                 content
             )
             content = re.sub(
-                r'\b(?:38|42)\s+Verified Academic/Professional Registries\b',
+                r'\b(?:38|42|47|49|52)\s+Verified Academic/Professional Registries\b',
                 f'{prof_num} Verified Academic/Professional Registries',
                 content
             )
 
-            # 20. Update "52+ Verified Profiles" in index.html biography CTA
+            # 20. Update "49 Verified Profiles" in index.html biography CTA
             content = re.sub(
-                r'Full Biography\s*(?:&amp;|&)\s*(?:38|42|52)\+?\s*Verified Profiles',
+                r'Full Biography\s*(?:&amp;|&)\s*(?:38|42|47|49|52)\+?\s*Verified Profiles',
                 f'Full Biography &amp; {prof_num} Verified Profiles',
                 content
             )
@@ -500,7 +500,7 @@ def sync_html_and_generators(stats):
                             <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
                                 <div class="dropdown-item-icon bg-soft-warning"><i class="mdi mdi-shield-account-outline"></i></div>
                                 <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">47 Verified Profiles Hub</span>
+                                    <span class="dropdown-item-title">49 Verified Profiles Hub</span>
                                     <span class="dropdown-item-desc">Academic, editorial &amp; executive registries</span>
                                 </div>
                             </a>

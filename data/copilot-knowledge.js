@@ -178,6 +178,8 @@ const harshKnowledge = {
   })),
 
   verifiedProfiles: [
+    { name: "Business Intelligence Group (BIG) Judges", url: "https://judges.bintelligence.com/harsh-verma", id: "Official Awards Judge" },
+    { name: "Soundverse AI", url: "https://www.soundverse.ai/@harshverma59", id: "@harshverma59" },
     { name: "Google Scholar", url: "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ", count: "26+ Papers" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/harshverma59/", handle: "harshverma59" },
     { name: "GitHub", url: "https://github.com/iamharshverma", handle: "iamharshverma" },
@@ -250,7 +252,7 @@ HARSH VERMA'S CORE PROFILE:
 - Professional Roles: Enterprise AI Architect, Principal Technologist, Author, Keynote Speaker, and Fellow.
 - Contact Email: harshverma59@gmail.com
 - Main Website Pages:
-  * Biography & Profiles: "page-about" (or "page-about#verified-profiles" for the 47 Verified Academic &amp; Industry Hubs)
+  * Biography & Profiles: "page-about" (or "page-about#verified-profiles" for the 49 Verified Academic &amp; Industry Hubs)
   * 27 Prestigious Awards: "page-awards"
   * 26+ Peer-Reviewed Publications: "page-publications"
   * Authored Books: "page-books"

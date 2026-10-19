@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="soundverseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#4F46E5" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="18" fill="url(#soundverseGrad)" />
+  <rect x="2" y="2" width="96" height="96" rx="16" stroke="rgba(255,255,255,0.25)" stroke-width="2" fill="none" />
+  <!-- Soundwave waveform / AI Audio creator emblem -->
+  <rect x="24" y="38" width="5" height="14" rx="2.5" fill="#FFFFFF" opacity="0.8" />
+  <rect x="33" y="30" width="5" height="30" rx="2.5" fill="#FFFFFF" opacity="0.9" />
+  <rect x="42" y="22" width="5" height="46" rx="2.5" fill="#38BDF8" />
+  <rect x="51" y="16" width="5" height="58" rx="2.5" fill="#FFFFFF" />
+  <rect x="60" y="26" width="5" height="38" rx="2.5" fill="#38BDF8" />
+  <rect x="69" y="34" width="5" height="22" rx="2.5" fill="#FFFFFF" opacity="0.9" />
+  <rect x="78" y="42" width="5" height="10" rx="2.5" fill="#FFFFFF" opacity="0.7" />
+  <text x="50" y="82" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" text-anchor="middle" letter-spacing="0.5">SOUNDVERSE</text>
+  <rect x="22" y="86" width="56" height="10" rx="5" fill="rgba(255,255,255,0.2)" />
+  <text x="50" y="93.5" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="6.5" font-weight="800" text-anchor="middle" letter-spacing="0.4">AI MUSIC CREATOR</text>
+</svg>

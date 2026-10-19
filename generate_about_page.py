@@ -276,6 +276,19 @@ PROFILE_LINKS = [
         "tag": "HackerNoon Author",
         "description": "Technical Council author profile publishing analyses on LLM agent security, AI reliability, and enterprise cloud tooling."
     },
+    {
+        "id": "soundverse-ai",
+        "category": "developer",
+        "categoryLabel": "Developer & Cloud Ecosystems",
+        "name": "Soundverse AI",
+        "identifier": "@harshverma59",
+        "url": "https://www.soundverse.ai/@harshverma59",
+        "icon": "mdi-music-box-outline",
+        "thumb": "images/profiles/soundverse.svg",
+        "badgeColor": "#8b5cf6",
+        "tag": "AI Audio Creator",
+        "description": "Official creator and AI audio researcher profile on Soundverse AI (@harshverma59), exploring generative audio architectures, diffusion music models, and AI soundscapes."
+    },
 
     # Category: media (Media Features, Press & Filmography)
     {
@@ -424,6 +437,19 @@ PROFILE_LINKS = [
         "badgeColor": "#e11d48",
         "tag": "1:1 Mentorship",
         "description": "Official 1:1 mentorship and executive advisory booking page on Topmate, offering guidance on AI engineering, system architecture, career acceleration, and startup strategy."
+    },
+    {
+        "id": "big-judges",
+        "category": "advisory",
+        "categoryLabel": "Advisory & Mentorship",
+        "name": "Business Intelligence Group",
+        "identifier": "Official Awards Judge",
+        "url": "https://judges.bintelligence.com/harsh-verma",
+        "icon": "mdi-gavel",
+        "thumb": "images/profiles/big_judges.svg",
+        "badgeColor": "#f76814",
+        "tag": "Industry Awards Judge",
+        "description": "Official Judge for Business Intelligence Group (BIG) industry recognition programs, evaluating breakthrough AI innovations, enterprise systems, and executive achievements."
     },
 
     # Category: direct (Direct Connect & Professional Networks)
@@ -587,6 +613,19 @@ PROFILE_LINKS = [
 
 def generate_profile_card_html(link):
     category_slug = link["category"]
+    thumb_img = link.get("thumb")
+    if not thumb_img:
+        slug = link["id"].replace("-", "_")
+        for p in [f"images/profiles/{slug}.svg", f"images/profiles/{link['id']}.svg"]:
+            if os.path.exists(p):
+                thumb_img = p
+                break
+    link_name = link["name"]
+    link_icon = link.get("icon", "")
+    if thumb_img:
+        icon_markup = f'<img src="{thumb_img}" class="profile-card-thumb-img" alt="{link_name} Thumbnail" loading="lazy">'
+    else:
+        icon_markup = f'<i class="mdi {link_icon}"></i>'
     data_search = f"{link['name']} {link['identifier']} {link['tag']} {link['description']} {link['categoryLabel']}".lower()
     
     return f"""
@@ -595,7 +634,7 @@ def generate_profile_card_html(link):
             <div class="d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
                     <div class="profile-card-icon-wrap mr-3">
-                        <i class="mdi {link['icon']}"></i>
+                        {icon_markup}
                     </div>
                     <div>
                         <span class="profile-category-pill">{link['categoryLabel']}</span>
@@ -1612,7 +1651,7 @@ def generate_html():
                                     <i class="mdi mdi-check-decagram mr-1"></i> Verified Digital Directory
                                 </span>
                                 <h2 class="font-weight-bold text-dark mb-0 mt-1" style="font-size: 1.5rem;">
-                                    Verified Profiles &amp; Web Presence Hub <span class="badge badge-primary font-weight-bold ml-2">47 Profiles</span>
+                                    Verified Profiles &amp; Web Presence Hub <span class="badge badge-primary font-weight-bold ml-2">{len(PROFILE_LINKS)} Profiles</span>
                                 </h2>
                                 <p class="text-muted mb-0 mt-1" style="font-size: 14px;">
                                     Explore Harsh Verma's verified accreditations, executive councils, research indexes, developer ecosystems, and media features across the web.
@@ -1633,7 +1672,7 @@ def generate_html():
                             </div>
                             <div class="col-lg-7">
                                 <div class="d-flex flex-wrap align-items-center justify-content-lg-end" id="profileCategoryFilters">
-                                    <button type="button" class="filter-btn-pill active" data-filter="all">All (47)</button>
+                                    <button type="button" class="filter-btn-pill active" data-filter="all">All ({len(PROFILE_LINKS)})</button>
                                     <button type="button" class="filter-btn-pill" data-filter="councils">Executive &amp; Councils</button>
                                     <button type="button" class="filter-btn-pill" data-filter="research">Research &amp; Citations</button>
                                     <button type="button" class="filter-btn-pill" data-filter="developer">Developer &amp; AI Hubs</button>
