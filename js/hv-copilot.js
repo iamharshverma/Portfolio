@@ -1141,7 +1141,7 @@ Harsh Verma is an international keynote speaker, panelist, and startup judge:
     ) {
       return `### 📰 Media Coverage & Global Distribution Reach
 
-Harsh Verma's technical thought leadership has reached an aggregate global audience of over **3.75+ Billion potential views** across **40+ media features**:
+Harsh Verma's technical thought leadership has reached an aggregate global audience of over **3.75+ Billion potential views** across **41+ media features**:
 
 - **Major Syndication Platforms**: Featured on **Yahoo Finance, Business Insider, USA TODAY, AP News, NewsBreak, Barchart, and StreetInsider**.
 - **Geographic Reach**: 48% US, 18% UK, 14% India, 12% Canada, 8% Asia & Middle East.

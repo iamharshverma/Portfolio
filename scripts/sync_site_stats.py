@@ -398,19 +398,24 @@ def sync_html_and_generators(stats):
             )
 
             # --- MEDIA & PRESS METRICS ---
-            # 21. Update "39+ Global Press Features" / "39+ Features"
+            # 22. Update "41+ Global Press Features" / "41+ Features"
             content = re.sub(
-                r'(<h3[^>]*>)\s*39\+?\s*(</h3>\s*<span[^>]*>\s*Global Press Features\s*</span>)',
+                r'(<h3[^>]*>)\s*(?:37|38|39|40|41)\+?\s*(</h3>\s*<span[^>]*>\s*Global Press Features\s*</span>)',
                 rf'\g<1>{m_disp}\g<2>',
                 content
             )
             content = re.sub(
-                r'\b39\+?\s+Features\s*•\s*7\s*Premier Platforms',
+                r'<span><strong>(?:37|38|39|40|41)\+?</strong>\s*Global Press Features</span>',
+                f'<span><strong>{m_disp}</strong> Global Press Features</span>',
+                content
+            )
+            content = re.sub(
+                r'\b(?:37|38|39|40|41)\+?\s+Features\s*•\s*7\s*Premier Platforms',
                 f'{m_disp} Features • 7 Premier Platforms',
                 content
             )
             content = re.sub(
-                r'across\s+\*\*39\+?\s+media features\*\*',
+                r'across\s+\*\*(?:37|38|39|40|41)\+?\s+media features\*\*',
                 f'across **{m_disp} media features**',
                 content
             )

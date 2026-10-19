@@ -608,6 +608,26 @@ media_items = [
         "quote": "Treating AI agents as experiments prevents premature optimization and forces teams to establish concrete safety boundaries before broad rollout."
     },
     {
+        "id": "media-berkeley-skydeck-newsletter-oct7",
+        "title": "UC Berkeley SkyDeck Newsletter: Forbes Feature on Data Systems as the Real AI Moat",
+        "outlet": "UC Berkeley SkyDeck Newsletter",
+        "type": "institutional",
+        "type_label": "Accelerator Newsletter",
+        "year": "2026",
+        "date_display": "October 7, 2026",
+        "badge_theme": "gold",
+        "icon_svg": "skydeck_badge.svg",
+        "highlight": "Forbes Feature Spotlight",
+        "summary": "Highlighted in UC Berkeley SkyDeck's October 7, 2026 newsletter for his Forbes thought leadership discussing why startups with only models are replaceable, arguing that well-orchestrated data systems are the real moat in the AI era.",
+        "topics": ["UC Berkeley SkyDeck", "Forbes Feature", "Data Systems Moat", "AI Startups"],
+        "stats": "Institutional Feature",
+        "primary_url": "https://mailchi.mp/berkeley/skydecknewsletter10726?e=6a097303d2",
+        "links": [
+            {"label": "View SkyDeck Newsletter", "url": "https://mailchi.mp/berkeley/skydecknewsletter10726?e=6a097303d2", "icon": "mdi-email-newsletter"}
+        ],
+        "quote": "Harsh Verma's latest article was featured in Forbes. The piece talks about why startups with only models are replaceable, arguing that well-orchestrated data systems are the real moat in the AI era."
+    },
+    {
         "id": "media-berkeley-skydeck-advisor-listing",
         "title": "UC Berkeley SkyDeck: Official Global Advisory Council Listing",
         "outlet": "UC Berkeley SkyDeck",

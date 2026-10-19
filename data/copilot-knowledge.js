@@ -35,8 +35,8 @@ const harshKnowledge = {
       awardsCount: 27,
       publicationsCount: 26,
       citationsCount: "150+",
-      verifiedProfilesCount: 52,
-      mediaFeaturesCount: 40,
+      verifiedProfilesCount: 49,
+      mediaFeaturesCount: 41,
       potentialViewsCount: "3.75+ Billion",
       booksCount: 2
     }

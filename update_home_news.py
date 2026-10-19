@@ -649,7 +649,7 @@ def build_home_news_section():
                         <div class="home-news-ribbon">
                             <div class="home-news-stat-pill">
                                 <i class="mdi mdi-newspaper-variant-multiple text-primary"></i>
-                                <span><strong>37+</strong> Global Press Features</span>
+                                <span><strong>41+</strong> Global Press Features</span>
                             </div>
                             <div class="home-news-stat-pill">
                                 <i class="mdi mdi-billboard text-warning"></i>
