@@ -1312,7 +1312,12 @@ app.get('/api/smart-slides', (req, res) => {
   }
 });
 
-// Serve static assets from project root
+// Serve static assets from dist or project root
+if (fs.existsSync(path.join(__dirname, 'dist'))) {
+  app.use(express.static(path.join(__dirname, 'dist'), {
+    extensions: ['html', 'htm']
+  }));
+}
 app.use(express.static(__dirname, {
   extensions: ['html', 'htm']
 }));
@@ -1322,7 +1327,10 @@ app.get('*', (req, res) => {
   if (/\.(js|css|json|map|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot)$/i.test(req.path)) {
     return res.status(404).type('text/plain').send('Not found');
   }
-  res.sendFile(path.join(__dirname, 'index.html'));
+  const indexPath = fs.existsSync(path.join(__dirname, 'dist', 'index.html'))
+    ? path.join(__dirname, 'dist', 'index.html')
+    : path.join(__dirname, 'index.html');
+  res.sendFile(indexPath);
 });
 
 // Start HTTP server

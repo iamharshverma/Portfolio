@@ -1,0 +1,423 @@
+/**
+ * hv-speaker-expertise.css
+ * White section container card styling aligned with the site theme.
+ * Compact, precise, intuitive layout for Speaking Engagements and Subject Matter Expertise.
+ */
+
+/* ------------------------------------------------------------- */
+/* White Section Cards (Theme Container)                        */
+/* ------------------------------------------------------------- */
+.hv-speaker-white-section-card {
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    padding: 36px 30px;
+    box-shadow: 0 4px 24px rgba(15, 23, 42, 0.04);
+    margin-bottom: 36px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hv-speaker-section-header {
+    margin-bottom: 26px;
+}
+
+.hv-audience-lead-badge,
+.hv-expertise-lead-badge {
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563eb;
+    border: 1px solid rgba(37, 99, 235, 0.22);
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 12px;
+}
+
+.hv-audience-section-title,
+.hv-expertise-section-title {
+    font-size: 26px;
+    font-weight: 750;
+    letter-spacing: -0.4px;
+    color: #0f172a;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.hv-audience-lead-quote,
+.hv-expertise-lead-quote {
+    font-size: 23px;
+    font-weight: 850 !important;
+    color: #1d4ed8;
+    max-width: 860px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    letter-spacing: -0.4px;
+}
+
+.hv-audience-lead-quote strong,
+.hv-expertise-lead-quote strong {
+    font-weight: 850 !important;
+}
+
+.hv-audience-section-desc,
+.hv-expertise-section-desc {
+    max-width: 680px;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #64748b;
+}
+
+/* ------------------------------------------------------------- */
+/* Audience Cards (Compact & Intuitive)                         */
+/* ------------------------------------------------------------- */
+.hv-audience-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 20px 18px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.02);
+    position: relative;
+    height: 100%;
+}
+
+.hv-audience-card:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.1);
+    border-color: rgba(147, 197, 253, 0.9);
+}
+
+.hv-audience-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.hv-audience-icon-badge {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #ffffff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bg-gradient-amber {
+    background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+}
+.bg-gradient-blue {
+    background: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%);
+}
+.bg-gradient-indigo {
+    background: linear-gradient(135deg, #4338ca 0%, #6366f1 100%);
+}
+.bg-gradient-emerald {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+}
+
+.hv-audience-tag {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 3px 8px;
+    border-radius: 16px;
+    background: #ffffff;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+}
+
+.hv-audience-type-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-top: 4px;
+    margin-bottom: 6px;
+    letter-spacing: -0.4px;
+    line-height: 1.25;
+}
+
+.hv-audience-focus-label {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #2563eb;
+    margin-bottom: 14px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+}
+
+.hv-audience-title {
+    font-size: 16.5px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 6px;
+    letter-spacing: -0.2px;
+    line-height: 1.35;
+}
+
+.hv-audience-text {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #475569;
+    margin-bottom: 12px;
+    flex-grow: 1;
+}
+
+.hv-audience-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 12px;
+}
+
+.hv-chip {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+}
+
+.hv-audience-footer {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 10px;
+    margin-top: auto;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+}
+
+/* ------------------------------------------------------------- */
+/* Subject Matter Expertise Cards (Precise & Short)              */
+/* ------------------------------------------------------------- */
+.hv-expertise-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 22px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.02);
+    transition: all 0.25s ease;
+    height: 100%;
+}
+
+.hv-expertise-card:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.09);
+    border-color: rgba(147, 197, 253, 0.9);
+}
+
+.hv-expertise-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hv-topic-badge {
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: rgba(37, 99, 235, 0.1);
+    color: #2563eb;
+}
+
+.hv-format-badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+}
+
+.hv-expertise-title {
+    font-size: 17.5px;
+    font-weight: 750;
+    color: #0f172a;
+    margin-bottom: 4px;
+    letter-spacing: -0.2px;
+    line-height: 1.35;
+}
+
+.hv-expertise-tagline {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.hv-expertise-desc {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #475569;
+    margin-bottom: 14px;
+}
+
+.hv-expertise-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.hv-focus-pill {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #334155;
+    border: 1px solid #e2e8f0;
+    display: inline-flex;
+    align-items: center;
+}
+
+.hv-expertise-proof {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 10px;
+    margin-top: auto;
+    font-size: 11.5px;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+}
+.hv-expertise-proof strong {
+    color: #1e293b;
+    margin-left: 4px;
+}
+
+/* ------------------------------------------------------------- */
+/* Single Booking Ribbon (Bottom of Section)                     */
+/* ------------------------------------------------------------- */
+.hv-speaker-invite-ribbon {
+    background: linear-gradient(135deg, #090e17 0%, #0f172a 50%, #1e1b4b 100%);
+    border: 1px solid rgba(99, 102, 241, 0.35);
+    border-radius: 16px;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------------------------------------------- */
+/* Dark Mode Overrides                                           */
+/* ------------------------------------------------------------- */
+body.dark-mode .hv-speaker-white-section-card,
+html.dark-mode .hv-speaker-white-section-card {
+    background: #0f172a !important;
+    border-color: #1e293b !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-mode .hv-audience-lead-badge,
+html.dark-mode .hv-audience-lead-badge,
+body.dark-mode .hv-expertise-lead-badge,
+html.dark-mode .hv-expertise-lead-badge {
+    background: rgba(59, 130, 246, 0.15) !important;
+    color: #93c5fd !important;
+    border-color: rgba(99, 102, 241, 0.35) !important;
+}
+
+body.dark-mode .hv-audience-section-title,
+html.dark-mode .hv-audience-section-title,
+body.dark-mode .hv-expertise-section-title,
+html.dark-mode .hv-expertise-section-title {
+    color: #f8fafc !important;
+}
+
+body.dark-mode .hv-audience-lead-quote,
+html.dark-mode .hv-audience-lead-quote,
+body.dark-mode .hv-expertise-lead-quote,
+html.dark-mode .hv-expertise-lead-quote {
+    color: #60a5fa !important;
+}
+
+body.dark-mode .hv-audience-section-desc,
+html.dark-mode .hv-audience-section-desc,
+body.dark-mode .hv-expertise-section-desc,
+html.dark-mode .hv-expertise-section-desc {
+    color: #94a3b8 !important;
+}
+
+body.dark-mode .hv-audience-card,
+html.dark-mode .hv-audience-card,
+body.dark-mode .hv-expertise-card,
+html.dark-mode .hv-expertise-card {
+    background: #131d35 !important;
+    border-color: rgba(51, 65, 85, 0.9) !important;
+}
+
+body.dark-mode .hv-audience-card:hover,
+html.dark-mode .hv-audience-card:hover,
+body.dark-mode .hv-expertise-card:hover,
+html.dark-mode .hv-expertise-card:hover {
+    background: #172340 !important;
+    border-color: #60a5fa !important;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark-mode .hv-audience-type-title,
+html.dark-mode .hv-audience-type-title,
+body.dark-mode .hv-audience-title,
+html.dark-mode .hv-audience-title,
+body.dark-mode .hv-expertise-title,
+html.dark-mode .hv-expertise-title {
+    color: #f8fafc !important;
+}
+
+body.dark-mode .hv-audience-focus-label,
+html.dark-mode .hv-audience-focus-label {
+    color: #60a5fa !important;
+}
+
+body.dark-mode .hv-audience-text,
+html.dark-mode .hv-audience-text,
+body.dark-mode .hv-expertise-desc,
+html.dark-mode .hv-expertise-desc {
+    color: #94a3b8 !important;
+}
+
+body.dark-mode .hv-focus-pill,
+html.dark-mode .hv-focus-pill,
+body.dark-mode .hv-chip,
+html.dark-mode .hv-chip,
+body.dark-mode .hv-format-badge,
+html.dark-mode .hv-format-badge,
+body.dark-mode .hv-audience-tag,
+html.dark-mode .hv-audience-tag {
+    background: #1e293b !important;
+    color: #cbd5e1 !important;
+    border-color: #334155 !important;
+}
+
+body.dark-mode .hv-audience-footer,
+html.dark-mode .hv-audience-footer,
+body.dark-mode .hv-expertise-proof,
+html.dark-mode .hv-expertise-proof {
+    border-color: #334155 !important;
+    color: #94a3b8 !important;
+}
+
+body.dark-mode .hv-expertise-proof strong,
+html.dark-mode .hv-expertise-proof strong {
+    color: #e2e8f0 !important;
+}
