@@ -760,6 +760,39 @@ papers = [
   doi={10.68495/rc.2026.C025},
   url={https://proceedings.raptors.dev/verma-trusted-ai-autonomous-agents/}
 }"""
+    },
+    {
+        "id": "pub-27",
+        "title": "DEICA-ML: A Multi-Layer Differential Evolution-Based Improved Clustering Algorithm for IoT-Based Heterogeneous Wireless Sensor Networks",
+        "venue": "IEEE Access (Manuscript ID: Access-2026-52653)",
+        "year": "2026",
+        "publication_date": "Oct 13, 2026",
+        "authors": "Harsh Verma",
+        "category": "journal",
+        "category_label": "IEEE Journal (Upcoming)",
+        "topic": "iot",
+        "topic_label": "IoT & Wireless Sensor Networks",
+        "manuscript_id": "Access-2026-52653",
+        "status": "Upcoming / In Review",
+        "publisher": "IEEE",
+        "link": "https://ieeeaccess.ieee.org/",
+        "abstract": "Proposes DEICA-ML, a novel multi-layer differential evolution-based improved clustering algorithm engineered for IoT-based heterogeneous wireless sensor networks (HWSNs). Formulates an adaptive cluster-head selection and energy-efficient data transmission architecture optimizing network longevity, throughput, and cross-tier load balancing under non-uniform sensor deployment.",
+        "tags": [
+            "IEEE Access",
+            "Differential Evolution",
+            "Clustering Algorithm",
+            "IoT",
+            "Heterogeneous WSN",
+            "Energy Optimization",
+            "Wireless Sensor Networks"
+        ],
+        "bibtex": """@article{verma2026deica,
+  title={DEICA-ML: A Multi-Layer Differential Evolution-Based Improved Clustering Algorithm for IoT-Based Heterogeneous Wireless Sensor Networks},
+  author={Verma, Harsh},
+  journal={IEEE Access},
+  year={2026},
+  note={Manuscript ID: Access-2026-52653, Submitted October 13, 2026}
+}"""
     }
 ]
 

@@ -561,7 +561,7 @@ html_template = """<!DOCTYPE html>
 
                 <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
                     <li class="list-inline-item mr-2">
-                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (26+ Papers)">
+                        <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="nav-social-btn" title="Google Scholar (27+ Papers)">
                             <i class="mdi mdi-school"></i>
                         </a>
                     </li>
@@ -636,7 +636,7 @@ html_template = """<!DOCTYPE html>
                                     </div>
                                     <div class="col-6 mb-3">
                                         <div class="scholar-stat-box" id="scholar-stat-papers">
-                                            <div class="scholar-stat-number">26</div>
+                                            <div class="scholar-stat-number">27</div>
                                             <div class="scholar-stat-label">Published &amp; Forthcoming Papers</div>
                                         </div>
                                     </div>
@@ -807,7 +807,7 @@ html_template = """<!DOCTYPE html>
                 </div>
                 <div class="col-lg-7">
                     <div class="d-flex flex-wrap align-items-center justify-content-lg-end" id="categoryFilters">
-                        <button class="filter-btn active" data-filter="all">All Papers (26)</button>
+                        <button class="filter-btn active" data-filter="all">All Papers (27)</button>
                         <button class="filter-btn" data-filter="agents">AI Agentic Systems</button>
                         <button class="filter-btn" data-filter="security">AI Security & Trust</button>
                         <button class="filter-btn" data-filter="cloud_ai">Cloud & Infrastructure</button>
@@ -821,7 +821,7 @@ html_template = """<!DOCTYPE html>
             <div class="row">
                 <div class="col-12">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <span class="text-muted font-weight-bold small text-uppercase" id="showingCount">Showing all 26 publications</span>
+                        <span class="text-muted font-weight-bold small text-uppercase" id="showingCount">Showing all 27 publications</span>
                         <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="small text-primary font-weight-bold">
                             Open Scholar Citations <i class="mdi mdi-open-in-new"></i>
                         </a>

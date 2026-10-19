@@ -166,7 +166,7 @@
             <i class="mdi mdi-book-open-variant mr-1"></i> Authored Books
           </button>
           <button class="hv-chip-btn" data-query="What are his key research publications & academic citations?">
-            <i class="mdi mdi-school mr-1"></i> 26+ Papers
+            <i class="mdi mdi-school mr-1"></i> 27+ Papers
           </button>
           <button class="hv-chip-btn" data-query="How can I invite Harsh for a keynote, panel, or advisory role?">
             <i class="mdi mdi-microphone mr-1"></i> Keynotes &amp; Advisory
@@ -1221,7 +1221,7 @@ All verified inquiries submitted through this portfolio are delivered directly w
 
 - **Specializations**: Enterprise Generative AI, Autonomous Multi-Agent Architectures, Zero-Trust Cyber Resilience, and Cloud Distributed Systems.
 - **Recognitions**: **27 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
-- **Academic Impact**: **25+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **49 Verified Academic/Professional Registries**.
+- **Academic Impact**: **27+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **49 Verified Academic/Professional Registries**.
 - **Fellowships**: Harvard Square Leaders Excellence Fellow, IEEE Senior Member, and Forbes Technology Council Member.
 
 **Explore further:**

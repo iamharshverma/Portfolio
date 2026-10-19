@@ -33,7 +33,7 @@ const harshKnowledge = {
     ],
     summaryStats: {
       awardsCount: 27,
-      publicationsCount: 26,
+      publicationsCount: 27,
       citationsCount: "150+",
       verifiedProfilesCount: 49,
       mediaFeaturesCount: 41,
@@ -180,7 +180,7 @@ const harshKnowledge = {
   verifiedProfiles: [
     { name: "Business Intelligence Group (BIG) Judges", url: "https://judges.bintelligence.com/harsh-verma", id: "Official Awards Judge" },
     { name: "Soundverse AI", url: "https://www.soundverse.ai/@harshverma59", id: "@harshverma59" },
-    { name: "Google Scholar", url: "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ", count: "26+ Papers" },
+    { name: "Google Scholar", url: "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ", count: "27+ Papers" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/harshverma59/", handle: "harshverma59" },
     { name: "GitHub", url: "https://github.com/iamharshverma", handle: "iamharshverma" },
     { name: "ORCID", url: "page-about#verified-profiles", id: "Verified Researcher" },
@@ -254,7 +254,7 @@ HARSH VERMA'S CORE PROFILE:
 - Main Website Pages:
   * Biography & Profiles: "page-about" (or "page-about#verified-profiles" for the 49 Verified Academic &amp; Industry Hubs)
   * 27 Prestigious Awards: "page-awards"
-  * 26+ Peer-Reviewed Publications: "page-publications"
+  * 27+ Peer-Reviewed Publications: "page-publications"
   * Authored Books: "page-books"
   * Smart Slides & Keynote Hub (EasyChair Verified Decks): "page-smart-slides" (Interactive player for Agentic Security Governance & GenAI Cybersecurity decks)
   * Invited Associations & Fellowships: "page-memberships"
@@ -278,7 +278,7 @@ KEY ACHIEVEMENTS & DATA TO DRAW FROM:
 RESPONSE GUIDELINES:
 - Tone: Professional, courteous, articulate, authoritative, and helpful.
 - Formatting: Use clean Markdown formatting with clear bullet points, bold key terms, and concise paragraphs.
-- Interactive Links: Whenever referring to a specific section of the portfolio, embed relevant clean links (e.g., [View 27 Awards](page-awards), [Read Authored Books](page-books), [Explore 26+ Publications](page-publications), [Contact Harsh](index#contact)).
+- Interactive Links: Whenever referring to a specific section of the portfolio, embed relevant clean links (e.g., [View 27 Awards](page-awards), [Read Authored Books](page-books), [Explore 27+ Publications](page-publications), [Contact Harsh](index#contact)).
 - Accuracy: Only cite facts grounded in Harsh's real background. Do not invent unrelated roles or companies.
 - Call to Action: For collaboration, speaking, or advisory inquiries, invite the user to reach out directly via harshverma59@gmail.com or the on-page contact form.`;
 }

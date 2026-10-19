@@ -8,7 +8,7 @@
 (function(window, document) {
   'use strict';
 
-  var DEFAULT_PAPER_COUNT = 26;
+  var DEFAULT_PAPER_COUNT = 27;
   var cachedPaperCount = DEFAULT_PAPER_COUNT;
 
   function updateDOMCounters(count) {

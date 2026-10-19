@@ -244,12 +244,12 @@ All verified inquiries submitted through this portfolio are delivered directly w
 
 - **Specializations**: Enterprise Generative AI, Multi-Agent Architectures, Zero-Trust Cyber Resilience, and Cloud Distributed Systems.
 - **Recognitions**: **27 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
-- **Academic Impact**: **26+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **49 Verified Academic/Professional Registries**.
+- **Academic Impact**: **27+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **49 Verified Academic/Professional Registries**.
 - **Fellowships**: Harvard Square Leaders Excellence Fellow, IEEE Senior Member, and Forbes Technology Council Member.
 
 **Explore further:**
 - 🏆 **[27 Prestigious Awards](page-awards)**
-- 🔬 **[26+ Research Publications](page-publications)**
+- 🔬 **[27+ Research Publications](page-publications)**
 - 💼 **[Professional Experience & Roles](index#experience)**
 - 📚 **[Authored Books](page-books)**
 - 👥 **[Invited Memberships](page-memberships)**

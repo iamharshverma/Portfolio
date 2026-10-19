@@ -260,6 +260,18 @@ def sync_html_and_generators(stats):
                 content
             )
 
+            # 11b. Update page-about.html hero stat card Published Papers
+            content = re.sub(
+                r'(<div class="hero-stat-num">)\s*\d+\+?\s*(</div>\s*<div class="hero-stat-label">\s*Published Papers\s*</div>)',
+                rf'\g<1>{p_disp}\g<2>',
+                content
+            )
+            content = re.sub(
+                r'(<h4 class="font-weight-bold text-white mb-0">)\s*\d+\+?\s*(</h4>\s*<small class="text-white-50 font-weight-bold">\s*Published Papers\s*</small>)',
+                rf'\g<1>{p_disp}\g<2>',
+                content
+            )
+
             # --- AWARDS & HONORS METRICS ---
             # 12. Update "24+ Honors" or "24+ Global Honors & Citations"
             content = re.sub(

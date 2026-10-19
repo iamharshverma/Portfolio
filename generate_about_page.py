@@ -1465,7 +1465,7 @@ def generate_html():
                                             <small class="text-white-50 font-weight-bold">Years in AI/Tech</small>
                                         </div>
                                         <div class="col-4 col-md-3 mb-2">
-                                            <h4 class="font-weight-bold text-white mb-0">25+</h4>
+                                            <h4 class="font-weight-bold text-white mb-0">27+</h4>
                                             <small class="text-white-50 font-weight-bold">Published Papers</small>
                                         </div>
                                         <div class="col-4 col-md-3 mb-2">
@@ -1721,7 +1721,7 @@ def generate_html():
                     <div class="p-4 bg-white rounded border shadow-sm h-100 d-flex flex-column justify-content-between">
                         <div>
                             <span class="badge badge-info text-white px-3 py-1 font-weight-bold mb-2">Research &amp; IP</span>
-                            <h4 class="font-weight-bold text-dark mb-2">Browse 26+ Published Papers &amp; 6 Patents</h4>
+                            <h4 class="font-weight-bold text-dark mb-2">Browse 27+ published papers &amp; 6 Patents</h4>
                             <p class="text-muted" style="font-size: 14px;">Review peer-reviewed IEEE publications, CogML datasets, granted patents, and 4 in-process Palo Alto Networks patents on Agentic AI and Copilot Navigation.</p>
                         </div>
                         <div>
