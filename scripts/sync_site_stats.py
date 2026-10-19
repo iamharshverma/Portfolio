@@ -390,6 +390,13 @@ def sync_html_and_generators(stats):
                 content
             )
 
+            # 21. Update "49 Verified Hubs" button in page-about.html hero
+            content = re.sub(
+                r'(<i class="mdi mdi-web mr-1"></i>\s*)(?:38|42|43|47|49|52)(\s*Verified Hubs)',
+                rf'\g<1>{prof_num}\g<2>',
+                content
+            )
+
             # --- MEDIA & PRESS METRICS ---
             # 21. Update "39+ Global Press Features" / "39+ Features"
             content = re.sub(
