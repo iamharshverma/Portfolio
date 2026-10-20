@@ -570,9 +570,142 @@
         }
     };
 
+    // -----------------------------------------------------------------
+    // 6. Interactive Advisory Engagement Formats Infographic
+    // -----------------------------------------------------------------
+    var advisoryFormatsData = {
+        'startup': {
+            title: 'Startup Board Advisory',
+            badge: 'Series A – C Ventures',
+            pillClass: 'pill-startup',
+            tagline: 'Founder Sparring & Technical Due Diligence',
+            cadence: 'Monthly 90-min Sparring + Quarterly Board Reviews',
+            terms: 'FAST Advisory Agreement (0.25%–1.0%) / Token Grant',
+            stakeholders: 'Founders, CEO, CTO & Lead Syndicate VCs',
+            focus: 'Direct technical sounding board for high-growth venture founders building frontier autonomous AI and security infrastructure. Eliminating wrapper traps, stress-testing data defensibility, and preparing institutional diligence.',
+            deliverables: [
+                'Proprietary data moat defensibility & wrapper trap vulnerability audits',
+                'Monthly founder sparring on multi-agent architecture and infra scaling',
+                'Technical due diligence prep & narrative deck for Series A–C syndicates',
+                'Executive technical vetting for Principal Engineer & VP Engineering hires'
+            ],
+            scope: 'High-conviction technical sparring, deterministic multi-agent systems, inference cost mitigation, and syndicate investor readiness.',
+            mandateName: 'Startup Advisory Board'
+        },
+        'tech-advisory': {
+            title: 'Technology Advisory Council',
+            badge: 'Enterprise & Mid-Market',
+            pillClass: 'pill-enterprise',
+            tagline: 'C-Suite Strategic Technology Roadmap',
+            cadence: 'Quarterly Executive Briefings + On-Call Strategic Counsel',
+            terms: 'Annual Retained Advisory Agreement / Advisory Seat',
+            stakeholders: 'CTO, CIO, Chief Architect & VP Infrastructure',
+            focus: 'External strategic technology council guiding executive teams on enterprise AI adoption, multi-cloud inference routing cost containment (40%+ reduction), vendor contract triage, and sovereign technology roadmaps.',
+            deliverables: [
+                'Enterprise AI adoption roadmap prioritization and build-vs-buy triage',
+                'Multi-cloud tiered inference routing & token burn rate cost containment',
+                'Quarterly C-suite strategic technology briefings for executive leadership',
+                'Vendor contract review, lock-in triage, and architectural defensibility'
+            ],
+            scope: 'Enterprise AI adoption, multi-cloud inference economics, zero-trust security architecture, and C-suite technology steering.',
+            mandateName: 'Technology Advisory Council'
+        },
+        'governance': {
+            title: 'Governance & Board Committee',
+            badge: 'Fiduciary & Risk Committees',
+            pillClass: 'pill-governance',
+            tagline: 'Fiduciary Risk & Compliance Oversight',
+            cadence: 'Quarterly Committee Meetings + Annual Fiduciary Audit',
+            terms: 'Board Committee Retainer / Independent Director Equity',
+            stakeholders: 'Board of Directors, Audit & Risk Committee, CISO, General Counsel',
+            focus: 'Fiduciary boardroom oversight on mission-critical AI deployments, regulatory compliance (EU AI Act & NIST AI RMF), automated continuous evaluation harnesses, and enterprise cyber risk disclosure.',
+            deliverables: [
+                'Boardroom risk disclosure & fiduciary audit committee compliance reports',
+                'NIST AI RMF & EU AI Act readiness assessment & continuous governance',
+                'Automated continuous evaluation harnesses for autonomous agent systems',
+                'Third-party tool sandboxing, MCP privilege controls, and cyber posture reviews'
+            ],
+            scope: 'Fiduciary board oversight, EU AI Act compliance, automated algorithmic evaluations, and cybersecurity risk governance.',
+            mandateName: 'AI Governance Committee'
+        }
+    };
+
+    window.selectAdvisoryFormat = function (formatKey, clickedBtn) {
+        var data = advisoryFormatsData[formatKey];
+        if (!data) return;
+
+        // Update cards active state
+        document.querySelectorAll('.advisory-format-card').forEach(function (card) {
+            card.classList.remove('active');
+        });
+        var targetCard = document.getElementById('advisoryFormatCard-' + formatKey);
+        if (targetCard) targetCard.classList.add('active');
+
+        // Update nav buttons active state
+        document.querySelectorAll('.hv-advisory-format-nav-btn').forEach(function (btn) {
+            btn.classList.remove('active');
+        });
+        if (clickedBtn) {
+            clickedBtn.classList.add('active');
+        } else {
+            var btns = document.querySelectorAll('.hv-advisory-format-nav-btn');
+            btns.forEach(function (btn) {
+                if (btn.getAttribute('data-format') === formatKey) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+
+        // Render detail inspector
+        var inspector = document.getElementById('advisoryFormatDetailInspector');
+        if (!inspector) return;
+
+        var deliverablesHtml = data.deliverables.map(function (item) {
+            return '<li><i class="mdi mdi-checkbox-marked-circle-outline text-primary"></i><span>' + item + '</span></li>';
+        }).join('');
+
+        inspector.innerHTML =
+            '<div class="advisory-inspector-header">' +
+                '<div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">' +
+                    '<div class="d-flex align-items-center flex-wrap gap-2">' +
+                        '<span class="advisory-format-pill ' + data.pillClass + ' mb-0">' + data.badge + '</span>' +
+                        '<h4 class="font-weight-bold text-dark mb-0 ml-2" style="font-size: 1.25rem;">' + data.title + ' Blueprint</h4>' +
+                    '</div>' +
+                    '<span class="badge badge-pill badge-light border text-primary px-3 py-1 font-weight-bold" style="font-size: 11.5px;">' +
+                        '<i class="mdi mdi-calendar-clock mr-1"></i>' + data.cadence.split('+')[0].trim() +
+                    '</span>' +
+                '</div>' +
+                '<p class="text-muted small mb-2">' + data.focus + '</p>' +
+                '<div class="d-flex flex-wrap gap-3 small text-secondary">' +
+                    '<span class="mr-3"><i class="mdi mdi-file-document-edit-outline text-primary mr-1"></i><strong>Structure:</strong> ' + data.terms + '</span>' +
+                    '<span><i class="mdi mdi-account-group-outline text-success mr-1"></i><strong>Stakeholders:</strong> ' + data.stakeholders + '</span>' +
+                '</div>' +
+            '</div>' +
+            '<div class="row align-items-center">' +
+                '<div class="col-lg-8 mb-3 mb-lg-0">' +
+                    '<h6 class="font-weight-bold text-dark mb-2" style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">' +
+                        '<i class="mdi mdi-format-list-checks text-success mr-1"></i> Core Mandate Deliverables & Strategic Scope' +
+                    '</h6>' +
+                    '<ul class="advisory-inspector-list">' + deliverablesHtml + '</ul>' +
+                '</div>' +
+                '<div class="col-lg-4 text-center text-lg-right">' +
+                    '<div class="p-3 rounded bg-light border mb-3 text-left small">' +
+                        '<div class="font-weight-bold text-dark mb-1"><i class="mdi mdi-handshake text-primary mr-1"></i>Engagement Cadence</div>' +
+                        '<div class="text-muted" style="line-height: 1.4;">' + data.cadence + '</div>' +
+                    '</div>' +
+                    '<button type="button" class="btn btn-primary font-weight-bold px-3 py-2 w-100 shadow-sm" style="border-radius: 20px; font-size: 13px;" onclick="openAdvisoryModal(\'' + data.mandateName + '\')">' +
+                        '<i class="mdi mdi-calendar-check mr-1"></i> Inquire for ' + data.title.split(' ')[0] + ' Model' +
+                    '</button>' +
+                '</div>' +
+            '</div>';
+    };
+
     // Initialize on DOMContentLoaded
     document.addEventListener('DOMContentLoaded', function () {
         initAdvisoryCounters();
+        if (window.selectAdvisoryFormat) {
+            window.selectAdvisoryFormat('startup', null);
+        }
     });
 
 })();

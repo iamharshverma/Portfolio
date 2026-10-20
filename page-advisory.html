@@ -725,6 +725,154 @@
                     </div>
                 </div>
 
+                <!-- ============================================================= -->
+                <!-- INTERACTIVE ADVISORY ENGAGEMENT FORMATS INFOGRAPHIC           -->
+                <!-- ============================================================= -->
+                <div class="hv-advisory-formats-wrapper" id="advisory-formats-section">
+                    <div class="hv-advisory-formats-header">
+                        <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap">
+                            <div>
+                                <span class="hv-advisory-lead-badge mb-2">
+                                    <i class="mdi mdi-view-dashboard-variant-outline mr-1"></i> Advisory Engagement Formats
+                                </span>
+                                <h3 class="hv-advisory-formats-title">
+                                    Three Structured Advisory Models for Every Growth Phase
+                                </h3>
+                                <p class="hv-advisory-formats-subtitle mb-0">
+                                    Select an engagement format below to inspect core deliverables, operating rhythm, compensation structures, and strategic outcomes.
+                                </p>
+                            </div>
+                            <div class="hv-advisory-format-nav-tabs d-flex align-items-center mt-3 mt-lg-0 flex-wrap">
+                                <button type="button" class="hv-advisory-format-nav-btn active" data-format="startup" onclick="selectAdvisoryFormat('startup', this)">
+                                    <i class="mdi mdi-rocket-launch mr-1 text-primary"></i> Startup Board
+                                </button>
+                                <button type="button" class="hv-advisory-format-nav-btn" data-format="tech-advisory" onclick="selectAdvisoryFormat('tech-advisory', this)">
+                                    <i class="mdi mdi-domain mr-1 text-success"></i> Tech Advisory
+                                </button>
+                                <button type="button" class="hv-advisory-format-nav-btn" data-format="governance" onclick="selectAdvisoryFormat('governance', this)">
+                                    <i class="mdi mdi-shield-account mr-1 text-purple"></i> Governance Committee
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 Interactive Engagement Format Cards -->
+                    <div class="row" id="advisoryFormatsCardsRow">
+                        <!-- Format 1: Startup Board -->
+                        <div class="col-lg-4 col-md-6 mb-4 d-flex">
+                            <div class="advisory-format-card active w-100" id="advisoryFormatCard-startup" onclick="selectAdvisoryFormat('startup', null)">
+                                <span class="advisory-format-pill pill-startup">
+                                    <i class="mdi mdi-rocket mr-1"></i> Seed to Series B
+                                </span>
+                                <h4 class="advisory-format-card-title">Startup Board</h4>
+                                <div class="advisory-format-tagline">Fractional Technical &amp; Board Advisory</div>
+                                <p class="advisory-format-card-desc">
+                                    Direct technical sounding board for high-growth venture founders building frontier autonomous AI and security infrastructure.
+                                </p>
+
+                                <!-- Hoverable Details Panel -->
+                                <div class="advisory-format-hover-details">
+                                    <div class="advisory-detail-row">
+                                        <span class="advisory-detail-label"><i class="mdi mdi-clock-outline mr-1"></i>Cadence:</span>
+                                        <span class="advisory-detail-val">Monthly Sparring + Qtrly Board</span>
+                                    </div>
+                                    <div class="advisory-detail-row">
+                                        <span class="advisory-detail-label"><i class="mdi mdi-file-document-outline mr-1"></i>Terms:</span>
+                                        <span class="advisory-detail-val">FAST Equity (0.25%–1.0%)</span>
+                                    </div>
+                                    <div class="advisory-detail-row">
+                                        <span class="advisory-detail-label"><i class="mdi mdi-account-group mr-1"></i>Stakeholders:</span>
+                                        <span class="advisory-detail-val">Founders, CEO &amp; Syndicate VCs</span>
+                                    </div>
+                                </div>
+
+                                <div class="advisory-format-card-footer">
+                                    <span class="advisory-format-inspect-link">
+                                        Inspect Blueprint <i class="mdi mdi-arrow-right ml-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Format 2: Tech Advisory -->
+                        <div class="col-lg-4 col-md-6 mb-4 d-flex">
+                            <div class="advisory-format-card w-100" id="advisoryFormatCard-tech-advisory" onclick="selectAdvisoryFormat('tech-advisory', null)">
+                                <span class="advisory-format-pill pill-enterprise">
+                                    <i class="mdi mdi-domain mr-1"></i> Enterprise &amp; Mid-Market
+                                </span>
+                                <h4 class="advisory-format-card-title">Tech Advisory</h4>
+                                <div class="advisory-format-tagline">C-Suite Strategic Technology Roadmap</div>
+                                <p class="advisory-format-card-desc">
+                                    External strategic technology council guiding executive teams on enterprise AI adoption, multi-cloud inference economics, and sovereign roadmaps.
+                                </p>
+
+                                <!-- Hoverable Details Panel -->
+                                <div class="advisory-format-hover-details">
+                                    <div class="advisory-detail-row">
+                                        <span class="advisory-detail-label"><i class="mdi mdi-clock-outline mr-1"></i>Cadence:</span>
+                                        <span class="advisory-detail-val">Qtrly Briefings + On-Call</span>
+                                    </div>
+                                    <div class="advisory-detail-row">
+                                        <span class="advisory-detail-label"><i class="mdi mdi-file-document-outline mr-1"></i>Terms:</span>
+                                        <span class="advisory-detail-val">Annual Retainer / Advisory Seat</span>
+                                    </div>
+                                    <div class="advisory-detail-row">
+                                        <span class="advisory-detail-label"><i class="mdi mdi-account-group mr-1"></i>Stakeholders:</span>
+                                        <span class="advisory-detail-val">CTO, CIO &amp; Chief Architect</span>
+                                    </div>
+                                </div>
+
+                                <div class="advisory-format-card-footer">
+                                    <span class="advisory-format-inspect-link">
+                                        Inspect Blueprint <i class="mdi mdi-arrow-right ml-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Format 3: Governance Committee -->
+                        <div class="col-lg-4 col-md-6 mb-4 d-flex">
+                            <div class="advisory-format-card w-100" id="advisoryFormatCard-governance" onclick="selectAdvisoryFormat('governance', null)">
+                                <span class="advisory-format-pill pill-governance">
+                                    <i class="mdi mdi-shield-crown mr-1"></i> Fiduciary &amp; Risk Committees
+                                </span>
+                                <h4 class="advisory-format-card-title">Governance Committee</h4>
+                                <div class="advisory-format-tagline">Fiduciary Risk &amp; Compliance Oversight</div>
+                                <p class="advisory-format-card-desc">
+                                    Fiduciary boardroom oversight on mission-critical AI deployments, regulatory compliance (EU AI Act &amp; NIST AI RMF), and automated risk evaluation.
+                                </p>
+
+                                <!-- Hoverable Details Panel -->
+                                <div class="advisory-format-hover-details">
+                                    <div class="advisory-detail-row">
+                                        <span class="advisory-detail-label"><i class="mdi mdi-clock-outline mr-1"></i>Cadence:</span>
+                                        <span class="advisory-detail-val">Quarterly Board + Annual Audit</span>
+                                    </div>
+                                    <div class="advisory-detail-row">
+                                        <span class="advisory-detail-label"><i class="mdi mdi-file-document-outline mr-1"></i>Terms:</span>
+                                        <span class="advisory-detail-val">Board Committee Retainer / Equity</span>
+                                    </div>
+                                    <div class="advisory-detail-row">
+                                        <span class="advisory-detail-label"><i class="mdi mdi-account-group mr-1"></i>Stakeholders:</span>
+                                        <span class="advisory-detail-val">Board, Audit Comm., General Counsel</span>
+                                    </div>
+                                </div>
+
+                                <div class="advisory-format-card-footer">
+                                    <span class="advisory-format-inspect-link">
+                                        Inspect Blueprint <i class="mdi mdi-arrow-right ml-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Interactive Format Blueprint Inspector -->
+                    <div id="advisoryFormatDetailInspector" class="advisory-format-inspector-box mt-2">
+                        <!-- Dynamically populated by selectAdvisoryFormat() -->
+                    </div>
+                </div>
+
                 <!-- Infographic: 30–60–90 Day Board Integration Roadmap & Advisory Cadence -->
                 <div class="cadence-roadmap-container">
                     <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap">
