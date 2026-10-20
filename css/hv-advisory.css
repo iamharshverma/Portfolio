@@ -119,12 +119,16 @@
     text-align: center;
 }
 
-.advisory-profile-name {
+.advisory-profile-name,
+html:not(.dark-mode) .advisory-profile-name,
+html.dark-mode .advisory-profile-name,
+h2.advisory-profile-name {
     font-size: 20px;
     font-weight: 800;
-    color: #ffffff;
+    color: #ffffff !important;
     margin-bottom: 2px;
     letter-spacing: -0.3px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85);
 }
 
 /* LIVE BLINKING BOARD & STRATEGIC ADVISOR BADGE */
@@ -1095,11 +1099,15 @@
     margin-top: 24px;
 }
 
-.bio-callout-title {
+.bio-callout-title,
+html:not(.dark-mode) .bio-callout-title,
+html.dark-mode .bio-callout-title,
+h3.bio-callout-title {
     font-size: 20px;
     font-weight: 800;
-    color: #ffffff;
+    color: #ffffff !important;
     margin-bottom: 6px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .bio-callout-desc {

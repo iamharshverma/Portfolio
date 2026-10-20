@@ -11,7 +11,7 @@
         gtag('config', 'UA-30250521-4');
     </script>
     <meta charset="UTF-8">
-    <title>Board &amp; Strategic Advisory - Harsh Verma | AI Governance, Cybersecurity &amp; Councils</title>
+    <title>Board &amp; Strategic Advisory - Harsh Verma | AI Governance &amp; Technology Councils</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Harsh Verma — Technology Executive, Strategic Advisor, and AI Governance Authority serving startup advisory boards, corporate technology councils, and governance committees." />
     <meta name="keywords" content="Harsh Verma, Board Advisor, Strategic Advisory, AI Governance, Technology Advisory Council, Independent Director, Cybersecurity Advisor, Venture Advisor, Palo Alto Networks, Forbes Tech Council, BCS Fellow" />
@@ -178,8 +178,9 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <button class="nav-social-btn theme-toggle-btn" id="themeToggleBtn" onclick="toggleDarkMode()" title="Toggle Theme" aria-label="Toggle Dark Mode">
-                            <i class="mdi mdi-weather-night" id="themeIcon"></i>
+                        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
                         </button>
                     </li>
                 </ul>
@@ -208,19 +209,13 @@
                             Bridging frontier AI innovation, enterprise cybersecurity resilience, and boardroom fiduciary rigor. Harsh Verma partners with startup founders, technology councils, and corporate boards to translate autonomous technologies into defensible enterprise value.
                         </p>
 
-                        <!-- Primary and Secondary Hero Actions -->
+                        <!-- Primary and Secondary Hero Actions (Download & Preview removed per user request) -->
                         <div class="d-flex flex-wrap align-items-center mb-3">
-                            <a href="#strategic-expertise" class="btn-advisory-primary mr-2 mb-2">
+                            <a href="#strategic-expertise" class="btn-advisory-primary mr-3 mb-2">
                                 <i class="mdi mdi-compass-outline mr-1"></i> Explore Advisory Experience
                             </a>
-                            <button type="button" class="btn-advisory-gold mr-2 mb-2" onclick="openAdvisoryModal('Corporate Board &amp; Strategic Advisory')">
+                            <button type="button" class="btn-advisory-gold mb-2" onclick="openAdvisoryModal('Corporate Board &amp; Strategic Advisory')">
                                 <i class="mdi mdi-handshake mr-1"></i> Discuss Board Opportunities
-                            </button>
-                            <a href="files/Harsh_Verma_Board_Biography.pdf" download="Harsh_Verma_Board_Biography.pdf" class="btn-advisory-outline-light mb-2 mr-2" title="Download Official Board Biography PDF">
-                                <i class="mdi mdi-download mr-1"></i> Download Board Bio (PDF)
-                            </a>
-                            <button type="button" class="btn btn-sm btn-outline-light rounded-pill mb-2 px-3 py-2 small" onclick="openBoardBioModal()">
-                                <i class="mdi mdi-eye-outline mr-1"></i> Preview
                             </button>
                         </div>
 
@@ -236,16 +231,18 @@
                         </div>
                     </div>
 
-                    <!-- Right Column: Executive Portrait Frame -->
+                    <!-- Right Column: Executive Portrait Frame with Live Pulsing Badge -->
                     <div class="col-lg-5 col-xl-4 mt-4 mt-lg-0">
                         <div class="advisory-profile-frame-wrap">
                             <div class="advisory-profile-frame">
                                 <img src="images/harsh/Harsh_portfolio_pic.png" alt="Harsh Verma - Board & Strategic Advisor" class="advisory-profile-img">
                                 <div class="advisory-profile-overlay">
-                                    <h2 class="advisory-profile-name">Harsh Verma</h2>
-                                    <p class="advisory-profile-role">
-                                        Principal AI Engineer &bull; BCS Fellow &bull; Forbes Tech Council &bull; Strategic Board Advisor
-                                    </p>
+                                    <h2 class="advisory-profile-name text-white" style="color: #ffffff !important; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85);">Harsh Verma</h2>
+                                    <!-- Only Board & Strategic Advisor tag with live pulse dot -->
+                                    <div class="advisory-live-advisor-badge mt-2">
+                                        <span class="live-pulse-dot"></span>
+                                        <span class="live-advisor-text">Board &amp; Strategic Advisor</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -298,11 +295,11 @@
                         <span class="badge badge-pill badge-warning text-dark font-weight-bold px-3 py-1 mb-1">
                             <i class="mdi mdi-sync mr-1"></i> Interactive Infographic
                         </span>
-                        <h3 class="text-white font-weight-bold mb-0" style="font-size: 20px;">
+                        <h3 class="font-weight-bold mb-0 text-dark" style="font-size: 20px;">
                             The Boardroom Governance &amp; Defensibility Flywheel
                         </h3>
                     </div>
-                    <small class="text-white-50">Click any quadrant to reveal board deliverables</small>
+                    <small class="text-muted">Click any quadrant to reveal board deliverables</small>
                 </div>
 
                 <div class="flywheel-grid mb-3">
@@ -352,13 +349,13 @@
                 </div>
 
                 <!-- Dynamic Flywheel Detail Panel -->
-                <div id="flywheelDetailBox" class="p-3 rounded border" style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15) !important;">
+                <div id="flywheelDetailBox" class="flywheel-detail-box-light">
                     <div class="d-flex align-items-center justify-content-between mb-1">
-                        <strong class="text-warning small text-uppercase" style="letter-spacing:0.8px;">Strategic Technology Planning &amp; IP Protection</strong>
+                        <strong class="text-primary small text-uppercase font-weight-bold" style="letter-spacing:0.8px;">Strategic Technology Planning &amp; IP Protection</strong>
                         <span class="badge badge-pill badge-primary px-2" style="font-size:10px;">Quadrant 1</span>
                     </div>
-                    <h5 class="text-white font-weight-bold mb-1">Frontier Technical Moat Architecture</h5>
-                    <p class="text-light small mb-0" style="opacity:0.9;">
+                    <h5 class="text-dark font-weight-bold mb-1">Frontier Technical Moat Architecture</h5>
+                    <p class="text-muted small mb-0">
                         Proprietary streaming data pipelines, custom regression eval datasets, vendor lock-in mitigation, and non-wrapper software defensibility.
                     </p>
                 </div>
@@ -518,7 +515,7 @@
                 </div>
 
                 <!-- Infographic 2: Autonomous Agent Governance Hierarchy -->
-                <div class="hv-hierarchy-wrap mt-3">
+                <div class="hv-hierarchy-wrap">
                     <div class="d-flex align-items-center justify-content-between mb-2">
                         <strong class="text-dark small text-uppercase font-weight-bold">
                             <i class="mdi mdi-layers-triple-outline text-primary mr-1"></i> Autonomous Agent Governance Stack (4 Tiers)
@@ -667,17 +664,22 @@
             </section>
 
             <!-- ============================================================= -->
-            <!-- 6. GOVERNANCE & ADVISORY PHILOSOPHY                           -->
+            <!-- 6. GOVERNANCE & ADVISORY PHILOSOPHY (THEME ADAPTIVE!)          -->
             <!-- ============================================================= -->
             <div class="advisory-philosophy-box" id="governance-philosophy">
-                <div class="text-warning small font-weight-bold text-uppercase mb-2" style="letter-spacing: 1px;">
-                    <i class="mdi mdi-compass-rose mr-1"></i> Executive Governance Creed
+                <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap">
+                    <div class="creed-badge">
+                        <i class="mdi mdi-compass-rose mr-1"></i> Executive Governance Creed
+                    </div>
+                    <span class="creed-fiduciary-tag">
+                        <i class="mdi mdi-shield-check mr-1 text-primary"></i> Fiduciary &amp; Boardroom Rigor
+                    </span>
                 </div>
                 <h2 class="philosophy-featured-statement">
                     &ldquo;Technology creates opportunity. Governance turns that opportunity into sustainable value.&rdquo;
                 </h2>
                 <p class="philosophy-subtext mb-4">
-                    Blending entrepreneurial velocity with institutional foresight to ensure technology investments generate durable competitive moats.
+                    Blending entrepreneurial velocity with institutional foresight to ensure technology investments generate durable competitive moats and boardroom defensibility.
                 </p>
 
                 <div class="row">
@@ -723,31 +725,92 @@
                     </div>
                 </div>
 
-                <!-- Infographic 3: Advisory Engagement Cadence -->
-                <div class="mt-4 pt-3 border-top" style="border-color: rgba(255,255,255,0.12) !important;">
-                    <div class="text-white-50 small font-weight-bold text-uppercase mb-2" style="letter-spacing: 0.8px;">
-                        <i class="mdi mdi-timeline-clock mr-1 text-warning"></i> Board Advisory Cadence &amp; Integration Roadmap
+                <!-- Infographic 3: Interactive Advisory Engagement Cadence -->
+                <div class="cadence-roadmap-container">
+                    <div class="d-flex align-items-center justify-content-between mb-2 flex-wrap">
+                        <div class="text-primary small font-weight-bold text-uppercase" style="letter-spacing: 0.8px;">
+                            <i class="mdi mdi-timeline-clock mr-1"></i> Interactive Board Advisory Cadence &amp; Integration Roadmap
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <button type="button" class="btn btn-sm btn-outline-primary roadmap-nav-btn mr-1" onclick="navigateRoadmap(-1)" title="Previous Phase"><i class="mdi mdi-chevron-left"></i> Prev</button>
+                            <button type="button" class="btn btn-sm btn-outline-primary roadmap-nav-btn mr-2" onclick="navigateRoadmap(1)" title="Next Phase">Next <i class="mdi mdi-chevron-right"></i></button>
+                            <small class="text-muted">Click any phase</small>
+                        </div>
                     </div>
+
+                    <!-- Visual Progress Stepper Bar -->
+                    <div class="roadmap-stepper-bar">
+                        <div class="roadmap-progress-line" id="roadmapProgressLine" style="width: 0%;"></div>
+                        <button type="button" class="roadmap-step-node active" data-node="1" onclick="switchCadencePhase(1)" aria-label="Phase 1: Diagnostic">
+                            <span class="node-circle">1</span>
+                            <span class="node-label">Diagnostic</span>
+                        </button>
+                        <button type="button" class="roadmap-step-node" data-node="2" onclick="switchCadencePhase(2)" aria-label="Phase 2: Baseline">
+                            <span class="node-circle">2</span>
+                            <span class="node-label">Baseline</span>
+                        </button>
+                        <button type="button" class="roadmap-step-node" data-node="3" onclick="switchCadencePhase(3)" aria-label="Phase 3: Cadence">
+                            <span class="node-circle">3</span>
+                            <span class="node-label">Cadence</span>
+                        </button>
+                        <button type="button" class="roadmap-step-node" data-node="4" onclick="switchCadencePhase(4)" aria-label="Phase 4: Fiduciary">
+                            <span class="node-circle">4</span>
+                            <span class="node-label">Fiduciary</span>
+                        </button>
+                    </div>
+
                     <div class="hv-cadence-timeline">
-                        <div class="cadence-step-box">
+                        <div class="cadence-step-box active" data-step="1" onclick="switchCadencePhase(1)">
                             <div class="step-phase-badge">Phase 01 &bull; Weeks 1–2</div>
                             <h5 class="step-phase-title">Architecture Diagnostic</h5>
                             <p class="step-phase-desc">In-depth technical debt, data moat defensibility, and security audit.</p>
                         </div>
-                        <div class="cadence-step-box">
+                        <div class="cadence-step-box" data-step="2" onclick="switchCadencePhase(2)">
                             <div class="step-phase-badge">Phase 02 &bull; Month 1</div>
                             <h5 class="step-phase-title">Governance Baseline</h5>
                             <p class="step-phase-desc">Establish eval harnesses, board risk escalation thresholds, and roadmap.</p>
                         </div>
-                        <div class="cadence-step-box">
+                        <div class="cadence-step-box" data-step="3" onclick="switchCadencePhase(3)">
                             <div class="step-phase-badge">Phase 03 &bull; Ongoing</div>
                             <h5 class="step-phase-title">Quarterly Board Cadence</h5>
                             <p class="step-phase-desc">Quarterly reviews, monthly founder sounding sessions, critical triage.</p>
                         </div>
-                        <div class="cadence-step-box">
+                        <div class="cadence-step-box" data-step="4" onclick="switchCadencePhase(4)">
                             <div class="step-phase-badge">Phase 04 &bull; Annual</div>
                             <h5 class="step-phase-title">Fiduciary Scale Audit</h5>
                             <p class="step-phase-desc">Annual risk audit, investor syndicate diligence prep, and growth scale.</p>
+                        </div>
+                    </div>
+
+                    <!-- Roadmap Dynamic Interactive Output Box -->
+                    <div id="roadmapDetailBox" class="roadmap-interactive-details">
+                        <div class="d-flex align-items-center justify-content-between mb-2 flex-wrap">
+                            <div>
+                                <span class="badge badge-pill badge-primary px-3 py-1 mr-2 font-weight-bold" style="font-size:11px;">Phase 01: Weeks 1–2</span>
+                                <span class="badge badge-pill badge-warning text-dark font-weight-bold px-2 py-1" style="font-size:10px;">Active Cadence</span>
+                            </div>
+                            <span class="text-muted small"><i class="mdi mdi-account-group text-primary mr-1"></i><strong>Stakeholders:</strong> Founders, CTO, VP Engineering, Lead Architect</span>
+                        </div>
+                        <h4 class="text-dark font-weight-bold mb-2" style="font-size:18px;">Deep-Dive Architecture &amp; Moat Diagnostic</h4>
+                        <p class="text-muted small mb-2" style="line-height:1.6;">Comprehensive code &amp; infrastructure triage to separate genuine data moats from fragile foundation model wrappers.</p>
+                        <div class="row align-items-center mt-2">
+                            <div class="col-lg-8 mb-2 mb-lg-0">
+                                <strong class="text-dark small d-block mb-1"><i class="mdi mdi-format-list-checks text-success mr-1"></i> Key Phase Deliverables:</strong>
+                                <ul class="small text-muted pl-0 mb-0" style="list-style:none;">
+                                    <li class="mb-1"><i class="mdi mdi-check-circle text-primary mr-1"></i> Technical debt &amp; scalability bottleneck audit</li>
+                                    <li class="mb-1"><i class="mdi mdi-check-circle text-primary mr-1"></i> Data moat defensibility &amp; IP differentiation evaluation</li>
+                                    <li class="mb-1"><i class="mdi mdi-check-circle text-primary mr-1"></i> Third-party API vulnerability &amp; vendor lock-in mitigation plan</li>
+                                    <li class="mb-1"><i class="mdi mdi-check-circle text-primary mr-1"></i> Immediate 90-day technical priority roadmap</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 text-center text-lg-right">
+                                <div class="p-2 rounded bg-light border mb-2 text-left small">
+                                    <strong>Format:</strong> <span class="text-muted">2x 90-min technical architecture sessions + codebase review</span>
+                                </div>
+                                <button type="button" class="btn btn-sm btn-primary font-weight-bold px-3 py-2 w-100" style="border-radius:20px;" onclick="openAdvisoryModal('Startup Advisory Board')">
+                                    <i class="mdi mdi-calendar-check mr-1"></i> Inquire for Phase 01 Mandate
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -777,12 +840,9 @@
                                 <i class="mdi mdi-newspaper-variant mr-1"></i> Forbes Technology Council
                             </div>
                             <h3 class="advisory-card-title">Death of Static API Keys in the Agent Era</h3>
-                            <p class="advisory-card-desc">
+                            <p class="advisory-card-desc mb-0">
                                 Why static credentials collapse when autonomous multi-agent networks perform high-velocity operations, and how behavioral tokens replace legacy IAM.
                             </p>
-                            <a href="page-media" class="text-primary font-weight-bold small">
-                                Read Executive Dispatch <i class="mdi mdi-arrow-right ml-1"></i>
-                            </a>
                         </div>
                     </div>
 
@@ -793,12 +853,9 @@
                                 <i class="mdi mdi-shield-check mr-1"></i> RSA Conference 2026
                             </div>
                             <h3 class="advisory-card-title">Zero-Trust Defense for the Lethal Trifecta</h3>
-                            <p class="advisory-card-desc">
+                            <p class="advisory-card-desc mb-0">
                                 Protecting enterprise models against the lethal combination of prompt injection, untrusted data flows, and unmonitored external tool execution.
                             </p>
-                            <a href="page-speaker" class="text-primary font-weight-bold small">
-                                Watch Keynote Analysis <i class="mdi mdi-arrow-right ml-1"></i>
-                            </a>
                         </div>
                     </div>
 
@@ -809,12 +866,9 @@
                                 <i class="mdi mdi-school mr-1"></i> Research &amp; Governance
                             </div>
                             <h3 class="advisory-card-title">Token Economics in the Boardroom</h3>
-                            <p class="advisory-card-desc">
+                            <p class="advisory-card-desc mb-0">
                                 An empirical framework for board members on evaluating true marginal costs, vendor lock-in, and the necessity of proprietary data pipelines.
                             </p>
-                            <a href="page-publications" class="text-primary font-weight-bold small">
-                                Review Research Index (27+ Papers) <i class="mdi mdi-arrow-right ml-1"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -846,7 +900,7 @@
                     <div class="col-md-6 col-lg-3 mb-2">
                         <div class="p-3 rounded border text-center bg-light h-100 d-flex flex-column justify-content-center">
                             <div class="font-weight-bold text-primary mb-1"><i class="mdi mdi-seal mr-1"></i> BCS Fellow (FBCS)</div>
-                            <p class="small text-muted mb-0">Fellow of the British Computer Society (Senior Professional Distinction)</p>
+                            <p class="small text-muted mb-0">Fellow of the British Computer Society (Senior Distinction)</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3 mb-2">
@@ -862,16 +916,10 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="text-center mt-3">
-                    <a href="page-awards" class="text-primary font-weight-bold small">
-                        View All 27 Global Honors, Fellowships &amp; Patents <i class="mdi mdi-arrow-right ml-1"></i>
-                    </a>
-                </div>
             </section>
 
             <!-- ============================================================= -->
-            <!-- 9. BOARD & ADVISORY OPPORTUNITIES (6 CATEGORIES)             -->
+            <!-- 9. ENHANCED BOARD & ADVISORY OPPORTUNITIES (6 CATEGORIES)     -->
             <!-- ============================================================= -->
             <section class="hv-advisory-white-card" id="advisory-opportunities">
                 <div class="hv-advisory-section-header text-center mb-3">
@@ -884,100 +932,180 @@
                     <p class="advisory-lead-quote mx-auto">
                         Open to Meaningful Board &amp; Strategic Advisory Engagements
                     </p>
-                    <p class="advisory-section-desc mx-auto mb-0">
+                    <p class="advisory-section-desc mx-auto mb-3">
                         “I welcome opportunities to collaborate with forward-thinking founders, investors, executive teams, and organizations seeking strategic expertise in artificial intelligence, cybersecurity, technology governance, and enterprise innovation.”
                     </p>
+
+                    <!-- Mandates Interactive Filter Tabs -->
+                    <div class="mandates-filter-tabs">
+                        <button type="button" class="mandates-filter-btn active" onclick="filterMandates('all', this)">All Mandates <span class="badge badge-pill badge-primary">6</span></button>
+                        <button type="button" class="mandates-filter-btn" onclick="filterMandates('venture', this)">Venture &amp; Startups <span class="badge badge-pill badge-light">2</span></button>
+                        <button type="button" class="mandates-filter-btn" onclick="filterMandates('council', this)">Enterprise Councils <span class="badge badge-pill badge-light">2</span></button>
+                        <button type="button" class="mandates-filter-btn" onclick="filterMandates('governance', this)">Governance &amp; Board Seats <span class="badge badge-pill badge-light">2</span></button>
+                    </div>
                 </div>
 
-                <div class="row">
-                    <!-- Mandate 1 -->
-                    <div class="col-lg-4 col-md-6 mb-3 d-flex">
+                <div class="row" id="mandatesContainer">
+                    <!-- Mandate 1: Startup Advisory Boards -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex mandate-card-item" data-category="venture">
                         <div class="advisory-mandate-card w-100">
-                            <div class="mandate-badge"><i class="mdi mdi-rocket mr-1"></i> Series A – C Ventures</div>
+                            <div>
+                                <span class="mandate-category-pill cat-venture">
+                                    <i class="mdi mdi-rocket mr-1"></i> Series A – C Ventures
+                                </span>
+                            </div>
                             <h3 class="mandate-title">Startup Advisory Boards</h3>
                             <p class="mandate-desc">
                                 Hands-on technical advisory for founders building AI and security ventures. Quarterly board reviews, architectural sounding board, and syndicate access.
                             </p>
+                            <ul class="mandate-bullets">
+                                <li><i class="mdi mdi-check-circle"></i> Proprietary data moat &amp; model defensibility reviews</li>
+                                <li><i class="mdi mdi-check-circle"></i> Monthly founder architecture sparring sessions</li>
+                                <li><i class="mdi mdi-check-circle"></i> Technical due diligence prep for Series A–C syndicates</li>
+                            </ul>
                             <div class="mandate-terms">
                                 <strong>Structure:</strong> Standard FAST advisory equity agreement / token grant.
                             </div>
+                            <button type="button" class="btn-mandate-inquire" onclick="openAdvisoryModal('Startup Advisory Board')">
+                                Inquire for Startup Board Seat <i class="mdi mdi-arrow-right ml-1"></i>
+                            </button>
                         </div>
                     </div>
 
-                    <!-- Mandate 2 -->
-                    <div class="col-lg-4 col-md-6 mb-3 d-flex">
+                    <!-- Mandate 2: Technology Advisory Councils -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex mandate-card-item" data-category="council">
                         <div class="advisory-mandate-card w-100">
-                            <div class="mandate-badge"><i class="mdi mdi-domain mr-1"></i> Mid-Market &amp; Enterprise</div>
+                            <div>
+                                <span class="mandate-category-pill cat-council">
+                                    <i class="mdi mdi-domain mr-1"></i> Mid-Market &amp; Enterprise
+                                </span>
+                            </div>
                             <h3 class="mandate-title">Technology Advisory Councils</h3>
                             <p class="mandate-desc">
                                 External advisory councils guiding CTOs, CIOs, and executive teams on AI roadmap prioritization, multi-cloud strategy, and risk de-risking.
                             </p>
+                            <ul class="mandate-bullets">
+                                <li><i class="mdi mdi-check-circle"></i> Enterprise AI adoption roadmap &amp; vendor triage</li>
+                                <li><i class="mdi mdi-check-circle"></i> Multi-cloud tiered inference cost optimization</li>
+                                <li><i class="mdi mdi-check-circle"></i> Quarterly C-suite strategic technology briefings</li>
+                            </ul>
                             <div class="mandate-terms">
                                 <strong>Structure:</strong> Annual retained advisory agreement / quarterly briefings.
                             </div>
+                            <button type="button" class="btn-mandate-inquire" onclick="openAdvisoryModal('Technology Advisory Council')">
+                                Inquire for Council Appointment <i class="mdi mdi-arrow-right ml-1"></i>
+                            </button>
                         </div>
                     </div>
 
-                    <!-- Mandate 3 -->
-                    <div class="col-lg-4 col-md-6 mb-3 d-flex">
+                    <!-- Mandate 3: AI Governance Committees -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex mandate-card-item" data-category="governance">
                         <div class="advisory-mandate-card w-100">
-                            <div class="mandate-badge"><i class="mdi mdi-scale-balance mr-1"></i> Corporate Governance</div>
+                            <div>
+                                <span class="mandate-category-pill cat-governance">
+                                    <i class="mdi mdi-scale-balance mr-1"></i> Corporate Governance
+                                </span>
+                            </div>
                             <h3 class="mandate-title">AI Governance Committees</h3>
                             <p class="mandate-desc">
                                 Fiduciary advisory on responsible AI deployments, compliance with global regulations (EU AI Act, NIST), and algorithmic audit trails.
                             </p>
+                            <ul class="mandate-bullets">
+                                <li><i class="mdi mdi-check-circle"></i> NIST AI RMF &amp; EU AI Act readiness frameworks</li>
+                                <li><i class="mdi mdi-check-circle"></i> Continuous automated evaluation harnesses</li>
+                                <li><i class="mdi mdi-check-circle"></i> Boardroom risk disclosure &amp; audit committee reporting</li>
+                            </ul>
                             <div class="mandate-terms">
                                 <strong>Structure:</strong> Committee member retainer / independent audit counsel.
                             </div>
+                            <button type="button" class="btn-mandate-inquire" onclick="openAdvisoryModal('AI Governance Committee')">
+                                Inquire for Governance Committee <i class="mdi mdi-arrow-right ml-1"></i>
+                            </button>
                         </div>
                     </div>
 
-                    <!-- Mandate 4 -->
-                    <div class="col-lg-4 col-md-6 mb-3 d-flex">
+                    <!-- Mandate 4: Cybersecurity Advisory Roles -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex mandate-card-item" data-category="governance council">
                         <div class="advisory-mandate-card w-100">
-                            <div class="mandate-badge"><i class="mdi mdi-shield-account mr-1"></i> Security Governance</div>
+                            <div>
+                                <span class="mandate-category-pill cat-cyber">
+                                    <i class="mdi mdi-shield-account mr-1"></i> Security Governance
+                                </span>
+                            </div>
                             <h3 class="mandate-title">Cybersecurity Advisory Roles</h3>
                             <p class="mandate-desc">
                                 Strategic cyber risk oversight, zero-trust transformation counsel, third-party vendor risk assessment, and incident response governance.
                             </p>
+                            <ul class="mandate-bullets">
+                                <li><i class="mdi mdi-check-circle"></i> Autonomous multi-agent zero-trust security architecture</li>
+                                <li><i class="mdi mdi-check-circle"></i> Third-party MCP tool sandboxing &amp; privilege controls</li>
+                                <li><i class="mdi mdi-check-circle"></i> Fiduciary cyber risk posture reviews for audit committees</li>
+                            </ul>
                             <div class="mandate-terms">
                                 <strong>Structure:</strong> Retained advisory board seat / CISO executive coaching.
                             </div>
+                            <button type="button" class="btn-mandate-inquire" onclick="openAdvisoryModal('Cybersecurity Advisory Role')">
+                                Inquire for Cyber Advisory <i class="mdi mdi-arrow-right ml-1"></i>
+                            </button>
                         </div>
                     </div>
 
-                    <!-- Mandate 5 -->
-                    <div class="col-lg-4 col-md-6 mb-3 d-flex">
+                    <!-- Mandate 5: VC / PE Technical Due Diligence -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex mandate-card-item" data-category="venture">
                         <div class="advisory-mandate-card w-100">
-                            <div class="mandate-badge"><i class="mdi mdi-finance mr-1"></i> Institutional Investors</div>
-                            <h3 class="mandate-title">Venture Capital Technical Due Diligence</h3>
+                            <div>
+                                <span class="mandate-category-pill cat-venture">
+                                    <i class="mdi mdi-finance mr-1"></i> Institutional Investors
+                                </span>
+                            </div>
+                            <h3 class="mandate-title">VC / PE Technical Due Diligence</h3>
                             <p class="mandate-desc">
                                 Technical due diligence for pre-investment deal evaluation, portfolio architectural health checks, and technology moat validation.
                             </p>
+                            <ul class="mandate-bullets">
+                                <li><i class="mdi mdi-check-circle"></i> Wrapper vs. proprietary IP differentiation analysis</li>
+                                <li><i class="mdi mdi-check-circle"></i> Architecture scalability, tech debt &amp; cloud cost burn audit</li>
+                                <li><i class="mdi mdi-check-circle"></i> Engineering team execution velocity &amp; talent evaluation</li>
+                            </ul>
                             <div class="mandate-terms">
                                 <strong>Structure:</strong> Deal-by-deal advisory retainer or venture operating partner.
                             </div>
+                            <button type="button" class="btn-mandate-inquire" onclick="openAdvisoryModal('VC Technical Due Diligence')">
+                                Inquire for Deal Diligence <i class="mdi mdi-arrow-right ml-1"></i>
+                            </button>
                         </div>
                     </div>
 
-                    <!-- Mandate 6 -->
-                    <div class="col-lg-4 col-md-6 mb-3 d-flex">
+                    <!-- Mandate 6: Independent Director Opportunities -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex mandate-card-item" data-category="governance">
                         <div class="advisory-mandate-card w-100">
-                            <div class="mandate-badge"><i class="mdi mdi-chair-school mr-1"></i> Boardroom Appointments</div>
+                            <div>
+                                <span class="mandate-category-pill cat-governance">
+                                    <i class="mdi mdi-chair-school mr-1"></i> Boardroom Appointments
+                                </span>
+                            </div>
                             <h3 class="mandate-title">Independent Director Opportunities</h3>
                             <p class="mandate-desc">
                                 Independent director service bringing technical engineering acumen, cybersecurity fluency, and AI governance depth to corporate boards.
                             </p>
+                            <ul class="mandate-bullets">
+                                <li><i class="mdi mdi-check-circle"></i> Fiduciary board oversight on high-stakes technology bets</li>
+                                <li><i class="mdi mdi-check-circle"></i> Nomination &amp; technology governance committee leadership</li>
+                                <li><i class="mdi mdi-check-circle"></i> Executive mentorship for CEO, CTO, and CISO</li>
+                            </ul>
                             <div class="mandate-terms">
                                 <strong>Structure:</strong> Traditional board director equity / retainer compensation.
                             </div>
+                            <button type="button" class="btn-mandate-inquire" onclick="openAdvisoryModal('Independent Director')">
+                                Inquire for Director Nomination <i class="mdi mdi-arrow-right ml-1"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Engagement Action Bar -->
                 <div class="p-3 rounded-xl text-center bg-light border mt-2">
-                    <h4 class="font-weight-bold mb-1" style="font-size: 18px;">Initiate a Confidential Board or Advisory Discussion</h4>
+                    <h4 class="font-weight-bold mb-1 text-dark" style="font-size: 18px;">Initiate a Confidential Board or Advisory Discussion</h4>
                     <p class="text-muted mx-auto mb-3 small" style="max-width: 600px;">
                         Reach out directly via the confidential mandate portal to explore an advisory seat, council membership, or diligence engagement.
                     </p>
@@ -991,14 +1119,14 @@
                     </div>
                 </div>
 
-                <!-- 10. Downloadable Board Biography Callout -->
+                <!-- 10. Downloadable Board Biography Callout (With Direct Download & Preview) -->
                 <div class="advisory-biography-callout">
                     <div class="row align-items-center">
                         <div class="col-lg-8">
                             <div class="text-warning small font-weight-bold text-uppercase mb-1">
                                 <i class="mdi mdi-file-pdf-box mr-1"></i> Official Board Candidate Documentation
                             </div>
-                            <h3 class="bio-callout-title">Executive Board Biography</h3>
+                            <h3 class="bio-callout-title text-white" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);">Executive Board Biography</h3>
                             <p class="bio-callout-desc">
                                 Download a concise 2-page overview of Harsh Verma's technology leadership, advisory experience, governance expertise, and professional credentials prepared for nomination committees.
                             </p>
@@ -1172,7 +1300,7 @@
                     </div>
 
                     <div class="p-3 border rounded text-center bg-soft-primary">
-                        <h6 class="font-weight-bold mb-1">Official Board Biography (PDF) Available</h6>
+                        <h6 class="font-weight-bold mb-1 text-dark">Official Board Biography (PDF) Available</h6>
                         <p class="small text-muted mb-2">
                             The full 2-page executive board prospectus is ready for immediate download.
                         </p>
@@ -1192,50 +1320,61 @@
     </div>
 
     <!-- ================================================================= -->
-    <!-- FOOTER                                                            -->
+    <!-- CANONICAL FOOTER (MATCHING ALL PAGES IN THE SITE)                 -->
     <!-- ================================================================= -->
     <footer class="footer bg-light">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
-                    <a href="index" class="footer-logo text-dark font-weight-bold">Harsh Verma</a>
-                    <p class="para-desc mx-auto mt-4 text-muted">
-                        Principal Software Engineer in AI @ Palo Alto Networks &bull; Forbes Technology Council &bull; BCS Fellow &bull; IEEE Senior Member &bull; Strategic Board Advisor.
+                    <a href="index" class="footer-logo brand-logo-wrap font-weight-bold d-inline-flex justify-content-center align-items-center" style="text-decoration: none;">
+                        <span class="brand-monogram-emblem">
+                            <svg class="brand-logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="hvFootGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#1e40af" />
+                                        <stop offset="55%" stop-color="#2563eb" />
+                                        <stop offset="100%" stop-color="#4f46e5" />
+                                    </linearGradient>
+                                    <linearGradient id="hvFootAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#38bdf8" />
+                                        <stop offset="100%" stop-color="#818cf8" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="40" height="40" rx="10" fill="url(#hvFootGrad)" />
+                                <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+                                <path d="M11 12V28M11 20H19M19 12V28" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 12L28.5 28L34 12" stroke="url(#hvFootAccentGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="34" cy="12" r="1.75" fill="#38bdf8" />
+                            </svg>
+                        </span>
+                        <span class="brand-name-text">
+                            <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
+                        </span>
+                    </a>
+                    <p class="para-desc mx-auto mt-4 text-black" style="max-width: 650px;">
+                        Principal Software Engineer in AI @ Palo Alto Networks • Forbes Technology Council Member • BCS Fellow • IEEE Senior Member • Strategic Board Advisor
                     </p>
                     <ul class="list-unstyled mb-0 mt-4 social-icon">
-                        <li class="list-inline-item mr-1"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="rounded" title="Google Scholar (27+ Papers)"><i class="mdi mdi-school"></i></a></li>
-                        <li class="list-inline-item mr-1"><a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="rounded" title="LinkedIn"><i class="mdi mdi-linkedin"></i></a></li>
-                        <li class="list-inline-item mr-1"><a href="https://github.com/iamharshverma" target="_blank" class="rounded" title="GitHub"><i class="mdi mdi-github"></i></a></li>
-                        <li class="list-inline-item mr-1"><a rel="me" href="https://mastodon.social/@harshverma59" target="_blank" class="rounded" title="Mastodon"><i class="mdi mdi-mastodon"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="rounded-circle" title="Google Scholar"><i class="mdi mdi-school"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="rounded-circle" title="LinkedIn"><i class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://github.com/iamharshverma" target="_blank" class="rounded-circle" title="GitHub"><i class="mdi mdi-github-face"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://medium.com/@harshverma59" target="_blank" class="rounded-circle" title="Medium"><i class="mdi mdi-medium"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://twitter.com/harshverma59" target="_blank" class="rounded-circle" title="Twitter"><i class="mdi mdi-twitter"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.instagram.com/aiwithharsh/" target="_blank" class="rounded-circle" title="Instagram"><i class="mdi mdi-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-    <footer class="footer border-top footer-bar py-4 bg-light">
-        <div class="container text-center">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <div class="text-sm-left">
-                        <p class="mb-0 text-muted">&copy; <span id="currentYear">2026</span> Harsh Verma. All rights reserved.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="text-sm-right mt-2 mt-sm-0">
-                        <a href="page-advisory" class="text-muted mr-3">Board Advisory</a>
-                        <a href="page-speaker" class="text-muted mr-3">Speaker</a>
-                        <a href="page-about" class="text-muted mr-3">About</a>
-                        <a href="index#contact" class="text-muted">Contact</a>
-                    </div>
-                </div>
-            </div>
+    <footer class="footer footer-bar bg-black">
+        <div class="container text-foot text-center">
+            <p class="mb-0 text-white-50">&copy; <script>document.write(new Date().getFullYear())</script> Harsh Verma. All rights reserved.</p>
         </div>
     </footer>
+    <!-- Footer End -->
 
     <!-- Back to top -->
-    <a href="#" class="back-to-top rounded text-center" id="back-to-top"> 
-        <i class="mdi mdi-chevron-up d-block"> </i> 
-    </a>
+    <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i class="mdi mdi-chevron-up"></i></a>
 
     <!-- JavaScript Files -->
     <script src="js/jquery.min.js"></script>
