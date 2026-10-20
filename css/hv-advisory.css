@@ -1493,3 +1493,313 @@ html.dark-mode .cat-cyber {
     color: #6ee7b7 !important;
     border-color: rgba(16, 185, 129, 0.4) !important;
 }
+
+/* ==========================================================================
+   12. 30–60–90 DAY BOARD INTEGRATION ROADMAP ENHANCEMENTS
+   ========================================================================== */
+.roadmap-days-badge {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.badge-days-30 {
+    background: rgba(37, 99, 235, 0.12);
+    color: #2563eb;
+    border: 1px solid rgba(37, 99, 235, 0.25);
+}
+
+.badge-days-60 {
+    background: rgba(217, 119, 6, 0.12);
+    color: #d97706;
+    border: 1px solid rgba(217, 119, 6, 0.25);
+}
+
+.badge-days-90 {
+    background: rgba(16, 185, 129, 0.12);
+    color: #059669;
+    border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.badge-days-beyond {
+    background: rgba(99, 102, 241, 0.12);
+    color: #4f46e5;
+    border: 1px solid rgba(99, 102, 241, 0.25);
+}
+
+/* ==========================================================================
+   13. VENTURE ADVISORY ECOSYSTEM HUB STYLING
+   ========================================================================== */
+.venture-ecosystem-wrapper {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px 20px;
+}
+
+.ecosystem-stat-strip {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 18px 16px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.02);
+    margin-bottom: 24px;
+}
+
+.ecosystem-stat-number {
+    font-size: 24px;
+    font-weight: 850;
+    line-height: 1.1;
+    margin-bottom: 2px;
+    font-feature-settings: "tnum";
+}
+
+.ecosystem-stat-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ecosystem-filter-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.ecosystem-filter-btn {
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #334155;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.ecosystem-filter-btn:hover {
+    border-color: #3b82f6;
+    color: #2563eb;
+    background: #f0f7ff;
+}
+
+.ecosystem-filter-btn.active {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+}
+
+.ecosystem-filter-btn .badge {
+    margin-left: 6px;
+    font-size: 10px;
+    font-weight: 800;
+    border-radius: 10px;
+    padding: 2px 6px;
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.ecosystem-filter-btn.active .badge {
+    background: rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+}
+
+.ecosystem-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 20px 18px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.02);
+}
+
+.ecosystem-card:hover {
+    background: #ffffff;
+    border-color: #3b82f6;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.1);
+}
+
+.ecosystem-card-col {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ecosystem-card-col.dimmed {
+    opacity: 0.3;
+    transform: scale(0.98);
+}
+
+.ecosystem-card-col.highlighted .ecosystem-card {
+    border-color: #2563eb !important;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.18) !important;
+    transform: translateY(-4px);
+}
+
+.ecosystem-card-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.ecosystem-entity-title {
+    font-size: 17px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.2px;
+    margin-bottom: 4px;
+}
+
+.ecosystem-role-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.ecosystem-desc {
+    font-size: 12.5px;
+    line-height: 1.55;
+    color: #475569;
+    margin-bottom: 12px;
+}
+
+.ecosystem-proof-box {
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 11.5px;
+    color: #334155;
+    border: 1px dashed #cbd5e1;
+    margin-bottom: 12px;
+}
+
+.ecosystem-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: auto;
+}
+
+.ecosystem-chip {
+    font-size: 10.5px;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+}
+
+/* Dark mode overrides for 30-60-90 & Ecosystem Hub */
+body.dark-mode .venture-ecosystem-wrapper,
+html.dark-mode .venture-ecosystem-wrapper {
+    background: #111827 !important;
+    border-color: #1e293b !important;
+}
+
+body.dark-mode .ecosystem-stat-strip,
+html.dark-mode .ecosystem-stat-strip {
+    background: #131d35 !important;
+    border-color: rgba(51, 65, 85, 0.9) !important;
+}
+
+body.dark-mode .ecosystem-stat-number,
+html.dark-mode .ecosystem-stat-number {
+    color: #f8fafc !important;
+}
+
+body.dark-mode .ecosystem-stat-label,
+html.dark-mode .ecosystem-stat-label {
+    color: #94a3b8 !important;
+}
+
+body.dark-mode .ecosystem-filter-btn,
+html.dark-mode .ecosystem-filter-btn {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+    color: #cbd5e1 !important;
+}
+
+body.dark-mode .ecosystem-filter-btn .badge,
+html.dark-mode .ecosystem-filter-btn .badge {
+    background: #334155 !important;
+    color: #cbd5e1 !important;
+}
+
+body.dark-mode .ecosystem-filter-btn:hover,
+html.dark-mode .ecosystem-filter-btn:hover {
+    border-color: #60a5fa !important;
+    color: #93c5fd !important;
+    background: #25334d !important;
+}
+
+body.dark-mode .ecosystem-filter-btn.active,
+html.dark-mode .ecosystem-filter-btn.active {
+    background: #2563eb !important;
+    border-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .ecosystem-card,
+html.dark-mode .ecosystem-card {
+    background: #131d35 !important;
+    border-color: rgba(51, 65, 85, 0.9) !important;
+}
+
+body.dark-mode .ecosystem-card:hover,
+html.dark-mode .ecosystem-card:hover {
+    background: #172340 !important;
+    border-color: #60a5fa !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-mode .ecosystem-entity-title,
+html.dark-mode .ecosystem-entity-title {
+    color: #f8fafc !important;
+}
+
+body.dark-mode .ecosystem-role-label,
+html.dark-mode .ecosystem-role-label {
+    color: #60a5fa !important;
+}
+
+body.dark-mode .ecosystem-desc,
+html.dark-mode .ecosystem-desc {
+    color: #94a3b8 !important;
+}
+
+body.dark-mode .ecosystem-proof-box,
+html.dark-mode .ecosystem-proof-box {
+    background: rgba(255, 255, 255, 0.04) !important;
+    border-color: #334155 !important;
+    color: #cbd5e1 !important;
+}
+
+body.dark-mode .ecosystem-chip,
+html.dark-mode .ecosystem-chip {
+    background: #1e293b !important;
+    color: #cbd5e1 !important;
+    border-color: #334155 !important;
+}

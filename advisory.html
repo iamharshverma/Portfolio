@@ -725,60 +725,77 @@
                     </div>
                 </div>
 
-                <!-- Infographic 3: Interactive Advisory Engagement Cadence -->
+                <!-- Infographic: 30–60–90 Day Board Integration Roadmap & Advisory Cadence -->
                 <div class="cadence-roadmap-container">
-                    <div class="d-flex align-items-center justify-content-between mb-2 flex-wrap">
-                        <div class="text-primary small font-weight-bold text-uppercase" style="letter-spacing: 0.8px;">
-                            <i class="mdi mdi-timeline-clock mr-1"></i> Interactive Board Advisory Cadence &amp; Integration Roadmap
+                    <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap">
+                        <div>
+                            <span class="badge badge-pill badge-primary font-weight-bold px-2 py-1 small text-uppercase" style="letter-spacing: 0.6px; border-radius: 6px;">
+                                <i class="mdi mdi-timeline-clock mr-1"></i> Interactive Infographic
+                            </span>
+                            <h4 class="font-weight-bold text-dark mb-0 mt-1" style="font-size: 1.15rem;">
+                                30–60–90 Day Board Integration Roadmap &amp; Cadence
+                            </h4>
                         </div>
-                        <div class="d-flex align-items-center">
-                            <button type="button" class="btn btn-sm btn-outline-primary roadmap-nav-btn mr-1" onclick="navigateRoadmap(-1)" title="Previous Phase"><i class="mdi mdi-chevron-left"></i> Prev</button>
-                            <button type="button" class="btn btn-sm btn-outline-primary roadmap-nav-btn mr-2" onclick="navigateRoadmap(1)" title="Next Phase">Next <i class="mdi mdi-chevron-right"></i></button>
-                            <small class="text-muted">Click any phase</small>
+                        <div class="d-flex align-items-center mt-2 mt-sm-0">
+                            <button type="button" class="btn btn-sm btn-outline-primary roadmap-nav-btn mr-1" onclick="navigateRoadmap(-1)" title="Previous Milestone"><i class="mdi mdi-chevron-left"></i> Prev</button>
+                            <button type="button" class="btn btn-sm btn-outline-primary roadmap-nav-btn mr-2" onclick="navigateRoadmap(1)" title="Next Milestone">Next <i class="mdi mdi-chevron-right"></i></button>
+                            <small class="text-muted">Click any milestone</small>
                         </div>
                     </div>
 
                     <!-- Visual Progress Stepper Bar -->
                     <div class="roadmap-stepper-bar">
                         <div class="roadmap-progress-line" id="roadmapProgressLine" style="width: 0%;"></div>
-                        <button type="button" class="roadmap-step-node active" data-node="1" onclick="switchCadencePhase(1)" aria-label="Phase 1: Diagnostic">
-                            <span class="node-circle">1</span>
-                            <span class="node-label">Diagnostic</span>
+                        <button type="button" class="roadmap-step-node active" data-node="1" onclick="switchCadencePhase(1)" aria-label="Milestone 1: Days 1–30">
+                            <span class="node-circle">30</span>
+                            <span class="node-label">Days 1–30</span>
                         </button>
-                        <button type="button" class="roadmap-step-node" data-node="2" onclick="switchCadencePhase(2)" aria-label="Phase 2: Baseline">
-                            <span class="node-circle">2</span>
-                            <span class="node-label">Baseline</span>
+                        <button type="button" class="roadmap-step-node" data-node="2" onclick="switchCadencePhase(2)" aria-label="Milestone 2: Days 31–60">
+                            <span class="node-circle">60</span>
+                            <span class="node-label">Days 31–60</span>
                         </button>
-                        <button type="button" class="roadmap-step-node" data-node="3" onclick="switchCadencePhase(3)" aria-label="Phase 3: Cadence">
-                            <span class="node-circle">3</span>
-                            <span class="node-label">Cadence</span>
+                        <button type="button" class="roadmap-step-node" data-node="3" onclick="switchCadencePhase(3)" aria-label="Milestone 3: Days 61–90">
+                            <span class="node-circle">90</span>
+                            <span class="node-label">Days 61–90</span>
                         </button>
-                        <button type="button" class="roadmap-step-node" data-node="4" onclick="switchCadencePhase(4)" aria-label="Phase 4: Fiduciary">
-                            <span class="node-circle">4</span>
-                            <span class="node-label">Fiduciary</span>
+                        <button type="button" class="roadmap-step-node" data-node="4" onclick="switchCadencePhase(4)" aria-label="Milestone 4: Day 90+">
+                            <span class="node-circle">90+</span>
+                            <span class="node-label">Day 90+ Scale</span>
                         </button>
                     </div>
 
                     <div class="hv-cadence-timeline">
                         <div class="cadence-step-box active" data-step="1" onclick="switchCadencePhase(1)">
-                            <div class="step-phase-badge">Phase 01 &bull; Weeks 1–2</div>
-                            <h5 class="step-phase-title">Architecture Diagnostic</h5>
-                            <p class="step-phase-desc">In-depth technical debt, data moat defensibility, and security audit.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="roadmap-days-badge badge-days-30">Days 1–30</span>
+                                <span class="small text-muted font-weight-bold">Phase 01</span>
+                            </div>
+                            <h5 class="step-phase-title">Diagnostic &amp; Moat Triage</h5>
+                            <p class="step-phase-desc">In-depth technical debt audit, data moat defensibility, and security triage.</p>
                         </div>
                         <div class="cadence-step-box" data-step="2" onclick="switchCadencePhase(2)">
-                            <div class="step-phase-badge">Phase 02 &bull; Month 1</div>
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="roadmap-days-badge badge-days-60">Days 31–60</span>
+                                <span class="small text-muted font-weight-bold">Phase 02</span>
+                            </div>
                             <h5 class="step-phase-title">Governance Baseline</h5>
-                            <p class="step-phase-desc">Establish eval harnesses, board risk escalation thresholds, and roadmap.</p>
+                            <p class="step-phase-desc">Deploy automated evaluation harnesses, risk thresholds, and EU AI Act telemetry.</p>
                         </div>
                         <div class="cadence-step-box" data-step="3" onclick="switchCadencePhase(3)">
-                            <div class="step-phase-badge">Phase 03 &bull; Ongoing</div>
-                            <h5 class="step-phase-title">Quarterly Board Cadence</h5>
-                            <p class="step-phase-desc">Quarterly reviews, monthly founder sounding sessions, critical triage.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="roadmap-days-badge badge-days-90">Days 61–90</span>
+                                <span class="small text-muted font-weight-bold">Phase 03</span>
+                            </div>
+                            <h5 class="step-phase-title">High-Conviction Cadence</h5>
+                            <p class="step-phase-desc">Quarterly boardroom technology steering, executive vetting, and cloud contract triage.</p>
                         </div>
                         <div class="cadence-step-box" data-step="4" onclick="switchCadencePhase(4)">
-                            <div class="step-phase-badge">Phase 04 &bull; Annual</div>
-                            <h5 class="step-phase-title">Fiduciary Scale Audit</h5>
-                            <p class="step-phase-desc">Annual risk audit, investor syndicate diligence prep, and growth scale.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="roadmap-days-badge badge-days-beyond">Day 90+ &amp; Ongoing</span>
+                                <span class="small text-muted font-weight-bold">Phase 04</span>
+                            </div>
+                            <h5 class="step-phase-title">Fiduciary Scale &amp; Diligence</h5>
+                            <p class="step-phase-desc">Annual risk audit, investor syndicate diligence readiness, and sovereign scale.</p>
                         </div>
                     </div>
 
@@ -786,29 +803,29 @@
                     <div id="roadmapDetailBox" class="roadmap-interactive-details">
                         <div class="d-flex align-items-center justify-content-between mb-2 flex-wrap">
                             <div>
-                                <span class="badge badge-pill badge-primary px-3 py-1 mr-2 font-weight-bold" style="font-size:11px;">Phase 01: Weeks 1–2</span>
-                                <span class="badge badge-pill badge-warning text-dark font-weight-bold px-2 py-1" style="font-size:10px;">Active Cadence</span>
+                                <span class="roadmap-days-badge badge-days-30 mr-2 font-weight-bold">Days 1–30</span>
+                                <span class="badge badge-pill badge-primary px-3 py-1 mr-2 font-weight-bold" style="font-size:11px;">Days 1–30: Diagnostic &amp; Moat Evaluation</span>
                             </div>
                             <span class="text-muted small"><i class="mdi mdi-account-group text-primary mr-1"></i><strong>Stakeholders:</strong> Founders, CTO, VP Engineering, Lead Architect</span>
                         </div>
                         <h4 class="text-dark font-weight-bold mb-2" style="font-size:18px;">Deep-Dive Architecture &amp; Moat Diagnostic</h4>
-                        <p class="text-muted small mb-2" style="line-height:1.6;">Comprehensive code &amp; infrastructure triage to separate genuine data moats from fragile foundation model wrappers.</p>
+                        <p class="text-muted small mb-2" style="line-height:1.6;">Rapid triage of technical debt, foundation model wrapper vulnerabilities, and data moat defensibility to calibrate executive priorities.</p>
                         <div class="row align-items-center mt-2">
                             <div class="col-lg-8 mb-2 mb-lg-0">
                                 <strong class="text-dark small d-block mb-1"><i class="mdi mdi-format-list-checks text-success mr-1"></i> Key Phase Deliverables:</strong>
                                 <ul class="small text-muted pl-0 mb-0" style="list-style:none;">
                                     <li class="mb-1"><i class="mdi mdi-check-circle text-primary mr-1"></i> Technical debt &amp; scalability bottleneck audit</li>
-                                    <li class="mb-1"><i class="mdi mdi-check-circle text-primary mr-1"></i> Data moat defensibility &amp; IP differentiation evaluation</li>
+                                    <li class="mb-1"><i class="mdi mdi-check-circle text-primary mr-1"></i> Data moat defensibility &amp; proprietary IP evaluation</li>
                                     <li class="mb-1"><i class="mdi mdi-check-circle text-primary mr-1"></i> Third-party API vulnerability &amp; vendor lock-in mitigation plan</li>
                                     <li class="mb-1"><i class="mdi mdi-check-circle text-primary mr-1"></i> Immediate 90-day technical priority roadmap</li>
                                 </ul>
                             </div>
                             <div class="col-lg-4 text-center text-lg-right">
                                 <div class="p-2 rounded bg-light border mb-2 text-left small">
-                                    <strong>Format:</strong> <span class="text-muted">2x 90-min technical architecture sessions + codebase review</span>
+                                    <strong>Format:</strong> <span class="text-muted">2x 90-min technical architecture sessions + comprehensive codebase review</span>
                                 </div>
                                 <button type="button" class="btn btn-sm btn-primary font-weight-bold px-3 py-2 w-100" style="border-radius:20px;" onclick="openAdvisoryModal('Startup Advisory Board')">
-                                    <i class="mdi mdi-calendar-check mr-1"></i> Inquire for Phase 01 Mandate
+                                    <i class="mdi mdi-calendar-check mr-1"></i> Inquire for Days 1–30 Mandate
                                 </button>
                             </div>
                         </div>
@@ -875,44 +892,211 @@
             </section>
 
             <!-- ============================================================= -->
-            <!-- 8. LEADERSHIP, RECOGNITION & PROFESSIONAL DISTINCTION         -->
+            <!-- 8. VENTURE ADVISORY ECOSYSTEM HUB & INSTITUTIONAL DISTINCTION  -->
             <!-- ============================================================= -->
             <section class="hv-advisory-white-card" id="credentials">
                 <div class="hv-advisory-section-header text-center mb-3">
                     <span class="advisory-section-badge">
-                        <i class="mdi mdi-certificate mr-1"></i> Institutional Distinction
+                        <i class="mdi mdi-hubspot mr-1"></i> Venture &amp; Distinction Hub
                     </span>
                     <h2 class="advisory-section-title">
-                        Leadership, Recognition &amp; Professional Distinction
+                        Venture Advisory Ecosystem &amp; Professional Distinction
                     </h2>
                     <p class="advisory-lead-quote mx-auto">
-                        Global Fellowships, Senior Memberships &amp; Industry Standing
+                        Connecting Tier-1 Accelerators, Venture Syndicates &amp; Global Computer Science Fellowships
+                    </p>
+                    <p class="advisory-section-desc mx-auto mb-3">
+                        Active ecosystem leadership advising high-velocity venture portfolios, de-risking technical due diligence, and stewarding rigorous computing standards across global institutions.
                     </p>
                 </div>
 
-                <div class="row align-items-center">
-                    <div class="col-md-6 col-lg-3 mb-2">
-                        <div class="p-3 rounded border text-center bg-light h-100 d-flex flex-column justify-content-center">
-                            <div class="font-weight-bold text-primary mb-1"><i class="mdi mdi-newspaper mr-1"></i> Forbes Tech Council</div>
-                            <p class="small text-muted mb-0">Official Member &amp; Contributing Author</p>
+                <!-- Ecosystem Metric Strip -->
+                <div class="ecosystem-stat-strip">
+                    <div class="row text-center align-items-center">
+                        <div class="col-6 col-md-3 mb-2 mb-md-0 border-right-md">
+                            <div class="ecosystem-stat-number text-primary">$50M+</div>
+                            <div class="ecosystem-stat-label">Valuation Pipeline Advised</div>
+                        </div>
+                        <div class="col-6 col-md-3 mb-2 mb-md-0 border-right-md">
+                            <div class="ecosystem-stat-number text-success">21+</div>
+                            <div class="ecosystem-stat-label">Accelerators &amp; Judging Panels</div>
+                        </div>
+                        <div class="col-6 col-md-3 border-right-md">
+                            <div class="ecosystem-stat-number text-warning">Top 8%</div>
+                            <div class="ecosystem-stat-label">IEEE Senior &amp; BCS Fellow</div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="ecosystem-stat-number text-indigo">40+</div>
+                            <div class="ecosystem-stat-label">Board &amp; Council Dispatches</div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 mb-2">
-                        <div class="p-3 rounded border text-center bg-light h-100 d-flex flex-column justify-content-center">
-                            <div class="font-weight-bold text-primary mb-1"><i class="mdi mdi-seal mr-1"></i> BCS Fellow (FBCS)</div>
-                            <p class="small text-muted mb-0">Fellow of the British Computer Society (Senior Distinction)</p>
+                </div>
+
+                <!-- Interactive Category Filter Tabs -->
+                <div class="ecosystem-filter-tabs">
+                    <button type="button" class="ecosystem-filter-btn active" onclick="filterEcosystem('all', this)">
+                        All Ecosystem <span class="badge">6</span>
+                    </button>
+                    <button type="button" class="ecosystem-filter-btn" onclick="filterEcosystem('venture', this)">
+                        <i class="mdi mdi-rocket-launch mr-1 text-success"></i> Venture &amp; Accelerators <span class="badge">2</span>
+                    </button>
+                    <button type="button" class="ecosystem-filter-btn" onclick="filterEcosystem('fellowship', this)">
+                        <i class="mdi mdi-seal mr-1 text-primary"></i> Institutional Fellowships <span class="badge">3</span>
+                    </button>
+                    <button type="button" class="ecosystem-filter-btn" onclick="filterEcosystem('enterprise', this)">
+                        <i class="mdi mdi-domain mr-1 text-warning"></i> Enterprise Leadership <span class="badge">1</span>
+                    </button>
+                </div>
+
+                <!-- 6 Interactive Ecosystem Cards -->
+                <div class="row" id="ecosystemCardsGrid">
+                    <!-- Card 1: UC Berkeley SkyDeck -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex ecosystem-card-col" data-category="venture">
+                        <div class="ecosystem-card w-100">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="ecosystem-card-icon bg-gradient-amber">
+                                    <i class="mdi mdi-school-outline"></i>
+                                </div>
+                                <span class="badge badge-light border font-weight-bold" style="font-size: 11px;">Accelerator</span>
+                            </div>
+                            <h3 class="ecosystem-entity-title">UC Berkeley SkyDeck</h3>
+                            <div class="ecosystem-role-label">Frontier AI &amp; Deep-Tech Mentor</div>
+                            <p class="ecosystem-desc">
+                                Advising high-growth startup cohorts on deterministic autonomous architectures, reducing inference unit economics, and navigating venture capital milestones.
+                            </p>
+                            <div class="ecosystem-proof-box">
+                                <i class="mdi mdi-check-circle text-success mr-1"></i> Cohort Mentorship &amp; Technical Due Diligence
+                            </div>
+                            <div class="ecosystem-chips">
+                                <span class="ecosystem-chip">#SkyDeck</span>
+                                <span class="ecosystem-chip">#DeepTech</span>
+                                <span class="ecosystem-chip">#SeedToSeriesA</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 mb-2">
-                        <div class="p-3 rounded border text-center bg-light h-100 d-flex flex-column justify-content-center">
-                            <div class="font-weight-bold text-primary mb-1"><i class="mdi mdi-school mr-1"></i> IEEE Senior Member</div>
-                            <p class="small text-muted mb-0">Elevated to Top 8% of Worldwide Engineers</p>
+
+                    <!-- Card 2: Techstars Global Network -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex ecosystem-card-col" data-category="venture">
+                        <div class="ecosystem-card w-100">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="ecosystem-card-icon bg-gradient-emerald">
+                                    <i class="mdi mdi-star-shooting-outline"></i>
+                                </div>
+                                <span class="badge badge-light border font-weight-bold" style="font-size: 11px;">Accelerator</span>
+                            </div>
+                            <h3 class="ecosystem-entity-title">Techstars Global Network</h3>
+                            <div class="ecosystem-role-label">Technical Mentor &amp; Pitch Judge</div>
+                            <p class="ecosystem-desc">
+                                Architectural sounding board and technical diligence for early-stage founders building AI, distributed systems, and cybersecurity applications.
+                            </p>
+                            <div class="ecosystem-proof-box">
+                                <i class="mdi mdi-check-circle text-success mr-1"></i> Founder Sparring &amp; Syndicate Due Diligence Prep
+                            </div>
+                            <div class="ecosystem-chips">
+                                <span class="ecosystem-chip">#Techstars</span>
+                                <span class="ecosystem-chip">#VentureDiligence</span>
+                                <span class="ecosystem-chip">#AIStartups</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 mb-2">
-                        <div class="p-3 rounded border text-center bg-light h-100 d-flex flex-column justify-content-center">
-                            <div class="font-weight-bold text-primary mb-1"><i class="mdi mdi-shield-lock mr-1"></i> Palo Alto Networks</div>
-                            <p class="small text-muted mb-0">Principal Software Engineer in AI</p>
+
+                    <!-- Card 3: Forbes Technology Council -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex ecosystem-card-col" data-category="fellowship">
+                        <div class="ecosystem-card w-100">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="ecosystem-card-icon bg-gradient-blue">
+                                    <i class="mdi mdi-newspaper-variant-outline"></i>
+                                </div>
+                                <span class="badge badge-light border font-weight-bold" style="font-size: 11px;">Council</span>
+                            </div>
+                            <h3 class="ecosystem-entity-title">Forbes Tech Council</h3>
+                            <div class="ecosystem-role-label">Official Member &amp; Contributing Author</div>
+                            <p class="ecosystem-desc">
+                                Invitation-only executive council for world-class technology executives. Contributing research and dispatches on autonomous multi-agent systems and enterprise security.
+                            </p>
+                            <div class="ecosystem-proof-box">
+                                <i class="mdi mdi-check-circle text-primary mr-1"></i> Published Dispatches &amp; Board Guidance
+                            </div>
+                            <div class="ecosystem-chips">
+                                <span class="ecosystem-chip">#ForbesTechCouncil</span>
+                                <span class="ecosystem-chip">#ExecutiveAI</span>
+                                <span class="ecosystem-chip">#Governance</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: BCS Fellow (FBCS) -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex ecosystem-card-col" data-category="fellowship">
+                        <div class="ecosystem-card w-100">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="ecosystem-card-icon bg-gradient-indigo">
+                                    <i class="mdi mdi-seal-variant"></i>
+                                </div>
+                                <span class="badge badge-light border font-weight-bold" style="font-size: 11px;">Fellowship</span>
+                            </div>
+                            <h3 class="ecosystem-entity-title">BCS Fellow (FBCS)</h3>
+                            <div class="ecosystem-role-label">Fellow of British Computer Society</div>
+                            <p class="ecosystem-desc">
+                                Awarded highest professional membership grade by the Chartered Institute for IT, recognizing senior executive leadership, ethical computing stewardship, and authoritative impact.
+                            </p>
+                            <div class="ecosystem-proof-box">
+                                <i class="mdi mdi-check-circle text-primary mr-1"></i> Senior Distinction in Computer Science
+                            </div>
+                            <div class="ecosystem-chips">
+                                <span class="ecosystem-chip">#BCSFellow</span>
+                                <span class="ecosystem-chip">#EthicalAI</span>
+                                <span class="ecosystem-chip">#CharteredIT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: IEEE Senior Member -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex ecosystem-card-col" data-category="fellowship">
+                        <div class="ecosystem-card w-100">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="ecosystem-card-icon bg-gradient-blue">
+                                    <i class="mdi mdi-school"></i>
+                                </div>
+                                <span class="badge badge-light border font-weight-bold" style="font-size: 11px;">Top 8% Global</span>
+                            </div>
+                            <h3 class="ecosystem-entity-title">IEEE Senior Member</h3>
+                            <div class="ecosystem-role-label">Top 8% Worldwide Distinction</div>
+                            <p class="ecosystem-desc">
+                                Conferred to less than 8% of IEEE members worldwide based on significant performance, peer scholarship reviews, and technical innovation in autonomous systems and security.
+                            </p>
+                            <div class="ecosystem-proof-box">
+                                <i class="mdi mdi-check-circle text-primary mr-1"></i> Peer-Reviewed Senior Grade &amp; Scholar
+                            </div>
+                            <div class="ecosystem-chips">
+                                <span class="ecosystem-chip">#IEEESeniorMember</span>
+                                <span class="ecosystem-chip">#PeerReview</span>
+                                <span class="ecosystem-chip">#DistributedSystems</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Palo Alto Networks -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex ecosystem-card-col" data-category="enterprise">
+                        <div class="ecosystem-card w-100">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="ecosystem-card-icon bg-gradient-emerald">
+                                    <i class="mdi mdi-shield-lock-outline"></i>
+                                </div>
+                                <span class="badge badge-light border font-weight-bold" style="font-size: 11px;">Enterprise AI</span>
+                            </div>
+                            <h3 class="ecosystem-entity-title">Palo Alto Networks</h3>
+                            <div class="ecosystem-role-label">Principal Software Engineer in AI</div>
+                            <p class="ecosystem-desc">
+                                Architecting mission-critical, enterprise-grade AI security products, zero-trust perimeter defense, and distributed agentic evaluation pipelines protecting global enterprises.
+                            </p>
+                            <div class="ecosystem-proof-box">
+                                <i class="mdi mdi-check-circle text-success mr-1"></i> Autonomous AI Architecture &amp; Production Scale
+                            </div>
+                            <div class="ecosystem-chips">
+                                <span class="ecosystem-chip">#Cybersecurity</span>
+                                <span class="ecosystem-chip">#ZeroTrust</span>
+                                <span class="ecosystem-chip">#AgenticAI</span>
+                            </div>
                         </div>
                     </div>
                 </div>

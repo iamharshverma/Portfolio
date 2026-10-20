@@ -128,13 +128,15 @@
 
         var phaseData = {
             1: {
-                phase: "Phase 01: Weeks 1–2",
+                phase: "Days 1–30: Diagnostic & Moat Evaluation",
+                badgeClass: "badge-days-30",
+                daysTag: "Days 1–30",
                 title: "Deep-Dive Architecture & Moat Diagnostic",
-                format: "2x 90-min technical architecture sessions + codebase review",
-                focus: "Comprehensive code & infrastructure triage to separate genuine data moats from fragile foundation model wrappers.",
+                format: "2x 90-min technical architecture sessions + comprehensive codebase review",
+                focus: "Rapid triage of technical debt, foundation model wrapper vulnerabilities, and data moat defensibility to calibrate executive priorities.",
                 deliverables: [
                     "Technical debt & scalability bottleneck audit",
-                    "Data moat defensibility & IP differentiation evaluation",
+                    "Data moat defensibility & proprietary IP evaluation",
                     "Third-party API vulnerability & vendor lock-in mitigation plan",
                     "Immediate 90-day technical priority roadmap"
                 ],
@@ -142,7 +144,9 @@
                 mandateType: "Startup Advisory Board"
             },
             2: {
-                phase: "Phase 02: Month 1",
+                phase: "Days 31–60: Governance Baseline & Guardrails",
+                badgeClass: "badge-days-60",
+                daysTag: "Days 31–60",
                 title: "Governance Baseline & Safety Guardrails",
                 format: "Bi-weekly executive syncs + CISO/CTO architectural review",
                 focus: "Institutionalizing automated evaluation harnesses and security guardrails to protect capital and regulatory posture.",
@@ -156,7 +160,9 @@
                 mandateType: "AI Governance Committee"
             },
             3: {
-                phase: "Phase 03: Ongoing Cadence",
+                phase: "Days 61–90: High-Conviction Board Cadence",
+                badgeClass: "badge-days-90",
+                daysTag: "Days 61–90",
                 title: "Active Quarterly Board Service & Strategic Sounding Board",
                 format: "Quarterly formal board meetings + monthly architecture sprint syncs + on-demand executive hotline",
                 focus: "High-level strategic steering, key engineering executive vetting, investor syndicate diligence, and crisis triage.",
@@ -170,7 +176,9 @@
                 mandateType: "Technology Advisory Council"
             },
             4: {
-                phase: "Phase 04: Annual Fiduciary Milestone",
+                phase: "Day 90+: Fiduciary Scale & Sovereign Assets",
+                badgeClass: "badge-days-beyond",
+                daysTag: "Day 90+ & Ongoing",
                 title: "Comprehensive Fiduciary & Scale Audit",
                 format: "Annual risk committee review + investor syndicate briefings",
                 focus: "Auditing multi-year technological defensibility, sovereign IP assets, and institutional audit compliance.",
@@ -195,8 +203,8 @@
             detailEl.innerHTML = 
                 '<div class="d-flex align-items-center justify-content-between mb-2 flex-wrap">' +
                     '<div>' +
+                        '<span class="roadmap-days-badge ' + data.badgeClass + ' mr-2 font-weight-bold">' + data.daysTag + '</span>' +
                         '<span class="badge badge-pill badge-primary px-3 py-1 mr-2 font-weight-bold" style="font-size:11px;">' + data.phase + '</span>' +
-                        '<span class="badge badge-pill badge-warning text-dark font-weight-bold px-2 py-1" style="font-size:10px;">Active Cadence</span>' +
                     '</div>' +
                     '<span class="text-muted small"><i class="mdi mdi-account-group text-primary mr-1"></i><strong>Stakeholders:</strong> ' + data.stakeholders + '</span>' +
                 '</div>' +
@@ -212,7 +220,7 @@
                             '<strong>Format:</strong> <span class="text-muted">' + data.format + '</span>' +
                         '</div>' +
                         '<button type="button" class="btn btn-sm btn-primary font-weight-bold px-3 py-2 w-100" style="border-radius:20px;" onclick="openAdvisoryModal(\'' + data.mandateType + '\')">' +
-                            '<i class="mdi mdi-calendar-check mr-1"></i> Inquire for ' + data.phase.split(':')[0] +
+                            '<i class="mdi mdi-calendar-check mr-1"></i> Inquire for ' + data.daysTag + ' Mandate' +
                         '</button>' +
                     '</div>' +
                 '</div>';
@@ -240,6 +248,25 @@
                 item.style.display = 'block';
             } else {
                 item.style.display = 'none';
+            }
+        });
+    };
+
+    // 4b. Interactive Venture Advisory Ecosystem Filter
+    window.filterEcosystem = function (category, btn) {
+        var buttons = document.querySelectorAll('.ecosystem-filter-btn');
+        buttons.forEach(function (b) { b.classList.remove('active'); });
+        if (btn) btn.classList.add('active');
+
+        var cols = document.querySelectorAll('.ecosystem-card-col');
+        cols.forEach(function (col) {
+            var cat = col.getAttribute('data-category');
+            if (category === 'all' || cat.indexOf(category) !== -1) {
+                col.classList.remove('dimmed');
+                col.classList.add('highlighted');
+            } else {
+                col.classList.add('dimmed');
+                col.classList.remove('highlighted');
             }
         });
     };
