@@ -81,7 +81,7 @@
         var detailBox = document.getElementById('flywheelDetailBox');
         if (detailBox && details[qNum]) {
             detailBox.innerHTML = '<div class="d-flex align-items-center justify-content-between mb-1">' +
-                '<strong class="text-warning small text-uppercase" style="letter-spacing:0.8px;">' + details[qNum].boardFocus + '</strong>' +
+                '<strong class="small text-uppercase font-weight-bold">' + details[qNum].boardFocus + '</strong>' +
                 '<span class="badge badge-pill badge-primary px-2" style="font-size:10px;">Quadrant ' + qNum + '</span>' +
                 '</div>' +
                 '<h5 class="text-dark font-weight-bold mb-1">' + details[qNum].title + '</h5>' +

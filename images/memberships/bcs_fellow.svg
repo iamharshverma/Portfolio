@@ -1,45 +1,55 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160">
   <defs>
-    <linearGradient id="bcsBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#041829"/>
-      <stop offset="50%" stop-color="#0a2a44"/>
-      <stop offset="100%" stop-color="#0c3852"/>
+    <linearGradient id="bcsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#041220"/>
+      <stop offset="50%" stop-color="#082035"/>
+      <stop offset="100%" stop-color="#0b2e45"/>
     </linearGradient>
     <linearGradient id="bcsEmblemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00a887"/>
+      <stop offset="0%" stop-color="#34d399"/>
       <stop offset="100%" stop-color="#059669"/>
     </linearGradient>
-    <linearGradient id="bcsGoldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbbf24"/>
-      <stop offset="100%" stop-color="#d97706"/>
+    <linearGradient id="bcsGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(16, 185, 129, 0.25)"/>
+      <stop offset="100%" stop-color="rgba(16, 185, 129, 0)"/>
     </linearGradient>
   </defs>
+
+  <!-- Frame Background -->
+  <rect width="100%" height="100%" fill="url(#bcsBg)"/>
   
-  <!-- Outer Card Frame -->
-  <rect width="100%" height="100%" rx="16" fill="url(#bcsBgGrad)" stroke="rgba(0, 168, 135, 0.35)" stroke-width="1.5"/>
-  
-  <!-- BCS Emblem Icon -->
-  <g transform="translate(38, 36)">
-    <!-- Shield / Seal -->
-    <rect x="0" y="0" width="76" height="88" rx="14" fill="#061e33" stroke="url(#bcsEmblemGrad)" stroke-width="2.5"/>
-    <path d="M12 20 L38 6 L64 20 L64 56 C64 72 38 82 38 82 C38 82 12 72 12 56 Z" fill="none" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
-    
-    <!-- Stylized BCS Monogram -->
-    <text x="38" y="47" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">BCS</text>
-    
-    <!-- Star of Excellence -->
-    <circle cx="38" cy="65" r="4.5" fill="url(#bcsGoldAccent)"/>
-    <circle cx="26" cy="65" r="2.5" fill="rgba(255, 255, 255, 0.4)"/>
-    <circle cx="50" cy="65" r="2.5" fill="rgba(255, 255, 255, 0.4)"/>
+  <!-- Subtle Circuit Grid Pattern -->
+  <g opacity="0.12" stroke="#10b981" stroke-width="1">
+    <line x1="0" y1="40" x2="400" y2="40"/>
+    <line x1="0" y1="80" x2="400" y2="80"/>
+    <line x1="0" y1="120" x2="400" y2="120"/>
+    <line x1="100" y1="0" x2="100" y2="160"/>
+    <line x1="200" y1="0" x2="200" y2="160"/>
+    <line x1="300" y1="0" x2="300" y2="160"/>
   </g>
+
+  <!-- Ambient Glow Behind Emblem -->
+  <circle cx="72" cy="80" r="50" fill="url(#bcsGlow)"/>
+
+  <!-- BCS Seal Emblem Frame -->
+  <g transform="translate(30, 28)">
+    <rect width="84" height="104" rx="14" fill="#041624" stroke="rgba(16, 185, 129, 0.55)" stroke-width="1.75"/>
+    <path d="M18 26 L42 14 L66 26 L66 62 C66 76 42 86 42 86 C42 86 18 76 18 62 Z" fill="none" stroke="url(#bcsEmblemGrad)" stroke-width="2"/>
+    <text x="42" y="52" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">BCS</text>
+    <circle cx="42" cy="68" r="4" fill="#fbbf24"/>
+    <circle cx="32" cy="68" r="2" fill="rgba(255, 255, 255, 0.4)"/>
+    <circle cx="52" cy="68" r="2" fill="rgba(255, 255, 255, 0.4)"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="132" y="52" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="20" font-weight="900" fill="#ffffff" letter-spacing="0.5">BCS FELLOWSHIP</text>
   
-  <!-- Main Typography -->
-  <text x="132" y="58" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="24" font-weight="800" fill="#ffffff" letter-spacing="0.5">BCS FELLOWSHIP</text>
-  
-  <!-- Fellowship Status Pill -->
-  <rect x="132" y="74" width="168" height="26" rx="13" fill="rgba(0, 168, 135, 0.18)" stroke="#00a887" stroke-width="1.5"/>
-  <text x="216" y="91" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="11.5" font-weight="800" fill="#6ee7b7" text-anchor="middle" letter-spacing="1.2">FELLOW (FBCS)</text>
+  <!-- Status Badge Pill -->
+  <rect x="132" y="68" width="224" height="26" rx="13" fill="rgba(16, 185, 129, 0.18)" stroke="#10b981" stroke-width="1.5"/>
+  <circle cx="146" cy="81" r="3.5" fill="#34d399"/>
+  <text x="248" y="85" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="11" font-weight="800" fill="#a7f3d0" text-anchor="middle" letter-spacing="0.8">FELLOW (FBCS) · HIGHEST GRADE</text>
   
   <!-- Institutional Subtitle -->
-  <text x="132" y="120" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="11" font-weight="500" fill="#93c5fd" letter-spacing="0.2">The Chartered Institute for IT · United Kingdom</text>
+  <text x="132" y="116" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="11.5" font-weight="600" fill="#93c5fd" letter-spacing="0.2">The Chartered Institute for IT · Royal Charter</text>
+  <text x="132" y="134" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="10.5" font-weight="500" fill="#cbd5e1">Ethical AI Stewardship &amp; Computer Science Authority</text>
 </svg>
