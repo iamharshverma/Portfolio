@@ -819,3 +819,355 @@ html.dark-mode .hv-audience-filter-btn.active .badge {
     background: rgba(255, 255, 255, 0.25) !important;
     color: #ffffff !important;
 }
+
+/* ==========================================================================
+   HOW WE CAN WORK TOGETHER: FORMATS (INTERACTIVE INFOGRAPHIC SECTION)
+   ========================================================================== */
+.hv-work-together-formats-wrapper {
+    background: linear-gradient(180deg, #fbfdfc 0%, #f4f8f6 100%);
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    padding: 38px 30px 32px;
+    margin-bottom: 36px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+}
+
+.hv-work-together-kicker {
+    font-size: 11.5px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #e11d48;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+.hv-work-together-title {
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: -0.8px;
+    color: #0f172a;
+    line-height: 1.15;
+    margin-bottom: 12px;
+}
+
+.hv-work-together-subtitle {
+    max-width: 680px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+}
+
+/* Nav Tabs */
+.hv-formats-nav-tabs {
+    gap: 8px;
+}
+
+.hv-format-nav-btn {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 7px 18px;
+    border-radius: 24px;
+    transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+}
+
+.hv-format-nav-btn:hover {
+    border-color: #94a3b8;
+    background: #f8fafc;
+    transform: translateY(-1px);
+}
+
+.hv-format-nav-btn.active {
+    background: #0f172a;
+    color: #ffffff !important;
+    border-color: #0f172a;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.2);
+}
+
+.hv-format-nav-btn.active i {
+    color: #ffffff !important;
+}
+
+/* Format Cards */
+.hv-format-card {
+    background: #ffffff;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 22px;
+    padding: 28px 22px 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.02);
+    position: relative;
+    user-select: none;
+}
+
+.hv-format-card:hover {
+    transform: translateY(-4px);
+    border-color: #94a3b8;
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+}
+
+.hv-format-card.active {
+    border-color: #0f172a;
+    background: #ffffff;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+    transform: translateY(-4px);
+    outline: 2.5px solid #0f172a;
+    outline-offset: 1px;
+}
+
+/* Pills */
+.hv-format-pill {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.pill-speaking {
+    background: #ffe4e6;
+    color: #be123c;
+    border: 1px solid rgba(190, 18, 60, 0.15);
+}
+
+.pill-handson {
+    background: #dcfce7;
+    color: #15803d;
+    border: 1px solid rgba(21, 128, 61, 0.15);
+}
+
+.pill-conversation {
+    background: #0f172a;
+    color: #ffffff;
+    border: 1px solid rgba(15, 23, 42, 0.8);
+}
+
+.pill-private {
+    background: #fce7f3;
+    color: #9d174d;
+    border: 1px solid rgba(157, 23, 77, 0.15);
+}
+
+/* Card typography */
+.hv-format-card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.4px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.hv-format-card-desc {
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: #475569;
+    margin-bottom: 16px;
+}
+
+.hv-format-spec-tag {
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #64748b;
+    padding-top: 10px;
+    border-top: 1px dashed #e2e8f0;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.hv-format-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hv-format-explore-link {
+    font-size: 12px;
+    font-weight: 750;
+    color: #2563eb;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: transform 0.2s ease;
+}
+
+.hv-format-card:hover .hv-format-explore-link i {
+    transform: translateX(3px);
+}
+
+/* Dynamic Inspector Panel */
+.hv-format-inspector-box {
+    background: #ffffff;
+    border: 1.5px solid #0f172a;
+    border-radius: 20px;
+    padding: 26px 28px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.hv-format-inspector-header {
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+}
+
+.hv-inspector-feature-badge {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hv-inspector-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.hv-inspector-list li {
+    font-size: 13px;
+    color: #334155;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: baseline;
+    line-height: 1.45;
+}
+
+.hv-inspector-list li i {
+    margin-right: 8px;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+/* Dark Mode Overrides */
+body.dark-mode .hv-work-together-formats-wrapper,
+html.dark-mode .hv-work-together-formats-wrapper {
+    background: linear-gradient(180deg, #10192e 0%, #0d1527 100%) !important;
+    border-color: #1e293b !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35) !important;
+}
+
+body.dark-mode .hv-work-together-title,
+html.dark-mode .hv-work-together-title {
+    color: #f8fafc !important;
+}
+
+body.dark-mode .hv-work-together-kicker,
+html.dark-mode .hv-work-together-kicker {
+    color: #fb7185 !important;
+}
+
+body.dark-mode .hv-work-together-subtitle,
+html.dark-mode .hv-work-together-subtitle {
+    color: #94a3b8 !important;
+}
+
+body.dark-mode .hv-format-card,
+html.dark-mode .hv-format-card {
+    background: #131d35 !important;
+    border-color: #1e293b !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+body.dark-mode .hv-format-card:hover,
+html.dark-mode .hv-format-card:hover {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-mode .hv-format-card.active,
+html.dark-mode .hv-format-card.active {
+    border-color: #3b82f6 !important;
+    background: #131d35 !important;
+    outline-color: #3b82f6 !important;
+    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.25) !important;
+}
+
+body.dark-mode .hv-format-card-title,
+html.dark-mode .hv-format-card-title {
+    color: #f1f5f9 !important;
+}
+
+body.dark-mode .hv-format-card-desc,
+html.dark-mode .hv-format-card-desc {
+    color: #cbd5e1 !important;
+}
+
+body.dark-mode .hv-format-spec-tag,
+html.dark-mode .hv-format-spec-tag {
+    color: #94a3b8 !important;
+    border-top-color: rgba(51, 65, 85, 0.6) !important;
+}
+
+body.dark-mode .hv-format-inspector-box,
+html.dark-mode .hv-format-inspector-box {
+    background: #111a2e !important;
+    border-color: #3b82f6 !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45) !important;
+}
+
+body.dark-mode .hv-format-inspector-header,
+html.dark-mode .hv-format-inspector-header {
+    border-bottom-color: rgba(51, 65, 85, 0.7) !important;
+}
+
+body.dark-mode .hv-inspector-feature-badge,
+html.dark-mode .hv-inspector-feature-badge {
+    background: #162036 !important;
+    border-color: #334155 !important;
+}
+
+body.dark-mode .hv-inspector-list li,
+html.dark-mode .hv-inspector-list li {
+    color: #cbd5e1 !important;
+}
+
+body.dark-mode .hv-format-nav-btn,
+html.dark-mode .hv-format-nav-btn {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+    color: #cbd5e1 !important;
+}
+
+body.dark-mode .hv-format-nav-btn:hover,
+html.dark-mode .hv-format-nav-btn:hover {
+    background: #25334d !important;
+    color: #93c5fd !important;
+    border-color: #60a5fa !important;
+}
+
+body.dark-mode .hv-format-nav-btn.active,
+html.dark-mode .hv-format-nav-btn.active {
+    background: #2563eb !important;
+    border-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .pill-conversation,
+html.dark-mode .pill-conversation {
+    background: #334155 !important;
+    color: #f8fafc !important;
+    border-color: #475569 !important;
+}

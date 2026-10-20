@@ -1607,6 +1607,138 @@
             </div>
         </div>
 
+        <!-- ============================================================= -->
+        <!-- HOW WE CAN WORK TOGETHER: FORMATS (INTERACTIVE INFOGRAPHIC)  -->
+        <!-- ============================================================= -->
+        <div class="hv-work-together-formats-wrapper mb-5" id="how-we-can-work-together">
+            <div class="text-center mb-4">
+                <span class="hv-work-together-kicker">
+                    HOW WE CAN WORK TOGETHER
+                </span>
+                <h3 class="hv-work-together-title">
+                    Formats
+                </h3>
+                <p class="hv-work-together-subtitle mx-auto">
+                    Four signature ways conference organizers, tech summits, executive boards, and engineering teams work with Harsh Verma for maximum audience resonance and technical depth.
+                </p>
+                <!-- Quick Filter / Inspection Tabs -->
+                <div class="hv-formats-nav-tabs mt-3 d-inline-flex flex-wrap justify-content-center">
+                    <button type="button" class="hv-format-nav-btn active" onclick="selectSpeakerFormat('keynote', this)">
+                        <i class="mdi mdi-microphone-variant mr-1 text-danger"></i> Keynote / Talk
+                    </button>
+                    <button type="button" class="hv-format-nav-btn" onclick="selectSpeakerFormat('workshop', this)">
+                        <i class="mdi mdi-laptop-account mr-1 text-success"></i> Workshop
+                    </button>
+                    <button type="button" class="hv-format-nav-btn" onclick="selectSpeakerFormat('panel', this)">
+                        <i class="mdi mdi-account-voice mr-1 text-dark"></i> Panel / Fireside
+                    </button>
+                    <button type="button" class="hv-format-nav-btn" onclick="selectSpeakerFormat('team', this)">
+                        <i class="mdi mdi-shield-lock-outline mr-1 text-purple"></i> Team Session
+                    </button>
+                </div>
+            </div>
+
+            <!-- 4 Interactive Format Cards Grid -->
+            <div class="row" id="formatsCardsRow">
+                <!-- Card 1: Keynote / Talk -->
+                <div class="col-lg-3 col-md-6 mb-4 d-flex">
+                    <div class="hv-format-card active w-100" id="formatCard-keynote" onclick="selectSpeakerFormat('keynote', null)">
+                        <div class="hv-format-pill pill-speaking">
+                            SPEAKING
+                        </div>
+                        <h4 class="hv-format-card-title">
+                            Keynote /<br />talk
+                        </h4>
+                        <p class="hv-format-card-desc">
+                            A signature session to open, anchor, or close your event.
+                        </p>
+                        <div class="hv-format-spec-tag mt-auto">
+                            <i class="mdi mdi-clock-outline mr-1"></i> 45–60 mins · Main Stage
+                        </div>
+                        <div class="hv-format-card-footer">
+                            <span class="hv-format-explore-link">
+                                Inspect Blueprint <i class="mdi mdi-arrow-right ml-1"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Workshop -->
+                <div class="col-lg-3 col-md-6 mb-4 d-flex">
+                    <div class="hv-format-card w-100" id="formatCard-workshop" onclick="selectSpeakerFormat('workshop', null)">
+                        <div class="hv-format-pill pill-handson">
+                            HANDS-ON
+                        </div>
+                        <h4 class="hv-format-card-title">
+                            Workshop
+                        </h4>
+                        <p class="hv-format-card-desc">
+                            Hands-on and practical. Everyone leaves with something built.
+                        </p>
+                        <div class="hv-format-spec-tag mt-auto">
+                            <i class="mdi mdi-clock-outline mr-1"></i> 90–180 mins · Live Code &amp; Labs
+                        </div>
+                        <div class="hv-format-card-footer">
+                            <span class="hv-format-explore-link">
+                                Inspect Blueprint <i class="mdi mdi-arrow-right ml-1"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Panel / fireside chat -->
+                <div class="col-lg-3 col-md-6 mb-4 d-flex">
+                    <div class="hv-format-card w-100" id="formatCard-panel" onclick="selectSpeakerFormat('panel', null)">
+                        <div class="hv-format-pill pill-conversation">
+                            CONVERSATION
+                        </div>
+                        <h4 class="hv-format-card-title">
+                            Panel /<br />fireside chat
+                        </h4>
+                        <p class="hv-format-card-desc">
+                            A warm, sharp voice for conversations on AI security, careers, the creator economy, and staying human.
+                        </p>
+                        <div class="hv-format-spec-tag mt-auto">
+                            <i class="mdi mdi-clock-outline mr-1"></i> 30–45 mins · Plenary or Salon
+                        </div>
+                        <div class="hv-format-card-footer">
+                            <span class="hv-format-explore-link">
+                                Inspect Blueprint <i class="mdi mdi-arrow-right ml-1"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Team session -->
+                <div class="col-lg-3 col-md-6 mb-4 d-flex">
+                    <div class="hv-format-card w-100" id="formatCard-team" onclick="selectSpeakerFormat('team', null)">
+                        <div class="hv-format-pill pill-private">
+                            PRIVATE
+                        </div>
+                        <h4 class="hv-format-card-title">
+                            Team<br />session
+                        </h4>
+                        <p class="hv-format-card-desc">
+                            Private internal training for teams shipping with AI, using AI, or figuring out how to do both safely.
+                        </p>
+                        <div class="hv-format-spec-tag mt-auto">
+                            <i class="mdi mdi-clock-outline mr-1"></i> Half-Day / Full-Day · Closed-Door
+                        </div>
+                        <div class="hv-format-card-footer">
+                            <span class="hv-format-explore-link">
+                                Inspect Blueprint <i class="mdi mdi-arrow-right ml-1"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Interactive Format Blueprint & Deliverables Inspector -->
+            <div id="formatDetailInspector" class="hv-format-inspector-box mt-3">
+                <!-- Dynamically populated by selectSpeakerFormat() -->
+            </div>
+        </div>
+
         <!-- Event Organizer Engagement Cadence (4 Steps) -->
         <div class="hv-organizer-cadence-wrapper p-3 p-md-4 border">
             <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap">
@@ -1721,6 +1853,193 @@
                 }
             });
         }
+
+        // -------------------------------------------------------------
+        // Interactive Speaker Format Inspector
+        // -------------------------------------------------------------
+        var speakerFormatsData = {
+            keynote: {
+                title: "Keynote / Talk",
+                badge: "SPEAKING",
+                pillClass: "pill-speaking",
+                duration: "45–60 Minutes",
+                setting: "Main Stage • Plenary Hall • Global Virtual Summit",
+                audience: "200 to 5,000+ Attendees (Tech Conferences, All-Hands, Industry Summits)",
+                subtitle: "A signature session to open, anchor, or close your event.",
+                description: "High-conviction, battle-tested keynote translating frontier autonomous agent architectures, model reasoning dynamics, and zero-trust security into actionable strategic reality.",
+                takeaways: [
+                    "Frontier Autonomous Agent Orchestration & Deterministic Controls",
+                    "Zero-Trust Enterprise AI Security & Model Context Protocol (MCP) Sandboxing",
+                    "Unit Economics, Token Burn Optimization & Tech Debt De-risking"
+                ],
+                deliverables: [
+                    "Custom tailored 16:9 keynote slide deck with animated diagrams",
+                    "45-minute discovery & executive alignment pre-briefing call",
+                    "1-page executive takeaway memo for conference attendees",
+                    "Main stage audience Q&A and optional VIP executive meet-and-greet"
+                ],
+                specs: "Wireless lapel / DPA headset mic, 16:9 4K HDMI presentation switcher, confidence monitor.",
+                topicName: "Executive Keynote & Masterclass Inquiry"
+            },
+            workshop: {
+                title: "Hands-on Workshop",
+                badge: "HANDS-ON",
+                pillClass: "pill-handson",
+                duration: "90–180 Minutes (Half-Day Option)",
+                setting: "Technical Track • Interactive Lab • Developer Summit",
+                audience: "20 to 100 Engineers, System Architects & Technical Product Leads",
+                subtitle: "Hands-on and practical. Everyone leaves with something built.",
+                description: "Deeply technical, roll-up-your-sleeves engineering masterclass. Every attendee works with live code harnesses, evaluating multi-agent systems, sandboxing agentic tool calls, or stress-testing prompt defense.",
+                takeaways: [
+                    "Building Continuous Behavioral Evaluation Harnesses for Multi-Agent Systems",
+                    "Automated Prompt Injection, MCP Tool Privilege Escapes & Leakage Defense",
+                    "Deploying Fallback Routing & Token Optimization Across Multi-Cloud LLMs"
+                ],
+                deliverables: [
+                    "Complete GitHub starter repository with reproducible test harnesses",
+                    "Step-by-step interactive lab workbook and architecture cheatsheet",
+                    "Post-workshop engineering Q&A and architecture sparring office hour",
+                    "Full recorded lab walkthrough video and implementation reference guide"
+                ],
+                specs: "Participant laptops with internet access, podium HDMI with dual-screen demo mirroring.",
+                topicName: "Technical Workshop & Architecture Masterclass"
+            },
+            panel: {
+                title: "Panel / Fireside Chat",
+                badge: "CONVERSATION",
+                pillClass: "pill-conversation",
+                duration: "30–45 Minutes",
+                setting: "Conference Main Stage • Salon • Executive Dinner",
+                audience: "Founders, Investors, Executive Leaders & Tech Enthusiasts",
+                subtitle: "A warm, sharp voice for conversations on AI security, careers, and staying human.",
+                description: "Unscripted, high-velocity conversation bringing authentic depth, sharp technical conviction, and engaging warmth to controversial topics in AI, agentic systems, staying human, and modern tech careers.",
+                takeaways: [
+                    "De-mystifying Autonomous AI: Practical Reality vs. VC Narrative",
+                    "Career Resilience, Continuous Reinvention & Staying Human in Tech",
+                    "Dual-Use Technology Governance, Safety & Real-world Moats"
+                ],
+                deliverables: [
+                    "Pre-panel alignment on provocative talking points and moderation sparks",
+                    "High-energy audience engagement and unscripted authentic banter",
+                    "Social media co-promotion across verified professional networks",
+                    "Follow-up quote clearance and press-ready post-event commentary"
+                ],
+                specs: "Comfortable armchair / fireside setup, handheld or lavalier microphones.",
+                topicName: "Panel & Fireside Chat Sparring"
+            },
+            team: {
+                title: "Private Team Session",
+                badge: "PRIVATE",
+                pillClass: "pill-private",
+                duration: "Half-Day or Full-Day Intensive",
+                setting: "Closed-Door Executive Offsite • Boardroom • Engineering Retreat",
+                audience: "Executive Leadership, Architecture Councils, Product & Security Pods (5–30 leaders)",
+                subtitle: "Private internal training for teams shipping with AI, using AI, or figuring out how to do both safely.",
+                description: "Confidential, deep-dive sparring session designed for enterprise leadership teams actively shipping AI capabilities. We audit your architecture, de-risk vendor traps, and align on defensible moats under mutual NDA.",
+                takeaways: [
+                    "Confidential Architectural Health-Check & Proprietary Data Moat Audit",
+                    "Vendor Lock-in Triage, Multi-Model Neutrality & Unit Economic Forecasting",
+                    "Fiduciary AI Governance, NIST AI RMF & EU AI Act Readiness Review"
+                ],
+                deliverables: [
+                    "Executed mutual NDA and strict proprietary discussion protocols",
+                    "Pre-session technical questionnaire and architectural diagnostic",
+                    "Executive action memo with prioritized 30-60-90 recommendations",
+                    "Direct 30-day follow-up sparring check-in with CTO / CISO leads"
+                ],
+                specs: "Private conference room or secure virtual video bridge with whiteboard / digital canvas.",
+                topicName: "Private Executive Team Session & AI Sparring"
+            }
+        };
+
+        window.selectSpeakerFormat = function(formatKey, clickedBtn) {
+            var data = speakerFormatsData[formatKey];
+            if (!data) return;
+
+            // Update cards active state
+            document.querySelectorAll('.hv-format-card').forEach(function(card) {
+                card.classList.remove('active');
+            });
+            var targetCard = document.getElementById('formatCard-' + formatKey);
+            if (targetCard) targetCard.classList.add('active');
+
+            // Update nav buttons active state
+            document.querySelectorAll('.hv-format-nav-btn').forEach(function(btn) {
+                btn.classList.remove('active');
+            });
+            if (clickedBtn) {
+                clickedBtn.classList.add('active');
+            } else {
+                var btns = document.querySelectorAll('.hv-format-nav-btn');
+                btns.forEach(function(btn) {
+                    if (btn.textContent.toLowerCase().includes(formatKey)) {
+                        btn.classList.add('active');
+                    }
+                });
+            }
+
+            // Render detail inspector
+            var inspector = document.getElementById('formatDetailInspector');
+            if (!inspector) return;
+
+            var takeawaysHtml = data.takeaways.map(function(t) {
+                return '<li><i class="mdi mdi-check-circle text-primary"></i><span>' + t + '</span></li>';
+            }).join('');
+
+            var deliverablesHtml = data.deliverables.map(function(d) {
+                return '<li><i class="mdi mdi-checkbox-marked-circle-outline text-success"></i><span>' + d + '</span></li>';
+            }).join('');
+
+            inspector.innerHTML = 
+                '<div class="hv-format-inspector-header">' +
+                    '<div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">' +
+                        '<div class="d-flex align-items-center flex-wrap gap-2">' +
+                            '<span class="hv-format-pill ' + data.pillClass + ' mb-0">' + data.badge + '</span>' +
+                            '<h4 class="font-weight-bold text-dark mb-0 ml-2" style="font-size: 1.35rem;">' + data.title + ' Blueprint</h4>' +
+                        '</div>' +
+                        '<span class="badge badge-pill badge-light border text-muted px-3 py-1 font-weight-bold" style="font-size: 12px;">' +
+                            '<i class="mdi mdi-clock-outline mr-1 text-primary"></i>' + data.duration +
+                        '</span>' +
+                    '</div>' +
+                    '<p class="text-muted small mb-2">' + data.description + '</p>' +
+                    '<div class="d-flex flex-wrap gap-3 small text-secondary">' +
+                        '<span class="mr-3"><i class="mdi mdi-map-marker-radius-outline text-primary mr-1"></i><strong>Setting:</strong> ' + data.setting + '</span>' +
+                        '<span><i class="mdi mdi-account-group-outline text-success mr-1"></i><strong>Audience:</strong> ' + data.audience + '</span>' +
+                    '</div>' +
+                '</div>' +
+                '<div class="row">' +
+                    '<div class="col-lg-5 mb-3 mb-lg-0">' +
+                        '<h6 class="font-weight-bold text-dark mb-2" style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">' +
+                            '<i class="mdi mdi-target text-primary mr-1"></i> Core Takeaways & Value Delivered' +
+                        '</h6>' +
+                        '<ul class="hv-inspector-list">' + takeawaysHtml + '</ul>' +
+                    '</div>' +
+                    '<div class="col-lg-4 mb-3 mb-lg-0">' +
+                        '<h6 class="font-weight-bold text-dark mb-2" style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">' +
+                            '<i class="mdi mdi-package-variant-closed text-success mr-1"></i> Organizer Deliverables Kit' +
+                        '</h6>' +
+                        '<ul class="hv-inspector-list">' + deliverablesHtml + '</ul>' +
+                    '</div>' +
+                    '<div class="col-lg-3 d-flex flex-column justify-content-between">' +
+                        '<div class="hv-inspector-feature-badge mb-3">' +
+                            '<div>' +
+                                '<div class="small font-weight-bold text-dark mb-1"><i class="mdi mdi-tune-vertical mr-1 text-primary"></i>Technical Specs</div>' +
+                                '<div class="text-muted" style="font-size: 11.5px; line-height: 1.4;">' + data.specs + '</div>' +
+                            '</div>' +
+                        '</div>' +
+                        '<button type="button" class="btn btn-primary btn-block font-weight-bold py-2 shadow-sm" style="border-radius: 20px; font-size: 13px;" onclick="if(window.openBookingModal){window.openBookingModal(\'' + data.topicName + '\', \'Speaking Engagement\');}else if(window.openKeynoteBooking){window.openKeynoteBooking();}return false;">' +
+                            '<i class="mdi mdi-calendar-check mr-1"></i> Book This Format' +
+                        '</button>' +
+                    '</div>' +
+                '</div>';
+        };
+
+        // Initialize with default format
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.selectSpeakerFormat) {
+                window.selectSpeakerFormat('keynote', null);
+            }
+        });
     </script>
     
 
@@ -1884,9 +2203,23 @@
         </div>
     </section>
     
+    <!-- ============================================================= -->
+    <!-- PAST TALKS & SPEAKING HISTORY DIRECTORY                       -->
+    <!-- ============================================================= -->
+    <div class="hv-speaker-section-header text-center mb-4 mt-5 pt-2">
+        <span class="badge badge-pill font-weight-bold px-3 py-1 mb-2 hv-audience-lead-badge">
+            <i class="mdi mdi-history mr-1"></i> Speaking History &amp; Stages
+        </span>
+        <h2 class="font-weight-bold hv-audience-section-title mb-2" style="font-size: 32px; letter-spacing: -0.5px;">
+            Past talks, Places harsh has spoken
+        </h2>
+        <p class="text-muted mx-auto hv-audience-section-desc mb-0" style="max-width: 720px;">
+            Searchable and filterable archive of recent keynotes, tech conferences, executive panels, hackathon judging, and university masterclasses delivered worldwide.
+        </p>
+    </div>
 
-            <!-- Search and Filter Section -->
-            <div class="events-controls-box" id="events-directory-section">
+    <!-- Search and Filter Section -->
+    <div class="events-controls-box" id="events-directory-section">
                 <div class="row align-items-center">
                     <div class="col-lg-5 mb-3 mb-lg-0">
                         <div class="position-relative">
