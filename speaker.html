@@ -1331,125 +1331,397 @@
     </div>
     
 
-            <!-- Speaking Engagements: Audience Focus & Advice -->
-            
     <!-- ================================================================= -->
-    <!-- SPEAKING ENGAGEMENTS & TARGET AUDIENCE MASTERY (WHITE CARD)       -->
     <!-- ================================================================= -->
-    <section class="hv-speaker-white-section-card" id="speaking-engagements-audiences">
+    <!-- SPEAKING ENGAGEMENTS & AUDIENCE REACH (UNIFIED INFOGRAPHIC CARD)  -->
+    <!-- ================================================================= -->
+    <section class="hv-speaker-white-section-card mb-4" id="speaking-engagements-audiences">
         <div class="hv-speaker-section-header text-center mb-4">
             <span class="badge badge-pill font-weight-bold px-3 py-1 mb-2 hv-audience-lead-badge">
                 <i class="mdi mdi-account-group mr-1"></i> Keynote &amp; Advisory Audiences
             </span>
             <h2 class="font-weight-bold hv-audience-section-title mb-2">
-                Speaking Engagements
+                Speaking Engagements &amp; Audience Reach
             </h2>
             <p class="hv-audience-lead-quote font-weight-bold mx-auto mb-2">
                 <strong class="font-weight-bold">Harsh Is Passionate About Sharing His Experiences And Advice With Audiences That Are…</strong>
             </p>
             <p class="text-muted mx-auto hv-audience-section-desc mb-0">
-                Actionable, high-conviction keynotes translating frontier autonomous AI research into battle-tested production reality.
+                Actionable, high-conviction keynotes translating frontier autonomous AI research into battle-tested production reality across enterprise boards, engineering summits, and venture accelerators.
             </p>
         </div>
 
-        <div class="row">
-            <!-- Audience 1: Founders -->
-            <div class="col-lg-6 col-xl-3 mb-4 d-flex">
+        <!-- Audience Executive Reach Metric Strip -->
+        <div class="hv-speaker-stat-strip mb-4">
+            <div class="row text-center align-items-center">
+                <div class="col-6 col-md-3 mb-3 mb-md-0 hv-speaker-stat-item border-right-md">
+                    <div class="hv-speaker-stat-number text-primary">5,000+</div>
+                    <div class="hv-speaker-stat-label">Leaders &amp; Engineers Reached</div>
+                </div>
+                <div class="col-6 col-md-3 mb-3 mb-md-0 hv-speaker-stat-item border-right-md">
+                    <div class="hv-speaker-stat-number text-success">85%+</div>
+                    <div class="hv-speaker-stat-label">Senior / C-Suite / Founders</div>
+                </div>
+                <div class="col-6 col-md-3 hv-speaker-stat-item border-right-md">
+                    <div class="hv-speaker-stat-number text-warning">40+</div>
+                    <div class="hv-speaker-stat-label">Keynotes, Summits &amp; Panels</div>
+                </div>
+                <div class="col-6 col-md-3 hv-speaker-stat-item">
+                    <div class="hv-speaker-stat-number text-indigo">98%</div>
+                    <div class="hv-speaker-stat-label">Organizer Recommendation</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Audience Category Filter Tabs -->
+        <div class="hv-audience-filter-tabs">
+            <button type="button" class="hv-audience-filter-btn active" onclick="filterSpeakerAudiences('all', this)">
+                All Audiences <span class="badge">4</span>
+            </button>
+            <button type="button" class="hv-audience-filter-btn" onclick="filterSpeakerAudiences('ceo-board', this)">
+                <i class="mdi mdi-domain mr-1 text-warning"></i> CEOs &amp; Board <span class="badge">35%</span>
+            </button>
+            <button type="button" class="hv-audience-filter-btn" onclick="filterSpeakerAudiences('architects-cisos', this)">
+                <i class="mdi mdi-shield-lock-outline mr-1 text-primary"></i> CISOs &amp; Architects <span class="badge">32%</span>
+            </button>
+            <button type="button" class="hv-audience-filter-btn" onclick="filterSpeakerAudiences('founders-vcs', this)">
+                <i class="mdi mdi-rocket-launch mr-1 text-success"></i> Founders &amp; VCs <span class="badge">23%</span>
+            </button>
+            <button type="button" class="hv-audience-filter-btn" onclick="filterSpeakerAudiences('engineers-scholars', this)">
+                <i class="mdi mdi-school mr-1 text-indigo"></i> Scholars &amp; Engineers <span class="badge">10%</span>
+            </button>
+        </div>
+
+        <!-- Merged Interactive Audience Cards Grid -->
+        <div class="row mb-5" id="speakerAudienceGrid">
+            <!-- Audience 1: CEOs & C-Suite Board -->
+            <div class="col-lg-6 col-xl-3 mb-4 d-flex hv-audience-card-col" data-audience-cat="ceo-board">
                 <div class="hv-audience-card w-100">
                     <div class="hv-audience-card-top">
                         <div class="hv-audience-icon-badge bg-gradient-amber">
-                            <i class="mdi mdi-rocket-launch"></i>
-                        </div>
-                        <span class="hv-audience-tag">Founders &amp; Startups</span>
-                    </div>
-                    <h3 class="hv-audience-type-title">Founders</h3>
-                    <div class="hv-audience-focus-label">
-                        <i class="mdi mdi-lightning-bolt text-amber mr-1"></i> Defensible AI Startups &amp; Moats
-                    </div>
-                    <div class="hv-audience-chips">
-                        <span class="hv-chip">#DataMoats</span>
-                        <span class="hv-chip">#WrapperTraps</span>
-                        <span class="hv-chip">#AI-Sandboxing</span>
-                    </div>
-                    <div class="hv-audience-footer">
-                        <i class="mdi mdi-account-voice mr-1 text-amber"></i> Accelerator Talks &amp; Firesides
-                    </div>
-                </div>
-            </div>
-
-            <!-- Audience 2: CEOs -->
-            <div class="col-lg-6 col-xl-3 mb-4 d-flex">
-                <div class="hv-audience-card w-100">
-                    <div class="hv-audience-card-top">
-                        <div class="hv-audience-icon-badge bg-gradient-blue">
                             <i class="mdi mdi-domain"></i>
                         </div>
-                        <span class="hv-audience-tag">CEOs &amp; C-Suite</span>
+                        <div class="d-flex align-items-center">
+                            <span class="hv-seniority-pill bg-soft-amber text-amber font-weight-bold mr-1">
+                                C-Suite &amp; Board
+                            </span>
+                            <span class="badge badge-light border font-weight-bold" style="font-size: 11px; font-feature-settings: 'tnum';">35%</span>
+                        </div>
                     </div>
-                    <h3 class="hv-audience-type-title">CEOs</h3>
-                    <div class="hv-audience-focus-label">
-                        <i class="mdi mdi-trending-up text-primary mr-1"></i> Strategic AI Transformation &amp; ROI
+                    <h3 class="hv-audience-type-title mb-1">CEOs &amp; Board</h3>
+                    <div class="hv-audience-focus-label mb-2">
+                        <i class="mdi mdi-trending-up text-amber mr-1"></i> Strategic AI Transformation &amp; ROI
                     </div>
-                    <div class="hv-audience-chips">
+
+                    <!-- Progress Meter -->
+                    <div class="hv-meter-wrapper mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1 small">
+                            <span class="text-muted" style="font-size: 10.5px;">Audience Share</span>
+                            <span class="font-weight-bold text-amber" style="font-size: 11px;">35%</span>
+                        </div>
+                        <div class="hv-progress-track">
+                            <div class="hv-progress-fill bg-warning" style="width: 35%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Strategic Takeaways -->
+                    <div class="hv-seniority-takeaways mb-3">
+                        <div class="small font-weight-bold text-muted text-uppercase mb-1" style="font-size: 10px; letter-spacing: 0.5px;">Key Value Delivered:</div>
+                        <ul>
+                            <li>Autonomous AI ROI vs Capital Allocation Strategy</li>
+                            <li>Board-Level AI Risk &amp; Zero-Trust Governance</li>
+                            <li>Eliminating Hallucinations in Core Operations</li>
+                        </ul>
+                    </div>
+
+                    <!-- Topic Chips -->
+                    <div class="hv-audience-chips mb-2 mt-auto">
                         <span class="hv-chip">#ExecutiveAI</span>
                         <span class="hv-chip">#TokenEconomics</span>
                         <span class="hv-chip">#RiskPerimeter</span>
                     </div>
+
                     <div class="hv-audience-footer">
-                        <i class="mdi mdi-account-tie mr-1 text-primary"></i> Executive Briefings &amp; Summits
+                        <i class="mdi mdi-account-tie mr-1 text-amber"></i> Executive Briefings &amp; Global Summits
                     </div>
                 </div>
             </div>
 
-            <!-- Audience 3: CISOs & Architects -->
-            <div class="col-lg-6 col-xl-3 mb-4 d-flex">
+            <!-- Audience 2: CISOs, VPs & System Architects -->
+            <div class="col-lg-6 col-xl-3 mb-4 d-flex hv-audience-card-col" data-audience-cat="architects-cisos">
                 <div class="hv-audience-card w-100">
                     <div class="hv-audience-card-top">
-                        <div class="hv-audience-icon-badge bg-gradient-indigo">
+                        <div class="hv-audience-icon-badge bg-gradient-blue">
                             <i class="mdi mdi-shield-lock-outline"></i>
                         </div>
-                        <span class="hv-audience-tag">Architects &amp; CISOs</span>
+                        <div class="d-flex align-items-center">
+                            <span class="hv-seniority-pill bg-soft-primary text-primary font-weight-bold mr-1">
+                                Architects &amp; CISOs
+                            </span>
+                            <span class="badge badge-light border font-weight-bold" style="font-size: 11px; font-feature-settings: 'tnum';">32%</span>
+                        </div>
                     </div>
-                    <h3 class="hv-audience-type-title">CISOs &amp; Architects</h3>
-                    <div class="hv-audience-focus-label">
-                        <i class="mdi mdi-shield-check text-indigo mr-1"></i> Agentic Cyber Resilience &amp; Zero-Trust
+                    <h3 class="hv-audience-type-title mb-1">CISOs &amp; Architects</h3>
+                    <div class="hv-audience-focus-label mb-2">
+                        <i class="mdi mdi-shield-check text-primary mr-1"></i> Cyber Resilience &amp; Zero-Trust
                     </div>
-                    <div class="hv-audience-chips">
+
+                    <!-- Progress Meter -->
+                    <div class="hv-meter-wrapper mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1 small">
+                            <span class="text-muted" style="font-size: 10.5px;">Audience Share</span>
+                            <span class="font-weight-bold text-primary" style="font-size: 11px;">32%</span>
+                        </div>
+                        <div class="hv-progress-track">
+                            <div class="hv-progress-fill bg-primary" style="width: 32%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Strategic Takeaways -->
+                    <div class="hv-seniority-takeaways mb-3">
+                        <div class="small font-weight-bold text-muted text-uppercase mb-1" style="font-size: 10px; letter-spacing: 0.5px;">Key Value Delivered:</div>
+                        <ul>
+                            <li>Deterministic Agent Orchestration at Scale</li>
+                            <li>Low-Latency Distributed RAG Pipelines</li>
+                            <li>Behavioral Auth &amp; Cloud Perimeter Defense</li>
+                        </ul>
+                    </div>
+
+                    <!-- Topic Chips -->
+                    <div class="hv-audience-chips mb-2 mt-auto">
                         <span class="hv-chip">#BehavioralAuth</span>
                         <span class="hv-chip">#LethalTrifecta</span>
                         <span class="hv-chip">#ZeroTrust</span>
                     </div>
+
                     <div class="hv-audience-footer">
-                        <i class="mdi mdi-shield-half-full mr-1 text-indigo"></i> Security Keynotes &amp; Panels
+                        <i class="mdi mdi-shield-half-full mr-1 text-primary"></i> Security Keynotes &amp; Architect Panels
                     </div>
                 </div>
             </div>
 
-            <!-- Audience 4: Engineers & Builders -->
-            <div class="col-lg-6 col-xl-3 mb-4 d-flex">
+            <!-- Audience 3: Founders & Venture Leaders -->
+            <div class="col-lg-6 col-xl-3 mb-4 d-flex hv-audience-card-col" data-audience-cat="founders-vcs">
                 <div class="hv-audience-card w-100">
                     <div class="hv-audience-card-top">
                         <div class="hv-audience-icon-badge bg-gradient-emerald">
+                            <i class="mdi mdi-rocket-launch"></i>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="hv-seniority-pill bg-soft-success text-success font-weight-bold mr-1">
+                                Founders &amp; VCs
+                            </span>
+                            <span class="badge badge-light border font-weight-bold" style="font-size: 11px; font-feature-settings: 'tnum';">23%</span>
+                        </div>
+                    </div>
+                    <h3 class="hv-audience-type-title mb-1">Founders &amp; Startups</h3>
+                    <div class="hv-audience-focus-label mb-2">
+                        <i class="mdi mdi-lightning-bolt text-emerald mr-1"></i> Defensible AI Startups &amp; Moats
+                    </div>
+
+                    <!-- Progress Meter -->
+                    <div class="hv-meter-wrapper mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1 small">
+                            <span class="text-muted" style="font-size: 10.5px;">Audience Share</span>
+                            <span class="font-weight-bold text-success" style="font-size: 11px;">23%</span>
+                        </div>
+                        <div class="hv-progress-track">
+                            <div class="hv-progress-fill bg-success" style="width: 23%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Strategic Takeaways -->
+                    <div class="hv-seniority-takeaways mb-3">
+                        <div class="small font-weight-bold text-muted text-uppercase mb-1" style="font-size: 10px; letter-spacing: 0.5px;">Key Value Delivered:</div>
+                        <ul>
+                            <li>Defensible Moats vs Model Commoditization</li>
+                            <li>Zero-to-One Product Engineering Velocity</li>
+                            <li>Venture Due Diligence &amp; De-risking Tech</li>
+                        </ul>
+                    </div>
+
+                    <!-- Topic Chips -->
+                    <div class="hv-audience-chips mb-2 mt-auto">
+                        <span class="hv-chip">#DataMoats</span>
+                        <span class="hv-chip">#WrapperTraps</span>
+                        <span class="hv-chip">#AI-Sandboxing</span>
+                    </div>
+
+                    <div class="hv-audience-footer">
+                        <i class="mdi mdi-account-voice mr-1 text-emerald"></i> Accelerator Talks &amp; Firesides
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audience 4: Principal Engineers & Academic Scholars -->
+            <div class="col-lg-6 col-xl-3 mb-4 d-flex hv-audience-card-col" data-audience-cat="engineers-scholars">
+                <div class="hv-audience-card w-100">
+                    <div class="hv-audience-card-top">
+                        <div class="hv-audience-icon-badge bg-gradient-indigo">
                             <i class="mdi mdi-code-braces"></i>
                         </div>
-                        <span class="hv-audience-tag">Engineers &amp; Builders</span>
+                        <div class="d-flex align-items-center">
+                            <span class="hv-seniority-pill text-indigo font-weight-bold mr-1" style="background: rgba(99, 102, 241, 0.12);">
+                                Scholars &amp; Engineers
+                            </span>
+                            <span class="badge badge-light border font-weight-bold" style="font-size: 11px; font-feature-settings: 'tnum';">10%</span>
+                        </div>
                     </div>
-                    <h3 class="hv-audience-type-title">Engineers &amp; Builders</h3>
-                    <div class="hv-audience-focus-label">
-                        <i class="mdi mdi-code-tags text-emerald mr-1"></i> Production Multi-Agent Systems
+                    <h3 class="hv-audience-type-title mb-1">Engineers &amp; Scholars</h3>
+                    <div class="hv-audience-focus-label mb-2">
+                        <i class="mdi mdi-code-tags text-indigo mr-1"></i> Production Multi-Agent Systems
                     </div>
-                    <div class="hv-audience-chips">
+
+                    <!-- Progress Meter -->
+                    <div class="hv-meter-wrapper mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1 small">
+                            <span class="text-muted" style="font-size: 10.5px;">Audience Share</span>
+                            <span class="font-weight-bold text-indigo" style="font-size: 11px;">10%</span>
+                        </div>
+                        <div class="hv-progress-track">
+                            <div class="hv-progress-fill bg-indigo" style="width: 10%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Strategic Takeaways -->
+                    <div class="hv-seniority-takeaways mb-3">
+                        <div class="small font-weight-bold text-muted text-uppercase mb-1" style="font-size: 10px; letter-spacing: 0.5px;">Key Value Delivered:</div>
+                        <ul>
+                            <li>Deterministic Multi-Agent Evaluation Harnesses</li>
+                            <li>Distributed Concurrency &amp; Streaming Pipelines</li>
+                            <li>Bridging Peer-Reviewed Papers to Production</li>
+                        </ul>
+                    </div>
+
+                    <!-- Topic Chips -->
+                    <div class="hv-audience-chips mb-2 mt-auto">
                         <span class="hv-chip">#AgentOrchestration</span>
                         <span class="hv-chip">#EvalsHarness</span>
-                        <span class="hv-chip">#StreamPipelines</span>
+                        <span class="hv-chip">#BCSFellow</span>
                     </div>
+
                     <div class="hv-audience-footer">
-                        <i class="mdi mdi-laptop mr-1 text-emerald"></i> Technical Masterclasses
+                        <i class="mdi mdi-laptop mr-1 text-indigo"></i> Technical Masterclasses &amp; IEEE Keynotes
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Event Organizer Engagement Cadence (4 Steps) -->
+        <div class="hv-organizer-cadence-wrapper p-3 p-md-4 border">
+            <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap">
+                <div>
+                    <span class="badge badge-success font-weight-bold px-2 py-1 small text-uppercase" style="letter-spacing: 0.5px; border-radius: 6px;">
+                        <i class="mdi mdi-timeline-clock mr-1"></i> Keynote Process
+                    </span>
+                    <h4 class="font-weight-bold text-dark mb-0 mt-1" style="font-size: 1.15rem;">
+                        Event Organizer Engagement Cadence (4 Steps)
+                    </h4>
+                </div>
+                <div class="small text-muted mt-1 mt-sm-0">
+                    <i class="mdi mdi-shield-check text-primary mr-1"></i> Turnkey, Reliable &amp; Battle-Tested Delivery
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Step 1 -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 d-flex">
+                    <div class="hv-cadence-step-card w-100">
+                        <div class="hv-cadence-step-num bg-soft-primary text-primary">01</div>
+                        <div class="hv-cadence-phase-badge text-primary">Pre-Event • Wk -8 to -6</div>
+                        <h6 class="hv-cadence-step-title">Discovery &amp; Mandate Alignment</h6>
+                        <p class="hv-cadence-step-desc">
+                            Direct briefing call with event chairs or track leads to align on audience profile, keynote theme, and strategic outcomes.
+                        </p>
+                        <div class="hv-cadence-deliverable">
+                            <i class="mdi mdi-file-check-outline text-primary mr-1"></i> Tailored Abstract &amp; Media Kit
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 d-flex">
+                    <div class="hv-cadence-step-card w-100">
+                        <div class="hv-cadence-step-num bg-soft-amber text-amber">02</div>
+                        <div class="hv-cadence-phase-badge text-amber">Preparation • Wk -5 to -2</div>
+                        <h6 class="hv-cadence-step-title">Bespoke Keynote Architecture</h6>
+                        <p class="hv-cadence-step-desc">
+                            Deck crafting with production architecture diagrams, Palo Alto Networks/Forbes insights, and custom polling prompts.
+                        </p>
+                        <div class="hv-cadence-deliverable">
+                            <i class="mdi mdi-presentation text-warning mr-1"></i> Slide Review &amp; AV Technical Specs
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 d-flex">
+                    <div class="hv-cadence-step-card w-100">
+                        <div class="hv-cadence-step-num bg-soft-success text-success">03</div>
+                        <div class="hv-cadence-phase-badge text-success">Stage Live • Event Day</div>
+                        <h6 class="hv-cadence-step-title">High-Impact Stage Delivery</h6>
+                        <p class="hv-cadence-step-desc">
+                            High-conviction presentation, live audience interactive Q&amp;A, fireside moderation, and VIP executive roundtables.
+                        </p>
+                        <div class="hv-cadence-deliverable">
+                            <i class="mdi mdi-microphone-variant text-success mr-1"></i> Keynote Delivery &amp; VIP Q&amp;A
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="col-lg-3 col-md-6 d-flex">
+                    <div class="hv-cadence-step-card w-100">
+                        <div class="hv-cadence-step-num text-indigo" style="background: rgba(99, 102, 241, 0.12);">04</div>
+                        <div class="hv-cadence-phase-badge text-indigo">Post-Event • Wk +1</div>
+                        <h6 class="hv-cadence-step-title">Impact Archival &amp; Amplification</h6>
+                        <p class="hv-cadence-step-desc">
+                            Distribution of attendee takeaway guides, recap amplification across LinkedIn/Forbes networks, and event debrief.
+                        </p>
+                        <div class="hv-cadence-deliverable">
+                            <i class="mdi mdi-share-variant text-indigo mr-1"></i> Deck Access &amp; Social Amplification
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Organizer Action Strip -->
+            <div class="hv-organizer-cta-strip mt-4 d-flex flex-wrap justify-content-between align-items-center">
+                <div class="mb-2 mb-md-0">
+                    <span class="font-weight-bold text-dark d-block">Planning an Upcoming Summit, Conference, or Executive Panel?</span>
+                    <span class="text-muted small">Reserve dates in advance for keynote presentations, panel moderation, or hackathon judging.</span>
+                </div>
+                <div class="d-flex flex-wrap align-items-center">
+                    <button type="button" class="btn btn-sm btn-primary font-weight-bold px-3 py-2 mr-2 mb-1 mb-sm-0" onclick="if(window.openBookingModal){window.openBookingModal('Keynote Speech & Strategic Advisory', 'Keynote Speech');}else if(window.openKeynoteBooking){window.openKeynoteBooking();}return false;" style="border-radius: 8px;">
+                        <i class="mdi mdi-calendar-check mr-1"></i> Request Keynote Availability
+                    </button>
+                    <a href="files/Harsh_Verma_Board_Biography.pdf" target="_blank" class="btn btn-sm btn-outline-secondary font-weight-bold px-3 py-2" style="border-radius: 8px;">
+                        <i class="mdi mdi-download mr-1"></i> Download Speaker Bio (.PDF)
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <script>
+        function filterSpeakerAudiences(category, btn) {
+            document.querySelectorAll('.hv-audience-filter-btn').forEach(function(b) {
+                b.classList.remove('active');
+            });
+            if (btn) btn.classList.add('active');
+            
+            var cols = document.querySelectorAll('.hv-audience-card-col');
+            cols.forEach(function(col) {
+                if (category === 'all' || col.getAttribute('data-audience-cat') === category) {
+                    col.classList.remove('dimmed');
+                    col.classList.add('highlighted');
+                } else {
+                    col.classList.add('dimmed');
+                    col.classList.remove('highlighted');
+                }
+            });
+        }
+    </script>
     
 
             <!-- Subject Matter Expertise: Keynote & Masterclass Topics -->
