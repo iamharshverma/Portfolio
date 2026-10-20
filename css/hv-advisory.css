@@ -1617,23 +1617,23 @@ html.dark-mode .cat-cyber {
     color: #ffffff !important;
 }
 
+/* 6 Interactive Ecosystem Cards with Full-Width Brand Thumbnails */
 .ecosystem-card {
-    background: #f8fafc;
+    background: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 14px;
-    padding: 20px 18px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     height: 100%;
-    transition: all 0.25s ease;
-    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.02);
+    transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
 }
 
 .ecosystem-card:hover {
-    background: #ffffff;
     border-color: #3b82f6;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.12);
 }
 
 .ecosystem-card-col {
@@ -1641,34 +1641,112 @@ html.dark-mode .cat-cyber {
 }
 
 .ecosystem-card-col.dimmed {
-    opacity: 0.3;
-    transform: scale(0.98);
+    opacity: 0.2;
+    transform: scale(0.97);
+    pointer-events: none;
 }
 
 .ecosystem-card-col.highlighted .ecosystem-card {
     border-color: #2563eb !important;
-    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.18) !important;
-    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.18) !important;
 }
 
-.ecosystem-card-icon {
-    width: 38px;
-    height: 38px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
+/* Full Banner Thumbnail Header */
+.ecosystem-card-thumb-wrap {
+    position: relative;
+    width: 100%;
+    height: 148px;
+    background: #081021;
+    overflow: hidden;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+}
+
+.ecosystem-card-thumb-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.ecosystem-card:hover .ecosystem-card-thumb-img {
+    transform: scale(1.04);
+}
+
+.ecosystem-badge-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(15, 23, 42, 0.82);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     color: #ffffff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.ecosystem-badge-tag.tag-amber {
+    border-color: rgba(253, 181, 21, 0.4);
+    color: #fde68a;
+}
+.ecosystem-badge-tag.tag-emerald {
+    border-color: rgba(34, 197, 94, 0.4);
+    color: #86efac;
+}
+.ecosystem-badge-tag.tag-blue {
+    border-color: rgba(59, 130, 246, 0.4);
+    color: #93c5fd;
+}
+.ecosystem-badge-tag.tag-indigo {
+    border-color: rgba(99, 102, 241, 0.4);
+    color: #c7d2fe;
+}
+.ecosystem-badge-tag.tag-cyan {
+    border-color: rgba(6, 182, 212, 0.4);
+    color: #a5f3fc;
+}
+.ecosystem-badge-tag.tag-orange {
+    border-color: rgba(250, 88, 45, 0.4);
+    color: #fdba74;
+}
+
+.ecosystem-card-body {
+    padding: 16px 18px 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.ecosystem-category-kicker {
+    font-size: 10.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+.ecosystem-verified-pill {
+    font-size: 11px;
+    font-weight: 700;
+    color: #2563eb;
+    display: inline-flex;
+    align-items: center;
 }
 
 .ecosystem-entity-title {
-    font-size: 17px;
+    font-size: 17.5px;
     font-weight: 800;
     color: #0f172a;
     letter-spacing: -0.2px;
-    margin-bottom: 4px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    line-height: 1.3;
 }
 
 .ecosystem-role-label {
@@ -1686,13 +1764,14 @@ html.dark-mode .cat-cyber {
 }
 
 .ecosystem-proof-box {
-    background: rgba(0, 0, 0, 0.02);
+    background: #f8fafc;
     border-radius: 8px;
     padding: 8px 12px;
     font-size: 11.5px;
     color: #334155;
     border: 1px dashed #cbd5e1;
     margin-bottom: 12px;
+    line-height: 1.45;
 }
 
 .ecosystem-chips {
@@ -1700,16 +1779,48 @@ html.dark-mode .cat-cyber {
     flex-wrap: wrap;
     gap: 5px;
     margin-top: auto;
+    margin-bottom: 12px;
 }
 
 .ecosystem-chip {
     font-size: 10.5px;
     font-weight: 600;
-    padding: 2px 7px;
+    padding: 2px 8px;
     border-radius: 6px;
-    background: #ffffff;
+    background: #f1f5f9;
     color: #475569;
     border: 1px solid #e2e8f0;
+}
+
+.ecosystem-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.ecosystem-card-footer .location-tag {
+    font-size: 11.5px;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.ecosystem-card-footer .btn-details {
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 16px;
+    padding: 3px 11px;
+}
+
+/* Callout Action Banner at bottom of Ecosystem Hub */
+.ecosystem-action-banner {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 16px;
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    color: #ffffff;
 }
 
 /* Dark mode overrides for 30-60-90 & Ecosystem Hub */
@@ -1764,15 +1875,21 @@ html.dark-mode .ecosystem-filter-btn.active {
 
 body.dark-mode .ecosystem-card,
 html.dark-mode .ecosystem-card {
-    background: #131d35 !important;
-    border-color: rgba(51, 65, 85, 0.9) !important;
+    background: #111d33 !important;
+    border-color: rgba(51, 65, 85, 0.85) !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3) !important;
 }
 
 body.dark-mode .ecosystem-card:hover,
 html.dark-mode .ecosystem-card:hover {
-    background: #172340 !important;
+    background: #152442 !important;
     border-color: #60a5fa !important;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark-mode .ecosystem-card-thumb-wrap,
+html.dark-mode .ecosystem-card-thumb-wrap {
+    border-bottom-color: rgba(51, 65, 85, 0.8) !important;
 }
 
 body.dark-mode .ecosystem-entity-title,
@@ -1802,4 +1919,14 @@ html.dark-mode .ecosystem-chip {
     background: #1e293b !important;
     color: #cbd5e1 !important;
     border-color: #334155 !important;
+}
+
+body.dark-mode .ecosystem-card-footer,
+html.dark-mode .ecosystem-card-footer {
+    border-top-color: rgba(51, 65, 85, 0.6) !important;
+}
+
+body.dark-mode .ecosystem-card-footer .location-tag,
+html.dark-mode .ecosystem-card-footer .location-tag {
+    color: #94a3b8 !important;
 }

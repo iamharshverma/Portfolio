@@ -948,156 +948,236 @@
                     </button>
                 </div>
 
-                <!-- 6 Interactive Ecosystem Cards -->
+                <!-- 6 Interactive Ecosystem Cards with Full-Width Brand Thumbnails -->
                 <div class="row" id="ecosystemCardsGrid">
                     <!-- Card 1: UC Berkeley SkyDeck -->
-                    <div class="col-lg-4 col-md-6 mb-3 d-flex ecosystem-card-col" data-category="venture">
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex ecosystem-card-col" data-category="venture">
                         <div class="ecosystem-card w-100">
-                            <div class="d-flex align-items-center justify-content-between mb-2">
-                                <div class="ecosystem-card-icon bg-gradient-amber">
-                                    <i class="mdi mdi-school-outline"></i>
+                            <div class="ecosystem-card-thumb-wrap" onclick="openEcosystemModal('skydeck')" title="View UC Berkeley SkyDeck Details">
+                                <img src="images/memberships/skydeck.svg" alt="UC Berkeley SkyDeck Global Advisor &amp; Mentor" class="ecosystem-card-thumb-img" loading="lazy" />
+                                <span class="ecosystem-badge-tag tag-amber"><i class="mdi mdi-rocket-launch mr-1"></i> Accelerator</span>
+                            </div>
+                            <div class="ecosystem-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span class="ecosystem-category-kicker text-warning">Frontier AI Acceleration</span>
+                                    <span class="ecosystem-verified-pill"><i class="mdi mdi-check-decagram text-primary mr-1"></i> Verified</span>
                                 </div>
-                                <span class="badge badge-light border font-weight-bold" style="font-size: 11px;">Accelerator</span>
-                            </div>
-                            <h3 class="ecosystem-entity-title">UC Berkeley SkyDeck</h3>
-                            <div class="ecosystem-role-label">Frontier AI &amp; Deep-Tech Mentor</div>
-                            <p class="ecosystem-desc">
-                                Advising high-growth startup cohorts on deterministic autonomous architectures, reducing inference unit economics, and navigating venture capital milestones.
-                            </p>
-                            <div class="ecosystem-proof-box">
-                                <i class="mdi mdi-check-circle text-success mr-1"></i> Cohort Mentorship &amp; Technical Due Diligence
-                            </div>
-                            <div class="ecosystem-chips">
-                                <span class="ecosystem-chip">#SkyDeck</span>
-                                <span class="ecosystem-chip">#DeepTech</span>
-                                <span class="ecosystem-chip">#SeedToSeriesA</span>
+                                <h3 class="ecosystem-entity-title">UC Berkeley SkyDeck</h3>
+                                <div class="ecosystem-role-label">Frontier AI &amp; Deep-Tech Mentor</div>
+                                <p class="ecosystem-desc">
+                                    Advising high-growth startup cohorts on deterministic autonomous architectures, reducing inference unit economics, and navigating venture capital milestones.
+                                </p>
+                                <div class="ecosystem-proof-box">
+                                    <i class="mdi mdi-check-circle text-success mr-1"></i> <strong>Impact:</strong> Cohort Mentorship &amp; Technical Due Diligence
+                                </div>
+                                <div class="ecosystem-chips">
+                                    <span class="ecosystem-chip">#SkyDeck</span>
+                                    <span class="ecosystem-chip">#DeepTech</span>
+                                    <span class="ecosystem-chip">#SeedToSeriesA</span>
+                                </div>
+                                <div class="ecosystem-card-footer">
+                                    <span class="location-tag"><i class="mdi mdi-map-marker-outline mr-1"></i> Berkeley, CA</span>
+                                    <button type="button" class="btn btn-sm btn-outline-primary btn-details" onclick="openEcosystemModal('skydeck')">
+                                        <i class="mdi mdi-information-outline mr-1"></i> Details
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 2: Techstars Global Network -->
-                    <div class="col-lg-4 col-md-6 mb-3 d-flex ecosystem-card-col" data-category="venture">
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex ecosystem-card-col" data-category="venture">
                         <div class="ecosystem-card w-100">
-                            <div class="d-flex align-items-center justify-content-between mb-2">
-                                <div class="ecosystem-card-icon bg-gradient-emerald">
-                                    <i class="mdi mdi-star-shooting-outline"></i>
+                            <div class="ecosystem-card-thumb-wrap" onclick="openEcosystemModal('techstars')" title="View Techstars Details">
+                                <img src="images/memberships/techstars.svg" alt="Techstars Global Network Technical Mentor &amp; Pitch Judge" class="ecosystem-card-thumb-img" loading="lazy" />
+                                <span class="ecosystem-badge-tag tag-emerald"><i class="mdi mdi-star-shooting mr-1"></i> Accelerator</span>
+                            </div>
+                            <div class="ecosystem-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span class="ecosystem-category-kicker text-success">Global Venture Network</span>
+                                    <span class="ecosystem-verified-pill"><i class="mdi mdi-check-decagram text-primary mr-1"></i> Verified</span>
                                 </div>
-                                <span class="badge badge-light border font-weight-bold" style="font-size: 11px;">Accelerator</span>
-                            </div>
-                            <h3 class="ecosystem-entity-title">Techstars Global Network</h3>
-                            <div class="ecosystem-role-label">Technical Mentor &amp; Pitch Judge</div>
-                            <p class="ecosystem-desc">
-                                Architectural sounding board and technical diligence for early-stage founders building AI, distributed systems, and cybersecurity applications.
-                            </p>
-                            <div class="ecosystem-proof-box">
-                                <i class="mdi mdi-check-circle text-success mr-1"></i> Founder Sparring &amp; Syndicate Due Diligence Prep
-                            </div>
-                            <div class="ecosystem-chips">
-                                <span class="ecosystem-chip">#Techstars</span>
-                                <span class="ecosystem-chip">#VentureDiligence</span>
-                                <span class="ecosystem-chip">#AIStartups</span>
+                                <h3 class="ecosystem-entity-title">Techstars Global Network</h3>
+                                <div class="ecosystem-role-label">Technical Mentor &amp; Pitch Judge</div>
+                                <p class="ecosystem-desc">
+                                    Architectural sounding board and technical diligence for early-stage founders building AI, distributed systems, and cybersecurity applications.
+                                </p>
+                                <div class="ecosystem-proof-box">
+                                    <i class="mdi mdi-check-circle text-success mr-1"></i> <strong>Impact:</strong> Founder Sparring &amp; Syndicate Due Diligence Prep
+                                </div>
+                                <div class="ecosystem-chips">
+                                    <span class="ecosystem-chip">#Techstars</span>
+                                    <span class="ecosystem-chip">#VentureDiligence</span>
+                                    <span class="ecosystem-chip">#AIStartups</span>
+                                </div>
+                                <div class="ecosystem-card-footer">
+                                    <span class="location-tag"><i class="mdi mdi-map-marker-outline mr-1"></i> Global / Boulder, CO</span>
+                                    <button type="button" class="btn btn-sm btn-outline-primary btn-details" onclick="openEcosystemModal('techstars')">
+                                        <i class="mdi mdi-information-outline mr-1"></i> Details
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 3: Forbes Technology Council -->
-                    <div class="col-lg-4 col-md-6 mb-3 d-flex ecosystem-card-col" data-category="fellowship">
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex ecosystem-card-col" data-category="fellowship">
                         <div class="ecosystem-card w-100">
-                            <div class="d-flex align-items-center justify-content-between mb-2">
-                                <div class="ecosystem-card-icon bg-gradient-blue">
-                                    <i class="mdi mdi-newspaper-variant-outline"></i>
+                            <div class="ecosystem-card-thumb-wrap" onclick="openEcosystemModal('forbes')" title="View Forbes Technology Council Details">
+                                <img src="images/memberships/forbes.svg" alt="Forbes Technology Council Official Member" class="ecosystem-card-thumb-img" loading="lazy" />
+                                <span class="ecosystem-badge-tag tag-blue"><i class="mdi mdi-newspaper mr-1"></i> Executive Council</span>
+                            </div>
+                            <div class="ecosystem-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span class="ecosystem-category-kicker text-primary">Executive Governance</span>
+                                    <span class="ecosystem-verified-pill"><i class="mdi mdi-check-decagram text-primary mr-1"></i> Verified</span>
                                 </div>
-                                <span class="badge badge-light border font-weight-bold" style="font-size: 11px;">Council</span>
-                            </div>
-                            <h3 class="ecosystem-entity-title">Forbes Tech Council</h3>
-                            <div class="ecosystem-role-label">Official Member &amp; Contributing Author</div>
-                            <p class="ecosystem-desc">
-                                Invitation-only executive council for world-class technology executives. Contributing research and dispatches on autonomous multi-agent systems and enterprise security.
-                            </p>
-                            <div class="ecosystem-proof-box">
-                                <i class="mdi mdi-check-circle text-primary mr-1"></i> Published Dispatches &amp; Board Guidance
-                            </div>
-                            <div class="ecosystem-chips">
-                                <span class="ecosystem-chip">#ForbesTechCouncil</span>
-                                <span class="ecosystem-chip">#ExecutiveAI</span>
-                                <span class="ecosystem-chip">#Governance</span>
+                                <h3 class="ecosystem-entity-title">Forbes Tech Council</h3>
+                                <div class="ecosystem-role-label">Official Member &amp; Contributing Author</div>
+                                <p class="ecosystem-desc">
+                                    Invitation-only executive council for world-class technology executives. Contributing research and dispatches on autonomous multi-agent systems and enterprise security.
+                                </p>
+                                <div class="ecosystem-proof-box">
+                                    <i class="mdi mdi-check-circle text-primary mr-1"></i> <strong>Impact:</strong> Published Dispatches &amp; Board Guidance
+                                </div>
+                                <div class="ecosystem-chips">
+                                    <span class="ecosystem-chip">#ForbesTechCouncil</span>
+                                    <span class="ecosystem-chip">#ExecutiveAI</span>
+                                    <span class="ecosystem-chip">#Governance</span>
+                                </div>
+                                <div class="ecosystem-card-footer">
+                                    <span class="location-tag"><i class="mdi mdi-map-marker-outline mr-1"></i> New York, NY / Global</span>
+                                    <button type="button" class="btn btn-sm btn-outline-primary btn-details" onclick="openEcosystemModal('forbes')">
+                                        <i class="mdi mdi-information-outline mr-1"></i> Details
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 4: BCS Fellow (FBCS) -->
-                    <div class="col-lg-4 col-md-6 mb-3 d-flex ecosystem-card-col" data-category="fellowship">
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex ecosystem-card-col" data-category="fellowship">
                         <div class="ecosystem-card w-100">
-                            <div class="d-flex align-items-center justify-content-between mb-2">
-                                <div class="ecosystem-card-icon bg-gradient-indigo">
-                                    <i class="mdi mdi-seal-variant"></i>
+                            <div class="ecosystem-card-thumb-wrap" onclick="openEcosystemModal('bcs')" title="View BCS Fellow Details">
+                                <img src="images/memberships/bcs_fellow.svg" alt="BCS Fellow (FBCS) Chartered Institute for IT" class="ecosystem-card-thumb-img" loading="lazy" />
+                                <span class="ecosystem-badge-tag tag-indigo"><i class="mdi mdi-seal-variant mr-1"></i> Royal Fellowship</span>
+                            </div>
+                            <div class="ecosystem-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span class="ecosystem-category-kicker text-indigo">Chartered IT Fellowship</span>
+                                    <span class="ecosystem-verified-pill"><i class="mdi mdi-check-decagram text-primary mr-1"></i> Verified</span>
                                 </div>
-                                <span class="badge badge-light border font-weight-bold" style="font-size: 11px;">Fellowship</span>
-                            </div>
-                            <h3 class="ecosystem-entity-title">BCS Fellow (FBCS)</h3>
-                            <div class="ecosystem-role-label">Fellow of British Computer Society</div>
-                            <p class="ecosystem-desc">
-                                Awarded highest professional membership grade by the Chartered Institute for IT, recognizing senior executive leadership, ethical computing stewardship, and authoritative impact.
-                            </p>
-                            <div class="ecosystem-proof-box">
-                                <i class="mdi mdi-check-circle text-primary mr-1"></i> Senior Distinction in Computer Science
-                            </div>
-                            <div class="ecosystem-chips">
-                                <span class="ecosystem-chip">#BCSFellow</span>
-                                <span class="ecosystem-chip">#EthicalAI</span>
-                                <span class="ecosystem-chip">#CharteredIT</span>
+                                <h3 class="ecosystem-entity-title">BCS Fellow (FBCS)</h3>
+                                <div class="ecosystem-role-label">Fellow of British Computer Society</div>
+                                <p class="ecosystem-desc">
+                                    Awarded highest professional membership grade by the Chartered Institute for IT, recognizing senior executive leadership, ethical computing stewardship, and authoritative impact.
+                                </p>
+                                <div class="ecosystem-proof-box">
+                                    <i class="mdi mdi-check-circle text-primary mr-1"></i> <strong>Impact:</strong> Senior Distinction in Computer Science
+                                </div>
+                                <div class="ecosystem-chips">
+                                    <span class="ecosystem-chip">#BCSFellow</span>
+                                    <span class="ecosystem-chip">#EthicalAI</span>
+                                    <span class="ecosystem-chip">#CharteredIT</span>
+                                </div>
+                                <div class="ecosystem-card-footer">
+                                    <span class="location-tag"><i class="mdi mdi-map-marker-outline mr-1"></i> London &amp; Swindon, UK</span>
+                                    <button type="button" class="btn btn-sm btn-outline-primary btn-details" onclick="openEcosystemModal('bcs')">
+                                        <i class="mdi mdi-information-outline mr-1"></i> Details
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 5: IEEE Senior Member -->
-                    <div class="col-lg-4 col-md-6 mb-3 d-flex ecosystem-card-col" data-category="fellowship">
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex ecosystem-card-col" data-category="fellowship">
                         <div class="ecosystem-card w-100">
-                            <div class="d-flex align-items-center justify-content-between mb-2">
-                                <div class="ecosystem-card-icon bg-gradient-blue">
-                                    <i class="mdi mdi-school"></i>
+                            <div class="ecosystem-card-thumb-wrap" onclick="openEcosystemModal('ieee')" title="View IEEE Senior Member Details">
+                                <img src="images/memberships/ieee_senior.svg" alt="IEEE Senior Member Computer Society" class="ecosystem-card-thumb-img" loading="lazy" />
+                                <span class="ecosystem-badge-tag tag-cyan"><i class="mdi mdi-school mr-1"></i> Top 8% Worldwide</span>
+                            </div>
+                            <div class="ecosystem-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span class="ecosystem-category-kicker text-info">Global Computing Grade</span>
+                                    <span class="ecosystem-verified-pill"><i class="mdi mdi-check-decagram text-primary mr-1"></i> Verified</span>
                                 </div>
-                                <span class="badge badge-light border font-weight-bold" style="font-size: 11px;">Top 8% Global</span>
-                            </div>
-                            <h3 class="ecosystem-entity-title">IEEE Senior Member</h3>
-                            <div class="ecosystem-role-label">Top 8% Worldwide Distinction</div>
-                            <p class="ecosystem-desc">
-                                Conferred to less than 8% of IEEE members worldwide based on significant performance, peer scholarship reviews, and technical innovation in autonomous systems and security.
-                            </p>
-                            <div class="ecosystem-proof-box">
-                                <i class="mdi mdi-check-circle text-primary mr-1"></i> Peer-Reviewed Senior Grade &amp; Scholar
-                            </div>
-                            <div class="ecosystem-chips">
-                                <span class="ecosystem-chip">#IEEESeniorMember</span>
-                                <span class="ecosystem-chip">#PeerReview</span>
-                                <span class="ecosystem-chip">#DistributedSystems</span>
+                                <h3 class="ecosystem-entity-title">IEEE Senior Member</h3>
+                                <div class="ecosystem-role-label">Top 8% Worldwide Distinction</div>
+                                <p class="ecosystem-desc">
+                                    Conferred to less than 8% of IEEE members worldwide based on significant performance, peer scholarship reviews, and technical innovation in autonomous systems and security.
+                                </p>
+                                <div class="ecosystem-proof-box">
+                                    <i class="mdi mdi-check-circle text-primary mr-1"></i> <strong>Impact:</strong> Peer-Reviewed Senior Grade &amp; Scholar
+                                </div>
+                                <div class="ecosystem-chips">
+                                    <span class="ecosystem-chip">#IEEESeniorMember</span>
+                                    <span class="ecosystem-chip">#PeerReview</span>
+                                    <span class="ecosystem-chip">#DistributedSystems</span>
+                                </div>
+                                <div class="ecosystem-card-footer">
+                                    <span class="location-tag"><i class="mdi mdi-map-marker-outline mr-1"></i> Piscataway, NJ / Global</span>
+                                    <button type="button" class="btn btn-sm btn-outline-primary btn-details" onclick="openEcosystemModal('ieee')">
+                                        <i class="mdi mdi-information-outline mr-1"></i> Details
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 6: Palo Alto Networks -->
-                    <div class="col-lg-4 col-md-6 mb-3 d-flex ecosystem-card-col" data-category="enterprise">
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex ecosystem-card-col" data-category="enterprise">
                         <div class="ecosystem-card w-100">
-                            <div class="d-flex align-items-center justify-content-between mb-2">
-                                <div class="ecosystem-card-icon bg-gradient-emerald">
-                                    <i class="mdi mdi-shield-lock-outline"></i>
+                            <div class="ecosystem-card-thumb-wrap" onclick="openEcosystemModal('panw')" title="View Palo Alto Networks Details">
+                                <img src="images/memberships/panw_ai.svg" alt="Palo Alto Networks Principal AI Engineer" class="ecosystem-card-thumb-img" loading="lazy" />
+                                <span class="ecosystem-badge-tag tag-orange"><i class="mdi mdi-shield-lock mr-1"></i> Enterprise AI</span>
+                            </div>
+                            <div class="ecosystem-card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span class="ecosystem-category-kicker text-warning">Enterprise Security AI</span>
+                                    <span class="ecosystem-verified-pill"><i class="mdi mdi-check-decagram text-primary mr-1"></i> Verified</span>
                                 </div>
-                                <span class="badge badge-light border font-weight-bold" style="font-size: 11px;">Enterprise AI</span>
-                            </div>
-                            <h3 class="ecosystem-entity-title">Palo Alto Networks</h3>
-                            <div class="ecosystem-role-label">Principal Software Engineer in AI</div>
-                            <p class="ecosystem-desc">
-                                Architecting mission-critical, enterprise-grade AI security products, zero-trust perimeter defense, and distributed agentic evaluation pipelines protecting global enterprises.
-                            </p>
-                            <div class="ecosystem-proof-box">
-                                <i class="mdi mdi-check-circle text-success mr-1"></i> Autonomous AI Architecture &amp; Production Scale
-                            </div>
-                            <div class="ecosystem-chips">
-                                <span class="ecosystem-chip">#Cybersecurity</span>
-                                <span class="ecosystem-chip">#ZeroTrust</span>
-                                <span class="ecosystem-chip">#AgenticAI</span>
+                                <h3 class="ecosystem-entity-title">Palo Alto Networks</h3>
+                                <div class="ecosystem-role-label">Principal Software Engineer in AI</div>
+                                <p class="ecosystem-desc">
+                                    Architecting mission-critical, enterprise-grade AI security products, zero-trust perimeter defense, and distributed agentic evaluation pipelines protecting global enterprises.
+                                </p>
+                                <div class="ecosystem-proof-box">
+                                    <i class="mdi mdi-check-circle text-success mr-1"></i> <strong>Impact:</strong> Autonomous AI Architecture &amp; Production Scale
+                                </div>
+                                <div class="ecosystem-chips">
+                                    <span class="ecosystem-chip">#Cybersecurity</span>
+                                    <span class="ecosystem-chip">#ZeroTrust</span>
+                                    <span class="ecosystem-chip">#AgenticAI</span>
+                                </div>
+                                <div class="ecosystem-card-footer">
+                                    <span class="location-tag"><i class="mdi mdi-map-marker-outline mr-1"></i> Santa Clara, CA</span>
+                                    <button type="button" class="btn btn-sm btn-outline-primary btn-details" onclick="openEcosystemModal('panw')">
+                                        <i class="mdi mdi-information-outline mr-1"></i> Details
+                                    </button>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Collaborative Ecosystem Action Strip -->
+                <div class="ecosystem-action-banner d-flex flex-column flex-md-row align-items-md-center justify-content-between mt-3">
+                    <div class="mb-2 mb-md-0">
+                        <h5 class="text-white font-weight-bold mb-1" style="font-size: 15px;">
+                            <i class="mdi mdi-handshake-outline text-warning mr-1"></i> Seeking Venture Diligence or Fellowship Collaboration?
+                        </h5>
+                        <p class="text-white-50 small mb-0">
+                            Available for accelerator cohort advisory, venture syndicate technical evaluations, and invited fellowship keynotes.
+                        </p>
+                    </div>
+                    <div class="d-flex align-items-center flex-wrap gap-2">
+                        <button type="button" class="btn btn-warning font-weight-bold text-dark btn-sm px-3 py-2 mr-2" style="border-radius: 20px;" onclick="openAdvisoryModal('Startup Advisory Board')">
+                            <i class="mdi mdi-rocket-launch mr-1"></i> Inquire for Cohort / Board
+                        </button>
+                        <button type="button" class="btn btn-outline-light btn-sm px-3 py-2 font-weight-bold" style="border-radius: 20px;" onclick="openBoardBioModal()">
+                            <i class="mdi mdi-file-document-outline mr-1"></i> Board Bio
+                        </button>
                     </div>
                 </div>
             </section>
@@ -1498,6 +1578,64 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary px-3" onclick="closeBoardBioModal()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- INTERACTIVE VENTURE ECOSYSTEM ENTITY DETAIL MODAL                  -->
+    <!-- ================================================================= -->
+    <div class="modal fade hv-advisory-modal" id="ecosystemDetailModal" tabindex="-1" role="dialog" aria-labelledby="ecoModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <span class="badge badge-pill badge-warning text-dark font-weight-bold px-3 py-1 mb-1">
+                            <i class="mdi mdi-shield-check-outline mr-1"></i> Verified Institutional Distinction &amp; Advisory
+                        </span>
+                        <h5 class="modal-title" id="ecoModalTitle">Entity Verification</h5>
+                    </div>
+                    <button type="button" class="close text-white" onclick="closeEcosystemModal()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Banner Container -->
+                    <div class="p-0 rounded overflow-hidden border mb-3" style="background: #081021; max-height: 180px;">
+                        <img id="ecoModalBanner" src="images/memberships/skydeck.svg" alt="Banner" class="w-100 h-100" style="object-fit: contain; max-height: 180px; display: block;" />
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between mb-2 flex-wrap">
+                        <span class="badge badge-pill badge-primary px-3 py-1 font-weight-bold" id="ecoModalStatus" style="font-size: 11px;">Active Mentor</span>
+                        <span class="text-muted small" id="ecoModalMetrics">120+ Startups Evaluated</span>
+                    </div>
+
+                    <h5 class="font-weight-bold text-primary mb-1" id="ecoModalRole">Frontier AI Mentor</h5>
+                    <p class="text-muted small mb-3" id="ecoModalDesc" style="line-height: 1.6;">
+                        Advising high-growth startup cohorts on deterministic autonomous architectures, reducing inference unit economics, and navigating venture capital milestones.
+                    </p>
+
+                    <div class="p-3 bg-light rounded border mb-3">
+                        <strong class="text-dark small d-block mb-2 font-weight-bold">
+                            <i class="mdi mdi-checkbox-marked-circle-outline text-success mr-1"></i> Core Advisory &amp; Governance Focus:
+                        </strong>
+                        <ul class="small text-muted pl-0 mb-0" id="ecoModalFocusList" style="list-style: none;">
+                            <li class="mb-1"><i class="mdi mdi-check-circle text-primary mr-2"></i>Technical Due Diligence &amp; Moat Auditing</li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between p-2 rounded border bg-light flex-wrap gap-2">
+                        <div class="small text-muted">
+                            <i class="mdi mdi-shield-account text-primary mr-1"></i> <strong>Mandate Fit:</strong> Startup Advisory Boards, Technical Diligence, Fellowship Committees
+                        </div>
+                        <button type="button" class="btn btn-sm btn-primary font-weight-bold px-3 py-1" id="ecoModalActionBtn" style="border-radius: 20px;">
+                            <i class="mdi mdi-calendar-check mr-1"></i> Inquire for Mandate
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary px-3" onclick="closeEcosystemModal()">Close</button>
                 </div>
             </div>
         </div>

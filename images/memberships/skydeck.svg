@@ -1,10 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160">
-  <rect width="100%" height="100%" rx="16" fill="#002046"/>
-  <g transform="translate(45, 38)">
-    <polygon points="15,65 45,15 75,65" fill="#fdb515"/>
-    <polygon points="45,28 65,65 25,65" fill="#003262"/>
+  <defs>
+    <linearGradient id="skydeckBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#001833"/>
+      <stop offset="50%" stop-color="#00244c"/>
+      <stop offset="100%" stop-color="#003262"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdb515"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Frame -->
+  <rect width="100%" height="100%" rx="16" fill="url(#skydeckBg)" stroke="rgba(253, 181, 21, 0.4)" stroke-width="1.5"/>
+  
+  <!-- Cal SkyDeck Apex Emblem -->
+  <g transform="translate(36, 32)">
+    <rect width="84" height="96" rx="14" fill="#001a38" stroke="rgba(253, 181, 21, 0.45)" stroke-width="1.5"/>
+    <polygon points="22,74 42,22 62,74" fill="url(#goldGrad)"/>
+    <polygon points="42,36 56,74 28,74" fill="#00244c"/>
   </g>
-  <text x="145" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="900" fill="#ffffff" letter-spacing="1">BERKELEY SKYDECK</text>
-  <text x="145" y="84" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#fdb515" letter-spacing="1.5">GLOBAL ADVISOR &amp; MENTOR</text>
-  <text x="145" y="108" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#cbd5e1">UC Berkeley Startup Accelerator</text>
+
+  <!-- Typography -->
+  <text x="136" y="56" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="20" font-weight="900" fill="#ffffff" letter-spacing="0.5">BERKELEY SKYDECK</text>
+  
+  <!-- Status Pill -->
+  <rect x="136" y="72" width="220" height="26" rx="13" fill="rgba(253, 181, 21, 0.16)" stroke="#fdb515" stroke-width="1.5"/>
+  <text x="246" y="89" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="11" font-weight="800" fill="#fde68a" text-anchor="middle" letter-spacing="1">GLOBAL ADVISOR &amp; MENTOR</text>
+  
+  <!-- Institutional Subtitle -->
+  <text x="136" y="118" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="11.5" font-weight="500" fill="#93c5fd" letter-spacing="0.3">UC Berkeley Premier Startup Accelerator</text>
 </svg>

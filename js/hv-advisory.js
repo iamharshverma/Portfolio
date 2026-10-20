@@ -262,13 +262,184 @@
         cols.forEach(function (col) {
             var cat = col.getAttribute('data-category');
             if (category === 'all' || cat.indexOf(category) !== -1) {
+                col.style.display = 'flex';
                 col.classList.remove('dimmed');
                 col.classList.add('highlighted');
             } else {
+                col.style.display = 'none';
                 col.classList.add('dimmed');
                 col.classList.remove('highlighted');
             }
         });
+    };
+
+    // 4c. Interactive Ecosystem Entity Detail Modal
+    var ecosystemDetails = {
+        skydeck: {
+            title: "UC Berkeley SkyDeck",
+            banner: "images/memberships/skydeck.svg",
+            role: "Frontier AI & Deep-Tech Mentor",
+            institution: "University of California, Berkeley",
+            category: "Venture Accelerator",
+            location: "Berkeley, CA",
+            status: "Active Global Advisor & Cohort Mentor",
+            description: "Advising high-growth startup cohorts across accelerator batches on deterministic autonomous architectures, reducing inference unit economics, proprietary data defensibility, and navigating institutional venture capital milestones.",
+            focusAreas: [
+                "Cohort Technical Due Diligence & Product Defensibility Triage",
+                "Escaping basic Foundation Model Wrappers & Establishing Data Moats",
+                "Optimizing Inference Unit Economics & GPU Token Cost Trajectories",
+                "Founder Preparation for Institutional Seed & Series A Syndicates"
+            ],
+            metrics: "120+ Startups Evaluated · $50M+ Valuation Pipeline Advised",
+            mandateType: "Startup Advisory Board"
+        },
+        techstars: {
+            title: "Techstars Global Network",
+            banner: "images/memberships/techstars.svg",
+            role: "Technical Mentor & Pitch Diligence Judge",
+            institution: "Techstars Worldwide Network",
+            category: "Venture Accelerator",
+            location: "Global / Boulder, CO",
+            status: "Active Network Mentor & Pitch Day Judge",
+            description: "Serving as an architectural sounding board, pitch competition evaluator, and technical diligence advisor for early-stage founders building AI, distributed systems, and cybersecurity applications.",
+            focusAreas: [
+                "Pitch Day Technical Diligence & Founder Architectural Sparring",
+                "Enterprise Security & Zero-Trust Posture for Early-Stage Startups",
+                "Evaluating High-Velocity Autonomous Agents & Multi-Tool Safety",
+                "Navigating Venture Capital Due Diligence & Technical Questionnaires"
+            ],
+            metrics: "10+ Global Programs · 35+ Advisory Engagements",
+            mandateType: "Startup Advisory Board"
+        },
+        forbes: {
+            title: "Forbes Technology Council",
+            banner: "images/memberships/forbes.svg",
+            role: "Official Member & Contributing Author",
+            institution: "Forbes Media LLC",
+            category: "Executive Governance Council",
+            location: "New York, NY / Global",
+            status: "Invitation-Only Executive Council Member",
+            description: "Invitation-only council for world-class technology executives and CIOs/CTOs. Contributing research and dispatches on autonomous multi-agent systems, zero-trust token security, and boardroom technology governance.",
+            focusAreas: [
+                "Published Author on Agentic AI, Autonomous Security & Board Governance",
+                "Executive Consensus on Replacing Static API Credentials in the Agent Era",
+                "Fiduciary AI Governance Guidelines for Board Audit & Risk Committees",
+                "Cross-Industry Technology Executive Roundtables & Briefings"
+            ],
+            metrics: "Published Council Dispatches · 40+ Board & Council Dispatches",
+            mandateType: "Technology Advisory Council"
+        },
+        bcs: {
+            title: "British Computer Society (BCS)",
+            banner: "images/memberships/bcs_fellow.svg",
+            role: "Fellow of the British Computer Society (FBCS)",
+            institution: "The Chartered Institute for IT (Royal Charter)",
+            category: "Chartered Royal Fellowship",
+            location: "London & Swindon, UK",
+            status: "Fellow (FBCS) · Highest Professional Grade",
+            description: "Conferred the highest professional grade of membership by the Chartered Institute for IT, recognizing senior executive leadership, ethical computing stewardship, and authoritative contributions to computer science.",
+            focusAreas: [
+                "Highest Chartered IT Grade Conferred to Distinguished Leaders",
+                "Stewardship of Ethical AI, Algorithmic Transparency & Professional Codes",
+                "Safety-Critical Systems Governance & Enterprise Architecture Integrity",
+                "Global Computer Science Leadership & Mentorship of Senior Engineers"
+            ],
+            metrics: "Senior Grade · Royal Charter Chartered Institute for IT",
+            mandateType: "Independent Director / AI Governance"
+        },
+        ieee: {
+            title: "IEEE Computer Society",
+            banner: "images/memberships/ieee_senior.svg",
+            role: "IEEE Senior Member (Top 8% Worldwide)",
+            institution: "Institute of Electrical and Electronics Engineers",
+            category: "Peer-Reviewed Distinction",
+            location: "Piscataway, NJ / Global",
+            status: "Senior Member Grade · Top 8% Worldwide",
+            description: "Conferred to fewer than 8% of IEEE members worldwide based on significant performance, extensive peer reviews, and technical innovation in autonomous systems, distributed computing, and cybersecurity.",
+            focusAreas: [
+                "Peer-Reviewed Senior Distinction Across Global Engineering Fellows",
+                "Active Contributions to Distributed Computing & Real-Time Telemetry",
+                "Evaluation of Non-Deterministic Multi-Agent Architectures",
+                "Scholarly Review & Industry Standards Steering"
+            ],
+            metrics: "Top 8% Worldwide Distinction · Peer-Reviewed Senior Grade",
+            mandateType: "Independent Director / AI Governance"
+        },
+        panw: {
+            title: "Palo Alto Networks",
+            banner: "images/memberships/panw_ai.svg",
+            role: "Principal Software Engineer in AI",
+            institution: "Palo Alto Networks (NASDAQ: PANW)",
+            category: "Enterprise AI & Cybersecurity",
+            location: "Santa Clara, CA",
+            status: "Principal AI Security Architect",
+            description: "Architecting mission-critical, enterprise-grade AI security products, zero-trust perimeter defense, and distributed agentic evaluation pipelines safeguarding global Fortune 500 enterprises against emerging adversarial threats.",
+            focusAreas: [
+                "Enterprise AI Security & Autonomous Multi-Agent Threat Defenses",
+                "Zero-Trust Behavioral Authorization & Ephemeral Tool Sandboxes",
+                "Defending Against Prompt Injection, Data Poisoning & Tool Exploitation",
+                "Production-Grade Distributed Systems Operating at Massive Global Scale"
+            ],
+            metrics: "Mission-Critical Production Scale · Enterprise Zero-Trust",
+            mandateType: "Enterprise Advisory & Security Steering"
+        }
+    };
+
+    window.openEcosystemModal = function (entityKey) {
+        var data = ecosystemDetails[entityKey];
+        if (!data) return;
+
+        var modalEl = document.getElementById('ecosystemDetailModal');
+        if (!modalEl) return;
+
+        var bannerImg = document.getElementById('ecoModalBanner');
+        var titleEl = document.getElementById('ecoModalTitle');
+        var roleEl = document.getElementById('ecoModalRole');
+        var statusEl = document.getElementById('ecoModalStatus');
+        var descEl = document.getElementById('ecoModalDesc');
+        var focusListEl = document.getElementById('ecoModalFocusList');
+        var metricsEl = document.getElementById('ecoModalMetrics');
+        var actionBtn = document.getElementById('ecoModalActionBtn');
+
+        if (bannerImg) bannerImg.src = data.banner;
+        if (titleEl) titleEl.textContent = data.title;
+        if (roleEl) roleEl.textContent = data.role + ' · ' + data.location;
+        if (statusEl) statusEl.textContent = data.status;
+        if (descEl) descEl.textContent = data.description;
+        if (metricsEl) metricsEl.textContent = data.metrics;
+
+        if (focusListEl && data.focusAreas) {
+            focusListEl.innerHTML = data.focusAreas.map(function (item) {
+                return '<li class="mb-1"><i class="mdi mdi-check-circle text-primary mr-2"></i>' + item + '</li>';
+            }).join('');
+        }
+
+        if (actionBtn) {
+            actionBtn.onclick = function () {
+                window.closeEcosystemModal();
+                window.openAdvisoryModal(data.mandateType);
+            };
+        }
+
+        if (window.$ && typeof $(modalEl).modal === 'function') {
+            $(modalEl).modal('show');
+        } else {
+            modalEl.classList.add('show');
+            modalEl.style.display = 'block';
+            document.body.classList.add('modal-open');
+        }
+    };
+
+    window.closeEcosystemModal = function () {
+        var modalEl = document.getElementById('ecosystemDetailModal');
+        if (!modalEl) return;
+        if (window.$ && typeof $(modalEl).modal === 'function') {
+            $(modalEl).modal('hide');
+        } else {
+            modalEl.classList.remove('show');
+            modalEl.style.display = 'none';
+            document.body.classList.remove('modal-open');
+        }
     };
 
     // 5. Open Advisory Modal with pre-selected mandate
