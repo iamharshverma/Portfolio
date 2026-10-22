@@ -75,7 +75,8 @@ awards_data = [
         "links": [
             {"label": "NVTC Website Announcement", "url": "https://www.nvtc.org/press-releases/nvtc-announces-2026-cyber50-honorees/", "icon": "mdi-newspaper-variant"},
             {"label": "Awards Event Invitation", "url": "https://nvtc.glueup.com/event/nvtc-cyber-summit-cyber50-awards-186181/", "icon": "mdi-ticket"},
-            {"label": "LinkedIn Announcement", "url": "https://lnkd.in/p/ggY4pcdT", "icon": "mdi-linkedin"}
+            {"label": "LinkedIn Announcement", "url": "https://lnkd.in/p/ggY4pcdT", "icon": "mdi-linkedin"},
+            {"label": "NVTC LinkedIn Feature", "url": "https://lnkd.in/p/g7nnfknT", "icon": "mdi-linkedin"}
         ],
         "citation": "Verma, H. (2026). 2026 NVTC Cyber50 Honoree: Celebrating Groundbreaking Accomplishments and Impact across the Cybersecurity Community. Northern Virginia Technology Council (NVTC)."
     },

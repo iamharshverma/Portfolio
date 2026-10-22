@@ -1470,7 +1470,7 @@ def generate_html():
                                         </div>
                                         <div class="col-4 col-md-3 mb-2">
                                             <h4 class="font-weight-bold text-white mb-0">6</h4>
-                                            <small class="text-white-50 font-weight-bold">Patents (1 Granted, 1 Published, 4 Pending)</small>
+                                            <small class="text-white-50 font-weight-bold">Patents (2 Granted, 4 Pending)</small>
                                         </div>
                                         <div class="col-12 col-md-3 mb-2 mt-2 mt-md-0 d-flex align-items-center justify-content-center">
                                             <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="btn btn-primary btn-sm rounded font-weight-bold px-3 w-100" style="background: linear-gradient(135deg, #2563eb 0%, #0284c7 100%); border: none;">

@@ -1,0 +1,53 @@
+<svg width="600" height="340" viewBox="0 0 600 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradSF" x1="0" y1="0" x2="600" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#090e1a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="accentCyanPurple" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="einRedGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#dc2626" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="600" height="340" rx="16" fill="url(#bgGradSF)" />
+  <rect x="1.5" y="1.5" width="597" height="337" rx="14.5" stroke="rgba(56,189,248,0.35)" stroke-width="3"/>
+  <circle cx="510" cy="80" r="140" fill="#38bdf8" opacity="0.12" />
+  <circle cx="90" cy="270" r="120" fill="#818cf8" opacity="0.14" />
+
+  <!-- Top Category Pill -->
+  <rect x="135" y="28" width="330" height="28" rx="14" fill="rgba(56,189,248,0.18)" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="300" y="46" fill="#bae6fd" font-family="'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1.2">EIN PRESSWIRE • SF TECH WEEK 2026</text>
+
+  <!-- EIN Emblem & Outlet Header -->
+  <g transform="translate(60, 72)">
+    <rect width="52" height="52" rx="12" fill="url(#einRedGrad)" />
+    <text x="26" y="34" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="20" font-weight="900" text-anchor="middle" letter-spacing="-0.5">EIN</text>
+  </g>
+
+  <text x="126" y="96" fill="#ffffff" font-family="'Segoe UI', -apple-system, sans-serif" font-size="24" font-weight="900" letter-spacing="-0.3">EIN Presswire</text>
+  <text x="290" y="96" fill="#38bdf8" font-family="'Segoe UI', -apple-system, sans-serif" font-size="17" font-weight="700">Tech Wire</text>
+  <text x="126" y="118" fill="#94a3b8" font-family="'Segoe UI', -apple-system, sans-serif" font-size="13" font-weight="600">AI Insiders • SF Tech Week Nights • Vertical AI</text>
+
+  <!-- Divider -->
+  <rect x="40" y="142" width="520" height="1.5" fill="rgba(255,255,255,0.14)" />
+
+  <!-- Headline & Subject -->
+  <text text-anchor="middle" x="300" y="178" fill="#ffffff" font-family="'Segoe UI', -apple-system, sans-serif" font-size="18" font-weight="800">AI Agent Security &amp; Virtual Cell AI</text>
+  <text text-anchor="middle" x="300" y="206" fill="url(#accentCyanPurple)" font-family="'Segoe UI', -apple-system, sans-serif" font-size="15.5" font-weight="700">Lead AI Insiders' SF Tech Week Nights</text>
+  <text text-anchor="middle" x="300" y="232" fill="#cbd5e1" font-family="'Segoe UI', -apple-system, sans-serif" font-size="13.5" font-weight="600">Featured in AI Insiders Speakers &amp; Alumni Network • Harsh Verma</text>
+
+  <!-- Domain Tags -->
+  <text text-anchor="middle" x="300" y="268" fill="#94a3b8" font-family="'Segoe UI', -apple-system, sans-serif" font-size="12">San Francisco Tech Week • Autonomous Agents • Cybersecurity • AI Defense</text>
+
+  <!-- Bottom CTA Pill -->
+  <rect x="175" y="292" width="250" height="28" rx="6" fill="rgba(56,189,248,0.18)" stroke="#38bdf8" stroke-width="1"/>
+  <text x="300" y="310" fill="#e0f2fe" font-family="'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.5">PRESS RELEASE &amp; ALUMNI PROFILE</text>
+</svg>

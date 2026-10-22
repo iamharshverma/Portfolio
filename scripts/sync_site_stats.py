@@ -410,33 +410,48 @@ def sync_html_and_generators(stats):
             )
 
             # --- MEDIA & PRESS METRICS ---
-            # 22. Update "41+ Global Press Features" / "41+ Features"
+            # 22. Update "42+ Global Press Features" / "42+ Features" / "42+ Tier-1 Media Features"
             content = re.sub(
-                r'(<h3[^>]*>)\s*(?:37|38|39|40|41)\+?\s*(</h3>\s*<span[^>]*>\s*Global Press Features\s*</span>)',
+                r'(<h3[^>]*>)\s*(?:37|38|39|40|41|42)\+?\s*(</h3>\s*<span[^>]*>\s*Global Press Features\s*</span>)',
                 rf'\g<1>{m_disp}\g<2>',
                 content
             )
             content = re.sub(
-                r'<span><strong>(?:37|38|39|40|41)\+?</strong>\s*Global Press Features</span>',
+                r'<span><strong>(?:37|38|39|40|41|42)\+?</strong>\s*Global Press Features</span>',
                 f'<span><strong>{m_disp}</strong> Global Press Features</span>',
                 content
             )
             content = re.sub(
-                r'\b(?:37|38|39|40|41)\+?\s+Features\s*•\s*7\s*Premier Platforms',
+                r'\b(?:37|38|39|40|41|42)\+?\s+Features\s*•\s*7\s*Premier Platforms',
                 f'{m_disp} Features • 7 Premier Platforms',
                 content
             )
             content = re.sub(
-                r'across\s+\*\*(?:37|38|39|40|41)\+?\s+media features\*\*',
+                r'across\s+\*\*(?:37|38|39|40|41|42)\+?\s+media features\*\*',
                 f'across **{m_disp} media features**',
+                content
+            )
+            content = re.sub(
+                r'\b(?:37|38|39|40|41|42)\+?\s+Tier-1 Media Features\b',
+                f'{m_disp} Tier-1 Media Features',
+                content
+            )
+            content = re.sub(
+                r'archive of <strong>(?:37|38|39|40|41|42)\+?</strong>',
+                f'archive of <strong>{m_disp}</strong>',
+                content
+            )
+            content = re.sub(
+                r'Explore (?:37|38|39|40|41|42)\+? media features',
+                f'Explore {m_disp} media features',
                 content
             )
 
             # --- PATENTS METRICS ---
-            # 22. Update "Patents (1 Granted, 4 In Process)" in publications page
+            # 22. Update Patents in publications page
             content = re.sub(
-                r'Patents \(1 Granted,\s*4 In Process\)',
-                'Patents (1 Granted, 1 Published, 4 Pending)',
+                r'Patents \((?:1 Granted,\s*4 In Process|1 Granted,\s*1 Published,\s*4 Pending)\)',
+                'Patents (2 Granted, 4 Pending)',
                 content
             )
 

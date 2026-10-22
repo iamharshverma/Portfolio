@@ -1476,5 +1476,48 @@
       }
     ],
     "quote": "Traditional authentication models designed for human users cannot govern autonomous AI agents; continuous behavioral defense must replace static identity perimeters."
+  },
+  {
+    "id": "media-ein-ai-agent-security-sf-tech-week",
+    "title": "AI Agent Security and Virtual Cell AI Lead AI Insiders' SF Tech Week Nights",
+    "outlet": "EIN Presswire Wire",
+    "type": "press",
+    "type_label": "Global Press Wire",
+    "year": "2026",
+    "date_display": "October 2026",
+    "badge_theme": "indigo",
+    "icon_svg": "ein_sf_tech_week_badge.svg",
+    "highlight": "SF Tech Week & AI Insiders Feature",
+    "summary": "EIN Presswire coverage of AI Insiders' headline events during SF Tech Week, spotlighting AI Agent Security, the defense of autonomous agent ecosystems, and Harsh Verma's leadership featured in the AI Insiders Speakers & Alumni roster alongside vertical AI innovators.",
+    "topics": [
+      "EIN Presswire",
+      "SF Tech Week",
+      "AI Insiders",
+      "Agentic Security",
+      "AI Agent Defense",
+      "Autonomous Agents",
+      "Speakers & Alumni",
+      "Enterprise AI"
+    ],
+    "stats": "SF Tech Week Press Coverage",
+    "primary_url": "https://www.einnews.com/pr_news/950989244/ai-agent-security-and-virtual-cell-ai-lead-ai-insiders-sf-tech-week-nights",
+    "links": [
+      {
+        "label": "Read on EIN Presswire",
+        "url": "https://www.einnews.com/pr_news/950989244/ai-agent-security-and-virtual-cell-ai-lead-ai-insiders-sf-tech-week-nights",
+        "icon": "mdi-newspaper"
+      },
+      {
+        "label": "SF Tech Week: AI & Cybersecurity",
+        "url": "https://www.tech-week.com/calendar/sf/events/ai-insiders-ai-cybersecurity-41761a61-c363-4888-82d4-bb0b364bc1be",
+        "icon": "mdi-calendar-check"
+      },
+      {
+        "label": "AI Insiders: Speakers & Alumni",
+        "url": "https://aiinsiders.us/",
+        "icon": "mdi-account-group"
+      }
+    ],
+    "quote": "Securing autonomous AI agent workflows requires end-to-end continuous validation across dynamic multi-agent topologies and toolchains."
   }
 ]
