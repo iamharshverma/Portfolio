@@ -33,6 +33,19 @@ PROFILE_LINKS = [
         "description": "Forbes contributor profile and published thought leadership on Agentic AI, AI Security, and Enterprise Architecture."
     },
     {
+        "id": "theorg",
+        "category": "councils",
+        "categoryLabel": "Executive & Tech Councils",
+        "name": "The Org: Palo Alto Networks",
+        "identifier": "Principal Software Engineer, AI",
+        "url": "https://theorg.com/org/palo-alto-networks/person/harsh-verma",
+        "icon": "mdi-domain",
+        "thumb": "images/profiles/theorg.svg",
+        "badgeColor": "#0284c7",
+        "tag": "Executive Leadership",
+        "description": "Verified organizational profile on The Org documenting executive engineering leadership and AI systems architecture role at Palo Alto Networks."
+    },
+    {
         "id": "forttuna-powerlist",
         "category": "councils",
         "categoryLabel": "Executive & Tech Councils",
@@ -129,6 +142,19 @@ PROFILE_LINKS = [
         "badgeColor": "#8b5cf6",
         "tag": "Peer Review ID",
         "description": "Open scientific peer-review platform profile for machine learning research evaluations and academic submissions."
+    },
+    {
+        "id": "oxford-iwc",
+        "category": "research",
+        "categoryLabel": "Research & Citations",
+        "name": "Interacting with Computers",
+        "identifier": "ScholarOne Reviewer / Oxford University Press",
+        "url": "https://mc.manuscriptcentral.com/iwc",
+        "icon": "mdi-book-open-page-variant",
+        "thumb": "images/profiles/oxford_iwc.svg",
+        "badgeColor": "#002147",
+        "tag": "OUP Peer Review",
+        "description": "Verified peer review and editorial contributions for Oxford University Press Interacting with Computers (IwC) academic journal via ScholarOne Manuscripts."
     },
     {
         "id": "researchgate",
@@ -596,6 +622,32 @@ PROFILE_LINKS = [
         "badgeColor": "#0284c7",
         "tag": "Fellow Member",
         "description": "Elected Fellow Member of Science Tech Xplore, recognized for distinguished research contributions and scientific thought leadership innovating digital humanity."
+    },
+    {
+        "id": "bcs",
+        "category": "research",
+        "categoryLabel": "Research & Citations",
+        "name": "British Computer Society",
+        "identifier": "Fellow (FBCS) • Royal Charter",
+        "url": "https://www.bcs.org/find-a-bcs-member/",
+        "icon": "mdi-shield-crown-outline",
+        "thumb": "images/profiles/bcs.svg",
+        "badgeColor": "#0a2540",
+        "tag": "BCS Chartered Fellow",
+        "description": "Official member directory listing for the British Computer Society (The Chartered Institute for IT), verifying Fellow status (FBCS) under UK Royal Charter."
+    },
+    {
+        "id": "frontiers-in-education",
+        "category": "research",
+        "categoryLabel": "Research & Citations",
+        "name": "Frontiers in Education Editorial",
+        "identifier": "Review Editor • Loop ID: 3757183",
+        "url": "https://loop.frontiersin.org/people/3757183/overview",
+        "icon": "mdi-book-open-page-variant",
+        "thumb": "images/profiles/frontiers_education.svg",
+        "badgeColor": "#0284c7",
+        "tag": "Loop Editorial Board",
+        "description": "Verified Review Editor and Editorial Board member on Loop (Frontiers Media) for Frontiers in Education, evaluating peer-reviewed scientific breakthroughs at the intersection of AI, cognitive technologies, and educational systems."
     },
     {
         "id": "mastodon",

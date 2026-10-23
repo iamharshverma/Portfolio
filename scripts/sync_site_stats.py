@@ -45,6 +45,15 @@ def load_canonical_stats():
     else:
         media_count = 40
 
+    # 4. Verified profiles count from page-about.html
+    about_path = os.path.join(ROOT_DIR, "page-about.html")
+    if os.path.exists(about_path):
+        with open(about_path, "r", encoding="utf-8") as f:
+            about_html = f.read()
+        profiles_count = len(re.findall(r'class="[^"]*profile-card-item', about_html))
+    else:
+        profiles_count = 53
+
     return {
         "papers_count": papers_count,
         "papers_display": f"{papers_count}+",
@@ -56,8 +65,8 @@ def load_canonical_stats():
         "patents_count": 6,
         "media_count": media_count,
         "media_display": f"{media_count}+",
-        "profiles_count": 49,
-        "profiles_display": "49"
+        "profiles_count": profiles_count,
+        "profiles_display": f"{profiles_count}"
     }
 
 def update_client_stats_js(stats):
@@ -376,35 +385,35 @@ def sync_html_and_generators(stats):
             )
 
             # --- VERIFIED PROFILES METRICS ---
-            # 18. Update navbar dropdown "49 Verified Profiles Hub"
+            # 18. Update navbar dropdown "XX Verified Profiles Hub"
             content = re.sub(
-                r'(<span class="dropdown-item-title">)\s*(?:38|42|47|49|52)\+?\s*Verified Profiles Hub\s*(</span>)',
+                r'(<span class="dropdown-item-title">)\s*(?:38|42|47|49|50|52|53)\+?\s*Verified Profiles Hub\s*(</span>)',
                 rf'\g<1>{prof_num} Verified Profiles Hub\g<2>',
                 content
             )
 
-            # 19. Update "49 Verified Academic & Industry Hubs" / "49 Verified Academic/Professional Registries"
+            # 19. Update "XX Verified Academic & Industry Hubs" / "XX Verified Academic/Professional Registries"
             content = re.sub(
-                r'\b(?:38|42|47|49|52)\s+Verified Academic\s*(?:&amp;|&)\s*Industry Hubs\b',
+                r'\b(?:38|42|47|49|50|52|53)\s+Verified Academic\s*(?:&amp;|&)\s*Industry Hubs\b',
                 f'{prof_num} Verified Academic &amp; Industry Hubs',
                 content
             )
             content = re.sub(
-                r'\b(?:38|42|47|49|52)\s+Verified Academic/Professional Registries\b',
+                r'\b(?:38|42|47|49|50|52|53)\s+Verified Academic/Professional Registries\b',
                 f'{prof_num} Verified Academic/Professional Registries',
                 content
             )
 
-            # 20. Update "49 Verified Profiles" in index.html biography CTA
+            # 20. Update "XX Verified Profiles" in index.html biography CTA
             content = re.sub(
-                r'Full Biography\s*(?:&amp;|&)\s*(?:38|42|47|49|52)\+?\s*Verified Profiles',
+                r'Full Biography\s*(?:&amp;|&)\s*(?:38|42|47|49|50|52|53)\+?\s*Verified Profiles',
                 f'Full Biography &amp; {prof_num} Verified Profiles',
                 content
             )
 
-            # 21. Update "49 Verified Hubs" button in page-about.html hero
+            # 21. Update "XX Verified Hubs" button in page-about.html hero
             content = re.sub(
-                r'(<i class="mdi mdi-web mr-1"></i>\s*)(?:38|42|43|47|49|52)(\s*Verified Hubs)',
+                r'(<i class="mdi mdi-web mr-1"></i>\s*)(?:38|42|43|47|49|50|52|53)(\s*Verified Hubs)',
                 rf'\g<1>{prof_num}\g<2>',
                 content
             )
@@ -554,7 +563,7 @@ def sync_html_and_generators(stats):
                             <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
                                 <div class="dropdown-item-icon bg-soft-warning"><i class="mdi mdi-shield-account-outline"></i></div>
                                 <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">49 Verified Profiles Hub</span>
+                                    <span class="dropdown-item-title">{prof_num} Verified Profiles Hub</span>
                                     <span class="dropdown-item-desc">Academic, editorial &amp; executive registries</span>
                                 </div>
                             </a>

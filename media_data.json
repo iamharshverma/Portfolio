@@ -1513,6 +1513,16 @@
         "icon": "mdi-calendar-check"
       },
       {
+        "label": "AI Insider: Website Feature Story",
+        "url": "https://aiinsiders.us/stories/ai-agent-security-sf-tech-week",
+        "icon": "mdi-web"
+      },
+      {
+        "label": "Instagram Feature",
+        "url": "https://www.instagram.com/p/Der2sD2FIjo/?img_index=4",
+        "icon": "mdi-instagram"
+      },
+      {
         "label": "AI Insiders: Speakers & Alumni",
         "url": "https://aiinsiders.us/",
         "icon": "mdi-account-group"

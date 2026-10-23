@@ -223,8 +223,8 @@ sync_content = re.sub(
     sync_content
 )
 sync_content = sync_content.replace(
-    '<span class="dropdown-item-title">49 Verified Profiles Hub</span>',
-    '<span class="dropdown-item-title">49 Verified Profiles Hub</span>'
+    '<span class="dropdown-item-title">53 Verified Profiles Hub</span>',
+    '<span class="dropdown-item-title">53 Verified Profiles Hub</span>'
 )
 
 with open(sync_path, 'w', encoding='utf-8') as f:
@@ -246,8 +246,8 @@ copilot_data_path = os.path.join(ROOT_DIR, 'data', 'copilot-knowledge.js')
 with open(copilot_data_path, 'r', encoding='utf-8') as f:
     copilot_data = f.read()
 
-copilot_data = copilot_data.replace('49 Verified Academic &amp; Industry Hubs', '49 Verified Academic &amp; Industry Hubs')
-copilot_data = copilot_data.replace('49 Verified Academic &amp; Industry Hubs', '49 Verified Academic &amp; Industry Hubs')
+copilot_data = copilot_data.replace('53 Verified Academic &amp; Industry Hubs', '53 Verified Academic &amp; Industry Hubs')
+copilot_data = copilot_data.replace('53 Verified Academic &amp; Industry Hubs', '53 Verified Academic &amp; Industry Hubs')
 
 # Add entries to verifiedProfiles in copilot-knowledge if present
 if 'judges.bintelligence.com' not in copilot_data:
@@ -263,8 +263,8 @@ copilot_js_path = os.path.join(ROOT_DIR, 'js', 'hv-copilot.js')
 with open(copilot_js_path, 'r', encoding='utf-8') as f:
     copilot_js = f.read()
 
-copilot_js = copilot_js.replace('49 Verified Academic &amp; Industry Hubs', '49 Verified Academic &amp; Industry Hubs')
-copilot_js = copilot_js.replace('49 Verified Academic/Professional Registries', '49 Verified Academic/Professional Registries')
+copilot_js = copilot_js.replace('53 Verified Academic &amp; Industry Hubs', '53 Verified Academic &amp; Industry Hubs')
+copilot_js = copilot_js.replace('53 Verified Academic/Professional Registries', '53 Verified Academic/Professional Registries')
 
 with open(copilot_js_path, 'w', encoding='utf-8') as f:
     f.write(copilot_js)
@@ -286,8 +286,8 @@ for fn in glob.glob(os.path.join(ROOT_DIR, '*.html')) + glob.glob(os.path.join(R
     with open(fn, 'r', encoding='utf-8', errors='ignore') as f:
         c = f.read()
     c_new = c.replace('47 Verified Profiles Hub', '49 Verified Profiles Hub')
-    c_new = c_new.replace('Full Biography &amp; 49 Verified Profiles', 'Full Biography &amp; 49 Verified Profiles')
-    c_new = c_new.replace('Full Biography &amp; 49 Verified Profiles', 'Full Biography &amp; 49 Verified Profiles')
+    c_new = c_new.replace('Full Biography &amp; 53 Verified Profiles', 'Full Biography &amp; 53 Verified Profiles')
+    c_new = c_new.replace('Full Biography &amp; 53 Verified Profiles', 'Full Biography &amp; 53 Verified Profiles')
     if c_new != c:
         with open(fn, 'w', encoding='utf-8') as f:
             f.write(c_new)

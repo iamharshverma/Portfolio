@@ -1042,7 +1042,7 @@ Harsh Verma holds prestigious fellowships and elected senior memberships across 
 - **Full Elected Member of Sigma Xi** (The Scientific Research Honor Society)
 - **OWASP Global Member & Cloud Security Alliance (CSA) Member**
 
-👉 Deep dive into all citations, certifications, and appointments on the **[Invited Memberships Page](page-memberships)** and **[49 Verified Academic &amp; Industry Hubs](page-about#verified-profiles)**.`;
+👉 Deep dive into all citations, certifications, and appointments on the **[Invited Memberships Page](page-memberships)** and **[53 Verified Academic &amp; Industry Hubs](page-about#verified-profiles)**.`;
     }
 
     // 5. Professional Career & Experience
@@ -1222,7 +1222,7 @@ All verified inquiries submitted through this portfolio are delivered directly w
 
 - **Specializations**: Enterprise Generative AI, Autonomous Multi-Agent Architectures, Zero-Trust Cyber Resilience, and Cloud Distributed Systems.
 - **Recognitions**: **27 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
-- **Academic Impact**: **27+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **49 Verified Academic/Professional Registries**.
+- **Academic Impact**: **27+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **53 Verified Academic/Professional Registries**.
 - **Fellowships**: Harvard Square Leaders Excellence Fellow, IEEE Senior Member, and Forbes Technology Council Member.
 
 **Explore further:**

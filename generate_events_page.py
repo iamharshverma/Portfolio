@@ -500,6 +500,8 @@ events_data = {
             "description": "Featured speaker on 'YOUR AGENT INSTALLED WHAT? SECURING THE NEW AI SUPPLY CHAIN' hosted by AI Insiders with Pebblebed during SF Tech Week. Addressed emerging threats across the agentic supply chain: unauthorized plugin and skill installations, MCP integration risks, runtime agent sandboxing, prompt provenance, and zero-trust controls.",
             "links": [
                 {"name": "Partiful Event Page", "url": "https://partiful.com/e/8LNyv0WyX7dTHjUUJmm0", "icon": "mdi-ticket-confirmation"},
+                {"name": "AI Insider Feature Story", "url": "https://aiinsiders.us/stories/ai-agent-security-sf-tech-week", "icon": "mdi-web"},
+                {"name": "Instagram Feature", "url": "https://www.instagram.com/p/Der2sD2FIjo/?img_index=4", "icon": "mdi-instagram"},
                 {"name": "AI Insider Security", "url": "https://lnkd.in/p/gaxXq2KM", "icon": "mdi-linkedin"},
                 {"name": "AI Insiders Feature Post", "url": "https://lnkd.in/p/g_G7h98m", "icon": "mdi-linkedin"},
                 {"name": "LinkedIn Announcement", "url": "https://lnkd.in/p/eyfEarGz", "icon": "mdi-linkedin"},
@@ -2142,7 +2144,7 @@ def build_full_page():
                             <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
                                 <div class="dropdown-item-icon bg-soft-warning"><i class="mdi mdi-shield-account-outline"></i></div>
                                 <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">49 Verified Profiles Hub</span>
+                                    <span class="dropdown-item-title">53 Verified Profiles Hub</span>
                                     <span class="dropdown-item-desc">Academic, editorial &amp; executive registries</span>
                                 </div>
                             </a>
