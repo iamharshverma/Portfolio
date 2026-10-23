@@ -1446,9 +1446,195 @@
             color: #cbd5e1 !important;
             border-color: #475569;
         }
-        body.dark-mode .btn-adplist-outline:hover {
-            border-color: #ff7597;
-            color: #ff7597 !important;
+        /* Audience Intelligence & Demographics ("Who You'll Reach") */
+        .audience-section-wrap {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 38px 32px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        body.dark-mode .audience-section-wrap {
+            background: #1e293b;
+            border-color: #334155;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        .audience-section-wrap::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #2563eb 0%, #06b6d4 50%, #8b5cf6 100%);
+        }
+        .audience-kpi-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 22px 18px;
+            transition: all 0.25s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        body.dark-mode .audience-kpi-card {
+            background: #0f172a;
+            border-color: #334155;
+        }
+        .audience-kpi-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(37, 99, 235, 0.12);
+            border-color: #93c5fd;
+        }
+        .audience-kpi-val {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+        .audience-kpi-lbl {
+            font-size: 11.5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #64748b;
+            margin-bottom: 4px;
+        }
+        body.dark-mode .audience-kpi-lbl {
+            color: #94a3b8;
+        }
+        .audience-persona-tab {
+            cursor: pointer;
+            border-radius: 14px;
+            padding: 18px 16px;
+            border: 1.5px solid #e2e8f0;
+            background: #ffffff;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            height: 100%;
+            position: relative;
+        }
+        body.dark-mode .audience-persona-tab {
+            background: #0f172a;
+            border-color: #334155;
+        }
+        .audience-persona-tab:hover {
+            border-color: #2563eb;
+            background: #f8fafc;
+            transform: translateY(-2px);
+        }
+        body.dark-mode .audience-persona-tab:hover {
+            background: #1e293b;
+        }
+        .audience-persona-tab.active {
+            border-color: #2563eb;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.06) 0%, rgba(56, 189, 248, 0.06) 100%);
+            box-shadow: 0 4px 18px rgba(37, 99, 235, 0.12);
+        }
+        body.dark-mode .audience-persona-tab.active {
+            background: rgba(37, 99, 235, 0.16);
+            border-color: #60a5fa;
+        }
+        .audience-persona-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 20%;
+            right: 20%;
+            height: 3px;
+            background: #2563eb;
+            border-radius: 3px 3px 0 0;
+        }
+        .audience-detail-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 24px;
+            transition: all 0.3s ease;
+        }
+        body.dark-mode .audience-detail-box {
+            background: #0f172a;
+            border-color: #334155;
+        }
+        .audience-chart-tile {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 20px;
+            height: 100%;
+        }
+        body.dark-mode .audience-chart-tile {
+            background: #0f172a;
+            border-color: #334155;
+        }
+        .audience-progress-item {
+            margin-bottom: 15px;
+        }
+        .audience-progress-item:last-child {
+            margin-bottom: 0;
+        }
+        .audience-progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12.5px;
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 5px;
+        }
+        body.dark-mode .audience-progress-header {
+            color: #e2e8f0;
+        }
+        .audience-progress-bar {
+            height: 8px;
+            border-radius: 6px;
+            background: #e2e8f0;
+            overflow: hidden;
+        }
+        body.dark-mode .audience-progress-bar {
+            background: #334155;
+        }
+        .audience-progress-fill {
+            height: 100%;
+            border-radius: 6px;
+            transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .audience-calc-box {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            border-radius: 16px;
+            padding: 26px 24px;
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .audience-calc-result-tile {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+        .audience-calc-result-tile:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(56, 189, 248, 0.5);
+        }
+        .audience-calc-val {
+            font-size: 1.85rem;
+            font-weight: 800;
+            color: #38bdf8;
+            line-height: 1.1;
+        }
+        .audience-calc-lbl {
+            font-size: 11px;
+            font-weight: 600;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            margin-top: 4px;
         }
     </style>
     <!-- HV AI Copilot Styles -->
@@ -1553,7 +1739,7 @@
                             <a class="dropdown-item nav-dropdown-item active" href="page-social">
                                 <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
                                 <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Partnerships &amp; Social <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Collaborate</span></span>
+                                    <span class="dropdown-item-title">Partnership &amp; Social <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Collaborate</span></span>
                                     <span class="dropdown-item-desc">Brand partnerships &amp; executive social authority</span>
                                 </div>
                             </a>
@@ -2095,6 +2281,372 @@
                 </div>
             </section>
 
+            <!-- SECTION 4: Who You'll Reach : An audience that builds and trusts (Target Audience & Interactive Infographics) -->
+            <section class="audience-section-wrap mb-5" id="whoYoullReach">
+                <div class="row align-items-end mb-4">
+                    <div class="col-lg-8">
+                        <div class="d-inline-flex align-items-center mb-2">
+                            <span class="badge badge-pill badge-primary-soft font-weight-bold px-3 py-1" style="font-size: 11.5px; letter-spacing: 0.5px;">
+                                <i class="mdi mdi-bullseye-arrow mr-1"></i> TARGET AUDIENCE &amp; DEMOGRAPHICS
+                            </span>
+                        </div>
+                        <h2 class="font-weight-bold mb-1 text-dark" style="font-size: 2.15rem; letter-spacing: -0.5px;">
+                            Who You'll Reach
+                        </h2>
+                        <p class="lead font-weight-bold text-primary mb-2" style="font-size: 1.25rem;">
+                            An audience that builds and trusts.
+                        </p>
+                        <p class="text-muted mb-0 small" style="max-width: 720px; line-height: 1.65; font-size: 14px;">
+                            Harsh Verma's platform connects with over <span class="font-weight-bold text-dark">16,600+</span> verified technology leaders, enterprise architects, and senior AI practitioners across Silicon Valley and premier global tech ecosystems. These are high-intent decision makers who design, fund, and deploy critical production infrastructure.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 text-lg-right mt-3 mt-lg-0">
+                        <a href="#letsTalk" class="btn btn-outline-primary font-weight-bold px-3 py-2" style="border-radius: 10px; font-size: 13px;">
+                            <i class="mdi mdi-message-text-outline mr-1"></i> Collaborate with Harsh →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4 Top-Level Metric Infographic Tiles -->
+                <div class="row mb-4">
+                    <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="audience-kpi-card">
+                            <div class="audience-kpi-lbl">Decision Authority</div>
+                            <div class="audience-kpi-val text-primary">86%</div>
+                            <small class="text-muted d-block" style="font-size: 11.5px; line-height: 1.4;">
+                                C-Suite, VPs, Directors &amp; Staff/Principal Engineers with purchasing veto power.
+                            </small>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="audience-kpi-card">
+                            <div class="audience-kpi-lbl">Senior Tech Leaders</div>
+                            <div class="audience-kpi-val" style="color: #0284c7;">42%</div>
+                            <small class="text-muted d-block" style="font-size: 11.5px; line-height: 1.4;">
+                                VPs of Engineering, CTOs, Chief AI Officers &amp; Enterprise Architects.
+                            </small>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mb-3 mb-sm-0">
+                        <div class="audience-kpi-card">
+                            <div class="audience-kpi-lbl">North America Core</div>
+                            <div class="audience-kpi-val" style="color: #8b5cf6;">52%</div>
+                            <small class="text-muted d-block" style="font-size: 11.5px; line-height: 1.4;">
+                                Silicon Valley (SF Bay Area), New York, Seattle, Austin, and Boston.
+                            </small>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="audience-kpi-card">
+                            <div class="audience-kpi-lbl">Verified Engagement</div>
+                            <div class="audience-kpi-val text-success">5.8%</div>
+                            <small class="text-muted d-block" style="font-size: 11.5px; line-height: 1.4;">
+                                3.2x higher than B2B tech average (1.8%), driven by technical system breakdowns.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Audience Persona Switcher -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h6 class="font-weight-bold text-dark mb-0 small text-uppercase" style="letter-spacing: 0.5px;">
+                            <i class="mdi mdi-account-switch text-primary mr-1"></i> Interactive Audience Persona Breakdown
+                        </h6>
+                        <small class="text-muted">Click a persona tab to explore insights</small>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4 mb-2 mb-md-0">
+                            <div class="audience-persona-tab active" data-persona="leadership" onclick="switchPersona('leadership')">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span class="badge badge-pill badge-primary-soft font-weight-bold small">42% Share</span>
+                                    <i class="mdi mdi-shield-account text-primary" style="font-size: 20px;"></i>
+                                </div>
+                                <h6 class="font-weight-bold mb-1 text-dark" style="font-size: 14.5px;">Enterprise Tech Leadership</h6>
+                                <p class="small text-muted mb-0" style="font-size: 11.5px;">VPs of Eng, CTOs, Enterprise Architects &amp; Directors</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2 mb-md-0">
+                            <div class="audience-persona-tab" data-persona="builders" onclick="switchPersona('builders')">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span class="badge badge-pill badge-soft-info font-weight-bold small">36% Share</span>
+                                    <i class="mdi mdi-brain" style="font-size: 20px; color: #0284c7;"></i>
+                                </div>
+                                <h6 class="font-weight-bold mb-1 text-dark" style="font-size: 14.5px;">AI Engineers &amp; Builders</h6>
+                                <p class="small text-muted mb-0" style="font-size: 11.5px;">Principal Engineers, LLM Architects &amp; ML Researchers</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="audience-persona-tab" data-persona="founders" onclick="switchPersona('founders')">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span class="badge badge-pill badge-soft-warning font-weight-bold small">22% Share</span>
+                                    <i class="mdi mdi-rocket-launch text-warning" style="font-size: 20px;"></i>
+                                </div>
+                                <h6 class="font-weight-bold mb-1 text-dark" style="font-size: 14.5px;">Founders &amp; Investors</h6>
+                                <p class="small text-muted mb-0" style="font-size: 11.5px;">Seed-to-Growth Founders, VCs &amp; Tech Strategists</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Persona Detail Box -->
+                    <div class="audience-detail-box" id="personaDetailCard">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 mb-3 mb-lg-0">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="badge badge-pill badge-primary font-weight-bold px-2 py-1 mr-2" id="personaBadge">
+                                        Executive Tier
+                                    </span>
+                                    <h5 class="font-weight-bold mb-0 text-dark" id="personaTitle">Enterprise Tech Leadership &amp; VPs</h5>
+                                </div>
+                                <p class="text-muted small mb-3" id="personaDescription" style="line-height: 1.6;">
+                                    Technical executives evaluating enterprise-grade AI frameworks, Zero-Trust compliance pipelines, autonomous agent architectures, and organizational engineering health for companies with $50M–$10B+ revenue.
+                                </p>
+                                <div class="row">
+                                    <div class="col-sm-6 mb-2">
+                                        <span class="small font-weight-bold text-dark d-block mb-1">
+                                            <i class="mdi mdi-account-check text-primary mr-1"></i> Key Job Titles:
+                                        </span>
+                                        <p class="small text-muted mb-0" id="personaRoles">
+                                            VP of Engineering, CTO, Chief Security Officer, Enterprise Chief Architect, Head of AI.
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-6 mb-2">
+                                        <span class="small font-weight-bold text-dark d-block mb-1">
+                                            <i class="mdi mdi-cash-multiple text-success mr-1"></i> Purchasing &amp; Veto Authority:
+                                        </span>
+                                        <p class="small text-muted mb-0" id="personaBuyingPower">
+                                            Signs off on multi-million dollar cloud licenses, cybersecurity suites, and enterprise AI contracts.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5 border-lg-left pl-lg-4">
+                                <div class="p-3 rounded" style="background: rgba(37, 99, 235, 0.05); border: 1px dashed rgba(37, 99, 235, 0.25);">
+                                    <div class="small font-weight-bold text-primary mb-1">
+                                        <i class="mdi mdi-format-quote-open mr-1"></i> Audience Interaction Voice
+                                    </div>
+                                    <p class="small text-dark font-italic mb-2" id="personaQuote" style="line-height: 1.5;">
+                                        "Harsh cuts through the enterprise AI hype. His breakdowns on agentic systems and Zero-Trust architecture directly informed our internal infrastructure roadmap."
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-between small text-muted pt-1 border-top">
+                                        <span id="personaQuoteAuthor">— VP of Cloud Architecture, Fortune 100</span>
+                                        <span class="badge badge-light border text-primary">Verified Follower</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 Infographic Visual Panels: Seniority, Geography, Industry Verticals -->
+                <div class="row mb-4">
+                    <!-- Seniority Distribution Chart -->
+                    <div class="col-lg-4 col-md-6 mb-3 mb-lg-0">
+                        <div class="audience-chart-tile">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h6 class="font-weight-bold text-dark mb-0 small text-uppercase">
+                                    <i class="mdi mdi-stairs-up text-primary mr-1"></i> Seniority Hierarchy
+                                </h6>
+                                <span class="badge badge-light small border text-muted">86% Senior+</span>
+                            </div>
+
+                            <div class="audience-progress-item">
+                                <div class="audience-progress-header">
+                                    <span>C-Suite, Founders &amp; VPs</span>
+                                    <span class="font-weight-bold text-primary">58%</span>
+                                </div>
+                                <div class="audience-progress-bar">
+                                    <div class="audience-progress-fill bg-primary" style="width: 58%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="audience-progress-item">
+                                <div class="audience-progress-header">
+                                    <span>Principal &amp; Staff Architects</span>
+                                    <span class="font-weight-bold" style="color: #0284c7;">28%</span>
+                                </div>
+                                <div class="audience-progress-bar">
+                                    <div class="audience-progress-fill" style="width: 28%; background-color: #0284c7;"></div>
+                                </div>
+                            </div>
+
+                            <div class="audience-progress-item">
+                                <div class="audience-progress-header">
+                                    <span>Senior Engineers &amp; Researchers</span>
+                                    <span class="font-weight-bold" style="color: #8b5cf6;">14%</span>
+                                </div>
+                                <div class="audience-progress-bar">
+                                    <div class="audience-progress-fill" style="width: 14%; background-color: #8b5cf6;"></div>
+                                </div>
+                            </div>
+
+                            <div class="mt-3 pt-2 border-top small text-muted" style="font-size: 11px;">
+                                <i class="mdi mdi-check-decagram text-success mr-1"></i> High concentration of high-income tech practitioners ($220K - $650K+ TC).
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Geographic Distribution Chart -->
+                    <div class="col-lg-4 col-md-6 mb-3 mb-lg-0">
+                        <div class="audience-chart-tile">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h6 class="font-weight-bold text-dark mb-0 small text-uppercase">
+                                    <i class="mdi mdi-earth text-primary mr-1"></i> Global Hub Presence
+                                </h6>
+                                <span class="badge badge-light small border text-muted">US Tier 1</span>
+                            </div>
+
+                            <div class="audience-progress-item">
+                                <div class="audience-progress-header">
+                                    <span>🇺🇸 United States &amp; Canada</span>
+                                    <span class="font-weight-bold text-primary">52%</span>
+                                </div>
+                                <div class="audience-progress-bar">
+                                    <div class="audience-progress-fill bg-primary" style="width: 52%;"></div>
+                                </div>
+                                <small class="text-muted" style="font-size: 10.5px;">Bay Area, Seattle, NYC, Austin, Boston</small>
+                            </div>
+
+                            <div class="audience-progress-item">
+                                <div class="audience-progress-header">
+                                    <span>🇬🇧 &amp; 🇪🇺 United Kingdom &amp; Europe</span>
+                                    <span class="font-weight-bold" style="color: #0284c7;">26%</span>
+                                </div>
+                                <div class="audience-progress-bar">
+                                    <div class="audience-progress-fill" style="width: 26%; background-color: #0284c7;"></div>
+                                </div>
+                                <small class="text-muted" style="font-size: 10.5px;">London, Zurich, Berlin, Amsterdam</small>
+                            </div>
+
+                            <div class="audience-progress-item">
+                                <div class="audience-progress-header">
+                                    <span>🌏 APAC &amp; International Hubs</span>
+                                    <span class="font-weight-bold" style="color: #10b981;">22%</span>
+                                </div>
+                                <div class="audience-progress-bar">
+                                    <div class="audience-progress-fill bg-success" style="width: 22%;"></div>
+                                </div>
+                                <small class="text-muted" style="font-size: 10.5px;">Singapore, Tokyo, Sydney, Bengaluru</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Industry Verticals Chart -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="audience-chart-tile">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h6 class="font-weight-bold text-dark mb-0 small text-uppercase">
+                                    <i class="mdi mdi-domain text-primary mr-1"></i> Industry Verticals
+                                </div>
+                                <span class="badge badge-light small border text-muted">Enterprise</span>
+                            </div>
+
+                            <div class="audience-progress-item">
+                                <div class="audience-progress-header">
+                                    <span>Enterprise AI &amp; Agent Systems</span>
+                                    <span class="font-weight-bold text-primary">38%</span>
+                                </div>
+                                <div class="audience-progress-bar">
+                                    <div class="audience-progress-fill bg-primary" style="width: 38%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="audience-progress-item">
+                                <div class="audience-progress-header">
+                                    <span>Cybersecurity &amp; Zero-Trust Cloud</span>
+                                    <span class="font-weight-bold" style="color: #0284c7;">32%</span>
+                                </div>
+                                <div class="audience-progress-bar">
+                                    <div class="audience-progress-fill" style="width: 32%; background-color: #0284c7;"></div>
+                                </div>
+                            </div>
+
+                            <div class="audience-progress-item">
+                                <div class="audience-progress-header">
+                                    <span>Scalable Cloud Infrastructure &amp; SaaS</span>
+                                    <span class="font-weight-bold" style="color: #8b5cf6;">18%</span>
+                                </div>
+                                <div class="audience-progress-bar">
+                                    <div class="audience-progress-fill" style="width: 18%; background-color: #8b5cf6;"></div>
+                                </div>
+                            </div>
+
+                            <div class="audience-progress-item">
+                                <div class="audience-progress-header">
+                                    <span>Developer Tooling &amp; DeepTech</span>
+                                    <span class="font-weight-bold text-warning">12%</span>
+                                </div>
+                                <div class="audience-progress-bar">
+                                    <div class="audience-progress-fill bg-warning" style="width: 12%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Campaign Reach & Impact Estimator Mini-Tool -->
+                <div class="audience-calc-box">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 mb-4 mb-lg-0">
+                            <span class="badge badge-pill badge-light text-primary font-weight-bold px-3 py-1 mb-2" style="font-size: 11px;">
+                                <i class="mdi mdi-calculator mr-1"></i> INTERACTIVE CAMPAIGN ESTIMATOR
+                            </span>
+                            <h4 class="font-weight-bold text-white mb-2">Estimate Your Campaign Impact</h4>
+                            <p class="text-white-50 small mb-3" style="line-height: 1.6;">
+                                Select your planned collaboration format to calculate projected high-intent impressions, executive touchpoints, and senior engineer engagements.
+                            </p>
+
+                            <div class="form-group mb-0">
+                                <label class="small font-weight-bold text-white-50 text-uppercase" style="letter-spacing: 0.5px; font-size: 10.5px;">
+                                    Collaboration Format
+                                </label>
+                                <select class="form-control form-control-sm" id="calcFormatSelect" onchange="updateCampaignEstimate()" style="border-radius: 8px; font-weight: 600; height: 42px; background: #ffffff; color: #0f172a;">
+                                    <option value="sponsored">Sponsored Thought Leadership &amp; Case Study</option>
+                                    <option value="keynote">Keynote Address &amp; Panel Moderation</option>
+                                    <option value="masterclass">Corporate Masterclass &amp; Executive Workshop</option>
+                                    <option value="advisory">Strategic Board &amp; Architectural Advisory</option>
+                                    <option value="podcast">Podcast Feature &amp; Press Syndication</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7">
+                            <div class="row text-center mb-3">
+                                <div class="col-4">
+                                    <div class="audience-calc-result-tile">
+                                        <div class="audience-calc-val" id="calcImpressions">35,000+</div>
+                                        <div class="audience-calc-lbl">Projected Impressions</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="audience-calc-result-tile">
+                                        <div class="audience-calc-val text-success" id="calcEngagements">2,100+</div>
+                                        <div class="audience-calc-lbl">High-Intent Engagements</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="audience-calc-result-tile">
+                                        <div class="audience-calc-val text-warning" id="calcDecisionTouches">980+</div>
+                                        <div class="audience-calc-lbl">Senior Decision Touches</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center justify-content-between pt-2 border-top border-white-10">
+                                <small class="text-white-50">
+                                    <i class="mdi mdi-information-outline mr-1 text-info"></i> Derived from 2024-2026 audited live campaign benchmarks.
+                                </small>
+                                <button type="button" class="btn btn-sm btn-primary font-weight-bold px-3 py-2 mt-2 mt-sm-0" onclick="inquireFromEstimator()" style="border-radius: 8px;">
+                                    <span>Plan This Campaign</span> <i class="mdi mdi-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Favikon Spotlight Social Intelligence & Creator Analytics -->
             <section class="favikon-spotlight-box" id="favikonSection">
                 <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
@@ -2420,6 +2972,112 @@
 
     <!-- Partnerships & Social Client Engine -->
     <script>
+        // Data map for interactive audience persona switcher
+        var personaData = {
+            leadership: {
+                badge: 'Executive Tier (42%)',
+                badgeClass: 'badge-primary',
+                title: 'Enterprise Tech Leadership & VPs',
+                desc: 'Technical executives evaluating enterprise-grade AI frameworks, Zero-Trust compliance pipelines, autonomous agent architectures, and organizational engineering health for companies with $50M–$10B+ revenue.',
+                roles: 'VP of Engineering, CTO, Chief Security Officer, Enterprise Chief Architect, Head of AI.',
+                buyingPower: 'Signs off on multi-million dollar cloud licenses, cybersecurity suites, and enterprise AI contracts.',
+                quote: '"Harsh cuts through the enterprise AI hype. His breakdowns on agentic systems and Zero-Trust architecture directly informed our internal infrastructure roadmap."',
+                author: '— VP of Cloud Architecture, Fortune 100'
+            },
+            builders: {
+                badge: 'Engineering Core (36%)',
+                badgeClass: 'badge-info',
+                title: 'Staff & Principal AI Engineers / Builders',
+                desc: 'Hands-on system architects, senior AI researchers, and technical staff engineers deploying LLMs, agentic orchestration loops, high-throughput distributed pipelines, and production inference clusters.',
+                roles: 'Principal AI Engineer, Staff Software Architect, ML Ops Lead, Senior Research Scientist.',
+                buyingPower: 'High architectural veto power; drives technology adoption, POC selections, and developer tool mandates.',
+                quote: '"The depth of engineering clarity in Harsh\'s system architecture diagrams is unmatched in our industry. Pure signal without commercial filler."',
+                author: '— Principal ML Architect, Frontier AI Scaleup'
+            },
+            founders: {
+                badge: 'Strategy & Capital (22%)',
+                badgeClass: 'badge-warning text-dark',
+                title: 'Founders, C-Suite & Tech Investors',
+                desc: 'Venture-backed startup founders (Seed through Series C), venture capital operating partners, and private equity board directors navigating the technical moats and defensibility of agentic AI businesses.',
+                roles: 'Founder & CEO, Managing Partner, Technical Co-Founder, VP of Product Strategy.',
+                buyingPower: 'Direct budget allocators, board members, and enterprise partnership decision-makers.',
+                quote: '"Harsh brings rare Silicon Valley credibility combining Stanford SEP executive discipline with hands-on technical depth."',
+                author: '— General Partner, Enterprise AI Venture Fund'
+            }
+        };
+
+        function switchPersona(key) {
+            var data = personaData[key];
+            if (!data) return;
+
+            // Update tabs
+            $('.audience-persona-tab').removeClass('active');
+            $('.audience-persona-tab[data-persona="' + key + '"]').addClass('active');
+
+            // Update content with smooth transition
+            var $card = $('#personaDetailCard');
+            $card.css('opacity', '0.4');
+            setTimeout(function() {
+                $('#personaBadge').attr('class', 'badge badge-pill font-weight-bold px-2 py-1 mr-2 ' + data.badgeClass).text(data.badge);
+                $('#personaTitle').text(data.title);
+                $('#personaDescription').text(data.desc);
+                $('#personaRoles').text(data.roles);
+                $('#personaBuyingPower').text(data.buyingPower);
+                $('#personaQuote').text(data.quote);
+                $('#personaQuoteAuthor').text(data.author);
+                $card.css('opacity', '1');
+            }, 120);
+        }
+
+        // Campaign Reach & Impact Estimator calculation
+        var campaignData = {
+            sponsored: {
+                impressions: '35,000+',
+                engagements: '2,100+',
+                decisionTouches: '980+',
+                collabType: 'Brand Collaborations & Sponsored Content'
+            },
+            keynote: {
+                impressions: '50,000+',
+                engagements: '3,800+',
+                decisionTouches: '1,450+',
+                collabType: 'Keynote Speaking & Moderation'
+            },
+            masterclass: {
+                impressions: '18,000+',
+                engagements: '1,650+',
+                decisionTouches: '820+',
+                collabType: 'Corporate Masterclasses & Workshops'
+            },
+            advisory: {
+                impressions: '12,000+',
+                engagements: '950+',
+                decisionTouches: '640+',
+                collabType: 'Executive & Technical Board Advisory'
+            },
+            podcast: {
+                impressions: '42,000+',
+                engagements: '2,900+',
+                decisionTouches: '1,200+',
+                collabType: 'Podcast & Media Guest Appearances'
+            }
+        };
+
+        function updateCampaignEstimate() {
+            var val = $('#calcFormatSelect').val() || 'sponsored';
+            var d = campaignData[val] || campaignData.sponsored;
+            
+            $('#calcImpressions').text(d.impressions);
+            $('#calcEngagements').text(d.engagements);
+            $('#calcDecisionTouches').text(d.decisionTouches);
+        }
+
+        function inquireFromEstimator() {
+            var val = $('#calcFormatSelect').val() || 'sponsored';
+            var d = campaignData[val] || campaignData.sponsored;
+            selectCollabOption(d.collabType);
+        }
+
         // Select collaboration option and smooth scroll to form
         function selectCollabOption(type) {
             if (!type) return;
