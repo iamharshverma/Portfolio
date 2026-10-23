@@ -29,16 +29,17 @@ try {
   console.warn('[Build] Warning during create_board_bio_pdf:', err.message);
 }
 
-// 2. Prepare output directories
+// 2. Prepare output directories atomically to avoid serving partial dist states
 const rootDir = path.resolve(__dirname, '..');
 const distDir = path.join(rootDir, 'dist');
 const buildDir = path.join(rootDir, 'build');
+const distTmp = path.join(rootDir, '.dist_tmp');
 
-console.log('[Build] Preparing output directory: ' + distDir);
-if (fs.existsSync(distDir)) {
-  fs.rmSync(distDir, { recursive: true, force: true });
+console.log('[Build] Preparing staging directory: ' + distTmp);
+if (fs.existsSync(distTmp)) {
+  fs.rmSync(distTmp, { recursive: true, force: true });
 }
-fs.mkdirSync(distDir, { recursive: true });
+fs.mkdirSync(distTmp, { recursive: true });
 
 // Copy function supporting files and directories recursively
 function copyRecursive(src, dest) {
@@ -49,7 +50,7 @@ function copyRecursive(src, dest) {
     }
     const entries = fs.readdirSync(src);
     for (const entry of entries) {
-      if (entry === 'node_modules' || entry === '.git' || entry === 'dist' || entry === 'build') continue;
+      if (entry === 'node_modules' || entry === '.git' || entry === 'dist' || entry === 'build' || entry === '.dist_tmp') continue;
       copyRecursive(path.join(src, entry), path.join(dest, entry));
     }
   } else {
@@ -57,7 +58,7 @@ function copyRecursive(src, dest) {
   }
 }
 
-// 3. Populate dist with all website assets
+// 3. Populate staging directory with all website assets
 const itemsToCopy = [
   'images',
   'css',
@@ -72,8 +73,8 @@ const itemsToCopy = [
 for (const item of itemsToCopy) {
   const srcPath = path.join(rootDir, item);
   if (fs.existsSync(srcPath)) {
-    console.log(`[Build] Copying directory: ${item}`);
-    copyRecursive(srcPath, path.join(distDir, item));
+    console.log(`[Build] Staging directory: ${item}`);
+    copyRecursive(srcPath, path.join(distTmp, item));
   }
 }
 
@@ -88,15 +89,20 @@ for (const entry of rootEntries) {
 
   if (fs.statSync(srcPath).isFile()) {
     if (validExtensions.includes(ext) || entry === 'CNAME') {
-      fs.copyFileSync(srcPath, path.join(distDir, entry));
+      fs.copyFileSync(srcPath, path.join(distTmp, entry));
       copiedFilesCount++;
     }
   }
 }
 
-console.log(`[Build] Copied ${copiedFilesCount} root files into dist/`);
+console.log(`[Build] Staged ${copiedFilesCount} root files into staging directory`);
 
-// 4. Duplicate dist to build to satisfy any build artifact detector looking for "build/"
+// 4. Atomically swap staging into dist and build
+if (fs.existsSync(distDir)) {
+  fs.rmSync(distDir, { recursive: true, force: true });
+}
+fs.renameSync(distTmp, distDir);
+
 if (fs.existsSync(buildDir)) {
   fs.rmSync(buildDir, { recursive: true, force: true });
 }

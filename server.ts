@@ -1323,25 +1323,36 @@ app.get('/api/smart-slides', (req, res) => {
   }
 });
 
-// Serve static assets from dist or project root
+// Serve static assets: prefer project root (for zero-latency development assets) then dist
+app.use(express.static(__dirname, {
+  extensions: ['html', 'htm']
+}));
 if (fs.existsSync(path.join(__dirname, 'dist'))) {
   app.use(express.static(path.join(__dirname, 'dist'), {
     extensions: ['html', 'htm']
   }));
 }
-app.use(express.static(__dirname, {
-  extensions: ['html', 'htm']
-}));
 
 // Route fallback
 app.get('*', (req, res) => {
   if (/\.(js|css|json|map|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot)$/i.test(req.path)) {
     return res.status(404).type('text/plain').send('Not found');
   }
-  const indexPath = fs.existsSync(path.join(__dirname, 'dist', 'index.html'))
-    ? path.join(__dirname, 'dist', 'index.html')
-    : path.join(__dirname, 'index.html');
+  const indexPath = fs.existsSync(path.join(__dirname, 'index.html'))
+    ? path.join(__dirname, 'index.html')
+    : path.join(__dirname, 'dist', 'index.html');
   res.sendFile(indexPath);
+});
+
+// Error handling middleware to catch any static stream ENOENT or other request errors cleanly
+app.use((err, req, res, next) => {
+  if (err && (err.code === 'ENOENT' || err.statusCode === 404)) {
+    return res.status(404).type('text/plain').send('Not found');
+  }
+  console.error('[Server Error]', err);
+  if (!res.headersSent) {
+    res.status(500).type('text/plain').send('Internal Server Error');
+  }
 });
 
 // Start HTTP server

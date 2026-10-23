@@ -6,3 +6,5 @@ __pycache__/
 dist/
 build/
 .aistudio/
+.dist_tmp/
+.github/

@@ -791,17 +791,20 @@
         }
         .brand-slider-panel {
             position: relative;
-            background: #ffffff;
-            border-radius: 18px;
+            background: #f8fafc;
+            border-radius: 20px;
             padding: 16px 0;
             overflow: hidden;
             border: 1px solid #e2e8f0;
-            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+            contain: paint layout;
+            transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
         }
+        html.dark-mode .brand-slider-panel,
         body.dark-mode .brand-slider-panel {
-            background: #ffffff;
-            border-color: #334155;
-            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+            background: #0f172a !important;
+            border-color: #27354f !important;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5) !important;
         }
         .brand-slider-panel::before,
         .brand-slider-panel::after {
@@ -809,47 +812,79 @@
             position: absolute;
             top: 0;
             bottom: 0;
-            width: 70px;
+            width: 80px;
             z-index: 3;
             pointer-events: none;
+            transition: background 0.3s ease;
         }
         .brand-slider-panel::before {
             left: 0;
-            background: linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(90deg, #f8fafc 0%, rgba(248, 250, 252, 0) 100%);
         }
         .brand-slider-panel::after {
             right: 0;
-            background: linear-gradient(270deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(270deg, #f8fafc 0%, rgba(248, 250, 252, 0) 100%);
         }
+        html.dark-mode .brand-slider-panel::before,
+        body.dark-mode .brand-slider-panel::before {
+            background: linear-gradient(90deg, #0f172a 0%, rgba(15, 23, 42, 0) 100%) !important;
+        }
+        html.dark-mode .brand-slider-panel::after,
+        body.dark-mode .brand-slider-panel::after {
+            background: linear-gradient(270deg, #0f172a 0%, rgba(15, 23, 42, 0) 100%) !important;
+        }
+
         .brand-slider-track {
             display: flex;
             align-items: center;
             width: max-content;
-            animation: sliderScrollLeftToRight 34s linear infinite;
+            animation: partnerLogoContinuousScroll 36s linear infinite;
             will-change: transform;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
         }
         .brand-slider-track:hover {
             animation-play-state: paused;
         }
-        @keyframes sliderScrollLeftToRight {
+        @keyframes partnerLogoContinuousScroll {
             0% {
-                transform: translateX(-50%);
+                transform: translate3d(0, 0, 0);
             }
             100% {
-                transform: translateX(0%);
+                transform: translate3d(-50%, 0, 0);
             }
         }
+        @media (prefers-reduced-motion: reduce) {
+            .brand-slider-track {
+                animation: none;
+                overflow-x: auto;
+            }
+        }
+
         .brand-logo-slide {
             flex-shrink: 0;
-            padding: 0 28px;
-            display: flex;
+            margin: 0 10px;
+            padding: 8px 22px;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
             height: 60px;
+            min-width: 170px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+            transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .brand-logo-slide:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+            border-color: #3b82f6;
         }
         .brand-logo-slide img {
-            max-height: 48px;
-            max-width: 175px;
+            max-height: 42px;
+            max-width: 155px;
             width: auto;
             height: auto;
             object-fit: contain;
@@ -857,7 +892,26 @@
             transition: transform 0.25s ease;
         }
         .brand-logo-slide:hover img {
-            transform: scale(1.08);
+            transform: scale(1.05);
+        }
+
+        html.dark-mode .brand-logo-slide,
+        body.dark-mode .brand-logo-slide {
+            background: #ffffff !important;
+            border: 1px solid rgba(255, 255, 255, 0.25) !important;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4) !important;
+        }
+        html.dark-mode .brand-logo-slide:hover,
+        body.dark-mode .brand-logo-slide:hover {
+            background: #ffffff !important;
+            border-color: #60a5fa !important;
+            box-shadow: 0 8px 24px rgba(59, 130, 246, 0.5) !important;
+            transform: translateY(-3px) scale(1.04);
+        }
+        html.dark-mode .brand-logo-slide img,
+        body.dark-mode .brand-logo-slide img {
+            filter: none !important;
+            opacity: 1 !important;
         }
 
         /* Ways to Work Together (Collaboration Cards) */
@@ -1718,6 +1772,466 @@
             letter-spacing: 0.4px;
             margin-top: 4px;
         }
+
+        .audience-quote-box {
+            background: rgba(37, 99, 235, 0.05);
+            border: 1px dashed rgba(37, 99, 235, 0.25);
+            transition: background 0.3s ease, border-color 0.3s ease;
+        }
+
+        .modal-body-custom {
+            background: #ffffff;
+            transition: background 0.3s ease;
+        }
+
+        /* ==========================================================================
+           Comprehensive Dark Mode Polish - Partnerships & Social Page
+           ========================================================================== */
+        html.dark-mode main#socialContent,
+        body.dark-mode main#socialContent {
+            background-color: #0b1120 !important;
+            color: #f8fafc !important;
+        }
+
+        /* Headings & Text Contrast across Social Page */
+        html.dark-mode #socialContent h1,
+        html.dark-mode #socialContent h2,
+        html.dark-mode #socialContent h3,
+        html.dark-mode #socialContent h4,
+        html.dark-mode #socialContent h5,
+        html.dark-mode #socialContent h6,
+        body.dark-mode #socialContent h1,
+        body.dark-mode #socialContent h2,
+        body.dark-mode #socialContent h3,
+        body.dark-mode #socialContent h4,
+        body.dark-mode #socialContent h5,
+        body.dark-mode #socialContent h6 {
+            color: #f8fafc !important;
+        }
+
+        html.dark-mode #socialContent .text-dark,
+        body.dark-mode #socialContent .text-dark {
+            color: #f8fafc !important;
+        }
+
+        html.dark-mode #socialContent p.text-muted,
+        html.dark-mode #socialContent small.text-muted,
+        body.dark-mode #socialContent p.text-muted,
+        body.dark-mode #socialContent small.text-muted {
+            color: #94a3b8 !important;
+        }
+
+        /* Border harmonization */
+        html.dark-mode #socialContent .border,
+        html.dark-mode #socialContent .border-top,
+        html.dark-mode #socialContent .border-bottom,
+        html.dark-mode #socialContent .border-left,
+        html.dark-mode #socialContent .border-right,
+        body.dark-mode #socialContent .border,
+        body.dark-mode #socialContent .border-top,
+        body.dark-mode #socialContent .border-bottom,
+        body.dark-mode #socialContent .border-left,
+        body.dark-mode #socialContent .border-right {
+            border-color: #27354f !important;
+        }
+
+        /* Top Executive Stats Box */
+        html.dark-mode .social-stats-box,
+        body.dark-mode .social-stats-box {
+            background: #141e33 !important;
+            border-color: #27354f !important;
+            box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.5) !important;
+        }
+        html.dark-mode .social-stat-label,
+        body.dark-mode .social-stat-label {
+            color: #94a3b8 !important;
+        }
+
+        /* Ways to Work (Collaboration Cards) */
+        html.dark-mode .collab-package-card,
+        body.dark-mode .collab-package-card {
+            background: #141e33 !important;
+            border-color: #27354f !important;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35) !important;
+        }
+        html.dark-mode .collab-package-card:hover,
+        body.dark-mode .collab-package-card:hover {
+            border-color: #3b82f6 !important;
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(59, 130, 246, 0.35) !important;
+            transform: translateY(-5px);
+        }
+        html.dark-mode .collab-package-card.featured-collab-card,
+        body.dark-mode .collab-package-card.featured-collab-card {
+            border: 2px solid #3b82f6 !important;
+            box-shadow: 0 12px 32px rgba(37, 99, 235, 0.25) !important;
+        }
+        html.dark-mode .collab-card-title,
+        body.dark-mode .collab-card-title {
+            color: #f8fafc !important;
+        }
+        html.dark-mode .collab-card-desc,
+        body.dark-mode .collab-card-desc {
+            color: #94a3b8 !important;
+        }
+        html.dark-mode .collab-feature-list,
+        html.dark-mode .collab-feature-list li,
+        body.dark-mode .collab-feature-list,
+        body.dark-mode .collab-feature-list li {
+            color: #cbd5e1 !important;
+        }
+        html.dark-mode .collab-feature-list span.font-weight-bold,
+        body.dark-mode .collab-feature-list span.font-weight-bold {
+            color: #f8fafc !important;
+        }
+
+        /* Category Badges in Dark Mode */
+        html.dark-mode .badge-brand, body.dark-mode .badge-brand { background: rgba(59, 130, 246, 0.2) !important; color: #93c5fd !important; }
+        html.dark-mode .badge-speaking, body.dark-mode .badge-speaking { background: rgba(147, 51, 234, 0.2) !important; color: #c084fc !important; }
+        html.dark-mode .badge-advisory, body.dark-mode .badge-advisory { background: rgba(16, 185, 129, 0.2) !important; color: #6ee7b7 !important; }
+        html.dark-mode .badge-workshop, body.dark-mode .badge-workshop { background: rgba(14, 165, 233, 0.2) !important; color: #7dd3fc !important; }
+        html.dark-mode .badge-podcast, body.dark-mode .badge-podcast { background: rgba(239, 68, 68, 0.2) !important; color: #fca5a5 !important; }
+        html.dark-mode .badge-mentorship, body.dark-mode .badge-mentorship { background: rgba(245, 158, 11, 0.2) !important; color: #fcd34d !important; }
+
+        /* Collaboration Buttons in Dark Mode */
+        html.dark-mode .btn-collab-action.btn-outline-primary,
+        body.dark-mode .btn-collab-action.btn-outline-primary {
+            color: #93c5fd !important;
+            background: rgba(37, 99, 235, 0.12) !important;
+            border-color: rgba(96, 165, 250, 0.4) !important;
+        }
+        html.dark-mode .btn-collab-action.btn-outline-primary:hover,
+        body.dark-mode .btn-collab-action.btn-outline-primary:hover {
+            color: #ffffff !important;
+            background: #2563eb !important;
+            border-color: #2563eb !important;
+        }
+        html.dark-mode .btn-collab-adplist,
+        body.dark-mode .btn-collab-adplist {
+            background: rgba(225, 49, 108, 0.16) !important;
+            border-color: rgba(225, 49, 108, 0.35) !important;
+            color: #ff7597 !important;
+        }
+        html.dark-mode .btn-collab-adplist:hover,
+        body.dark-mode .btn-collab-adplist:hover {
+            background: #e1316c !important;
+            color: #ffffff !important;
+        }
+
+        /* "Who You'll Reach" Target Audience Section */
+        html.dark-mode .audience-section-wrap,
+        body.dark-mode .audience-section-wrap {
+            background: #141e33 !important;
+            border-color: #27354f !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+        }
+        html.dark-mode .audience-kpi-card,
+        body.dark-mode .audience-kpi-card {
+            background: #0f172a !important;
+            border-color: #27354f !important;
+        }
+        html.dark-mode .audience-kpi-card:hover,
+        body.dark-mode .audience-kpi-card:hover {
+            border-color: #3b82f6 !important;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
+        }
+        html.dark-mode .audience-kpi-lbl,
+        body.dark-mode .audience-kpi-lbl {
+            color: #94a3b8 !important;
+        }
+        html.dark-mode .audience-persona-tab,
+        body.dark-mode .audience-persona-tab {
+            background: #0f172a !important;
+            border-color: #27354f !important;
+        }
+        html.dark-mode .audience-persona-tab:hover,
+        body.dark-mode .audience-persona-tab:hover {
+            background: #1a2744 !important;
+            border-color: #3b82f6 !important;
+        }
+        html.dark-mode .audience-persona-tab.active,
+        body.dark-mode .audience-persona-tab.active {
+            background: rgba(37, 99, 235, 0.22) !important;
+            border-color: #3b82f6 !important;
+        }
+        html.dark-mode .audience-persona-tab.active::after,
+        body.dark-mode .audience-persona-tab.active::after {
+            background: #38bdf8 !important;
+        }
+        html.dark-mode .audience-detail-box,
+        body.dark-mode .audience-detail-box {
+            background: #0f172a !important;
+            border-color: #27354f !important;
+        }
+        html.dark-mode .audience-detail-box .border-lg-left,
+        body.dark-mode .audience-detail-box .border-lg-left {
+            border-left-color: #27354f !important;
+        }
+        html.dark-mode .audience-quote-box,
+        body.dark-mode .audience-quote-box {
+            background: rgba(37, 99, 235, 0.12) !important;
+            border-color: rgba(96, 165, 250, 0.35) !important;
+        }
+        html.dark-mode #personaQuote,
+        body.dark-mode #personaQuote {
+            color: #e2e8f0 !important;
+        }
+        html.dark-mode #personaQuoteAuthor,
+        body.dark-mode #personaQuoteAuthor {
+            color: #94a3b8 !important;
+        }
+        html.dark-mode .audience-chart-tile,
+        body.dark-mode .audience-chart-tile {
+            background: #0f172a !important;
+            border-color: #27354f !important;
+        }
+        html.dark-mode .audience-progress-header,
+        body.dark-mode .audience-progress-header {
+            color: #e2e8f0 !important;
+        }
+        html.dark-mode .audience-progress-bar,
+        body.dark-mode .audience-progress-bar {
+            background: #27354f !important;
+        }
+        html.dark-mode .vertical-stat-card,
+        body.dark-mode .vertical-stat-card {
+            background: #141d2e !important;
+            border-color: #27354f !important;
+        }
+        html.dark-mode .vertical-stat-card span.text-dark,
+        body.dark-mode .vertical-stat-card span.text-dark {
+            color: #f8fafc !important;
+        }
+        html.dark-mode .audience-calc-box,
+        body.dark-mode .audience-calc-box {
+            background: linear-gradient(135deg, #090e1a 0%, #0f172a 100%) !important;
+            border-color: #27354f !important;
+        }
+        html.dark-mode #calcFormatSelect,
+        body.dark-mode #calcFormatSelect {
+            background: #0f172a !important;
+            color: #f8fafc !important;
+            border: 1px solid #334155 !important;
+        }
+
+        /* Favikon Spotlight Section */
+        html.dark-mode .favikon-spotlight-box,
+        body.dark-mode .favikon-spotlight-box {
+            background: #141e33 !important;
+            border-color: #27354f !important;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4) !important;
+        }
+        html.dark-mode .favikon-metric-card,
+        body.dark-mode .favikon-metric-card {
+            background: #0f172a !important;
+            border-color: #27354f !important;
+        }
+        html.dark-mode .favikon-metric-card:hover,
+        body.dark-mode .favikon-metric-card:hover {
+            border-color: #6366f1 !important;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45) !important;
+        }
+        html.dark-mode .favikon-badge-chip,
+        body.dark-mode .favikon-badge-chip {
+            background: #0f172a !important;
+            border-color: #27354f !important;
+            color: #cbd5e1 !important;
+        }
+        html.dark-mode .favikon-badge-chip strong,
+        body.dark-mode .favikon-badge-chip strong {
+            color: #f8fafc !important;
+        }
+        html.dark-mode .favikon-pillar-header,
+        body.dark-mode .favikon-pillar-header {
+            color: #e2e8f0 !important;
+        }
+        html.dark-mode .favikon-pillar-bar,
+        body.dark-mode .favikon-pillar-bar {
+            background: #27354f !important;
+        }
+        html.dark-mode .border-lg-right,
+        body.dark-mode .border-lg-right {
+            border-right-color: #27354f !important;
+        }
+
+        /* ADPList Mentorship Impact Section */
+        html.dark-mode .adplist-impact-box,
+        body.dark-mode .adplist-impact-box {
+            background: #141e33 !important;
+            border-color: #27354f !important;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4) !important;
+        }
+        html.dark-mode .adplist-metric-tile,
+        body.dark-mode .adplist-metric-tile {
+            background: #0f172a !important;
+            border-color: #27354f !important;
+        }
+        html.dark-mode .adplist-topic-tag,
+        body.dark-mode .adplist-topic-tag {
+            background: #0f172a !important;
+            border-color: #27354f !important;
+            color: #cbd5e1 !important;
+        }
+        html.dark-mode .adplist-quote-box,
+        body.dark-mode .adplist-quote-box {
+            background: rgba(225, 49, 108, 0.1) !important;
+            color: #e2e8f0 !important;
+            border-left-color: #e1316c !important;
+        }
+        html.dark-mode .btn-adplist-outline,
+        body.dark-mode .btn-adplist-outline {
+            color: #e2e8f0 !important;
+            border-color: #475569 !important;
+        }
+        html.dark-mode .btn-adplist-outline:hover,
+        body.dark-mode .btn-adplist-outline:hover {
+            border-color: #e1316c !important;
+            color: #ffffff !important;
+            background: #e1316c !important;
+        }
+
+        /* Partnership Proposal Form & Modals */
+        .partnership-form-container {
+            background: #ffffff;
+            border-radius: 0 20px 20px 0;
+            transition: background 0.3s ease;
+        }
+        html.dark-mode .partnership-form-container,
+        body.dark-mode .partnership-form-container {
+            background: #141e33 !important;
+            border-left: 1px solid #27354f !important;
+        }
+        html.dark-mode .partnership-form-container h4,
+        body.dark-mode .partnership-form-container h4 {
+            color: #f8fafc !important;
+        }
+        html.dark-mode .form-label-custom,
+        body.dark-mode .form-label-custom {
+            color: #cbd5e1 !important;
+        }
+        html.dark-mode .form-control-custom,
+        body.dark-mode .form-control-custom {
+            background: #0f172a !important;
+            border-color: #27354f !important;
+            color: #f8fafc !important;
+        }
+        html.dark-mode .form-control-custom:focus,
+        body.dark-mode .form-control-custom:focus {
+            border-color: #3b82f6 !important;
+            background: #0f172a !important;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25) !important;
+        }
+
+        html.dark-mode .modal-content,
+        body.dark-mode .modal-content {
+            background: #141e33 !important;
+            border: 1px solid #27354f !important;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6) !important;
+        }
+        html.dark-mode .modal-body-custom,
+        body.dark-mode .modal-body-custom {
+            background: #141e33 !important;
+            color: #f8fafc !important;
+        }
+        html.dark-mode .modal-body-custom .btn-light,
+        body.dark-mode .modal-body-custom .btn-light {
+            background: #27354f !important;
+            color: #f8fafc !important;
+            border-color: #334155 !important;
+        }
+        html.dark-mode .modal-body-custom .border-top,
+        body.dark-mode .modal-body-custom .border-top {
+            border-top-color: #27354f !important;
+        }
+
+        /* Generic Badge-light and Soft Badges in Dark Mode */
+        html.dark-mode .badge-light,
+        body.dark-mode .badge-light {
+            background: #27354f !important;
+            color: #f8fafc !important;
+            border-color: #334155 !important;
+        }
+        html.dark-mode .badge-primary-soft,
+        body.dark-mode .badge-primary-soft {
+            background: rgba(37, 99, 235, 0.2) !important;
+            color: #93c5fd !important;
+            border-color: rgba(37, 99, 235, 0.4) !important;
+        }
+
+        /* Footer & Contrast Dark Mode Polish */
+        html.dark-mode footer.bg-light,
+        body.dark-mode footer.bg-light {
+            background-color: #0b1120 !important;
+            border-top: 1px solid #1e293b !important;
+        }
+        html.dark-mode footer .text-black,
+        body.dark-mode footer .text-black {
+            color: #94a3b8 !important;
+        }
+        html.dark-mode footer .brand-name-text,
+        body.dark-mode footer .brand-name-text {
+            color: #f8fafc !important;
+        }
+        html.dark-mode footer .social-icon a,
+        body.dark-mode footer .social-icon a {
+            background-color: #1e293b !important;
+            color: #94a3b8 !important;
+            border: 1px solid #334155 !important;
+        }
+        html.dark-mode footer .social-icon a:hover,
+        body.dark-mode footer .social-icon a:hover {
+            background-color: #2563eb !important;
+            color: #ffffff !important;
+            border-color: #2563eb !important;
+        }
+        html.dark-mode footer.footer-bar,
+        body.dark-mode footer.footer-bar {
+            background-color: #060913 !important;
+            border-top: 1px solid #1e293b !important;
+        }
+        html.dark-mode .lead.text-primary,
+        body.dark-mode .lead.text-primary {
+            color: #38bdf8 !important;
+        }
+        html.dark-mode .badge-soft-warning,
+        body.dark-mode .badge-soft-warning {
+            background: rgba(245, 158, 11, 0.2) !important;
+            color: #fcd34d !important;
+        }
+        html.dark-mode .badge-soft-primary,
+        body.dark-mode .badge-soft-primary {
+            background: rgba(37, 99, 235, 0.2) !important;
+            color: #93c5fd !important;
+        }
+        html.dark-mode .badge-soft-success,
+        body.dark-mode .badge-soft-success {
+            background: rgba(16, 185, 129, 0.2) !important;
+            color: #6ee7b7 !important;
+        }
+        html.dark-mode .badge-soft-info,
+        body.dark-mode .badge-soft-info {
+            background: rgba(14, 165, 233, 0.2) !important;
+            color: #7dd3fc !important;
+        }
+        html.dark-mode .badge-soft-danger,
+        body.dark-mode .badge-soft-danger {
+            background: rgba(239, 68, 68, 0.2) !important;
+            color: #fca5a5 !important;
+        }
+        html.dark-mode .border-white-10,
+        body.dark-mode .border-white-10 {
+            border-color: rgba(255, 255, 255, 0.12) !important;
+        }
+        html.dark-mode .btn-outline-primary,
+        body.dark-mode .btn-outline-primary {
+            color: #93c5fd !important;
+            border-color: #3b82f6 !important;
+        }
+        html.dark-mode .btn-outline-primary:hover,
+        body.dark-mode .btn-outline-primary:hover {
+            color: #ffffff !important;
+            background-color: #2563eb !important;
+            border-color: #2563eb !important;
+        }
     </style>
     <!-- HV AI Copilot Styles -->
     <link rel="stylesheet" href="css/hv-copilot.css" />
@@ -1967,7 +2481,7 @@
     </header>
 
     <!-- Main Feed Environment -->
-    <main class="py-5" style="background-color: #f8fafc;" id="socialContent">
+    <main class="py-5" id="socialContent">
         <div class="container">
             <!-- Executive Partnership & Reach Ribbon -->
             <div class="social-stats-box mb-5">
@@ -2387,7 +2901,7 @@
                             </div>
 
                             <div class="col-lg-5 border-lg-left pl-lg-4">
-                                <div class="p-3 rounded" style="background: rgba(37, 99, 235, 0.05); border: 1px dashed rgba(37, 99, 235, 0.25);">
+                                <div class="p-3 rounded audience-quote-box">
                                     <div class="small font-weight-bold text-primary mb-1">
                                         <i class="mdi mdi-format-quote-open mr-1"></i> Audience Interaction Voice
                                     </div>
@@ -2611,7 +3125,7 @@
                                 <label class="small font-weight-bold text-white-50 text-uppercase" style="letter-spacing: 0.5px; font-size: 10.5px;">
                                     Collaboration Format
                                 </label>
-                                <select class="form-control form-control-sm" id="calcFormatSelect" onchange="updateCampaignEstimate()" style="border-radius: 8px; font-weight: 600; height: 42px; background: #ffffff; color: #0f172a;">
+                                <select class="form-control form-control-sm" id="calcFormatSelect" onchange="updateCampaignEstimate()" style="border-radius: 8px; font-weight: 600; height: 42px;">
                                     <option value="sponsored">Sponsored Thought Leadership &amp; Case Study</option>
                                     <option value="keynote">Keynote Address &amp; Panel Moderation</option>
                                     <option value="masterclass">Corporate Masterclass &amp; Executive Workshop</option>
@@ -2966,7 +3480,7 @@
                     </div>
 
                     <div class="col-lg-7">
-                        <div class="p-4 p-md-5 bg-white h-100 rounded-right partnership-form-container">
+                        <div class="p-4 p-md-5 h-100 rounded-right partnership-form-container">
                             <h4 class="font-weight-bold text-dark mb-1">Send Collaboration Proposal</h4>
                             <p class="text-muted small mb-4">Fill out this quick form or email directly to initiate a conversation.</p>
 
@@ -3069,7 +3583,7 @@
                 </div>
 
                 <!-- Modal Body -->
-                <div class="modal-body p-4 p-md-4" style="background: #ffffff;">
+                <div class="modal-body p-4 p-md-4 modal-body-custom">
                     <form id="modalPartnershipInquiryForm" onsubmit="handleModalPartnershipSubmit(event)">
                         <div class="row">
                             <div class="col-md-6 form-group mb-3">

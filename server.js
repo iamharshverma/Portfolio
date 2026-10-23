@@ -1195,13 +1195,13 @@ app.get(['/media-distribution-analytics', '/page-media-distribution-analytics', 
   res.sendFile(path.join(__dirname, 'page-media-distribution-analytics.html'));
 });
 
-// Explicit route for Social Page
-app.get(['/social', '/page-social', '/page-social.html'], (req, res) => {
+// Explicit route for Partnerships & Social Page
+app.get(['/partnerships', '/partnership', '/social', '/page-social', '/page-social.html'], (req, res) => {
   res.sendFile(path.join(__dirname, 'page-social.html'));
 });
 
-// Explicit route for Speaker Page
-app.get(['/speaker', '/page-speaker', '/page-speaker.html'], (req, res) => {
+// Explicit route for Speaker / Speaking Page
+app.get(['/speaker', '/page-speaker', '/page-speaker.html', '/speaking', '/page-speaking', '/page-speaking.html'], (req, res) => {
   res.sendFile(path.join(__dirname, 'page-speaker.html'));
 });
 
@@ -1226,12 +1226,14 @@ app.get('/api/smart-slides', (req, res) => {
     const deck6Path = path.join(__dirname, 'data', 'cybersecurity-evolution-clean-attack.json');
     const deck7Path = path.join(__dirname, 'data', 'death-of-authentication-ai-systems.json');
     const deck8Path = path.join(__dirname, 'data', 'agents-dont-break-rules-they-redefine-them.json');
+    const deck9Path = path.join(__dirname, 'data', 'why-multi-agent-systems-cybersecurity-nightmare.json');
     const deck3 = fs.existsSync(deck3Path) ? JSON.parse(fs.readFileSync(deck3Path, 'utf8')) : [];
     const deck4 = fs.existsSync(deck4Path) ? JSON.parse(fs.readFileSync(deck4Path, 'utf8')) : [];
     const deck5 = fs.existsSync(deck5Path) ? JSON.parse(fs.readFileSync(deck5Path, 'utf8')) : [];
     const deck6 = fs.existsSync(deck6Path) ? JSON.parse(fs.readFileSync(deck6Path, 'utf8')) : [];
     const deck7 = fs.existsSync(deck7Path) ? JSON.parse(fs.readFileSync(deck7Path, 'utf8')) : [];
     const deck8 = fs.existsSync(deck8Path) ? JSON.parse(fs.readFileSync(deck8Path, 'utf8')) : [];
+    const deck9 = fs.existsSync(deck9Path) ? JSON.parse(fs.readFileSync(deck9Path, 'utf8')) : [];
 
     res.json({
       success: true,
@@ -1304,6 +1306,15 @@ app.get('/api/smart-slides', (req, res) => {
           easyChairUrl: 'https://easychair.org/smart-slide/slide/X2qH#{sn:1}',
           blogUrl: 'https://www.rsaconference.com/Library/blog/agents-dont-break-rules-they-redefine-them',
           slides: deck8
+        },
+        'JSZf': {
+          id: 'JSZf',
+          title: 'Why Multi-Agent Systems Are a Cybersecurity Nightmare',
+          folder: 'why-multi-agent-systems-cybersecurity-nightmare',
+          count: deck9.length,
+          easyChairUrl: 'https://easychair.org/smart-slide/slide/JSZf#{sn:1}',
+          blogUrl: 'https://www.rsaconference.com/Library/blog/why-multi-agent-systems-are-a-cybersecurity-nightmare',
+          slides: deck9
         }
       }
     });
@@ -1312,25 +1323,36 @@ app.get('/api/smart-slides', (req, res) => {
   }
 });
 
-// Serve static assets from dist or project root
+// Serve static assets: prefer project root (for zero-latency development assets) then dist
+app.use(express.static(__dirname, {
+  extensions: ['html', 'htm']
+}));
 if (fs.existsSync(path.join(__dirname, 'dist'))) {
   app.use(express.static(path.join(__dirname, 'dist'), {
     extensions: ['html', 'htm']
   }));
 }
-app.use(express.static(__dirname, {
-  extensions: ['html', 'htm']
-}));
 
 // Route fallback
 app.get('*', (req, res) => {
   if (/\.(js|css|json|map|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot)$/i.test(req.path)) {
     return res.status(404).type('text/plain').send('Not found');
   }
-  const indexPath = fs.existsSync(path.join(__dirname, 'dist', 'index.html'))
-    ? path.join(__dirname, 'dist', 'index.html')
-    : path.join(__dirname, 'index.html');
+  const indexPath = fs.existsSync(path.join(__dirname, 'index.html'))
+    ? path.join(__dirname, 'index.html')
+    : path.join(__dirname, 'dist', 'index.html');
   res.sendFile(indexPath);
+});
+
+// Error handling middleware to catch any static stream ENOENT or other request errors cleanly
+app.use((err, req, res, next) => {
+  if (err && (err.code === 'ENOENT' || err.statusCode === 404)) {
+    return res.status(404).type('text/plain').send('Not found');
+  }
+  console.error('[Server Error]', err);
+  if (!res.headersSent) {
+    res.status(500).type('text/plain').send('Internal Server Error');
+  }
 });
 
 // Start HTTP server

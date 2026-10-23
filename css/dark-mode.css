@@ -1584,17 +1584,55 @@ body.dark-mode .exp-card h5 {
   color: #f8fafc !important;
 }
 
+html.dark-mode #experience,
+body.dark-mode #experience {
+  background-color: #0b0f19 !important;
+}
+
+html.dark-mode #experience h2,
+html.dark-mode #experience h3,
+html.dark-mode #experience h4,
+html.dark-mode #experience h5,
+html.dark-mode #experience h6,
+body.dark-mode #experience h2,
+body.dark-mode #experience h3,
+body.dark-mode #experience h4,
+body.dark-mode #experience h5,
+body.dark-mode #experience h6,
+html.dark-mode .exp-card h5,
+body.dark-mode .exp-card h5 {
+  color: #f8fafc !important;
+}
+
+html.dark-mode .exp-card,
+body.dark-mode .exp-card,
+html.dark-mode #experience .resume-list,
+body.dark-mode #experience .resume-list {
+  background-color: #141d2e !important;
+  border-color: #27354f !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35) !important;
+}
+
+html.dark-mode #experience .text-muted,
+body.dark-mode #experience .text-muted,
+html.dark-mode .exp-card .text-muted,
+body.dark-mode .exp-card .text-muted {
+  color: #94a3b8 !important;
+}
+
 html.dark-mode .exp-logo-wrap,
 body.dark-mode .exp-logo-wrap {
-  background-color: #1e293b !important;
-  border-color: rgba(255, 255, 255, 0.12) !important;
+  background-color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  padding: 4px !important;
+  border-radius: 12px !important;
 }
 
 html.dark-mode .exp-date-badge,
 body.dark-mode .exp-date-badge {
-  background-color: rgba(59, 130, 246, 0.15) !important;
+  background-color: #1e293b !important;
   color: #93c5fd !important;
-  border-color: rgba(59, 130, 246, 0.3) !important;
+  border-color: #334155 !important;
 }
 
 html.dark-mode .exp-date-badge.current,
@@ -1618,15 +1656,15 @@ body.dark-mode .exp-bullet-list li::before {
 html.dark-mode .exp-tech-tag,
 body.dark-mode .exp-tech-tag {
   background-color: #1e293b !important;
-  color: #cbd5e1 !important;
-  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #e2e8f0 !important;
+  border-color: #334155 !important;
 }
 
 html.dark-mode .exp-tech-tag:hover,
 body.dark-mode .exp-tech-tag:hover {
-  background-color: rgba(59, 130, 246, 0.2) !important;
-  color: #93c5fd !important;
-  border-color: rgba(59, 130, 246, 0.35) !important;
+  background-color: rgba(59, 130, 246, 0.25) !important;
+  color: #bfdbfe !important;
+  border-color: #3b82f6 !important;
 }
 
 html.dark-mode .exp-skill-card,
@@ -1758,7 +1796,68 @@ body.dark-mode .contact-icon-box.icon-box-purple i {
   color: #c084fc !important;
 }
 
+/* ==========================================================================
+   Partnerships & Social Leadership Hub (page-social)
+   ========================================================================== */
+html.dark-mode main#socialContent,
+body.dark-mode main#socialContent {
+  background-color: #0b1120 !important;
+  color: #f8fafc !important;
+}
 
+html.dark-mode .social-stats-box,
+body.dark-mode .social-stats-box,
+html.dark-mode .brand-slider-panel,
+body.dark-mode .brand-slider-panel,
+html.dark-mode .collab-package-card,
+body.dark-mode .collab-package-card,
+html.dark-mode .audience-section-wrap,
+body.dark-mode .audience-section-wrap,
+html.dark-mode .favikon-spotlight-box,
+body.dark-mode .favikon-spotlight-box,
+html.dark-mode .adplist-impact-box,
+body.dark-mode .adplist-impact-box,
+html.dark-mode .partnership-form-container,
+body.dark-mode .partnership-form-container {
+  background-color: #141e33 !important;
+  border-color: #27354f !important;
+}
 
+html.dark-mode .audience-kpi-card,
+body.dark-mode .audience-kpi-card,
+html.dark-mode .audience-persona-tab,
+body.dark-mode .audience-persona-tab,
+html.dark-mode .audience-detail-box,
+body.dark-mode .audience-detail-box,
+html.dark-mode .audience-chart-tile,
+body.dark-mode .audience-chart-tile,
+html.dark-mode .vertical-stat-card,
+body.dark-mode .vertical-stat-card,
+html.dark-mode .favikon-metric-card,
+body.dark-mode .favikon-metric-card,
+html.dark-mode .adplist-metric-tile,
+body.dark-mode .adplist-metric-tile {
+  background-color: #0f172a !important;
+  border-color: #27354f !important;
+}
+
+html.dark-mode .brand-logo-slide,
+body.dark-mode .brand-logo-slide {
+  background: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4) !important;
+}
+html.dark-mode .brand-logo-slide:hover,
+body.dark-mode .brand-logo-slide:hover {
+  background: #ffffff !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.5) !important;
+  transform: translateY(-3px) scale(1.04);
+}
+html.dark-mode .brand-logo-slide img,
+body.dark-mode .brand-logo-slide img {
+  filter: none !important;
+  opacity: 1 !important;
+}
 
 
