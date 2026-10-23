@@ -365,7 +365,105 @@
             border-color: #334155;
         }
 
-        /* Card Architecture */
+        /* As Seen On Continuous Brand Slider */
+        .media-brand-slider-section {
+            position: relative;
+            margin: 35px 0 45px;
+        }
+        .brand-slider-heading {
+            font-size: 28px;
+            font-weight: 800;
+            color: #0f172a;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+        body.dark-mode .brand-slider-heading {
+            color: #ffffff;
+        }
+        .brand-slider-subheading {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 16px;
+        }
+        body.dark-mode .brand-slider-subheading {
+            color: #94a3b8;
+        }
+        .brand-slider-panel {
+            position: relative;
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 16px 0;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+        }
+        body.dark-mode .brand-slider-panel {
+            background: #ffffff;
+            border-color: #334155;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+        }
+        .brand-slider-panel::before,
+        .brand-slider-panel::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 70px;
+            z-index: 3;
+            pointer-events: none;
+        }
+        .brand-slider-panel::before {
+            left: 0;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+        .brand-slider-panel::after {
+            right: 0;
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+        .brand-slider-track {
+            display: flex;
+            align-items: center;
+            width: max-content;
+            animation: sliderScrollLeftToRight 32s linear infinite;
+            will-change: transform;
+        }
+        .brand-slider-track:hover {
+            animation-play-state: paused;
+        }
+        @keyframes sliderScrollLeftToRight {
+            0% {
+                transform: translateX(-50%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        .brand-logo-slide {
+            flex-shrink: 0;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+        }
+        .brand-logo-slide img {
+            max-height: 48px;
+            max-width: 180px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            transition: transform 0.25s ease;
+        }
+        .brand-logo-slide:hover img {
+            transform: scale(1.08);
+        }
+
+        /* Card Architecture - Structured Grid with Uniform Heights */
+        .media-card-col {
+            display: flex;
+            flex-direction: column;
+        }
         .media-card {
             background: #ffffff;
             border: 1px solid #e2e8f0;
@@ -374,6 +472,7 @@
             display: flex;
             flex-direction: column;
             height: 100%;
+            width: 100%;
             position: relative;
             transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
             box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
@@ -451,8 +550,9 @@
         .media-header-badge {
             position: relative;
             width: 100%;
-            height: 185px;
-            background: #090e1a;
+            height: 190px;
+            min-height: 190px;
+            background: linear-gradient(135deg, #090e1a 0%, #1e293b 100%);
             overflow: hidden;
             display: flex;
             align-items: center;
@@ -527,11 +627,16 @@
             flex-grow: 1;
         }
         .media-item-title {
-            font-size: 18px;
+            font-size: 17.5px;
             font-weight: 700;
-            line-height: 1.35;
+            line-height: 1.4;
             color: #0f172a;
             margin-bottom: 10px;
+            min-height: 48px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
             transition: color 0.2s ease;
         }
         .media-card:hover .media-item-title {
@@ -550,15 +655,27 @@
             padding: 8px 12px;
             border-radius: 0 8px 8px 0;
             font-style: italic;
-            font-size: 13px;
+            font-size: 12.5px;
             color: #475569;
             line-height: 1.45;
             margin-bottom: 12px;
+            min-height: 56px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
         body.dark-mode .media-quote-box {
             background: #0f172a;
             border-color: #60a5fa;
             color: #cbd5e1;
+        }
+        .media-quote-summary {
+            border-left-color: #94a3b8;
+            font-style: normal;
+        }
+        body.dark-mode .media-quote-summary {
+            border-left-color: #475569;
         }
 
         .media-summary-text {
@@ -1093,6 +1210,46 @@
                 </div>
             </div>
 
+            <!-- As Seen On Brand Logo Continuous Left-to-Right Slider -->
+            <div class="media-brand-slider-section">
+                <div class="text-center mb-3">
+                    <h3 class="brand-slider-heading">As Seen On</h3>
+                    <p class="brand-slider-subheading">Featured across leading global newsrooms, national business dailies, and technology publications</p>
+                </div>
+                
+                <div class="brand-slider-panel">
+                    <div class="brand-slider-track">
+                        <!-- Brand Logos (Set 1) -->
+                        <div class="brand-logo-slide" title="Healthcare Executive"><img src="images/media/brands/healthcare_executive_logo.svg" alt="Healthcare Executive" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="The Telegraph"><img src="images/media/brands/the_telegraph_logo.svg" alt="The Telegraph" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="Gadgets 360"><img src="images/media/brands/gadgets360_logo.svg" alt="Gadgets 360" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="The Times Group e-paper"><img src="images/media/brands/times_group_epaper_logo.svg" alt="The Times Group e-paper" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="Business Insider"><img src="images/media/brands/business_insider_logo.svg" alt="Business Insider" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="DNA Daily News &amp; Analysis"><img src="images/media/brands/dna_india_logo.svg" alt="DNA Daily News &amp; Analysis" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="The Economic Times"><img src="images/media/brands/economic_times_logo.svg" alt="The Economic Times" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="ET SmallBiz"><img src="images/media/brands/et_smallbiz_logo.svg" alt="ET SmallBiz" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="USA Today"><img src="images/media/brands/usatoday_logo.svg" alt="USA Today" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="Yahoo Finance"><img src="images/media/brands/yahoo_finance_logo.svg" alt="Yahoo Finance" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="HackerNoon"><img src="images/media/brands/hackernoon_logo.svg" alt="HackerNoon" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="Forttuna Global 100 Times Square"><img src="images/media/brands/forttuna_global100_logo.svg" alt="Forttuna Global 100 Times Square" loading="lazy" decoding="async"></div>
+
+                        <!-- Brand Logos (Set 2 for infinite seamless loop from left to right) -->
+                        <div class="brand-logo-slide" aria-hidden="true" title="Healthcare Executive"><img src="images/media/brands/healthcare_executive_logo.svg" alt="Healthcare Executive" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="The Telegraph"><img src="images/media/brands/the_telegraph_logo.svg" alt="The Telegraph" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="Gadgets 360"><img src="images/media/brands/gadgets360_logo.svg" alt="Gadgets 360" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="The Times Group e-paper"><img src="images/media/brands/times_group_epaper_logo.svg" alt="The Times Group e-paper" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="Business Insider"><img src="images/media/brands/business_insider_logo.svg" alt="Business Insider" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="DNA Daily News &amp; Analysis"><img src="images/media/brands/dna_india_logo.svg" alt="DNA Daily News &amp; Analysis" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="The Economic Times"><img src="images/media/brands/economic_times_logo.svg" alt="The Economic Times" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="ET SmallBiz"><img src="images/media/brands/et_smallbiz_logo.svg" alt="ET SmallBiz" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="USA Today"><img src="images/media/brands/usatoday_logo.svg" alt="USA Today" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="Yahoo Finance"><img src="images/media/brands/yahoo_finance_logo.svg" alt="Yahoo Finance" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="HackerNoon"><img src="images/media/brands/hackernoon_logo.svg" alt="HackerNoon" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="Forttuna Global 100 Times Square"><img src="images/media/brands/forttuna_global100_logo.svg" alt="Forttuna Global 100 Times Square" loading="lazy" decoding="async"></div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Spotlight Landmark Banner -->
             <div class="spotlight-banner">
                 <div class="row align-items-center">
@@ -1226,7 +1383,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-lifepage-interview"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/lifepage_badge.svg" alt="Life Page India: Inside Software Development & Engineering Careers" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/lifepage_badge.svg" alt="Life Page India: Inside Software Development & Engineering Careers" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(5, 150, 105, 0.95); color: #ffffff;">Career Interview</span>
                             <span class="media-year-pill">2018</span>
                             <span class="media-outlet-overlay">Life Page India</span>
@@ -1264,7 +1421,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-chai-coaching-cybersecurity"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/chai_coaching_badge.svg" alt="Chai & Coaching: How to Build a Tech Career in Cybersecurity" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/chai_coaching_badge.svg" alt="Chai & Coaching: How to Build a Tech Career in Cybersecurity" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(225, 29, 72, 0.95); color: #ffffff;">Video Podcast</span>
                             <span class="media-year-pill">2024</span>
                             <span class="media-outlet-overlay">Chai & Coaching</span>
@@ -1302,7 +1459,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-chai-coaching-interview-mastery"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/chai_coaching_badge.svg" alt="Chai & Coaching: How to Control Your Job Interview & Convince Recruiters to Hire You" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/chai_coaching_badge.svg" alt="Chai & Coaching: How to Control Your Job Interview & Convince Recruiters to Hire You" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(225, 29, 72, 0.95); color: #ffffff;">Career Masterclass</span>
                             <span class="media-year-pill">2024</span>
                             <span class="media-outlet-overlay">Chai & Coaching</span>
@@ -1340,7 +1497,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-trueml-talks-35"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/trueml_badge.svg" alt="TrueML Talks #35: Big Data and ML Practices at Palo Alto Networks" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/trueml_badge.svg" alt="TrueML Talks #35: Big Data and ML Practices at Palo Alto Networks" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(124, 58, 237, 0.95); color: #ffffff;">Technical Keynote</span>
                             <span class="media-year-pill">2024</span>
                             <span class="media-outlet-overlay">TrueML Talks / TrueFoundry</span>
@@ -1378,7 +1535,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-sz179-quantum-cybersecurity"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/quantum_battleground_badge.svg" alt="SZ 179: The Digital Battleground — Quantum & Cyber Security" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/quantum_battleground_badge.svg" alt="SZ 179: The Digital Battleground — Quantum & Cyber Security" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(124, 58, 237, 0.95); color: #ffffff;">Symposium Panel</span>
                             <span class="media-year-pill">2025</span>
                             <span class="media-outlet-overlay">Startup Zone / Top Voices Unite</span>
@@ -1416,7 +1573,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-futureagi-talk"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/futureagi_badge.svg" alt="FutureAGI: Powering Cybersecurity with GenAI & Intelligent Agents" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/futureagi_badge.svg" alt="FutureAGI: Powering Cybersecurity with GenAI & Intelligent Agents" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(124, 58, 237, 0.95); color: #ffffff;">AI Masterclass</span>
                             <span class="media-year-pill">2025</span>
                             <span class="media-outlet-overlay">FutureAGI</span>
@@ -1454,7 +1611,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-skydeck-era-agentic-security"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/skydeck_badge.svg" alt="UC Berkeley SkyDeck: The Era of Agentic Security (Batch 21 Keynote)" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/skydeck_badge.svg" alt="UC Berkeley SkyDeck: The Era of Agentic Security (Batch 21 Keynote)" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(124, 58, 237, 0.95); color: #ffffff;">Accelerator Keynote</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">UC Berkeley SkyDeck</span>
@@ -1492,7 +1649,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-xraised-beyond-code"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/xraised_spotify_badge.svg" alt="Xraised: Beyond the Code — The Future of AI & Cybersecurity" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/xraised_spotify_badge.svg" alt="Xraised: Beyond the Code — The Future of AI & Cybersecurity" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(225, 29, 72, 0.95); color: #ffffff;">Broadcast Feature</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Xraised / Spotify / Amazon Music</span>
@@ -1530,7 +1687,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-business-insider-gra-2026"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/business_insider_badge.svg" alt="Business Insider: Harsh Verma Receives 2026 Global Recognition Award for Enterprise AI Advances" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/business_insider_badge.svg" alt="Business Insider: Harsh Verma Receives 2026 Global Recognition Award for Enterprise AI Advances" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Tier 1 Press</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Business Insider / Markets Insider</span>
@@ -1568,7 +1725,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-ifgict-fellowship-timebusiness"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/time_business_badge.svg" alt="Time Business News: Harsh Verma Conferred Prestigious IFGICT Fellowship for Green ICT & AI Leadership" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/time_business_badge.svg" alt="Time Business News: Harsh Verma Conferred Prestigious IFGICT Fellowship for Green ICT & AI Leadership" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Fellowship Feature</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Time Business News</span>
@@ -1606,7 +1763,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-cybersecurity-excellence-awards-feature"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/cybersecurity_excellence_badge.svg" alt="Cybersecurity Excellence Awards: AI Innovator of the Year Candidate Showcase" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/cybersecurity_excellence_badge.svg" alt="Cybersecurity Excellence Awards: AI Innovator of the Year Candidate Showcase" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Official Showcase</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Cybersecurity Excellence Awards</span>
@@ -1644,7 +1801,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-nyweekly-journal-feature"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/nyweekly_badge.svg" alt="NY Weekly Journal: The Engineer Rewriting the Rules by Thinking “AI Beyond the Code”" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/nyweekly_badge.svg" alt="NY Weekly Journal: The Engineer Rewriting the Rules by Thinking “AI Beyond the Code”" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(5, 150, 105, 0.95); color: #ffffff;">Editorial Profile</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">NY Weekly Journal</span>
@@ -1682,7 +1839,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-health-tech-week-speaker"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/healthtech_badge.svg" alt="Health Tech Week 2026: Featured Keynote Speaker & Clinical AI Authority" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/healthtech_badge.svg" alt="Health Tech Week 2026: Featured Keynote Speaker & Clinical AI Authority" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(124, 58, 237, 0.95); color: #ffffff;">Conference Speaker</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Health Tech Week</span>
@@ -1720,7 +1877,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-noble-tech-awards-muse-world"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/noble_tech_badge.svg" alt="Noble Technology Awards & Muse World: 2026 Inaugural Gold Laureate Announcement" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/noble_tech_badge.svg" alt="Noble Technology Awards & Muse World: 2026 Inaugural Gold Laureate Announcement" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Industry Award Press</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Noble Technology Awards / Muse.world</span>
@@ -1758,7 +1915,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-twill-rocket-vibe-shift"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/twill_rocket_badge.svg" alt="Twill x Rocket: Inside Vibe Shift — The Builders Behind the Models" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/twill_rocket_badge.svg" alt="Twill x Rocket: Inside Vibe Shift — The Builders Behind the Models" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(225, 29, 72, 0.95); color: #ffffff;">Panel & Podcast</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">WeAreTwill / Rocket / YouTube</span>
@@ -1796,7 +1953,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-influencer-mag-nomination-times-square"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/influencer_uk_badge.svg" alt="Influencer Magazine UK: Harsh Verma Nominated for Tech Excellence Award (Times Square NYC)" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/influencer_uk_badge.svg" alt="Influencer Magazine UK: Harsh Verma Nominated for Tech Excellence Award (Times Square NYC)" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Times Square Feature</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Influencer Magazine UK / Times Square NYC</span>
@@ -1834,7 +1991,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-business-insider-agentic-framework"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/business_insider_badge.svg" alt="Business Insider: Harsh Verma Publishes Nuanced Framework on Rise of Agentic AI & Enterprise System Era" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/business_insider_badge.svg" alt="Business Insider: Harsh Verma Publishes Nuanced Framework on Rise of Agentic AI & Enterprise System Era" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Tier 1 Press</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Business Insider / Markets Insider</span>
@@ -1872,7 +2029,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-forttuna-powerlist-times-square"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/timessquare_forttuna_badge.svg" alt="Forttuna Global 100: THE POWER LIST 2026 & Times Square NYC Mega-Screen Broadcast" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/timessquare_forttuna_badge.svg" alt="Forttuna Global 100: THE POWER LIST 2026 & Times Square NYC Mega-Screen Broadcast" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Global Power List</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Forttuna Global 100 / Markets Insider</span>
@@ -1910,7 +2067,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-street-insider-human-ai"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/streetinsider_badge.svg" alt="Street Insider: Principal AI Engineer Harsh Verma Nominated for Tech Excellence as Human-AI Collaboration Gains Enterprise Attention" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/streetinsider_badge.svg" alt="Street Insider: Principal AI Engineer Harsh Verma Nominated for Tech Excellence as Human-AI Collaboration Gains Enterprise Attention" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Financial Wire</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Street Insider / MarketersMedia</span>
@@ -1948,7 +2105,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-influencer-uk-double-triumph"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/influencer_uk_badge.svg" alt="Influencer Magazine UK: Harsh Verma — A Double Triumph in AI and Cybersecurity Innovation" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/influencer_uk_badge.svg" alt="Influencer Magazine UK: Harsh Verma — A Double Triumph in AI and Cybersecurity Innovation" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(5, 150, 105, 0.95); color: #ffffff;">Magazine Feature</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Influencer Magazine UK</span>
@@ -1986,7 +2143,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-hackernoon-production-gap"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/hackernoon_badge.svg" alt="HackerNoon: The Production Gap — Your AI Model Isn’t as Reliable as You Think (Interview)" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/hackernoon_badge.svg" alt="HackerNoon: The Production Gap — Your AI Model Isn’t as Reliable as You Think (Interview)" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(5, 150, 105, 0.95); color: #ffffff;">Tech Interview</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">HackerNoon</span>
@@ -2024,7 +2181,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-usa-today-identity-perimeters"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/usatoday_badge.svg" alt="USA Today: Identity is Replacing Network Perimeters as the Foundation of Enterprise in the Age of AI Agents" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/usatoday_badge.svg" alt="USA Today: Identity is Replacing Network Perimeters as the Foundation of Enterprise in the Age of AI Agents" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Tier 1 Press</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">USA Today</span>
@@ -2062,7 +2219,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-ein-knox-news-tech-excellence"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/ein_news_badge.svg" alt="EIN News & Knox News: Harsh Verma Wins Tech Excellence Award at Influencer Magazine Awards 2026" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/ein_news_badge.svg" alt="EIN News & Knox News: Harsh Verma Wins Tech Excellence Award at Influencer Magazine Awards 2026" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Press Wire</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">EIN Presswire / Knox News / USA Today Network</span>
@@ -2100,7 +2257,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-newsbreak-unified-framework"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/newsbreak_badge.svg" alt="NewsBreak: AI Expert Harsh Verma Introduces Unified Framework for Enterprise AI: From Orchestration to Trust, Identity, and Observability" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/newsbreak_badge.svg" alt="NewsBreak: AI Expert Harsh Verma Introduces Unified Framework for Enterprise AI: From Orchestration to Trust, Identity, and Observability" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Syndicated Tech News</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">NewsBreak / MarketersMedia</span>
@@ -2138,7 +2295,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-berkeley-skydeck-newsletter-july15"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/skydeck_badge.svg" alt="UC Berkeley SkyDeck Newsletter: Spotlight on HackerNoon Interview on Agentic AI" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/skydeck_badge.svg" alt="UC Berkeley SkyDeck Newsletter: Spotlight on HackerNoon Interview on Agentic AI" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(217, 119, 6, 0.95); color: #ffffff;">Accelerator Newsletter</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">UC Berkeley SkyDeck Newsletter</span>
@@ -2176,7 +2333,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-berkeley-skydeck-batch22-workshop"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/skydeck_badge.svg" alt="UC Berkeley SkyDeck Workshop: Era of Agentic Security and Governance in the Age of Autonomy (Batch 22)" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/skydeck_badge.svg" alt="UC Berkeley SkyDeck Workshop: Era of Agentic Security and Governance in the Age of Autonomy (Batch 22)" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(124, 58, 237, 0.95); color: #ffffff;">Executive Masterclass</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">UC Berkeley SkyDeck</span>
@@ -2214,7 +2371,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-primeful-insights-industry-icon"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/primeful_badge.svg" alt="Primeful Insights: Industry Icon 2026 Feature & Cover Story" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/primeful_badge.svg" alt="Primeful Insights: Industry Icon 2026 Feature & Cover Story" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(5, 150, 105, 0.95); color: #ffffff;">Cover Icon Feature</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Primeful Insights</span>
@@ -2252,7 +2409,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-berkeley-skydeck-newsletter-aug5"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/skydeck_badge.svg" alt="UC Berkeley SkyDeck Newsletter: Forbes AI Governance & Iterative Experimentation" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/skydeck_badge.svg" alt="UC Berkeley SkyDeck Newsletter: Forbes AI Governance & Iterative Experimentation" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(217, 119, 6, 0.95); color: #ffffff;">Accelerator Newsletter</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">UC Berkeley SkyDeck Newsletter</span>
@@ -2290,7 +2447,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-berkeley-skydeck-newsletter-oct7"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/skydeck_badge.svg" alt="UC Berkeley SkyDeck Newsletter: Forbes Feature on Data Systems as the Real AI Moat" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/skydeck_badge.svg" alt="UC Berkeley SkyDeck Newsletter: Forbes Feature on Data Systems as the Real AI Moat" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(217, 119, 6, 0.95); color: #ffffff;">Accelerator Newsletter</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">UC Berkeley SkyDeck Newsletter</span>
@@ -2328,7 +2485,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-berkeley-skydeck-advisor-listing"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/skydeck_badge.svg" alt="UC Berkeley SkyDeck: Official Global Advisory Council Listing" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/skydeck_badge.svg" alt="UC Berkeley SkyDeck: Official Global Advisory Council Listing" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(217, 119, 6, 0.95); color: #ffffff;">Advisory Appointment</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">UC Berkeley SkyDeck</span>
@@ -2366,7 +2523,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-google-developer-expert-listing"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/google_experts_badge.svg" alt="Google Developer Experts: Official Global GDE Directory Listing" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/google_experts_badge.svg" alt="Google Developer Experts: Official Global GDE Directory Listing" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(217, 119, 6, 0.95); color: #ffffff;">Google GDE Directory</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Google Developers</span>
@@ -2404,7 +2561,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-influencer-uk-ai-production-gap"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/influencer_uk_badge.svg" alt="Influencer Magazine UK: The AI Production Gap — Why Models Fail in the Real World" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/influencer_uk_badge.svg" alt="Influencer Magazine UK: The AI Production Gap — Why Models Fail in the Real World" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(5, 150, 105, 0.95); color: #ffffff;">Technical Editorial</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Influencer Magazine UK</span>
@@ -2442,7 +2599,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-cio-insightful-top5-leaders"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/cio_insightful_badge.svg" alt="CIO Insightful: Top 5 Most Dynamic Leaders Shaping the Future in 2026" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/cio_insightful_badge.svg" alt="CIO Insightful: Top 5 Most Dynamic Leaders Shaping the Future in 2026" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Executive Ranking</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">CIO Insightful</span>
@@ -2480,7 +2637,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-vlink-tech-talk-ep55"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/vlink_podcast_badge.svg" alt="Tech Talk with VLink (Ep. 55): Enterprise AI — Building Solutions for Security, Scale & Trust" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/vlink_podcast_badge.svg" alt="Tech Talk with VLink (Ep. 55): Enterprise AI — Building Solutions for Security, Scale & Trust" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(225, 29, 72, 0.95); color: #ffffff;">Featured Podcast</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">VLink Inc / YouTube / YouTube Music</span>
@@ -2518,7 +2675,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-barchart-control-problem"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/barchart_badge.svg" alt="Barchart: Principal Software Engineer Harsh Verma Decodes Why Enterprise AI Has Moved From a Model Problem to a Control Problem" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/barchart_badge.svg" alt="Barchart: Principal Software Engineer Harsh Verma Decodes Why Enterprise AI Has Moved From a Model Problem to a Control Problem" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Financial Analysis</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Barchart.com / MarketersMedia</span>
@@ -2556,7 +2713,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-muse-world-next-gen-secure-ai"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/noble_tech_badge.svg" alt="Muse World & Noble Awards: Harsh Verma Innovates to Lead the Next Generation of Secure AI Innovation" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/noble_tech_badge.svg" alt="Muse World & Noble Awards: Harsh Verma Innovates to Lead the Next Generation of Secure AI Innovation" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Global Profile</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Muse.world / Noble Awards Global</span>
@@ -2594,7 +2751,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-yahoo-finance-cybersecurity-excellence"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/yahoo_finance_badge.svg" alt="Yahoo Finance: Cybersecurity Excellence Awards 2026 Announces Dual Recognition for Principal AI Engineer Harsh Verma" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/yahoo_finance_badge.svg" alt="Yahoo Finance: Cybersecurity Excellence Awards 2026 Announces Dual Recognition for Principal AI Engineer Harsh Verma" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Tier 1 Wire</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Yahoo Finance / Newsfile Corp</span>
@@ -2632,7 +2789,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-influencer-uk-forttuna-powerlist"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/influencer_uk_badge.svg" alt="Influencer Magazine UK: Harsh Verma Named to Forttuna Global 100 — THE POWER LIST 2026" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/influencer_uk_badge.svg" alt="Influencer Magazine UK: Harsh Verma Named to Forttuna Global 100 — THE POWER LIST 2026" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(5, 150, 105, 0.95); color: #ffffff;">Cover Feature</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">Influencer Magazine UK</span>
@@ -2670,7 +2827,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-xraised-publication-programme-2026"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/xraised_over_100_journals.png" alt="xraised: Principal AI Engineer Harsh Verma Expands Peer-Reviewed Publication Programme Across Leading AI and Research Journals in 2026" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/xraised_over_100_journals.png" alt="xraised: Principal AI Engineer Harsh Verma Expands Peer-Reviewed Publication Programme Across Leading AI and Research Journals in 2026" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Global Syndicate</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">xraised / Over 100 Journals (AP News, NBC, FOX, CBS)</span>
@@ -2708,7 +2865,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-apnews-marketersmedia-tech-excellence-2026"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/ap_news_marketersmedia_badge.svg" alt="Harsh Verma on AI Agents ‘The Clean Attack’ Challenge Signals a Shift in Cybersecurity Strategy" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/ap_news_marketersmedia_badge.svg" alt="Harsh Verma on AI Agents ‘The Clean Attack’ Challenge Signals a Shift in Cybersecurity Strategy" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">National Press Wire</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">AP News / MarketersMEDIA</span>
@@ -2746,7 +2903,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-marketersmedia-bcs-fellowship-rsa"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/marketersmedia_bcs_rsa_badge.svg" alt="Principal Software Engineer Harsh Verma Awarded BCS Fellowship and Publishes RSA Conference Analysis on Why Identity Alone Can No Longer Secure AI Systems" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/marketersmedia_bcs_rsa_badge.svg" alt="Principal Software Engineer Harsh Verma Awarded BCS Fellowship and Publishes RSA Conference Analysis on Why Identity Alone Can No Longer Secure AI Systems" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Global Press Wire</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">MarketersMEDIA Wire</span>
@@ -2784,7 +2941,7 @@
                             <i class="mdi mdi-star-outline" id="star-icon-media-ein-ai-agent-security-sf-tech-week"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/ein_sf_tech_week_badge.svg" alt="AI Agent Security and Virtual Cell AI Lead AI Insiders&#39; SF Tech Week Nights" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
+                            <img src="images/media/ein_sf_tech_week_badge.svg" alt="AI Agent Security and Virtual Cell AI Lead AI Insiders&#39; SF Tech Week Nights" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){this.onerror=null;this.src=this.src.replace('.svg','.png');}" />
                             <span class="media-type-pill" style="background: rgba(14, 116, 144, 0.95); color: #ffffff;">Global Press Wire</span>
                             <span class="media-year-pill">2026</span>
                             <span class="media-outlet-overlay">EIN Presswire Wire</span>

@@ -1226,12 +1226,14 @@ app.get('/api/smart-slides', (req, res) => {
     const deck6Path = path.join(__dirname, 'data', 'cybersecurity-evolution-clean-attack.json');
     const deck7Path = path.join(__dirname, 'data', 'death-of-authentication-ai-systems.json');
     const deck8Path = path.join(__dirname, 'data', 'agents-dont-break-rules-they-redefine-them.json');
+    const deck9Path = path.join(__dirname, 'data', 'why-multi-agent-systems-cybersecurity-nightmare.json');
     const deck3 = fs.existsSync(deck3Path) ? JSON.parse(fs.readFileSync(deck3Path, 'utf8')) : [];
     const deck4 = fs.existsSync(deck4Path) ? JSON.parse(fs.readFileSync(deck4Path, 'utf8')) : [];
     const deck5 = fs.existsSync(deck5Path) ? JSON.parse(fs.readFileSync(deck5Path, 'utf8')) : [];
     const deck6 = fs.existsSync(deck6Path) ? JSON.parse(fs.readFileSync(deck6Path, 'utf8')) : [];
     const deck7 = fs.existsSync(deck7Path) ? JSON.parse(fs.readFileSync(deck7Path, 'utf8')) : [];
     const deck8 = fs.existsSync(deck8Path) ? JSON.parse(fs.readFileSync(deck8Path, 'utf8')) : [];
+    const deck9 = fs.existsSync(deck9Path) ? JSON.parse(fs.readFileSync(deck9Path, 'utf8')) : [];
 
     res.json({
       success: true,
@@ -1304,6 +1306,15 @@ app.get('/api/smart-slides', (req, res) => {
           easyChairUrl: 'https://easychair.org/smart-slide/slide/X2qH#{sn:1}',
           blogUrl: 'https://www.rsaconference.com/Library/blog/agents-dont-break-rules-they-redefine-them',
           slides: deck8
+        },
+        'JSZf': {
+          id: 'JSZf',
+          title: 'Why Multi-Agent Systems Are a Cybersecurity Nightmare',
+          folder: 'why-multi-agent-systems-cybersecurity-nightmare',
+          count: deck9.length,
+          easyChairUrl: 'https://easychair.org/smart-slide/slide/JSZf#{sn:1}',
+          blogUrl: 'https://www.rsaconference.com/Library/blog/why-multi-agent-systems-are-a-cybersecurity-nightmare',
+          slides: deck9
         }
       }
     });

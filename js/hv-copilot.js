@@ -1085,6 +1085,7 @@ Harsh Verma brings over **12+ years of proven technical leadership** across ente
 
 Harsh's verified keynote slide decks are available via an interactive slide player with slide-by-slide citations and downloads:
 
+- **Why Multi-Agent Systems Are a Cybersecurity Nightmare**: Deep-dive into inter-agent trust chains, cascade injections, memory poisoning, and agentic IAM architecture (EasyChair: JSZf, linked with RSA Conference).
 - **Agents Don't Break Rules, They Redefine Them**: RSA Conference analysis on autonomous AI agents, policy drift, and continuous runtime governance (EasyChair: X2qH).
 - **The Death of Authentication**: Why identity isn't enough for AI systems (EasyChair: xJKk).
 - **The Clean Attack Problem**: From anomaly detection to intent-based security (EasyChair: tHbS).

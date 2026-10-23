@@ -1,0 +1,242 @@
+[
+  {
+    "slide": 1,
+    "title": "Why Multi-Agent Systems Are a Cybersecurity Nightmare",
+    "takeaways": [
+      "Deep-Dive into inter-agent trust chains, cascade injections, memory poisoning, and agentic IAM architecture.",
+      "Keynote executive threat briefing on AI risk and autonomous ecosystem security by Harsh Verma."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Multi-Agent Systems",
+      "RSA Conference",
+      "Agentic AI Security",
+      "Executive Briefing"
+    ]
+  },
+  {
+    "slide": 2,
+    "title": "The Structural Shift to Autonomous Agent Networks",
+    "takeaways": [
+      "Contrasts legacy single-agent models (bounded execution, explicit human verification, predictable API perimeters) with modern multi-agent systems.",
+      "Highlights emergent risks: autonomous collaboration, transitive trust chains where agents implicitly trust peers, and cascading vulnerability surfaces."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Architectural Transition",
+      "Transitive Trust",
+      "Cascade Vulnerability",
+      "Autonomous Collaboration"
+    ]
+  },
+  {
+    "slide": 3,
+    "title": "Multi-Agent Execution Graph Mechanics",
+    "takeaways": [
+      "Traces execution graphs from Node 01 (Retrieval Agent) to Node 02 (Synthesis), Node 03 (Execution), and Node 04 (Validation).",
+      "Exploit Pattern: Silent Automated Escalation — poisoned context in ingestion propagates silently across trusted peer nodes without triggering perimeter firewalls."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Execution Graph",
+      "Workflow Dynamics",
+      "Silent Escalation",
+      "Graph Mechanics"
+    ]
+  },
+  {
+    "slide": 4,
+    "title": "Transitive Trust: The Fundamental Weak Link",
+    "takeaways": [
+      "Implicit payload verification gaps: raw text and JSON pass between sub-agents without cryptographic signatures or schema sanitization.",
+      "Unchecked credential inheritance and dynamic topology blind spots prevent runtime proxies from anticipating or enforcing static communication paths."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Transitive Trust",
+      "Root Cause",
+      "Credential Inheritance",
+      "Topology Blind Spots"
+    ]
+  },
+  {
+    "slide": 5,
+    "title": "Cascade Prompt Injection & Payload Hopping",
+    "takeaways": [
+      "Step 1 Ingestion Phase: Adversary embeds hidden prompt instructions in untrusted documents or CRM data.",
+      "Step 2 Boundary Hopping: Intake agent inadvertently wraps malicious instructions into trusted inter-agent task calls, leading to Step 3 Privilege Execution."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Prompt Injection",
+      "Payload Hopping",
+      "Cascade Injection",
+      "Boundary Hopping"
+    ]
+  },
+  {
+    "slide": 6,
+    "title": "Shared Memory & Vector Store Poisoning",
+    "takeaways": [
+      "Corrupting the Collective Brain: Multi-agent systems relying on shared vector databases (Pinecone, Milvus, Redis) face permanent cross-agent context contamination.",
+      "Long-term persistence vector lingers across sessions; cross-agent contagion and stealth logic distortion alter decisions without runtime errors."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Vector Store Poisoning",
+      "Shared Memory",
+      "RAG Security",
+      "Cross-Agent Contagion"
+    ]
+  },
+  {
+    "slide": 7,
+    "title": "Tool Output Manipulation & API Exploitation",
+    "takeaways": [
+      "Web search tampering hijacks automated research agents via maliciously crafted public web content.",
+      "Third-party API poisoning and recursive loop exhaustion can trigger infinite execution loops, spiking cloud API costs and causing complete denial of service."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Tool Manipulation",
+      "API Poisoning",
+      "Denial of Service",
+      "Infinite Loops"
+    ]
+  },
+  {
+    "slide": 8,
+    "title": "Stanford & UC Berkeley Benchmark Findings",
+    "takeaways": [
+      "Empirical research demonstrates 82% of inter-agent calls accept peer inputs without schema validation or sanitization.",
+      "Finding 01: Zero foundation model failure required (underlying LLMs worked within safety bounds; breach occurred via peer trust). Finding 02: Injected prompts traveled across up to 4 agent hops."
+    ],
+    "category": "Governance",
+    "tags": [
+      "Empirical Research",
+      "Stanford Benchmark",
+      "UC Berkeley",
+      "Security Metrics"
+    ]
+  },
+  {
+    "slide": 9,
+    "title": "MITRE ATLAS & OWASP Agentic Top 10 Mapping",
+    "takeaways": [
+      "MITRE ATLAS Tactics: AML.T0051 (Prompt Injection via Inter-Agent Handoffs), AML.T0054 (Vector/Memory Poisoning), AML.T0058 (Excessive Agency).",
+      "OWASP Agentic Risks: LLM01 (Indirect Prompt Injection Cascades), LLM06 (Excessive Agency in Sub-Tasks), LLM08 (Unsanitized Memory Poisoning)."
+    ],
+    "category": "Governance",
+    "tags": [
+      "MITRE ATLAS",
+      "OWASP Agentic Top 10",
+      "Security Standards",
+      "Compliance Frameworks"
+    ]
+  },
+  {
+    "slide": 10,
+    "title": "The Identity Crisis: Traditional IAM vs. Agentic IAM",
+    "takeaways": [
+      "Traditional IAM was built for humans logging into applications; Agentic IAM must govern autonomous software acting on behalf of humans.",
+      "Shifts from static RBAC and long-lived OAuth tokens to machine-to-machine delegated authority tokens, task-bound ephemeral scopes, and continuous intent provenance."
+    ],
+    "category": "Governance",
+    "tags": [
+      "Agentic IAM",
+      "Zero Trust",
+      "Identity Crisis",
+      "Delegated Authority"
+    ]
+  },
+  {
+    "slide": 11,
+    "title": "Machine-to-Machine Identity Delegation Protocol",
+    "takeaways": [
+      "Phase 01 Root Intent Scoping: Human user request mints a cryptographically signed Root Intent Token defining explicit boundary parameters.",
+      "Phase 02 Sub-Task Attestation: Orchestrator mints short-lived (60s) downstream tokens; Phase 03: Target API validates caller identity and human intent provenance."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Delegation Protocol",
+      "Root Intent Token",
+      "Cryptographic Attestation",
+      "Provenance Tracking"
+    ]
+  },
+  {
+    "slide": 12,
+    "title": "Inter-Agent Firewalls & Schema Contracts",
+    "takeaways": [
+      "Strict typed JSON contracts replace raw natural language inter-agent handoffs with strictly validated schemas.",
+      "Inline behavioral proxies act as inspection sidecars to detect indirect injections; trust decay algorithms automatically reduce permissions as handoff depth increases."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Inter-Agent Firewall",
+      "Schema Contracts",
+      "Trust Decay",
+      "Behavioral Proxies"
+    ]
+  },
+  {
+    "slide": 13,
+    "title": "Human-in-the-Loop (HITL) Policy Enforcement",
+    "takeaways": [
+      "Critical Gate Triggers: Mandatory human approval required for state deletions, database modifications, or wire transactions.",
+      "Confidence thresholds pause automated execution when uncertainty drops below 95%; immutable audit logs record execution graphs for forensic analysis."
+    ],
+    "category": "Governance",
+    "tags": [
+      "HITL",
+      "Policy Enforcement",
+      "Confidence Thresholds",
+      "Audit Lineage"
+    ]
+  },
+  {
+    "slide": 14,
+    "title": "CISO Strategic AI Defense Roadmap",
+    "takeaways": [
+      "Phase 01: Asset Discovery & Graph Mapping; Phase 02: Schema Contract Hardening across inter-agent communications.",
+      "Phase 03: Agentic IAM Token Deployment with root intent signatures; Phase 04: Inline Telemetry and HITL Gates on write APIs."
+    ],
+    "category": "Governance",
+    "tags": [
+      "CISO Roadmap",
+      "AI Defense Strategy",
+      "Security Roadmap",
+      "Enterprise SecOps"
+    ]
+  },
+  {
+    "slide": 15,
+    "title": "Protecting Autonomous Machines from Other Machines",
+    "takeaways": [
+      "Executive takeaway: The next major frontier in cybersecurity is protecting machines from other machines operating inside a trusted ecosystem.",
+      "RSAC Executive Briefing conclusion and strategic recommendations for autonomous AI resilience."
+    ],
+    "category": "Governance",
+    "tags": [
+      "Executive Takeaway",
+      "Machine-to-Machine Security",
+      "Autonomous Resilience",
+      "RSAC Briefing"
+    ]
+  },
+  {
+    "slide": 16,
+    "title": "Image Sources & Citations",
+    "takeaways": [
+      "Technical diagrams and reference architecture attributions.",
+      "Research citations, industry framework links, and academic sources."
+    ],
+    "category": "Applications",
+    "tags": [
+      "Citations",
+      "Attribution",
+      "References",
+      "Sources"
+    ]
+  }
+]

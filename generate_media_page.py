@@ -383,7 +383,105 @@ header_part = """<!DOCTYPE html>
             border-color: #334155;
         }
 
-        /* Card Architecture */
+        /* As Seen On Continuous Brand Slider */
+        .media-brand-slider-section {
+            position: relative;
+            margin: 35px 0 45px;
+        }
+        .brand-slider-heading {
+            font-size: 28px;
+            font-weight: 800;
+            color: #0f172a;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+        body.dark-mode .brand-slider-heading {
+            color: #ffffff;
+        }
+        .brand-slider-subheading {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 16px;
+        }
+        body.dark-mode .brand-slider-subheading {
+            color: #94a3b8;
+        }
+        .brand-slider-panel {
+            position: relative;
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 16px 0;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+        }
+        body.dark-mode .brand-slider-panel {
+            background: #ffffff;
+            border-color: #334155;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+        }
+        .brand-slider-panel::before,
+        .brand-slider-panel::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 70px;
+            z-index: 3;
+            pointer-events: none;
+        }
+        .brand-slider-panel::before {
+            left: 0;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+        .brand-slider-panel::after {
+            right: 0;
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+        .brand-slider-track {
+            display: flex;
+            align-items: center;
+            width: max-content;
+            animation: sliderScrollLeftToRight 32s linear infinite;
+            will-change: transform;
+        }
+        .brand-slider-track:hover {
+            animation-play-state: paused;
+        }
+        @keyframes sliderScrollLeftToRight {
+            0% {
+                transform: translateX(-50%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        .brand-logo-slide {
+            flex-shrink: 0;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+        }
+        .brand-logo-slide img {
+            max-height: 48px;
+            max-width: 180px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            transition: transform 0.25s ease;
+        }
+        .brand-logo-slide:hover img {
+            transform: scale(1.08);
+        }
+
+        /* Card Architecture - Structured Grid with Uniform Heights */
+        .media-card-col {
+            display: flex;
+            flex-direction: column;
+        }
         .media-card {
             background: #ffffff;
             border: 1px solid #e2e8f0;
@@ -392,6 +490,7 @@ header_part = """<!DOCTYPE html>
             display: flex;
             flex-direction: column;
             height: 100%;
+            width: 100%;
             position: relative;
             transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
             box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
@@ -469,8 +568,9 @@ header_part = """<!DOCTYPE html>
         .media-header-badge {
             position: relative;
             width: 100%;
-            height: 185px;
-            background: #090e1a;
+            height: 190px;
+            min-height: 190px;
+            background: linear-gradient(135deg, #090e1a 0%, #1e293b 100%);
             overflow: hidden;
             display: flex;
             align-items: center;
@@ -545,11 +645,16 @@ header_part = """<!DOCTYPE html>
             flex-grow: 1;
         }
         .media-item-title {
-            font-size: 18px;
+            font-size: 17.5px;
             font-weight: 700;
-            line-height: 1.35;
+            line-height: 1.4;
             color: #0f172a;
             margin-bottom: 10px;
+            min-height: 48px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
             transition: color 0.2s ease;
         }
         .media-card:hover .media-item-title {
@@ -568,15 +673,27 @@ header_part = """<!DOCTYPE html>
             padding: 8px 12px;
             border-radius: 0 8px 8px 0;
             font-style: italic;
-            font-size: 13px;
+            font-size: 12.5px;
             color: #475569;
             line-height: 1.45;
             margin-bottom: 12px;
+            min-height: 56px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
         body.dark-mode .media-quote-box {
             background: #0f172a;
             border-color: #60a5fa;
             color: #cbd5e1;
+        }
+        .media-quote-summary {
+            border-left-color: #94a3b8;
+            font-style: normal;
+        }
+        body.dark-mode .media-quote-summary {
+            border-left-color: #475569;
         }
 
         .media-summary-text {
@@ -1104,6 +1221,46 @@ header_part = """<!DOCTYPE html>
                 </div>
             </div>
 
+            <!-- As Seen On Brand Logo Continuous Left-to-Right Slider -->
+            <div class="media-brand-slider-section">
+                <div class="text-center mb-3">
+                    <h3 class="brand-slider-heading">As Seen On</h3>
+                    <p class="brand-slider-subheading">Featured across leading global newsrooms, national business dailies, and technology publications</p>
+                </div>
+                
+                <div class="brand-slider-panel">
+                    <div class="brand-slider-track">
+                        <!-- Brand Logos (Set 1) -->
+                        <div class="brand-logo-slide" title="Healthcare Executive"><img src="images/media/brands/healthcare_executive_logo.svg" alt="Healthcare Executive" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="The Telegraph"><img src="images/media/brands/the_telegraph_logo.svg" alt="The Telegraph" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="Gadgets 360"><img src="images/media/brands/gadgets360_logo.svg" alt="Gadgets 360" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="The Times Group e-paper"><img src="images/media/brands/times_group_epaper_logo.svg" alt="The Times Group e-paper" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="Business Insider"><img src="images/media/brands/business_insider_logo.svg" alt="Business Insider" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="DNA Daily News &amp; Analysis"><img src="images/media/brands/dna_india_logo.svg" alt="DNA Daily News &amp; Analysis" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="The Economic Times"><img src="images/media/brands/economic_times_logo.svg" alt="The Economic Times" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="ET SmallBiz"><img src="images/media/brands/et_smallbiz_logo.svg" alt="ET SmallBiz" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="USA Today"><img src="images/media/brands/usatoday_logo.svg" alt="USA Today" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="Yahoo Finance"><img src="images/media/brands/yahoo_finance_logo.svg" alt="Yahoo Finance" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="HackerNoon"><img src="images/media/brands/hackernoon_logo.svg" alt="HackerNoon" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" title="Forttuna Global 100 Times Square"><img src="images/media/brands/forttuna_global100_logo.svg" alt="Forttuna Global 100 Times Square" loading="lazy" decoding="async"></div>
+
+                        <!-- Brand Logos (Set 2 for infinite seamless loop from left to right) -->
+                        <div class="brand-logo-slide" aria-hidden="true" title="Healthcare Executive"><img src="images/media/brands/healthcare_executive_logo.svg" alt="Healthcare Executive" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="The Telegraph"><img src="images/media/brands/the_telegraph_logo.svg" alt="The Telegraph" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="Gadgets 360"><img src="images/media/brands/gadgets360_logo.svg" alt="Gadgets 360" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="The Times Group e-paper"><img src="images/media/brands/times_group_epaper_logo.svg" alt="The Times Group e-paper" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="Business Insider"><img src="images/media/brands/business_insider_logo.svg" alt="Business Insider" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="DNA Daily News &amp; Analysis"><img src="images/media/brands/dna_india_logo.svg" alt="DNA Daily News &amp; Analysis" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="The Economic Times"><img src="images/media/brands/economic_times_logo.svg" alt="The Economic Times" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="ET SmallBiz"><img src="images/media/brands/et_smallbiz_logo.svg" alt="ET SmallBiz" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="USA Today"><img src="images/media/brands/usatoday_logo.svg" alt="USA Today" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="Yahoo Finance"><img src="images/media/brands/yahoo_finance_logo.svg" alt="Yahoo Finance" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="HackerNoon"><img src="images/media/brands/hackernoon_logo.svg" alt="HackerNoon" loading="lazy" decoding="async"></div>
+                        <div class="brand-logo-slide" aria-hidden="true" title="Forttuna Global 100 Times Square"><img src="images/media/brands/forttuna_global100_logo.svg" alt="Forttuna Global 100 Times Square" loading="lazy" decoding="async"></div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Spotlight Landmark Banner -->
             <div class="spotlight-banner">
                 <div class="row align-items-center">
@@ -1266,7 +1423,11 @@ for item in media_items:
     esc_outlet = moutlet.replace('"', '&quot;').replace("'", "&#39;")
     esc_year = myear
 
-    quote_html = f'<div class="media-quote-box">"{mquote}"</div>' if mquote else ''
+    if mquote:
+        quote_html = f'<div class="media-quote-box">"{mquote}"</div>'
+    else:
+        summary_clean = msummary[:110] + ('...' if len(msummary) > 110 else '')
+        quote_html = f'<div class="media-quote-box media-quote-summary"><span>"{summary_clean}"</span></div>'
 
     card_html = f"""
                 <!-- Item: {mtitle} -->
@@ -1286,7 +1447,7 @@ for item in media_items:
                             <i class="mdi mdi-star-outline" id="star-icon-{mid}"></i>
                         </button>
                         <div class="media-header-badge">
-                            <img src="images/media/{micon}" alt="{esc_title}" loading="lazy" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){{this.onerror=null;this.src=this.src.replace('.svg','.png');}}" />
+                            <img src="images/media/{micon}" alt="{esc_title}" loading="lazy" decoding="async" onerror="if(this.src&amp;&amp;this.src.indexOf('.svg')!==-1){{this.onerror=null;this.src=this.src.replace('.svg','.png');}}" />
                             <span class="media-type-pill" style="background: {tier_bg}; color: {tier_color};">{mtype_label}</span>
                             <span class="media-year-pill">{myear}</span>
                             <span class="media-outlet-overlay">{moutlet}</span>

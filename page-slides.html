@@ -979,13 +979,13 @@
                         <div class="row">
                             <div class="col-6 mb-3">
                                 <div class="smart-stat-box">
-                                    <div class="smart-stat-num">8</div>
+                                    <div class="smart-stat-num">9</div>
                                     <div class="smart-stat-label">Keynote Decks</div>
                                 </div>
                             </div>
                             <div class="col-6 mb-3">
                                 <div class="smart-stat-box">
-                                    <div class="smart-stat-num">132</div>
+                                    <div class="smart-stat-num">148</div>
                                     <div class="smart-stat-label">Total Slides</div>
                                 </div>
                             </div>
@@ -1172,6 +1172,29 @@
                     <div class="deck-meta-footer">
                         <span><i class="mdi mdi-account-check text-primary mr-1"></i> Author: Harsh Verma</span>
                         <span><i class="mdi mdi-shield-refresh text-warning mr-1"></i> Continuous Governance</span>
+                    </div>
+                </div>
+
+                <!-- Deck 9 Card: JSZf -->
+                <div class="deck-card" id="deck-card-JSZf" onclick="selectDeck('JSZf')">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="deck-card-badge">Deck 9 • EasyChair Ref: JSZf</span>
+                            <span class="badge badge-pill badge-info" style="font-size: 11px;">16 Slides</span>
+                        </div>
+                        <h3 class="deck-title">Why Multi-Agent Systems Are a Cybersecurity Nightmare</h3>
+                        <p class="deck-desc">
+                            Deep-dive into inter-agent trust chains, cascade prompt injections, memory and vector store poisoning, and machine-to-machine agentic IAM architecture.
+                        </p>
+                        <div class="mt-2 mb-2">
+                            <a href="https://www.rsaconference.com/Library/blog/why-multi-agent-systems-are-a-cybersecurity-nightmare" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="btn btn-sm btn-outline-danger font-weight-bold px-2 py-1 d-inline-flex align-items-center" style="font-size: 11.5px; border-radius: 6px;" title="Read linked RSA Conference Blog Post">
+                                <i class="mdi mdi-shield-alert mr-1 text-danger"></i> Linked RSA Article <i class="mdi mdi-open-in-new ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="deck-meta-footer">
+                        <span><i class="mdi mdi-account-check text-primary mr-1"></i> Author: Harsh Verma</span>
+                        <span><i class="mdi mdi-shield-bug text-danger mr-1"></i> Multi-Agent Defense</span>
                     </div>
                 </div>
             </div>
@@ -1599,6 +1622,24 @@
   url = {https://easychair.org/smart-slide/slide/X2qH}
 }`,
                 slides: [] // Populated below
+            },
+            'JSZf': {
+                id: 'JSZf',
+                folder: 'why-multi-agent-systems-cybersecurity-nightmare',
+                title: 'Why Multi-Agent Systems Are a Cybersecurity Nightmare: Deep-Dive into Inter-Agent Trust Chains, Cascade Injections & Agentic IAM',
+                shortTitle: 'Why Multi-Agent Systems Are a Cybersecurity Nightmare',
+                count: 16,
+                easyChairUrl: 'https://easychair.org/smart-slide/slide/JSZf#{sn:1}',
+                blogUrl: 'https://www.rsaconference.com/Library/blog/why-multi-agent-systems-are-a-cybersecurity-nightmare',
+                blogTitle: 'RSA Conference: Why Multi-Agent Systems Are a Cybersecurity Nightmare',
+                bibtex: `@misc{verma2026whymultiagentsystemscybersecuritynightmare,
+  author = {Verma, Harsh},
+  title = {Why Multi-Agent Systems Are a Cybersecurity Nightmare},
+  howpublished = {EasyChair Smart Slide Series, Ref. JSZf},
+  year = {2026},
+  url = {https://easychair.org/smart-slide/slide/JSZf}
+}`,
+                slides: [] // Populated below
             }
         };
 
@@ -1682,6 +1723,13 @@
                     var res8 = await fetch('data/agents-dont-break-rules-they-redefine-them.json');
                     if (res8.ok) DECKS['X2qH'].slides = await res8.json();
                 } catch(e) { console.warn('Deck 8 fallback load'); }
+            }
+
+            if (!DECKS['JSZf'].slides.length) {
+                try {
+                    var res9 = await fetch('data/why-multi-agent-systems-cybersecurity-nightmare.json');
+                    if (res9.ok) DECKS['JSZf'].slides = await res9.json();
+                } catch(e) { console.warn('Deck 9 fallback load'); }
             }
 
             // Check URL hash for direct links e.g. #deck=r92g&slide=1 or #r92g#{sn:1}
