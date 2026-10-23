@@ -47,6 +47,8 @@
         <link rel="alternate" type="application/rss+xml" title="Harsh Verma - Tech Articles &amp; AI Engineering RSS Feed" href="rss.xml" />
         <!-- Fullscreen Lightbox Modal Styles -->
         <link rel="stylesheet" href="css/hv-lightbox.css" />
+        <!-- D3.js Interactive Skill Radar Styles -->
+        <link rel="stylesheet" href="css/skill-radar.css" />
 
 
         <!--  Other Theme Code -->
@@ -2742,11 +2744,11 @@ html.dark-mode .exp-progress-bar {
 
 
         <!-- Skill & CTA START -->
-        <section class="cta-full bg-white">
+        <section class="cta-full bg-white" id="skills">
             <div class="container">
                 <div class="row position-relative">
                     <div class="col-lg-4 padding-less img" style="background-image:url('images/skills_new1.jpg')" data-jarallax='{"speed": 0.5}'></div><!-- end col -->
-                    <div class="col-lg-8 offset-lg-5">
+                    <div class="col-lg-8 offset-lg-4">
                         <div class="cta-full-img-box">
                             <div class="row justify-content-center">
                                 <div class="col-12 text-center mb-3">
@@ -2759,148 +2761,254 @@ html.dark-mode .exp-progress-bar {
                                 </div><!--end col-->
                             </div><!--end row-->
 
+                            <!-- D3.js Interactive Skill Radar Chart Wrapper -->
+                            <div class="skill-radar-wrapper" role="region" aria-label="Technical Skill Proficiency Radar Chart">
+                                <div class="skill-radar-toolbar">
+                                    <div class="skill-radar-heading">
+                                        <h5>Proficiency Radar</h5>
+                                        <span class="radar-badge">D3.js Visualization</span>
+                                    </div>
+                                    <div class="skill-segmented-group" role="tablist" aria-label="View Switcher">
+                                        <button type="button" class="skill-view-btn active" data-view="radar" role="tab" aria-selected="true">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 10 10M12 12l7-7"/></svg>
+                                            Radar Chart
+                                        </button>
+                                        <button type="button" class="skill-view-btn" data-view="grid" role="tab" aria-selected="false">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                                            Grid Cards
+                                        </button>
+                                        <button type="button" class="skill-view-btn" data-view="dual" role="tab" aria-selected="false">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
+                                            Split View
+                                        </button>
+                                    </div>
+                                </div>
 
-                            <div class="row align-items-center">
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img loading="lazy" decoding="async" src="images/skills/Deep_Learning.png" alt="" class="img-fluid mx-auto">
+                                <!-- Category Filter Tabs for Radar Chart -->
+                                <div class="skill-category-bar" role="tablist" aria-label="Skill Domain Filters">
+                                    <button type="button" class="skill-cat-pill active" data-category="all" role="tab" aria-selected="true">
+                                        All Core Domains
+                                    </button>
+                                    <button type="button" class="skill-cat-pill" data-category="aiml" role="tab" aria-selected="false">
+                                        AI &amp; Machine Learning
+                                    </button>
+                                    <button type="button" class="skill-cat-pill" data-category="cloud" role="tab" aria-selected="false">
+                                        Cloud &amp; Distributed Systems
+                                    </button>
+                                    <button type="button" class="skill-cat-pill" data-category="engineering" role="tab" aria-selected="false">
+                                        Software &amp; Data Architecture
+                                    </button>
+                                </div>
+
+                                <!-- Radar Chart View -->
+                                <div id="skillRadarDisplay" class="skill-radar-view">
+                                    <div class="skill-radar-grid">
+                                        <!-- SVG Chart Column -->
+                                        <div class="skill-radar-canvas-container">
+                                            <div id="skillRadarChart" style="width: 100%;"></div>
+                                        </div>
+
+                                        <!-- Live Skill Capability Inspector Panel -->
+                                        <div class="skill-inspector-card" id="radarSkillInspector">
+                                            <div>
+                                                <div class="inspector-header">
+                                                    <div class="inspector-icon-wrap">
+                                                        <img id="inspectorIcon" src="images/skills/Deep_Learning.png" alt="Deep Learning" />
+                                                    </div>
+                                                    <div class="inspector-titles">
+                                                        <h6 id="inspectorSkillName">Deep Learning</h6>
+                                                        <div class="inspector-meta">
+                                                            <span id="inspectorCategory">AI &amp; Machine Learning</span>
+                                                            <span class="meta-sep">&bull;</span>
+                                                            <span id="inspectorExp">10+ Years</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Proficiency Metric Bar -->
+                                                <div class="inspector-metric-box">
+                                                    <div class="metric-label-row">
+                                                        <span class="metric-title">Proficiency Score</span>
+                                                        <span class="metric-score" id="inspectorScore">95%</span>
+                                                    </div>
+                                                    <div class="metric-track">
+                                                        <div class="metric-fill" id="inspectorProgressFill" style="width: 95%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Capability Narrative -->
+                                                <div class="inspector-body">
+                                                    <p id="inspectorDesc">Enterprise neural network architectures, custom model fine-tuning, high-throughput model quantization, and distributed GPU training orchestration.</p>
+                                                    <div class="inspector-tags" id="inspectorTags">
+                                                        <span class="inspector-tag">PyTorch</span>
+                                                        <span class="inspector-tag">Transformers</span>
+                                                        <span class="inspector-tag">CUDA</span>
+                                                        <span class="inspector-tag">TensorRT</span>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <span class="badge skill-badge badge-light">95%</span>
+
+                                            <div class="inspector-footer">
+                                                <span>Benchmark Status:</span>
+                                                <span class="inspector-footer-highlight" id="inspectorBaselineDiff">+23% vs Industry Principal Baseline</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div><!--end col-->
 
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img loading="lazy" decoding="async" src="images/skills/NLP.png" alt="" class="img-fluid mx-auto">
-                                            </div>
-                                            <span class="badge skill-badge badge-light">94%</span>
+                                    <!-- Radar Chart Legend -->
+                                    <div class="radar-legend">
+                                        <div class="legend-item" id="legendHarsh">
+                                            <span class="legend-color-box legend-box-harsh"></span>
+                                            <span>Harsh Verma Proficiency</span>
+                                        </div>
+                                        <div class="legend-item" id="toggleBaselineBtn" title="Click to toggle baseline">
+                                            <span class="legend-color-box legend-box-baseline"></span>
+                                            <span>Industry Principal Baseline (Toggle)</span>
                                         </div>
                                     </div>
-                                </div><!--end col-->
+                                </div>
+                            </div>
 
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img loading="lazy" decoding="async" src="images/skills/CV.png" alt="" class="img-fluid mx-auto">
+                            <!-- Traditional Skill Grid (Displayable via Grid View or Split View) -->
+                            <div id="skillGridDisplay" style="display: none; margin-top: 2rem;">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3 col-6 mt-4 pt-2">
+                                        <div class="card explore-feature border-0 text-center bg-white p-3">
+                                            <div class="card-body p-0">
+                                                <div class="skill-icon rounded-circle shadow-lg d-inline-block">
+                                                    <img loading="lazy" decoding="async" src="images/skills/Deep_Learning.png" alt="Deep Learning" class="img-fluid mx-auto">
+                                                </div>
+                                                <span class="badge skill-badge badge-light">95%</span>
                                             </div>
-                                            <span class="badge skill-badge badge-light">92%</span>
                                         </div>
                                     </div>
-                                </div><!--end col-->
 
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img loading="lazy" decoding="async" src="images/skills/gcp.png" alt="" class="img-fluid mx-auto">
+                                    <div class="col-lg-3 col-6 mt-4 pt-2">
+                                        <div class="card explore-feature border-0 text-center bg-white p-3">
+                                            <div class="card-body p-0">
+                                                <div class="skill-icon rounded-circle shadow-lg d-inline-block">
+                                                    <img loading="lazy" decoding="async" src="images/skills/NLP.png" alt="NLP" class="img-fluid mx-auto">
+                                                </div>
+                                                <span class="badge skill-badge badge-light">94%</span>
                                             </div>
-                                            <span class="badge skill-badge badge-light">90%</span>
                                         </div>
                                     </div>
-                                </div><!--end col-->    
-                            </div><!-- end row -->
 
-                           
-
-                            <div class="row align-items-center">
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img loading="lazy" decoding="async" src="images/skills/amazons3.svg" alt="" class="img-fluid mx-auto">
+                                    <div class="col-lg-3 col-6 mt-4 pt-2">
+                                        <div class="card explore-feature border-0 text-center bg-white p-3">
+                                            <div class="card-body p-0">
+                                                <div class="skill-icon rounded-circle shadow-lg d-inline-block">
+                                                    <img loading="lazy" decoding="async" src="images/skills/CV.png" alt="Computer Vision" class="img-fluid mx-auto">
+                                                </div>
+                                                <span class="badge skill-badge badge-light">92%</span>
                                             </div>
-                                            <span class="badge skill-badge badge-light">85%</span>
                                         </div>
                                     </div>
-                                </div><!--end col-->
 
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img loading="lazy" decoding="async" src="images/skills/android.svg" alt="" class="img-fluid mx-auto">
+                                    <div class="col-lg-3 col-6 mt-4 pt-2">
+                                        <div class="card explore-feature border-0 text-center bg-white p-3">
+                                            <div class="card-body p-0">
+                                                <div class="skill-icon rounded-circle shadow-lg d-inline-block">
+                                                    <img loading="lazy" decoding="async" src="images/skills/gcp.png" alt="GCP" class="img-fluid mx-auto">
+                                                </div>
+                                                <span class="badge skill-badge badge-light">90%</span>
                                             </div>
-                                            <span class="badge skill-badge badge-light">80%</span>
+                                        </div>
+                                    </div>    
+                                </div>
+
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3 col-6 mt-4 pt-2">
+                                        <div class="card explore-feature border-0 text-center bg-white p-3">
+                                            <div class="card-body p-0">
+                                                <div class="skill-icon rounded-circle shadow-lg d-inline-block">
+                                                    <img loading="lazy" decoding="async" src="images/skills/amazons3.svg" alt="Amazon S3" class="img-fluid mx-auto">
+                                                </div>
+                                                <span class="badge skill-badge badge-light">85%</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div><!--end col-->
 
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img loading="lazy" decoding="async" src="images/skills/Angular.svg" alt="" class="img-fluid mx-auto">
+                                    <div class="col-lg-3 col-6 mt-4 pt-2">
+                                        <div class="card explore-feature border-0 text-center bg-white p-3">
+                                            <div class="card-body p-0">
+                                                <div class="skill-icon rounded-circle shadow-lg d-inline-block">
+                                                    <img loading="lazy" decoding="async" src="images/skills/android.svg" alt="Android" class="img-fluid mx-auto">
+                                                </div>
+                                                <span class="badge skill-badge badge-light">80%</span>
                                             </div>
-                                            <span class="badge skill-badge badge-light">75%</span>
                                         </div>
                                     </div>
-                                </div><!--end col-->
 
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img loading="lazy" decoding="async" src="images/skills/mongodb.svg" alt="" class="img-fluid mx-auto">
+                                    <div class="col-lg-3 col-6 mt-4 pt-2">
+                                        <div class="card explore-feature border-0 text-center bg-white p-3">
+                                            <div class="card-body p-0">
+                                                <div class="skill-icon rounded-circle shadow-lg d-inline-block">
+                                                    <img loading="lazy" decoding="async" src="images/skills/Angular.svg" alt="Angular" class="img-fluid mx-auto">
+                                                </div>
+                                                <span class="badge skill-badge badge-light">75%</span>
                                             </div>
-                                            <span class="badge skill-badge badge-light">70%</span>
                                         </div>
                                     </div>
-                                </div><!--end col-->    
-                            </div><!-- end row -->
 
-                             <div class="row align-items-center">
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img loading="lazy" decoding="async" src="images/skills/bootstrap.svg" alt="" class="img-fluid mx-auto">
+                                    <div class="col-lg-3 col-6 mt-4 pt-2">
+                                        <div class="card explore-feature border-0 text-center bg-white p-3">
+                                            <div class="card-body p-0">
+                                                <div class="skill-icon rounded-circle shadow-lg d-inline-block">
+                                                    <img loading="lazy" decoding="async" src="images/skills/mongodb.svg" alt="MongoDB" class="img-fluid mx-auto">
+                                                </div>
+                                                <span class="badge skill-badge badge-light">70%</span>
                                             </div>
-                                            <span class="badge skill-badge badge-light">72%</span>
+                                        </div>
+                                    </div>    
+                                </div>
+
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3 col-6 mt-4 pt-2">
+                                        <div class="card explore-feature border-0 text-center bg-white p-3">
+                                            <div class="card-body p-0">
+                                                <div class="skill-icon rounded-circle shadow-lg d-inline-block">
+                                                    <img loading="lazy" decoding="async" src="images/skills/bootstrap.svg" alt="Bootstrap" class="img-fluid mx-auto">
+                                                </div>
+                                                <span class="badge skill-badge badge-light">72%</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div><!--end col-->
 
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img loading="lazy" decoding="async" src="images/skills/nodejs-icon.svg" alt="" class="img-fluid mx-auto">
+                                    <div class="col-lg-3 col-6 mt-4 pt-2">
+                                        <div class="card explore-feature border-0 text-center bg-white p-3">
+                                            <div class="card-body p-0">
+                                                <div class="skill-icon rounded-circle shadow-lg d-inline-block">
+                                                    <img loading="lazy" decoding="async" src="images/skills/nodejs-icon.svg" alt="Node.js" class="img-fluid mx-auto">
+                                                </div>
+                                                <span class="badge skill-badge badge-light">70%</span>
                                             </div>
-                                            <span class="badge skill-badge badge-light">70%</span>
                                         </div>
                                     </div>
-                                </div><!--end col-->
 
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img loading="lazy" decoding="async" src="images/skills/AI.png" alt="" class="img-fluid mx-auto">
+                                    <div class="col-lg-3 col-6 mt-4 pt-2">
+                                        <div class="card explore-feature border-0 text-center bg-white p-3">
+                                            <div class="card-body p-0">
+                                                <div class="skill-icon rounded-circle shadow-lg d-inline-block">
+                                                    <img loading="lazy" decoding="async" src="images/skills/AI.png" alt="AI Architecture" class="img-fluid mx-auto">
+                                                </div>
+                                                <span class="badge skill-badge badge-light">68%</span>
                                             </div>
-                                            <span class="badge skill-badge badge-light">68%</span>
                                         </div>
                                     </div>
-                                </div><!--end col-->
 
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img loading="lazy" decoding="async" src="images/skills/post_gray_sql.svg" alt="" class="img-fluid mx-auto">
+                                    <div class="col-lg-3 col-6 mt-4 pt-2">
+                                        <div class="card explore-feature border-0 text-center bg-white p-3">
+                                            <div class="card-body p-0">
+                                                <div class="skill-icon rounded-circle shadow-lg d-inline-block">
+                                                    <img loading="lazy" decoding="async" src="images/skills/post_gray_sql.svg" alt="PostgreSQL" class="img-fluid mx-auto">
+                                                </div>
+                                                <span class="badge skill-badge badge-light">65%</span>
                                             </div>
-                                            <span class="badge skill-badge badge-light">65%</span>
                                         </div>
-                                    </div>
-                                </div><!--end col-->    
-                            </div><!-- end row -->
-
-
+                                    </div>    
+                                </div>
+                            </div>
 
                         </div> <!-- end about detail -->
                     </div> <!-- end col -->        
@@ -6744,6 +6852,15 @@ html.dark-mode .exp-progress-bar {
             });
 
         </script>
+        <!-- D3.js v7 Interactive Visualization Library -->
+        <script src="js/d3.min.js"></script>
+        <script>
+            if (typeof d3 === 'undefined') {
+                document.write('<script src="https://cdn.jsdelivr.net/npm/d3@7"><\/script>');
+            }
+        </script>
+        <!-- HV Technical Skill Radar Engine -->
+        <script src="js/hv-skill-radar.js"></script>
         <!-- HV Booking Flow & Keynote Hub Engine -->
         <script src="js/hv-booking-flow.js"></script>
         <!-- HV AI Copilot Assistant Engine -->

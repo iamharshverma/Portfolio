@@ -8,3 +8,4 @@ build/
 .aistudio/
 .dist_tmp/
 .github/
+bun.lock
