@@ -959,6 +959,88 @@
         .collab-card-footer {
             margin-top: auto;
         }
+        .btn-collab-action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 7px 14px;
+            font-size: 12.5px;
+            font-weight: 600;
+            border-radius: 8px;
+            letter-spacing: 0.15px;
+            transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-collab-action i {
+            transition: transform 0.2s ease;
+        }
+        .btn-collab-action:hover i {
+            transform: translateX(3px);
+        }
+        .btn-collab-action.btn-outline-primary {
+            color: #2563eb;
+            background: rgba(37, 99, 235, 0.04);
+            border: 1px solid rgba(37, 99, 235, 0.35);
+        }
+        .btn-collab-action.btn-outline-primary:hover {
+            color: #ffffff !important;
+            background: #2563eb;
+            border-color: #2563eb;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+            transform: translateY(-1px);
+        }
+        body.dark-mode .btn-collab-action.btn-outline-primary {
+            color: #93c5fd;
+            background: rgba(37, 99, 235, 0.1);
+            border-color: rgba(96, 165, 250, 0.4);
+        }
+        body.dark-mode .btn-collab-action.btn-outline-primary:hover {
+            color: #ffffff !important;
+            background: #2563eb;
+            border-color: #2563eb;
+        }
+        .btn-collab-action.btn-primary {
+            background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+            border: none;
+            color: #ffffff !important;
+            box-shadow: 0 3px 10px rgba(37, 99, 235, 0.3);
+        }
+        .btn-collab-action.btn-primary:hover {
+            background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.45);
+            transform: translateY(-1.5px);
+        }
+        .btn-collab-adplist {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 6px 12px;
+            font-size: 11.5px;
+            font-weight: 600;
+            border-radius: 7px;
+            color: #e1316c !important;
+            background: rgba(225, 49, 108, 0.07);
+            border: 1px solid rgba(225, 49, 108, 0.22);
+            transition: all 0.2s ease;
+            text-decoration: none !important;
+        }
+        .btn-collab-adplist:hover {
+            background: #e1316c;
+            color: #ffffff !important;
+            border-color: #e1316c;
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(225, 49, 108, 0.25);
+        }
+        body.dark-mode .btn-collab-adplist {
+            background: rgba(225, 49, 108, 0.14);
+            border-color: rgba(225, 49, 108, 0.35);
+            color: #ff6b9d !important;
+        }
+        body.dark-mode .btn-collab-adplist:hover {
+            background: #e1316c;
+            color: #ffffff !important;
+        }
 
         /* Let's Talk Section */
         .partnership-contact-box {
@@ -2015,9 +2097,9 @@
                                 <li><i class="mdi mdi-check-circle text-primary mr-2"></i> Cross-amplification on Instagram (@aiwithharsh)</li>
                             </ul>
                             <div class="collab-card-footer">
-                                <a href="#letsTalk" onclick="selectCollabOption('Brand Collaborations & Sponsored Content')" class="btn btn-outline-primary btn-block font-weight-bold">
+                                <button type="button" onclick="openCollabModal('Brand Collaborations & Sponsored Content')" class="btn btn-sm btn-outline-primary btn-collab-action font-weight-bold">
                                     Pick Collaboration <i class="mdi mdi-arrow-right ml-1"></i>
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -2043,9 +2125,9 @@
                                 <li><i class="mdi mdi-check-circle text-primary mr-2"></i> Pre-event social promotion &amp; press syndication</li>
                             </ul>
                             <div class="collab-card-footer">
-                                <a href="#letsTalk" onclick="selectCollabOption('Keynote Speaking & Moderation')" class="btn btn-primary btn-block font-weight-bold shadow-sm">
+                                <button type="button" onclick="openCollabModal('Keynote Speaking & Moderation')" class="btn btn-sm btn-primary btn-collab-action font-weight-bold shadow-sm">
                                     Book as Keynote Speaker <i class="mdi mdi-arrow-right ml-1"></i>
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -2070,9 +2152,9 @@
                                 <li><i class="mdi mdi-check-circle text-primary mr-2"></i> Board observer &amp; technical advisory seat</li>
                             </ul>
                             <div class="collab-card-footer">
-                                <a href="#letsTalk" onclick="selectCollabOption('Executive & Technical Board Advisory')" class="btn btn-outline-primary btn-block font-weight-bold">
+                                <button type="button" onclick="openCollabModal('Executive & Technical Board Advisory')" class="btn btn-sm btn-outline-primary btn-collab-action font-weight-bold">
                                     Pick Advisory Mandate <i class="mdi mdi-arrow-right ml-1"></i>
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -2097,9 +2179,9 @@
                                 <li><i class="mdi mdi-check-circle text-primary mr-2"></i> Post-session reference architecture toolkit</li>
                             </ul>
                             <div class="collab-card-footer">
-                                <a href="#letsTalk" onclick="selectCollabOption('Corporate Masterclasses & Workshops')" class="btn btn-outline-primary btn-block font-weight-bold">
+                                <button type="button" onclick="openCollabModal('Corporate Masterclasses & Workshops')" class="btn btn-sm btn-outline-primary btn-collab-action font-weight-bold">
                                     Pick Workshop Series <i class="mdi mdi-arrow-right ml-1"></i>
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -2124,9 +2206,9 @@
                                 <li><i class="mdi mdi-check-circle text-primary mr-2"></i> Press release syndication to tier-1 wires</li>
                             </ul>
                             <div class="collab-card-footer">
-                                <a href="#letsTalk" onclick="selectCollabOption('Podcast & Media Guest Appearances')" class="btn btn-outline-primary btn-block font-weight-bold">
+                                <button type="button" onclick="openCollabModal('Podcast & Media Guest Appearances')" class="btn btn-sm btn-outline-primary btn-collab-action font-weight-bold">
                                     Invite as Guest <i class="mdi mdi-arrow-right ml-1"></i>
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -2151,8 +2233,11 @@
                                 <li><i class="mdi mdi-check-circle text-primary mr-2"></i> Bookable directly on ADPList or retainer</li>
                             </ul>
                             <div class="collab-card-footer">
-                                <a href="https://adplist.org/mentors/harsh-verma" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-block font-weight-bold">
-                                    Book via ADPList (Free) <i class="mdi mdi-open-in-new ml-1"></i>
+                                <button type="button" onclick="openCollabModal('Executive Coaching & 1:1 Mentorship')" class="btn btn-sm btn-outline-primary btn-collab-action font-weight-bold mb-2">
+                                    Pick Mentorship Inquiry <i class="mdi mdi-arrow-right ml-1"></i>
+                                </button>
+                                <a href="https://adplist.org/mentors/harsh-verma" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-collab-adplist">
+                                    <i class="mdi mdi-open-in-new mr-1"></i> Or Book via ADPList (Free)
                                 </a>
                             </div>
                         </div>
@@ -2160,128 +2245,7 @@
                 </div>
             </section>
 
-            <!-- SECTION 3: Let's Talk → (Partnership Proposal Form & Direct Access) -->
-            <section class="partnership-contact-box mb-5" id="letsTalk">
-                <div class="row no-gutters">
-                    <div class="col-lg-5 mb-4 mb-lg-0">
-                        <div class="p-4 p-md-5 h-100 d-flex flex-column justify-content-between partnership-info-col">
-                            <div>
-                                <div class="d-inline-flex align-items-center mb-3">
-                                    <span class="badge badge-pill badge-light font-weight-bold px-3 py-1" style="color: #2563eb; font-size: 11.5px; letter-spacing: 0.5px;">
-                                        <i class="mdi mdi-lightning-bolt mr-1"></i> FAST RESPONSE WITHIN 24-48H
-                                    </span>
-                                </div>
-                                <h2 class="font-weight-bold text-white mb-2" style="font-size: 2.2rem; letter-spacing: -0.5px;">
-                                    Let's Talk <span class="text-warning">→</span>
-                                </h2>
-                                <p class="text-white-50 mb-4" style="font-size: 14.5px; line-height: 1.65;">
-                                    Ready to explore a brand collaboration, keynote speech, advisory seat, or technical workshop? Share details about your campaign or event, and Harsh's executive team will get back to you promptly.
-                                </p>
-
-                                <div class="mb-4">
-                                    <div class="d-flex align-items-center mb-3 text-white">
-                                        <div class="contact-mini-icon-box mr-3">
-                                            <i class="mdi mdi-email-outline"></i>
-                                        </div>
-                                        <div>
-                                            <small class="text-white-50 d-block">Direct Email</small>
-                                            <a href="mailto:harshverma59@gmail.com" class="text-white font-weight-bold">harshverma59@gmail.com</a>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-3 text-white">
-                                        <div class="contact-mini-icon-box mr-3">
-                                            <i class="mdi mdi-linkedin"></i>
-                                        </div>
-                                        <div>
-                                            <small class="text-white-50 d-block">Executive Network</small>
-                                            <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="text-white font-weight-bold">linkedin.com/in/harshverma59</a>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center text-white">
-                                        <div class="contact-mini-icon-box mr-3">
-                                            <i class="mdi mdi-school"></i>
-                                        </div>
-                                        <div>
-                                            <small class="text-white-50 d-block">1:1 Mentorship</small>
-                                            <a href="https://adplist.org/mentors/harsh-verma" target="_blank" class="text-white font-weight-bold">adplist.org/mentors/harsh-verma</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-3 rounded border border-white-10" style="background: rgba(255,255,255,0.06);">
-                                <div class="d-flex align-items-center text-white">
-                                    <i class="mdi mdi-shield-check text-warning mr-2" style="font-size: 22px;"></i>
-                                    <span class="small font-weight-bold">Verified Reach: 16.6K+ tech leaders • 79/100 Favikon Score • 3.75B+ Media Reach</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7">
-                        <div class="p-4 p-md-5 bg-white h-100 rounded-right partnership-form-container">
-                            <h4 class="font-weight-bold text-dark mb-1">Send Collaboration Proposal</h4>
-                            <p class="text-muted small mb-4">Fill out this quick form or email directly to initiate a conversation.</p>
-
-                            <form id="partnershipInquiryForm" onsubmit="handlePartnershipSubmit(event)">
-                                <div class="row">
-                                    <div class="col-md-6 form-group mb-3">
-                                        <label class="form-label-custom">Your Name <span class="text-danger">*</span></label>
-                                        <input type="text" id="partnerName" class="form-control form-control-custom" placeholder="e.g. Sarah Jenkins" required />
-                                    </div>
-                                    <div class="col-md-6 form-group mb-3">
-                                        <label class="form-label-custom">Your Email <span class="text-danger">*</span></label>
-                                        <input type="email" id="partnerEmail" class="form-control form-control-custom" placeholder="e.g. sarah@enterprise.com" required />
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-6 form-group mb-3">
-                                        <label class="form-label-custom">Organization / Brand</label>
-                                        <input type="text" id="partnerOrg" class="form-control form-control-custom" placeholder="e.g. Anthropic, Google Cloud, Tech Summit" />
-                                    </div>
-                                    <div class="col-md-6 form-group mb-3">
-                                        <label class="form-label-custom">Collaboration Type <span class="text-danger">*</span></label>
-                                        <select id="partnerCollabType" class="form-control form-control-custom" required>
-                                            <option value="Brand Collaborations & Sponsored Content">Brand Collaborations &amp; Sponsored Content</option>
-                                            <option value="Keynote Speaking & Moderation">Keynote Speaking &amp; Moderation</option>
-                                            <option value="Executive & Technical Board Advisory">Executive &amp; Technical Board Advisory</option>
-                                            <option value="Corporate Masterclasses & Workshops">Corporate Masterclasses &amp; Workshops</option>
-                                            <option value="Podcast & Media Guest Appearances">Podcast &amp; Media Guest Appearances</option>
-                                            <option value="Custom Strategic Partnership">Custom Strategic Partnership</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-6 form-group mb-3">
-                                        <label class="form-label-custom">Target Timeline / Event Date</label>
-                                        <input type="text" id="partnerTimeline" class="form-control form-control-custom" placeholder="e.g. Q2 2026, Nov 15th, Immediate" />
-                                    </div>
-                                    <div class="col-md-6 form-group mb-3">
-                                        <label class="form-label-custom">Estimated Budget / Scope (Optional)</label>
-                                        <input type="text" id="partnerBudget" class="form-control form-control-custom" placeholder="e.g. $5k - $15k, Enterprise Retainer, Equity" />
-                                    </div>
-                                </div>
-
-                                <div class="form-group mb-4">
-                                    <label class="form-label-custom">Campaign / Project Details &amp; Objectives <span class="text-danger">*</span></label>
-                                    <textarea id="partnerMessage" rows="4" class="form-control form-control-custom" placeholder="Tell us about your brand, audience size, key objectives, and any specific requirements or deliverables..." required></textarea>
-                                </div>
-
-                                <div id="partnershipFormStatus" class="mb-3" style="display: none;"></div>
-
-                                <button type="submit" id="partnerSubmitBtn" class="btn btn-primary font-weight-bold px-4 py-3 shadow-sm d-inline-flex align-items-center" style="border-radius: 10px;">
-                                    <span>Send Partnership Proposal</span>
-                                    <i class="mdi mdi-send ml-2"></i>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SECTION 4: Who You'll Reach : An audience that builds and trusts (Target Audience & Interactive Infographics) -->
+            <!-- SECTION 3: Who You'll Reach : An audience that builds and trusts (Target Audience & Interactive Infographics) -->
             <section class="audience-section-wrap mb-5" id="whoYoullReach">
                 <div class="row align-items-end mb-4">
                     <div class="col-lg-8">
@@ -2301,9 +2265,9 @@
                         </p>
                     </div>
                     <div class="col-lg-4 text-lg-right mt-3 mt-lg-0">
-                        <a href="#letsTalk" class="btn btn-outline-primary font-weight-bold px-3 py-2" style="border-radius: 10px; font-size: 13px;">
+                        <button type="button" onclick="openCollabModal('Custom Strategic Partnership')" class="btn btn-outline-primary font-weight-bold px-3 py-2" style="border-radius: 10px; font-size: 13px;">
                             <i class="mdi mdi-message-text-outline mr-1"></i> Collaborate with Harsh →
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -2533,54 +2497,99 @@
                         </div>
                     </div>
 
-                    <!-- Key Industry Verticals Chart -->
+                    <!-- Key Industry Verticals Chart (Enhanced Infographic Tile) -->
                     <div class="col-lg-4 col-md-12">
                         <div class="audience-chart-tile">
                             <div class="d-flex align-items-center justify-content-between mb-3">
                                 <h6 class="font-weight-bold text-dark mb-0 small text-uppercase">
                                     <i class="mdi mdi-domain text-primary mr-1"></i> Industry Verticals
-                                </div>
-                                <span class="badge badge-light small border text-muted">Enterprise</span>
+                                </h6>
+                                <span class="badge badge-primary-soft small font-weight-bold">B2B Enterprise</span>
                             </div>
 
-                            <div class="audience-progress-item">
-                                <div class="audience-progress-header">
-                                    <span>Enterprise AI &amp; Agent Systems</span>
-                                    <span class="font-weight-bold text-primary">38%</span>
+                            <!-- Vertical 1: Enterprise AI -->
+                            <div class="vertical-stat-card mb-2 p-2 rounded border" style="background: rgba(124, 58, 237, 0.04); border-color: rgba(124, 58, 237, 0.2) !important;">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <div class="d-flex align-items-center">
+                                        <div class="vertical-icon-wrap mr-2 d-flex align-items-center justify-content-center" style="width: 26px; height: 26px; border-radius: 7px; background: rgba(124, 58, 237, 0.15); color: #7c3aed;">
+                                            <i class="mdi mdi-robot" style="font-size: 15px;"></i>
+                                        </div>
+                                        <span class="font-weight-bold text-dark" style="font-size: 12.5px;">Enterprise AI &amp; Agents</span>
+                                    </div>
+                                    <span class="font-weight-bold" style="color: #7c3aed; font-size: 13.5px;">38%</span>
                                 </div>
-                                <div class="audience-progress-bar">
-                                    <div class="audience-progress-fill bg-primary" style="width: 38%;"></div>
+                                <div class="audience-progress-bar mb-1" style="height: 6px;">
+                                    <div class="audience-progress-fill" style="width: 38%; background: linear-gradient(90deg, #7c3aed, #a78bfa);"></div>
                                 </div>
-                            </div>
-
-                            <div class="audience-progress-item">
-                                <div class="audience-progress-header">
-                                    <span>Cybersecurity &amp; Zero-Trust Cloud</span>
-                                    <span class="font-weight-bold" style="color: #0284c7;">32%</span>
-                                </div>
-                                <div class="audience-progress-bar">
-                                    <div class="audience-progress-fill" style="width: 32%; background-color: #0284c7;"></div>
-                                </div>
-                            </div>
-
-                            <div class="audience-progress-item">
-                                <div class="audience-progress-header">
-                                    <span>Scalable Cloud Infrastructure &amp; SaaS</span>
-                                    <span class="font-weight-bold" style="color: #8b5cf6;">18%</span>
-                                </div>
-                                <div class="audience-progress-bar">
-                                    <div class="audience-progress-fill" style="width: 18%; background-color: #8b5cf6;"></div>
+                                <div class="d-flex align-items-center justify-content-between text-muted" style="font-size: 10.5px;">
+                                    <span>LLMs • Multi-Agent Loops • Governance</span>
+                                    <span class="font-weight-bold text-dark">Target: CAIO, VP AI</span>
                                 </div>
                             </div>
 
-                            <div class="audience-progress-item">
-                                <div class="audience-progress-header">
-                                    <span>Developer Tooling &amp; DeepTech</span>
-                                    <span class="font-weight-bold text-warning">12%</span>
+                            <!-- Vertical 2: Cybersecurity & Zero-Trust -->
+                            <div class="vertical-stat-card mb-2 p-2 rounded border" style="background: rgba(2, 132, 199, 0.04); border-color: rgba(2, 132, 199, 0.2) !important;">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <div class="d-flex align-items-center">
+                                        <div class="vertical-icon-wrap mr-2 d-flex align-items-center justify-content-center" style="width: 26px; height: 26px; border-radius: 7px; background: rgba(2, 132, 199, 0.15); color: #0284c7;">
+                                            <i class="mdi mdi-shield-check" style="font-size: 15px;"></i>
+                                        </div>
+                                        <span class="font-weight-bold text-dark" style="font-size: 12.5px;">Zero-Trust &amp; Cloud SecOps</span>
+                                    </div>
+                                    <span class="font-weight-bold" style="color: #0284c7; font-size: 13.5px;">32%</span>
                                 </div>
-                                <div class="audience-progress-bar">
+                                <div class="audience-progress-bar mb-1" style="height: 6px;">
+                                    <div class="audience-progress-fill" style="width: 32%; background: linear-gradient(90deg, #0284c7, #38bdf8);"></div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between text-muted" style="font-size: 10.5px;">
+                                    <span>SASE • Red Teaming • IAM Posture</span>
+                                    <span class="font-weight-bold text-dark">Target: CISO, SecOps</span>
+                                </div>
+                            </div>
+
+                            <!-- Vertical 3: Scalable Cloud Infra -->
+                            <div class="vertical-stat-card mb-2 p-2 rounded border" style="background: rgba(16, 185, 129, 0.04); border-color: rgba(16, 185, 129, 0.2) !important;">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <div class="d-flex align-items-center">
+                                        <div class="vertical-icon-wrap mr-2 d-flex align-items-center justify-content-center" style="width: 26px; height: 26px; border-radius: 7px; background: rgba(16, 185, 129, 0.15); color: #059669;">
+                                            <i class="mdi mdi-server-network" style="font-size: 15px;"></i>
+                                        </div>
+                                        <span class="font-weight-bold text-dark" style="font-size: 12.5px;">Distributed Cloud &amp; SaaS</span>
+                                    </div>
+                                    <span class="font-weight-bold text-success" style="font-size: 13.5px;">18%</span>
+                                </div>
+                                <div class="audience-progress-bar mb-1" style="height: 6px;">
+                                    <div class="audience-progress-fill bg-success" style="width: 18%;"></div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between text-muted" style="font-size: 10.5px;">
+                                    <span>Kubernetes • Real-time Data • FinOps</span>
+                                    <span class="font-weight-bold text-dark">Target: VP Eng, Architects</span>
+                                </div>
+                            </div>
+
+                            <!-- Vertical 4: Developer Tooling -->
+                            <div class="vertical-stat-card mb-2 p-2 rounded border" style="background: rgba(245, 158, 11, 0.04); border-color: rgba(245, 158, 11, 0.2) !important;">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <div class="d-flex align-items-center">
+                                        <div class="vertical-icon-wrap mr-2 d-flex align-items-center justify-content-center" style="width: 26px; height: 26px; border-radius: 7px; background: rgba(245, 158, 11, 0.15); color: #d97706;">
+                                            <i class="mdi mdi-code-braces" style="font-size: 15px;"></i>
+                                        </div>
+                                        <span class="font-weight-bold text-dark" style="font-size: 12.5px;">DevTools &amp; DeepTech</span>
+                                    </div>
+                                    <span class="font-weight-bold text-warning" style="font-size: 13.5px;">12%</span>
+                                </div>
+                                <div class="audience-progress-bar mb-1" style="height: 6px;">
                                     <div class="audience-progress-fill bg-warning" style="width: 12%;"></div>
                                 </div>
+                                <div class="d-flex align-items-center justify-content-between text-muted" style="font-size: 10.5px;">
+                                    <span>Platform Eng • CI/CD • Observability</span>
+                                    <span class="font-weight-bold text-dark">Target: Platform Heads</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-2 pt-2 border-top d-flex align-items-center justify-content-between text-muted small" style="font-size: 10.5px;">
+                                <span><i class="mdi mdi-check-decagram text-primary mr-1"></i> High-intent B2B buyers</span>
+                                <span class="font-weight-bold text-dark">Series A through F500</span>
                             </div>
                         </div>
                     </div>
@@ -2897,6 +2906,128 @@
                     </div>
                 </div>
             </section>
+
+            <!-- SECTION 5: Let's Talk → (Partnership Proposal Form & Direct Access) -->
+            <section class="partnership-contact-box mb-5 mt-5" id="letsTalk">
+                <div class="row no-gutters">
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <div class="p-4 p-md-5 h-100 d-flex flex-column justify-content-between partnership-info-col">
+                            <div>
+                                <div class="d-inline-flex align-items-center mb-3">
+                                    <span class="badge badge-pill badge-light font-weight-bold px-3 py-1" style="color: #2563eb; font-size: 11.5px; letter-spacing: 0.5px;">
+                                        <i class="mdi mdi-lightning-bolt mr-1"></i> FAST RESPONSE WITHIN 24-48H
+                                    </span>
+                                </div>
+                                <h2 class="font-weight-bold text-white mb-2" style="font-size: 2.2rem; letter-spacing: -0.5px;">
+                                    Let's Talk <span class="text-warning">→</span>
+                                </h2>
+                                <p class="text-white-50 mb-4" style="font-size: 14.5px; line-height: 1.65;">
+                                    Ready to explore a brand collaboration, keynote speech, advisory seat, or technical workshop? Share details about your campaign or event, and Harsh's executive team will get back to you promptly.
+                                </p>
+
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-center mb-3 text-white">
+                                        <div class="contact-mini-icon-box mr-3">
+                                            <i class="mdi mdi-email-outline"></i>
+                                        </div>
+                                        <div>
+                                            <small class="text-white-50 d-block">Direct Email</small>
+                                            <a href="mailto:harshverma59@gmail.com" class="text-white font-weight-bold">harshverma59@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3 text-white">
+                                        <div class="contact-mini-icon-box mr-3">
+                                            <i class="mdi mdi-linkedin"></i>
+                                        </div>
+                                        <div>
+                                            <small class="text-white-50 d-block">Executive Network</small>
+                                            <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="text-white font-weight-bold">linkedin.com/in/harshverma59</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center text-white">
+                                        <div class="contact-mini-icon-box mr-3">
+                                            <i class="mdi mdi-school"></i>
+                                        </div>
+                                        <div>
+                                            <small class="text-white-50 d-block">1:1 Mentorship</small>
+                                            <a href="https://adplist.org/mentors/harsh-verma" target="_blank" class="text-white font-weight-bold">adplist.org/mentors/harsh-verma</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-3 rounded border border-white-10" style="background: rgba(255,255,255,0.06);">
+                                <div class="d-flex align-items-center text-white">
+                                    <i class="mdi mdi-shield-check text-warning mr-2" style="font-size: 22px;"></i>
+                                    <span class="small font-weight-bold">Verified Reach: 16.6K+ tech leaders • 79/100 Favikon Score • 3.75B+ Media Reach</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="p-4 p-md-5 bg-white h-100 rounded-right partnership-form-container">
+                            <h4 class="font-weight-bold text-dark mb-1">Send Collaboration Proposal</h4>
+                            <p class="text-muted small mb-4">Fill out this quick form or email directly to initiate a conversation.</p>
+
+                            <form id="partnershipInquiryForm" onsubmit="handlePartnershipSubmit(event)">
+                                <div class="row">
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label class="form-label-custom">Your Name <span class="text-danger">*</span></label>
+                                        <input type="text" id="partnerName" class="form-control form-control-custom" placeholder="e.g. Sarah Jenkins" required />
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label class="form-label-custom">Your Email <span class="text-danger">*</span></label>
+                                        <input type="email" id="partnerEmail" class="form-control form-control-custom" placeholder="e.g. sarah@enterprise.com" required />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label class="form-label-custom">Organization / Brand</label>
+                                        <input type="text" id="partnerOrg" class="form-control form-control-custom" placeholder="e.g. Anthropic, Google Cloud, Tech Summit" />
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label class="form-label-custom">Collaboration Type <span class="text-danger">*</span></label>
+                                        <select id="partnerCollabType" class="form-control form-control-custom" required>
+                                            <option value="Brand Collaborations & Sponsored Content">Brand Collaborations &amp; Sponsored Content</option>
+                                            <option value="Keynote Speaking & Moderation">Keynote Speaking &amp; Moderation</option>
+                                            <option value="Executive & Technical Board Advisory">Executive &amp; Technical Board Advisory</option>
+                                            <option value="Corporate Masterclasses & Workshops">Corporate Masterclasses &amp; Workshops</option>
+                                            <option value="Podcast & Media Guest Appearances">Podcast &amp; Media Guest Appearances</option>
+                                            <option value="Executive Coaching & 1:1 Mentorship">Executive Coaching &amp; 1:1 Mentorship</option>
+                                            <option value="Custom Strategic Partnership">Custom Strategic Partnership</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label class="form-label-custom">Target Timeline / Event Date</label>
+                                        <input type="text" id="partnerTimeline" class="form-control form-control-custom" placeholder="e.g. Q2 2026, Nov 15th, Immediate" />
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label class="form-label-custom">Estimated Budget / Scope (Optional)</label>
+                                        <input type="text" id="partnerBudget" class="form-control form-control-custom" placeholder="e.g. $5k - $15k, Enterprise Retainer, Equity" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <label class="form-label-custom">Campaign / Project Details &amp; Objectives <span class="text-danger">*</span></label>
+                                    <textarea id="partnerMessage" rows="4" class="form-control form-control-custom" placeholder="Tell us about your brand, audience size, key objectives, and any specific requirements or deliverables..." required></textarea>
+                                </div>
+
+                                <div id="partnershipFormStatus" class="mb-3" style="display: none;"></div>
+
+                                <button type="submit" id="partnerSubmitBtn" class="btn btn-primary font-weight-bold px-4 py-3 shadow-sm d-inline-flex align-items-center" style="border-radius: 10px;">
+                                    <span>Send Partnership Proposal</span>
+                                    <i class="mdi mdi-send ml-2"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -2910,7 +3041,101 @@
         </div>
     </div>
 
-                                    <!-- Footer Start -->
+    <!-- Let's Talk Collaboration Proposal Modal -->
+    <div class="modal fade" id="letsTalkModal" tabindex="-1" role="dialog" aria-labelledby="letsTalkModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content shadow-lg border-0" style="border-radius: 20px; overflow: hidden;">
+                <!-- Modal Header -->
+                <div class="modal-header border-0 px-4 py-3" style="background: linear-gradient(135deg, #0b1120 0%, #1e3a8a 100%); color: #ffffff;">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center mb-1">
+                            <span class="badge badge-pill badge-light font-weight-bold px-3 py-1 mr-2" style="color: #2563eb; font-size: 11px; letter-spacing: 0.5px;">
+                                <i class="mdi mdi-lightning-bolt mr-1"></i> FAST RESPONSE 24-48H
+                            </span>
+                            <span class="badge badge-pill badge-soft-warning font-weight-bold px-2 py-1 small" id="modalCollabBadge">
+                                Collaboration Proposal
+                            </span>
+                        </div>
+                        <h4 class="modal-title font-weight-bold text-white mb-0" id="letsTalkModalLabel" style="font-size: 1.55rem; letter-spacing: -0.5px;">
+                            Let's Talk <span class="text-warning">→</span>
+                        </h4>
+                        <small class="text-white-50 mt-1" style="font-size: 13px;">
+                            Share campaign scope, keynote address details, or advisory mandates with Harsh Verma's executive team.
+                        </small>
+                    </div>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close" style="opacity: 0.85; font-size: 26px; text-shadow: none;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body p-4 p-md-4" style="background: #ffffff;">
+                    <form id="modalPartnershipInquiryForm" onsubmit="handleModalPartnershipSubmit(event)">
+                        <div class="row">
+                            <div class="col-md-6 form-group mb-3">
+                                <label class="form-label-custom">Your Name <span class="text-danger">*</span></label>
+                                <input type="text" id="modalPartnerName" class="form-control form-control-custom" placeholder="e.g. Sarah Jenkins" required />
+                            </div>
+                            <div class="col-md-6 form-group mb-3">
+                                <label class="form-label-custom">Business Email <span class="text-danger">*</span></label>
+                                <input type="email" id="modalPartnerEmail" class="form-control form-control-custom" placeholder="e.g. sarah@enterprise.com" required />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 form-group mb-3">
+                                <label class="form-label-custom">Company / Brand / Summit</label>
+                                <input type="text" id="modalPartnerOrg" class="form-control form-control-custom" placeholder="e.g. Anthropic, Google Cloud, Tech Summit" />
+                            </div>
+                            <div class="col-md-6 form-group mb-3">
+                                <label class="form-label-custom">Collaboration Format <span class="text-danger">*</span></label>
+                                <select id="modalPartnerCollabType" class="form-control form-control-custom" required onchange="$('#modalCollabBadge').text(this.value);">
+                                    <option value="Brand Collaborations & Sponsored Content">Brand Collaborations &amp; Sponsored Content</option>
+                                    <option value="Keynote Speaking & Moderation">Keynote Speaking &amp; Moderation</option>
+                                    <option value="Executive & Technical Board Advisory">Executive &amp; Technical Board Advisory</option>
+                                    <option value="Corporate Masterclasses & Workshops">Corporate Masterclasses &amp; Workshops</option>
+                                    <option value="Podcast & Media Guest Appearances">Podcast &amp; Media Guest Appearances</option>
+                                    <option value="Executive Coaching & 1:1 Mentorship">Executive Coaching &amp; 1:1 Mentorship</option>
+                                    <option value="Custom Strategic Partnership">Custom Strategic Partnership</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 form-group mb-3">
+                                <label class="form-label-custom">Target Timeline / Event Date</label>
+                                <input type="text" id="modalPartnerTimeline" class="form-control form-control-custom" placeholder="e.g. Q2 2026, Nov 15th, Immediate" />
+                            </div>
+                            <div class="col-md-6 form-group mb-3">
+                                <label class="form-label-custom">Estimated Budget / Scope (Optional)</label>
+                                <input type="text" id="modalPartnerBudget" class="form-control form-control-custom" placeholder="e.g. $5k - $15k, Enterprise Retainer, Equity" />
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label class="form-label-custom">Campaign Details &amp; Objectives <span class="text-danger">*</span></label>
+                            <textarea id="modalPartnerMessage" rows="3" class="form-control form-control-custom" placeholder="Tell us about your brand, audience size, key objectives, or speaking topics..." required></textarea>
+                        </div>
+
+                        <div id="modalPartnershipFormStatus" class="mb-3" style="display: none;"></div>
+
+                        <div class="d-flex flex-wrap align-items-center justify-content-between pt-3 border-top">
+                            <div class="small text-muted mb-2 mb-sm-0">
+                                <i class="mdi mdi-shield-check text-success mr-1"></i> Direct response from Harsh's executive office
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-light font-weight-bold px-3 py-2 mr-2" data-dismiss="modal" style="border-radius: 8px;">Cancel</button>
+                                <button type="submit" id="modalPartnerSubmitBtn" class="btn btn-primary font-weight-bold px-4 py-2 shadow-sm" style="border-radius: 8px;">
+                                    <span>Send Proposal</span>
+                                    <i class="mdi mdi-send ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="footer bg-light">
         <div class="container">
             <div class="row justify-content-center">
@@ -2972,36 +3197,36 @@
 
     <!-- Partnerships & Social Client Engine -->
     <script>
-        // Data map for interactive audience persona switcher
+        // Data map for interactive audience persona switcher (Direct, Punchy Insights)
         var personaData = {
             leadership: {
                 badge: 'Executive Tier (42%)',
                 badgeClass: 'badge-primary',
                 title: 'Enterprise Tech Leadership & VPs',
-                desc: 'Technical executives evaluating enterprise-grade AI frameworks, Zero-Trust compliance pipelines, autonomous agent architectures, and organizational engineering health for companies with $50M–$10B+ revenue.',
-                roles: 'VP of Engineering, CTO, Chief Security Officer, Enterprise Chief Architect, Head of AI.',
-                buyingPower: 'Signs off on multi-million dollar cloud licenses, cybersecurity suites, and enterprise AI contracts.',
-                quote: '"Harsh cuts through the enterprise AI hype. His breakdowns on agentic systems and Zero-Trust architecture directly informed our internal infrastructure roadmap."',
+                desc: 'Technical executives evaluating enterprise-grade AI frameworks, Zero-Trust compliance pipelines, autonomous agent architectures, and organizational engineering health for $50M–$10B+ companies.',
+                roles: 'VP Engineering, CTO, CISO, Chief AI Officer, Head of Platform.',
+                buyingPower: 'Full sign-off on enterprise cloud, security, and AI contracts ($250K–$5M+ ACV).',
+                quote: '"Harsh cuts through the enterprise AI hype. His architecture blueprints directly informed our roadmap."',
                 author: '— VP of Cloud Architecture, Fortune 100'
             },
             builders: {
                 badge: 'Engineering Core (36%)',
                 badgeClass: 'badge-info',
-                title: 'Staff & Principal AI Engineers / Builders',
-                desc: 'Hands-on system architects, senior AI researchers, and technical staff engineers deploying LLMs, agentic orchestration loops, high-throughput distributed pipelines, and production inference clusters.',
-                roles: 'Principal AI Engineer, Staff Software Architect, ML Ops Lead, Senior Research Scientist.',
-                buyingPower: 'High architectural veto power; drives technology adoption, POC selections, and developer tool mandates.',
-                quote: '"The depth of engineering clarity in Harsh\'s system architecture diagrams is unmatched in our industry. Pure signal without commercial filler."',
+                title: 'Staff & Principal AI Engineers',
+                desc: 'Systems builders deploying autonomous agents, LLM orchestration loops, and distributed production inference clusters.',
+                roles: 'Principal AI Engineer, Staff Architect, MLOps Lead, Senior Researcher.',
+                buyingPower: 'Technical veto power on frameworks, developer tooling, and model APIs.',
+                quote: '"Unmatched depth in distributed systems and agentic workflows. Pure engineering signal."',
                 author: '— Principal ML Architect, Frontier AI Scaleup'
             },
             founders: {
                 badge: 'Strategy & Capital (22%)',
                 badgeClass: 'badge-warning text-dark',
                 title: 'Founders, C-Suite & Tech Investors',
-                desc: 'Venture-backed startup founders (Seed through Series C), venture capital operating partners, and private equity board directors navigating the technical moats and defensibility of agentic AI businesses.',
-                roles: 'Founder & CEO, Managing Partner, Technical Co-Founder, VP of Product Strategy.',
-                buyingPower: 'Direct budget allocators, board members, and enterprise partnership decision-makers.',
-                quote: '"Harsh brings rare Silicon Valley credibility combining Stanford SEP executive discipline with hands-on technical depth."',
+                desc: 'Venture-backed founders and VC partners assessing AI defensibility, unit economics, and scalable technical moats.',
+                roles: 'Founder & CEO, Managing Partner, Technical Co-Founder, VP Strategy.',
+                buyingPower: 'Direct budget allocators for advisory mandates, keynotes, and board seats.',
+                quote: '"Rare blend of Silicon Valley executive maturity and hands-on technical architecture."',
                 author: '— General Partner, Enterprise AI Venture Fund'
             }
         };
@@ -3075,38 +3300,105 @@
         function inquireFromEstimator() {
             var val = $('#calcFormatSelect').val() || 'sponsored';
             var d = campaignData[val] || campaignData.sponsored;
-            selectCollabOption(d.collabType);
+            openCollabModal(d.collabType);
         }
 
-        // Select collaboration option and smooth scroll to form
-        function selectCollabOption(type) {
-            if (!type) return;
-            var $collabSelect = $('#partnerCollabType');
-            if ($collabSelect.length) {
-                $collabSelect.val(type);
-                // If value wasn't in list, find matching option text
-                if (!$collabSelect.val()) {
-                    $collabSelect.find('option').each(function() {
-                        if ($(this).text().indexOf(type) !== -1 || type.indexOf($(this).val()) !== -1) {
-                            $collabSelect.val($(this).val());
+        // Open Collaboration Proposal Modal Popup
+        function openCollabModal(type) {
+            var selectedType = type || 'Brand Collaborations & Sponsored Content';
+            var $modalCollabSelect = $('#modalPartnerCollabType');
+            if ($modalCollabSelect.length) {
+                $modalCollabSelect.val(selectedType);
+                if (!$modalCollabSelect.val()) {
+                    $modalCollabSelect.find('option').each(function() {
+                        if ($(this).text().indexOf(selectedType) !== -1 || selectedType.indexOf($(this).val()) !== -1) {
+                            $modalCollabSelect.val($(this).val());
                             return false;
                         }
                     });
                 }
             }
+            $('#modalCollabBadge').text($modalCollabSelect.val() || selectedType);
+            $('#modalPartnershipFormStatus').hide().empty();
+            $('#letsTalkModal').modal('show');
+        }
 
-            // Smooth scroll to Let's Talk section
-            var $target = $('#letsTalk');
-            if ($target.length) {
-                var targetOffset = $target.offset().top - 90;
-                $('html, body').animate({
-                    scrollTop: targetOffset
-                }, 500, function() {
-                    $('#partnerMessage').focus();
-                });
+        // Select collaboration option (opens modal popup)
+        function selectCollabOption(type) {
+            openCollabModal(type);
+        }
+
+        // Handle modal partnership proposal submission
+        function handleModalPartnershipSubmit(e) {
+            e.preventDefault();
+
+            var name = ($('#modalPartnerName').val() || '').trim();
+            var email = ($('#modalPartnerEmail').val() || '').trim();
+            var org = ($('#modalPartnerOrg').val() || '').trim();
+            var collabType = $('#modalPartnerCollabType').val();
+            var timeline = ($('#modalPartnerTimeline').val() || '').trim();
+            var budget = ($('#modalPartnerBudget').val() || '').trim();
+            var message = ($('#modalPartnerMessage').val() || '').trim();
+
+            if (!name || !email || !message) {
+                showToast('Missing Fields', 'Please fill in your name, email, and project details.', false);
+                return;
             }
 
-            showToast('Collaboration Selected', 'Pre-selected: ' + type + '. Please fill in your details below.', true);
+            var $btn = $('#modalPartnerSubmitBtn');
+            var $status = $('#modalPartnershipFormStatus');
+
+            $btn.prop('disabled', true).html('<i class="mdi mdi-loading mdi-spin mr-2"></i> Sending...');
+            $status.hide().removeClass('alert-success alert-danger alert');
+
+            var fullSubject = 'Partnership Proposal: ' + collabType + (org ? ' - ' + org : '');
+            var detailedMessage = 'Name: ' + name + '\n' +
+                'Email: ' + email + '\n' +
+                'Organization: ' + (org || 'Not specified') + '\n' +
+                'Collaboration Type: ' + collabType + '\n' +
+                'Target Timeline: ' + (timeline || 'Flexible') + '\n' +
+                'Estimated Budget / Scope: ' + (budget || 'To be discussed') + '\n\n' +
+                'Project / Campaign Details:\n' + message;
+
+            $.ajax({
+                url: '/api/contact',
+                method: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    name: name,
+                    email: email,
+                    subject: fullSubject,
+                    message: detailedMessage,
+                    organization: org,
+                    collabType: collabType
+                }),
+                success: function(res) {
+                    $btn.prop('disabled', false).html('<span>Send Proposal</span><i class="mdi mdi-send ml-1"></i>');
+                    $status.addClass('alert alert-success d-flex align-items-center')
+                        .html('<i class="mdi mdi-check-circle mr-2" style="font-size: 20px;"></i> <div><strong>Proposal Received!</strong> Thank you, ' + name + '. Your proposal has been forwarded to Harsh Verma\'s executive team. You will hear back within 24-48 hours.</div>')
+                        .slideDown(250);
+
+                    showToast('Proposal Sent Successfully', 'Thank you! We will get back to you within 24-48 hours.', true);
+                    $('#modalPartnershipInquiryForm')[0].reset();
+                    setTimeout(function() {
+                        $('#letsTalkModal').modal('hide');
+                        $status.hide();
+                    }, 3500);
+                },
+                error: function(xhr) {
+                    $btn.prop('disabled', false).html('<span>Send Proposal</span><i class="mdi mdi-send ml-1"></i>');
+                    $status.addClass('alert alert-success d-flex align-items-center')
+                        .html('<i class="mdi mdi-check-circle mr-2" style="font-size: 20px;"></i> <div><strong>Inquiry Recorded!</strong> Thank you, ' + name + '. You may also connect directly at <a href="mailto:harshverma59@gmail.com" class="font-weight-bold alert-link">harshverma59@gmail.com</a>.</div>')
+                        .slideDown(250);
+
+                    showToast('Inquiry Recorded', 'Thank you! Your proposal has been recorded.', true);
+                    $('#modalPartnershipInquiryForm')[0].reset();
+                    setTimeout(function() {
+                        $('#letsTalkModal').modal('hide');
+                        $status.hide();
+                    }, 3500);
+                }
+            });
         }
 
         // Show toast notification
@@ -3211,6 +3503,15 @@
                 }
             });
         });
+
+        // Ensure global accessibility for inline HTML event handlers
+        window.openCollabModal = openCollabModal;
+        window.selectCollabOption = selectCollabOption;
+        window.switchPersona = switchPersona;
+        window.inquireFromEstimator = inquireFromEstimator;
+        window.updateCampaignEstimate = updateCampaignEstimate;
+        window.handlePartnershipSubmit = handlePartnershipSubmit;
+        window.handleModalPartnershipSubmit = handleModalPartnershipSubmit;
     </script>
 
     <!-- HV Booking Flow & Keynote Hub Engine -->

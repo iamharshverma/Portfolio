@@ -8,7 +8,8 @@
     "dev": "node server.ts",
     "start": "node server.ts",
     "build": "node scripts/build.js",
-    "lint": "node -e \"console.log('No linting errors found')\""
+    "test": "python3 scripts/check_speaker_page.py",
+    "lint": "python3 scripts/check_speaker_page.py && node -e \"console.log('No linting errors found')\""
   },
   "dependencies": {
     "@google/genai": "^2.21.0",

@@ -699,29 +699,42 @@ keynote_videos_data = [
     },
     {
         "id": "iZkx6Ewq6wU",
-        "title": "TrueML Keynote: Big Data & ML Practices at Palo Alto Networks",
-        "outlet": "TrueML Talks #35",
-        "date": "Production ML Keynote",
-        "duration": "40:05",
-        "category": "bigdata",
+        "title": "How To Control Your Job Interview & Convince Recruiters To Hire You",
+        "outlet": "Chai and Coaching | Executive Career Masterclass",
+        "date": "Executive Career Masterclass",
+        "duration": "18:35",
+        "category": "careers",
         "thumb": "https://img.youtube.com/vi/iZkx6Ewq6wU/hqdefault.jpg",
         "recording_url": "https://www.youtube.com/watch?v=iZkx6Ewq6wU",
-        "desc": "Production machine learning engineering patterns, distributed feature pipelines, and zero-trust validation in high-throughput enterprise security systems.",
+        "desc": "Executive career masterclass with Harsh Verma on managing technical interviews, avoiding common search pitfalls, answering complex system challenges under pressure, and convincing hiring committees.",
+        "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1",
+        "tags": ["Chai & Coaching", "Job Interview", "Career Strategy", "Tech Leadership"]
+    },
+    {
+        "id": "1DxjMiOe580",
+        "title": "TrueML Talks #35: Big Data and ML Practices at Palo Alto Networks",
+        "outlet": "TrueML Talks #35",
+        "date": "Production ML Keynote",
+        "duration": "36:44",
+        "category": "bigdata",
+        "thumb": "https://img.youtube.com/vi/1DxjMiOe580/hqdefault.jpg",
+        "recording_url": "https://www.youtube.com/watch?v=1DxjMiOe580",
+        "desc": "Production machine learning engineering patterns, distributed feature pipelines, model-serving at scale, latency and prompt injection defenses, and automated deployment architectures at Palo Alto Networks.",
         "slides_url": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1",
-        "tags": ["Palo Alto Networks", "TrueML", "Feature Pipelines", "Big Data ML"]
+        "tags": ["Palo Alto Networks", "TrueML Talks", "Big Data ML", "Model Serving"]
     },
     {
         "id": "bggw4JTFjgA",
-        "title": "FutureAGI Keynote: Enterprise Agentic Security & Multi-Model Orchestration",
-        "outlet": "FutureAGI Global Keynote",
-        "date": "2026 Virtual Keynote",
+        "title": "Chai & Coaching: Are Cybersecurity Degrees & Job Scope In USA Worth It?",
+        "outlet": "Chai and Coaching | Executive Career Masterclass",
+        "date": "Career & Industry Masterclass",
         "duration": "35:20",
-        "category": "agentic",
+        "category": "careers",
         "thumb": "https://img.youtube.com/vi/bggw4JTFjgA/hqdefault.jpg",
         "recording_url": "https://www.youtube.com/watch?v=bggw4JTFjgA",
-        "desc": "Keynote on enterprise agentic security, multi-model orchestration frameworks, deterministic evaluation, and securing autonomous agent communication channels.",
-        "slides_url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1",
-        "tags": ["FutureAGI", "Multi-Agent Systems", "Orchestration", "Zero-Trust"]
+        "desc": "Executive career masterclass analyzing the ROI and industry scope of cybersecurity degrees, master's programs in the USA, industry certifications, real-world skills vs academic credentials, and enterprise hiring demand.",
+        "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1",
+        "tags": ["Chai & Coaching", "Cybersecurity Degrees", "Job Scope", "Tech Careers"]
     }
 ]
 
@@ -879,6 +892,9 @@ def render_keynote_hub():
                         </button>
                         <button type="button" class="hv-stage-filter-pill" onclick="filterKeynoteVideos('bigdata', this)">
                             <i class="mdi mdi-database"></i> Big Data &amp; Systems
+                        </button>
+                        <button type="button" class="hv-stage-filter-pill" onclick="filterKeynoteVideos('careers', this)">
+                            <i class="mdi mdi-account-tie"></i> Careers &amp; Leadership
                         </button>
                     </div>
                     <div class="d-flex align-items-center gap-2">
@@ -2119,8 +2135,8 @@ def build_full_page():
                             <a class="dropdown-item nav-dropdown-item" href="page-social">
                                 <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
                                 <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
-                                    <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
+                                    <span class="dropdown-item-title">Partnership &amp; Social <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Collaborate</span></span>
+                                    <span class="dropdown-item-desc">Brand partnerships &amp; executive social authority</span>
                                 </div>
                             </a>
                             <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
@@ -2748,7 +2764,7 @@ def build_full_page():
 
 if __name__ == "__main__":
     html_content = build_full_page()
-    for filename in ["page-events.html", "page-speaker.html", "speaker.html"]:
+    for filename in ["page-events.html"]:
         with open(filename, "w", encoding="utf-8") as f:
             f.write(html_content)
-    print("Generated page-events.html, page-speaker.html, and speaker.html successfully with all events.")
+    print("Generated page-events.html successfully with all events.")

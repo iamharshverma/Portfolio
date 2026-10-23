@@ -4,6 +4,15 @@ const { execSync } = require('child_process');
 
 console.log('[Build] Starting Harsh Verma Portfolio build process...');
 
+// 0. Verify speaker page integrity
+try {
+  console.log('[Build] Verifying speaker page integrity...');
+  execSync('python3 scripts/check_speaker_page.py', { stdio: 'inherit' });
+} catch (err) {
+  console.error('[Build] Critical error: Speaker page validation failed!', err.message);
+  process.exit(1);
+}
+
 // 1. Run site synchronization
 try {
   console.log('[Build] Synchronizing site statistics and metrics...');

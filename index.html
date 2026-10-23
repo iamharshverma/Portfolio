@@ -1459,26 +1459,101 @@ html.dark-mode .exp-progress-bar {
                                 </div>
                             </div>
 
-                            <div class="mt-4 d-flex flex-wrap align-items-center">
-                                <a href="page-about" class="btn btn-primary rounded-pill font-weight-bold px-4 py-2 mr-2 mb-2 shadow-sm" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); border: none;">
+                            <style>
+                                .about-action-btns {
+                                    gap: 8px 6px;
+                                }
+                                .about-action-btns .btn {
+                                    font-size: 12px !important;
+                                    font-weight: 600 !important;
+                                    padding: 6px 14px !important;
+                                    border-radius: 50px !important;
+                                    display: inline-flex;
+                                    align-items: center;
+                                    line-height: 1.4;
+                                    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+                                    margin-right: 0 !important;
+                                    margin-bottom: 0 !important;
+                                }
+                                .about-action-btns .btn:hover {
+                                    transform: translateY(-1.5px);
+                                }
+                                .about-action-btns .btn-primary {
+                                    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+                                    border: none !important;
+                                    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25) !important;
+                                }
+                                .about-action-btns .btn-primary:hover {
+                                    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.38) !important;
+                                }
+                                .about-action-btns .btn-outline-primary {
+                                    border: 1px solid rgba(37, 99, 235, 0.35) !important;
+                                    color: #2563eb !important;
+                                    background: rgba(37, 99, 235, 0.04);
+                                }
+                                .about-action-btns .btn-outline-primary:hover {
+                                    background: #2563eb !important;
+                                    color: #ffffff !important;
+                                    border-color: #2563eb !important;
+                                }
+                                .about-action-btns .btn-dark {
+                                    background: #0f172a !important;
+                                    border: 1px solid #1e293b !important;
+                                    color: #ffffff !important;
+                                }
+                                .about-action-btns .btn-dark:hover {
+                                    background: #1e293b !important;
+                                }
+                                .about-action-btns .btn-warning {
+                                    background: #f59e0b !important;
+                                    color: #0f172a !important;
+                                    border: none !important;
+                                    font-weight: 700 !important;
+                                }
+                                .about-action-btns .btn-warning:hover {
+                                    background: #d97706 !important;
+                                    color: #ffffff !important;
+                                }
+                                .about-action-btns .btn-outline-dark {
+                                    border: 1px solid rgba(15, 23, 42, 0.22) !important;
+                                    color: #334155 !important;
+                                }
+                                .about-action-btns .btn-outline-dark:hover {
+                                    background: #0f172a !important;
+                                    color: #ffffff !important;
+                                    border-color: #0f172a !important;
+                                }
+                                .about-action-btns .btn-outline-info {
+                                    border: 1px solid rgba(2, 132, 199, 0.35) !important;
+                                    color: #0284c7 !important;
+                                    background: rgba(2, 132, 199, 0.04);
+                                }
+                                .about-action-btns .btn-outline-info:hover {
+                                    background: #0284c7 !important;
+                                    color: #ffffff !important;
+                                    border-color: #0284c7 !important;
+                                }
+                            </style>
+                            <div class="mt-4 d-flex flex-wrap align-items-center about-action-btns">
+                                <a href="page-about" class="btn btn-sm btn-primary rounded-pill font-weight-bold shadow-sm">
                                     <i class="mdi mdi-account-box-outline mr-1"></i> Full Biography &amp; 49 Verified Profiles &rarr;
                                 </a>
-                                <a href="https://theorg.com/org/palo-alto-networks/person/harsh-verma" target="_blank" class="btn btn-outline-primary rounded-pill font-weight-bold px-3 py-2 mr-2 mb-2 shadow-sm" title="Verify Official Palo Alto Networks Organization Profile on The Org">
+                                <a href="https://theorg.com/org/palo-alto-networks/person/harsh-verma" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold shadow-sm" title="Verify Official Palo Alto Networks Organization Profile on The Org">
                                     <i class="mdi mdi-domain mr-1"></i> The Org: Palo Alto Networks
                                 </a>
-                                <a href="page-events" class="btn btn-dark rounded-pill font-weight-bold px-4 py-2 mr-2 mb-2 shadow-sm" style="background: #0f172a; border: 1px solid #1e293b;">
+                                <a href="page-events" class="btn btn-sm btn-dark rounded-pill font-weight-bold shadow-sm">
                                     <i class="mdi mdi-microphone-variant mr-1"></i> Speaking Engagements &rarr;
                                 </a>
-                                <button type="button" class="btn btn-warning rounded-pill font-weight-bold px-4 py-2 mr-2 mb-2 shadow-sm text-dark" onclick="window.openBookingModal()" style="border: none;">
+                                <button type="button" class="btn btn-sm btn-warning rounded-pill font-weight-bold shadow-sm text-dark" onclick="window.openBookingModal()">
                                     <i class="mdi mdi-calendar-star mr-1"></i> Book Keynote / Advisory
                                 </button>
-                                <a href="https://harshverma.bio/" target="_blank" class="btn btn-outline-primary rounded-pill font-weight-bold px-3 py-2 mr-2 mb-2">
+                                <a href="https://harshverma.bio/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold">
                                     <i class="mdi mdi-link-variant mr-1"></i> HarshVerma.bio
                                 </a>
-                                <a href="https://councils.forbes.com/profile/Harsh-Verma-Principal-Software-Engineer-AI-Palo-Alto-Networks/2a1e2c7a-5541-4c49-acee-0ec37da532a5" target="_blank" class="btn btn-outline-dark rounded-pill font-weight-bold px-3 py-2 mr-2 mb-2">
+                                <a href="https://councils.forbes.com/profile/Harsh-Verma-Principal-Software-Engineer-AI-Palo-Alto-Networks/2a1e2c7a-5541-4c49-acee-0ec37da532a5" target="_blank" class="btn btn-sm btn-outline-dark rounded-pill font-weight-bold">
                                     <i class="mdi mdi-alpha-f-circle mr-1"></i> Forbes Council
                                 </a>
-                                <a href="https://scholar.google.com/citations?user=zSt9oRMAAAAJ&hl=en" target="_blank" class="btn btn-outline-info rounded-pill font-weight-bold px-3 py-2 mb-2">
+                                <a href="https://scholar.google.com/citations?user=zSt9oRMAAAAJ&hl=en" target="_blank" class="btn btn-sm btn-outline-info rounded-pill font-weight-bold">
                                     <i class="mdi mdi-school mr-1"></i> Scholar
                                 </a>
                             </div> 
@@ -4611,6 +4686,92 @@ html.dark-mode .exp-progress-bar {
                     background: #2563eb;
                     color: #ffffff;
                 }
+
+                /* Compact, refined action buttons in carousel cards */
+                .home-media-news-card .post-meta .btn {
+                    font-size: 11px !important;
+                    font-weight: 600 !important;
+                    padding: 4px 10px !important;
+                    border-radius: 6px !important;
+                    letter-spacing: 0.15px;
+                    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+                    box-shadow: 0 1px 4px rgba(37, 99, 235, 0.18);
+                    display: inline-flex;
+                    align-items: center;
+                }
+                .home-media-news-card .post-meta .btn:hover {
+                    transform: translateY(-1px);
+                    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.32);
+                }
+
+                /* Section bottom CTA buttons */
+                .home-news-cta-wrap {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                }
+                .home-news-cta-wrap .btn {
+                    font-size: 12.5px !important;
+                    font-weight: 600 !important;
+                    padding: 7px 18px !important;
+                    border-radius: 8px !important;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 6px;
+                    margin: 0 !important;
+                    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+                }
+                .home-news-cta-wrap .btn:hover {
+                    transform: translateY(-1.5px);
+                }
+                .home-news-cta-wrap .btn-primary {
+                    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+                    border: none !important;
+                    box-shadow: 0 3px 10px rgba(37, 99, 235, 0.25) !important;
+                }
+                .home-news-cta-wrap .btn-primary:hover {
+                    box-shadow: 0 5px 16px rgba(37, 99, 235, 0.4) !important;
+                }
+                .home-news-cta-wrap .btn-outline-primary {
+                    border: 1px solid rgba(37, 99, 235, 0.35) !important;
+                    color: #2563eb !important;
+                    background: #ffffff;
+                }
+                .home-news-cta-wrap .btn-outline-primary:hover {
+                    background: #2563eb !important;
+                    color: #ffffff !important;
+                    border-color: #2563eb !important;
+                }
+                .home-news-cta-wrap .btn-outline-secondary {
+                    border: 1px solid rgba(100, 116, 139, 0.35) !important;
+                    color: #475569 !important;
+                    background: #ffffff;
+                }
+                .home-news-cta-wrap .btn-outline-secondary:hover {
+                    background: #475569 !important;
+                    color: #ffffff !important;
+                    border-color: #475569 !important;
+                }
+                html.dark-mode .home-news-cta-wrap .btn-outline-primary {
+                    background: #1e293b;
+                    color: #93c5fd !important;
+                    border-color: rgba(96, 165, 250, 0.4) !important;
+                }
+                html.dark-mode .home-news-cta-wrap .btn-outline-primary:hover {
+                    background: #2563eb !important;
+                    color: #ffffff !important;
+                }
+                html.dark-mode .home-news-cta-wrap .btn-outline-secondary {
+                    background: #1e293b;
+                    color: #cbd5e1 !important;
+                    border-color: rgba(148, 163, 184, 0.3) !important;
+                }
+                html.dark-mode .home-news-cta-wrap .btn-outline-secondary:hover {
+                    background: #334155 !important;
+                    color: #ffffff !important;
+                }
             </style>
 
             <div class="container">
@@ -5340,7 +5501,7 @@ html.dark-mode .exp-progress-bar {
             </div>
         
             <div class="marquee-item-card">
-                <a href="https://lifepage.app.link/20180731-0001" target="_blank" rel="noopener noreferrer" class="marquee-card-link">
+                <a href="https://www.lifepage.in/page/harsh" target="_blank" rel="noopener noreferrer" class="marquee-card-link">
                     <div class="marquee-card-thumb">
                         <img src="images/media/lifepage_badge.svg" alt="Life Page India" loading="lazy" />
                     </div>
@@ -5453,7 +5614,7 @@ html.dark-mode .exp-progress-bar {
                     <div class="col-12">
                         <div class="home-news-filter-bar">
                             <button type="button" class="home-news-filter-btn active" onclick="filterHomeCarousel('all', this)">
-                                <i class="mdi mdi-star mr-1 text-warning"></i> All Featured (12)
+                                <i class="mdi mdi-star mr-1 text-warning"></i> All Featured (15)
                             </button>
                             <button type="button" class="home-news-filter-btn" onclick="filterHomeCarousel('press', this)">
                                 <i class="mdi mdi-newspaper mr-1 text-primary"></i> Tier-1 Press
@@ -5525,7 +5686,7 @@ html.dark-mode .exp-progress-bar {
                             <span class="home-date-label"><i class="mdi mdi-calendar-outline mr-1"></i>Feb 2026</span>
                         </div>
                         <h5 class="home-news-card-title">
-                            <a href="https://markets.businessinsider.com/news/stocks/harsh-verma-receives-2026-global-recognition-award-for-revolutionary-contributions-to-ai-and-cybersecurity-1035817812" target="_blank" rel="noopener noreferrer" class="title text-dark">Business Insider: Global Recognition Award 2026 for AI & Cybersecurity Innovation</a>
+                            <a href="https://markets.businessinsider.com/news/stocks/harsh-verma-receives-a-2026-global-recognition-award-for-measurable-advances-in-enterprise-ai-and-cybersecurity-1035986499" target="_blank" rel="noopener noreferrer" class="title text-dark">Business Insider: Global Recognition Award 2026 for AI & Cybersecurity Innovation</a>
                         </h5>
                         <div class="home-news-quote">
                             <i class="mdi mdi-format-quote-open quote-icon"></i>
@@ -5535,7 +5696,7 @@ html.dark-mode .exp-progress-bar {
                             <span class="home-news-tag">AI Security</span><span class="home-news-tag">Global Recognition Award</span><span class="home-news-tag">Cloud Defense</span>
                         </div>
                         <div class="post-meta d-flex justify-content-between align-items-center mt-2 pt-2 border-top">
-                            <a href="https://markets.businessinsider.com/news/stocks/harsh-verma-receives-2026-global-recognition-award-for-revolutionary-contributions-to-ai-and-cybersecurity-1035817812" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
+                            <a href="https://markets.businessinsider.com/news/stocks/harsh-verma-receives-a-2026-global-recognition-award-for-measurable-advances-in-enterprise-ai-and-cybersecurity-1035986499" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
                                 <i class="mdi mdi-newspaper mr-1"></i> Read on Business Insider
                             </a>
                             <a href="page-media" class="text-muted small font-weight-bold" title="View on Media Page">
@@ -5560,7 +5721,7 @@ html.dark-mode .exp-progress-bar {
                             <span class="home-date-label"><i class="mdi mdi-calendar-outline mr-1"></i>2025 - 2026</span>
                         </div>
                         <h5 class="home-news-card-title">
-                            <a href="https://skydeck.berkeley.edu" target="_blank" rel="noopener noreferrer" class="title text-dark">Berkeley SkyDeck: Batch 22 AI Security Workshop & Global Keynote</a>
+                            <a href="https://mailchi.mp/berkeley/skydecknewsletter-071526" target="_blank" rel="noopener noreferrer" class="title text-dark">Berkeley SkyDeck: AI Security Feature & Global Keynote Series</a>
                         </h5>
                         <div class="home-news-quote">
                             <i class="mdi mdi-format-quote-open quote-icon"></i>
@@ -5570,8 +5731,8 @@ html.dark-mode .exp-progress-bar {
                             <span class="home-news-tag">SkyDeck Batch 22</span><span class="home-news-tag">Agentic Security</span><span class="home-news-tag">Startup Advisor</span>
                         </div>
                         <div class="post-meta d-flex justify-content-between align-items-center mt-2 pt-2 border-top">
-                            <a href="https://skydeck.berkeley.edu" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
-                                <i class="mdi mdi-school mr-1"></i> Explore SkyDeck Program
+                            <a href="https://mailchi.mp/berkeley/skydecknewsletter-071526" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
+                                <i class="mdi mdi-school mr-1"></i> Read SkyDeck Newsletter
                             </a>
                             <a href="page-media" class="text-muted small font-weight-bold" title="View on Media Page">
                                 Media Hub <i class="mdi mdi-arrow-right"></i>
@@ -5631,7 +5792,7 @@ html.dark-mode .exp-progress-bar {
                             <span class="home-date-label"><i class="mdi mdi-calendar-outline mr-1"></i>2026</span>
                         </div>
                         <h5 class="home-news-card-title">
-                            <a href="https://xraised-agent-production.up.railway.app/news/principal-ai-engineer-harsh-verma-expands-peer-reviewed-publication-programme" target="_blank" rel="noopener noreferrer" class="title text-dark">xraised: Harsh Verma Expands Peer-Reviewed Publication Programme Across Leading AI &amp; Research Journals in 2026</a>
+                            <a href="https://xraised.com/videos/ai-engineering-beyond-code/" target="_blank" rel="noopener noreferrer" class="title text-dark">xraised: AI Engineering Beyond Code — Harsh Verma on Building Resilient AI Architectures</a>
                         </h5>
                         <div class="home-news-quote">
                             <i class="mdi mdi-format-quote-open quote-icon"></i>
@@ -5641,8 +5802,8 @@ html.dark-mode .exp-progress-bar {
                             <span class="home-news-tag">Over 100 Journals</span><span class="home-news-tag">AI Security Innovator</span><span class="home-news-tag">Autonomous Defense</span>
                         </div>
                         <div class="post-meta d-flex justify-content-between align-items-center mt-2 pt-2 border-top">
-                            <a href="https://xraised-agent-production.up.railway.app/news/principal-ai-engineer-harsh-verma-expands-peer-reviewed-publication-programme" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
-                                <i class="mdi mdi-newspaper mr-1"></i> Read on xraised
+                            <a href="https://xraised.com/videos/ai-engineering-beyond-code/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
+                                <i class="mdi mdi-video mr-1"></i> Watch on xraised
                             </a>
                             <a href="page-media" class="text-muted small font-weight-bold" title="View on Media Page">
                                 Media Hub <i class="mdi mdi-arrow-right"></i>
@@ -5666,7 +5827,7 @@ html.dark-mode .exp-progress-bar {
                             <span class="home-date-label"><i class="mdi mdi-calendar-outline mr-1"></i>2026</span>
                         </div>
                         <h5 class="home-news-card-title">
-                            <a href="https://hackernoon.com/solving-the-ai-agent-production-gap-challenges-and-architectures-for-multi-agent-systems" target="_blank" rel="noopener noreferrer" class="title text-dark">HackerNoon: Solving the AI Agent Production Gap — Multi-Agent Systems in Practice</a>
+                            <a href="https://hackernoon.com/the-production-gap-your-ai-model-isnt-as-reliable-as-you-think-interview" target="_blank" rel="noopener noreferrer" class="title text-dark">HackerNoon: The Production Gap — Your AI Model Isn't as Reliable as You Think</a>
                         </h5>
                         <div class="home-news-quote">
                             <i class="mdi mdi-format-quote-open quote-icon"></i>
@@ -5676,7 +5837,7 @@ html.dark-mode .exp-progress-bar {
                             <span class="home-news-tag">Multi-Agent Systems</span><span class="home-news-tag">Production AI</span><span class="home-news-tag">Agent Orchestration</span>
                         </div>
                         <div class="post-meta d-flex justify-content-between align-items-center mt-2 pt-2 border-top">
-                            <a href="https://hackernoon.com/solving-the-ai-agent-production-gap-challenges-and-architectures-for-multi-agent-systems" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
+                            <a href="https://hackernoon.com/the-production-gap-your-ai-model-isnt-as-reliable-as-you-think-interview" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
                                 <i class="mdi mdi-code-tags mr-1"></i> Read on HackerNoon
                             </a>
                             <a href="page-media" class="text-muted small font-weight-bold" title="View on Media Page">
@@ -5701,7 +5862,7 @@ html.dark-mode .exp-progress-bar {
                             <span class="home-date-label"><i class="mdi mdi-calendar-outline mr-1"></i>2026</span>
                         </div>
                         <h5 class="home-news-card-title">
-                            <a href="https://classifieds.usatoday.com/press/identity-as-the-perimeter-securing-the-rise-of-non-human-identities-in-enterprise-cloud-infrastructure/" target="_blank" rel="noopener noreferrer" class="title text-dark">USA Today: Securing the Non-Human Identity Perimeter in Enterprise Clouds</a>
+                            <a href="https://www.usatoday.com/press-release/story/36801/harsh-verma-principal-ai-engineer-highlights-personal-findings-on-why-identity-is-replacing-network-perimeters-as-the-foundation-of-enterprise-in-the-age-of-ai-agents/" target="_blank" rel="noopener noreferrer" class="title text-dark">USA Today: Why Identity is Replacing Network Perimeters in the Age of AI Agents</a>
                         </h5>
                         <div class="home-news-quote">
                             <i class="mdi mdi-format-quote-open quote-icon"></i>
@@ -5711,7 +5872,7 @@ html.dark-mode .exp-progress-bar {
                             <span class="home-news-tag">NHI Security</span><span class="home-news-tag">Zero Trust</span><span class="home-news-tag">Cloud Architecture</span>
                         </div>
                         <div class="post-meta d-flex justify-content-between align-items-center mt-2 pt-2 border-top">
-                            <a href="https://classifieds.usatoday.com/press/identity-as-the-perimeter-securing-the-rise-of-non-human-identities-in-enterprise-cloud-infrastructure/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
+                            <a href="https://www.usatoday.com/press-release/story/36801/harsh-verma-principal-ai-engineer-highlights-personal-findings-on-why-identity-is-replacing-network-perimeters-as-the-foundation-of-enterprise-in-the-age-of-ai-agents/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
                                 <i class="mdi mdi-shield-check mr-1"></i> Read on USA Today
                             </a>
                             <a href="page-media" class="text-muted small font-weight-bold" title="View on Media Page">
@@ -5736,7 +5897,7 @@ html.dark-mode .exp-progress-bar {
                             <span class="home-date-label"><i class="mdi mdi-calendar-outline mr-1"></i>2026</span>
                         </div>
                         <h5 class="home-news-card-title">
-                            <a href="https://finance.yahoo.com/news/winners-2026-cybersecurity-excellence-awards-143000928.html" target="_blank" rel="noopener noreferrer" class="title text-dark">Yahoo Finance: Cybersecurity Excellence Awards 2026 Feature</a>
+                            <a href="https://finance.yahoo.com/technology/ai/articles/cybersecurity-excellence-awards-2026-announces-022700731.html" target="_blank" rel="noopener noreferrer" class="title text-dark">Yahoo Finance: Cybersecurity Excellence Awards 2026 Dual Recognition</a>
                         </h5>
                         <div class="home-news-quote">
                             <i class="mdi mdi-format-quote-open quote-icon"></i>
@@ -5746,7 +5907,7 @@ html.dark-mode .exp-progress-bar {
                             <span class="home-news-tag">Cyber Excellence</span><span class="home-news-tag">Threat Detection</span><span class="home-news-tag">AI Governance</span>
                         </div>
                         <div class="post-meta d-flex justify-content-between align-items-center mt-2 pt-2 border-top">
-                            <a href="https://finance.yahoo.com/news/winners-2026-cybersecurity-excellence-awards-143000928.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
+                            <a href="https://finance.yahoo.com/technology/ai/articles/cybersecurity-excellence-awards-2026-announces-022700731.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
                                 <i class="mdi mdi-finance mr-1"></i> Read on Yahoo Finance
                             </a>
                             <a href="page-media" class="text-muted small font-weight-bold" title="View on Media Page">
@@ -5768,20 +5929,20 @@ html.dark-mode .exp-progress-bar {
                     <div class="content pt-3 pb-3 p-3">
                         <div class="d-flex align-items-center justify-content-between mb-2">
                             <span class="home-outlet-label">FutureAGI / YouTube</span>
-                            <span class="home-date-label"><i class="mdi mdi-calendar-outline mr-1"></i>2025</span>
+                            <span class="home-date-label"><i class="mdi mdi-calendar-outline mr-1"></i>2026</span>
                         </div>
                         <h5 class="home-news-card-title">
-                            <a href="https://www.youtube.com/watch?v=0wQv7T8fF8g" target="_blank" rel="noopener noreferrer" class="title text-dark">FutureAGI Keynote: Enterprise Agentic Security & Multi-Model Orchestration</a>
+                            <a href="https://www.youtube.com/watch?v=MPhFC1h5GIc" target="_blank" rel="noopener noreferrer" class="title text-dark">FutureAGI Keynote: Powering Cybersecurity with GenAI & Intelligent Agents</a>
                         </h5>
                         <div class="home-news-quote">
                             <i class="mdi mdi-format-quote-open quote-icon"></i>
-                            <p class="mb-0">Invited keynote exploring defensive boundary layers, prompt injection containment, and verifiable inference in enterprise systems.</p>
+                            <p class="mb-0">Keynote exploring defensive boundary layers, prompt injection containment, and intelligent agent architectures in enterprise systems.</p>
                         </div>
                         <div class="home-news-tags-wrap mb-3">
                             <span class="home-news-tag">Agentic AI</span><span class="home-news-tag">Keynote</span><span class="home-news-tag">Palo Alto Networks</span>
                         </div>
                         <div class="post-meta d-flex justify-content-between align-items-center mt-2 pt-2 border-top">
-                            <a href="https://www.youtube.com/watch?v=0wQv7T8fF8g" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
+                            <a href="https://www.youtube.com/watch?v=MPhFC1h5GIc" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
                                 <i class="mdi mdi-youtube mr-1"></i> Watch Keynote Video
                             </a>
                             <a href="page-media" class="text-muted small font-weight-bold" title="View on Media Page">
@@ -5806,7 +5967,7 @@ html.dark-mode .exp-progress-bar {
                             <span class="home-date-label"><i class="mdi mdi-calendar-outline mr-1"></i>2025</span>
                         </div>
                         <h5 class="home-news-card-title">
-                            <a href="https://www.youtube.com/watch?v=eG_W9_8f0a0" target="_blank" rel="noopener noreferrer" class="title text-dark">TrueML Talks #35: Big Data & ML Practices at Palo Alto Networks</a>
+                            <a href="https://www.youtube.com/watch?v=1DxjMiOe580" target="_blank" rel="noopener noreferrer" class="title text-dark">TrueML Talks #35: Big Data & ML Practices at Palo Alto Networks</a>
                         </h5>
                         <div class="home-news-quote">
                             <i class="mdi mdi-format-quote-open quote-icon"></i>
@@ -5816,7 +5977,7 @@ html.dark-mode .exp-progress-bar {
                             <span class="home-news-tag">MLOps</span><span class="home-news-tag">Big Data</span><span class="home-news-tag">Distributed Systems</span>
                         </div>
                         <div class="post-meta d-flex justify-content-between align-items-center mt-2 pt-2 border-top">
-                            <a href="https://www.youtube.com/watch?v=eG_W9_8f0a0" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
+                            <a href="https://www.youtube.com/watch?v=1DxjMiOe580" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
                                 <i class="mdi mdi-video mr-1"></i> Watch Tech Session
                             </a>
                             <a href="page-media" class="text-muted small font-weight-bold" title="View on Media Page">
@@ -5841,18 +6002,53 @@ html.dark-mode .exp-progress-bar {
                             <span class="home-date-label"><i class="mdi mdi-calendar-outline mr-1"></i>2025</span>
                         </div>
                         <h5 class="home-news-card-title">
-                            <a href="https://www.youtube.com/watch?v=W_Yw8oN09s8" target="_blank" rel="noopener noreferrer" class="title text-dark">Chai & Coaching: How to Build a High-Impact Career in Cybersecurity & AI</a>
+                            <a href="https://www.youtube.com/watch?v=bggw4JTFjgA" target="_blank" rel="noopener noreferrer" class="title text-dark">Chai & Coaching: Are Cybersecurity Degrees & Job Scope In USA Worth It?</a>
                         </h5>
                         <div class="home-news-quote">
                             <i class="mdi mdi-format-quote-open quote-icon"></i>
-                            <p class="mb-0">Strategic career masterclass detailing cloud security roadmaps, architectural problem-solving, and leadership at Tier-1 tech firms.</p>
+                            <p class="mb-0">Executive career masterclass analyzing degree ROI, master's programs in the USA, industry certifications, and hiring demand across top tech firms.</p>
                         </div>
                         <div class="home-news-tags-wrap mb-3">
-                            <span class="home-news-tag">Career Strategy</span><span class="home-news-tag">Cloud Defense</span><span class="home-news-tag">Executive Mentorship</span>
+                            <span class="home-news-tag">Cybersecurity Degrees</span><span class="home-news-tag">Job Scope</span><span class="home-news-tag">Career Strategy</span>
                         </div>
                         <div class="post-meta d-flex justify-content-between align-items-center mt-2 pt-2 border-top">
-                            <a href="https://www.youtube.com/watch?v=W_Yw8oN09s8" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
-                                <i class="mdi mdi-headphones mr-1"></i> Listen to Podcast
+                            <a href="https://www.youtube.com/watch?v=bggw4JTFjgA" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
+                                <i class="mdi mdi-youtube mr-1"></i> Watch on YouTube
+                            </a>
+                            <a href="page-media" class="text-muted small font-weight-bold" title="View on Media Page">
+                                Media Hub <i class="mdi mdi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pad-right-left m-2 home-news-carousel-item" data-category="podcast">
+                <div class="blog-post rounded customer-testi home-media-news-card">
+                    <div class="position-relative home-media-card-header">
+                        <img src="images/media/chai_coaching_badge.svg" class="img-fluid rounded-top home-media-card-img" alt="Chai & Coaching Podcast" loading="lazy">
+                        <span class="home-media-type-badge" style="background-color: #b45309;">
+                            Career Masterclass
+                        </span>
+                    </div>
+                    <div class="content pt-3 pb-3 p-3">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <span class="home-outlet-label">Chai & Coaching Podcast</span>
+                            <span class="home-date-label"><i class="mdi mdi-calendar-outline mr-1"></i>2025</span>
+                        </div>
+                        <h5 class="home-news-card-title">
+                            <a href="https://www.youtube.com/watch?v=iZkx6Ewq6wU" target="_blank" rel="noopener noreferrer" class="title text-dark">Chai & Coaching: How To Control Your Job Interview & Convince Recruiters To Hire You</a>
+                        </h5>
+                        <div class="home-news-quote">
+                            <i class="mdi mdi-format-quote-open quote-icon"></i>
+                            <p class="mb-0">Executive career masterclass detailing interview psychology, answering complex technical challenges under pressure, and convincing hiring panels.</p>
+                        </div>
+                        <div class="home-news-tags-wrap mb-3">
+                            <span class="home-news-tag">Job Interview</span><span class="home-news-tag">Career Strategy</span><span class="home-news-tag">Hiring Authority</span>
+                        </div>
+                        <div class="post-meta d-flex justify-content-between align-items-center mt-2 pt-2 border-top">
+                            <a href="https://www.youtube.com/watch?v=iZkx6Ewq6wU" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary rounded font-weight-bold px-3 py-1 text-white" style="font-size: 12.5px;">
+                                <i class="mdi mdi-youtube mr-1"></i> Watch on YouTube
                             </a>
                             <a href="page-media" class="text-muted small font-weight-bold" title="View on Media Page">
                                 Media Hub <i class="mdi mdi-arrow-right"></i>
@@ -5972,17 +6168,19 @@ html.dark-mode .exp-progress-bar {
                 </div><!--end row-->
 
                 <!-- Section Call to Action Buttons -->
-                <div class="row mt-4 pt-3">
+                <div class="row mt-4 pt-2">
                     <div class="col-12 text-center">
-                        <a href="page-media" class="btn btn-primary rounded font-weight-bold px-4 py-2 mr-2 mb-2" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); border: none; box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);">
-                            <i class="mdi mdi-newspaper-variant-outline mr-1"></i> Explore Full Media Hub (38+ Features) <i class="mdi mdi-arrow-right ml-1"></i>
-                        </a>
-                        <a href="page-publications" class="btn btn-outline-primary rounded font-weight-bold px-4 py-2 mr-2 mb-2">
-                            <i class="mdi mdi-book-open-page-variant mr-1"></i> View Publications &amp; Patents
-                        </a>
-                        <a href="https://medium.com/@harshverma59" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary rounded font-weight-bold px-4 py-2 mb-2">
-                            <i class="mdi mdi-medium mr-1"></i> Read TechQuickie on Medium <i class="mdi mdi-open-in-new ml-1"></i>
-                        </a>
+                        <div class="home-news-cta-wrap">
+                            <a href="page-media" class="btn btn-sm btn-primary font-weight-bold shadow-sm">
+                                <i class="mdi mdi-newspaper-variant-outline mr-1"></i> Explore Full Media Hub (38+ Features) <i class="mdi mdi-arrow-right ml-1"></i>
+                            </a>
+                            <a href="page-publications" class="btn btn-sm btn-outline-primary font-weight-bold">
+                                <i class="mdi mdi-book-open-page-variant mr-1"></i> View Publications &amp; Patents
+                            </a>
+                            <a href="https://medium.com/@harshverma59" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary font-weight-bold">
+                                <i class="mdi mdi-medium mr-1"></i> Read TechQuickie on Medium <i class="mdi mdi-open-in-new ml-1"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div><!--end container-->

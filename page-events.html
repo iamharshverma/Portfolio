@@ -623,7 +623,7 @@
                             <a class="dropdown-item nav-dropdown-item" href="page-social">
                                 <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
                                 <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Partnership &amp; Social <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Collaborate</span></span>
+                                    <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
                                     <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
                                 </div>
                             </a>
@@ -715,11 +715,11 @@
                                 <div class="stat-metric-label">Panel Discussions</div>
                             </div>
                             <div class="stat-metric-pill">
-                                <div class="stat-metric-val">9</div>
+                                <div class="stat-metric-val">10</div>
                                 <div class="stat-metric-label">Featured Keynotes</div>
                             </div>
                             <div class="stat-metric-pill">
-                                <div class="stat-metric-val">42+</div>
+                                <div class="stat-metric-val">43+</div>
                                 <div class="stat-metric-label">Total Engagements</div>
                             </div>
                         </div>
@@ -829,7 +829,7 @@
                 <div class="hv-video-stage-toolbar my-2">
                     <div class="hv-stage-filter-group">
                         <button type="button" class="hv-stage-filter-pill active" onclick="filterKeynoteVideos('all', this)">
-                            <i class="mdi mdi-view-grid-outline"></i> All Keynotes (9)
+                            <i class="mdi mdi-view-grid-outline"></i> All Keynotes (10)
                         </button>
                         <button type="button" class="hv-stage-filter-pill" onclick="filterKeynoteVideos('zombies', this)">
                             <i class="mdi mdi-shield-lock-outline"></i> Silicon Zombies &amp; Cyber
@@ -843,12 +843,15 @@
                         <button type="button" class="hv-stage-filter-pill" onclick="filterKeynoteVideos('bigdata', this)">
                             <i class="mdi mdi-database"></i> Big Data &amp; Systems
                         </button>
+                        <button type="button" class="hv-stage-filter-pill" onclick="filterKeynoteVideos('careers', this)">
+                            <i class="mdi mdi-account-tie"></i> Careers &amp; Leadership
+                        </button>
                     </div>
                     <div class="d-flex align-items-center gap-2">
                         <div class="hv-quick-select-wrap mr-2">
                             <span class="text-light small font-weight-bold d-none d-sm-inline"><i class="mdi mdi-swap-horizontal text-warning"></i> Jump to:</span>
                             <select class="hv-quick-select" onchange="if(this.value!=='') switchKeynoteVideo(parseInt(this.value));">
-                                <option value="0">ACM Distinguished Keynote Session: ACM Sacramento Keynote: When Enterpr...</option><option value="1">UC Berkeley SkyDeck Series (B21): UC Berkeley SkyDeck Keynote: The Era...</option><option value="2">Silicon Zombies (Startup Zone / Top Voices Unite): SZ 179: The Digital Battleground — Q...</option><option value="3">xRaised Global Leadership Series: xRaised Global Leadership: AI Engine...</option><option value="4">FutureAGI Global Keynote / SF Tech Week: FutureAGI Keynote: Powering Cybersec...</option><option value="5">TechTalk with VLink Keynote (Ep. 55): Enterprise AI: Building Solutions fo...</option><option value="6">Rocket & Twill Special Keynote Session: Inside Vibe Shift: The Builders Behi...</option><option value="7">TrueML Talks #35: TrueML Keynote: Big Data & ML Practi...</option><option value="8">FutureAGI Global Keynote: FutureAGI Keynote: Enterprise Agenti...</option>
+                                <option value="0">ACM Distinguished Keynote Session: ACM Sacramento Keynote: When Enterpr...</option><option value="1">UC Berkeley SkyDeck Series (B21): UC Berkeley SkyDeck Keynote: The Era...</option><option value="2">Silicon Zombies (Startup Zone / Top Voices Unite): SZ 179: The Digital Battleground — Q...</option><option value="3">xRaised Global Leadership Series: xRaised Global Leadership: AI Engine...</option><option value="4">FutureAGI Global Keynote / SF Tech Week: FutureAGI Keynote: Powering Cybersec...</option><option value="5">TechTalk with VLink Keynote (Ep. 55): Enterprise AI: Building Solutions fo...</option><option value="6">Rocket & Twill Special Keynote Session: Inside Vibe Shift: The Builders Behi...</option><option value="7">Chai and Coaching | Executive Career Masterclass: How To Control Your Job Interview & ...</option><option value="8">TrueML Talks #35: TrueML Talks #35: Big Data and ML Pr...</option><option value="9">Chai and Coaching | Executive Career Masterclass: Chai & Coaching: Are Cybersecurity D...</option>
                             </select>
                         </div>
                         <div class="hv-carousel-controls">
@@ -1167,13 +1170,13 @@
             </div>
         </div>
         
-        <div class="hv-carousel-item keynote-video-item" data-category="bigdata" id="carouselItem-7">
+        <div class="hv-carousel-item keynote-video-item" data-category="careers" id="carouselItem-7">
             <div class="hv-video-card h-100 " id="keynoteCard-7">
                 <button type="button" class="hv-video-pin-btn " id="pinBtn-7" onclick="togglePinKeynote(7, event)" title="Pin this Keynote to Main Stage">
                     <i class="mdi mdi-pin mr-1"></i> <span class="pin-label-text">Pin Keynote</span>
                 </button>
                 <div class="hv-video-thumb-wrap" onmouseenter="handleKeynoteHoverStart(7, this)" onmouseleave="handleKeynoteHoverEnd(7, this)" onclick="switchKeynoteVideo(7)">
-                    <img src="https://img.youtube.com/vi/iZkx6Ewq6wU/hqdefault.jpg" alt="TrueML Keynote: Big Data & ML Practices at Palo Alto Networks" class="hv-video-thumb-img" loading="lazy">
+                    <img src="https://img.youtube.com/vi/iZkx6Ewq6wU/hqdefault.jpg" alt="How To Control Your Job Interview & Convince Recruiters To Hire You" class="hv-video-thumb-img" loading="lazy">
                     <div class="hv-hover-preview-container" id="hoverPreview-7"></div>
                     <span class="hv-hover-preview-badge"><i class="mdi mdi-play"></i> Hover to Preview</span>
                     <div class="hv-video-play-overlay">
@@ -1181,25 +1184,68 @@
                             <i class="mdi mdi-play"></i>
                         </div>
                     </div>
-                    <span class="hv-video-duration-tag">40:05</span>
+                    <span class="hv-video-duration-tag">18:35</span>
                 </div>
                 <div class="hv-video-body">
                     <div class="d-flex align-items-center justify-content-between mb-1">
-                        <span class="hv-video-outlet">TrueML Talks #35</span>
+                        <span class="hv-video-outlet">Chai and Coaching | Executive Career Masterclass</span>
                         <span class="badge badge-warning text-dark font-weight-bold px-2 py-1 pinned-badge-indicator d-none" id="pinnedBadge-7" style="font-size: 10px;">
                             <i class="mdi mdi-pin"></i> PINNED STAGE
                         </span>
                     </div>
-                    <h5 class="hv-video-title" onclick="switchKeynoteVideo(7)" style="cursor: pointer;" title="TrueML Keynote: Big Data & ML Practices at Palo Alto Networks">TrueML Keynote: Big Data & ML Practices at Palo Alto Networks</h5>
-                    <p class="hv-video-desc">Production machine learning engineering patterns, distributed feature pipelines, and zero-trust validation in high-throughput enterprise security systems.</p>
+                    <h5 class="hv-video-title" onclick="switchKeynoteVideo(7)" style="cursor: pointer;" title="How To Control Your Job Interview & Convince Recruiters To Hire You">How To Control Your Job Interview & Convince Recruiters To Hire You</h5>
+                    <p class="hv-video-desc">Executive career masterclass with Harsh Verma on managing technical interviews, avoiding common search pitfalls, answering complex system challenges under pressure, and convincing hiring committees.</p>
                     <div class="hv-video-meta-tags">
-                        <span class="hv-video-tag">Palo Alto Networks</span><span class="hv-video-tag">TrueML</span><span class="hv-video-tag">Feature Pipelines</span>
+                        <span class="hv-video-tag">Chai & Coaching</span><span class="hv-video-tag">Job Interview</span><span class="hv-video-tag">Career Strategy</span>
                     </div>
                     <div class="hv-video-actions">
                         <button type="button" class="hv-card-action-btn hv-btn-stage" onclick="switchKeynoteVideo(7)" title="Watch on Stage">
                             <i class="mdi mdi-television-play hv-btn-icon"></i> <span>Stage</span>
                         </button>
                         <a href="https://www.youtube.com/watch?v=iZkx6Ewq6wU" target="_blank" class="hv-card-action-btn hv-btn-youtube allow-external-nav" title="Watch on YouTube">
+                            <i class="mdi mdi-youtube hv-btn-icon text-danger"></i> <span>YouTube</span>
+                        </a>
+                        <a href="https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1" target="_blank" class="hv-card-action-btn hv-btn-slides allow-external-nav" title="View Keynote Slides">
+                            <i class="mdi mdi-presentation hv-btn-icon"></i> <span>Slides</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hv-carousel-item keynote-video-item" data-category="bigdata" id="carouselItem-8">
+            <div class="hv-video-card h-100 " id="keynoteCard-8">
+                <button type="button" class="hv-video-pin-btn " id="pinBtn-8" onclick="togglePinKeynote(8, event)" title="Pin this Keynote to Main Stage">
+                    <i class="mdi mdi-pin mr-1"></i> <span class="pin-label-text">Pin Keynote</span>
+                </button>
+                <div class="hv-video-thumb-wrap" onmouseenter="handleKeynoteHoverStart(8, this)" onmouseleave="handleKeynoteHoverEnd(8, this)" onclick="switchKeynoteVideo(8)">
+                    <img src="https://img.youtube.com/vi/1DxjMiOe580/hqdefault.jpg" alt="TrueML Talks #35: Big Data and ML Practices at Palo Alto Networks" class="hv-video-thumb-img" loading="lazy">
+                    <div class="hv-hover-preview-container" id="hoverPreview-8"></div>
+                    <span class="hv-hover-preview-badge"><i class="mdi mdi-play"></i> Hover to Preview</span>
+                    <div class="hv-video-play-overlay">
+                        <div class="hv-play-circle-btn">
+                            <i class="mdi mdi-play"></i>
+                        </div>
+                    </div>
+                    <span class="hv-video-duration-tag">36:44</span>
+                </div>
+                <div class="hv-video-body">
+                    <div class="d-flex align-items-center justify-content-between mb-1">
+                        <span class="hv-video-outlet">TrueML Talks #35</span>
+                        <span class="badge badge-warning text-dark font-weight-bold px-2 py-1 pinned-badge-indicator d-none" id="pinnedBadge-8" style="font-size: 10px;">
+                            <i class="mdi mdi-pin"></i> PINNED STAGE
+                        </span>
+                    </div>
+                    <h5 class="hv-video-title" onclick="switchKeynoteVideo(8)" style="cursor: pointer;" title="TrueML Talks #35: Big Data and ML Practices at Palo Alto Networks">TrueML Talks #35: Big Data and ML Practices at Palo Alto Networks</h5>
+                    <p class="hv-video-desc">Production machine learning engineering patterns, distributed feature pipelines, model-serving at scale, latency and prompt injection defenses, and automated deployment architectures at Palo Alto Networks.</p>
+                    <div class="hv-video-meta-tags">
+                        <span class="hv-video-tag">Palo Alto Networks</span><span class="hv-video-tag">TrueML Talks</span><span class="hv-video-tag">Big Data ML</span>
+                    </div>
+                    <div class="hv-video-actions">
+                        <button type="button" class="hv-card-action-btn hv-btn-stage" onclick="switchKeynoteVideo(8)" title="Watch on Stage">
+                            <i class="mdi mdi-television-play hv-btn-icon"></i> <span>Stage</span>
+                        </button>
+                        <a href="https://www.youtube.com/watch?v=1DxjMiOe580" target="_blank" class="hv-card-action-btn hv-btn-youtube allow-external-nav" title="Watch on YouTube">
                             <i class="mdi mdi-youtube hv-btn-icon text-danger"></i> <span>YouTube</span>
                         </a>
                         <a href="https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1" target="_blank" class="hv-card-action-btn hv-btn-slides allow-external-nav" title="View Keynote Slides">
@@ -1210,14 +1256,14 @@
             </div>
         </div>
         
-        <div class="hv-carousel-item keynote-video-item" data-category="agentic" id="carouselItem-8">
-            <div class="hv-video-card h-100 " id="keynoteCard-8">
-                <button type="button" class="hv-video-pin-btn " id="pinBtn-8" onclick="togglePinKeynote(8, event)" title="Pin this Keynote to Main Stage">
+        <div class="hv-carousel-item keynote-video-item" data-category="careers" id="carouselItem-9">
+            <div class="hv-video-card h-100 " id="keynoteCard-9">
+                <button type="button" class="hv-video-pin-btn " id="pinBtn-9" onclick="togglePinKeynote(9, event)" title="Pin this Keynote to Main Stage">
                     <i class="mdi mdi-pin mr-1"></i> <span class="pin-label-text">Pin Keynote</span>
                 </button>
-                <div class="hv-video-thumb-wrap" onmouseenter="handleKeynoteHoverStart(8, this)" onmouseleave="handleKeynoteHoverEnd(8, this)" onclick="switchKeynoteVideo(8)">
-                    <img src="https://img.youtube.com/vi/bggw4JTFjgA/hqdefault.jpg" alt="FutureAGI Keynote: Enterprise Agentic Security & Multi-Model Orchestration" class="hv-video-thumb-img" loading="lazy">
-                    <div class="hv-hover-preview-container" id="hoverPreview-8"></div>
+                <div class="hv-video-thumb-wrap" onmouseenter="handleKeynoteHoverStart(9, this)" onmouseleave="handleKeynoteHoverEnd(9, this)" onclick="switchKeynoteVideo(9)">
+                    <img src="https://img.youtube.com/vi/bggw4JTFjgA/hqdefault.jpg" alt="Chai & Coaching: Are Cybersecurity Degrees & Job Scope In USA Worth It?" class="hv-video-thumb-img" loading="lazy">
+                    <div class="hv-hover-preview-container" id="hoverPreview-9"></div>
                     <span class="hv-hover-preview-badge"><i class="mdi mdi-play"></i> Hover to Preview</span>
                     <div class="hv-video-play-overlay">
                         <div class="hv-play-circle-btn">
@@ -1228,24 +1274,24 @@
                 </div>
                 <div class="hv-video-body">
                     <div class="d-flex align-items-center justify-content-between mb-1">
-                        <span class="hv-video-outlet">FutureAGI Global Keynote</span>
-                        <span class="badge badge-warning text-dark font-weight-bold px-2 py-1 pinned-badge-indicator d-none" id="pinnedBadge-8" style="font-size: 10px;">
+                        <span class="hv-video-outlet">Chai and Coaching | Executive Career Masterclass</span>
+                        <span class="badge badge-warning text-dark font-weight-bold px-2 py-1 pinned-badge-indicator d-none" id="pinnedBadge-9" style="font-size: 10px;">
                             <i class="mdi mdi-pin"></i> PINNED STAGE
                         </span>
                     </div>
-                    <h5 class="hv-video-title" onclick="switchKeynoteVideo(8)" style="cursor: pointer;" title="FutureAGI Keynote: Enterprise Agentic Security & Multi-Model Orchestration">FutureAGI Keynote: Enterprise Agentic Security & Multi-Model Orchestration</h5>
-                    <p class="hv-video-desc">Keynote on enterprise agentic security, multi-model orchestration frameworks, deterministic evaluation, and securing autonomous agent communication channels.</p>
+                    <h5 class="hv-video-title" onclick="switchKeynoteVideo(9)" style="cursor: pointer;" title="Chai & Coaching: Are Cybersecurity Degrees & Job Scope In USA Worth It?">Chai & Coaching: Are Cybersecurity Degrees & Job Scope In USA Worth It?</h5>
+                    <p class="hv-video-desc">Executive career masterclass analyzing the ROI and industry scope of cybersecurity degrees, master's programs in the USA, industry certifications, real-world skills vs academic credentials, and enterprise hiring demand.</p>
                     <div class="hv-video-meta-tags">
-                        <span class="hv-video-tag">FutureAGI</span><span class="hv-video-tag">Multi-Agent Systems</span><span class="hv-video-tag">Orchestration</span>
+                        <span class="hv-video-tag">Chai & Coaching</span><span class="hv-video-tag">Cybersecurity Degrees</span><span class="hv-video-tag">Job Scope</span>
                     </div>
                     <div class="hv-video-actions">
-                        <button type="button" class="hv-card-action-btn hv-btn-stage" onclick="switchKeynoteVideo(8)" title="Watch on Stage">
+                        <button type="button" class="hv-card-action-btn hv-btn-stage" onclick="switchKeynoteVideo(9)" title="Watch on Stage">
                             <i class="mdi mdi-television-play hv-btn-icon"></i> <span>Stage</span>
                         </button>
                         <a href="https://www.youtube.com/watch?v=bggw4JTFjgA" target="_blank" class="hv-card-action-btn hv-btn-youtube allow-external-nav" title="Watch on YouTube">
                             <i class="mdi mdi-youtube hv-btn-icon text-danger"></i> <span>YouTube</span>
                         </a>
-                        <a href="https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1" target="_blank" class="hv-card-action-btn hv-btn-slides allow-external-nav" title="View Keynote Slides">
+                        <a href="https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1" target="_blank" class="hv-card-action-btn hv-btn-slides allow-external-nav" title="View Keynote Slides">
                             <i class="mdi mdi-presentation hv-btn-icon"></i> <span>Slides</span>
                         </a>
                     </div>
@@ -1255,7 +1301,7 @@
         
                     </div>
                     <div class="hv-carousel-dots" id="keynoteCarouselDots">
-                        <button type="button" class="hv-carousel-dot active" onclick="scrollKeynoteToDot(0)" aria-label="Go to keynote 1"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(1)" aria-label="Go to keynote 2"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(2)" aria-label="Go to keynote 3"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(3)" aria-label="Go to keynote 4"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(4)" aria-label="Go to keynote 5"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(5)" aria-label="Go to keynote 6"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(6)" aria-label="Go to keynote 7"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(7)" aria-label="Go to keynote 8"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(8)" aria-label="Go to keynote 9"></button>
+                        <button type="button" class="hv-carousel-dot active" onclick="scrollKeynoteToDot(0)" aria-label="Go to keynote 1"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(1)" aria-label="Go to keynote 2"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(2)" aria-label="Go to keynote 3"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(3)" aria-label="Go to keynote 4"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(4)" aria-label="Go to keynote 5"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(5)" aria-label="Go to keynote 6"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(6)" aria-label="Go to keynote 7"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(7)" aria-label="Go to keynote 8"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(8)" aria-label="Go to keynote 9"></button><button type="button" class="hv-carousel-dot " onclick="scrollKeynoteToDot(9)" aria-label="Go to keynote 10"></button>
                     </div>
                 </div>
             </div>
@@ -1625,7 +1671,7 @@
                     <div class="col-lg-7">
                         <div class="d-flex flex-wrap align-items-center justify-content-lg-end">
                             <button class="event-filter-pill active" data-filter="all">
-                                <i class="mdi mdi-view-grid-outline"></i> All Engagements (42)
+                                <i class="mdi mdi-view-grid-outline"></i> All Engagements (43)
                             </button>
                             <button class="event-filter-pill" data-filter="judging">
                                 <i class="mdi mdi-gavel"></i> Judging &amp; Mentorship (21)
@@ -3446,7 +3492,7 @@
         if (yearEl) yearEl.innerText = new Date().getFullYear();
 
         // Keynote Video Stage Data (Dynamically synchronized from keynote_videos_data)
-        var keynoteVideosList = [{"id": "RS_BKcbeV3o", "title": "ACM Sacramento Keynote: When Enterprises Become Multi-Agent Systems", "outlet": "ACM Distinguished Keynote Session", "date": "2026 Keynote Session", "duration": "38:42", "category": "acm", "thumb": "https://img.youtube.com/vi/RS_BKcbeV3o/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=RS_BKcbeV3o", "desc": "Distinguished Keynote Address titled 'When Enterprises Become Multi-Agent Systems: Secure and Trustworthy Machine Learning & AI for Multi-Domain Applications', analyzing enterprise LLM defense, zero-trust validation, and autonomous agent alignment.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1", "tags": ["ACM Keynote", "Secure AI", "Multi-Agent Systems", "Smart Slides"]}, {"id": "IZvHxEtMMnw", "title": "UC Berkeley SkyDeck Keynote: The Era of Agentic Security", "outlet": "UC Berkeley SkyDeck Series (B21)", "date": "2025 Keynote Series", "duration": "42:15", "category": "acm", "thumb": "https://img.youtube.com/vi/IZvHxEtMMnw/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=IZvHxEtMMnw", "desc": "Keynote presentation at UC Berkeley SkyDeck detailing autonomous agent divergence, runtime safety guardrails, prompt provenance, and enterprise cybersecurity architectures.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1", "tags": ["UC Berkeley", "Agentic Security", "SkyDeck B21", "Enterprise AI"]}, {"id": "E6kA_o57DrM", "title": "SZ 179: The Digital Battleground \u2014 Quantum & Cyber Security", "outlet": "Silicon Zombies (Startup Zone / Top Voices Unite)", "date": "June 2025 Keynote Symposium", "duration": "52:14", "category": "zombies", "thumb": "https://img.youtube.com/vi/E6kA_o57DrM/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=E6kA_o57DrM", "desc": "Featured keynote symposium on Silicon Zombies Episode 179 alongside Rebecca Krauthamer (CEO of QuSecure), analyzing quantum computing vulnerabilities, post-quantum cryptographic perimeters, and autonomous AI defense systems.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1", "tags": ["Silicon Zombies", "SZ 179", "Quantum Security", "Autonomous Defense"]}, {"id": "xraised-ai-beyond-code", "title": "xRaised Global Leadership: AI Engineering Beyond Code", "outlet": "xRaised Global Leadership Series", "date": "2026 Executive Series", "duration": "28:45", "category": "agentic", "thumb": "images/events/xraised_ai_engineering.jpg", "stream_url": "https://xraised.com/videos/ai-engineering-beyond-code/stream", "recording_url": "https://xraised.com/videos/ai-engineering-beyond-code/", "type": "video", "desc": "Executive keynote interview with Harsh Verma on 'Beyond the Code: The Evolution of the Next-Generation Engineer' \u2014 exploring autonomous agent architectures, multi-model production scaling, engineering leadership, and proactive cybersecurity in frontier AI systems.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1", "tags": ["xRaised Feature", "AI Engineering", "Autonomous Systems", "Beyond Code"]}, {"id": "MPhFC1h5GIc", "title": "FutureAGI Keynote: Powering Cybersecurity with GenAI & Intelligent Agents", "outlet": "FutureAGI Global Keynote / SF Tech Week", "date": "2026 Global Keynote", "duration": "48:30", "category": "agentic", "thumb": "https://img.youtube.com/vi/MPhFC1h5GIc/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=MPhFC1h5GIc", "desc": "Keynote during SF Tech Week on scaling AI infrastructure, mitigating agentic risk, powering cybersecurity with generative AI, and driving enterprise AI adoption across Silicon Valley.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1", "tags": ["FutureAGI", "GenAI Cybersecurity", "Intelligent Agents", "SF Tech Week"]}, {"id": "nIgJ99Bihsw", "title": "Enterprise AI: Building Solutions for Security, Scale & Trust", "outlet": "TechTalk with VLink Keynote (Ep. 55)", "date": "2026 Keynote Episode", "duration": "46:18", "category": "agentic", "thumb": "https://img.youtube.com/vi/nIgJ99Bihsw/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=nIgJ99Bihsw", "desc": "Deep-dive executive presentation covering enterprise AI architectures, scaling multi-agent workloads, identity boundaries, and real-time behavioral defense.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1", "tags": ["Enterprise AI", "VLink Keynote", "Security & Scale", "Trustworthy Systems"]}, {"id": "yXy_zYlhnfc", "title": "Inside Vibe Shift: The Builders Behind the Models", "outlet": "Rocket & Twill Special Keynote Session", "date": "2026 Keynote Session", "duration": "31:40", "category": "agentic", "thumb": "https://img.youtube.com/vi/yXy_zYlhnfc/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=yXy_zYlhnfc", "desc": "Keynote presentation at Rocket & Twill's 'Vibe Shift' summit analyzing consumer tech inflection points, LLMOps, model evaluation datasets, and scalable enterprise architectures.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1", "tags": ["Rocket & Twill", "Vibe Shift", "Builders Behind Models", "Observability"]}, {"id": "iZkx6Ewq6wU", "title": "TrueML Keynote: Big Data & ML Practices at Palo Alto Networks", "outlet": "TrueML Talks #35", "date": "Production ML Keynote", "duration": "40:05", "category": "bigdata", "thumb": "https://img.youtube.com/vi/iZkx6Ewq6wU/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=iZkx6Ewq6wU", "desc": "Production machine learning engineering patterns, distributed feature pipelines, and zero-trust validation in high-throughput enterprise security systems.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1", "tags": ["Palo Alto Networks", "TrueML", "Feature Pipelines", "Big Data ML"]}, {"id": "bggw4JTFjgA", "title": "FutureAGI Keynote: Enterprise Agentic Security & Multi-Model Orchestration", "outlet": "FutureAGI Global Keynote", "date": "2026 Virtual Keynote", "duration": "35:20", "category": "agentic", "thumb": "https://img.youtube.com/vi/bggw4JTFjgA/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=bggw4JTFjgA", "desc": "Keynote on enterprise agentic security, multi-model orchestration frameworks, deterministic evaluation, and securing autonomous agent communication channels.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1", "tags": ["FutureAGI", "Multi-Agent Systems", "Orchestration", "Zero-Trust"]}];
+        var keynoteVideosList = [{"id": "RS_BKcbeV3o", "title": "ACM Sacramento Keynote: When Enterprises Become Multi-Agent Systems", "outlet": "ACM Distinguished Keynote Session", "date": "2026 Keynote Session", "duration": "38:42", "category": "acm", "thumb": "https://img.youtube.com/vi/RS_BKcbeV3o/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=RS_BKcbeV3o", "desc": "Distinguished Keynote Address titled 'When Enterprises Become Multi-Agent Systems: Secure and Trustworthy Machine Learning & AI for Multi-Domain Applications', analyzing enterprise LLM defense, zero-trust validation, and autonomous agent alignment.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1", "tags": ["ACM Keynote", "Secure AI", "Multi-Agent Systems", "Smart Slides"]}, {"id": "IZvHxEtMMnw", "title": "UC Berkeley SkyDeck Keynote: The Era of Agentic Security", "outlet": "UC Berkeley SkyDeck Series (B21)", "date": "2025 Keynote Series", "duration": "42:15", "category": "acm", "thumb": "https://img.youtube.com/vi/IZvHxEtMMnw/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=IZvHxEtMMnw", "desc": "Keynote presentation at UC Berkeley SkyDeck detailing autonomous agent divergence, runtime safety guardrails, prompt provenance, and enterprise cybersecurity architectures.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1", "tags": ["UC Berkeley", "Agentic Security", "SkyDeck B21", "Enterprise AI"]}, {"id": "E6kA_o57DrM", "title": "SZ 179: The Digital Battleground \u2014 Quantum & Cyber Security", "outlet": "Silicon Zombies (Startup Zone / Top Voices Unite)", "date": "June 2025 Keynote Symposium", "duration": "52:14", "category": "zombies", "thumb": "https://img.youtube.com/vi/E6kA_o57DrM/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=E6kA_o57DrM", "desc": "Featured keynote symposium on Silicon Zombies Episode 179 alongside Rebecca Krauthamer (CEO of QuSecure), analyzing quantum computing vulnerabilities, post-quantum cryptographic perimeters, and autonomous AI defense systems.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1", "tags": ["Silicon Zombies", "SZ 179", "Quantum Security", "Autonomous Defense"]}, {"id": "xraised-ai-beyond-code", "title": "xRaised Global Leadership: AI Engineering Beyond Code", "outlet": "xRaised Global Leadership Series", "date": "2026 Executive Series", "duration": "28:45", "category": "agentic", "thumb": "images/events/xraised_ai_engineering.jpg", "stream_url": "https://xraised.com/videos/ai-engineering-beyond-code/stream", "recording_url": "https://xraised.com/videos/ai-engineering-beyond-code/", "type": "video", "desc": "Executive keynote interview with Harsh Verma on 'Beyond the Code: The Evolution of the Next-Generation Engineer' \u2014 exploring autonomous agent architectures, multi-model production scaling, engineering leadership, and proactive cybersecurity in frontier AI systems.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1", "tags": ["xRaised Feature", "AI Engineering", "Autonomous Systems", "Beyond Code"]}, {"id": "MPhFC1h5GIc", "title": "FutureAGI Keynote: Powering Cybersecurity with GenAI & Intelligent Agents", "outlet": "FutureAGI Global Keynote / SF Tech Week", "date": "2026 Global Keynote", "duration": "48:30", "category": "agentic", "thumb": "https://img.youtube.com/vi/MPhFC1h5GIc/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=MPhFC1h5GIc", "desc": "Keynote during SF Tech Week on scaling AI infrastructure, mitigating agentic risk, powering cybersecurity with generative AI, and driving enterprise AI adoption across Silicon Valley.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1", "tags": ["FutureAGI", "GenAI Cybersecurity", "Intelligent Agents", "SF Tech Week"]}, {"id": "nIgJ99Bihsw", "title": "Enterprise AI: Building Solutions for Security, Scale & Trust", "outlet": "TechTalk with VLink Keynote (Ep. 55)", "date": "2026 Keynote Episode", "duration": "46:18", "category": "agentic", "thumb": "https://img.youtube.com/vi/nIgJ99Bihsw/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=nIgJ99Bihsw", "desc": "Deep-dive executive presentation covering enterprise AI architectures, scaling multi-agent workloads, identity boundaries, and real-time behavioral defense.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1", "tags": ["Enterprise AI", "VLink Keynote", "Security & Scale", "Trustworthy Systems"]}, {"id": "yXy_zYlhnfc", "title": "Inside Vibe Shift: The Builders Behind the Models", "outlet": "Rocket & Twill Special Keynote Session", "date": "2026 Keynote Session", "duration": "31:40", "category": "agentic", "thumb": "https://img.youtube.com/vi/yXy_zYlhnfc/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=yXy_zYlhnfc", "desc": "Keynote presentation at Rocket & Twill's 'Vibe Shift' summit analyzing consumer tech inflection points, LLMOps, model evaluation datasets, and scalable enterprise architectures.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1", "tags": ["Rocket & Twill", "Vibe Shift", "Builders Behind Models", "Observability"]}, {"id": "iZkx6Ewq6wU", "title": "How To Control Your Job Interview & Convince Recruiters To Hire You", "outlet": "Chai and Coaching | Executive Career Masterclass", "date": "Executive Career Masterclass", "duration": "18:35", "category": "careers", "thumb": "https://img.youtube.com/vi/iZkx6Ewq6wU/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=iZkx6Ewq6wU", "desc": "Executive career masterclass with Harsh Verma on managing technical interviews, avoiding common search pitfalls, answering complex system challenges under pressure, and convincing hiring committees.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1", "tags": ["Chai & Coaching", "Job Interview", "Career Strategy", "Tech Leadership"]}, {"id": "1DxjMiOe580", "title": "TrueML Talks #35: Big Data and ML Practices at Palo Alto Networks", "outlet": "TrueML Talks #35", "date": "Production ML Keynote", "duration": "36:44", "category": "bigdata", "thumb": "https://img.youtube.com/vi/1DxjMiOe580/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=1DxjMiOe580", "desc": "Production machine learning engineering patterns, distributed feature pipelines, model-serving at scale, latency and prompt injection defenses, and automated deployment architectures at Palo Alto Networks.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1", "tags": ["Palo Alto Networks", "TrueML Talks", "Big Data ML", "Model Serving"]}, {"id": "bggw4JTFjgA", "title": "Chai & Coaching: Are Cybersecurity Degrees & Job Scope In USA Worth It?", "outlet": "Chai and Coaching | Executive Career Masterclass", "date": "Career & Industry Masterclass", "duration": "35:20", "category": "careers", "thumb": "https://img.youtube.com/vi/bggw4JTFjgA/hqdefault.jpg", "recording_url": "https://www.youtube.com/watch?v=bggw4JTFjgA", "desc": "Executive career masterclass analyzing the ROI and industry scope of cybersecurity degrees, master's programs in the USA, industry certifications, real-world skills vs academic credentials, and enterprise hiring demand.", "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1", "tags": ["Chai & Coaching", "Cybersecurity Degrees", "Job Scope", "Tech Careers"]}];
 
         var activeKeynoteIndex = 0;
 
