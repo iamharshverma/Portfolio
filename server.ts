@@ -1195,8 +1195,8 @@ app.get(['/media-distribution-analytics', '/page-media-distribution-analytics', 
   res.sendFile(path.join(__dirname, 'page-media-distribution-analytics.html'));
 });
 
-// Explicit route for Social Page
-app.get(['/social', '/page-social', '/page-social.html'], (req, res) => {
+// Explicit route for Partnerships & Social Page
+app.get(['/partnerships', '/partnership', '/social', '/page-social', '/page-social.html'], (req, res) => {
   res.sendFile(path.join(__dirname, 'page-social.html'));
 });
 

@@ -1,0 +1,9 @@
+<svg width="220" height="75" viewBox="0 0 220 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(10, 18)">
+    <path d="M0 12 L14 4 L28 12 L14 20 Z" fill="#fa582d"/>
+    <path d="M14 20 L28 12 L28 28 L14 36 Z" fill="#e03a10"/>
+    <path d="M0 12 L14 20 L14 36 L0 28 Z" fill="#c42903"/>
+    <text x="38" y="22" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="17" font-weight="800" fill="#0f172a" letter-spacing="-0.3">palo alto</text>
+    <text x="38" y="37" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="14" font-weight="600" fill="#fa582d" letter-spacing="1.5">NETWORKS</text>
+  </g>
+</svg>

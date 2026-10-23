@@ -1,0 +1,8 @@
+<svg width="160" height="75" viewBox="0 0 160 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(10, 15)">
+    <rect x="0" y="3" width="34" height="34" rx="6" fill="#003865"/>
+    <text x="17" y="27" font-family="'Arial Black', sans-serif" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">BCS</text>
+    <text x="42" y="24" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="800" fill="#003865" letter-spacing="0.5">The Chartered</text>
+    <text x="42" y="37" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#0284c7" letter-spacing="0.5">Institute for IT • Fellow</text>
+  </g>
+</svg>

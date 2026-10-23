@@ -1,0 +1,9 @@
+<svg width="160" height="75" viewBox="0 0 160 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(10, 16)">
+    <rect x="0" y="3" width="34" height="34" rx="6" fill="#00629b"/>
+    <path d="M17 9 L24 20 L10 20 Z" fill="#ffffff" opacity="0.9"/>
+    <circle cx="17" cy="20" r="3" fill="#00629b"/>
+    <text x="42" y="28" font-family="'Arial Black', Impact, sans-serif" font-size="24" font-weight="900" fill="#00629b" letter-spacing="1">IEEE</text>
+    <text x="43" y="39" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="700" fill="#64748b" letter-spacing="0.5">SENIOR MEMBER</text>
+  </g>
+</svg>

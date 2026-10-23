@@ -1,0 +1,8 @@
+<svg width="210" height="75" viewBox="0 0 210 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(8, 12)">
+    <rect x="0" y="4" width="32" height="40" rx="4" fill="#8c1515"/>
+    <text x="16" y="33" font-family="'Georgia', serif" font-size="24" font-weight="900" fill="#ffffff" text-anchor="middle">S</text>
+    <text x="40" y="24" font-family="'Georgia', serif" font-size="18" font-weight="800" fill="#8c1515" letter-spacing="0.2">Stanford</text>
+    <text x="40" y="41" font-family="'Arial', sans-serif" font-size="11" font-weight="700" fill="#2e2d29" letter-spacing="1.5">GRADUATE SCHOOL OF BUSINESS</text>
+  </g>
+</svg>
