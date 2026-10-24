@@ -259,10 +259,18 @@ body.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link:focus {
 }
 
 html.dark-mode .navbar-custom .navbar-nav .nav-item.active .nav-link,
-body.dark-mode .navbar-custom .navbar-nav .nav-item.active .nav-link {
+body.dark-mode .navbar-custom .navbar-nav .nav-item.active .nav-link,
+html.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link.active,
+body.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link.active {
   color: #93c5fd !important;
   background-color: rgba(59, 130, 246, 0.24) !important;
   box-shadow: inset 0 0 0 1.5px rgba(147, 197, 253, 0.35) !important;
+}
+
+html.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link::after,
+body.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link::after {
+  background: #60a5fa !important;
+  box-shadow: 0 0 8px rgba(96, 165, 250, 0.65) !important;
 }
 
 html.dark-mode .nav-social-btn,
@@ -977,6 +985,37 @@ html.dark-mode .badge-secondary,
 body.dark-mode .badge-secondary {
   background-color: #334155 !important;
   color: #f1f5f9 !important;
+}
+
+html.dark-mode .badge-warning,
+body.dark-mode .badge-warning,
+html.dark-mode .badge.badge-warning,
+body.dark-mode .badge.badge-warning,
+html.dark-mode .badge[style*="#fef08a"],
+body.dark-mode .badge[style*="#fef08a"],
+html.dark-mode .badge[style*="fef08a"],
+body.dark-mode .badge[style*="fef08a"] {
+  background-color: rgba(245, 158, 11, 0.22) !important;
+  background: rgba(245, 158, 11, 0.22) !important;
+  color: #fde047 !important;
+  border: 1px solid rgba(251, 191, 36, 0.45) !important;
+  border-color: rgba(251, 191, 36, 0.45) !important;
+  box-shadow: none !important;
+}
+
+html.dark-mode .badge-warning.text-dark,
+body.dark-mode .badge-warning.text-dark,
+html.dark-mode .badge-warning .text-dark,
+body.dark-mode .badge-warning .text-dark,
+html.dark-mode .badge-warning i,
+body.dark-mode .badge-warning i,
+html.dark-mode .badge[style*="#fef08a"].text-dark,
+body.dark-mode .badge[style*="#fef08a"].text-dark,
+html.dark-mode .badge[style*="#fef08a"] i,
+body.dark-mode .badge[style*="#fef08a"] i,
+html.dark-mode .badge[style*="fef08a"] *,
+body.dark-mode .badge[style*="fef08a"] * {
+  color: #fde047 !important;
 }
 
 html.dark-mode .pub-type-badge,

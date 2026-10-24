@@ -690,12 +690,12 @@ html_template = """<!DOCTYPE html>
                                                     <i class="mdi mdi-domain mr-1 text-primary"></i> Assignee: Palo Alto Networks
                                                 </span>
                                             </div>
-                                            <span class="badge badge-warning text-dark font-weight-bold px-2 py-1 mb-1" style="font-size: 11px; background-color: #fef08a; border: 1px solid #fde047;">
+                                            <span class="badge badge-warning text-dark font-weight-bold px-2 py-1 mb-1" style="font-size: 11px;">
                                                 <i class="mdi mdi-lock-outline mr-1"></i> Active Patent Office Review
                                             </span>
                                         </div>
                                         
-                                        <h4 class="patent-title" style="color: #1e1b4b; font-size: 17px;">
+                                        <h4 class="patent-title" style="font-size: 17px;">
                                             AGENTIC AI, ENTERPRISE COPILOT SYSTEMS &amp; COPILOT NAVIGATION ARCHITECTURES
                                         </h4>
                                         

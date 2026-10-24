@@ -1464,7 +1464,7 @@ html_page = f'''<!DOCTYPE html>
             <div class="mt-5 p-4 p-md-5 rounded-lg border shadow-sm" style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); color: #ffffff;">
                 <div class="row align-items-center">
                     <div class="col-lg-8 mb-3 mb-lg-0">
-                        <span class="badge badge-warning text-dark font-weight-bold px-3 py-1 mb-2" style="background-color: #fef08a;">
+                        <span class="badge badge-warning text-dark font-weight-bold px-3 py-1 mb-2">
                             <i class="mdi mdi-certificate mr-1"></i> Intellectual Property &amp; Memberships
                         </span>
                         <h3 class="font-weight-bold text-white mb-2" style="font-size: 1.6rem;">Explore Connected Research &amp; Governance</h3>
