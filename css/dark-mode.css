@@ -259,18 +259,10 @@ body.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link:focus {
 }
 
 html.dark-mode .navbar-custom .navbar-nav .nav-item.active .nav-link,
-body.dark-mode .navbar-custom .navbar-nav .nav-item.active .nav-link,
-html.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link.active,
-body.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link.active {
+body.dark-mode .navbar-custom .navbar-nav .nav-item.active .nav-link {
   color: #93c5fd !important;
   background-color: rgba(59, 130, 246, 0.24) !important;
   box-shadow: inset 0 0 0 1.5px rgba(147, 197, 253, 0.35) !important;
-}
-
-html.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link::after,
-body.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link::after {
-  background: #60a5fa !important;
-  box-shadow: 0 0 8px rgba(96, 165, 250, 0.65) !important;
 }
 
 html.dark-mode .nav-social-btn,
