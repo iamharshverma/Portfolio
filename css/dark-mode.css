@@ -504,10 +504,13 @@ html.dark-mode .timeline-content {
 
 html.dark-mode .main-timeline .timeline-icon,
 html.dark-mode .timeline-icon {
-  background-color: #1e293b !important;
-  border: 7px solid #141d2e !important;
-  color: #ff944d !important;
-  box-shadow: 0 0 0 1px #334155 !important;
+  background-color: #ffffff !important;
+  border: 4px solid #141d2e !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5), 0 0 0 2px #334155 !important;
+}
+
+html.dark-mode .main-timeline .timeline-icon img {
+  background: #ffffff !important;
 }
 
 html.dark-mode .main-timeline:before {
