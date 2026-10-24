@@ -2040,3 +2040,18 @@ body.dark-mode .portrait-credential-card .badge-light {
   color: #38bdf8 !important;
   border-color: #334155 !important;
 }
+
+/* Awards Published Brand Logos Floating Banner Dark Mode */
+html.dark-mode .awards-publisher-banner-wrap,
+body.dark-mode .awards-publisher-banner-wrap {
+  background: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.1) !important;
+}
+
+html.dark-mode .awards-pub-title-badge,
+body.dark-mode .awards-pub-title-badge {
+  background: rgba(37, 99, 235, 0.12) !important;
+  color: #1d4ed8 !important;
+  border: 1px solid rgba(37, 99, 235, 0.25) !important;
+}

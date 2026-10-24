@@ -4243,6 +4243,104 @@ html:not(.dark-mode) .section-head span {
   letter-spacing: 0.6px;
   color: #64748b;
   margin-top: 2px;
+/* ==========================================================================
+   Awards Published Brand Logos Floating Banner (Moving Left to Right)
+   ========================================================================== */
+.awards-publisher-banner-wrap {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 18px 20px 20px;
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.85);
+  margin-bottom: 34px;
+  margin-top: 8px;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.awards-pub-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding: 0 4px;
+}
+
+.awards-pub-title-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(37, 99, 235, 0.08);
+  color: #1d4ed8;
+  padding: 5px 14px;
+  border-radius: 30px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.awards-pub-marquee-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 4px 0;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+}
+
+.awards-pub-marquee-track {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: max-content;
+  will-change: transform;
+  animation: awardLogosScrollLeftToRight 42s linear infinite !important;
+}
+
+.awards-pub-marquee-container:hover .awards-pub-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes awardLogosScrollLeftToRight {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.awards-pub-track-group {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+  gap: 40px !important;
+  padding-right: 40px !important;
+}
+
+.awards-pub-brand-logo {
+  height: 46px !important;
+  max-height: 48px !important;
+  max-width: 160px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  opacity: 0.92;
+  filter: contrast(1.05);
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.22s ease, filter 0.22s ease !important;
+  cursor: default;
+  user-select: none;
+}
+
+.awards-pub-brand-logo:hover {
+  opacity: 1 !important;
+  transform: scale(1.12) !important;
+  filter: contrast(1.15) !important;
 }
 
 /*# sourceMappingURL=style.css.map */

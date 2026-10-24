@@ -567,6 +567,121 @@ def build_card_html(award):
 
 cards_html = "\n".join([build_card_html(a) for a in awards_data])
 
+published_brands_data = [
+    {
+        "name": "Forbes",
+        "logo": "images/media/brands/forbes_tech_council_logo.svg",
+    },
+    {
+        "name": "Business Insider",
+        "logo": "images/media/brands/business_insider_logo.svg",
+    },
+    {
+        "name": "Yahoo! Finance",
+        "logo": "images/media/brands/yahoo_finance_logo.svg",
+    },
+    {
+        "name": "USA TODAY",
+        "logo": "images/media/brands/usatoday_logo.svg",
+    },
+    {
+        "name": "The Economic Times",
+        "logo": "images/media/brands/economic_times_logo.svg",
+    },
+    {
+        "name": "Associated Press",
+        "logo": "images/media/ap_news_marketersmedia_badge.svg",
+    },
+    {
+        "name": "The Telegraph",
+        "logo": "images/media/brands/the_telegraph_logo.svg",
+    },
+    {
+        "name": "DNA India",
+        "logo": "images/media/brands/dna_india_logo.svg",
+    },
+    {
+        "name": "HackerNoon",
+        "logo": "images/media/brands/hackernoon_logo.svg",
+    },
+    {
+        "name": "Times Group",
+        "logo": "images/media/brands/times_group_epaper_logo.svg",
+    },
+    {
+        "name": "Stevie® Awards",
+        "logo": "images/awards/stevie_gold.svg",
+    },
+    {
+        "name": "Forttuna Global 100",
+        "logo": "images/media/brands/forttuna_global100_logo.svg",
+    },
+    {
+        "name": "TITAN Innovation Awards",
+        "logo": "images/awards/titan_innovation_awards.svg",
+    },
+    {
+        "name": "Cybersecurity Excellence",
+        "logo": "images/media/cybersecurity_excellence_badge.svg",
+    },
+    {
+        "name": "Nobel Tech Awards",
+        "logo": "images/media/noble_tech_badge.svg",
+    },
+    {
+        "name": "Globee® Awards",
+        "logo": "images/awards/globee_silver.svg",
+    },
+    {
+        "name": "Global Recognition Awards",
+        "logo": "images/awards/global_recognition_award.svg",
+    },
+    {
+        "name": "NVTC Cyber50",
+        "logo": "images/awards/nvtc_cyber50.svg",
+    },
+    {
+        "name": "Stanford GSB",
+        "logo": "images/media/brands/stanford_gsb_logo.svg",
+    },
+    {
+        "name": "UC Berkeley SkyDeck",
+        "logo": "images/media/brands/berkeley_skydeck_logo.svg",
+    },
+    {
+        "name": "IEEE",
+        "logo": "images/media/brands/ieee_logo.svg",
+    },
+    {
+        "name": "BCS Chartered Institute",
+        "logo": "images/media/brands/bcs_logo.svg",
+    },
+]
+
+def build_pub_pill(b):
+    return f'''                        <img src="{b['logo']}" alt="{b['name']}" title="{b['name']}" class="awards-pub-brand-logo" loading="eager" height="46">'''
+
+pub_pills_group = "\n".join([build_pub_pill(b) for b in published_brands_data])
+
+publisher_banner_markup = f'''            <!-- Floating Banner: Where All Awards Are Published Brand Logos (Left-to-Right Continuous Marquee) -->
+            <div class="awards-publisher-banner-wrap" id="awards-publisher-banner">
+                <div class="awards-pub-header justify-content-center text-center">
+                    <span class="awards-pub-title-badge">
+                        <i class="mdi mdi-check-decagram mr-1" style="font-size: 14px;"></i> Honors &amp; Distinctions Published Across Global Media &amp; Institutions
+                    </span>
+                </div>
+                <div class="awards-pub-marquee-container" aria-label="Published Awards and Brand Accreditations">
+                    <div class="awards-pub-marquee-track">
+                        <div class="awards-pub-track-group">
+{pub_pills_group}
+                        </div>
+                        <div class="awards-pub-track-group" aria-hidden="true">
+{pub_pills_group}
+                        </div>
+                    </div>
+                </div>
+            </div>'''
+
 html_page = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1173,6 +1288,105 @@ html_page = f'''<!DOCTYPE html>
         body.dark-mode .navbar-custom .navigation .navbar-nav-link .nav-item.active .nav-link {{
             color: #60a5fa !important;
         }}
+
+        /* Floating Awards Publisher Marquee Banner Styles */
+        .awards-publisher-banner-wrap {{
+            position: relative;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 18px 20px 20px;
+            box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.85);
+            margin-bottom: 34px;
+            margin-top: 8px;
+            overflow: hidden;
+            z-index: 5;
+        }}
+        .awards-pub-header {{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 14px;
+            padding: 0 4px;
+        }}
+        .awards-pub-title-badge {{
+            display: inline-flex;
+            align-items: center;
+            background: rgba(37, 99, 235, 0.08);
+            color: #1d4ed8;
+            padding: 5px 14px;
+            border-radius: 30px;
+            font-size: 11.5px;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+        }}
+        .awards-pub-marquee-container {{
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding: 4px 0;
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+        }}
+        .awards-pub-marquee-track {{
+            display: flex !important;
+            flex-direction: row !important;
+            flex-wrap: nowrap !important;
+            width: max-content !important;
+            will-change: transform;
+            animation: awardLogosScrollLeftToRight 42s linear infinite !important;
+        }}
+        .awards-pub-marquee-container:hover .awards-pub-marquee-track {{
+            animation-play-state: paused !important;
+        }}
+        @keyframes awardLogosScrollLeftToRight {{
+            0% {{
+                transform: translate3d(-50%, 0, 0);
+            }}
+            100% {{
+                transform: translate3d(0, 0, 0);
+            }}
+        }}
+        .awards-pub-track-group {{
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            flex-shrink: 0 !important;
+            gap: 40px !important;
+            padding-right: 40px !important;
+        }}
+        .awards-pub-brand-logo {{
+            height: 46px !important;
+            max-height: 48px !important;
+            max-width: 160px !important;
+            width: auto !important;
+            object-fit: contain !important;
+            display: inline-block !important;
+            flex-shrink: 0 !important;
+            opacity: 0.92;
+            filter: contrast(1.05);
+            transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.22s ease, filter 0.22s ease !important;
+            cursor: default;
+            user-select: none;
+        }}
+        .awards-pub-brand-logo:hover {{
+            opacity: 1 !important;
+            transform: scale(1.12) !important;
+            filter: contrast(1.15) !important;
+        }}
+        body.dark-mode .awards-publisher-banner-wrap {{
+            background: #ffffff !important;
+            border-color: rgba(255, 255, 255, 0.25) !important;
+            box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.1) !important;
+        }}
+        body.dark-mode .awards-pub-title-badge {{
+            background: rgba(37, 99, 235, 0.12) !important;
+            color: #1d4ed8 !important;
+            border: 1px solid rgba(37, 99, 235, 0.25) !important;
+        }}
     </style>
     <!-- HV AI Copilot Styles -->
     <link rel="stylesheet" href="css/hv-copilot.css" />
@@ -1393,6 +1607,8 @@ html_page = f'''<!DOCTYPE html>
                     </div>
                 </div>
             </div>
+
+{publisher_banner_markup}
 
             <!-- Search & Filters Header -->
             <div class="text-center mb-4">
