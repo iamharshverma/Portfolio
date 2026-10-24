@@ -989,7 +989,7 @@ html.dark-mode .hv-audience-filter-btn.active .badge {
     color: #64748b;
     padding-top: 10px;
     border-top: 1px dashed #e2e8f0;
-    margin-bottom: 14px;
+    margin-bottom: 0;
     display: flex;
     align-items: center;
 }

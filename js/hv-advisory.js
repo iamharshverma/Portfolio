@@ -219,7 +219,7 @@
                         '<div class="p-2 rounded bg-light border mb-2 text-left small">' +
                             '<strong>Format:</strong> <span class="text-muted">' + data.format + '</span>' +
                         '</div>' +
-                        '<button type="button" class="btn btn-sm btn-primary font-weight-bold px-3 py-2 w-100" style="border-radius:20px;" onclick="openAdvisoryModal(\'' + data.mandateType + '\')">' +
+                        '<button type="button" class="btn btn-sm btn-primary btn-roadmap-inquire font-weight-bold" onclick="openAdvisoryModal(\'' + data.mandateType + '\')">' +
                             '<i class="mdi mdi-calendar-check mr-1"></i> Inquire for ' + data.daysTag + ' Mandate' +
                         '</button>' +
                     '</div>' +

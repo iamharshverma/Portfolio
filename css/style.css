@@ -4243,6 +4243,7 @@ html:not(.dark-mode) .section-head span {
   letter-spacing: 0.6px;
   color: #64748b;
   margin-top: 2px;
+}
 /* ==========================================================================
    Awards Published Brand Logos Floating Banner (Moving Left to Right)
    ========================================================================== */
@@ -4341,6 +4342,383 @@ html:not(.dark-mode) .section-head span {
   opacity: 1 !important;
   transform: scale(1.12) !important;
   filter: contrast(1.15) !important;
+}
+
+/* ==========================================================================
+   Comprehensive Mobile Responsiveness & Viewport Hardening
+   ========================================================================== */
+
+/* 1. Global Viewport & Container Hardening */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
+  -webkit-text-size-adjust: 100%;
+}
+
+#wrapper {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+  width: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  .row {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .row > [class*="col-"] {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+/* 2. Mobile Navigation & Header Polish */
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 8px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(148, 163, 184, 0.35) !important;
+    border-radius: 10px;
+    background: rgba(248, 250, 252, 0.95);
+    color: #1e293b;
+    font-size: 22px;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25) !important;
+    outline: none !important;
+  }
+  .navbar-custom .navbar-collapse {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 16px;
+    margin-top: 10px;
+    box-shadow: 0 16px 36px -4px rgba(15, 23, 42, 0.16), 0 0 0 1px rgba(226, 232, 240, 0.9);
+    max-height: calc(85vh - 70px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+  .navbar-custom .navbar-nav .nav-item {
+    margin-bottom: 2px;
+  }
+  .navbar-custom .navbar-nav .nav-item .nav-link {
+    padding: 10px 14px;
+    font-size: 14.5px;
+    font-weight: 600;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.18s ease, color 0.18s ease;
+  }
+  .navbar-custom .navbar-nav .nav-item .nav-link:hover,
+  .navbar-custom .navbar-nav .nav-item .nav-link:focus {
+    background: #f1f5f9;
+    color: #2563eb;
+  }
+  .nav-custom-dropdown {
+    position: static !important;
+    float: none !important;
+    box-shadow: none !important;
+    background: #f8fafc !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(226, 232, 240, 0.9) !important;
+    margin-top: 6px !important;
+    padding: 8px !important;
+  }
+  .navbar-custom .nav-social {
+    margin-left: 0;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(226, 232, 240, 0.85);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .nav-social-btn {
+    min-width: 38px;
+    min-height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* 3. Hero & Section Typography Scaling */
+@media (max-width: 767.98px) {
+  .title-heading .heading,
+  .hero-title,
+  .display-4 {
+    font-size: 32px !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.5px !important;
+  }
+  .section-title h2,
+  .section-title .title,
+  .hv-audience-section-title,
+  .hv-expertise-section-title {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+  }
+  .hv-audience-lead-quote,
+  .hv-expertise-lead-quote {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+  }
+  .section-head span {
+    display: none !important;
+  }
+  .about-desc.pl-lg-3 {
+    padding-left: 0 !important;
+  }
+  /* Portrait and Credential Card Flow on Mobile */
+  .portrait-container img#aboutMainPortrait {
+    height: 380px !important;
+    max-height: 60vh !important;
+    object-position: center 10% !important;
+  }
+  .portrait-credential-card {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    margin-top: 14px !important;
+    margin-bottom: 24px !important;
+    width: 100% !important;
+  }
+  /* Stat Counters Row on Mobile */
+  .col-6.col-md-3 {
+    margin-bottom: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .title-heading .heading,
+  .hero-title {
+    font-size: 26px !important;
+    line-height: 1.25 !important;
+  }
+  .pera-title,
+  .about-desc-content p {
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+  }
+  .about-action-btns {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px 6px !important;
+  }
+  .about-action-btns .btn {
+    flex: 1 1 calc(50% - 6px);
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* 4. Marquees & Wide Strip Touch Swiping with Edge Fades */
+@media (max-width: 767.98px) {
+  .awards-publisher-banner-wrap {
+    padding: 14px 12px 16px !important;
+    border-radius: 16px !important;
+    margin-bottom: 24px !important;
+  }
+  .awards-pub-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    margin-bottom: 12px !important;
+  }
+  .awards-pub-marquee-container {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 6px 0 !important;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%) !important;
+    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%) !important;
+  }
+  .awards-pub-marquee-container::-webkit-scrollbar {
+    display: none !important;
+  }
+  .awards-pub-track-group {
+    gap: 26px !important;
+    padding-right: 26px !important;
+  }
+  .awards-pub-brand-logo {
+    height: 36px !important;
+    max-height: 38px !important;
+    max-width: 125px !important;
+  }
+  /* Floating brand pills track on home */
+  .brand-floating-track-group {
+    gap: 14px !important;
+    padding-right: 14px !important;
+  }
+  .brand-floating-pill {
+    padding: 7px 12px !important;
+    border-radius: 20px !important;
+  }
+  .brand-floating-pill .brand-pill-logo {
+    height: 26px !important;
+    max-width: 36px !important;
+  }
+  .brand-floating-pill .brand-pill-name {
+    font-size: 12.5px !important;
+  }
+}
+
+/* 5. Section Containers, Format Cards & Grids on Mobile */
+@media (max-width: 767.98px) {
+  /* Container Card Sizing */
+  .hv-speaker-white-section-card,
+  .advisory-white-section-card,
+  .hv-advisory-white-section-card {
+    padding: 20px 15px !important;
+    border-radius: 16px !important;
+    margin-bottom: 24px !important;
+  }
+  /* Speaker & Advisory Format Cards */
+  .hv-format-card,
+  .advisory-format-card {
+    padding: 16px 14px !important;
+    border-radius: 14px !important;
+    margin-bottom: 14px !important;
+  }
+  .hv-format-card-title,
+  .advisory-card-title {
+    font-size: 15px !important;
+  }
+  /* Speaker Audience Cards */
+  .hv-audience-card {
+    padding: 16px 14px !important;
+    border-radius: 14px !important;
+    margin-bottom: 12px !important;
+  }
+  /* Inspector Boxes */
+  .hv-format-inspector-box,
+  .advisory-format-inspector-box {
+    padding: 16px 14px !important;
+    border-radius: 14px !important;
+    margin-top: 14px !important;
+  }
+  .hv-format-inspector-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+  }
+  /* Advisory Action Banner */
+  .advisory-action-banner {
+    padding: 20px 16px !important;
+    border-radius: 16px !important;
+  }
+  .advisory-action-banner .d-flex {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+  .advisory-action-banner .btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  /* Awards Cards */
+  .award-header-badge {
+    height: 175px !important;
+  }
+  .award-card {
+    margin-bottom: 18px !important;
+    border-radius: 16px !important;
+  }
+  .award-card-body {
+    padding: 16px 14px !important;
+  }
+  .award-title {
+    font-size: 16px !important;
+  }
+  /* Education & Resume Cards */
+  .edu-card {
+    padding: 18px 14px !important;
+    border-radius: 16px !important;
+    margin-bottom: 16px !important;
+  }
+  .edu-logo-wrap {
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+  }
+  /* Experience Search & Filter Strip */
+  .exp-search-input {
+    max-width: 100% !important;
+  }
+  .exp-filter-bar {
+    overflow-x: auto !important;
+    flex-wrap: nowrap !important;
+    padding-bottom: 8px !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  /* Publication & Project Cards */
+  .custom-project-card {
+    margin-bottom: 20px !important;
+  }
+  .custom-project-card .proj-thumb-wrapper,
+  .custom-project-card .proj-thumb-img {
+    height: 180px !important;
+  }
+}
+
+/* 6. Modals & Lightbox Sheets on Mobile */
+@media (max-width: 767.98px) {
+  .modal-dialog {
+    margin: 12px auto !important;
+    max-width: calc(100vw - 24px) !important;
+  }
+  .modal-content {
+    border-radius: 16px !important;
+  }
+  .modal-header {
+    padding: 14px 16px !important;
+  }
+  .modal-body {
+    padding: 16px 14px !important;
+    max-height: calc(85vh - 100px) !important;
+    overflow-y: auto !important;
+  }
+/* 7. Blog Card Button Polish */
+.blog-card .post-meta .btn,
+.blog-card .post-meta a.btn-outline-primary {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  padding: 3px 10px !important;
+  border-radius: 14px !important;
+  line-height: 1.35 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 3.5px !important;
+  letter-spacing: 0.1px !important;
+  box-shadow: 0 1px 4px rgba(37, 99, 235, 0.15) !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.blog-card .post-meta .btn:hover,
+.blog-card .post-meta a.btn-outline-primary:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 3px 8px rgba(37, 99, 235, 0.3) !important;
+}
+
+.blog-card .post-meta .btn i,
+.blog-card .post-meta a.btn-outline-primary i {
+  font-size: 11px !important;
+  margin-left: 2px !important;
 }
 
 /*# sourceMappingURL=style.css.map */

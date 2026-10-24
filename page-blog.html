@@ -164,6 +164,33 @@
             border-radius: 6px;
             text-decoration: none !important;
         }
+
+        /* Blog Card Action Button Size Polish */
+        .blog-card .post-meta .btn,
+        .blog-card .post-meta a.btn-outline-primary {
+            font-size: 11px !important;
+            font-weight: 700 !important;
+            padding: 3px 10px !important;
+            border-radius: 14px !important;
+            line-height: 1.35 !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 3.5px !important;
+            letter-spacing: 0.1px !important;
+            box-shadow: 0 1px 4px rgba(37, 99, 235, 0.15) !important;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        }
+        .blog-card .post-meta .btn:hover,
+        .blog-card .post-meta a.btn-outline-primary:hover {
+            transform: translateY(-1px) !important;
+            box-shadow: 0 3px 8px rgba(37, 99, 235, 0.3) !important;
+        }
+        .blog-card .post-meta .btn i,
+        .blog-card .post-meta a.btn-outline-primary i {
+            font-size: 11px !important;
+            margin-left: 2px !important;
+        }
+
         /* Category and Platform Filter Styling */
         .category-filter-card {
             background: #ffffff;
@@ -434,6 +461,17 @@
         }
         body.dark-mode .author-channel-card h6 {
             color: #f1f5f9 !important;
+        }
+        body.dark-mode .blog-card .post-meta a.btn-outline-primary {
+            color: #93c5fd !important;
+            border-color: rgba(147, 197, 253, 0.45) !important;
+            background: rgba(37, 99, 235, 0.08) !important;
+        }
+        body.dark-mode .blog-card .post-meta a.btn-outline-primary:hover {
+            background: #2563eb !important;
+            color: #ffffff !important;
+            border-color: #2563eb !important;
+            box-shadow: 0 3px 10px rgba(37, 99, 235, 0.4) !important;
         }
     </style>
 </head>
