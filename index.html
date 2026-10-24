@@ -1377,21 +1377,24 @@ html.dark-mode .exp-progress-bar {
                             </div>
 
                             <!-- Bottom Floating Credential Card -->
-                            <div class="position-absolute p-3 bg-white shadow-lg text-left border" style="bottom: -20px; left: 18px; right: 18px; font-size: 13.5px; line-height: 1.4; border-radius: 14px !important; border-color: #e2e8f0 !important; box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12) !important; z-index: 2;">
+                            <div class="position-absolute p-3 bg-white shadow-lg text-left border portrait-credential-card" style="bottom: -20px; left: 16px; right: 16px; font-size: 13.5px; line-height: 1.4; border-radius: 16px !important; border-color: rgba(226, 232, 240, 0.9) !important; box-shadow: 0 16px 36px -6px rgba(15, 23, 42, 0.16), 0 0 0 1px rgba(255, 255, 255, 0.9) !important; z-index: 2; backdrop-filter: blur(8px);">
                                 <div class="d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center" style="min-width: 0;">
-                                        <div class="rounded-circle mr-3 d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(30, 64, 175, 0.06)); width: 46px; height: 46px; flex-shrink: 0; border: 1px solid rgba(37, 99, 235, 0.15);">
-                                            <i class="mdi mdi-shield-check text-primary font-22"></i>
+                                        <div class="position-relative mr-3" style="flex-shrink: 0;">
+                                            <div class="d-flex align-items-center justify-content-center" style="width: 48px; height: 48px; border-radius: 14px; background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #38bdf8 100%); box-shadow: 0 8px 20px -2px rgba(37, 99, 235, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.5); border: 1.5px solid rgba(255, 255, 255, 0.35);">
+                                                <i class="mdi mdi-shield-check text-white" style="font-size: 26px; filter: drop-shadow(0 2px 4px rgba(15, 23, 42, 0.35));"></i>
+                                            </div>
+                                            <span class="position-absolute" style="bottom: -2px; right: -2px; width: 13px; height: 13px; border-radius: 50%; background: #10b981; border: 2.5px solid #ffffff; box-shadow: 0 0 8px rgba(16, 185, 129, 0.7);" title="Verified Active Security Credential"></span>
                                         </div>
                                         <div style="min-width: 0;">
                                             <div class="d-flex align-items-center">
                                                 <strong class="text-dark font-weight-bold mr-2" style="font-size: 14.5px;">Palo Alto Networks</strong>
-                                                <span class="badge badge-primary px-2 py-0" style="font-size: 10px; background: #2563eb;">Enterprise AI</span>
+                                                <span class="badge badge-primary px-2 py-0.5" style="font-size: 10px; background: #2563eb; border-radius: 4px;">Enterprise AI</span>
                                             </div>
                                             <span class="text-muted font-weight-500 d-block text-truncate" style="font-size: 12.5px;">Principal Software Engineer in AI</span>
                                         </div>
                                     </div>
-                                    <a href="https://theorg.com/org/palo-alto-networks/person/harsh-verma" target="_blank" class="badge badge-light border text-primary ml-2 px-2 py-1 font-weight-bold d-inline-flex align-items-center text-decoration-none shadow-sm" style="font-size: 11px; white-space: nowrap; border-radius: 6px;" title="Verify Official Palo Alto Networks Organization Profile on The Org">
+                                    <a href="https://theorg.com/org/palo-alto-networks/person/harsh-verma" target="_blank" class="badge badge-light border text-primary ml-2 px-2.5 py-1.5 font-weight-bold d-inline-flex align-items-center text-decoration-none shadow-sm" style="font-size: 11px; white-space: nowrap; border-radius: 8px; transition: all 0.2s ease;" title="Verify Official Palo Alto Networks Organization Profile on The Org">
                                         <i class="mdi mdi-check-decagram text-success mr-1"></i> The Org
                                     </a>
                                 </div>
@@ -1588,12 +1591,11 @@ html.dark-mode .exp-progress-bar {
 
                             	<div class="timeline mt-4">
                                     <a class="timeline-content education-interactive-card" role="button" tabindex="0" aria-label="Stanford Graduate Business Program Details">
-                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <div class="d-flex align-items-center flex-wrap mb-2" style="gap: 8px;">
+                                            <span class="badge education-badge badge-light"><i class="mdi mdi-calendar-blank-outline mr-1"></i>Aug 2021 - 2022</span>
                                             <span class="edu-card-hint"><i class="mdi mdi-cursor-default-click-outline mr-1"></i>Click to inspect</span>
-                                            <span class="badge education-badge badge-light">Aug 2021 - 2022</span>
                                         </div>
-                                        <div class="timeline-icon"><img loading="lazy" decoding="async" src="images/logos/stanford_logo.jpeg" alt="Stanford University GSB">
-                                        </div>
+                                        <div class="timeline-icon"><img loading="lazy" decoding="async" src="images/logos/stanford_logo.jpeg" alt="Stanford University GSB" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block;"></div>
                                         <h2 class="title mb-0">Stanford Graduate Business Program</h2>
                                         <h6 class="company">Stanford University Graduate School of Business</h6>
                                         <small class="company d-block mb-2"><i class="mdi mdi-map-marker mr-1 text-primary"></i>California, United States</small>
@@ -1613,12 +1615,11 @@ html.dark-mode .exp-progress-bar {
 
                                 <div class="timeline mt-4">
                                     <a class="timeline-content education-interactive-card" role="button" tabindex="0" aria-label="UT Dallas Master Degree Details">
-                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <div class="d-flex align-items-center flex-wrap mb-2" style="gap: 8px;">
+                                            <span class="badge education-badge badge-light"><i class="mdi mdi-calendar-blank-outline mr-1"></i>Aug 2018 - May 2020</span>
                                             <span class="edu-card-hint"><i class="mdi mdi-cursor-default-click-outline mr-1"></i>Click to inspect</span>
-                                            <span class="badge skill-badge education-badge badge-light">Aug 2018 - May 2020</span>
                                         </div>
-                                        <div class="timeline-icon"><img loading="lazy" decoding="async" src="images/logos/utd_education_logo.png" alt="UT Dallas">
-                                        </div>
+                                        <div class="timeline-icon"><img loading="lazy" decoding="async" src="images/logos/utd_education_logo.png" alt="UT Dallas" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block;"></div>
                                         <h2 class="title mb-0">Master's Computer Science</h2>
                                         <h6 class="company">The University of Texas at Dallas</h6>
                                         <small class="company d-block mb-2"><i class="mdi mdi-map-marker mr-1 text-primary"></i>Dallas, Texas, United States</small>
@@ -1639,12 +1640,11 @@ html.dark-mode .exp-progress-bar {
 
                                 <div class="timeline mt-4">
                                     <a class="timeline-content education-interactive-card" role="button" tabindex="0" aria-label="UTU B.Tech Degree Details">
-                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <div class="d-flex align-items-center flex-wrap mb-2" style="gap: 8px;">
+                                            <span class="badge education-badge badge-light"><i class="mdi mdi-calendar-blank-outline mr-1"></i>July 2011 - April 2015</span>
                                             <span class="edu-card-hint"><i class="mdi mdi-cursor-default-click-outline mr-1"></i>Click to inspect</span>
-                                            <span class="badge education-badge margin-50 badge-light">July 2011 - April 2015</span>
                                         </div>
-                                        <div class="timeline-icon"><img loading="lazy" decoding="async" src="images/logos/utu.png" alt="Uttarakhand Technical University">
-                                        </div>
+                                        <div class="timeline-icon"><img loading="lazy" decoding="async" src="images/logos/utu.png" alt="Uttarakhand Technical University" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block;"></div>
                                         <h3 class="title mb-0">B.Tech Computer Science &amp; Engineering</h3> 
                                         <h6 class="company">Uttarakhand Technical University</h6> 
                                         <small class="company d-block mb-2"><i class="mdi mdi-map-marker mr-1 text-primary"></i>Dehradun, India</small>
@@ -1816,7 +1816,7 @@ html.dark-mode .exp-progress-bar {
 
                             <!-- CTA to full Associations page -->
                             <div class="text-center mt-3 mb-5">
-                                <a href="page-memberships" class="btn btn-primary px-4 py-2" style="font-weight: 700; border-radius: 30px; box-shadow: 0 4px 14px rgba(37, 99, 255, 0.25);">
+                                <a href="page-memberships" class="btn btn-sm btn-primary px-3 py-1.5" style="font-size: 13px; font-weight: 700; border-radius: 20px; box-shadow: 0 3px 10px rgba(37, 99, 255, 0.2);">
                                     <i class="mdi mdi-certificate mr-1"></i> Explore All 27+ Invited Associations &amp; Fellowships <i class="mdi mdi-arrow-right ml-1"></i>
                                 </a>
                             </div>
@@ -3635,15 +3635,12 @@ html.dark-mode .exp-progress-bar {
                         <div class="p-4 rounded border bg-white shadow-sm d-inline-block" style="max-width: 800px;">
                             <h5 class="mb-2 font-weight-bold text-dark">Explore Complete Engineering &amp; Research Portfolio</h5>
                             <p class="text-muted small mb-3">View all open-source libraries, benchmarks, and research implementations across AI security and distributed systems.</p>
-                            <div class="d-flex flex-wrap justify-content-center align-items-center" style="gap: 12px;">
-                                <a href="page-portfolio" class="btn btn-primary rounded-pill px-4 py-2 font-weight-bold shadow-sm">
+                            <div class="d-flex flex-wrap justify-content-center align-items-center" style="gap: 10px;">
+                                <a href="page-portfolio" class="btn btn-sm btn-primary rounded-pill px-3 py-1.5 font-weight-bold shadow-sm" style="font-size: 13px;">
                                     <i class="mdi mdi-folder-multiple-outline mr-1"></i> Browse Complete Portfolio (25+) <i class="mdi mdi-arrow-right ml-1"></i>
                                 </a>
-                                <a href="page-publications" class="btn btn-outline-primary rounded-pill px-4 py-2 font-weight-bold">
+                                <a href="page-publications" class="btn btn-sm btn-outline-primary rounded-pill px-3 py-1.5 font-weight-bold" style="font-size: 13px;">
                                     <i class="mdi mdi-book-open-page-variant mr-1"></i> Scientific Papers &amp; Patents
-                                </a>
-                                <a href="https://github.com/iamharshverma" target="_blank" class="btn btn-dark rounded-pill px-4 py-2 font-weight-bold">
-                                    <i class="mdi mdi-github-face mr-1"></i> GitHub Profile
                                 </a>
                             </div>
                         </div>
@@ -4299,7 +4296,7 @@ html.dark-mode .exp-progress-bar {
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-5 text-md-right">
-                                    <a href="page-awards" class="btn btn-warning font-weight-bold px-4 py-2 rounded-pill shadow-sm d-inline-flex align-items-center mb-2 mb-sm-0 text-dark" style="font-size: 14px;">
+                                    <a href="page-awards" class="btn btn-sm btn-warning font-weight-bold px-3 py-1.5 rounded-pill shadow-sm d-inline-flex align-items-center mb-2 mb-sm-0 text-dark" style="font-size: 13px;">
                                         <i class="mdi mdi-trophy-variant mr-1"></i> View Full 27+ Awards <i class="mdi mdi-arrow-right ml-1"></i>
                                     </a>
                                     <div class="mt-2">
@@ -4358,7 +4355,7 @@ html.dark-mode .exp-progress-bar {
                                     <a href="https://profilegenius.careeraccelerator.net/" target="_blank" rel="noopener noreferrer" class="text-primary font-weight-bold">Test Profile <i class="mdi mdi-arrow-right"></i></a>
                                  </div>
                                  <div class="pt-1">
-                                    <a href="page-books#book1" class="btn btn-primary btn-sm rounded font-weight-bold px-3" style="background-color: #2563eb; border-color: #2563eb;">
+                                    <a href="page-books#book1" class="btn btn-primary btn-sm rounded-pill font-weight-bold px-2 py-0.5" style="background-color: #2563eb; border-color: #2563eb; font-size: 11px; line-height: 1.4;">
                                        <i class="mdi mdi-information-outline mr-1"></i> Book Details & Waitlist
                                     </a>
                                  </div>
@@ -4387,7 +4384,7 @@ html.dark-mode .exp-progress-bar {
                                     A technical deep dive with empirical case studies on building autonomous, real-time AI counteroffensive architectures to defend against adversaries wielding weaponized AI.
                                  </p>
                                  <div class="pt-1">
-                                    <a href="page-books#book2" class="btn btn-sm text-white rounded font-weight-bold px-3" style="background-color: #0284c7; border-color: #0284c7;">
+                                    <a href="page-books#book2" class="btn btn-sm text-white rounded-pill font-weight-bold px-2 py-0.5" style="background-color: #0284c7; border-color: #0284c7; font-size: 11px; line-height: 1.4;">
                                        <i class="mdi mdi-information-outline mr-1"></i> Book Details & Waitlist
                                     </a>
                                  </div>
@@ -4399,7 +4396,7 @@ html.dark-mode .exp-progress-bar {
 
                   <div class="row">
                      <div class="col-12 text-center mt-2">
-                        <a href="page-books" class="btn btn-outline-primary rounded px-4 py-2 font-weight-bold mr-2 mb-2">
+                        <a href="page-books" class="btn btn-sm btn-outline-primary rounded-pill px-2.5 py-1 font-weight-bold mr-2 mb-2" style="font-size: 11.5px; line-height: 1.4;">
                            <i class="mdi mdi-book-multiple mr-1"></i> Explore Dedicated Books Page
                         </a>
                      </div>
@@ -4477,7 +4474,7 @@ html.dark-mode .exp-progress-bar {
                               <i class="mdi mdi-certificate mr-1"></i> Patent No: <strong>555747</strong> · App No: <strong>201711003607</strong> · IP India
                            </div>
                            <p style="font-size: 13.5px; line-height: 1.55; color: #64748b;">A patented system and methodology for performing comprehensive load testing, distributed multi-tenant simulation, and real-time analytics performance scaling across modern social networking platforms.</p>
-                           <a href="https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/" target="_blank" class="btn btn-primary btn-sm rounded font-weight-bold px-3 shadow-sm" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); border: none;">
+                           <a href="https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/" target="_blank" class="btn btn-primary btn-sm rounded-pill font-weight-bold px-2 py-0.5 shadow-sm" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); border: none; font-size: 11px; line-height: 1.4;">
                               <i class="mdi mdi-magnify mr-1"></i> Search Patent (555747) <i class="mdi mdi-open-in-new ml-1"></i>
                            </a>
                         </div>
@@ -4500,7 +4497,7 @@ html.dark-mode .exp-progress-bar {
                               <i class="mdi mdi-certificate mr-1"></i> Patent No: <strong>606481</strong> · App No: <strong>202011024968</strong> · IP India
                            </div>
                            <p style="font-size: 13.5px; line-height: 1.55; color: #64748b;">An integrated automated hardware and sensor system incorporating multiple coordinated subsystems for non-contact thermal scanning, sanitization misting, and entrance symptomatic screening.</p>
-                           <a href="https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/" target="_blank" class="btn btn-sm text-white rounded font-weight-bold px-3 shadow-sm" style="background: linear-gradient(135deg, #16a34a 0%, #15803d 100%); border: none;">
+                           <a href="https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/" target="_blank" class="btn btn-sm text-white rounded-pill font-weight-bold px-2 py-0.5 shadow-sm" style="background: linear-gradient(135deg, #16a34a 0%, #15803d 100%); border: none; font-size: 11px; line-height: 1.4;">
                               <i class="mdi mdi-magnify mr-1"></i> Search Patent (606481) <i class="mdi mdi-open-in-new ml-1"></i>
                            </a>
                         </div>
@@ -4523,7 +4520,7 @@ html.dark-mode .exp-progress-bar {
                               <i class="mdi mdi-link-variant mr-1"></i> DOI: <strong>10.1109/CogML.2019.9014355</strong>
                            </div>
                            <p style="font-size: 13.5px; line-height: 1.55; color: #64748b;">Envisions architectures addressing parallel ingestion complexity from heterogeneous IoT devices, creating a low-latency edge computing platform with sub-millisecond dispatch and stream verification.</p>
-                           <a href="https://ieeexplore.ieee.org/document/9014355" target="_blank" class="btn btn-outline-primary btn-sm rounded font-weight-bold px-3">
+                           <a href="https://ieeexplore.ieee.org/document/9014355" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill font-weight-bold px-2 py-0.5" style="font-size: 11px; line-height: 1.4;">
                               <i class="mdi mdi-file-document mr-1"></i> View on IEEE Xplore <i class="mdi mdi-open-in-new ml-1"></i>
                            </a>
                         </div>
@@ -4532,13 +4529,13 @@ html.dark-mode .exp-progress-bar {
 
                   <!-- Section CTA Buttons -->
                   <div class="col-12 mt-4 pt-2 text-center">
-                     <a href="page-publications" class="btn btn-primary rounded mr-2 mb-2" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); border: none;">
+                     <a href="page-publications" class="btn btn-sm btn-primary rounded-pill px-3 py-1.5 font-weight-bold mr-2 mb-2 shadow-sm" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); border: none; font-size: 13px;">
                         <i class="mdi mdi-book-open-page-variant mr-1"></i> View All 27 Publications &amp; 6 Patents
                      </a>
-                     <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="btn btn-outline-primary rounded mr-2 mb-2">
+                     <a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3 py-1.5 font-weight-bold mr-2 mb-2" style="font-size: 13px;">
                         <i class="mdi mdi-school mr-1"></i> Google Scholar Profile <i class="mdi mdi-open-in-new ml-1"></i>
                      </a>
-                     <a href="https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/" target="_blank" class="btn btn-outline-secondary rounded mb-2">
+                     <a href="https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/" target="_blank" class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1.5 font-weight-bold mb-2" style="font-size: 13px;">
                         <i class="mdi mdi-shield-search mr-1"></i> IP India Patent Search <i class="mdi mdi-open-in-new ml-1"></i>
                      </a>
                   </div>
@@ -6565,7 +6562,7 @@ html.dark-mode .exp-progress-bar {
                                         </div>
                                     </div>
                                     <div class="col-md-5 text-md-right">
-                                        <button type="submit" id="submit" name="send" class="btn btn-primary rounded-pill px-4 py-2 font-weight-bold shadow-sm w-100 w-md-auto">
+                                        <button type="submit" id="submit" name="send" class="btn btn-sm btn-primary rounded-pill px-3.5 py-1.5 font-weight-bold shadow-sm w-100 w-md-auto" style="font-size: 13.5px;">
                                             <i class="mdi mdi-send mr-1"></i> Send Message
                                         </button> 
                                     </div><!--end col-->
@@ -6599,11 +6596,11 @@ html.dark-mode .exp-progress-bar {
                                         <i class="mdi mdi-email-outline footer-input-icon"></i>
                                         <input type="email" class="form-control footer-email-input" id="footerNewsletterEmail" placeholder="Enter your business email address..." required autocomplete="email" aria-label="Enter email to subscribe to tech articles">
                                     </div>
-                                    <button type="submit" class="btn btn-primary footer-subscribe-btn px-4 mb-2 mb-sm-0 mr-sm-2 font-weight-medium text-nowrap" id="footerSubscribeBtn">
+                                    <button type="submit" class="btn btn-sm btn-primary footer-subscribe-btn px-3 mb-2 mb-sm-0 mr-sm-2 font-weight-medium text-nowrap" id="footerSubscribeBtn" style="font-size: 13px;">
                                         <span class="btn-text"><i class="mdi mdi-send mr-1"></i> Subscribe</span>
                                         <span class="btn-spinner d-none"><i class="mdi mdi-loading mdi-spin mr-1"></i> Subscribing...</span>
                                     </button>
-                                    <a href="rss.xml" class="btn footer-rss-btn px-3 mb-2 mb-sm-0 font-weight-medium text-nowrap" id="footerRssBtn" title="Follow tech articles via RSS Feed (Feedly, Inoreader, RSS readers)" target="_blank" rel="noopener noreferrer" onclick="handleFooterRssClick(event)">
+                                    <a href="rss.xml" class="btn btn-sm footer-rss-btn px-2.5 mb-2 mb-sm-0 font-weight-medium text-nowrap" id="footerRssBtn" title="Follow tech articles via RSS Feed (Feedly, Inoreader, RSS readers)" target="_blank" rel="noopener noreferrer" onclick="handleFooterRssClick(event)" style="font-size: 13px;">
                                         <i class="mdi mdi-rss mr-1 rss-icon"></i> <span class="rss-text">RSS Feed</span>
                                     </a>
                                 </div>
