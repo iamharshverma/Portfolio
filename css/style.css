@@ -3831,13 +3831,90 @@ html:not(.dark-mode) .section-head span {
   will-change: transform, opacity;
 }
 
+.hero-area {
+  perspective: 1200px;
+}
+
+.hero-anim-avatar-wrap {
+  animation: heroAvatarPop 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity;
+  transform-style: preserve-3d;
+}
+
 .hero-avatar-ring {
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  transform: translate3d(var(--hero-avatar-x, 0px), var(--hero-avatar-y, 0px), 0) rotateX(var(--hero-avatar-rx, 0deg)) rotateY(var(--hero-avatar-ry, 0deg));
+  transition: transform 0.16s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+  will-change: transform, box-shadow;
+  transform-style: preserve-3d;
+}
+
+.hero-area.hero-interacting .hero-avatar-ring,
+.hero-area:hover .hero-avatar-ring {
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.5), 0 0 32px rgba(59, 130, 246, 0.4) !important;
 }
 
 .hero-avatar-ring:hover {
-  transform: scale(1.035);
-  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.55), 0 0 25px rgba(59, 130, 246, 0.5) !important;
+  transform: translate3d(var(--hero-avatar-x, 0px), var(--hero-avatar-y, 0px), 8px) scale(1.035) rotateX(var(--hero-avatar-rx, 0deg)) rotateY(var(--hero-avatar-ry, 0deg));
+  box-shadow: 0 30px 65px rgba(0, 0, 0, 0.6), 0 0 45px rgba(59, 130, 246, 0.6) !important;
+}
+
+.hero-anim-title {
+  transform: translate3d(var(--hero-title-x, 0px), var(--hero-title-y, 0px), 0);
+  transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), text-shadow 0.35s ease;
+  will-change: transform;
+}
+
+.hero-area.hero-interacting .hero-anim-title {
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+}
+
+.hero-anim-designation {
+  transform: translate3d(var(--hero-subtitle-x, 0px), var(--hero-subtitle-y, 0px), 0);
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.hero-anim-badge {
+  transform: translate3d(var(--hero-badge-x, 0px), var(--hero-badge-y, 0px), 12px);
+  transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease, filter 0.35s ease, background 0.35s ease;
+  will-change: transform, box-shadow;
+}
+
+.hero-area.hero-interacting .hero-anim-badge,
+.hero-area:hover .hero-anim-badge {
+  border-color: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 0 18px rgba(59, 130, 246, 0.65), 0 0 36px rgba(37, 99, 235, 0.4), 0 4px 14px rgba(0, 0, 0, 0.35) !important;
+  animation: badgeSoftLuminescence 3s ease-in-out infinite alternate;
+}
+
+.hero-area.hero-interacting .hero-anim-badge .mdi-check-decagram,
+.hero-area:hover .hero-anim-badge .mdi-check-decagram {
+  color: #bfdbfe;
+  filter: drop-shadow(0 0 5px rgba(191, 219, 254, 0.85));
+  transition: all 0.3s ease;
+}
+
+.hero-anim-badge.badge-hover-active,
+.hero-anim-badge:hover {
+  transform: translate3d(var(--hero-badge-x, 0px), var(--hero-badge-y, 0px), 20px) scale(1.05) !important;
+  border-color: #ffffff !important;
+  background: linear-gradient(135deg, #1d4ed8, #2563eb) !important;
+  box-shadow: 0 0 26px rgba(59, 130, 246, 0.85), 0 0 52px rgba(37, 99, 235, 0.5), 0 6px 18px rgba(0, 0, 0, 0.4) !important;
+}
+
+@keyframes badgeSoftLuminescence {
+  0% {
+    box-shadow: 0 0 16px rgba(59, 130, 246, 0.6), 0 0 32px rgba(37, 99, 235, 0.35), 0 4px 12px rgba(0, 0, 0, 0.35);
+    filter: brightness(1);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(96, 165, 250, 0.75), 0 0 44px rgba(59, 130, 246, 0.45), 0 4px 15px rgba(0, 0, 0, 0.35);
+    filter: brightness(1.07);
+  }
+  100% {
+    box-shadow: 0 0 16px rgba(59, 130, 246, 0.6), 0 0 32px rgba(37, 99, 235, 0.35), 0 4px 12px rgba(0, 0, 0, 0.35);
+    filter: brightness(1);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -3846,10 +3923,12 @@ html:not(.dark-mode) .section-head span {
   .hero-anim-title,
   .hero-anim-designation,
   .hero-anim-cta,
-  .hero-anim-profile-card {
+  .hero-anim-profile-card,
+  .hero-avatar-ring {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
+    transition: none !important;
   }
 }
 
