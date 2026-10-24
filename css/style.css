@@ -3974,4 +3974,250 @@ html:not(.dark-mode) .section-head span {
   }
 }
 
+/* ==========================================================================
+   Education Interactive Cards & Micro-Animations
+   ========================================================================== */
+.education-interactive-card {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s ease,
+              background-color 0.35s ease !important;
+  outline: none;
+}
+
+.education-interactive-card:hover {
+  text-decoration: none;
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 18px 40px -6px rgba(37, 99, 235, 0.15), 0 0 0 2px rgba(37, 99, 235, 0.22) !important;
+  border-color: rgba(37, 99, 235, 0.4) !important;
+}
+
+.education-interactive-card:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 4px;
+}
+
+.education-interactive-card:active {
+  transform: translateY(-3px) scale(0.99);
+}
+
+.education-interactive-card .timeline-icon {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s ease,
+              border-color 0.35s ease !important;
+}
+
+.education-interactive-card:hover .timeline-icon {
+  transform: scale(1.12) rotate(-3deg);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.35), 0 0 0 3px rgba(37, 99, 235, 0.2) !important;
+}
+
+.education-interactive-card .title {
+  transition: color 0.25s ease;
+}
+
+.education-interactive-card:hover .title {
+  color: #2563eb !important;
+}
+
+/* Hint badge in card header */
+.edu-card-hint {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  transition: all 0.25s ease;
+  margin-bottom: 8px;
+}
+
+.education-interactive-card:hover .edu-card-hint {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Active / Expanded Degree State */
+.education-interactive-card.active-degree {
+  border: 2px solid #2563eb !important;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%) !important;
+  box-shadow: 0 20px 48px -8px rgba(37, 99, 235, 0.2), 0 0 0 3px rgba(37, 99, 235, 0.25) !important;
+  transform: translateY(-6px) scale(1.015);
+}
+
+.education-interactive-card.active-degree .timeline-icon {
+  transform: scale(1.15) rotate(0deg);
+  box-shadow: 0 0 24px rgba(37, 99, 235, 0.5), 0 0 0 4px rgba(37, 99, 235, 0.3) !important;
+}
+
+.education-interactive-card.active-degree .edu-card-hint {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.45);
+}
+
+/* Course Pill Cloud */
+.edu-course-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.edu-course-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 14px;
+  background: rgba(37, 99, 235, 0.06);
+  color: #1e40af;
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.education-interactive-card:hover .edu-course-pill {
+  background: rgba(37, 99, 235, 0.1);
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+.edu-course-pill:hover {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border-color: #2563eb !important;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+.education-interactive-card.active-degree .edu-course-pill {
+  animation: eduPillPop 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes eduPillPop {
+  0% { opacity: 0; transform: scale(0.85) translateY(4px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Ripple click effect */
+.edu-click-ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.3) 0%, rgba(37, 99, 235, 0) 70%);
+  transform: scale(0);
+  animation: eduRippleAnim 0.65s ease-out forwards;
+  pointer-events: none;
+}
+
+@keyframes eduRippleAnim {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   Floating Brand Banner Moving Left to Right (LTR)
+   ========================================================================== */
+.brand-floating-banner-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 16px 0;
+  margin: 10px 0 6px;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 1) 8%, rgba(0, 0, 0, 1) 92%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 1) 8%, rgba(0, 0, 0, 1) 92%, transparent 100%);
+}
+
+.brand-floating-track {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: max-content;
+  animation: brandFloatLTR 36s linear infinite;
+  will-change: transform;
+}
+
+.brand-floating-banner-container:hover .brand-floating-track {
+  animation-play-state: paused;
+}
+
+/* Move from left to right: starts at -50% and translates rightwards to 0% */
+@keyframes brandFloatLTR {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+.brand-floating-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 18px 8px 14px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s ease,
+              border-color 0.25s ease;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+}
+
+.brand-floating-pill:hover {
+  transform: translateY(-4px) scale(1.03);
+  border-color: #3b82f6;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.16);
+}
+
+.brand-floating-pill .brand-pill-logo {
+  height: 32px;
+  max-width: 46px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.brand-floating-pill:hover .brand-pill-logo {
+  transform: scale(1.12);
+}
+
+.brand-floating-pill .brand-pill-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.25;
+}
+
+.brand-floating-pill .brand-pill-name {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.2px;
+}
+
+.brand-floating-pill .brand-pill-badge {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
 /*# sourceMappingURL=style.css.map */

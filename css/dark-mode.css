@@ -1920,5 +1920,101 @@ body.dark-mode .hero-anim-badge:hover {
   box-shadow: 0 0 28px rgba(96, 165, 250, 0.85), 0 0 56px rgba(59, 130, 246, 0.55), 0 6px 20px rgba(0, 0, 0, 0.7) !important;
 }
 
+/* ==========================================================================
+   Education Interactive Cards & Micro-Animations (Dark Mode)
+   ========================================================================== */
+html.dark-mode .education-interactive-card,
+body.dark-mode .education-interactive-card {
+  background-color: #141d2e !important;
+  border-color: #334155 !important;
+  color: #cbd5e1 !important;
+}
+
+html.dark-mode .education-interactive-card:hover,
+body.dark-mode .education-interactive-card:hover {
+  border-color: rgba(96, 165, 250, 0.5) !important;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.65), 0 0 24px rgba(59, 130, 246, 0.25), 0 0 0 2px rgba(59, 130, 246, 0.4) !important;
+}
+
+html.dark-mode .education-interactive-card:hover .title,
+body.dark-mode .education-interactive-card:hover .title {
+  color: #60a5fa !important;
+}
+
+html.dark-mode .education-interactive-card:hover .timeline-icon,
+body.dark-mode .education-interactive-card:hover .timeline-icon {
+  box-shadow: 0 0 24px rgba(96, 165, 250, 0.45), 0 0 0 3px rgba(59, 130, 246, 0.3) !important;
+}
+
+html.dark-mode .education-interactive-card .edu-card-hint,
+body.dark-mode .education-interactive-card .edu-card-hint {
+  background: rgba(59, 130, 246, 0.16) !important;
+  color: #93c5fd !important;
+  border-color: rgba(96, 165, 250, 0.35) !important;
+}
+
+html.dark-mode .education-interactive-card:hover .edu-card-hint,
+body.dark-mode .education-interactive-card:hover .edu-card-hint {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 14px rgba(59, 130, 246, 0.5) !important;
+}
+
+html.dark-mode .education-interactive-card.active-degree,
+body.dark-mode .education-interactive-card.active-degree {
+  border: 2px solid #3b82f6 !important;
+  background: linear-gradient(135deg, #131d33 0%, #172647 100%) !important;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.75), 0 0 32px rgba(59, 130, 246, 0.35) !important;
+}
+
+html.dark-mode .education-interactive-card.active-degree .timeline-icon,
+body.dark-mode .education-interactive-card.active-degree .timeline-icon {
+  box-shadow: 0 0 28px rgba(96, 165, 250, 0.6), 0 0 0 4px rgba(59, 130, 246, 0.45) !important;
+}
+
+html.dark-mode .edu-course-pill,
+body.dark-mode .edu-course-pill {
+  background: rgba(30, 41, 59, 0.8) !important;
+  color: #93c5fd !important;
+  border-color: rgba(96, 165, 250, 0.25) !important;
+}
+
+html.dark-mode .education-interactive-card:hover .edu-course-pill,
+body.dark-mode .education-interactive-card:hover .edu-course-pill {
+  background: rgba(30, 58, 138, 0.4) !important;
+  border-color: rgba(96, 165, 250, 0.4) !important;
+}
+
+html.dark-mode .edu-course-pill:hover,
+body.dark-mode .edu-course-pill:hover {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 14px rgba(59, 130, 246, 0.4) !important;
+}
+
+/* Floating Brand Banner (Dark Mode) */
+html.dark-mode .brand-floating-pill,
+body.dark-mode .brand-floating-pill {
+  background: #141d2e !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45) !important;
+}
+
+html.dark-mode .brand-floating-pill:hover,
+body.dark-mode .brand-floating-pill:hover {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6), 0 0 16px rgba(59, 130, 246, 0.3) !important;
+}
+
+html.dark-mode .brand-floating-pill .brand-pill-name,
+body.dark-mode .brand-floating-pill .brand-pill-name {
+  color: #f1f5f9 !important;
+}
+
+html.dark-mode .brand-floating-pill .brand-pill-badge,
+body.dark-mode .brand-floating-pill .brand-pill-badge {
+  color: #94a3b8 !important;
+}
+
 
 
