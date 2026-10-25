@@ -4371,8 +4371,20 @@ html:not(.dark-mode) .section-head span {
 }
 
 /* ==========================================================================
-   External Dotted Journey Connector Arrows (Moved Inside Card Top)
+   External Dotted Journey Connector Arrows & Dynamic SVG Overlay
    ========================================================================== */
+.edu-journey-svg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 8;
+  display: block;
+}
+
 .timeline-ext-connector {
   position: relative;
   z-index: 6;
@@ -4398,35 +4410,19 @@ html:not(.dark-mode) .section-head span {
   width: 100%;
 }
 
-/* Incoming Arrow SVG from previous card into this card top */
-.ext-conn-utd-top .ext-connector-svg {
-  position: absolute;
-  top: -82px;
-  left: -70px;
-  width: 160px;
-  height: 85px;
-  overflow: visible;
-  pointer-events: none;
-  z-index: 5;
-  display: block;
-}
-
-.ext-conn-utu-top .ext-connector-svg {
-  position: absolute;
-  top: -82px;
-  left: 20px;
-  width: 160px;
-  height: 85px;
-  overflow: visible;
-  pointer-events: none;
-  z-index: 5;
-  display: block;
+.ext-origin-circle {
+  fill: #2563eb;
+  stroke: #ffffff;
+  stroke-width: 2.5;
+  filter: drop-shadow(0 0 8px rgba(37, 99, 235, 0.7));
+  transition: all 0.3s ease;
 }
 
 .ext-track-bg {
   stroke: rgba(37, 99, 235, 0.16);
-  stroke-width: 3.2;
+  stroke-width: 3.5;
   stroke-linecap: round;
+  fill: none;
 }
 
 .ext-track-dotted {
@@ -4436,18 +4432,18 @@ html:not(.dark-mode) .section-head span {
   stroke-linejoin: round;
   stroke-dasharray: 6 6;
   animation: extDottedDashFlow 1.1s linear infinite;
-  filter: drop-shadow(0 2px 6px rgba(37, 99, 235, 0.3));
+  filter: drop-shadow(0 2px 6px rgba(37, 99, 235, 0.35));
   transition: stroke 0.3s ease, stroke-width 0.3s ease;
+  fill: none;
 }
 
-.ext-arrowhead {
-  fill: none;
+.ext-arrowhead-poly {
+  fill: #2563eb;
   stroke: #2563eb;
-  stroke-width: 2.8;
-  stroke-linecap: round;
+  stroke-width: 1.5;
   stroke-linejoin: round;
-  filter: drop-shadow(0 2px 6px rgba(37, 99, 235, 0.35));
-  transition: transform 0.25s ease, stroke 0.3s ease;
+  filter: drop-shadow(0 2px 6px rgba(37, 99, 235, 0.45));
+  transition: all 0.25s ease;
 }
 
 @keyframes extDottedDashFlow {
@@ -4460,7 +4456,7 @@ html:not(.dark-mode) .section-head span {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 4px 12px;
+  padding: 5px 14px;
   margin-top: 0;
   background: rgba(37, 99, 235, 0.08);
   border: 1.5px dashed rgba(37, 99, 235, 0.35);
@@ -4498,14 +4494,24 @@ html:not(.dark-mode) .section-head span {
 }
 
 /* Hover Dynamics */
-.education-interactive-card:hover .ext-track-dotted {
+.education-interactive-card:hover .ext-track-dotted,
+.edu-journey-arrow-group.journey-active-arrow .ext-track-dotted {
   stroke: #1d4ed8;
   stroke-width: 3.4;
   animation-duration: 0.65s;
 }
 
-.education-interactive-card:hover .ext-arrowhead {
+.education-interactive-card:hover .ext-arrowhead-poly,
+.edu-journey-arrow-group.journey-active-arrow .ext-arrowhead-poly {
+  fill: #1d4ed8;
   stroke: #1d4ed8;
+  transform: scale(1.15);
+}
+
+.education-interactive-card:hover .ext-origin-circle,
+.edu-journey-arrow-group.journey-active-arrow .ext-origin-circle {
+  fill: #1d4ed8;
+  transform: scale(1.2);
 }
 
 .education-interactive-card:hover .ext-connector-badge {

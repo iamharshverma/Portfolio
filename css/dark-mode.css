@@ -2113,7 +2113,10 @@ body.dark-mode .ext-track-dotted {
 }
 
 html.dark-mode .ext-arrowhead,
-body.dark-mode .ext-arrowhead {
+body.dark-mode .ext-arrowhead,
+html.dark-mode .ext-arrowhead-poly,
+body.dark-mode .ext-arrowhead-poly {
+  fill: #38bdf8 !important;
   stroke: #38bdf8 !important;
   filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.75)) !important;
 }

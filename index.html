@@ -1712,7 +1712,24 @@ html.dark-mode .exp-progress-bar {
 
                     <div class="col-lg-8 ">
                         <div class="row">
-                            <div class="main-timeline">
+                            <div class="main-timeline position-relative">
+                                <!-- Dynamic Journey Connecting Arrows: Emerges directly from departure span to next milestone badge -->
+                                <svg class="edu-journey-svg-overlay" id="edu-journey-svg-overlay" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <!-- Journey 1: Stanford Departure Span -> UT Dallas Entrance Badge -->
+                                    <g id="edu-journey-group-1" class="edu-journey-arrow-group" data-from="stanford" data-to="utd">
+                                        <circle id="edu-path-1-origin" class="ext-origin-circle" cx="0" cy="0" r="4.5" />
+                                        <path id="edu-path-1-bg" class="ext-track-bg" d="M0,0" />
+                                        <path id="edu-path-1-track" class="ext-track-dotted" d="M0,0" />
+                                        <polygon id="edu-path-1-head" class="ext-arrowhead-poly" points="0,0 0,0 0,0" />
+                                    </g>
+                                    <!-- Journey 2: UT Dallas Departure Span -> UTU Entrance Badge -->
+                                    <g id="edu-journey-group-2" class="edu-journey-arrow-group" data-from="utd" data-to="utu">
+                                        <circle id="edu-path-2-origin" class="ext-origin-circle" cx="0" cy="0" r="4.5" />
+                                        <path id="edu-path-2-bg" class="ext-track-bg" d="M0,0" />
+                                        <path id="edu-path-2-track" class="ext-track-dotted" d="M0,0" />
+                                        <polygon id="edu-path-2-head" class="ext-arrowhead-poly" points="0,0 0,0 0,0" />
+                                    </g>
+                                </svg>
 
                             	<div class="timeline mt-4" id="edu-card-stanford">
                                     <a class="timeline-content education-interactive-card" role="button" tabindex="0" aria-label="Stanford Graduate Business Program Details" data-edu-step="stanford">
@@ -1735,9 +1752,9 @@ html.dark-mode .exp-progress-bar {
                                             <span class="edu-course-pill"><i class="mdi mdi-account-group-outline mr-1"></i>Business Administration</span>
                                             <span class="edu-course-pill"><i class="mdi mdi-compass-outline mr-1"></i>Strategic Leadership</span>
                                         </div>
-                                        <!-- End of Card 1 Departure Dock -->
+                                        <!-- End of Card 1 Departure Dock (Arrow Launch Origin) -->
                                         <div class="edu-card-end-dock" id="end-stanford">
-                                            <span class="edu-end-dock-pill">
+                                            <span class="edu-end-dock-pill" id="span-stanford-dock">
                                                 <span class="edu-end-pulse-dot"></span> End of Stanford Program &bull; Leads to Master's Degree <i class="mdi mdi-arrow-down-right ml-1"></i>
                                             </span>
                                         </div>
@@ -1746,23 +1763,9 @@ html.dark-mode .exp-progress-bar {
 
                                 <div class="timeline mt-4" id="edu-card-utd">
                                     <a class="timeline-content education-interactive-card" role="button" tabindex="0" aria-label="UT Dallas Master Degree Details" data-edu-step="utd">
-                                        <!-- Start of Card 2 Receiving Dock: Connected from End of Stanford -->
+                                        <!-- Start of Card 2 Receiving Dock: Connected directly from Stanford End Span -->
                                         <div class="timeline-ext-connector ext-conn-utd-top" id="connector-utd" aria-label="Connected Journey: Master's Degree from Stanford Milestone">
                                             <div class="ext-connector-inner">
-                                                <!-- Arrow connecting from End of Card 1 to Start of Card 2 -->
-                                                <svg class="ext-connector-svg" viewBox="0 0 160 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <!-- Origin anchor at End of Card 1 -->
-                                                    <circle cx="15" cy="4" r="4.5" class="ext-origin-circle d-none d-md-block" />
-                                                    <!-- Desktop S-Curve: End of Stanford -> Start of UT Dallas -->
-                                                    <path class="ext-track-bg d-none d-md-block" d="M 15 4 C 15 48, 140 34, 140 76" />
-                                                    <path class="ext-track-dotted d-none d-md-block" d="M 15 4 C 15 48, 140 34, 140 76" />
-                                                    <path class="ext-arrowhead d-none d-md-block" d="M 132 68 L 140 78 L 148 68" />
-                                                    <!-- Mobile Vertical Downward Paths: End of Card 1 -> Start of Card 2 -->
-                                                    <circle cx="80" cy="4" r="4" class="ext-origin-circle d-md-none" />
-                                                    <path class="ext-track-bg d-md-none" d="M 80 4 L 80 62" />
-                                                    <path class="ext-track-dotted d-md-none" d="M 80 4 L 80 62" />
-                                                    <path class="ext-arrowhead d-md-none" d="M 72 54 L 80 64 L 88 54" />
-                                                </svg>
                                                 <div class="ext-connector-badge">
                                                     <span class="ext-badge-pulse"></span>
                                                     <span class="ext-badge-text"><i class="mdi mdi-ray-start-arrow mr-1"></i>Start of Master's Degree (UT Dallas) &bull; Connected from Stanford</span>
@@ -1789,9 +1792,9 @@ html.dark-mode .exp-progress-bar {
                                             <span class="edu-course-pill"><i class="mdi mdi-database-cog mr-1"></i>Big Data Streaming</span>
                                             <span class="edu-course-pill"><i class="mdi mdi-network mr-1"></i>Deep Learning</span>
                                         </div>
-                                        <!-- End of Card 2 Departure Dock -->
+                                        <!-- End of Card 2 Departure Dock (Arrow Launch Origin) -->
                                         <div class="edu-card-end-dock" id="end-utd">
-                                            <span class="edu-end-dock-pill">
+                                            <span class="edu-end-dock-pill" id="span-utd-dock">
                                                 <span class="edu-end-pulse-dot"></span> End of Master's Program &bull; Built on B.Tech Foundation <i class="mdi mdi-arrow-down-left ml-1"></i>
                                             </span>
                                         </div>
@@ -1800,23 +1803,9 @@ html.dark-mode .exp-progress-bar {
 
                                 <div class="timeline mt-4" id="edu-card-utu">
                                     <a class="timeline-content education-interactive-card" role="button" tabindex="0" aria-label="UTU B.Tech Degree Details" data-edu-step="utu">
-                                        <!-- Start of Card 3 Receiving Dock: Connected from End of UT Dallas -->
+                                        <!-- Start of Card 3 Receiving Dock: Connected directly from UT Dallas End Span -->
                                         <div class="timeline-ext-connector ext-conn-utu-top" id="connector-utu" aria-label="Connected Journey: B.Tech Honors Core from UT Dallas">
                                             <div class="ext-connector-inner">
-                                                <!-- Arrow connecting from End of Card 2 to Start of Card 3 -->
-                                                <svg class="ext-connector-svg ext-svg-reverse" viewBox="0 0 160 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <!-- Origin anchor at End of Card 2 -->
-                                                    <circle cx="145" cy="4" r="4.5" class="ext-origin-circle d-none d-md-block" />
-                                                    <!-- Desktop S-Curve: End of UT Dallas -> Start of UTU -->
-                                                    <path class="ext-track-bg d-none d-md-block" d="M 145 4 C 145 48, 20 34, 20 76" />
-                                                    <path class="ext-track-dotted d-none d-md-block" d="M 145 4 C 145 48, 20 34, 20 76" />
-                                                    <path class="ext-arrowhead d-none d-md-block" d="M 12 68 L 20 78 L 28 68" />
-                                                    <!-- Mobile Vertical Downward Paths: End of Card 2 -> Start of Card 3 -->
-                                                    <circle cx="80" cy="4" r="4" class="ext-origin-circle d-md-none" />
-                                                    <path class="ext-track-bg d-md-none" d="M 80 4 L 80 62" />
-                                                    <path class="ext-track-dotted d-md-none" d="M 80 4 L 80 62" />
-                                                    <path class="ext-arrowhead d-md-none" d="M 72 54 L 80 64 L 88 54" />
-                                                </svg>
                                                 <div class="ext-connector-badge">
                                                     <span class="ext-badge-pulse"></span>
                                                     <span class="ext-badge-text"><i class="mdi mdi-ray-start-arrow mr-1"></i>Start of Undergraduate Honors (UTU) &bull; Connected from UT Dallas</span>
