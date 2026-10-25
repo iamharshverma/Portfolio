@@ -227,7 +227,7 @@ In addition to his engineering leadership, Verma serves as an official contribut
 * [https://news.marketersmedia.com/principal-software-engineer-harsh-verma-awarded-bcs-fellowship-and-publishes-rsa-conference-analysis-on-why-identity-alone-can-no-longer-secure-ai-systems/89205125 "Principal Software Engineer Harsh Verma Awarded BCS Fellowship and Publishes RSA Conference Analysis on Why Identity Alone Can No Longer Secure AI Systems"] – ''MarketersMEDIA Wire'' (October 2026)
 * [https://www.einnews.com/pr_news/950989244/ai-agent-security-and-virtual-cell-ai-lead-ai-insiders-sf-tech-week-nights "AI Agent Security and Virtual Cell AI Lead AI Insiders' SF Tech Week Nights"] – ''EIN Presswire Wire'' (October 2026)
 
-== Verified Authority Profiles & External Links (54 Registries) ==
+== Verified Authority Profiles & External Links (55 Registries) ==
 * [https://www.harshverma.me/ Official Portfolio Website (www.harshverma.me)]
 * [https://www.harshverma.me/page-identity Official Google Knowledge Graph & Entity Verification Hub]
 * [https://councils.forbes.com/profile/Harsh-Verma-Principal-Software-Engineer-AI-Palo-Alto-Networks/2a1e2c7a-5541-4c49-acee-0ec37da532a5 Forbes Technology Council] (Executive & Tech Councils – <code>Official Council Member</code>)
@@ -261,6 +261,7 @@ In addition to his engineering leadership, Verma serves as an official contribut
 * [https://www.lifepage.in/page/harsh LifePage India Career Talk] (Media Features & Press – <code>Career Interview</code>)
 * [https://imdb.me/harshverma IMDb Profile] (Media Features & Press – <code>Verified</code>)
 * [https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer) EverybodyWiki] (Media Features & Press – <code>Verified</code>)
+* [https://localwiki.org/main/Harsh_Verma LocalWiki] (Media Features & Press – <code>Verified</code>)
 * [https://www.wikidata.org/wiki/Q139827028 Wikidata Knowledge Base] (Research & Knowledge Graph – <code>Verified</code>)
 * [https://adplist.org/mentors/harsh-verma ADPList Executive Mentor] (Advisory & Mentorship – <code>Top AI Mentor</code>)
 * [https://accelerate.masschallenge.org/profile/ MassChallenge Accelerator] (Advisory & Mentorship – <code>Mentor & Judge</code>)

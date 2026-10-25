@@ -187,6 +187,9 @@ const harshKnowledge = {
     { name: "ORCID", url: "page-about#verified-profiles", id: "0000-0003-2134-2600" },
     { name: "Wikidata Knowledge Graph", url: "https://www.wikidata.org/wiki/Q139827028", id: "Q139827028" },
     { name: "EverybodyWiki Biography", url: "https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)", id: "Biography" },
+    { name: "LocalWiki Global Hub", url: "https://localwiki.org/main/Harsh_Verma", id: "main/Harsh_Verma" },
+    { name: "WikiAlpha Biography", url: "https://wikialpha.co/wiki/Harsh_Verma_(Software_Engineer)", id: "Biography" },
+    { name: "WikiFlux Biography", url: "https://en.wikiflux.org/wiki/index.php/Harsh_Verma_(Software_Engineer)", id: "Biography" },
     { name: "IEEE Xplore", url: "page-about#verified-profiles" },
     { name: "ResearchGate", url: "page-about#verified-profiles" },
     { name: "DBLP Computer Science Bibliography", url: "page-about#verified-profiles" }
@@ -254,7 +257,7 @@ HARSH VERMA'S CORE PROFILE:
 - Professional Roles: Enterprise AI Architect, Principal Technologist, Author, Keynote Speaker, and Fellow.
 - Contact Email: harshverma59@gmail.com
 - Main Website Pages:
-  * Biography & Profiles: "page-about" (or "page-about#verified-profiles" for the 54 Verified Academic &amp; Industry Hubs)
+  * Biography & Profiles: "page-about" (or "page-about#verified-profiles" for the 55 Verified Academic &amp; Industry Hubs)
   * 27 Prestigious Awards: "page-awards"
   * 27+ Peer-Reviewed Publications: "page-publications"
   * Authored Books: "page-books"

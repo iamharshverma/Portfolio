@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="localWikiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F766E" />
+      <stop offset="100%" stop-color="#14B8A6" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="18" fill="url(#localWikiGrad)" />
+  <rect x="2" y="2" width="96" height="96" rx="16" stroke="rgba(255,255,255,0.25)" stroke-width="2" fill="none" />
+  <!-- LocalWiki Map Pin & Community Symbol -->
+  <g fill="#FFFFFF" opacity="0.95">
+    <path d="M50 20c-8.8 0-16 7.2-16 16 0 12 16 26 16 26s16-14 16-26c0-8.8-7.2-16-16-16zm0 21.5c-3 0-5.5-2.5-5.5-5.5s2.5-5.5 5.5-5.5 5.5 2.5 5.5 5.5-2.5 5.5-5.5 5.5z" />
+  </g>
+  <text x="50" y="72" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="900" text-anchor="middle" letter-spacing="0.5">LOCALWIKI</text>
+  <rect x="22" y="77" width="56" height="13" rx="6.5" fill="#CCFBF1" />
+  <text x="50" y="86.5" fill="#0F766E" font-family="system-ui, -apple-system, sans-serif" font-size="7.5" font-weight="900" text-anchor="middle" letter-spacing="0.5">COMMUNITY</text>
+</svg>
