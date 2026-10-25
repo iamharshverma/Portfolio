@@ -488,7 +488,7 @@
     </div>
     <!-- Loader -->
 
-                                    <!-- Navbar Start -->
+    <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky" id="navbar">
         <a rel="me" href="https://mastodon.social/@harshverma59" class="sr-only">Mastodon</a>
         <div class="container">
@@ -585,8 +585,8 @@
                             <a class="dropdown-item nav-dropdown-item" href="page-social">
                                 <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
                                 <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Partnership &amp; Social <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Collaborate</span></span>
-                                    <span class="dropdown-item-desc">Brand partnerships &amp; executive social authority</span>
+                                    <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
+                                    <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
                                 </div>
                             </a>
                             <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
@@ -2305,59 +2305,6 @@
             </div>
         </div>
         
-
-        <div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item" 
-             data-platform="LifePage" 
-             data-category="Interviews" 
-             data-main-category="Interviews"
-             data-featured="false"
-             data-search="software architecture, engineering process & career insights with lifepage comprehensive interview detailing software development lifecycles, navigating real-world architectural trade-offs, and career roadmap guidance for aspiring software engineers. lifepage lifepage career talks interviews interviews lifepage career guidance software development mentorship">
-            <div class="blog-card rounded shadow-sm h-100 d-flex flex-column">
-                <div class="position-relative overflow-hidden blog-thumbnail-wrap">
-                    <img src="images/blog/LifePage.png" class="img-fluid w-100 blog-img" alt="Software Architecture, Engineering Process & Career Insights with LifePage" loading="lazy" onerror="this.onerror=null;this.src='images/blog/01.jpg';">
-                    <div class="blog-platform-badge badge-secondary">
-                        <i class="mdi mdi-school-outline mr-1"></i>Career Talk
-                    </div>
-                    
-                </div>
-                <div class="content p-3 p-lg-4 d-flex flex-column flex-grow-1">
-                    <div class="d-flex align-items-center justify-content-between text-muted small mb-2">
-                        <span class="badge badge-topic-pill topic-interview" onclick="filterByCategory('Interviews')" title="Filter by category: Interviews" style="cursor: pointer;">
-                            <i class="mdi mdi-microphone-variant mr-1"></i>Interviews
-                        </span>
-                        <div class="d-flex align-items-center text-muted">
-                            <span class="d-flex align-items-center font-weight-medium mr-2">
-                                <i class="mdi mdi-calendar-blank-outline mr-1"></i>Career Talk
-                            </span>
-                            <span class="d-flex align-items-center">
-                                <i class="mdi mdi-clock-outline mr-1"></i>10 min read
-                            </span>
-                        </div>
-                    </div>
-                    <h5 class="card-title mb-2">
-                        <a href="https://www.lifepage.in/page/harsh" target="_blank" class="title text-dark font-weight-bold" title="Software Architecture, Engineering Process & Career Insights with LifePage">
-                            Software Architecture, Engineering Process & Career Insights with LifePage
-                        </a>
-                    </h5>
-                    <p class="text-muted small mb-3 flex-grow-1 blog-desc">
-                        Comprehensive interview detailing software development lifecycles, navigating real-world architectural trade-offs, and career roadmap guidance for aspiring software engineers.
-                    </p>
-                    <div class="blog-tags mb-3">
-                        <span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('LifePage')">#LifePage</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Career Guidance')">#Career Guidance</span><span class="badge badge-light-custom mr-1 mb-1" onclick="filterByTag('Software Development')">#Software Development</span>
-                        
-                    </div>
-                    <div class="post-meta pt-2 border-top d-flex align-items-center justify-content-between mt-auto">
-                        <a href="https://www.lifepage.in/page/harsh" target="_blank" class="text-muted small font-weight-medium" title="View Author Profile on LifePage">
-                            <i class="mdi mdi-school-outline mr-1 text-primary"></i>LifePage Career Talks
-                        </a>
-                        <a href="https://www.lifepage.in/page/harsh" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill font-weight-bold px-3 py-1">
-                            Read Article <i class="mdi mdi-arrow-top-right ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
             </div>
 
             <!-- No Results Message (Hidden by default) -->
@@ -2399,7 +2346,7 @@
         </div>
     </section>
 
-                                    <!-- Footer Start -->
+    <!-- Footer Start -->
     <footer class="footer bg-light">
         <div class="container">
             <div class="row justify-content-center">
@@ -2432,13 +2379,48 @@
                     <p class="para-desc mx-auto mt-4 text-black" style="max-width: 650px;">
                         Principal Software Engineer in AI @ Palo Alto Networks • Forbes Technology Council Member • IEEE Senior Member • Stanford GSB Scholar
                     </p>
+
+                    <!-- Footer Newsletter Subscription Input & RSS Feed Button -->
+                    <div class="footer-subscribe-wrapper my-4">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-10 col-12">
+                                <div class="footer-subscribe-card">
+                                    <span class="badge badge-pill badge-primary-soft text-primary font-weight-bold px-3 py-1 mb-2">
+                                        <i class="mdi mdi-email-newsletter mr-1"></i> Executive Tech Dispatch
+                                    </span>
+                                    <h5 class="footer-subscribe-title font-weight-bold mb-1">
+                                        Subscribe to Technical Articles &amp; AI Briefings
+                                    </h5>
+                                    <p class="footer-subscribe-desc text-muted small mb-3">
+                                        Join 3,240+ technology executives and engineers. Subscribe via email or follow directly via RSS readers.
+                                    </p>
+                                    <form class="footer-newsletter-form" id="footerNewsletterForm" onsubmit="return handleFooterNewsletterSubmit(event)">
+                                        <div class="footer-form-row d-flex flex-column flex-sm-row align-items-stretch justify-content-center">
+                                            <div class="footer-input-wrap flex-grow-1 position-relative mr-sm-2 mb-2 mb-sm-0">
+                                                <i class="mdi mdi-email-outline footer-input-icon"></i>
+                                                <input type="email" class="form-control footer-email-input" id="footerNewsletterEmail" placeholder="Enter your business email address..." required autocomplete="email" aria-label="Enter email to subscribe to tech articles">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary footer-subscribe-btn px-4 mb-2 mb-sm-0 mr-sm-2 font-weight-medium text-nowrap" id="footerSubscribeBtn">
+                                                <span class="btn-text"><i class="mdi mdi-send mr-1"></i> Subscribe</span>
+                                                <span class="btn-spinner d-none"><i class="mdi mdi-loading mdi-spin mr-1"></i> Subscribing...</span>
+                                            </button>
+                                            <a href="rss.xml" class="btn footer-rss-btn px-3 mb-2 mb-sm-0 font-weight-medium text-nowrap" id="footerRssBtn" title="Follow tech articles via RSS Feed (Feedly, Inoreader, RSS readers)" target="_blank" rel="noopener noreferrer" onclick="handleFooterRssClick(event)">
+                                                <i class="mdi mdi-rss mr-1 rss-icon"></i> <span class="rss-text">RSS Feed</span>
+                                            </a>
+                                        </div>
+                                        <div id="footerNewsletterFeedback" class="footer-newsletter-feedback mt-2 text-center small font-weight-medium" style="display: none;"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <ul class="list-unstyled mb-0 mt-4 social-icon">
-                        <li class="list-inline-item mr-1"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="rounded-circle" title="Google Scholar"><i class="mdi mdi-school"></i></a></li>
-                        <li class="list-inline-item mr-1"><a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="rounded-circle" title="LinkedIn"><i class="mdi mdi-linkedin"></i></a></li>
-                        <li class="list-inline-item mr-1"><a href="https://github.com/iamharshverma" target="_blank" class="rounded-circle" title="GitHub"><i class="mdi mdi-github-face"></i></a></li>
-                        <li class="list-inline-item mr-1"><a href="https://medium.com/@harshverma59" target="_blank" class="rounded-circle" title="Medium"><i class="mdi mdi-medium"></i></a></li>
-                        <li class="list-inline-item mr-1"><a href="https://twitter.com/harshverma59" target="_blank" class="rounded-circle" title="Twitter"><i class="mdi mdi-twitter"></i></a></li>
-                        <li class="list-inline-item mr-1"><a href="https://www.instagram.com/aiwithharsh/" target="_blank" class="rounded-circle" title="Instagram"><i class="mdi mdi-instagram"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ" target="_blank" class="rounded-circle"><i class="mdi mdi-school"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="rounded-circle"><i class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://github.com/iamharshverma" target="_blank" class="rounded-circle"><i class="mdi mdi-github-face"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://twitter.com/harshverma59" target="_blank" class="rounded-circle"><i class="mdi mdi-twitter"></i></a></li>
+                        <li class="list-inline-item mr-1"><a href="https://medium.com/@harshverma59" target="_blank" class="rounded-circle"><i class="mdi mdi-medium"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -2526,7 +2508,7 @@
 
         if (badge) {
             let catLabel = currentCategoryFilter === 'all' ? '' : `${currentCategoryFilter} `;
-            badge.innerText = `Showing ${visibleCount} of 30 ${catLabel}publications`;
+            badge.innerText = `Showing ${visibleCount} of 29 ${catLabel}publications`;
         }
 
         if (summary) {

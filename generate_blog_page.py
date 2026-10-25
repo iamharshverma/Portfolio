@@ -545,24 +545,6 @@ articles_data = [
         "featured": False,
         "description": "A comprehensive practical guide to managing distributed cloud-native relational databases on Google Kubernetes Engine (GKE) using Helm package management.",
         "tags": ["Medium", "Kubernetes", "GKE", "YugabyteDB", "Distributed SQL"]
-    },
-    {
-        "id": "lifepage-interview",
-        "title": "Software Architecture, Engineering Process & Career Insights with LifePage",
-        "platform": "LifePage",
-        "platform_full": "LifePage Career Talks",
-        "platform_badge": "Career Talk",
-        "platform_icon": "mdi-school-outline",
-        "platform_color": "#e11d48",
-        "category": "Interviews",
-        "url": "https://www.lifepage.in/page/harsh",
-        "author_profile": "https://www.lifepage.in/page/harsh",
-        "thumbnail": "images/blog/LifePage.png",
-        "date": "Career Talk",
-        "read_time": "10 min read",
-        "featured": False,
-        "description": "Comprehensive interview detailing software development lifecycles, navigating real-world architectural trade-offs, and career roadmap guidance for aspiring software engineers.",
-        "tags": ["LifePage", "Career Guidance", "Software Development", "Mentorship"]
     }
 ]
 
@@ -605,9 +587,7 @@ def generate_blog_html():
         # Founders Creative (1)
         "fc-co-innovation": "Engineering",
         # Medium (1)
-        "medium-helm-gke": "Engineering",
-        # LifePage (1)
-        "lifepage-interview": "Interviews"
+        "medium-helm-gke": "Engineering"
     }
 
     for art in articles_data:

@@ -1997,6 +1997,35 @@ body.dark-mode .edu-course-pill:hover {
   box-shadow: 0 0 14px rgba(59, 130, 246, 0.4) !important;
 }
 
+/* Education Section - Graduation Watermark Graphic (Dark Mode) */
+html.dark-mode section#resume img[src*="graduation"],
+body.dark-mode section#resume img[src*="graduation"],
+html.dark-mode section#resume > div > div > div > div > img,
+body.dark-mode section#resume > div > div > div > div > img,
+html.dark-mode .education-watermark-img,
+body.dark-mode .education-watermark-img {
+  filter: invert(1) brightness(1.22) drop-shadow(0 10px 28px rgba(59, 130, 246, 0.32)) !important;
+  opacity: 0.82 !important;
+  transition: filter 0.35s ease, opacity 0.35s ease, transform 0.35s ease !important;
+}
+
+html.dark-mode section#resume img[src*="graduation"]:hover,
+body.dark-mode section#resume img[src*="graduation"]:hover,
+html.dark-mode section#resume > div > div > div > div > img:hover,
+body.dark-mode section#resume > div > div > div > div > img:hover,
+html.dark-mode .education-watermark-img:hover,
+body.dark-mode .education-watermark-img:hover {
+  filter: invert(1) brightness(1.35) drop-shadow(0 14px 36px rgba(96, 165, 250, 0.55)) !important;
+  opacity: 0.95 !important;
+  transform: translateY(-3px) scale(1.02);
+}
+
+html.dark-mode section#resume .education-watermark-wrapper,
+body.dark-mode section#resume .education-watermark-wrapper {
+  background: radial-gradient(circle at 45% 45%, rgba(59, 130, 246, 0.12) 0%, rgba(30, 58, 138, 0.05) 55%, transparent 75%);
+  border-radius: 24px;
+}
+
 /* Floating Brand Banner (Dark Mode) */
 html.dark-mode .brand-floating-pill,
 body.dark-mode .brand-floating-pill {

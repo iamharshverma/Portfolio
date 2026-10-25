@@ -4151,6 +4151,34 @@ html:not(.dark-mode) .section-head span {
 }
 
 /* ==========================================================================
+   Education Section - Graduation Watermark Graphic
+   ========================================================================== */
+section#resume img[src*="graduation"],
+.education-watermark-img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  transition: filter 0.35s ease, opacity 0.35s ease, transform 0.35s ease;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.education-watermark-wrapper {
+  position: relative;
+  transition: all 0.35s ease;
+}
+
+@media (max-width: 991.98px) {
+  section#resume .col-lg-4 > div[style*="left"],
+  section#resume .education-watermark-wrapper {
+    left: 0 !important;
+    text-align: center;
+    margin: 0 auto 1.5rem auto;
+    max-width: 260px;
+  }
+}
+
+/* ==========================================================================
    Floating Brand Banner Moving Left to Right (LTR)
    ========================================================================== */
 .brand-floating-banner-container {
