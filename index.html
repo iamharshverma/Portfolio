@@ -1736,30 +1736,15 @@ html.dark-mode .exp-progress-bar {
                                             <span class="edu-course-pill"><i class="mdi mdi-account-group-outline mr-1"></i>Business Administration</span>
                                             <span class="edu-course-pill"><i class="mdi mdi-compass-outline mr-1"></i>Strategic Leadership</span>
                                         </div>
-                                        <!-- Connected Journey Dotted Flow: Stanford to UT Dallas -->
-                                        <div class="edu-journey-flow-connector connector-to-utd" aria-label="Connected Journey to Master's Degree">
-                                            <div class="edu-journey-flow-inner">
-                                                <div class="edu-journey-track-wrap">
-                                                    <svg class="edu-journey-flow-svg" viewBox="0 0 160 36" preserveAspectRatio="none">
-                                                        <path class="edu-flow-path-track" d="M 8 8 C 65 8, 95 28, 150 28" />
-                                                        <path class="edu-flow-path-arrowhead" d="M 142 22 L 152 28 L 142 34" />
-                                                    </svg>
-                                                </div>
-                                                <span class="edu-journey-flow-pill" title="Next in Journey">
-                                                    <span class="edu-flow-dot"></span>
-                                                    <span class="edu-flow-text"><i class="mdi mdi-arrow-down-right mr-1"></i>Connected Journey <i class="mdi mdi-arrow-right-thin mx-1"></i> Master's CS (UT Dallas)</span>
-                                                </span>
-                                            </div>
-                                        </div>
                                     </a>
-                                    <!-- External Dotted Journey Arrow (Outside Card): Stanford -> UT Dallas -->
-                                    <div class="timeline-ext-connector ext-conn-stanford" data-target="utd" role="button" tabindex="0" aria-label="Seamless journey arrow to UT Dallas Master's Degree">
+                                    <!-- External Dotted Journey Arrow (Outside Card): Stanford -> Start of UT Dallas -->
+                                    <div class="timeline-ext-connector ext-conn-stanford" data-target="utd" role="button" tabindex="0" aria-label="Seamless journey arrow to start of UT Dallas Master's Degree">
                                         <div class="ext-connector-inner">
                                             <svg class="ext-connector-svg" viewBox="0 0 160 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <!-- Desktop S-Curve Paths (Stanford -> UT Dallas) -->
-                                                <path class="ext-track-bg d-none d-md-block" d="M 25 4 C 25 48, 135 38, 135 78" />
-                                                <path class="ext-track-dotted d-none d-md-block" d="M 25 4 C 25 48, 135 38, 135 78" />
-                                                <path class="ext-arrowhead d-none d-md-block" d="M 127 70 L 135 80 L 143 70" />
+                                                <!-- Desktop S-Curve: Stanford bottom -> UT Dallas start dock -->
+                                                <path class="ext-track-bg d-none d-md-block" d="M 20 4 C 20 50, 140 36, 140 80" />
+                                                <path class="ext-track-dotted d-none d-md-block" d="M 20 4 C 20 50, 140 36, 140 80" />
+                                                <path class="ext-arrowhead d-none d-md-block" d="M 132 72 L 140 82 L 148 72" />
                                                 <!-- Mobile Vertical Downward Paths -->
                                                 <path class="ext-track-bg d-md-none" d="M 80 4 L 80 64" />
                                                 <path class="ext-track-dotted d-md-none" d="M 80 4 L 80 64" />
@@ -1767,7 +1752,7 @@ html.dark-mode .exp-progress-bar {
                                             </svg>
                                             <div class="ext-connector-badge">
                                                 <span class="ext-badge-pulse"></span>
-                                                <span class="ext-badge-text"><i class="mdi mdi-arrow-down-right mr-1"></i>Master's Degree (UT Dallas)</span>
+                                                <span class="ext-badge-text"><i class="mdi mdi-arrow-down-right mr-1"></i>Connects to Master's Degree (UT Dallas)</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1775,6 +1760,12 @@ html.dark-mode .exp-progress-bar {
 
                                 <div class="timeline mt-4" id="edu-card-utd">
                                     <a class="timeline-content education-interactive-card" role="button" tabindex="0" aria-label="UT Dallas Master Degree Details" data-edu-step="utd">
+                                        <!-- Journey Start Dock: Receiving Arrow from Stanford -->
+                                        <div class="edu-card-start-dock" id="dock-utd" aria-label="Academic Progression received from Stanford Milestone">
+                                            <span class="edu-dock-pill">
+                                                <i class="mdi mdi-ray-end-arrow mr-1 text-primary"></i> Master's AI &amp; Big Data Milestone <span class="badge badge-light ml-1 text-primary font-weight-bold">Step 2</span>
+                                            </span>
+                                        </div>
                                         <div class="d-flex align-items-center flex-wrap mb-2" style="gap: 8px;">
                                             <span class="badge education-badge badge-light"><i class="mdi mdi-calendar-blank-outline mr-1"></i>Aug 2018 - May 2020</span>
                                             <span class="badge edu-journey-step-badge badge-utd"><i class="mdi mdi-school-outline mr-1"></i>Graduate AI Milestone</span>
@@ -1796,30 +1787,15 @@ html.dark-mode .exp-progress-bar {
                                             <span class="edu-course-pill"><i class="mdi mdi-database-cog mr-1"></i>Big Data Streaming</span>
                                             <span class="edu-course-pill"><i class="mdi mdi-network mr-1"></i>Deep Learning</span>
                                         </div>
-                                        <!-- Connected Journey Dotted Flow: UT Dallas to UTU B.Tech -->
-                                        <div class="edu-journey-flow-connector connector-to-utu" aria-label="Connected Journey to Undergraduate Degree">
-                                            <div class="edu-journey-flow-inner">
-                                                <div class="edu-journey-track-wrap">
-                                                    <svg class="edu-journey-flow-svg flow-svg-left" viewBox="0 0 160 36" preserveAspectRatio="none">
-                                                        <path class="edu-flow-path-track" d="M 152 8 C 95 8, 65 28, 10 28" />
-                                                        <path class="edu-flow-path-arrowhead" d="M 18 22 L 8 28 L 18 34" />
-                                                    </svg>
-                                                </div>
-                                                <span class="edu-journey-flow-pill" title="Next in Journey">
-                                                    <span class="edu-flow-dot"></span>
-                                                    <span class="edu-flow-text"><i class="mdi mdi-arrow-down-left mr-1"></i>Connected Journey <i class="mdi mdi-arrow-right-thin mx-1"></i> B.Tech Foundation (UTU)</span>
-                                                </span>
-                                            </div>
-                                        </div>
                                     </a>
-                                    <!-- External Dotted Journey Arrow (Outside Card): UT Dallas -> UTU -->
-                                    <div class="timeline-ext-connector ext-conn-utd" data-target="utu" role="button" tabindex="0" aria-label="Seamless journey arrow to UTU B.Tech Degree">
+                                    <!-- External Dotted Journey Arrow (Outside Card): UT Dallas -> Start of UTU -->
+                                    <div class="timeline-ext-connector ext-conn-utd" data-target="utu" role="button" tabindex="0" aria-label="Seamless journey arrow to start of UTU B.Tech Degree">
                                         <div class="ext-connector-inner">
                                             <svg class="ext-connector-svg ext-svg-reverse" viewBox="0 0 160 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <!-- Desktop S-Curve Paths (UT Dallas -> UTU) -->
-                                                <path class="ext-track-bg d-none d-md-block" d="M 135 4 C 135 48, 25 38, 25 78" />
-                                                <path class="ext-track-dotted d-none d-md-block" d="M 135 4 C 135 48, 25 38, 25 78" />
-                                                <path class="ext-arrowhead d-none d-md-block" d="M 17 70 L 25 80 L 33 70" />
+                                                <!-- Desktop S-Curve: UT Dallas bottom -> UTU start dock -->
+                                                <path class="ext-track-bg d-none d-md-block" d="M 140 4 C 140 50, 20 36, 20 80" />
+                                                <path class="ext-track-dotted d-none d-md-block" d="M 140 4 C 140 50, 20 36, 20 80" />
+                                                <path class="ext-arrowhead d-none d-md-block" d="M 12 72 L 20 82 L 28 72" />
                                                 <!-- Mobile Vertical Downward Paths -->
                                                 <path class="ext-track-bg d-md-none" d="M 80 4 L 80 64" />
                                                 <path class="ext-track-dotted d-md-none" d="M 80 4 L 80 64" />
@@ -1827,7 +1803,7 @@ html.dark-mode .exp-progress-bar {
                                             </svg>
                                             <div class="ext-connector-badge">
                                                 <span class="ext-badge-pulse"></span>
-                                                <span class="ext-badge-text"><i class="mdi mdi-arrow-down-left mr-1"></i>B.Tech Honors Core (UTU)</span>
+                                                <span class="ext-badge-text"><i class="mdi mdi-arrow-down-left mr-1"></i>Connects to B.Tech Foundation (UTU)</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1835,6 +1811,12 @@ html.dark-mode .exp-progress-bar {
 
                                 <div class="timeline mt-4" id="edu-card-utu">
                                     <a class="timeline-content education-interactive-card" role="button" tabindex="0" aria-label="UTU B.Tech Degree Details" data-edu-step="utu">
+                                        <!-- Journey Start Dock: Receiving Arrow from UT Dallas -->
+                                        <div class="edu-card-start-dock" id="dock-utu" aria-label="Academic Progression received from UT Dallas Master's Degree">
+                                            <span class="edu-dock-pill">
+                                                <i class="mdi mdi-ray-end-arrow mr-1 text-primary"></i> Academic Origin &amp; Engineering Foundation <span class="badge badge-light ml-1 text-primary font-weight-bold">Step 3</span>
+                                            </span>
+                                        </div>
                                         <div class="d-flex align-items-center flex-wrap mb-2" style="gap: 8px;">
                                             <span class="badge education-badge badge-light"><i class="mdi mdi-calendar-blank-outline mr-1"></i>July 2011 - April 2015</span>
                                             <span class="badge edu-journey-step-badge badge-utu"><i class="mdi mdi-flag-checkered mr-1"></i>Academic Foundation</span>
@@ -1855,14 +1837,6 @@ html.dark-mode .exp-progress-bar {
                                             <span class="edu-course-pill"><i class="mdi mdi-laptop mr-1"></i>Operating Systems</span>
                                             <span class="edu-course-pill"><i class="mdi mdi-file-tree mr-1"></i>Data Structures</span>
                                             <span class="edu-course-pill"><i class="mdi mdi-database mr-1"></i>Database Systems</span>
-                                        </div>
-                                        <!-- Journey Origin Indicator -->
-                                        <div class="edu-journey-flow-connector connector-origin" aria-label="Education Journey Origin">
-                                            <div class="edu-journey-flow-inner">
-                                                <span class="edu-journey-origin-pill">
-                                                    <i class="mdi mdi-compass-rose mr-1 text-primary"></i> Journey Origin: Academic Honors &amp; Engineering Core (Rank 3rd in University)
-                                                </span>
-                                            </div>
                                         </div>
                                     </a>
                                 </div>

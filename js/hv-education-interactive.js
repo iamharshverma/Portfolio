@@ -77,19 +77,6 @@
       });
 
       // Interactive Flow Connector Click Navigation
-      var connectorPill = card.querySelector('.edu-journey-flow-pill');
-      if (connectorPill) {
-        connectorPill.addEventListener('click', function (e) {
-          e.stopPropagation();
-          e.preventDefault();
-          var targetStep = cardStep === 'stanford' ? 'utd' : (cardStep === 'utd' ? 'utu' : 'stanford');
-          var targetCard = document.querySelector('[data-edu-step="' + targetStep + '"]');
-          if (targetCard) {
-            targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            targetCard.click();
-          }
-        });
-      }
     });
 
     // External Dotted Journey Connectors (Outside Cards)

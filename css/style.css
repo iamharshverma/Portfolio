@@ -4320,6 +4320,38 @@ html:not(.dark-mode) .section-head span {
 }
 
 /* ==========================================================================
+   Card Journey Start Dock (Receiving Target at Start of Card)
+   ========================================================================== */
+.edu-card-start-dock {
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed rgba(37, 99, 235, 0.22);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.edu-dock-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #1d4ed8;
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px dashed rgba(37, 99, 235, 0.35);
+  border-radius: 20px;
+  padding: 4px 12px;
+  letter-spacing: 0.25px;
+  transition: all 0.25s ease;
+}
+
+.education-interactive-card:hover .edu-dock-pill {
+  background: rgba(37, 99, 235, 0.14);
+  border-color: #2563eb;
+  color: #1e40af;
+}
+
+/* ==========================================================================
    External Dotted Journey Connector Arrows (Seamless Inter-Card Bridges)
    ========================================================================== */
 .timeline-ext-connector {
@@ -4336,17 +4368,17 @@ html:not(.dark-mode) .section-head span {
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.5);
 }
 
-/* Stanford -> UT Dallas: emerges from bottom right of Stanford */
+/* Stanford -> UT Dallas: emerges from bottom right of Stanford, links into start dock of UT Dallas */
 .ext-conn-stanford {
-  right: -24px;
-  bottom: -46px;
+  right: 20px;
+  bottom: -52px;
   width: 175px;
 }
 
-/* UT Dallas -> UTU: emerges from bottom left of UT Dallas */
+/* UT Dallas -> UTU: emerges from bottom left of UT Dallas, links into start dock of UTU */
 .ext-conn-utd {
-  left: -24px;
-  bottom: -46px;
+  left: 20px;
+  bottom: -52px;
   width: 175px;
 }
 
