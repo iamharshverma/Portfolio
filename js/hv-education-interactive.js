@@ -52,6 +52,44 @@
           card.click();
         }
       });
+
+      // Connected Journey Hover Chain Dynamics
+      var cardStep = card.getAttribute('data-edu-step');
+      card.addEventListener('mouseenter', function () {
+        if (cardStep === 'stanford') {
+          var next = document.querySelector('[data-edu-step="utd"]');
+          if (next) next.classList.add('journey-chain-highlight');
+        } else if (cardStep === 'utd') {
+          var prev = document.querySelector('[data-edu-step="stanford"]');
+          var next = document.querySelector('[data-edu-step="utu"]');
+          if (prev) prev.classList.add('journey-chain-highlight');
+          if (next) next.classList.add('journey-chain-highlight');
+        } else if (cardStep === 'utu') {
+          var prev = document.querySelector('[data-edu-step="utd"]');
+          if (prev) prev.classList.add('journey-chain-highlight');
+        }
+      });
+
+      card.addEventListener('mouseleave', function () {
+        eduCards.forEach(function (c) {
+          c.classList.remove('journey-chain-highlight');
+        });
+      });
+
+      // Interactive Flow Connector Click Navigation
+      var connectorPill = card.querySelector('.edu-journey-flow-pill');
+      if (connectorPill) {
+        connectorPill.addEventListener('click', function (e) {
+          e.stopPropagation();
+          e.preventDefault();
+          var targetStep = cardStep === 'stanford' ? 'utd' : (cardStep === 'utd' ? 'utu' : 'stanford');
+          var targetCard = document.querySelector('[data-edu-step="' + targetStep + '"]');
+          if (targetCard) {
+            targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            targetCard.click();
+          }
+        });
+      }
     });
 
     function triggerCardRipple(card, event) {

@@ -1997,6 +1997,75 @@ body.dark-mode .edu-course-pill:hover {
   box-shadow: 0 0 14px rgba(59, 130, 246, 0.4) !important;
 }
 
+/* Education Connected Journey Dotted Flow (Dark Mode) */
+html.dark-mode .edu-journey-flow-connector,
+body.dark-mode .edu-journey-flow-connector {
+  border-top-color: rgba(59, 130, 246, 0.28) !important;
+}
+
+html.dark-mode .edu-journey-flow-svg,
+body.dark-mode .edu-journey-flow-svg {
+  color: #38bdf8 !important;
+  filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.45)) !important;
+}
+
+html.dark-mode .edu-journey-flow-pill,
+body.dark-mode .edu-journey-flow-pill {
+  background: rgba(15, 23, 42, 0.85) !important;
+  color: #93c5fd !important;
+  border-color: rgba(59, 130, 246, 0.45) !important;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.15) !important;
+}
+
+html.dark-mode .edu-flow-dot,
+body.dark-mode .edu-flow-dot {
+  background: #38bdf8 !important;
+  box-shadow: 0 0 10px #38bdf8 !important;
+}
+
+html.dark-mode .education-interactive-card:hover .edu-journey-flow-pill,
+body.dark-mode .education-interactive-card:hover .edu-journey-flow-pill {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 0 16px rgba(59, 130, 246, 0.55) !important;
+}
+
+html.dark-mode .education-interactive-card.journey-chain-highlight,
+body.dark-mode .education-interactive-card.journey-chain-highlight {
+  border-color: #38bdf8 !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7), 0 0 24px rgba(56, 189, 248, 0.35) !important;
+}
+
+html.dark-mode .badge-stanford,
+body.dark-mode .badge-stanford {
+  background: rgba(225, 29, 72, 0.18) !important;
+  color: #fca5a5 !important;
+  border-color: rgba(244, 63, 94, 0.35) !important;
+}
+
+html.dark-mode .badge-utd,
+body.dark-mode .badge-utd {
+  background: rgba(234, 88, 12, 0.18) !important;
+  color: #fdba74 !important;
+  border-color: rgba(249, 115, 22, 0.35) !important;
+}
+
+html.dark-mode .badge-utu,
+body.dark-mode .badge-utu {
+  background: rgba(37, 99, 235, 0.18) !important;
+  color: #93c5fd !important;
+  border-color: rgba(96, 165, 250, 0.35) !important;
+}
+
+html.dark-mode .edu-journey-origin-pill,
+body.dark-mode .edu-journey-origin-pill {
+  border-top-color: rgba(59, 130, 246, 0.28) !important;
+  color: #93c5fd !important;
+  background: rgba(15, 23, 42, 0.6) !important;
+  border-color: rgba(59, 130, 246, 0.35) !important;
+}
+
 /* Education Section - Graduation Watermark Graphic (Dark Mode) */
 html.dark-mode section#resume img[src*="graduation"],
 body.dark-mode section#resume img[src*="graduation"],

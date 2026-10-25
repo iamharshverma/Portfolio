@@ -1714,10 +1714,11 @@ html.dark-mode .exp-progress-bar {
                         <div class="row">
                             <div class="main-timeline">
 
-                            	<div class="timeline mt-4">
-                                    <a class="timeline-content education-interactive-card" role="button" tabindex="0" aria-label="Stanford Graduate Business Program Details">
+                            	<div class="timeline mt-4" id="edu-card-stanford">
+                                    <a class="timeline-content education-interactive-card" role="button" tabindex="0" aria-label="Stanford Graduate Business Program Details" data-edu-step="stanford">
                                         <div class="d-flex align-items-center flex-wrap mb-2" style="gap: 8px;">
                                             <span class="badge education-badge badge-light"><i class="mdi mdi-calendar-blank-outline mr-1"></i>Aug 2021 - 2022</span>
+                                            <span class="badge edu-journey-step-badge badge-stanford"><i class="mdi mdi-star-circle-outline mr-1"></i>Executive Milestone</span>
                                             <span class="edu-card-hint"><i class="mdi mdi-cursor-default-click-outline mr-1"></i>Click to inspect</span>
                                         </div>
                                         <div class="timeline-icon"><img loading="lazy" decoding="async" src="images/logos/stanford_logo.jpeg" alt="Stanford University GSB" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block;"></div>
@@ -1735,13 +1736,29 @@ html.dark-mode .exp-progress-bar {
                                             <span class="edu-course-pill"><i class="mdi mdi-account-group-outline mr-1"></i>Business Administration</span>
                                             <span class="edu-course-pill"><i class="mdi mdi-compass-outline mr-1"></i>Strategic Leadership</span>
                                         </div>
+                                        <!-- Connected Journey Dotted Flow: Stanford to UT Dallas -->
+                                        <div class="edu-journey-flow-connector connector-to-utd" aria-label="Connected Journey to Master's Degree">
+                                            <div class="edu-journey-flow-inner">
+                                                <div class="edu-journey-track-wrap">
+                                                    <svg class="edu-journey-flow-svg" viewBox="0 0 160 36" preserveAspectRatio="none">
+                                                        <path class="edu-flow-path-track" d="M 8 8 C 65 8, 95 28, 150 28" />
+                                                        <path class="edu-flow-path-arrowhead" d="M 142 22 L 152 28 L 142 34" />
+                                                    </svg>
+                                                </div>
+                                                <span class="edu-journey-flow-pill" title="Next in Journey">
+                                                    <span class="edu-flow-dot"></span>
+                                                    <span class="edu-flow-text"><i class="mdi mdi-arrow-down-right mr-1"></i>Connected Journey <i class="mdi mdi-arrow-right-thin mx-1"></i> Master's CS (UT Dallas)</span>
+                                                </span>
+                                            </div>
+                                        </div>
                                     </a>
                                 </div>
 
-                                <div class="timeline mt-4">
-                                    <a class="timeline-content education-interactive-card" role="button" tabindex="0" aria-label="UT Dallas Master Degree Details">
+                                <div class="timeline mt-4" id="edu-card-utd">
+                                    <a class="timeline-content education-interactive-card" role="button" tabindex="0" aria-label="UT Dallas Master Degree Details" data-edu-step="utd">
                                         <div class="d-flex align-items-center flex-wrap mb-2" style="gap: 8px;">
                                             <span class="badge education-badge badge-light"><i class="mdi mdi-calendar-blank-outline mr-1"></i>Aug 2018 - May 2020</span>
+                                            <span class="badge edu-journey-step-badge badge-utd"><i class="mdi mdi-school-outline mr-1"></i>Graduate AI Milestone</span>
                                             <span class="edu-card-hint"><i class="mdi mdi-cursor-default-click-outline mr-1"></i>Click to inspect</span>
                                         </div>
                                         <div class="timeline-icon"><img loading="lazy" decoding="async" src="images/logos/utd_education_logo.png" alt="UT Dallas" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block;"></div>
@@ -1760,13 +1777,29 @@ html.dark-mode .exp-progress-bar {
                                             <span class="edu-course-pill"><i class="mdi mdi-database-cog mr-1"></i>Big Data Streaming</span>
                                             <span class="edu-course-pill"><i class="mdi mdi-network mr-1"></i>Deep Learning</span>
                                         </div>
+                                        <!-- Connected Journey Dotted Flow: UT Dallas to UTU B.Tech -->
+                                        <div class="edu-journey-flow-connector connector-to-utu" aria-label="Connected Journey to Undergraduate Degree">
+                                            <div class="edu-journey-flow-inner">
+                                                <div class="edu-journey-track-wrap">
+                                                    <svg class="edu-journey-flow-svg flow-svg-left" viewBox="0 0 160 36" preserveAspectRatio="none">
+                                                        <path class="edu-flow-path-track" d="M 152 8 C 95 8, 65 28, 10 28" />
+                                                        <path class="edu-flow-path-arrowhead" d="M 18 22 L 8 28 L 18 34" />
+                                                    </svg>
+                                                </div>
+                                                <span class="edu-journey-flow-pill" title="Next in Journey">
+                                                    <span class="edu-flow-dot"></span>
+                                                    <span class="edu-flow-text"><i class="mdi mdi-arrow-down-left mr-1"></i>Connected Journey <i class="mdi mdi-arrow-right-thin mx-1"></i> B.Tech Foundation (UTU)</span>
+                                                </span>
+                                            </div>
+                                        </div>
                                     </a>
                                 </div>
 
-                                <div class="timeline mt-4">
-                                    <a class="timeline-content education-interactive-card" role="button" tabindex="0" aria-label="UTU B.Tech Degree Details">
+                                <div class="timeline mt-4" id="edu-card-utu">
+                                    <a class="timeline-content education-interactive-card" role="button" tabindex="0" aria-label="UTU B.Tech Degree Details" data-edu-step="utu">
                                         <div class="d-flex align-items-center flex-wrap mb-2" style="gap: 8px;">
                                             <span class="badge education-badge badge-light"><i class="mdi mdi-calendar-blank-outline mr-1"></i>July 2011 - April 2015</span>
+                                            <span class="badge edu-journey-step-badge badge-utu"><i class="mdi mdi-flag-checkered mr-1"></i>Academic Foundation</span>
                                             <span class="edu-card-hint"><i class="mdi mdi-cursor-default-click-outline mr-1"></i>Click to inspect</span>
                                         </div>
                                         <div class="timeline-icon"><img loading="lazy" decoding="async" src="images/logos/utu.png" alt="Uttarakhand Technical University" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block;"></div>
@@ -1784,6 +1817,14 @@ html.dark-mode .exp-progress-bar {
                                             <span class="edu-course-pill"><i class="mdi mdi-laptop mr-1"></i>Operating Systems</span>
                                             <span class="edu-course-pill"><i class="mdi mdi-file-tree mr-1"></i>Data Structures</span>
                                             <span class="edu-course-pill"><i class="mdi mdi-database mr-1"></i>Database Systems</span>
+                                        </div>
+                                        <!-- Journey Origin Indicator -->
+                                        <div class="edu-journey-flow-connector connector-origin" aria-label="Education Journey Origin">
+                                            <div class="edu-journey-flow-inner">
+                                                <span class="edu-journey-origin-pill">
+                                                    <i class="mdi mdi-compass-rose mr-1 text-primary"></i> Journey Origin: Academic Honors &amp; Engineering Core (Rank 3rd in University)
+                                                </span>
+                                            </div>
                                         </div>
                                     </a>
                                 </div>
