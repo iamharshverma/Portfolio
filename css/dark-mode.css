@@ -2066,6 +2066,52 @@ body.dark-mode .edu-journey-origin-pill {
   border-color: rgba(59, 130, 246, 0.35) !important;
 }
 
+/* External Education Dotted Journey Arrows (Dark Mode) */
+html.dark-mode .ext-track-bg,
+body.dark-mode .ext-track-bg {
+  stroke: rgba(56, 189, 248, 0.18) !important;
+}
+
+html.dark-mode .ext-track-dotted,
+body.dark-mode .ext-track-dotted {
+  stroke: #38bdf8 !important;
+  filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.65)) !important;
+}
+
+html.dark-mode .ext-arrowhead,
+body.dark-mode .ext-arrowhead {
+  stroke: #38bdf8 !important;
+  filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.75)) !important;
+}
+
+html.dark-mode .ext-connector-badge,
+body.dark-mode .ext-connector-badge {
+  background: rgba(15, 23, 42, 0.94) !important;
+  border-color: rgba(56, 189, 248, 0.5) !important;
+  color: #93c5fd !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7), 0 0 16px rgba(56, 189, 248, 0.22) !important;
+}
+
+html.dark-mode .ext-badge-pulse,
+body.dark-mode .ext-badge-pulse {
+  background: #38bdf8 !important;
+  box-shadow: 0 0 10px #38bdf8 !important;
+}
+
+html.dark-mode .timeline-ext-connector:hover .ext-connector-badge,
+body.dark-mode .timeline-ext-connector:hover .ext-connector-badge {
+  background: #0284c7 !important;
+  color: #ffffff !important;
+  border-color: #38bdf8 !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.8), 0 0 24px rgba(56, 189, 248, 0.6) !important;
+}
+
+html.dark-mode .timeline-ext-connector:hover .ext-badge-pulse,
+body.dark-mode .timeline-ext-connector:hover .ext-badge-pulse {
+  background: #ffffff !important;
+  box-shadow: 0 0 12px #ffffff !important;
+}
+
 /* Education Section - Graduation Watermark Graphic (Dark Mode) */
 html.dark-mode section#resume img[src*="graduation"],
 body.dark-mode section#resume img[src*="graduation"],
