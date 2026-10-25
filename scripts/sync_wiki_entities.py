@@ -824,6 +824,11 @@ def build_schema_org_graph(profiles, media, awards, blogs, books, papers, associ
         "https://www.wikidata.org/wiki/Q139827028",
         "http://www.wikidata.org/entity/Q139827028",
         "https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)",
+        "https://wikialpha.co/wiki/Harsh_Verma_(Software_Engineer)",
+        "https://en.wikiflux.org/wiki/index.php/Harsh_Verma_(Software_Engineer)",
+        "https://localwiki.org/main/Harsh_Verma",
+        "https://localwiki.org/santaclara/Harsh_Verma",
+        "https://localwiki.org/dallas/Harsh_Verma",
         "https://www.harshverma.me/",
         "https://harshverma.me/",
         "https://harshverma.bio/",
@@ -924,6 +929,36 @@ def build_schema_org_graph(profiles, media, awards, blogs, books, papers, associ
             "@id": "https://www.wikidata.org/wiki/Q139827028",
             "name": "Harsh Verma - Wikidata Knowledge Graph Entity (Q139827028)",
             "url": "https://www.wikidata.org/wiki/Q139827028",
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://wikialpha.co/wiki/Harsh_Verma_(Software_Engineer)",
+            "name": "Harsh Verma (Software Engineer) - WikiAlpha Biography",
+            "url": "https://wikialpha.co/wiki/Harsh_Verma_(Software_Engineer)",
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://en.wikiflux.org/wiki/index.php/Harsh_Verma_(Software_Engineer)",
+            "name": "Harsh Verma (Software Engineer) - WikiFlux Biography",
+            "url": "https://en.wikiflux.org/wiki/index.php/Harsh_Verma_(Software_Engineer)",
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://localwiki.org/main/Harsh_Verma",
+            "name": "Harsh Verma - LocalWiki Global Hub Biography",
+            "url": "https://localwiki.org/main/Harsh_Verma",
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://localwiki.org/santaclara/Harsh_Verma",
+            "name": "Harsh Verma - LocalWiki Santa Clara Silicon Valley Guide",
+            "url": "https://localwiki.org/santaclara/Harsh_Verma",
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://localwiki.org/dallas/Harsh_Verma",
+            "name": "Harsh Verma - LocalWiki Dallas Guide",
+            "url": "https://localwiki.org/dallas/Harsh_Verma",
         },
     ]
     for m in media:
@@ -1090,6 +1125,34 @@ def build_schema_org_graph(profiles, media, awards, blogs, books, papers, associ
                 "name": "EverybodyWiki Article ID",
                 "value": EVERYBODYWIKI_TITLE,
                 "url": f"https://en.everybodywiki.com/{EVERYBODYWIKI_TITLE}",
+            },
+            {
+                "@type": "PropertyValue",
+                "propertyID": "WikiAlpha",
+                "name": "WikiAlpha Article ID",
+                "value": "Harsh_Verma_(Software_Engineer)",
+                "url": "https://wikialpha.co/wiki/Harsh_Verma_(Software_Engineer)",
+            },
+            {
+                "@type": "PropertyValue",
+                "propertyID": "WikiFlux",
+                "name": "WikiFlux Article ID",
+                "value": "Harsh_Verma_(Software_Engineer)",
+                "url": "https://en.wikiflux.org/wiki/index.php/Harsh_Verma_(Software_Engineer)",
+            },
+            {
+                "@type": "PropertyValue",
+                "propertyID": "LocalWiki",
+                "name": "LocalWiki Main Profile",
+                "value": "main/Harsh_Verma",
+                "url": "https://localwiki.org/main/Harsh_Verma",
+            },
+            {
+                "@type": "PropertyValue",
+                "propertyID": "LocalWiki",
+                "name": "LocalWiki Santa Clara Profile",
+                "value": "santaclara/Harsh_Verma",
+                "url": "https://localwiki.org/santaclara/Harsh_Verma",
             },
             {
                 "@type": "PropertyValue",
@@ -1735,6 +1798,11 @@ def main():
         "wikidata_url": f"https://www.wikidata.org/wiki/{WIKIDATA_QID}",
         "everybodywiki_title": EVERYBODYWIKI_TITLE,
         "everybodywiki_url": f"https://en.everybodywiki.com/{EVERYBODYWIKI_TITLE}",
+        "wikialpha_url": "https://wikialpha.co/wiki/Harsh_Verma_(Software_Engineer)",
+        "wikiflux_url": "https://en.wikiflux.org/wiki/index.php/Harsh_Verma_(Software_Engineer)",
+        "localwiki_main_url": "https://localwiki.org/main/Harsh_Verma",
+        "localwiki_santaclara_url": "https://localwiki.org/santaclara/Harsh_Verma",
+        "localwiki_dallas_url": "https://localwiki.org/dallas/Harsh_Verma",
         "counts": {
             "profiles": len(profiles),
             "media": len(media),
@@ -1767,6 +1835,15 @@ def main():
     with open(kg_path, "w", encoding="utf-8") as f:
         json.dump(master_payload, f, indent=2)
     print(f"Saved master Knowledge Graph dataset to {kg_path} ({master_payload['counts']['total_linked_nodes']} total linked nodes).")
+
+    # Generate specialized multi-wiki syndication packages
+    try:
+        import subprocess
+        gen_script = os.path.join(ROOT_DIR, "scripts", "generate_multi_wiki_articles.py")
+        if os.path.exists(gen_script):
+            subprocess.run(["python3", gen_script], check=True)
+    except Exception as e:
+        print(f"[Warn] Could not run generate_multi_wiki_articles: {e}")
 
 
 if __name__ == "__main__":

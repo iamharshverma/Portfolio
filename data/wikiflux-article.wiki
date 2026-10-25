@@ -1,0 +1,303 @@
+{{#seo:
+|title= Harsh Verma (Software Engineer) - WikiFlux Biography
+|title_mode= append
+|keywords= Harsh Verma, Harsh Verma Software Engineer, Harsh Verma Palo Alto Networks, Harsh Verma AI Architect, Harsh Verma author, Harsh Verma wikiflux, Harsh Verma biography
+|description= Harsh Verma is an internationally recognized Principal Software Engineer in AI at Palo Alto Networks, enterprise AI architect, author, keynote speaker, and computer science researcher.
+|image= Harsh Verma Software Engineer.jpg
+|image_alt= Harsh Verma Software Engineer
+}}
+{{Infow
+|title= [[Harsh Verma]][[file:Verified.png]]
+|image= [[Harsh Verma Software Engineer.jpg]]
+|caption= Harsh Verma, Principal AI Software Engineer, Author & Keynote Speaker
+|nationality= Indian
+|profession= * Principal Software Engineer (AI)
+* Enterprise AI Architect
+* Author & Keynote Speaker
+* Computer Science Researcher
+|organization= [[Palo Alto Networks]]
+|almamater= * [[Stanford University]]
+* [[University of Texas at Dallas]] (M.S. CS)
+* [[Uttarakhand Technical University]] (B.Tech CSE)
+|knownfor= * Enterprise Agentic AI Architectures
+* Autonomous Cyber Defense
+* Multi-Agent Systems
+* Explainable AI (XAI)
+|notableworks= * ''Beyond AI Engineering: From Creator to Curator'' (2025)
+* ''AI vs. AI: Engineering the Cybersecurity Counteroffensive'' (2026)
+|awards= * Forttuna Global 100 Power List (2026)
+* Nobel Technology Awards Gold Winner (2026)
+* TITAN Innovation Award (2026)
+* NVTC Cyber50 Honoree (2026)
+* Global Recognition Award (2026)
+* Marquis Who's Who in America
+|website= [https://www.harshverma.me/ https://www.harshverma.me/]
+|twitter= harshverma59
+|facebook= harshverma59
+|instagram= aiwithharsh
+|linkedin= /in/harshverma59/
+}}
+
+
+'''Harsh Verma''' is an internationally recognized Principal Software Engineer in Artificial Intelligence at [[Palo Alto Networks]], enterprise AI architect, author, keynote speaker, and computer science researcher.<ref>{{cite web |title=The Org: Harsh Verma - Principal Software Engineer in AI at Palo Alto Networks |url=https://theorg.com/org/palo-alto-networks/person/harsh-verma |website=The Org}}</ref><ref>{{cite web |title=Wikidata Entity Q139827028: Harsh Verma |url=https://www.wikidata.org/wiki/Q139827028 |website=Wikidata}}</ref> He is an official member and columnist for the [[Forbes Technology Council]],<ref>{{cite web |title=Harsh Verma - Forbes Technology Council Profile |url=https://www.forbes.com/councils/forbestechcouncil/people/harshverma/ |website=Forbes}}</ref> a Senior Member of the [[Institute of Electrical and Electronics Engineers]] (SMIEEE), an elected Fellow of the [[British Computer Society]] (FBCS), an elected Fellow of the [[Royal Society of Arts]] (FRSA), and a Full Member of [[Sigma Xi]]: The Scientific Research Honor Society.<ref>{{cite web |title=Harsh Verma Invited Associations & Fellowships |url=https://www.harshverma.me/page-memberships |website=Harsh Verma Official Portfolio}}</ref>
+
+Verma has authored two books on enterprise autonomous systems and cyber defense (''Beyond AI Engineering: From Creator to Curator'' and ''AI vs. AI: Engineering the Cybersecurity Counteroffensive''), served as technical reviewer for six AI and engineering books, published {{nowrap|27+}} peer-reviewed research papers across IEEE, Springer Nature, Oxford Academic, and international journals with over 150 academic citations,<ref>{{cite web |title=Harsh Verma Google Scholar Citations |url=https://scholar.google.com/citations?user=zSt9oRMAAAAJ |website=Google Scholar}}</ref> and received {{nowrap|27}} international technology and leadership honors.
+
+== Education ==
+* '''[[Stanford University]]''' – Graduate Certificate in Artificial Intelligence & Executive Leadership (Stanford Center for Professional Development).
+* '''[[University of Texas at Dallas]]''' (Erik Jonsson School of Engineering and Computer Science) – Master of Science (M.S.) in Computer Science (Intelligent Systems & Distributed Computing).
+* '''[[Uttarakhand Technical University]]''' – Bachelor of Technology (B.Tech) in Computer Science and Engineering.
+
+== Career and Executive Leadership ==
+Verma serves as Principal Software Engineer (AI) at [[Palo Alto Networks]] in Santa Clara, California, where he architects autonomous multi-agent systems, deterministic AI security guardrails, and high-throughput enterprise cloud platforms.<ref>{{cite web |title=The Engineer Rewriting the Rules by Thinking AI Beyond the Code: Inside the World of Harsh Verma |url=https://nyweeklyjournal.com/blog/the-engineer-rewriting-the-rules-by-thinking-%E2%80%9Cai-beyond-the-code%E2%80%9D-inside-the-world-of-harsh-verma |website=New York Weekly Journal}}</ref> Earlier in his career, he engineered hyper-scale distributed backend platforms, real-time analytics pipelines, and deep learning systems at Hike Messenger, Reliance Jio (UT-Design), Worlds Enterprises, and Hypergiant Sensory Science.
+
+In addition to his engineering leadership, Verma serves as an official contributor on the [[Forbes Technology Council]], Global Advisor at [[UC Berkeley SkyDeck]], industry awards judge for the Business Intelligence Group (BIG), Globee Awards, and Stevie Awards, and startup mentor for [[MassChallenge]] and ADPList.
+
+== Authored Books & Technical Book Reviews ==
+=== Authored Books ===
+* '''''Beyond AI Engineering: From Creator to Curator''''' – ''Mastering the Human and Strategic Dimensions of Curating AI Systems'' (2025). A definitive treatise on transitioning from syntax generation to high-level system curation, covering multi-agent orchestration, deterministic guardrails, memory architectures, and the Super Engineer Trifecta. [https://www.harshverma.me/page-books Official Book Hub]
+* '''''AI vs. AI: Engineering the Cybersecurity Counteroffensive''''' – ''Architecting Autonomous AI Defenses Against Intelligent Adversaries'' (2026). Examines adversarial machine intelligence and how enterprise security architects design zero-trust autonomous counteroffensive systems, behavioral invariants, and self-healing defense pipelines. [https://www.harshverma.me/page-books Official Book Hub]
+
+=== Technical Books Reviewed ===
+* '''''AI Ethics in Action (Technical Book Review)''''' – Expert technical review evaluating operational AI ethics, bias mitigation, and governance frameworks in production machine learning.
+* '''''Hands-On AI Dev with Python (Technical Book Review)''''' – Technical review validating Python-based deep learning workflows, model serving, and scalable AI engineering patterns.
+* '''''Leadership at the Helm of AI (Technical Book Review)''''' – Executive review assessing organizational AI readiness, C-suite governance, and enterprise AI ROI frameworks.
+* '''''Python for Algorithmic Trading Cookbook (Technical Book Review)''''' – Technical validation of real-time market data pipelines, quantitative backtesting, and low-latency execution architectures in Python.
+* '''''Machine Learning & Generative AI for Marketing (Technical Book Review)''''' – Technical evaluation of customer intelligence models, privacy-preserving personalization, and generative AI pipelines.
+* '''''The TensorFlow Workshop (Technical Book Review)''''' – Technical review of deep neural network architectures, TensorFlow 2.x pipelines, and distributed model training.
+
+== Selected Forbes Columns & Thought Leadership (29 Articles) ==
+* [https://www.forbes.com/councils/forbestechcouncil/2026/10/02/the-real-ai-moat-why-models-are-cheap-but-data-orchestration-is-priceless/ "The Real AI Moat: Why Models Are Cheap But Data Orchestration Is Priceless"] – ''Forbes Technology Council'' (October 2, 2026)
+* [https://www.forbes.com/councils/forbestechcouncil/2026/04/20/beyond-the-code-the-evolution-of-the-next-generation-engineer/ "Beyond The Code: The Evolution Of The Next-Generation Engineer"] – ''Forbes Technology Council'' (April 20, 2026)
+* [https://www.forbes.com/councils/forbestechcouncil/2026/05/18/the-intelligence-per-dollar-metric-how-influential-leaders-measure-ai-success/ "The Intelligence Per Dollar Metric: How Influential Leaders Measure AI Success"] – ''Forbes Technology Council'' (May 18, 2026)
+* [https://www.forbes.com/councils/forbestechcouncil/2026/06/11/personalized-ai-systems-the-hidden-trade-off-behind-smarter-ai-personalization-vs-privacy/ "Personalized AI Systems: The Hidden Trade-Off Behind Smarter AI (Personalization vs. Privacy)"] – ''Forbes Technology Council'' (June 11, 2026)
+* [https://www.forbes.com/councils/forbestechcouncil/2026/07/23/your-first-ai-agent-is-an-experiment-not-a-product/ "Your First AI Agent Is An Experiment, Not A Product"] – ''Forbes Technology Council'' (July 23, 2026)
+* [https://www.forbes.com/councils/forbestechcouncil/2026/08/25/engineering-the-predictable-why-pure-determinism-is-becoming-the-new-premium-in-ai-architecture/ "Engineering The Predictable: Why Pure Determinism Is Becoming The New Premium In AI Architecture"] – ''Forbes Technology Council'' (August 25, 2026)
+* [https://hackernoon.com/the-production-gap-your-ai-model-isnt-as-reliable-as-you-think-interview "The Production Gap: Your AI Model Isn’t as Reliable as You Think [Feature Interview]"] – ''HackerNoon Feature Interview'' (2026)
+* [https://hackernoon.com/identity-is-the-new-perimeter-managing-ai-agents-as-digital-actors "Identity Is the New Perimeter: Managing AI Agents as Digital Actors"] – ''HackerNoon (Spotify Tech Brief Podcast)'' (2026)
+* [https://hackernoon.com/the-clean-attack-problem-when-nothing-looks-wrong-but-everything-is-compromised "The Clean Attack Problem: When Nothing Looks Wrong, but Everything Is Compromised"] – ''HackerNoon & RSAC'' (2026)
+* [https://hackernoon.com/the-trade-off-between-speed-and-reliability-in-modern-ai-systems "The Trade-Off Between Speed and Reliability in Modern AI Systems"] – ''HackerNoon'' (2026)
+* [https://hackernoon.com/ai-governance-is-failing-because-were-regulating-models-instead-of-behavior "AI Governance Is Failing Because We’re Regulating Models Instead of Behavior"] – ''HackerNoon'' (2026)
+* [https://hackernoon.com/the-observability-crisis-in-ai-systems-why-your-logs-are-lying-to-you "The Observability Crisis in AI Systems: Why Your Logs Are Lying to You"] – ''HackerNoon'' (2026)
+* [https://hackernoon.com/reputation-systems-for-ai-agents-the-missing-layer-of-trust "Reputation Systems for AI Agents: The Missing Layer of Trust"] – ''HackerNoon'' (2026)
+* [https://hackernoon.com/distributed-intelligence-why-multi-agent-systems-are-the-successor-to-microservices-for-enterprise "Distributed Intelligence: Why Multi-Agent Systems Are the Successor to Microservices"] – ''HackerNoon'' (2026)
+* [https://hackernoon.com/from-identity-to-intent-autonomous-ai-agents-are-the-new-insider-threat "From Identity to Intent: Autonomous AI Agents Are the New Insider Threat"] – ''HackerNoon'' (2026)
+* [https://hackernoon.com/trust-scores-for-ai-should-agents-earn-permissions-over-time-trust-isnt-granted-its-earned "Trust Scores for AI: Should Agents Earn Permissions Over Time? Trust Isn’t Granted, It’s Earned"] – ''HackerNoon'' (2026)
+* [https://hackernoon.com/the-rise-of-the-ai-orchestrator-the-latest-most-important-enterprise-role "The Rise of the AI Orchestrator: The Latest, Most Important Enterprise Role"] – ''HackerNoon'' (2026)
+* [https://hackernoon.com/what-most-ai-startup-founders-get-wrong-about-ai-agents-the-autonomy-trap "What Most AI Startup Founders Get Wrong About AI Agents: The Autonomy Trap"] – ''HackerNoon'' (2026)
+* [https://www.rsaconference.com/library/blog/the-clean-attack-problem "The Clean Attack Problem: When Nothing Looks Wrong but Everything is Compromised"] – ''RSA Conference Expert Library'' (August 2026)
+* [https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems "The Death of Authentication: Why Identity Isn't Enough for AI Systems"] – ''RSA Conference Expert Library'' (September 2026)
+* [https://www.rsaconference.com/Library/blog/agents-dont-break-rules-they-redefine-them "Agents Don't Break Rules, They Redefine Them"] – ''RSA Conference Expert Library'' (September 24, 2026)
+* [https://aijourn.com/harsh-verma-publishes-nuanced-framework-on-rise-of-agentic-ai-and-enterprise-system-era-arguing-ai-system-architecture-has-replaced-model-building-as-the-core-discipline/ "Harsh Verma Publishes Nuanced Framework on Rise of Agentic AI and Enterprise System Era"] – ''The AI Journal'' (May 2026)
+* [https://aijourn.com/how-ai-agents-will-collaborate-with-human-experts-in-high-stakes-environments/ "How AI Agents Will Collaborate with Human Experts in High-Stakes Environments"] – ''The AI Journal'' (May 2026)
+* [https://aijourn.com/harsh-verma-on-engineering-beyond-the-code-the-future-of-ai-and-cybersecurity/ "Harsh Verma on Engineering Beyond the Code: The Future of AI and Cybersecurity"] – ''The AI Journal'' (March 2026)
+* [https://aijourn.com/principal-ai-engineer-harsh-verma-nominated-for-tech-excellence-award-at-influencer-magazine-awards-2026-as-his-work-on-human-ai-collaboration-gains-enterprise-attention/ "Principal AI Engineer Harsh Verma Nominated for Tech Excellence Award at Influencer Magazine Awards 2026"] – ''The AI Journal'' (June 2026)
+* [https://aijourn.com/your-first-ai-agent-is-your-new-intern-heres-how-to-manage-it/ "Your First AI Agent Is Your New Intern: Here’s How to Manage It"] – ''The AI Journal'' (June 2026)
+* [https://aijourn.com/designing-the-intelligence-layer-why-future-tech-leaders-must-be-ai-architects-first/ "Designing the Intelligence Layer: Why Future Tech Leaders Must Be AI Architects First"] – ''The AI Journal'' (August 2026)
+* [https://www.founderscreative.org/unlocking-corporate-startup-co-innovation-with-ai/ "Unlocking Corporate–Startup Co-Innovation with AI"] – ''Founders Creative & Substack'' (2026)
+* [https://medium.com/@harshverma59/helm-with-yugabytedb-gke-google-kubernetes-engine-9099b62548cd "Helm with YugabyteDB: Google Kubernetes Engine (GKE) Distributed Deployment"] – ''Medium Engineering'' (2021)
+
+== Peer-Reviewed Research Publications (27+ Papers) ==
+* [https://ieeexplore.ieee.org/document/9014355 "Secure Real Time Heterogeneous Data Management Tool"] – ''IEEE International Conference on Cognitive Machine Learning (CogML)'' (2019) (DOI: <code>10.1109/CogML.2019.9014355</code>)
+* [https://www.ijcaonline.org/archives/volume176/number2/28523-2017915532/ "Real Time Analytics Performance Load Simulation and Scaling"] – ''International Journal of Computer Applications (IJCA)'' (2017) (DOI: <code>10.5120/ijca2017915532</code>)
+* [https://www.ijircce.com/article/explainable-ai-xai-for-software-engineering-decision-making-18479 "Explainable AI (XAI) for Software Engineering Decision-Making"] – ''International Journal of Innovative Research in Computer and Communication Engineering (IJIRCCE)'' (2024) (DOI: <code>10.15680/IJIRCCE.2024.1205018</code>)
+* [https://wjarr.com/content/ethical-challenges-and-bias-mitigation-artificial-intelligence-systems "Ethical Challenges and Bias Mitigation in Artificial Intelligence Systems"] – ''World Journal of Advanced Research and Reviews (WJARR)'' (2025) (DOI: <code>10.30574/wjarr.2025.28.3.3904</code>)
+* [https://wjarr.com/content/cloud-based-ai-systems-scalable-and-intelligent-software-applications "Cloud-Based AI Systems for Scalable and Intelligent Software Applications"] – ''World Journal of Advanced Research and Reviews (WJARR)'' (2026) (DOI: <code>10.30574/wjarr.2026.29.1.0077</code>)
+* [https://wjarr.com/content/ai-driven-cybersecurity-software-engineering "AI-Driven Cybersecurity in Software Engineering"] – ''World Journal of Advanced Research and Reviews (WJARR)'' (2025) (DOI: <code>10.30574/wjarr.2025.27.3.3347</code>)
+* [https://www.ijeetr.com/index.php/ijeetr/article/view/925 "Future Trends in AI, Machine Learning, and Big Data: Implications for Technical Leadership"] – ''International Journal of Engineering & Extended Technologies Research (IJEETR)'' (2025) (DOI: <code>10.15662/IJEETR.2025.0704017</code>)
+* [https://wjarr.com/content/agentic-workflows-end-end-software-engineering-automation "Agentic Workflows for End-to-End Software Engineering Automation"] – ''World Journal of Advanced Research and Reviews (WJARR)'' (2025) (DOI: <code>10.30574/wjarr.2025.25.3.0887</code>)
+* [https://wjarr.com/content/economic-impact-and-productivity-modeling-ai-agents "Economic Impact and Productivity Modeling of AI Agents"] – ''World Journal of Advanced Research and Reviews (WJARR)'' (2025) (DOI: <code>10.30574/wjarr.2025.26.3.2304</code>)
+* [https://ijrai.org/index.php/ijrai/article/view/589 "AI Agentic Architectures for Autonomous Data Engineering Pipelines"] – ''International Journal of Research and Applied Innovations (IJRAI)'' (2024) (DOI: <code>10.15662/IJRAI.2024.0706041</code>)
+* [https://ijeetr.com/index.php/ijeetr/article/view/958/895 "Autonomous Multi-Agent Systems for Enterprise Decision-Making"] – ''International Journal of Engineering & Extended Technologies Research (IJEETR)'' (2024) (DOI: <code>10.15662/IJEETR.2024.0605021</code>)
+* [https://ijsrm.net/index.php/ijsrm/article/view/6666 "Security in Multi-Agent AI Systems: Modeling Emergent Vulnerabilities via Trust Graphs"] – ''International Journal of Scientific Research and Management (IJSRM)'' (2026) (DOI: <code>10.18535/ijsrm/v14i04.ec04</code>)
+* [https://ijsrm.net/index.php/ijsrm/article/view/6755 "Clean Attacks: Formalizing Semantically Valid Adversarial Behavior in Autonomous AI Agent Systems"] – ''International Journal of Scientific Research and Management (IJSRM)'' (2025) (DOI: <code>10.18535/ijsrm/v13i10.ec03</code>)
+* [https://ijsrm.net/index.php/ijsrm/article/view/6868 "Designing Self-Healing AI Agentic Systems: A Framework for Autonomous Detection and Response"] – ''International Journal of Scientific Research and Management (IJSRM)'' (2026) (DOI: <code>10.18535/ijsrm/v14i06.ec3</code>)
+* [https://ijsrm.net/index.php/ijsrm/article/view/6977 "Intent-Based Security: Replacing Identity-Centric Trust in Autonomous AI Agentic Systems"] – ''International Journal of Scientific Research and Management (IJSRM)'' (2026) (DOI: <code>10.18535/ijsrm/v14i06.ec3</code>)
+* [https://ijsrm.net/index.php/ijsrm/article/view/6710 "Policy Drift in Learning AI Agents: A Dynamical Systems Perspective on Security Degradation"] – ''International Journal of Scientific Research and Management (IJSRM)'' (2025) (DOI: <code>10.18535/ijsrm/v13i07.ec08</code>)
+* [https://ijsrm.net/index.php/ijsrm/article/view/7251 "Toward a Unified Security Systems Theory for Autonomous AI Systems"] – ''International Journal of Scientific Research and Management (IJSRM)'' (2026) (DOI: <code>10.18535/ijsrm/v14i06.ec4</code>)
+* [https://ijsrm.net/index.php/ijsrm/article/view/4774 "AI-Powered Anomaly Detection in Cloud-Based Applications"] – ''International Journal of Scientific Research and Management (IJSRM)'' (2024) (DOI: <code>10.18535/ijsrm/v12i01.ec07</code>)
+* [https://www.ijsrm.net/index.php/ijsrm/article/view/6677 "Secure AI Systems: Protecting Machine Learning Models from Emerging Cyber Threats"] – ''International Journal of Scientific Research and Management (IJSRM)'' (2025) (DOI: <code>10.18535/ijsrm/v13i10.ec04</code>)
+* [https://www.ijsrm.net/index.php/ijsrm/article/view/7002 "Adversarial Machine Learning: Security Risks and Defense Strategies in AI-Driven Applications"] – ''International Journal of Scientific Research and Management (IJSRM)'' (2026) (DOI: <code>10.18535/ijsrm/v14i02.ec04</code>)
+* [https://ijsrm.net/index.php/ijsrm/article/view/7958 "Blockchain-Enabled Artificial Intelligence and AI Agents for Secure Data Sharing and Cybersecurity Applications"] – ''International Journal of Scientific Research and Management (IJSRM)'' (2026) (DOI: <code>10.18535/ijsrm/v14i08.ec03</code>)
+* [https://ijsrm.net/index.php/ijsrm/article/view/7194 "Automated Vulnerability Patching in Legacy Code Using LLMs and Multi-AI Agents"] – ''International Journal of Scientific Research and Management (IJSRM)'' (2026) (DOI: <code>10.18535/ijsrm/v14i04.ec05</code>)
+* [https://www.icaccm.in/index.php "Multi-Agent Differential Evolution-Based Trajectory Planning (MA-DEBTP) for Delay-Sensitive Data Collection in Intermittently Connected Delay Tolerant Wireless Sensor Networks"] – ''International Conference on Advances in Computing, Communication and Materials (ICACCM) 2026'' (2026)
+* [https://eajournals.org/ejcsit/vol-9-issue-4-2021/data-quality-feature-engineering-and-model-reliability-in-large-scale-ai-multi-agentic-systems/ "Data Quality, Feature Engineering, and Model Reliability in Large-Scale AI Multi-Agentic Systems"] – ''European Journal of Computer Science and Information Technology (EJCSIT)'' (2021) (DOI: <code>10.37745/ejcsit.2013/vol9n491110</code>)
+* [https://eajournals.org/ejcsit/vol-8-issue-5-november-2020/scalable-real-time-data-pipelines-for-ai-and-machine-learning-driven-enterprise-systems/ "Scalable Real-Time Data Pipelines for AI and Machine Learning–Driven Enterprise Systems"] – ''European Journal of Computer Science and Information Technology (EJCSIT)'' (2020) (DOI: <code>10.37745/ejcsit.2013/vol8n56986</code>)
+* [https://proceedings.raptors.dev/verma-trusted-ai-autonomous-agents/ "Beyond Models: Building Trusted AI in the Age of Autonomous Agents"] – ''Proceedings of the Raptors Conference (Raptors Conference 2026)'' (2026) (DOI: <code>10.68495/rc.2026.C025</code>)
+* [https://ieeeaccess.ieee.org/ "DEICA-ML: A Multi-Layer Differential Evolution-Based Improved Clustering Algorithm for IoT-Based Heterogeneous Wireless Sensor Networks"] – ''IEEE Access (Manuscript ID: Access-2026-52653)'' (2026)
+
+== Invited Fellowships, Councils & Associations (26 Appointments) ==
+* '''Forbes Technology Council''' – Official Council Member & Columnist (Council Member) [https://www.forbes.com/councils/forbestechcouncil/people/harshverma/ Verify]
+* '''IEEE & IEEE Computer Society''' – Senior Member (SMIEEE) (Senior Member) [https://ieee-collabratec.ieee.org/app/p/HarshVerma59 Verify]
+* '''British Computer Society (BCS)''' – The Chartered Institute for IT · United Kingdom (Fellow (FBCS)) [https://www.bcs.org/find-a-bcs-member/ Verify]
+* '''IEEE Technical Societies''' – CIS, Young Professionals & IEEE500 (Society Member) [https://cis.ieee.org/ Verify]
+* '''IEEE Xplore Verified Author''' – IEEE Digital Library & Author Center (Verified Author) [https://ieeexplore.ieee.org/author/37089143797 Verify]
+* '''Interacting with Computers''' – Oxford University Press · Published with BCS (Fellow / Member) [https://mc.manuscriptcentral.com/iwc Verify]
+* '''Raptors.Dev Fellowship''' – Fellow Member (Fellow) [https://www.raptors.dev/fellow-membership Verify]
+* '''UC Berkeley SkyDeck''' – Global Advisor & Startup Mentor (Global Advisor) [https://skydeck.berkeley.edu/advisors/ Verify]
+* '''ISACA''' – Member, Verified Expert & Volunteer (Member & Expert) [https://engage.isaca.org/expert/harshverma Verify]
+* '''Sigma Xi (The Scientific Research Honor Society)''' – Full Elected Member (Honor Society) [https://www.sigmaxi.org/ Verify]
+* '''Royal Society of Arts (RSA)''' – Fellow of the Royal Society of Arts (FRSA) (Fellow (FRSA)) [https://www.thersa.org/ Verify]
+* '''IOASD (Scientific & Academic Development)''' – Royal Fellowship Awarded (Royal Fellow) [https://ioasd.org/royal-fellows/membership-id-frioasd-1066-2026/ Verify]
+* '''Science Tech Xplore''' – Fellow Member (Fellow Member) [https://sciencetechxplore.org/fellow-members1.php Verify]
+* '''Forttuna Technical Council''' – Council Member (Council Member) [https://councils.forttuna.com/council-member/harsh-verma/ Verify]
+* '''AAAI (Advancement of Artificial Intelligence)''' – Active Member (AI Society) [https://aaai.org/ Verify]
+* '''AAAS (Advancement of Science)''' – Supporting Member (Scientific Society) [https://www.aaas.org/ Verify]
+* '''Python Software Foundation (PSF)''' – Contributing Membership (Contributing Member) [https://www.python.org/users/harshverma59/ Verify]
+* '''OWASP Foundation''' – Open Web Application Security Project (Global Member) [https://owasp.glueup.com/my/memberships/3981139 Verify]
+* '''IFGICT (Global Green ICT)''' – Fellow (Fellow) [https://timebusinessnews.com/harsh-verma-ifgict/ Verify]
+* '''Google Developer Expert''' – GDE in AI & Cloud (Google Expert) [https://me.developers.google.com/communities/experts?q=harsh%20verma Verify]
+* '''RSA Conference (RSAC)''' – Invite-Only Expert Member (Invite-Only) [https://portal.onersac.com/library/discover Verify]
+* '''ADPList Mentorship Community''' – Top Mentor (AI & Tech Leadership) (Top Mentor) [https://adplist.org/mentors/harsh-verma Verify]
+* '''Dent Capital Expert List''' – Mentor & Technical Advisor (Expert Advisor) [https://councils.forttuna.com/council-member/harsh-verma/ Verify]
+* '''HackUTD & Hackmakers''' – AI Challenge Judge & Mentor (Judge & Mentor) [https://hackutd.co/ Verify]
+* '''ODSC & SIIM Communities''' – Speaker & Member (Community) [https://odsc.com/ Verify]
+* '''Screna.ai''' – Technical Mentor & AI Advisor (Technical Mentor) [https://www.screna.ai/mentor-dashboard Verify]
+
+== Honors and Global Awards (27 Recognitions) ==
+* '''Most Admire Global Indians 2026''' (2026) – Global Indian Leadership Forum · International Leadership Honors [https://www.passionvista.com/ Citation]
+* '''Forttuna Global 100: THE POWER LIST 2026!''' (2026) – Forttuna Global Foundation & Leadership Councils [https://global100.forttuna.com/the-power-list-2026-honorees/profile?name=harsh-verma Citation]
+* '''Nobel Technology Awards 2026: Gold Winner (#145)''' (2026) – Nobel Technology Awards · Globee Awards Winner's Circle [https://nobletechnologyawards.com/winner-info.php?id=145 Citation]
+* '''2026 NVTC Cyber50 Honoree''' (2026) – Northern Virginia Technology Council (NVTC) [https://www.nvtc.org/press-releases/nvtc-announces-2026-cyber50-honorees/ Citation]
+* '''TITAN Innovation Awards: AI Innovation & Leadership Impact Award''' (2026) – TITAN Innovation Awards · International Awards Associate (IAA) [https://titaninnovationawards.com/winner-info.php?id=3442 Citation]
+* '''2026 Global Recognition Award: AI Innovator of the Year''' (2026) – Global Recognition Awards™ · Palo Alto Networks [https://globalrecognitionawards.org/winners/2026/harsh-verma-recognized-with-a-2026-global-recognition-award/ Citation]
+* '''American Business Awards® 2026: AI Innovator of the Year''' (2026) – Stevie Awards · American Business Awards® [https://aba.stevieawards.com/awards/aba-winners/AI-Category-Winners Citation]
+* '''2026 Cybersecurity Excellence Awards: Silver (AI Security Innovator)''' (2026) – Cybersecurity Excellence Awards · Palo Alto Networks [https://cybersecurity-excellence-awards.com/candidates/ai-innovator-of-the-year-2026/?_se=aHZlcm1hQHBhbG9hbHRvbmV0d29ya3MuY29t Citation]
+* '''Cybersecurity Excellence Awards: Community Choice Award 2026''' (2026) – World's Top Cybersecurity Achievements · Cybersecurity Excellence Awards [https://finance.yahoo.com/technology/ai/articles/cybersecurity-excellence-awards-2026-announces-022700731.html Citation]
+* '''2nd Annual 2026 Globee Awards for AI: Silver Winner''' (2026) – Globee Awards for Artificial Intelligence [https://globeeawards.com/2026-winners-artificial-intelligence-awards/ Citation]
+* '''American Business Awards®: AI Cybersecurity Expert of the Year''' (2026) – Stevie Awards · Palo Alto Networks [https://aba.stevieawards.com/ Citation]
+* '''Influencer Magazine Awards 2026: Tech Excellence Award''' (2026) – Influencer Magazine UK · AI Journal [https://influencermagazine.uk/2026/07/harsh-verma-a-double-triumph-in-ai-and-cybersecurity-innovation/ Citation]
+* '''International AI Data Scientist Awards: AI Innovator Award''' (2026) – Association of International AI Data Scientists (AIS) [https://aidatascientists.com/award-winners/ Citation]
+* '''Stanford Distinguished Scholar''' (2025) – Stanford Graduate School of Business (Stanford GSB) [https://www.gsb.stanford.edu/ Citation]
+* '''MIT Innovation & Leadership Recognition''' (2024) – Massachusetts Institute of Technology (MIT) [https://bootcamp.mit.edu/ Citation]
+* '''Forbes Technology Council: AI & Software Engineering Recognition''' (2024) – Forbes Technology Council · Palo Alto Networks [https://www.forbes.com/councils/forbestechcouncil/people/harshverma/ Citation]
+* '''Google Developer Expert (GDE) in Cloud AI''' (2025) – Google Developers · Global GDE Program [https://me.developers.google.com/communities/experts?q=harsh%20verma Citation]
+* '''UC Berkeley SkyDeck: Elevated to Global Advisor & Selection Committee''' (2025) – University of California, Berkeley · SkyDeck Accelerator [https://skydeck.berkeley.edu/advisors/ Citation]
+* '''IFGICT Royal Fellowship Award''' (2024) – International Federation of Global & Green ICT (IFGICT) [https://timebusinessnews.com/harsh-verma-ifgict/ Citation]
+* '''IOASD Annual Awards: Lifetime Achievement Award''' (2025) – International Organization for Academic and Scientific Development [http://ioasd.org/ Citation]
+* '''IOASD Annual Awards: Award of Excellence in Research''' (2024) – International Organization for Academic and Scientific Development [http://ioasd.org/ Citation]
+* '''IOASD Annual Awards: Outstanding Researcher Award''' (2023) – International Organization for Academic and Scientific Development [http://ioasd.org/ Citation]
+* '''Lead Hackathon Mentor: Google & Hackmakers Global Hack''' (2020) – Google & Hackmakers · Global Hack Digital Defense [https://au.badgr.com/public/assertions/wvReoDSRTjCJsBqI9A4LMg?identity__email=harshverma59@gmail.com Citation]
+* '''ADPList Milestone: 1,000+ Completed Mentorship Minutes''' (2025) – ADPList (Amazing Design People List) [https://adplist.org/community-certifications/minutes-1000-b42201 Citation]
+* '''ADPList Milestone: 25+ Completed Mentorship Sessions''' (2025) – ADPList (Amazing Design People List) [https://adplist.org/community-certifications/sessions-25-b42201 Citation]
+* '''JRTCSE Certificate of Excellence in Research Review''' (2024) – Journal of Recent Trends in Computer Science and Engineering [https://jrtcse.com/index.php/home/Harsh_Verma Citation]
+* '''Certificate of Honour: Keynote Speaker @#ATAGTR2017''' (2017) – Agile Testing Alliance (ATA) · Global Testing Retreat [https://gtr2017.agiletestingalliance.org/speakers/#harshv Citation]
+
+== Media Coverage, Interviews & Podcasts (42+ Features) ==
+* [https://www.lifepage.in/ "Life Page India: Inside Software Development & Engineering Careers"] – ''Life Page India'' (July 2018)
+* [https://youtu.be/bggw4JTFjgA?si=Jw08RDQLpTuG3BYe "Chai & Coaching: How to Build a Tech Career in Cybersecurity"] – ''Chai & Coaching'' (2024)
+* [https://youtu.be/iZkx6Ewq6wU?si=eYUUPFW4AKpR36a6 "Chai & Coaching: How to Control Your Job Interview & Convince Recruiters to Hire You"] – ''Chai & Coaching'' (2024)
+* [https://youtu.be/1DxjMiOe580?si=aI9Xlf9Z3oyUop6n "TrueML Talks #35: Big Data and ML Practices at Palo Alto Networks"] – ''TrueML Talks / TrueFoundry'' (2024)
+* [https://youtu.be/E6kA_o57DrM?si=1YhXasLUtF94J5EZ "SZ 179: The Digital Battleground — Quantum & Cyber Security"] – ''Startup Zone / Top Voices Unite'' (2025)
+* [https://youtu.be/MPhFC1h5GIc?si=B5uQXexHIKw2dAk0 "FutureAGI: Powering Cybersecurity with GenAI & Intelligent Agents"] – ''FutureAGI'' (2025)
+* [https://youtu.be/IZvHxEtMMnw?si=JqvMyLKF_PTfqFDI "UC Berkeley SkyDeck: The Era of Agentic Security (Batch 21 Keynote)"] – ''UC Berkeley SkyDeck'' (2026)
+* [https://xraised.com/videos/ai-engineering-beyond-code/ "Xraised: Beyond the Code — The Future of AI & Cybersecurity"] – ''Xraised / Spotify / Amazon Music'' (March 2026)
+* [https://markets.businessinsider.com/news/stocks/harsh-verma-receives-a-2026-global-recognition-award-for-measurable-advances-in-enterprise-ai-and-cybersecurity-1035986499 "Business Insider: Harsh Verma Receives 2026 Global Recognition Award for Enterprise AI Advances"] – ''Business Insider / Markets Insider'' (2026)
+* [https://timebusinessnews.com/harsh-verma-ifgict/ "Time Business News: Harsh Verma Conferred Prestigious IFGICT Fellowship for Green ICT & AI Leadership"] – ''Time Business News'' (2026)
+* [https://cybersecurity-excellence-awards.com/candidates/ai-innovator-of-the-year-2026/?_se=aHZlcm1hQHBhbG9hbHRvbmV0d29ya3MuY29t "Cybersecurity Excellence Awards: AI Innovator of the Year Candidate Showcase"] – ''Cybersecurity Excellence Awards'' (2026)
+* [https://nyweeklyjournal.com/blog/the-engineer-rewriting-the-rules-by-thinking-%E2%80%9Cai-beyond-the-code%E2%80%9D-inside-the-world-of-harsh-verma "NY Weekly Journal: The Engineer Rewriting the Rules by Thinking “AI Beyond the Code”"] – ''NY Weekly Journal'' (2026)
+* [https://healthtechweek.org/speakers/harsh-verma "Health Tech Week 2026: Featured Keynote Speaker & Clinical AI Authority"] – ''Health Tech Week'' (2026)
+* [https://nobletechnologyawards.com/winner.php?page=2&competition_id=&category=&rank=&review= "Noble Technology Awards & Muse World: 2026 Inaugural Gold Laureate Announcement"] – ''Noble Technology Awards / Muse.world'' (2026)
+* [https://wearetwill.com/p/big-ideas-bigger-opportunities-join-threads-scaling-ai-explore-job-openings-at-the-bottom-of-this-em-f410 "Twill x Rocket: Inside Vibe Shift — The Builders Behind the Models"] – ''WeAreTwill / Rocket / YouTube'' (2026)
+* [https://influencermagazine.uk/2026/05/harsh-verma-nominated-for-tech-excellence-award-at-influencer-magazine-awards-2026-e2/ "Influencer Magazine UK: Harsh Verma Nominated for Tech Excellence Award (Times Square NYC)"] – ''Influencer Magazine UK / Times Square NYC'' (May 2026)
+* [https://markets.businessinsider.com/news/stocks/harsh-verma-publishes-nuanced-framework-on-rise-of-agentic-ai-and-enterprise-system-era-arguing-ai-system-architecture-has-replaced-model-building-as-the-core-discipline-1036188755 "Business Insider: Harsh Verma Publishes Nuanced Framework on Rise of Agentic AI & Enterprise System Era"] – ''Business Insider / Markets Insider'' (2026)
+* [https://global100.forttuna.com/the-power-list-2026-honorees/profile?name=harsh-verma "Forttuna Global 100: THE POWER LIST 2026 & Times Square NYC Mega-Screen Broadcast"] – ''Forttuna Global 100 / Markets Insider'' (2026)
+* [https://www.streetinsider.com/The+Financial+Capital/Principal+AI+Engineer+Harsh+Verma+Nominated+for+Tech+Excellence+Award+at+Influencer+Magazine+Awards+2026+as+His+Work+on+Human%E2%80%93AI+Collaboration+Gains+Enterprise+Attention/26595570.html "Street Insider: Principal AI Engineer Harsh Verma Nominated for Tech Excellence as Human-AI Collaboration Gains Enterprise Attention"] – ''Street Insider / MarketersMedia'' (2026)
+* [https://influencermagazine.uk/2026/07/harsh-verma-a-double-triumph-in-ai-and-cybersecurity-innovation/ "Influencer Magazine UK: Harsh Verma — A Double Triumph in AI and Cybersecurity Innovation"] – ''Influencer Magazine UK'' (July 2026)
+* [https://hackernoon.com/the-production-gap-your-ai-model-isnt-as-reliable-as-you-think-interview "HackerNoon: The Production Gap — Your AI Model Isn’t as Reliable as You Think (Interview)"] – ''HackerNoon'' (2026)
+* [https://www.usatoday.com/press-release/story/36801/harsh-verma-principal-ai-engineer-highlights-personal-findings-on-why-identity-is-replacing-network-perimeters-as-the-foundation-of-enterprise-in-the-age-of-ai-agents/ "USA Today: Identity is Replacing Network Perimeters as the Foundation of Enterprise in the Age of AI Agents"] – ''USA Today'' (2026)
+* [https://tech.einnews.com/pr_news/920520116/harsh-verma-wins-tech-excellence-award-at-influencer-magazine-awards-2026 "EIN News & Knox News: Harsh Verma Wins Tech Excellence Award at Influencer Magazine Awards 2026"] – ''EIN Presswire / Knox News / USA Today Network'' (2026)
+* [https://www.newsbreak.com/dmr-news-321522575/4771042688609-ai-expert-harsh-verma-introduces-unified-framework-for-enterprise-ai-from-orchestration-to-trust-identity-and-observability "NewsBreak: AI Expert Harsh Verma Introduces Unified Framework for Enterprise AI: From Orchestration to Trust, Identity, and Observability"] – ''NewsBreak / MarketersMedia'' (2026)
+* [https://mailchi.mp/berkeley/skydecknewsletter-071526 "UC Berkeley SkyDeck Newsletter: Spotlight on HackerNoon Interview on Agentic AI"] – ''UC Berkeley SkyDeck Newsletter'' (July 15, 2026)
+* [https://skydeck.berkeley.edu/ "UC Berkeley SkyDeck Workshop: Era of Agentic Security and Governance in the Age of Autonomy (Batch 22)"] – ''UC Berkeley SkyDeck'' (June 22, 2026)
+* [https://primefulinsights.com/harsh-verma/ "Primeful Insights: Industry Icon 2026 Feature & Cover Story"] – ''Primeful Insights'' (2026)
+* [https://mailchi.mp/berkeley/skydecknewsletter-080526?e=6a097303d2 "UC Berkeley SkyDeck Newsletter: Forbes AI Governance & Iterative Experimentation"] – ''UC Berkeley SkyDeck Newsletter'' (August 5, 2026)
+* [https://mailchi.mp/berkeley/skydecknewsletter10726?e=6a097303d2 "UC Berkeley SkyDeck Newsletter: Forbes Feature on Data Systems as the Real AI Moat"] – ''UC Berkeley SkyDeck Newsletter'' (October 7, 2026)
+* [https://skydeck.berkeley.edu/advisors/ "UC Berkeley SkyDeck: Official Global Advisory Council Listing"] – ''UC Berkeley SkyDeck'' (2026)
+* [https://me.developers.google.com/communities/experts?q=harsh%20verma "Google Developer Experts: Official Global GDE Directory Listing"] – ''Google Developers'' (2026)
+* [https://influencermagazine.uk/2026/07/the-ai-production-gap-harsh-verma-on-why-models-fail-in-the-real-world/ "Influencer Magazine UK: The AI Production Gap — Why Models Fail in the Real World"] – ''Influencer Magazine UK'' (July 2026)
+* [https://cioinsightful.com/top-5-most-dynamic-leaders-shaping-the-future-in-2026/ "CIO Insightful: Top 5 Most Dynamic Leaders Shaping the Future in 2026"] – ''CIO Insightful'' (2026)
+* [https://vlinkinfo.com/podcast/enterprise-ai-building-solutions-for-security-scale-trust "Tech Talk with VLink (Ep. 55): Enterprise AI — Building Solutions for Security, Scale & Trust"] – ''VLink Inc / YouTube / YouTube Music'' (2026)
+* [https://www.barchart.com/story/news/3615130/principal-software-engineer-harsh-verma-decodes-why-enterprise-ai-has-moved-from-a-model-problem-to-a-control-problem "Barchart: Principal Software Engineer Harsh Verma Decodes Why Enterprise AI Has Moved From a Model Problem to a Control Problem"] – ''Barchart.com / MarketersMedia'' (2026)
+* [https://www.muse.world/post/harsh-verma-innovates-to-lead-the-next-generation-of-secure-ai-innovation "Muse World & Noble Awards: Harsh Verma Innovates to Lead the Next Generation of Secure AI Innovation"] – ''Muse.world / Noble Awards Global'' (2026)
+* [https://finance.yahoo.com/technology/ai/articles/cybersecurity-excellence-awards-2026-announces-022700731.html "Yahoo Finance: Cybersecurity Excellence Awards 2026 Announces Dual Recognition for Principal AI Engineer Harsh Verma"] – ''Yahoo Finance / Newsfile Corp'' (2026)
+* [https://influencermagazine.uk/2026/08/harsh-verma-named-to-forttuna-global-100-the-power-list-2026-driving-the-future-of-deterministic-ai-and-autonomous-cybersecurity/ "Influencer Magazine UK: Harsh Verma Named to Forttuna Global 100 — THE POWER LIST 2026"] – ''Influencer Magazine UK'' (August 2026)
+* [https://xraised-agent-production.up.railway.app/news/principal-ai-engineer-harsh-verma-expands-peer-reviewed-publication-programme "xraised: Principal AI Engineer Harsh Verma Expands Peer-Reviewed Publication Programme Across Leading AI and Research Journals in 2026"] – ''xraised / Over 100 Journals (AP News, NBC, FOX, CBS)'' (September 2026)
+* [https://apnews.com/press-release/marketersmedia/press-release-f6ee56b5c4a73732b75c8339658e29f2 "Harsh Verma on AI Agents ‘The Clean Attack’ Challenge Signals a Shift in Cybersecurity Strategy"] – ''AP News / MarketersMEDIA'' (June 2026)
+* [https://news.marketersmedia.com/principal-software-engineer-harsh-verma-awarded-bcs-fellowship-and-publishes-rsa-conference-analysis-on-why-identity-alone-can-no-longer-secure-ai-systems/89205125 "Principal Software Engineer Harsh Verma Awarded BCS Fellowship and Publishes RSA Conference Analysis on Why Identity Alone Can No Longer Secure AI Systems"] – ''MarketersMEDIA Wire'' (October 2026)
+* [https://www.einnews.com/pr_news/950989244/ai-agent-security-and-virtual-cell-ai-lead-ai-insiders-sf-tech-week-nights "AI Agent Security and Virtual Cell AI Lead AI Insiders' SF Tech Week Nights"] – ''EIN Presswire Wire'' (October 2026)
+
+== Verified Authority Profiles & External Links (54 Registries) ==
+* [https://www.harshverma.me/ Official Portfolio Website (www.harshverma.me)]
+* [https://www.harshverma.me/page-identity Official Google Knowledge Graph & Entity Verification Hub]
+* [https://councils.forbes.com/profile/Harsh-Verma-Principal-Software-Engineer-AI-Palo-Alto-Networks/2a1e2c7a-5541-4c49-acee-0ec37da532a5 Forbes Technology Council] (Executive & Tech Councils – <code>Official Council Member</code>)
+* [https://www.forbes.com/councils/forbestechcouncil/people/harshverma/ Forbes Author Directory] (Executive & Tech Councils – <code>Forbes Contributor</code>)
+* [https://theorg.com/org/palo-alto-networks/person/harsh-verma The Org: Palo Alto Networks] (Executive & Tech Councils – <code>Palo Alto Networks</code>)
+* [https://global100.forttuna.com/the-power-list-2026-honorees/profile?name=harsh-verma Forttuna Global 100 Power List (2026)] (Executive & Tech Councils – <code>Power List Honoree</code>)
+* [https://councils.forttuna.com/council-member/harsh-verma/ Forttuna Technology Council] (Executive & Tech Councils – <code>Council Member</code>)
+* [https://mbo.marquiswhoswho.com/Biography/4005428487/fav Marquis Who's Who in America] (Executive & Tech Councils – <code>Biographical Honoree</code>)
+* [https://www.rsaconference.com/experts/Harsh%20Verma RSA Conference (RSAC) Expert] (Executive & Tech Councils – <code>Speaker & Cybersecurity Expert</code>)
+* [https://scholar.google.com/citations?user=zSt9oRMAAAAJ&hl=en Google Scholar] (Research & Citations – <code>Scholar ID: zSt9oRMAAAAJ</code>)
+* [https://www.semanticscholar.org/author/H.-Verma/145004805 Semantic Scholar] (Research & Citations – <code>Author ID: 145004805</code>)
+* [https://orcid.org/0000-0003-2134-2600 ORCID Registry] (Research & Citations – <code>0000-0003-2134-2600</code>)
+* [https://openreview.net/profile?id=%7EHarsh_Verma3 OpenReview Profile] (Research & Citations – <code>ID: ~Harsh_Verma3</code>)
+* [https://mc.manuscriptcentral.com/iwc Interacting with Computers] (Research & Citations – <code>Oxford University Press</code>)
+* [https://www.researchgate.net/profile/Harsh-Verma-43 ResearchGate] (Research & Citations – <code>Harsh-Verma-43</code>)
+* [https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=11144549 SSRN (Elsevier)] (Research & Citations – <code>Author ID: 11144549</code>)
+* [https://ijsrm.net/author/harshverma59 IJSRM Journal Author] (Research & Citations – <code>harshverma59</code>)
+* [https://mygsb.academia.edu/harshverma Academia.edu] (Research & Citations – <code>Stanford GSB / harshverma</code>)
+* [https://me.developers.google.com/u/harshverma59 Google Developer Profile] (Developer & Cloud Ecosystems – <code>u/harshverma59</code>)
+* [https://gdg.community.dev/u/mn4snq/#/about Google Developer Group (GDG)] (Developer & Cloud Ecosystems – <code>Community Lead / Speaker</code>)
+* [https://www.skills.google/ Google Skills Hub] (Developer & Cloud Ecosystems – <code>skills.google</code>)
+* [https://github.com/iamharshverma GitHub] (Developer & Cloud Ecosystems – <code>iamharshverma</code>)
+* [https://devpost.com/harshverma59 Devpost Profile] (Developer & Cloud Ecosystems – <code>harshverma59</code>)
+* [https://substack.com/@aiwithharsh Substack Newsletter] (Developer & Cloud Ecosystems – <code>@aiwithharsh</code>)
+* [https://medium.com/@harshverma59 Medium Publications] (Developer & Cloud Ecosystems – <code>@harshverma59</code>)
+* [https://hackernoon.com/u/harshverma59 HackerNoon Tech Contributor] (Developer & Cloud Ecosystems – <code>@harshverma59</code>)
+* [https://www.soundverse.ai/@harshverma59 Soundverse AI] (Developer & Cloud Ecosystems – <code>@harshverma59</code>)
+* [https://nyweeklyjournal.com/blog/the-engineer-rewriting-the-rules-by-thinking-%E2%80%9Cai-beyond-the-code%E2%80%9D-inside-the-world-of-harsh-verma New York Weekly Journal] (Media Features & Press – <code>Press Feature</code>)
+* [https://xraised.com/videos/ai-engineering-beyond-code/ xRaised Global Interview Series] (Media Features & Press – <code>Video Episode</code>)
+* [https://influencermagazine.uk/harsh-verma/ Influencer Magazine UK] (Media Features & Press – <code>Tech Leader Spotlight</code>)
+* [https://www.lifepage.in/page/harsh LifePage India Career Talk] (Media Features & Press – <code>Career Interview</code>)
+* [https://imdb.me/harshverma IMDb Profile] (Media Features & Press – <code>Verified</code>)
+* [https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer) EverybodyWiki] (Media Features & Press – <code>Verified</code>)
+* [https://www.wikidata.org/wiki/Q139827028 Wikidata Knowledge Base] (Research & Knowledge Graph – <code>Verified</code>)
+* [https://adplist.org/mentors/harsh-verma ADPList Executive Mentor] (Advisory & Mentorship – <code>Top AI Mentor</code>)
+* [https://accelerate.masschallenge.org/profile/ MassChallenge Accelerator] (Advisory & Mentorship – <code>Mentor & Judge</code>)
+* [https://www.f6s.com/harshverma59 F6S Startup Community] (Advisory & Mentorship – <code>harshverma59</code>)
+* [https://www.founderscreative.org/author/harsh/ Founders Creative] (Advisory & Mentorship – <code>harsh</code>)
+* [https://www.screna.ai/mentor-dashboard Screna.ai] (Advisory & Mentorship – <code>Verified</code>)
+* [https://topmate.io/iamharshverma/ Topmate] (Advisory & Mentorship – <code>Verified</code>)
+* [https://judges.bintelligence.com/harsh-verma Business Intelligence Group] (Advisory & Mentorship – <code>Verified</code>)
+* [https://harshverma.bio/ HarshVerma.bio] (Direct Connect & Networks – <code>Universal Bio Hub</code>)
+* [https://www.linkedin.com/in/harshverma59/ LinkedIn Profile] (Direct Connect & Networks – <code>in/harshverma59</code>)
+* [https://www.instagram.com/aiwithharsh Instagram] (Direct Connect & Networks – <code>@aiwithharsh</code>)
+* [https://spotlight.favikon.com/harshverma59/ Favikon Creator Spotlight] (Direct Connect & Networks – <code>harshverma59</code>)
+* [https://mediakit.bio/@harshverma59 Media Kit & Speaker Bio] (Direct Connect & Networks – <code>@harshverma59</code>)
+* [https://rocketreach.co/harsh-verma-email_54769519 RocketReach Enterprise Verification] (Direct Connect & Networks – <code>Palo Alto Networks</code>)
+* [https://contactout.com/Harsh-Verma-1722953 ContactOut Profile] (Direct Connect & Networks – <code>Harsh-Verma-1722953</code>)
+* [https://www.crunchbase.com/person/harsh-verma-f153 Crunchbase Profile] (Direct Connect & Networks – <code>harsh-verma-f153</code>)
+* [https://bold.pro/my/harshverma Bold.pro Profile] (Direct Connect & Networks – <code>my/harshverma</code>)
+* [https://about.me/harshverma59/ About.me Profile] (Direct Connect & Networks – <code>harshverma59</code>)
+* [https://flipboard.com/@harshverma59 Flipboard & AI Magazine] (Media Features & Press – <code>@harshverma59</code>)
+* [https://sciencetechxplore.org/fellow-members1.php Science Tech Xplore] (Research & Citations – <code>Fellow Member</code>)
+* [https://www.bcs.org/find-a-bcs-member/ British Computer Society] (Research & Citations – <code>Fellow (FBCS)</code>)
+* [https://mastodon.social/@harshverma59 Mastodon Social] (Direct Connect & Networks – <code>@harshverma59</code>)
+* [https://loop.frontiersin.org/people/3757183/overview Frontiers in Education Editorial] (Research & Citations – <code>Review Editor</code>)
+
+== References ==
+{{reflist}}
+
+[[Category:Living people]]
+[[Category:American computer scientists]]
+[[Category:Indian software engineers]]
+[[Category:Artificial intelligence researchers]]
+[[Category:Fellows of the British Computer Society]]
+[[Category:Fellows of the Royal Society of Arts]]
+[[Category:Senior Members of the IEEE]]
+[[Category:Stanford University alumni]]
+[[Category:University of Texas at Dallas alumni]]
+
+[[Category:WikiFlux Biography]]
+[[Category:Software Engineers]]
+[[Category:Artificial Intelligence Researchers]]

@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-25T06:40:32.847171+00:00",
+  "updated_at": "2026-10-25T08:02:54.041615+00:00",
   "wikidata": {
     "entity_id": "Q139827028",
     "entity_url": "https://www.wikidata.org/wiki/Q139827028",
     "json_endpoint": "https://www.wikidata.org/wiki/Special:EntityData/Q139827028.json",
-    "checked_at": "2026-10-25T06:40:30.706336+00:00",
+    "checked_at": "2026-10-25T08:02:52.445831+00:00",
     "live_reachable": true,
     "existing_labels": {
       "en": "Harsh Verma"
@@ -51,9 +51,9 @@
     "updated_references_count": 0,
     "p856_outdated": false,
     "api_write_status": "synced_live_via_bot",
-    "api_write_message": "All outdated github.io references and deprecated claims successfully updated live on Wikidata Q139827028 via automated Bot API, including ResearchGate P2038 update to Harsh-Verma-43. Revision: 2560579608.",
-    "lastrevid": 2560579608,
-    "modified": "2026-10-25T06:40:10Z"
+    "api_write_message": "All outdated github.io references and deprecated claims successfully updated live on Wikidata Q139827028 via automated Bot API, including ResearchGate P2038 update to Harsh-Verma-43. Revision: 2560590046.",
+    "lastrevid": 2560590046,
+    "modified": "2026-10-25T07:16:10Z"
   },
   "everybodywiki": {
     "article_title": "Harsh_Verma_(Software_Engineer)",

@@ -342,7 +342,32 @@ def build_identity_page(kg):
     wiki_escaped = html_lib.escape(kg["everybodywiki_wikitext"])
     schema_escaped = html_lib.escape(schema_json_str)
 
-    ew_rev = ew_sync.get("newrevid") or ew_sync.get("lastrevid") or "6891822"
+    data_dir = os.path.join(ROOT_DIR, "data")
+    wa_path = os.path.join(data_dir, "wikialpha-article.wiki")
+    wikialpha_text = open(wa_path, "r", encoding="utf-8").read() if os.path.exists(wa_path) else ""
+    wikialpha_escaped = html_lib.escape(wikialpha_text)
+
+    wf_path = os.path.join(data_dir, "wikiflux-article.wiki")
+    wikiflux_text = open(wf_path, "r", encoding="utf-8").read() if os.path.exists(wf_path) else ""
+    wikiflux_escaped = html_lib.escape(wikiflux_text)
+
+    main_lw_path = os.path.join(data_dir, "localwiki-main.html")
+    localwiki_main_text = open(main_lw_path, "r", encoding="utf-8").read() if os.path.exists(main_lw_path) else ""
+    localwiki_main_escaped = html_lib.escape(localwiki_main_text)
+
+    sc_path = os.path.join(data_dir, "localwiki-santaclara.html")
+    localwiki_sc_text = open(sc_path, "r", encoding="utf-8").read() if os.path.exists(sc_path) else ""
+    localwiki_sc_escaped = html_lib.escape(localwiki_sc_text)
+
+    dallas_path = os.path.join(data_dir, "localwiki-dallas.html")
+    localwiki_dallas_text = open(dallas_path, "r", encoding="utf-8").read() if os.path.exists(dallas_path) else ""
+    localwiki_dallas_escaped = html_lib.escape(localwiki_dallas_text)
+
+    mw_xml_path = os.path.join(data_dir, "mediawiki-export.xml")
+    mw_xml_text = open(mw_xml_path, "r", encoding="utf-8").read() if os.path.exists(mw_xml_path) else ""
+    mw_xml_escaped = html_lib.escape(mw_xml_text)
+
+    ew_rev = ew_sync.get("newrevid") or ew_sync.get("lastrevid") or "6892698"
     ew_status_msg = ew_sync.get("api_write_message") or f"Successfully updated EverybodyWiki article live via MediaWiki API (user: harshverma59, new revision: {ew_rev})!"
 
     html_doc = f"""<!DOCTYPE html>
@@ -1018,6 +1043,200 @@ def build_identity_page(kg):
                             </a>
                         </div>
                         <pre class="kg-code-box mb-0" id="ewWikiCode">{wiki_escaped}</pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2.5: Multi-Wiki Entity Syndication Hub (WikiAlpha, WikiFlux, LocalWiki, MediaWiki XML) -->
+            <div class="kg-panel-dossier mb-5" id="multiWikiHub">
+                <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+                    <div>
+                        <span class="badge badge-primary px-2 py-1 mb-1" style="background:#2563eb;color:#fff;">
+                            <i class="mdi mdi-share-variant mr-1"></i> Multi-Wiki Entity Syndication
+                        </span>
+                        <h4 class="font-weight-bold text-dark mb-1">
+                            WikiAlpha, WikiFlux, LocalWiki &amp; Universal MediaWiki Publishing Hub
+                        </h4>
+                        <p class="text-muted mb-0" style="font-size:13.5px;">
+                            Pre-formatted, production-ready encyclopedic articles tailored for each platform's infobox taxonomy, SEO extensions, and citation standards.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Navigation Tabs -->
+                <ul class="nav nav-pills mb-3" id="multiWikiTabs" role="tablist" style="gap:6px;">
+                    <li class="nav-item">
+                        <a class="nav-link active font-weight-bold" id="tab-wikialpha-link" data-toggle="pill" href="#tab-wikialpha" role="tab" style="border-radius:6px;font-size:13px;">
+                            <i class="mdi mdi-wikipedia mr-1"></i> WikiAlpha
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" id="tab-wikiflux-link" data-toggle="pill" href="#tab-wikiflux" role="tab" style="border-radius:6px;font-size:13px;">
+                            <i class="mdi mdi-book-open-page-variant mr-1"></i> WikiFlux
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" id="tab-localwiki-link" data-toggle="pill" href="#tab-localwiki" role="tab" style="border-radius:6px;font-size:13px;">
+                            <i class="mdi mdi-map-marker-radius mr-1"></i> LocalWiki (Santa Clara &amp; Dallas)
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" id="tab-mediawiki-link" data-toggle="pill" href="#tab-mediawiki" role="tab" style="border-radius:6px;font-size:13px;">
+                            <i class="mdi mdi-xml mr-1"></i> Universal MediaWiki XML Export
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="multiWikiTabContent">
+                    <!-- WikiAlpha Tab -->
+                    <div class="tab-pane fade show active" id="tab-wikialpha" role="tabpanel">
+                        <div class="p-3 bg-light rounded border mb-3">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                                <div>
+                                    <h5 class="font-weight-bold text-dark mb-0">WikiAlpha Article: <code>Harsh_Verma_(Software_Engineer)</code></h5>
+                                    <div class="small text-muted">Platform: <a href="https://wikialpha.co/" target="_blank" rel="noopener">wikialpha.co</a> (MediaWiki 1.42 Engine)</div>
+                                </div>
+                                <div class="d-flex flex-wrap" style="gap:8px;">
+                                    <a href="https://wikialpha.co/wiki/Harsh_Verma_(Software_Engineer)?action=edit" target="_blank" rel="noopener" class="btn btn-sm btn-primary font-weight-bold">
+                                        <i class="mdi mdi-pencil mr-1"></i> Open in WikiAlpha Editor
+                                    </a>
+                                    <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold" onclick="copyTextById('waWikiCode', 'WikiAlpha Wikitext')">
+                                        <i class="mdi mdi-content-copy mr-1"></i> Copy Wikitext
+                                    </button>
+                                    <a href="data/wikialpha-article.wiki" download="WikiAlpha_Harsh_Verma.wiki" class="btn btn-sm btn-outline-secondary font-weight-bold">
+                                        <i class="mdi mdi-download mr-1"></i> Download .wiki
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="small text-muted mb-0">Includes <code>{{{{Infobox person}}}}</code> with honorific prefix Mr, First name Harsh, Family name Verma, Nationality Indian, Image <code>Harsh Verma Software Engineer.jpg</code>, and all verified social handles.</p>
+                        </div>
+                        <pre class="kg-code-box mb-0" id="waWikiCode">{wikialpha_escaped}</pre>
+                    </div>
+
+                    <!-- WikiFlux Tab -->
+                    <div class="tab-pane fade" id="tab-wikiflux" role="tabpanel">
+                        <div class="p-3 bg-light rounded border mb-3">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                                <div>
+                                    <h5 class="font-weight-bold text-dark mb-0">WikiFlux Article: <code>Harsh_Verma_(Software_Engineer)</code></h5>
+                                    <div class="small text-muted">Platform: <a href="https://en.wikiflux.org/wiki/index.php/WikiFlux_Biography" target="_blank" rel="noopener">en.wikiflux.org</a> (MediaWiki 1.39 Engine)</div>
+                                </div>
+                                <div class="d-flex flex-wrap" style="gap:8px;">
+                                    <a href="https://en.wikiflux.org/wiki/index.php?title=Harsh_Verma_(Software_Engineer)&amp;action=edit" target="_blank" rel="noopener" class="btn btn-sm btn-primary font-weight-bold">
+                                        <i class="mdi mdi-pencil mr-1"></i> Open in WikiFlux Editor
+                                    </a>
+                                    <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold" onclick="copyTextById('wfWikiCode', 'WikiFlux Wikitext')">
+                                        <i class="mdi mdi-content-copy mr-1"></i> Copy Wikitext
+                                    </button>
+                                    <a href="data/wikiflux-article.wiki" download="WikiFlux_Harsh_Verma.wiki" class="btn btn-sm btn-outline-secondary font-weight-bold">
+                                        <i class="mdi mdi-download mr-1"></i> Download .wiki
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="small text-muted mb-0">Tailored with WikiFlux <code>{{{{#seo:}}}}</code> rich metatags, <code>{{{{Infow}}}}</code> verified infobox badge, 2 authored books, 27+ publications, and verified social accounts.</p>
+                        </div>
+                        <pre class="kg-code-box mb-0" id="wfWikiCode">{wikiflux_escaped}</pre>
+                    </div>
+
+                    <!-- LocalWiki Tab -->
+                    <div class="tab-pane fade" id="tab-localwiki" role="tabpanel">
+                        <!-- Primary Main Hub Card -->
+                        <div class="p-3 bg-light rounded border mb-4">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                                <div>
+                                    <span class="badge badge-success px-2 py-1 mb-1" style="background:#10b981;color:#fff;">
+                                        <i class="mdi mdi-earth mr-1"></i> Global Hub Target
+                                    </span>
+                                    <h5 class="font-weight-bold text-dark mb-0">LocalWiki Main Hub: <code>https://localwiki.org/main/Harsh_Verma</code></h5>
+                                    <div class="small text-muted">Primary global biographical guide on LocalWiki across Silicon Valley, Dallas &amp; International Research communities</div>
+                                </div>
+                                <div class="d-flex flex-wrap" style="gap:8px;">
+                                    <a href="https://localwiki.org/main/Harsh_Verma" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary font-weight-bold">
+                                        <i class="mdi mdi-eye mr-1"></i> View Live Page
+                                    </a>
+                                    <a href="https://localwiki.org/main/Harsh_Verma/_edit" target="_blank" rel="noopener" class="btn btn-sm btn-primary font-weight-bold">
+                                        <i class="mdi mdi-pencil mr-1"></i> Edit / Update on LocalWiki
+                                    </a>
+                                    <button type="button" class="btn btn-sm btn-outline-success font-weight-bold" onclick="copyTextById('mainLocalCode', 'LocalWiki Main HTML')">
+                                        <i class="mdi mdi-content-copy mr-1"></i> Copy Main HTML
+                                    </button>
+                                    <a href="data/localwiki-main.html" download="LocalWiki_Harsh_Verma_main.html" class="btn btn-sm btn-outline-secondary font-weight-bold">
+                                        <i class="mdi mdi-download mr-1"></i> Download .html
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="small text-muted mb-2">
+                                Formatted with executive Infobox photo, Palo Alto Networks leadership, Stanford &amp; UT Dallas degrees, 2 authored books, 27+ papers, 27 awards, verified social handles, and community tags (<code>People</code>, <code>Computer scientists</code>, <code>Artificial intelligence</code>, <code>Palo Alto Networks</code>).
+                            </p>
+                            <pre class="kg-code-box mb-0" id="mainLocalCode">{localwiki_main_escaped}</pre>
+                        </div>
+
+                        <!-- Regional Editions -->
+                        <h6 class="font-weight-bold text-dark mb-2">Regional LocalWiki Spaces:</h6>
+                        <div class="row">
+                            <div class="col-lg-6 mb-3">
+                                <div class="p-3 bg-light rounded border h-100">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="font-weight-bold text-dark mb-0">LocalWiki: Santa Clara / Bay Area</h5>
+                                        <div class="d-flex" style="gap:6px;">
+                                            <a href="https://localwiki.org/santaclara/Harsh_Verma" target="_blank" rel="noopener" class="btn btn-xs btn-outline-primary font-weight-bold">
+                                                <i class="mdi mdi-open-in-new"></i> View
+                                            </a>
+                                            <a href="https://localwiki.org/santaclara/Harsh_Verma/_edit" target="_blank" rel="noopener" class="btn btn-xs btn-primary font-weight-bold">
+                                                <i class="mdi mdi-pencil"></i> Edit
+                                            </a>
+                                            <button type="button" class="btn btn-xs btn-outline-success font-weight-bold" onclick="copyTextById('scLocalCode', 'Santa Clara LocalWiki HTML')">
+                                                <i class="mdi mdi-content-copy"></i> Copy
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p class="small text-muted">Focus: Palo Alto Networks Santa Clara HQ, Stanford Executive AI program, UC Berkeley SkyDeck advisory, and Silicon Valley tech community.</p>
+                                    <pre class="kg-code-box mb-0" style="max-height:180px;" id="scLocalCode">{localwiki_sc_escaped}</pre>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <div class="p-3 bg-light rounded border h-100">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="font-weight-bold text-dark mb-0">LocalWiki: Dallas / North Texas</h5>
+                                        <div class="d-flex" style="gap:6px;">
+                                            <a href="https://localwiki.org/dallas/Harsh_Verma" target="_blank" rel="noopener" class="btn btn-xs btn-outline-primary font-weight-bold">
+                                                <i class="mdi mdi-open-in-new"></i> View
+                                            </a>
+                                            <a href="https://localwiki.org/dallas/Harsh_Verma/_edit" target="_blank" rel="noopener" class="btn btn-xs btn-primary font-weight-bold">
+                                                <i class="mdi mdi-pencil"></i> Edit
+                                            </a>
+                                            <button type="button" class="btn btn-xs btn-outline-success font-weight-bold" onclick="copyTextById('dallasLocalCode', 'Dallas LocalWiki HTML')">
+                                                <i class="mdi mdi-content-copy"></i> Copy
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p class="small text-muted">Focus: University of Texas at Dallas (M.S. Computer Science), Erik Jonsson School of Engineering, UTDesign Jio project, and Texas computing alumni.</p>
+                                    <pre class="kg-code-box mb-0" style="max-height:180px;" id="dallasLocalCode">{localwiki_dallas_escaped}</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Universal MediaWiki XML Tab -->
+                    <div class="tab-pane fade" id="tab-mediawiki" role="tabpanel">
+                        <div class="p-3 bg-light rounded border mb-3">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                                <div>
+                                    <h5 class="font-weight-bold text-dark mb-0">Official MediaWiki XML 0.11 Export Dump</h5>
+                                    <div class="small text-muted">Standard <code>Special:Import</code> package compatible with any MediaWiki installation worldwide.</div>
+                                </div>
+                                <div class="d-flex flex-wrap" style="gap:8px;">
+                                    <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="copyTextById('mwXmlCode', 'MediaWiki XML')">
+                                        <i class="mdi mdi-content-copy mr-1"></i> Copy XML
+                                    </button>
+                                    <a href="data/mediawiki-export.xml" download="Harsh_Verma_MediaWiki_Export.xml" class="btn btn-sm btn-outline-secondary font-weight-bold">
+                                        <i class="mdi mdi-download mr-1"></i> Download XML (.xml)
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="small text-muted mb-0">Can be directly uploaded into any wiki via <strong>Special:Import</strong> (e.g., corporate MediaWiki, Wikimedia incubators, or private wikis) with full metadata preserved.</p>
+                        </div>
+                        <pre class="kg-code-box mb-0" id="mwXmlCode">{mw_xml_escaped}</pre>
                     </div>
                 </div>
             </div>
