@@ -1,20 +1,30 @@
 {{Infobox person
+| honorific_prefix   = Mr
+| first_name         = Harsh
+| family_name        = Verma
+| given_name         = Harsh
+| surname            = Verma
 | name               = Harsh Verma
-| image              = 
+| image              = Harsh Verma Software Engineer.jpg
 | caption            = Harsh Verma, Principal AI Software Engineer, Author & Keynote Speaker
+| nationality        = Indian
 | occupation         = Principal Software Engineer (AI), Enterprise AI Architect, Author, Keynote Speaker, Researcher
 | employer           = [[Palo Alto Networks]]
 | alma_mater         = [[Stanford University]]<br/>[[University of Texas at Dallas]] (M.S. CS)<br/>[[Uttarakhand Technical University]] (B.Tech CSE)
 | known_for          = Enterprise Agentic AI Architectures, Autonomous Cyber Defense, Multi-Agent Systems, Explainable AI (XAI)
-| notable_works      = ''Enterprise AI Agents: Build Your Authority and Lead the AI Agent Revolution''<br/>''Autonomous Cyber Defense: Adversarial Intelligence and Battleground Systems''
+| notable_works      = ''Beyond AI Engineering: From Creator to Curator''<br/>''AI vs. AI: Engineering the Cybersecurity Counteroffensive''
 | awards             = Forttuna Global 100 Power List (2026)<br/>Nobel Technology Awards Gold Winner (2026)<br/>TITAN Innovation Award (2026)<br/>NVTC Cyber50 Honoree (2026)<br/>Global Recognition Award (2026)<br/>Marquis Who's Who in America
-| website            = {{URL|https://iamharshverma.github.io/}}
+| website            = {{URL|https://www.harshverma.me/}}
+| twitter            = harshverma59
+| facebook           = harshverma59
+| instagram          = aiwithharsh
+| linkedin           = /in/harshverma59/
 | module             = {{Authority control|QID=Q139827028|ORCID=0000-0003-2134-2600}}
 }}
 
-'''Harsh Verma''' is an internationally recognized Principal Software Engineer in Artificial Intelligence at [[Palo Alto Networks]], enterprise AI architect, author, keynote speaker, and computer science researcher.<ref>{{cite web |title=The Org: Harsh Verma - Principal Software Engineer in AI at Palo Alto Networks |url=https://theorg.com/org/palo-alto-networks/person/harsh-verma |website=The Org}}</ref><ref>{{cite web |title=Wikidata Entity Q139827028: Harsh Verma |url=https://www.wikidata.org/wiki/Q139827028 |website=Wikidata}}</ref> He is an official member and columnist for the [[Forbes Technology Council]],<ref>{{cite web |title=Harsh Verma - Forbes Technology Council Profile |url=https://www.forbes.com/councils/forbestechcouncil/people/harshverma/ |website=Forbes}}</ref> a Senior Member of the [[Institute of Electrical and Electronics Engineers]] (SMIEEE), an elected Fellow of the [[British Computer Society]] (FBCS), an elected Fellow of the [[Royal Society of Arts]] (FRSA), and a Full Member of [[Sigma Xi]]: The Scientific Research Honor Society.<ref>{{cite web |title=Harsh Verma Invited Associations & Fellowships |url=https://iamharshverma.github.io/page-memberships |website=Harsh Verma Portfolio}}</ref>
+'''Harsh Verma''' is an internationally recognized Principal Software Engineer in Artificial Intelligence at [[Palo Alto Networks]], enterprise AI architect, author, keynote speaker, and computer science researcher.<ref>{{cite web |title=The Org: Harsh Verma - Principal Software Engineer in AI at Palo Alto Networks |url=https://theorg.com/org/palo-alto-networks/person/harsh-verma |website=The Org}}</ref><ref>{{cite web |title=Wikidata Entity Q139827028: Harsh Verma |url=https://www.wikidata.org/wiki/Q139827028 |website=Wikidata}}</ref> He is an official member and columnist for the [[Forbes Technology Council]],<ref>{{cite web |title=Harsh Verma - Forbes Technology Council Profile |url=https://www.forbes.com/councils/forbestechcouncil/people/harshverma/ |website=Forbes}}</ref> a Senior Member of the [[Institute of Electrical and Electronics Engineers]] (SMIEEE), an elected Fellow of the [[British Computer Society]] (FBCS), an elected Fellow of the [[Royal Society of Arts]] (FRSA), and a Full Member of [[Sigma Xi]]: The Scientific Research Honor Society.<ref>{{cite web |title=Harsh Verma Invited Associations & Fellowships |url=https://www.harshverma.me/page-memberships |website=Harsh Verma Official Portfolio}}</ref>
 
-Verma has authored two books on enterprise autonomous systems and cyber defense, published {{nowrap|27+}} peer-reviewed research papers across IEEE, Springer Nature, Oxford Academic, and international journals with over 150 academic citations,<ref>{{cite web |title=Harsh Verma Google Scholar Citations |url=https://scholar.google.com/citations?user=zSt9oRMAAAAJ |website=Google Scholar}}</ref> and received {{nowrap|27}} international technology and leadership honors.
+Verma has authored two books on enterprise autonomous systems and cyber defense (''Beyond AI Engineering: From Creator to Curator'' and ''AI vs. AI: Engineering the Cybersecurity Counteroffensive''), served as technical reviewer for six AI and engineering books, published {{nowrap|27+}} peer-reviewed research papers across IEEE, Springer Nature, Oxford Academic, and international journals with over 150 academic citations,<ref>{{cite web |title=Harsh Verma Google Scholar Citations |url=https://scholar.google.com/citations?user=zSt9oRMAAAAJ |website=Google Scholar}}</ref> and received {{nowrap|27}} international technology and leadership honors.
 
 == Education ==
 * '''[[Stanford University]]''' – Graduate Certificate in Artificial Intelligence & Executive Leadership (Stanford Center for Professional Development).
@@ -22,13 +32,22 @@ Verma has authored two books on enterprise autonomous systems and cyber defense,
 * '''[[Uttarakhand Technical University]]''' – Bachelor of Technology (B.Tech) in Computer Science and Engineering.
 
 == Career and Executive Leadership ==
-Verma serves as Principal Software Engineer (AI) at [[Palo Alto Networks]], where he architects autonomous multi-agent systems, deterministic AI security guardrails, and high-throughput enterprise cloud platforms.<ref>{{cite web |title=The Engineer Rewriting the Rules by Thinking AI Beyond the Code: Inside the World of Harsh Verma |url=https://nyweeklyjournal.com/blog/the-engineer-rewriting-the-rules-by-thinking-%E2%80%9Cai-beyond-the-code%E2%80%9D-inside-the-world-of-harsh-verma |website=New York Weekly Journal}}</ref> Earlier in his career, he engineered large-scale distributed systems, real-time analytics pipelines, and cloud security infrastructure across enterprise technology organizations.
+Verma serves as Principal Software Engineer (AI) at [[Palo Alto Networks]] in Santa Clara, California, where he architects autonomous multi-agent systems, deterministic AI security guardrails, and high-throughput enterprise cloud platforms.<ref>{{cite web |title=The Engineer Rewriting the Rules by Thinking AI Beyond the Code: Inside the World of Harsh Verma |url=https://nyweeklyjournal.com/blog/the-engineer-rewriting-the-rules-by-thinking-%E2%80%9Cai-beyond-the-code%E2%80%9D-inside-the-world-of-harsh-verma |website=New York Weekly Journal}}</ref> Earlier in his career, he engineered hyper-scale distributed backend platforms, real-time analytics pipelines, and deep learning systems at Hike Messenger, Reliance Jio (UT-Design), Worlds Enterprises, and Hypergiant Sensory Science.
 
-In addition to his engineering leadership, Verma serves as an official contributor on the [[Forbes Technology Council]], an industry awards judge for the Business Intelligence Group (BIG), Globee Awards, and Stevie Awards, and a startup mentor for [[MassChallenge]] and ADPList.
+In addition to his engineering leadership, Verma serves as an official contributor on the [[Forbes Technology Council]], Global Advisor at [[UC Berkeley SkyDeck]], industry awards judge for the Business Intelligence Group (BIG), Globee Awards, and Stevie Awards, and startup mentor for [[MassChallenge]] and ADPList.
 
-== Authored Books ==
-* '''''Enterprise AI Agents: Build Your Authority and Lead the AI Agent Revolution''''' – ''Architectures, Production Protocols, and Operational Multi-Agent Systems'' (Definitive guide to designing, architecting, and deploying resilient autonomous AI agents, deterministic guardrails, and memory graphs at enterprise scale.) [https://iamharshverma.github.io/page-books Official Book Hub]
-* '''''Autonomous Cyber Defense: Adversarial Intelligence and Battleground Systems''''' – ''Zero-Trust Architecture, Threat Vector Modeling, and Autonomous Response'' (Examines modern threat landscapes and how autonomous machine intelligence dynamically detects, isolates, and neutralizes cyber threats in high-throughput networks.) [https://iamharshverma.github.io/page-books Official Book Hub]
+== Authored Books & Technical Book Reviews ==
+=== Authored Books ===
+* '''''Beyond AI Engineering: From Creator to Curator''''' – ''Mastering the Human and Strategic Dimensions of Curating AI Systems'' (2025). A definitive treatise on transitioning from syntax generation to high-level system curation, covering multi-agent orchestration, deterministic guardrails, memory architectures, and the Super Engineer Trifecta. [https://www.harshverma.me/page-books Official Book Hub]
+* '''''AI vs. AI: Engineering the Cybersecurity Counteroffensive''''' – ''Architecting Autonomous AI Defenses Against Intelligent Adversaries'' (2026). Examines adversarial machine intelligence and how enterprise security architects design zero-trust autonomous counteroffensive systems, behavioral invariants, and self-healing defense pipelines. [https://www.harshverma.me/page-books Official Book Hub]
+
+=== Technical Books Reviewed ===
+* '''''AI Ethics in Action (Technical Book Review)''''' – Expert technical review evaluating operational AI ethics, bias mitigation, and governance frameworks in production machine learning.
+* '''''Hands-On AI Dev with Python (Technical Book Review)''''' – Technical review validating Python-based deep learning workflows, model serving, and scalable AI engineering patterns.
+* '''''Leadership at the Helm of AI (Technical Book Review)''''' – Executive review assessing organizational AI readiness, C-suite governance, and enterprise AI ROI frameworks.
+* '''''Python for Algorithmic Trading Cookbook (Technical Book Review)''''' – Technical validation of real-time market data pipelines, quantitative backtesting, and low-latency execution architectures in Python.
+* '''''Machine Learning & Generative AI for Marketing (Technical Book Review)''''' – Technical evaluation of customer intelligence models, privacy-preserving personalization, and generative AI pipelines.
+* '''''The TensorFlow Workshop (Technical Book Review)''''' – Technical review of deep neural network architectures, TensorFlow 2.x pipelines, and distributed model training.
 
 == Selected Forbes Columns & Thought Leadership (29 Articles) ==
 * [https://www.forbes.com/councils/forbestechcouncil/2026/10/02/the-real-ai-moat-why-models-are-cheap-but-data-orchestration-is-priceless/ "The Real AI Moat: Why Models Are Cheap But Data Orchestration Is Priceless"] – ''Forbes Technology Council'' (October 2, 2026)
@@ -59,7 +78,7 @@ In addition to his engineering leadership, Verma serves as an official contribut
 * [https://aijourn.com/your-first-ai-agent-is-your-new-intern-heres-how-to-manage-it/ "Your First AI Agent Is Your New Intern: Here’s How to Manage It"] – ''The AI Journal'' (June 2026)
 * [https://aijourn.com/designing-the-intelligence-layer-why-future-tech-leaders-must-be-ai-architects-first/ "Designing the Intelligence Layer: Why Future Tech Leaders Must Be AI Architects First"] – ''The AI Journal'' (August 2026)
 * [https://www.founderscreative.org/unlocking-corporate-startup-co-innovation-with-ai/ "Unlocking Corporate–Startup Co-Innovation with AI"] – ''Founders Creative & Substack'' (2026)
-* [https://medium.com/@harshverma59/helm-with-yugabytedb-gke-google-kubernetes-engine-9099b62548cd "Helm with YugabyteDB: Google Kubernetes Engine (GKE) Distributed Deployment"] – ''Medium Engineering'' (Cloud Engineering)
+* [https://medium.com/@harshverma59/helm-with-yugabytedb-gke-google-kubernetes-engine-9099b62548cd "Helm with YugabyteDB: Google Kubernetes Engine (GKE) Distributed Deployment"] – ''Medium Engineering'' (2021)
 
 == Peer-Reviewed Research Publications (27+ Papers) ==
 * [https://ieeexplore.ieee.org/document/9014355 "Secure Real Time Heterogeneous Data Management Tool"] – ''IEEE International Conference on Cognitive Machine Learning (CogML)'' (2019) (DOI: <code>10.1109/CogML.2019.9014355</code>)
@@ -84,13 +103,13 @@ In addition to his engineering leadership, Verma serves as an official contribut
 * [https://www.ijsrm.net/index.php/ijsrm/article/view/7002 "Adversarial Machine Learning: Security Risks and Defense Strategies in AI-Driven Applications"] – ''International Journal of Scientific Research and Management (IJSRM)'' (2026) (DOI: <code>10.18535/ijsrm/v14i02.ec04</code>)
 * [https://ijsrm.net/index.php/ijsrm/article/view/7958 "Blockchain-Enabled Artificial Intelligence and AI Agents for Secure Data Sharing and Cybersecurity Applications"] – ''International Journal of Scientific Research and Management (IJSRM)'' (2026) (DOI: <code>10.18535/ijsrm/v14i08.ec03</code>)
 * [https://ijsrm.net/index.php/ijsrm/article/view/7194 "Automated Vulnerability Patching in Legacy Code Using LLMs and Multi-AI Agents"] – ''International Journal of Scientific Research and Management (IJSRM)'' (2026) (DOI: <code>10.18535/ijsrm/v14i04.ec05</code>)
-* [https://www.icaccm.in/index.php "Multi-Agent Differential Evolution-Based Trajectory Planning (MA-DEBTP) for Delay-Sensitive Data Collection in Intermittently Connected Delay Tolerant Wireless Sensor Networks"] – ''International Conference on Advances in Computing, Communication and Materials (ICACCM) 2026'' (Nov 2026)
+* [https://www.icaccm.in/index.php "Multi-Agent Differential Evolution-Based Trajectory Planning (MA-DEBTP) for Delay-Sensitive Data Collection in Intermittently Connected Delay Tolerant Wireless Sensor Networks"] – ''International Conference on Advances in Computing, Communication and Materials (ICACCM) 2026'' (2026)
 * [https://eajournals.org/ejcsit/vol-9-issue-4-2021/data-quality-feature-engineering-and-model-reliability-in-large-scale-ai-multi-agentic-systems/ "Data Quality, Feature Engineering, and Model Reliability in Large-Scale AI Multi-Agentic Systems"] – ''European Journal of Computer Science and Information Technology (EJCSIT)'' (2021) (DOI: <code>10.37745/ejcsit.2013/vol9n491110</code>)
 * [https://eajournals.org/ejcsit/vol-8-issue-5-november-2020/scalable-real-time-data-pipelines-for-ai-and-machine-learning-driven-enterprise-systems/ "Scalable Real-Time Data Pipelines for AI and Machine Learning–Driven Enterprise Systems"] – ''European Journal of Computer Science and Information Technology (EJCSIT)'' (2020) (DOI: <code>10.37745/ejcsit.2013/vol8n56986</code>)
 * [https://proceedings.raptors.dev/verma-trusted-ai-autonomous-agents/ "Beyond Models: Building Trusted AI in the Age of Autonomous Agents"] – ''Proceedings of the Raptors Conference (Raptors Conference 2026)'' (2026) (DOI: <code>10.68495/rc.2026.C025</code>)
 * [https://ieeeaccess.ieee.org/ "DEICA-ML: A Multi-Layer Differential Evolution-Based Improved Clustering Algorithm for IoT-Based Heterogeneous Wireless Sensor Networks"] – ''IEEE Access (Manuscript ID: Access-2026-52653)'' (2026)
 
-== Invited Fellowships, Councils & Associations (27+ Appointments) ==
+== Invited Fellowships, Councils & Associations (26 Appointments) ==
 * '''Forbes Technology Council''' – Official Council Member & Columnist (Council Member) [https://www.forbes.com/councils/forbestechcouncil/people/harshverma/ Verify]
 * '''IEEE & IEEE Computer Society''' – Senior Member (SMIEEE) (Senior Member) [https://ieee-collabratec.ieee.org/app/p/HarshVerma59 Verify]
 * '''British Computer Society (BCS)''' – The Chartered Institute for IT · United Kingdom (Fellow (FBCS)) [https://www.bcs.org/find-a-bcs-member/ Verify]
@@ -107,7 +126,6 @@ In addition to his engineering leadership, Verma serves as an official contribut
 * '''Forttuna Technical Council''' – Council Member (Council Member) [https://councils.forttuna.com/council-member/harsh-verma/ Verify]
 * '''AAAI (Advancement of Artificial Intelligence)''' – Active Member (AI Society) [https://aaai.org/ Verify]
 * '''AAAS (Advancement of Science)''' – Supporting Member (Scientific Society) [https://www.aaas.org/ Verify]
-* '''ACM (SIGAI & SIGSOFT)''' – ACM Member · SIGAI · SIGSOFT (Computing Society) [https://myacm.acm.org/dashboard.cfm?svc=services Verify]
 * '''Python Software Foundation (PSF)''' – Contributing Membership (Contributing Member) [https://www.python.org/users/harshverma59/ Verify]
 * '''OWASP Foundation''' – Open Web Application Security Project (Global Member) [https://owasp.glueup.com/my/memberships/3981139 Verify]
 * '''IFGICT (Global Green ICT)''' – Fellow (Fellow) [https://timebusinessnews.com/harsh-verma-ifgict/ Verify]
@@ -149,7 +167,7 @@ In addition to his engineering leadership, Verma serves as an official contribut
 * '''Certificate of Honour: Keynote Speaker @#ATAGTR2017''' (2017) – Agile Testing Alliance (ATA) · Global Testing Retreat [https://gtr2017.agiletestingalliance.org/speakers/#harshv Citation]
 
 == Media Coverage, Interviews & Podcasts (42+ Features) ==
-* [https://lifepage.app.link/20180731-0001 "Life Page India: Inside Software Development & Engineering Careers"] – ''Life Page India'' (July 2018)
+* [https://www.lifepage.in/ "Life Page India: Inside Software Development & Engineering Careers"] – ''Life Page India'' (July 2018)
 * [https://youtu.be/bggw4JTFjgA?si=Jw08RDQLpTuG3BYe "Chai & Coaching: How to Build a Tech Career in Cybersecurity"] – ''Chai & Coaching'' (2024)
 * [https://youtu.be/iZkx6Ewq6wU?si=eYUUPFW4AKpR36a6 "Chai & Coaching: How to Control Your Job Interview & Convince Recruiters to Hire You"] – ''Chai & Coaching'' (2024)
 * [https://youtu.be/1DxjMiOe580?si=aI9Xlf9Z3oyUop6n "TrueML Talks #35: Big Data and ML Practices at Palo Alto Networks"] – ''TrueML Talks / TrueFoundry'' (2024)
@@ -193,8 +211,8 @@ In addition to his engineering leadership, Verma serves as an official contribut
 * [https://www.einnews.com/pr_news/950989244/ai-agent-security-and-virtual-cell-ai-lead-ai-insiders-sf-tech-week-nights "AI Agent Security and Virtual Cell AI Lead AI Insiders' SF Tech Week Nights"] – ''EIN Presswire Wire'' (October 2026)
 
 == Verified Authority Profiles & External Links (54 Registries) ==
-* [https://iamharshverma.github.io/ Official Portfolio Website]
-* [https://iamharshverma.github.io/page-identity Official Google Knowledge Graph & Entity Verification Hub]
+* [https://www.harshverma.me/ Official Portfolio Website (www.harshverma.me)]
+* [https://www.harshverma.me/page-identity Official Google Knowledge Graph & Entity Verification Hub]
 * [https://councils.forbes.com/profile/Harsh-Verma-Principal-Software-Engineer-AI-Palo-Alto-Networks/2a1e2c7a-5541-4c49-acee-0ec37da532a5 Forbes Technology Council] (Executive & Tech Councils – <code>Official Council Member</code>)
 * [https://www.forbes.com/councils/forbestechcouncil/people/harshverma/ Forbes Author Directory] (Executive & Tech Councils – <code>Forbes Contributor</code>)
 * [https://theorg.com/org/palo-alto-networks/person/harsh-verma The Org: Palo Alto Networks] (Executive & Tech Councils – <code>Palo Alto Networks</code>)

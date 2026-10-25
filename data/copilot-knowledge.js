@@ -184,9 +184,10 @@ const harshKnowledge = {
     { name: "Google Scholar", url: "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ", count: "27+ Papers" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/harshverma59/", handle: "harshverma59" },
     { name: "GitHub", url: "https://github.com/iamharshverma", handle: "iamharshverma" },
-    { name: "ORCID", url: "page-about#verified-profiles", id: "Verified Researcher" },
+    { name: "ORCID", url: "page-about#verified-profiles", id: "0000-0003-2134-2600" },
+    { name: "Wikidata Knowledge Graph", url: "https://www.wikidata.org/wiki/Q139827028", id: "Q139827028" },
+    { name: "EverybodyWiki Biography", url: "https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)", id: "Biography" },
     { name: "IEEE Xplore", url: "page-about#verified-profiles" },
-    { name: "ACM Digital Library", url: "page-about#verified-profiles" },
     { name: "ResearchGate", url: "page-about#verified-profiles" },
     { name: "DBLP Computer Science Bibliography", url: "page-about#verified-profiles" }
   ],

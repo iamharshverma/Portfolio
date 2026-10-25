@@ -9,3 +9,7 @@ build/
 .dist_tmp/
 .github/
 bun.lock
+*.log
+*token*.txt
+*session*.txt
+*password*.txt

@@ -1,0 +1,39 @@
+# QuickStatements v2 Reference Replacement Batch for Q139827028
+# Replaces all 8 references pointing to iamharshverma.github.io with https://www.harshverma.me/
+# Also updates Official Website P856 and removes ACM Q127992.
+-Q139827028	P856	"https://iamharshverma.github.io/"
+Q139827028	P856	"https://www.harshverma.me/"	S854	"https://www.harshverma.me/"
+-Q139827028	P463	Q127992
+-Q139827028	P463	Q1814176
+Q139827028	P463	Q1814176	S854	"https://www.harshverma.me/page-memberships"
+-Q139827028	P463	Q919096
+Q139827028	P463	Q919096	S854	"https://www.harshverma.me/page-memberships"
+-Q139827028	P463	Q1460885
+Q139827028	P463	Q1460885	S854	"https://www.harshverma.me/page-memberships"
+-Q139827028	P463	Q466113
+Q139827028	P463	Q466113	S854	"https://www.harshverma.me/page-memberships"
+-Q139827028	P69	Q41506
+Q139827028	P69	Q41506	S854	"https://www.harshverma.me/page-about"
+-Q139827028	P69	Q7903393
+Q139827028	P69	Q7903393	S854	"https://www.harshverma.me/page-about"
+-Q139827028	P106	Q12859263
+Q139827028	P106	Q12859263	S854	"https://www.harshverma.me/page-speaker"
+
+# QuickStatements 3.0 Reference Replacement Syntax
+-Q139827028 | P856 | "https://iamharshverma.github.io/"
+Q139827028 | P856 | "https://www.harshverma.me/" | S854 | "https://www.harshverma.me/"
+-Q139827028 | P463 | Q127992
+REMOVE_REF_BLOCK | Q139827028 | P463 | Q1814176 | S854 | "https://iamharshverma.github.io/page-memberships"
+Q139827028 | P463 | Q1814176 | S854 | "https://www.harshverma.me/page-memberships"
+REMOVE_REF_BLOCK | Q139827028 | P463 | Q919096 | S854 | "https://iamharshverma.github.io/page-memberships"
+Q139827028 | P463 | Q919096 | S854 | "https://www.harshverma.me/page-memberships"
+REMOVE_REF_BLOCK | Q139827028 | P463 | Q1460885 | S854 | "https://iamharshverma.github.io/page-memberships"
+Q139827028 | P463 | Q1460885 | S854 | "https://www.harshverma.me/page-memberships"
+REMOVE_REF_BLOCK | Q139827028 | P463 | Q466113 | S854 | "https://iamharshverma.github.io/page-memberships"
+Q139827028 | P463 | Q466113 | S854 | "https://www.harshverma.me/page-memberships"
+REMOVE_REF_BLOCK | Q139827028 | P69 | Q41506 | S854 | "https://iamharshverma.github.io/page-about"
+Q139827028 | P69 | Q41506 | S854 | "https://www.harshverma.me/page-about"
+REMOVE_REF_BLOCK | Q139827028 | P69 | Q7903393 | S854 | "https://iamharshverma.github.io/page-about"
+Q139827028 | P69 | Q7903393 | S854 | "https://www.harshverma.me/page-about"
+REMOVE_REF_BLOCK | Q139827028 | P106 | Q12859263 | S854 | "https://iamharshverma.github.io/page-speaker"
+Q139827028 | P106 | Q12859263 | S854 | "https://www.harshverma.me/page-speaker"

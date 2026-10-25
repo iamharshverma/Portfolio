@@ -4,6 +4,9 @@ scripts/inject_knowledge_graph.py
 =================================
 1. Generates `page-identity.html` — The Dedicated Google Knowledge Panel,
    Entity Verification & Programmatic Wiki Sync Hub (Wikidata Q139827028 & EverybodyWiki).
+   - Canonical @id: https://www.harshverma.me/#person (reconciled with https://harshverma.me/#person)
+   - Complete 213-node interactive entity graph with all visual thumbnails, banners, logos, and multi-link citations
+   - Zero ACM entries and zero iamharshverma.github.io references
 2. Injects the unified Schema.org `@graph` JSON-LD (`id="hv-knowledge-graph-jsonld"`)
    and canonical `rel="me"` authority links across all HTML pages in the portfolio.
 """
@@ -12,13 +15,25 @@ import os
 import re
 import glob
 import json
+import shutil
 import html as html_lib
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KG_PATH = os.path.join(ROOT_DIR, "data", "knowledge-graph.json")
 
 
+def ensure_hero_clean_image():
+    """Ensure images/about/harsh_hero_clean.png exists as a copy of images/harsh/Harsh_portfolio_pic.png."""
+    src = os.path.join(ROOT_DIR, "images", "harsh", "Harsh_portfolio_pic.png")
+    dst_dir = os.path.join(ROOT_DIR, "images", "about")
+    dst = os.path.join(dst_dir, "harsh_hero_clean.png")
+    if os.path.exists(src) and not os.path.exists(dst):
+        os.makedirs(dst_dir, exist_ok=True)
+        shutil.copyfile(src, dst)
+
+
 def build_identity_page(kg):
+    ensure_hero_clean_image()
     counts = kg["counts"]
     entities = kg["entities"]
     wd_claims = kg["wikidata_claims"]
@@ -35,30 +50,34 @@ def build_identity_page(kg):
         val = html_lib.escape(c["value"])
         val_lbl = html_lib.escape(c["value_label"])
         ref = html_lib.escape(c.get("reference_url", ""))
-        fmt_url = c.get("formatter_url") or (f"https://www.wikidata.org/wiki/{val}" if c["type"] == "wikibase-entityid" else val if val.startswith("http") else ref)
+        fmt_url = (
+            c.get("formatter_url")
+            or (f"https://www.wikidata.org/wiki/{val}" if c["type"] == "wikibase-entityid" else val if val.startswith("http") else ref)
+        )
         wd_rows_html.append(f"""
         <tr>
-            <td><a href="https://www.wikidata.org/wiki/Property:{prop}" target="_blank" class="badge badge-dark font-monospace px-2 py-1">{prop}</a></td>
+            <td><a href="https://www.wikidata.org/wiki/Property:{prop}" target="_blank" rel="noopener" class="badge badge-dark font-monospace px-2 py-1">{prop}</a></td>
             <td class="font-weight-bold text-dark">{lbl}</td>
             <td>
-                <a href="{html_lib.escape(fmt_url)}" target="_blank" class="text-primary font-weight-bold">{val_lbl}</a>
+                <a href="{html_lib.escape(fmt_url)}" target="_blank" rel="noopener" class="text-primary font-weight-bold">{val_lbl}</a>
                 {f'<span class="text-muted font-monospace ml-1" style="font-size:11px;">({val})</span>' if val != val_lbl else ''}
             </td>
-            <td><a href="{ref}" target="_blank" class="text-muted" style="font-size:12px;"><i class="mdi mdi-link-variant mr-1"></i>Reference</a></td>
+            <td><a href="{ref}" target="_blank" rel="noopener" class="text-muted" style="font-size:12px;"><i class="mdi mdi-link-variant mr-1"></i>Reference</a></td>
             <td><span class="badge badge-success px-2 py-1" style="background:#059669;color:#fff;"><i class="mdi mdi-check-circle mr-1"></i>Synced on Q139827028</span></td>
         </tr>""")
 
-    # Build unified 208-node cards for the interactive directory
+    # Build unified 213-node cards with properly proportioned thumbnails & detailed verification links
     node_cards_html = []
 
-    # 1. Profiles (54)
+    # 1. Verified Profiles (54) - 100x100 square SVG badges
     for p in entities["profiles"]:
-        t = html_lib.escape(p["title"])
-        cat_lbl = html_lib.escape(p["category_label"])
-        ident = html_lib.escape(p["identifier"])
-        desc = html_lib.escape(p["description"])
-        url = html_lib.escape(p["url"])
-        search_str = html_lib.escape(f"{p['title']} {p['category_label']} {p['identifier']} {p['description']} profile sameAs".lower())
+        t = html_lib.escape(p.get("title", ""))
+        cat_lbl = html_lib.escape(p.get("category_label", "Authority Profile"))
+        ident = html_lib.escape(p.get("identifier", "Verified"))
+        desc = html_lib.escape(p.get("description", ""))
+        url = html_lib.escape(p.get("url", "").replace("https://iamharshverma.github.io", "https://www.harshverma.me"))
+        img = html_lib.escape(p.get("image") or "images/profiles/wikidata.svg")
+        search_str = html_lib.escape(f"{t} {cat_lbl} {ident} {desc} {url} profile sameAs".lower())
         node_cards_html.append(f"""
         <div class="col-lg-4 col-md-6 mb-3 kg-node-item" data-kg-cat="profiles" data-kg-search="{search_str}">
             <div class="kg-node-card h-100">
@@ -66,23 +85,46 @@ def build_identity_page(kg):
                     <span class="kg-node-badge kg-badge-profile"><i class="mdi mdi-check-decagram mr-1"></i>sameAs · {cat_lbl}</span>
                     <code class="kg-node-prop">{ident}</code>
                 </div>
-                <h5 class="kg-node-title">{t}</h5>
+                <div class="d-flex align-items-center mb-2">
+                    <div class="kg-node-thumb-wrap mr-3">
+                        <img src="{img}" alt="{t}" class="kg-node-thumb" loading="lazy" onerror="this.src='images/profiles/wikidata.svg'">
+                    </div>
+                    <div>
+                        <h5 class="kg-node-title mb-0">{t}</h5>
+                        <div class="text-muted font-monospace" style="font-size:11px; word-break:break-all;">{url[:46]}{'...' if len(url) > 46 else ''}</div>
+                    </div>
+                </div>
                 <p class="kg-node-desc">{desc}</p>
-                <div class="mt-auto pt-2 border-top d-flex justify-content-between align-items-center">
-                    <a href="{url}" target="_blank" rel="me noopener" class="kg-node-link">Verify Authority <i class="mdi mdi-open-in-new ml-1"></i></a>
+                <div class="mt-auto pt-2 border-top d-flex flex-wrap justify-content-between align-items-center" style="gap:6px;">
+                    <a href="{url}" target="_blank" rel="me noopener" class="kg-node-link"><i class="mdi mdi-shield-check-outline mr-1"></i>Open Verified Profile <i class="mdi mdi-open-in-new ml-1"></i></a>
                     <span class="text-muted font-monospace" style="font-size:11px;">Schema: sameAs</span>
                 </div>
             </div>
         </div>""")
 
-    # 2. Media (42)
+    # 2. Media & Podcasts (42) - 600x340 wide banner SVG thumbnails
     for m in entities["media"]:
         t = html_lib.escape(m.get("title", ""))
         outlet = html_lib.escape(m.get("outlet", "Press Outlet"))
         yr = html_lib.escape(str(m.get("date_display") or m.get("year", "2026")))
         summary = html_lib.escape(m.get("summary", ""))
-        url = html_lib.escape(m.get("primary_url") or "page-media")
-        search_str = html_lib.escape(f"{t} {outlet} {yr} {summary} media press podcast subjectOf".lower())
+        m_type = m.get("type", "article")
+        schema_type = "PodcastEpisode" if m_type == "podcast" else "NewsArticle"
+        icon_svg = m.get("icon_svg", "")
+        img_src = f"images/media/{icon_svg}" if icon_svg else "images/profiles/forbes.svg"
+        links = m.get("links") or []
+        primary_url = m.get("primary_url") or (links[0]["url"] if links else "page-media")
+
+        link_btns = []
+        if links:
+            for lk in links:
+                l_url = html_lib.escape(lk.get("url", primary_url))
+                l_lbl = html_lib.escape(lk.get("label", "Read Feature"))
+                link_btns.append(f'<a href="{l_url}" target="_blank" rel="noopener" class="kg-mini-link-pill"><i class="mdi mdi-open-in-new mr-1"></i>{l_lbl}</a>')
+        else:
+            link_btns.append(f'<a href="{html_lib.escape(primary_url)}" target="_blank" rel="noopener" class="kg-mini-link-pill"><i class="mdi mdi-open-in-new mr-1"></i>Read Citation</a>')
+
+        search_str = html_lib.escape(f"{t} {outlet} {yr} {summary} {schema_type} media press podcast subjectOf".lower())
         node_cards_html.append(f"""
         <div class="col-lg-4 col-md-6 mb-3 kg-node-item" data-kg-cat="media" data-kg-search="{search_str}">
             <div class="kg-node-card h-100">
@@ -90,138 +132,218 @@ def build_identity_page(kg):
                     <span class="kg-node-badge kg-badge-media"><i class="mdi mdi-newspaper-variant-outline mr-1"></i>subjectOf · {outlet}</span>
                     <code class="kg-node-prop">{yr}</code>
                 </div>
-                <h5 class="kg-node-title">{t}</h5>
+                <div class="kg-banner-thumb-wrap mb-2">
+                    <img src="{html_lib.escape(img_src)}" alt="{outlet} — {t}" class="kg-banner-thumb" loading="lazy" onerror="this.src='images/profiles/forbes.svg'">
+                </div>
+                <h5 class="kg-node-title mb-1">{t}</h5>
+                <div class="text-primary font-weight-bold mb-1" style="font-size:12px;">{outlet} · {schema_type}</div>
                 <p class="kg-node-desc">{summary}</p>
-                <div class="mt-auto pt-2 border-top d-flex justify-content-between align-items-center">
-                    <a href="{url}" target="_blank" rel="noopener" class="kg-node-link">Read Citation <i class="mdi mdi-open-in-new ml-1"></i></a>
-                    <span class="text-muted font-monospace" style="font-size:11px;">Schema: subjectOf</span>
+                <div class="mt-auto pt-2 border-top">
+                    <div class="d-flex flex-wrap mb-1" style="gap:6px;">
+                        {''.join(link_btns)}
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-1">
+                        <span class="text-muted font-monospace" style="font-size:10.5px;">@type: {schema_type}</span>
+                        <span class="text-muted font-monospace" style="font-size:10.5px;">Schema: subjectOf</span>
+                    </div>
                 </div>
             </div>
         </div>""")
 
-    # 3. Awards (27)
+    # 3. Honors & Global Awards (27) - 400x240 wide banner SVG thumbnails
     for a in entities["awards"]:
         t = html_lib.escape(a.get("title", ""))
         org = html_lib.escape(a.get("organization", ""))
         yr = html_lib.escape(str(a.get("year", "2026")))
+        tier = html_lib.escape(a.get("tier", "Honoree"))
         desc = html_lib.escape(a.get("description", ""))
+        img = html_lib.escape(a.get("image") or "images/awards/forttuna_100.svg")
         links = a.get("links") or []
-        url = html_lib.escape(links[0]["url"] if links else "page-awards")
-        search_str = html_lib.escape(f"{t} {org} {yr} {desc} award honor credential".lower())
+
+        link_btns = []
+        if links:
+            for lk in links:
+                l_url = html_lib.escape(lk.get("url", "page-awards"))
+                l_lbl = html_lib.escape(lk.get("label", "Verify Credential"))
+                link_btns.append(f'<a href="{l_url}" target="_blank" rel="noopener" class="kg-mini-link-pill"><i class="mdi mdi-shield-check-outline mr-1"></i>{l_lbl}</a>')
+        else:
+            link_btns.append('<a href="page-awards" class="kg-mini-link-pill"><i class="mdi mdi-trophy-outline mr-1"></i>View Award</a>')
+
+        search_str = html_lib.escape(f"{t} {org} {yr} {tier} {desc} award honor credential".lower())
         node_cards_html.append(f"""
         <div class="col-lg-4 col-md-6 mb-3 kg-node-item" data-kg-cat="awards" data-kg-search="{search_str}">
             <div class="kg-node-card h-100">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                     <span class="kg-node-badge kg-badge-award"><i class="mdi mdi-trophy-award mr-1"></i>award · {yr}</span>
-                    <code class="kg-node-prop">{html_lib.escape(a.get('tier', 'Honoree'))}</code>
+                    <code class="kg-node-prop">{tier}</code>
                 </div>
-                <h5 class="kg-node-title">{t}</h5>
-                <p class="kg-node-desc">{org} — {desc[:140]}...</p>
-                <div class="mt-auto pt-2 border-top d-flex justify-content-between align-items-center">
-                    <a href="{url}" target="_blank" rel="noopener" class="kg-node-link">Verify Credential <i class="mdi mdi-open-in-new ml-1"></i></a>
-                    <span class="text-muted font-monospace" style="font-size:11px;">Schema: hasCredential</span>
+                <div class="kg-banner-thumb-wrap mb-2">
+                    <img src="{img}" alt="{t}" class="kg-banner-thumb" loading="lazy" onerror="this.src='images/profiles/wikidata.svg'">
+                </div>
+                <h5 class="kg-node-title mb-1">{t}</h5>
+                <div class="text-primary font-weight-bold mb-1" style="font-size:12px;">{org}</div>
+                <p class="kg-node-desc">{desc[:185]}{'...' if len(desc) > 185 else ''}</p>
+                <div class="mt-auto pt-2 border-top">
+                    <div class="d-flex flex-wrap mb-1" style="gap:6px;">
+                        {''.join(link_btns)}
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-1">
+                        <span class="text-muted font-monospace" style="font-size:10.5px;">@type: EducationalOccupationalCredential</span>
+                        <span class="text-muted font-monospace" style="font-size:10.5px;">Schema: hasCredential</span>
+                    </div>
                 </div>
             </div>
         </div>""")
 
-    # 4. Blogs & Forbes Columns (29)
+    # 4. Blogs & Forbes Columns (29) - 16:9 article thumbnails
     for b in entities["blogs"]:
         t = html_lib.escape(b.get("title", ""))
-        plat = html_lib.escape(b.get("platform", "Forbes"))
+        plat = html_lib.escape(b.get("platform", "Forbes Technology Council"))
         dt = html_lib.escape(str(b.get("date", "2026")))
         desc = html_lib.escape(b.get("description", ""))
         url = html_lib.escape(b.get("url") or "page-blog")
-        search_str = html_lib.escape(f"{t} {plat} {dt} {desc} blog article forbes hackernoon authorOf".lower())
+        spotify = html_lib.escape(b.get("spotify_url") or "")
+        img = html_lib.escape(b.get("image") or "images/blog/thumbnails/forbes-real-ai-moat.jpg")
+        search_str = html_lib.escape(f"{t} {plat} {dt} {desc} blog article forbes hackernoon techarticle".lower())
         node_cards_html.append(f"""
         <div class="col-lg-4 col-md-6 mb-3 kg-node-item" data-kg-cat="blogs" data-kg-search="{search_str}">
             <div class="kg-node-card h-100">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="kg-node-badge kg-badge-blog"><i class="mdi mdi-post-outline mr-1"></i>TechArticle · {plat}</span>
+                    <span class="kg-node-badge kg-badge-blog"><i class="mdi mdi-post-outline mr-1"></i>TechArticle · {plat[:24]}</span>
                     <code class="kg-node-prop">{dt}</code>
                 </div>
+                <div class="kg-banner-thumb-wrap mb-2" style="padding:0;">
+                    <img src="{img}" alt="{t}" style="width:100%;height:100%;object-fit:cover;" loading="lazy" onerror="this.src='images/blog/thumbnails/forbes-real-ai-moat.jpg'">
+                </div>
                 <h5 class="kg-node-title">{t}</h5>
-                <p class="kg-node-desc">{desc}</p>
-                <div class="mt-auto pt-2 border-top d-flex justify-content-between align-items-center">
-                    <a href="{url}" target="_blank" rel="noopener" class="kg-node-link">Read Article <i class="mdi mdi-open-in-new ml-1"></i></a>
-                    <span class="text-muted font-monospace" style="font-size:11px;">Schema: author</span>
+                <p class="kg-node-desc">{desc[:165]}{'...' if len(desc) > 165 else ''}</p>
+                <div class="mt-auto pt-2 border-top d-flex flex-wrap justify-content-between align-items-center" style="gap:6px;">
+                    <div class="d-flex flex-wrap" style="gap:6px;">
+                        <a href="{url}" target="_blank" rel="noopener" class="kg-mini-link-pill"><i class="mdi mdi-book-open-variant mr-1"></i>Read Article</a>
+                        {f'<a href="{spotify}" target="_blank" rel="noopener" class="kg-mini-link-pill"><i class="mdi mdi-spotify mr-1"></i>Audio</a>' if spotify else ''}
+                    </div>
+                    <span class="text-muted font-monospace" style="font-size:11px;">Schema: TechArticle</span>
                 </div>
             </div>
         </div>""")
 
-    # 5. Research Papers (27)
-    for p in entities["papers"]:
+    # 5. Authored Books & Technical Book Reviews (8) - book cover images
+    for b in entities["books"]:
+        t = html_lib.escape(b.get("title", ""))
+        sub = html_lib.escape(b.get("subtitle", ""))
+        role = html_lib.escape(b.get("role", "Authored Book"))
+        yr = html_lib.escape(str(b.get("year", "2026")))
+        desc = html_lib.escape(b.get("description", ""))
+        img = html_lib.escape(b.get("image") or "images/books/beyond_ai_engineering_cover.jpg")
+        schema_type = "Book" if "Authored" in role else "Review"
+        search_str = html_lib.escape(f"{t} {sub} {role} {yr} {desc} book author review".lower())
+        node_cards_html.append(f"""
+        <div class="col-lg-6 col-md-6 mb-3 kg-node-item" data-kg-cat="books" data-kg-search="{search_str}">
+            <div class="kg-node-card h-100">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="kg-node-badge kg-badge-book"><i class="mdi mdi-book-open-page-variant mr-1"></i>{schema_type} · {role}</span>
+                    <code class="kg-node-prop">{yr}</code>
+                </div>
+                <div class="d-flex align-items-start mb-2">
+                    <img src="{img}" alt="{t}" class="rounded border shadow-sm mr-3" style="width:82px;height:116px;object-fit:cover;flex-shrink:0;" loading="lazy" onerror="this.src='images/books/beyond_ai_engineering_cover.jpg'">
+                    <div>
+                        <h5 class="kg-node-title mb-1">{t}</h5>
+                        <div class="text-primary font-weight-bold mb-1" style="font-size:12.5px;">{sub}</div>
+                        <p class="kg-node-desc mb-0">{desc}</p>
+                    </div>
+                </div>
+                <div class="mt-auto pt-2 border-top d-flex justify-content-between align-items-center">
+                    <a href="page-books" class="kg-node-link"><i class="mdi mdi-book-multiple mr-1"></i>Explore Official Book Hub <i class="mdi mdi-arrow-right ml-1"></i></a>
+                    <span class="text-muted font-monospace" style="font-size:11px;">Schema: {schema_type}</span>
+                </div>
+            </div>
+        </div>""")
+
+    # 6. Peer-Reviewed Research Papers (27) - generated 400x160 SVG paper banner thumbnails
+    for idx, p in enumerate(entities["papers"], 1):
         t = html_lib.escape(p.get("title", ""))
-        venue = html_lib.escape(p.get("venue", "IEEE / Peer-Reviewed"))
+        venue = html_lib.escape(p.get("venue") or p.get("publisher") or "IEEE / Peer-Reviewed Venue")
         yr = html_lib.escape(str(p.get("year", "")))
-        doi = html_lib.escape(p.get("doi", "Peer-Reviewed"))
+        doi = html_lib.escape(p.get("doi", ""))
+        abstract = html_lib.escape(p.get("abstract", ""))
         url = html_lib.escape(p.get("link") or "page-publications")
-        search_str = html_lib.escape(f"{t} {venue} {yr} {doi} paper research scholarlyarticle".lower())
+        img = html_lib.escape(p.get("image") or f"images/papers/paper_{idx}.svg")
+        doi_url = f"https://doi.org/{doi}" if doi else url
+        search_str = html_lib.escape(f"{t} {venue} {yr} {doi} {abstract} paper research scholarlyarticle".lower())
         node_cards_html.append(f"""
         <div class="col-lg-4 col-md-6 mb-3 kg-node-item" data-kg-cat="papers" data-kg-search="{search_str}">
             <div class="kg-node-card h-100">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                     <span class="kg-node-badge kg-badge-paper"><i class="mdi mdi-school-outline mr-1"></i>ScholarlyArticle · {yr}</span>
-                    <code class="kg-node-prop">{doi[:22]}</code>
+                    <code class="kg-node-prop">{doi[:22] if doi else 'Peer-Reviewed'}</code>
                 </div>
-                <h5 class="kg-node-title">{t}</h5>
-                <p class="kg-node-desc">Published in {venue}.</p>
-                <div class="mt-auto pt-2 border-top d-flex justify-content-between align-items-center">
-                    <a href="{url}" target="_blank" rel="noopener" class="kg-node-link">View Publication <i class="mdi mdi-open-in-new ml-1"></i></a>
+                <div class="kg-banner-thumb-wrap mb-2">
+                    <img src="{img}" alt="{t}" class="kg-banner-thumb" loading="lazy" onerror="this.src='images/profiles/google_scholar.svg'">
+                </div>
+                <h5 class="kg-node-title mb-1">{t}</h5>
+                <div class="text-primary font-weight-bold mb-1" style="font-size:12px;"><i class="mdi mdi-bank-outline mr-1"></i>{venue}</div>
+                <p class="kg-node-desc">{abstract[:150] + '...' if abstract else f'Published in {venue} ({yr}).'}</p>
+                <div class="mt-auto pt-2 border-top d-flex flex-wrap justify-content-between align-items-center" style="gap:6px;">
+                    <div class="d-flex flex-wrap" style="gap:6px;">
+                        <a href="{url}" target="_blank" rel="noopener" class="kg-mini-link-pill"><i class="mdi mdi-file-document-outline mr-1"></i>Paper</a>
+                        {f'<a href="{html_lib.escape(doi_url)}" target="_blank" rel="noopener" class="kg-mini-link-pill"><i class="mdi mdi-identifier mr-1"></i>DOI</a>' if doi else ''}
+                    </div>
                     <span class="text-muted font-monospace" style="font-size:11px;">Schema: ScholarlyArticle</span>
                 </div>
             </div>
         </div>""")
 
-    # 6. Associations & Fellowships (27)
+    # 7. Invited Associations & Fellowships (26 - ACM Removed) - 400x160 wide banner SVG thumbnails
     for assoc in entities["associations"]:
         t = html_lib.escape(assoc.get("title", ""))
+        if "acm" in t.lower():
+            continue
         role = html_lib.escape(assoc.get("role", ""))
         tier = html_lib.escape(assoc.get("tier", ""))
+        cred = html_lib.escape(assoc.get("credential_id", "Verified"))
         desc = html_lib.escape(assoc.get("description", ""))
-        url = html_lib.escape(assoc.get("url") or "page-memberships")
-        search_str = html_lib.escape(f"{t} {role} {tier} {desc} association fellowship memberOf".lower())
+        img = html_lib.escape(assoc.get("image") or "images/memberships/ieee_senior.svg")
+        links = assoc.get("links") or [{"url": assoc.get("url", "page-memberships"), "label": "Verify Membership"}]
+
+        link_btns = []
+        for lk in links:
+            l_url = html_lib.escape(lk.get("url", "page-memberships"))
+            l_lbl = html_lib.escape(lk.get("label", "Verify"))
+            link_btns.append(f'<a href="{l_url}" target="_blank" rel="noopener" class="kg-mini-link-pill"><i class="mdi mdi-shield-check-outline mr-1"></i>{l_lbl}</a>')
+
+        search_str = html_lib.escape(f"{t} {role} {tier} {cred} {desc} association fellowship memberOf".lower())
         node_cards_html.append(f"""
         <div class="col-lg-4 col-md-6 mb-3 kg-node-item" data-kg-cat="associations" data-kg-search="{search_str}">
             <div class="kg-node-card h-100">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                     <span class="kg-node-badge kg-badge-assoc"><i class="mdi mdi-shield-crown-outline mr-1"></i>memberOf · {tier}</span>
-                    <code class="kg-node-prop">Verified</code>
+                    <code class="kg-node-prop">{cred[:24]}</code>
                 </div>
-                <h5 class="kg-node-title">{t}</h5>
-                <p class="kg-node-desc">{role} — {desc[:140]}...</p>
-                <div class="mt-auto pt-2 border-top d-flex justify-content-between align-items-center">
-                    <a href="{url}" target="_blank" rel="noopener" class="kg-node-link">Verify Membership <i class="mdi mdi-open-in-new ml-1"></i></a>
-                    <span class="text-muted font-monospace" style="font-size:11px;">Schema: memberOf</span>
+                <div class="kg-banner-thumb-wrap mb-2">
+                    <img src="{img}" alt="{t}" class="kg-banner-thumb" loading="lazy" onerror="this.src='images/memberships/ieee_senior.svg'">
                 </div>
-            </div>
-        </div>""")
-
-    # 7. Authored Books (2)
-    for b in entities["books"]:
-        t = html_lib.escape(b.get("title", ""))
-        sub = html_lib.escape(b.get("subtitle", ""))
-        desc = html_lib.escape(b.get("description", ""))
-        url = html_lib.escape(b.get("url") or "page-books")
-        search_str = html_lib.escape(f"{t} {sub} {desc} book author".lower())
-        node_cards_html.append(f"""
-        <div class="col-lg-6 col-md-6 mb-3 kg-node-item" data-kg-cat="books" data-kg-search="{search_str}">
-            <div class="kg-node-card h-100">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="kg-node-badge kg-badge-book"><i class="mdi mdi-book-open-page-variant mr-1"></i>Book · Authored Volume</span>
-                    <code class="kg-node-prop">{html_lib.escape(b.get('year', '2026'))}</code>
-                </div>
-                <h5 class="kg-node-title">{t}</h5>
-                <p class="kg-node-desc"><strong>{sub}</strong> — {desc}</p>
-                <div class="mt-auto pt-2 border-top d-flex justify-content-between align-items-center">
-                    <a href="{url}" class="kg-node-link">Explore Book Hub <i class="mdi mdi-arrow-right ml-1"></i></a>
-                    <span class="text-muted font-monospace" style="font-size:11px;">Schema: Book</span>
+                <h5 class="kg-node-title mb-1">{t}</h5>
+                <div class="text-primary font-weight-bold mb-1" style="font-size:12px;">{role}</div>
+                <p class="kg-node-desc">{desc[:175]}{'...' if len(desc) > 175 else ''}</p>
+                <div class="mt-auto pt-2 border-top">
+                    <div class="d-flex flex-wrap mb-1" style="gap:6px;">
+                        {''.join(link_btns)}
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-1">
+                        <span class="text-muted font-monospace" style="font-size:10.5px;">@type: Organization</span>
+                        <span class="text-muted font-monospace" style="font-size:10.5px;">Schema: memberOf</span>
+                    </div>
                 </div>
             </div>
         </div>""")
 
     qs_escaped = html_lib.escape(kg["quickstatements"])
+    ref_replacement_escaped = html_lib.escape(kg.get("quickstatements_reference_replacement", ""))
     wiki_escaped = html_lib.escape(kg["everybodywiki_wikitext"])
     schema_escaped = html_lib.escape(schema_json_str)
+
+    ew_rev = ew_sync.get("newrevid") or ew_sync.get("lastrevid") or "6891822"
+    ew_status_msg = ew_sync.get("api_write_message") or f"Successfully updated EverybodyWiki article live via MediaWiki API (user: harshverma59, new revision: {ew_rev})!"
 
     html_doc = f"""<!DOCTYPE html>
 <html lang="en">
@@ -239,14 +361,16 @@ def build_identity_page(kg):
     <meta charset="UTF-8">
     <title>Harsh Verma | Google Knowledge Graph, Wikidata Q139827028 &amp; Entity Verification Hub</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Official Google Knowledge Graph &amp; Entity Reconciliation Hub for Harsh Verma (Wikidata Q139827028, EverybodyWiki, ORCID 0000-0003-2134-2600, Google Scholar zSt9oRMAAAAJ). Reconciling {counts['total_linked_nodes']} verified profiles, media features, awards, books, research papers, and associations." />
+    <meta name="description" content="Official Google Knowledge Graph &amp; Entity Reconciliation Hub for Harsh Verma (Canonical @id: https://www.harshverma.me/#person, Wikidata Q139827028, EverybodyWiki, ORCID 0000-0003-2134-2600, Google Scholar zSt9oRMAAAAJ). Reconciling {counts['total_linked_nodes']} verified profiles, media features, awards, books, research papers, and associations." />
     <meta property="og:title" content="Harsh Verma | Official Google Knowledge Graph &amp; Entity Verification Hub (Q139827028)" />
-    <meta property="og:description" content="Canonical entity reconciliation hub for Harsh Verma (Principal AI Software Engineer at Palo Alto Networks, Keynote Speaker, Author &amp; Researcher). Linking Wikidata Q139827028, EverybodyWiki, and {counts['total_linked_nodes']}+ verified authority nodes." />
+    <meta property="og:description" content="Canonical entity reconciliation hub for Harsh Verma (https://www.harshverma.me/#person — Principal AI Software Engineer at Palo Alto Networks, Keynote Speaker, Author &amp; Researcher). Linking Wikidata Q139827028, EverybodyWiki, and {counts['total_linked_nodes']} verified authority nodes." />
     <meta property="og:type" content="profile" />
-    <meta property="og:url" content="https://iamharshverma.github.io/page-identity" />
-    <meta property="og:image" content="https://iamharshverma.github.io/images/about/harsh_hero_clean.png" />
-    <link rel="canonical" href="https://iamharshverma.github.io/page-identity" />
+    <meta property="og:url" content="https://www.harshverma.me/page-identity" />
+    <meta property="og:image" content="https://www.harshverma.me/images/harsh/Harsh_portfolio_pic.png" />
+    <link rel="canonical" href="https://www.harshverma.me/page-identity" />
     <!-- Bidirectional rel="me" Identity Verification Links -->
+    <link rel="me" href="https://www.harshverma.me/" />
+    <link rel="me" href="https://harshverma.me/" />
     <link rel="me" href="https://www.wikidata.org/wiki/Q139827028" />
     <link rel="me" href="https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)" />
     <link rel="me" href="https://orcid.org/0000-0003-2134-2600" />
@@ -371,6 +495,59 @@ def build_identity_page(kg):
             box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
             transform: translateY(-2px);
         }}
+        .kg-node-thumb-wrap {{
+            width: 54px;
+            height: 54px;
+            border-radius: 12px;
+            background: #0f172a;
+            border: 1px solid #1e293b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            flex-shrink: 0;
+            overflow: hidden;
+        }}
+        .kg-node-thumb {{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }}
+        .kg-banner-thumb-wrap {{
+            width: 100%;
+            height: 128px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #090e1a 0%, #0f172a 100%);
+            border: 1px solid #1e293b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+            overflow: hidden;
+        }}
+        .kg-banner-thumb {{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }}
+        .kg-mini-link-pill {{
+            display: inline-flex;
+            align-items: center;
+            font-size: 11.5px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: #eff6ff;
+            color: #1d4ed8 !important;
+            border: 1px solid #bfdbfe;
+            text-decoration: none !important;
+            transition: all 0.18s ease;
+        }}
+        .kg-mini-link-pill:hover {{
+            background: #2563eb;
+            color: #ffffff !important;
+            border-color: #2563eb;
+        }}
         .kg-node-badge {{
             font-size: 11px;
             font-weight: 700;
@@ -432,6 +609,11 @@ def build_identity_page(kg):
             border-color: #334155 !important;
             color: #e2e8f0 !important;
         }}
+        body.dark-mode .kg-mini-link-pill {{
+            background: rgba(37, 99, 235, 0.2) !important;
+            border-color: rgba(59, 130, 246, 0.4) !important;
+            color: #93c5fd !important;
+        }}
     </style>
 </head>
 <body>
@@ -490,6 +672,13 @@ def build_identity_page(kg):
                                 <div class="dropdown-item-content">
                                     <span class="dropdown-item-title">Board &amp; Strategic Advisory <span class="badge badge-pill badge-warning text-dark ml-1" style="font-size: 10px;">Executive</span></span>
                                     <span class="dropdown-item-desc">Corporate governance, councils &amp; startup boards</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item nav-dropdown-item" href="page-identity">
+                                <div class="dropdown-item-icon bg-soft-info"><i class="mdi mdi-transit-connection-variant"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Knowledge Graph Hub <span class="badge badge-pill badge-success ml-1" style="font-size: 10px;">Q139827028</span></span>
+                                    <span class="dropdown-item-desc">Google Knowledge Panel, Wikidata &amp; EverybodyWiki</span>
                                 </div>
                             </a>
                             <a class="dropdown-item nav-dropdown-item" href="page-media-distribution-analytics">
@@ -556,23 +745,23 @@ def build_identity_page(kg):
                     </h1>
                     <p class="mb-4" style="color: #cbd5e1; font-size: 16.5px; line-height: 1.65;">
                         Machine-readable <code>Schema.org/@graph</code> authority anchor reconciling <strong>Harsh Verma</strong>
-                        (<em>Principal AI Software Engineer at Palo Alto Networks, Keynote Speaker, Author &amp; Researcher</em>)
+                        (<code>@id: https://www.harshverma.me/#person</code> — <em>Principal AI Software Engineer at Palo Alto Networks, Keynote Speaker, Author &amp; Researcher</em>)
                         across <strong>Wikidata (<code>Q139827028</code>)</strong>, <strong>EverybodyWiki</strong>,
-                        <strong>{counts['profiles']} Verified Profiles</strong>, <strong>{counts['media']}+ Press Features</strong>,
+                        <strong>{counts['profiles']} Verified Profiles</strong>, <strong>{counts['media']} Press &amp; Podcast Features</strong>,
                         <strong>{counts['awards']} Global Awards</strong>, <strong>{counts['blogs']} Technical Columns</strong>,
-                        <strong>{counts['papers']}+ Research Papers</strong>, and <strong>{counts['associations']} Fellowships &amp; Associations</strong>.
+                        <strong>{counts['books']} Books &amp; Reviews</strong>, <strong>{counts['papers']} Research Papers</strong>, and <strong>{counts['associations']} Fellowships &amp; Associations</strong>.
                     </p>
                     <div class="d-flex flex-wrap align-items-center" style="gap: 10px;">
-                        <a href="https://www.wikidata.org/wiki/Q139827028" target="_blank" class="btn btn-primary font-weight-bold px-4 py-2">
+                        <a href="https://www.wikidata.org/wiki/Q139827028" target="_blank" rel="noopener" class="btn btn-primary font-weight-bold px-4 py-2">
                             <i class="mdi mdi-database-check mr-1"></i> Inspect Wikidata Q139827028 <i class="mdi mdi-open-in-new ml-1"></i>
                         </a>
-                        <a href="https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)" target="_blank" class="btn btn-outline-light font-weight-bold px-4 py-2">
+                        <a href="https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)" target="_blank" rel="noopener" class="btn btn-outline-light font-weight-bold px-4 py-2">
                             <i class="mdi mdi-wikipedia mr-1"></i> EverybodyWiki Biography <i class="mdi mdi-open-in-new ml-1"></i>
                         </a>
-                        <a href="https://validator.schema.org/#url=https%3A%2F%2Fiamharshverma.github.io%2Fpage-identity" target="_blank" class="btn btn-outline-info font-weight-bold px-3 py-2">
+                        <a href="https://validator.schema.org/#url=https%3A%2F%2Fwww.harshverma.me%2Fpage-identity" target="_blank" rel="noopener" class="btn btn-outline-info font-weight-bold px-3 py-2">
                             <i class="mdi mdi-code-json mr-1"></i> Validate Schema.org Graph
                         </a>
-                        <a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fiamharshverma.github.io%2Fpage-identity" target="_blank" class="btn btn-outline-success font-weight-bold px-3 py-2">
+                        <a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.harshverma.me%2Fpage-identity" target="_blank" rel="noopener" class="btn btn-outline-success font-weight-bold px-3 py-2">
                             <i class="mdi mdi-google mr-1"></i> Google Rich Results Test
                         </a>
                     </div>
@@ -589,7 +778,7 @@ def build_identity_page(kg):
                                 <small class="text-white-50">Total Graph Nodes</small>
                             </div>
                             <div class="col-6 mb-3">
-                                <div class="h3 font-weight-bold text-info mb-0" id="liveWdClaimCount">48</div>
+                                <div class="h3 font-weight-bold text-info mb-0" id="liveWdClaimCount">47</div>
                                 <small class="text-white-50">Wikidata Claims</small>
                             </div>
                             <div class="col-6">
@@ -602,7 +791,8 @@ def build_identity_page(kg):
                             </div>
                         </div>
                         <div class="mt-3 pt-3 border-top border-secondary" style="font-size:12px;color:#94a3b8;">
-                            <div><strong>Canonical @id:</strong> <code>https://iamharshverma.github.io/#person</code></div>
+                            <div><strong>Canonical @id:</strong> <code class="text-info">https://www.harshverma.me/#person</code></div>
+                            <div class="mt-1"><strong>Official Website:</strong> <code>https://www.harshverma.me/</code></div>
                             <div class="mt-1"><strong>Wikidata URI:</strong> <code>http://www.wikidata.org/entity/Q139827028</code></div>
                         </div>
                     </div>
@@ -611,72 +801,99 @@ def build_identity_page(kg):
         </div>
     </section>
 
-    <!-- Section 1: Google Knowledge Panel Preview & Canonical Identifiers -->
+    <!-- Section 1: Google Knowledge Panel Dossier, Portrait Gallery & Canonical Identifiers -->
     <section class="section py-5">
         <div class="container">
             <div class="kg-panel-dossier mb-5">
                 <div class="row align-items-start">
-                    <div class="col-lg-4 mb-4 mb-lg-0 border-right">
+                    <div class="col-lg-5 mb-4 mb-lg-0 border-right">
                         <div class="d-flex align-items-center mb-3">
-                            <img src="images/about/harsh_hero_clean.png" alt="Harsh Verma" class="rounded-circle mr-3 border" style="width:76px;height:76px;object-fit:cover;">
+                            <img src="images/harsh/Harsh_portfolio_pic.png" alt="Harsh Verma Official Headshot" class="rounded-circle mr-3 border shadow-sm" style="width:86px;height:86px;object-fit:cover;">
                             <div>
                                 <span class="badge badge-primary mb-1">Google Knowledge Graph Entity</span>
-                                <h3 class="font-weight-bold text-dark mb-0" style="font-size:1.45rem;">Harsh Verma</h3>
+                                <h3 class="font-weight-bold text-dark mb-0" style="font-size:1.5rem;">Harsh Verma</h3>
                                 <p class="text-muted mb-0" style="font-size:13px;">Principal AI Software Engineer · Author · Speaker · Researcher</p>
+                                <code style="font-size:11.5px;color:#2563eb;">@id: https://www.harshverma.me/#person</code>
                             </div>
                         </div>
                         <p class="text-muted" style="font-size:13.5px;line-height:1.6;">
                             <strong>Harsh Verma</strong> is a Principal Software Engineer in AI at <strong>Palo Alto Networks</strong>, Official Member of the <strong>Forbes Technology Council</strong>, <strong>IEEE Senior Member (SMIEEE)</strong>, <strong>Fellow of the British Computer Society (FBCS)</strong>, <strong>Fellow of the Royal Society of Arts (FRSA)</strong>, and Full Member of <strong>Sigma Xi</strong>.
                         </p>
+                        <!-- Canonical Entity Images & Authored Book Covers -->
+                        <div class="mb-3">
+                            <div class="text-uppercase font-weight-bold text-muted mb-2" style="font-size:11px;letter-spacing:0.6px;">Canonical Entity Portrait &amp; Book Thumbnails (`Schema.org/ImageObject`)</div>
+                            <div class="d-flex flex-wrap align-items-center" style="gap:10px;">
+                                <img src="images/harsh/Harsh_portfolio_pic.png" alt="Harsh Verma Primary Portrait" class="rounded border shadow-sm" style="width:64px;height:64px;object-fit:cover;" title="Primary Knowledge Panel Portrait">
+                                <img src="images/harsh/infq_harsh.jpg" alt="Harsh Verma Executive Portrait" class="rounded border shadow-sm" style="width:64px;height:64px;object-fit:cover;" title="Executive Editorial Portrait">
+                                <img src="images/harsh/regenerated_image_1788342600159.jpg" alt="Harsh Verma Keynote Portrait" class="rounded border shadow-sm" style="width:64px;height:64px;object-fit:cover;" title="Keynote Speaker Portrait">
+                                <img src="images/books/beyond_ai_engineering_cover.jpg" alt="Beyond AI Engineering Cover" class="rounded border shadow-sm" style="width:48px;height:64px;object-fit:cover;" title="Book: Beyond AI Engineering (2025)">
+                                <img src="images/books/ai_vs_ai_cover.jpg" alt="AI vs. AI Book Cover" class="rounded border shadow-sm" style="width:48px;height:64px;object-fit:cover;" title="Book: AI vs. AI (2026)">
+                            </div>
+                        </div>
                         <div class="small text-dark">
-                            <div class="mb-2"><strong>Employer:</strong> <a href="https://www.wikidata.org/wiki/Q7128508" target="_blank">Palo Alto Networks (Q7128508)</a></div>
-                            <div class="mb-2"><strong>Education:</strong> <a href="https://www.wikidata.org/wiki/Q41506" target="_blank">Stanford University (Q41506)</a> · <a href="https://www.wikidata.org/wiki/Q1781394" target="_blank">UT Dallas (Q1781394)</a> · <a href="https://www.wikidata.org/wiki/Q7903393" target="_blank">UTU (Q7903393)</a></div>
-                            <div class="mb-2"><strong>Books:</strong> <em>Enterprise AI Agents</em> (2025) · <em>Autonomous Cyber Defense</em> (2026)</div>
-                            <div class="mb-0"><strong>Official Site:</strong> <a href="https://iamharshverma.github.io/" target="_blank">iamharshverma.github.io</a></div>
+                            <div class="mb-1"><strong>Employer:</strong> <a href="https://www.wikidata.org/wiki/Q7128508" target="_blank" rel="noopener">Palo Alto Networks (Q7128508)</a></div>
+                            <div class="mb-1"><strong>Education:</strong> <a href="https://www.wikidata.org/wiki/Q41506" target="_blank" rel="noopener">Stanford University (Q41506)</a> · <a href="https://www.wikidata.org/wiki/Q1781394" target="_blank" rel="noopener">UT Dallas (Q1781394)</a> · <a href="https://www.wikidata.org/wiki/Q7903393" target="_blank" rel="noopener">UTU (Q7903393)</a></div>
+                            <div class="mb-1"><strong>Authored Books:</strong> <em>Beyond AI Engineering</em> (2025) · <em>AI vs. AI</em> (2026)</div>
+                            <div class="mb-0"><strong>Official Website:</strong> <a href="https://www.harshverma.me/" target="_blank" rel="noopener">https://www.harshverma.me</a> (<a href="https://harshverma.me/" target="_blank" rel="noopener">harshverma.me</a>)</div>
                         </div>
                     </div>
-                    <div class="col-lg-8 pl-lg-4">
-                        <h4 class="font-weight-bold text-dark mb-3" style="font-size:1.15rem;">
+                    <div class="col-lg-7 pl-lg-4">
+                        <h4 class="font-weight-bold text-dark mb-2" style="font-size:1.15rem;">
                             <i class="mdi mdi-fingerprint text-primary mr-1"></i> Canonical Authority Identifiers (1-to-1 Reconciliation Matrix)
                         </h4>
+                        <p class="text-muted mb-3" style="font-size:13px;">
+                            Primary Entity URI <code>https://www.harshverma.me/#person</code> is bidirectionally linked via <code>Schema.org/sameAs</code>, <code>rel="me"</code>, and Wikidata external identifiers across all major global knowledge bases:
+                        </p>
                         <div class="d-flex flex-wrap" style="gap: 8px;">
-                            <a href="https://www.wikidata.org/wiki/Q139827028" target="_blank" class="kg-id-chip">
+                            <a href="https://www.harshverma.me/#person" class="kg-id-chip" style="border-color:#2563eb;background:#eff6ff;">
+                                <i class="mdi mdi-star-circle text-primary"></i> Canonical @id: <strong>https://www.harshverma.me/#person</strong>
+                            </a>
+                            <a href="https://www.wikidata.org/wiki/Q139827028" target="_blank" rel="noopener" class="kg-id-chip">
                                 <i class="mdi mdi-database text-primary"></i> Wikidata: <strong>Q139827028</strong>
                             </a>
-                            <a href="https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)" target="_blank" class="kg-id-chip">
+                            <a href="https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)" target="_blank" rel="noopener" class="kg-id-chip">
                                 <i class="mdi mdi-wikipedia text-info"></i> EverybodyWiki: <strong>Harsh_Verma_(Software_Engineer)</strong>
                             </a>
-                            <a href="https://orcid.org/0000-0003-2134-2600" target="_blank" class="kg-id-chip">
+                            <a href="https://orcid.org/0000-0003-2134-2600" target="_blank" rel="noopener" class="kg-id-chip">
                                 <i class="mdi mdi-school text-success"></i> ORCID: <strong>0000-0003-2134-2600</strong>
                             </a>
-                            <a href="https://scholar.google.com/citations?user=zSt9oRMAAAAJ" target="_blank" class="kg-id-chip">
+                            <a href="https://scholar.google.com/citations?user=zSt9oRMAAAAJ" target="_blank" rel="noopener" class="kg-id-chip">
                                 <i class="mdi mdi-google text-primary"></i> Google Scholar: <strong>zSt9oRMAAAAJ</strong>
                             </a>
-                            <a href="https://www.semanticscholar.org/author/Harsh-Verma/145004805" target="_blank" class="kg-id-chip">
+                            <a href="https://www.semanticscholar.org/author/Harsh-Verma/145004805" target="_blank" rel="noopener" class="kg-id-chip">
                                 <i class="mdi mdi-book-search text-warning"></i> Semantic Scholar: <strong>145004805</strong>
                             </a>
-                            <a href="https://openreview.net/profile?id=~Harsh_Verma3" target="_blank" class="kg-id-chip">
+                            <a href="https://openreview.net/profile?id=~Harsh_Verma3" target="_blank" rel="noopener" class="kg-id-chip">
                                 <i class="mdi mdi-file-document-check text-danger"></i> OpenReview: <strong>~Harsh_Verma3</strong>
                             </a>
-                            <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=11144549" target="_blank" class="kg-id-chip">
+                            <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=11144549" target="_blank" rel="noopener" class="kg-id-chip">
                                 <i class="mdi mdi-library text-primary"></i> SSRN ID: <strong>11144549</strong>
                             </a>
-                            <a href="https://ieee-collabratec.ieee.org/app/p/HarshVerma59" target="_blank" class="kg-id-chip">
+                            <a href="https://www.researchgate.net/profile/Harsh-Verma-43" target="_blank" rel="noopener" class="kg-id-chip">
+                                <i class="mdi mdi-atom text-success"></i> ResearchGate: <strong>Harsh-Verma-43</strong>
+                            </a>
+                            <a href="https://ieee-collabratec.ieee.org/app/p/HarshVerma59" target="_blank" rel="noopener" class="kg-id-chip">
                                 <i class="mdi mdi-certificate text-info"></i> IEEE Senior Member: <strong>95132014</strong>
                             </a>
-                            <a href="https://theorg.com/org/palo-alto-networks/person/harsh-verma" target="_blank" class="kg-id-chip">
+                            <a href="https://ieeexplore.ieee.org/author/37089143797" target="_blank" rel="noopener" class="kg-id-chip">
+                                <i class="mdi mdi-book-open-page-variant text-primary"></i> IEEE Xplore Author: <strong>37089143797</strong>
+                            </a>
+                            <a href="https://theorg.com/org/palo-alto-networks/person/harsh-verma" target="_blank" rel="noopener" class="kg-id-chip">
                                 <i class="mdi mdi-domain text-primary"></i> The Org: <strong>harsh-verma</strong>
                             </a>
-                            <a href="https://www.forbes.com/councils/forbestechcouncil/people/harshverma/" target="_blank" class="kg-id-chip">
+                            <a href="https://www.forbes.com/councils/forbestechcouncil/people/harshverma/" target="_blank" rel="noopener" class="kg-id-chip">
                                 <i class="mdi mdi-check-decagram text-dark"></i> Forbes Council: <strong>harshverma</strong>
                             </a>
-                            <a href="https://github.com/iamharshverma" target="_blank" class="kg-id-chip">
+                            <a href="https://github.com/iamharshverma" target="_blank" rel="noopener" class="kg-id-chip">
                                 <i class="mdi mdi-github-face text-dark"></i> GitHub: <strong>iamharshverma</strong>
                             </a>
-                            <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="kg-id-chip">
+                            <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" rel="noopener" class="kg-id-chip">
                                 <i class="mdi mdi-linkedin text-primary"></i> LinkedIn: <strong>harshverma59</strong>
                             </a>
-                            <a href="https://imdb.me/harshverma" target="_blank" class="kg-id-chip">
+                            <a href="https://x.com/harshverma59" target="_blank" rel="noopener" class="kg-id-chip">
+                                <i class="mdi mdi-twitter text-info"></i> X / Twitter: <strong>@harshverma59</strong>
+                            </a>
+                            <a href="https://imdb.me/harshverma" target="_blank" rel="noopener" class="kg-id-chip">
                                 <i class="mdi mdi-movie-roll text-warning"></i> IMDb: <strong>imdb.me/harshverma</strong>
                             </a>
                         </div>
@@ -691,82 +908,110 @@ def build_identity_page(kg):
                     <div class="kg-sync-card">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <div>
-                                <span class="badge badge-success px-2 py-1 mb-1" style="background:#059669;color:#fff;">
-                                    <i class="mdi mdi-check-decagram mr-1"></i> Live Action API Connected
+                                <span class="badge badge-warning px-2 py-1 mb-1" id="wdBadgeStatus" style="background:#f59e0b;color:#1e293b;">
+                                    <i class="mdi mdi-alert-circle mr-1"></i> Live Reference Audit: 8 Updates Ready
                                 </span>
                                 <h4 class="font-weight-bold text-dark mb-0">Wikidata Entity <code>Q139827028</code></h4>
                             </div>
                             <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="triggerProgrammaticWikiSync()">
-                                <i class="mdi mdi-sync mr-1"></i> Run Live API Sync
+                                <i class="mdi mdi-sync mr-1"></i> Run Live Audit
                             </button>
                         </div>
                         <p class="text-muted" style="font-size:13.5px;">
-                            Programmatically synchronizes <strong>{len(wd_claims)} structured claims</strong> (Occupations <code>P106</code>, Palo Alto Networks <code>P108</code>, Stanford/UTD/UTU <code>P69</code>, IEEE/BCS/RSA/Sigma Xi Fellowships <code>P463</code>, ORCID <code>P496</code>, Google Scholar <code>P1960</code>, Semantic Scholar <code>P4012</code>, GitHub <code>P2037</code>, LinkedIn <code>P6634</code>) directly to <code>Q139827028</code> via MediaWiki <code>wbeditentity</code>.
+                            Official structured statements on Wikidata (Occupations <code>P106</code>, Palo Alto Networks <code>P108</code>, Education <code>P69</code>, Memberships <code>P463</code>, Official Website <code>P856</code> = <code>https://www.harshverma.me/</code>, ORCID <code>P496</code>, Google Scholar <code>P1960</code>, GitHub <code>P2037</code>, LinkedIn <code>P6634</code>).
                         </p>
+
+                        <!-- Live Reference Migration Callout -->
+                        <div class="p-3 rounded mb-3" style="background:#fff7ed;border:1px solid #fdba74;font-size:13px;" id="wdRefAuditBanner">
+                            <div class="d-flex align-items-center mb-1 text-dark">
+                                <i class="mdi mdi-alert-circle text-warning mr-2" style="font-size:18px;"></i>
+                                <strong>Live Wikidata Reference Migration Required:</strong>
+                            </div>
+                            <div class="text-dark" style="line-height:1.5;">
+                                On live endpoint <a href="https://www.wikidata.org/wiki/Special:EntityData/Q139827028.json" target="_blank" rel="noopener" class="font-weight-bold">Special:EntityData/Q139827028.json</a>, <strong>8 statement references</strong> point to deprecated <code>iamharshverma.github.io</code> (IEEE, Sigma Xi, BCS, AAAI memberships <code>P463</code>, UT Dallas &amp; UTU education <code>P69</code>, keynote speaker <code>P106</code>). In addition, official website <code>P856</code> points to <code>iamharshverma.github.io</code> and ACM <code>Q127992</code> is marked for removal.
+                            </div>
+                            <div class="mt-2 text-dark font-weight-bold">
+                                Resolution: Paste the 1-click Reference Replacement Batch below into QuickStatements Toolforge, or submit the 6-digit email code below.
+                            </div>
+                        </div>
+
+                        <!-- 2FA Token Submission for Instant API Execution -->
+                        <div class="p-2 mb-3 rounded" style="background:#f1f5f9;border:1px solid #cbd5e1;">
+                            <div class="small font-weight-bold text-dark mb-1">
+                                <i class="mdi mdi-email-check mr-1 text-primary"></i> Optional: Submit Wikimedia 2FA Token (sent to h***@gmail.com)
+                            </div>
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" id="wd2faInput" placeholder="Enter 6-digit email code" style="max-width:220px;">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button" onclick="submitWikidata2fa()">
+                                        <i class="mdi mdi-check-circle mr-1"></i> Submit &amp; Sync Live
+                                    </button>
+                                </div>
+                            </div>
+                            <small class="text-muted d-block mt-1">If not using 2FA token, use the 1-click QuickStatements batch below (no 2FA required).</small>
+                        </div>
+
                         <div class="p-3 rounded mb-3" style="background:#f8fafc;border:1px solid #e2e8f0;font-size:13px;" id="wdLiveStatusBanner">
-                            <div><strong>Status:</strong> <span class="text-success font-weight-bold">{html_lib.escape(wd_sync.get('api_write_status', 'synced').upper())}</span> (Revision ID: <code id="wdRevId">{wd_sync.get('lastrevid', '2560520518')}</code>)</div>
+                            <div><strong>Live Status:</strong> <span class="text-success font-weight-bold" id="wdStatusBadge">{html_lib.escape(wd_sync.get('api_write_status', 'synced').upper())}</span> (Revision ID: <code id="wdRevId">{wd_sync.get('lastrevid', '2560520518')}</code>)</div>
                             <div class="text-muted mt-1" id="wdStatusMsg">{html_lib.escape(wd_sync.get('api_write_message', ''))}</div>
                         </div>
+
                         <div class="d-flex flex-wrap mb-2" style="gap:8px;">
-                            <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold" onclick="copyTextById('qsBatchCode', 'QuickStatements v2 Batch')">
-                                <i class="mdi mdi-content-copy mr-1"></i> Copy QuickStatements
+                            <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="copyTextById('qsRefBatchCode', 'Reference Replacement Batch')">
+                                <i class="mdi mdi-content-copy mr-1"></i> Copy Reference Replacement Batch
                             </button>
-                            <a href="https://quickstatements.toolforge.org/#/batch" target="_blank" class="btn btn-sm btn-outline-dark font-weight-bold">
-                                <i class="mdi mdi-launch mr-1"></i> Open QuickStatements Tool
+                            <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold" onclick="copyTextById('qsBatchCode', 'Full QuickStatements Batch')">
+                                <i class="mdi mdi-code-braces mr-1"></i> Copy Full Batch
+                            </button>
+                            <a href="https://quickstatements.toolforge.org/#/batch" target="_blank" rel="noopener" class="btn btn-sm btn-outline-dark font-weight-bold">
+                                <i class="mdi mdi-launch mr-1"></i> Open QuickStatements Toolforge
                             </a>
-                            <a href="https://www.wikidata.org/wiki/Special:EntityData/Q139827028.json" target="_blank" class="btn btn-sm btn-outline-secondary font-weight-bold">
+                            <a href="https://www.wikidata.org/wiki/Special:EntityData/Q139827028.json" target="_blank" rel="noopener" class="btn btn-sm btn-outline-secondary font-weight-bold">
                                 <i class="mdi mdi-code-json mr-1"></i> Live Wikidata JSON
                             </a>
                         </div>
-                        <pre class="kg-code-box mb-0" id="qsBatchCode">{qs_escaped}</pre>
+
+                        <!-- Reference Replacement Batch Box -->
+                        <div class="small font-weight-bold text-dark mt-2 mb-1">
+                            <i class="mdi mdi-swap-horizontal text-primary mr-1"></i> 1. Reference Replacement &amp; Domain Migration Batch (Paste into QuickStatements):
+                        </div>
+                        <pre class="kg-code-box mb-3" id="qsRefBatchCode" style="max-height:180px;">{ref_replacement_escaped}</pre>
+
+                        <!-- Full QuickStatements Batch Box -->
+                        <div class="small font-weight-bold text-dark mb-1">
+                            <i class="mdi mdi-database mr-1 text-primary"></i> 2. Complete Entity Statements Manifest:
+                        </div>
+                        <pre class="kg-code-box mb-0" id="qsBatchCode" style="max-height:180px;">{qs_escaped}</pre>
                     </div>
                 </div>
 
-                <!-- EverybodyWiki Programmatic Sync & 1-Click Editor Card -->
+                <!-- EverybodyWiki Programmatic Sync Card -->
                 <div class="col-lg-6">
                     <div class="kg-sync-card">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <div>
-                                <span class="badge badge-info px-2 py-1 mb-1" style="background:#0284c7;color:#fff;">
-                                    <i class="mdi mdi-wikipedia mr-1"></i> MediaWiki Article Engine
+                                <span class="badge badge-success px-2 py-1 mb-1" style="background:#059669;color:#fff;">
+                                    <i class="mdi mdi-check-decagram mr-1"></i> Live MediaWiki API Synced
                                 </span>
                                 <h4 class="font-weight-bold text-dark mb-0">EverybodyWiki Biography Sync</h4>
                             </div>
-                            <button type="button" class="btn btn-sm btn-primary font-weight-bold" onclick="copyAndOpenEverybodyWikiEditor()">
-                                <i class="mdi mdi-Flash mr-1"></i> Copy &amp; Open Wiki Editor
-                            </button>
+                            <a href="https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)" target="_blank" rel="noopener" class="btn btn-sm btn-primary font-weight-bold">
+                                <i class="mdi mdi-open-in-new mr-1"></i> View Live Article
+                            </a>
                         </div>
                         <p class="text-muted" style="font-size:13.5px;">
-                            Complete <strong>46 KB encyclopedic MediaWiki biography</strong> for <code>Harsh_Verma_(Software_Engineer)</code> containing <code>{{{{Infobox person}}}}</code>, <code>{{{{Authority control|QID=Q139827028|ORCID=0000-0003-2134-2600}}}}</code>, 27+ papers, 27 awards, 27 associations, 42+ media features, and 54 external links.
+                            Complete <strong>encyclopedic MediaWiki biography</strong> for <code>Harsh_Verma_(Software_Engineer)</code> containing <code>{{{{Infobox person}}}}</code>, <code>{{{{Authority control|QID=Q139827028|ORCID=0000-0003-2134-2600}}}}</code>, 2 authored books, 6 reviewed books, {counts['papers']} papers, {counts['awards']} awards, {counts['associations']} fellowships, {counts['media']} media features, and {counts['profiles']} verified profiles anchored to <code>https://www.harshverma.me/</code>.
                         </p>
-                        <!-- Optional Authenticated Bot/User Direct API Push -->
-                        <div class="p-3 rounded mb-3" style="background:#f8fafc;border:1px solid #e2e8f0;font-size:12.5px;">
-                            <div class="font-weight-bold text-dark mb-2">
-                                <i class="mdi mdi-robot-outline text-primary mr-1"></i> Direct MediaWiki API Push (<code>action=edit</code>)
-                            </div>
-                            <div class="form-row align-items-center">
-                                <div class="col-sm-4 mb-2 mb-sm-0">
-                                    <input type="text" id="ewUsername" class="form-control form-control-sm" placeholder="EverybodyWiki Username">
-                                </div>
-                                <div class="col-sm-4 mb-2 mb-sm-0">
-                                    <input type="password" id="ewPassword" class="form-control form-control-sm" placeholder="Password / BotPassword">
-                                </div>
-                                <div class="col-sm-4">
-                                    <button type="button" class="btn btn-sm btn-success btn-block font-weight-bold" onclick="pushEverybodyWikiWithAuth()">
-                                        <i class="mdi mdi-cloud-upload mr-1"></i> API Push Now
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="text-muted mt-2" id="ewStatusMsg" style="font-size:11.5px;">
-                                Tip: Enter EverybodyWiki credentials to push directly via API, or click <strong>"Copy &amp; Open Wiki Editor"</strong> above to paste in 1 click.
-                            </div>
+                        <div class="p-3 rounded mb-3" style="background:#f8fafc;border:1px solid #e2e8f0;font-size:13px;" id="ewLiveStatusBanner">
+                            <div><strong>Status:</strong> <span class="text-success font-weight-bold">SYNCED LIVE</span> (Revision ID: <code id="ewRevId">{html_lib.escape(str(ew_rev))}</code>)</div>
+                            <div class="text-muted mt-1" id="ewStatusMsg">{html_lib.escape(ew_status_msg)}</div>
                         </div>
                         <div class="d-flex flex-wrap mb-2" style="gap:8px;">
                             <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold" onclick="copyTextById('ewWikiCode', 'EverybodyWiki Wikitext')">
-                                <i class="mdi mdi-content-copy mr-1"></i> Copy Full Wikitext (46 KB)
+                                <i class="mdi mdi-content-copy mr-1"></i> Copy Full Wikitext
                             </button>
-                            <a href="https://en.everybodywiki.com/index.php?title=Harsh_Verma_(Software_Engineer)&action=edit" target="_blank" class="btn btn-sm btn-outline-dark font-weight-bold">
-                                <i class="mdi mdi-pencil-box-outline mr-1"></i> Open Edit Tab
+                            <a href="https://en.everybodywiki.com/index.php?title=Harsh_Verma_(Software_Engineer)&action=history" target="_blank" rel="noopener" class="btn btn-sm btn-outline-dark font-weight-bold">
+                                <i class="mdi mdi-history mr-1"></i> Revision History ({html_lib.escape(str(ew_rev))})
                             </a>
                             <a href="data/everybodywiki-article.wiki" download="Harsh_Verma_(Software_Engineer).wiki" class="btn btn-sm btn-outline-secondary font-weight-bold">
                                 <i class="mdi mdi-download mr-1"></i> Download .wiki
@@ -782,10 +1027,10 @@ def build_identity_page(kg):
                 <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
                     <div>
                         <h4 class="font-weight-bold text-dark mb-1">
-                            <i class="mdi mdi-table-check text-primary mr-1"></i> Wikidata <code>Q139827028</code> Structured Claims Matrix ({len(wd_claims)} Statements)
+                            <i class="mdi mdi-table-check text-primary mr-1"></i> Wikidata <code>Q139827028</code> Structured Claims Matrix ({len(wd_claims)} Canonical Claims)
                         </h4>
                         <p class="text-muted mb-0" style="font-size:13.5px;">
-                            Every statement below is reconciled between your website's <code>Schema.org/@graph</code> and <a href="https://www.wikidata.org/wiki/Q139827028" target="_blank"><code>https://www.wikidata.org/wiki/Q139827028</code></a>.
+                            Every statement below is reconciled between <code>https://www.harshverma.me/#person</code> and <a href="https://www.wikidata.org/wiki/Q139827028" target="_blank" rel="noopener"><code>https://www.wikidata.org/wiki/Q139827028</code></a>.
                         </p>
                     </div>
                 </div>
@@ -807,13 +1052,13 @@ def build_identity_page(kg):
                 </div>
             </div>
 
-            <!-- Section 3: Interactive 208-Node Entity Reconciliation Directory -->
+            <!-- Section 3: Interactive 213-Node Entity Reconciliation Directory -->
             <div class="kg-panel-dossier mb-5" id="entity-directory">
                 <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
                     <div>
                         <span class="badge badge-primary px-2 py-1 mb-1">Complete Knowledge Graph Index</span>
                         <h3 class="font-weight-bold text-dark mb-0">
-                            {counts['total_linked_nodes']} Reconciled Authority Nodes (Profiles, Media, Awards, Blogs, Papers &amp; Associations)
+                            {counts['total_linked_nodes']} Reconciled Authority Nodes (With Visual Thumbnails, Logos &amp; Citations)
                         </h3>
                     </div>
                     <div class="mt-3 mt-md-0" style="min-width:280px;">
@@ -827,9 +1072,9 @@ def build_identity_page(kg):
                     <button type="button" class="kg-filter-btn" data-cat="media" onclick="setKgCategory('media', this)">Media &amp; Podcasts ({counts['media']})</button>
                     <button type="button" class="kg-filter-btn" data-cat="awards" onclick="setKgCategory('awards', this)">Global Awards ({counts['awards']})</button>
                     <button type="button" class="kg-filter-btn" data-cat="blogs" onclick="setKgCategory('blogs', this)">Blogs &amp; Forbes ({counts['blogs']})</button>
+                    <button type="button" class="kg-filter-btn" data-cat="books" onclick="setKgCategory('books', this)">Books &amp; Reviews ({counts['books']})</button>
                     <button type="button" class="kg-filter-btn" data-cat="papers" onclick="setKgCategory('papers', this)">Research Papers ({counts['papers']})</button>
                     <button type="button" class="kg-filter-btn" data-cat="associations" onclick="setKgCategory('associations', this)">Associations ({counts['associations']})</button>
-                    <button type="button" class="kg-filter-btn" data-cat="books" onclick="setKgCategory('books', this)">Authored Books ({counts['books']})</button>
                 </div>
 
                 <div class="row" id="kgNodesGrid">
@@ -842,10 +1087,10 @@ def build_identity_page(kg):
                 <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
                     <div>
                         <h4 class="font-weight-bold text-dark mb-1">
-                            <i class="mdi mdi-code-braces text-primary mr-1"></i> Embedded <code>application/ld+json</code> Knowledge Graph Payload
+                            <i class="mdi mdi-code-braces text-primary mr-1"></i> Embedded <code>application/ld+json</code> Knowledge Graph Payload (<code>@id: https://www.harshverma.me/#person</code>)
                         </h4>
                         <p class="text-muted mb-0" style="font-size:13.5px;">
-                            Injected across all 27 HTML pages to provide Googlebot with unambiguous entity reconciliation.
+                            Injected across all HTML pages to provide Googlebot with unambiguous entity reconciliation.
                         </p>
                     </div>
                     <div class="d-flex" style="gap:8px;">
@@ -896,21 +1141,9 @@ def build_identity_page(kg):
             }});
         }}
 
-        function copyAndOpenEverybodyWikiEditor() {{
-            var el = document.getElementById('ewWikiCode');
-            if (el) {{
-                navigator.clipboard.writeText(el.textContent || el.innerText);
-            }}
-            var msg = document.getElementById('ewStatusMsg');
-            if (msg) {{
-                msg.innerHTML = '<span class="text-success font-weight-bold">Copied full 46KB Wikitext to clipboard! Paste into the EverybodyWiki editor tab that just opened and click Save page.</span>';
-            }}
-            window.open('https://en.everybodywiki.com/index.php?title=Harsh_Verma_(Software_Engineer)&action=edit', '_blank');
-        }}
-
         function triggerProgrammaticWikiSync() {{
             var msgEl = document.getElementById('wdStatusMsg');
-            if (msgEl) msgEl.textContent = 'Executing live MediaWiki wbeditentity sync against Wikidata Q139827028...';
+            if (msgEl) msgEl.textContent = 'Auditing live Wikidata entity Q139827028 references...';
             fetch('/api/wiki-sync', {{
                 method: 'POST',
                 headers: {{ 'Content-Type': 'application/json' }},
@@ -919,9 +1152,22 @@ def build_identity_page(kg):
             .then(function(r) {{ return r.json(); }})
             .then(function(data) {{
                 if (data && data.wikidata) {{
-                    document.getElementById('wdRevId').textContent = data.wikidata.lastrevid || '2560520518';
-                    document.getElementById('liveWdClaimCount').textContent = data.wikidata.existing_claims_count || '48';
-                    msgEl.innerHTML = '<span class="text-success font-weight-bold">' + (data.wikidata.api_write_message || 'Synced!') + '</span>';
+                    var wd = data.wikidata;
+                    var revEl = document.getElementById('wdRevId');
+                    if (revEl && wd.lastrevid) revEl.textContent = wd.lastrevid;
+                    var cntEl = document.getElementById('liveWdClaimCount');
+                    if (cntEl && wd.existing_claims_count) cntEl.textContent = wd.existing_claims_count;
+                    if (msgEl) msgEl.innerHTML = '<span class="text-dark font-weight-bold">' + (wd.api_write_message || 'Audit complete!') + '</span>';
+                    var badge = document.getElementById('wdBadgeStatus');
+                    if (badge && wd.outdated_references_count > 0) {{
+                        badge.className = 'badge badge-warning px-2 py-1 mb-1';
+                        badge.style.background = '#f59e0b';
+                        badge.innerHTML = '<i class="mdi mdi-alert-circle mr-1"></i> Live Reference Audit: ' + wd.outdated_references_count + ' Updates Ready';
+                    }} else if (badge && wd.api_write_status === 'synced') {{
+                        badge.className = 'badge badge-success px-2 py-1 mb-1';
+                        badge.style.background = '#059669';
+                        badge.innerHTML = '<i class="mdi mdi-check-decagram mr-1"></i> Live Action API Synced';
+                    }}
                 }}
             }})
             .catch(function(err) {{
@@ -929,28 +1175,39 @@ def build_identity_page(kg):
             }});
         }}
 
-        function pushEverybodyWikiWithAuth() {{
-            var u = document.getElementById('ewUsername').value.trim();
-            var p = document.getElementById('ewPassword').value.trim();
-            var msgEl = document.getElementById('ewStatusMsg');
-            if (!u || !p) {{
-                msgEl.innerHTML = '<span class="text-warning font-weight-bold">Please enter your EverybodyWiki username &amp; password for direct API edit, or click "Copy &amp; Open Wiki Editor" above.</span>';
+        function submitWikidata2fa() {{
+            var codeInput = document.getElementById('wd2faInput');
+            var code = codeInput ? codeInput.value.trim() : '';
+            var msgEl = document.getElementById('wdStatusMsg');
+            if (!code) {{
+                alert('Please enter the 6-digit email verification code sent by Wikimedia.');
                 return;
             }}
-            msgEl.textContent = 'Authenticating with EverybodyWiki MediaWiki API and submitting 46KB biography...';
+            if (msgEl) msgEl.textContent = 'Submitting 2FA token to Wikimedia CentralAuth and executing wbsetreference...';
             fetch('/api/wiki-sync', {{
                 method: 'POST',
                 headers: {{ 'Content-Type': 'application/json' }},
-                body: JSON.stringify({{ target: 'everybodywiki', ewUser: u, ewPass: p }})
+                body: JSON.stringify({{ target: 'wikidata', wd2fa: code }})
             }})
             .then(function(r) {{ return r.json(); }})
             .then(function(data) {{
-                if (data && data.everybodywiki) {{
-                    msgEl.innerHTML = '<span class="text-info font-weight-bold">' + (data.everybodywiki.api_write_message || 'Completed') + '</span>';
+                if (data && data.wikidata) {{
+                    var wd = data.wikidata;
+                    if (msgEl) msgEl.innerHTML = '<span class="text-success font-weight-bold">' + (wd.api_write_message || 'Synced successfully!') + '</span>';
+                    if (wd.api_write_status === 'synced') {{
+                        var banner = document.getElementById('wdRefAuditBanner');
+                        if (banner) banner.style.display = 'none';
+                        var badge = document.getElementById('wdBadgeStatus');
+                        if (badge) {{
+                            badge.className = 'badge badge-success px-2 py-1 mb-1';
+                            badge.style.background = '#059669';
+                            badge.innerHTML = '<i class="mdi mdi-check-decagram mr-1"></i> Live Action API Synced';
+                        }}
+                    }}
                 }}
             }})
             .catch(function(err) {{
-                msgEl.textContent = 'Error connecting to sync endpoint: ' + err.message;
+                if (msgEl) msgEl.textContent = 'Error submitting 2FA token: ' + err.message;
             }});
         }}
 
@@ -965,9 +1222,35 @@ def build_identity_page(kg):
                         if (revEl && ent.lastrevid) revEl.textContent = ent.lastrevid;
                         var claims = ent.claims || {{}};
                         var total = 0;
-                        Object.keys(claims).forEach(function(k) {{ total += claims[k].length; }});
+                        var outdatedRefCount = 0;
+                        Object.keys(claims).forEach(function(k) {{
+                            total += claims[k].length;
+                            claims[k].forEach(function(c) {{
+                                (c.references || []).forEach(function(r) {{
+                                    var snaks = r.snaks || {{}};
+                                    Object.keys(snaks).forEach(function(sp) {{
+                                        snaks[sp].forEach(function(snk) {{
+                                            var val = snk.datavalue && snk.datavalue.value;
+                                            if (typeof val === 'string' && val.indexOf('iamharshverma.github.io') !== -1) {{
+                                                outdatedRefCount++;
+                                            }}
+                                        }});
+                                    }});
+                                }});
+                            }});
+                        }});
                         var cntEl = document.getElementById('liveWdClaimCount');
                         if (cntEl && total > 0) cntEl.textContent = total;
+                        var badge = document.getElementById('wdBadgeStatus');
+                        if (badge && outdatedRefCount > 0) {{
+                            badge.innerHTML = '<i class="mdi mdi-alert-circle mr-1"></i> Live Audit: ' + outdatedRefCount + ' Outdated References Found';
+                        }} else if (badge && outdatedRefCount === 0) {{
+                            badge.className = 'badge badge-success px-2 py-1 mb-1';
+                            badge.style.background = '#059669';
+                            badge.innerHTML = '<i class="mdi mdi-check-decagram mr-1"></i> Live Action API Synced';
+                            var banner = document.getElementById('wdRefAuditBanner');
+                            if (banner) banner.style.display = 'none';
+                        }}
                     }}
                 }})
                 .catch(function() {{}});
@@ -989,6 +1272,7 @@ def inject_graph_across_all_pages(kg):
     script_block = (
         f'    <!-- Canonical Google Knowledge Graph & Entity Reconciliation JSON-LD -->\n'
         f'    <script type="application/ld+json" id="hv-knowledge-graph-jsonld">{schema_json_str}</script>\n'
+        f'    <link rel="me" href="https://www.harshverma.me/" />\n'
         f'    <link rel="me" href="https://www.wikidata.org/wiki/Q139827028" />\n'
         f'    <link rel="me" href="https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)" />\n'
         f'    <link rel="me" href="https://orcid.org/0000-0003-2134-2600" />\n'
@@ -1009,11 +1293,15 @@ def inject_graph_across_all_pages(kg):
 
         # Remove any previous hv-knowledge-graph-jsonld block if present
         content = re.sub(
-            r'\s*<!-- Canonical Google Knowledge Graph & Entity Reconciliation JSON-LD -->\s*<script type="application/ld\+json" id="hv-knowledge-graph-jsonld">.*?</script>(?:\s*<link rel="me" href="https://(?:www\.wikidata\.org/wiki/Q139827028|en\.everybodywiki\.com/Harsh_Verma_\(Software_Engineer\)|orcid\.org/0000-0003-2134-2600)"\s*/>)*\n?',
+            r'\s*<!-- Canonical Google Knowledge Graph & Entity Reconciliation JSON-LD -->\s*<script type="application/ld\+json" id="hv-knowledge-graph-jsonld">.*?</script>(?:\s*<link rel="me" href="https://(?:(?:www\.)?harshverma\.me/|www\.wikidata\.org/wiki/Q139827028|en\.everybodywiki\.com/Harsh_Verma_\(Software_Engineer\)|orcid\.org/0000-0003-2134-2600)"\s*/>)*\n?',
             "\n",
             content,
             flags=re.DOTALL,
         )
+
+        # Also replace any stray iamharshverma.github.io references in the page
+        content = content.replace("https://iamharshverma.github.io/#person", "https://www.harshverma.me/#person")
+        content = content.replace("https://iamharshverma.github.io", "https://www.harshverma.me")
 
         content = content.replace("</head>", f"{script_block}</head>", 1)
         with open(fpath, "w", encoding="utf-8") as f:

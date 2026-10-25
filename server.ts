@@ -1238,15 +1238,17 @@ app.get('/api/knowledge-graph', (req, res) => {
 app.post('/api/wiki-sync', (req, res) => {
   try {
     const { execFileSync } = require('child_process');
-    const env = Object.assign({}, process.env);
     if (req.body && req.body.ewUser) env.EVERYBODYWIKI_USER = String(req.body.ewUser);
     if (req.body && req.body.ewPass) env.EVERYBODYWIKI_PASS = String(req.body.ewPass);
     if (req.body && req.body.wdUser) env.WIKIDATA_USER = String(req.body.wdUser);
     if (req.body && req.body.wdPass) env.WIKIDATA_PASS = String(req.body.wdPass);
+    if (req.body && req.body.wd2fa) env.WIKIDATA_2FA_TOKEN = String(req.body.wd2fa);
+    if (req.body && req.body.wdBotUser) env.WIKIDATA_BOT_USER = String(req.body.wdBotUser);
+    if (req.body && req.body.wdBotPass) env.WIKIDATA_BOT_PASS = String(req.body.wdBotPass);
 
     execFileSync('python3', [path.join(__dirname, 'scripts', 'sync_wiki_entities.py')], {
       env,
-      timeout: 25000
+      timeout: 35000
     });
 
     const statusPath = path.join(__dirname, 'data', 'wiki-sync-status.json');

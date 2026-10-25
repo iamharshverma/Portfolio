@@ -540,7 +540,7 @@ articles_data = [
         "url": "https://medium.com/@harshverma59/helm-with-yugabytedb-gke-google-kubernetes-engine-9099b62548cd",
         "author_profile": "https://medium.com/@harshverma59",
         "thumbnail": "images/blog/helm_blog.jpg",
-        "date": "Cloud Engineering",
+        "date": "2021",
         "read_time": "8 min read",
         "featured": False,
         "description": "A comprehensive practical guide to managing distributed cloud-native relational databases on Google Kubernetes Engine (GKE) using Helm package management.",
