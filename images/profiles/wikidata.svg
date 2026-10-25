@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="wdBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="24" fill="url(#wdBg)"/>
+  <!-- Wikidata barcode bars -->
+  <g transform="translate(22, 24)">
+    <rect x="0" y="0" width="6" height="50" rx="2" fill="#990000"/>
+    <rect x="10" y="0" width="12" height="50" rx="2" fill="#339966"/>
+    <rect x="26" y="0" width="6" height="50" rx="2" fill="#339966"/>
+    <rect x="36" y="0" width="12" height="50" rx="2" fill="#006699"/>
+    <rect x="52" y="0" width="6" height="50" rx="2" fill="#006699"/>
+    <rect x="62" y="0" width="6" height="50" rx="2" fill="#990000"/>
+    <rect x="72" y="0" width="6" height="50" rx="2" fill="#339966"/>
+  </g>
+  <text x="60" y="94" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="#f8fafc" text-anchor="middle" letter-spacing="1.5">WIKIDATA</text>
+  <text x="60" y="109" font-family="monospace" font-size="10" font-weight="700" fill="#38bdf8" text-anchor="middle">Q139827028</text>
+</svg>

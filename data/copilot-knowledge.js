@@ -253,7 +253,7 @@ HARSH VERMA'S CORE PROFILE:
 - Professional Roles: Enterprise AI Architect, Principal Technologist, Author, Keynote Speaker, and Fellow.
 - Contact Email: harshverma59@gmail.com
 - Main Website Pages:
-  * Biography & Profiles: "page-about" (or "page-about#verified-profiles" for the 53 Verified Academic &amp; Industry Hubs)
+  * Biography & Profiles: "page-about" (or "page-about#verified-profiles" for the 54 Verified Academic &amp; Industry Hubs)
   * 27 Prestigious Awards: "page-awards"
   * 27+ Peer-Reviewed Publications: "page-publications"
   * Authored Books: "page-books"

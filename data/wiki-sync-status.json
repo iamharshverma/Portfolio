@@ -1,0 +1,59 @@
+{
+  "updated_at": "2026-10-25T02:56:10.204241+00:00",
+  "wikidata": {
+    "entity_id": "Q139827028",
+    "entity_url": "https://www.wikidata.org/wiki/Q139827028",
+    "checked_at": "2026-10-25T02:56:08.986828+00:00",
+    "live_reachable": true,
+    "existing_labels": {
+      "en": "Harsh Verma"
+    },
+    "existing_descriptions": {
+      "en": "Principal AI Software Engineer at Palo Alto Networks, Keynote Speaker, Author, and Researcher"
+    },
+    "existing_claims_count": 48,
+    "existing_properties": [
+      "P101",
+      "P106",
+      "P108",
+      "P1412",
+      "P19",
+      "P1960",
+      "P2002",
+      "P2037",
+      "P2038",
+      "P21",
+      "P2888",
+      "P31",
+      "P3747",
+      "P3899",
+      "P4012",
+      "P463",
+      "P496",
+      "P6634",
+      "P69",
+      "P856",
+      "P8968",
+      "P937",
+      "P973"
+    ],
+    "missing_properties": [],
+    "api_write_status": "synced",
+    "api_write_message": "All 31 canonical claims are live on Wikidata Q139827028!",
+    "lastrevid": 2560520518,
+    "modified": "2026-10-25T02:51:15Z"
+  },
+  "everybodywiki": {
+    "article_title": "Harsh_Verma_(Software_Engineer)",
+    "article_url": "https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)",
+    "checked_at": "2026-10-25T02:56:09.374106+00:00",
+    "live_reachable": true,
+    "existing_bytes": 501,
+    "generated_bytes": 46614,
+    "api_write_status": "requires_auth (permissiondenied)",
+    "api_write_message": "EverybodyWiki API requires authenticated session (permissiondenied). Full 36KB MediaWiki biography generated in data/everybodywiki-article.wiki with 1-Click Pre-filled Editor launcher in page-identity.",
+    "pageid": 2669181,
+    "lastrevid": 6631379,
+    "last_timestamp": "2026-09-13T04:55:46Z"
+  }
+}

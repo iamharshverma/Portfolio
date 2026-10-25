@@ -29,6 +29,14 @@ try {
   console.warn('[Build] Warning during create_board_bio_pdf:', err.message);
 }
 
+// 1c. Inject Google Knowledge Graph JSON-LD & build Identity Hub
+try {
+  console.log('[Build] Injecting Google Knowledge Graph JSON-LD across all pages...');
+  execSync('python3 scripts/inject_knowledge_graph.py', { stdio: 'inherit' });
+} catch (err) {
+  console.warn('[Build] Warning during inject_knowledge_graph:', err.message);
+}
+
 // 2. Prepare output directories atomically to avoid serving partial dist states
 const rootDir = path.resolve(__dirname, '..');
 const distDir = path.join(rootDir, 'dist');

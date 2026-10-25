@@ -244,7 +244,7 @@ All verified inquiries submitted through this portfolio are delivered directly w
 
 - **Specializations**: Enterprise Generative AI, Multi-Agent Architectures, Zero-Trust Cyber Resilience, and Cloud Distributed Systems.
 - **Recognitions**: **27 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
-- **Academic Impact**: **27+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **53 Verified Academic/Professional Registries**.
+- **Academic Impact**: **27+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **54 Verified Academic/Professional Registries**.
 - **Fellowships**: Harvard Square Leaders Excellence Fellow, IEEE Senior Member, and Forbes Technology Council Member.
 
 **Explore further:**
@@ -1213,6 +1213,50 @@ app.get(['/events', '/page-events', '/page-events.html'], (req, res) => {
 // Explicit route for Smart Slides Page
 app.get(['/smart-slides', '/page-smart-slides', '/page-smart-slides.html', '/slides', '/page-slides', '/page-slides.html'], (req, res) => {
   res.sendFile(path.join(__dirname, 'page-smart-slides.html'));
+});
+
+// Explicit route for Google Knowledge Graph & Entity Verification Hub
+app.get(['/identity', '/page-identity', '/page-identity.html', '/knowledge-graph', '/entity'], (req, res) => {
+  res.sendFile(path.join(__dirname, 'page-identity.html'));
+});
+
+// API endpoint for Google Knowledge Graph JSON-LD & Entity dataset
+app.get('/api/knowledge-graph', (req, res) => {
+  try {
+    const kgPath = path.join(__dirname, 'data', 'knowledge-graph.json');
+    if (fs.existsSync(kgPath)) {
+      res.type('application/json').send(fs.readFileSync(kgPath, 'utf8'));
+    } else {
+      res.status(404).json({ error: 'Knowledge Graph dataset not found' });
+    }
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// API endpoint to execute live programmatic Wikidata (Q139827028) & EverybodyWiki sync
+app.post('/api/wiki-sync', (req, res) => {
+  try {
+    const { execFileSync } = require('child_process');
+    const env = Object.assign({}, process.env);
+    if (req.body && req.body.ewUser) env.EVERYBODYWIKI_USER = String(req.body.ewUser);
+    if (req.body && req.body.ewPass) env.EVERYBODYWIKI_PASS = String(req.body.ewPass);
+    if (req.body && req.body.wdUser) env.WIKIDATA_USER = String(req.body.wdUser);
+    if (req.body && req.body.wdPass) env.WIKIDATA_PASS = String(req.body.wdPass);
+
+    execFileSync('python3', [path.join(__dirname, 'scripts', 'sync_wiki_entities.py')], {
+      env,
+      timeout: 25000
+    });
+
+    const statusPath = path.join(__dirname, 'data', 'wiki-sync-status.json');
+    const statusData = fs.existsSync(statusPath)
+      ? JSON.parse(fs.readFileSync(statusPath, 'utf8'))
+      : { ok: true };
+    res.json(statusData);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
 });
 
 // API endpoint for Smart Slides metadata
