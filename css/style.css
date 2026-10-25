@@ -4320,24 +4320,25 @@ html:not(.dark-mode) .section-head span {
 }
 
 /* ==========================================================================
-   Card Journey Start Dock (Receiving Target at Start of Card)
+   Card Journey End Dock (Departure Anchor at End of Card)
    ========================================================================== */
-.edu-card-start-dock {
-  margin-bottom: 14px;
-  padding-bottom: 10px;
-  border-bottom: 1px dashed rgba(37, 99, 235, 0.22);
+.edu-card-end-dock {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(37, 99, 235, 0.22);
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   position: relative;
 }
 
-.edu-dock-pill {
+.edu-end-dock-pill {
   display: inline-flex;
   align-items: center;
   font-size: 11px;
   font-weight: 700;
   color: #1d4ed8;
-  background: rgba(37, 99, 235, 0.08);
+  background: rgba(37, 99, 235, 0.06);
   border: 1px dashed rgba(37, 99, 235, 0.35);
   border-radius: 20px;
   padding: 4px 12px;
@@ -4345,10 +4346,28 @@ html:not(.dark-mode) .section-head span {
   transition: all 0.25s ease;
 }
 
-.education-interactive-card:hover .edu-dock-pill {
+.edu-end-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2563eb;
+  box-shadow: 0 0 8px #2563eb;
+  margin-right: 6px;
+  animation: extPulseDotAnim 1.4s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+.education-interactive-card:hover .edu-end-dock-pill {
   background: rgba(37, 99, 235, 0.14);
   border-color: #2563eb;
   color: #1e40af;
+}
+
+.ext-origin-circle {
+  fill: #2563eb;
+  stroke: #ffffff;
+  stroke-width: 2.2;
+  filter: drop-shadow(0 0 6px rgba(37, 99, 235, 0.6));
 }
 
 /* ==========================================================================

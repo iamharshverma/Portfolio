@@ -2066,25 +2066,38 @@ body.dark-mode .edu-journey-origin-pill {
   border-color: rgba(59, 130, 246, 0.35) !important;
 }
 
-/* Card Journey Start Dock (Dark Mode) */
-html.dark-mode .edu-card-start-dock,
-body.dark-mode .edu-card-start-dock {
-  border-bottom-color: rgba(56, 189, 248, 0.25) !important;
+/* Card Journey End Dock (Dark Mode) */
+html.dark-mode .edu-card-end-dock,
+body.dark-mode .edu-card-end-dock {
+  border-top-color: rgba(56, 189, 248, 0.25) !important;
 }
 
-html.dark-mode .edu-dock-pill,
-body.dark-mode .edu-dock-pill {
+html.dark-mode .edu-end-dock-pill,
+body.dark-mode .edu-end-dock-pill {
   background: rgba(15, 23, 42, 0.8) !important;
   border-color: rgba(56, 189, 248, 0.4) !important;
   color: #93c5fd !important;
   box-shadow: 0 0 10px rgba(56, 189, 248, 0.15) !important;
 }
 
-html.dark-mode .education-interactive-card:hover .edu-dock-pill,
-body.dark-mode .education-interactive-card:hover .edu-dock-pill {
+html.dark-mode .edu-end-pulse-dot,
+body.dark-mode .edu-end-pulse-dot {
+  background: #38bdf8 !important;
+  box-shadow: 0 0 10px #38bdf8 !important;
+}
+
+html.dark-mode .education-interactive-card:hover .edu-end-dock-pill,
+body.dark-mode .education-interactive-card:hover .edu-end-dock-pill {
   background: rgba(2, 132, 199, 0.25) !important;
   border-color: #38bdf8 !important;
   color: #e0f2fe !important;
+}
+
+html.dark-mode .ext-origin-circle,
+body.dark-mode .ext-origin-circle {
+  fill: #38bdf8 !important;
+  stroke: #0f172a !important;
+  filter: drop-shadow(0 0 8px #38bdf8) !important;
 }
 
 /* External Education Dotted Journey Arrows (Dark Mode) */

@@ -27,19 +27,11 @@
         eduCards.forEach(function (c) {
           c.classList.remove('active-degree');
           c.setAttribute('aria-expanded', 'false');
-          var hint = c.querySelector('.edu-card-hint');
-          if (hint) {
-            hint.innerHTML = '<i class="mdi mdi-cursor-default-click-outline mr-1"></i>Click to inspect';
-          }
         });
 
         if (!wasActive) {
           card.classList.add('active-degree');
           card.setAttribute('aria-expanded', 'true');
-          var activeHint = card.querySelector('.edu-card-hint');
-          if (activeHint) {
-            activeHint.innerHTML = '<i class="mdi mdi-check-circle-outline mr-1"></i>Focused Degree';
-          }
           // Visual ripple effect at click coordinates
           triggerCardRipple(card, e);
         }
