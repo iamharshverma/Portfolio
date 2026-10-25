@@ -69,9 +69,9 @@
              ', ' + cp2X1.toFixed(1) + ' ' + cp2Y1.toFixed(1) +
              ', ' + ptEnd1.x.toFixed(1) + ' ' + ptEnd1.y.toFixed(1);
 
-    var pts1 = (ptEnd1.x - 5.5).toFixed(1) + ',' + (ptEnd1.y - 8).toFixed(1) + ' ' +
-               ptEnd1.x.toFixed(1) + ',' + (ptEnd1.y + 1).toFixed(1) + ' ' +
-               (ptEnd1.x + 5.5).toFixed(1) + ',' + (ptEnd1.y - 8).toFixed(1);
+    var pts1 = (ptEnd1.x - 3.8).toFixed(1) + ',' + (ptEnd1.y - 6).toFixed(1) + ' ' +
+               ptEnd1.x.toFixed(1) + ',' + (ptEnd1.y + 0.5).toFixed(1) + ' ' +
+               (ptEnd1.x + 3.8).toFixed(1) + ',' + (ptEnd1.y - 6).toFixed(1);
 
     var orig1 = document.getElementById('edu-path-1-origin');
     var bg1 = document.getElementById('edu-path-1-bg');
@@ -102,9 +102,9 @@
              ', ' + cp2X2.toFixed(1) + ' ' + cp2Y2.toFixed(1) +
              ', ' + ptEnd2.x.toFixed(1) + ' ' + ptEnd2.y.toFixed(1);
 
-    var pts2 = (ptEnd2.x - 5.5).toFixed(1) + ',' + (ptEnd2.y - 8).toFixed(1) + ' ' +
-               ptEnd2.x.toFixed(1) + ',' + (ptEnd2.y + 1).toFixed(1) + ' ' +
-               (ptEnd2.x + 5.5).toFixed(1) + ',' + (ptEnd2.y - 8).toFixed(1);
+    var pts2 = (ptEnd2.x - 3.8).toFixed(1) + ',' + (ptEnd2.y - 6).toFixed(1) + ' ' +
+               ptEnd2.x.toFixed(1) + ',' + (ptEnd2.y + 0.5).toFixed(1) + ' ' +
+               (ptEnd2.x + 3.8).toFixed(1) + ',' + (ptEnd2.y - 6).toFixed(1);
 
     var orig2 = document.getElementById('edu-path-2-origin');
     var bg2 = document.getElementById('edu-path-2-bg');
