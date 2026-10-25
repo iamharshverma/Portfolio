@@ -79,48 +79,30 @@
       // Interactive Flow Connector Click Navigation
     });
 
-    // External Dotted Journey Connectors (Outside Cards)
-    var extConnectors = document.querySelectorAll('.timeline-ext-connector');
-    extConnectors.forEach(function (connector) {
-      var targetStep = connector.getAttribute('data-target');
-      if (!targetStep) return;
-
-      var currentTimeline = connector.closest('.timeline');
-      var targetCard = document.querySelector('[data-edu-step="' + targetStep + '"]');
-
-      // Hovering external connector highlights both connected cards
-      connector.addEventListener('mouseenter', function () {
-        if (currentTimeline) {
-          var currentCard = currentTimeline.querySelector('.education-interactive-card');
-          if (currentCard) currentCard.classList.add('journey-chain-highlight');
-        }
-        if (targetCard) targetCard.classList.add('journey-chain-highlight');
+    // Bi-directional hover chaining for top connectors inside cards
+    var connectorUtd = document.getElementById('connector-utd');
+    if (connectorUtd) {
+      connectorUtd.addEventListener('mouseenter', function () {
+        var stanford = document.querySelector('[data-edu-step="stanford"]');
+        if (stanford) stanford.classList.add('journey-chain-highlight');
       });
-
-      connector.addEventListener('mouseleave', function () {
-        eduCards.forEach(function (c) {
-          c.classList.remove('journey-chain-highlight');
-        });
+      connectorUtd.addEventListener('mouseleave', function () {
+        var stanford = document.querySelector('[data-edu-step="stanford"]');
+        if (stanford) stanford.classList.remove('journey-chain-highlight');
       });
+    }
 
-      // Click on external connector navigates seamlessly to next degree card
-      connector.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        if (targetCard) {
-          targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          targetCard.click();
-        }
+    var connectorUtu = document.getElementById('connector-utu');
+    if (connectorUtu) {
+      connectorUtu.addEventListener('mouseenter', function () {
+        var utd = document.querySelector('[data-edu-step="utd"]');
+        if (utd) utd.classList.add('journey-chain-highlight');
       });
-
-      // Keyboard support (Enter or Space)
-      connector.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          connector.click();
-        }
+      connectorUtu.addEventListener('mouseleave', function () {
+        var utd = document.querySelector('[data-edu-step="utd"]');
+        if (utd) utd.classList.remove('journey-chain-highlight');
       });
-    });
+    }
 
     function triggerCardRipple(card, event) {
       var rect = card.getBoundingClientRect();

@@ -4352,15 +4352,19 @@ html:not(.dark-mode) .section-head span {
 }
 
 /* ==========================================================================
-   External Dotted Journey Connector Arrows (Seamless Inter-Card Bridges)
+   External Dotted Journey Connector Arrows (Moved Inside Card Top)
    ========================================================================== */
 .timeline-ext-connector {
-  position: absolute;
+  position: relative;
   z-index: 6;
-  cursor: pointer;
   outline: none;
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
   user-select: none;
+  width: 100%;
+  margin: 0 0 16px 0;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed rgba(37, 99, 235, 0.22);
+  display: block;
 }
 
 .timeline-ext-connector:focus-visible {
@@ -4368,32 +4372,35 @@ html:not(.dark-mode) .section-head span {
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.5);
 }
 
-/* Stanford -> UT Dallas: emerges from bottom right of Stanford, links into start dock of UT Dallas */
-.ext-conn-stanford {
-  right: 20px;
-  bottom: -52px;
-  width: 175px;
-}
-
-/* UT Dallas -> UTU: emerges from bottom left of UT Dallas, links into start dock of UTU */
-.ext-conn-utd {
-  left: 20px;
-  bottom: -52px;
-  width: 175px;
-}
-
 .ext-connector-inner {
   display: flex;
-  flex-direction: column;
   align-items: center;
   position: relative;
   width: 100%;
 }
 
-.ext-connector-svg {
+/* Incoming Arrow SVG from previous card into this card top */
+.ext-conn-utd-top .ext-connector-svg {
+  position: absolute;
+  top: -82px;
+  left: -70px;
   width: 160px;
-  height: 80px;
+  height: 85px;
   overflow: visible;
+  pointer-events: none;
+  z-index: 5;
+  display: block;
+}
+
+.ext-conn-utu-top .ext-connector-svg {
+  position: absolute;
+  top: -82px;
+  left: 20px;
+  width: 160px;
+  height: 85px;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 5;
   display: block;
 }
 
@@ -4434,16 +4441,16 @@ html:not(.dark-mode) .section-head span {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 5px 12px;
-  margin-top: -24px;
-  background: #ffffff;
-  border: 1.5px dashed rgba(37, 99, 235, 0.45);
+  padding: 4px 12px;
+  margin-top: 0;
+  background: rgba(37, 99, 235, 0.08);
+  border: 1.5px dashed rgba(37, 99, 235, 0.35);
   border-radius: 999px;
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.16), 0 2px 6px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.3px;
-  color: #1e40af;
+  letter-spacing: 0.25px;
+  color: #1d4ed8;
   white-space: nowrap;
   pointer-events: auto;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
@@ -4472,57 +4479,46 @@ html:not(.dark-mode) .section-head span {
 }
 
 /* Hover Dynamics */
-.timeline-ext-connector:hover {
-  transform: translateY(-2px);
-}
-
-.timeline-ext-connector:hover .ext-track-dotted {
+.education-interactive-card:hover .ext-track-dotted {
   stroke: #1d4ed8;
   stroke-width: 3.4;
   animation-duration: 0.65s;
 }
 
-.timeline-ext-connector:hover .ext-arrowhead {
+.education-interactive-card:hover .ext-arrowhead {
   stroke: #1d4ed8;
 }
 
-.timeline-ext-connector:hover .ext-connector-badge {
+.education-interactive-card:hover .ext-connector-badge {
   background: #2563eb;
   color: #ffffff;
   border-style: solid;
   border-color: #1d4ed8;
-  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.36);
-  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.32);
 }
 
-.timeline-ext-connector:hover .ext-badge-pulse {
+.education-interactive-card:hover .ext-badge-pulse {
   background: #ffffff;
   box-shadow: 0 0 10px #ffffff;
 }
 
 /* Mobile & Tablet view */
 @media screen and (max-width: 767.98px) {
-  .timeline-ext-connector {
-    position: relative;
-    right: auto !important;
-    left: auto !important;
-    bottom: auto !important;
-    width: 100%;
-    margin: 6px auto 16px auto;
-    display: flex;
-    justify-content: center;
-    z-index: 5;
-  }
-
-  .ext-connector-svg {
-    width: 100px;
-    height: 70px;
+  .ext-conn-utd-top .ext-connector-svg,
+  .ext-conn-utu-top .ext-connector-svg {
+    position: absolute;
+    top: -65px;
+    left: 50% !important;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 65px;
   }
 
   .ext-connector-badge {
-    margin-top: 4px;
-    font-size: 11px;
-    padding: 4px 12px;
+    font-size: 10.5px;
+    padding: 4px 10px;
+    white-space: normal;
+    text-align: left;
   }
 }
 

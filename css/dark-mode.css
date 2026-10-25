@@ -2105,12 +2105,19 @@ body.dark-mode .ext-arrowhead {
   filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.75)) !important;
 }
 
+html.dark-mode .ext-conn-utd-top,
+body.dark-mode .ext-conn-utd-top,
+html.dark-mode .ext-conn-utu-top,
+body.dark-mode .ext-conn-utu-top {
+  border-bottom-color: rgba(56, 189, 248, 0.25) !important;
+}
+
 html.dark-mode .ext-connector-badge,
 body.dark-mode .ext-connector-badge {
   background: rgba(15, 23, 42, 0.94) !important;
   border-color: rgba(56, 189, 248, 0.5) !important;
   color: #93c5fd !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7), 0 0 16px rgba(56, 189, 248, 0.22) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7), 0 0 16px rgba(56, 189, 248, 0.22) !important;
 }
 
 html.dark-mode .ext-badge-pulse,
@@ -2119,14 +2126,18 @@ body.dark-mode .ext-badge-pulse {
   box-shadow: 0 0 10px #38bdf8 !important;
 }
 
+html.dark-mode .education-interactive-card:hover .ext-connector-badge,
+body.dark-mode .education-interactive-card:hover .ext-connector-badge,
 html.dark-mode .timeline-ext-connector:hover .ext-connector-badge,
 body.dark-mode .timeline-ext-connector:hover .ext-connector-badge {
   background: #0284c7 !important;
   color: #ffffff !important;
   border-color: #38bdf8 !important;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.8), 0 0 24px rgba(56, 189, 248, 0.6) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8), 0 0 20px rgba(56, 189, 248, 0.6) !important;
 }
 
+html.dark-mode .education-interactive-card:hover .ext-badge-pulse,
+body.dark-mode .education-interactive-card:hover .ext-badge-pulse,
 html.dark-mode .timeline-ext-connector:hover .ext-badge-pulse,
 body.dark-mode .timeline-ext-connector:hover .ext-badge-pulse {
   background: #ffffff !important;
