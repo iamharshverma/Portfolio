@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-26T08:54:28.121969+00:00",
+  "updated_at": "2026-10-26T09:06:15.092453+00:00",
   "wikidata": {
     "entity_id": "Q139827028",
     "entity_url": "https://www.wikidata.org/wiki/Q139827028",
     "json_endpoint": "https://www.wikidata.org/wiki/Special:EntityData/Q139827028.json",
-    "checked_at": "2026-10-26T08:54:26.676828+00:00",
+    "checked_at": "2026-10-26T09:06:14.300411+00:00",
     "live_reachable": true,
     "existing_labels": {
       "en": "Harsh Verma"
@@ -58,15 +58,11 @@
   "everybodywiki": {
     "article_title": "Harsh_Verma_(Software_Engineer)",
     "article_url": "https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)",
-    "checked_at": "2026-10-25T06:40:31.461279+00:00",
-    "live_reachable": true,
-    "existing_bytes": 48317,
-    "generated_bytes": 48317,
-    "api_write_status": "synced",
-    "api_write_message": "Successfully updated EverybodyWiki article live via MediaWiki API (user: Harshverma59, new revision: None)!",
-    "pageid": 2669181,
-    "lastrevid": 6892698,
-    "last_timestamp": "2026-10-25T06:34:14Z",
-    "newrevid": null
+    "checked_at": "2026-10-26T09:06:15.015999+00:00",
+    "live_reachable": false,
+    "existing_bytes": 0,
+    "generated_bytes": 48421,
+    "api_write_status": "fallback_ready",
+    "api_write_message": "EverybodyWiki API note: HTTP Error 403: Forbidden"
   }
 }

@@ -834,8 +834,31 @@ def build_schema_org_graph(profiles, media, awards, blogs, books, papers, associ
         "https://harshverma.bio/",
         "https://x.com/harshverma59",
         "https://twitter.com/harshverma59",
+        "https://www.linkedin.com/in/harshverma59/",
+        "https://github.com/iamharshverma",
         "https://facebook.com/harshverma59",
+        "https://www.facebook.com/harshverma59/",
+        "https://www.instagram.com/aiwithharsh",
+        "https://instagram.com/aiwithharsh",
+        "https://mastodon.social/@harshverma59",
+        "https://substack.com/@aiwithharsh",
+        "https://aiwithharsh.substack.com/",
+        "https://medium.com/@harshverma59",
+        "https://imdb.me/harshverma",
+        "https://www.imdb.com/name/nm16738096/",
+        "https://flipboard.com/@harshverma59",
         "https://ieee-collabratec.ieee.org/app/p/HarshVerma59",
+        "https://spotlight.favikon.com/harshverma59/",
+        "https://mediakit.bio/@harshverma59",
+        "https://topmate.io/iamharshverma/",
+        "https://adplist.org/mentors/harsh-verma",
+        "https://devpost.com/harshverma59",
+        "https://about.me/harshverma59/",
+        "https://bold.pro/my/harshverma",
+        "https://hackernoon.com/u/harshverma59",
+        "https://www.soundverse.ai/@harshverma59",
+        "https://www.founderscreative.org/author/harsh/",
+        "https://www.screna.ai/mentor-dashboard",
     ]
     for p in profiles:
         u = p.get("url", "").strip().replace("https://iamharshverma.github.io", CANONICAL_SITE_URL)
@@ -847,40 +870,87 @@ def build_schema_org_graph(profiles, media, awards, blogs, books, papers, associ
         if ap and ap.startswith("http") and ap not in same_as_urls:
             same_as_urls.append(ap)
 
+    # Mirror Wikidata Q139827028 member of (P463) claims explicitly
     member_of = [
         {
             "@type": "Organization",
             "@id": "http://www.wikidata.org/entity/Q131566",
-            "name": "Institute of Electrical and Electronics Engineers (IEEE)",
-            "url": "https://ieee-collabratec.ieee.org/app/p/HarshVerma59",
+            "name": "Institute of Electrical and Electronics Engineers",
+            "alternateName": "IEEE",
+            "url": "https://www.ieee.org/",
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q131566",
+                "http://www.wikidata.org/entity/Q131566",
+                "https://ieee-collabratec.ieee.org/app/p/HarshVerma59",
+            ],
             "description": "Senior Member (SMIEEE) - Member ID: 95132014",
-        },
-        {
-            "@type": "Organization",
-            "name": "Forbes Technology Council",
-            "url": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/",
-            "description": "Official Council Member & Columnist",
         },
         {
             "@type": "Organization",
             "@id": "http://www.wikidata.org/entity/Q1814176",
             "name": "Sigma Xi, The Scientific Research Honor Society",
+            "alternateName": "Sigma Xi",
             "url": "https://www.sigmaxi.org/",
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q1814176",
+                "http://www.wikidata.org/entity/Q1814176",
+            ],
             "description": "Full Elected Member",
         },
         {
             "@type": "Organization",
             "@id": "http://www.wikidata.org/entity/Q919096",
             "name": "British Computer Society (BCS) - The Chartered Institute for IT",
+            "alternateName": "BCS",
             "url": "https://www.bcs.org/",
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q919096",
+                "http://www.wikidata.org/entity/Q919096",
+                "https://www.bcs.org/find-a-bcs-member/",
+            ],
             "description": "Elected Fellow (FBCS)",
         },
         {
             "@type": "Organization",
             "@id": "http://www.wikidata.org/entity/Q1460885",
-            "name": "Royal Society of Arts (RSA)",
+            "name": "Royal Society of Arts",
+            "alternateName": "RSA / FRSA",
             "url": "https://www.thersa.org/",
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q1460885",
+                "http://www.wikidata.org/entity/Q1460885",
+            ],
             "description": "Elected Fellow (FRSA)",
+        },
+        {
+            "@type": "Organization",
+            "@id": "http://www.wikidata.org/entity/Q466113",
+            "name": "Association for the Advancement of Artificial Intelligence (AAAI)",
+            "alternateName": "AAAI",
+            "url": "https://aaai.org/",
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q466113",
+                "http://www.wikidata.org/entity/Q466113",
+            ],
+            "description": "Professional Member",
+        },
+        {
+            "@type": "Organization",
+            "name": "Forbes Technology Council",
+            "url": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/",
+            "sameAs": [
+                "https://councils.forbes.com/profile/Harsh-Verma-Principal-Software-Engineer-AI-Palo-Alto-Networks/2a1e2c7a-5541-4c49-acee-0ec37da532a5",
+            ],
+            "description": "Official Council Member & Columnist",
+        },
+        {
+            "@type": "Organization",
+            "name": "Forttuna Technology Council",
+            "url": "https://councils.forttuna.com/council-member/harsh-verma/",
+            "sameAs": [
+                "https://global100.forttuna.com/the-power-list-2026-honorees/profile?name=harsh-verma",
+            ],
+            "description": "Council Member & Global 100 Honoree",
         },
     ]
     seen_assoc_names = {m["name"].lower() for m in member_of}
@@ -1209,22 +1279,37 @@ def build_schema_org_graph(profiles, media, awards, blogs, books, papers, associ
                 "@type": "CollegeOrUniversity",
                 "@id": "http://www.wikidata.org/entity/Q41506",
                 "name": "Stanford University",
+                "alternateName": "Stanford",
                 "url": "https://www.stanford.edu/",
-                "sameAs": "https://www.wikidata.org/wiki/Q41506",
+                "sameAs": [
+                    "https://www.wikidata.org/wiki/Q41506",
+                    "http://www.wikidata.org/entity/Q41506",
+                ],
+                "description": "Graduate Certificate in Artificial Intelligence & Executive Leadership, Stanford Center for Professional Development (SCPD)",
             },
             {
                 "@type": "CollegeOrUniversity",
                 "@id": "http://www.wikidata.org/entity/Q1781394",
                 "name": "University of Texas at Dallas",
+                "alternateName": "UT Dallas",
                 "url": "https://www.utdallas.edu/",
-                "sameAs": "https://www.wikidata.org/wiki/Q1781394",
+                "sameAs": [
+                    "https://www.wikidata.org/wiki/Q1781394",
+                    "http://www.wikidata.org/entity/Q1781394",
+                ],
+                "description": "Graduate Studies in Computer Science & Systems Engineering, Erik Jonsson School of Engineering and Computer Science",
             },
             {
                 "@type": "CollegeOrUniversity",
                 "@id": "http://www.wikidata.org/entity/Q7903393",
                 "name": "Uttarakhand Technical University",
+                "alternateName": "UTU",
                 "url": "https://uktech.ac.in/",
-                "sameAs": "https://www.wikidata.org/wiki/Q7903393",
+                "sameAs": [
+                    "https://www.wikidata.org/wiki/Q7903393",
+                    "http://www.wikidata.org/entity/Q7903393",
+                ],
+                "description": "Bachelor of Technology (B.Tech) in Computer Science & Engineering",
             },
         ],
         "knowsAbout": [
