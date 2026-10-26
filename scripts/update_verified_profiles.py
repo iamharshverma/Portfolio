@@ -214,7 +214,7 @@ sync_content = re.sub(
 )
 sync_content = re.sub(
     r'dropdown "42 Verified Profiles Hub" -> "(?:47|49) Verified Profiles Hub"',
-    'dropdown "42 Verified Profiles Hub" -> "49 Verified Profiles Hub"',
+    'dropdown "42 Verified Profiles Hub" -> "Verified Profiles Hub"',
     sync_content
 )
 sync_content = re.sub(
@@ -223,8 +223,8 @@ sync_content = re.sub(
     sync_content
 )
 sync_content = sync_content.replace(
-    '<span class="dropdown-item-title">54 Verified Profiles Hub</span>',
-    '<span class="dropdown-item-title">54 Verified Profiles Hub</span>'
+    '<span class="dropdown-item-title">Verified Profiles Hub</span>',
+    '<span class="dropdown-item-title">Verified Profiles Hub</span>'
 )
 
 with open(sync_path, 'w', encoding='utf-8') as f:
@@ -236,7 +236,7 @@ std_path = os.path.join(ROOT_DIR, 'scripts', 'standardize_headers_footers.py')
 if os.path.exists(std_path):
     with open(std_path, 'r', encoding='utf-8') as f:
         std_content = f.read()
-    std_content = std_content.replace('47 Verified Profiles Hub', '49 Verified Profiles Hub')
+    std_content = std_content.replace('Verified Profiles Hub', 'Verified Profiles Hub')
     with open(std_path, 'w', encoding='utf-8') as f:
         f.write(std_content)
     print("Updated scripts/standardize_headers_footers.py")
@@ -285,7 +285,7 @@ import glob
 for fn in glob.glob(os.path.join(ROOT_DIR, '*.html')) + glob.glob(os.path.join(ROOT_DIR, 'generate_*.py')):
     with open(fn, 'r', encoding='utf-8', errors='ignore') as f:
         c = f.read()
-    c_new = c.replace('47 Verified Profiles Hub', '49 Verified Profiles Hub')
+    c_new = c.replace('Verified Profiles Hub', 'Verified Profiles Hub')
     c_new = c_new.replace('Full Biography &amp; 54 Verified Profiles', 'Full Biography &amp; 54 Verified Profiles')
     c_new = c_new.replace('Full Biography &amp; 54 Verified Profiles', 'Full Biography &amp; 54 Verified Profiles')
     if c_new != c:
