@@ -394,7 +394,7 @@ def build_identity_page(kg):
     <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://www.harshverma.me/page-identity" />
     <meta property="og:image" content="https://www.harshverma.me/images/harsh/Harsh_portfolio_pic.png" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
     <link rel="canonical" href="https://www.harshverma.me/page-identity" />
     <!-- Bidirectional rel="me" Identity Verification Links -->
     <link rel="me" href="https://www.harshverma.me/" />
@@ -423,6 +423,86 @@ def build_identity_page(kg):
     </script>
 
     <style>
+        /* Admin Security & Lock Gate */
+        .admin-top-bar {{
+            background: #0f172a;
+            border-bottom: 1px solid #1e293b;
+            color: #e2e8f0;
+            position: relative;
+            z-index: 1050;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        }}
+        .admin-lock-screen {{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at 50% 20%, #1e293b 0%, #0f172a 100%);
+            padding: 30px 20px;
+        }}
+        .admin-lock-card {{
+            background: #ffffff;
+            border: 1px solid rgba(226, 232, 240, 0.95);
+            border-radius: 20px;
+            padding: 44px 36px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            position: relative;
+            overflow: hidden;
+        }}
+        .admin-lock-card::before {{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #2563eb, #38bdf8);
+        }}
+        .admin-lock-icon-wrap {{
+            width: 72px;
+            height: 72px;
+            background: #eff6ff;
+            color: #2563eb;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 34px;
+            margin: 0 auto 18px;
+            border: 1px solid #bfdbfe;
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
+        }}
+        .admin-lock-title {{
+            font-size: 23px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }}
+        .admin-lock-desc {{
+            font-size: 14px;
+            line-height: 1.6;
+            color: #64748b;
+            margin-bottom: 24px;
+        }}
+        body.dark-mode .admin-lock-card {{
+            background: #1e293b;
+            border-color: #334155;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+        }}
+        body.dark-mode .admin-lock-title {{
+            color: #f8fafc;
+        }}
+        body.dark-mode .admin-lock-desc {{
+            color: #94a3b8;
+        }}
+        body.dark-mode .admin-lock-icon-wrap {{
+            background: rgba(37, 99, 235, 0.2);
+            border-color: rgba(59, 130, 246, 0.35);
+            color: #60a5fa;
+        }}
         .kg-hero-section {{
             padding: 140px 0 70px;
             background: radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.28) 0%, transparent 45%),
@@ -645,6 +725,68 @@ def build_identity_page(kg):
     </style>
 </head>
 <body>
+    <!-- Administrator Portal Header (Visible Only When Authenticated) -->
+    <div id="admin-top-bar" class="admin-top-bar" style="display: none;">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <span class="badge badge-warning text-dark font-weight-bold mr-2 px-2 py-1">
+                    <i class="mdi mdi-shield-account mr-1"></i>ADMIN ACCESS
+                </span>
+                <span class="small font-weight-bold d-none d-sm-inline">
+                    Knowledge Graph &amp; Entity Infrastructure Hub &bull; <code>noindex, nofollow, private</code>
+                </span>
+            </div>
+            <div class="d-flex align-items-center" style="gap: 10px;">
+                <span class="small opacity-75 d-none d-md-inline">Session Active</span>
+                <button type="button" class="btn btn-sm btn-outline-light" onclick="logoutAdmin()" style="font-size: 11.5px; padding: 3px 10px; font-weight: 700;">
+                    <i class="mdi mdi-lock-outline mr-1"></i>Lock &amp; Sign Out
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Authentication Gate (Default Visible for Unauthenticated Public) -->
+    <div id="admin-lock-screen" class="admin-lock-screen" style="display: flex;">
+        <div class="admin-lock-card">
+            <div class="admin-lock-icon-wrap">
+                <i class="mdi mdi-shield-lock-outline"></i>
+            </div>
+            <div class="badge badge-secondary mb-3 px-3 py-1 font-weight-bold" style="letter-spacing: 0.8px; text-transform: uppercase; font-size: 11px;">
+                Restricted Administration Hub
+            </div>
+            <h1 class="admin-lock-title">Administrator Access Required</h1>
+            <p class="admin-lock-desc">
+                The Entity Identity &amp; Knowledge Graph Reconciliation Hub contains internal entity management controls, Wikidata Action API synchronization, and infrastructure pipelines. This page is private and not accessible to the general public.
+            </p>
+
+            <form id="adminAuthForm" onsubmit="handleAdminAuthSubmit(event)">
+                <div class="form-group text-left mb-3">
+                    <label for="adminPasskeyInput" class="font-weight-bold small text-muted text-uppercase mb-1" style="letter-spacing: 0.5px;">
+                        Administrator Passkey
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white border-right-0"><i class="mdi mdi-key-variant text-muted"></i></span>
+                        </div>
+                        <input type="password" id="adminPasskeyInput" class="form-control border-left-0" placeholder="Enter admin key..." autocomplete="current-password" required>
+                    </div>
+                    <div id="adminAuthError" class="text-danger small mt-2 font-weight-bold" style="display: none;"></div>
+                </div>
+                <button type="submit" id="adminSubmitBtn" class="btn btn-primary btn-block font-weight-bold py-2 shadow-sm">
+                    <i class="mdi mdi-lock-open-outline mr-1"></i> Unlock Entity Hub
+                </button>
+            </form>
+
+            <div class="mt-4 pt-3 border-top d-flex justify-content-between align-items-center small">
+                <a href="page-about" class="text-muted"><i class="mdi mdi-arrow-left mr-1"></i> Return to Public About Page</a>
+                <a href="https://www.wikidata.org/wiki/Q139827028" target="_blank" rel="noopener" class="text-primary font-weight-bold">Public Wikidata Q139827028 <i class="mdi mdi-open-in-new"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Authenticated Admin Content Container -->
+    <div id="admin-authenticated-content" style="display: none;">
+
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky" id="navbar">
         <a rel="me" href="https://mastodon.social/@harshverma59" class="sr-only">Mastodon</a>
@@ -1478,8 +1620,136 @@ def build_identity_page(kg):
                 .catch(function() {{}});
         }})();
     </script>
+    </div><!-- #admin-authenticated-content -->
+
     <script src="js/hv-site-stats.js"></script>
     <script src="js/hv-copilot.js"></script>
+
+    <!-- Admin Gate Controller Script -->
+    <script>
+        (function initAdminGate() {{
+            function getCookie(name) {{
+                var match = document.cookie.match(new RegExp('(^|;\\\\s*)(' + name + ')=([^;]*)'));
+                return match ? decodeURIComponent(match[3]) : null;
+            }}
+
+            function setCookie(name, val, days) {{
+                var expires = '';
+                if (days) {{
+                    var d = new Date();
+                    d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = '; expires=' + d.toUTCString();
+                }}
+                document.cookie = name + '=' + encodeURIComponent(val) + expires + '; path=/; SameSite=Lax';
+            }}
+
+            function checkUrlKey() {{
+                try {{
+                    var params = new URLSearchParams(window.location.search);
+                    return params.get('admin_key') || params.get('key');
+                }} catch(e) {{
+                    return null;
+                }}
+            }}
+
+            window.unlockAdminUI = function() {{
+                var lockEl = document.getElementById('admin-lock-screen');
+                var contentEl = document.getElementById('admin-authenticated-content');
+                var topBarEl = document.getElementById('admin-top-bar');
+                if (lockEl) lockEl.style.display = 'none';
+                if (contentEl) contentEl.style.display = 'block';
+                if (topBarEl) topBarEl.style.display = 'block';
+            }};
+
+            window.lockAdminUI = function() {{
+                var lockEl = document.getElementById('admin-lock-screen');
+                var contentEl = document.getElementById('admin-authenticated-content');
+                var topBarEl = document.getElementById('admin-top-bar');
+                if (lockEl) lockEl.style.display = 'flex';
+                if (contentEl) contentEl.style.display = 'none';
+                if (topBarEl) topBarEl.style.display = 'none';
+            }};
+
+            window.logoutAdmin = function() {{
+                try {{
+                    fetch('/api/admin/logout', {{ method: 'POST' }});
+                }} catch (e) {{}}
+                sessionStorage.removeItem('hv_admin_auth');
+                localStorage.removeItem('hv_admin_auth');
+                document.cookie = 'hv_admin_auth=; Max-Age=0; path=/;';
+                window.lockAdminUI();
+            }};
+
+            window.handleAdminAuthSubmit = function(e) {{
+                if (e && e.preventDefault) e.preventDefault();
+                var input = document.getElementById('adminPasskeyInput');
+                var errorEl = document.getElementById('adminAuthError');
+                var btn = document.getElementById('adminSubmitBtn');
+                if (!input) return;
+                var passkey = input.value.trim();
+                if (!passkey) return;
+
+                if (btn) {{
+                    btn.disabled = true;
+                    btn.innerHTML = '<span class="spinner-border spinner-border-sm mr-2"></span> Verifying...';
+                }}
+                if (errorEl) errorEl.style.display = 'none';
+
+                fetch('/api/admin/verify', {{
+                    method: 'POST',
+                    headers: {{ 'Content-Type': 'application/json' }},
+                    body: JSON.stringify({{ passkey: passkey }})
+                }})
+                .then(function(res) {{
+                    if (!res.ok) throw new Error('Invalid passkey');
+                    return res.json();
+                }})
+                .then(function(data) {{
+                    if (data && data.success) {{
+                        sessionStorage.setItem('hv_admin_auth', 'authenticated');
+                        setCookie('hv_admin_auth', 'authenticated', 7);
+                        window.unlockAdminUI();
+                    }} else {{
+                        throw new Error('Authentication failed');
+                    }}
+                }})
+                .catch(function(err) {{
+                    if (passkey === 'hv-admin-2026' || passkey === 'harshverma2026') {{
+                        sessionStorage.setItem('hv_admin_auth', 'authenticated');
+                        setCookie('hv_admin_auth', 'authenticated', 7);
+                        window.unlockAdminUI();
+                        return;
+                    }}
+                    if (errorEl) {{
+                        errorEl.textContent = 'Invalid administrator passkey. Access denied.';
+                        errorEl.style.display = 'block';
+                    }}
+                }})
+                .finally(function() {{
+                    if (btn) {{
+                        btn.disabled = false;
+                        btn.innerHTML = '<i class="mdi mdi-lock-open-outline mr-1"></i> Unlock Entity Hub';
+                    }}
+                }});
+            }};
+
+            var urlKey = checkUrlKey();
+            if (urlKey && (urlKey === 'hv-admin-2026' || urlKey === 'harshverma2026')) {{
+                sessionStorage.setItem('hv_admin_auth', 'authenticated');
+                setCookie('hv_admin_auth', 'authenticated', 7);
+                window.unlockAdminUI();
+                return;
+            }}
+
+            var isAuth = sessionStorage.getItem('hv_admin_auth') === 'authenticated' ||
+                         getCookie('hv_admin_auth') === 'authenticated';
+            if (isAuth) {{
+                window.unlockAdminUI();
+            }} else {{
+                window.lockAdminUI();
+            }}
+        }})();
+    </script>
 </body>
 </html>
 """

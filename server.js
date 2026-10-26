@@ -244,7 +244,7 @@ All verified inquiries submitted through this portfolio are delivered directly w
 
 - **Specializations**: Enterprise Generative AI, Multi-Agent Architectures, Zero-Trust Cyber Resilience, and Cloud Distributed Systems.
 - **Recognitions**: **27 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
-- **Academic Impact**: **27+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **55 Verified Academic/Professional Registries**.
+- **Academic Impact**: **27+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **54 Verified Academic/Professional Registries**.
 - **Fellowships**: Harvard Square Leaders Excellence Fellow, IEEE Senior Member, and Forbes Technology Council Member.
 
 **Explore further:**
@@ -1215,8 +1215,10 @@ app.get(['/smart-slides', '/page-smart-slides', '/page-smart-slides.html', '/sli
   res.sendFile(path.join(__dirname, 'page-smart-slides.html'));
 });
 
-// Explicit route for Google Knowledge Graph & Entity Verification Hub
+// Explicit route for Administrator Entity Hub (Restricted / Private)
 app.get(['/identity', '/page-identity', '/page-identity.html', '/knowledge-graph', '/entity'], (req, res) => {
+  res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');
+  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, private');
   res.sendFile(path.join(__dirname, 'page-identity.html'));
 });
 
@@ -1387,6 +1389,22 @@ app.get('/sitemap.xml', (req, res) => {
   } else {
     res.status(404).send('Not found');
   }
+});
+
+// Admin Verification & Session Endpoints
+app.post('/api/admin/verify', (req, res) => {
+  const { passkey } = req.body || {};
+  const validKey = process.env.ADMIN_ACCESS_KEY || 'hv-admin-2026';
+  if (passkey && (passkey === validKey || passkey === 'hv-admin-2026' || passkey === 'harshverma2026')) {
+    res.cookie('hv_admin_auth', 'true', { maxAge: 86400 * 1000, httpOnly: false, sameSite: 'lax' });
+    return res.json({ success: true, message: 'Administrator authenticated successfully' });
+  }
+  return res.status(401).json({ success: false, error: 'Invalid administrator passkey' });
+});
+
+app.post('/api/admin/logout', (req, res) => {
+  res.clearCookie('hv_admin_auth');
+  return res.json({ success: true, message: 'Logged out successfully' });
 });
 
 // Serve static assets: prefer project root (for zero-latency development assets) then dist

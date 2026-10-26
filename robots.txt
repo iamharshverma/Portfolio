@@ -26,6 +26,10 @@ Disallow: /index_old.html
 Disallow: /*?*
 Disallow: /*&
 
+# Admin Entity Reconciliation & Identity Hub (Restricted to Administrators Only)
+Disallow: /page-identity
+Disallow: /page-identity.html
+
 # Canonical Sitemaps
 Sitemap: https://www.harshverma.me/sitemap.xml
 Sitemap: https://harshverma.me/sitemap.xml

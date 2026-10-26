@@ -1709,9 +1709,14 @@ def generate_html():
                                     Explore Harsh Verma's verified accreditations, executive councils, research indexes, developer ecosystems, and media features across the web.
                                 </p>
                             </div>
-                            <a href="https://harshverma.bio/" target="_blank" class="btn btn-outline-primary btn-sm rounded font-weight-bold mt-3 mt-sm-0">
-                                <i class="mdi mdi-link-variant mr-1"></i> Visit HarshVerma.bio <i class="mdi mdi-open-in-new ml-1"></i>
-                            </a>
+                            <div class="d-flex flex-wrap align-items-center mt-3 mt-sm-0" style="gap: 8px;">
+                                <a href="https://harshverma.bio/" target="_blank" class="btn btn-primary btn-sm rounded font-weight-bold" style="background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%); border: none;">
+                                    <i class="mdi mdi-link-variant mr-1"></i> Visit HarshVerma.bio <i class="mdi mdi-open-in-new ml-1"></i>
+                                </a>
+                                <a href="page-identity" class="btn btn-outline-secondary btn-sm rounded font-weight-bold" title="Administrator Entity Hub (Restricted)" style="border-color: #cbd5e1; color: #64748b;" rel="nofollow">
+                                    <i class="mdi mdi-shield-lock-outline mr-1"></i> Admin Portal
+                                </a>
+                            </div>
                         </div>
 
                         <!-- Search & Category Filters -->

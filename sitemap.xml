@@ -12,15 +12,7 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- 2. Canonical Google Knowledge Graph & Entity Reconciliation Hub -->
-  <url>
-    <loc>https://www.harshverma.me/page-identity</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <!-- 3. Full Career Dossier, Stanford & UTD Education, 55 Verified Profiles -->
+  <!-- 2. Full Career Dossier, Stanford & UTD Education, 55 Verified Profiles -->
   <url>
     <loc>https://www.harshverma.me/page-about</loc>
     <lastmod>2026-10-26</lastmod>
