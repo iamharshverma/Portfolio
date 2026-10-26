@@ -394,6 +394,7 @@ def build_identity_page(kg):
     <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://www.harshverma.me/page-identity" />
     <meta property="og:image" content="https://www.harshverma.me/images/harsh/Harsh_portfolio_pic.png" />
+    <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.harshverma.me/page-identity" />
     <!-- Bidirectional rel="me" Identity Verification Links -->
     <link rel="me" href="https://www.harshverma.me/" />
@@ -1552,6 +1553,9 @@ def inject_graph_across_all_pages(kg):
             flags=re.DOTALL,
         )
 
+        # Remove any previous robots meta tag if present
+        content = re.sub(r'\s*<meta\s+name=[\"\']robots[\"\']\s+content=[\"\'][^\"\']+[\"\']\s*/?>\n?', '\n', content, flags=re.IGNORECASE)
+
         # Remove existing canonical tag if present
         content = re.sub(r'\s*<link\s+rel=[\"\']canonical[\"\']\s+href=[\"\'][^\"\']+[\"\']\s*/?>\n?', '\n', content, flags=re.IGNORECASE)
 
@@ -1560,6 +1564,7 @@ def inject_graph_across_all_pages(kg):
         content = content.replace("https://iamharshverma.github.io", "https://www.harshverma.me")
 
         page_script_block = (
+            f'    <meta name="robots" content="index, follow" />\n'
             f'    <link rel="canonical" href="{can_url}" />\n'
             f'{script_block}'
         )
@@ -1569,7 +1574,7 @@ def inject_graph_across_all_pages(kg):
             f.write(content)
         injected_count += 1
 
-    print(f"Injected canonical link ({can_url}) + Schema.org @graph JSON-LD (63 sameAs URLs) into {injected_count} HTML pages.")
+    print(f"Injected meta robots, canonical link ({can_url}), and Schema.org @graph JSON-LD into {injected_count} HTML pages.")
 
 
 def main():

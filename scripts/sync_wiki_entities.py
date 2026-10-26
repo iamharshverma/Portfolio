@@ -832,6 +832,10 @@ def build_schema_org_graph(profiles, media, awards, blogs, books, papers, associ
         "https://www.harshverma.me/",
         "https://harshverma.me/",
         "https://harshverma.bio/",
+        "https://x.com/harshverma59",
+        "https://twitter.com/harshverma59",
+        "https://facebook.com/harshverma59",
+        "https://ieee-collabratec.ieee.org/app/p/HarshVerma59",
     ]
     for p in profiles:
         u = p.get("url", "").strip().replace("https://iamharshverma.github.io", CANONICAL_SITE_URL)
