@@ -1370,6 +1370,25 @@ app.get('/api/smart-slides', (req, res) => {
   }
 });
 
+// Search Engine & Knowledge Graph Discovery Endpoints
+app.get('/robots.txt', (req, res) => {
+  const robotsPath = path.join(__dirname, 'robots.txt');
+  if (fs.existsSync(robotsPath)) {
+    res.type('text/plain').sendFile(robotsPath);
+  } else {
+    res.status(404).send('Not found');
+  }
+});
+
+app.get('/sitemap.xml', (req, res) => {
+  const sitemapPath = path.join(__dirname, 'sitemap.xml');
+  if (fs.existsSync(sitemapPath)) {
+    res.type('application/xml').sendFile(sitemapPath);
+  } else {
+    res.status(404).send('Not found');
+  }
+});
+
 // Serve static assets: prefer project root (for zero-latency development assets) then dist
 app.use(express.static(__dirname, {
   extensions: ['html', 'htm']

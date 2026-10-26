@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- 1. Executive Home & Portfolio -->
+  <url>
+    <loc>https://www.harshverma.me/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 2. Canonical Google Knowledge Graph & Entity Reconciliation Hub -->
+  <url>
+    <loc>https://www.harshverma.me/page-identity</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- 3. Full Career Dossier, Stanford & UTD Education, 55 Verified Profiles -->
+  <url>
+    <loc>https://www.harshverma.me/page-about</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- 4. 27+ Peer-Reviewed Research Publications (IEEE, Springer Nature, Oxford) -->
+  <url>
+    <loc>https://www.harshverma.me/page-publications</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- 5. 27 International Honors, Forttuna Global 100, Nobel Technology Gold, TITAN -->
+  <url>
+    <loc>https://www.harshverma.me/page-awards</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- 6. Authored Books on AI Systems & Cyber Defense, 6 Technical Reviews -->
+  <url>
+    <loc>https://www.harshverma.me/page-books</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 7. Forbes Technology Council Columns, HackerNoon & RSAC Insights -->
+  <url>
+    <loc>https://www.harshverma.me/page-blog</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 8. 26 Invited Fellowships & Associations (SMIEEE, FBCS, FRSA, Sigma Xi) -->
+  <url>
+    <loc>https://www.harshverma.me/page-memberships</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 9. Executive Keynotes, Speaking Dossier & RSAC Panels -->
+  <url>
+    <loc>https://www.harshverma.me/page-speaker</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 10. Keynote Video Showcases & Interactive Speaking Calendar -->
+  <url>
+    <loc>https://www.harshverma.me/page-events</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- 11. Interactive Keynote Slide Showcases & AI Architecture Decks -->
+  <url>
+    <loc>https://www.harshverma.me/page-smart-slides</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- 12. Keynote Presentations & Technical Slide Decks -->
+  <url>
+    <loc>https://www.harshverma.me/page-slides</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- 13. Enterprise Systems Architecture & AI Engineering Portfolio -->
+  <url>
+    <loc>https://www.harshverma.me/page-portfolio</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- 14. UC Berkeley SkyDeck, Startup Advisory & Venture Mentorship -->
+  <url>
+    <loc>https://www.harshverma.me/page-advisory</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- 15. Executive Board Biography & Leadership Profiles -->
+  <url>
+    <loc>https://www.harshverma.me/board</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- 16. 42 Media Features, Podcasts & Press Interviews -->
+  <url>
+    <loc>https://www.harshverma.me/page-media</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- 17. Real-time Social Thought Leadership & Content Feeds -->
+  <url>
+    <loc>https://www.harshverma.me/page-social</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- 18. Media Distribution & Global Press Analytics Dossier -->
+  <url>
+    <loc>https://www.harshverma.me/page-media-distribution-analytics</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+</urlset>

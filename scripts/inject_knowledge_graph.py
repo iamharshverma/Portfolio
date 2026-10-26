@@ -20,6 +20,8 @@ import html as html_lib
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KG_PATH = os.path.join(ROOT_DIR, "data", "knowledge-graph.json")
+CANONICAL_SITE_URL = "https://www.harshverma.me"
+SECONDARY_SITE_URL = "https://harshverma.me"
 
 
 def ensure_hero_clean_image():
@@ -1497,6 +1499,36 @@ def inject_graph_across_all_pages(kg):
         f'    <link rel="me" href="https://orcid.org/0000-0003-2134-2600" />\n'
     )
 
+    CANONICAL_MAP = {
+        "index.html": f"{CANONICAL_SITE_URL}/",
+        "index-image.html": f"{CANONICAL_SITE_URL}/",
+        "index-particles.html": f"{CANONICAL_SITE_URL}/",
+        "index-ripple.html": f"{CANONICAL_SITE_URL}/",
+        "index-routed.html": f"{CANONICAL_SITE_URL}/",
+        "index-typed.html": f"{CANONICAL_SITE_URL}/",
+        "page-about.html": f"{CANONICAL_SITE_URL}/page-about",
+        "page-publications.html": f"{CANONICAL_SITE_URL}/page-publications",
+        "page-awards.html": f"{CANONICAL_SITE_URL}/page-awards",
+        "page-books.html": f"{CANONICAL_SITE_URL}/page-books",
+        "page-blog.html": f"{CANONICAL_SITE_URL}/page-blog",
+        "page-blog-detail.html": f"{CANONICAL_SITE_URL}/page-blog",
+        "page-events.html": f"{CANONICAL_SITE_URL}/page-events",
+        "page-identity.html": f"{CANONICAL_SITE_URL}/page-identity",
+        "page-media.html": f"{CANONICAL_SITE_URL}/page-media",
+        "page-memberships.html": f"{CANONICAL_SITE_URL}/page-memberships",
+        "page-portfolio.html": f"{CANONICAL_SITE_URL}/page-portfolio",
+        "page-portfolio-detail.html": f"{CANONICAL_SITE_URL}/page-portfolio",
+        "page-slides.html": f"{CANONICAL_SITE_URL}/page-slides",
+        "page-smart-slides.html": f"{CANONICAL_SITE_URL}/page-smart-slides",
+        "page-social.html": f"{CANONICAL_SITE_URL}/page-social",
+        "page-speaker.html": f"{CANONICAL_SITE_URL}/page-speaker",
+        "speaker.html": f"{CANONICAL_SITE_URL}/page-speaker",
+        "page-advisory.html": f"{CANONICAL_SITE_URL}/page-advisory",
+        "advisory.html": f"{CANONICAL_SITE_URL}/page-advisory",
+        "board.html": f"{CANONICAL_SITE_URL}/board",
+        "page-media-distribution-analytics.html": f"{CANONICAL_SITE_URL}/page-media-distribution-analytics",
+    }
+
     html_files = sorted(glob.glob(os.path.join(ROOT_DIR, "*.html")))
     injected_count = 0
 
@@ -1510,6 +1542,8 @@ def inject_graph_across_all_pages(kg):
         if "</head>" not in content:
             continue
 
+        can_url = CANONICAL_MAP.get(fname, f"{CANONICAL_SITE_URL}/{fname.replace('.html', '')}")
+
         # Remove any previous hv-knowledge-graph-jsonld block if present
         content = re.sub(
             r'\s*<!-- Canonical Google Knowledge Graph & Entity Reconciliation JSON-LD -->\s*<script type="application/ld\+json" id="hv-knowledge-graph-jsonld">.*?</script>(?:\s*<link rel="me" href="https://(?:(?:www\.)?harshverma\.me/|www\.wikidata\.org/wiki/Q139827028|en\.everybodywiki\.com/Harsh_Verma_\(Software_Engineer\)|orcid\.org/0000-0003-2134-2600)"\s*/>)*\n?',
@@ -1518,16 +1552,24 @@ def inject_graph_across_all_pages(kg):
             flags=re.DOTALL,
         )
 
+        # Remove existing canonical tag if present
+        content = re.sub(r'\s*<link\s+rel=[\"\']canonical[\"\']\s+href=[\"\'][^\"\']+[\"\']\s*/?>\n?', '\n', content, flags=re.IGNORECASE)
+
         # Also replace any stray iamharshverma.github.io references in the page
         content = content.replace("https://iamharshverma.github.io/#person", "https://www.harshverma.me/#person")
         content = content.replace("https://iamharshverma.github.io", "https://www.harshverma.me")
 
-        content = content.replace("</head>", f"{script_block}</head>", 1)
+        page_script_block = (
+            f'    <link rel="canonical" href="{can_url}" />\n'
+            f'{script_block}'
+        )
+
+        content = content.replace("</head>", f"{page_script_block}</head>", 1)
         with open(fpath, "w", encoding="utf-8") as f:
             f.write(content)
         injected_count += 1
 
-    print(f"Injected canonical Schema.org @graph JSON-LD + Wikidata Q139827028 rel='me' links into {injected_count} HTML pages.")
+    print(f"Injected canonical link ({can_url}) + Schema.org @graph JSON-LD (63 sameAs URLs) into {injected_count} HTML pages.")
 
 
 def main():

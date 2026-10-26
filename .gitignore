@@ -13,3 +13,4 @@ bun.lock
 *token*.txt
 *session*.txt
 *password*.txt
+public/assets/

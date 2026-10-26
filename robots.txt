@@ -1,0 +1,31 @@
+# ==============================================================================
+# Robots.txt for Harsh Verma Official Portfolio & Knowledge Graph Hub
+# Domain: https://www.harshverma.me / https://harshverma.me
+# ==============================================================================
+
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /fonts/
+Allow: /assets/
+Allow: /files/
+Allow: /feed.xml
+Allow: /rss.xml
+Allow: /sitemap.xml
+
+# Prevent crawl bloat on backend APIs, raw data dumps, and internal test scripts
+Disallow: /api/
+Disallow: /php/
+Disallow: /data/*.json$
+Disallow: /data/*.wiki$
+Disallow: /data/subscribers.json
+Disallow: /subscribers.json
+Disallow: /index_old.html
+Disallow: /*?*
+Disallow: /*&
+
+# Canonical Sitemaps
+Sitemap: https://www.harshverma.me/sitemap.xml
+Sitemap: https://harshverma.me/sitemap.xml
