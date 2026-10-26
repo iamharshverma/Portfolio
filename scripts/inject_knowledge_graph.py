@@ -1530,6 +1530,35 @@ def inject_graph_across_all_pages(kg):
         "page-media-distribution-analytics.html": f"{CANONICAL_SITE_URL}/page-media-distribution-analytics",
     }
 
+    PAGE_META = {
+        "index.html": ("ProfilePage", "Harsh Verma | Official Portfolio, Executive AI Leadership & Knowledge Graph"),
+        "index-image.html": ("ProfilePage", "Harsh Verma | Official Portfolio, Executive AI Leadership & Knowledge Graph"),
+        "index-particles.html": ("ProfilePage", "Harsh Verma | Official Portfolio, Executive AI Leadership & Knowledge Graph"),
+        "index-ripple.html": ("ProfilePage", "Harsh Verma | Official Portfolio, Executive AI Leadership & Knowledge Graph"),
+        "index-routed.html": ("ProfilePage", "Harsh Verma | Official Portfolio, Executive AI Leadership & Knowledge Graph"),
+        "index-typed.html": ("ProfilePage", "Harsh Verma | Official Portfolio, Executive AI Leadership & Knowledge Graph"),
+        "page-about.html": ("ProfilePage", "About Harsh Verma | Principal AI Engineer, Author & 55 Verified Profiles Directory"),
+        "page-publications.html": ("CollectionPage", "Publications & Research | Harsh Verma - Google Scholar Profile & Peer-Reviewed Papers"),
+        "page-awards.html": ("ItemPage", "Harsh Verma | Awards, Honors & Global Recognitions"),
+        "page-books.html": ("CollectionPage", "Authored Books & Technical Reviews | Harsh Verma - Enterprise AI & Cyber Defense"),
+        "page-blog.html": ("CollectionPage", "Harsh Verma | Thought Leadership, Forbes Tech Council & Technical Columns"),
+        "page-blog-detail.html": ("ItemPage", "Harsh Verma | Technical Column & Deep Dive"),
+        "page-events.html": ("ItemPage", "Speaking Engagements - Harsh Verma | Keynotes, Conferences & Judging"),
+        "page-media.html": ("CollectionPage", "Harsh Verma | Media Features, Podcasts & Global Press Appearances"),
+        "page-memberships.html": ("ItemPage", "Harsh Verma | Invited Memberships, Fellowships (SMIEEE, FBCS, FRSA) & Senior Associations"),
+        "page-portfolio.html": ("CollectionPage", "Harsh Verma | Systems Architecture & Enterprise AI Engineering Portfolio"),
+        "page-portfolio-detail.html": ("ItemPage", "Harsh Verma | Systems Architecture Project Detail"),
+        "page-slides.html": ("CollectionPage", "Keynote Slides & Presentations | Harsh Verma"),
+        "page-smart-slides.html": ("CollectionPage", "Smart Slides & Keynotes | Harsh Verma - EasyChair Smart Slide™ Presentations"),
+        "page-social.html": ("CollectionPage", "Harsh Verma | Partnerships & Social Thought Leadership Stream"),
+        "page-speaker.html": ("ItemPage", "Speaking Engagements - Harsh Verma | Keynotes, Conferences & Executive Advisory"),
+        "speaker.html": ("ItemPage", "Speaking Engagements - Harsh Verma | Keynotes, Conferences & Executive Advisory"),
+        "page-advisory.html": ("ItemPage", "Board & Strategic Advisory - Harsh Verma | AI Governance & Technology Councils"),
+        "advisory.html": ("ItemPage", "Board & Strategic Advisory - Harsh Verma | AI Governance & Technology Councils"),
+        "board.html": ("ItemPage", "Board & Strategic Advisory - Harsh Verma | Executive Board Biography"),
+        "page-media-distribution-analytics.html": ("ItemPage", "Harsh Verma | Media Distribution Analytics & Global Reach Dossier"),
+    }
+
     html_files = sorted(glob.glob(os.path.join(ROOT_DIR, "*.html")))
     injected_count = 0
 
@@ -1563,10 +1592,59 @@ def inject_graph_across_all_pages(kg):
         content = content.replace("https://iamharshverma.github.io/#person", "https://www.harshverma.me/#person")
         content = content.replace("https://iamharshverma.github.io", "https://www.harshverma.me")
 
+        # Construct page-specific graph payload linking to https://www.harshverma.me/#person
+        page_node_id = f"{can_url}#webpage" if can_url != f"{CANONICAL_SITE_URL}/" else f"{CANONICAL_SITE_URL}/#profilepage"
+        page_type, page_name = PAGE_META.get(fname, ("WebPage", f"Harsh Verma | {fname.replace('.html', '').replace('page-', '').title()}"))
+
+        page_graph = [
+            {
+                "@type": "WebSite",
+                "@id": f"{CANONICAL_SITE_URL}/#website",
+                "url": f"{CANONICAL_SITE_URL}/",
+                "sameAs": [f"{SECONDARY_SITE_URL}/"],
+                "name": "Harsh Verma Official Portfolio & Knowledge Graph Hub",
+                "publisher": {"@id": f"{CANONICAL_SITE_URL}/#person"},
+                "inLanguage": "en-US",
+            },
+            {
+                "@type": page_type,
+                "@id": page_node_id,
+                "url": can_url,
+                "name": page_name,
+                "isPartOf": {"@id": f"{CANONICAL_SITE_URL}/#website"},
+                "about": {"@id": f"{CANONICAL_SITE_URL}/#person"},
+                "mainEntity": {"@id": f"{CANONICAL_SITE_URL}/#person"},
+            }
+        ]
+
+        # Add Person node with reciprocal mainEntityOfPage
+        for n in kg["schema_json_ld"]["@graph"]:
+            if n.get("@type") == "Person":
+                p_copy = dict(n)
+                p_copy["mainEntityOfPage"] = {"@id": page_node_id}
+                page_graph.append(p_copy)
+                break
+
+        # Append all other contextual nodes (Books, Reviews, TechArticles, ScholarlyArticles)
+        for n in kg["schema_json_ld"]["@graph"]:
+            if n.get("@type") not in ("WebSite", "ProfilePage", "WebPage", "Person"):
+                page_graph.append(n)
+
+        page_schema_payload = {
+            "@context": "https://schema.org",
+            "@graph": page_graph
+        }
+        page_schema_json = json.dumps(page_schema_payload)
+
         page_script_block = (
             f'    <meta name="robots" content="index, follow" />\n'
             f'    <link rel="canonical" href="{can_url}" />\n'
-            f'{script_block}'
+            f'    <!-- Canonical Google Knowledge Graph & Entity Reconciliation JSON-LD -->\n'
+            f'    <script type="application/ld+json" id="hv-knowledge-graph-jsonld">{page_schema_json}</script>\n'
+            f'    <link rel="me" href="https://www.harshverma.me/" />\n'
+            f'    <link rel="me" href="https://www.wikidata.org/wiki/Q139827028" />\n'
+            f'    <link rel="me" href="https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)" />\n'
+            f'    <link rel="me" href="https://orcid.org/0000-0003-2134-2600" />\n'
         )
 
         content = content.replace("</head>", f"{page_script_block}</head>", 1)
@@ -1574,7 +1652,7 @@ def inject_graph_across_all_pages(kg):
             f.write(content)
         injected_count += 1
 
-    print(f"Injected meta robots, canonical link ({can_url}), and Schema.org @graph JSON-LD into {injected_count} HTML pages.")
+    print(f"Injected meta robots, canonical link, and Schema.org @graph JSON-LD into {injected_count} HTML pages.")
 
 
 def main():
