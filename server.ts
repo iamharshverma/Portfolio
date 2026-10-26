@@ -1443,6 +1443,22 @@ const server = app.listen(PORT, HOST, () => {
   console.log(`Portfolio server running on http://${HOST}:${PORT}`);
 });
 
+server.on('error', (err) => {
+  if (err && err.code === 'EADDRINUSE') {
+    console.warn(`[Server] Port ${PORT} is already in use. Another instance may be running.`);
+  } else {
+    console.error('[Server Listen Error]', err);
+  }
+});
+
+process.on('uncaughtException', (err) => {
+  console.error('[Uncaught Exception]', err);
+});
+
+process.on('unhandledRejection', (reason) => {
+  console.error('[Unhandled Rejection]', reason);
+});
+
 // Graceful shutdown handling for Cloud Run container lifecycle
 process.on('SIGTERM', () => {
   console.log('SIGTERM signal received: closing HTTP server');
