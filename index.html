@@ -7102,6 +7102,7 @@ html.dark-mode .exp-progress-bar {
                     btn.setAttribute('aria-selected', 'true');
                 }
                 
+                var visibleCount = 0;
                 cards.forEach(function(card) {
                     var cardCat = card.getAttribute('data-category');
                     var isMatch = false;
@@ -7117,12 +7118,51 @@ html.dark-mode .exp-progress-bar {
                     
                     if (isMatch) {
                         card.style.display = 'block';
-                        card.style.opacity = '1';
+                        var delay = (visibleCount % 3) * 85;
+                        visibleCount++;
+                        card.style.transitionDelay = delay + 'ms';
+                        requestAnimationFrame(function() {
+                            card.classList.add('is-visible');
+                        });
                     } else {
+                        card.classList.remove('is-visible');
                         card.style.display = 'none';
                     }
                 });
             }
+
+            // Scroll Entrance Animation for Honors & Awards Cards
+            document.addEventListener('DOMContentLoaded', function() {
+                var awardCols = document.querySelectorAll('.home-award-col');
+                if (awardCols.length && 'IntersectionObserver' in window) {
+                    var awardObserver = new IntersectionObserver(function(entries, observer) {
+                        entries.forEach(function(entry) {
+                            if (entry.isIntersecting) {
+                                var col = entry.target;
+                                var allCols = Array.from(document.querySelectorAll('.home-award-col'));
+                                var idx = allCols.indexOf(col);
+                                var delay = (idx >= 0 ? (idx % 3) * 95 : 0);
+                                col.style.transitionDelay = delay + 'ms';
+                                requestAnimationFrame(function() {
+                                    col.classList.add('is-visible');
+                                });
+                                observer.unobserve(col);
+                            }
+                        });
+                    }, {
+                        threshold: 0.12,
+                        rootMargin: '0px 0px -30px 0px'
+                    });
+
+                    awardCols.forEach(function(col) {
+                        awardObserver.observe(col);
+                    });
+                } else if (awardCols.length) {
+                    awardCols.forEach(function(col) {
+                        col.classList.add('is-visible');
+                    });
+                }
+            });
 
             // Animate Skills Progress Bars on Viewport Entry via Intersection Observer API
             document.addEventListener('DOMContentLoaded', function() {
