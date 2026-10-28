@@ -840,8 +840,8 @@
                             <a class="dropdown-item nav-dropdown-item" href="page-social">
                                 <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
                                 <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
-                                    <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
+                                    <span class="dropdown-item-title">Partnership &amp; Social <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Collaborate</span></span>
+                                    <span class="dropdown-item-desc">Brand partnerships &amp; executive social authority</span>
                                 </div>
                             </a>
                             <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
@@ -1235,6 +1235,8 @@
             <i class="mdi mdi-linkedin"></i> LinkedIn Announcement
         </a><a href="https://lnkd.in/p/g7nnfknT" target="_blank" rel="noopener noreferrer" class="btn-award-link">
             <i class="mdi mdi-linkedin"></i> NVTC LinkedIn Feature
+        </a><a href="https://lnkd.in/p/g7GkqKhe" target="_blank" rel="noopener noreferrer" class="btn-award-link">
+            <i class="mdi mdi-linkedin"></i> NVTC Awards Feature
         </a>
                     </div>
                     <button type="button" class="btn-copy-cite" onclick="openCiteModal('award-nvtc-cyber50-honoree-2026', '2026 NVTC Cyber50 Honoree', 'Northern Virginia Technology Council (NVTC)', '2026', 'Verma, H. (2026). 2026 NVTC Cyber50 Honoree: Celebrating Groundbreaking Accomplishments and Impact across the Cybersecurity Community. Northern Virginia Technology Council (NVTC).')">
@@ -2324,14 +2326,8 @@
 
                 if (matchesCat && matchesQuery) {
                     card.style.display = '';
-                    var delay = (visibleCount % 2) * 85;
                     visibleCount++;
-                    card.style.transitionDelay = delay + 'ms';
-                    requestAnimationFrame(function() {
-                        card.classList.add('is-visible');
-                    });
                 } else {
-                    card.classList.remove('is-visible');
                     card.style.display = 'none';
                 }
             });
@@ -2344,39 +2340,6 @@
                 emptyState.style.display = 'none';
             }
         }
-
-        // Scroll Entrance Observer for Awards Page Cards
-        document.addEventListener('DOMContentLoaded', function() {
-            var awardCols = document.querySelectorAll('.award-card-col');
-            if (awardCols.length && 'IntersectionObserver' in window) {
-                var observer = new IntersectionObserver(function(entries, obs) {
-                    entries.forEach(function(entry) {
-                        if (entry.isIntersecting) {
-                            var col = entry.target;
-                            var allCols = Array.from(document.querySelectorAll('.award-card-col'));
-                            var idx = allCols.indexOf(col);
-                            var delay = (idx >= 0 ? (idx % 2) * 95 : 0);
-                            col.style.transitionDelay = delay + 'ms';
-                            requestAnimationFrame(function() {
-                                col.classList.add('is-visible');
-                            });
-                            obs.unobserve(col);
-                        }
-                    });
-                }, {
-                    threshold: 0.1,
-                    rootMargin: '0px 0px -30px 0px'
-                });
-
-                awardCols.forEach(function(col) {
-                    observer.observe(col);
-                });
-            } else if (awardCols.length) {
-                awardCols.forEach(function(col) {
-                    col.classList.add('is-visible');
-                });
-            }
-        });
 
         function openCiteModal(aid, title, org, year, citation) {
             document.getElementById('modalAwardTitle').innerText = title;

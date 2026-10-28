@@ -76,7 +76,8 @@ awards_data = [
             {"label": "NVTC Website Announcement", "url": "https://www.nvtc.org/press-releases/nvtc-announces-2026-cyber50-honorees/", "icon": "mdi-newspaper-variant"},
             {"label": "Awards Event Invitation", "url": "https://nvtc.glueup.com/event/nvtc-cyber-summit-cyber50-awards-186181/", "icon": "mdi-ticket"},
             {"label": "LinkedIn Announcement", "url": "https://lnkd.in/p/ggY4pcdT", "icon": "mdi-linkedin"},
-            {"label": "NVTC LinkedIn Feature", "url": "https://lnkd.in/p/g7nnfknT", "icon": "mdi-linkedin"}
+            {"label": "NVTC LinkedIn Feature", "url": "https://lnkd.in/p/g7nnfknT", "icon": "mdi-linkedin"},
+            {"label": "NVTC Awards Feature", "url": "https://lnkd.in/p/g7GkqKhe", "icon": "mdi-linkedin"}
         ],
         "citation": "Verma, H. (2026). 2026 NVTC Cyber50 Honoree: Celebrating Groundbreaking Accomplishments and Impact across the Cybersecurity Community. Northern Virginia Technology Council (NVTC)."
     },
@@ -1377,15 +1378,41 @@ html_page = f'''<!DOCTYPE html>
             transform: scale(1.12) !important;
             filter: contrast(1.15) !important;
         }}
-        body.dark-mode .awards-publisher-banner-wrap {{
-            background: #ffffff !important;
-            border-color: rgba(255, 255, 255, 0.25) !important;
-            box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.1) !important;
+        body.dark-mode .awards-publisher-banner-wrap,
+        html.dark-mode .awards-publisher-banner-wrap,
+        body.dark-mode #awards-publisher-banner,
+        html.dark-mode #awards-publisher-banner {{
+            background: linear-gradient(135deg, #141d2e 0%, #0f172a 100%) !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+            box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.75), 0 0 24px rgba(59, 130, 246, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
         }}
-        body.dark-mode .awards-pub-title-badge {{
-            background: rgba(37, 99, 235, 0.12) !important;
-            color: #1d4ed8 !important;
-            border: 1px solid rgba(37, 99, 235, 0.25) !important;
+        body.dark-mode .awards-pub-title-badge,
+        html.dark-mode .awards-pub-title-badge {{
+            background: rgba(37, 99, 235, 0.18) !important;
+            color: #60a5fa !important;
+            border: 1px solid rgba(96, 165, 250, 0.35) !important;
+            box-shadow: 0 0 14px rgba(59, 130, 246, 0.25) !important;
+        }}
+        body.dark-mode .awards-pub-brand-logo,
+        html.dark-mode .awards-pub-brand-logo {{
+            background: #ffffff !important;
+            padding: 6px 14px !important;
+            border-radius: 12px !important;
+            border: 1px solid rgba(255, 255, 255, 0.18) !important;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45) !important;
+            height: 48px !important;
+            max-height: 48px !important;
+            opacity: 0.96 !important;
+            filter: contrast(1.05) !important;
+            transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease !important;
+        }}
+        body.dark-mode .awards-pub-brand-logo:hover,
+        html.dark-mode .awards-pub-brand-logo:hover {{
+            background: #ffffff !important;
+            border-color: #60a5fa !important;
+            box-shadow: 0 10px 24px rgba(59, 130, 246, 0.55), 0 0 0 2px rgba(96, 165, 250, 0.4) !important;
+            transform: translateY(-3px) scale(1.08) !important;
+            opacity: 1 !important;
         }}
     </style>
     <!-- HV AI Copilot Styles -->
@@ -1459,6 +1486,13 @@ html_page = f'''<!DOCTYPE html>
                             <div class="nav-dropdown-header">
                                 <span>Extended Portfolios &amp; Hubs</span>
                             </div>
+                            <a class="dropdown-item nav-dropdown-item" href="page-advisory">
+                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-shield-account"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Board &amp; Strategic Advisory <span class="badge badge-pill badge-warning text-dark ml-1" style="font-size: 10px;">Executive</span></span>
+                                    <span class="dropdown-item-desc">Corporate governance, councils &amp; startup boards</span>
+                                </div>
+                            </a>
                             <a class="dropdown-item nav-dropdown-item" href="page-media-distribution-analytics">
                                 <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-chart-box-outline"></i></div>
                                 <div class="dropdown-item-content">
@@ -1483,8 +1517,8 @@ html_page = f'''<!DOCTYPE html>
                             <a class="dropdown-item nav-dropdown-item" href="page-social">
                                 <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
                                 <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
-                                    <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
+                                    <span class="dropdown-item-title">Partnership &amp; Social <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Collaborate</span></span>
+                                    <span class="dropdown-item-desc">Brand partnerships &amp; executive social authority</span>
                                 </div>
                             </a>
                             <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">

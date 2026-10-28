@@ -337,6 +337,11 @@
         "label": "NVTC Cyber50 Official Site",
         "url": "https://www.nvtc.org/",
         "icon": "mdi-shield-check"
+      },
+      {
+        "label": "NVTC Awards Feature",
+        "url": "https://lnkd.in/p/g7GkqKhe",
+        "icon": "mdi-linkedin"
       }
     ],
     "quote": "Recognized among the National Capital Region's premier cybersecurity leaders advancing enterprise AI defense, autonomous agent security, and next-generation cyber resilience."
