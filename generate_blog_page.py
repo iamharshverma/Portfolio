@@ -11,6 +11,24 @@ import os
 articles_data = [
     # --- Forbes Technology Council ---
     {
+        "id": "forbes-physical-ai",
+        "title": "Physical AI Is Coming: When AI Stops Generating Content And Starts Acting On The World",
+        "platform": "Forbes",
+        "platform_full": "Forbes Technology Council",
+        "platform_badge": "Forbes Council",
+        "platform_icon": "mdi-robot-industrial",
+        "platform_color": "#111827",
+        "category": "Physical AI & Robotics",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2026/10/27/physical-ai-is-coming-when-ai-stops-generating-content-and-starts-acting-on-the-world/",
+        "author_profile": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/",
+        "thumbnail": "images/blog/thumbnails/forbes-physical-ai.jpg",
+        "date": "October 27, 2026",
+        "read_time": "6 min read",
+        "featured": True,
+        "description": "Generative AI was defined by digital creation—LLMs generating text, summarizing data, and generating code where errors can be edited. Physical AI brings artificial intelligence into the real world through sensors and robotic actuation, where actions have irreversible physical consequences and there is no 'undo' button.",
+        "tags": ["Forbes Tech Council", "Physical AI", "Robotics", "Embodied AI", "Autonomous Systems", "Cyber-Physical Safety"]
+    },
+    {
         "id": "forbes-real-ai-moat",
         "title": "The Real AI Moat: Why Models Are Cheap But Data Orchestration Is Priceless",
         "platform": "Forbes",
@@ -553,7 +571,8 @@ def generate_blog_html():
 
     # Core Research Domain Mapping (Category Filter)
     MAIN_CATEGORY_MAP = {
-        # Forbes (6)
+        # Forbes (7)
+        "forbes-physical-ai": "AI Research",
         "forbes-real-ai-moat": "AI Research",
         "forbes-beyond-code": "Engineering",
         "forbes-intelligence-dollar": "AI Research",
@@ -1316,6 +1335,13 @@ def generate_blog_html():
                             <div class="nav-dropdown-header">
                                 <span>Extended Portfolios &amp; Hubs</span>
                             </div>
+                            <a class="dropdown-item nav-dropdown-item" href="page-advisory">
+                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-shield-account"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Board &amp; Strategic Advisory <span class="badge badge-pill badge-warning text-dark ml-1" style="font-size: 10px;">Executive</span></span>
+                                    <span class="dropdown-item-desc">Corporate governance, councils &amp; startup boards</span>
+                                </div>
+                            </a>
                             <a class="dropdown-item nav-dropdown-item" href="page-media-distribution-analytics">
                                 <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-chart-box-outline"></i></div>
                                 <div class="dropdown-item-content">
@@ -1340,8 +1366,8 @@ def generate_blog_html():
                             <a class="dropdown-item nav-dropdown-item" href="page-social">
                                 <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
                                 <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
-                                    <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
+                                    <span class="dropdown-item-title">Partnership &amp; Social <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Collaborate</span></span>
+                                    <span class="dropdown-item-desc">Brand partnerships &amp; executive social authority</span>
                                 </div>
                             </a>
                             <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">

@@ -267,7 +267,7 @@ HARSH VERMA'S CORE PROFILE:
   * Media Distribution Analytics & Global Reach Infographic (3.75B+ potential views): "page-media-distribution-analytics" (Features Yahoo Finance, Business Insider, USA TODAY, AP News, NewsBreak, Barchart, StreetInsider, global coverage across US, UK, Canada, India, Asia, and cross-platform influence across technical, financial, and mainstream ecosystems)
   * Speaking Engagements & Keynotes: "page-events" (Features Keynotes, Panels such as "AI × Security during SF Tech Week: Securing the AI Supply Chain", and Judging on the Dent Expert Network panel for "Demos & Dim Sum — #SFTechWeek")
   * Portfolio Projects & Frameworks: "page-portfolio"
-  * Blog & Articles (30 Publications): "page-blog" (Features 6 Forbes Technology Council pieces including the latest: "The Real AI Moat: Why Models Are Cheap But Data Orchestration Is Priceless", Oct 2026)
+  * Blog & Articles (31 Publications): "page-blog" (Features 7 Forbes Technology Council pieces including the latest: "Physical AI Is Coming: When AI Stops Generating Content And Starts Acting On The World", Oct 2026, and "The Real AI Moat: Why Models Are Cheap But Data Orchestration Is Priceless", Oct 2026)
   * Direct Contact Form: "index#contact"
 
 KEY ACHIEVEMENTS & DATA TO DRAW FROM:
