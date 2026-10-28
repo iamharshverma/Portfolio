@@ -30,11 +30,11 @@ header_part = """<!DOCTYPE html>
     <meta charset="UTF-8">
     <title>Harsh Verma | Media, Press Features &amp; Keynote Appearances</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Explore 42+ media features, tier-1 press articles, keynote addresses, podcast interviews, and Times Square NYC broadcasts featuring Harsh Verma across Business Insider, USA Today, Yahoo Finance, HackerNoon, UC Berkeley SkyDeck, and Spotify." />
+    <meta name="description" content="Explore 43+ media features, tier-1 press articles, keynote addresses, podcast interviews, and Times Square NYC broadcasts featuring Harsh Verma across Business Insider, USA Today, Yahoo Finance, HackerNoon, UC Berkeley SkyDeck, and Spotify." />
     <meta name="keywords" content="Harsh Verma, Media Coverage, Press Features, Business Insider, USA Today, Yahoo Finance, HackerNoon, UC Berkeley SkyDeck, Forttuna Global 100, Times Square NYC, Podcasts, Keynotes, Enterprise AI, Cybersecurity" />
     <meta content="Harsh Verma" name="author" />
     <meta property="og:title" content="Harsh Verma | Media, Press Features &amp; Keynote Appearances" />
-    <meta property="og:description" content="Explore 42+ media features, tier-1 press articles, keynote addresses, podcast interviews, and Times Square NYC broadcasts featuring Harsh Verma." />
+    <meta property="og:description" content="Explore 43+ media features, tier-1 press articles, keynote addresses, podcast interviews, and Times Square NYC broadcasts featuring Harsh Verma." />
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon_new.ico">
     <!-- Bootstrap -->
@@ -996,6 +996,13 @@ header_part = """<!DOCTYPE html>
                             <div class="nav-dropdown-header">
                                 <span>Extended Portfolios &amp; Hubs</span>
                             </div>
+                            <a class="dropdown-item nav-dropdown-item" href="page-advisory">
+                                <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-shield-account"></i></div>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Board &amp; Strategic Advisory <span class="badge badge-pill badge-warning text-dark ml-1" style="font-size: 10px;">Executive</span></span>
+                                    <span class="dropdown-item-desc">Corporate governance, councils &amp; startup boards</span>
+                                </div>
+                            </a>
                             <a class="dropdown-item nav-dropdown-item" href="page-media-distribution-analytics">
                                 <div class="dropdown-item-icon bg-soft-primary"><i class="mdi mdi-chart-box-outline"></i></div>
                                 <div class="dropdown-item-content">
@@ -1020,8 +1027,8 @@ header_part = """<!DOCTYPE html>
                             <a class="dropdown-item nav-dropdown-item" href="page-social">
                                 <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
                                 <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
-                                    <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
+                                    <span class="dropdown-item-title">Partnership &amp; Social <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Collaborate</span></span>
+                                    <span class="dropdown-item-desc">Brand partnerships &amp; executive social authority</span>
                                 </div>
                             </a>
                             <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">
@@ -1087,7 +1094,7 @@ header_part = """<!DOCTYPE html>
                     </span>
                     <h1 class="display-4 font-weight-bold mb-3 text-white">Media Features, Press &amp; Thought Leadership</h1>
                     <p class="lead text-light mb-4" style="max-width: 820px; margin: 0 auto; opacity: 0.92; font-size: 17px; line-height: 1.6;">
-                        A curated archive of <strong>42+</strong> international press coverages, keynote symposiums, executive podcasts, Times Square NYC billboard features, and technical interviews shaping enterprise AI architecture and cybersecurity.
+                        A curated archive of <strong>43+</strong> international press coverages, keynote symposiums, executive podcasts, Times Square NYC billboard features, and technical interviews shaping enterprise AI architecture and cybersecurity.
                     </p>
                     <div class="d-flex justify-content-center flex-wrap gap-2 text-muted" style="gap: 12px; font-size: 13.5px;">
                         <span class="badge badge-pill badge-dark px-3 py-2 border border-secondary"><i class="mdi mdi-check-decagram text-primary mr-1"></i> Business Insider</span>
@@ -2155,8 +2162,8 @@ keynote_count = sum(1 for x in media_items if x.get('type') == 'keynote')
 interview_count = sum(1 for x in media_items if x.get('type') == 'interview')
 institutional_count = sum(1 for x in media_items if x.get('type') == 'institutional')
 
-full_html = full_html.replace('Explore 42+ media features', f'Explore {total_count}+ media features')
-full_html = full_html.replace('archive of <strong>42+</strong>', f'archive of <strong>{total_count}+</strong>')
+full_html = full_html.replace('Explore 43+ media features', f'Explore {total_count}+ media features')
+full_html = full_html.replace('archive of <strong>43+</strong>', f'archive of <strong>{total_count}+</strong>')
 full_html = full_html.replace('<div class="media-stat-number" id="totalMediaStat">37+</div>', f'<div class="media-stat-number" id="totalMediaStat">{total_count}+</div>')
 full_html = full_html.replace('All Media <span class="filter-count-badge">37</span>', f'All Media <span class="filter-count-badge">{total_count}</span>')
 full_html = full_html.replace('Top Tier Press <span class="filter-count-badge">12</span>', f'Top Tier Press <span class="filter-count-badge">{press_count}</span>')

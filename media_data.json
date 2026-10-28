@@ -306,6 +306,42 @@
     "quote": "The next decade belongs to engineers who can bridge stochastic foundation models with deterministic enterprise guarantees."
   },
   {
+    "id": "media-business-insider-nvtc-cyber50-2026",
+    "title": "Business Insider: Principal Software Engineer Harsh Verma Named a 2026 NVTC Cyber50 Executive Honoree",
+    "outlet": "Business Insider / Markets Insider",
+    "type": "press",
+    "type_label": "Tier 1 Press",
+    "year": "2026",
+    "date_display": "October 2026",
+    "badge_theme": "blue",
+    "icon_svg": "business_insider_badge.svg",
+    "highlight": "NVTC Cyber50 Executive Honoree",
+    "summary": "Business Insider reports on Harsh Verma being named a 2026 NVTC Cyber50 Executive Honoree by the Northern Virginia Technology Council, celebrating top cybersecurity executives driving game-changing innovation, enterprise AI defense, and cyber resilience across the National Capital Region.",
+    "topics": [
+      "NVTC Cyber50",
+      "Executive Honoree",
+      "Business Insider",
+      "Palo Alto Networks",
+      "Cybersecurity Leadership",
+      "AI Defense"
+    ],
+    "stats": "Tier 1 Business Press",
+    "primary_url": "https://markets.businessinsider.com/news/stocks/principal-software-engineer-harsh-verma-named-a-2026-nvtc-cyber50-executive-honoree-1036677809",
+    "links": [
+      {
+        "label": "Read on Business Insider",
+        "url": "https://markets.businessinsider.com/news/stocks/principal-software-engineer-harsh-verma-named-a-2026-nvtc-cyber50-executive-honoree-1036677809",
+        "icon": "mdi-open-in-new"
+      },
+      {
+        "label": "NVTC Cyber50 Official Site",
+        "url": "https://www.nvtc.org/",
+        "icon": "mdi-shield-check"
+      }
+    ],
+    "quote": "Recognized among the National Capital Region's premier cybersecurity leaders advancing enterprise AI defense, autonomous agent security, and next-generation cyber resilience."
+  },
+  {
     "id": "media-business-insider-gra-2026",
     "title": "Business Insider: Harsh Verma Receives 2026 Global Recognition Award for Enterprise AI Advances",
     "outlet": "Business Insider / Markets Insider",

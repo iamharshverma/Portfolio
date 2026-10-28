@@ -263,7 +263,7 @@ HARSH VERMA'S CORE PROFILE:
   * Authored Books: "page-books"
   * Smart Slides & Keynote Hub (EasyChair Verified Decks): "page-smart-slides" (Interactive player for Agentic Security Governance & GenAI Cybersecurity decks)
   * Invited Associations & Fellowships: "page-memberships"
-  * Media Coverage & Interviews (40+): "page-media" (Features MarketersMEDIA Wire on BCS Fellowship & RSA Conference, Yahoo Finance, Business Insider, USA TODAY, AP News, NewsBreak, and Barchart)
+  * Media Coverage & Interviews (43+): "page-media" (Features Business Insider on NVTC Cyber50 Executive Honoree & Global Recognition Awards, MarketersMEDIA Wire on BCS Fellowship & RSA Conference, Yahoo Finance, USA TODAY, AP News, NewsBreak, and Barchart)
   * Media Distribution Analytics & Global Reach Infographic (3.75B+ potential views): "page-media-distribution-analytics" (Features Yahoo Finance, Business Insider, USA TODAY, AP News, NewsBreak, Barchart, StreetInsider, global coverage across US, UK, Canada, India, Asia, and cross-platform influence across technical, financial, and mainstream ecosystems)
   * Speaking Engagements & Keynotes: "page-events" (Features Keynotes, Panels such as "AI × Security during SF Tech Week: Securing the AI Supply Chain", and Judging on the Dent Expert Network panel for "Demos & Dim Sum — #SFTechWeek")
   * Portfolio Projects & Frameworks: "page-portfolio"
