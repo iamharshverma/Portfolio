@@ -1215,6 +1215,51 @@ app.get(['/smart-slides', '/page-smart-slides', '/page-smart-slides.html', '/sli
   res.sendFile(path.join(__dirname, 'page-smart-slides.html'));
 });
 
+// Explicit route for Awards & Honors Page
+app.get(['/awards', '/awards.html', '/page-awards', '/page-awards.html', '/honors', '/recognitions'], (req, res) => {
+  res.sendFile(path.join(__dirname, 'page-awards.html'));
+});
+
+// Explicit route for Publications / Research Papers Page
+app.get(['/publications', '/page-publications', '/page-publications.html', '/papers', '/research'], (req, res) => {
+  res.sendFile(path.join(__dirname, 'page-publications.html'));
+});
+
+// Explicit route for Books Page
+app.get(['/books', '/page-books', '/page-books.html', '/author'], (req, res) => {
+  res.sendFile(path.join(__dirname, 'page-books.html'));
+});
+
+// Explicit route for Media & Press Page
+app.get(['/media', '/page-media', '/page-media.html', '/press'], (req, res) => {
+  res.sendFile(path.join(__dirname, 'page-media.html'));
+});
+
+// Explicit route for Memberships & Fellowships Page
+app.get(['/memberships', '/page-memberships', '/page-memberships.html', '/fellowships'], (req, res) => {
+  res.sendFile(path.join(__dirname, 'page-memberships.html'));
+});
+
+// Explicit route for Portfolio Projects Page
+app.get(['/portfolio', '/page-portfolio', '/page-portfolio.html', '/projects'], (req, res) => {
+  res.sendFile(path.join(__dirname, 'page-portfolio.html'));
+});
+
+// Explicit route for Blog & Articles Page
+app.get(['/blog', '/page-blog', '/page-blog.html', '/articles'], (req, res) => {
+  res.sendFile(path.join(__dirname, 'page-blog.html'));
+});
+
+// Explicit route for About Page
+app.get(['/about', '/page-about', '/page-about.html', '/bio'], (req, res) => {
+  res.sendFile(path.join(__dirname, 'page-about.html'));
+});
+
+// Explicit route for Advisory & Board Page
+app.get(['/advisory', '/page-advisory', '/page-advisory.html', '/board', '/board.html'], (req, res) => {
+  res.sendFile(path.join(__dirname, 'page-advisory.html'));
+});
+
 // Explicit route for Administrator Entity Hub (Restricted / Private)
 app.get(['/identity', '/page-identity', '/page-identity.html', '/knowledge-graph', '/entity'], (req, res) => {
   res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');

@@ -2360,8 +2360,7 @@ html.dark-mode .rss-hub-modal .modal-footer {
 }
 
 /* Awards Card Scroll Entrance Animations & Micro-Interactions */
-.home-award-col,
-.award-card-col {
+.home-award-col {
   opacity: 0;
   transform: translateY(32px) scale(0.975);
   transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
@@ -2369,7 +2368,17 @@ html.dark-mode .rss-hub-modal .modal-footer {
   will-change: opacity, transform;
 }
 
-.home-award-col.is-visible,
+.home-award-col.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.award-card-col {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
 .award-card-col.is-visible {
   opacity: 1;
   transform: translateY(0) scale(1);

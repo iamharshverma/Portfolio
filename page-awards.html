@@ -225,6 +225,15 @@
         }
 
         /* Award Cards */
+        .award-card-col {
+            opacity: 1 !important;
+            transform: none !important;
+            visibility: visible !important;
+        }
+        .award-card-col.is-visible {
+            opacity: 1 !important;
+            transform: none !important;
+        }
         .award-card {
             background: #ffffff;
             border: 1px solid rgba(226, 232, 240, 0.9);
@@ -2350,6 +2359,18 @@
                 toast.style.display = 'none';
             }, 3000);
         }
+
+        // Ensure all cards are visible immediately on load
+        document.addEventListener('DOMContentLoaded', function() {
+            var cards = document.querySelectorAll('.award-card-col');
+            cards.forEach(function(card) {
+                card.classList.add('is-visible');
+                card.style.opacity = '1';
+                card.style.display = '';
+            });
+            var visibleCountEl = document.getElementById('visibleAwardsCount');
+            if (visibleCountEl) visibleCountEl.innerText = cards.length;
+        });
     </script>
     <!-- HV AI Copilot Assistant Engine -->
     <script src="js/hv-copilot.js"></script>

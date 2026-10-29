@@ -910,6 +910,15 @@ html_page = f'''<!DOCTYPE html>
         }}
 
         /* Award Cards */
+        .award-card-col {{
+            opacity: 1 !important;
+            transform: none !important;
+            visibility: visible !important;
+        }}
+        .award-card-col.is-visible {{
+            opacity: 1 !important;
+            transform: none !important;
+        }}
         .award-card {{
             background: #ffffff;
             border: 1px solid rgba(226, 232, 240, 0.9);
@@ -1922,6 +1931,18 @@ html_page = f'''<!DOCTYPE html>
                 toast.style.display = 'none';
             }}, 3000);
         }}
+
+        // Ensure all cards are visible immediately on load
+        document.addEventListener('DOMContentLoaded', function() {{
+            var cards = document.querySelectorAll('.award-card-col');
+            cards.forEach(function(card) {{
+                card.classList.add('is-visible');
+                card.style.opacity = '1';
+                card.style.display = '';
+            }});
+            var visibleCountEl = document.getElementById('visibleAwardsCount');
+            if (visibleCountEl) visibleCountEl.innerText = cards.length;
+        }});
     </script>
     <!-- HV AI Copilot Assistant Engine -->
     <script src="js/hv-copilot.js"></script>
@@ -1931,7 +1952,16 @@ html_page = f'''<!DOCTYPE html>
 </html>
 '''
 
-with open("page-awards.html", "w", encoding="utf-8") as f:
-    f.write(html_page)
+import os
 
-print("Created page-awards.html successfully.")
+for out_name in ["page-awards.html", "awards.html"]:
+    with open(out_name, "w", encoding="utf-8") as f:
+        f.write(html_page)
+
+for target_dir in ["dist", "build"]:
+    if os.path.exists(target_dir):
+        for out_name in ["page-awards.html", "awards.html"]:
+            with open(os.path.join(target_dir, out_name), "w", encoding="utf-8") as f:
+                f.write(html_page)
+
+print("Created page-awards.html and awards.html successfully.")
