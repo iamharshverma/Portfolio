@@ -15,9 +15,7 @@ awards_data = [
         "description": "Conferred inclusion in the 'Most Admire Global Indians 2026' honors, celebrating visionary Indian-origin leaders, technologists, and scientists worldwide who are driving monumental impact across enterprise artificial intelligence, cybersecurity defense, and autonomous systems architectures.",
         "tags": ["Most Admire Global Indians", "Global Indian Honoree", "Enterprise AI & Defense", "Executive Leadership"],
         "links": [
-            {"label": "Global Leadership Honorees", "url": "https://www.passionvista.com/", "icon": "mdi-earth"},
-            {"label": "Executive Citation", "url": "https://harshverma.bio/", "icon": "mdi-certificate"},
-            {"label": "LinkedIn Profile", "url": "https://www.linkedin.com/in/harshverma59/", "icon": "mdi-linkedin"}
+            {"label": "Passion Vista Feature", "url": "https://www.passionvista.com/harsh-verma-where-ai-cybersecurity-and-human-purpose-meet-at-scale/", "icon": "mdi-newspaper-variant-outline"}
         ],
         "citation": "Verma, H. (2026). Most Admire Global Indians 2026 Honoree: Transforming Enterprise AI and Scalable Autonomous Systems. Global Indian Leadership Forum."
     },
