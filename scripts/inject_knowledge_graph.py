@@ -25,13 +25,25 @@ SECONDARY_SITE_URL = "https://harshverma.me"
 
 
 def ensure_hero_clean_image():
-    """Ensure images/about/harsh_hero_clean.png exists as a copy of images/harsh/Harsh_portfolio_pic.png."""
+    """Ensure Knowledge Graph portrait assets exist across all target folders."""
     src = os.path.join(ROOT_DIR, "images", "harsh", "Harsh_portfolio_pic.png")
     dst_dir = os.path.join(ROOT_DIR, "images", "about")
     dst = os.path.join(dst_dir, "harsh_hero_clean.png")
     if os.path.exists(src) and not os.path.exists(dst):
         os.makedirs(dst_dir, exist_ok=True)
         shutil.copyfile(src, dst)
+
+    # Ensure new portrait is mirrored to images/about as well
+    for img_name in ("harsh_kg_primary.jpg", "harsh_kg_square.jpg", "harsh_official_portrait.png"):
+        h_src = os.path.join(ROOT_DIR, "images", "harsh", img_name)
+        if os.path.exists(h_src):
+            about_dst = os.path.join(ROOT_DIR, "images", "about", img_name)
+            if not os.path.exists(about_dst):
+                shutil.copyfile(h_src, about_dst)
+            for out_dir in ("dist", "build"):
+                out_harsh = os.path.join(ROOT_DIR, out_dir, "images", "harsh")
+                if os.path.exists(out_harsh):
+                    shutil.copyfile(h_src, os.path.join(out_harsh, img_name))
 
 
 def build_identity_page(kg):
@@ -978,7 +990,7 @@ def build_identity_page(kg):
                 <div class="row align-items-start">
                     <div class="col-lg-5 mb-4 mb-lg-0 border-right">
                         <div class="d-flex align-items-center mb-3">
-                            <img src="images/harsh/Harsh_portfolio_pic.png" alt="Harsh Verma Official Headshot" class="rounded-circle mr-3 border shadow-sm" style="width:86px;height:86px;object-fit:cover;">
+                            <img src="images/harsh/harsh_kg_primary.jpg" alt="Harsh Verma Official Headshot" class="rounded-circle mr-3 border shadow-sm" style="width:86px;height:86px;object-fit:cover;">
                             <div>
                                 <span class="badge badge-primary mb-1">Google Knowledge Graph Entity</span>
                                 <h3 class="font-weight-bold text-dark mb-0" style="font-size:1.5rem;">Harsh Verma</h3>
@@ -993,9 +1005,10 @@ def build_identity_page(kg):
                         <div class="mb-3">
                             <div class="text-uppercase font-weight-bold text-muted mb-2" style="font-size:11px;letter-spacing:0.6px;">Canonical Entity Portrait &amp; Book Thumbnails (`Schema.org/ImageObject`)</div>
                             <div class="d-flex flex-wrap align-items-center" style="gap:10px;">
-                                <img src="images/harsh/Harsh_portfolio_pic.png" alt="Harsh Verma Primary Portrait" class="rounded border shadow-sm" style="width:64px;height:64px;object-fit:cover;" title="Primary Knowledge Panel Portrait">
+                                <img src="images/harsh/harsh_kg_primary.jpg" alt="Harsh Verma Primary Portrait" class="rounded border shadow-sm" style="width:64px;height:64px;object-fit:cover;" title="Primary Knowledge Panel Portrait (2026 Official)">
+                                <img src="images/harsh/harsh_kg_square.jpg" alt="Harsh Verma Square Avatar" class="rounded border shadow-sm" style="width:64px;height:64px;object-fit:cover;" title="Square Cropped Knowledge Panel Avatar">
+                                <img src="images/harsh/Harsh_portfolio_pic.png" alt="Harsh Verma Secondary Portrait" class="rounded border shadow-sm" style="width:64px;height:64px;object-fit:cover;" title="Executive AI Portrait">
                                 <img src="images/harsh/infq_harsh.jpg" alt="Harsh Verma Executive Portrait" class="rounded border shadow-sm" style="width:64px;height:64px;object-fit:cover;" title="Executive Editorial Portrait">
-                                <img src="images/harsh/regenerated_image_1788342600159.jpg" alt="Harsh Verma Keynote Portrait" class="rounded border shadow-sm" style="width:64px;height:64px;object-fit:cover;" title="Keynote Speaker Portrait">
                                 <img src="images/books/beyond_ai_engineering_cover.jpg" alt="Beyond AI Engineering Cover" class="rounded border shadow-sm" style="width:48px;height:64px;object-fit:cover;" title="Book: Beyond AI Engineering (2025)">
                                 <img src="images/books/ai_vs_ai_cover.jpg" alt="AI vs. AI Book Cover" class="rounded border shadow-sm" style="width:48px;height:64px;object-fit:cover;" title="Book: AI vs. AI (2026)">
                             </div>
@@ -1015,6 +1028,12 @@ def build_identity_page(kg):
                             Primary Entity URI <code>https://www.harshverma.me/#person</code> is bidirectionally linked via <code>Schema.org/sameAs</code>, <code>rel="me"</code>, and Wikidata external identifiers across all major global knowledge bases:
                         </p>
                         <div class="d-flex flex-wrap" style="gap: 8px;">
+                            <a href="https://www.google.com/search?kgmid=/g/11njtn74r4" target="_blank" rel="noopener" class="kg-id-chip" style="border-color:#ea4335;background:#fef2f2;">
+                                <i class="mdi mdi-google text-danger"></i> Google Knowledge Graph MID: <strong>/g/11njtn74r4</strong> <i class="mdi mdi-open-in-new ml-1"></i>
+                            </a>
+                            <a href="https://www.searchbloom.com/tools/knowledge-graph-explorer/?q=Harsh%20Verma" target="_blank" rel="noopener" class="kg-id-chip" style="border-color:#10b981;background:#ecfdf5;">
+                                <i class="mdi mdi-chart-donut text-success"></i> Searchbloom KG Explorer: <strong>Verified Node</strong> <i class="mdi mdi-open-in-new ml-1"></i>
+                            </a>
                             <a href="https://www.harshverma.me/#person" class="kg-id-chip" style="border-color:#2563eb;background:#eff6ff;">
                                 <i class="mdi mdi-star-circle text-primary"></i> Canonical @id: <strong>https://www.harshverma.me/#person</strong>
                             </a>
@@ -1066,6 +1085,67 @@ def build_identity_page(kg):
                             <a href="https://imdb.me/harshverma" target="_blank" rel="noopener" class="kg-id-chip">
                                 <i class="mdi mdi-movie-roll text-warning"></i> IMDb: <strong>imdb.me/harshverma</strong>
                             </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Knowledge Panel Claiming & Optimization Protocol Card -->
+                <div class="card mt-4 border-0 shadow-sm" style="background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%); border-radius: 16px; border: 1px solid #bfdbfe !important;">
+                    <div class="card-body p-4">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center mb-2 mb-md-0">
+                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mr-3 shadow-sm" style="width: 48px; height: 48px; font-size: 24px;">
+                                    <i class="mdi mdi-google"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-weight-bold text-dark mb-0" style="font-size: 1.25rem;">Google Knowledge Panel Claiming &amp; Entity Sync Protocol</h4>
+                                    <span class="badge badge-success font-weight-bold mr-2" style="background:#059669; color:#fff;">Google KG MID: /g/11njtn74r4</span>
+                                    <span class="badge badge-primary font-weight-bold" style="background:#2563eb; color:#fff;">Entity Home: https://www.harshverma.me/</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center" style="gap: 8px;">
+                                <a href="https://www.google.com/search?kgmid=/g/11njtn74r4" target="_blank" rel="noopener" class="btn btn-sm btn-outline-danger font-weight-bold px-3 py-1.5 shadow-sm">
+                                    <i class="mdi mdi-google mr-1"></i> Open Google Panel <i class="mdi mdi-open-in-new ml-1"></i>
+                                </a>
+                                <a href="https://www.searchbloom.com/tools/knowledge-graph-explorer/?q=Harsh%20Verma" target="_blank" rel="noopener" class="btn btn-sm btn-outline-success font-weight-bold px-3 py-1.5 shadow-sm">
+                                    <i class="mdi mdi-chart-donut mr-1"></i> Searchbloom KG Explorer <i class="mdi mdi-open-in-new ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3" style="line-height: 1.65;">
+                            Searchbloom Knowledge Graph Explorer monitors 4 core entity properties for <strong>Harsh Verma</strong> (<code>/g/11njtn74r4</code>): <strong>Has a Google description</strong>, <strong>Linked to a detailed source</strong>, <strong>Has an entity image</strong>, and <strong>Has a canonical entity home</strong>. Follow these verified steps to lock your panel ownership and attach the official portrait directly:
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <div class="p-3 bg-white rounded border h-100 shadow-xs">
+                                    <h6 class="font-weight-bold text-dark mb-2"><i class="mdi mdi-numeric-1-circle text-primary mr-1" style="font-size:18px;"></i> 1. Claim Entity on Google</h6>
+                                    <ol class="small text-muted pl-3 mb-0" style="line-height: 1.6;">
+                                        <li>Open Google and search for <a href="https://www.google.com/search?q=Harsh+Verma" target="_blank" rel="noopener" class="font-weight-bold text-primary">"Harsh Verma"</a> while logged in as <code>harshverma59@gmail.com</code>.</li>
+                                        <li>Scroll to the bottom of the Knowledge Panel on the right and click <strong>"Claim this knowledge panel"</strong>.</li>
+                                        <li>Choose <strong>Google Search Console</strong> authorization. Because you own <code>harshverma.me</code> in Search Console, Google grants instant verified owner status!</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <div class="p-3 bg-white rounded border h-100 shadow-xs">
+                                    <h6 class="font-weight-bold text-dark mb-2"><i class="mdi mdi-numeric-2-circle text-primary mr-1" style="font-size:18px;"></i> 2. Attach Primary Portrait</h6>
+                                    <ol class="small text-muted pl-3 mb-0" style="line-height: 1.6;">
+                                        <li>After claiming, click <strong>"Suggest an edit"</strong> inside the Google Knowledge Panel.</li>
+                                        <li>Select the featured profile image section and submit your new high-res official headshot: <a href="https://www.harshverma.me/images/harsh/harsh_kg_primary.jpg" target="_blank" class="font-weight-bold text-primary">harsh_kg_primary.jpg <i class="mdi mdi-open-in-new"></i></a>.</li>
+                                        <li>Provide <code>https://www.harshverma.me/</code> as the official verification reference URL.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 mb-3">
+                                <div class="p-3 bg-white rounded border h-100 shadow-xs">
+                                    <h6 class="font-weight-bold text-dark mb-2"><i class="mdi mdi-numeric-3-circle text-primary mr-1" style="font-size:18px;"></i> 3. Set Canonical Home &amp; Source</h6>
+                                    <ol class="small text-muted pl-3 mb-0" style="line-height: 1.6;">
+                                        <li>Request official website link to be set to <code class="text-primary font-weight-bold">https://www.harshverma.me/</code>.</li>
+                                        <li>Link detailed encyclopedic sources: <a href="https://www.wikidata.org/wiki/Q139827028" target="_blank" class="text-primary font-weight-bold">Wikidata Q139827028</a> and <a href="https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)" target="_blank" class="text-primary font-weight-bold">EverybodyWiki</a>.</li>
+                                        <li>Google typically updates the Knowledge Graph index and reflects all 4 badges on Searchbloom within 24–72 hours.</li>
+                                    </ol>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1844,9 +1924,12 @@ def inject_graph_across_all_pages(kg):
 
         can_url = CANONICAL_MAP.get(fname, f"{CANONICAL_SITE_URL}/{fname.replace('.html', '')}")
 
-        # Remove any previous hv-knowledge-graph-jsonld block if present
+        # Remove any previous hv-knowledge-graph-jsonld block and entity tags if present
         content = re.sub(
-            r'\s*<!-- Canonical Google Knowledge Graph & Entity Reconciliation JSON-LD -->\s*<script type="application/ld\+json" id="hv-knowledge-graph-jsonld">.*?</script>(?:\s*<link rel="me" href="https://(?:(?:www\.)?harshverma\.me/|www\.wikidata\.org/wiki/Q139827028|en\.everybodywiki\.com/Harsh_Verma_\(Software_Engineer\)|orcid\.org/0000-0003-2134-2600)"\s*/>)*\n?',
+            r'\s*(?:<meta\s+property=[\"\']og:image(?::width|:height)?[\"\'][^>]*>\s*)*'
+            r'(?:<meta\s+name=[\"\']twitter:image[\"\'][^>]*>\s*)*'
+            r'(?:<link\s+rel=[\"\']image_src[\"\'][^>]*>\s*)*'
+            r'<!-- Canonical Google Knowledge Graph & Entity Reconciliation JSON-LD -->\s*<script type="application/ld\+json" id="hv-knowledge-graph-jsonld">.*?</script>(?:\s*<link rel="me" href="[^"]*"\s*/>)*\n?',
             "\n",
             content,
             flags=re.DOTALL,
@@ -1909,9 +1992,15 @@ def inject_graph_across_all_pages(kg):
         page_script_block = (
             f'    <meta name="robots" content="index, follow" />\n'
             f'    <link rel="canonical" href="{can_url}" />\n'
+            f'    <meta property="og:image" content="{CANONICAL_SITE_URL}/images/harsh/harsh_kg_primary.jpg" />\n'
+            f'    <meta property="og:image:width" content="600" />\n'
+            f'    <meta property="og:image:height" content="900" />\n'
+            f'    <meta name="twitter:image" content="{CANONICAL_SITE_URL}/images/harsh/harsh_kg_primary.jpg" />\n'
+            f'    <link rel="image_src" href="{CANONICAL_SITE_URL}/images/harsh/harsh_kg_primary.jpg" />\n'
             f'    <!-- Canonical Google Knowledge Graph & Entity Reconciliation JSON-LD -->\n'
             f'    <script type="application/ld+json" id="hv-knowledge-graph-jsonld">{page_schema_json}</script>\n'
-            f'    <link rel="me" href="https://www.harshverma.me/" />\n'
+            f'    <link rel="me" href="{CANONICAL_SITE_URL}/" />\n'
+            f'    <link rel="me" href="https://www.google.com/search?kgmid=/g/11njtn74r4" />\n'
             f'    <link rel="me" href="https://www.wikidata.org/wiki/Q139827028" />\n'
             f'    <link rel="me" href="https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)" />\n'
             f'    <link rel="me" href="https://orcid.org/0000-0003-2134-2600" />\n'
