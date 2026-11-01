@@ -5090,24 +5090,80 @@
         "familyName": "Verma",
         "alternateName": [
           "Harsh Verma",
-          "Harsh Verma (Software Engineer)",
+          "Harsh Verma Software Engineer",
+          "Harsh Verma AI Engineer",
+          "Harsh Verma Principal Software Engineer",
+          "Harsh Verma Principal Software Engineer - AI",
+          "Harsh Verma Researcher",
+          "Harsh Verma Palo Alto Networks",
+          "Harsh Verma Speaker",
           "Harsh Verma AI",
+          "Harsh Verma in Bay Area",
+          "Harsh Verma (Software Engineer)",
           "iamharshverma",
           "harshverma59"
         ],
-        "hasOccupation": {
-          "@type": "Occupation",
-          "name": "Software Engineer",
-          "occupationalCategory": "15-1252.00",
-          "description": "Software Engineer and Artificial Intelligence Specialist"
-        },
+        "hasOccupation": [
+          {
+            "@type": "Occupation",
+            "name": "Principal Software Engineer (AI)",
+            "occupationalCategory": "15-1252.00",
+            "description": "Principal AI Software Engineer architecting enterprise autonomous agent systems, AI guardrails, and distributed cloud computing platforms."
+          },
+          {
+            "@type": "Occupation",
+            "name": "Computer Science Researcher",
+            "occupationalCategory": "15-1221.00",
+            "description": "Artificial intelligence and autonomous cyber defense researcher with 27+ peer-reviewed publications."
+          },
+          {
+            "@type": "Occupation",
+            "name": "Keynote Speaker",
+            "occupationalCategory": "27-3043.05",
+            "description": "Global technology and AI keynote speaker addressing international summits, executive forums, and universities."
+          }
+        ],
         "jobTitle": [
           "Principal Software Engineer (AI)",
+          "Principal Software Engineer - AI",
+          "Principal Software Engineer",
+          "AI Engineer",
           "Enterprise AI Architect",
+          "Computer Science Researcher",
           "Keynote Speaker",
-          "Author",
-          "Computer Science Researcher"
+          "Author"
         ],
+        "worksFor": {
+          "@type": "Corporation",
+          "@id": "https://www.wikidata.org/wiki/Q7128508",
+          "name": "Palo Alto Networks",
+          "url": "https://www.paloaltonetworks.com/",
+          "sameAs": [
+            "https://www.wikidata.org/wiki/Q7128508",
+            "https://en.wikipedia.org/wiki/Palo_Alto_Networks"
+          ]
+        },
+        "homeLocation": {
+          "@type": "Place",
+          "name": "San Francisco Bay Area",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santa Clara",
+            "addressRegion": "CA",
+            "addressCountry": "US"
+          },
+          "sameAs": "https://en.wikipedia.org/wiki/San_Francisco_Bay_Area"
+        },
+        "workLocation": {
+          "@type": "Place",
+          "name": "Santa Clara, California",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santa Clara",
+            "addressRegion": "CA",
+            "addressCountry": "US"
+          }
+        },
         "description": "Harsh Verma is an internationally recognized Principal Software Engineer in AI at Palo Alto Networks, Forbes Technology Council Member, IEEE Senior Member (SMIEEE), Fellow of the British Computer Society (FBCS), Fellow of the Royal Society of Arts (FRSA), Full Member of Sigma Xi, Author, Keynote Speaker, and AI Researcher.",
         "url": "https://www.harshverma.me/",
         "mainEntityOfPage": {
@@ -6984,7 +7040,7 @@
           "https://loop.frontiersin.org/people/3757183/overview",
           "https://aijourn.com/"
         ],
-        "disambiguatingDescription": "Software Engineer, Principal AI Engineer at Palo Alto Networks, author, keynote speaker, and researcher. Distinct from other public figures named Harsh Verma. Primary entity name: Harsh Verma; Primary occupation: Software Engineer. Google Knowledge Graph ID: /g/11njtn74r4."
+        "disambiguatingDescription": "Harsh Verma is a Principal Software Engineer (AI) at Palo Alto Networks, AI Researcher, Keynote Speaker, and Author based in the San Francisco Bay Area, California. Distinct from other public figures named Harsh Verma. Primary entity name: Harsh Verma; Primary occupation: Software Engineer; Employer: Palo Alto Networks. Google Knowledge Graph ID: /g/11njtn74r4."
       },
       {
         "@type": "Book",

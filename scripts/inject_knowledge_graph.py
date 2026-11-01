@@ -1198,6 +1198,26 @@ The entity's official display name is 'Harsh Verma'. 'Software Engineer' is the 
                                     <i class="mdi mdi-web mr-1"></i> Open Google Search Console
                                 </a>
                             </div>
+
+                            <!-- 10 Monitored Search Query Clusters -->
+                            <div class="mt-3 pt-3 border-top">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="small font-weight-bold text-dark"><i class="mdi mdi-crosshairs-gps text-danger mr-1"></i> 10 Target Google Search Query Clusters (Click to Verify SERP Ranking):</span>
+                                    <span class="badge badge-success font-weight-bold" style="background:#059669;color:#fff;font-size:10.5px;">Schema.org Verified</span>
+                                </div>
+                                <div class="d-flex flex-wrap" style="gap:6px;">
+                                    <a href="https://www.google.com/search?q=Harsh+Verma" target="_blank" rel="noopener" class="btn btn-xs btn-light border font-weight-bold text-dark"><i class="mdi mdi-magnify text-primary mr-1"></i>Harsh Verma</a>
+                                    <a href="https://www.google.com/search?q=Harsh+Verma+Software+Engineer" target="_blank" rel="noopener" class="btn btn-xs btn-light border font-weight-bold text-dark"><i class="mdi mdi-magnify text-primary mr-1"></i>Harsh Verma Software Engineer</a>
+                                    <a href="https://www.google.com/search?q=Harsh+Verma+AI+Engineer" target="_blank" rel="noopener" class="btn btn-xs btn-light border font-weight-bold text-dark"><i class="mdi mdi-magnify text-primary mr-1"></i>Harsh Verma AI Engineer</a>
+                                    <a href="https://www.google.com/search?q=Harsh+Verma+Principal+Software+Engineer" target="_blank" rel="noopener" class="btn btn-xs btn-light border font-weight-bold text-dark"><i class="mdi mdi-magnify text-primary mr-1"></i>Harsh Verma Principal Software Engineer</a>
+                                    <a href="https://www.google.com/search?q=Harsh+Verma+Principal+Software+Engineer+-+AI" target="_blank" rel="noopener" class="btn btn-xs btn-light border font-weight-bold text-dark"><i class="mdi mdi-magnify text-primary mr-1"></i>Harsh Verma Principal Software Engineer - AI</a>
+                                    <a href="https://www.google.com/search?q=Harsh+Verma+Researcher" target="_blank" rel="noopener" class="btn btn-xs btn-light border font-weight-bold text-dark"><i class="mdi mdi-magnify text-primary mr-1"></i>Harsh Verma Researcher</a>
+                                    <a href="https://www.google.com/search?q=Harsh+Verma+Palo+Alto+Networks" target="_blank" rel="noopener" class="btn btn-xs btn-light border font-weight-bold text-dark"><i class="mdi mdi-magnify text-primary mr-1"></i>Harsh Verma Palo Alto Networks</a>
+                                    <a href="https://www.google.com/search?q=Harsh+Verma+Speaker" target="_blank" rel="noopener" class="btn btn-xs btn-light border font-weight-bold text-dark"><i class="mdi mdi-magnify text-primary mr-1"></i>Harsh Verma Speaker</a>
+                                    <a href="https://www.google.com/search?q=Harsh+Verma+AI" target="_blank" rel="noopener" class="btn btn-xs btn-light border font-weight-bold text-dark"><i class="mdi mdi-magnify text-primary mr-1"></i>Harsh Verma AI</a>
+                                    <a href="https://www.google.com/search?q=Harsh+Verma+in+Bay+Area" target="_blank" rel="noopener" class="btn btn-xs btn-light border font-weight-bold text-dark"><i class="mdi mdi-magnify text-primary mr-1"></i>Harsh Verma in Bay Area</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1993,6 +2013,9 @@ def inject_graph_across_all_pages(kg):
         # Remove any previous robots meta tag if present
         content = re.sub(r'\s*<meta\s+name=[\"\']robots[\"\']\s+content=[\"\'][^\"\']+[\"\']\s*/?>\n?', '\n', content, flags=re.IGNORECASE)
 
+        # Remove any previous keywords meta tag if present
+        content = re.sub(r'\s*<meta\s+name=[\"\']keywords[\"\']\s+content=[\"\'][^\"\']+[\"\']\s*/?>\n?', '\n', content, flags=re.IGNORECASE)
+
         # Remove existing canonical tag if present
         content = re.sub(r'\s*<link\s+rel=[\"\']canonical[\"\']\s+href=[\"\'][^\"\']+[\"\']\s*/?>\n?', '\n', content, flags=re.IGNORECASE)
 
@@ -2046,6 +2069,7 @@ def inject_graph_across_all_pages(kg):
 
         page_script_block = (
             f'    <meta name="robots" content="index, follow" />\n'
+            f'    <meta name="keywords" content="Harsh Verma, Harsh Verma Software Engineer, Harsh Verma AI Engineer, Harsh Verma Principal Software Engineer, Harsh Verma Principal Software Engineer - AI, Harsh Verma Researcher, Harsh Verma Palo Alto Networks, Harsh Verma Speaker, Harsh Verma AI, Harsh Verma in Bay Area" />\n'
             f'    <link rel="canonical" href="{can_url}" />\n'
             f'    <meta property="og:image" content="{CANONICAL_SITE_URL}/images/harsh/harsh_kg_primary.jpg" />\n'
             f'    <meta property="og:image:width" content="600" />\n'
