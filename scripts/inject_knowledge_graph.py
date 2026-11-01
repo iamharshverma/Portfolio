@@ -422,6 +422,7 @@ def build_identity_page(kg):
     <link rel="me" href="https://www.forbes.com/councils/forbestechcouncil/people/harshverma/" />
     <link rel="me" href="https://theorg.com/org/palo-alto-networks/person/harsh-verma" />
     <link rel="shortcut icon" href="images/favicon_new.ico">
+    <meta property="og:site_name" content="Harsh Verma Official Portfolio" />
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -2360,6 +2361,9 @@ def inject_graph_across_all_pages(kg):
 
         # Remove any previous keywords meta tag if present
         content = re.sub(r'\s*<meta\s+name=[\"\']keywords[\"\']\s+content=[\"\'][^\"\']+[\"\']\s*/?>\n?', '\n', content, flags=re.IGNORECASE)
+
+        # Remove any previous og:site_name meta tag if present (prevent duplicate accumulation)
+        content = re.sub(r'\s*<meta\s+property=[\"\']og:site_name[\"\']\s+content=[\"\'][^\"\']+[\"\']\s*/?>\n?', '\n', content, flags=re.IGNORECASE)
 
         # Remove existing canonical tag if present
         content = re.sub(r'\s*<link\s+rel=[\"\']canonical[\"\']\s+href=[\"\'][^\"\']+[\"\']\s*/?>\n?', '\n', content, flags=re.IGNORECASE)
