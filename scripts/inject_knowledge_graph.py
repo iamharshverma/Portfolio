@@ -1947,36 +1947,32 @@ HUB_FAQ_DATA = {
     ],
     "about": [
         (
-            "Who is Harsh Verma and what is his professional background?",
-            "Harsh Verma is an internationally recognized Principal Software Engineer in AI at Palo Alto Networks, enterprise architect, author, and researcher with extensive industry leadership in autonomous agent security and distributed machine learning."
+            "Who is Harsh Verma?",
+            "Harsh Verma is an internationally recognized Principal Software Engineer in Artificial Intelligence at Palo Alto Networks, enterprise AI architect, Forbes Technology Council member, keynote speaker, and computer science researcher based in the San Francisco Bay Area, California."
         ),
         (
-            "What is AI agentic security and why is it critical for modern enterprises?",
-            "As enterprises transition from passive predictive models to autonomous agents capable of independent tool use and API execution, AI agentic security provides the continuous intent validation, behavioral scoring, and cryptographic audit trails needed to prevent autonomous insider threats."
+            "What is Harsh Verma's core AI engineering expertise and technical background?",
+            "Harsh Verma specializes in autonomous agentic AI systems, multi-agent reasoning topologies, continuous intent validation, enterprise cyber defense, real-time streaming data pipelines, and large-scale model orchestration, advancing proactive security systems for enterprise production."
         ),
         (
-            "What professional fellowships and senior memberships does Harsh Verma hold?",
-            "Harsh Verma is a Senior Member of the IEEE (SMIEEE), an elected Fellow of the British Computer Society (FBCS), an elected Fellow of the Royal Society of Arts (FRSA), and a Full Member of the Sigma Xi Scientific Research Honor Society."
+            "What are Harsh Verma's most significant professional milestones and career achievements?",
+            "Harsh Verma's career milestones include leading advanced AI engineering initiatives at Palo Alto Networks, authoring 27+ peer-reviewed scholarly papers, receiving over 27 global awards for engineering excellence, authoring enterprise AI textbooks, and being elected Senior Member IEEE (SMIEEE), Fellow BCS (FBCS), and Fellow RSA (FRSA)."
         ),
         (
-            "What is Harsh Verma's role at Palo Alto Networks?",
-            "Harsh Verma serves as Principal Software Engineer (AI) at Palo Alto Networks, designing resilient multi-agent reasoning systems and scalable AI pipelines that secure mission-critical enterprise environments."
+            "What is Harsh Verma's consulting availability and executive advisory focus?",
+            "Harsh Verma accepts selective executive consulting and advisory board mandates for corporate boards, venture-backed AI startups (Seed to Series B), and technology councils, focusing on AI safety governance, agentic threat modeling, and technical moat validation."
         ),
         (
-            "What open-source and knowledge graph entities verify Harsh Verma?",
-            "Harsh Verma's entity is formally indexed and verified on Wikidata (Q139827028), Google Knowledge Graph (/g/11njtn74r4), EverybodyWiki, ORCID (0000-0003-2134-2600), and Google Scholar."
+            "What speaking topics does Harsh Verma present at international technology conferences?",
+            "Harsh Verma delivers international keynote addresses on topics including 'The Era of Agentic Security', 'Autonomous Multi-Agent Systems in Production', 'Architecting Trust in Autonomous AI', and 'Strategic Enterprise AI Adoption' for global C-suite and engineering audiences."
         ),
         (
-            "Where can I find Harsh Verma's verified professional profiles?",
-            "Harsh Verma maintains 55 verified professional and academic directory profiles, documented on the official About page and Wikidata reconciliation hub, spanning IEEE, ACM, ORCID, GitHub, and Forbes."
+            "What professional fellowships and prestigious credentials does Harsh Verma hold?",
+            "Harsh Verma is a Senior Member of the IEEE (SMIEEE), an elected Fellow of the British Computer Society (FBCS), an elected Fellow of the Royal Society of Arts (FRSA), and a Full Member of Sigma Xi: The Scientific Research Honor Society."
         ),
         (
-            "What industry awards and honors has Harsh Verma received?",
-            "Harsh Verma has received over 27 prestigious honors and industry awards recognizing technical excellence in enterprise software engineering, AI architecture, and global leadership."
-        ),
-        (
-            "What is Harsh Verma's educational background?",
-            "Harsh Verma holds advanced academic credentials in computer science and engineering, with ongoing research contributions in distributed systems, heuristic trajectory planning, and neural network clustering."
+            "Where can I find Harsh Verma's verified academic and professional directory profiles?",
+            "Harsh Verma maintains 55 verified professional and academic profiles cataloged across Wikidata (Q139827028), Google Knowledge Graph (/g/11njtn74r4), Google Scholar, ORCID (0000-0003-2134-2600), IEEE Xplore, and Forbes Technology Council."
         ),
     ],
     "publications": [
@@ -2153,32 +2149,58 @@ HUB_FAQ_DATA = {
     ],
     "media": [
         (
-            "What is Harsh Verma's global media presence and audience reach?",
-            "Harsh Verma has been featured across 43+ tier-one media outlets, podcasts, and international publications, generating an estimated cumulative reach of over 3.75 billion potential views."
+            "Where can I find Harsh Verma's media features and press coverage?",
+            "Harsh Verma has been featured across 43+ tier-one media outlets, podcasts, and international publications, including Forbes, HackerNoon, and global technology broadcasts, generating an estimated cumulative reach of over 3.75 billion potential views."
         ),
         (
-            "What tier-one publications feature Harsh Verma's insights?",
-            "Features and regular columns appear in Forbes, HackerNoon, global technology trade media, and syndicated tech journalism platforms."
+            "Where can journalists and media producers download Harsh Verma's official press kits?",
+            "Approved press kits containing high-resolution executive portraits, official biography summaries, corporate logos, and brand assets are available for immediate download directly on the Media Hub at harshverma.me/page-media."
         ),
         (
-            "What topics does Harsh Verma discuss in media interviews?",
-            "Interviews focus on the future of autonomous agent ecosystems, AI threat vectors, enterprise security posture, engineering leadership, and responsible AI innovation."
+            "What are Harsh Verma's podcast collaboration guidelines and interview topics?",
+            "Harsh Verma participates as an expert guest on leading technology and cybersecurity podcasts. Discussions focus on autonomous agent security, AI threat vectors, enterprise software scaling, and engineering career development. Hosts can submit invitations with episode themes and recording schedules to harshverma59@gmail.com."
         ),
         (
-            "What is the media distribution analytics dossier?",
-            "The Media Distribution Analytics page provides comprehensive verified metrics, syndication reach statistics, and international geographic impact data."
+            "What is Harsh Verma's keynote availability for media broadcasts and industry summits?",
+            "Harsh Verma is available for live media broadcasts, global technology summit keynotes, virtual fireside chats, and panel moderations. Scheduling and availability can be requested through the interactive Keynote Booking Modal or by contacting harshverma59@gmail.com."
         ),
         (
-            "How can journalists and podcast hosts book an interview with Harsh Verma?",
-            "Press inquiries, podcast guest requests, and editorial quotes can be submitted through the Media page or emailed directly to harshverma59@gmail.com."
+            "What are Harsh Verma's primary editorial distribution channels and syndication reach?",
+            "Harsh Verma's editorial distribution channels include regular executive columns on the Forbes Technology Council, long-form technical architectural essays on HackerNoon, and 'The Agentic Systems & AI Dispatch' newsletter reaching enterprise technology leaders worldwide."
         ),
         (
-            "Where can media organizations download official high-resolution headshots?",
-            "High-resolution executive portraits, official bios, and brand assets are downloadable directly on the Media and About hubs."
+            "What is the verified audience reach of Harsh Verma's media features?",
+            "As documented in the Media Distribution Analytics Dossier, Harsh Verma's media features and syndicated columns possess an aggregate global syndication reach exceeding 3.75 billion potential views across North America, Europe, and Asia."
         ),
         (
-            "Where can I listen to podcasts featuring Harsh Verma?",
-            "Podcast episodes, audio interviews, and broadcast appearances are cataloged with direct streaming links on the official Media Hub at harshverma.me/page-media."
+            "How can news organizations and journalists submit urgent interview requests?",
+            "Journalists on deadline seeking expert commentary on artificial intelligence, cybersecurity incidents, or agentic systems can submit priority inquiries directly to harshverma59@gmail.com, with responses provided within 24 hours."
+        ),
+    ],
+    "media_analytics": [
+        (
+            "What is the Media Distribution Analytics Dossier?",
+            "The Media Distribution Analytics Dossier provides verified data on Harsh Verma's global media presence, detailing syndication channels, geographic distribution, and an aggregate potential reach of 3.75+ billion views."
+        ),
+        (
+            "How is the 3.75B+ potential media audience reach measured?",
+            "The metric aggregates verified circulation, monthly unique visitors (MUV), and syndication footprints across 43+ tier-one media features, international broadcasts, and digital publication networks."
+        ),
+        (
+            "What tier-one media outlets are included in the analytics breakdown?",
+            "The analysis covers top-tier platforms including Forbes, HackerNoon, major business journalism wire services, and specialized cybersecurity media."
+        ),
+        (
+            "What are the primary geographic regions reached by Harsh Verma's media presence?",
+            "Audience reach spans global technology centers with primary concentrations across the United States, Europe, India, and the Asia-Pacific region."
+        ),
+        (
+            "Where can journalists access the underlying media verification data?",
+            "Complete media references, publication links, and citation records are cataloged in the Media Analytics Dossier and verified on Wikidata and the Google Knowledge Graph."
+        ),
+        (
+            "How frequently are media distribution analytics updated?",
+            "The dossier is updated continuously as new international features, podcast broadcasts, and keynote coverage are published."
         ),
     ],
     "blog": [
@@ -2227,8 +2249,10 @@ def get_hub_key(fname):
         return "awards"
     elif fname == "page-memberships.html":
         return "memberships"
-    elif fname in ("page-media.html", "page-media-distribution-analytics.html"):
+    elif fname == "page-media.html":
         return "media"
+    elif fname == "page-media-distribution-analytics.html":
+        return "media_analytics"
     else:
         return "blog"
 
