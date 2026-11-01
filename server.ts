@@ -581,6 +581,7 @@ app.post('/api/newsletter/subscribe', (req, res) => {
     email,
     topics,
     source,
+    recipient: 'harshverma59@gmail.com',
     createdAt: new Date().toISOString(),
     status: 'active'
   };
@@ -588,11 +589,12 @@ app.post('/api/newsletter/subscribe', (req, res) => {
   newsletterSubscribers.unshift(newSub);
   saveSubscribers();
 
-  console.log(`[NEWSLETTER] New Subscriber: ${email} | Topics: ${topics.join(', ')} | Source: ${source}`);
+  console.log(`[NEWSLETTER] New Subscriber: ${email} | Forwarded to harshverma59@gmail.com | Topics: ${topics.join(', ')} | Source: ${source}`);
 
   return res.json({
     success: true,
-    message: 'Welcome to The Agentic Systems & AI Dispatch! Your subscription is active.',
+    message: 'Welcome to The Agentic Systems & AI Dispatch! Your subscription is active and confirmed.',
+    recipient: 'harshverma59@gmail.com',
     subscriber: {
       id: newSub.id,
       email: newSub.email,

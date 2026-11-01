@@ -1185,8 +1185,26 @@ html.dark-mode .exp-progress-bar {
     height: 100%;
     border-radius: 10px;
     background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
-    transition: width 1.3s cubic-bezier(0.22, 1, 0.36, 1);
+    transition: width 1.4s cubic-bezier(0.22, 1, 0.36, 1);
     will-change: width;
+    position: relative;
+    overflow: hidden;
+}
+
+.exp-progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.25) 50%, rgba(255,255,255,0) 100%);
+    animation: hvProgressGlow 2.5s infinite;
+}
+
+@keyframes hvProgressGlow {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
 }
 
 /* Reset legacy neumorphic shadow inside #experience */
@@ -7178,33 +7196,39 @@ html.dark-mode .exp-progress-bar {
 
             // Animate Skills Progress Bars on Viewport Entry via Intersection Observer API
             document.addEventListener('DOMContentLoaded', function() {
-                var skillProgressFills = document.querySelectorAll('.exp-skill-card .exp-progress-fill');
-                if (!skillProgressFills.length) return;
+                var skillCards = document.querySelectorAll('.exp-skill-card');
+                if (!skillCards.length) return;
+
+                function animateSkillCard(card) {
+                    var fills = card.querySelectorAll('.exp-progress-fill');
+                    fills.forEach(function(fillEl, idx) {
+                        var targetWidth = fillEl.getAttribute('data-progress') || '100%';
+                        setTimeout(function() {
+                            fillEl.style.width = targetWidth;
+                        }, idx * 100);
+                    });
+                }
 
                 if ('IntersectionObserver' in window) {
                     var skillObserver = new IntersectionObserver(function(entries, observer) {
                         entries.forEach(function(entry) {
                             if (entry.isIntersecting) {
-                                var fillEl = entry.target;
-                                var targetWidth = fillEl.getAttribute('data-progress') || '100%';
-                                requestAnimationFrame(function() {
-                                    fillEl.style.width = targetWidth;
-                                });
-                                observer.unobserve(fillEl);
+                                animateSkillCard(entry.target);
+                                observer.unobserve(entry.target);
                             }
                         });
                     }, {
                         threshold: 0.15,
-                        rootMargin: '0px 0px -40px 0px'
+                        rootMargin: '0px 0px -30px 0px'
                     });
 
-                    skillProgressFills.forEach(function(fillEl) {
-                        skillObserver.observe(fillEl);
+                    skillCards.forEach(function(card) {
+                        skillObserver.observe(card);
                     });
                 } else {
                     // Fallback for browsers without IntersectionObserver
-                    skillProgressFills.forEach(function(fillEl) {
-                        fillEl.style.width = fillEl.getAttribute('data-progress') || '100%';
+                    skillCards.forEach(function(card) {
+                        animateSkillCard(card);
                     });
                 }
             });

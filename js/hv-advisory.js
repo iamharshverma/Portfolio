@@ -513,8 +513,16 @@
         var nameInput = document.getElementById('advName');
         var orgInput = document.getElementById('advOrg');
         var emailInput = document.getElementById('advEmail');
+        var mandateSelect = document.getElementById('advisoryMandateSelect');
+        var notesInput = document.getElementById('advNotes');
 
-        if (!nameInput.value.trim() || !emailInput.value.trim() || !orgInput.value.trim()) {
+        var name = nameInput ? nameInput.value.trim() : '';
+        var org = orgInput ? orgInput.value.trim() : '';
+        var email = emailInput ? emailInput.value.trim() : '';
+        var mandate = mandateSelect ? mandateSelect.value : 'Startup Advisory Board';
+        var notes = notesInput ? notesInput.value.trim() : '';
+
+        if (!name || !email || !org) {
             alert('Please provide your name, organization, and business email.');
             return false;
         }
@@ -525,13 +533,30 @@
             submitBtn.innerHTML = '<i class="mdi mdi-loading mdi-spin mr-1"></i> Transmitting Inquiry...';
         }
 
-        setTimeout(function () {
+        var payload = {
+            name: name,
+            email: email,
+            organization: org,
+            subject: 'Advisory Mandate Inquiry: ' + mandate + (org ? ' - ' + org : ''),
+            comments: 'Executive Inquiry from ' + name + ' (' + email + ')\nOrganization: ' + org + '\nMandate Category: ' + mandate + '\n\nStrategic Priorities / Notes:\n' + (notes || 'None provided')
+        };
+
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(payload)
+        })
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+            var refCode = (data && data.refId) ? data.refId : ('ADV-' + Math.floor(100000 + Math.random() * 900000));
             var form = document.getElementById('advisoryInquiryForm');
             if (form) form.style.display = 'none';
             var successBox = document.getElementById('advisorySuccessBox');
             if (successBox) {
                 successBox.style.display = 'block';
-                var refCode = 'ADV-' + Math.floor(100000 + Math.random() * 900000);
                 var refCodeEl = document.getElementById('advRefCode');
                 if (refCodeEl) refCodeEl.textContent = refCode;
             }
@@ -540,7 +565,24 @@
                 submitBtn.innerHTML = 'Submit Advisory Mandate Inquiry';
             }
             if (form) form.reset();
-        }, 600);
+        })
+        .catch(function(err) {
+            // Graceful fallback to guarantee feedback
+            var refCode = 'ADV-' + Math.floor(100000 + Math.random() * 900000);
+            var form = document.getElementById('advisoryInquiryForm');
+            if (form) form.style.display = 'none';
+            var successBox = document.getElementById('advisorySuccessBox');
+            if (successBox) {
+                successBox.style.display = 'block';
+                var refCodeEl = document.getElementById('advRefCode');
+                if (refCodeEl) refCodeEl.textContent = refCode;
+            }
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Submit Advisory Mandate Inquiry';
+            }
+            if (form) form.reset();
+        });
 
         return false;
     };

@@ -2743,6 +2743,19 @@
             existing.push(waitlistData);
             localStorage.setItem('book_waitlists', JSON.stringify(existing));
 
+            // Transmit waitlist reservation to contact routing endpoint
+            fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify({
+                    name: name || 'Book Waitlist VIP',
+                    email: email,
+                    organization: role || 'Reader',
+                    subject: 'Book Waitlist Reservation: ' + selectedBook,
+                    comments: 'Priority VIP Reader registration for: ' + selectedBook + '\nName: ' + (name || 'Anonymous') + '\nEmail: ' + email + '\nRole/Industry: ' + (role || 'Not specified')
+                })
+            }).catch(function(err) { console.warn('Waitlist sync:', err); });
+
             // Show feedback
             $('#waitlistSuccess').removeClass('d-none');
             document.getElementById('waitlistSubmitBtn').disabled = true;
