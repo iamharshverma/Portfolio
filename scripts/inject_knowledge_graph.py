@@ -1956,13 +1956,13 @@ def inject_graph_across_all_pages(kg):
     }
 
     PAGE_META = {
-        "index.html": ("ProfilePage", "Harsh Verma Official Portfolio | Principal AI Software Engineer"),
-        "index-image.html": ("ProfilePage", "Harsh Verma Official Portfolio | Principal AI Software Engineer"),
-        "index-particles.html": ("ProfilePage", "Harsh Verma Official Portfolio | Principal AI Software Engineer"),
-        "index-ripple.html": ("ProfilePage", "Harsh Verma Official Portfolio | Principal AI Software Engineer"),
-        "index-routed.html": ("ProfilePage", "Harsh Verma Official Portfolio | Principal AI Software Engineer"),
-        "index-typed.html": ("ProfilePage", "Harsh Verma Official Portfolio | Principal AI Software Engineer"),
-        "page-about.html": ("ProfilePage", "About Harsh Verma | Principal AI Engineer, Author & 55 Verified Profiles Directory"),
+        "index.html": ("ProfilePage", "Harsh Verma Official Portfolio"),
+        "index-image.html": ("ProfilePage", "Harsh Verma Official Portfolio"),
+        "index-particles.html": ("ProfilePage", "Harsh Verma Official Portfolio"),
+        "index-ripple.html": ("ProfilePage", "Harsh Verma Official Portfolio"),
+        "index-routed.html": ("ProfilePage", "Harsh Verma Official Portfolio"),
+        "index-typed.html": ("ProfilePage", "Harsh Verma Official Portfolio"),
+        "page-about.html": ("ProfilePage", "Harsh Verma Official Portfolio"),
         "page-publications.html": ("CollectionPage", "Publications & Research | Harsh Verma - Google Scholar Profile & Peer-Reviewed Papers"),
         "page-awards.html": ("ItemPage", "Harsh Verma | Awards, Honors & Global Recognitions"),
         "page-books.html": ("CollectionPage", "Authored Books & Technical Reviews | Harsh Verma - Enterprise AI & Cyber Defense"),
@@ -2026,6 +2026,18 @@ def inject_graph_across_all_pages(kg):
         # Construct page-specific graph payload linking to https://www.harshverma.me/#person
         page_node_id = f"{can_url}#webpage" if can_url != f"{CANONICAL_SITE_URL}/" else f"{CANONICAL_SITE_URL}/#profilepage"
         page_type, page_name = PAGE_META.get(fname, ("WebPage", f"Harsh Verma | {fname.replace('.html', '').replace('page-', '').title()}"))
+        if page_type == "ProfilePage":
+            page_name = "Harsh Verma Official Portfolio"
+
+        profile_page_node = {
+            "@type": "ProfilePage",
+            "@id": f"{CANONICAL_SITE_URL}/#profilepage",
+            "url": f"{CANONICAL_SITE_URL}/",
+            "name": "Harsh Verma Official Portfolio",
+            "isPartOf": {"@id": f"{CANONICAL_SITE_URL}/#website"},
+            "about": {"@id": f"{CANONICAL_SITE_URL}/#person"},
+            "mainEntity": {"@id": f"{CANONICAL_SITE_URL}/#person"},
+        }
 
         page_graph = [
             {
@@ -2041,7 +2053,21 @@ def inject_graph_across_all_pages(kg):
                 "publisher": {"@id": f"{CANONICAL_SITE_URL}/#person"},
                 "inLanguage": "en-US",
             },
-            {
+        ]
+
+        if page_type == "ProfilePage":
+            page_graph.append({
+                "@type": "ProfilePage",
+                "@id": page_node_id,
+                "url": can_url,
+                "name": "Harsh Verma Official Portfolio",
+                "isPartOf": {"@id": f"{CANONICAL_SITE_URL}/#website"},
+                "about": {"@id": f"{CANONICAL_SITE_URL}/#person"},
+                "mainEntity": {"@id": f"{CANONICAL_SITE_URL}/#person"},
+            })
+        else:
+            page_graph.append(profile_page_node)
+            page_graph.append({
                 "@type": page_type,
                 "@id": page_node_id,
                 "url": can_url,
@@ -2049,8 +2075,7 @@ def inject_graph_across_all_pages(kg):
                 "isPartOf": {"@id": f"{CANONICAL_SITE_URL}/#website"},
                 "about": {"@id": f"{CANONICAL_SITE_URL}/#person"},
                 "mainEntity": {"@id": f"{CANONICAL_SITE_URL}/#person"},
-            }
-        ]
+            })
 
         # Add Person node with reciprocal mainEntityOfPage
         for n in kg["schema_json_ld"]["@graph"]:

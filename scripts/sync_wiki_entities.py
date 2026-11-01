@@ -1355,7 +1355,7 @@ def build_schema_org_graph(profiles, media, awards, blogs, books, papers, associ
             f"{SECONDARY_SITE_URL}/page-identity",
             f"{CANONICAL_SITE_URL}/page-about",
         ],
-        "name": "Harsh Verma - Official Entity Verification, Wikidata Q139827028 & Knowledge Graph Hub",
+        "name": "Harsh Verma Official Portfolio",
         "isPartOf": {"@id": f"{CANONICAL_SITE_URL}/#website"},
         "about": {"@id": f"{CANONICAL_SITE_URL}/#person"},
         "mainEntity": {"@id": f"{CANONICAL_SITE_URL}/#person"},
