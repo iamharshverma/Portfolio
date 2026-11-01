@@ -39,7 +39,7 @@ def generate_wikialpha_wikitext(kg):
     wikialpha_wiki = ew_wiki.replace(
         "== References ==",
         "== External Links ==\n"
-        "* [https://www.harshverma.me/ Harsh Verma Official Portfolio & Knowledge Graph Hub]\n"
+        "* [https://www.harshverma.me/ Harsh Verma Official Portfolio]\n"
         "* [https://www.wikidata.org/wiki/Q139827028 Harsh Verma on Wikidata (Q139827028)]\n"
         "* [https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer) Harsh Verma on EverybodyWiki]\n"
         "* [https://en.wikiflux.org/wiki/index.php/Harsh_Verma_(Software_Engineer) Harsh Verma on WikiFlux]\n"

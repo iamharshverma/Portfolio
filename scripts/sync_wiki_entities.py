@@ -1338,7 +1338,11 @@ def build_schema_org_graph(profiles, media, awards, blogs, books, papers, associ
         "sameAs": [
             f"{SECONDARY_SITE_URL}/",
         ],
-        "name": "Harsh Verma Official Portfolio & Knowledge Graph Hub",
+        "name": "Harsh Verma Official Portfolio",
+        "alternateName": [
+            "Harsh Verma Official Portfolio",
+            "Harsh Verma Portfolio",
+        ],
         "publisher": {"@id": f"{CANONICAL_SITE_URL}/#person"},
         "inLanguage": "en-US",
     }

@@ -1956,12 +1956,12 @@ def inject_graph_across_all_pages(kg):
     }
 
     PAGE_META = {
-        "index.html": ("ProfilePage", "Harsh Verma | Official Portfolio, Executive AI Leadership & Knowledge Graph"),
-        "index-image.html": ("ProfilePage", "Harsh Verma | Official Portfolio, Executive AI Leadership & Knowledge Graph"),
-        "index-particles.html": ("ProfilePage", "Harsh Verma | Official Portfolio, Executive AI Leadership & Knowledge Graph"),
-        "index-ripple.html": ("ProfilePage", "Harsh Verma | Official Portfolio, Executive AI Leadership & Knowledge Graph"),
-        "index-routed.html": ("ProfilePage", "Harsh Verma | Official Portfolio, Executive AI Leadership & Knowledge Graph"),
-        "index-typed.html": ("ProfilePage", "Harsh Verma | Official Portfolio, Executive AI Leadership & Knowledge Graph"),
+        "index.html": ("ProfilePage", "Harsh Verma Official Portfolio | Principal AI Software Engineer"),
+        "index-image.html": ("ProfilePage", "Harsh Verma Official Portfolio | Principal AI Software Engineer"),
+        "index-particles.html": ("ProfilePage", "Harsh Verma Official Portfolio | Principal AI Software Engineer"),
+        "index-ripple.html": ("ProfilePage", "Harsh Verma Official Portfolio | Principal AI Software Engineer"),
+        "index-routed.html": ("ProfilePage", "Harsh Verma Official Portfolio | Principal AI Software Engineer"),
+        "index-typed.html": ("ProfilePage", "Harsh Verma Official Portfolio | Principal AI Software Engineer"),
         "page-about.html": ("ProfilePage", "About Harsh Verma | Principal AI Engineer, Author & 55 Verified Profiles Directory"),
         "page-publications.html": ("CollectionPage", "Publications & Research | Harsh Verma - Google Scholar Profile & Peer-Reviewed Papers"),
         "page-awards.html": ("ItemPage", "Harsh Verma | Awards, Honors & Global Recognitions"),
@@ -2033,7 +2033,11 @@ def inject_graph_across_all_pages(kg):
                 "@id": f"{CANONICAL_SITE_URL}/#website",
                 "url": f"{CANONICAL_SITE_URL}/",
                 "sameAs": [f"{SECONDARY_SITE_URL}/"],
-                "name": "Harsh Verma Official Portfolio & Knowledge Graph Hub",
+                "name": "Harsh Verma Official Portfolio",
+                "alternateName": [
+                    "Harsh Verma Official Portfolio",
+                    "Harsh Verma Portfolio",
+                ],
                 "publisher": {"@id": f"{CANONICAL_SITE_URL}/#person"},
                 "inLanguage": "en-US",
             },
@@ -2070,6 +2074,7 @@ def inject_graph_across_all_pages(kg):
         page_script_block = (
             f'    <meta name="robots" content="index, follow" />\n'
             f'    <meta name="keywords" content="Harsh Verma, Harsh Verma Software Engineer, Harsh Verma AI Engineer, Harsh Verma Principal Software Engineer, Harsh Verma Principal Software Engineer - AI, Harsh Verma Researcher, Harsh Verma Palo Alto Networks, Harsh Verma Speaker, Harsh Verma AI, Harsh Verma in Bay Area" />\n'
+            f'    <meta property="og:site_name" content="Harsh Verma Official Portfolio" />\n'
             f'    <link rel="canonical" href="{can_url}" />\n'
             f'    <meta property="og:image" content="{CANONICAL_SITE_URL}/images/harsh/harsh_kg_primary.jpg" />\n'
             f'    <meta property="og:image:width" content="600" />\n'
