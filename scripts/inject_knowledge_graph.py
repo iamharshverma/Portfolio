@@ -1914,6 +1914,325 @@ The entity's official display name is 'Harsh Verma'. 'Software Engineer' is the 
     print(f"Generated {out_path} ({len(html_doc)} bytes)")
 
 
+HUB_FAQ_DATA = {
+    "home": [
+        (
+            "Who is Harsh Verma?",
+            "Harsh Verma is a Principal Software Engineer in Artificial Intelligence at Palo Alto Networks, enterprise AI architect, Forbes Technology Council member, author, keynote speaker, and computer science researcher based in the San Francisco Bay Area, California."
+        ),
+        (
+            "What is AI agentic security?",
+            "AI agentic security is an advanced cybersecurity discipline focused on safeguarding autonomous multi-agent reasoning systems. It provides continuous intent verification, behavioral drift detection, tool-use authorization, and cryptographic auditability to prevent autonomous insider threats and prompt injection."
+        ),
+        (
+            "What is Harsh Verma's professional role at Palo Alto Networks?",
+            "At Palo Alto Networks, Harsh Verma spearheads production-grade enterprise artificial intelligence architectures, advancing autonomous agent systems, multi-agent reasoning topologies, and proactive cybersecurity intelligence to protect enterprise infrastructure."
+        ),
+        (
+            "What are Harsh Verma's primary areas of technical expertise?",
+            "Harsh Verma specializes in autonomous agentic AI systems, distributed multi-agent reasoning, enterprise cyber defense, real-time streaming data pipelines, large-scale machine learning, and AI governance."
+        ),
+        (
+            "What is Harsh Verma's role on the Forbes Technology Council?",
+            "Harsh Verma is an official member and columnist on the Forbes Technology Council, regularly publishing executive thought leadership on agentic AI trust, enterprise defense moats, and responsible AI adoption."
+        ),
+        (
+            "What books and scholarly papers has Harsh Verma authored?",
+            "Harsh Verma has authored books including 'Enterprise AI: Architectures and Systems' and 'AI Agents in Cybersecurity: The Next Defense Paradigm', alongside 27+ peer-reviewed scholarly articles indexed on Google Scholar and IEEE."
+        ),
+        (
+            "How can organizations contact or book Harsh Verma?",
+            "Organizations and event organizers can reach Harsh Verma for keynote speaking, executive consulting, and advisory board mandates via the official booking portal on this website or by direct email to harshverma59@gmail.com."
+        ),
+    ],
+    "about": [
+        (
+            "Who is Harsh Verma and what is his professional background?",
+            "Harsh Verma is an internationally recognized Principal Software Engineer in AI at Palo Alto Networks, enterprise architect, author, and researcher with extensive industry leadership in autonomous agent security and distributed machine learning."
+        ),
+        (
+            "What is AI agentic security and why is it critical for modern enterprises?",
+            "As enterprises transition from passive predictive models to autonomous agents capable of independent tool use and API execution, AI agentic security provides the continuous intent validation, behavioral scoring, and cryptographic audit trails needed to prevent autonomous insider threats."
+        ),
+        (
+            "What professional fellowships and senior memberships does Harsh Verma hold?",
+            "Harsh Verma is a Senior Member of the IEEE (SMIEEE), an elected Fellow of the British Computer Society (FBCS), an elected Fellow of the Royal Society of Arts (FRSA), and a Full Member of the Sigma Xi Scientific Research Honor Society."
+        ),
+        (
+            "What is Harsh Verma's role at Palo Alto Networks?",
+            "Harsh Verma serves as Principal Software Engineer (AI) at Palo Alto Networks, designing resilient multi-agent reasoning systems and scalable AI pipelines that secure mission-critical enterprise environments."
+        ),
+        (
+            "What open-source and knowledge graph entities verify Harsh Verma?",
+            "Harsh Verma's entity is formally indexed and verified on Wikidata (Q139827028), Google Knowledge Graph (/g/11njtn74r4), EverybodyWiki, ORCID (0000-0003-2134-2600), and Google Scholar."
+        ),
+        (
+            "Where can I find Harsh Verma's verified professional profiles?",
+            "Harsh Verma maintains 55 verified professional and academic directory profiles, documented on the official About page and Wikidata reconciliation hub, spanning IEEE, ACM, ORCID, GitHub, and Forbes."
+        ),
+        (
+            "What industry awards and honors has Harsh Verma received?",
+            "Harsh Verma has received over 27 prestigious honors and industry awards recognizing technical excellence in enterprise software engineering, AI architecture, and global leadership."
+        ),
+        (
+            "What is Harsh Verma's educational background?",
+            "Harsh Verma holds advanced academic credentials in computer science and engineering, with ongoing research contributions in distributed systems, heuristic trajectory planning, and neural network clustering."
+        ),
+    ],
+    "publications": [
+        (
+            "What research papers has Harsh Verma authored on artificial intelligence?",
+            "Harsh Verma has authored 27+ peer-reviewed papers spanning autonomous multi-agent systems, automated vulnerability patching with LLMs, trajectory planning in delay-tolerant networks, and scalable streaming data architectures."
+        ),
+        (
+            "Where are Harsh Verma's peer-reviewed papers indexed?",
+            "Harsh Verma's scientific papers are indexed on Google Scholar, IEEE Xplore, IJSRM, ICACCM, EJCSIT, and international conference proceedings."
+        ),
+        (
+            "What is the DEICA-ML clustering research published by Harsh Verma?",
+            "DEICA-ML (Multi-Layer Differential Evolution-Based Improved Clustering Algorithm) is Harsh Verma's research published in IEEE Access, optimizing cluster-head selection and energy-efficient data transmission in heterogeneous sensor networks."
+        ),
+        (
+            "What is the MA-DEBTP trajectory planning framework?",
+            "MA-DEBTP (Multi-Agent Differential Evolution-Based Trajectory Planning) is a decentralized optimization architecture developed by Harsh Verma for mobile data collectors in intermittently connected networks, published in ICACCM 2026."
+        ),
+        (
+            "How does Harsh Verma approach automated vulnerability patching using LLMs?",
+            "Harsh Verma's research in IJSRM investigates automated vulnerability remediation in legacy systems using collaborative multi-AI agents, semantic diff verification, and automated fuzzing."
+        ),
+        (
+            "What is Harsh Verma's Google Scholar citation record?",
+            "Harsh Verma's Google Scholar profile tracks peer-reviewed contributions across distributed intelligence, sensor network optimization, agentic cybersecurity, and streaming architectures."
+        ),
+        (
+            "How can researchers access full-text copies of Harsh Verma's papers?",
+            "Full-text publications, DOIs, and citation downloads (BibTeX and RIS) are available directly on the Publications Hub at harshverma.me/page-publications."
+        ),
+    ],
+    "speaker": [
+        (
+            "What keynote speaking topics does Harsh Verma deliver?",
+            "Harsh Verma presents keynotes on 'The Era of Agentic Security', 'Autonomous Multi-Agent Systems in Production', 'Architecting Trust in Autonomous AI', and 'Strategic Enterprise AI Adoption'."
+        ),
+        (
+            "What formats are available for Harsh Verma's speaking engagements?",
+            "Harsh Verma offers in-person international keynotes, virtual global broadcasts, executive masterclasses, interactive panel moderations, and private C-suite briefing roundtables."
+        ),
+        (
+            "What audience levels do Harsh Verma's keynotes target?",
+            "Keynotes are tailored for C-suite executives (CTO, CIO, CISO), engineering leaders, AI researchers, cybersecurity professionals, and enterprise software architects."
+        ),
+        (
+            "How can event organizers book Harsh Verma for a conference or summit?",
+            "Organizers can submit a speaking invitation through the interactive Keynote Booking Modal on the website or email harshverma59@gmail.com for availability and fee schedules."
+        ),
+        (
+            "Can Harsh Verma deliver talks internationally?",
+            "Yes, Harsh Verma speaks at major technology summits across North America, Europe, Asia, and the Middle East, as well as worldwide virtual conferences."
+        ),
+        (
+            "What are Harsh Verma's most referenced recorded keynote talks?",
+            "Popular recorded talks include the TrueML Keynote, the Chai & Coaching international degree series, and global engineering symposium addresses available in the video hub."
+        ),
+        (
+            "Does Harsh Verma offer custom corporate workshops?",
+            "Yes, Harsh Verma delivers customized half-day and full-day enterprise masterclasses on agentic threat modeling, LLM deployment architectures, and secure agent orchestration."
+        ),
+        (
+            "What is the typical response time for keynote booking inquiries?",
+            "Speaking invitations and advisory consultation requests are reviewed personally, with formal responses provided within 24 hours."
+        ),
+    ],
+    "books": [
+        (
+            "What books has Harsh Verma authored on artificial intelligence?",
+            "Harsh Verma has authored 'Enterprise AI: Architectures and Systems' and 'AI Agents in Cybersecurity: The Next Defense Paradigm', with forthcoming titles in production."
+        ),
+        (
+            "What is 'Enterprise AI: Architectures and Systems' about?",
+            "This book provides a definitive architectural blueprint for operationalizing large language models, agentic workflows, and distributed inference engines across Fortune 500 enterprise environments."
+        ),
+        (
+            "What is 'AI Agents in Cybersecurity: The Next Defense Paradigm' about?",
+            "This title explores multi-agent vulnerabilities, cryptographic intent auditing, defense-in-depth for autonomous pipelines, and safeguarding critical infrastructure from agentic threats."
+        ),
+        (
+            "How can readers join the VIP pre-order waitlist?",
+            "Readers and enterprise teams can reserve VIP advance chapter excerpts and early notification on the Books page at harshverma.me/page-books."
+        ),
+        (
+            "What technical book reviews does Harsh Verma publish?",
+            "Harsh Verma reviews leading technical publications in deep learning, distributed systems, quantum computing, and cybersecurity, providing curated ratings for practitioners."
+        ),
+        (
+            "Are executive excerpts available for corporate training programs?",
+            "Yes, select chapter excerpts and architectural companion slide decks are made available for university courses and enterprise leadership teams."
+        ),
+    ],
+    "advisory": [
+        (
+            "What board and strategic advisory services does Harsh Verma provide?",
+            "Harsh Verma advises corporate boards, venture-backed startups, and technology councils on AI safety governance, agentic risk posture, enterprise AI roadmaps, and M&A technical due diligence."
+        ),
+        (
+            "What is Harsh Verma's background as an executive board candidate?",
+            "With extensive technical leadership at Palo Alto Networks, Forbes Technology Council credentials, and international fellowship status (SMIEEE, FBCS, FRSA), Harsh Verma brings deep domain rigor to board committees."
+        ),
+        (
+            "How does Harsh Verma assist venture-backed AI startups?",
+            "Harsh Verma works with Seed to Series B AI startups on agentic architecture validation, product-market security positioning, technical moat defensibility, and enterprise scaling."
+        ),
+        (
+            "What is Harsh Verma's perspective on enterprise AI governance?",
+            "Harsh Verma emphasizes proactive, continuous governance—ensuring AI agents operate within bounded epistemic guardrails, cryptographic authorization, and verifiable auditability."
+        ),
+        (
+            "How can corporate boards request Harsh Verma's executive prospectus?",
+            "Boards and nominating committees can download the official Board Biography PDF and submit confidential mandate inquiries via harshverma.me/page-advisory or board.html."
+        ),
+        (
+            "What is the inquiry review process for advisory mandates?",
+            "All board and advisory inquiries are reviewed personally by Harsh Verma with complete confidentiality, with responses provided within 24 to 48 hours."
+        ),
+        (
+            "Does Harsh Verma advise on emerging AI regulatory compliance?",
+            "Yes, advisory mandates cover alignment with global AI governance standards, NIST AI Risk Management Frameworks, and enterprise accountability policies."
+        ),
+    ],
+    "awards": [
+        (
+            "What major awards has Harsh Verma won for AI engineering?",
+            "Harsh Verma has received over 27 global awards honoring engineering excellence, innovative software architecture, artificial intelligence research, and leadership in technology."
+        ),
+        (
+            "What organizations have recognized Harsh Verma with honors?",
+            "Recognitions have been awarded by international engineering associations, global technology councils, leading industry publications, and scientific organizations."
+        ),
+        (
+            "What is Harsh Verma's track record in enterprise cybersecurity recognition?",
+            "Harsh Verma has been consistently recognized for pioneer contributions to enterprise cyber defense, multi-agent threat modeling, and distributed security infrastructure."
+        ),
+        (
+            "Where are Harsh Verma's awards and trophies documented?",
+            "The complete verified list of 27+ awards, certificates, and year-by-year recognitions is showcased on the official Awards page at harshverma.me/page-awards."
+        ),
+        (
+            "How does Harsh Verma's fellowship record reflect his awards?",
+            "Peer-reviewed recognitions culminate in elected fellowships and senior memberships including SMIEEE, FBCS, and FRSA."
+        ),
+        (
+            "How frequently are new honors and accolades added to the portfolio?",
+            "The Awards registry is updated continuously upon formal conferral and peer verification."
+        ),
+    ],
+    "memberships": [
+        (
+            "What professional fellowships does Harsh Verma hold?",
+            "Harsh Verma holds prestigious fellowships including Fellow of the British Computer Society (FBCS) and Fellow of the Royal Society of Arts (FRSA)."
+        ),
+        (
+            "What does IEEE Senior Member (SMIEEE) status mean?",
+            "Senior Membership in the IEEE is the highest professional grade, recognizing significant performance, peer endorsement, and exemplary engineering achievements in technology."
+        ),
+        (
+            "What is Harsh Verma's fellowship in the British Computer Society (FBCS)?",
+            "Fellowship in BCS is the highest professional accolade awarded to tech leaders who have made prominent contributions to IT, computing sciences, and industry best practices."
+        ),
+        (
+            "What is Harsh Verma's fellowship in the Royal Society of Arts (FRSA)?",
+            "Fellowship in the RSA recognizes influential innovators, scholars, and social leaders committed to ethical advancement, scientific enlightenment, and technological progress."
+        ),
+        (
+            "What is Harsh Verma's role in Sigma Xi: The Scientific Research Honor Society?",
+            "As a Full Member of Sigma Xi, Harsh Verma participates in one of the world's oldest and most prestigious multidisciplinary scientific research honor societies."
+        ),
+        (
+            "How does Harsh Verma support international engineering standards?",
+            "Through peer review, technical committee participation, and active contributions across IEEE, BCS, and ACM computing groups."
+        ),
+    ],
+    "media": [
+        (
+            "What is Harsh Verma's global media presence and audience reach?",
+            "Harsh Verma has been featured across 43+ tier-one media outlets, podcasts, and international publications, generating an estimated cumulative reach of over 3.75 billion potential views."
+        ),
+        (
+            "What tier-one publications feature Harsh Verma's insights?",
+            "Features and regular columns appear in Forbes, HackerNoon, global technology trade media, and syndicated tech journalism platforms."
+        ),
+        (
+            "What topics does Harsh Verma discuss in media interviews?",
+            "Interviews focus on the future of autonomous agent ecosystems, AI threat vectors, enterprise security posture, engineering leadership, and responsible AI innovation."
+        ),
+        (
+            "What is the media distribution analytics dossier?",
+            "The Media Distribution Analytics page provides comprehensive verified metrics, syndication reach statistics, and international geographic impact data."
+        ),
+        (
+            "How can journalists and podcast hosts book an interview with Harsh Verma?",
+            "Press inquiries, podcast guest requests, and editorial quotes can be submitted through the Media page or emailed directly to harshverma59@gmail.com."
+        ),
+        (
+            "Where can media organizations download official high-resolution headshots?",
+            "High-resolution executive portraits, official bios, and brand assets are downloadable directly on the Media and About hubs."
+        ),
+        (
+            "Where can I listen to podcasts featuring Harsh Verma?",
+            "Podcast episodes, audio interviews, and broadcast appearances are cataloged with direct streaming links on the official Media Hub at harshverma.me/page-media."
+        ),
+    ],
+    "blog": [
+        (
+            "What topics does Harsh Verma write about in his technical columns?",
+            "Harsh Verma writes on agentic reasoning topologies, trust frameworks in multi-agent networks, autonomous insider threat models, and microservices decomposition."
+        ),
+        (
+            "What is 'The Agentic Systems & AI Dispatch'?",
+            "The Dispatch is Harsh Verma's curated newsletter delivering strategic analysis, architectural patterns, and security briefs for enterprise AI leaders."
+        ),
+        (
+            "What are Harsh Verma's featured articles on Forbes Technology Council?",
+            "Popular articles examine building real enterprise AI moats, securing autonomous multi-agent pipelines, and operationalizing generative AI at scale."
+        ),
+        (
+            "What is Harsh Verma's technical column series on HackerNoon?",
+            "The HackerNoon series investigates distributed intelligence, reputation protocols for autonomous agents, and cryptographic auditability in production."
+        ),
+        (
+            "How can readers subscribe to new article alerts?",
+            "Readers can subscribe via the newsletter form on any blog page or RSS feed at harshverma.me/rss.xml to receive immediate publication notices."
+        ),
+        (
+            "Are presentation slides available for Harsh Verma's articles and talks?",
+            "Yes, companion slide decks and EasyChair Smart Slides™ are accessible on the Slides and Smart Slides pages at harshverma.me/page-slides."
+        ),
+    ],
+}
+
+
+def get_hub_key(fname):
+    if fname.startswith("index"):
+        return "home"
+    elif fname == "page-about.html":
+        return "about"
+    elif fname == "page-publications.html":
+        return "publications"
+    elif fname in ("page-speaker.html", "speaker.html", "page-events.html"):
+        return "speaker"
+    elif fname == "page-books.html":
+        return "books"
+    elif fname in ("page-advisory.html", "advisory.html", "board.html"):
+        return "advisory"
+    elif fname in ("page-awards.html", "awards.html"):
+        return "awards"
+    elif fname == "page-memberships.html":
+        return "memberships"
+    elif fname in ("page-media.html", "page-media-distribution-analytics.html"):
+        return "media"
+    else:
+        return "blog"
+
+
 def inject_graph_across_all_pages(kg):
     schema_json_str = json.dumps(kg["schema_json_ld"])
     script_block = (
@@ -1935,6 +2254,7 @@ def inject_graph_across_all_pages(kg):
         "page-about.html": f"{CANONICAL_SITE_URL}/page-about",
         "page-publications.html": f"{CANONICAL_SITE_URL}/page-publications",
         "page-awards.html": f"{CANONICAL_SITE_URL}/page-awards",
+        "awards.html": f"{CANONICAL_SITE_URL}/page-awards",
         "page-books.html": f"{CANONICAL_SITE_URL}/page-books",
         "page-blog.html": f"{CANONICAL_SITE_URL}/page-blog",
         "page-blog-detail.html": f"{CANONICAL_SITE_URL}/page-blog",
@@ -1965,6 +2285,7 @@ def inject_graph_across_all_pages(kg):
         "page-about.html": ("ProfilePage", "Harsh Verma Official Portfolio"),
         "page-publications.html": ("CollectionPage", "Publications & Research | Harsh Verma - Google Scholar Profile & Peer-Reviewed Papers"),
         "page-awards.html": ("ItemPage", "Harsh Verma | Awards, Honors & Global Recognitions"),
+        "awards.html": ("ItemPage", "Harsh Verma | Awards, Honors & Global Recognitions"),
         "page-books.html": ("CollectionPage", "Authored Books & Technical Reviews | Harsh Verma - Enterprise AI & Cyber Defense"),
         "page-blog.html": ("CollectionPage", "Harsh Verma | Thought Leadership, Forbes Tech Council & Technical Columns"),
         "page-blog-detail.html": ("ItemPage", "Harsh Verma | Technical Column & Deep Dive"),
@@ -2085,9 +2406,32 @@ def inject_graph_across_all_pages(kg):
                 page_graph.append(p_copy)
                 break
 
+        # Add Hub-Tailored FAQPage Node
+        hub_key = get_hub_key(fname)
+        qas = HUB_FAQ_DATA.get(hub_key, HUB_FAQ_DATA["home"])
+        faq_main_entity = []
+        for q, a in qas:
+            faq_main_entity.append({
+                "@type": "Question",
+                "name": q,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": a
+                }
+            })
+        faq_node = {
+            "@type": "FAQPage",
+            "@id": f"{can_url}#faq",
+            "url": can_url,
+            "name": f"Frequently Asked Questions | Harsh Verma Official Portfolio",
+            "isPartOf": {"@id": f"{CANONICAL_SITE_URL}/#website"},
+            "mainEntity": faq_main_entity
+        }
+        page_graph.append(faq_node)
+
         # Append all other contextual nodes (Books, Reviews, TechArticles, ScholarlyArticles)
         for n in kg["schema_json_ld"]["@graph"]:
-            if n.get("@type") not in ("WebSite", "ProfilePage", "WebPage", "Person"):
+            if n.get("@type") not in ("WebSite", "ProfilePage", "WebPage", "Person", "FAQPage"):
                 page_graph.append(n)
 
         page_schema_payload = {
