@@ -5089,11 +5089,18 @@
         "givenName": "Harsh",
         "familyName": "Verma",
         "alternateName": [
+          "Harsh Verma",
           "Harsh Verma (Software Engineer)",
           "Harsh Verma AI",
           "iamharshverma",
           "harshverma59"
         ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Software Engineer",
+          "occupationalCategory": "15-1252.00",
+          "description": "Software Engineer and Artificial Intelligence Specialist"
+        },
         "jobTitle": [
           "Principal Software Engineer (AI)",
           "Enterprise AI Architect",
@@ -6977,7 +6984,7 @@
           "https://loop.frontiersin.org/people/3757183/overview",
           "https://aijourn.com/"
         ],
-        "disambiguatingDescription": "American-based Indian software engineer, Principal AI Engineer at Palo Alto Networks, author, researcher, member of Forbes Technology Council, and Fellow of the British Computer Society (FBCS). Google Knowledge Graph ID: /g/11njtn74r4."
+        "disambiguatingDescription": "Software Engineer, Principal AI Engineer at Palo Alto Networks, author, keynote speaker, and researcher. Distinct from other public figures named Harsh Verma. Primary entity name: Harsh Verma; Primary occupation: Software Engineer. Google Knowledge Graph ID: /g/11njtn74r4."
       },
       {
         "@type": "Book",
