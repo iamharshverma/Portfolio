@@ -2423,6 +2423,11 @@
             "label": "LinkedIn Profile",
             "url": "https://www.linkedin.com/in/harshverma59/",
             "icon": "mdi-linkedin"
+          },
+          {
+            "label": "LinkedIn Feature",
+            "url": "https://lnkd.in/p/gNqkPntJ",
+            "icon": "mdi-linkedin"
           }
         ],
         "citation": "Verma, H. (2026). Most Admire Global Indians 2026 Honoree: Transforming Enterprise AI and Scalable Autonomous Systems. Global Indian Leadership Forum."
@@ -5649,7 +5654,8 @@
             "sameAs": [
               "https://www.passionvista.com/",
               "https://harshverma.bio/",
-              "https://www.linkedin.com/in/harshverma59/"
+              "https://www.linkedin.com/in/harshverma59/",
+              "https://lnkd.in/p/gNqkPntJ"
             ]
           },
           {
