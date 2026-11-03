@@ -246,8 +246,8 @@ copilot_data_path = os.path.join(ROOT_DIR, 'data', 'copilot-knowledge.js')
 with open(copilot_data_path, 'r', encoding='utf-8') as f:
     copilot_data = f.read()
 
-copilot_data = copilot_data.replace('54 Verified Academic &amp; Industry Hubs', '54 Verified Academic &amp; Industry Hubs')
-copilot_data = copilot_data.replace('54 Verified Academic &amp; Industry Hubs', '54 Verified Academic &amp; Industry Hubs')
+copilot_data = copilot_data.replace('57 Verified Academic &amp; Industry Hubs', '57 Verified Academic &amp; Industry Hubs')
+copilot_data = copilot_data.replace('57 Verified Academic &amp; Industry Hubs', '57 Verified Academic &amp; Industry Hubs')
 
 # Add entries to verifiedProfiles in copilot-knowledge if present
 if 'judges.bintelligence.com' not in copilot_data:
@@ -263,8 +263,8 @@ copilot_js_path = os.path.join(ROOT_DIR, 'js', 'hv-copilot.js')
 with open(copilot_js_path, 'r', encoding='utf-8') as f:
     copilot_js = f.read()
 
-copilot_js = copilot_js.replace('54 Verified Academic &amp; Industry Hubs', '54 Verified Academic &amp; Industry Hubs')
-copilot_js = copilot_js.replace('54 Verified Academic/Professional Registries', '54 Verified Academic/Professional Registries')
+copilot_js = copilot_js.replace('57 Verified Academic &amp; Industry Hubs', '57 Verified Academic &amp; Industry Hubs')
+copilot_js = copilot_js.replace('57 Verified Academic/Professional Registries', '57 Verified Academic/Professional Registries')
 
 with open(copilot_js_path, 'w', encoding='utf-8') as f:
     f.write(copilot_js)
@@ -286,8 +286,8 @@ for fn in glob.glob(os.path.join(ROOT_DIR, '*.html')) + glob.glob(os.path.join(R
     with open(fn, 'r', encoding='utf-8', errors='ignore') as f:
         c = f.read()
     c_new = c.replace('Verified Profiles Hub', 'Verified Profiles Hub')
-    c_new = c_new.replace('Full Biography &amp; 54 Verified Profiles', 'Full Biography &amp; 54 Verified Profiles')
-    c_new = c_new.replace('Full Biography &amp; 54 Verified Profiles', 'Full Biography &amp; 54 Verified Profiles')
+    c_new = c_new.replace('Full Biography &amp; 57 Verified Profiles', 'Full Biography &amp; 57 Verified Profiles')
+    c_new = c_new.replace('Full Biography &amp; 57 Verified Profiles', 'Full Biography &amp; 57 Verified Profiles')
     if c_new != c:
         with open(fn, 'w', encoding='utf-8') as f:
             f.write(c_new)

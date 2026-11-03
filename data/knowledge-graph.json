@@ -17,7 +17,7 @@
   "localwiki_santaclara_url": "https://localwiki.org/santaclara/Harsh_Verma",
   "localwiki_dallas_url": "https://localwiki.org/dallas/Harsh_Verma",
   "counts": {
-    "profiles": 55,
+    "profiles": 58,
     "media": 44,
     "awards": 27,
     "blogs": 29,
@@ -25,7 +25,7 @@
     "papers": 27,
     "associations": 26,
     "wikidata_claims": 31,
-    "total_linked_nodes": 216
+    "total_linked_nodes": 219
   },
   "wikidata_claims": [
     {
@@ -855,6 +855,33 @@
         "description": "Verified Review Editor and Editorial Board member on Loop (Frontiers Media) for Frontiers in Education, evaluating peer-reviewed scientific breakthroughs at the intersection of AI, cognitive technologies, and educational systems.",
         "image": "images/profiles/frontiers_education.svg",
         "url": "https://loop.frontiersin.org/people/3757183/overview"
+      },
+      {
+        "title": "Foam Speaker & Media Kit",
+        "category": "media",
+        "category_label": "Media & Press",
+        "identifier": "Verified Media Kit",
+        "description": "Official interactive speaker one-sheet and digital press kit on Foam, detailing executive bio, keynote availability, topics, and broadcast assets.",
+        "image": "images/profiles/foam.svg",
+        "url": "https://app.usefoam.com/shared/media-kits/0d3617d7"
+      },
+      {
+        "title": "Maven Instructor Profile",
+        "category": "developer",
+        "category_label": "Developer & AI Hubs",
+        "identifier": "AI Instructor",
+        "description": "Verified instructor profile on Maven, leading expert cohorts and practical masterclasses on enterprise AI architecture, autonomous agents, and software scaling.",
+        "image": "images/profiles/maven.svg",
+        "url": "https://maven.com/harshverma"
+      },
+      {
+        "title": "Bluesky Social",
+        "category": "direct",
+        "category_label": "Direct Connect & Networks",
+        "identifier": "@harshverma59.bsky.social",
+        "description": "Official decentralized social channel on Bluesky sharing real-time perspectives on autonomous agent security, AI engineering research, and tech leadership.",
+        "image": "images/profiles/bluesky.svg",
+        "url": "https://bsky.app/profile/harshverma59.bsky.social"
       }
     ],
     "media": [

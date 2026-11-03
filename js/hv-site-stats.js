@@ -17,7 +17,7 @@
         patentsCount: 6,
         mediaCount: 44,
         mediaDisplay: "44+",
-        profilesCount: 54
+        profilesCount: 57
     };
 
     function applyStatsToDOM() {

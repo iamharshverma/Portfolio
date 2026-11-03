@@ -660,6 +660,45 @@ PROFILE_LINKS = [
         "badgeColor": "#6364FF",
         "tag": "Verified Social Profile",
         "description": "Official verified Mastodon profile on the decentralized Fediverse network, sharing thoughts on open-source AI, agentic systems, and tech leadership."
+    },
+    {
+        "id": "foam-media-kit",
+        "category": "media",
+        "categoryLabel": "Media Features & Press",
+        "name": "Foam Speaker & Media Kit",
+        "identifier": "Verified Media Kit",
+        "url": "https://app.usefoam.com/shared/media-kits/0d3617d7",
+        "icon": "mdi-microphone-variant",
+        "thumb": "images/profiles/foam.svg",
+        "badgeColor": "#4f46e5",
+        "tag": "Speaker & Press Kit",
+        "description": "Official interactive speaker one-sheet and digital press kit on Foam, detailing executive bio, keynote availability, topics, and broadcast assets."
+    },
+    {
+        "id": "maven-instructor",
+        "category": "developer",
+        "categoryLabel": "Developer & AI Hubs",
+        "name": "Maven Instructor Profile",
+        "identifier": "AI Instructor",
+        "url": "https://maven.com/harshverma",
+        "icon": "mdi-school-outline",
+        "thumb": "images/profiles/maven.svg",
+        "badgeColor": "#10b981",
+        "tag": "Cohort Leader",
+        "description": "Verified instructor profile on Maven, leading expert cohorts and practical masterclasses on enterprise AI architecture, autonomous agents, and software scaling."
+    },
+    {
+        "id": "bluesky-social",
+        "category": "direct",
+        "categoryLabel": "Direct Connect & Networks",
+        "name": "Bluesky Social",
+        "identifier": "@harshverma59.bsky.social",
+        "url": "https://bsky.app/profile/harshverma59.bsky.social",
+        "icon": "mdi-butterfly",
+        "thumb": "images/profiles/bluesky.svg",
+        "badgeColor": "#0284c7",
+        "tag": "AT Protocol Presence",
+        "description": "Official decentralized social channel on Bluesky sharing real-time perspectives on autonomous agent security, AI engineering research, and tech leadership."
     }
 ]
 
