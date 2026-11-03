@@ -2151,7 +2151,7 @@ HUB_FAQ_DATA = {
     "media": [
         (
             "Where can I find Harsh Verma's media features and press coverage?",
-            "Harsh Verma has been featured across 43+ tier-one media outlets, podcasts, and international publications, including Forbes, HackerNoon, and global technology broadcasts, generating an estimated cumulative reach of over 3.75 billion potential views."
+            "Harsh Verma has been featured across 44+ tier-one media outlets, podcasts, and international publications, including Forbes, HackerNoon, and global technology broadcasts, generating an estimated cumulative reach of over 3.75 billion potential views."
         ),
         (
             "Where can journalists and media producers download Harsh Verma's official press kits?",
@@ -2185,7 +2185,7 @@ HUB_FAQ_DATA = {
         ),
         (
             "How is the 3.75B+ potential media audience reach measured?",
-            "The metric aggregates verified circulation, monthly unique visitors (MUV), and syndication footprints across 43+ tier-one media features, international broadcasts, and digital publication networks."
+            "The metric aggregates verified circulation, monthly unique visitors (MUV), and syndication footprints across 44+ tier-one media features, international broadcasts, and digital publication networks."
         ),
         (
             "What tier-one media outlets are included in the analytics breakdown?",

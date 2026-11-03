@@ -1731,7 +1731,7 @@ def query_and_sync_everybodywiki(wikitext):
             "action": "edit",
             "title": EVERYBODYWIKI_TITLE,
             "text": wikitext,
-            "summary": "Comprehensive biography update: Palo Alto Networks AI role, Stanford/UTD/UTU education, 2 authored books, 27+ papers, 27 awards, 26 fellowships, 42+ media features, and Wikidata Q139827028 authority links",
+            "summary": "Comprehensive biography update: Palo Alto Networks AI role, Stanford/UTD/UTU education, 2 authored books, 27+ papers, 27 awards, 26 fellowships, 44+ media features, and Wikidata Q139827028 authority links",
             "token": csrf_token,
             "format": "json",
         }).encode("utf-8")
