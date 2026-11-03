@@ -15,8 +15,8 @@
         booksCount: 2,
         booksReviewed: 6,
         patentsCount: 6,
-        mediaCount: 43,
-        mediaDisplay: "43+",
+        mediaCount: 44,
+        mediaDisplay: "44+",
         profilesCount: 54
     };
 

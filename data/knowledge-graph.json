@@ -1079,6 +1079,36 @@
         "quote": "Intelligent agents must operate under strict deterministic governance; autonomy without bounded perimeters is a vulnerability."
       },
       {
+        "id": "media-bcs-fellow-spotlight",
+        "title": "BCS, The Chartered Institute for IT: Harsh Verma FBCS Member Spotlight",
+        "outlet": "BCS, The Chartered Institute for IT",
+        "type": "institutional",
+        "type_label": "Institutional Feature",
+        "year": "2026",
+        "date_display": "2026",
+        "badge_theme": "emerald",
+        "icon_svg": "bcs_feature_badge.svg",
+        "highlight": "BCS Official Feature",
+        "summary": "The Chartered Institute for IT features Fellow Harsh Verma FBCS discussing the role of ethical leadership, advancing scalable AI and cybersecurity, mentoring founders through Berkeley SkyDeck, and empowering tech professionals worldwide.",
+        "topics": [
+          "BCS Fellow",
+          "FBCS Spotlight",
+          "Ethical AI",
+          "Cybersecurity Leadership",
+          "Chartered Institute for IT"
+        ],
+        "stats": "Official BCS Our Members Profile",
+        "primary_url": "https://www.bcs.org/membership-and-registrations/our-members/harsh-verma-fbcs",
+        "links": [
+          {
+            "label": "Read BCS Feature",
+            "url": "https://www.bcs.org/membership-and-registrations/our-members/harsh-verma-fbcs",
+            "icon": "mdi-open-in-new"
+          }
+        ],
+        "quote": "The true measure of technological leadership is not simply what we build, but the impact we create, the challenges we solve, and the people we empower along the way."
+      },
+      {
         "id": "media-skydeck-era-agentic-security",
         "title": "UC Berkeley SkyDeck: The Era of Agentic Security (Batch 21 Keynote)",
         "outlet": "UC Berkeley SkyDeck",
@@ -6246,6 +6276,26 @@
               "https://youtu.be/MPhFC1h5GIc?si=B5uQXexHIKw2dAk0",
               "https://luma.com/ozoptgmg",
               "https://www.linkedin.com/posts/harshverma59_cybersecurity-genai-aiinnovation-activity-7357580628168503296-q2sW"
+            ]
+          },
+          {
+            "@type": "Article",
+            "@id": "https://www.harshverma.me/page-media#media-bcs-fellow-spotlight",
+            "headline": "BCS, The Chartered Institute for IT: Harsh Verma FBCS Member Spotlight",
+            "name": "BCS, The Chartered Institute for IT: Harsh Verma FBCS Member Spotlight",
+            "description": "The Chartered Institute for IT features Fellow Harsh Verma FBCS discussing the role of ethical leadership, advancing scalable AI and cybersecurity, mentoring founders through Berkeley SkyDeck, and empowering tech professionals worldwide.",
+            "url": "https://www.bcs.org/membership-and-registrations/our-members/harsh-verma-fbcs",
+            "datePublished": "2026",
+            "image": "https://www.harshverma.me/images/media/bcs_feature_badge.svg",
+            "about": {
+              "@id": "https://www.harshverma.me/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "BCS, The Chartered Institute for IT"
+            },
+            "sameAs": [
+              "https://www.bcs.org/membership-and-registrations/our-members/harsh-verma-fbcs"
             ]
           },
           {

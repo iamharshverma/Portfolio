@@ -1,0 +1,37 @@
+<svg width="600" height="340" viewBox="0 0 600 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradBCS" x1="0" y1="0" x2="600" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#02182b" />
+      <stop offset="50%" stop-color="#00284d" />
+      <stop offset="100%" stop-color="#061220" />
+    </linearGradient>
+    <linearGradient id="greenBCS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" rx="16" fill="url(#bgGradBCS)" />
+  <rect x="1.5" y="1.5" width="597" height="337" rx="14.5" stroke="rgba(52,211,153,0.3)" stroke-width="3"/>
+  <circle cx="520" cy="70" r="130" fill="#059669" opacity="0.12" />
+  <circle cx="80" cy="270" r="110" fill="#0284c7" opacity="0.1" />
+
+  <!-- Pill -->
+  <rect x="180" y="36" width="240" height="28" rx="14" fill="rgba(5,150,105,0.25)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="300" y="54" fill="#6ee7b7" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">MEMBER SPOTLIGHT</text>
+
+  <!-- BCS Logo / Text -->
+  <rect x="268" y="80" width="64" height="64" rx="12" fill="#003865" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <text x="300" y="123" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="26" font-weight="900" text-anchor="middle">BCS</text>
+
+  <text text-anchor="middle" x="300" y="172" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="800" letter-spacing="0.5">The Chartered Institute for IT</text>
+  <text text-anchor="middle" x="300" y="196" fill="url(#greenBCS)" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="700" letter-spacing="0.5">Fellow Feature • Harsh Verma FBCS</text>
+
+  <rect x="40" y="214" width="520" height="1.5" fill="rgba(255,255,255,0.15)" />
+
+  <text text-anchor="middle" x="300" y="248" fill="#f1f5f9" font-family="'Segoe UI', -apple-system, sans-serif" font-size="17" font-weight="700">Advancing AI, Cybersecurity &amp; Ethical Leadership</text>
+  <text text-anchor="middle" x="300" y="274" fill="#94a3b8" font-family="'Segoe UI', -apple-system, sans-serif" font-size="13.5">Official BCS Our Members Profile &amp; Leadership Q&amp;A</text>
+
+  <!-- Verified Badge -->
+  <rect x="225" y="292" width="150" height="26" rx="6" fill="rgba(16,185,129,0.2)" stroke="#10b981" stroke-width="1"/>
+  <text x="300" y="309" fill="#a7f3d0" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="700" text-anchor="middle">INSTITUTIONAL FEATURE</text>
+</svg>
