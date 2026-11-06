@@ -1,0 +1,253 @@
+#!/usr/bin/env python3
+"""
+scripts/generate_about_and_work.py
+==================================
+Generates comprehensive, authoritative JSON files for:
+1. data/about.json
+2. data/professional_work.json
+"""
+
+import os
+import json
+
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(ROOT_DIR, "data")
+os.makedirs(DATA_DIR, exist_ok=True)
+
+def generate_about_json():
+    about_data = {
+        "metadata": {
+            "document_title": "Harsh Verma - Official Executive Profile & About Dossier",
+            "version": "2026.1",
+            "canonical_url": "https://www.harshverma.me/page-about",
+            "last_updated": "2026"
+        },
+        "person": {
+            "name": "Harsh Verma",
+            "post_nominals": "FBCS, SMIEEE, FRSA",
+            "full_name": "Harsh Verma, FBCS, SMIEEE, FRSA",
+            "headline": "Principal Software Engineer in AI | Author | International Keynote Speaker | Forbes Tech Council | Fellow (FBCS) | Senior Member (SMIEEE)",
+            "current_role": "Principal Software Engineer (AI)",
+            "current_organization": "Palo Alto Networks",
+            "organization_url": "https://www.paloaltonetworks.com/",
+            "location": "Silicon Valley, California, United States",
+            "official_website": "https://www.harshverma.me",
+            "email_contact": "contact@harshverma.me",
+            "short_bio": "Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, an elected Fellow of the British Computer Society (FBCS), Senior Member of IEEE (SMIEEE), and Forbes Technology Council member. With 27 peer-reviewed papers, 6 patents, 2 authored books, and 27 global awards, he pioneers autonomous agent architectures and enterprise AI cyber defense."
+        },
+        "authority_identifiers": {
+            "wikidata_id": "Q139827028",
+            "wikidata_url": "https://www.wikidata.org/wiki/Q139827028",
+            "google_knowledge_graph_id": "/g/11njtn74r4",
+            "google_kg_url": "https://www.google.com/search?kgmid=/g/11njtn74r4",
+            "orcid": "0000-0002-8600-4740",
+            "orcid_url": "https://orcid.org/0000-0002-8600-4740",
+            "ieee_author_id": "37089143797",
+            "ieee_author_url": "https://ieeexplore.ieee.org/author/37089143797",
+            "google_scholar_url": "https://scholar.google.com/citations?user=d_E7TzUAAAAJ",
+            "crunchbase_url": "https://www.crunchbase.com/person/harsh-verma-024c",
+            "acm_profile": "https://dl.acm.org/profile/99661413661",
+            "dblp_profile": "https://dblp.org/pid/344/5799.html",
+            "forbes_profile": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/",
+            "bcs_profile": "https://www.bcs.org/membership-and-registrations/our-members/harsh-verma-fbcs",
+            "semantic_scholar": "https://www.semanticscholar.org/author/Harsh-Verma/2290459392",
+            "researchgate": "https://www.researchgate.net/profile/Harsh-Verma-48",
+            "github": "https://github.com/iamharshverma",
+            "linkedin": "https://www.linkedin.com/in/harsh-verma/"
+        },
+        "executive_biographies": {
+            "comprehensive_bio": (
+                "Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, focused on advancing autonomous "
+                "agent systems, multi-agent reasoning topologies, and intelligent AI defense strategies. As an elected Fellow of "
+                "the British Computer Society (FBCS), Senior Member of the IEEE (SMIEEE), Fellow of the Royal Society of Arts (FRSA), "
+                "and official Forbes Technology Council member, he brings deep technical rigor and strategic guidance to enterprise "
+                "leaders adopting next-generation AI capabilities. Harsh leads the operationalization of responsible, deterministic AI "
+                "systems across Fortune 500 environments, architecting high-scale telemetry ingestion platforms, intelligent multi-agent "
+                "guardrails, and real-time copilot navigation engines. Over his decade-long career spanning ISRO, Hike Messenger, "
+                "Reliance Jio, Worlds, and Hypergiant, he has published 27 peer-reviewed papers across IEEE, Springer, and Oxford University "
+                "Press venues, authored 2 landmark books on autonomous agents and AI cyber defense, and developed an intellectual property "
+                "portfolio of 6 patents (2 granted, 4 pending at Palo Alto Networks)."
+            ),
+            "speaking_and_event_bio": (
+                "Harsh Verma is a Silicon Valley AI systems architect, author, and keynote speaker serving as Principal AI Engineer at "
+                "Palo Alto Networks. Recognized globally as an IEEE Senior Member, BCS Fellow, and Forbes Technology Council columnist, "
+                "Harsh speaks internationally on autonomous multi-agent systems, machine-speed cybersecurity counteroffensives, and the "
+                "evolution from AI creator to AI curator. His work has reached over 3.75 billion people worldwide through tier-1 media "
+                "features, Times Square broadcasts, and leading technical conferences."
+            ),
+            "board_and_governance_bio": (
+                "Harsh Verma advises corporate boards, sovereign entities, and high-growth venture ecosystems on artificial intelligence "
+                "governance, algorithmic risk mitigation, and enterprise technical transformation. A global advisor at UC Berkeley "
+                "SkyDeck, Stanford GSB LEAD alumnus, and MS Computer Science graduate from UT Dallas, Harsh combines deep architectural "
+                "fluency in distributed cloud infrastructure with proven governance frameworks for mission-critical, highly regulated deployments."
+            )
+        },
+        "strategic_expertise_pillars": [
+            {
+                "pillar_id": "pillar-autonomous-agents",
+                "title": "Autonomous Agent Systems & Multi-Agent Workflows",
+                "description": "Architecting resilient, deterministic multi-agent topologies where autonomous AI entities execute complex reasoning, tool calling, and self-healing remediation loops without human intervention.",
+                "core_competencies": [
+                    "Multi-Agent Orchestration",
+                    "Deterministic Tool Execution",
+                    "Self-Healing State Machines",
+                    "Context Window Management",
+                    "Dynamic Consensus Protocols"
+                ]
+            },
+            {
+                "pillar_id": "pillar-enterprise-cyber-defense",
+                "title": "Enterprise AI Security & Cyber Defense",
+                "description": "Formulating machine-speed counteroffensives against sophisticated adversarial attacks, including prompt provenance verification, behavioral sandboxing, and trust-graph vulnerability modeling.",
+                "core_competencies": [
+                    "Adversarial AI Mitigation",
+                    "Prompt Injection Containment",
+                    "Trust Graph Modeling",
+                    "Machine-Speed Incident Response",
+                    "Zero-Trust Agent Governance"
+                ]
+            },
+            {
+                "pillar_id": "pillar-distributed-cloud-infrastructure",
+                "title": "Distributed Cloud Systems & Real-Time AI Infrastructure",
+                "description": "Engineering high-throughput streaming fabrics capable of ingesting millions of telemetry events per second across distributed Apache Spark, Kafka, and GCP/AWS cloud architectures.",
+                "core_competencies": [
+                    "Real-Time Telemetry Ingestion",
+                    "High-Throughput Load Simulation",
+                    "Distributed Feature Stores",
+                    "Low-Latency Vector Search (FAISS)",
+                    "Cloud Security Fabric Integration"
+                ]
+            },
+            {
+                "pillar_id": "pillar-executive-advisory-mentorship",
+                "title": "Executive Advisory & UC Berkeley SkyDeck Mentorship",
+                "description": "Guiding venture-backed startups, enterprise CTOs, and global founders through technical roadmapping, AI monetization, and scalable organizational governance.",
+                "core_competencies": [
+                    "Venture Advisory & Pitch Evaluation",
+                    "Enterprise AI Adoption Strategy",
+                    "Startup Architecture Due Diligence",
+                    "Board-Level AI Governance",
+                    "Global Ecosystem Mentorship"
+                ]
+            }
+        ],
+        "career_trajectory_milestones": [
+            {
+                "phase": "Phase 01: Satellite Geospatial Computing & Space R&D",
+                "period": "2015",
+                "organization": "Indian Space Research Organisation (ISRO) · IIRS",
+                "role": "Research & Development Intern",
+                "location": "Dehradun, India",
+                "description": "Engineered advanced geospatial algorithms, satellite remote sensing pipelines, and high-performance raster data processing systems analyzing Earth observation data.",
+                "technologies": ["Spatial Computing", "Satellite Remote Sensing", "Python", "C++", "GIS Algorithms", "Raster Processing"],
+                "highlight": "Processed satellite imagery at national aerospace scale."
+            },
+            {
+                "phase": "Phase 02: High-Scale Distributed Messaging & Load Simulation",
+                "period": "2015 – 2018",
+                "organization": "Hike Messenger",
+                "role": "Software Development Engineer",
+                "location": "New Delhi, India",
+                "description": "Architected low-latency distributed messaging backend services supporting over 100M registered users. Invented novel automated high-throughput load testing and performance stress simulation architecture resulting in Granted Patent 555747.",
+                "technologies": ["Distributed Systems", "Load Simulation", "Java", "Akka", "Netty", "Redis", "Performance Benchmarking"],
+                "highlight": "Granted Patent 555747 for distributed load testing architecture."
+            },
+            {
+                "phase": "Phase 03: Telecom-Scale Real-Time Data Streaming",
+                "period": "2018 – 2019",
+                "organization": "Reliance Jio",
+                "role": "Senior Software Engineer - Distributed Systems",
+                "location": "Navi Mumbai, India",
+                "description": "Spearheaded petabyte-scale real-time telemetry streaming platforms across 400M+ mobile subscribers. Implemented distributed Kafka clusters and Apache Spark streaming jobs with microsecond latency tolerances.",
+                "technologies": ["Apache Spark", "Apache Kafka", "Cassandra", "Distributed Streaming", "Big Data Analytics", "High Concurrency"],
+                "highlight": "Processed telecom event streams for 400M+ nationwide subscribers."
+            },
+            {
+                "phase": "Phase 04: Advanced Computer Science & Cloud Security Research",
+                "period": "2019 – 2020",
+                "organization": "The University of Texas at Dallas & Palo Alto Networks",
+                "role": "Graduate Researcher & Cloud Security Engineer",
+                "location": "Richardson & Santa Clara, USA",
+                "description": "Conducted graduate research in Intelligent Systems and Cognitive Machine Learning at UT Dallas. Formulated secure heterogeneous data management tools and load scaling architectures presented at IEEE CogML.",
+                "technologies": ["Intelligent Systems", "Cognitive ML", "Cloud Security", "Distributed Data Management", "Python", "TensorFlow"],
+                "highlight": "Published foundational IEEE CogML research on heterogeneous data management."
+            },
+            {
+                "phase": "Phase 05: Spatial AI, Computer Vision & High-Speed Vector Retrieval",
+                "period": "2019 – 2020",
+                "organization": "Worlds Enterprises Inc. & Hypergiant Sensory Science",
+                "role": "Machine Learning Engineer",
+                "location": "Dallas & Austin, TX, USA",
+                "description": "Engineered real-time Multi-Object Tracking (MOT) and spatial analytics ML pipelines. Designed million-scale visual similarity search modules powered by FAISS vector embeddings and ResNet-50 deep neural representations.",
+                "technologies": ["FAISS Vector Search", "PyTorch", "ResNet-50", "YOLO-v3", "DeepSORT", "Apache Spark", "Computer Vision"],
+                "highlight": "Delivered sub-10ms million-scale vector retrieval and enhanced MOTA tracking."
+            },
+            {
+                "phase": "Phase 06: Flagship AI Systems Leadership & Autonomous Defense",
+                "period": "2020 – Present",
+                "organization": "Palo Alto Networks",
+                "role": "Principal Software Engineer (AI | ML)",
+                "location": "Santa Clara, California, USA",
+                "description": "Spearheading flagship enterprise AI security architectures protecting Global 2000 organizations. Architecting autonomous agentic AI perimeters, enterprise copilot reasoning loops, copilot navigation architectures (4 patents in-process), and real-time firewall machine learning engines.",
+                "technologies": ["Autonomous Agent Systems", "Copilot Navigation", "Apache Spark", "Apache Kafka", "GCP Cloud Infrastructure", "Zero-Trust Guardrails"],
+                "highlight": "Invented 4 proprietary patent-pending Copilot Navigation and Agentic AI architectures."
+            }
+        ],
+        "education_and_executive_credentials": [
+            {
+                "institution": "Stanford University Graduate School of Business",
+                "credential": "Executive Program - Stanford LEAD: Corporate Innovation & Technology Strategy",
+                "period": "Executive Education",
+                "location": "Stanford, California, USA",
+                "focus": "Corporate Innovation, Disruption Strategy, Enterprise Technology Leadership, Venture Economics"
+            },
+            {
+                "institution": "The University of Texas at Dallas",
+                "credential": "Master of Science in Computer Science (MS CS)",
+                "period": "Graduate Studies",
+                "location": "Richardson, Texas, USA",
+                "focus": "Intelligent Systems, Cognitive Machine Learning, Distributed Systems, High-Performance Computing"
+            }
+        ],
+        "verified_metrics": {
+            "peer_reviewed_publications": 27,
+            "patents_total": 6,
+            "patents_granted": 2,
+            "patents_in_process": 4,
+            "prestigious_awards_and_honors": 27,
+            "tier1_media_features": 44,
+            "verified_directory_profiles": 57,
+            "fellowships_and_councils": 26,
+            "global_audience_reach": "3.75B+",
+            "keynote_addresses_delivered": 12,
+            "judging_appointments": 21,
+            "authored_books": 2,
+            "technical_peer_reviewed_volumes": 6
+        },
+        "speaking_and_advisory_guidelines": {
+            "keynote_topics": [
+                "Beyond AI Engineering: Curation, Autonomous Agents, and the Future of Software Systems",
+                "AI vs. AI: Architecting Machine-Speed Cybersecurity Counteroffensives",
+                "The Anatomy of Clean Attacks: Neutralizing Semantically Valid Adversarial AI",
+                "Autonomous Multi-Agent Topologies for Fortune 500 Enterprise Operations",
+                "Physical AI & Embodied Intelligence: When AI Starts Acting in the Real World"
+            ],
+            "advisory_scope": [
+                "Enterprise AI Strategy & Architecture Due Diligence",
+                "Venture-Backed Startup Mentorship & Product Roadmapping",
+                "CISO & Executive Board Cybersecurity Threat Briefings",
+                "Global Hackathon & Innovation Challenge Judging"
+            ],
+            "booking_terms": "Engagements are accepted selectively based on strategic alignment, technical depth, and executive relevance. Requests can be submitted via contact@harshverma.me or the official portfolio contact form."
+        }
+    }
+
+    output_path = os.path.join(DATA_DIR, "about.json")
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(about_data, f, indent=2, ensure_ascii=False)
+    print(f"Exported comprehensive about.json to {output_path}")
+    return about_data
+
+if __name__ == "__main__":
+    generate_about_json()
