@@ -1,0 +1,368 @@
+[
+  {
+    "id": "conf-ieee-icacsdf-2026",
+    "session_title": "UPES & IEEE ICACSDF 2026 Keynote & Technical Session Chair",
+    "event_name": "UPES & IEEE ICACSDF 2026 Keynote & Technical Session Chair",
+    "engagement_type": "Conference Session / Keynote Chair",
+    "role": "Keynote Speaker, Technical Session Chair & Reviewer",
+    "date": "",
+    "location_or_platform": "",
+    "description": "Delivered keynote address on 'When Enterprises Become Multi-Agent Systems', analyzing adversarial resilience, security perimeters, and autonomous decisioning in modern enterprise AI. Also served as Technical Session Chair presiding over conference research paper presentations, alongside evaluating manuscripts on the Microsoft CMT research review board.",
+    "key_topics": [
+      "IEEE ICACSDF",
+      "Technical Session Chair",
+      "Keynote Talk",
+      "Cybersecurity",
+      "Digital Forensics",
+      "Multi-Agent Systems"
+    ],
+    "primary_url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1",
+    "links": [
+      {
+        "label": "Keynote Smart Slides (Deck r92g)",
+        "url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1"
+      },
+      {
+        "label": "ICACSDF Keynote Page",
+        "url": "https://www.icacsdf.org/keynotes.html"
+      },
+      {
+        "label": "Microsoft CMT Portal",
+        "url": "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F"
+      }
+    ]
+  },
+  {
+    "id": "conf-iciotcaa-2026",
+    "session_title": "ICIoTCAA-2026 Keynote & Fellow Member: AI-Enhanced Enterprise Security",
+    "event_name": "ICIoTCAA-2026 Keynote & Fellow Member: AI-Enhanced Enterprise Security",
+    "engagement_type": "Conference Session / Keynote Chair",
+    "role": "Distinguished Keynote Speaker & Inducted Fellow Member",
+    "date": "",
+    "location_or_platform": "",
+    "description": "Keynote presentation titled 'Building an AI-Enhanced Enterprise Security Solution Using Artificial Intelligence in Cybersecurity', demonstrating real-time behavioral anomaly detection and threat isolation. Inducted as an official Fellow Member at Science Tech Xplore / ICIoTCAA in recognition of advanced contributions to cybersecurity, artificial intelligence, and computing systems.",
+    "key_topics": [
+      "ICIoTCAA",
+      "Fellow Member",
+      "Enterprise Security",
+      "Keynote",
+      "Science Tech Xplore"
+    ],
+    "primary_url": "https://sciencetechxplore.org/fellow-members1.php",
+    "links": [
+      {
+        "label": "Fellow Member Directory",
+        "url": "https://sciencetechxplore.org/fellow-members1.php"
+      },
+      {
+        "label": "Keynote Announcement",
+        "url": "https://sciencetechxplore.org/conference/keynoteby-ICIoTCAA-2026.php"
+      }
+    ]
+  },
+  {
+    "id": "conf-ai-salon-deepseek",
+    "session_title": "AI Engineering Salon: DeepSeek & The New Paradigm in Foundational Models",
+    "event_name": "AI Engineering Salon: DeepSeek & The New Paradigm in Foundational Models",
+    "engagement_type": "Conference Session / Keynote Chair",
+    "role": "Organizer & Featured Speaker",
+    "date": "",
+    "location_or_platform": "",
+    "description": "Organized and presented a deep technical breakdown on DeepSeek's architectural innovations, Mixture-of-Experts (MoE) efficiency, inference cost reductions, and implications for open source foundational models.",
+    "key_topics": [
+      "DeepSeek",
+      "Foundational Models",
+      "MoE",
+      "AI Salon"
+    ],
+    "primary_url": "https://luma.com/engsalon3?tk=hzeqZR",
+    "links": [
+      {
+        "label": "Luma Event Page",
+        "url": "https://luma.com/engsalon3?tk=hzeqZR"
+      }
+    ]
+  },
+  {
+    "id": "conf-ai-salon-trends-2025",
+    "session_title": "AI Engineering Salon: 2025 AI Trends for Engineering Leaders",
+    "event_name": "AI Engineering Salon: 2025 AI Trends for Engineering Leaders",
+    "engagement_type": "Conference Session / Keynote Chair",
+    "role": "Organizer & Key Speaker",
+    "date": "",
+    "location_or_platform": "",
+    "description": "Curated and delivered an executive briefing for Silicon Valley VP of Engineering and Tech Leads on 2025 AI architectural shifts, multi-agent pipelines, cost optimization, and enterprise governance.",
+    "key_topics": [
+      "AI Trends 2025",
+      "Engineering Leaders",
+      "Enterprise Scale",
+      "Founders Creative"
+    ],
+    "primary_url": "https://luma.com/engsalon1?tk=9XhKKO",
+    "links": [
+      {
+        "label": "Luma Event Page",
+        "url": "https://luma.com/engsalon1?tk=9XhKKO"
+      }
+    ]
+  },
+  {
+    "id": "conf-ai-agent-workshop",
+    "session_title": "AI Engineering Salon: Autonomous Agent Workshop",
+    "event_name": "AI Engineering Salon: Autonomous Agent Workshop",
+    "engagement_type": "Conference Session / Keynote Chair",
+    "role": "Workshop Lead & Instructor",
+    "date": "",
+    "location_or_platform": "",
+    "description": "Led an intensive hands-on technical workshop on designing and orchestrating multi-agent systems, tool calling, memory management, and agent-to-agent feedback loops in production.",
+    "key_topics": [
+      "Agent Workshop",
+      "Multi-Agent",
+      "Hands-on",
+      "Tool Calling"
+    ],
+    "primary_url": "https://luma.com/agentworkshop?tk=lBD1Oj",
+    "links": [
+      {
+        "label": "Luma Event Page",
+        "url": "https://luma.com/agentworkshop?tk=lBD1Oj"
+      }
+    ]
+  },
+  {
+    "id": "conf-atagtr-hikerunner",
+    "session_title": "Global Test Alliance #ATAGTR International Conference",
+    "event_name": "Global Test Alliance #ATAGTR International Conference",
+    "engagement_type": "Conference Session / Keynote Chair",
+    "role": "Conference Speaker & Researcher",
+    "date": "",
+    "location_or_platform": "",
+    "description": "Presented research on 'HikeRunner Load Test Framework', detailing high-concurrency distributed load testing, microservices resilience testing, and automated performance profiling.",
+    "key_topics": [
+      "ATAGTR",
+      "HikeRunner",
+      "Distributed Systems",
+      "Load Testing"
+    ],
+    "primary_url": "https://gtr2017.agiletestingalliance.org/speakers/#harshv",
+    "links": [
+      {
+        "label": "Conference Speakers Profile",
+        "url": "https://gtr2017.agiletestingalliance.org/speakers/#harshv"
+      },
+      {
+        "label": "SlideShare Deck",
+        "url": "https://www.slideshare.net/ATASlides/atagtr2017-hikerunner-load-test-framework"
+      }
+    ]
+  },
+  {
+    "id": "panel-ai-security-sftechweek",
+    "session_title": "AI × Security during SF Tech Week: Securing the AI Supply Chain",
+    "event_name": "AI × Security during SF Tech Week: Securing the AI Supply Chain",
+    "engagement_type": "Panel Discussion",
+    "role": "AI Security Panel",
+    "date": "",
+    "location_or_platform": "",
+    "description": "Featured speaker on 'YOUR AGENT INSTALLED WHAT? SECURING THE NEW AI SUPPLY CHAIN' hosted by AI Insiders with Pebblebed during SF Tech Week. Addressed emerging threats across the agentic supply chain: unauthorized plugin and skill installations, MCP integration risks, runtime agent sandboxing, prompt provenance, and zero-trust controls.",
+    "key_topics": [
+      "SF Tech Week",
+      "AI Insiders",
+      "Securing AI Supply Chain",
+      "Pebblebed",
+      "Agent Security",
+      "Zero Trust",
+      "San Francisco"
+    ],
+    "primary_url": "https://partiful.com/e/8LNyv0WyX7dTHjUUJmm0",
+    "links": [
+      {
+        "label": "Partiful Event Page",
+        "url": "https://partiful.com/e/8LNyv0WyX7dTHjUUJmm0"
+      },
+      {
+        "label": "AI Insider Feature Story",
+        "url": "https://aiinsiders.us/stories/ai-agent-security-sf-tech-week"
+      },
+      {
+        "label": "Instagram Feature",
+        "url": "https://www.instagram.com/p/Der2sD2FIjo/?img_index=4"
+      },
+      {
+        "label": "AI Insider Security",
+        "url": "https://lnkd.in/p/gaxXq2KM"
+      },
+      {
+        "label": "AI Insiders Feature Post",
+        "url": "https://lnkd.in/p/g_G7h98m"
+      },
+      {
+        "label": "LinkedIn Announcement",
+        "url": "https://lnkd.in/p/eyfEarGz"
+      },
+      {
+        "label": "After-Event LinkedIn Post",
+        "url": "https://lnkd.in/p/gntaFHpP"
+      },
+      {
+        "label": "LinkedIn Video Post",
+        "url": "https://lnkd.in/p/gDX4uXQ8"
+      }
+    ]
+  },
+  {
+    "id": "panel-autonomy-ai-agents",
+    "session_title": "The Autonomy of AI Agents (Founders' Creative)",
+    "event_name": "The Autonomy of AI Agents (Founders' Creative)",
+    "engagement_type": "Panel Discussion",
+    "role": "Host & Panel Moderator",
+    "date": "",
+    "location_or_platform": "",
+    "description": "Hosted and moderated an executive panel featuring top AI founders and architects on the transition from passive LLMs to goal-directed autonomous agents, evaluating deterministic control, guardrails, and real-time agency.",
+    "key_topics": [
+      "Autonomy",
+      "Autonomous Agents",
+      "Panel Moderator",
+      "Founders Creative"
+    ],
+    "primary_url": "https://luma.com/engsummit?utm_source=fclinkedin",
+    "links": [
+      {
+        "label": "Luma Summit Link",
+        "url": "https://luma.com/engsummit?utm_source=fclinkedin"
+      },
+      {
+        "label": "LinkedIn Summary 1",
+        "url": "https://www.linkedin.com/posts/harshverma59_ai-autonomousagents-aiengineering-activity-7311869320215572480-s8CO"
+      },
+      {
+        "label": "LinkedIn Summary 2",
+        "url": "https://www.linkedin.com/posts/harshverma59_aiengineering-aiproductdevelopment-engineeringwithai-activity-7333918177594146817-hYSQ"
+      }
+    ]
+  },
+  {
+    "id": "panel-ai-trust-reliability",
+    "session_title": "AI Trust, Safety & Reliability Executive Panel",
+    "event_name": "AI Trust, Safety & Reliability Executive Panel",
+    "engagement_type": "Panel Discussion",
+    "role": "Featured Panel Speaker",
+    "date": "",
+    "location_or_platform": "",
+    "description": "Addressed enterprise AI safety, hallucination mitigation, deterministic fallback mechanisms, and regulatory alignment in production agentic systems.",
+    "key_topics": [
+      "AI Trust",
+      "AI Safety",
+      "The Agentic",
+      "Reliability"
+    ],
+    "primary_url": "https://luma.com/cg1j3h2d",
+    "links": [
+      {
+        "label": "Luma Event Link",
+        "url": "https://luma.com/cg1j3h2d"
+      },
+      {
+        "label": "LinkedIn Post",
+        "url": "https://www.linkedin.com/posts/harshverma59_aisafetyreliability-aisafety-aireliability-activity-7404297211829895168-EMNE"
+      }
+    ]
+  },
+  {
+    "id": "panel-progressive-venture-summit",
+    "session_title": "The Agentic AI Summit 2026: People & Leadership in Agentic AI",
+    "event_name": "The Agentic AI Summit 2026: People & Leadership in Agentic AI",
+    "engagement_type": "Panel Discussion",
+    "role": "Frontline Keynote Panelist",
+    "date": "",
+    "location_or_platform": "",
+    "description": "Frontline panelist speaking on how organizational hierarchy, leadership mindsets, and engineering team topologies must adapt when autonomous agents become active team contributors.",
+    "key_topics": [
+      "Agentic AI Summit",
+      "AI Leadership",
+      "Progressive Ventures",
+      "Frontline Speaker"
+    ],
+    "primary_url": "https://luma.com/aiproducts?tk=RBRV8k",
+    "links": [
+      {
+        "label": "Luma Summit Link",
+        "url": "https://luma.com/aiproducts?tk=RBRV8k"
+      },
+      {
+        "label": "Harsh Verma LinkedIn",
+        "url": "https://www.linkedin.com/posts/harshverma59_agenticai-aileadership-autonomoussystems-activity-7427117736331272193-4dIC"
+      },
+      {
+        "label": "Summit Host Post",
+        "url": "https://www.linkedin.com/posts/malaramakrishnan_excited-to-host-our-6th-technology-summit-ugcPost-7425009116357541888-zz8_"
+      }
+    ]
+  },
+  {
+    "id": "panel-health-tech-week",
+    "session_title": "Health Tech Week / Health Tech Summit: AI & Cybersecurity in Healthcare",
+    "event_name": "Health Tech Week / Health Tech Summit: AI & Cybersecurity in Healthcare",
+    "engagement_type": "Panel Discussion",
+    "role": "Speaker & Cybersecurity in AI Panelist",
+    "date": "",
+    "location_or_platform": "",
+    "description": "Delivered insights on securing HIPAA-compliant healthcare LLM pipelines, autonomous clinical note extraction, federated medical learning, and patient data protection.",
+    "key_topics": [
+      "HealthTech",
+      "Cybersecurity",
+      "San Francisco",
+      "Healthcare AI"
+    ],
+    "primary_url": "https://aiify.io/events/ht26/",
+    "links": [
+      {
+        "label": "Health Tech Summit (aiify.io)",
+        "url": "https://aiify.io/events/ht26/"
+      },
+      {
+        "label": "Health Tech Week Portal",
+        "url": "https://healthtechweek.org/"
+      },
+      {
+        "label": "Luma Summit",
+        "url": "https://luma.com/HTSummit26?tk=aTK7ph"
+      },
+      {
+        "label": "LinkedIn Highlight 1",
+        "url": "https://www.linkedin.com/posts/stevene_healthtechweek-healthtech-cybersecurity-ugcPost-7417966646679515136-7JvV"
+      },
+      {
+        "label": "LinkedIn Highlight 2",
+        "url": "https://www.linkedin.com/posts/harshverma59_healthtech-healthtechweek-healthtech-activity-7418064321072599040-rngs"
+      }
+    ]
+  },
+  {
+    "id": "panel-responsible-ai-summit",
+    "session_title": "Agentic AI Summit: Advancing Responsible AI",
+    "event_name": "Agentic AI Summit: Advancing Responsible AI",
+    "engagement_type": "Panel Discussion",
+    "role": "Panelist Speaker",
+    "date": "",
+    "location_or_platform": "",
+    "description": "Panel discussion exploring responsible deployment frameworks for autonomous agents, algorithmic accountability, data provenance, and red-teaming methodologies.",
+    "key_topics": [
+      "Responsible AI",
+      "Founders Creative",
+      "Agent Safety",
+      "Red Teaming"
+    ],
+    "primary_url": "https://luma.com/3e8jb8py?tk=HcHhFx",
+    "links": [
+      {
+        "label": "Luma Event Link",
+        "url": "https://luma.com/3e8jb8py?tk=HcHhFx"
+      },
+      {
+        "label": "Harsh Verma",
+        "url": "index"
+      }
+    ]
+  }
+]

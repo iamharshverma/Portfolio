@@ -1,0 +1,148 @@
+[
+  {
+    "id": "book-enterprise-ai-agents",
+    "title": "Beyond AI Engineering: From Creator to Curator",
+    "subtitle": "Mastering the Human and Strategic Dimensions of Curating AI Systems",
+    "role": "Authored Book (Lead Author)",
+    "publication_status": "Published / Enterprise Edition",
+    "publication_date": "2026",
+    "publisher": "Palo Alto Technical Press & Enterprise AI Publishing",
+    "synopsis": "Comprehensive treatise on the architectural transition from generative prompt wrappers to autonomous agentic architectures. Details multi-agent topologies, tool execution protocols, deterministic self-healing loops, zero-trust verification harnesses, and strategic enterprise AI curation.",
+    "key_themes": [
+      "Agentic Topologies",
+      "Deterministic Validation",
+      "Autonomous Threat Modeling",
+      "Self-Healing Agent Workflows",
+      "Enterprise AI Governance"
+    ],
+    "catalog_url": "https://www.harshverma.me/page-books#beyond-ai-engineering",
+    "cover_image": "images/books/book_creator_to_curator.png"
+  },
+  {
+    "id": "book-autonomous-cyber-defense",
+    "title": "AI vs. AI: Engineering the Cybersecurity Counteroffensive",
+    "subtitle": "Architecting Autonomous AI Defenses Against Intelligent Adversaries",
+    "role": "Authored Book (Lead Author)",
+    "publication_status": "Published / Cyber Defense Edition",
+    "publication_date": "2026",
+    "publisher": "Cyber Defense Press",
+    "synopsis": "Blueprint for designing autonomous machine-speed cyber defense fabrics capable of neutralizing automated adversarial agents. Formulates proactive prompt provenance, multi-agent behavioral containment, decentralized threat sharing, and automated runtime mitigation.",
+    "key_themes": [
+      "Autonomous Cyber Defense",
+      "Adversarial AI Mitigation",
+      "Machine-Speed Incident Response",
+      "Zero-Trust Agent Governance",
+      "Enterprise Security Architecture"
+    ],
+    "catalog_url": "https://www.harshverma.me/page-books#ai-vs-ai",
+    "cover_image": "images/books/book_cybersecurity_counteroffensive.png"
+  },
+  {
+    "id": "book-review-ai-ethics-in-action",
+    "title": "AI Ethics in Action",
+    "subtitle": "Critical Perspectives on Enterprise AI Transparency and Alignment",
+    "role": "Technical Book Reviewer",
+    "publication_status": "Technical Peer Review",
+    "publication_date": "2025",
+    "publisher": "Packt Publishing",
+    "synopsis": "Official peer-reviewed technical evaluation of operational AI ethics frameworks, examining fairness metrics, algorithmic auditing, explainability in production deployments, and human-in-the-loop oversight.",
+    "key_themes": [
+      "AI Ethics",
+      "Algorithmic Transparency",
+      "Explainable AI (XAI)",
+      "Responsible AI"
+    ],
+    "catalog_url": "https://www.packtpub.com/",
+    "cover_image": "images/books/review_ai_ethics.png"
+  },
+  {
+    "id": "book-review-hands-on-ai-dev",
+    "title": "Hands-On AI Dev with Python",
+    "subtitle": "Engineering Scalable Machine Learning Pipelines in Production",
+    "role": "Technical Book Reviewer",
+    "publication_status": "Technical Peer Review",
+    "publication_date": "2025",
+    "publisher": "Packt Publishing",
+    "synopsis": "Rigorous technical review of end-to-end Python machine learning architectures, microservice model serving, distributed caching, and performance benchmarking for high-scale enterprise systems.",
+    "key_themes": [
+      "Python ML",
+      "High-Throughput Pipelines",
+      "Production AI",
+      "Distributed Systems"
+    ],
+    "catalog_url": "https://www.packtpub.com/",
+    "cover_image": "images/books/review_hands_on_ai.png"
+  },
+  {
+    "id": "book-review-leadership-ai",
+    "title": "Leadership at the Helm of AI",
+    "subtitle": "Executive Playbook for Navigating Disruptive AI Transformation",
+    "role": "Technical Book Reviewer",
+    "publication_status": "Technical Peer Review",
+    "publication_date": "2025",
+    "publisher": "Packt Publishing",
+    "synopsis": "Technical evaluation of executive strategies for organizational AI adoption, balancing ROI velocity against architectural resilience, technical debt, and enterprise workforce upskilling.",
+    "key_themes": [
+      "AI Leadership",
+      "Enterprise Strategy",
+      "Organizational Transformation",
+      "AI ROI"
+    ],
+    "catalog_url": "https://www.packtpub.com/",
+    "cover_image": "images/books/review_leadership_ai.png"
+  },
+  {
+    "id": "book-review-python-algo-trading",
+    "title": "Python for Algorithmic Trading Cookbook",
+    "subtitle": "Recipes for Designing and Testing Real-Time Quantitative Trading Strategies",
+    "role": "Technical Book Reviewer",
+    "publication_status": "Technical Peer Review",
+    "publication_date": "2024",
+    "publisher": "Packt Publishing",
+    "synopsis": "Comprehensive technical review of low-latency algorithmic trading backends, real-time market data streaming with Kafka and NumPy, and quantitative risk management architectures.",
+    "key_themes": [
+      "Algorithmic Trading",
+      "Quantitative Systems",
+      "Real-Time Streaming",
+      "Python FinTech"
+    ],
+    "catalog_url": "https://www.packtpub.com/",
+    "cover_image": "images/books/review_python_trading.png"
+  },
+  {
+    "id": "book-review-ml-genai-marketing",
+    "title": "Machine Learning & Generative AI for Marketing",
+    "subtitle": "Practical Techniques for Personalization, Content Generation, and Customer Intelligence",
+    "role": "Technical Book Reviewer",
+    "publication_status": "Technical Peer Review",
+    "publication_date": "2024",
+    "publisher": "Packt Publishing",
+    "synopsis": "Expert peer review of generative AI workflows for personalized customer experiences, predictive churn analytics, and multi-modal campaign orchestration at scale.",
+    "key_themes": [
+      "Generative AI",
+      "Customer Intelligence",
+      "Multi-Modal AI",
+      "Predictive Analytics"
+    ],
+    "catalog_url": "https://www.packtpub.com/",
+    "cover_image": "images/books/review_genai_marketing.png"
+  },
+  {
+    "id": "book-review-tensorflow-workshop",
+    "title": "The TensorFlow Workshop",
+    "subtitle": "A New, Interactive Approach to Learning Deep Neural Networks",
+    "role": "Technical Book Reviewer",
+    "publication_status": "Technical Peer Review",
+    "publication_date": "2023",
+    "publisher": "Packt Publishing",
+    "synopsis": "Thorough technical review covering deep neural network fundamentals, convolutional and recurrent layers, distributed training on GPUs/TPUs, and TensorFlow Lite edge deployments.",
+    "key_themes": [
+      "TensorFlow",
+      "Deep Learning",
+      "Edge AI",
+      "Distributed Training"
+    ],
+    "catalog_url": "https://www.packtpub.com/",
+    "cover_image": "images/books/review_tensorflow.png"
+  }
+]

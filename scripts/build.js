@@ -21,6 +21,14 @@ try {
   console.warn('[Build] Warning during sync_site_stats:', err.message);
 }
 
+// 1a. Export all portfolio sections to individual detailed JSON files
+try {
+  console.log('[Build] Exporting comprehensive JSON datasets for all portfolio sections...');
+  execSync('python3 scripts/export_all_sections_json.py', { stdio: 'inherit' });
+} catch (err) {
+  console.warn('[Build] Warning during export_all_sections_json:', err.message);
+}
+
 // 1b. Generate Board Biography PDF
 try {
   console.log('[Build] Generating Board Biography PDF...');

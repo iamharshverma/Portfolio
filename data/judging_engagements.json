@@ -1,0 +1,538 @@
+[
+  {
+    "id": "judge-dent-demos-dimsum",
+    "event_title": "Demos & Dim Sum — #SFTechWeek",
+    "role": "Demo Day & Venture Judging",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Demo Day & Venture Judging",
+    "description": "Serving on the official Dent Expert Network judging panel for 'Demos & Dim Sum' during SF Tech Week, co-hosted with Dent Capital, The MBA Fund, Deel, and Manatt. Evaluating live startup demos from high-growth founders across AI, enterprise software, and frontier technologies.",
+    "evaluation_focus": [
+      "SF Tech Week",
+      "Dent Capital",
+      "Dent Expert Network",
+      "Demos & Dim Sum",
+      "Startup Judging",
+      "San Francisco"
+    ],
+    "primary_url": "https://partiful.com/e/WBHEUDs7uFJo6xSAyN2S",
+    "links": [
+      {
+        "label": "Partiful Event Page",
+        "url": "https://partiful.com/e/WBHEUDs7uFJo6xSAyN2S"
+      },
+      {
+        "label": "Feature by Dent Capital",
+        "url": "https://lnkd.in/p/gVXv2R2Q"
+      },
+      {
+        "label": "LinkedIn Announcement",
+        "url": "https://www.linkedin.com/posts/dentcapital_rsvp-to-demos-dim-sum-sftechweek-partiful-activity-7508645069487263744-Wioj"
+      },
+      {
+        "label": "After-Event LinkedIn Post",
+        "url": "https://lnkd.in/p/g-7V6cT6"
+      }
+    ]
+  },
+  {
+    "id": "judge-techstars-sf",
+    "event_title": "Techstars San Francisco Startup Mentor",
+    "role": "Startup Mentorship",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Startup Mentorship",
+    "description": "Mentored multiple startup cohorts and fast-paced hackathons across San Francisco at Techstars Startup Weekend, helping early-stage engineering founders refine their product-market fit, enterprise AI architectures, and technical execution.",
+    "evaluation_focus": [
+      "Techstars",
+      "Startups",
+      "Mentorship",
+      "San Francisco"
+    ],
+    "primary_url": "https://www.startupweekendsf.com",
+    "links": [
+      {
+        "label": "Techstars SF",
+        "url": "https://www.startupweekendsf.com"
+      }
+    ]
+  },
+  {
+    "id": "judge-techstars-nyc",
+    "event_title": "Techstars New York City Accelerator Startup Mentor",
+    "role": "Startup Mentorship",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Startup Mentorship",
+    "description": "Appointed Startup Mentor for the Techstars NYC Fall 2026 cohort, guiding cutting-edge tech founders in agentic AI architecture, scalable cloud infrastructure, and enterprise go-to-market strategies.",
+    "evaluation_focus": [
+      "Techstars NYC",
+      "Accelerator",
+      "Enterprise AI",
+      "Venture Mentor"
+    ],
+    "primary_url": "https://www.techstars.com/accelerators/nyc",
+    "links": [
+      {
+        "label": "Techstars NYC Accelerator",
+        "url": "https://www.techstars.com/accelerators/nyc"
+      }
+    ]
+  },
+  {
+    "id": "judge-skydeck-mentor",
+    "event_title": "Mentor & Advisor at UC Berkeley SkyDeck",
+    "role": "Startup Mentorship",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Startup Mentorship",
+    "description": "Advised and mentored global high-growth startups at UC Berkeley SkyDeck on building secure enterprise AI architectures, scalable agentic workflows, LLM observability, and cybersecurity compliance.",
+    "evaluation_focus": [
+      "Berkeley SkyDeck",
+      "UC Berkeley",
+      "Enterprise AI",
+      "Security Advisor"
+    ],
+    "primary_url": "https://skydeck.berkeley.edu/",
+    "links": [
+      {
+        "label": "Berkeley SkyDeck",
+        "url": "https://skydeck.berkeley.edu/"
+      }
+    ]
+  },
+  {
+    "id": "judge-skydeck-selection",
+    "event_title": "UC Berkeley SkyDeck Selection Committee (Pad-21 & Pad-22)",
+    "role": "Venture Selection",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Venture Selection",
+    "description": "Served on the elite Selection Committee evaluating top international startups applying for UC Berkeley SkyDeck cohorts Pad-21 and Pad-22, assessing technical defensibility, AI infrastructure, team capability, and market potential.",
+    "evaluation_focus": [
+      "SkyDeck Pad-21",
+      "SkyDeck Pad-22",
+      "Selection Committee",
+      "Venture Screening"
+    ],
+    "primary_url": "https://skydeck.berkeley.edu/",
+    "links": [
+      {
+        "label": "Berkeley SkyDeck Cohorts",
+        "url": "https://skydeck.berkeley.edu/"
+      }
+    ]
+  },
+  {
+    "id": "judge-mayfield-ai-garage",
+    "event_title": "The Mayfield AI Garage Selection Committee & Judge",
+    "role": "Venture Selection",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Venture Selection",
+    "description": "Evaluated 100+ AI startup submissions from Berkeley undergrad and alumni founders competing for $50k non-dilutive stipends, NVIDIA Inception access, and incubation in the Pad-13 program, identifying breakout early-stage AI innovations.",
+    "evaluation_focus": [
+      "Mayfield Fund",
+      "NVIDIA Inception",
+      "$50K Grant",
+      "AI Garage"
+    ],
+    "primary_url": "https://mayfield.com/",
+    "links": [
+      {
+        "label": "Mayfield AI Garage",
+        "url": "https://mayfield.com/"
+      }
+    ]
+  },
+  {
+    "id": "judge-genlabx-worldsfair",
+    "event_title": "GenLabX AI Engineer World's Fair Hackathon Judge",
+    "role": "Hackathon Judging",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Hackathon Judging",
+    "description": "Served as official hackathon judge for over 100+ AI startups and engineering teams competing in San Francisco during the AI Engineer World's Fair, evaluating autonomous agent frameworks and LLM-powered applications.",
+    "evaluation_focus": [
+      "GenLabX",
+      "AI Engineer Fair",
+      "100+ Startups",
+      "SF Hackathon"
+    ],
+    "primary_url": "https://luma.com/genlabxaiengineer",
+    "links": [
+      {
+        "label": "Luma Event Page",
+        "url": "https://luma.com/genlabxaiengineer"
+      }
+    ]
+  },
+  {
+    "id": "judge-lovehack-2025",
+    "event_title": "LoveHackathon 2025 Main Final Judge",
+    "role": "Hackathon Judging",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Hackathon Judging",
+    "description": "Served as Final Main Judge evaluating top finalists and innovative technical builds at the high-profile LoveHackathon 2025 in San Francisco, selecting grand prize winners across consumer AI and social intelligence.",
+    "evaluation_focus": [
+      "LoveHack 2025",
+      "Final Judge",
+      "Grand Finale",
+      "San Francisco"
+    ],
+    "primary_url": "https://lu.ma/lovehack",
+    "links": [
+      {
+        "label": "Luma Event Page",
+        "url": "https://lu.ma/lovehack"
+      }
+    ]
+  },
+  {
+    "id": "judge-fow-pitch-aug26",
+    "event_title": "The Future of Work Pitch Night: Worktech, Robotics & Agentic AI",
+    "role": "Pitch Competition",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Pitch Competition",
+    "description": "Judged high-stakes live startup pitches from visionary founders building next-generation agentic AI systems, robotic automation, and enterprise worktech platforms.",
+    "evaluation_focus": [
+      "Future of Work",
+      "Agentic AI",
+      "Robotics",
+      "Pitch Jury"
+    ],
+    "primary_url": "https://luma.com/yktcpve0?tk=RWVd1n",
+    "links": [
+      {
+        "label": "Luma Event Page",
+        "url": "https://luma.com/yktcpve0?tk=RWVd1n"
+      },
+      {
+        "label": "LinkedIn Feature",
+        "url": "https://www.linkedin.com/posts/nataliabielczyk_futureofwork-pitchnight-agenticai-share-7479917479402762240-yEMP/"
+      }
+    ]
+  },
+  {
+    "id": "judge-fow-mixer-worktech",
+    "event_title": "Future of Work Mixer + Open Demos: Worktech, Robotics & Agentic AI",
+    "role": "Pitch Competition",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Pitch Competition",
+    "description": "Jury member evaluating open demo showcases and seed-stage pitches in workplace automation, enterprise agentic intelligence, and robotics orchestration.",
+    "evaluation_focus": [
+      "Worktech",
+      "Agentic AI",
+      "Open Demos",
+      "Pitch Competition"
+    ],
+    "primary_url": "https://luma.com/k0r1yhe5",
+    "links": [
+      {
+        "label": "Luma Event Page",
+        "url": "https://luma.com/k0r1yhe5"
+      },
+      {
+        "label": "LinkedIn Announcement",
+        "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7434967919094300672/"
+      }
+    ]
+  },
+  {
+    "id": "judge-fow-mixer-health",
+    "event_title": "Future of Work Mixer + Open Demos: Worktech, Robotics & Healthcare",
+    "role": "Pitch Competition",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Pitch Competition",
+    "description": "Served as Jury Member judging pitch competitions bridging clinical robotics, healthcare AI workflows, predictive diagnostic pipelines, and modern worktech.",
+    "evaluation_focus": [
+      "HealthTech",
+      "Robotics",
+      "Worktech",
+      "Jury Member"
+    ],
+    "primary_url": "https://luma.com/pgvpc0sl?tk=DYtJAq",
+    "links": [
+      {
+        "label": "Luma Event Page",
+        "url": "https://luma.com/pgvpc0sl?tk=DYtJAq"
+      }
+    ]
+  },
+  {
+    "id": "judge-techpioneer-2026",
+    "event_title": "TechPioneer Hackathon 2.0 AI & Cybersecurity Judge",
+    "role": "Hackathon Judging",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Hackathon Judging",
+    "description": "Evaluated cutting-edge hackathon submissions in Artificial Intelligence and Cybersecurity at TechPioneer Hackathon 2.0, judging threat-detection models, autonomous agent security, and zero-trust engineering.",
+    "evaluation_focus": [
+      "Cybersecurity",
+      "AI Hackathon",
+      "Industry Judge",
+      "TechPioneer",
+      "Verified Credential #TPH2026-FC1EC8-4008"
+    ],
+    "primary_url": "https://techpioneerspro.com/2.0/certificate/TPH2026-FC1EC8-4008",
+    "links": [
+      {
+        "label": "Verified Certificate",
+        "url": "https://techpioneerspro.com/2.0/certificate/TPH2026-FC1EC8-4008"
+      },
+      {
+        "label": "Official Judges Page",
+        "url": "https://techpioneerspro.com/2.0/judges"
+      }
+    ]
+  },
+  {
+    "id": "judge-vc-conf",
+    "event_title": "VC-Conf Expert Investor & Pitch Competition Judge",
+    "role": "Venture Selection",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Venture Selection",
+    "description": "Participated as venture judge and expert investor at VC-Conf, analyzing seed and Series A AI startups on market size, defensibility, unit economics, and enterprise scalability.",
+    "evaluation_focus": [
+      "VC-Conf",
+      "Venture Capital",
+      "Seed Stage",
+      "AI Startups"
+    ],
+    "primary_url": "https://www.linkedin.com/posts/harshverma59_ai-startups-venturecapital-share-7486229998492880896-JPIh/",
+    "links": [
+      {
+        "label": "LinkedIn Review",
+        "url": "https://www.linkedin.com/posts/harshverma59_ai-startups-venturecapital-share-7486229998492880896-JPIh/"
+      }
+    ]
+  },
+  {
+    "id": "judge-buildwithai-global",
+    "event_title": "#BuildwithAI Global Hack Lead Mentor",
+    "role": "Startup Mentorship",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Startup Mentorship",
+    "description": "Guided thousands of hackers and mentors internationally in building meaningful data science and AI solutions to address global societal resilience during the pandemic, sponsored by major tech giants.",
+    "evaluation_focus": [
+      "Google",
+      "AWS",
+      "Oracle",
+      "IBM",
+      "Lead Mentor"
+    ],
+    "primary_url": "https://www.linkedin.com/feed/update/urn:li:activity:6691402830294724608/",
+    "links": [
+      {
+        "label": "LinkedIn Global Milestone",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:6691402830294724608/"
+      }
+    ]
+  },
+  {
+    "id": "judge-progressive-ventures",
+    "event_title": "Progressive Ventures Founding Limited Partner (LP)",
+    "role": "Venture Selection",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Venture Selection",
+    "description": "Founding Limited Partner helping identify, vet, and allocate venture capital into top tier early-stage startups in the generative AI, agentic systems, and developer infrastructure domain.",
+    "evaluation_focus": [
+      "Founding LP",
+      "Venture Capital",
+      "AI Investment",
+      "Deal Flow"
+    ],
+    "primary_url": "https://luma.com/aiproducts?tk=RBRV8k",
+    "links": [
+      {
+        "label": "Progressive Ventures",
+        "url": "https://luma.com/aiproducts?tk=RBRV8k"
+      }
+    ]
+  },
+  {
+    "id": "judge-founders-creative",
+    "event_title": "Founders' Creative Technical Program Committee",
+    "role": "Conference Selection",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Conference Selection",
+    "description": "Core team member reviewing technical proposals, research submissions, and tech invite applications to curate distinguished conference speakers and high-impact AI workshops across Silicon Valley.",
+    "evaluation_focus": [
+      "Founders Creative",
+      "Paper Review",
+      "Program Committee",
+      "Speaker Selection"
+    ],
+    "primary_url": "https://luma.com/engsummit?utm_source=fclinkedin",
+    "links": [
+      {
+        "label": "Founders Creative",
+        "url": "https://luma.com/engsummit?utm_source=fclinkedin"
+      }
+    ]
+  },
+  {
+    "id": "judge-dent-expert",
+    "event_title": "AI Expert & Pitch Mentor at Dent Community",
+    "role": "Startup Mentorship",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Startup Mentorship",
+    "description": "Mentored startups through intensive incubation and final round pitch showcases across the Dent Expert, Dent Spark, and Dent Capital innovation network.",
+    "evaluation_focus": [
+      "Dent Capital",
+      "Pitch Mentor",
+      "AI Expert",
+      "Showcase"
+    ],
+    "primary_url": "https://www.linkedin.com/in/harshverma59/",
+    "links": [
+      {
+        "label": "Dent Network",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      }
+    ]
+  },
+  {
+    "id": "judge-packt-book-review",
+    "event_title": "Packt Publishing Official Technical Book Reviewer",
+    "role": "Book & Peer Review",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Book & Peer Review",
+    "description": "Conducted in-depth technical editorial and code reviews for major published AI books including 'The TensorFlow Workshop' and 'Machine Learning and Generative AI for Marketing'.",
+    "evaluation_focus": [
+      "Packt Publishing",
+      "Book Review",
+      "TensorFlow",
+      "Generative AI"
+    ],
+    "primary_url": "https://www.amazon.com/TensorFlow-Workshop-hands-building-real-world/dp/1800205252",
+    "links": [
+      {
+        "label": "The TensorFlow Workshop (Amazon)",
+        "url": "https://www.amazon.com/TensorFlow-Workshop-hands-building-real-world/dp/1800205252"
+      },
+      {
+        "label": "ML & GenAI for Marketing (Amazon)",
+        "url": "https://www.amazon.com/Machine-Learning-Generative-Marketing-data-driven/dp/1835889409/ref=sr_1_1?link_from_packtlink=yes"
+      }
+    ]
+  },
+  {
+    "id": "judge-ieee-reviews",
+    "event_title": "IEEE Technical Peer Reviewer (Software Engineering & XAI)",
+    "role": "Peer Review",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Peer Review",
+    "description": "Reviewed advanced IEEE conference and journal papers: 'Automated Code Generation and Optimization Using Deep Learning: Advancing Intelligent Software Engineering Practices' and 'Integrating Explainable Artificial Intelligence into Software Engineering Workflows'.",
+    "evaluation_focus": [
+      "IEEE",
+      "Deep Learning",
+      "Code Generation",
+      "XAI"
+    ],
+    "primary_url": "https://ieeexplore.ieee.org/",
+    "links": [
+      {
+        "label": "IEEE Author Profile",
+        "url": "https://ieeexplore.ieee.org/"
+      }
+    ]
+  },
+  {
+    "id": "judge-ijeetr-reviews",
+    "event_title": "IJEETR Journal Peer Reviewer (Supply Chain & Cloud FinOps)",
+    "role": "Peer Review",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Peer Review",
+    "description": "Peer reviewed research papers: 'AI-Enabled Predictive Analytics and Autonomous Decision Systems for Resilient Supply Chain and Advanced Manufacturing under Industry 4.0/5.0' and 'AI-Powered Cloud Modernization Framework for Intelligent Risk and Financial Process Management in SAP Environments'.",
+    "evaluation_focus": [
+      "IJEETR",
+      "Industry 5.0",
+      "SAP Cloud",
+      "Supply Chain"
+    ],
+    "primary_url": "https://ijeetr.com/",
+    "links": [
+      {
+        "label": "IJEETR Journal",
+        "url": "https://ijeetr.com/"
+      }
+    ]
+  },
+  {
+    "id": "judge-jrtcse-reviews",
+    "event_title": "JRTCSE Journal Reviewer (15+ Peer Reviewed Papers)",
+    "role": "Peer Review",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Peer Review",
+    "description": "Conducted rigorous peer reviews on more than 15+ scholarly papers spanning machine learning architectures, distributed cloud computing, algorithmic optimizations, and cybersecurity.",
+    "evaluation_focus": [
+      "JRTCSE",
+      "15+ Papers",
+      "Editorial Review",
+      "Computer Science"
+    ],
+    "primary_url": "https://jrtcse.com/index.php/home/Harsh_Verma",
+    "links": [
+      {
+        "label": "JRTCSE Reviewer Profile",
+        "url": "https://jrtcse.com/index.php/home/Harsh_Verma"
+      }
+    ]
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "id": "keynote-RS_BKcbeV3o",
+    "keynote_title": "ACM Sacramento Keynote: When Enterprises Become Multi-Agent Systems",
+    "event_name": "ACM Distinguished Keynote Session",
+    "organizer": "ACM Distinguished Keynote Session",
+    "date": "2026 Keynote Session",
+    "duration": "38:42",
+    "format": "Keynote Cinema & Recorded Address",
+    "youtube_id": "RS_BKcbeV3o",
+    "recording_url": "https://www.youtube.com/watch?v=RS_BKcbeV3o",
+    "slides_url": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1",
+    "thumbnail_url": "https://img.youtube.com/vi/RS_BKcbeV3o/hqdefault.jpg",
+    "synopsis": "Distinguished Keynote Address titled 'When Enterprises Become Multi-Agent Systems: Secure and Trustworthy Machine Learning & AI for Multi-Domain Applications', analyzing enterprise LLM defense, zero-trust validation, and autonomous agent alignment.",
+    "key_takeaways": [
+      "ACM Keynote",
+      "Secure AI",
+      "Multi-Agent Systems",
+      "Smart Slides"
+    ],
+    "primary_url": "https://www.youtube.com/watch?v=RS_BKcbeV3o"
+  },
+  {
+    "id": "keynote-IZvHxEtMMnw",
+    "keynote_title": "UC Berkeley SkyDeck Keynote: The Era of Agentic Security",
+    "event_name": "UC Berkeley SkyDeck Series (B21)",
+    "organizer": "UC Berkeley SkyDeck Series",
+    "date": "2025 Keynote Series",
+    "duration": "42:15",
+    "format": "Keynote Cinema & Recorded Address",
+    "youtube_id": "IZvHxEtMMnw",
+    "recording_url": "https://www.youtube.com/watch?v=IZvHxEtMMnw",
+    "slides_url": "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1",
+    "thumbnail_url": "https://img.youtube.com/vi/IZvHxEtMMnw/hqdefault.jpg",
+    "synopsis": "Keynote presentation at UC Berkeley SkyDeck detailing autonomous agent divergence, runtime safety guardrails, prompt provenance, and enterprise cybersecurity architectures.",
+    "key_takeaways": [
+      "UC Berkeley",
+      "Agentic Security",
+      "SkyDeck B21",
+      "Enterprise AI"
+    ],
+    "primary_url": "https://www.youtube.com/watch?v=IZvHxEtMMnw"
+  },
+  {
+    "id": "keynote-E6kA_o57DrM",
+    "keynote_title": "SZ 179: The Digital Battleground — Quantum & Cyber Security",
+    "event_name": "Silicon Zombies (Startup Zone / Top Voices Unite)",
+    "organizer": "Silicon Zombies",
+    "date": "June 2025 Keynote Symposium",
+    "duration": "52:14",
+    "format": "Keynote Cinema & Recorded Address",
+    "youtube_id": "E6kA_o57DrM",
+    "recording_url": "https://www.youtube.com/watch?v=E6kA_o57DrM",
+    "slides_url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1",
+    "thumbnail_url": "https://img.youtube.com/vi/E6kA_o57DrM/hqdefault.jpg",
+    "synopsis": "Featured keynote symposium on Silicon Zombies Episode 179 alongside Rebecca Krauthamer (CEO of QuSecure), analyzing quantum computing vulnerabilities, post-quantum cryptographic perimeters, and autonomous AI defense systems.",
+    "key_takeaways": [
+      "Silicon Zombies",
+      "SZ 179",
+      "Quantum Security",
+      "Autonomous Defense"
+    ],
+    "primary_url": "https://www.youtube.com/watch?v=E6kA_o57DrM"
+  },
+  {
+    "id": "keynote-xraised-ai-beyond-code",
+    "keynote_title": "xRaised Global Leadership: AI Engineering Beyond Code",
+    "event_name": "xRaised Global Leadership Series",
+    "organizer": "xRaised Global Leadership Series",
+    "date": "2026 Executive Series",
+    "duration": "28:45",
+    "format": "Keynote Cinema & Recorded Address",
+    "youtube_id": "xraised-ai-beyond-code",
+    "recording_url": "https://xraised.com/videos/ai-engineering-beyond-code/",
+    "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1",
+    "thumbnail_url": "images/events/xraised_ai_engineering.jpg",
+    "synopsis": "Executive keynote interview with Harsh Verma on 'Beyond the Code: The Evolution of the Next-Generation Engineer' — exploring autonomous agent architectures, multi-model production scaling, engineering leadership, and proactive cybersecurity in frontier AI systems.",
+    "key_takeaways": [
+      "xRaised Feature",
+      "AI Engineering",
+      "Autonomous Systems",
+      "Beyond Code"
+    ],
+    "primary_url": "https://xraised.com/videos/ai-engineering-beyond-code/"
+  },
+  {
+    "id": "keynote-MPhFC1h5GIc",
+    "keynote_title": "FutureAGI Keynote: Powering Cybersecurity with GenAI & Intelligent Agents",
+    "event_name": "FutureAGI Global Keynote / SF Tech Week",
+    "organizer": "FutureAGI Global Keynote / SF Tech Week",
+    "date": "2026 Global Keynote",
+    "duration": "48:30",
+    "format": "Keynote Cinema & Recorded Address",
+    "youtube_id": "MPhFC1h5GIc",
+    "recording_url": "https://www.youtube.com/watch?v=MPhFC1h5GIc",
+    "slides_url": "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1",
+    "thumbnail_url": "https://img.youtube.com/vi/MPhFC1h5GIc/hqdefault.jpg",
+    "synopsis": "Keynote during SF Tech Week on scaling AI infrastructure, mitigating agentic risk, powering cybersecurity with generative AI, and driving enterprise AI adoption across Silicon Valley.",
+    "key_takeaways": [
+      "FutureAGI",
+      "GenAI Cybersecurity",
+      "Intelligent Agents",
+      "SF Tech Week"
+    ],
+    "primary_url": "https://www.youtube.com/watch?v=MPhFC1h5GIc"
+  },
+  {
+    "id": "keynote-nIgJ99Bihsw",
+    "keynote_title": "Enterprise AI: Building Solutions for Security, Scale & Trust",
+    "event_name": "TechTalk with VLink Keynote (Ep. 55)",
+    "organizer": "TechTalk with VLink Keynote",
+    "date": "2026 Keynote Episode",
+    "duration": "46:18",
+    "format": "Keynote Cinema & Recorded Address",
+    "youtube_id": "nIgJ99Bihsw",
+    "recording_url": "https://www.youtube.com/watch?v=nIgJ99Bihsw",
+    "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1",
+    "thumbnail_url": "https://img.youtube.com/vi/nIgJ99Bihsw/hqdefault.jpg",
+    "synopsis": "Deep-dive executive presentation covering enterprise AI architectures, scaling multi-agent workloads, identity boundaries, and real-time behavioral defense.",
+    "key_takeaways": [
+      "Enterprise AI",
+      "VLink Keynote",
+      "Security & Scale",
+      "Trustworthy Systems"
+    ],
+    "primary_url": "https://www.youtube.com/watch?v=nIgJ99Bihsw"
+  },
+  {
+    "id": "keynote-yXy_zYlhnfc",
+    "keynote_title": "Inside Vibe Shift: The Builders Behind the Models",
+    "event_name": "Rocket & Twill Special Keynote Session",
+    "organizer": "Rocket & Twill Special Keynote Session",
+    "date": "2026 Keynote Session",
+    "duration": "31:40",
+    "format": "Keynote Cinema & Recorded Address",
+    "youtube_id": "yXy_zYlhnfc",
+    "recording_url": "https://www.youtube.com/watch?v=yXy_zYlhnfc",
+    "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1",
+    "thumbnail_url": "https://img.youtube.com/vi/yXy_zYlhnfc/hqdefault.jpg",
+    "synopsis": "Keynote presentation at Rocket & Twill's 'Vibe Shift' summit analyzing consumer tech inflection points, LLMOps, model evaluation datasets, and scalable enterprise architectures.",
+    "key_takeaways": [
+      "Rocket & Twill",
+      "Vibe Shift",
+      "Builders Behind Models",
+      "Observability"
+    ],
+    "primary_url": "https://www.youtube.com/watch?v=yXy_zYlhnfc"
+  },
+  {
+    "id": "keynote-iZkx6Ewq6wU",
+    "keynote_title": "How To Control Your Job Interview & Convince Recruiters To Hire You",
+    "event_name": "Chai and Coaching | Executive Career Masterclass",
+    "organizer": "Chai and Coaching | Executive Career Masterclass",
+    "date": "Executive Career Masterclass",
+    "duration": "18:35",
+    "format": "Keynote Cinema & Recorded Address",
+    "youtube_id": "iZkx6Ewq6wU",
+    "recording_url": "https://www.youtube.com/watch?v=iZkx6Ewq6wU",
+    "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1",
+    "thumbnail_url": "https://img.youtube.com/vi/iZkx6Ewq6wU/hqdefault.jpg",
+    "synopsis": "Executive career masterclass with Harsh Verma on managing technical interviews, avoiding common search pitfalls, answering complex system challenges under pressure, and convincing hiring committees.",
+    "key_takeaways": [
+      "Chai & Coaching",
+      "Job Interview",
+      "Career Strategy",
+      "Tech Leadership"
+    ],
+    "primary_url": "https://www.youtube.com/watch?v=iZkx6Ewq6wU"
+  },
+  {
+    "id": "keynote-1DxjMiOe580",
+    "keynote_title": "TrueML Talks #35: Big Data and ML Practices at Palo Alto Networks",
+    "event_name": "TrueML Talks #35",
+    "organizer": "TrueML Talks #35",
+    "date": "Production ML Keynote",
+    "duration": "36:44",
+    "format": "Keynote Cinema & Recorded Address",
+    "youtube_id": "1DxjMiOe580",
+    "recording_url": "https://www.youtube.com/watch?v=1DxjMiOe580",
+    "slides_url": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1",
+    "thumbnail_url": "https://img.youtube.com/vi/1DxjMiOe580/hqdefault.jpg",
+    "synopsis": "Production machine learning engineering patterns, distributed feature pipelines, model-serving at scale, latency and prompt injection defenses, and automated deployment architectures at Palo Alto Networks.",
+    "key_takeaways": [
+      "Palo Alto Networks",
+      "TrueML Talks",
+      "Big Data ML",
+      "Model Serving"
+    ],
+    "primary_url": "https://www.youtube.com/watch?v=1DxjMiOe580"
+  },
+  {
+    "id": "keynote-bggw4JTFjgA",
+    "keynote_title": "Chai & Coaching: Are Cybersecurity Degrees & Job Scope In USA Worth It?",
+    "event_name": "Chai and Coaching | Executive Career Masterclass",
+    "organizer": "Chai and Coaching | Executive Career Masterclass",
+    "date": "Career & Industry Masterclass",
+    "duration": "35:20",
+    "format": "Keynote Cinema & Recorded Address",
+    "youtube_id": "bggw4JTFjgA",
+    "recording_url": "https://www.youtube.com/watch?v=bggw4JTFjgA",
+    "slides_url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1",
+    "thumbnail_url": "https://img.youtube.com/vi/bggw4JTFjgA/hqdefault.jpg",
+    "synopsis": "Executive career masterclass analyzing the ROI and industry scope of cybersecurity degrees, master's programs in the USA, industry certifications, real-world skills vs academic credentials, and enterprise hiring demand.",
+    "key_takeaways": [
+      "Chai & Coaching",
+      "Cybersecurity Degrees",
+      "Job Scope",
+      "Tech Careers"
+    ],
+    "primary_url": "https://www.youtube.com/watch?v=bggw4JTFjgA"
+  },
+  {
+    "id": "conf-ieee-icacsdf-2026",
+    "keynote_title": "UPES & IEEE ICACSDF 2026 Keynote & Technical Session Chair",
+    "event_name": "",
+    "organizer": "",
+    "date": "",
+    "duration": "Keynote Address",
+    "format": "In-Person / Virtual Conference Keynote",
+    "youtube_id": "",
+    "recording_url": "",
+    "slides_url": "",
+    "thumbnail_url": "",
+    "synopsis": "Delivered keynote address on 'When Enterprises Become Multi-Agent Systems', analyzing adversarial resilience, security perimeters, and autonomous decisioning in modern enterprise AI. Also served as Technical Session Chair presiding over conference research paper presentations, alongside evaluating manuscripts on the Microsoft CMT research review board.",
+    "key_takeaways": [
+      "IEEE ICACSDF",
+      "Technical Session Chair",
+      "Keynote Talk",
+      "Cybersecurity",
+      "Digital Forensics",
+      "Multi-Agent Systems"
+    ],
+    "primary_url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1"
+  },
+  {
+    "id": "conf-iciotcaa-2026",
+    "keynote_title": "ICIoTCAA-2026 Keynote & Fellow Member: AI-Enhanced Enterprise Security",
+    "event_name": "",
+    "organizer": "",
+    "date": "",
+    "duration": "Keynote Address",
+    "format": "In-Person / Virtual Conference Keynote",
+    "youtube_id": "",
+    "recording_url": "",
+    "slides_url": "",
+    "thumbnail_url": "",
+    "synopsis": "Keynote presentation titled 'Building an AI-Enhanced Enterprise Security Solution Using Artificial Intelligence in Cybersecurity', demonstrating real-time behavioral anomaly detection and threat isolation. Inducted as an official Fellow Member at Science Tech Xplore / ICIoTCAA in recognition of advanced contributions to cybersecurity, artificial intelligence, and computing systems.",
+    "key_takeaways": [
+      "ICIoTCAA",
+      "Fellow Member",
+      "Enterprise Security",
+      "Keynote",
+      "Science Tech Xplore"
+    ],
+    "primary_url": "https://sciencetechxplore.org/fellow-members1.php"
+  }
+]
