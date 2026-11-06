@@ -1,0 +1,450 @@
+[
+  {
+    "title": "Forbes Technology Council",
+    "role": "Official Council Member & Columnist",
+    "tier": "Council Member",
+    "credential_id": "Forbes Executive Profile Verified",
+    "category": "council",
+    "image": "images/memberships/forbes.svg",
+    "description": "Invitation-only community for world-class CIOs, CTOs, and senior technology leaders. Contributing author publishing peer-reviewed thought leadership on Enterprise AI systems, autonomous agent perimeters, and technology ROI.",
+    "url": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/",
+    "links": [
+      {
+        "url": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/",
+        "label": "View Forbes Profile"
+      }
+    ]
+  },
+  {
+    "title": "IEEE & IEEE Computer Society",
+    "role": "Senior Member (SMIEEE)",
+    "tier": "Senior Member",
+    "credential_id": "Member ID: 95132014",
+    "category": "fellowship",
+    "image": "images/memberships/ieee_senior.svg",
+    "description": "Senior Member is the highest professional grade of IEEE, achieved by fewer than 10% of IEEE's 400,000+ members worldwide. Honors significant performance, technical leadership, and sustained contributions to AI and distributed computing.",
+    "url": "https://ieee-collabratec.ieee.org/app/p/HarshVerma59",
+    "links": [
+      {
+        "url": "https://ieee-collabratec.ieee.org/app/p/HarshVerma59",
+        "label": "IEEE Collabratec® Public Profile"
+      }
+    ]
+  },
+  {
+    "title": "British Computer Society (BCS)",
+    "role": "The Chartered Institute for IT · United Kingdom",
+    "tier": "Fellow (FBCS)",
+    "credential_id": "Professional Grade: Fellow (FBCS)",
+    "category": "fellowship",
+    "image": "images/memberships/bcs_fellow.svg",
+    "description": "Elected Fellow of the British Computer Society (FBCS), the UK's Royal Chartered institute for computing. Fellowship represents the pinnacle professional grade of BCS, awarded to distinguished technologists and senior architects demonstrating sustained eminence, authority, and transformative contributions to enterprise computing and artificial intelligence.",
+    "url": "https://www.bcs.org/find-a-bcs-member/",
+    "links": [
+      {
+        "url": "https://www.bcs.org/find-a-bcs-member/",
+        "label": "BCS Member Register"
+      }
+    ]
+  },
+  {
+    "title": "IEEE Technical Societies",
+    "role": "CIS, Young Professionals & IEEE500",
+    "tier": "Society Member",
+    "credential_id": "Society Numbers: IEEE500 &bull; YP060 &bull; CIS011",
+    "category": "scientific",
+    "image": "images/memberships/ieee_societies.svg",
+    "description": "Active member across specialized IEEE Technical Societies and Affinity Groups: IEEE Computational Intelligence Society (CIS011) advancing neural networks and evolutionary computation; IEEE Young Professionals (YP060); and IEEE Society Member (IEEE500). Contributes to international technical interchange, emerging AI standards, and cross-society engineering initiatives.",
+    "url": "https://cis.ieee.org/",
+    "links": [
+      {
+        "url": "https://cis.ieee.org/",
+        "label": "IEEE Computational Intelligence (CIS)"
+      },
+      {
+        "url": "https://yp.ieee.org/",
+        "label": "IEEE Young Professionals (YP)"
+      }
+    ]
+  },
+  {
+    "title": "IEEE Xplore Verified Author",
+    "role": "IEEE Digital Library & Author Center",
+    "tier": "Verified Author",
+    "credential_id": "IEEE Author ID: 37089143797",
+    "category": "scientific",
+    "image": "images/memberships/ieee_author.svg",
+    "description": "Verified author profile indexed across the IEEE Xplore Digital Library and IEEE Author Center registry. Author of peer-reviewed research papers and technical proceedings spanning AI security, zero-trust enterprise validation, and autonomous systems indexed across international IEEE conferences and digital citation archives.",
+    "url": "https://ieeexplore.ieee.org/author/37089143797",
+    "links": [
+      {
+        "url": "https://ieeexplore.ieee.org/author/37089143797",
+        "label": "IEEE Xplore Author Profile"
+      },
+      {
+        "url": "https://authorprofile.ieee.org/profiles/37089143797",
+        "label": "IEEE Author Registry Profile"
+      }
+    ]
+  },
+  {
+    "title": "Interacting with Computers",
+    "role": "Oxford University Press · Published with BCS",
+    "tier": "Fellow / Member",
+    "credential_id": "ScholarOne Manuscripts: mc.manuscriptcentral.com/iwc",
+    "category": "scientific",
+    "image": "images/memberships/oxford_iwc.svg",
+    "description": "Peer reviewer and manuscript reviewer for Interacting with Computers (IwC), the peer-reviewed Oxford University Press academic journal published on behalf of BCS, The Chartered Institute for IT. Performing rigorous peer evaluations on cutting-edge research in human-agent interaction, enterprise autonomous systems, and cognitive computing.",
+    "url": "https://mc.manuscriptcentral.com/iwc",
+    "links": [
+      {
+        "url": "https://mc.manuscriptcentral.com/iwc",
+        "label": "ScholarOne Manuscripts Portal"
+      },
+      {
+        "url": "https://academic.oup.com/iwc",
+        "label": "Oxford Academic IwC Journal"
+      }
+    ]
+  },
+  {
+    "title": "Raptors.Dev Fellowship",
+    "role": "Fellow Member",
+    "tier": "Fellow",
+    "credential_id": "Elite Engineering Fellowship",
+    "category": "fellowship",
+    "image": "images/memberships/raptors_dev.svg",
+    "description": "Elite, invite-only fellowship recognizing top-tier software engineering leaders and AI researchers shaping next-generation software architectures, resilient cloud microservices, and large-scale AI deployment frameworks.",
+    "url": "https://www.raptors.dev/fellow-membership",
+    "links": [
+      {
+        "url": "https://www.raptors.dev/fellow-membership",
+        "label": "Explore Fellowship"
+      }
+    ]
+  },
+  {
+    "title": "UC Berkeley SkyDeck",
+    "role": "Global Advisor & Startup Mentor",
+    "tier": "Global Advisor",
+    "credential_id": "Berkeley SkyDeck Advisor Network",
+    "category": "council",
+    "image": "images/memberships/skydeck.svg",
+    "description": "Advising venture-backed startups and deep-tech founders at UC Berkeley's premier startup accelerator. Mentoring on AI product architecture, scalable enterprise systems, and technical defensibility.",
+    "url": "https://skydeck.berkeley.edu/advisors/",
+    "links": [
+      {
+        "url": "https://skydeck.berkeley.edu/advisors/",
+        "label": "SkyDeck Advisor Directory"
+      }
+    ]
+  },
+  {
+    "title": "ISACA",
+    "role": "Member, Verified Expert & Volunteer",
+    "tier": "Member & Expert",
+    "credential_id": "ISACA ID: 2394223",
+    "category": "council",
+    "image": "images/memberships/isaca.svg",
+    "description": "Professional member, verified industry expert, and volunteer contributor at ISACA (Information Systems Audit and Control Association), the leading global authority in digital trust, IT governance, risk, and security. Actively participates across ISACA Engage, the global Expert Directory, and community governance volunteer programs.",
+    "url": "https://engage.isaca.org/expert/harshverma",
+    "links": [
+      {
+        "url": "https://engage.isaca.org/expert/harshverma",
+        "label": "ISACA Expert Profile"
+      },
+      {
+        "url": "https://engage.isaca.org/connect/memberdirectory/profile?UserKey=4889ccdc-fd4a-46ea-b0a9-01a09d8362e6",
+        "label": "ISACA Engage Directory Profile"
+      },
+      {
+        "url": "https://engage.isaca.org/volunteeropportunities/volunteerinfo?UserKey=4889ccdc-fd4a-46ea-b0a9-01a09d8362e6&myVolunteerOpportunitesfilterByOptions=All",
+        "label": "Volunteer Opportunities Profile"
+      },
+      {
+        "url": "https://www.isaca.org/myisaca",
+        "label": "MyISACA Member Portal"
+      }
+    ]
+  },
+  {
+    "title": "Sigma Xi (The Scientific Research Honor Society)",
+    "role": "Full Elected Member",
+    "tier": "Honor Society",
+    "credential_id": "Elected by Scientific Peers",
+    "category": "scientific",
+    "image": "images/memberships/sigmaxi.svg",
+    "description": "Elected member of one of the world's most historic research honor societies (whose historic members include over 200 Nobel laureates), recognizing demonstrated research excellence and impact in AI & computational systems.",
+    "url": "https://www.sigmaxi.org/",
+    "links": [
+      {
+        "url": "https://www.sigmaxi.org/",
+        "label": "Sigma Xi Society"
+      }
+    ]
+  },
+  {
+    "title": "Royal Society of Arts (RSA)",
+    "role": "Fellow of the Royal Society of Arts (FRSA)",
+    "tier": "Fellow (FRSA)",
+    "credential_id": "Distinction: FRSA",
+    "category": "fellowship",
+    "image": "images/memberships/rsa_fellow.svg",
+    "description": "Awarded the fellowship distinction (FRSA) for demonstrated impact in technology innovation, ethical artificial intelligence governance, and advancing solutions for global technological progression.",
+    "url": "https://www.thersa.org/",
+    "links": [
+      {
+        "url": "https://www.thersa.org/",
+        "label": "Visit The RSA"
+      }
+    ]
+  },
+  {
+    "title": "IOASD (Scientific & Academic Development)",
+    "role": "Royal Fellowship Awarded",
+    "tier": "Royal Fellow",
+    "credential_id": "ID: FRIOASD-1066-2026",
+    "category": "fellowship",
+    "image": "images/memberships/ioasd_fellow.svg",
+    "description": "Awarded the prestigious Royal Fellowship (FRIOASD) by the International Organization for Academic and Scientific Development for distinguished contributions in Artificial Intelligence, Cloud Infrastructure, and Enterprise Security.",
+    "url": "https://ioasd.org/royal-fellows/membership-id-frioasd-1066-2026/",
+    "links": [
+      {
+        "url": "https://ioasd.org/royal-fellows/membership-id-frioasd-1066-2026/",
+        "label": "Verify Royal Fellowship"
+      }
+    ]
+  },
+  {
+    "title": "Science Tech Xplore",
+    "role": "Fellow Member",
+    "tier": "Fellow Member",
+    "credential_id": "Official Registry: Harsh Verma",
+    "category": "fellowship",
+    "image": "images/memberships/sciencetechxplore.svg",
+    "description": "Honored as an elected Fellow Member of Science Tech Xplore, recognizing distinguished research contributions, scientific innovation, and engineering leadership in advancing digital humanity and artificial intelligence architectures.",
+    "url": "https://sciencetechxplore.org/fellow-members1.php",
+    "links": [
+      {
+        "url": "https://sciencetechxplore.org/fellow-members1.php",
+        "label": "Verify Fellow Membership"
+      }
+    ]
+  },
+  {
+    "title": "Forttuna Technical Council",
+    "role": "Council Member",
+    "tier": "Council Member",
+    "credential_id": "Official Council Appointment",
+    "category": "council",
+    "image": "images/memberships/forttuna.svg",
+    "description": "Global executive council uniting industry innovators, enterprise leaders, and cybersecurity pioneers to guide cross-industry AI ethics, digital modernization, and scalable technological infrastructure.",
+    "url": "https://councils.forttuna.com/council-member/harsh-verma/",
+    "links": [
+      {
+        "url": "https://councils.forttuna.com/council-member/harsh-verma/",
+        "label": "View Council Profile"
+      }
+    ]
+  },
+  {
+    "title": "AAAI (Advancement of Artificial Intelligence)",
+    "role": "Active Member",
+    "tier": "AI Society",
+    "credential_id": "AAAI Member ID: 656475",
+    "category": "scientific",
+    "image": "images/memberships/aaai.svg",
+    "description": "The premier international scientific body devoted to promoting research in artificial intelligence, neural architectures, autonomous agents, and their responsible deployment across industry and society.",
+    "url": "https://aaai.org/",
+    "links": [
+      {
+        "url": "https://aaai.org/",
+        "label": "Visit AAAI"
+      }
+    ]
+  },
+  {
+    "title": "AAAS (Advancement of Science)",
+    "role": "Supporting Member",
+    "tier": "Scientific Society",
+    "credential_id": "Publisher of Science Journals",
+    "category": "scientific",
+    "image": "images/memberships/aaas.svg",
+    "description": "Supporting member of the world's largest multidisciplinary scientific society and publisher of the *Science* family of journals, advancing scientific literacy, computational discovery, and global innovation.",
+    "url": "https://www.aaas.org/",
+    "links": [
+      {
+        "url": "https://www.aaas.org/",
+        "label": "Visit AAAS"
+      }
+    ]
+  },
+  {
+    "title": "Python Software Foundation (PSF)",
+    "role": "Contributing Membership",
+    "tier": "Contributing Member",
+    "credential_id": "PSF Username: harshverma59",
+    "category": "scientific",
+    "image": "images/memberships/psf_python.svg",
+    "description": "Contributing Member of the Python Software Foundation (PSF), the non-profit corporation holding intellectual property rights behind Python and supporting the global open-source Python ecosystem. Actively contributes to developer community initiatives, package ecosystem security, and foundational Python tooling.",
+    "url": "https://www.python.org/users/harshverma59/",
+    "links": [
+      {
+        "url": "https://www.python.org/users/harshverma59/",
+        "label": "View PSF Member Profile"
+      },
+      {
+        "url": "https://www.python.org/psf/membership/",
+        "label": "PSF Membership Directory"
+      }
+    ]
+  },
+  {
+    "title": "OWASP Foundation",
+    "role": "Open Web Application Security Project",
+    "tier": "Global Member",
+    "credential_id": "OWASP Membership ID: 3981139",
+    "category": "scientific",
+    "image": "images/memberships/owasp.svg",
+    "description": "OWASP is a global community of developers, technologists, and advocates dedicated to improving software security. We provide open source projects with the visibility, credibility, and resources they need to grow and make an impact. Active individual member advancing application defense, secure coding standards, and threat modeling.",
+    "url": "https://owasp.glueup.com/my/memberships/3981139",
+    "links": [
+      {
+        "url": "https://owasp.glueup.com/my/memberships/3981139",
+        "label": "Verify OWASP Membership"
+      },
+      {
+        "url": "https://owasp.org/dashboard",
+        "label": "OWASP Member Dashboard"
+      }
+    ]
+  },
+  {
+    "title": "IFGICT (Global Green ICT)",
+    "role": "Fellow",
+    "tier": "Fellow",
+    "credential_id": "IFGICT Number: 06042Z26HV",
+    "category": "fellowship",
+    "image": "images/memberships/ifgict.svg",
+    "description": "Awarded fellowship by the International Federation of Global Green ICT for contributions to energy-efficient AI architectures, sustainable compute paradigms, and enterprise technology standards.",
+    "url": "https://timebusinessnews.com/harsh-verma-ifgict/",
+    "links": [
+      {
+        "url": "https://timebusinessnews.com/harsh-verma-ifgict/",
+        "label": "Read Fellowship Announcement"
+      }
+    ]
+  },
+  {
+    "title": "Google Developer Expert",
+    "role": "GDE in AI & Cloud",
+    "tier": "Google Expert",
+    "credential_id": "Google Recognized Leader",
+    "category": "mentorship",
+    "image": "images/memberships/gde.svg",
+    "description": "Recognized by Google as a global subject matter expert and community leader in AI and Google Cloud, speaking at premier tech events and guiding engineering communities worldwide.",
+    "url": "https://me.developers.google.com/communities/experts?q=harsh%20verma",
+    "links": [
+      {
+        "url": "https://me.developers.google.com/communities/experts?q=harsh%20verma",
+        "label": "Google GDE Directory"
+      }
+    ]
+  },
+  {
+    "title": "RSA Conference (RSAC)",
+    "role": "Invite-Only Expert Member",
+    "tier": "Invite-Only",
+    "credential_id": "RSAC Expert Library Contributor",
+    "category": "council",
+    "image": "images/memberships/rsac.svg",
+    "description": "Selected member of RSA Conference's curated cybersecurity library network, publishing research on autonomous AI agent threat models, zero-trust architectures, and \"Clean Attack\" forensics.",
+    "url": "https://portal.onersac.com/library/discover",
+    "links": [
+      {
+        "url": "https://portal.onersac.com/library/discover",
+        "label": "RSAC Discover Portal"
+      }
+    ]
+  },
+  {
+    "title": "ADPList Mentorship Community",
+    "role": "Top Mentor (AI & Tech Leadership)",
+    "tier": "Top Mentor",
+    "credential_id": "Verified Global Mentor",
+    "category": "mentorship",
+    "image": "images/memberships/adplist.svg",
+    "description": "Top-rated global mentor on ADPList, providing 1-on-1 mentoring, AI architecture reviews, and engineering leadership guidance to practitioners and engineering leaders across 30+ countries.",
+    "url": "https://adplist.org/mentors/harsh-verma",
+    "links": [
+      {
+        "url": "https://adplist.org/mentors/harsh-verma",
+        "label": "View ADPList Profile"
+      }
+    ]
+  },
+  {
+    "title": "Dent Capital Expert List",
+    "role": "Mentor & Technical Advisor",
+    "tier": "Expert Advisor",
+    "credential_id": "Venture & Tech Network",
+    "category": "council",
+    "image": "images/memberships/dent_capital.svg",
+    "description": "Serving on the Dent Capital Expert List, advising emerging venture capital funds, incubators, and enterprise founders on cutting-edge AI product strategies and technical roadmaps.",
+    "url": "https://councils.forttuna.com/council-member/harsh-verma/",
+    "links": [
+      {
+        "url": "https://councils.forttuna.com/council-member/harsh-verma/",
+        "label": "Learn More"
+      }
+    ]
+  },
+  {
+    "title": "HackUTD & Hackmakers",
+    "role": "AI Challenge Judge & Mentor",
+    "tier": "Judge & Mentor",
+    "credential_id": "Texas & Global Hackathons",
+    "category": "mentorship",
+    "image": "images/communities/hackutd.png",
+    "description": "Serving as technical judge and AI mentor at major hackathons including HackUTD (Texas's largest collegiate hackathon) and Hackmakers international challenges, evaluating multi-agent and data engineering projects.",
+    "url": "https://hackutd.co/",
+    "links": [
+      {
+        "url": "https://hackutd.co/",
+        "label": "Visit HackUTD"
+      }
+    ]
+  },
+  {
+    "title": "ODSC & SIIM Communities",
+    "role": "Speaker & Member",
+    "tier": "Community",
+    "credential_id": "Open Data Science & Imaging",
+    "category": "mentorship",
+    "image": "images/communities/odsc_logo.png",
+    "description": "Active contributor and speaker across Open Data Science Conference (ODSC) and the Society for Imaging Informatics in Medicine (SIIM), presenting on machine learning pipelines and multimodal healthcare imaging.",
+    "url": "https://odsc.com/",
+    "links": [
+      {
+        "url": "https://odsc.com/",
+        "label": "Visit ODSC"
+      }
+    ]
+  },
+  {
+    "title": "Screna.ai",
+    "role": "Technical Mentor & AI Advisor",
+    "tier": "Technical Mentor",
+    "credential_id": "Mentor Dashboard & Evaluations",
+    "category": "mentorship",
+    "image": "images/memberships/screna.svg",
+    "description": "Serving as Technical Mentor and Advisor at Screna.ai, guiding emerging engineers and evaluating AI talent, system design competencies, and enterprise engineering capabilities.",
+    "url": "https://www.screna.ai/mentor-dashboard",
+    "links": [
+      {
+        "url": "https://www.screna.ai/mentor-dashboard",
+        "label": "Mentor Dashboard"
+      }
+    ]
+  }
+]

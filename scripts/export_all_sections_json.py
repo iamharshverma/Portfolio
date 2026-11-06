@@ -540,6 +540,28 @@ def export_verified_profiles():
     return profiles
 
 
+def export_memberships_and_associations():
+    """10. Export all 26 verified associations, fellowships & memberships."""
+    kg_path = os.path.join(ROOT_DIR, "data", "knowledge-graph.json")
+    with open(kg_path, "r", encoding="utf-8") as f:
+        kg = json.load(f)
+
+    assocs = kg.get("entities", {}).get("associations", [])
+
+    output_path = os.path.join(DATA_DIR, "memberships_and_associations.json")
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(assocs, f, indent=2, ensure_ascii=False)
+    
+    # Also write alias filenames for developer convenience
+    for alias_name in ("associations.json", "memberships.json"):
+        alias_path = os.path.join(DATA_DIR, alias_name)
+        with open(alias_path, "w", encoding="utf-8") as f:
+            json.dump(assocs, f, indent=2, ensure_ascii=False)
+
+    print(f"Exported {len(assocs)} memberships & associations to {output_path} (and aliases)")
+    return assocs
+
+
 def main():
     print("=== Exporting All Portfolio Sections to Individual Comprehensive JSON Files ===")
     j = export_judging()
@@ -551,17 +573,19 @@ def main():
     b = export_books()
     bl = export_blogs()
     vp = export_verified_profiles()
+    ma = export_memberships_and_associations()
 
     print("\nSummary of Exported Files:")
-    print(f"1. data/judging_engagements.json:     {len(j)} records")
-    print(f"2. data/speaking_engagements.json:    {len(s)} records")
-    print(f"3. data/keynote_engagements.json:     {len(k)} records")
-    print(f"4. data/media_features.json:          {len(m)} records")
-    print(f"5. data/awards_and_honors.json:       {len(a)} records")
-    print(f"6. data/research_publications.json:   {len(p)} records")
-    print(f"7. data/books_and_volumes.json:       {len(b)} records")
-    print(f"8. data/blog_articles.json:           {len(bl)} records")
-    print(f"9. data/verified_profiles.json:       {len(vp)} records")
+    print(f"1.  data/judging_engagements.json:           {len(j)} records")
+    print(f"2.  data/speaking_engagements.json:          {len(s)} records")
+    print(f"3.  data/keynote_engagements.json:           {len(k)} records")
+    print(f"4.  data/media_features.json:                {len(m)} records")
+    print(f"5.  data/awards_and_honors.json:             {len(a)} records")
+    print(f"6.  data/research_publications.json:         {len(p)} records")
+    print(f"7.  data/books_and_volumes.json:             {len(b)} records")
+    print(f"8.  data/blog_articles.json:                 {len(bl)} records")
+    print(f"9.  data/verified_profiles.json:             {len(vp)} records")
+    print(f"10. data/memberships_and_associations.json:  {len(ma)} records (also as associations.json & memberships.json)")
     print("================================================================================")
 
 
