@@ -29,6 +29,15 @@ try {
   console.warn('[Build] Warning during export_all_sections_json:', err.message);
 }
 
+// 1a-2. Build Executive Omnisearch index (222 records) and Search Analytics
+try {
+  console.log('[Build] Building Executive Omnisearch index (222 records) and Search Analytics...');
+  execSync('python3 scripts/build_omnisearch_index.py', { stdio: 'inherit' });
+  execSync('python3 scripts/generate_search_analytics.py', { stdio: 'inherit' });
+} catch (err) {
+  console.warn('[Build] Warning during omnisearch build:', err.message);
+}
+
 // 1b. Generate Board Biography PDF
 try {
   console.log('[Build] Generating Board Biography PDF...');
@@ -43,6 +52,14 @@ try {
   execSync('python3 scripts/inject_knowledge_graph.py', { stdio: 'inherit' });
 } catch (err) {
   console.warn('[Build] Warning during inject_knowledge_graph:', err.message);
+}
+
+// 1d. Inject Executive Omnisearch & Refinement assets across all HTML pages
+try {
+  console.log('[Build] Ensuring Omnisearch and Executive Refinements across HTML pages...');
+  execSync('python3 scripts/inject_executive_omnisearch_assets.py', { stdio: 'inherit' });
+} catch (err) {
+  console.warn('[Build] Warning during inject_executive_omnisearch_assets:', err.message);
 }
 
 // 2. Prepare output directories atomically to avoid serving partial dist states
