@@ -83,9 +83,33 @@ div:nth-of-type(3) > img:nth-of-type(1):hover {
 }
 
 /* ==========================================================================
-   3. Global Search Button in Navbar (Top Right)
+   3. Global Search Button & Input Element Styling (Universal Viewports)
+   Requirement: font-style: italic; font-weight: normal; font-family: inherit;
    ========================================================================== */
-.nav-global-search-btn {
+#navGlobalSearchBtn,
+#navGlobalSearchBtn *,
+#navGlobalSearchBtn input,
+#navGlobalSearchBtn .nav-search-input,
+#navGlobalSearchBtn span,
+#navGlobalSearchBtn .search-label-text,
+button#navGlobalSearchBtn,
+button#navGlobalSearchBtn input,
+.nav-global-search-btn,
+.nav-global-search-btn input,
+.nav-global-search-btn span,
+.nav-global-search-btn .search-label-text,
+.nav-search-input,
+.nav-search-input::placeholder,
+.nav-global-search-btn-mobile,
+#hvOmnisearchInput,
+.hv-omnisearch-input,
+.hv-omnisearch-input::placeholder {
+  font-style: italic !important;
+  font-weight: normal !important;
+  font-family: inherit !important;
+}
+
+#navGlobalSearchBtn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -93,8 +117,6 @@ div:nth-of-type(3) > img:nth-of-type(1):hover {
   border: 1px solid rgba(203, 213, 225, 0.7);
   color: #334155;
   font-size: 13px;
-  font-weight: 400 !important;
-  font-style: italic !important;
   padding: 5px 12px;
   border-radius: 20px;
   cursor: pointer;
@@ -104,15 +126,81 @@ div:nth-of-type(3) > img:nth-of-type(1):hover {
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   line-height: 1.4;
   vertical-align: middle;
+  min-height: 38px;
+}
+
+#navGlobalSearchBtn input,
+.nav-search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  color: #334155;
+  font-size: 13px;
+  width: 72px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.4;
+  cursor: pointer;
+  letter-spacing: 0.1px;
+}
+
+#navGlobalSearchBtn input::placeholder,
+.nav-search-input::placeholder {
+  color: #64748b;
+  opacity: 0.9;
+}
+
+body.dark #navGlobalSearchBtn input,
+[data-theme="dark"] #navGlobalSearchBtn input,
+body.dark .nav-search-input,
+[data-theme="dark"] .nav-search-input {
+  color: #e2e8f0;
+}
+
+body.dark #navGlobalSearchBtn input::placeholder,
+[data-theme="dark"] #navGlobalSearchBtn input::placeholder,
+body.dark .nav-search-input::placeholder,
+[data-theme="dark"] .nav-search-input::placeholder {
+  color: #94a3b8;
 }
 
 .nav-global-search-btn span,
 .nav-global-search-btn .search-label-text,
 #navGlobalSearchBtn > span,
 nav#navbar div#navbarCollapse ul li button#navGlobalSearchBtn > span {
-  font-weight: 400 !important;
+  font-weight: normal !important;
   font-style: italic !important;
+  font-family: inherit !important;
   letter-spacing: 0.1px;
+}
+
+.nav-global-search-btn-mobile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 12px;
+  background: rgba(241, 245, 249, 0.9);
+  border: 1px solid rgba(203, 213, 225, 0.8);
+  color: #2563eb;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0;
+}
+
+body.dark .nav-global-search-btn-mobile,
+[data-theme="dark"] .nav-global-search-btn-mobile {
+  background: rgba(30, 41, 59, 0.9);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #38bdf8;
 }
 
 body.dark .nav-global-search-btn,
@@ -726,6 +814,83 @@ body.dark .hv-hint-item kbd,
   }
 }
 
+/* ==========================================================================
+   Responsive Navbar Search Layout (Collapsible Menu & Viewport Breakpoints)
+   ========================================================================== */
+@media (max-width: 991px) {
+  /* Allow top-right container in collapsed mobile navbar to wrap seamlessly */
+  .navbar-collapse .top-right,
+  #navbarCollapse .top-right {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-top: 1px solid rgba(226, 232, 240, 0.6);
+  }
+
+  body.dark .navbar-collapse .top-right,
+  [data-theme="dark"] #navbarCollapse .top-right {
+    border-top-color: rgba(255, 255, 255, 0.08);
+  }
+
+  /* Make search container full-width on mobile collapsible menu */
+  .navbar-collapse .nav-search-li,
+  #navbarCollapse .nav-search-li {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-bottom: 14px !important;
+  }
+
+  /* Touch-friendly full-width search button inside mobile dropdown */
+  #navGlobalSearchBtn,
+  button#navGlobalSearchBtn,
+  .nav-global-search-btn {
+    display: flex !important;
+    width: 100% !important;
+    min-height: 48px !important;
+    padding: 10px 16px !important;
+    border-radius: 24px !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    font-style: italic !important;
+    font-weight: normal !important;
+    font-family: inherit !important;
+  }
+
+  /* Search input element expands smoothly with comfortable touch size & no-zoom font */
+  #navGlobalSearchBtn input,
+  #navGlobalSearchBtn .nav-search-input,
+  .nav-search-input {
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    min-height: 36px !important;
+    font-size: 16px !important;
+    font-style: italic !important;
+    font-weight: normal !important;
+    font-family: inherit !important;
+  }
+
+  #navGlobalSearchBtn input::placeholder,
+  .nav-search-input::placeholder {
+    font-size: 15px !important;
+    font-style: italic !important;
+    font-weight: normal !important;
+    font-family: inherit !important;
+  }
+
+  #navGlobalSearchBtn i,
+  .nav-global-search-btn i {
+    font-size: 18px !important;
+    margin-right: 8px !important;
+  }
+}
+
 @media (max-width: 576px) {
   #hvOmnisearchModal {
     padding: 8px 6px;
@@ -747,8 +912,10 @@ body.dark .hv-hint-item kbd,
   }
 
   .hv-omnisearch-close-btn {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -768,8 +935,11 @@ body.dark .hv-hint-item kbd,
   }
 
   .hv-filter-pill {
-    padding: 4px 8px;
-    font-size: 10.5px;
+    padding: 5px 10px;
+    min-height: 32px;
+    font-size: 11px;
+    display: inline-flex;
+    align-items: center;
   }
 
   .hv-omnisearch-results {
@@ -783,19 +953,21 @@ body.dark .hv-hint-item kbd,
   }
 
   .hv-search-item {
-    padding: 8px 9px;
-    gap: 9px;
+    padding: 10px;
+    min-height: 48px;
+    gap: 10px;
   }
 
   .hv-item-icon-box {
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
-    border-radius: 7px;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    font-size: 16px;
+    border-radius: 8px;
   }
 
   .hv-item-title {
-    font-size: 13px;
+    font-size: 13.5px;
   }
 
   .hv-item-badge {
@@ -804,7 +976,7 @@ body.dark .hv-hint-item kbd,
   }
 
   .hv-item-subtitle {
-    font-size: 11px;
+    font-size: 11.5px;
     margin-bottom: 2px;
   }
 
@@ -835,24 +1007,43 @@ body.dark .hv-hint-item kbd,
     font-size: 11px;
   }
 
-  /* Mobile navbar search button */
+  /* Compact Navbar Search Button on very small viewports */
+  .nav-global-search-btn-mobile {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+  }
+
+  #navGlobalSearchBtn,
+  button#navGlobalSearchBtn,
   .nav-global-search-btn {
-    padding: 4px 9px;
-    font-size: 12px;
-    font-weight: 400 !important;
+    min-height: 46px !important;
+    padding: 8px 14px !important;
+    font-size: 13px !important;
+    font-weight: normal !important;
     font-style: italic !important;
-    border-radius: 16px;
+    font-family: inherit !important;
+  }
+
+  #navGlobalSearchBtn input,
+  .nav-search-input {
+    font-size: 16px !important;
+    font-weight: normal !important;
+    font-style: italic !important;
+    font-family: inherit !important;
   }
 
   .nav-global-search-btn span,
   .nav-global-search-btn .search-label-text,
   #navGlobalSearchBtn > span {
-    font-weight: 400 !important;
+    font-weight: normal !important;
     font-style: italic !important;
+    font-family: inherit !important;
   }
 
   .nav-global-search-btn i {
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal !important;
   }
 }

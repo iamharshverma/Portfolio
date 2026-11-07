@@ -146,6 +146,7 @@ copyRecursive(distDir, buildDir);
 if (fs.existsSync(path.join(distDir, 'index.html'))) {
   const indexSize = fs.statSync(path.join(distDir, 'index.html')).size;
   console.log(`[Build] Success! Valid build artifacts generated in dist/ (index.html: ${indexSize} bytes).`);
+  process.exit(0);
 } else {
   console.error('[Build] Error: dist/index.html was not created!');
   process.exit(1);

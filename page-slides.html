@@ -806,7 +806,7 @@
 </head>
 
 <body>
-                                                    <!-- Navbar Start -->
+                                                        <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky" id="navbar">
         <a rel="me" href="https://mastodon.social/@harshverma59" class="sr-only">Mastodon</a>
         <div class="container">
@@ -835,9 +835,14 @@
                     <span class="brand-first-name">Harsh</span><span class="brand-last-name">Verma</span>
                 </span>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="mdi mdi-menu"></i>
-            </button>
+            <div class="d-inline-flex align-items-center ml-auto d-lg-none mobile-nav-actions">
+                <button type="button" class="nav-global-search-btn-mobile mr-2" data-action="open-omnisearch" aria-label="Search" title="Search">
+                    <i class="mdi mdi-magnify"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
                     <li class="nav-item">
@@ -926,10 +931,11 @@
                     </li>
                 </ul>
                 <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
-                    <li class="list-inline-item mr-2">
+                    <li class="list-inline-item mr-2 nav-search-li">
                         <button type="button" class="nav-global-search-btn" id="navGlobalSearchBtn" data-action="open-omnisearch" aria-label="Search" title="Search">
                             <i class="mdi mdi-magnify mr-1"></i>
-                            <span class="search-label-text">Search</span>
+                            <input type="text" class="nav-search-input" id="navSearchInput" placeholder="Search..." readonly aria-label="Search">
+                            <span class="search-label-text sr-only">Search</span>
                         </button>
                     </li>
                     <li class="list-inline-item mr-2">
@@ -1441,7 +1447,7 @@
     </section>
     <!-- Main Content End -->
 
-                                                    <!-- Footer Start -->
+                                                        <!-- Footer Start -->
     <footer class="footer bg-light">
         <div class="container">
             <div class="row justify-content-center">

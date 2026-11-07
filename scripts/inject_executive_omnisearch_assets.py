@@ -13,10 +13,11 @@ import re
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-CLEAN_SEARCH_BTN = """                    <li class="list-inline-item mr-2">
+CLEAN_SEARCH_BTN = """                    <li class="list-inline-item mr-2 nav-search-li">
                         <button type="button" class="nav-global-search-btn" id="navGlobalSearchBtn" data-action="open-omnisearch" aria-label="Search" title="Search">
                             <i class="mdi mdi-magnify mr-1"></i>
-                            <span class="search-label-text">Search</span>
+                            <input type="text" class="nav-search-input" id="navSearchInput" placeholder="Search..." readonly aria-label="Search">
+                            <span class="search-label-text sr-only">Search</span>
                         </button>
                     </li>"""
 
