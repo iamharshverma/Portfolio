@@ -4,8 +4,7 @@ scripts/inject_executive_omnisearch_assets.py
 Injects:
 1. <link rel="stylesheet" href="css/hv-executive-refinements.css"> in <head>
 2. <script src="js/hv-omnisearch.js"></script> before </body>
-3. Global Search button in navbar if not present
-Across all 28 HTML files in the repository.
+3. Clean Search button (renamed from Global Search, no Cmd+K icon) in navbar across all HTML files
 """
 
 import os
@@ -14,11 +13,10 @@ import re
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SEARCH_BTN_HTML = """                    <li class="list-inline-item mr-2">
-                        <button type="button" class="nav-global-search-btn" id="navGlobalSearchBtn" data-action="open-omnisearch" aria-label="Global Search (Cmd+K)" title="Global Search (Cmd+K / Ctrl+K)">
+CLEAN_SEARCH_BTN = """                    <li class="list-inline-item mr-2">
+                        <button type="button" class="nav-global-search-btn" id="navGlobalSearchBtn" data-action="open-omnisearch" aria-label="Search" title="Search">
                             <i class="mdi mdi-magnify mr-1"></i>
-                            <span class="d-none d-xl-inline search-label-text">Global Search</span>
-                            <span class="search-kbd-shortcut"><kbd class="nav-kbd">⌘K</kbd></span>
+                            <span class="search-label-text">Search</span>
                         </button>
                     </li>"""
 
@@ -48,21 +46,27 @@ def update_html_files():
                 content = content.replace("</body>", JS_TAG + "</body>", 1)
                 changed = True
 
-        # 3. Inject Navbar Global Search button if navbar exists and button isn't there
-        if 'id="navGlobalSearchBtn"' not in content and 'nav-global-search-btn' not in content:
+        # 3. Update navbar search button if present to clean "Search" without Command K
+        old_btn_pattern = re.compile(r'<li[^>]*class=[\'"][^\'"]*list-inline-item[^\'"]*mr-2[^\'"]*[\'"][^>]*>\s*<button[^>]*id=[\'"]navGlobalSearchBtn[\'"][^>]*>.*?</button>\s*</li>', re.DOTALL)
+        if old_btn_pattern.search(content):
+            new_content = old_btn_pattern.sub(CLEAN_SEARCH_BTN.strip(), content)
+            if new_content != content:
+                content = new_content
+                changed = True
+        elif 'id="navGlobalSearchBtn"' not in content and 'nav-global-search-btn' not in content:
             # Look for top-right ul
             match = re.search(r'(<ul[^>]*class=[\'"][^\'"]*top-right[^\'"]*[\'"][^>]*>\s*)', content)
             if match:
-                content = content[:match.end()] + "\n" + SEARCH_BTN_HTML + "\n" + content[match.end():]
+                content = content[:match.end()] + "\n" + CLEAN_SEARCH_BTN + "\n" + content[match.end():]
                 changed = True
 
         if changed:
             with open(path, "w", encoding="utf-8") as f:
                 f.write(content)
             count += 1
-            print(f"Updated {fname} with Omnisearch & Executive Refinements")
+            print(f"Updated {fname} with clean Search button and assets")
 
-    print(f"\nCompleted asset injection across {count} HTML files.")
+    print(f"\nCompleted asset & header update across {count} HTML files.")
 
 if __name__ == "__main__":
     update_html_files()

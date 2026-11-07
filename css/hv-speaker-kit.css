@@ -1,0 +1,119 @@
+/* ==========================================================================
+   Harsh Verma Portfolio - Live Speaker One-Sheet & Media Kit Component
+   ========================================================================== */
+
+.hv-speaker-kit-box {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.05);
+  margin-bottom: 35px;
+}
+
+body.dark-mode .hv-speaker-kit-box {
+  background: #111827;
+  border-color: rgba(51, 65, 85, 0.85);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5);
+}
+
+.hv-bio-tab-btn {
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: 1.5px solid #e2e8f0;
+  background: #f8fafc;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+body.dark-mode .hv-bio-tab-btn {
+  background: #1e293b;
+  border-color: #334155;
+  color: #94a3b8;
+}
+
+.hv-bio-tab-btn.active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+body.dark-mode .hv-bio-tab-btn.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #ffffff;
+}
+
+.hv-bio-content-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 22px;
+  margin-top: 18px;
+  position: relative;
+}
+
+body.dark-mode .hv-bio-content-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.hv-bio-text {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 14px;
+}
+
+body.dark-mode .hv-bio-text {
+  color: #cbd5e1;
+}
+
+.hv-copy-toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: #0f172a;
+  color: #ffffff;
+  padding: 10px 22px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hv-copy-toast.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Printable Speaker One Sheet Modal */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #hvSpeakerOneSheetModal,
+  #hvSpeakerOneSheetModal * {
+    visibility: visible;
+  }
+  #hvSpeakerOneSheetModal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}

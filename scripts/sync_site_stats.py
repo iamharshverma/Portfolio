@@ -590,8 +590,8 @@ def sync_html_and_generators(stats):
                             <a class="dropdown-item nav-dropdown-item{get_item_active('page-social')}" href="page-social">
                                 <div class="dropdown-item-icon bg-soft-success"><i class="mdi mdi-share-variant"></i></div>
                                 <div class="dropdown-item-content">
-                                    <span class="dropdown-item-title">Social &amp; Routine <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Feed</span></span>
-                                    <span class="dropdown-item-desc">LinkedIn &amp; Instagram routine updates</span>
+                                    <span class="dropdown-item-title">Partnership &amp; Social <span class="badge badge-pill badge-primary ml-1" style="font-size: 10px;">Collaborate</span></span>
+                                    <span class="dropdown-item-desc">Brand partnerships &amp; executive social authority</span>
                                 </div>
                             </a>
                             <a class="dropdown-item nav-dropdown-item" href="page-about#verified-profiles">

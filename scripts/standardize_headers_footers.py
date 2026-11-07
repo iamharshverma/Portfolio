@@ -116,10 +116,9 @@ NAVBAR_TEMPLATE = """    <!-- Navbar Start -->
                 </ul>
                 <ul class="top-right list-unstyled list-inline mb-0 ml-lg-3 nav-social d-flex align-items-center">
                     <li class="list-inline-item mr-2">
-                        <button type="button" class="nav-global-search-btn" id="navGlobalSearchBtn" data-action="open-omnisearch" aria-label="Global Search (Cmd+K)" title="Global Search (Cmd+K / Ctrl+K)">
+                        <button type="button" class="nav-global-search-btn" id="navGlobalSearchBtn" data-action="open-omnisearch" aria-label="Search" title="Search">
                             <i class="mdi mdi-magnify mr-1"></i>
-                            <span class="d-none d-xl-inline search-label-text">Global Search</span>
-                            <span class="search-kbd-shortcut"><kbd class="nav-kbd">⌘K</kbd></span>
+                            <span class="search-label-text">Search</span>
                         </button>
                     </li>
                     <li class="list-inline-item mr-2">
