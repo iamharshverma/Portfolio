@@ -1,98 +1,45 @@
 /* ==========================================================================
    Harsh Verma - Executive Visual Styling & Look-and-Feel Modernization
    File: css/hv-executive-refinements.css
-   - Consistent Neo-Minimalist Glassmorphism for All Page Headers across the Website
-   - Non-Bold Italic Search Input Text & Placeholder Formatting
-   - Aligned Search Bar Consistently at the Top of Central Div Sections
-   - Subtle Glassmorphism (blur: 14px), Refined Card Hover Glow Effects
+   - Neo-Minimalist Aesthetics & Subtle Glassmorphism (blur: 12px)
+   - Refined Card Hover Elevations with Subtle Glow Effects
    - Enhanced Dark/Light Mode Contrast & Typography
+   - Executive Command Palette (Cmd+K Global Omnisearch) Modal Styling
    ========================================================================== */
 
 :root {
-  --hv-glass-bg: rgba(255, 255, 255, 0.85);
+  --hv-glass-bg: rgba(255, 255, 255, 0.82);
   --hv-glass-border: rgba(226, 232, 240, 0.85);
-  --hv-glass-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+  --hv-glass-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.06);
   --hv-glow-primary: rgba(37, 99, 235, 0.18);
   --hv-glow-accent: rgba(99, 102, 241, 0.22);
   --hv-card-hover-border: rgba(37, 99, 235, 0.35);
-  --hv-search-modal-bg: rgba(255, 255, 255, 0.98);
+  --hv-search-modal-bg: rgba(255, 255, 255, 0.96);
   --hv-search-modal-border: rgba(226, 232, 240, 0.95);
-  --hv-search-item-hover: rgba(241, 245, 249, 0.92);
-  --hv-search-item-active: rgba(238, 242, 255, 0.96);
+  --hv-search-item-hover: rgba(241, 245, 249, 0.9);
+  --hv-search-item-active: rgba(238, 242, 255, 0.95);
   --hv-text-high-contrast: #0f172a;
 }
 
 body.dark,
 [data-theme="dark"],
 .dark {
-  --hv-glass-bg: rgba(15, 23, 42, 0.85);
+  --hv-glass-bg: rgba(15, 23, 42, 0.84);
   --hv-glass-border: rgba(255, 255, 255, 0.08);
   --hv-glass-shadow: 0 12px 36px -10px rgba(0, 0, 0, 0.45);
   --hv-glow-primary: rgba(56, 189, 248, 0.22);
   --hv-glow-accent: rgba(129, 140, 248, 0.26);
   --hv-card-hover-border: rgba(56, 189, 248, 0.45);
-  --hv-search-modal-bg: rgba(15, 23, 42, 0.98);
+  --hv-search-modal-bg: rgba(15, 23, 42, 0.97);
   --hv-search-modal-border: rgba(255, 255, 255, 0.12);
-  --hv-search-item-hover: rgba(30, 41, 59, 0.75);
-  --hv-search-item-active: rgba(30, 58, 138, 0.4);
+  --hv-search-item-hover: rgba(30, 41, 59, 0.7);
+  --hv-search-item-active: rgba(30, 58, 138, 0.35);
   --hv-text-high-contrast: #f8fafc;
 }
 
 /* ==========================================================================
-   1. Consistent Neo-Minimalist Glassmorphism for All Page Headers (Website-Wide)
+   1. Neo-Minimalist Glassmorphism Surfaces
    ========================================================================== */
-.navbar-custom,
-.navbar-custom.sticky,
-nav#navbar,
-header.header,
-.sticky-top,
-.fixed-top {
-  backdrop-filter: blur(14px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(14px) saturate(180%) !important;
-  background: rgba(255, 255, 255, 0.85) !important;
-  border-bottom: 1px solid rgba(226, 232, 240, 0.85) !important;
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04) !important;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
-
-body.dark .navbar-custom,
-body.dark .navbar-custom.sticky,
-body.dark nav#navbar,
-body.dark header.header,
-body.dark .sticky-top,
-body.dark .fixed-top,
-[data-theme="dark"] .navbar-custom,
-[data-theme="dark"] .navbar-custom.sticky,
-[data-theme="dark"] nav#navbar,
-[data-theme="dark"] header.header,
-[data-theme="dark"] .sticky-top,
-[data-theme="dark"] .fixed-top {
-  background: rgba(15, 23, 42, 0.85) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-  box-shadow: 0 4px 24px -2px rgba(0, 0, 0, 0.45) !important;
-}
-
-/* Dropdown Menu Neo-Minimalist Glassmorphism */
-.nav-custom-dropdown,
-.dropdown-menu {
-  backdrop-filter: blur(16px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
-  background: rgba(255, 255, 255, 0.94) !important;
-  border: 1px solid rgba(226, 232, 240, 0.9) !important;
-  border-radius: 14px !important;
-  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.12) !important;
-}
-
-body.dark .nav-custom-dropdown,
-body.dark .dropdown-menu,
-[data-theme="dark"] .nav-custom-dropdown,
-[data-theme="dark"] .dropdown-menu {
-  background: rgba(15, 23, 42, 0.94) !important;
-  border-color: rgba(255, 255, 255, 0.1) !important;
-  box-shadow: 0 18px 45px -10px rgba(0, 0, 0, 0.55) !important;
-}
-
-/* Glass Panels & Surfaces */
 .glass-panel-refined,
 .career-infographic-card,
 .patent-showcase-box,
@@ -136,28 +83,25 @@ div:nth-of-type(3) > img:nth-of-type(1):hover {
 }
 
 /* ==========================================================================
-   3. Search Button in Navbar (Top Right)
+   3. Global Search Button in Navbar (Top Right)
    ========================================================================== */
 .nav-global-search-btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 6px;
-  height: 34px;
-  padding: 0 14px;
   background: rgba(241, 245, 249, 0.85);
-  border: 1px solid rgba(203, 213, 225, 0.8);
-  border-radius: 18px;
-  font-size: 13px;
-  font-weight: 400 !important;
-  font-style: italic !important;
+  border: 1px solid rgba(203, 213, 225, 0.7);
   color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
   cursor: pointer;
   outline: none;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  line-height: 1;
+  line-height: 1.4;
   vertical-align: middle;
 }
 
@@ -187,7 +131,6 @@ body.dark .nav-global-search-btn:hover,
 .nav-global-search-btn i {
   font-size: 15px;
   color: #2563eb;
-  font-style: normal !important;
 }
 
 body.dark .nav-global-search-btn i,
@@ -195,106 +138,27 @@ body.dark .nav-global-search-btn i,
   color: #38bdf8;
 }
 
-.search-label-text,
-.nav-global-search-btn .search-label-text {
-  font-weight: 400 !important;
-  font-style: italic !important;
-  letter-spacing: 0.2px;
+.nav-global-search-btn .nav-kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 10.5px;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #64748b;
+  padding: 1.5px 5px;
+  border-radius: 4px;
+  letter-spacing: -0.2px;
+}
+
+body.dark .nav-global-search-btn .nav-kbd,
+[data-theme="dark"] .nav-global-search-btn .nav-kbd {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #94a3b8;
 }
 
 /* ==========================================================================
-   4. Search Input Text: Non-Bold Italics Formatting (Website-Wide)
-   ========================================================================== */
-.hv-omnisearch-input,
-.hv-omnisearch-input::placeholder,
-.pub-search-box input,
-.pub-search-box input::placeholder,
-.search-input-field,
-.search-input-field::placeholder,
-.event-search-input,
-.event-search-input::placeholder,
-#pubSearchInput,
-#pubSearchInput::placeholder,
-#mediaSearchInput,
-#mediaSearchInput::placeholder,
-#awardSearchInput,
-#awardSearchInput::placeholder,
-#eventSearchInput,
-#eventSearchInput::placeholder,
-#membershipSearchInput,
-#membershipSearchInput::placeholder,
-input[type="search"],
-input[type="search"]::placeholder,
-.search-input-text {
-  font-weight: 400 !important;
-  font-style: italic !important;
-  letter-spacing: 0.15px;
-}
-
-/* ==========================================================================
-   5. Aligned Search Bar at Top of Central Div Section (In-Page)
-   ========================================================================== */
-.pub-search-box,
-.search-box-wrapper,
-.search-bar-container,
-.event-search-wrap,
-.section-search-container {
-  margin: 0 auto 32px auto !important;
-  max-width: 720px !important;
-  width: 100% !important;
-  position: relative !important;
-  display: block;
-}
-
-.pub-search-box input,
-.search-input-field,
-.event-search-input {
-  border-radius: 14px !important;
-  height: 50px !important;
-  padding-left: 46px !important;
-  padding-right: 20px !important;
-  font-size: 15px !important;
-  font-weight: 400 !important;
-  font-style: italic !important;
-  background: rgba(255, 255, 255, 0.88) !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
-  border: 1px solid rgba(203, 213, 225, 0.85) !important;
-  box-shadow: 0 4px 18px -2px rgba(0, 0, 0, 0.05) !important;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
-
-body.dark .pub-search-box input,
-body.dark .search-input-field,
-body.dark .event-search-input,
-[data-theme="dark"] .pub-search-box input,
-[data-theme="dark"] .search-input-field,
-[data-theme="dark"] .event-search-input {
-  background: rgba(15, 23, 42, 0.88) !important;
-  border-color: rgba(255, 255, 255, 0.12) !important;
-  color: #f8fafc !important;
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.35) !important;
-}
-
-.pub-search-box input:focus,
-.search-input-field:focus,
-.event-search-input:focus {
-  border-color: #2563eb !important;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18), 0 8px 24px -4px rgba(37, 99, 235, 0.15) !important;
-}
-
-body.dark .pub-search-box input:focus,
-body.dark .search-input-field:focus,
-body.dark .event-search-input:focus,
-[data-theme="dark"] .pub-search-box input:focus,
-[data-theme="dark"] .search-input-field:focus,
-[data-theme="dark"] .event-search-input:focus {
-  border-color: #38bdf8 !important;
-  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.22), 0 8px 24px -4px rgba(56, 189, 248, 0.2) !important;
-}
-
-/* ==========================================================================
-   6. Executive Command Palette Modal (Aligned Search Bar at Top of Central Div)
+   4. Executive Command Palette (Cmd+K Global Omnisearch) Modal
    ========================================================================== */
 #hvOmnisearchModal {
   position: fixed;
@@ -303,7 +167,7 @@ body.dark .event-search-input:focus,
   display: none;
   align-items: flex-start;
   justify-content: center;
-  padding: 50px 16px 24px;
+  padding: 60px 16px 24px;
   overflow-y: auto;
   opacity: 0;
   pointer-events: none;
@@ -326,7 +190,7 @@ body.dark .event-search-input:focus,
   z-index: 10051;
 }
 
-/* Central Dialog Div Section */
+/* Floating Palette Dialog */
 .hv-omnisearch-dialog {
   position: relative;
   z-index: 10052;
@@ -342,26 +206,21 @@ body.dark .event-search-input:focus,
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
   flex-direction: column;
-  max-height: calc(100vh - 100px);
+  max-height: calc(100vh - 120px);
 }
 
 #hvOmnisearchModal.active .hv-omnisearch-dialog {
   transform: translateY(0) scale(1);
 }
 
-/* Search Bar Aligned Consistently at the Top of Central Div */
+/* Header & Search Input */
 .hv-omnisearch-header {
-  position: sticky;
-  top: 0;
-  z-index: 20;
   display: flex;
   align-items: center;
   padding: 16px 20px;
   border-bottom: 1px solid var(--hv-search-modal-border);
-  background: var(--hv-search-modal-bg);
+  background: transparent;
   gap: 12px;
-  min-height: 58px;
-  width: 100%;
 }
 
 .hv-omnisearch-icon {
@@ -370,7 +229,6 @@ body.dark .event-search-input:focus,
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  font-style: normal !important;
 }
 
 body.dark .hv-omnisearch-icon,
@@ -383,18 +241,20 @@ body.dark .hv-omnisearch-icon,
   border: none;
   outline: none;
   background: transparent;
-  font-size: 16.5px;
+  font-size: 16px;
   font-weight: 400 !important;
   font-style: italic !important;
   color: var(--hv-text-high-contrast);
   padding: 0;
   line-height: 1.5;
+  font-family: inherit;
 }
 
 .hv-omnisearch-input::placeholder {
   color: #94a3b8;
   font-weight: 400 !important;
   font-style: italic !important;
+  opacity: 0.95;
 }
 
 .hv-omnisearch-close-btn {
@@ -429,24 +289,22 @@ body.dark .hv-omnisearch-close-btn:hover,
   border-bottom: 1px solid var(--hv-search-modal-border);
   overflow-x: auto;
   white-space: nowrap;
-  background: rgba(248, 250, 252, 0.7);
+  background: rgba(248, 250, 252, 0.6);
   -webkit-overflow-scrolling: touch;
 }
 
 body.dark .hv-omnisearch-pills,
 [data-theme="dark"] .hv-omnisearch-pills {
-  background: rgba(15, 23, 42, 0.7);
+  background: rgba(15, 23, 42, 0.6);
 }
 
 .hv-filter-pill {
-  display: inline-flex;
-  align-items: center;
   border: 1px solid rgba(203, 213, 225, 0.8);
   background: #ffffff;
   color: #475569;
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 600;
-  padding: 5px 12px;
+  padding: 4px 10px;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.15s ease;
@@ -457,7 +315,7 @@ body.dark .hv-omnisearch-pills,
 body.dark .hv-filter-pill,
 [data-theme="dark"] .hv-filter-pill {
   border-color: rgba(255, 255, 255, 0.1);
-  background: rgba(30, 41, 59, 0.85);
+  background: rgba(30, 41, 59, 0.8);
   color: #94a3b8;
 }
 
@@ -496,12 +354,12 @@ body.dark .hv-filter-pill.active,
 
 /* Results Group Header */
 .hv-group-header {
-  font-size: 11.5px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  color: #475569;
-  padding: 12px 12px 6px;
+  color: #64748b;
+  padding: 10px 12px 6px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -509,7 +367,7 @@ body.dark .hv-filter-pill.active,
 
 body.dark .hv-group-header,
 [data-theme="dark"] .hv-group-header {
-  color: #cbd5e1;
+  color: #94a3b8;
 }
 
 /* Individual Search Result Item */
@@ -794,4 +652,187 @@ body.dark .hv-hint-item kbd,
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+/* ==========================================================================
+   5. Mobile Responsiveness & Touch Optimization
+   ========================================================================== */
+@media (max-width: 768px) {
+  #hvOmnisearchModal {
+    padding: 16px 10px 12px;
+    align-items: flex-start;
+  }
+
+  .hv-omnisearch-dialog {
+    max-height: calc(100vh - 32px);
+    max-height: calc(100dvh - 32px);
+    border-radius: 16px;
+  }
+
+  .hv-omnisearch-header {
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .hv-omnisearch-input {
+    font-size: 16px !important;
+    font-style: italic !important;
+    font-weight: 400 !important;
+  }
+
+  .hv-omnisearch-input::placeholder {
+    font-size: 14px;
+    font-style: italic !important;
+    font-weight: 400 !important;
+  }
+
+  .hv-omnisearch-results {
+    max-height: calc(100dvh - 180px);
+    padding: 8px;
+  }
+
+  .hv-search-item {
+    padding: 9px 10px;
+    gap: 10px;
+  }
+
+  .hv-item-icon-box {
+    width: 34px;
+    height: 34px;
+    font-size: 17px;
+    border-radius: 8px;
+  }
+
+  .hv-item-title {
+    font-size: 14px;
+  }
+
+  .hv-item-subtitle {
+    font-size: 12px;
+  }
+
+  .hv-item-desc {
+    font-size: 11.5px;
+  }
+}
+
+@media (max-width: 576px) {
+  #hvOmnisearchModal {
+    padding: 8px 6px;
+  }
+
+  .hv-omnisearch-dialog {
+    max-height: calc(100vh - 16px);
+    max-height: calc(100dvh - 16px);
+    border-radius: 14px;
+  }
+
+  .hv-omnisearch-header {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .hv-omnisearch-icon {
+    font-size: 19px;
+  }
+
+  .hv-omnisearch-close-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    padding: 0;
+  }
+
+  .hv-omnisearch-pills {
+    padding: 8px 10px;
+    gap: 4px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .hv-omnisearch-pills::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hv-filter-pill {
+    padding: 4px 8px;
+    font-size: 10.5px;
+  }
+
+  .hv-omnisearch-results {
+    padding: 6px;
+    max-height: calc(100dvh - 155px);
+  }
+
+  .hv-group-header {
+    padding: 8px 10px 4px;
+    font-size: 10px;
+  }
+
+  .hv-search-item {
+    padding: 8px 9px;
+    gap: 9px;
+  }
+
+  .hv-item-icon-box {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 7px;
+  }
+
+  .hv-item-title {
+    font-size: 13px;
+  }
+
+  .hv-item-badge {
+    font-size: 9.5px;
+    padding: 1.5px 5px;
+  }
+
+  .hv-item-subtitle {
+    font-size: 11px;
+    margin-bottom: 2px;
+  }
+
+  .hv-item-desc {
+    font-size: 11px;
+    -webkit-line-clamp: 2;
+  }
+
+  .hv-item-arrow {
+    display: none;
+  }
+
+  .hv-omnisearch-footer {
+    padding: 8px 12px;
+    font-size: 11px;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hv-footer-hints {
+    display: none;
+  }
+
+  .hv-footer-meta {
+    justify-content: center;
+    font-size: 11px;
+  }
+
+  /* Mobile navbar search button */
+  .nav-global-search-btn {
+    padding: 4px 9px;
+    font-size: 12px;
+    border-radius: 16px;
+  }
+
+  .nav-global-search-btn i {
+    font-size: 14px;
+  }
 }
