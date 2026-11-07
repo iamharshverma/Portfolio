@@ -1,41 +1,48 @@
 #!/usr/bin/env python3
 """
 scripts/generate_omnisearch_js.py
-Generates js/hv-omnisearch.js:
-Production-grade Executive Command Palette (Cmd+K Global Omnisearch)
-- Renders all 222 verified records across all 7 categories
-- Displays verified Material Design Icons for every record
-- Clean category filter pills with counts and icons
-- Full section grouping when viewing All
-- Real-time search with match highlights
-- Renamed button to "Search" without command-k badge
+Generates js/hv-omnisearch.js with:
+- Inlined 222 verified records for instantaneous 0ms display on load
+- Asynchronous data fetching fallback and background synchronization
+- Consistent canonical category icons for all 7 sections
+- Non-bold italic search input formatting
+- Sticky top alignment of the Search bar within the central modal dialog div
 """
 
 import os
+import json
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JS_DIR = os.path.join(ROOT_DIR, "js")
+DATA_DIR = os.path.join(ROOT_DIR, "data")
 os.makedirs(JS_DIR, exist_ok=True)
+
+with open(os.path.join(DATA_DIR, "omnisearch_index.json"), "r", encoding="utf-8") as f:
+    index_data = json.load(f)
+
+index_json_str = json.dumps(index_data, ensure_ascii=False)
 
 OMNI_JS = r"""/**
  * Harsh Verma - Executive Command Palette (Cmd+K Global Omnisearch)
  * File: js/hv-omnisearch.js
  * 
  * Features:
- * - Universal Keyboard Access: Cmd+K (macOS), Ctrl+K (Windows/Linux), or '/'
- * - 222 Verified Records across 7 Categories (Publications, Media, Keynotes, Awards, Profiles, Memberships, Books)
- * - Complete section rendering with verified MDI icons and badges
- * - Category Filter Pills with counts and MDI icons
- * - Real-Time Fuzzy Filtering and Match Highlighting
- * - Arrow-Key Navigation (↑/↓), Enter to open, Esc to close
- * - Direct 1-Click Navigation (Outbound in new tab, internal in-page)
+ * - 222 Verified Records Indexed Across All 7 Categories
+ * - Inlined default index for instantaneous 0ms rendering
+ * - Dual-layer data fetching logic with background synchronization
+ * - Consistent canonical Material Design Icons for all categories
+ * - Non-bold italic search input text and placeholder
+ * - Aligned Search bar at the top of the central dialog section
  */
 
 (function () {
   'use strict';
 
-  var omnisearchRecords = [];
-  var isLoaded = false;
+  // Master pre-indexed dataset (222 records across 7 categories)
+  var DEFAULT_OMNI_INDEX = """ + index_json_str + r""";
+
+  var omnisearchRecords = DEFAULT_OMNI_INDEX || [];
+  var isLoaded = true;
   var currentCategory = 'all';
   var currentQuery = '';
   var selectedIndex = 0;
@@ -80,14 +87,14 @@ OMNI_JS = r"""/**
       return (
         '<button type="button" class="hv-filter-pill' + (c.key === 'all' ? ' active' : '') + '" data-cat="' + c.key + '">' +
         '<i class="mdi ' + c.icon + ' mr-1"></i>' +
-        c.label + ' <span class="badge badge-pill badge-light ml-1" style="font-size:10px; opacity:0.9;">' + c.count + '</span>' +
+        c.label + ' <span class="badge badge-pill badge-light ml-1" style="font-size:10.5px; opacity:0.95;">' + c.count + '</span>' +
         '</button>'
       );
     }).join('');
 
     modal.innerHTML =
       '<div class="hv-omnisearch-backdrop" id="hvOmnisearchBackdrop"></div>' +
-      '<div class="hv-omnisearch-dialog">' +
+      '<div class="hv-omnisearch-dialog" role="document">' +
         '<div class="hv-omnisearch-header">' +
           '<div class="hv-omnisearch-icon"><i class="mdi mdi-magnify"></i></div>' +
           '<input type="text" id="hvOmnisearchInput" class="hv-omnisearch-input" ' +
@@ -139,17 +146,28 @@ OMNI_JS = r"""/**
     });
   }
 
-  // Fetch Index Data
+  // Fetch Index Data with fallback
   function loadIndex(callback) {
-    if (isLoaded && omnisearchRecords.length > 0) {
-      if (callback) callback();
-      return;
+    var base = '';
+    var scriptEl = document.querySelector('script[src*="hv-omnisearch.js"]');
+    if (scriptEl && scriptEl.src) {
+      var scriptSrc = scriptEl.getAttribute('src') || '';
+      var jsIdx = scriptSrc.indexOf('js/hv-omnisearch.js');
+      if (jsIdx > 0) {
+        base = scriptSrc.substring(0, jsIdx);
+      }
     }
 
-    var urls = ['data/omnisearch_index.json', '/data/omnisearch_index.json'];
+    var urls = [
+      base + 'data/omnisearch_index.json',
+      '/data/omnisearch_index.json',
+      'data/omnisearch_index.json'
+    ];
+
     function tryFetch(i) {
       if (i >= urls.length) {
-        console.warn('[Omnisearch] Could not load omnisearch_index.json');
+        // Fallback already satisfied by DEFAULT_OMNI_INDEX
+        if (callback) callback();
         return;
       }
       fetch(urls[i])
@@ -158,20 +176,25 @@ OMNI_JS = r"""/**
           return res.json();
         })
         .then(function (data) {
-          omnisearchRecords = data;
-          isLoaded = true;
+          if (Array.isArray(data) && data.length > 0) {
+            omnisearchRecords = data;
+          }
           if (callback) callback();
         })
         .catch(function () {
           tryFetch(i + 1);
         });
     }
+
     tryFetch(0);
   }
 
   // Open / Close Omnisearch
   function openOmnisearch(initialQuery) {
     createModalDOM();
+    renderResults(); // instant render using inlined dataset
+
+    // Background sync
     loadIndex(function () {
       renderResults();
     });
@@ -188,7 +211,7 @@ OMNI_JS = r"""/**
     setTimeout(function () {
       input.focus();
       input.select();
-    }, 50);
+    }, 40);
 
     renderResults();
   }
@@ -246,7 +269,6 @@ OMNI_JS = r"""/**
       });
     }
 
-    // When query is empty, show the entire category or all records grouped by section!
     if (!query) {
       filteredRecords = list;
       return;
@@ -353,9 +375,10 @@ OMNI_JS = r"""/**
       // Section group header when viewing 'all'
       if (currentCategory === 'all' && r.category !== lastCategory) {
         lastCategory = r.category;
+        var catInfo = CATEGORIES.find(function (c) { return c.key === r.category_pill; }) || { icon: 'mdi-folder', count: '' };
         var catCount = omnisearchRecords.filter(function (x) { return x.category === r.category; }).length;
         html += '<div class="hv-group-header">' +
-                  '<span><i class="mdi ' + (r.icon || 'mdi-folder') + ' mr-1"></i> ' + r.category + '</span>' +
+                  '<span><i class="mdi ' + catInfo.icon + ' mr-2 text-primary"></i> ' + r.category + '</span>' +
                   '<span class="badge badge-light border" style="font-size:10.5px;">' + catCount + ' Records</span>' +
                 '</div>';
       }
@@ -509,11 +532,9 @@ OMNI_JS = r"""/**
   // Auto-init on DOM ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function () {
-      loadIndex();
       attachTriggers();
     });
   } else {
-    loadIndex();
     attachTriggers();
   }
 
@@ -531,4 +552,4 @@ OMNI_JS = r"""/**
 with open(os.path.join(JS_DIR, "hv-omnisearch.js"), "w", encoding="utf-8") as f:
     f.write(OMNI_JS)
 
-print("Generated js/hv-omnisearch.js successfully!")
+print("Generated js/hv-omnisearch.js with inlined dataset and complete details!")
