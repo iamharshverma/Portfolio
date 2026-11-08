@@ -732,6 +732,53 @@
             pointer-events: auto;
         }
 
+        /* Portfolio Overlay Buttons (GitHub & Preview) */
+        .portfolio-overlay .btn {
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        }
+
+        .portfolio-overlay .btn-light {
+            background: #ffffff !important;
+            color: #0f172a !important;
+            border: 1px solid rgba(255, 255, 255, 0.85) !important;
+        }
+
+        .portfolio-overlay .btn-light:hover {
+            background: #f1f5f9 !important;
+            color: #0f172a !important;
+            border-color: #ffffff !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35) !important;
+        }
+
+        /* High-visibility theme-aligned Preview button on card hover */
+        .portfolio-overlay .btn-outline-light,
+        .portfolio-overlay a.mfp-image {
+            background: rgba(37, 99, 235, 0.22) !important;
+            color: #ffffff !important;
+            border: 1.5px solid rgba(147, 197, 253, 0.85) !important;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25) !important;
+        }
+
+        .portfolio-overlay .btn-outline-light:hover,
+        .portfolio-overlay a.mfp-image:hover {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+            color: #ffffff !important;
+            border-color: #60a5fa !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.65), 0 0 12px rgba(96, 165, 250, 0.5) !important;
+        }
+
+        .portfolio-overlay .btn-outline-light svg,
+        .portfolio-overlay .btn-outline-light i,
+        .portfolio-overlay a.mfp-image svg,
+        .portfolio-overlay a.mfp-image i {
+            stroke: currentColor !important;
+            color: currentColor !important;
+        }
+
         .portfolio-card-body {
             padding: 22px 20px 18px;
             display: flex;
@@ -839,21 +886,29 @@
         .btn-proj-preview {
             font-size: 12px;
             font-weight: 600;
-            padding: 6px 12px;
+            padding: 6px 14px;
             border-radius: 9999px;
             background: #ffffff;
-            color: #475569 !important;
-            border: 1px solid #cbd5e1;
+            color: #2563eb !important;
+            border: 1.5px solid #bfdbfe;
             display: inline-flex;
             align-items: center;
-            transition: all 0.2s ease;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
             text-decoration: none !important;
         }
 
         .btn-proj-preview:hover {
-            background: #f8fafc;
-            color: #0f172a !important;
-            border-color: #94a3b8;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+            color: #ffffff !important;
+            border-color: #2563eb !important;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4) !important;
+        }
+
+        .btn-proj-preview svg,
+        .btn-proj-preview i {
+            stroke: currentColor !important;
+            color: currentColor !important;
         }
 
         /* Project Grid Filler Widget Cards */
@@ -936,13 +991,30 @@
 
         body.dark-mode .btn-proj-preview {
             background: #1e293b;
-            color: #e2e8f0 !important;
-            border-color: rgba(255, 255, 255, 0.12);
+            color: #93c5fd !important;
+            border-color: rgba(96, 165, 250, 0.4);
         }
 
         body.dark-mode .btn-proj-preview:hover {
-            background: #334155;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
             color: #ffffff !important;
+            border-color: #60a5fa !important;
+            box-shadow: 0 4px 16px rgba(37, 99, 235, 0.55) !important;
+        }
+
+        body.dark-mode .portfolio-overlay .btn-outline-light,
+        body.dark-mode .portfolio-overlay a.mfp-image {
+            background: rgba(37, 99, 235, 0.3) !important;
+            color: #ffffff !important;
+            border: 1.5px solid rgba(96, 165, 250, 0.85) !important;
+        }
+
+        body.dark-mode .portfolio-overlay .btn-outline-light:hover,
+        body.dark-mode .portfolio-overlay a.mfp-image:hover {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+            color: #ffffff !important;
+            border-color: #93c5fd !important;
+            box-shadow: 0 6px 22px rgba(37, 99, 235, 0.75), 0 0 14px rgba(96, 165, 250, 0.6) !important;
         }
 
         body.dark-mode .categories-filter a.categories {

@@ -1269,3 +1269,860 @@ html.dark-mode .hv-hint-item kbd,
     font-style: normal !important;
   }
 }
+
+/* ==========================================================================
+   4. High-Visibility Theme-Compliant Preview Buttons & Overlays
+   Ensures card hover Preview buttons & zoom actions use brand primary blues
+   and remain sharp, radiant, and readable in both light and dark themes.
+   ========================================================================== */
+.portfolio-overlay .btn-outline-light,
+.portfolio-overlay a.mfp-image,
+.portfolio-thumb-wrap .portfolio-overlay a:last-child {
+  background: rgba(37, 99, 235, 0.22) !important;
+  color: #ffffff !important;
+  border: 1.5px solid rgba(147, 197, 253, 0.85) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.portfolio-overlay .btn-outline-light:hover,
+.portfolio-overlay a.mfp-image:hover,
+.portfolio-thumb-wrap .portfolio-overlay a:last-child:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  color: #ffffff !important;
+  border-color: #60a5fa !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.65), 0 0 12px rgba(96, 165, 250, 0.5) !important;
+}
+
+.portfolio-overlay .btn-outline-light svg,
+.portfolio-overlay .btn-outline-light i,
+.portfolio-overlay a.mfp-image svg,
+.portfolio-overlay a.mfp-image i,
+.portfolio-thumb-wrap .portfolio-overlay a:last-child svg,
+.portfolio-thumb-wrap .portfolio-overlay a:last-child i {
+  stroke: currentColor !important;
+  color: currentColor !important;
+}
+
+/* Bottom Card Preview Action Buttons */
+.btn-proj-preview {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  background: #ffffff;
+  color: #2563eb !important;
+  border: 1.5px solid #bfdbfe;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none !important;
+}
+
+.btn-proj-preview:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  color: #ffffff !important;
+  border-color: #2563eb !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4) !important;
+}
+
+.btn-proj-preview svg,
+.btn-proj-preview i {
+  stroke: currentColor !important;
+  color: currentColor !important;
+}
+
+/* Certificate Overlay Preview Link & Zoom Actions */
+.cert-overlay-preview-link {
+  background: rgba(255, 255, 255, 0.95);
+  color: #1e40af !important;
+  border: 1px solid rgba(191, 219, 254, 0.85);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.cert-overlay-preview-link:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  color: #ffffff !important;
+  border-color: #2563eb !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.45) !important;
+  transform: translateY(-1px);
+}
+
+.cert-zoom-btn:hover {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.45) !important;
+}
+
+/* Universal Generic Preview Buttons & Badges */
+.btn-preview:hover,
+.preview-btn:hover,
+a.preview-link:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  color: #ffffff !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.45) !important;
+}
+
+/* Dark Mode Harmonization */
+html.dark-mode .portfolio-overlay .btn-outline-light,
+body.dark-mode .portfolio-overlay .btn-outline-light,
+html.dark-mode .portfolio-overlay a.mfp-image,
+body.dark-mode .portfolio-overlay a.mfp-image,
+html.dark-mode .portfolio-thumb-wrap .portfolio-overlay a:last-child,
+body.dark-mode .portfolio-thumb-wrap .portfolio-overlay a:last-child {
+  background: rgba(37, 99, 235, 0.3) !important;
+  color: #ffffff !important;
+  border: 1.5px solid rgba(96, 165, 250, 0.85) !important;
+}
+
+html.dark-mode .portfolio-overlay .btn-outline-light:hover,
+body.dark-mode .portfolio-overlay .btn-outline-light:hover,
+html.dark-mode .portfolio-overlay a.mfp-image:hover,
+body.dark-mode .portfolio-overlay a.mfp-image:hover,
+html.dark-mode .portfolio-thumb-wrap .portfolio-overlay a:last-child:hover,
+body.dark-mode .portfolio-thumb-wrap .portfolio-overlay a:last-child:hover {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+  color: #ffffff !important;
+  border-color: #93c5fd !important;
+  box-shadow: 0 6px 22px rgba(37, 99, 235, 0.75), 0 0 14px rgba(96, 165, 250, 0.6) !important;
+}
+
+html.dark-mode .btn-proj-preview,
+body.dark-mode .btn-proj-preview {
+  background: #1e293b;
+  color: #93c5fd !important;
+  border-color: rgba(96, 165, 250, 0.4);
+}
+
+html.dark-mode .btn-proj-preview:hover,
+body.dark-mode .btn-proj-preview:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  color: #ffffff !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.55) !important;
+}
+
+html.dark-mode .cert-overlay-preview-link,
+body.dark-mode .cert-overlay-preview-link {
+  background: #1e293b;
+  color: #93c5fd !important;
+  border-color: rgba(96, 165, 250, 0.4);
+}
+
+html.dark-mode .cert-overlay-preview-link:hover,
+body.dark-mode .cert-overlay-preview-link:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  color: #ffffff !important;
+  border-color: #60a5fa !important;
+}
+
+html.dark-mode .cert-zoom-btn,
+body.dark-mode .cert-zoom-btn {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+html.dark-mode .cert-zoom-btn:hover,
+body.dark-mode .cert-zoom-btn:hover {
+  background: #2563eb !important;
+  color: #ffffff !important;
+}
+
+/* ==========================================================================
+   5. Hero Banner & Academic Profile Action Buttons
+   Ensures Academia, ResearchGate, and related hero outline buttons
+   remain high-contrast and transition to theme royal blue on hover.
+   ========================================================================== */
+.scholar-hero-card .btn-outline-light,
+.awards-hero-section .btn-outline-light,
+.author-hero-card .btn-outline-light,
+.author-hero-card .btn-outline-info,
+section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(2),
+section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(3),
+section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(4) {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.45) !important;
+  color: #ffffff !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.scholar-hero-card .btn-outline-light:hover,
+.awards-hero-section .btn-outline-light:hover,
+.author-hero-card .btn-outline-light:hover,
+.author-hero-card .btn-outline-info:hover,
+section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(2):hover,
+section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(3):hover,
+section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(4):hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  border-color: #60a5fa !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6), 0 0 12px rgba(96, 165, 250, 0.5) !important;
+}
+
+.scholar-hero-card .btn-outline-light i,
+.awards-hero-section .btn-outline-light i,
+.author-hero-card .btn-outline-light i,
+.author-hero-card .btn-outline-info i,
+section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(2) i,
+section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(3) i,
+section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(4) i {
+  color: #ffffff !important;
+}
+
+/* Dark Mode Overrides for Hero Banner Action Buttons */
+html.dark-mode .scholar-hero-card .btn-outline-light,
+body.dark-mode .scholar-hero-card .btn-outline-light,
+html.dark-mode .awards-hero-section .btn-outline-light,
+body.dark-mode .awards-hero-section .btn-outline-light,
+html.dark-mode .author-hero-card .btn-outline-light,
+body.dark-mode .author-hero-card .btn-outline-light,
+html.dark-mode .author-hero-card .btn-outline-info,
+body.dark-mode .author-hero-card .btn-outline-info,
+html.dark-mode section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(2),
+body.dark-mode section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(2),
+html.dark-mode section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(3),
+body.dark-mode section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(3),
+html.dark-mode section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(4),
+body.dark-mode section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(4) {
+  background: rgba(37, 99, 235, 0.2) !important;
+  border: 1.5px solid rgba(96, 165, 250, 0.55) !important;
+  color: #f8fafc !important;
+}
+
+html.dark-mode .scholar-hero-card .btn-outline-light:hover,
+body.dark-mode .scholar-hero-card .btn-outline-light:hover,
+html.dark-mode .awards-hero-section .btn-outline-light:hover,
+body.dark-mode .awards-hero-section .btn-outline-light:hover,
+html.dark-mode .author-hero-card .btn-outline-light:hover,
+body.dark-mode .author-hero-card .btn-outline-light:hover,
+html.dark-mode .author-hero-card .btn-outline-info:hover,
+body.dark-mode .author-hero-card .btn-outline-info:hover,
+html.dark-mode section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(2):hover,
+body.dark-mode section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(2):hover,
+html.dark-mode section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(3):hover,
+body.dark-mode section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(3):hover,
+html.dark-mode section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(4):hover,
+body.dark-mode section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(4):hover {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+  border-color: #93c5fd !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 22px rgba(37, 99, 235, 0.75), 0 0 14px rgba(96, 165, 250, 0.6) !important;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   6. Universal Interactive Button System & High-Contrast Hover Transitions
+   Ensures ALL buttons across the entire website transition to a consistent,
+   high-contrast, theme-appropriate royal blue (#1d4ed8 / #2563eb) on hover
+   in both light and dark modes, eliminating invisible or low-contrast states.
+   ========================================================================== */
+
+/* Base transition for all interactive buttons */
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-light,
+.btn-dark,
+.btn-info,
+.btn-outline-primary,
+.btn-outline-secondary,
+.btn-outline-light,
+.btn-outline-dark,
+.btn-outline-info,
+.btn-outline-warning,
+.btn-outline-success,
+.btn-pub-outline,
+.btn-pub-primary,
+.btn-pub-action,
+.btn-hub-primary,
+.btn-hub-outline,
+.btn-hub-action,
+.btn-proj-preview,
+.btn-proj-github,
+.preview-btn,
+.btn-preview,
+a.preview-link,
+.btn-award-link,
+.btn-filter-pill,
+.filter-btn-pill,
+.filter-btn,
+.home-award-filter-btn,
+.btn-topic-pill,
+.btn-verify,
+.btn-verify-primary,
+.btn-verify-secondary,
+.btn-cite-media,
+.btn-copy-cite,
+.btn-inspect-cert,
+.btn-star-card,
+.btn-details,
+.btn-event-link,
+.btn-media-primary,
+.btn-collab-action,
+.btn-collab-adplist,
+.btn-adplist-book,
+.btn-adplist-outline,
+.btn-roadmap-inquire,
+.btn-mandate-inquire,
+.btn-waitlist,
+.about-btn,
+.hero-btn-primary,
+.hero-btn-secondary,
+.membership-hero-btn-accent,
+.membership-hero-btn-outline,
+.membership-hero-btn-primary,
+.hv-btn-external,
+.hv-btn-slides,
+.hv-btn-stage,
+.hv-btn-youtube,
+.hv-btn-icon,
+.pagination .page-link,
+.modal-content .btn {
+  transition: background 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              color 0.2s ease,
+              border-color 0.2s ease,
+              box-shadow 0.25s ease,
+              transform 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* Light Mode: Universal Theme-Appropriate High-Contrast Hover (#1d4ed8 / #2563eb) */
+.btn-outline-primary:hover,
+.btn-outline-secondary:hover,
+.btn-outline-light:hover,
+.btn-outline-dark:hover,
+.btn-outline-info:hover,
+.btn-light:hover,
+.btn-secondary:hover,
+.btn-pub-outline:hover,
+.btn-pub-primary:hover,
+.btn-pub-action:hover,
+.btn-hub-primary:hover,
+.btn-hub-outline:hover,
+.btn-hub-action:hover,
+.btn-proj-preview:hover,
+.btn-proj-github:hover,
+.preview-btn:hover,
+.btn-preview:hover,
+a.preview-link:hover,
+.btn-award-link:hover,
+.btn-filter-pill:hover,
+.filter-btn-pill:hover,
+.filter-btn:hover,
+.home-award-filter-btn:hover,
+.btn-topic-pill:hover,
+.btn-verify:hover,
+.btn-verify-primary:hover,
+.btn-verify-secondary:hover,
+.btn-cite-media:hover,
+.btn-copy-cite:hover,
+.btn-inspect-cert:hover,
+.btn-star-card:hover,
+.btn-details:hover,
+.btn-event-link:hover,
+.btn-media-primary:hover,
+.btn-collab-action:hover,
+.btn-collab-adplist:hover,
+.btn-adplist-book:hover,
+.btn-adplist-outline:hover,
+.btn-roadmap-inquire:hover,
+.btn-mandate-inquire:hover,
+.btn-waitlist:hover,
+.about-btn:hover,
+.hero-btn-primary:hover,
+.hero-btn-secondary:hover,
+.membership-hero-btn-accent:hover,
+.membership-hero-btn-outline:hover,
+.membership-hero-btn-primary:hover,
+.hv-btn-external:hover,
+.hv-btn-slides:hover,
+.hv-btn-stage:hover,
+.hv-btn-youtube:hover,
+.pagination .page-link:hover,
+.modal-content .btn:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  background-color: #1d4ed8 !important;
+  color: #ffffff !important;
+  border-color: #1d4ed8 !important;
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.38) !important;
+  transform: translateY(-1px);
+}
+
+.btn-outline-primary:hover *,
+.btn-outline-secondary:hover *,
+.btn-outline-light:hover *,
+.btn-outline-dark:hover *,
+.btn-outline-info:hover *,
+.btn-light:hover *,
+.btn-secondary:hover *,
+.btn-pub-outline:hover *,
+.btn-hub-outline:hover *,
+.btn-proj-preview:hover *,
+.btn-proj-github:hover *,
+.preview-btn:hover *,
+.btn-preview:hover *,
+a.preview-link:hover *,
+.btn-filter-pill:hover *,
+.filter-btn-pill:hover *,
+.filter-btn:hover *,
+.home-award-filter-btn:hover *,
+.pagination .page-link:hover * {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+  fill: currentColor;
+}
+
+/* Primary buttons hover refinement */
+.btn-primary:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%) !important;
+  background-color: #1d4ed8 !important;
+  border-color: #1e40af !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 18px rgba(29, 78, 216, 0.5) !important;
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   7. Dark Theme: Universal Button Hover & Contrast System
+   Guarantees that NO button in dark mode hovers to murky backgrounds
+   ========================================================================== */
+html.dark-mode .btn-primary:hover,
+body.dark-mode .btn-primary:hover,
+html.dark-mode .btn-secondary:hover,
+body.dark-mode .btn-secondary:hover,
+html.dark-mode .btn-light:hover,
+body.dark-mode .btn-light:hover,
+html.dark-mode .btn-dark:hover,
+body.dark-mode .btn-dark:hover,
+html.dark-mode .btn-outline-primary:hover,
+body.dark-mode .btn-outline-primary:hover,
+html.dark-mode .btn-outline-secondary:hover,
+body.dark-mode .btn-outline-secondary:hover,
+html.dark-mode .btn-outline-light:hover,
+body.dark-mode .btn-outline-light:hover,
+html.dark-mode .btn-outline-dark:hover,
+body.dark-mode .btn-outline-dark:hover,
+html.dark-mode .btn-outline-info:hover,
+body.dark-mode .btn-outline-info:hover,
+html.dark-mode .btn-outline-paper:hover,
+body.dark-mode .btn-outline-paper:hover,
+html.dark-mode .btn-pub-outline:hover,
+body.dark-mode .btn-pub-outline:hover,
+html.dark-mode .btn-pub-primary:hover,
+body.dark-mode .btn-pub-primary:hover,
+html.dark-mode .btn-pub-action:hover,
+body.dark-mode .btn-pub-action:hover,
+html.dark-mode .btn-hub-primary:hover,
+body.dark-mode .btn-hub-primary:hover,
+html.dark-mode .btn-hub-outline:hover,
+body.dark-mode .btn-hub-outline:hover,
+html.dark-mode .btn-hub-action:hover,
+body.dark-mode .btn-hub-action:hover,
+html.dark-mode .btn-proj-preview:hover,
+body.dark-mode .btn-proj-preview:hover,
+html.dark-mode .btn-proj-github:hover,
+body.dark-mode .btn-proj-github:hover,
+html.dark-mode .preview-btn:hover,
+body.dark-mode .preview-btn:hover,
+html.dark-mode .btn-preview:hover,
+body.dark-mode .btn-preview:hover,
+html.dark-mode a.preview-link:hover,
+body.dark-mode a.preview-link:hover,
+html.dark-mode .btn-award-link:hover,
+body.dark-mode .btn-award-link:hover,
+html.dark-mode .btn-filter-pill:hover,
+body.dark-mode .btn-filter-pill:hover,
+html.dark-mode .filter-btn-pill:hover,
+body.dark-mode .filter-btn-pill:hover,
+html.dark-mode .filter-btn:hover,
+body.dark-mode .filter-btn:hover,
+html.dark-mode .home-award-filter-btn:hover,
+body.dark-mode .home-award-filter-btn:hover,
+html.dark-mode .btn-topic-pill:hover,
+body.dark-mode .btn-topic-pill:hover,
+html.dark-mode .btn-verify:hover,
+body.dark-mode .btn-verify:hover,
+html.dark-mode .btn-verify-primary:hover,
+body.dark-mode .btn-verify-primary:hover,
+html.dark-mode .btn-verify-secondary:hover,
+body.dark-mode .btn-verify-secondary:hover,
+html.dark-mode .btn-cite-media:hover,
+body.dark-mode .btn-cite-media:hover,
+html.dark-mode .btn-copy-cite:hover,
+body.dark-mode .btn-copy-cite:hover,
+html.dark-mode .btn-inspect-cert:hover,
+body.dark-mode .btn-inspect-cert:hover,
+html.dark-mode .btn-star-card:hover,
+body.dark-mode .btn-star-card:hover,
+html.dark-mode .btn-details:hover,
+body.dark-mode .btn-details:hover,
+html.dark-mode .btn-event-link:hover,
+body.dark-mode .btn-event-link:hover,
+html.dark-mode .btn-media-primary:hover,
+body.dark-mode .btn-media-primary:hover,
+html.dark-mode .btn-collab-action:hover,
+body.dark-mode .btn-collab-action:hover,
+html.dark-mode .btn-collab-adplist:hover,
+body.dark-mode .btn-collab-adplist:hover,
+html.dark-mode .btn-adplist-book:hover,
+body.dark-mode .btn-adplist-book:hover,
+html.dark-mode .btn-adplist-outline:hover,
+body.dark-mode .btn-adplist-outline:hover,
+html.dark-mode .btn-roadmap-inquire:hover,
+body.dark-mode .btn-roadmap-inquire:hover,
+html.dark-mode .btn-mandate-inquire:hover,
+body.dark-mode .btn-mandate-inquire:hover,
+html.dark-mode .btn-waitlist:hover,
+body.dark-mode .btn-waitlist:hover,
+html.dark-mode .about-btn:hover,
+body.dark-mode .about-btn:hover,
+html.dark-mode .hero-btn-primary:hover,
+body.dark-mode .hero-btn-primary:hover,
+html.dark-mode .hero-btn-secondary:hover,
+body.dark-mode .hero-btn-secondary:hover,
+html.dark-mode .membership-hero-btn-accent:hover,
+body.dark-mode .membership-hero-btn-accent:hover,
+html.dark-mode .membership-hero-btn-outline:hover,
+body.dark-mode .membership-hero-btn-outline:hover,
+html.dark-mode .membership-hero-btn-primary:hover,
+body.dark-mode .membership-hero-btn-primary:hover,
+html.dark-mode .hv-btn-external:hover,
+body.dark-mode .hv-btn-external:hover,
+html.dark-mode .hv-btn-slides:hover,
+body.dark-mode .hv-btn-slides:hover,
+html.dark-mode .hv-btn-stage:hover,
+body.dark-mode .hv-btn-stage:hover,
+html.dark-mode .hv-btn-youtube:hover,
+body.dark-mode .hv-btn-youtube:hover,
+html.dark-mode .pagination .page-link:hover,
+body.dark-mode .pagination .page-link:hover,
+html.dark-mode .modal-content .btn:hover,
+body.dark-mode .modal-content .btn:hover {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+  background-color: #1d4ed8 !important;
+  color: #ffffff !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.65), 0 0 12px rgba(96, 165, 250, 0.45) !important;
+  transform: translateY(-1px);
+}
+
+html.dark-mode .btn:hover *,
+body.dark-mode .btn:hover *,
+html.dark-mode .btn-outline-light:hover *,
+body.dark-mode .btn-outline-light:hover *,
+html.dark-mode .btn-outline-secondary:hover *,
+body.dark-mode .btn-outline-secondary:hover *,
+html.dark-mode .btn-light:hover *,
+body.dark-mode .btn-light:hover *,
+html.dark-mode .btn-proj-preview:hover *,
+body.dark-mode .btn-proj-preview:hover *,
+html.dark-mode .btn-proj-github:hover *,
+body.dark-mode .btn-proj-github:hover *,
+html.dark-mode .preview-btn:hover *,
+body.dark-mode .preview-btn:hover *,
+html.dark-mode .filter-btn-pill:hover *,
+body.dark-mode .filter-btn-pill:hover *,
+html.dark-mode .home-award-filter-btn:hover *,
+body.dark-mode .home-award-filter-btn:hover * {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+  fill: currentColor;
+}
+
+/* ==========================================================================
+   8. Dark Theme: Universal Card Styling & Elevation Refinements
+   Applies executive surface design, crisp border highlights, and elegant
+   hover elevation across all card components in dark mode.
+   ========================================================================== */
+html.dark-mode .card,
+body.dark-mode .card,
+html.dark-mode .b-box,
+body.dark-mode .b-box,
+html.dark-mode .award-card,
+body.dark-mode .award-card,
+html.dark-mode .publication-card,
+body.dark-mode .publication-card,
+html.dark-mode .membership-card,
+body.dark-mode .membership-card,
+html.dark-mode .media-card,
+body.dark-mode .media-card,
+html.dark-mode .blog-card,
+body.dark-mode .blog-card,
+html.dark-mode .deck-card,
+body.dark-mode .deck-card,
+html.dark-mode .ecosystem-card,
+body.dark-mode .ecosystem-card,
+html.dark-mode .event-hub-card,
+body.dark-mode .event-hub-card,
+html.dark-mode .profile-hub-card,
+body.dark-mode .profile-hub-card,
+html.dark-mode .briefing-card,
+body.dark-mode .briefing-card,
+html.dark-mode .public-profile,
+body.dark-mode .public-profile,
+html.dark-mode .about-hero-card,
+body.dark-mode .about-hero-card,
+html.dark-mode .cert-card,
+body.dark-mode .cert-card,
+html.dark-mode .timeline-phase-card,
+body.dark-mode .timeline-phase-card,
+html.dark-mode .custom-project-card,
+body.dark-mode .custom-project-card,
+html.dark-mode .portfolio-project-card,
+body.dark-mode .portfolio-project-card,
+html.dark-mode .author-channel-card,
+body.dark-mode .author-channel-card,
+html.dark-mode .author-mission-card,
+body.dark-mode .author-mission-card,
+html.dark-mode .author-stat-card,
+body.dark-mode .author-stat-card,
+html.dark-mode .award-highlight-card,
+body.dark-mode .award-highlight-card,
+html.dark-mode .pillar-card,
+body.dark-mode .pillar-card,
+html.dark-mode .book-showcase-card,
+body.dark-mode .book-showcase-card,
+html.dark-mode .total-reach-hero-card,
+body.dark-mode .total-reach-hero-card,
+html.dark-mode .hv-cadence-step-card,
+body.dark-mode .hv-cadence-step-card,
+html.dark-mode .advisory-expertise-card,
+body.dark-mode .advisory-expertise-card,
+html.dark-mode .hv-audience-card,
+body.dark-mode .hv-audience-card,
+html.dark-mode .hv-format-card,
+body.dark-mode .hv-format-card,
+html.dark-mode .hv-speaker-white-section-card,
+body.dark-mode .hv-speaker-white-section-card,
+html.dark-mode .education-interactive-card,
+body.dark-mode .education-interactive-card,
+html.dark-mode .exp-card,
+body.dark-mode .exp-card,
+html.dark-mode .portrait-credential-card,
+body.dark-mode .portrait-credential-card {
+  background-color: #111a2e !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s ease !important;
+}
+
+/* Card hover states across all cards */
+html.dark-mode .card:hover,
+body.dark-mode .card:hover,
+html.dark-mode .b-box:hover,
+body.dark-mode .b-box:hover,
+html.dark-mode .award-card:hover,
+body.dark-mode .award-card:hover,
+html.dark-mode .publication-card:hover,
+body.dark-mode .publication-card:hover,
+html.dark-mode .membership-card:hover,
+body.dark-mode .membership-card:hover,
+html.dark-mode .media-card:hover,
+body.dark-mode .media-card:hover,
+html.dark-mode .blog-card:hover,
+body.dark-mode .blog-card:hover,
+html.dark-mode .deck-card:hover,
+body.dark-mode .deck-card:hover,
+html.dark-mode .ecosystem-card:hover,
+body.dark-mode .ecosystem-card:hover,
+html.dark-mode .event-hub-card:hover,
+body.dark-mode .event-hub-card:hover,
+html.dark-mode .profile-hub-card:hover,
+body.dark-mode .profile-hub-card:hover,
+html.dark-mode .briefing-card:hover,
+body.dark-mode .briefing-card:hover,
+html.dark-mode .cert-card:hover,
+body.dark-mode .cert-card:hover,
+html.dark-mode .portfolio-project-card:hover,
+body.dark-mode .portfolio-project-card:hover,
+html.dark-mode .award-highlight-card:hover,
+body.dark-mode .award-highlight-card:hover,
+html.dark-mode .pillar-card:hover,
+body.dark-mode .pillar-card:hover,
+html.dark-mode .advisory-expertise-card:hover,
+body.dark-mode .advisory-expertise-card:hover,
+html.dark-mode .hv-audience-card:hover,
+body.dark-mode .hv-audience-card:hover,
+html.dark-mode .hv-format-card:hover,
+body.dark-mode .hv-format-card:hover,
+html.dark-mode .hv-speaker-white-section-card:hover,
+body.dark-mode .hv-speaker-white-section-card:hover,
+html.dark-mode .education-interactive-card:hover,
+body.dark-mode .education-interactive-card:hover,
+html.dark-mode .exp-card:hover,
+body.dark-mode .exp-card:hover {
+  transform: translateY(-3px) !important;
+  border-color: rgba(96, 165, 250, 0.4) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.58), 0 0 18px rgba(37, 99, 235, 0.22) !important;
+}
+
+/* Card typography & inner elements in Dark Mode */
+html.dark-mode .card .card-title,
+body.dark-mode .card .card-title,
+html.dark-mode .card h3,
+body.dark-mode .card h3,
+html.dark-mode .card h4,
+body.dark-mode .card h4,
+html.dark-mode .card h5,
+body.dark-mode .card h5,
+html.dark-mode .card h6,
+body.dark-mode .card h6,
+html.dark-mode .award-card h5,
+body.dark-mode .award-card h5,
+html.dark-mode .publication-card h5,
+body.dark-mode .publication-card h5,
+html.dark-mode .membership-card h5,
+body.dark-mode .membership-card h5,
+html.dark-mode .media-card h5,
+body.dark-mode .media-card h5 {
+  color: #f8fafc !important;
+}
+
+html.dark-mode .card p,
+body.dark-mode .card p,
+html.dark-mode .card-body p,
+body.dark-mode .card-body p,
+html.dark-mode .award-card p,
+body.dark-mode .award-card p,
+html.dark-mode .publication-card p,
+body.dark-mode .publication-card p,
+html.dark-mode .membership-card p,
+body.dark-mode .membership-card p,
+html.dark-mode .media-card p,
+body.dark-mode .media-card p {
+  color: #cbd5e1 !important;
+}
+
+html.dark-mode .card-body,
+body.dark-mode .card-body,
+html.dark-mode .award-card-body,
+body.dark-mode .award-card-body,
+html.dark-mode .cert-card-body,
+body.dark-mode .cert-card-body {
+  background: transparent !important;
+}
+
+/* ==========================================================================
+   9. Dark Theme: Navigation Elements Refinement
+   Enforces high-contrast navbar, crisp navigation links, themed dropdowns,
+   mobile navigation styling, and interactive active/focus feedback.
+   ========================================================================== */
+html.dark-mode .navbar-custom,
+body.dark-mode .navbar-custom {
+  background-color: rgba(11, 16, 27, 0.95) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+html.dark-mode .navbar-brand,
+body.dark-mode .navbar-brand {
+  color: #ffffff !important;
+}
+
+html.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link,
+body.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link {
+  color: #cbd5e1 !important;
+  transition: all 0.2s ease !important;
+}
+
+html.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link:hover,
+html.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link:focus,
+body.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link:hover,
+body.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link:focus {
+  color: #ffffff !important;
+  background-color: rgba(37, 99, 235, 0.22) !important;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35) !important;
+}
+
+html.dark-mode .navbar-custom .navbar-nav .nav-item.active .nav-link,
+body.dark-mode .navbar-custom .navbar-nav .nav-item.active .nav-link,
+html.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link.active,
+body.dark-mode .navbar-custom .navbar-nav .nav-item .nav-link.active {
+  color: #ffffff !important;
+  background-color: rgba(37, 99, 235, 0.32) !important;
+  box-shadow: inset 0 0 0 1.5px rgba(96, 165, 250, 0.55) !important;
+  border-radius: 6px;
+}
+
+/* Dropdown Menus in Dark Mode */
+html.dark-mode .dropdown-menu,
+html.dark-mode .nav-custom-dropdown,
+body.dark-mode .dropdown-menu,
+body.dark-mode .nav-custom-dropdown {
+  background-color: #0f172a !important;
+  border: 1px solid rgba(59, 130, 246, 0.28) !important;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.72) !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+html.dark-mode .nav-dropdown-item,
+body.dark-mode .nav-dropdown-item,
+html.dark-mode .dropdown-item,
+body.dark-mode .dropdown-item {
+  color: #cbd5e1 !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+html.dark-mode .nav-dropdown-item:hover,
+html.dark-mode .nav-dropdown-item:focus,
+body.dark-mode .nav-dropdown-item:hover,
+body.dark-mode .nav-dropdown-item:focus,
+html.dark-mode .dropdown-item:hover,
+html.dark-mode .dropdown-item:focus,
+body.dark-mode .dropdown-item:hover,
+body.dark-mode .dropdown-item:focus {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.25) 0%, rgba(29, 78, 216, 0.35) 100%) !important;
+  color: #ffffff !important;
+  padding-left: 1.25rem !important;
+  box-shadow: inset 3px 0 0 #3b82f6 !important;
+}
+
+html.dark-mode .nav-dropdown-item:hover .dropdown-item-title,
+body.dark-mode .nav-dropdown-item:hover .dropdown-item-title,
+html.dark-mode .dropdown-item:hover .dropdown-item-title,
+body.dark-mode .dropdown-item:hover .dropdown-item-title {
+  color: #ffffff !important;
+}
+
+html.dark-mode .nav-dropdown-item:hover .dropdown-item-desc,
+body.dark-mode .nav-dropdown-item:hover .dropdown-item-desc,
+html.dark-mode .dropdown-item:hover .dropdown-item-desc,
+body.dark-mode .dropdown-item:hover .dropdown-item-desc {
+  color: #bfdbfe !important;
+}
+
+/* Nav Social Action Buttons */
+html.dark-mode .nav-social-btn,
+body.dark-mode .nav-social-btn {
+  background-color: rgba(30, 41, 59, 0.8) !important;
+  color: #93c5fd !important;
+  border-color: rgba(59, 130, 246, 0.35) !important;
+}
+
+html.dark-mode .nav-social-btn:hover,
+body.dark-mode .nav-social-btn:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  background-color: #1d4ed8 !important;
+  color: #ffffff !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.5) !important;
+}
+
+
+

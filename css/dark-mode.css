@@ -329,8 +329,9 @@ html.dark-mode .nav-dropdown-item:hover,
 html.dark-mode .nav-dropdown-item:focus,
 body.dark-mode .nav-dropdown-item:hover,
 body.dark-mode .nav-dropdown-item:focus {
-  background-color: #334155 !important;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.28) 0%, rgba(29, 78, 216, 0.38) 100%) !important;
   color: #ffffff !important;
+  box-shadow: inset 2px 0 0 #3b82f6 !important;
 }
 
 html.dark-mode .dropdown-item-title,
@@ -457,8 +458,10 @@ html.dark-mode .about-btn {
 }
 
 html.dark-mode .about-btn:hover {
-  background-color: #1e293b !important;
-  color: #ff944d !important;
+  background-color: #1d4ed8 !important;
+  color: #ffffff !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.45) !important;
 }
 
 /* Feature widgets */
@@ -771,9 +774,10 @@ body.dark-mode .home-award-filter-btn {
 }
 html.dark-mode .home-award-filter-btn:hover,
 body.dark-mode .home-award-filter-btn:hover {
-  background-color: #1e293b !important;
-  color: #f8fafc !important;
-  border-color: #475569 !important;
+  background-color: #1d4ed8 !important;
+  color: #ffffff !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.45) !important;
 }
 html.dark-mode .home-award-filter-btn.active,
 body.dark-mode .home-award-filter-btn.active {
@@ -848,9 +852,10 @@ body.dark-mode .btn-light {
 
 html.dark-mode .btn-light:hover,
 body.dark-mode .btn-light:hover {
-  background-color: #334155 !important;
+  background-color: #1d4ed8 !important;
   color: #ffffff !important;
-  border-color: #475569 !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.45) !important;
 }
 
 html.dark-mode .btn-secondary,
@@ -858,6 +863,14 @@ body.dark-mode .btn-secondary {
   background-color: #334155 !important;
   color: #f8fafc !important;
   border-color: #475569 !important;
+}
+
+html.dark-mode .btn-secondary:hover,
+body.dark-mode .btn-secondary:hover {
+  background-color: #1d4ed8 !important;
+  color: #ffffff !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.45) !important;
 }
 
 html.dark-mode .btn-outline-secondary,
@@ -868,9 +881,10 @@ body.dark-mode .btn-outline-secondary {
 
 html.dark-mode .btn-outline-secondary:hover,
 body.dark-mode .btn-outline-secondary:hover {
-  background-color: #334155 !important;
+  background-color: #1d4ed8 !important;
   color: #ffffff !important;
-  border-color: #64748b !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.45) !important;
 }
 
 html.dark-mode .btn-outline-primary,
@@ -881,9 +895,11 @@ body.dark-mode .btn-outline-primary {
 
 html.dark-mode .btn-outline-primary:hover,
 body.dark-mode .btn-outline-primary:hover {
-  background-color: #2563eb !important;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  background-color: #1d4ed8 !important;
   color: #ffffff !important;
-  border-color: #2563eb !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 16px rgba(29, 78, 216, 0.5) !important;
 }
 
 html.dark-mode .btn-outline-light,
@@ -894,8 +910,11 @@ body.dark-mode .btn-outline-light {
 
 html.dark-mode .btn-outline-light:hover,
 body.dark-mode .btn-outline-light:hover {
-  background-color: #1e293b !important;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  background-color: #1d4ed8 !important;
   color: #ffffff !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 16px rgba(29, 78, 216, 0.5) !important;
 }
 
 html.dark-mode .btn-outline-dark,
@@ -906,8 +925,10 @@ body.dark-mode .btn-outline-dark {
 
 html.dark-mode .btn-outline-dark:hover,
 body.dark-mode .btn-outline-dark:hover {
-  background-color: #1e293b !important;
+  background-color: #1d4ed8 !important;
   color: #ffffff !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.45) !important;
 }
 
 html.dark-mode .btn-outline-paper,
@@ -919,8 +940,10 @@ body.dark-mode .btn-outline-paper {
 
 html.dark-mode .btn-outline-paper:hover,
 body.dark-mode .btn-outline-paper:hover {
-  background: #2563eb !important;
+  background: #1d4ed8 !important;
   color: #ffffff !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.45) !important;
 }
 
 html.dark-mode .btn-pub-outline,
@@ -932,9 +955,10 @@ body.dark-mode .btn-pub-outline {
 
 html.dark-mode .btn-pub-outline:hover,
 body.dark-mode .btn-pub-outline:hover {
-  background: #334155 !important;
+  background: #1d4ed8 !important;
   color: #ffffff !important;
-  border-color: #64748b !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.45) !important;
 }
 
 html.dark-mode .btn-soft-primary,
@@ -946,8 +970,10 @@ body.dark-mode .btn-soft-primary {
 
 html.dark-mode .btn-soft-primary:hover,
 body.dark-mode .btn-soft-primary:hover {
-  background: #2563eb !important;
+  background: #1d4ed8 !important;
   color: #ffffff !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.45) !important;
 }
 
 html.dark-mode .btn-filter-pill,
@@ -963,8 +989,10 @@ html.dark-mode .btn-filter-pill:hover,
 html.dark-mode .filter-btn:hover,
 body.dark-mode .btn-filter-pill:hover,
 body.dark-mode .filter-btn:hover {
-  background-color: #334155 !important;
+  background-color: #1d4ed8 !important;
   color: #ffffff !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.45) !important;
 }
 
 html.dark-mode .btn-filter-pill.active,
@@ -1403,9 +1431,10 @@ body.dark-mode .filter-btn-pill {
 
 html.dark-mode .filter-btn-pill:hover,
 body.dark-mode .filter-btn-pill:hover {
-  background: #1a2742 !important;
-  border-color: #3b82f6 !important;
-  color: #f8fafc !important;
+  background: #1d4ed8 !important;
+  border-color: #60a5fa !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.45) !important;
 }
 
 html.dark-mode .filter-btn-pill.active,
@@ -1425,9 +1454,10 @@ body.dark-mode .btn-hub-outline {
 
 html.dark-mode .btn-hub-outline:hover,
 body.dark-mode .btn-hub-outline:hover {
-  background: #1e293b !important;
-  border-color: #3b82f6 !important;
+  background: #1d4ed8 !important;
+  border-color: #60a5fa !important;
   color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.45) !important;
 }
 
 html.dark-mode .btn-hub-outline[style*="#fff5f5"],

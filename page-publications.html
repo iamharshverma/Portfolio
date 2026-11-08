@@ -57,6 +57,25 @@
             border-radius: 50%;
             pointer-events: none;
         }
+        .scholar-hero-card .btn-outline-light {
+            background: rgba(255, 255, 255, 0.08) !important;
+            border: 1.5px solid rgba(255, 255, 255, 0.45) !important;
+            color: #ffffff !important;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .scholar-hero-card .btn-outline-light:hover {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+            border-color: #60a5fa !important;
+            color: #ffffff !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6), 0 0 12px rgba(96, 165, 250, 0.5) !important;
+        }
+        .scholar-hero-card .btn-outline-light i {
+            color: #ffffff !important;
+        }
         .scholar-stat-box {
             background: rgba(255, 255, 255, 0.08);
             border: 1px solid rgba(255, 255, 255, 0.15);
@@ -303,6 +322,18 @@
         body.dark-mode .scholar-hero-card {
             background: linear-gradient(135deg, #070c18 0%, #0f172a 50%, #1e293b 100%);
             border: 1px solid #334155;
+        }
+        body.dark-mode .scholar-hero-card .btn-outline-light {
+            background: rgba(37, 99, 235, 0.2) !important;
+            border: 1.5px solid rgba(96, 165, 250, 0.55) !important;
+            color: #f8fafc !important;
+        }
+        body.dark-mode .scholar-hero-card .btn-outline-light:hover {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+            border-color: #93c5fd !important;
+            color: #ffffff !important;
+            box-shadow: 0 6px 22px rgba(37, 99, 235, 0.75), 0 0 14px rgba(96, 165, 250, 0.6) !important;
+            transform: translateY(-2px);
         }
         body.dark-mode .publication-card {
             background: #1f2937;

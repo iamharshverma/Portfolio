@@ -1,5 +1,34 @@
 [
   {
+    "id": "judge-big-awards-2026",
+    "event_title": "2026 BIG Awards for Business Judge",
+    "role": "Official Awards Judge",
+    "organizer": "Business Intelligence Group",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Global Business Awards Jury",
+    "description": "Appointed as an official judge for the prestigious 2026 BIG Awards for Business hosted by Business Intelligence Group. Serving on the executive judging panel evaluating global enterprise innovations, market-defining software solutions, leadership excellence, and transformative commercial technologies.",
+    "evaluation_focus": [
+      "Business Intelligence Group",
+      "BIG Awards",
+      "Judge",
+      "Enterprise Innovation",
+      "Global Awards"
+    ],
+    "primary_url": "https://judges.bintelligence.com/harsh-verma",
+    "links": [
+      {
+        "label": "Official Judge Profile",
+        "url": "https://judges.bintelligence.com/harsh-verma"
+      },
+      {
+        "label": "Business Intelligence Group",
+        "url": "https://www.bintelligence.com/"
+      }
+    ]
+  },
+  {
     "id": "judge-dent-demos-dimsum",
     "event_title": "Demos & Dim Sum — #SFTechWeek",
     "role": "Demo Day & Venture Judging",

@@ -16,7 +16,7 @@
     "links": [
       {
         "url": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/",
-        "label": "View Forbes Technology Council Profile"
+        "label": "View Forbes Profile"
       }
     ]
   },
@@ -37,7 +37,7 @@
     "links": [
       {
         "url": "https://ieee-collabratec.ieee.org/app/p/HarshVerma59",
-        "label": "View IEEE & IEEE Computer Society Profile"
+        "label": "IEEE Collabratec® Public Profile"
       }
     ]
   },
@@ -57,8 +57,8 @@
     "url": "https://www.bcs.org/membership-and-registrations/our-members/harsh-verma-fbcs",
     "links": [
       {
-        "url": "https://www.bcs.org/membership-and-registrations/our-members/harsh-verma-fbcs",
-        "label": "View British Computer Society (BCS) Profile"
+        "url": "https://www.bcs.org/find-a-bcs-member/",
+        "label": "BCS Member Register"
       }
     ]
   },
@@ -79,7 +79,11 @@
     "links": [
       {
         "url": "https://cis.ieee.org/",
-        "label": "View IEEE Computational Intelligence Society & Young Professionals Profile"
+        "label": "IEEE Computational Intelligence (CIS)"
+      },
+      {
+        "url": "https://yp.ieee.org/",
+        "label": "IEEE Young Professionals (YP)"
       }
     ]
   },
@@ -100,7 +104,11 @@
     "links": [
       {
         "url": "https://ieeexplore.ieee.org/author/37089143797",
-        "label": "View IEEE Xplore Digital Library & Author Center Profile"
+        "label": "IEEE Xplore Author Profile"
+      },
+      {
+        "url": "https://authorprofile.ieee.org/profiles/37089143797",
+        "label": "IEEE Author Registry Profile"
       }
     ]
   },
@@ -121,7 +129,11 @@
     "links": [
       {
         "url": "https://mc.manuscriptcentral.com/iwc",
-        "label": "View Interacting with Computers (Oxford University Press & BCS) Profile"
+        "label": "ScholarOne Manuscripts Portal"
+      },
+      {
+        "url": "https://academic.oup.com/iwc",
+        "label": "Oxford Academic IwC Journal"
       }
     ]
   },
@@ -142,7 +154,7 @@
     "links": [
       {
         "url": "https://www.raptors.dev/fellow-membership",
-        "label": "View Raptors.Dev Elite Engineering Fellowship Profile"
+        "label": "Explore Fellowship"
       }
     ]
   },
@@ -163,7 +175,7 @@
     "links": [
       {
         "url": "https://skydeck.berkeley.edu/advisors/",
-        "label": "View UC Berkeley SkyDeck Profile"
+        "label": "SkyDeck Advisor Directory"
       }
     ]
   },
@@ -184,7 +196,19 @@
     "links": [
       {
         "url": "https://engage.isaca.org/expert/harshverma",
-        "label": "View Information Systems Audit and Control Association (ISACA) Profile"
+        "label": "ISACA Expert Profile"
+      },
+      {
+        "url": "https://engage.isaca.org/connect/memberdirectory/profile?UserKey=4889ccdc-fd4a-46ea-b0a9-01a09d8362e6",
+        "label": "ISACA Engage Directory Profile"
+      },
+      {
+        "url": "https://engage.isaca.org/volunteeropportunities/volunteerinfo?UserKey=4889ccdc-fd4a-46ea-b0a9-01a09d8362e6&myVolunteerOpportunitesfilterByOptions=All",
+        "label": "Volunteer Opportunities Profile"
+      },
+      {
+        "url": "https://www.isaca.org/myisaca",
+        "label": "MyISACA Member Portal"
       }
     ]
   },
@@ -205,7 +229,7 @@
     "links": [
       {
         "url": "https://www.sigmaxi.org/",
-        "label": "View Sigma Xi (The Scientific Research Honor Society) Profile"
+        "label": "Sigma Xi Society"
       }
     ]
   },
@@ -226,7 +250,7 @@
     "links": [
       {
         "url": "https://www.thersa.org/",
-        "label": "View Royal Society of Arts (RSA) Profile"
+        "label": "Visit The RSA"
       }
     ]
   },
@@ -247,7 +271,7 @@
     "links": [
       {
         "url": "https://ioasd.org/royal-fellows/membership-id-frioasd-1066-2026/",
-        "label": "View International Organization for Academic and Scientific Development (IOASD) Profile"
+        "label": "Verify Royal Fellowship"
       }
     ]
   },
@@ -268,7 +292,7 @@
     "links": [
       {
         "url": "https://sciencetechxplore.org/fellow-members1.php",
-        "label": "View Science Tech Xplore Profile"
+        "label": "Verify Fellow Membership"
       }
     ]
   },
@@ -289,7 +313,7 @@
     "links": [
       {
         "url": "https://councils.forttuna.com/council-member/harsh-verma/",
-        "label": "View Forttuna Global Technical Council Profile"
+        "label": "View Council Profile"
       }
     ]
   },
@@ -310,7 +334,7 @@
     "links": [
       {
         "url": "https://aaai.org/",
-        "label": "View Association for the Advancement of Artificial Intelligence (AAAI) Profile"
+        "label": "Visit AAAI"
       }
     ]
   },
@@ -331,7 +355,7 @@
     "links": [
       {
         "url": "https://www.aaas.org/",
-        "label": "View American Association for the Advancement of Science (AAAS) Profile"
+        "label": "Visit AAAS"
       }
     ]
   },
@@ -352,7 +376,11 @@
     "links": [
       {
         "url": "https://www.python.org/users/harshverma59/",
-        "label": "View Python Software Foundation (PSF) Profile"
+        "label": "View PSF Member Profile"
+      },
+      {
+        "url": "https://www.python.org/psf/membership/",
+        "label": "PSF Membership Directory"
       }
     ]
   },
@@ -373,7 +401,11 @@
     "links": [
       {
         "url": "https://owasp.glueup.com/my/memberships/3981139",
-        "label": "View Open Web Application Security Project (OWASP Foundation) Profile"
+        "label": "Verify OWASP Membership"
+      },
+      {
+        "url": "https://owasp.org/dashboard",
+        "label": "OWASP Member Dashboard"
       }
     ]
   },
@@ -394,7 +426,7 @@
     "links": [
       {
         "url": "https://timebusinessnews.com/harsh-verma-ifgict/",
-        "label": "View International Federation of Global Green ICT (IFGICT) Profile"
+        "label": "Read Fellowship Announcement"
       }
     ]
   },
@@ -415,7 +447,7 @@
     "links": [
       {
         "url": "https://me.developers.google.com/communities/experts?q=harsh%20verma",
-        "label": "View Google Developer Groups & Experts Profile"
+        "label": "Google GDE Directory"
       }
     ]
   },
@@ -436,7 +468,7 @@
     "links": [
       {
         "url": "https://portal.onersac.com/library/discover",
-        "label": "View RSA Conference (RSAC) Profile"
+        "label": "RSAC Discover Portal"
       }
     ]
   },
@@ -457,7 +489,7 @@
     "links": [
       {
         "url": "https://adplist.org/mentors/harsh-verma",
-        "label": "View ADPList Global Mentorship Network Profile"
+        "label": "View ADPList Profile"
       }
     ]
   },
@@ -478,7 +510,7 @@
     "links": [
       {
         "url": "https://councils.forttuna.com/council-member/harsh-verma/",
-        "label": "View Dent Capital & Venture Network Profile"
+        "label": "Learn More"
       }
     ]
   },
@@ -499,7 +531,7 @@
     "links": [
       {
         "url": "https://hackutd.co/",
-        "label": "View HackUTD (University of Texas at Dallas) & Hackmakers Global Profile"
+        "label": "Visit HackUTD"
       }
     ]
   },
@@ -520,7 +552,7 @@
     "links": [
       {
         "url": "https://odsc.com/",
-        "label": "View Open Data Science Conference (ODSC) & SIIM Profile"
+        "label": "Visit ODSC"
       }
     ]
   },
@@ -541,7 +573,53 @@
     "links": [
       {
         "url": "https://www.screna.ai/mentor-dashboard",
-        "label": "View Screna.ai Profile"
+        "label": "Mentor Dashboard"
+      }
+    ]
+  },
+  {
+    "organization_name": "American Institute for Information Technology & Engineering (AIITE)",
+    "membership_role": "Reviewer and Ambassador",
+    "membership_id": "Member ID: AIITE-A-000ABC",
+    "date_joined": "2026",
+    "link": "https://theaiite.org",
+    "title": "American Institute for Information Technology & Engineering (AIITE)",
+    "role": "Reviewer and Ambassador",
+    "tier": "Ambassador",
+    "credential_id": "Member ID: AIITE-A-000ABC",
+    "category": "scientific",
+    "image": "images/memberships/aiite_ambassador_badge.webp",
+    "description": "Serving as official Reviewer and Ambassador at the American Institute for Information Technology & Engineering (AIITE). Member ID: AIITE-A-000ABC, Ambassador since November 6, 2026. Contributing to peer review, engineering research standards, and international technology community initiatives.",
+    "url": "https://theaiite.org",
+    "links": [
+      {
+        "url": "https://theaiite.org",
+        "label": "Visit AIITE Portal"
+      }
+    ]
+  },
+  {
+    "organization_name": "Business Intelligence Group",
+    "membership_role": "2026 BIG Awards for Business Judge",
+    "membership_id": "Executive Awards Jury",
+    "date_joined": "2026",
+    "link": "https://judges.bintelligence.com/harsh-verma",
+    "title": "Business Intelligence Group",
+    "role": "2026 BIG Awards for Business Judge",
+    "tier": "Official Judge",
+    "credential_id": "Executive Awards Jury",
+    "category": "council",
+    "image": "images/judging/big_awards_judge.png",
+    "description": "Serving on the executive judging panel for the 2026 BIG Awards for Business hosted by the Business Intelligence Group, evaluating global enterprise AI systems, software innovations, and market leadership.",
+    "url": "https://judges.bintelligence.com/harsh-verma",
+    "links": [
+      {
+        "url": "https://judges.bintelligence.com/harsh-verma",
+        "label": "Official Judge Profile"
+      },
+      {
+        "url": "https://www.bintelligence.com/",
+        "label": "Business Intelligence Group"
       }
     ]
   }

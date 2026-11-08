@@ -23,7 +23,7 @@
     "blogs": 29,
     "books": 8,
     "papers": 27,
-    "associations": 26,
+    "associations": 28,
     "wikidata_claims": 31,
     "total_linked_nodes": 219
   },
@@ -5145,6 +5145,42 @@
           {
             "url": "https://www.screna.ai/mentor-dashboard",
             "label": "Mentor Dashboard"
+          }
+        ]
+      },
+      {
+        "title": "American Institute for Information Technology & Engineering (AIITE)",
+        "role": "Reviewer and Ambassador",
+        "tier": "Ambassador",
+        "credential_id": "Member ID: AIITE-A-000ABC",
+        "category": "scientific",
+        "image": "images/memberships/aiite_ambassador_badge.webp",
+        "description": "Serving as official Reviewer and Ambassador at the American Institute for Information Technology & Engineering (AIITE). Member ID: AIITE-A-000ABC, Ambassador since November 6, 2026. Contributing to peer review, engineering research standards, and international technology community initiatives.",
+        "url": "https://theaiite.org",
+        "links": [
+          {
+            "url": "https://theaiite.org",
+            "label": "Visit AIITE Portal"
+          }
+        ]
+      },
+      {
+        "title": "Business Intelligence Group",
+        "role": "2026 BIG Awards for Business Judge",
+        "tier": "Official Judge",
+        "credential_id": "Executive Awards Jury",
+        "category": "council",
+        "image": "images/judging/big_awards_judge.png",
+        "description": "Serving on the executive judging panel for the 2026 BIG Awards for Business hosted by the Business Intelligence Group, evaluating global enterprise AI systems, software innovations, and market leadership.",
+        "url": "https://judges.bintelligence.com/harsh-verma",
+        "links": [
+          {
+            "url": "https://judges.bintelligence.com/harsh-verma",
+            "label": "Official Judge Profile"
+          },
+          {
+            "url": "https://www.bintelligence.com/",
+            "label": "Business Intelligence Group"
           }
         ]
       }

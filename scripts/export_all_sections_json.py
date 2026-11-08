@@ -730,6 +730,20 @@ def export_memberships_and_associations():
             "membership_id": "Technical Mentor & Evaluation Board",
             "date_joined": "2025",
             "link": "https://www.screna.ai/mentor-dashboard"
+        },
+        "American Institute for Information Technology & Engineering (AIITE)": {
+            "organization_name": "American Institute for Information Technology & Engineering (AIITE)",
+            "membership_role": "Reviewer and Ambassador",
+            "membership_id": "Member ID: AIITE-A-000ABC",
+            "date_joined": "2026",
+            "link": "https://theaiite.org"
+        },
+        "Business Intelligence Group": {
+            "organization_name": "Business Intelligence Group",
+            "membership_role": "2026 BIG Awards for Business Judge",
+            "membership_id": "Executive Awards Jury",
+            "date_joined": "2026",
+            "link": "https://judges.bintelligence.com/harsh-verma"
         }
     }
 
@@ -751,7 +765,7 @@ def export_memberships_and_associations():
             "image": a.get("image", ""),
             "description": a.get("description", ""),
             "url": m.get("link", a.get("url", "")),
-            "links": [
+            "links": a.get("links") if a.get("links") else [
                 {
                     "url": m.get("link", a.get("url", "")),
                     "label": f"View {m.get('organization_name', title)} Profile"
