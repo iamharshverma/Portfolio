@@ -234,16 +234,11 @@ def generate_memberships():
         }
         enriched.append(item)
 
-    output_path = os.path.join(DATA_DIR, "memberships.json")
+    output_path = os.path.join(DATA_DIR, "memberships_and_associations.json")
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(enriched, f, indent=2, ensure_ascii=False)
 
-    # Also update memberships_and_associations.json and associations.json
-    for alias in ("memberships_and_associations.json", "associations.json"):
-        with open(os.path.join(DATA_DIR, alias), "w", encoding="utf-8") as f:
-            json.dump(enriched, f, indent=2, ensure_ascii=False)
-
-    print(f"Exported {len(enriched)} enriched memberships to {output_path} and aliases")
+    print(f"Exported {len(enriched)} enriched memberships to {output_path}")
     return enriched
 
 if __name__ == "__main__":

@@ -780,15 +780,11 @@ def export_memberships_and_associations():
         }
         enriched.append(item)
 
-    output_path = os.path.join(DATA_DIR, "memberships.json")
+    output_path = os.path.join(DATA_DIR, "memberships_and_associations.json")
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(enriched, f, indent=2, ensure_ascii=False)
 
-    for alias in ("memberships_and_associations.json", "associations.json"):
-        with open(os.path.join(DATA_DIR, alias), "w", encoding="utf-8") as f:
-            json.dump(enriched, f, indent=2, ensure_ascii=False)
-
-    print(f"Exported {len(enriched)} memberships & associations to {output_path} (and aliases)")
+    print(f"Exported {len(enriched)} memberships & associations to {output_path}")
     return enriched
 
 
@@ -841,7 +837,7 @@ def main():
     print(f"7.  data/books_and_volumes.json:             {len(b)} records")
     print(f"8.  data/blog_articles.json:                 {len(bl)} records")
     print(f"9.  data/verified_profiles.json:             {len(vp)} records")
-    print(f"10. data/memberships.json:                   {len(ma)} records (also associations.json & memberships_and_associations.json)")
+    print(f"10. data/memberships_and_associations.json: {len(ma)} records")
     print(f"11. data/about.json:                         {len(ab)} root sections")
     print(f"12. data/professional_work.json:             {len(pw)} root sections")
     print("================================================================================")

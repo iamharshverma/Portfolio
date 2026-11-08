@@ -27,7 +27,7 @@
           '</div>' +
           '<div class="mt-2 mt-md-0">' +
             '<a href="page-media" class="btn btn-outline-primary btn-sm font-weight-bold rounded">' +
-              '<i class="mdi mdi-newspaper mr-1"></i> View All 44 Media Features' +
+              '<i class="mdi mdi-newspaper mr-1"></i> View All 45+ Media Features' +
             '</a>' +
           '</div>' +
         '</div>' +
@@ -37,7 +37,7 @@
           '<div class="col-lg-3 col-sm-6 mb-3">' +
             '<div class="hv-impact-stat-card">' +
               '<div>' +
-                '<div class="hv-impact-stat-num">3.75B+</div>' +
+                '<div class="hv-impact-stat-num">3.85B+</div>' +
                 '<div class="hv-impact-stat-label">Verified Media Reach</div>' +
                 '<p class="hv-impact-stat-desc mb-0">Broadcast impressions across Times Square, Business Insider, AP News & international syndication.</p>' +
               '</div>' +

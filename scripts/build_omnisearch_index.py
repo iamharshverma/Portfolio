@@ -193,8 +193,8 @@ def build_index():
             "description": desc[:180] + ("..." if len(desc) > 180 else "")
         })
 
-    # 6. Memberships & Fellowships (26 records)
-    with open(os.path.join(DATA_DIR, "memberships.json"), "r", encoding="utf-8") as f:
+    # 6. Memberships & Fellowships
+    with open(os.path.join(DATA_DIR, "memberships_and_associations.json"), "r", encoding="utf-8") as f:
         memberships = json.load(f)
     for m in memberships:
         org = m.get("organization_name", "").strip() or m.get("title", "").strip()

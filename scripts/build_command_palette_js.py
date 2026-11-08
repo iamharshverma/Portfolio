@@ -182,8 +182,8 @@ def compile_index():
             "search_text": f"{title} {pr.get('category_label', '')} {pr.get('identifier', '')} {pr.get('description', '')} {pr.get('search_keywords', '')} verified profile directory".lower()
         })
 
-    # 6. Memberships & Fellowships (26 records)
-    with open(os.path.join(DATA_DIR, "memberships.json"), "r", encoding="utf-8") as f:
+    # 6. Memberships & Fellowships
+    with open(os.path.join(DATA_DIR, "memberships_and_associations.json"), "r", encoding="utf-8") as f:
         memberships = json.load(f)
     for m in memberships:
         title = m.get("organization_name", m.get("title", ""))
