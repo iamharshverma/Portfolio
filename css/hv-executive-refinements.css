@@ -2124,5 +2124,22 @@ body.dark-mode .nav-social-btn:hover {
   box-shadow: 0 4px 14px rgba(37, 99, 235, 0.5) !important;
 }
 
-
-
+/* ==========================================================================
+   MDI Icon Compatibility Fallbacks (v3.2.89 Font Glyph Mappings)
+   Ensures missing or newer MDI classes cleanly resolve to valid webfont glyphs
+   ========================================================================== */
+.mdi-hexagon-multiple-outline:before { content: "\F6E0" !important; }
+.mdi-graph-outline:before { content: "\F4AA" !important; }
+.mdi-fingerprint-off:before { content: "\F237" !important; }
+.mdi-book-check-outline:before { content: "\F0C1" !important; }
+.mdi-bookshelf:before { content: "\F0BB" !important; }
+.mdi-view-grid-outline:before { content: "\F570" !important; }
+.mdi-account-edit-outline:before { content: "\F6BB" !important; }
+.mdi-shield-search:before { content: "\F565" !important; }
+.mdi-account-tie:before { content: "\F017" !important; }
+.mdi-chart-timeline-variant:before { content: "\F66E" !important; }
+.mdi-chart-box-outline:before { content: "\F128" !important; }
+.mdi-email-newsletter:before { content: "\F1F0" !important; }
+.mdi-rotate-3d-variant:before { content: "\F464" !important; }
+.mdi-shield-bug:before { content: "\F99C" !important; }
+.mdi-tools:before { content: "\FBBC" !important; }
