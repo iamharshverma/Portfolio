@@ -9,6 +9,26 @@ import json
 import os
 
 articles_data = [
+    # --- Latest RSA Conference (RSAC) ---
+    {
+        "id": "rsac-security-without-humans",
+        "title": "Security Without Humans: Designing Systems that Defend Themselves",
+        "platform": "RSA Conference",
+        "platform_full": "RSA Conference Expert Library",
+        "platform_badge": "RSA Conference",
+        "platform_icon": "mdi-shield-check",
+        "platform_color": "#c41230",
+        "category": "Cybersecurity",
+        "url": "https://www.rsaconference.com/Library/blog/security-without-humans-designing-systems-that-defend-themselves",
+        "author_profile": "https://www.rsaconference.com/experts/Harsh%20Verma",
+        "thumbnail": "images/blog/thumbnails/rsac-security-without-humans.jpg",
+        "date": "November 13, 2026",
+        "read_time": "7 min read",
+        "featured": True,
+        "description": "Published on RSA Conference official library: Traditional cybersecurity built around dashboards, alerts, and human analysts cannot keep pace with machine-speed AI threats. Why resilient autonomous defense requires self-healing systems governed across three foundational dimensions: Intent, Time, and Interaction.",
+        "tags": ["RSA Conference", "RSAC Expert", "Autonomous Defense", "Self-Healing Systems", "Agentic AI", "AI Security"]
+    },
+
     # --- Forbes Technology Council ---
     {
         "id": "forbes-physical-ai",
@@ -592,7 +612,8 @@ def generate_blog_html():
         "hn-trust-scores": "Cybersecurity",
         "hn-ai-orchestrator": "Engineering",
         "hn-startup-autonomy": "AI Research",
-        # RSA Conference (3)
+        # RSA Conference (4)
+        "rsac-security-without-humans": "Cybersecurity",
         "rsac-clean-attack": "Cybersecurity",
         "rsac-death-auth": "Cybersecurity",
         "rsac-agents-rules": "Cybersecurity",

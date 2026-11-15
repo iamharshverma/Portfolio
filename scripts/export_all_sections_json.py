@@ -250,7 +250,7 @@ def export_keynotes():
 
 
 def export_media():
-    """4. Export 44 media features and press features."""
+    """4. Export 45 media features and press features."""
     media_path = os.path.join(ROOT_DIR, "media_data.json")
     with open(media_path, "r", encoding="utf-8") as f:
         media = json.load(f)
@@ -429,7 +429,7 @@ def export_books():
 
 
 def export_blogs():
-    """8. Export 31 articles and executive thought leadership essays."""
+    """8. Export 32 articles and executive thought leadership essays."""
     kg_path = os.path.join(ROOT_DIR, "data", "knowledge-graph.json")
     with open(kg_path, "r", encoding="utf-8") as f:
         kg = json.load(f)

@@ -51,7 +51,7 @@ def generate_professional_work():
                 "patents_granted": 2,
                 "patents_pending_in_process": 4,
                 "global_honors_and_awards": 27,
-                "tier1_media_features": 44,
+                "tier1_media_features": 45,
                 "verified_directory_profiles": 57,
                 "invited_fellowships_and_councils": 26,
                 "global_media_audience_reach": "3.75B+",
@@ -592,7 +592,7 @@ def generate_professional_work():
                 {
                     "title": "Unprecedented Global Reach and Public Influence",
                     "description": (
-                        "Featured across 44 tier-1 international news publications—including Business Insider, AP News, Yahoo Finance, and TechTimes—and "
+                        "Featured across 45 tier-1 international news publications—including Business Insider, AP News, Yahoo Finance, and TechTimes—and "
                         "broadcast on the iconic Nasdaq billboard in Times Square, New York City, Harsh's thought leadership on Physical AI, autonomous agents, "
                         "and cyber defense has achieved over 3.75 billion verified global media impressions."
                     )

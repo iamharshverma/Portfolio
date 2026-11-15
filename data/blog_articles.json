@@ -1,5 +1,49 @@
 [
   {
+    "id": "rsac-security-without-humans",
+    "title": "Security Without Humans: Designing Systems that Defend Themselves",
+    "platform": "RSA Conference Expert Library",
+    "platform_short": "RSA Conference",
+    "category": "Cybersecurity",
+    "date": "November 13, 2026",
+    "read_time": "7 min read",
+    "url": "https://www.rsaconference.com/Library/blog/security-without-humans-designing-systems-that-defend-themselves",
+    "spotify_url": "",
+    "author_profile": "https://www.rsaconference.com/experts/Harsh%20Verma",
+    "image": "images/blog/thumbnails/rsac-security-without-humans.jpg",
+    "description": "Published on RSA Conference official library: Traditional cybersecurity built around dashboards, alerts, and human analysts cannot keep pace with machine-speed AI threats. Why resilient autonomous defense requires self-healing systems governed across three foundational dimensions: Intent, Time, and Interaction.",
+    "tags": [
+      "RSA Conference",
+      "RSAC Expert",
+      "Autonomous Defense",
+      "Self-Healing Systems",
+      "Agentic AI",
+      "AI Security"
+    ]
+  },
+  {
+    "id": "forbes-physical-ai",
+    "title": "Physical AI Is Coming: When AI Stops Generating Content And Starts Acting On The World",
+    "platform": "Forbes Technology Council",
+    "platform_short": "Forbes",
+    "category": "Physical AI & Robotics",
+    "date": "October 27, 2026",
+    "read_time": "6 min read",
+    "url": "https://www.forbes.com/councils/forbestechcouncil/2026/10/27/physical-ai-is-coming-when-ai-stops-generating-content-and-starts-acting-on-the-world/",
+    "spotify_url": "",
+    "author_profile": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/",
+    "image": "images/blog/thumbnails/forbes-physical-ai.jpg",
+    "description": "Generative AI was defined by digital creation—LLMs generating text, summarizing data, and generating code where errors can be edited. Physical AI brings artificial intelligence into the real world through sensors and robotic actuation, where actions have irreversible physical consequences and there is no 'undo' button.",
+    "tags": [
+      "Forbes Tech Council",
+      "Physical AI",
+      "Robotics",
+      "Embodied AI",
+      "Autonomous Systems",
+      "Cyber-Physical Safety"
+    ]
+  },
+  {
     "id": "forbes-real-ai-moat",
     "title": "The Real AI Moat: Why Models Are Cheap But Data Orchestration Is Priceless",
     "platform": "Forbes Technology Council",
@@ -606,27 +650,6 @@
       "GKE",
       "YugabyteDB",
       "Distributed SQL"
-    ]
-  },
-  {
-    "id": "forbes-physical-ai-coming",
-    "title": "Physical AI Is Coming: When AI Stops Generating Content And Starts Acting On The World",
-    "platform": "Forbes Technology Council",
-    "platform_short": "Forbes",
-    "category": "Physical AI & Robotics",
-    "date": "October 27, 2026",
-    "read_time": "7 min read",
-    "url": "https://www.forbes.com/councils/forbestechcouncil/2026/10/27/physical-ai-is-coming-when-ai-stops-generating-content-and-starts-acting-on-the-world/",
-    "spotify_url": "",
-    "author_profile": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/",
-    "image": "images/blog/thumbnails/forbes-physical-ai.jpg",
-    "description": "Explores the frontier transition from digital chat models to embodied, actuator-driven physical AI systems. Analyzes irreversible physical consequences, real-time cyber-physical security, sensor provenance, and latency requirements in robotic enterprise workflows.",
-    "tags": [
-      "Forbes Tech Council",
-      "Physical AI",
-      "Robotics",
-      "Embodied AI",
-      "Cyber-Physical Safety"
     ]
   },
   {

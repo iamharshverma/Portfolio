@@ -7,7 +7,7 @@
   <!-- 1. Executive Home & Portfolio -->
   <url>
     <loc>https://www.harshverma.me/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -47,7 +47,7 @@
   <!-- 7. Forbes Technology Council Columns, HackerNoon & RSAC Insights -->
   <url>
     <loc>https://www.harshverma.me/page-blog</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -116,10 +116,10 @@
     <priority>0.75</priority>
   </url>
 
-  <!-- 16. 42 Media Features, Podcasts & Press Interviews -->
+  <!-- 16. 45 Media Features, Podcasts & Press Interviews -->
   <url>
     <loc>https://www.harshverma.me/page-media</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -127,7 +127,7 @@
   <!-- 17. Real-time Social Thought Leadership & Content Feeds -->
   <url>
     <loc>https://www.harshverma.me/page-social</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -135,7 +135,7 @@
   <!-- 18. Media Distribution & Global Press Analytics Dossier -->
   <url>
     <loc>https://www.harshverma.me/page-media-distribution-analytics</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>

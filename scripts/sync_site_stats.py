@@ -222,12 +222,13 @@ def sync_html_and_generators(stats):
                 content
             )
 
-            # 6. Update "Showing all XX publications" in publications page
-            content = re.sub(
-                r'(\bShowing all\s+)\d+(\s+publications\b)',
-                rf'\g<1>{p_num}\g<2>',
-                content
-            )
+            # 6. Update "Showing all XX publications" ONLY in publications page (not page-blog.html)
+            if "page-publications" in filename or "generate_publications" in filename:
+                content = re.sub(
+                    r'(\bShowing all\s+)\d+(\s+publications\b)',
+                    rf'\g<1>{p_num}\g<2>',
+                    content
+                )
 
             # 7. Update "View All XX Publications & 6 Patents" in index.html
             content = re.sub(

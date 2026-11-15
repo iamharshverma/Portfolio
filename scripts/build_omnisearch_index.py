@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """
 scripts/build_omnisearch_index.py
-Builds the unified 222-record Executive Omnisearch Index from:
+Builds the unified 226-record Executive Omnisearch Index from:
 - research_publications.json (27)
-- media_features.json (44)
-- speaking_engagements.json (12) + judging_engagements.json (21) = 33 speaking & keynote records
+- media_features.json (45)
+- speaking_engagements.json (12) + judging_engagements.json (22) = 34 speaking & keynote records
 - awards_and_honors.json (27)
 - verified_profiles.json (57)
-- memberships.json (26)
+- memberships_and_associations.json (28)
 - books_and_volumes.json (8)
-Total = 222 records.
+Total = 226 records.
 """
 
 import os
@@ -54,7 +54,7 @@ def build_index():
             "description": p.get("abstract", "").strip()[:180] + ("..." if len(p.get("abstract", "").strip()) > 180 else "")
         })
 
-    # 2. Tier-1 Media Features (44 records)
+    # 2. Tier-1 Media Features (45 records)
     with open(os.path.join(DATA_DIR, "media_features.json"), "r", encoding="utf-8") as f:
         media = json.load(f)
     for m in media:

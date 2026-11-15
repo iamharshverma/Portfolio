@@ -29,9 +29,9 @@ try {
   console.warn('[Build] Warning during export_all_sections_json:', err.message);
 }
 
-// 1a-2. Build Executive Omnisearch index (222 records) and Search Analytics
+// 1a-2. Build Executive Omnisearch index (226 records) and Search Analytics
 try {
-  console.log('[Build] Building Executive Omnisearch index (222 records) and Search Analytics...');
+  console.log('[Build] Building Executive Omnisearch index (226 records) and Search Analytics...');
   execSync('python3 scripts/build_omnisearch_index.py', { stdio: 'inherit' });
   execSync('python3 scripts/generate_search_analytics.py', { stdio: 'inherit' });
 } catch (err) {

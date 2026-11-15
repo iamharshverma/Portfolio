@@ -1607,5 +1607,46 @@
       }
     ],
     "quote": "Securing autonomous AI agent workflows requires end-to-end continuous validation across dynamic multi-agent topologies and toolchains."
+  },
+  {
+    "id": "media-influencer-uk-ai-worthy-of-trust-2026",
+    "title": "Influencer Magazine UK: Harsh Verma \u2014 The Future of AI Is About Making Intelligent Machines Worthy of Our Trust",
+    "outlet": "Influencer Magazine UK",
+    "type": "interview",
+    "type_label": "Executive Interview",
+    "year": "2026",
+    "date_display": "November 2026",
+    "badge_theme": "purple",
+    "icon_svg": "influencer_uk_badge.svg",
+    "highlight": "Top 50 Tech Leaders Cover",
+    "summary": "Featured on the Influencer Magazine UK November 2026 cover under 'Top 50 | Tech Leaders Making Impact', Harsh Verma discusses building trustworthy Agentic AI, multi-agent cybersecurity governance, shifting from generative AI to action-taking autonomous systems, and engineering leadership principles.",
+    "topics": [
+      "Influencer UK",
+      "Top 50 Tech Leaders",
+      "Agentic AI",
+      "AI Trust & Governance",
+      "Cybersecurity",
+      "Palo Alto Networks"
+    ],
+    "stats": "November 2026 Cover Feature",
+    "primary_url": "https://influencermagazine.uk/2026/11/harsh-verma-the-future-of-ai-is-not-justt-about-making-machines-more-intelligent-it-is-about-making-intelligent-machines-worthy-of-our-trust/",
+    "links": [
+      {
+        "label": "Read Interview",
+        "url": "https://influencermagazine.uk/2026/11/harsh-verma-the-future-of-ai-is-not-justt-about-making-machines-more-intelligent-it-is-about-making-intelligent-machines-worthy-of-our-trust/",
+        "icon": "mdi-newspaper"
+      },
+      {
+        "label": "LinkedIn Feature",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7527288512111501312",
+        "icon": "mdi-linkedin"
+      },
+      {
+        "label": "Instagram Feature",
+        "url": "https://www.instagram.com/p/DftthWtK70s/",
+        "icon": "mdi-instagram"
+      }
+    ],
+    "quote": "The future of AI is not just about making machines more intelligent; it is about making intelligent machines worthy of our trust."
   }
 ]

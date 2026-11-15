@@ -1001,17 +1001,17 @@ Harsh Verma has published **25+ peer-reviewed and conference papers** across lea
       q.includes('orchestration') ||
       (q.includes('forbes') && (q.includes('post') || q.includes('article') || q.includes('read') || q.includes('write')))
     ) {
-      return `### ✍️ Articles & Thought Leadership (30 Publications)
+      return `### ✍️ Articles & Thought Leadership (31 Publications)
 
 Harsh Verma actively authors high-impact technical articles across major global publications including **Forbes Technology Council**, **HackerNoon**, **The AI Journal**, and **RSA Conference**:
 
-- **Latest Forbes Council Article (Oct 2, 2026)**: **[The Real AI Moat: Why Models Are Cheap But Data Orchestration Is Priceless](https://www.forbes.com/councils/forbestechcouncil/2026/10/02/the-real-ai-moat-why-models-are-cheap-but-data-orchestration-is-priceless/)**
+- **Latest RSA Conference Article (Nov 13, 2026)**: **[Security Without Humans: Designing Systems that Defend Themselves](https://www.rsaconference.com/Library/blog/security-without-humans-designing-systems-that-defend-themselves)**
+- **Latest Forbes Council Article (Oct 27, 2026)**: **[Physical AI Is Coming: When AI Stops Generating Content And Starts Acting On The World](https://www.forbes.com/councils/forbestechcouncil/2026/10/27/physical-ai-is-coming-when-ai-stops-generating-content-and-starts-acting-on-the-world/)**
+- **The Real AI Moat**: Why Models Are Cheap But Data Orchestration Is Priceless (*Forbes*)
 - **Engineering The Predictable**: Why Pure Determinism Is Becoming The New Premium In AI Architecture (*Forbes*)
-- **The Intelligence Per Dollar Metric**: How Influential Leaders Measure AI Success (*Forbes*)
-- **Your First AI Agent Is An Experiment, Not A Product** (*Forbes*)
-- **Beyond The Code**: The Evolution Of The Next-Generation Engineer (*Forbes*)
+- **Agents Don't Break Rules, They Redefine Them** (*RSA Conference*)
 
-👉 Explore all 30 articles and syndicated feeds: **[Visit Blog & Articles Hub](page-blog)**`;
+👉 Explore all 31 articles and syndicated feeds: **[Visit Blog & Articles Hub](page-blog)**`;
     }
 
     // 5. Fellowships & Professional Memberships

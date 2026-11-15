@@ -162,17 +162,17 @@ Harsh Verma has published **${paperCount}+ peer-reviewed and conference papers**
 
   if (q.includes('member') || q.includes('fellow') || q.includes('harvard') || q.includes('ieee') || q.includes('bcs') || q.includes('association') || q.includes('forbes')) {
     if (q.includes('blog') || q.includes('article') || q.includes('moat') || q.includes('orchestration') || q.includes('read') || q.includes('post')) {
-      return `### ✍️ Articles & Thought Leadership (30 Publications)
+      return `### ✍️ Articles & Thought Leadership (31 Publications)
 
 Harsh Verma actively authors high-impact technical articles across major global publications including **Forbes Technology Council**, **HackerNoon**, **The AI Journal**, and **RSA Conference**:
 
-- **Latest Forbes Council Article (Oct 2, 2026)**: **[The Real AI Moat: Why Models Are Cheap But Data Orchestration Is Priceless](https://www.forbes.com/councils/forbestechcouncil/2026/10/02/the-real-ai-moat-why-models-are-cheap-but-data-orchestration-is-priceless/)**
+- **Latest RSA Conference Article (Nov 13, 2026)**: **[Security Without Humans: Designing Systems that Defend Themselves](https://www.rsaconference.com/Library/blog/security-without-humans-designing-systems-that-defend-themselves)**
+- **Latest Forbes Council Article (Oct 27, 2026)**: **[Physical AI Is Coming: When AI Stops Generating Content And Starts Acting On The World](https://www.forbes.com/councils/forbestechcouncil/2026/10/27/physical-ai-is-coming-when-ai-stops-generating-content-and-starts-acting-on-the-world/)**
+- **The Real AI Moat**: Why Models Are Cheap But Data Orchestration Is Priceless (*Forbes*)
 - **Engineering The Predictable**: Why Pure Determinism Is Becoming The New Premium In AI Architecture (*Forbes*)
-- **The Intelligence Per Dollar Metric**: How Influential Leaders Measure AI Success (*Forbes*)
-- **Your First AI Agent Is An Experiment, Not A Product** (*Forbes*)
-- **Beyond The Code**: The Evolution Of The Next-Generation Engineer (*Forbes*)
+- **Agents Don't Break Rules, They Redefine Them** (*RSA Conference*)
 
-👉 Explore all 30 articles and syndicated feeds: **[Visit Blog & Articles Hub](page-blog)**`;
+👉 Explore all 31 articles and syndicated feeds: **[Visit Blog & Articles Hub](page-blog)**`;
     }
     return `### 🎖️ Invited Fellowships & Professional Memberships
 
@@ -1015,6 +1015,48 @@ app.post('/api/social/sync', async (req, res) => {
 // 5. Reset feed to curated routine posts
 app.post('/api/social/reset', (req, res) => {
   const defaultPosts = [
+    {
+      "id": "post-li-influencer-uk-trust-2026",
+      "platform": "linkedin",
+      "authorName": "Harsh Verma",
+      "authorHandle": "@harshverma59",
+      "authorTitle": "Principal AI Architect • Forbes Technology Council • IEEE Senior Member",
+      "authorAvatar": "images/harsh/Harsh_portfolio_pic.png",
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7527288512111501312",
+      "publishedAt": "2026-11-14T10:00:00Z",
+      "routineCategory": "Global Press & Executive Interviews",
+      "title": "Influencer UK Top 50 Cover Interview: Making Intelligent Machines Worthy of Our Trust",
+      "content": "November 2026 - Influencer UK: Top 50 | Tech Leaders Making Impact. Honored to be featured on the cover and in an exclusive interview discussing Agentic AI, autonomous systems, and cybersecurity trust infrastructure: \"The future of AI is not just about making machines more intelligent; it is about making intelligent machines worthy of our trust.\"",
+      "tags": ["#InfluencerUK", "#AgenticAI", "#AITrust", "#Cybersecurity", "#TechLeadership"],
+      "likes": 312,
+      "comments": 36,
+      "shares": 24,
+      "mediaType": "image",
+      "mediaUrl": "images/media/influencer_uk_badge.svg",
+      "isPinned": true,
+      "source": "fetched_from_url"
+    },
+    {
+      "id": "post-ig-influencer-uk-trust-2026",
+      "platform": "instagram",
+      "authorName": "Harsh Verma",
+      "authorHandle": "@aiwithharsh",
+      "authorTitle": "Enterprise AI Architect • @aiwithharsh • Stanford GSB",
+      "authorAvatar": "images/harsh/Harsh_portfolio_pic.png",
+      "postUrl": "https://www.instagram.com/p/DftthWtK70s/",
+      "publishedAt": "2026-11-14T09:00:00Z",
+      "routineCategory": "Global Press & Executive Interviews",
+      "title": "Influencer Magazine UK November 2026 Cover: Top 50 Tech Leaders Making Impact",
+      "content": "November 2026 - Influencer UK: Top 50 | Tech Leaders Making Impact. Grateful to be featured in Influencer Magazine UK sharing insights on AI, cybersecurity, and autonomous systems—plus advice for aspiring engineers: don't just learn technology, learn how to solve meaningful problems with it.",
+      "tags": ["#InfluencerMagazineUK", "#Top50TechLeaders", "#AIWithHarsh", "#ArtificialIntelligence", "#Cybersecurity"],
+      "likes": 284,
+      "comments": 29,
+      "shares": 18,
+      "mediaType": "image",
+      "mediaUrl": "images/media/influencer_uk_badge.svg",
+      "isPinned": true,
+      "source": "fetched_from_url"
+    },
     {
       "id": "post-li-forbes",
       "platform": "linkedin",

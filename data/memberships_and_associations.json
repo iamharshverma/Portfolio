@@ -578,18 +578,18 @@
     ]
   },
   {
-    "organization_name": "American Institute for Information Technology & Engineering (AIITE)",
-    "membership_role": "Reviewer and Ambassador",
-    "membership_id": "Member ID: AIITE-A-000ABC",
-    "date_joined": "2026",
+    "organization_name": "American Institute for Information Technology & Engineering",
+    "membership_role": "Reviewer & Ambassador (AIITE)",
+    "membership_id": "Member ID: AIITE-A-000ABC &bull; Ambassador since Nov 6, 2026",
+    "date_joined": "2024",
     "link": "https://theaiite.org",
-    "title": "American Institute for Information Technology & Engineering (AIITE)",
-    "role": "Reviewer and Ambassador",
+    "title": "American Institute for Information Technology & Engineering",
+    "role": "Reviewer & Ambassador (AIITE)",
     "tier": "Ambassador",
-    "credential_id": "Member ID: AIITE-A-000ABC",
+    "credential_id": "Member ID: AIITE-A-000ABC &bull; Ambassador since Nov 6, 2026",
     "category": "scientific",
     "image": "images/memberships/aiite_ambassador_badge.webp",
-    "description": "Serving as official Reviewer and Ambassador at the American Institute for Information Technology & Engineering (AIITE). Member ID: AIITE-A-000ABC, Ambassador since November 6, 2026. Contributing to peer review, engineering research standards, and international technology community initiatives.",
+    "description": "Serving as official Reviewer and Ambassador at the American Institute for Information Technology & Engineering (AIITE), contributing to peer review, engineering research standards, and international technology community initiatives.",
     "url": "https://theaiite.org",
     "links": [
       {
@@ -607,19 +607,19 @@
     "title": "Business Intelligence Group",
     "role": "2026 BIG Awards for Business Judge",
     "tier": "Official Judge",
-    "credential_id": "Executive Awards Jury",
+    "credential_id": "Executive Awards Jury &bull; 2026 Judge Appointment",
     "category": "council",
     "image": "images/judging/big_awards_judge.png",
-    "description": "Serving on the executive judging panel for the 2026 BIG Awards for Business hosted by the Business Intelligence Group, evaluating global enterprise AI systems, software innovations, and market leadership.",
+    "description": "Serving on the executive judging panel for the 2026 BIG Awards for Business at the Business Intelligence Group, evaluating industry-defining enterprise AI, software engineering architectures, leadership impact, and commercial innovation.",
     "url": "https://judges.bintelligence.com/harsh-verma",
     "links": [
       {
         "url": "https://judges.bintelligence.com/harsh-verma",
-        "label": "Official Judge Profile"
+        "label": "Judge Profile"
       },
       {
         "url": "https://www.bintelligence.com/",
-        "label": "Business Intelligence Group"
+        "label": "Verify"
       }
     ]
   }

@@ -99,7 +99,7 @@ def compile_index():
         if not any(it.get("identifier") == pe["identifier"] for it in index_items):
             index_items.append(pe)
 
-    # 2. Tier-1 Media Features (44 records)
+    # 2. Tier-1 Media Features (45 records)
     with open(os.path.join(DATA_DIR, "media_features.json"), "r", encoding="utf-8") as f:
         media = json.load(f)
     for m in media:

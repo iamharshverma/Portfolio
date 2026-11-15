@@ -4,13 +4,13 @@
     "version": "2026.1",
     "environment": "Production",
     "search_engine": "In-Memory Client-Side Fuzzy Trie & Inverted Token Index",
-    "total_records_indexed": 222,
+    "total_records_indexed": 226,
     "total_queries_logged": 16840,
     "unique_search_terms": 348,
     "average_response_time_ms": 0.65,
     "average_click_through_rate": "81.6%",
     "keyboard_shortcut_adoption_pct": "66.4%",
-    "last_synced": "2026-11-06T16:00:00Z"
+    "last_synced": "2026-11-14T12:00:00Z"
   },
   "interest_areas_overview": [
     {
@@ -280,13 +280,13 @@
       "top_term": "Clean Attacks"
     },
     "tier1_media_features": {
-      "records_count": 44,
+      "records_count": 45,
       "searches_count": 2840,
       "avg_click_rate": "76.8%",
       "top_term": "Business Insider"
     },
     "speaking_and_keynotes": {
-      "records_count": 33,
+      "records_count": 34,
       "searches_count": 2180,
       "avg_click_rate": "84.5%",
       "top_term": "TrueML Keynote"
@@ -304,7 +304,7 @@
       "top_term": "Google Scholar"
     },
     "memberships_and_fellowships": {
-      "records_count": 26,
+      "records_count": 28,
       "searches_count": 1780,
       "avg_click_rate": "86.1%",
       "top_term": "BCS Fellow"

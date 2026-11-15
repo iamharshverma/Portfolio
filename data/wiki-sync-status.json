@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-26T09:06:15.092453+00:00",
+  "updated_at": "2026-11-15T07:27:40.903623+00:00",
   "wikidata": {
     "entity_id": "Q139827028",
     "entity_url": "https://www.wikidata.org/wiki/Q139827028",
     "json_endpoint": "https://www.wikidata.org/wiki/Special:EntityData/Q139827028.json",
-    "checked_at": "2026-10-26T09:06:14.300411+00:00",
+    "checked_at": "2026-11-15T07:27:39.124762+00:00",
     "live_reachable": true,
     "existing_labels": {
       "en": "Harsh Verma"
@@ -12,7 +12,7 @@
     "existing_descriptions": {
       "en": "Principal AI Software Engineer at Palo Alto Networks, Keynote Speaker, Author, and Researcher"
     },
-    "existing_claims_count": 46,
+    "existing_claims_count": 45,
     "existing_properties": [
       "P101",
       "P106",
@@ -43,6 +43,11 @@
         "property": "P106",
         "label": "occupation",
         "value": "public speaker / keynote speaker"
+      },
+      {
+        "property": "P463",
+        "label": "member of",
+        "value": "Association for the Advancement of Artificial Intelligence (AAAI)"
       }
     ],
     "removed_acm_claims": 0,
@@ -50,19 +55,22 @@
     "outdated_references_count": 0,
     "updated_references_count": 0,
     "p856_outdated": false,
-    "api_write_status": "synced_live_via_bot",
-    "api_write_message": "All outdated github.io references and deprecated claims successfully updated live on Wikidata Q139827028 via automated Bot API, including ResearchGate P2038 update to Harsh-Verma-43. Revision: 2560590046.",
-    "lastrevid": 2560590046,
-    "modified": "2026-10-25T07:16:10Z"
+    "api_write_status": "ready_for_quickstatements",
+    "api_write_message": "Audited Wikidata Q139827028 live: Found 0 references pointing to iamharshverma.github.io and 1 P856 website claim. QuickStatements batch generated for 1-click execution in Toolforge without 2FA, or submit Email 2FA token / Bot password.",
+    "lastrevid": 2563212993,
+    "modified": "2026-11-01T00:48:14Z"
   },
   "everybodywiki": {
     "article_title": "Harsh_Verma_(Software_Engineer)",
     "article_url": "https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)",
-    "checked_at": "2026-10-26T09:06:15.015999+00:00",
-    "live_reachable": false,
-    "existing_bytes": 0,
-    "generated_bytes": 48421,
-    "api_write_status": "fallback_ready",
-    "api_write_message": "EverybodyWiki API note: HTTP Error 403: Forbidden"
+    "checked_at": "2026-11-15T07:27:39.671843+00:00",
+    "live_reachable": true,
+    "existing_bytes": 48292,
+    "generated_bytes": 50203,
+    "api_write_status": "requires_auth (permissiondenied)",
+    "api_write_message": "EverybodyWiki API note (permissiondenied): The action you have requested is limited to users in one of the groups: [[Everybodywiki:Users|Users]], [[Everybodywiki:Bots|Bots]].",
+    "pageid": 2669181,
+    "lastrevid": 6894871,
+    "last_timestamp": "2026-10-25T23:46:55Z"
   }
 }

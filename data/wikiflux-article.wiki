@@ -66,7 +66,9 @@ In addition to his engineering leadership, Verma serves as an official contribut
 * '''''Machine Learning & Generative AI for Marketing (Technical Book Review)''''' – Technical evaluation of customer intelligence models, privacy-preserving personalization, and generative AI pipelines.
 * '''''The TensorFlow Workshop (Technical Book Review)''''' – Technical review of deep neural network architectures, TensorFlow 2.x pipelines, and distributed model training.
 
-== Selected Forbes Columns & Thought Leadership (29 Articles) ==
+== Selected Forbes Columns & Thought Leadership (31 Articles) ==
+* [https://www.rsaconference.com/Library/blog/security-without-humans-designing-systems-that-defend-themselves "Security Without Humans: Designing Systems that Defend Themselves"] – ''RSA Conference Expert Library'' (November 13, 2026)
+* [https://www.forbes.com/councils/forbestechcouncil/2026/10/27/physical-ai-is-coming-when-ai-stops-generating-content-and-starts-acting-on-the-world/ "Physical AI Is Coming: When AI Stops Generating Content And Starts Acting On The World"] – ''Forbes Technology Council'' (October 27, 2026)
 * [https://www.forbes.com/councils/forbestechcouncil/2026/10/02/the-real-ai-moat-why-models-are-cheap-but-data-orchestration-is-priceless/ "The Real AI Moat: Why Models Are Cheap But Data Orchestration Is Priceless"] – ''Forbes Technology Council'' (October 2, 2026)
 * [https://www.forbes.com/councils/forbestechcouncil/2026/04/20/beyond-the-code-the-evolution-of-the-next-generation-engineer/ "Beyond The Code: The Evolution Of The Next-Generation Engineer"] – ''Forbes Technology Council'' (April 20, 2026)
 * [https://www.forbes.com/councils/forbestechcouncil/2026/05/18/the-intelligence-per-dollar-metric-how-influential-leaders-measure-ai-success/ "The Intelligence Per Dollar Metric: How Influential Leaders Measure AI Success"] – ''Forbes Technology Council'' (May 18, 2026)
@@ -126,7 +128,7 @@ In addition to his engineering leadership, Verma serves as an official contribut
 * [https://proceedings.raptors.dev/verma-trusted-ai-autonomous-agents/ "Beyond Models: Building Trusted AI in the Age of Autonomous Agents"] – ''Proceedings of the Raptors Conference (Raptors Conference 2026)'' (2026) (DOI: <code>10.68495/rc.2026.C025</code>)
 * [https://ieeeaccess.ieee.org/ "DEICA-ML: A Multi-Layer Differential Evolution-Based Improved Clustering Algorithm for IoT-Based Heterogeneous Wireless Sensor Networks"] – ''IEEE Access (Manuscript ID: Access-2026-52653)'' (2026)
 
-== Invited Fellowships, Councils & Associations (26 Appointments) ==
+== Invited Fellowships, Councils & Associations (28 Appointments) ==
 * '''Forbes Technology Council''' – Official Council Member & Columnist (Council Member) [https://www.forbes.com/councils/forbestechcouncil/people/harshverma/ Verify]
 * '''IEEE & IEEE Computer Society''' – Senior Member (SMIEEE) (Senior Member) [https://ieee-collabratec.ieee.org/app/p/HarshVerma59 Verify]
 * '''British Computer Society (BCS)''' – The Chartered Institute for IT · United Kingdom (Fellow (FBCS)) [https://www.bcs.org/find-a-bcs-member/ Verify]
@@ -153,9 +155,11 @@ In addition to his engineering leadership, Verma serves as an official contribut
 * '''HackUTD & Hackmakers''' – AI Challenge Judge & Mentor (Judge & Mentor) [https://hackutd.co/ Verify]
 * '''ODSC & SIIM Communities''' – Speaker & Member (Community) [https://odsc.com/ Verify]
 * '''Screna.ai''' – Technical Mentor & AI Advisor (Technical Mentor) [https://www.screna.ai/mentor-dashboard Verify]
+* '''American Institute for Information Technology & Engineering''' – Reviewer & Ambassador (AIITE) (Ambassador) [https://theaiite.org Verify]
+* '''Business Intelligence Group''' – 2026 BIG Awards for Business Judge (Official Judge) [https://judges.bintelligence.com/harsh-verma Verify]
 
 == Honors and Global Awards (27 Recognitions) ==
-* '''Most Admire Global Indians 2026''' (2026) – Global Indian Leadership Forum · International Leadership Honors [https://www.passionvista.com/ Citation]
+* '''Most Admire Global Indians 2026''' (2026) – Global Indian Leadership Forum · International Leadership Honors [https://www.passionvista.com/harsh-verma-where-ai-cybersecurity-and-human-purpose-meet-at-scale/ Citation]
 * '''Forttuna Global 100: THE POWER LIST 2026!''' (2026) – Forttuna Global Foundation & Leadership Councils [https://global100.forttuna.com/the-power-list-2026-honorees/profile?name=harsh-verma Citation]
 * '''Nobel Technology Awards 2026: Gold Winner (#145)''' (2026) – Nobel Technology Awards · Globee Awards Winner's Circle [https://nobletechnologyawards.com/winner-info.php?id=145 Citation]
 * '''2026 NVTC Cyber50 Honoree''' (2026) – Northern Virginia Technology Council (NVTC) [https://www.nvtc.org/press-releases/nvtc-announces-2026-cyber50-honorees/ Citation]
@@ -183,15 +187,17 @@ In addition to his engineering leadership, Verma serves as an official contribut
 * '''JRTCSE Certificate of Excellence in Research Review''' (2024) – Journal of Recent Trends in Computer Science and Engineering [https://jrtcse.com/index.php/home/Harsh_Verma Citation]
 * '''Certificate of Honour: Keynote Speaker @#ATAGTR2017''' (2017) – Agile Testing Alliance (ATA) · Global Testing Retreat [https://gtr2017.agiletestingalliance.org/speakers/#harshv Citation]
 
-== Media Coverage, Interviews & Podcasts (42+ Features) ==
+== Media Coverage, Interviews & Podcasts (45+ Features) ==
 * [https://www.lifepage.in/ "Life Page India: Inside Software Development & Engineering Careers"] – ''Life Page India'' (July 2018)
 * [https://youtu.be/bggw4JTFjgA?si=Jw08RDQLpTuG3BYe "Chai & Coaching: How to Build a Tech Career in Cybersecurity"] – ''Chai & Coaching'' (2024)
 * [https://youtu.be/iZkx6Ewq6wU?si=eYUUPFW4AKpR36a6 "Chai & Coaching: How to Control Your Job Interview & Convince Recruiters to Hire You"] – ''Chai & Coaching'' (2024)
 * [https://youtu.be/1DxjMiOe580?si=aI9Xlf9Z3oyUop6n "TrueML Talks #35: Big Data and ML Practices at Palo Alto Networks"] – ''TrueML Talks / TrueFoundry'' (2024)
 * [https://youtu.be/E6kA_o57DrM?si=1YhXasLUtF94J5EZ "SZ 179: The Digital Battleground — Quantum & Cyber Security"] – ''Startup Zone / Top Voices Unite'' (2025)
 * [https://youtu.be/MPhFC1h5GIc?si=B5uQXexHIKw2dAk0 "FutureAGI: Powering Cybersecurity with GenAI & Intelligent Agents"] – ''FutureAGI'' (2025)
+* [https://www.bcs.org/membership-and-registrations/our-members/harsh-verma-fbcs "BCS, The Chartered Institute for IT: Harsh Verma FBCS Member Spotlight"] – ''BCS, The Chartered Institute for IT'' (2026)
 * [https://youtu.be/IZvHxEtMMnw?si=JqvMyLKF_PTfqFDI "UC Berkeley SkyDeck: The Era of Agentic Security (Batch 21 Keynote)"] – ''UC Berkeley SkyDeck'' (2026)
 * [https://xraised.com/videos/ai-engineering-beyond-code/ "Xraised: Beyond the Code — The Future of AI & Cybersecurity"] – ''Xraised / Spotify / Amazon Music'' (March 2026)
+* [https://markets.businessinsider.com/news/stocks/principal-software-engineer-harsh-verma-named-a-2026-nvtc-cyber50-executive-honoree-1036677809 "Business Insider: Principal Software Engineer Harsh Verma Named a 2026 NVTC Cyber50 Executive Honoree"] – ''Business Insider / Markets Insider'' (October 2026)
 * [https://markets.businessinsider.com/news/stocks/harsh-verma-receives-a-2026-global-recognition-award-for-measurable-advances-in-enterprise-ai-and-cybersecurity-1035986499 "Business Insider: Harsh Verma Receives 2026 Global Recognition Award for Enterprise AI Advances"] – ''Business Insider / Markets Insider'' (2026)
 * [https://timebusinessnews.com/harsh-verma-ifgict/ "Time Business News: Harsh Verma Conferred Prestigious IFGICT Fellowship for Green ICT & AI Leadership"] – ''Time Business News'' (2026)
 * [https://cybersecurity-excellence-awards.com/candidates/ai-innovator-of-the-year-2026/?_se=aHZlcm1hQHBhbG9hbHRvbmV0d29ya3MuY29t "Cybersecurity Excellence Awards: AI Innovator of the Year Candidate Showcase"] – ''Cybersecurity Excellence Awards'' (2026)
@@ -226,8 +232,9 @@ In addition to his engineering leadership, Verma serves as an official contribut
 * [https://apnews.com/press-release/marketersmedia/press-release-f6ee56b5c4a73732b75c8339658e29f2 "Harsh Verma on AI Agents ‘The Clean Attack’ Challenge Signals a Shift in Cybersecurity Strategy"] – ''AP News / MarketersMEDIA'' (June 2026)
 * [https://news.marketersmedia.com/principal-software-engineer-harsh-verma-awarded-bcs-fellowship-and-publishes-rsa-conference-analysis-on-why-identity-alone-can-no-longer-secure-ai-systems/89205125 "Principal Software Engineer Harsh Verma Awarded BCS Fellowship and Publishes RSA Conference Analysis on Why Identity Alone Can No Longer Secure AI Systems"] – ''MarketersMEDIA Wire'' (October 2026)
 * [https://www.einnews.com/pr_news/950989244/ai-agent-security-and-virtual-cell-ai-lead-ai-insiders-sf-tech-week-nights "AI Agent Security and Virtual Cell AI Lead AI Insiders' SF Tech Week Nights"] – ''EIN Presswire Wire'' (October 2026)
+* [https://influencermagazine.uk/2026/11/harsh-verma-the-future-of-ai-is-not-justt-about-making-machines-more-intelligent-it-is-about-making-intelligent-machines-worthy-of-our-trust/ "Influencer Magazine UK: Harsh Verma — The Future of AI Is About Making Intelligent Machines Worthy of Our Trust"] – ''Influencer Magazine UK'' (November 2026)
 
-== Verified Authority Profiles & External Links (55 Registries) ==
+== Verified Authority Profiles & External Links (57 Registries) ==
 * [https://www.harshverma.me/ Official Portfolio Website (www.harshverma.me)]
 * [https://www.harshverma.me/page-identity Official Google Knowledge Graph & Entity Verification Hub]
 * [https://councils.forbes.com/profile/Harsh-Verma-Principal-Software-Engineer-AI-Palo-Alto-Networks/2a1e2c7a-5541-4c49-acee-0ec37da532a5 Forbes Technology Council] (Executive & Tech Councils – <code>Official Council Member</code>)
@@ -262,7 +269,6 @@ In addition to his engineering leadership, Verma serves as an official contribut
 * [https://imdb.me/harshverma IMDb Profile] (Media Features & Press – <code>Verified</code>)
 * [https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer) EverybodyWiki] (Media Features & Press – <code>Verified</code>)
 * [https://localwiki.org/main/Harsh_Verma LocalWiki] (Media Features & Press – <code>Verified</code>)
-* [https://www.wikidata.org/wiki/Q139827028 Wikidata Knowledge Base] (Research & Knowledge Graph – <code>Verified</code>)
 * [https://adplist.org/mentors/harsh-verma ADPList Executive Mentor] (Advisory & Mentorship – <code>Top AI Mentor</code>)
 * [https://accelerate.masschallenge.org/profile/ MassChallenge Accelerator] (Advisory & Mentorship – <code>Mentor & Judge</code>)
 * [https://www.f6s.com/harshverma59 F6S Startup Community] (Advisory & Mentorship – <code>harshverma59</code>)
@@ -285,6 +291,9 @@ In addition to his engineering leadership, Verma serves as an official contribut
 * [https://www.bcs.org/find-a-bcs-member/ British Computer Society] (Research & Citations – <code>Fellow (FBCS)</code>)
 * [https://mastodon.social/@harshverma59 Mastodon Social] (Direct Connect & Networks – <code>@harshverma59</code>)
 * [https://loop.frontiersin.org/people/3757183/overview Frontiers in Education Editorial] (Research & Citations – <code>Review Editor</code>)
+* [https://app.usefoam.com/shared/media-kits/0d3617d7 Foam Speaker & Media Kit] (Media Features & Press – <code>Verified Media Kit</code>)
+* [https://maven.com/harshverma Maven Instructor Profile] (Developer & AI Hubs – <code>AI Instructor</code>)
+* [https://bsky.app/profile/harshverma59.bsky.social Bluesky Social] (Direct Connect & Networks – <code>@harshverma59.bsky.social</code>)
 
 == References ==
 {{reflist}}

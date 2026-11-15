@@ -2,7 +2,7 @@
 """
 scripts/generate_omnisearch_js.py
 Generates js/hv-omnisearch.js with:
-- Inlined 222 verified records for instantaneous 0ms display on load
+- Inlined 223 verified records for instantaneous 0ms display on load
 - Asynchronous data fetching fallback and background synchronization
 - Consistent canonical category icons for all 7 sections
 - Non-bold italic search input formatting
@@ -21,13 +21,15 @@ with open(os.path.join(DATA_DIR, "omnisearch_index.json"), "r", encoding="utf-8"
     index_data = json.load(f)
 
 index_json_str = json.dumps(index_data, ensure_ascii=False)
+total_cnt = len(index_data)
+cat_cnt = lambda pill: sum(1 for item in index_data if item.get("category_pill") == pill)
 
 OMNI_JS = r"""/**
  * Harsh Verma - Executive Command Palette (Cmd+K Global Omnisearch)
  * File: js/hv-omnisearch.js
  * 
  * Features:
- * - 222 Verified Records Indexed Across All 7 Categories
+ * - __TOTAL__ Verified Records Indexed Across All 7 Categories
  * - Inlined default index for instantaneous 0ms rendering
  * - Dual-layer data fetching logic with background synchronization
  * - Consistent canonical Material Design Icons for all categories
@@ -38,7 +40,7 @@ OMNI_JS = r"""/**
 (function () {
   'use strict';
 
-  // Master pre-indexed dataset (222 records across 7 categories)
+  // Master pre-indexed dataset (__TOTAL__ records across 7 categories)
   var DEFAULT_OMNI_INDEX = """ + index_json_str + r""";
 
   var omnisearchRecords = DEFAULT_OMNI_INDEX || [];
@@ -49,14 +51,14 @@ OMNI_JS = r"""/**
   var filteredRecords = [];
 
   var CATEGORIES = [
-    { key: 'all', label: 'All', count: 222, icon: 'mdi-view-grid' },
-    { key: 'publications', label: 'Publications & Patents', count: 27, icon: 'mdi-certificate' },
-    { key: 'media', label: 'Media Features', count: 44, icon: 'mdi-newspaper' },
-    { key: 'keynotes', label: 'Speaking & Keynotes', count: 33, icon: 'mdi-microphone' },
-    { key: 'awards', label: 'Awards & Honors', count: 27, icon: 'mdi-trophy-award' },
-    { key: 'profiles', label: 'Verified Profiles', count: 57, icon: 'mdi-account-check' },
-    { key: 'memberships', label: 'Memberships & Fellowships', count: 26, icon: 'mdi-shield-account' },
-    { key: 'books', label: 'Books & Volumes', count: 8, icon: 'mdi-book-open-page-variant' }
+    { key: 'all', label: 'All', count: __TOTAL__, icon: 'mdi-view-grid' },
+    { key: 'publications', label: 'Publications & Patents', count: __PUBS__, icon: 'mdi-certificate' },
+    { key: 'media', label: 'Media Features', count: __MEDIA__, icon: 'mdi-newspaper' },
+    { key: 'keynotes', label: 'Speaking & Keynotes', count: __KEYNOTES__, icon: 'mdi-microphone' },
+    { key: 'awards', label: 'Awards & Honors', count: __AWARDS__, icon: 'mdi-trophy-award' },
+    { key: 'profiles', label: 'Verified Profiles', count: __PROFILES__, icon: 'mdi-account-check' },
+    { key: 'memberships', label: 'Memberships & Fellowships', count: __MEMBERSHIPS__, icon: 'mdi-shield-account' },
+    { key: 'books', label: 'Books & Volumes', count: __BOOKS__, icon: 'mdi-book-open-page-variant' }
   ];
 
   var SUGGESTED_QUERIES = [
@@ -98,7 +100,7 @@ OMNI_JS = r"""/**
         '<div class="hv-omnisearch-header">' +
           '<div class="hv-omnisearch-icon"><i class="mdi mdi-magnify"></i></div>' +
           '<input type="text" id="hvOmnisearchInput" class="hv-omnisearch-input" ' +
-            'placeholder="Search 222+ publications, patents (555747), keynotes, media, awards, profiles..." ' +
+            'placeholder="Search __TOTAL__+ publications, patents (555747), keynotes, media, awards, profiles..." ' +
             'autocomplete="off" spellcheck="false" aria-label="Search portfolio">' +
           '<button type="button" class="hv-omnisearch-close-btn" id="hvOmnisearchCloseBtn" aria-label="Close search">' +
             '<i class="mdi mdi-close"></i>' +
@@ -113,7 +115,7 @@ OMNI_JS = r"""/**
             '<span class="hv-hint-item"><kbd>esc</kbd> close</span>' +
           '</div>' +
           '<div class="hv-footer-meta" id="hvFooterMeta">' +
-            '<i class="mdi mdi-shield-check text-primary mr-1"></i> 222 Verified Records Indexed' +
+            '<i class="mdi mdi-shield-check text-primary mr-1"></i> __TOTAL__ Verified Records Indexed' +
           '</div>' +
         '</div>' +
       '</div>';
@@ -409,7 +411,7 @@ OMNI_JS = r"""/**
     container.innerHTML = html;
 
     if (footerMeta) {
-      var activeLabel = '222 Verified Records Indexed';
+      var activeLabel = '__TOTAL__ Verified Records Indexed';
       if (currentCategory !== 'all') {
         var matchedCat = CATEGORIES.find(function (c) { return c.key === currentCategory; });
         activeLabel = (matchedCat ? matchedCat.label : currentCategory) + ' (' + filteredRecords.length + ' records)';
@@ -549,7 +551,19 @@ OMNI_JS = r"""/**
 })();
 """
 
+OMNI_JS = (
+    OMNI_JS
+    .replace("__TOTAL__", str(total_cnt))
+    .replace("__PUBS__", str(cat_cnt("publications")))
+    .replace("__MEDIA__", str(cat_cnt("media")))
+    .replace("__KEYNOTES__", str(cat_cnt("keynotes")))
+    .replace("__AWARDS__", str(cat_cnt("awards")))
+    .replace("__PROFILES__", str(cat_cnt("profiles")))
+    .replace("__MEMBERSHIPS__", str(cat_cnt("memberships")))
+    .replace("__BOOKS__", str(cat_cnt("books")))
+)
+
 with open(os.path.join(JS_DIR, "hv-omnisearch.js"), "w", encoding="utf-8") as f:
     f.write(OMNI_JS)
 
-print("Generated js/hv-omnisearch.js with inlined dataset and complete details!")
+print(f"Generated js/hv-omnisearch.js with {total_cnt} inlined records and complete details!")
