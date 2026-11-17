@@ -263,7 +263,7 @@ def build_books_data():
             "year": "2025",
             "image": "images/books/beyond_ai_engineering_cover.jpg",
             "full_jacket": "images/books/beyond_ai_engineering_full_jacket.jpg",
-            "url": f"{CANONICAL_SITE_URL}/page-books",
+            "url": "https://www.beyondaiengineering.com/",
             "description": "A definitive treatise on transitioning from syntax generation to high-level system curation, covering multi-agent orchestration, deterministic guardrails, memory architectures, and the Super Engineer Trifecta.",
         },
         {
@@ -274,7 +274,7 @@ def build_books_data():
             "year": "2026",
             "image": "images/books/ai_vs_ai_cover.jpg",
             "full_jacket": "images/books/ai_vs_ai_full_jacket.jpg",
-            "url": f"{CANONICAL_SITE_URL}/page-books",
+            "url": "https://www.beyondaivsai.com/",
             "description": "Examines adversarial machine intelligence and how enterprise security architects design zero-trust autonomous counteroffensive systems, behavioral invariants, and self-healing defense pipelines.",
         },
         {
@@ -284,7 +284,7 @@ def build_books_data():
             "role": "Technical Book Reviewer",
             "year": "2025",
             "image": "images/books/reviewed/ai_ethics_in_action.jpg",
-            "url": f"{CANONICAL_SITE_URL}/page-books",
+            "url": "https://packt.link/MuEPg",
             "description": "Expert technical review evaluating operational AI ethics, bias mitigation, and governance frameworks in production machine learning.",
         },
         {
@@ -294,7 +294,7 @@ def build_books_data():
             "role": "Technical Book Reviewer",
             "year": "2025",
             "image": "images/books/reviewed/hands_on_ai_dev_python.jpg",
-            "url": f"{CANONICAL_SITE_URL}/page-books",
+            "url": "https://packt.link/pZ2C5",
             "description": "Technical review validating Python-based deep learning workflows, model serving, and scalable AI engineering patterns.",
         },
         {
@@ -314,7 +314,7 @@ def build_books_data():
             "role": "Technical Book Reviewer",
             "year": "2024",
             "image": "images/books/reviewed/python_algorithmic_trading_cookbook.jpg",
-            "url": f"{CANONICAL_SITE_URL}/page-books",
+            "url": "https://packt.link/8jmuy",
             "description": "Technical validation of real-time market data pipelines, quantitative backtesting, and low-latency execution architectures in Python.",
         },
         {
@@ -1071,7 +1071,8 @@ def build_schema_org_graph(profiles, media, awards, blogs, books, papers, associ
                 "author": {"@id": f"{CANONICAL_SITE_URL}/#person"},
                 "datePublished": parse_iso_date(str(b.get("year", "2026"))),
                 "image": f"{CANONICAL_SITE_URL}/{b['image'].lstrip('/')}",
-                "url": f"{CANONICAL_SITE_URL}/page-books",
+                "url": b.get("url") or f"{CANONICAL_SITE_URL}/page-books",
+                "sameAs": [f"{CANONICAL_SITE_URL}/page-books#{b['id']}", b["url"]] if b.get("url") else f"{CANONICAL_SITE_URL}/page-books#{b['id']}",
                 "bookFormat": "https://schema.org/EBook",
                 "inLanguage": "en",
             })
@@ -1087,6 +1088,7 @@ def build_schema_org_graph(profiles, media, awards, blogs, books, papers, associ
                     "@type": "Book",
                     "name": b["title"].replace(" (Technical Book Review)", ""),
                     "image": f"{CANONICAL_SITE_URL}/{b['image'].lstrip('/')}",
+                    **({"url": b["url"]} if b.get("url") and not b["url"].startswith(CANONICAL_SITE_URL) else {}),
                 },
             })
 

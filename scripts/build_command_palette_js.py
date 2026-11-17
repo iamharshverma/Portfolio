@@ -141,7 +141,7 @@ def compile_index():
             "search_text": f"{ev.get('title', '')} {ev.get('organizer', '')} {role} {ev.get('date', '')} {ev.get('location', '')} {ev.get('description', '')} {' '.join(ev.get('tags', []))} keynote speaking judging panel hackathon".lower()
         })
 
-    # 4. Awards & Honors (27 records)
+    # 4. Awards & Honors (26 records)
     with open(os.path.join(DATA_DIR, "awards_and_honors.json"), "r", encoding="utf-8") as f:
         awards = json.load(f)
     for a in awards:

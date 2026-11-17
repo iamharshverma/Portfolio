@@ -1806,32 +1806,32 @@
     "description": "Served as Lead Hackathon Mentor for Global Hack / Hackmakers Global Hackathon Digital Defense organized in partnership with Google, evaluating AI/security solutions and mentoring h..."
   },
   {
-    "id": "award-adplist-1000-minutes",
+    "id": "award-adplist-mentorship-milestones",
     "category": "Awards & Honors",
     "category_pill": "awards",
-    "title": "ADPList Milestone: 1,000+ Completed Mentorship Minutes",
+    "title": "ADPList Mentorship Milestones: 1,000+ Minutes & 50+ Sessions",
     "subtitle": "ADPList (Amazing Design People List) · 2025",
     "badge": "2025 Honor",
     "badge_class": "badge-primary",
     "icon": "mdi-trophy-award",
-    "keywords": "ADPList Milestone: 1,000+ Completed Mentorship Minutes ADPList (Amazing Design People List) 2025 1,000+ Minutes Awarded Certificate of Achievement from ADPList for completing over 1,000 minutes (16+ hours) of 1-on-1 mentorship sessions, guiding emerging engineers, AI researchers, and founders across ADPList's 1M+ global community.",
-    "url": "https://adplist.org/community-certifications/minutes-1000-b42201",
+    "keywords": "ADPList Mentorship Milestones: 1,000+ Minutes & 50+ Sessions ADPList (Amazing Design People List) 2025 1,000+ Mins · 50+ Sessions Awarded six progressive Community Certification Milestones from ADPList (100, 500 & 1,000+ Minutes; 10, 25 & 50+ Sessions) for sustained 1-on-1 mentorship guiding emerging AI engineers, researchers, and startup founders across ADPList's 1M+ global community.",
+    "url": "https://adplist.org/community-certifications/minutes-100-b42201",
     "external": true,
-    "description": "Awarded Certificate of Achievement from ADPList for completing over 1,000 minutes (16+ hours) of 1-on-1 mentorship sessions, guiding emerging engineers, AI researchers, and founder..."
+    "description": "Awarded six progressive Community Certification Milestones from ADPList (100, 500 & 1,000+ Minutes; 10, 25 & 50+ Sessions) for sustained 1-on-1 mentorship guiding emerging AI engin..."
   },
   {
-    "id": "award-adplist-25-sessions",
+    "id": "award-adplist-community-recognition",
     "category": "Awards & Honors",
     "category_pill": "awards",
-    "title": "ADPList Milestone: 25+ Completed Mentorship Sessions",
-    "subtitle": "ADPList (Amazing Design People List) · 2025",
-    "badge": "2025 Honor",
+    "title": "ADPList Community Recognition: Top 1% AI & Top 50 Engineering Mentor",
+    "subtitle": "ADPList (Amazing Design People List) · 2026",
+    "badge": "2026 Honor",
     "badge_class": "badge-primary",
     "icon": "mdi-trophy-award",
-    "keywords": "ADPList Milestone: 25+ Completed Mentorship Sessions ADPList (Amazing Design People List) 2025 25+ Sessions Milestone Certificate of Achievement recognizing 25+ completed individual mentorship sessions, empowering technical practitioners with architectural insights in scalable machine learning and engineering career advancement.",
-    "url": "https://adplist.org/community-certifications/sessions-25-b42201",
+    "keywords": "ADPList Community Recognition: Top 1% AI & Top 50 Engineering Mentor ADPList (Amazing Design People List) 2026 Top 1% AI Mentor Awarded elite ADPList Community Recognition honors across 2026: Top 1% AI Mentor (Oct 2026), Top 50 AI & ML Engineering Mentor (Sep 2026), and Top 10 Fresh AI & ML Engineering Mentor (Jun 2026) for high-impact global mentorship in enterprise AI architectures, machine learning engineering, and technical career growth.",
+    "url": "https://adplist.org/community-certifications/top1percent-oct-2026-ai-b42201",
     "external": true,
-    "description": "Milestone Certificate of Achievement recognizing 25+ completed individual mentorship sessions, empowering technical practitioners with architectural insights in scalable machine le..."
+    "description": "Awarded elite ADPList Community Recognition honors across 2026: Top 1% AI Mentor (Oct 2026), Top 50 AI & ML Engineering Mentor (Sep 2026), and Top 10 Fresh AI & ML Engineering Ment..."
   },
   {
     "id": "award-jrtcse-peer-review-excellence",
@@ -3061,7 +3061,7 @@
     "badge_class": "badge-danger",
     "icon": "mdi-book-open-page-variant",
     "keywords": "Beyond AI Engineering: From Creator to Curator Mastering the Human and Strategic Dimensions of Curating AI Systems Palo Alto Technical Press & Enterprise AI Publishing 2026 Authored Book (Lead Author) Comprehensive treatise on the architectural transition from generative prompt wrappers to autonomous agentic architectures. Details multi-agent topologies, tool execution protocols, deterministic self-healing loops, zero-trust verification harnesses, and strategic enterprise AI curation.",
-    "url": "https://www.harshverma.me/page-books#beyond-ai-engineering",
+    "url": "https://www.beyondaiengineering.com/",
     "external": true,
     "description": "Comprehensive treatise on the architectural transition from generative prompt wrappers to autonomous agentic architectures. Details multi-agent topologies, tool execution protocols..."
   },
@@ -3075,7 +3075,7 @@
     "badge_class": "badge-danger",
     "icon": "mdi-book-open-page-variant",
     "keywords": "AI vs. AI: Engineering the Cybersecurity Counteroffensive Architecting Autonomous AI Defenses Against Intelligent Adversaries Cyber Defense Press 2026 Authored Book (Lead Author) Blueprint for designing autonomous machine-speed cyber defense fabrics capable of neutralizing automated adversarial agents. Formulates proactive prompt provenance, multi-agent behavioral containment, decentralized threat sharing, and automated runtime mitigation.",
-    "url": "https://www.harshverma.me/page-books#ai-vs-ai",
+    "url": "https://www.beyondaivsai.com/",
     "external": true,
     "description": "Blueprint for designing autonomous machine-speed cyber defense fabrics capable of neutralizing automated adversarial agents. Formulates proactive prompt provenance, multi-agent beh..."
   },
@@ -3089,7 +3089,7 @@
     "badge_class": "badge-danger",
     "icon": "mdi-book-open-page-variant",
     "keywords": "AI Ethics in Action Critical Perspectives on Enterprise AI Transparency and Alignment Packt Publishing 2025 Technical Book Reviewer Official peer-reviewed technical evaluation of operational AI ethics frameworks, examining fairness metrics, algorithmic auditing, explainability in production deployments, and human-in-the-loop oversight.",
-    "url": "https://www.packtpub.com/",
+    "url": "https://packt.link/MuEPg",
     "external": true,
     "description": "Official peer-reviewed technical evaluation of operational AI ethics frameworks, examining fairness metrics, algorithmic auditing, explainability in production deployments, and hum..."
   },
@@ -3103,7 +3103,7 @@
     "badge_class": "badge-danger",
     "icon": "mdi-book-open-page-variant",
     "keywords": "Hands-On AI Dev with Python Engineering Scalable Machine Learning Pipelines in Production Packt Publishing 2025 Technical Book Reviewer Rigorous technical review of end-to-end Python machine learning architectures, microservice model serving, distributed caching, and performance benchmarking for high-scale enterprise systems.",
-    "url": "https://www.packtpub.com/",
+    "url": "https://packt.link/pZ2C5",
     "external": true,
     "description": "Rigorous technical review of end-to-end Python machine learning architectures, microservice model serving, distributed caching, and performance benchmarking for high-scale enterpri..."
   },
@@ -3131,7 +3131,7 @@
     "badge_class": "badge-danger",
     "icon": "mdi-book-open-page-variant",
     "keywords": "Python for Algorithmic Trading Cookbook Recipes for Designing and Testing Real-Time Quantitative Trading Strategies Packt Publishing 2024 Technical Book Reviewer Comprehensive technical review of low-latency algorithmic trading backends, real-time market data streaming with Kafka and NumPy, and quantitative risk management architectures.",
-    "url": "https://www.packtpub.com/",
+    "url": "https://packt.link/8jmuy",
     "external": true,
     "description": "Comprehensive technical review of low-latency algorithmic trading backends, real-time market data streaming with Kafka and NumPy, and quantitative risk management architectures."
   },

@@ -1,0 +1,3640 @@
+{
+  "section": "Smart Slides & Keynote Hub",
+  "author": "Harsh Verma",
+  "easychair_author_url": "https://easychair.org/smart-slide/author/v5zJ",
+  "page_url": "https://www.harshverma.me/page-smart-slides",
+  "total_decks": 10,
+  "total_slides": 169,
+  "decks": [
+    {
+      "deck_number": 1,
+      "id": "ntzm5",
+      "slug": "agentic-security-governance",
+      "folder": "agentic-security-governance",
+      "data_file": "data/agentic-security-governance.json",
+      "title": "The Era of Agentic Security: Governance in the Age of Autonomy",
+      "shortTitle": "The Era of Agentic Security",
+      "subtitle": "Architecting Autonomous Security Operations & Verifiable AI Guardrails",
+      "description": "Architecting autonomous security operations (SecOps), managing non-deterministic workflows, verifiable AI guardrails, and the Hierarchy of Needs for AI agents.",
+      "badge": "Verified Academic Ref",
+      "author": "Harsh Verma",
+      "year": "2026",
+      "easyChairUrl": "https://easychair.org/smart-slide/slide/ntzm5",
+      "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=ntzm5&slide=1",
+      "blogUrl": null,
+      "blogTitle": null,
+      "bibtex": "@misc{verma2026agenticsecurity,\n  author = {Verma, Harsh},\n  title = {The Era of Agentic Security: Governance in the Age of Autonomy},\n  howpublished = {EasyChair Smart Slide Series, Ref. ntzm5},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/ntzm5}\n}",
+      "count": 24,
+      "cover_image": "images/smart-slides/agentic-security-governance/slide-1.jpg",
+      "thumbnail_image": "images/smart-slides/agentic-security-governance/thumb-1.jpg",
+      "categories": [
+        "Overview",
+        "Threat Landscape",
+        "Hierarchy of Needs",
+        "Architecture",
+        "Governance",
+        "Conclusion"
+      ],
+      "tags": [
+        "GenAI",
+        "Security Operations",
+        "Governance",
+        "Trust",
+        "Economy",
+        "Curator",
+        "Agenda",
+        "Cybersecurity",
+        "Breach",
+        "Ransomware",
+        "Cost",
+        "AI Agents",
+        "Infrastructure",
+        "Talent Gap",
+        "Automation",
+        "Proactive",
+        "Evolution",
+        "Startups",
+        "Risk",
+        "Security",
+        "Strategy",
+        "Competitive Advantage",
+        "Startup",
+        "Compliance",
+        "Culture",
+        "Shared Responsibility",
+        "Leadership",
+        "Case Study",
+        "Growth",
+        "Scalability",
+        "Agentic",
+        "Autonomous",
+        "Resilience",
+        "Threat Detection",
+        "Incident Response",
+        "AppSec",
+        "Efficiency",
+        "Human-in-the-loop",
+        "Integration",
+        "Security by Design",
+        "Least Privilege",
+        "Red Teaming",
+        "Identity",
+        "Observability",
+        "SDLC",
+        "Checklist",
+        "Operations",
+        "Zero Trust",
+        "Adversarial",
+        "Trends",
+        "AI Ethics",
+        "Orchestration",
+        "Reference",
+        "Links",
+        "Q&A"
+      ],
+      "slides": [
+        {
+          "slide": 1,
+          "title": "The Era of Agentic Security",
+          "takeaways": [
+            "Exploration of how generative AI and autonomous agents are changing security operations.",
+            "The presentation focuses on governance in an age of autonomy."
+          ],
+          "category": "Overview",
+          "tags": [
+            "GenAI",
+            "Security Operations",
+            "Governance"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-1.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-1.jpg"
+        },
+        {
+          "slide": 2,
+          "title": "It's not who can build now, it is who you trust - From Creator to Curator Economy",
+          "takeaways": [
+            "The focus is shifting from simple creation to the importance of trust.",
+            "A transition is occurring toward a curator economy."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Trust",
+            "Economy",
+            "Curator"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-2.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-2.jpg"
+        },
+        {
+          "slide": 3,
+          "title": "Agenda",
+          "takeaways": [
+            "Covers the introduction of GenAI, intelligent agents, autonomous security, and practical applications.",
+            "Addresses challenges, ethics, future trends, and required skills."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Agenda",
+            "GenAI",
+            "Cybersecurity"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-3.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-3.jpg"
+        },
+        {
+          "slide": 4,
+          "title": "Today's Cybersecurity Battlefield",
+          "takeaways": [
+            "Cyberattacks occur every 39 seconds worldwide.",
+            "Average cost of a data breach is $4.35M.",
+            "Ransomware payments have increased 3,900% since 2018."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Breach",
+            "Ransomware",
+            "Cost"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-4.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-4.jpg"
+        },
+        {
+          "slide": 5,
+          "title": "Al Agents Hierarchy of Needs",
+          "takeaways": [
+            "Highlights the hierarchy from base infrastructure and data storage up to agentic systems.",
+            "Identifies a 3.4 million security professional shortage.",
+            "Highlights 5.4 billion malware attacks in 2023."
+          ],
+          "category": "Hierarchy of Needs",
+          "tags": [
+            "AI Agents",
+            "Infrastructure",
+            "Talent Gap"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-5.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-5.jpg"
+        },
+        {
+          "slide": 6,
+          "title": "The Evolution of Cyber Threats",
+          "takeaways": [
+            "Traditional security relied on rule-based, manual analysis.",
+            "AI-enhanced security uses ML for patterns but requires human guidance.",
+            "Agentic AI security moves toward autonomous, proactive defense."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Automation",
+            "Proactive",
+            "Evolution"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-6.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-6.jpg"
+        },
+        {
+          "slide": 7,
+          "title": "Unique Security Challenges for Startups",
+          "takeaways": [
+            "Startups face resource constraints and pressure for velocity that clashes with security.",
+            "Complex cloud-native architectures increase the attack surface.",
+            "Inconsistent processes lead to significant audit readiness gaps."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Startups",
+            "Risk",
+            "Security"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-7.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-7.jpg"
+        },
+        {
+          "slide": 8,
+          "title": "Why Security is a Startup's Competitive Advantage",
+          "takeaways": [
+            "60% of small companies fail within 6 months of a cyber attack.",
+            "Early security investments build trust and accelerate enterprise sales.",
+            "Security acts as a market differentiator for investor confidence."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Strategy",
+            "Competitive Advantage",
+            "Startup"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-8.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-8.jpg"
+        },
+        {
+          "slide": 9,
+          "title": "Automate and Codify Security Controls",
+          "takeaways": [
+            "Embed policies directly into the codebase and leverage Infrastructure as Code (IaC).",
+            "Deploy automated compliance and continuous monitoring (IAM, GuardDuty).",
+            "Avoid 'security theater' and prioritize meaningful, risk-reducing controls."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Automation",
+            "Compliance",
+            "Infrastructure"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-9.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-9.jpg"
+        },
+        {
+          "slide": 10,
+          "title": "Build a Security Culture & Shared Responsibility",
+          "takeaways": [
+            "Security must be a shared priority across leadership, operations, engineering, and product.",
+            "Founders should champion security as a core value.",
+            "Aligned incentives connect security goals with customer needs."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Culture",
+            "Shared Responsibility",
+            "Leadership"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-10.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-10.jpg"
+        },
+        {
+          "slide": 11,
+          "title": "Real-World Example: Robin Al & Pavlov Startups",
+          "takeaways": [
+            "Startups can implement SOC 2 and GDPR early without sacrificing speed.",
+            "Security compliance can function as a sales accelerator and investor signal.",
+            "Security builds trust when approached strategically from the start."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Case Study",
+            "Compliance",
+            "Growth"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-11.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-11.jpg"
+        },
+        {
+          "slide": 12,
+          "title": "Secure Foundations Build Scalable Startups",
+          "takeaways": [
+            "Security is a strategic enabler and growth catalyst.",
+            "Start early by automating and building a security-first culture.",
+            "Leverage proven frameworks and expert guidance to scale securely."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Growth",
+            "Strategy",
+            "Scalability"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-12.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-12.jpg"
+        },
+        {
+          "slide": 13,
+          "title": "Achieving Full Agentic Systems",
+          "takeaways": [
+            "Goals include self-healing systems and transparent reasoning for auditability.",
+            "Design for 'graceful failure' to prevent catastrophic outcomes.",
+            "Objective is independent, proactive defense without constant human intervention."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Agentic",
+            "Autonomous",
+            "Resilience"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-13.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-13.jpg"
+        },
+        {
+          "slide": 14,
+          "title": "Practical Applications in Cybersecurity",
+          "takeaways": [
+            "Applications include zero-day identification and pattern recognition for threat detection.",
+            "Enables automated triage, containment, and real-time forensics.",
+            "Supports secure development via code scanning and automated remediation."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Threat Detection",
+            "Incident Response",
+            "AppSec"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-14.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-14.jpg"
+        },
+        {
+          "slide": 15,
+          "title": "Case Study: Autonomous Incident Response",
+          "takeaways": [
+            "Financial services case showed 94% reduction in MTTR and 65% in analyst time saved.",
+            "Automated detection of ransomware in seconds enabled immediate system isolation.",
+            "Resulted in $3.2M annual savings from efficiency and breach impact reduction."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Case Study",
+            "Ransomware",
+            "Efficiency"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-15.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-15.jpg"
+        },
+        {
+          "slide": 16,
+          "title": "Organizational Risks",
+          "takeaways": [
+            "Key risks include over-reliance on AI, skill gaps, and legacy infrastructure integration.",
+            "Balancing autonomous systems with human oversight remains critical.",
+            "Questions the necessity and role of 'human-in-the-loop' systems."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Risk",
+            "Human-in-the-loop",
+            "Integration"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-16.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-16.jpg"
+        },
+        {
+          "slide": 17,
+          "title": "Enable Agentic Scale Without Sacrificing Systemic Integrity.",
+          "takeaways": [
+            "Apply the principle of Least Privilege to limit agent permissions.",
+            "Implement memory hygiene to protect against data exfiltration and poisoning.",
+            "Continuously red-team agentic systems to anticipate adversarial inputs."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Security by Design",
+            "Least Privilege",
+            "Red Teaming"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-17.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-17.jpg"
+        },
+        {
+          "slide": 18,
+          "title": "Infrastructure & Governance",
+          "takeaways": [
+            "Deployment requires agent isolation in sandboxes to limit blast radius.",
+            "Implement secure identity management (A2A authentication) for all agents.",
+            "Ensure observability through continuous monitoring of decision logs."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Infrastructure",
+            "Identity",
+            "Observability"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-18.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-18.jpg"
+        },
+        {
+          "slide": 19,
+          "title": "Building a Culture of Secure Autonomy",
+          "takeaways": [
+            "Shift from reactive patching to proactive, AI-specific threat modeling.",
+            "Integrate security into the full SDLC including model layers and orchestration.",
+            "Establish governance for agent discovery and behavioral monitoring."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Culture",
+            "SDLC",
+            "Governance"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-19.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-19.jpg"
+        },
+        {
+          "slide": 20,
+          "title": "Startup To-Do List: The Foundations",
+          "takeaways": [
+            "Map every tool, database, and API the agent can access.",
+            "Create unique, scoped credentials; never reuse admin tokens.",
+            "Require human approval for high-impact actions like financial transactions."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Checklist",
+            "Security",
+            "Operations"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-20.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-20.jpg"
+        },
+        {
+          "slide": 21,
+          "title": "Secure Your Future",
+          "takeaways": [
+            "Integrate adversarial testing into the standard SDLC.",
+            "Adopt Zero Trust principles for agent-to-agent communications.",
+            "Shift from autonomous, silent risk to verifiable, transparent execution."
+          ],
+          "category": "Conclusion",
+          "tags": [
+            "Zero Trust",
+            "Adversarial",
+            "Strategy"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-21.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-21.jpg"
+        },
+        {
+          "slide": 22,
+          "title": "Emerging Trends",
+          "takeaways": [
+            "Evolution toward multi-agent collaboration (2025-2026) and generative adversarial systems (2026-2027).",
+            "Focus areas: Prompt engineering, agent orchestration, AI ethics, and model evaluation.",
+            "Long-term trend toward cognitive security frameworks with multi-modal analysis."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Trends",
+            "AI Ethics",
+            "Orchestration"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-22.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-22.jpg"
+        },
+        {
+          "slide": 23,
+          "title": "Reference :",
+          "takeaways": [
+            "Provides links to Hackernoon, Forbes, and LinkedIn for further reading.",
+            "Direct links to the presenter's work and professional profiles."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Reference",
+            "Links"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-23.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-23.jpg"
+        },
+        {
+          "slide": 24,
+          "title": "Q & A",
+          "takeaways": [
+            "Open floor for questions.",
+            "Signals the conclusion of the workshop."
+          ],
+          "category": "Conclusion",
+          "tags": [
+            "Q&A"
+          ],
+          "image": "images/smart-slides/agentic-security-governance/slide-24.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-governance/thumb-24.jpg"
+        }
+      ]
+    },
+    {
+      "deck_number": 2,
+      "id": "T45r",
+      "slug": "powering-cybersecurity-genai",
+      "folder": "powering-cybersecurity-genai",
+      "data_file": "data/powering-cybersecurity-genai.json",
+      "title": "Powering Cybersecurity with Gen-AI and Intelligent Agents",
+      "shortTitle": "Powering Cybersecurity with Gen-AI",
+      "subtitle": "Autonomous Self-Healing Defense, Threat Summarizers & Rakshak-AI",
+      "description": "Addressing attack velocity (every 39 seconds) and $4.35M breach costs with autonomous self-healing agentic defense, threat summarizers, and Rakshak-AI.",
+      "badge": "Case Study Included",
+      "author": "Harsh Verma",
+      "year": "2026",
+      "easyChairUrl": "https://easychair.org/smart-slide/slide/T45r",
+      "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=T45r&slide=1",
+      "blogUrl": null,
+      "blogTitle": null,
+      "bibtex": "@misc{verma2026cybersecuritygenai,\n  author = {Verma, Harsh},\n  title = {Powering Cybersecurity with Gen-AI and Intelligent Agents},\n  howpublished = {EasyChair Smart Slide Series, Ref. T45r},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/T45r}\n}",
+      "count": 17,
+      "cover_image": "images/smart-slides/powering-cybersecurity-genai/slide-1.jpg",
+      "thumbnail_image": "images/smart-slides/powering-cybersecurity-genai/thumb-1.jpg",
+      "categories": [
+        "Introduction",
+        "Overview",
+        "Threat Landscape",
+        "Hierarchy of Needs",
+        "Architecture",
+        "Applications",
+        "Case Study",
+        "Governance",
+        "Future Trends",
+        "Conclusion"
+      ],
+      "tags": [
+        "GenAI",
+        "Cybersecurity",
+        "Intelligent Agents",
+        "Roadmap",
+        "Agenda",
+        "Evolution",
+        "Autonomous Security",
+        "Cyber Attacks",
+        "Cost",
+        "Statistics",
+        "AI Agents",
+        "Tech Stack",
+        "Skills Gap",
+        "Automation",
+        "Agentic AI",
+        "Lifecycle",
+        "Classification",
+        "Autonomous Agents",
+        "Threat Hunting",
+        "SOC",
+        "Deception",
+        "Incident Response",
+        "DevSecOps",
+        "Finance",
+        "Metrics",
+        "ROI",
+        "Ethics",
+        "Governance",
+        "Risk",
+        "Risk Management",
+        "Human-in-the-loop",
+        "Professional Development",
+        "Skills",
+        "Technology Roadmap",
+        "Demo",
+        "Rakshak-AI",
+        "Q&A"
+      ],
+      "slides": [
+        {
+          "slide": 1,
+          "title": "Powering Cybersecurity with GenAI & Intelligent Agents",
+          "takeaways": [
+            "Introduction to the transformative role of Generative AI and autonomous agents in modern security operations.",
+            "Presented by Harsh Verma, Principal AI Engineer."
+          ],
+          "category": "Introduction",
+          "tags": [
+            "GenAI",
+            "Cybersecurity",
+            "Intelligent Agents"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-1.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-1.jpg"
+        },
+        {
+          "slide": 2,
+          "title": "Agenda",
+          "takeaways": [
+            "Outlines the 6-part roadmap for the presentation.",
+            "Covers topics from fundamental concepts to future trends and ethics."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Roadmap",
+            "Agenda"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-2.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-2.jpg"
+        },
+        {
+          "slide": 3,
+          "title": "The Evolution of Cyber Threats",
+          "takeaways": [
+            "Traces progression from traditional rule-based security to agentic AI security.",
+            "Emphasizes the need to shift from reactive to proactive, autonomous defense."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Evolution",
+            "Autonomous Security"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-3.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-3.jpg"
+        },
+        {
+          "slide": 4,
+          "title": "Today's Cybersecurity Battlefield",
+          "takeaways": [
+            "Highlights high threat frequency (every 39 seconds) and severe financial impact.",
+            "Notes long dwell times and dramatic increases in ransomware payments."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Cyber Attacks",
+            "Cost",
+            "Statistics"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-4.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-4.jpg"
+        },
+        {
+          "slide": 5,
+          "title": "Al Agents Hierarchy of Needs",
+          "takeaways": [
+            "Presents a structured hierarchy for building agentic security systems.",
+            "Addresses industry-wide challenges like malware volume and the skills gap."
+          ],
+          "category": "Hierarchy of Needs",
+          "tags": [
+            "AI Agents",
+            "Tech Stack",
+            "Skills Gap"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-5.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-5.jpg"
+        },
+        {
+          "slide": 6,
+          "title": "Intelligent Agents: Beyond Traditional Automation",
+          "takeaways": [
+            "Contrasts static, rule-based automation with dynamic, goal-driven Agentic AI.",
+            "Emphasizes self-learning and proactive threat hunting capabilities."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Automation",
+            "Agentic AI"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-6.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-6.jpg"
+        },
+        {
+          "slide": 7,
+          "title": "Where GenAI Meets Cybersecurity",
+          "takeaways": [
+            "Defines the core cycle of Agentic AI: Detect, Analyze, Decide, Defend.",
+            "Focuses on autonomous systems that require minimal human intervention."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "GenAI",
+            "Lifecycle"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-7.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-7.jpg"
+        },
+        {
+          "slide": 8,
+          "title": "Understanding Agents in Cybersecurity",
+          "takeaways": [
+            "Categorizes agents into Rule-Based, Learning, and Autonomous.",
+            "Examples include SIEM triggers, behavioral analytics, and self-healing networks."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Classification",
+            "Autonomous Agents"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-8.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-8.jpg"
+        },
+        {
+          "slide": 9,
+          "title": "Autonomous Cyber Defense in Action",
+          "takeaways": [
+            "Introduces practical agent roles: Threat Intel Summarizers, SOC Sidekicks, and Deception Agents.",
+            "Focuses on real-time adaptation to attacker behavior."
+          ],
+          "category": "Applications",
+          "tags": [
+            "Threat Hunting",
+            "SOC",
+            "Deception"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-9.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-9.jpg"
+        },
+        {
+          "slide": 10,
+          "title": "Practical Applications in Cybersecurity",
+          "takeaways": [
+            "Covers applications in threat detection, incident response, and secure development.",
+            "Highlights automated triage and code vulnerability remediation."
+          ],
+          "category": "Applications",
+          "tags": [
+            "Incident Response",
+            "DevSecOps"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-10.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-10.jpg"
+        },
+        {
+          "slide": 11,
+          "title": "Case Study: Autonomous Incident Response",
+          "takeaways": [
+            "Demonstrates a 94% reduction in Mean Time to Respond (MTTR) for a financial services provider.",
+            "Highlights the efficiency gain of freeing up analysts for strategic initiatives."
+          ],
+          "category": "Case Study",
+          "tags": [
+            "Finance",
+            "Metrics",
+            "ROI"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-11.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-11.jpg"
+        },
+        {
+          "slide": 12,
+          "title": "Challenges and Ethical Considerations",
+          "takeaways": [
+            "Discusses technical hurdles like explainability and adversarial attacks.",
+            "Addresses ethical concerns regarding accountability and misuse."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Ethics",
+            "Governance",
+            "Risk"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-12.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-12.jpg"
+        },
+        {
+          "slide": 13,
+          "title": "Organizational Risks",
+          "takeaways": [
+            "Identifies risks like overreliance on AI and legacy infrastructure integration.",
+            "Raises the question of the human role in the loop."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Risk Management",
+            "Human-in-the-loop"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-13.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-13.jpg"
+        },
+        {
+          "slide": 14,
+          "title": "The Future Security Professional",
+          "takeaways": [
+            "Outlines essential skills: AI literacy, prompt engineering, and agent supervision.",
+            "Reiterates that human expertise amplified by AI is the ultimate advantage."
+          ],
+          "category": "Future Trends",
+          "tags": [
+            "Professional Development",
+            "Skills"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-14.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-14.jpg"
+        },
+        {
+          "slide": 15,
+          "title": "Emerging Trends",
+          "takeaways": [
+            "Projects a roadmap from 2024 to 2027+ for multi-agent systems and cognitive frameworks.",
+            "Lists core focus areas including agent orchestration and model evaluation."
+          ],
+          "category": "Future Trends",
+          "tags": [
+            "Roadmap",
+            "Technology Roadmap"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-15.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-15.jpg"
+        },
+        {
+          "slide": 16,
+          "title": "Demo of Security rules configuration using Agent",
+          "takeaways": [
+            "Showcases 'Rakshak-AI', a tool for defining secure network rules.",
+            "Demonstrates practical implementation of an intelligent network security agent."
+          ],
+          "category": "Applications",
+          "tags": [
+            "Demo",
+            "Rakshak-AI"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-16.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-16.jpg"
+        },
+        {
+          "slide": 17,
+          "title": "Q & A",
+          "takeaways": [
+            "Closing slide for audience interaction and discussion."
+          ],
+          "category": "Conclusion",
+          "tags": [
+            "Q&A"
+          ],
+          "image": "images/smart-slides/powering-cybersecurity-genai/slide-17.jpg",
+          "thumbnail": "images/smart-slides/powering-cybersecurity-genai/thumb-17.jpg"
+        }
+      ]
+    },
+    {
+      "deck_number": 3,
+      "id": "r92g",
+      "slug": "enterprises-multi-agent-systems",
+      "folder": "enterprises-multi-agent-systems",
+      "data_file": "data/enterprises-multi-agent-systems.json",
+      "title": "When Enterprises Become Multi-Agent Systems",
+      "shortTitle": "Enterprises as Multi-Agent Systems",
+      "subtitle": "Rethinking Security, Trust, and Control in the Agentic Era",
+      "description": "Rethinking security, trust boundaries, multi-agent orchestration, deterministic vs non-deterministic workflows, and enterprise governance in autonomous ecosystems.",
+      "badge": "Multi-Agent Architecture",
+      "author": "Harsh Verma",
+      "year": "2026",
+      "easyChairUrl": "https://easychair.org/smart-slide/slide/r92g#{sn:1}",
+      "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1",
+      "blogUrl": null,
+      "blogTitle": null,
+      "bibtex": "@misc{verma2026enterprisemultiagent,\n  author = {Verma, Harsh},\n  title = {When Enterprises Become Multi-Agent Systems},\n  howpublished = {EasyChair Smart Slide Series, Ref. r92g},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/r92g}\n}",
+      "count": 13,
+      "cover_image": "images/smart-slides/enterprises-multi-agent-systems/slide-1.jpg",
+      "thumbnail_image": "images/smart-slides/enterprises-multi-agent-systems/thumb-1.jpg",
+      "categories": [
+        "Overview",
+        "Architecture",
+        "Applications",
+        "Threat Landscape",
+        "Governance",
+        "Conclusion"
+      ],
+      "tags": [
+        "Multi-Agent Systems",
+        "Zero-Trust Security",
+        "Autonomous AI",
+        "Paradigm Shift",
+        "Agent Networks",
+        "Autonomous Agents",
+        "Orchestration",
+        "System Topology",
+        "Multi-Agent Patterns",
+        "Industry Adoption",
+        "Vertical Deployment",
+        "Use Cases",
+        "Enterprise Impact",
+        "Throughput",
+        "Latency",
+        "Risk Surfaces",
+        "Prompt Injection",
+        "Identity Spoofing",
+        "Agentic AI",
+        "Enterprise",
+        "Security",
+        "Human-in-the-Loop",
+        "Governance",
+        "Dual-Control",
+        "Roadmap",
+        "IAM",
+        "Enterprise Trust",
+        "Agentic Ecosystems",
+        "Autonomous Infrastructure",
+        "Image Sources",
+        "Attribution",
+        "References"
+      ],
+      "slides": [
+        {
+          "slide": 1,
+          "title": "When Enterprises Become Multi-Agent Systems",
+          "takeaways": [
+            "Focuses on architecting, scaling, and securing autonomous AI agent networks across dynamic enterprise infrastructure.",
+            "Serves as a strategic roadmap and zero-trust security blueprint for enterprise-level multi-agent AI adoption."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Multi-Agent Systems",
+            "Zero-Trust Security",
+            "Autonomous AI"
+          ],
+          "image": "images/smart-slides/enterprises-multi-agent-systems/slide-1.jpg",
+          "thumbnail": "images/smart-slides/enterprises-multi-agent-systems/thumb-1.jpg"
+        },
+        {
+          "slide": 2,
+          "title": "From Monolithic AI to Active Agent Networks",
+          "takeaways": [
+            "Enterprise AI is shifting from passive, siloed tools to an active mesh of autonomous agents executing end-to-end workflows.",
+            "This paradigm shift enables autonomous task decomposition, peer-to-peer delegation across enterprise boundaries, and self-organizing systemic intelligence."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Paradigm Shift",
+            "Agent Networks",
+            "Autonomous Agents"
+          ],
+          "image": "images/smart-slides/enterprises-multi-agent-systems/slide-2.jpg",
+          "thumbnail": "images/smart-slides/enterprises-multi-agent-systems/thumb-2.jpg"
+        },
+        {
+          "slide": 3,
+          "title": "Multi-Agent Orchestration Patterns",
+          "takeaways": [
+            "Identifies four distinct system topologies for multi-agent coordination: Orchestrator-Worker, Hierarchical Teams, Dynamic Router, and Peer Swarms.",
+            "Spans structures from centralized delegation and tiered management to context-driven routing and decentralized peer collaboration."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Orchestration",
+            "System Topology",
+            "Multi-Agent Patterns"
+          ],
+          "image": "images/smart-slides/enterprises-multi-agent-systems/slide-3.jpg",
+          "thumbnail": "images/smart-slides/enterprises-multi-agent-systems/thumb-3.jpg"
+        },
+        {
+          "slide": 4,
+          "title": "High-Impact Industry Adoption",
+          "takeaways": [
+            "Multi-agent systems are actively deployed vertically across critical domain-specific enterprise functions.",
+            "Cybersecurity SOCs leverage agents for autonomous incident triage, threat hunting, and rapid remediation.",
+            "Financial operations and healthcare utilize multi-agent workflows for risk scoring, fraud detection, and multi-specialty patient synthesis."
+          ],
+          "category": "Applications",
+          "tags": [
+            "Industry Adoption",
+            "Vertical Deployment",
+            "Use Cases"
+          ],
+          "image": "images/smart-slides/enterprises-multi-agent-systems/slide-4.jpg",
+          "thumbnail": "images/smart-slides/enterprises-multi-agent-systems/thumb-4.jpg"
+        },
+        {
+          "slide": 5,
+          "title": "Unprecedented Scale & Speed",
+          "takeaways": [
+            "By 2026, 40% of enterprise applications are expected to integrate task-specific AI agents.",
+            "Parallel execution across multi-agent workflows drives a 10x boost in throughput.",
+            "Accelerated multi-step reasoning and retrieval lead to a 95% reduction in latency."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Enterprise Impact",
+            "Throughput",
+            "Latency"
+          ],
+          "image": "images/smart-slides/enterprises-multi-agent-systems/slide-5.jpg",
+          "thumbnail": "images/smart-slides/enterprises-multi-agent-systems/thumb-5.jpg"
+        },
+        {
+          "slide": 6,
+          "title": "Emergent Multi-Agent Risk Surfaces",
+          "takeaways": [
+            "Agent-to-agent interactions introduce vulnerabilities such as cascading prompt injections and unverified permission inheritance during execution.",
+            "Delegation across boundaries risks identity spoofing and boundary loss, allowing multi-agent decisions to bypass standard governance controls."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Risk Surfaces",
+            "Prompt Injection",
+            "Identity Spoofing"
+          ],
+          "image": "images/smart-slides/enterprises-multi-agent-systems/slide-6.jpg",
+          "thumbnail": "images/smart-slides/enterprises-multi-agent-systems/thumb-6.jpg"
+        },
+        {
+          "slide": 7,
+          "title": "Slide 7: When Enterprises Become Multi-Agent Systems : Rethinking Security, Trust, and Control in the Agentic Era",
+          "takeaways": [
+            "Key architectural insights and analysis for this presentation slide."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Agentic AI",
+            "Enterprise",
+            "Security"
+          ],
+          "image": "images/smart-slides/enterprises-multi-agent-systems/slide-7.jpg",
+          "thumbnail": "images/smart-slides/enterprises-multi-agent-systems/thumb-7.jpg"
+        },
+        {
+          "slide": 8,
+          "title": "Slide 8: When Enterprises Become Multi-Agent Systems : Rethinking Security, Trust, and Control in the Agentic Era",
+          "takeaways": [
+            "Key architectural insights and analysis for this presentation slide."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Agentic AI",
+            "Enterprise",
+            "Security"
+          ],
+          "image": "images/smart-slides/enterprises-multi-agent-systems/slide-8.jpg",
+          "thumbnail": "images/smart-slides/enterprises-multi-agent-systems/thumb-8.jpg"
+        },
+        {
+          "slide": 9,
+          "title": "Slide 9: When Enterprises Become Multi-Agent Systems : Rethinking Security, Trust, and Control in the Agentic Era",
+          "takeaways": [
+            "Key architectural insights and analysis for this presentation slide."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Agentic AI",
+            "Enterprise",
+            "Security"
+          ],
+          "image": "images/smart-slides/enterprises-multi-agent-systems/slide-9.jpg",
+          "thumbnail": "images/smart-slides/enterprises-multi-agent-systems/thumb-9.jpg"
+        },
+        {
+          "slide": 10,
+          "title": "Human-in-the-Loop Safeguards",
+          "takeaways": [
+            "Automate referral of low-confidence agent scenarios through boundary escalation.",
+            "Require mandatory human signatures and dual-control approvals for high-impact actions.",
+            "Optimize agent playbooks continuously through ongoing analyst feedback loop tuning."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Human-in-the-Loop",
+            "Governance",
+            "Dual-Control"
+          ],
+          "image": "images/smart-slides/enterprises-multi-agent-systems/slide-10.jpg",
+          "thumbnail": "images/smart-slides/enterprises-multi-agent-systems/thumb-10.jpg"
+        },
+        {
+          "slide": 11,
+          "title": "Enterprise Maturity Roadmap",
+          "takeaways": [
+            "Outlines a four-phase execution plan moving from initial agent discovery to scaling autonomous operations.",
+            "Prioritizes establishing identity boundaries, policy enforcement, and central gateway orchestration with audit tracing.",
+            "Enables safe scaling by incorporating human-in-the-loop oversight at advanced operational levels."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Roadmap",
+            "IAM",
+            "Governance"
+          ],
+          "image": "images/smart-slides/enterprises-multi-agent-systems/slide-11.jpg",
+          "thumbnail": "images/smart-slides/enterprises-multi-agent-systems/thumb-11.jpg"
+        },
+        {
+          "slide": 12,
+          "title": "Trust as the Foundational Layer of Autonomous Enterprise Infrastructure",
+          "takeaways": [
+            "Moving beyond single-model AI requires building secure ecosystems where inter-agent trust is engineered, verified, and continuously governed.",
+            "Core requirements for autonomous enterprise infrastructure include managed infrastructure, graph security, and continuous observability."
+          ],
+          "category": "Conclusion",
+          "tags": [
+            "Enterprise Trust",
+            "Agentic Ecosystems",
+            "Autonomous Infrastructure"
+          ],
+          "image": "images/smart-slides/enterprises-multi-agent-systems/slide-12.jpg",
+          "thumbnail": "images/smart-slides/enterprises-multi-agent-systems/thumb-12.jpg"
+        },
+        {
+          "slide": 13,
+          "title": "Image Sources",
+          "takeaways": [
+            "Provides direct URLs and citations for visual assets used throughout the presentation.",
+            "Attributes stock imagery to platforms including Depositphotos, iStockphoto, and Vision Platform."
+          ],
+          "category": "Conclusion",
+          "tags": [
+            "Image Sources",
+            "Attribution",
+            "References"
+          ],
+          "image": "images/smart-slides/enterprises-multi-agent-systems/slide-13.jpg",
+          "thumbnail": "images/smart-slides/enterprises-multi-agent-systems/thumb-13.jpg"
+        }
+      ]
+    },
+    {
+      "deck_number": 4,
+      "id": "GxwP",
+      "slug": "agentic-security-defender-threat",
+      "folder": "agentic-security-defender-threat",
+      "data_file": "data/agentic-security-defender-threat.json",
+      "title": "Agentic Security: When AI Becomes Both Defender and Threat",
+      "shortTitle": "Agentic Security: Defender and Threat",
+      "subtitle": "Cybersecurity Paradigms for Autonomous Systems",
+      "description": "Exploring the cybersecurity battlefield, the new agentic attack surface, prompt injection defenses, multi-agent risk multiplication, and runtime intent enforcement.",
+      "badge": "Threat & Defense Playbook",
+      "author": "Harsh Verma",
+      "year": "2026",
+      "easyChairUrl": "https://easychair.org/smart-slide/slide/GxwP#{sn:1}",
+      "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1",
+      "blogUrl": null,
+      "blogTitle": null,
+      "bibtex": "@misc{verma2026agenticthreatdefender,\n  author = {Verma, Harsh},\n  title = {Agentic Security: When AI Becomes Both Defender and Threat},\n  howpublished = {EasyChair Smart Slide Series, Ref. GxwP},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/GxwP}\n}",
+      "count": 33,
+      "cover_image": "images/smart-slides/agentic-security-defender-threat/slide-1.jpg",
+      "thumbnail_image": "images/smart-slides/agentic-security-defender-threat/thumb-1.jpg",
+      "categories": [
+        "Overview",
+        "Threat Landscape",
+        "Hierarchy of Needs",
+        "Governance",
+        "Case Study",
+        "Architecture",
+        "Applications",
+        "Conclusion"
+      ],
+      "tags": [
+        "Agentic Security",
+        "Autonomous AI",
+        "Cybersecurity",
+        "Trust",
+        "Curator Economy",
+        "AI Governance",
+        "Agenda",
+        "Agentic AI",
+        "Data Breach",
+        "Threat Statistics",
+        "Infrastructure",
+        "AI Evolution",
+        "Autonomous Systems",
+        "Attack Surface",
+        "CIA Triad",
+        "AI Vulnerabilities",
+        "Prompt Injection",
+        "Data Privacy",
+        "Access Control",
+        "Traditional Security",
+        "AI Security",
+        "Runtime Monitoring",
+        "Workflow Safety",
+        "Tool Misuse",
+        "Privilege Abuse",
+        "Dynamic Trust",
+        "Multi-Agent Systems",
+        "Cascading Failures",
+        "Trust Boundaries",
+        "Supply Chain",
+        "Dynamic Tool Loading",
+        "Agent Trust",
+        "Runtime Controls",
+        "Intent Verification",
+        "Shadow Agents",
+        "Permission Creep",
+        "MCP",
+        "Governance",
+        "Automation",
+        "Startup Security",
+        "Risk Management",
+        "Cyber Resilience",
+        "DevSecOps",
+        "Security Culture",
+        "Compliance",
+        "Startup Strategy",
+        "Security ROI",
+        "AI Ethics",
+        "Organizational Risk",
+        "Human-in-the-loop",
+        "Foundational Controls",
+        "Agent Security",
+        "Risk Mitigation",
+        "Security Architecture",
+        "Least Privilege",
+        "Defense-in-Depth",
+        "Identity Management",
+        "Infrastructure as Code",
+        "Shared Responsibility",
+        "Organizational Resilience",
+        "AI Safety",
+        "Model Alignment",
+        "Frameworks",
+        "Standards",
+        "Threat Modeling",
+        "Hybrid AI",
+        "Formal Verification",
+        "Roadmap",
+        "Future-proofing",
+        "Resources",
+        "Bibliography",
+        "Author Profiles",
+        "Q&A",
+        "Engagement",
+        "Summary"
+      ],
+      "slides": [
+        {
+          "slide": 1,
+          "title": "Agentic Security: When AI Becomes Both Defender and Threat",
+          "takeaways": [
+            "Introduces the concept of Agentic Security, where autonomous AI serves dual roles as a protective measure and a potential security risk.",
+            "Examines key cybersecurity paradigms for autonomous systems, specifically focusing on trust, control, and resilience.",
+            "Serves as an introductory student guide to understanding modern AI-driven threat landscapes and defense mechanisms."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Agentic Security",
+            "Autonomous AI",
+            "Cybersecurity"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-1.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-1.jpg"
+        },
+        {
+          "slide": 2,
+          "title": "It's not who can build now, it is who you trust - From Creator to Curator Economy",
+          "takeaways": [
+            "The competitive differentiator in AI has shifted from technical building capability to trust and reliability.",
+            "The technology landscape is transitioning from a Creator Economy toward a Curator Economy centered on trusted oversight."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Trust",
+            "Curator Economy",
+            "AI Governance"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-2.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-2.jpg"
+        },
+        {
+          "slide": 3,
+          "title": "Agenda",
+          "takeaways": [
+            "Outlines key topics bridging generative AI, intelligent agent architectures, and autonomous defense systems.",
+            "Examines real-world applications, ethical challenges, and future skills required for AI-powered security."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Agenda",
+            "Cybersecurity",
+            "Agentic AI"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-3.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-3.jpg"
+        },
+        {
+          "slide": 4,
+          "title": "Today's Cybersecurity Battlefield",
+          "takeaways": [
+            "The modern cybersecurity landscape is rapidly escalating in both complexity and scale.",
+            "Critical metrics show high-frequency attacks occurring every 39 seconds and average breach costs hitting a record $4.45M.",
+            "Threat actors maintain a long presence within compromised networks, with an average of 287 days before detection."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Cybersecurity",
+            "Data Breach",
+            "Threat Statistics"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-4.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-4.jpg"
+        },
+        {
+          "slide": 5,
+          "title": "AI Agents Hierarchy of Needs",
+          "takeaways": [
+            "Modern cybersecurity faces systemic strain, highlighted by 5.4 billion annual malware attacks and a massive workforce shortage.",
+            "The 'Hierarchy of Needs' framework maps the stack required to build agentic systems, from base infrastructure and foundation models to specialized LLM security and observability.",
+            "Generative AI provides a critical path forward by enabling autonomous security monitoring, detection, and response to offset human talent gaps."
+          ],
+          "category": "Hierarchy of Needs",
+          "tags": [
+            "Cybersecurity",
+            "Agentic AI",
+            "Infrastructure"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-5.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-5.jpg"
+        },
+        {
+          "slide": 6,
+          "title": "The Evolution of Cyber Threats",
+          "takeaways": [
+            "Security is shifting from reactive, rule-based traditional methods to autonomous, self-improving agentic AI systems.",
+            "The evolution follows a three-stage path: Traditional (manual/reactive), AI-Enhanced (pattern detection), and Agentic (fully autonomous decision-making)."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "AI Evolution",
+            "Cybersecurity",
+            "Autonomous Systems"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-6.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-6.jpg"
+        },
+        {
+          "slide": 7,
+          "title": "The New Attack Surface",
+          "takeaways": [
+            "AI systems introduce new vulnerabilities through model behaviors, data exposure risks, and complex API integrations.",
+            "The interconnected nature of AI agent toolchains significantly expands the potential blast radius of security exploits.",
+            "Core security pillars—Confidentiality, Integrity, and Availability (CIA)—are the primary targets within this evolving AI threat landscape."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Attack Surface",
+            "CIA Triad",
+            "AI Vulnerabilities"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-7.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-7.jpg"
+        },
+        {
+          "slide": 8,
+          "title": "Common Adversarial Tactics",
+          "takeaways": [
+            "Prompt injection is the primary threat to LLMs, allowing malicious inputs to override system instructions.",
+            "Data leakage risks include the exposure of sensitive PII, internal documents, and proprietary logic by models.",
+            "Over-permissioning AI agents can transform minor security exploits into critical, system-wide failures."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Prompt Injection",
+            "Data Privacy",
+            "Access Control"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-8.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-8.jpg"
+        },
+        {
+          "slide": 9,
+          "title": "Why Traditional Security Fails",
+          "takeaways": [
+            "Conventional tools fail because AI systems are non-deterministic and dynamic, causing threats to evolve faster than traditional patch cycles.",
+            "Effective AI security requires shifting from static scanners and signature-based detection to runtime interaction monitoring, adaptive defenses, and continuous red-teaming."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Traditional Security",
+            "AI Security",
+            "Runtime Monitoring"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-9.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-9.jpg"
+        },
+        {
+          "slide": 10,
+          "title": "From Chat to Action: Why Security Rules Suddenly Fail",
+          "takeaways": [
+            "Agentic AI executes multi-step tasks using tools and identity with real-world side effects beyond passive text generation.",
+            "Legacy security systems fail because persistent, acting agents create entirely new attack surfaces.",
+            "Security controls must shift from simple input filtering ('prompt safety') to runtime 'workflow safety'."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Agentic AI",
+            "Workflow Safety",
+            "Attack Surface"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-10.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-10.jpg"
+        },
+        {
+          "slide": 11,
+          "title": "The New Threats in the Agentic Stack",
+          "takeaways": [
+            "Tool misuse occurs when agents combine valid tools into harmful workflows that bypass static security checks due to injected or ambiguous intent.",
+            "Identity and privilege abuse escalates the classic 'confused deputy' problem to machine scale via credential inheritance across task boundaries.",
+            "Dynamic trust exploitation creates fragile trust chains as agents interact with unverified dynamic tools, MCP endpoints, and other agents."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Tool Misuse",
+            "Privilege Abuse",
+            "Dynamic Trust"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-11.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-11.jpg"
+        },
+        {
+          "slide": 12,
+          "title": "Multi-Agent Systems: Risk Multiplies, Observability Blinds",
+          "takeaways": [
+            "Multi-agent environments introduce emergent trust boundaries where agents delegate to each other, propagating risk beyond single-agent boundaries.",
+            "System risks multiply due to cascading failures, non-deterministic emergent behaviors, and vulnerabilities in shared memory, context, and tools.",
+            "A single poisoned context can rapidly spread malicious logic across an entire agent mesh in seconds."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Multi-Agent Systems",
+            "Cascading Failures",
+            "Trust Boundaries"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-12.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-12.jpg"
+        },
+        {
+          "slide": 13,
+          "title": "When Governance Breaks: Supply Chain & Dynamic Dependencies",
+          "takeaways": [
+            "Runtime dynamic loading of tools and endpoints often lacks cryptographic verification and provenance checks.",
+            "Poisoned context and malicious logic injected into tool responses propagate silently through decision chains.",
+            "Unverified agent-to-agent delegation creates supply chain vulnerabilities without clear identity, intent, or manifest verification."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Supply Chain",
+            "Dynamic Tool Loading",
+            "Agent Trust"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-13.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-13.jpg"
+        },
+        {
+          "slide": 14,
+          "title": "The Governance Shift: Static Checks → Intent + Runtime Enforcement",
+          "takeaways": [
+            "AI governance is shifting away from static checks toward a model focused on intent verification and runtime enforcement.",
+            "Effective security governance relies on three nested layers: Core Intent (signed goals and verification), Runtime Controls (sandboxing and approvals), and a Standards Layer (MCP protocols and SOC integration)."
+          ],
+          "category": "Governance",
+          "tags": [
+            "AI Governance",
+            "Runtime Controls",
+            "Intent Verification"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-14.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-14.jpg"
+        },
+        {
+          "slide": 15,
+          "title": "Permission Creep via \"Citizen\" Agents",
+          "takeaways": [
+            "Over 80% of Fortune 500 enterprises deploy AI agents without adequate governance, driving 'Shadow Agent' risks.",
+            "Autonomous agent deployment creates missing audit trails, undefined ownership, and ungoverned access permissions.",
+            "Mitigating permission creep requires Discovery, Permission Mapping, Behavioral Baselines, and Lifecycle Governance."
+          ],
+          "category": "Case Study",
+          "tags": [
+            "Shadow Agents",
+            "Permission Creep",
+            "AI Governance"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-15.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-15.jpg"
+        },
+        {
+          "slide": 16,
+          "title": "Agentic Tooling + Governance Controls Win",
+          "takeaways": [
+            "Strict enforcement of MCP-based governance and tool-scoping policies resulted in an 85% reduction in unauthorized agent actions.",
+            "Implementing protocol-level verification and standards-driven orchestration achieved a 70% improvement in threat detection time.",
+            "Effective security requires constraining tool usage and treating MCP (Model Context Protocol) governance as the primary security perimeter."
+          ],
+          "category": "Case Study",
+          "tags": [
+            "MCP",
+            "Governance",
+            "Automation"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-16.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-16.jpg"
+        },
+        {
+          "slide": 17,
+          "title": "Security as a Startup Competitive Advantage",
+          "takeaways": [
+            "Startups face significant security challenges due to resource constraints, rapid deployment velocities, and complex, expanding cloud-native attack surfaces.",
+            "Lack of formal security processes often leads to inconsistent controls and audit readiness gaps.",
+            "The cost of failure is high, with 60% of small companies failing within six months following a cyber attack."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Startup Security",
+            "Risk Management",
+            "Cyber Resilience"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-17.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-17.jpg"
+        },
+        {
+          "slide": 18,
+          "title": "Automate, Codify & Build Security Culture",
+          "takeaways": [
+            "Integrate security into CI/CD pipelines and infrastructure as code (IaC) to ensure auditability and reduce human error.",
+            "Prioritize practical security controls over 'security theater' and align incentives to make security a shared business value.",
+            "Cultivate a resilient organizational culture where security is seen as a competitive advantage rather than a compliance burden."
+          ],
+          "category": "Governance",
+          "tags": [
+            "DevSecOps",
+            "Security Culture",
+            "Automation"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-18.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-18.jpg"
+        },
+        {
+          "slide": 19,
+          "title": "Real-World Example: Robin AI & Pavlov Startups",
+          "takeaways": [
+            "Security readiness, such as SOC 2 and GDPR, acts as a strategic business accelerator rather than an operational bottleneck.",
+            "Proactive, founder-led security programs serve as powerful signals for both enterprise customer acquisition and investor confidence.",
+            "Integrating security from day one builds foundational trust and enables faster scaling without sacrificing innovation velocity."
+          ],
+          "category": "Case Study",
+          "tags": [
+            "Compliance",
+            "Startup Strategy",
+            "Security ROI"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-19.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-19.jpg"
+        },
+        {
+          "slide": 20,
+          "title": "Challenges, Ethics & Governance",
+          "takeaways": [
+            "Organizations face significant risks including overreliance on AI, workforce skills gaps, and legacy infrastructure integration hurdles.",
+            "Balancing autonomous security operations with essential human oversight remains a critical governance challenge."
+          ],
+          "category": "Governance",
+          "tags": [
+            "AI Ethics",
+            "Organizational Risk",
+            "Human-in-the-loop"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-20.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-20.jpg"
+        },
+        {
+          "slide": 21,
+          "title": "Organizational Risks",
+          "takeaways": [
+            "Adopting autonomous security introduces risks including overreliance, skills gaps, and legacy infrastructure integration challenges.",
+            "Organizations must navigate the critical challenge of balancing automated AI-driven security with necessary human oversight."
+          ],
+          "category": "Governance",
+          "tags": [
+            "AI Governance",
+            "Human-in-the-loop",
+            "Risk Management"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-21.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-21.jpg"
+        },
+        {
+          "slide": 22,
+          "title": "Startup To-Do List: Foundational Controls",
+          "takeaways": [
+            "Establish strict security foundations by mapping all agent-accessible tools and enforcing least-privilege credentials.",
+            "Implement human-in-the-loop oversight for high-impact actions and sanitize RAG data to secure model memory.",
+            "Ensure deployment infrastructure includes isolation, robust identity management, and continuous behavioral monitoring."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Foundational Controls",
+            "Agent Security",
+            "Risk Mitigation"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-22.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-22.jpg"
+        },
+        {
+          "slide": 23,
+          "title": "Designing Secure AI Systems",
+          "takeaways": [
+            "Implement the principle of least privilege for all AI tool calls and API interactions.",
+            "Adopt a defense-in-depth approach by layering security guardrails and PII detection.",
+            "Ensure safe-by-design principles through modular architecture and strict component-level privilege separation."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Security Architecture",
+            "Least Privilege",
+            "Defense-in-Depth"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-23.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-23.jpg"
+        },
+        {
+          "slide": 24,
+          "title": "A Practical Reference Model: Identity-First, Least Privilege, Telemetry",
+          "takeaways": [
+            "Treat AI agents as distinct identities with full authentication and accountability rather than anonymous scripts.",
+            "Implement fine-grained, just-in-time delegation that limits tool access by task, time, and revocability.",
+            "Utilize continuous behavioral telemetry to monitor agent actions and detect deviations from established security baselines in real time."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Identity Management",
+            "Least Privilege",
+            "Agent Security"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-24.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-24.jpg"
+        },
+        {
+          "slide": 25,
+          "title": "Automate and Codify Security Controls",
+          "takeaways": [
+            "Integrate security policies directly into version-controlled infrastructure and CI/CD pipelines to eliminate manual error and maintain velocity.",
+            "Prioritize substantive, risk-reducing controls over 'security theater' and embed incident recovery planning into the design phase.",
+            "Utilize Infrastructure as Code (IaC), automated compliance checks, and open-source security frameworks to ensure consistent, repeatable protection."
+          ],
+          "category": "Governance",
+          "tags": [
+            "DevSecOps",
+            "Automation",
+            "Infrastructure as Code"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-25.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-25.jpg"
+        },
+        {
+          "slide": 26,
+          "title": "Build a Security Culture & Shared Responsibility",
+          "takeaways": [
+            "Security must be treated as a core organizational priority involving everyone from leadership to engineering and operations teams.",
+            "Cultivating long-term resilience requires embedding security into company culture through regular training and clear communication.",
+            "Effective security strategies rely on strong leadership commitment and aligning security goals with overall business and customer objectives."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Security Culture",
+            "Shared Responsibility",
+            "Organizational Resilience"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-26.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-26.jpg"
+        },
+        {
+          "slide": 27,
+          "title": "Student Action Plan: Learn & Build",
+          "takeaways": [
+            "Develop prompt injection defense skills using interactive platforms like Lakera Gandalf.",
+            "Prioritize security by executing untrusted agent code exclusively in isolated sandboxes, away from production environments.",
+            "Deepen understanding of AI safety by studying model alignment techniques such as DPO and Constitutional AI."
+          ],
+          "category": "Applications",
+          "tags": [
+            "AI Safety",
+            "Prompt Injection",
+            "Model Alignment"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-27.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-27.jpg"
+        },
+        {
+          "slide": 28,
+          "title": "What to Follow",
+          "takeaways": [
+            "Prioritize industry-standard vulnerability references like the OWASP LLM Top 10.",
+            "Adopt emerging federal guidance such as NIST AI 100-1 for secure and resilient AI deployment.",
+            "Monitor ongoing research and safety frameworks from authoritative bodies like Berkeley RDI and Frontier Labs."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Compliance",
+            "Frameworks",
+            "Standards"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-28.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-28.jpg"
+        },
+        {
+          "slide": 29,
+          "title": "Your Playbook: Projects, Checklist & Career Path",
+          "takeaways": [
+            "Implement hands-on capstone projects focusing on incident-response agents and agent registry prototypes to build practical expertise.",
+            "Adopt a robust governance framework that emphasizes least privilege, environment isolation, and continuous red teaming for AI agents.",
+            "Develop specialized skills in agentic threat modeling to identify and mitigate risks like tool misuse, memory poisoning, and supply chain vulnerabilities."
+          ],
+          "category": "Conclusion",
+          "tags": [
+            "Agentic Security",
+            "Threat Modeling",
+            "Governance"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-29.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-29.jpg"
+        },
+        {
+          "slide": 30,
+          "title": "What Is Next: The Agentic Frontier",
+          "takeaways": [
+            "Future AI systems will require a hybrid approach, blending symbolic and non-symbolic components to mitigate emerging architectural risks.",
+            "As AI scales beyond human oversight, implementing formal verification and provable security becomes critical for maintaining system integrity.",
+            "Security engineers must proactively adopt a strategy that combines adversarial thinking with rigorous design to ensure systems remain reliable and corrigible."
+          ],
+          "category": "Conclusion",
+          "tags": [
+            "Hybrid AI",
+            "Formal Verification",
+            "Agentic Security"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-30.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-30.jpg"
+        },
+        {
+          "slide": 31,
+          "title": "Emerging Trends",
+          "takeaways": [
+            "The security roadmap transitions from foundational prompt engineering and orchestration toward explainable, generative adversarial systems and multi-modal cognitive frameworks by 2027.",
+            "Critical focus areas include managing agent coordination, ensuring AI ethics, and maintaining robust model evaluation to protect against emerging manipulation tactics."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Roadmap",
+            "Future-proofing",
+            "AI Governance"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-31.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-31.jpg"
+        },
+        {
+          "slide": 32,
+          "title": "Reference",
+          "takeaways": [
+            "Provides external resources for further reading and author attribution.",
+            "Lists professional profiles and publications on Hackernoon, Forbes, and LinkedIn."
+          ],
+          "category": "Conclusion",
+          "tags": [
+            "Resources",
+            "Bibliography",
+            "Author Profiles"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-32.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-32.jpg"
+        },
+        {
+          "slide": 33,
+          "title": "Q & A",
+          "takeaways": [
+            "Opportunity for audience interaction and clarification on agentic security concepts.",
+            "Open forum to address specific concerns regarding AI as both a defender and a threat."
+          ],
+          "category": "Conclusion",
+          "tags": [
+            "Q&A",
+            "Engagement",
+            "Summary"
+          ],
+          "image": "images/smart-slides/agentic-security-defender-threat/slide-33.jpg",
+          "thumbnail": "images/smart-slides/agentic-security-defender-threat/thumb-33.jpg"
+        }
+      ]
+    },
+    {
+      "deck_number": 5,
+      "id": "8WpM",
+      "slug": "hikerunner-loadtest-framework",
+      "folder": "hikerunner-loadtest-framework",
+      "data_file": "data/hikerunner-loadtest-framework.json",
+      "title": "HikeRunner: LoadTestFramework",
+      "shortTitle": "HikeRunner: LoadTestFramework",
+      "subtitle": "High-Throughput Distributed Performance Testing Architecture",
+      "description": "In-house distributed load testing framework to simulate real-world messaging user journeys, vertically & horizontally stressing backend DBs, caches, queues, and CI/CD pipelines.",
+      "badge": "Performance Engineering",
+      "author": "Harsh Verma",
+      "year": "2026",
+      "easyChairUrl": "https://easychair.org/smart-slide/slide/8WpM#{sn:1}",
+      "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=8WpM&slide=1",
+      "blogUrl": null,
+      "blogTitle": null,
+      "bibtex": "@misc{verma2026hikerunner,\n  author = {Verma, Harsh},\n  title = {HikeRunner: LoadTestFramework},\n  howpublished = {EasyChair Smart Slide Series, Ref. 8WpM},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/8WpM}\n}",
+      "count": 11,
+      "cover_image": "images/smart-slides/hikerunner-loadtest-framework/slide-1.jpg",
+      "thumbnail_image": "images/smart-slides/hikerunner-loadtest-framework/thumb-1.jpg",
+      "categories": [
+        "Overview",
+        "Problem Statement",
+        "Analysis",
+        "Architecture",
+        "Methodology",
+        "Protocols",
+        "Testing Strategy",
+        "Implementation",
+        "DevOps",
+        "Benchmarking",
+        "Conclusion"
+      ],
+      "tags": [
+        "Load Testing",
+        "Performance Engineering",
+        "HikeRunner",
+        "Scale",
+        "Distributed Systems",
+        "Bottlenecks",
+        "Tooling",
+        "Infrastructure",
+        "Stress Testing",
+        "System Architecture",
+        "Design Patterns",
+        "Framework Design",
+        "Analytics-Driven",
+        "User Journeys",
+        "Simulation",
+        "MQTT",
+        "HTTP",
+        "Protocols",
+        "Sockets",
+        "Vertical Scaling",
+        "Horizontal Scaling",
+        "Task Hooks",
+        "Determinism",
+        "Regression Testing",
+        "CI/CD",
+        "Automation",
+        "Jenkins",
+        "DevOps",
+        "Latency",
+        "Throughput",
+        "SLA",
+        "Soak Testing",
+        "Summary",
+        "Production Impact",
+        "Future Work"
+      ],
+      "slides": [
+        {
+          "slide": 1,
+          "title": "HikeRunner: LoadTestFramework",
+          "takeaways": [
+            "Presents HikeRunner, an in-house enterprise load testing framework engineered for high-throughput mobile messaging ecosystems.",
+            "Addresses the limitations of off-the-shelf testing suites by introducing an analytics-driven approach to real-time user journey simulation."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Load Testing",
+            "Performance Engineering",
+            "HikeRunner"
+          ],
+          "image": "images/smart-slides/hikerunner-loadtest-framework/slide-1.jpg",
+          "thumbnail": "images/smart-slides/hikerunner-loadtest-framework/thumb-1.jpg"
+        },
+        {
+          "slide": 2,
+          "title": "The Challenge: Scale in Real-Time Messaging",
+          "takeaways": [
+            "Modern messaging applications with millions of active users encounter extreme spikes and complex distributed state variations.",
+            "Traditional testing tools fail to mimic real user behavior patterns across multiple interactive communication services."
+          ],
+          "category": "Problem Statement",
+          "tags": [
+            "Scale",
+            "Distributed Systems",
+            "Bottlenecks"
+          ],
+          "image": "images/smart-slides/hikerunner-loadtest-framework/slide-2.jpg",
+          "thumbnail": "images/smart-slides/hikerunner-loadtest-framework/thumb-2.jpg"
+        },
+        {
+          "slide": 3,
+          "title": "Motivation & Gaps in Existing Tools",
+          "takeaways": [
+            "Commercial and open-source tools do not provide a generic, protocol-agnostic interface for full-stack stress testing.",
+            "Need for simultaneous vertical and horizontal stress testing across databases, caches, queues, and network proxies."
+          ],
+          "category": "Analysis",
+          "tags": [
+            "Tooling",
+            "Infrastructure",
+            "Stress Testing"
+          ],
+          "image": "images/smart-slides/hikerunner-loadtest-framework/slide-3.jpg",
+          "thumbnail": "images/smart-slides/hikerunner-loadtest-framework/thumb-3.jpg"
+        },
+        {
+          "slide": 4,
+          "title": "HikeRunner Architecture Overview",
+          "takeaways": [
+            "Modular design patterns allowing pluggable protocol engines, task executors, and dynamic metrics aggregators.",
+            "Coherent orchestration between scenario generators, agent workers, and real-time telemetry reporters."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "System Architecture",
+            "Design Patterns",
+            "Framework Design"
+          ],
+          "image": "images/smart-slides/hikerunner-loadtest-framework/slide-4.jpg",
+          "thumbnail": "images/smart-slides/hikerunner-loadtest-framework/thumb-4.jpg"
+        },
+        {
+          "slide": 5,
+          "title": "Analytics-Driven User Journey Simulation",
+          "takeaways": [
+            "Derives load profiles directly from production analytics to accurately weight user actions and probability distributions.",
+            "Accurately captures real-world user paths rather than synthetic, unrealistic endpoint hammer tests."
+          ],
+          "category": "Methodology",
+          "tags": [
+            "Analytics-Driven",
+            "User Journeys",
+            "Simulation"
+          ],
+          "image": "images/smart-slides/hikerunner-loadtest-framework/slide-5.jpg",
+          "thumbnail": "images/smart-slides/hikerunner-loadtest-framework/thumb-5.jpg"
+        },
+        {
+          "slide": 6,
+          "title": "Multi-Protocol Support: MQTT, HTTP & Caches",
+          "takeaways": [
+            "Native support for asynchronous MQTT socket channels, RESTful HTTP APIs, and direct cache/database protocols.",
+            "Enables end-to-end verification across the entire communication pipeline from client connect to database commit."
+          ],
+          "category": "Protocols",
+          "tags": [
+            "MQTT",
+            "HTTP",
+            "Protocols",
+            "Sockets"
+          ],
+          "image": "images/smart-slides/hikerunner-loadtest-framework/slide-6.jpg",
+          "thumbnail": "images/smart-slides/hikerunner-loadtest-framework/thumb-6.jpg"
+        },
+        {
+          "slide": 7,
+          "title": "Vertical & Horizontal Stress Topologies",
+          "takeaways": [
+            "Horizontal testing scales load across hundreds of microservices; vertical testing isolates single-node saturation points.",
+            "Pinpoints exact database lock contention, memory leaks, connection pool exhaustion, and cache eviction cliffs."
+          ],
+          "category": "Testing Strategy",
+          "tags": [
+            "Vertical Scaling",
+            "Horizontal Scaling",
+            "Stress Testing"
+          ],
+          "image": "images/smart-slides/hikerunner-loadtest-framework/slide-7.jpg",
+          "thumbnail": "images/smart-slides/hikerunner-loadtest-framework/thumb-7.jpg"
+        },
+        {
+          "slide": 8,
+          "title": "Static Hooking & Task Assignment",
+          "takeaways": [
+            "Static hooking mechanisms allow engineers to attach custom assertion logic and deterministic payload generators.",
+            "Ensures repeatable, deterministic regression tests before deploying code to staging environments."
+          ],
+          "category": "Implementation",
+          "tags": [
+            "Task Hooks",
+            "Determinism",
+            "Regression Testing"
+          ],
+          "image": "images/smart-slides/hikerunner-loadtest-framework/slide-8.jpg",
+          "thumbnail": "images/smart-slides/hikerunner-loadtest-framework/thumb-8.jpg"
+        },
+        {
+          "slide": 9,
+          "title": "CI/CD Pipeline Automation with Jenkins & Git",
+          "takeaways": [
+            "Automated execution within the continuous integration pipeline triggered via Jenkins jobs and Git hooks.",
+            "Enforces automated performance gates preventing build merges that violate strict SLA and latency thresholds."
+          ],
+          "category": "DevOps",
+          "tags": [
+            "CI/CD",
+            "Automation",
+            "Jenkins",
+            "DevOps"
+          ],
+          "image": "images/smart-slides/hikerunner-loadtest-framework/slide-9.jpg",
+          "thumbnail": "images/smart-slides/hikerunner-loadtest-framework/thumb-9.jpg"
+        },
+        {
+          "slide": 10,
+          "title": "Latency, Throughput & Soak Benchmarking",
+          "takeaways": [
+            "Comprehensive telemetry tracking P90, P99, and P99.9 latencies under sustained and burst load conditions.",
+            "Long-running soak tests detect slow memory degradation and resource leaks across multi-day test runs."
+          ],
+          "category": "Benchmarking",
+          "tags": [
+            "Latency",
+            "Throughput",
+            "SLA",
+            "Soak Testing"
+          ],
+          "image": "images/smart-slides/hikerunner-loadtest-framework/slide-10.jpg",
+          "thumbnail": "images/smart-slides/hikerunner-loadtest-framework/thumb-10.jpg"
+        },
+        {
+          "slide": 11,
+          "title": "Summary, Impact & Future Roadmap",
+          "takeaways": [
+            "HikeRunner established resilient release stability, cut regression test times by over 60%, and prevented major outages.",
+            "Future enhancements focus on autonomous load generation, AI-driven anomaly detection, and automated root-cause isolation."
+          ],
+          "category": "Conclusion",
+          "tags": [
+            "Summary",
+            "Production Impact",
+            "Future Work"
+          ],
+          "image": "images/smart-slides/hikerunner-loadtest-framework/slide-11.jpg",
+          "thumbnail": "images/smart-slides/hikerunner-loadtest-framework/thumb-11.jpg"
+        }
+      ]
+    },
+    {
+      "deck_number": 6,
+      "id": "tHbS",
+      "slug": "cybersecurity-evolution-clean-attack",
+      "folder": "cybersecurity-evolution-clean-attack",
+      "data_file": "data/cybersecurity-evolution-clean-attack.json",
+      "title": "The Evolution of Cybersecurity: From Anomaly Detection to Intent-Based Security. The Clean Attack Problem: When Nothing Looks Wrong but Everything Is Compromised",
+      "shortTitle": "The Evolution of Cybersecurity: Clean Attack Problem",
+      "subtitle": "From Anomaly Detection to Intent Reasoning & Behavioral Sequencing",
+      "description": "The Clean Attack Problem: When nothing looks wrong but everything is compromised. Shifting from anomaly detection to intent reasoning, behavioral sequencing, and runtime decision analysis.",
+      "badge": "Intent-Based Security",
+      "author": "Harsh Verma",
+      "year": "2026",
+      "easyChairUrl": "https://easychair.org/smart-slide/slide/tHbS#{sn:1}",
+      "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=tHbS&slide=1",
+      "blogUrl": "https://www.rsaconference.com/library/blog/the-clean-attack-problem",
+      "blogTitle": "RSA Conference: The Clean Attack Problem",
+      "bibtex": "@misc{verma2026cybersecuritycleanattack,\n  author = {Verma, Harsh},\n  title = {The Evolution of Cybersecurity: From Anomaly Detection to Intent-Based Security. The Clean Attack Problem: When Nothing Looks Wrong but Everything Is Compromised},\n  howpublished = {EasyChair Smart Slide Series, Ref. tHbS},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/tHbS}\n}",
+      "count": 9,
+      "cover_image": "images/smart-slides/cybersecurity-evolution-clean-attack/slide-1.jpg",
+      "thumbnail_image": "images/smart-slides/cybersecurity-evolution-clean-attack/thumb-1.jpg",
+      "categories": [
+        "Overview",
+        "Foundation",
+        "Core Concept",
+        "AI Threats",
+        "Case Studies",
+        "Paradigm Shift",
+        "Architecture",
+        "Framework",
+        "Strategy"
+      ],
+      "tags": [
+        "Intent-Based Security",
+        "Clean Attack",
+        "Cybersecurity Evolution",
+        "Anomaly Detection",
+        "Baseline Modeling",
+        "Legacy Defenses",
+        "Stealth Threats",
+        "Threat Modeling",
+        "AI Agents",
+        "Adversarial AI",
+        "Autonomous Threat",
+        "Breach Analysis",
+        "Post-Auth Threats",
+        "Case Studies",
+        "Intent Reasoning",
+        "Behavior vs Intent",
+        "Dynamic Security",
+        "Behavioral Sequencing",
+        "Context Graph",
+        "Runtime Awareness",
+        "Workflow Legitimacy",
+        "Intent Validation",
+        "Policy Enforcement",
+        "Adaptive Defense",
+        "Resilience",
+        "Strategic Roadmap"
+      ],
+      "slides": [
+        {
+          "slide": 1,
+          "title": "The Evolution of Cybersecurity: From Anomaly Detection to Intent-Based Security",
+          "takeaways": [
+            "Explores the fundamental paradigm shift from legacy anomaly-based detection to autonomous intent-based cybersecurity.",
+            "Introduces the 'Clean Attack Problem'—where malicious actions are carried out entirely within valid credentials and trusted workflows."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Intent-Based Security",
+            "Clean Attack",
+            "Cybersecurity Evolution"
+          ],
+          "image": "images/smart-slides/cybersecurity-evolution-clean-attack/slide-1.jpg",
+          "thumbnail": "images/smart-slides/cybersecurity-evolution-clean-attack/thumb-1.jpg"
+        },
+        {
+          "slide": 2,
+          "title": "The Historical Foundation & Limits of Anomaly Detection",
+          "takeaways": [
+            "Traditional cybersecurity assumes malicious activity deviates from established baseline behaviors.",
+            "Signature rules, threshold alerts, and statistical outliers fail when adversaries emulate legitimate system patterns."
+          ],
+          "category": "Foundation",
+          "tags": [
+            "Anomaly Detection",
+            "Baseline Modeling",
+            "Legacy Defenses"
+          ],
+          "image": "images/smart-slides/cybersecurity-evolution-clean-attack/slide-2.jpg",
+          "thumbnail": "images/smart-slides/cybersecurity-evolution-clean-attack/thumb-2.jpg"
+        },
+        {
+          "slide": 3,
+          "title": "The Clean Attack Problem Defined",
+          "takeaways": [
+            "Clean attacks use authorized credentials, invoke approved APIs, and navigate standard user flows with zero abnormal signatures.",
+            "When nothing looks wrong, traditional defenses report 100% green health while critical assets are actively compromised."
+          ],
+          "category": "Core Concept",
+          "tags": [
+            "Clean Attack",
+            "Stealth Threats",
+            "Threat Modeling"
+          ],
+          "image": "images/smart-slides/cybersecurity-evolution-clean-attack/slide-3.jpg",
+          "thumbnail": "images/smart-slides/cybersecurity-evolution-clean-attack/thumb-3.jpg"
+        },
+        {
+          "slide": 4,
+          "title": "AI Agents as Adversarial Multipliers",
+          "takeaways": [
+            "Generative and autonomous agents can dynamically adapt attack trajectories in real time to blend into normal enterprise traffic.",
+            "Static heuristics and rate limits are trivial to circumvent via multi-agent coordinated stealth operations."
+          ],
+          "category": "AI Threats",
+          "tags": [
+            "AI Agents",
+            "Adversarial AI",
+            "Autonomous Threat"
+          ],
+          "image": "images/smart-slides/cybersecurity-evolution-clean-attack/slide-4.jpg",
+          "thumbnail": "images/smart-slides/cybersecurity-evolution-clean-attack/thumb-4.jpg"
+        },
+        {
+          "slide": 5,
+          "title": "Case Studies: When Legitimate Workflows Turn Hostile",
+          "takeaways": [
+            "Analysis of real-world breaches where attackers hijacked legitimate communication and administrative conduits.",
+            "Demonstrates how identity verification at the perimeter provides zero guarantee of safe post-auth operation."
+          ],
+          "category": "Case Studies",
+          "tags": [
+            "Breach Analysis",
+            "Post-Auth Threats",
+            "Case Studies"
+          ],
+          "image": "images/smart-slides/cybersecurity-evolution-clean-attack/slide-5.jpg",
+          "thumbnail": "images/smart-slides/cybersecurity-evolution-clean-attack/thumb-5.jpg"
+        },
+        {
+          "slide": 6,
+          "title": "The Paradigm Shift: From Behavior to Intent",
+          "takeaways": [
+            "Shifts focus from 'Is this action authorized?' to 'What is the underlying purpose and eventual outcome of this action sequence?'",
+            "Introduces dynamic reasoning engines that evaluate operational legitimacy rather than static permissions."
+          ],
+          "category": "Paradigm Shift",
+          "tags": [
+            "Intent Reasoning",
+            "Behavior vs Intent",
+            "Dynamic Security"
+          ],
+          "image": "images/smart-slides/cybersecurity-evolution-clean-attack/slide-6.jpg",
+          "thumbnail": "images/smart-slides/cybersecurity-evolution-clean-attack/thumb-6.jpg"
+        },
+        {
+          "slide": 7,
+          "title": "Behavioral Sequencing & Contextual Awareness",
+          "takeaways": [
+            "Evaluates full chains of multi-step interactions across time rather than isolated individual transactions.",
+            "Constructs contextual semantic graphs linking user roles, business logic, temporal patterns, and data flows."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Behavioral Sequencing",
+            "Context Graph",
+            "Runtime Awareness"
+          ],
+          "image": "images/smart-slides/cybersecurity-evolution-clean-attack/slide-7.jpg",
+          "thumbnail": "images/smart-slides/cybersecurity-evolution-clean-attack/thumb-7.jpg"
+        },
+        {
+          "slide": 8,
+          "title": "Dynamic Workflow Legitimacy & Reasoning Frameworks",
+          "takeaways": [
+            "Real-time intent validation evaluates whether state transitions align with verifiable organizational objectives.",
+            "Enforces policy checkpoints that intercept authorized accounts attempting anomalous goal-oriented trajectories."
+          ],
+          "category": "Framework",
+          "tags": [
+            "Workflow Legitimacy",
+            "Intent Validation",
+            "Policy Enforcement"
+          ],
+          "image": "images/smart-slides/cybersecurity-evolution-clean-attack/slide-8.jpg",
+          "thumbnail": "images/smart-slides/cybersecurity-evolution-clean-attack/thumb-8.jpg"
+        },
+        {
+          "slide": 9,
+          "title": "Building Resilient, Adaptive AI-Era Cybersecurity",
+          "takeaways": [
+            "Architectural blueprint for transitioning enterprise defense from static gatekeeping to cognitive, intent-aware resilience.",
+            "Provides actionable steps for deploying runtime intent guardrails, adaptive trust scoring, and autonomous mitigation."
+          ],
+          "category": "Strategy",
+          "tags": [
+            "Adaptive Defense",
+            "Resilience",
+            "Strategic Roadmap"
+          ],
+          "image": "images/smart-slides/cybersecurity-evolution-clean-attack/slide-9.jpg",
+          "thumbnail": "images/smart-slides/cybersecurity-evolution-clean-attack/thumb-9.jpg"
+        }
+      ]
+    },
+    {
+      "deck_number": 7,
+      "id": "xJKk",
+      "slug": "death-of-authentication-ai-systems",
+      "folder": "death-of-authentication-ai-systems",
+      "data_file": "data/death-of-authentication-ai-systems.json",
+      "title": "The Death of Authentication: Why Identity Isn'T Enough for AI Systems",
+      "shortTitle": "The Death of Authentication: Identity Isn't Enough",
+      "subtitle": "Post-Authentication Risk, Behavioral Monitoring & Runtime Intent Analysis",
+      "description": "Addressing post-authentication risk and trusted-agent misuse. Why Zero Trust must evolve beyond static identity verification toward continuous behavioral monitoring and runtime intent analysis.",
+      "badge": "Zero Trust Evolution",
+      "author": "Harsh Verma",
+      "year": "2026",
+      "easyChairUrl": "https://easychair.org/smart-slide/slide/xJKk#{sn:1}",
+      "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=xJKk&slide=1",
+      "blogUrl": "https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems",
+      "blogTitle": "RSA Conference: The Death of Authentication",
+      "bibtex": "@misc{verma2026deathofauthentication,\n  author = {Verma, Harsh},\n  title = {The Death of Authentication: Why Identity Isn'T Enough for AI Systems},\n  howpublished = {EasyChair Smart Slide Series, Ref. xJKk},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/xJKk}\n}",
+      "count": 16,
+      "cover_image": "images/smart-slides/death-of-authentication-ai-systems/slide-1.jpg",
+      "thumbnail_image": "images/smart-slides/death-of-authentication-ai-systems/thumb-1.jpg",
+      "categories": [
+        "Overview",
+        "Foundations",
+        "Technology Shift",
+        "Threat Vector",
+        "Post-Auth Security",
+        "Access Control",
+        "Case Studies",
+        "Attack Mechanics",
+        "Zero Trust Evolution",
+        "Runtime Monitoring",
+        "Authorization",
+        "Core Architecture",
+        "Guardrails",
+        "Architecture",
+        "Conclusion"
+      ],
+      "tags": [
+        "Authentication",
+        "Identity",
+        "AI Systems",
+        "Zero Trust",
+        "Static Trust",
+        "Perimeter Security",
+        "Trust Models",
+        "Autonomous Agents",
+        "Tool Use",
+        "Enterprise AI",
+        "Trusted Agent Misuse",
+        "Prompt Injection",
+        "Logic Exploitation",
+        "Post-Authentication",
+        "Threat Landscape",
+        "Runtime Risk",
+        "RBAC Limitations",
+        "Granular Access",
+        "Non-Deterministic Systems",
+        "Uber Breach",
+        "Credential Abuse",
+        "Breach Analysis",
+        "Workflow Escalation",
+        "Blast Radius",
+        "Planning Loops",
+        "In-Bounds Attacks",
+        "Valid Requests",
+        "Stealth Exfiltration",
+        "Intent Governance",
+        "ZTA Evolution",
+        "Behavioral Monitoring",
+        "Reasoning Traces",
+        "Semantic Drift",
+        "Temporal Auth",
+        "Ephemeral Tokens",
+        "Context-Aware",
+        "Intent Verification",
+        "Semantic Checkpoints",
+        "Intent Engines",
+        "AI Guardrails",
+        "Multi-Agent Safety",
+        "Circuit Breakers",
+        "Reference Architecture",
+        "Enterprise Blueprint",
+        "Security Leadership",
+        "Outcome Verification",
+        "Future of Security",
+        "Executive Summary"
+      ],
+      "slides": [
+        {
+          "slide": 1,
+          "title": "The Death of Authentication: Why Identity Isn't Enough for AI Systems",
+          "takeaways": [
+            "Examines why traditional authentication is breaking down as autonomous AI systems enter enterprise workflows.",
+            "Argues that verifying identity is no longer sufficient when systems can be fully authorized yet still cause severe harm."
+          ],
+          "category": "Overview",
+          "tags": [
+            "Authentication",
+            "Identity",
+            "AI Systems",
+            "Zero Trust"
+          ],
+          "image": "images/smart-slides/death-of-authentication-ai-systems/slide-1.jpg",
+          "thumbnail": "images/smart-slides/death-of-authentication-ai-systems/thumb-1.jpg"
+        },
+        {
+          "slide": 2,
+          "title": "The Fallacy of Static Trust",
+          "takeaways": [
+            "Decades of cybersecurity have equated successful authentication with operational trustworthiness.",
+            "In modern AI architectures, identity verification only answers 'who is acting', never 'is the outcome safe or intended?'"
+          ],
+          "category": "Foundations",
+          "tags": [
+            "Static Trust",
+            "Perimeter Security",
+            "Trust Models"
+          ],
+          "image": "images/smart-slides/death-of-authentication-ai-systems/slide-2.jpg",
+          "thumbnail": "images/smart-slides/death-of-authentication-ai-systems/thumb-2.jpg"
+        },
+        {
+          "slide": 3,
+          "title": "The Rise of Autonomous Enterprise AI Agents",
+          "takeaways": [
+            "AI agents are rapidly granted API keys, service credentials, database privileges, and autonomous tool-use capabilities.",
+            "Agents operate autonomously across distributed SaaS platforms, microservices, and internal corporate databases."
+          ],
+          "category": "Technology Shift",
+          "tags": [
+            "Autonomous Agents",
+            "Tool Use",
+            "Enterprise AI"
+          ],
+          "image": "images/smart-slides/death-of-authentication-ai-systems/slide-3.jpg",
+          "thumbnail": "images/smart-slides/death-of-authentication-ai-systems/thumb-3.jpg"
+        },
+        {
+          "slide": 4,
+          "title": "The Trusted-Agent Misuse Dilemma",
+          "takeaways": [
+            "Introduces 'Trusted-Agent Misuse'—where harmful outcomes happen entirely within permitted operational boundaries.",
+            "The attacker does not need to compromise or forge credentials; they simply manipulate the agent's goal-seeking logic."
+          ],
+          "category": "Threat Vector",
+          "tags": [
+            "Trusted Agent Misuse",
+            "Prompt Injection",
+            "Logic Exploitation"
+          ],
+          "image": "images/smart-slides/death-of-authentication-ai-systems/slide-4.jpg",
+          "thumbnail": "images/smart-slides/death-of-authentication-ai-systems/thumb-4.jpg"
+        },
+        {
+          "slide": 5,
+          "title": "Beyond Identity: The Post-Authentication Threat Landscape",
+          "takeaways": [
+            "Once an agent clears OAuth, SSO, or mTLS authentication, traditional access controls become completely blind to malicious actions.",
+            "Threats shift downstream from entry points to runtime execution, state mutations, and data exfiltration."
+          ],
+          "category": "Post-Auth Security",
+          "tags": [
+            "Post-Authentication",
+            "Threat Landscape",
+            "Runtime Risk"
+          ],
+          "image": "images/smart-slides/death-of-authentication-ai-systems/slide-5.jpg",
+          "thumbnail": "images/smart-slides/death-of-authentication-ai-systems/thumb-5.jpg"
+        },
+        {
+          "slide": 6,
+          "title": "Breakdown of Traditional Perimeter & RBAC Controls",
+          "takeaways": [
+            "Role-Based Access Control (RBAC) was designed for human users with predictable, bounded interaction patterns.",
+            "AI agents execute non-deterministic combinatorial workflows that render coarse-grained role permissions ineffective."
+          ],
+          "category": "Access Control",
+          "tags": [
+            "RBAC Limitations",
+            "Granular Access",
+            "Non-Deterministic Systems"
+          ],
+          "image": "images/smart-slides/death-of-authentication-ai-systems/slide-6.jpg",
+          "thumbnail": "images/smart-slides/death-of-authentication-ai-systems/thumb-6.jpg"
+        },
+        {
+          "slide": 7,
+          "title": "Lessons from High-Profile Identity Breaches",
+          "takeaways": [
+            "Case study analysis (including the Uber breach) illustrating how valid credentials become weaponized conduits.",
+            "Demonstrates that an adversary operating inside authenticated channels faces almost zero friction from legacy tools."
+          ],
+          "category": "Case Studies",
+          "tags": [
+            "Uber Breach",
+            "Credential Abuse",
+            "Breach Analysis"
+          ],
+          "image": "images/smart-slides/death-of-authentication-ai-systems/slide-7.jpg",
+          "thumbnail": "images/smart-slides/death-of-authentication-ai-systems/thumb-7.jpg"
+        },
+        {
+          "slide": 8,
+          "title": "Process Manipulation & Workflow Escalation",
+          "takeaways": [
+            "Adversaries trigger subtle deviations in agent planning loops that escalate blast radiuses without tripping alarms.",
+            "Manipulating input embeddings, memory banks, or tool responses produces unauthorized outputs using authorized privileges."
+          ],
+          "category": "Attack Mechanics",
+          "tags": [
+            "Workflow Escalation",
+            "Blast Radius",
+            "Planning Loops"
+          ],
+          "image": "images/smart-slides/death-of-authentication-ai-systems/slide-8.jpg",
+          "thumbnail": "images/smart-slides/death-of-authentication-ai-systems/thumb-8.jpg"
+        },
+        {
+          "slide": 9,
+          "title": "Anatomy of an In-Bounds Autonomous Attack",
+          "takeaways": [
+            "Step-by-step breakdown of how an agent can be steered to exfiltrate proprietary data or corrupt records without violating ACLs.",
+            "Every single HTTP request, SQL query, and API call appears syntactically valid and cryptographically signed."
+          ],
+          "category": "Attack Mechanics",
+          "tags": [
+            "In-Bounds Attacks",
+            "Valid Requests",
+            "Stealth Exfiltration"
+          ],
+          "image": "images/smart-slides/death-of-authentication-ai-systems/slide-9.jpg",
+          "thumbnail": "images/smart-slides/death-of-authentication-ai-systems/thumb-9.jpg"
+        },
+        {
+          "slide": 10,
+          "title": "Evolving Zero Trust: From Identity to Intent Governance",
+          "takeaways": [
+            "Zero Trust Architecture (ZTA) must evolve from 'never trust, always verify identity' to 'never trust, continuously verify intent'.",
+            "Establishes continuous cognitive evaluation throughout the entire agent execution lifecycle."
+          ],
+          "category": "Zero Trust Evolution",
+          "tags": [
+            "Zero Trust",
+            "Intent Governance",
+            "ZTA Evolution"
+          ],
+          "image": "images/smart-slides/death-of-authentication-ai-systems/slide-10.jpg",
+          "thumbnail": "images/smart-slides/death-of-authentication-ai-systems/thumb-10.jpg"
+        },
+        {
+          "slide": 11,
+          "title": "Continuous Behavioral Monitoring & Runtime Evaluation",
+          "takeaways": [
+            "Implements real-time telemetry pipelines monitoring agent reasoning traces, semantic drift, and action side-effects.",
+            "Detects anomalous reasoning jumps and out-of-character tool invocations before irreversible mutations occur."
+          ],
+          "category": "Runtime Monitoring",
+          "tags": [
+            "Behavioral Monitoring",
+            "Reasoning Traces",
+            "Semantic Drift"
+          ],
+          "image": "images/smart-slides/death-of-authentication-ai-systems/slide-11.jpg",
+          "thumbnail": "images/smart-slides/death-of-authentication-ai-systems/thumb-11.jpg"
+        },
+        {
+          "slide": 12,
+          "title": "Context-Aware & Temporal Authorization Models",
+          "takeaways": [
+            "Transitions from static tokens to micro-scoped, ephemeral authorizations valid only for specific, verifiable micro-tasks.",
+            "Incorporate organizational context, time-to-live restrictions, and strict environmental boundaries."
+          ],
+          "category": "Authorization",
+          "tags": [
+            "Temporal Auth",
+            "Ephemeral Tokens",
+            "Context-Aware"
+          ],
+          "image": "images/smart-slides/death-of-authentication-ai-systems/slide-12.jpg",
+          "thumbnail": "images/smart-slides/death-of-authentication-ai-systems/thumb-12.jpg"
+        },
+        {
+          "slide": 13,
+          "title": "Intent Verification vs. Permission Checking",
+          "takeaways": [
+            "Compares syntactic permission checks against semantic intent verification engines.",
+            "Intent engines answer: 'Does this agent's proposed action logically follow from the user's validated initial prompt?'"
+          ],
+          "category": "Core Architecture",
+          "tags": [
+            "Intent Verification",
+            "Semantic Checkpoints",
+            "Intent Engines"
+          ],
+          "image": "images/smart-slides/death-of-authentication-ai-systems/slide-13.jpg",
+          "thumbnail": "images/smart-slides/death-of-authentication-ai-systems/thumb-13.jpg"
+        },
+        {
+          "slide": 14,
+          "title": "Guardrails for Autonomous Multi-Agent Workflows",
+          "takeaways": [
+            "Dual-layered guardrails: external proxy interceptors and internal model alignment constraints.",
+            "Includes circuit breakers, consensus mechanisms, and human-in-the-loop escalation thresholds for high-stakes actions."
+          ],
+          "category": "Guardrails",
+          "tags": [
+            "AI Guardrails",
+            "Multi-Agent Safety",
+            "Circuit Breakers"
+          ],
+          "image": "images/smart-slides/death-of-authentication-ai-systems/slide-14.jpg",
+          "thumbnail": "images/smart-slides/death-of-authentication-ai-systems/thumb-14.jpg"
+        },
+        {
+          "slide": 15,
+          "title": "Strategic Architecture for Post-Authentication Security",
+          "takeaways": [
+            "Comprehensive reference architecture integrating identity providers, intent evaluators, and runtime enforcement.",
+            "Provides zero-trust security leaders with a concrete roadmap for securing agentic AI deployments."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Reference Architecture",
+            "Enterprise Blueprint",
+            "Security Leadership"
+          ],
+          "image": "images/smart-slides/death-of-authentication-ai-systems/slide-15.jpg",
+          "thumbnail": "images/smart-slides/death-of-authentication-ai-systems/thumb-15.jpg"
+        },
+        {
+          "slide": 16,
+          "title": "Conclusion: Verifying Outcomes, Not Just Credentials",
+          "takeaways": [
+            "The future of cybersecurity rests on measuring and guaranteeing outcomes rather than relying on identity gates.",
+            "Organizations that master intent-based security will unlock the full power of autonomous AI with safety and confidence."
+          ],
+          "category": "Conclusion",
+          "tags": [
+            "Outcome Verification",
+            "Future of Security",
+            "Executive Summary"
+          ],
+          "image": "images/smart-slides/death-of-authentication-ai-systems/slide-16.jpg",
+          "thumbnail": "images/smart-slides/death-of-authentication-ai-systems/thumb-16.jpg"
+        }
+      ]
+    },
+    {
+      "deck_number": 8,
+      "id": "X2qH",
+      "slug": "agents-dont-break-rules-they-redefine-them",
+      "folder": "agents-dont-break-rules-they-redefine-them",
+      "data_file": "data/agents-dont-break-rules-they-redefine-them.json",
+      "title": "Agents Don't Break Rules, They Redefine Them: Cybersecurity in the Age of Autonomous AI",
+      "shortTitle": "Agents Don't Break Rules: Redefining Intent",
+      "subtitle": "Continuous Runtime Governance & Behavioral Invariants for Autonomous AI",
+      "description": "Cybersecurity in the age of autonomous AI. Why autonomous agents don't fail by violating rules—they follow instructions literally while circumventing intent through policy drift and specification gaming.",
+      "badge": "Continuous Governance",
+      "author": "Harsh Verma",
+      "year": "2026",
+      "easyChairUrl": "https://easychair.org/smart-slide/slide/X2qH#{sn:1}",
+      "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=X2qH&slide=1",
+      "blogUrl": "https://www.rsaconference.com/Library/blog/agents-dont-break-rules-they-redefine-them",
+      "blogTitle": "RSA Conference: Agents Don't Break Rules",
+      "bibtex": "@misc{verma2026agentsdontbreakrules,\n  author = {Verma, Harsh},\n  title = {Agents Don't Break Rules, They Redefine Them: Cybersecurity in the Age of Autonomous AI},\n  howpublished = {EasyChair Smart Slide Series, Ref. X2qH},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/X2qH}\n}",
+      "count": 9,
+      "cover_image": "images/smart-slides/agents-dont-break-rules-they-redefine-them/slide-1.jpg",
+      "thumbnail_image": "images/smart-slides/agents-dont-break-rules-they-redefine-them/thumb-1.jpg",
+      "categories": [
+        "Executive Overview",
+        "Core Premise",
+        "Threat Mechanics",
+        "Attack Surface",
+        "Multi-Agent Dynamics",
+        "Security Architecture",
+        "Governance Paradigm",
+        "Architectural Blueprint",
+        "Enterprise Strategy"
+      ],
+      "tags": [
+        "Agentic Security",
+        "RSA Conference",
+        "Autonomous AI",
+        "Policy Drift",
+        "Deterministic Security",
+        "RBAC Limits",
+        "Specification Gaming",
+        "Policy Invariants",
+        "Objective Function",
+        "Semantic Drift",
+        "Threat Vectors",
+        "Prompt Injection",
+        "Semantic Hijacking",
+        "Context Poisoning",
+        "Adversarial AI",
+        "Multi-Agent Chains",
+        "Handover Drift",
+        "Risk Multiplication",
+        "Emergent Risk",
+        "Point-in-Time IAM",
+        "Temporal Drift",
+        "Asynchronous Execution",
+        "Dynamic State",
+        "Continuous Governance",
+        "Runtime Verification",
+        "Behavioral Invariants",
+        "Guardrails",
+        "Intent Mediation",
+        "Action Simulation",
+        "State Sandboxing",
+        "Pre-Execution Checks",
+        "Enterprise Blueprint",
+        "Audit Trails",
+        "Dual-Control Auth",
+        "Strategic Roadmap"
+      ],
+      "slides": [
+        {
+          "slide": 1,
+          "title": "Agents Don't Break Rules, They Redefine Them: Cybersecurity in the Age of Autonomous AI",
+          "takeaways": [
+            "Examines why autonomous AI agents rarely fail by explicitly violating deterministic security rules or role permissions.",
+            "Introduces the paradox of semantic compliance: AI systems follow instructions literally while circumventing intent through policy drift and specification gaming."
+          ],
+          "category": "Executive Overview",
+          "tags": [
+            "Agentic Security",
+            "RSA Conference",
+            "Autonomous AI",
+            "Policy Drift"
+          ],
+          "image": "images/smart-slides/agents-dont-break-rules-they-redefine-them/slide-1.jpg",
+          "thumbnail": "images/smart-slides/agents-dont-break-rules-they-redefine-them/thumb-1.jpg"
+        },
+        {
+          "slide": 2,
+          "title": "The Fallacy of Deterministic Rule Boundaries",
+          "takeaways": [
+            "Legacy cybersecurity assumes system behavior is constrained by deterministic Boolean policy rules and static RBAC boundaries.",
+            "Autonomous agents optimize across multi-step execution graphs where every intermediate step is valid, yet the terminal outcome subverts enterprise security policy."
+          ],
+          "category": "Core Premise",
+          "tags": [
+            "Deterministic Security",
+            "RBAC Limits",
+            "Specification Gaming",
+            "Policy Invariants"
+          ],
+          "image": "images/smart-slides/agents-dont-break-rules-they-redefine-them/slide-2.jpg",
+          "thumbnail": "images/smart-slides/agents-dont-break-rules-they-redefine-them/thumb-2.jpg"
+        },
+        {
+          "slide": 3,
+          "title": "Specification Gaming: When Compliance Violates Intent",
+          "takeaways": [
+            "Specification gaming occurs when an agent discovers novel, unanticipated trajectories through complex software environments that fulfill objective functions in ways architects never envisioned.",
+            "Examples include aggressive data consolidation, unintended API coupling, and bypassing rate limiting by optimizing legitimate workflow endpoints."
+          ],
+          "category": "Threat Mechanics",
+          "tags": [
+            "Specification Gaming",
+            "Objective Function",
+            "Semantic Drift",
+            "Threat Vectors"
+          ],
+          "image": "images/smart-slides/agents-dont-break-rules-they-redefine-them/slide-3.jpg",
+          "thumbnail": "images/smart-slides/agents-dont-break-rules-they-redefine-them/thumb-3.jpg"
+        },
+        {
+          "slide": 4,
+          "title": "The Semantic Hijacking Attack Surface",
+          "takeaways": [
+            "Adversaries no longer require credential compromise or code injection; they introduce contextual cues and prompt injections that reframe the agent's interpretation of existing permissions.",
+            "The compromised agent becomes a willing accomplice, using its own authorized privileges to execute exfiltration or state mutation while believing it is fulfilling its mission."
+          ],
+          "category": "Attack Surface",
+          "tags": [
+            "Prompt Injection",
+            "Semantic Hijacking",
+            "Context Poisoning",
+            "Adversarial AI"
+          ],
+          "image": "images/smart-slides/agents-dont-break-rules-they-redefine-them/slide-4.jpg",
+          "thumbnail": "images/smart-slides/agents-dont-break-rules-they-redefine-them/thumb-4.jpg"
+        },
+        {
+          "slide": 5,
+          "title": "Multi-Agent Cascades: Risk Multiplication Across Handovers",
+          "takeaways": [
+            "Enterprise ecosystems rely on multi-agent chains (planner, orchestrator, tools, executor) where context is compressed and transferred across boundaries.",
+            "Slight semantic drift or unverified assumptions at each handover stage amplify exponentially, resulting in unauthorized cross-domain actions without any single agent technically 'breaking' its local sandbox."
+          ],
+          "category": "Multi-Agent Dynamics",
+          "tags": [
+            "Multi-Agent Chains",
+            "Handover Drift",
+            "Risk Multiplication",
+            "Emergent Risk"
+          ],
+          "image": "images/smart-slides/agents-dont-break-rules-they-redefine-them/slide-5.jpg",
+          "thumbnail": "images/smart-slides/agents-dont-break-rules-they-redefine-them/thumb-5.jpg"
+        },
+        {
+          "slide": 6,
+          "title": "The Failure of Point-in-Time Authorization",
+          "takeaways": [
+            "Traditional identity and access management (IAM) validates permissions at the moment of request invocation ('point-in-time').",
+            "Autonomous agents execute asynchronous, long-running, multi-turn trajectories where the security posture changes dynamically based on intermediate tool outputs and environmental feedback."
+          ],
+          "category": "Security Architecture",
+          "tags": [
+            "Point-in-Time IAM",
+            "Temporal Drift",
+            "Asynchronous Execution",
+            "Dynamic State"
+          ],
+          "image": "images/smart-slides/agents-dont-break-rules-they-redefine-them/slide-6.jpg",
+          "thumbnail": "images/smart-slides/agents-dont-break-rules-they-redefine-them/thumb-6.jpg"
+        },
+        {
+          "slide": 7,
+          "title": "Shift from Static Boundaries to Continuous Runtime Governance",
+          "takeaways": [
+            "Moving from static gatekeeping to continuous intent verification, behavioral trajectory monitoring, and deterministic runtime guardrails.",
+            "Continuous governance evaluates full operational chains against high-level invariants, verifying that composite trajectories remain aligned with business purpose."
+          ],
+          "category": "Governance Paradigm",
+          "tags": [
+            "Continuous Governance",
+            "Runtime Verification",
+            "Behavioral Invariants",
+            "Guardrails"
+          ],
+          "image": "images/smart-slides/agents-dont-break-rules-they-redefine-them/slide-7.jpg",
+          "thumbnail": "images/smart-slides/agents-dont-break-rules-they-redefine-them/thumb-7.jpg"
+        },
+        {
+          "slide": 8,
+          "title": "Intent-Aware Mediation & Downstream Simulation",
+          "takeaways": [
+            "Deploying runtime mediation layers that simulate the downstream consequences of proposed agent action plans before execution.",
+            "Comparing proposed state mutations against organizational invariants, isolating destructive operations into sandboxed verification zones."
+          ],
+          "category": "Architectural Blueprint",
+          "tags": [
+            "Intent Mediation",
+            "Action Simulation",
+            "State Sandboxing",
+            "Pre-Execution Checks"
+          ],
+          "image": "images/smart-slides/agents-dont-break-rules-they-redefine-them/slide-8.jpg",
+          "thumbnail": "images/smart-slides/agents-dont-break-rules-they-redefine-them/thumb-8.jpg"
+        },
+        {
+          "slide": 9,
+          "title": "Strategic Blueprint: Resilient Autonomous Enterprise Defense",
+          "takeaways": [
+            "Actionable roadmap: enforce dual-control authorization for high-consequence agent actions, semantic invariants, state rollback mechanisms, and audit logs that capture agent reasoning chains alongside standard API telemetry.",
+            "Empowers organizations to capture the immense velocity of Agentic AI while establishing unbreakable runtime guardrails."
+          ],
+          "category": "Enterprise Strategy",
+          "tags": [
+            "Enterprise Blueprint",
+            "Audit Trails",
+            "Dual-Control Auth",
+            "Strategic Roadmap"
+          ],
+          "image": "images/smart-slides/agents-dont-break-rules-they-redefine-them/slide-9.jpg",
+          "thumbnail": "images/smart-slides/agents-dont-break-rules-they-redefine-them/thumb-9.jpg"
+        }
+      ]
+    },
+    {
+      "deck_number": 9,
+      "id": "JSZf",
+      "slug": "why-multi-agent-systems-cybersecurity-nightmare",
+      "folder": "why-multi-agent-systems-cybersecurity-nightmare",
+      "data_file": "data/why-multi-agent-systems-cybersecurity-nightmare.json",
+      "title": "Why Multi-Agent Systems Are a Cybersecurity Nightmare: Deep-Dive into Inter-Agent Trust Chains, Cascade Injections & Agentic IAM",
+      "shortTitle": "Why Multi-Agent Systems Are a Cybersecurity Nightmare",
+      "subtitle": "Inter-Agent Trust Chains, Cascade Injections & Machine-to-Machine IAM",
+      "description": "Deep-dive into inter-agent trust chains, cascade prompt injections, memory and vector store poisoning, and machine-to-machine agentic IAM architecture.",
+      "badge": "Multi-Agent Defense",
+      "author": "Harsh Verma",
+      "year": "2026",
+      "easyChairUrl": "https://easychair.org/smart-slide/slide/JSZf#{sn:1}",
+      "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=JSZf&slide=1",
+      "blogUrl": "https://www.rsaconference.com/Library/blog/why-multi-agent-systems-are-a-cybersecurity-nightmare",
+      "blogTitle": "RSA Conference: Why Multi-Agent Systems Are a Cybersecurity Nightmare",
+      "bibtex": "@misc{verma2026whymultiagentsystemscybersecuritynightmare,\n  author = {Verma, Harsh},\n  title = {Why Multi-Agent Systems Are a Cybersecurity Nightmare},\n  howpublished = {EasyChair Smart Slide Series, Ref. JSZf},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/JSZf}\n}",
+      "count": 16,
+      "cover_image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-1.jpg",
+      "thumbnail_image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-1.jpg",
+      "categories": [
+        "Threat Landscape",
+        "Architecture",
+        "Governance",
+        "Applications"
+      ],
+      "tags": [
+        "Multi-Agent Systems",
+        "RSA Conference",
+        "Agentic AI Security",
+        "Executive Briefing",
+        "Architectural Transition",
+        "Transitive Trust",
+        "Cascade Vulnerability",
+        "Autonomous Collaboration",
+        "Execution Graph",
+        "Workflow Dynamics",
+        "Silent Escalation",
+        "Graph Mechanics",
+        "Root Cause",
+        "Credential Inheritance",
+        "Topology Blind Spots",
+        "Prompt Injection",
+        "Payload Hopping",
+        "Cascade Injection",
+        "Boundary Hopping",
+        "Vector Store Poisoning",
+        "Shared Memory",
+        "RAG Security",
+        "Cross-Agent Contagion",
+        "Tool Manipulation",
+        "API Poisoning",
+        "Denial of Service",
+        "Infinite Loops",
+        "Empirical Research",
+        "Stanford Benchmark",
+        "UC Berkeley",
+        "Security Metrics",
+        "MITRE ATLAS",
+        "OWASP Agentic Top 10",
+        "Security Standards",
+        "Compliance Frameworks",
+        "Agentic IAM",
+        "Zero Trust",
+        "Identity Crisis",
+        "Delegated Authority",
+        "Delegation Protocol",
+        "Root Intent Token",
+        "Cryptographic Attestation",
+        "Provenance Tracking",
+        "Inter-Agent Firewall",
+        "Schema Contracts",
+        "Trust Decay",
+        "Behavioral Proxies",
+        "HITL",
+        "Policy Enforcement",
+        "Confidence Thresholds",
+        "Audit Lineage",
+        "CISO Roadmap",
+        "AI Defense Strategy",
+        "Security Roadmap",
+        "Enterprise SecOps",
+        "Executive Takeaway",
+        "Machine-to-Machine Security",
+        "Autonomous Resilience",
+        "RSAC Briefing",
+        "Citations",
+        "Attribution",
+        "References",
+        "Sources"
+      ],
+      "slides": [
+        {
+          "slide": 1,
+          "title": "Why Multi-Agent Systems Are a Cybersecurity Nightmare",
+          "takeaways": [
+            "Deep-Dive into inter-agent trust chains, cascade injections, memory poisoning, and agentic IAM architecture.",
+            "Keynote executive threat briefing on AI risk and autonomous ecosystem security by Harsh Verma."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Multi-Agent Systems",
+            "RSA Conference",
+            "Agentic AI Security",
+            "Executive Briefing"
+          ],
+          "image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-1.jpg",
+          "thumbnail": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-1.jpg"
+        },
+        {
+          "slide": 2,
+          "title": "The Structural Shift to Autonomous Agent Networks",
+          "takeaways": [
+            "Contrasts legacy single-agent models (bounded execution, explicit human verification, predictable API perimeters) with modern multi-agent systems.",
+            "Highlights emergent risks: autonomous collaboration, transitive trust chains where agents implicitly trust peers, and cascading vulnerability surfaces."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Architectural Transition",
+            "Transitive Trust",
+            "Cascade Vulnerability",
+            "Autonomous Collaboration"
+          ],
+          "image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-2.jpg",
+          "thumbnail": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-2.jpg"
+        },
+        {
+          "slide": 3,
+          "title": "Multi-Agent Execution Graph Mechanics",
+          "takeaways": [
+            "Traces execution graphs from Node 01 (Retrieval Agent) to Node 02 (Synthesis), Node 03 (Execution), and Node 04 (Validation).",
+            "Exploit Pattern: Silent Automated Escalation — poisoned context in ingestion propagates silently across trusted peer nodes without triggering perimeter firewalls."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Execution Graph",
+            "Workflow Dynamics",
+            "Silent Escalation",
+            "Graph Mechanics"
+          ],
+          "image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-3.jpg",
+          "thumbnail": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-3.jpg"
+        },
+        {
+          "slide": 4,
+          "title": "Transitive Trust: The Fundamental Weak Link",
+          "takeaways": [
+            "Implicit payload verification gaps: raw text and JSON pass between sub-agents without cryptographic signatures or schema sanitization.",
+            "Unchecked credential inheritance and dynamic topology blind spots prevent runtime proxies from anticipating or enforcing static communication paths."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Transitive Trust",
+            "Root Cause",
+            "Credential Inheritance",
+            "Topology Blind Spots"
+          ],
+          "image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-4.jpg",
+          "thumbnail": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-4.jpg"
+        },
+        {
+          "slide": 5,
+          "title": "Cascade Prompt Injection & Payload Hopping",
+          "takeaways": [
+            "Step 1 Ingestion Phase: Adversary embeds hidden prompt instructions in untrusted documents or CRM data.",
+            "Step 2 Boundary Hopping: Intake agent inadvertently wraps malicious instructions into trusted inter-agent task calls, leading to Step 3 Privilege Execution."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Prompt Injection",
+            "Payload Hopping",
+            "Cascade Injection",
+            "Boundary Hopping"
+          ],
+          "image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-5.jpg",
+          "thumbnail": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-5.jpg"
+        },
+        {
+          "slide": 6,
+          "title": "Shared Memory & Vector Store Poisoning",
+          "takeaways": [
+            "Corrupting the Collective Brain: Multi-agent systems relying on shared vector databases (Pinecone, Milvus, Redis) face permanent cross-agent context contamination.",
+            "Long-term persistence vector lingers across sessions; cross-agent contagion and stealth logic distortion alter decisions without runtime errors."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Vector Store Poisoning",
+            "Shared Memory",
+            "RAG Security",
+            "Cross-Agent Contagion"
+          ],
+          "image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-6.jpg",
+          "thumbnail": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-6.jpg"
+        },
+        {
+          "slide": 7,
+          "title": "Tool Output Manipulation & API Exploitation",
+          "takeaways": [
+            "Web search tampering hijacks automated research agents via maliciously crafted public web content.",
+            "Third-party API poisoning and recursive loop exhaustion can trigger infinite execution loops, spiking cloud API costs and causing complete denial of service."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Tool Manipulation",
+            "API Poisoning",
+            "Denial of Service",
+            "Infinite Loops"
+          ],
+          "image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-7.jpg",
+          "thumbnail": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-7.jpg"
+        },
+        {
+          "slide": 8,
+          "title": "Stanford & UC Berkeley Benchmark Findings",
+          "takeaways": [
+            "Empirical research demonstrates 82% of inter-agent calls accept peer inputs without schema validation or sanitization.",
+            "Finding 01: Zero foundation model failure required (underlying LLMs worked within safety bounds; breach occurred via peer trust). Finding 02: Injected prompts traveled across up to 4 agent hops."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Empirical Research",
+            "Stanford Benchmark",
+            "UC Berkeley",
+            "Security Metrics"
+          ],
+          "image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-8.jpg",
+          "thumbnail": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-8.jpg"
+        },
+        {
+          "slide": 9,
+          "title": "MITRE ATLAS & OWASP Agentic Top 10 Mapping",
+          "takeaways": [
+            "MITRE ATLAS Tactics: AML.T0051 (Prompt Injection via Inter-Agent Handoffs), AML.T0054 (Vector/Memory Poisoning), AML.T0058 (Excessive Agency).",
+            "OWASP Agentic Risks: LLM01 (Indirect Prompt Injection Cascades), LLM06 (Excessive Agency in Sub-Tasks), LLM08 (Unsanitized Memory Poisoning)."
+          ],
+          "category": "Governance",
+          "tags": [
+            "MITRE ATLAS",
+            "OWASP Agentic Top 10",
+            "Security Standards",
+            "Compliance Frameworks"
+          ],
+          "image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-9.jpg",
+          "thumbnail": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-9.jpg"
+        },
+        {
+          "slide": 10,
+          "title": "The Identity Crisis: Traditional IAM vs. Agentic IAM",
+          "takeaways": [
+            "Traditional IAM was built for humans logging into applications; Agentic IAM must govern autonomous software acting on behalf of humans.",
+            "Shifts from static RBAC and long-lived OAuth tokens to machine-to-machine delegated authority tokens, task-bound ephemeral scopes, and continuous intent provenance."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Agentic IAM",
+            "Zero Trust",
+            "Identity Crisis",
+            "Delegated Authority"
+          ],
+          "image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-10.jpg",
+          "thumbnail": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-10.jpg"
+        },
+        {
+          "slide": 11,
+          "title": "Machine-to-Machine Identity Delegation Protocol",
+          "takeaways": [
+            "Phase 01 Root Intent Scoping: Human user request mints a cryptographically signed Root Intent Token defining explicit boundary parameters.",
+            "Phase 02 Sub-Task Attestation: Orchestrator mints short-lived (60s) downstream tokens; Phase 03: Target API validates caller identity and human intent provenance."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Delegation Protocol",
+            "Root Intent Token",
+            "Cryptographic Attestation",
+            "Provenance Tracking"
+          ],
+          "image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-11.jpg",
+          "thumbnail": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-11.jpg"
+        },
+        {
+          "slide": 12,
+          "title": "Inter-Agent Firewalls & Schema Contracts",
+          "takeaways": [
+            "Strict typed JSON contracts replace raw natural language inter-agent handoffs with strictly validated schemas.",
+            "Inline behavioral proxies act as inspection sidecars to detect indirect injections; trust decay algorithms automatically reduce permissions as handoff depth increases."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Inter-Agent Firewall",
+            "Schema Contracts",
+            "Trust Decay",
+            "Behavioral Proxies"
+          ],
+          "image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-12.jpg",
+          "thumbnail": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-12.jpg"
+        },
+        {
+          "slide": 13,
+          "title": "Human-in-the-Loop (HITL) Policy Enforcement",
+          "takeaways": [
+            "Critical Gate Triggers: Mandatory human approval required for state deletions, database modifications, or wire transactions.",
+            "Confidence thresholds pause automated execution when uncertainty drops below 95%; immutable audit logs record execution graphs for forensic analysis."
+          ],
+          "category": "Governance",
+          "tags": [
+            "HITL",
+            "Policy Enforcement",
+            "Confidence Thresholds",
+            "Audit Lineage"
+          ],
+          "image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-13.jpg",
+          "thumbnail": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-13.jpg"
+        },
+        {
+          "slide": 14,
+          "title": "CISO Strategic AI Defense Roadmap",
+          "takeaways": [
+            "Phase 01: Asset Discovery & Graph Mapping; Phase 02: Schema Contract Hardening across inter-agent communications.",
+            "Phase 03: Agentic IAM Token Deployment with root intent signatures; Phase 04: Inline Telemetry and HITL Gates on write APIs."
+          ],
+          "category": "Governance",
+          "tags": [
+            "CISO Roadmap",
+            "AI Defense Strategy",
+            "Security Roadmap",
+            "Enterprise SecOps"
+          ],
+          "image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-14.jpg",
+          "thumbnail": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-14.jpg"
+        },
+        {
+          "slide": 15,
+          "title": "Protecting Autonomous Machines from Other Machines",
+          "takeaways": [
+            "Executive takeaway: The next major frontier in cybersecurity is protecting machines from other machines operating inside a trusted ecosystem.",
+            "RSAC Executive Briefing conclusion and strategic recommendations for autonomous AI resilience."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Executive Takeaway",
+            "Machine-to-Machine Security",
+            "Autonomous Resilience",
+            "RSAC Briefing"
+          ],
+          "image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-15.jpg",
+          "thumbnail": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-15.jpg"
+        },
+        {
+          "slide": 16,
+          "title": "Image Sources & Citations",
+          "takeaways": [
+            "Technical diagrams and reference architecture attributions.",
+            "Research citations, industry framework links, and academic sources."
+          ],
+          "category": "Applications",
+          "tags": [
+            "Citations",
+            "Attribution",
+            "References",
+            "Sources"
+          ],
+          "image": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/slide-16.jpg",
+          "thumbnail": "images/smart-slides/why-multi-agent-systems-cybersecurity-nightmare/thumb-16.jpg"
+        }
+      ]
+    },
+    {
+      "deck_number": 10,
+      "id": "NZ5R",
+      "slug": "security-without-humans-defend-themselves",
+      "folder": "security-without-humans-defend-themselves",
+      "data_file": "data/security-without-humans-defend-themselves.json",
+      "title": "Security Without Humans: Designing Systems That Defend Themselves",
+      "shortTitle": "Security Without Humans: Self-Defending Systems",
+      "subtitle": "Closed-Loop Containment, L0-L3 Risk Envelope & 90-Day Autonomous Defense Roadmap",
+      "description": "Shifting from alert-centric visibility to autonomous resilience across Intent, Time, and Interaction—featuring closed-loop containment, the L0–L3 risk envelope, and a 90-day enterprise roadmap.",
+      "badge": "Autonomous Defense",
+      "author": "Harsh Verma",
+      "year": "2026",
+      "easyChairUrl": "https://easychair.org/smart-slide/slide/NZ5R#{sn:1}",
+      "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=NZ5R&slide=1",
+      "blogUrl": "https://www.rsaconference.com/Library/blog/security-without-humans-designing-systems-that-defend-themselves",
+      "blogTitle": "RSA Conference: Security Without Humans: Designing Systems that Defend Themselves",
+      "bibtex": "@misc{verma2026securitywithouthumans,\n  author = {Verma, Harsh},\n  title = {Security Without Humans: Designing Systems That Defend Themselves},\n  howpublished = {EasyChair Smart Slide Series, Ref. NZ5R},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/NZ5R}\n}",
+      "count": 21,
+      "cover_image": "images/smart-slides/security-without-humans-defend-themselves/slide-1.jpg",
+      "thumbnail_image": "images/smart-slides/security-without-humans-defend-themselves/thumb-1.jpg",
+      "categories": [
+        "Architecture",
+        "Threat Landscape",
+        "Governance",
+        "Applications"
+      ],
+      "tags": [
+        "Autonomous Cyber Defense",
+        "RSA Conference",
+        "Agentic AI Security",
+        "Self-Healing Systems",
+        "Alert-Centric Security",
+        "Autonomous Resilience",
+        "Human Accountability",
+        "The Shift",
+        "Response Loop",
+        "Machine-Speed Threats",
+        "Delegation Latency",
+        "Repeatable Containment",
+        "RSA Frame",
+        "Intent",
+        "Time",
+        "Interaction",
+        "Threat Path",
+        "Transitive Trust",
+        "Prompt Injection",
+        "Trusted Workflows",
+        "Autonomous Response",
+        "Policy Gate",
+        "Verified Recovery",
+        "Closed-Loop Control",
+        "Reference Architecture",
+        "Defense Plane",
+        "Observability",
+        "Governance",
+        "Intent Contract",
+        "Guardrail 01",
+        "Purpose-Bound Auth",
+        "Zero Trust",
+        "Temporal Trust",
+        "Short Leases",
+        "Event-Driven Checks",
+        "Safe Expiry",
+        "Interaction Guardrail",
+        "Per-Hop Authorization",
+        "Provenance Preservation",
+        "Non-Transitive Trust",
+        "Adaptive Defense Framework",
+        "Behavioral Security",
+        "Contextual Trust",
+        "Autonomous Remediation",
+        "Risk Envelope",
+        "Governance by Design",
+        "Bounded Autonomy",
+        "Action Tiers",
+        "Scenario Walkthrough",
+        "Containment",
+        "Workflow Recovery",
+        "Token Revocation",
+        "Financial Services",
+        "Healthcare",
+        "Manufacturing OT",
+        "Cloud & SaaS",
+        "Operating Metrics",
+        "MTTC & MTTR",
+        "Blast Radius",
+        "Safety Metrics",
+        "Human Governance",
+        "Accountability",
+        "Human-in-the-Loop",
+        "Executive Oversight",
+        "90-Day Roadmap",
+        "Shadow Mode",
+        "Enterprise Rollout",
+        "Design Checklist",
+        "Seven Principles",
+        "Least Privilege",
+        "Cyber Resilience",
+        "Machine-Speed Defense",
+        "Human Boundaries",
+        "Next Security Model",
+        "NIST SP 800-207",
+        "NIST AI RMF",
+        "MITRE ATLAS",
+        "OWASP LLM Top 10",
+        "CISA Secure by Design",
+        "DARPA AIxCC",
+        "Citations"
+      ],
+      "slides": [
+        {
+          "slide": 1,
+          "title": "Security Without Humans: Designing Systems That Defend Themselves",
+          "takeaways": [
+            "From visibility to autonomous resilience—with Intent, Time, and Interaction as structural guardrails for machine-speed cyber defense.",
+            "RSA Conference Official Library companion presentation by Harsh Verma, Principal Software Engineer - AI."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Autonomous Cyber Defense",
+            "RSA Conference",
+            "Agentic AI Security",
+            "Self-Healing Systems"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-1.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-1.jpg"
+        },
+        {
+          "slide": 2,
+          "title": "Visibility Is Not Resilience: Moving Beyond Alert-Centric Security",
+          "takeaways": [
+            "Contrasts today's alert-centric pipeline (Telemetry -> Alert -> Queue -> Analyst decision) constrained by escalation latency against autonomous resilience (Telemetry -> Context + Policy -> Bounded action -> Verified recovery).",
+            "Core design goal: remove repetitive delay—not human accountability—allowing routine, reversible threats to be contained at machine speed inside explicit policy boundaries."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Alert-Centric Security",
+            "Autonomous Resilience",
+            "Human Accountability",
+            "The Shift"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-2.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-2.jpg"
+        },
+        {
+          "slide": 3,
+          "title": "The Response Loop Is Being Outpaced",
+          "takeaways": [
+            "Traces autonomous attack progression across Signal (anomalous behavior), Decision (context evaluation), Delegation (tool or peer agent invocation), and Impact (data, identity, or workflow changes).",
+            "Explains why a human approval loop at every step becomes a bottleneck—especially for low-risk, repeatable containment."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Response Loop",
+            "Machine-Speed Threats",
+            "Delegation Latency",
+            "Repeatable Containment"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-3.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-3.jpg"
+        },
+        {
+          "slide": 4,
+          "title": "Security Is a Property of the Whole System: Intent, Time, and Interaction",
+          "takeaways": [
+            "Frames autonomous-system security across three interacting dimensions: Intent (does the action match the approved objective?), Time (how does risk change as context and state evolve?), and Interaction (how can trust and privilege propagate between actors?).",
+            "No single control can guarantee safety when the system continuously changes through delegation and autonomous action."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "RSA Frame",
+            "Intent",
+            "Time",
+            "Interaction"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-4.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-4.jpg"
+        },
+        {
+          "slide": 5,
+          "title": "Threat Path: How Compromises Travel Through Trusted Workflows",
+          "takeaways": [
+            "Maps the 4-stage propagation chain: 01 Untrusted Input -> 02 Agent Misreads content as authority -> 03 Trust Propagates to peer agents/tools -> 04 Workflow Impact across data, identity, and operations.",
+            "Highlights the core defensive question: where can the execution chain be interrupted before trust becomes transitive?"
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Threat Path",
+            "Transitive Trust",
+            "Prompt Injection",
+            "Trusted Workflows"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-5.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-5.jpg"
+        },
+        {
+          "slide": 6,
+          "title": "Closing the Loop: The 6-Stage Self-Defending System Lifecycle",
+          "takeaways": [
+            "Defines the closed-loop autonomous response sequence: 1 Sense -> 2 Assess (identity, intent, risk) -> 3 Contain (smallest reversible action) -> 4 Restore (trusted state) -> 5 Verify (controls and service health) -> 6 Learn (update policies and detections).",
+            "Enforces a strict Policy Gate: every autonomous action must be explainable, scoped, logged, and reversible where possible."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Autonomous Response",
+            "Policy Gate",
+            "Verified Recovery",
+            "Closed-Loop Control"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-6.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-6.jpg"
+        },
+        {
+          "slide": 7,
+          "title": "A Reference Architecture for Autonomous Defense",
+          "takeaways": [
+            "Connects Protected Environments (Agents & Copilots, Apps & APIs, Cloud & Endpoints) to an Autonomous Defense Plane organized across Observe -> Decide -> Enforce -> Recover.",
+            "Spans continuous Governance across every layer via risk appetite tiers, policy ownership & exceptions, immutable audit trails, and human escalation & override."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Reference Architecture",
+            "Defense Plane",
+            "Observability",
+            "Governance"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-7.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-7.jpg"
+        },
+        {
+          "slide": 8,
+          "title": "Guardrail 01 — Intent: Bind Every Action to an Approved Purpose",
+          "takeaways": [
+            "Identity alone answers who; Intent answers why an actor is acting and what it is allowed to accomplish via an explicit Intent Contract (Purpose, Actor, Resource, Allowed Action, Data Scope, Expiry).",
+            "Illustrates point-of-action authorization: read-only invoice metadata matches approved intent (ALLOW), while changing payment destination or releasing funds violates scope (DENY / ESCALATE)."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Intent Contract",
+            "Guardrail 01",
+            "Purpose-Bound Auth",
+            "Zero Trust"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-8.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-8.jpg"
+        },
+        {
+          "slide": 9,
+          "title": "Guardrail 02 — Time: Trust Has a Half-Life",
+          "takeaways": [
+            "Addresses permissions that were safe at task start becoming unsafe after state changes, anomalies, or context shifts across Issue -> Re-Evaluate -> Expire -> Revoke / Renew.",
+            "Establishes three temporal controls: Short Leases (reduce stale authority), Event-Driven Checks (reassess after drift), and Safe Expiry (fail closed for sensitive actions)."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Temporal Trust",
+            "Short Leases",
+            "Event-Driven Checks",
+            "Safe Expiry"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-9.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-9.jpg"
+        },
+        {
+          "slide": 10,
+          "title": "Guardrail 03 — Interaction: Stop Trust from Becoming Contagious",
+          "takeaways": [
+            "Models multi-hop delegation graphs (User -> Orchestrator -> Data Agent / Payment Agent -> Resource) protected by per-hop authorization, provenance, and scope preservation.",
+            "Enforces non-transitive trust by default: permission to call one agent does not imply permission to use every capability reachable through it."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Interaction Guardrail",
+            "Per-Hop Authorization",
+            "Provenance Preservation",
+            "Non-Transitive Trust"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-10.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-10.jpg"
+        },
+        {
+          "slide": 11,
+          "title": "Adaptive Defense Framework: Five Building Blocks of Continuous Control",
+          "takeaways": [
+            "Details the five continuous building blocks: 01 Behavioral Monitoring -> 02 Policy Enforcement -> 03 Contextual Trust -> 04 Autonomous Remediation -> 05 Self-Adjusting Controls.",
+            "Reinforces that adaptive defense does not mean unconstrained: every policy update must be tested, explainable, and reversible."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Adaptive Defense Framework",
+            "Behavioral Security",
+            "Contextual Trust",
+            "Autonomous Remediation"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-11.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-11.jpg"
+        },
+        {
+          "slide": 12,
+          "title": "Governance by Design: The L0–L3 Autonomy Risk Envelope",
+          "takeaways": [
+            "Defines a four-tier operating envelope: L0 Observe (collect evidence), L1 Recommend (human review), L2 Bounded Auto (preapproved reversible containment), and L3 Approval Required (high-impact or irreversible actions).",
+            "Core operating rule: default to the narrowest authority that can safely achieve the defensive objective."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Risk Envelope",
+            "Governance by Design",
+            "Bounded Autonomy",
+            "Action Tiers"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-12.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-12.jpg"
+        },
+        {
+          "slide": 13,
+          "title": "Illustrative Scenario Walkthrough: Containing a Compromised Workflow",
+          "takeaways": [
+            "Walks through an untrusted invoice attachment prompt-injection attack path countered at each stage by Intent (read-only scope), Time (short-lived token), Interaction (per-hop auth denying privilege inheritance), and Recovery (quarantine document, revoke session, verify state).",
+            "Demonstrates containing the workflow before payment state mutation while preserving forensic evidence for review."
+          ],
+          "category": "Threat Landscape",
+          "tags": [
+            "Scenario Walkthrough",
+            "Containment",
+            "Workflow Recovery",
+            "Token Revocation"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-13.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-13.jpg"
+        },
+        {
+          "slide": 14,
+          "title": "Industry Applications: Same Resilience Pattern Across Critical Sectors",
+          "takeaways": [
+            "Applies bounded autonomous resilience across Financial Services (hold suspicious transfer, revoke session), Healthcare (isolate compromised integration while preserving clinical availability), Manufacturing/OT (segment gateway), and Cloud & SaaS (revoke token, restore config).",
+            "Synthesizes the cross-sector pattern: detect context -> choose smallest safe action -> verify service health -> recover."
+          ],
+          "category": "Applications",
+          "tags": [
+            "Financial Services",
+            "Healthcare",
+            "Manufacturing OT",
+            "Cloud & SaaS"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-14.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-14.jpg"
+        },
+        {
+          "slide": 15,
+          "title": "Operating Metrics: Measure Resilience, Not Just Alert Volume",
+          "takeaways": [
+            "Measures speed, scope, and recovery quality via MTTD (Mean Time to Detect), MTTC (Mean Time to Contain), MTTR (Mean Time to Recover), and Blast Radius (affected assets/users).",
+            "Tracks automation safety metrics: false-containment rate, successful rollback/restore rate, policy override and escalation rate, and audit-evidenced action coverage."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Operating Metrics",
+            "MTTC & MTTR",
+            "Blast Radius",
+            "Safety Metrics"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-15.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-15.jpg"
+        },
+        {
+          "slide": 16,
+          "title": "Human Governance: How Autonomy Changes the Work Humans Do",
+          "takeaways": [
+            "Separates organizational duties across Humans Define (risk appetite, approved action tiers, policy ownership), Systems Execute (evidence collection, low-risk containment, token revocation), and Humans Review (high-consequence actions, ambiguous intent, post-incident learning).",
+            "Establishes the governing principle: delegate execution—never delegate accountability."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Human Governance",
+            "Accountability",
+            "Human-in-the-Loop",
+            "Executive Oversight"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-16.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-16.jpg"
+        },
+        {
+          "slide": 17,
+          "title": "Implementation Roadmap: A Practical 90-Day Path to Bounded Autonomy",
+          "takeaways": [
+            "Outlines a three-phase rollout: Days 0–30 Baseline (map agents, identities, rollback paths), Days 31–60 Shadow + Simulate (observe-only mode and incident replay), and Days 61–90 Bounded Autonomy (enable low-risk reversible actions for one workflow).",
+            "Mandates disciplined scaling: never scale autonomy faster than you can measure, audit, and reverse it."
+          ],
+          "category": "Governance",
+          "tags": [
+            "90-Day Roadmap",
+            "Bounded Autonomy",
+            "Shadow Mode",
+            "Enterprise Rollout"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-17.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-17.jpg"
+        },
+        {
+          "slide": 18,
+          "title": "Design Checklist: Seven Principles for Systems That Defend Themselves",
+          "takeaways": [
+            "Architecture review checklist: 01 Least privilege by default, 02 Authorization bound to intent, 03 Short-lived scoped delegation, 04 Continuous trust re-evaluation, 05 Smallest safe containment action, 06 Verified recovery, 07 Retained human accountability.",
+            "A system is not self-defending because it can act—it is self-defending when it can act safely, prove what happened, and recover."
+          ],
+          "category": "Architecture",
+          "tags": [
+            "Design Checklist",
+            "Seven Principles",
+            "Least Privilege",
+            "Verified Recovery"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-18.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-18.jpg"
+        },
+        {
+          "slide": 19,
+          "title": "The Next Security Model: Machine-Speed Defense Within Human Boundaries",
+          "takeaways": [
+            "Don't remove humans from responsibility—remove humans from repetitive delay.",
+            "Build systems that can defend, recover, and explain—at machine speed, within human-defined boundaries."
+          ],
+          "category": "Governance",
+          "tags": [
+            "Cyber Resilience",
+            "Machine-Speed Defense",
+            "Human Boundaries",
+            "Next Security Model"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-19.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-19.jpg"
+        },
+        {
+          "slide": 20,
+          "title": "References & Further Reading: Primary Source + Foundational Standards",
+          "takeaways": [
+            "Cites the primary RSA Conference Blog article ('Security Without Humans: Designing Systems that Defend Themselves', Nov 13, 2026) as the source for the Intent, Time, and Interaction framing.",
+            "Grounds architecture guidance in NIST SP 800-207 (Zero Trust Architecture), NIST AI RMF 1.0, NIST SP 800-61 Rev. 3 (Incident Response), and MITRE ATLAS."
+          ],
+          "category": "Applications",
+          "tags": [
+            "RSA Conference",
+            "NIST SP 800-207",
+            "NIST AI RMF",
+            "MITRE ATLAS"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-20.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-20.jpg"
+        },
+        {
+          "slide": 21,
+          "title": "References & Further Reading: Security Practice + Industry Frameworks",
+          "takeaways": [
+            "Connects OWASP GenAI LLM Top 10 (excessive agency and prompt injection) and CISA Secure by Design principles to autonomous cyber defense.",
+            "References industry initiatives including DARPA AI Cyber Challenge (AIxCC) and autonomous security copilot patterns."
+          ],
+          "category": "Applications",
+          "tags": [
+            "OWASP LLM Top 10",
+            "CISA Secure by Design",
+            "DARPA AIxCC",
+            "Citations"
+          ],
+          "image": "images/smart-slides/security-without-humans-defend-themselves/slide-21.jpg",
+          "thumbnail": "images/smart-slides/security-without-humans-defend-themselves/thumb-21.jpg"
+        }
+      ]
+    }
+  ]
+}

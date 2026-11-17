@@ -13,6 +13,11 @@ across Harsh Verma's portfolio website:
 7. data/books_and_volumes.json
 8. data/blog_articles.json
 9. data/verified_profiles.json
+10. data/memberships_and_associations.json
+11. data/about.json
+12. data/professional_work.json
+13. data/slides.json
+14. data/projects_certification.json
 
 Every entry is structured as a direct key-value object containing verified links,
 dates, engagement types, detailed descriptions, organizers, and all related details.
@@ -263,7 +268,7 @@ def export_media():
 
 
 def export_awards():
-    """5. Export 27 prestigious awards and global technology honors."""
+    """5. Export 26 prestigious awards and global technology honors."""
     awards_path = os.path.join(ROOT_DIR, "awards_data.json")
     with open(awards_path, "r", encoding="utf-8") as f:
         awards = json.load(f)
@@ -313,7 +318,8 @@ def export_books():
                 "Self-Healing Agent Workflows",
                 "Enterprise AI Governance"
             ],
-            "catalog_url": "https://www.harshverma.me/page-books#beyond-ai-engineering",
+            "catalog_url": "https://www.beyondaiengineering.com/",
+            "website_url": "https://www.beyondaiengineering.com/",
             "cover_image": "images/books/book_creator_to_curator.png"
         },
         {
@@ -332,7 +338,8 @@ def export_books():
                 "Zero-Trust Agent Governance",
                 "Enterprise Security Architecture"
             ],
-            "catalog_url": "https://www.harshverma.me/page-books#ai-vs-ai",
+            "catalog_url": "https://www.beyondaivsai.com/",
+            "website_url": "https://www.beyondaivsai.com/",
             "cover_image": "images/books/book_cybersecurity_counteroffensive.png"
         },
         {
@@ -346,7 +353,7 @@ def export_books():
             "publisher": "Packt Publishing",
             "synopsis": "Official peer-reviewed technical evaluation of operational AI ethics frameworks, examining fairness metrics, algorithmic auditing, explainability in production deployments, and human-in-the-loop oversight.",
             "key_themes": ["AI Ethics", "Algorithmic Transparency", "Explainable AI (XAI)", "Responsible AI"],
-            "catalog_url": "https://www.packtpub.com/",
+            "catalog_url": "https://packt.link/MuEPg",
             "cover_image": "images/books/review_ai_ethics.png"
         },
         {
@@ -360,7 +367,7 @@ def export_books():
             "publisher": "Packt Publishing",
             "synopsis": "Rigorous technical review of end-to-end Python machine learning architectures, microservice model serving, distributed caching, and performance benchmarking for high-scale enterprise systems.",
             "key_themes": ["Python ML", "High-Throughput Pipelines", "Production AI", "Distributed Systems"],
-            "catalog_url": "https://www.packtpub.com/",
+            "catalog_url": "https://packt.link/pZ2C5",
             "cover_image": "images/books/review_hands_on_ai.png"
         },
         {
@@ -388,7 +395,7 @@ def export_books():
             "publisher": "Packt Publishing",
             "synopsis": "Comprehensive technical review of low-latency algorithmic trading backends, real-time market data streaming with Kafka and NumPy, and quantitative risk management architectures.",
             "key_themes": ["Algorithmic Trading", "Quantitative Systems", "Real-Time Streaming", "Python FinTech"],
-            "catalog_url": "https://www.packtpub.com/",
+            "catalog_url": "https://packt.link/8jmuy",
             "cover_image": "images/books/review_python_trading.png"
         },
         {
@@ -812,6 +819,518 @@ def export_professional_work():
     return {}
 
 
+def export_slides():
+    """13. Export unified Smart Slides catalog and per-slide details to data/slides.json."""
+    deck_definitions = [
+        {
+            "deck_number": 1,
+            "id": "ntzm5",
+            "slug": "agentic-security-governance",
+            "folder": "agentic-security-governance",
+            "data_file": "data/agentic-security-governance.json",
+            "title": "The Era of Agentic Security: Governance in the Age of Autonomy",
+            "shortTitle": "The Era of Agentic Security",
+            "subtitle": "Architecting Autonomous Security Operations & Verifiable AI Guardrails",
+            "description": "Architecting autonomous security operations (SecOps), managing non-deterministic workflows, verifiable AI guardrails, and the Hierarchy of Needs for AI agents.",
+            "badge": "Verified Academic Ref",
+            "author": "Harsh Verma",
+            "year": "2026",
+            "easyChairUrl": "https://easychair.org/smart-slide/slide/ntzm5",
+            "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=ntzm5&slide=1",
+            "blogUrl": None,
+            "blogTitle": None,
+            "bibtex": "@misc{verma2026agenticsecurity,\n  author = {Verma, Harsh},\n  title = {The Era of Agentic Security: Governance in the Age of Autonomy},\n  howpublished = {EasyChair Smart Slide Series, Ref. ntzm5},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/ntzm5}\n}",
+        },
+        {
+            "deck_number": 2,
+            "id": "T45r",
+            "slug": "powering-cybersecurity-genai",
+            "folder": "powering-cybersecurity-genai",
+            "data_file": "data/powering-cybersecurity-genai.json",
+            "title": "Powering Cybersecurity with Gen-AI and Intelligent Agents",
+            "shortTitle": "Powering Cybersecurity with Gen-AI",
+            "subtitle": "Autonomous Self-Healing Defense, Threat Summarizers & Rakshak-AI",
+            "description": "Addressing attack velocity (every 39 seconds) and $4.35M breach costs with autonomous self-healing agentic defense, threat summarizers, and Rakshak-AI.",
+            "badge": "Case Study Included",
+            "author": "Harsh Verma",
+            "year": "2026",
+            "easyChairUrl": "https://easychair.org/smart-slide/slide/T45r",
+            "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=T45r&slide=1",
+            "blogUrl": None,
+            "blogTitle": None,
+            "bibtex": "@misc{verma2026cybersecuritygenai,\n  author = {Verma, Harsh},\n  title = {Powering Cybersecurity with Gen-AI and Intelligent Agents},\n  howpublished = {EasyChair Smart Slide Series, Ref. T45r},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/T45r}\n}",
+        },
+        {
+            "deck_number": 3,
+            "id": "r92g",
+            "slug": "enterprises-multi-agent-systems",
+            "folder": "enterprises-multi-agent-systems",
+            "data_file": "data/enterprises-multi-agent-systems.json",
+            "title": "When Enterprises Become Multi-Agent Systems",
+            "shortTitle": "Enterprises as Multi-Agent Systems",
+            "subtitle": "Rethinking Security, Trust, and Control in the Agentic Era",
+            "description": "Rethinking security, trust boundaries, multi-agent orchestration, deterministic vs non-deterministic workflows, and enterprise governance in autonomous ecosystems.",
+            "badge": "Multi-Agent Architecture",
+            "author": "Harsh Verma",
+            "year": "2026",
+            "easyChairUrl": "https://easychair.org/smart-slide/slide/r92g#{sn:1}",
+            "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1",
+            "blogUrl": None,
+            "blogTitle": None,
+            "bibtex": "@misc{verma2026enterprisemultiagent,\n  author = {Verma, Harsh},\n  title = {When Enterprises Become Multi-Agent Systems},\n  howpublished = {EasyChair Smart Slide Series, Ref. r92g},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/r92g}\n}",
+        },
+        {
+            "deck_number": 4,
+            "id": "GxwP",
+            "slug": "agentic-security-defender-threat",
+            "folder": "agentic-security-defender-threat",
+            "data_file": "data/agentic-security-defender-threat.json",
+            "title": "Agentic Security: When AI Becomes Both Defender and Threat",
+            "shortTitle": "Agentic Security: Defender and Threat",
+            "subtitle": "Cybersecurity Paradigms for Autonomous Systems",
+            "description": "Exploring the cybersecurity battlefield, the new agentic attack surface, prompt injection defenses, multi-agent risk multiplication, and runtime intent enforcement.",
+            "badge": "Threat & Defense Playbook",
+            "author": "Harsh Verma",
+            "year": "2026",
+            "easyChairUrl": "https://easychair.org/smart-slide/slide/GxwP#{sn:1}",
+            "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1",
+            "blogUrl": None,
+            "blogTitle": None,
+            "bibtex": "@misc{verma2026agenticthreatdefender,\n  author = {Verma, Harsh},\n  title = {Agentic Security: When AI Becomes Both Defender and Threat},\n  howpublished = {EasyChair Smart Slide Series, Ref. GxwP},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/GxwP}\n}",
+        },
+        {
+            "deck_number": 5,
+            "id": "8WpM",
+            "slug": "hikerunner-loadtest-framework",
+            "folder": "hikerunner-loadtest-framework",
+            "data_file": "data/hikerunner-loadtest-framework.json",
+            "title": "HikeRunner: LoadTestFramework",
+            "shortTitle": "HikeRunner: LoadTestFramework",
+            "subtitle": "High-Throughput Distributed Performance Testing Architecture",
+            "description": "In-house distributed load testing framework to simulate real-world messaging user journeys, vertically & horizontally stressing backend DBs, caches, queues, and CI/CD pipelines.",
+            "badge": "Performance Engineering",
+            "author": "Harsh Verma",
+            "year": "2026",
+            "easyChairUrl": "https://easychair.org/smart-slide/slide/8WpM#{sn:1}",
+            "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=8WpM&slide=1",
+            "blogUrl": None,
+            "blogTitle": None,
+            "bibtex": "@misc{verma2026hikerunner,\n  author = {Verma, Harsh},\n  title = {HikeRunner: LoadTestFramework},\n  howpublished = {EasyChair Smart Slide Series, Ref. 8WpM},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/8WpM}\n}",
+        },
+        {
+            "deck_number": 6,
+            "id": "tHbS",
+            "slug": "cybersecurity-evolution-clean-attack",
+            "folder": "cybersecurity-evolution-clean-attack",
+            "data_file": "data/cybersecurity-evolution-clean-attack.json",
+            "title": "The Evolution of Cybersecurity: From Anomaly Detection to Intent-Based Security. The Clean Attack Problem: When Nothing Looks Wrong but Everything Is Compromised",
+            "shortTitle": "The Evolution of Cybersecurity: Clean Attack Problem",
+            "subtitle": "From Anomaly Detection to Intent Reasoning & Behavioral Sequencing",
+            "description": "The Clean Attack Problem: When nothing looks wrong but everything is compromised. Shifting from anomaly detection to intent reasoning, behavioral sequencing, and runtime decision analysis.",
+            "badge": "Intent-Based Security",
+            "author": "Harsh Verma",
+            "year": "2026",
+            "easyChairUrl": "https://easychair.org/smart-slide/slide/tHbS#{sn:1}",
+            "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=tHbS&slide=1",
+            "blogUrl": "https://www.rsaconference.com/library/blog/the-clean-attack-problem",
+            "blogTitle": "RSA Conference: The Clean Attack Problem",
+            "bibtex": "@misc{verma2026cybersecuritycleanattack,\n  author = {Verma, Harsh},\n  title = {The Evolution of Cybersecurity: From Anomaly Detection to Intent-Based Security. The Clean Attack Problem: When Nothing Looks Wrong but Everything Is Compromised},\n  howpublished = {EasyChair Smart Slide Series, Ref. tHbS},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/tHbS}\n}",
+        },
+        {
+            "deck_number": 7,
+            "id": "xJKk",
+            "slug": "death-of-authentication-ai-systems",
+            "folder": "death-of-authentication-ai-systems",
+            "data_file": "data/death-of-authentication-ai-systems.json",
+            "title": "The Death of Authentication: Why Identity Isn'T Enough for AI Systems",
+            "shortTitle": "The Death of Authentication: Identity Isn't Enough",
+            "subtitle": "Post-Authentication Risk, Behavioral Monitoring & Runtime Intent Analysis",
+            "description": "Addressing post-authentication risk and trusted-agent misuse. Why Zero Trust must evolve beyond static identity verification toward continuous behavioral monitoring and runtime intent analysis.",
+            "badge": "Zero Trust Evolution",
+            "author": "Harsh Verma",
+            "year": "2026",
+            "easyChairUrl": "https://easychair.org/smart-slide/slide/xJKk#{sn:1}",
+            "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=xJKk&slide=1",
+            "blogUrl": "https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems",
+            "blogTitle": "RSA Conference: The Death of Authentication",
+            "bibtex": "@misc{verma2026deathofauthentication,\n  author = {Verma, Harsh},\n  title = {The Death of Authentication: Why Identity Isn'T Enough for AI Systems},\n  howpublished = {EasyChair Smart Slide Series, Ref. xJKk},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/xJKk}\n}",
+        },
+        {
+            "deck_number": 8,
+            "id": "X2qH",
+            "slug": "agents-dont-break-rules-they-redefine-them",
+            "folder": "agents-dont-break-rules-they-redefine-them",
+            "data_file": "data/agents-dont-break-rules-they-redefine-them.json",
+            "title": "Agents Don't Break Rules, They Redefine Them: Cybersecurity in the Age of Autonomous AI",
+            "shortTitle": "Agents Don't Break Rules: Redefining Intent",
+            "subtitle": "Continuous Runtime Governance & Behavioral Invariants for Autonomous AI",
+            "description": "Cybersecurity in the age of autonomous AI. Why autonomous agents don't fail by violating rules—they follow instructions literally while circumventing intent through policy drift and specification gaming.",
+            "badge": "Continuous Governance",
+            "author": "Harsh Verma",
+            "year": "2026",
+            "easyChairUrl": "https://easychair.org/smart-slide/slide/X2qH#{sn:1}",
+            "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=X2qH&slide=1",
+            "blogUrl": "https://www.rsaconference.com/Library/blog/agents-dont-break-rules-they-redefine-them",
+            "blogTitle": "RSA Conference: Agents Don't Break Rules",
+            "bibtex": "@misc{verma2026agentsdontbreakrules,\n  author = {Verma, Harsh},\n  title = {Agents Don't Break Rules, They Redefine Them: Cybersecurity in the Age of Autonomous AI},\n  howpublished = {EasyChair Smart Slide Series, Ref. X2qH},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/X2qH}\n}",
+        },
+        {
+            "deck_number": 9,
+            "id": "JSZf",
+            "slug": "why-multi-agent-systems-cybersecurity-nightmare",
+            "folder": "why-multi-agent-systems-cybersecurity-nightmare",
+            "data_file": "data/why-multi-agent-systems-cybersecurity-nightmare.json",
+            "title": "Why Multi-Agent Systems Are a Cybersecurity Nightmare: Deep-Dive into Inter-Agent Trust Chains, Cascade Injections & Agentic IAM",
+            "shortTitle": "Why Multi-Agent Systems Are a Cybersecurity Nightmare",
+            "subtitle": "Inter-Agent Trust Chains, Cascade Injections & Machine-to-Machine IAM",
+            "description": "Deep-dive into inter-agent trust chains, cascade prompt injections, memory and vector store poisoning, and machine-to-machine agentic IAM architecture.",
+            "badge": "Multi-Agent Defense",
+            "author": "Harsh Verma",
+            "year": "2026",
+            "easyChairUrl": "https://easychair.org/smart-slide/slide/JSZf#{sn:1}",
+            "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=JSZf&slide=1",
+            "blogUrl": "https://www.rsaconference.com/Library/blog/why-multi-agent-systems-are-a-cybersecurity-nightmare",
+            "blogTitle": "RSA Conference: Why Multi-Agent Systems Are a Cybersecurity Nightmare",
+            "bibtex": "@misc{verma2026whymultiagentsystemscybersecuritynightmare,\n  author = {Verma, Harsh},\n  title = {Why Multi-Agent Systems Are a Cybersecurity Nightmare},\n  howpublished = {EasyChair Smart Slide Series, Ref. JSZf},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/JSZf}\n}",
+        },
+        {
+            "deck_number": 10,
+            "id": "NZ5R",
+            "slug": "security-without-humans-defend-themselves",
+            "folder": "security-without-humans-defend-themselves",
+            "data_file": "data/security-without-humans-defend-themselves.json",
+            "title": "Security Without Humans: Designing Systems That Defend Themselves",
+            "shortTitle": "Security Without Humans: Self-Defending Systems",
+            "subtitle": "Closed-Loop Containment, L0-L3 Risk Envelope & 90-Day Autonomous Defense Roadmap",
+            "description": "Shifting from alert-centric visibility to autonomous resilience across Intent, Time, and Interaction—featuring closed-loop containment, the L0–L3 risk envelope, and a 90-day enterprise roadmap.",
+            "badge": "Autonomous Defense",
+            "author": "Harsh Verma",
+            "year": "2026",
+            "easyChairUrl": "https://easychair.org/smart-slide/slide/NZ5R#{sn:1}",
+            "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=NZ5R&slide=1",
+            "blogUrl": "https://www.rsaconference.com/Library/blog/security-without-humans-designing-systems-that-defend-themselves",
+            "blogTitle": "RSA Conference: Security Without Humans: Designing Systems that Defend Themselves",
+            "bibtex": "@misc{verma2026securitywithouthumans,\n  author = {Verma, Harsh},\n  title = {Security Without Humans: Designing Systems That Defend Themselves},\n  howpublished = {EasyChair Smart Slide Series, Ref. NZ5R},\n  year = {2026},\n  url = {https://easychair.org/smart-slide/slide/NZ5R}\n}",
+        },
+    ]
+
+    decks_out = []
+    total_slides = 0
+    for meta in deck_definitions:
+        deck_file = os.path.join(ROOT_DIR, meta["data_file"])
+        raw_slides = []
+        if os.path.exists(deck_file):
+            with open(deck_file, "r", encoding="utf-8") as f:
+                raw_slides = json.load(f)
+
+        folder = meta["folder"]
+        enriched_slides = []
+        categories = []
+        all_tags = []
+        for s in raw_slides:
+            sn = s.get("slide")
+            cat = s.get("category", "")
+            tags = s.get("tags", [])
+            if cat and cat not in categories:
+                categories.append(cat)
+            for t in tags:
+                if t and t not in all_tags:
+                    all_tags.append(t)
+            enriched_slides.append({
+                "slide": sn,
+                "title": s.get("title", ""),
+                "takeaways": s.get("takeaways", []),
+                "category": cat,
+                "tags": tags,
+                "image": f"images/smart-slides/{folder}/slide-{sn}.jpg",
+                "thumbnail": f"images/smart-slides/{folder}/thumb-{sn}.jpg",
+            })
+
+        total_slides += len(enriched_slides)
+        deck_entry = dict(meta)
+        deck_entry["count"] = len(enriched_slides)
+        deck_entry["cover_image"] = f"images/smart-slides/{folder}/slide-1.jpg"
+        deck_entry["thumbnail_image"] = f"images/smart-slides/{folder}/thumb-1.jpg"
+        deck_entry["categories"] = categories
+        deck_entry["tags"] = all_tags
+        deck_entry["slides"] = enriched_slides
+        decks_out.append(deck_entry)
+
+    payload = {
+        "section": "Smart Slides & Keynote Hub",
+        "author": "Harsh Verma",
+        "easychair_author_url": "https://easychair.org/smart-slide/author/v5zJ",
+        "page_url": "https://www.harshverma.me/page-smart-slides",
+        "total_decks": len(decks_out),
+        "total_slides": total_slides,
+        "decks": decks_out,
+    }
+
+    output_path = os.path.join(DATA_DIR, "slides.json")
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+
+    print(f"Exported {len(decks_out)} smart slide decks ({total_slides} slides) to {output_path}")
+    return payload
+
+
+def export_projects_certification():
+    """14. Export all featured projects, widgets, and verified certifications to data/projects_certification.json."""
+    portfolio_path = os.path.join(ROOT_DIR, "page-portfolio.html")
+    with open(portfolio_path, "r", encoding="utf-8") as f:
+        html = f.read()
+
+    # Isolate Projects wrapper
+    proj_sec_match = re.search(
+        r'<div class="row projects-wrapper">([\s\S]*?)<!-- All Repositories Centered Action Row -->',
+        html,
+    )
+    proj_html = proj_sec_match.group(1) if proj_sec_match else ""
+
+    # Split project columns cleanly
+    proj_chunks = re.split(r'(?=<div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 )', proj_html)
+    projects = []
+    widgets = []
+
+    domain_label_map = {
+        "ai": "AI & ML",
+        "software": "Software & Systems",
+        "bigdata": "Big Data",
+        "nlp": "NLP & Speech",
+        "vision": "Computer Vision",
+    }
+
+    for chunk in proj_chunks:
+        chunk = chunk.strip()
+        if not chunk.startswith('<div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 '):
+            continue
+
+        open_tag_match = re.match(r'<div ([^>]+)>', chunk)
+        if not open_tag_match:
+            continue
+        attrs = open_tag_match.group(1)
+
+        cls_match = re.search(r'class="([^"]+)"', attrs)
+        classes = cls_match.group(1).split() if cls_match else []
+        is_widget = "project-grid-filler-widget" in classes
+
+        id_match = re.search(r'id="([^"]+)"', attrs)
+        widget_type_match = re.search(r'data-widget="([^"]+)"', attrs)
+        desc_attr_match = re.search(r'data-description="([^"]*)"', attrs)
+        tags_attr_match = re.search(r'data-tags="([^"]*)"', attrs)
+
+        categories = [c for c in classes if c in domain_label_map]
+        category_labels = [domain_label_map[c] for c in categories]
+
+        status_match = re.search(r'<span class="proj-status-badge ([^"]+)"[^>]*>([\s\S]*?)</span>', chunk)
+        status_class = status_match.group(1).strip() if status_match else ""
+        status_label = clean_text(status_match.group(2)) if status_match else ""
+
+        thumb_match = re.search(r'<img[^>]*class="portfolio-thumb-img"[^>]*src="([^"]+)"', chunk)
+        if not thumb_match:
+            thumb_match = re.search(r'<img[^>]*src="([^"]+)"[^>]*class="portfolio-thumb-img"', chunk)
+        image = thumb_match.group(1).strip() if thumb_match else ""
+
+        domain_match = re.search(r'<span class="proj-domain-badge"[^>]*>([\s\S]*?)</span>', chunk)
+        domain = clean_text(domain_match.group(1)) if domain_match else ""
+
+        metric_match = re.search(r'<span class="proj-metric-badge"[^>]*>([\s\S]*?)</span>', chunk)
+        metric = clean_text(metric_match.group(1)) if metric_match else ""
+
+        title_match = re.search(
+            r'<h5 class="proj-card-title"[^>]*>\s*<a\s+[^>]*href="([^"]+)"[^>]*>([\s\S]*?)</a>\s*</h5>',
+            chunk,
+        )
+        primary_url = clean_text(title_match.group(1)) if title_match else ""
+        title = clean_text(title_match.group(2)) if title_match else ""
+
+        desc_match = re.search(r'<p class="proj-card-desc[^"]*">([\s\S]*?)</p>', chunk)
+        description = clean_text(desc_match.group(1)) if desc_match else (clean_text(desc_attr_match.group(1)) if desc_attr_match else "")
+
+        tags = [clean_text(t) for t in re.findall(r'<span class="proj-tag-pill">([\s\S]*?)</span>', chunk)]
+        if not tags and tags_attr_match:
+            tags = [t.strip() for t in tags_attr_match.group(1).split(",") if t.strip()]
+
+        repo_name = ""
+        if "github.com/iamharshverma/" in primary_url:
+            repo_name = primary_url.rstrip("/").split("/")[-1]
+
+        actions = []
+        actions_match = re.search(r'<div class="proj-card-actions">([\s\S]*?)</div>', chunk)
+        if actions_match:
+            for am in re.finditer(r'<a\s+[^>]*href="([^"]+)"[^>]*>([\s\S]*?)</a>', actions_match.group(1)):
+                actions.append({
+                    "label": clean_text(am.group(2)),
+                    "url": clean_text(am.group(1)),
+                })
+
+        slug_id = (
+            id_match.group(1)
+            if id_match
+            else "proj-" + re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+        )
+
+        entry = {
+            "id": slug_id,
+            "title": title,
+            "domain": domain,
+            "status": status_label,
+            "status_type": status_class.replace("status-", ""),
+            "metric": metric,
+            "categories": categories,
+            "category_labels": category_labels,
+            "description": description,
+            "tags": tags,
+            "url": primary_url,
+            "github_url": primary_url if "github.com" in primary_url else None,
+            "repository_name": repo_name or None,
+            "preview_image": image,
+            "actions": actions,
+            "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
+        }
+
+        if is_widget:
+            entry["widget_type"] = widget_type_match.group(1) if widget_type_match else "hub-widget"
+            widgets.append(entry)
+        else:
+            entry["project_number"] = len(projects) + 1
+            projects.append(entry)
+
+    # Isolate Certifications grid
+    cert_sec_match = re.search(
+        r'<div class="row" id="certGridContainer">([\s\S]*?)<!-- Complete Certifications Repository Callout Banner -->',
+        html,
+    )
+    cert_html = cert_sec_match.group(1) if cert_sec_match else ""
+    cert_chunks = re.split(r'(?=<div class="col-lg-4 col-md-6 col-12 mb-4 cert-grid-item")', cert_html)
+
+    cert_cat_label_map = {
+        "gcp": "Google Cloud & GCP",
+        "ai": "AI & Deep Learning",
+        "bigdata": "Data Science & Big Data",
+        "software": "Software & DevOps",
+    }
+
+    certifications = []
+    for chunk in cert_chunks:
+        chunk = chunk.strip()
+        if not chunk.startswith('<div class="col-lg-4 col-md-6 col-12 mb-4 cert-grid-item"'):
+            continue
+
+        open_tag_match = re.match(r'<div ([^>]+)>', chunk)
+        if not open_tag_match:
+            continue
+        attrs = open_tag_match.group(1)
+
+        cat_match = re.search(r'data-category="([^"]*)"', attrs)
+        category = cat_match.group(1).strip() if cat_match else ""
+        search_match = re.search(r'data-search="([^"]*)"', attrs)
+        search_keywords = clean_text(search_match.group(1)) if search_match else ""
+
+        img_match = re.search(r'<img[^>]*class="cert-card-img"[^>]*src="([^"]+)"', chunk)
+        if not img_match:
+            img_match = re.search(r'<img[^>]*src="([^"]+)"[^>]*class="cert-card-img"', chunk)
+        image = img_match.group(1).strip() if img_match else ""
+
+        issuer_badge_match = re.search(r'<span class="cert-issuer-badge"[^>]*>([\s\S]*?)</span>', chunk)
+        issuer_badge = clean_text(issuer_badge_match.group(1)) if issuer_badge_match else ""
+
+        topic_badge_match = re.search(r'<span class="cert-topic-badge[^"]*"[^>]*>([\s\S]*?)</span>', chunk)
+        topic_badge = clean_text(topic_badge_match.group(1)) if topic_badge_match else ""
+
+        title_match = re.search(r'<h5 class="cert-title"(?:\s+title="([^"]*)")?[^>]*>([\s\S]*?)</h5>', chunk)
+        full_title = clean_text(title_match.group(1)) if (title_match and title_match.group(1)) else ""
+        title = clean_text(title_match.group(2)) if title_match else ""
+        if not full_title:
+            full_title = title
+
+        issuer_line_match = re.search(r'<div class="cert-issuer-line">([\s\S]*?)</div>', chunk)
+        issuer_line = clean_text(issuer_line_match.group(1)) if issuer_line_match else ""
+
+        issuer_parts = [p.strip() for p in issuer_line.split("•") if p.strip()]
+        issuer = issuer_parts[0] if issuer_parts else issuer_badge
+        platform = issuer_parts[1] if len(issuer_parts) > 1 else ("Coursera" if "coursera" in issuer_line.lower() else issuer_badge)
+
+        tags = [clean_text(t) for t in re.findall(r'<span class="cert-tag">([\s\S]*?)</span>', chunk)]
+
+        status_match = re.search(r'<span class="cert-status-badge">([\s\S]*?)</span>', chunk)
+        status_label = clean_text(status_match.group(1)) if status_match else "Verified Credential"
+
+        cert_slug = "cert-" + re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+
+        certifications.append({
+            "id": cert_slug,
+            "certificate_number": len(certifications) + 1,
+            "title": title,
+            "full_title": full_title,
+            "category": category,
+            "category_label": cert_cat_label_map.get(category, category.title()),
+            "topic_badge": topic_badge,
+            "issuer": issuer,
+            "issuer_badge": issuer_badge,
+            "platform": platform,
+            "issuer_line": issuer_line,
+            "status": status_label,
+            "tags": tags,
+            "search_keywords": search_keywords,
+            "image": image,
+            "preview_url": f"https://www.harshverma.me/{image}" if image else "",
+            "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+            "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+        })
+
+    # Compute structured summary breakdowns
+    domain_counts = {}
+    for c_key, c_label in domain_label_map.items():
+        domain_counts[c_key] = {
+            "label": c_label,
+            "count": sum(1 for p in projects if c_key in p["categories"]),
+        }
+
+    status_counts = {}
+    for p in projects:
+        st = p["status"] or "Other"
+        status_counts[st] = status_counts.get(st, 0) + 1
+
+    cert_track_counts = {}
+    for c_key, c_label in cert_cat_label_map.items():
+        cert_track_counts[c_key] = {
+            "label": c_label,
+            "count": sum(1 for c in certifications if c["category"] == c_key),
+        }
+
+    payload = {
+        "section": "Portfolio Projects & Verified Certifications",
+        "author": "Harsh Verma",
+        "page_url": "https://www.harshverma.me/page-portfolio",
+        "github_profile": "https://github.com/iamharshverma",
+        "certificates_archive_repo": "https://github.com/iamharshverma/CertificatesAccomplishment",
+        "summary_stats": {
+            "total_projects": len(projects),
+            "total_hub_widgets": len(widgets),
+            "total_certifications": len(certifications),
+            "completed_specializations_total": "30+",
+            "github_repositories_total": "60+",
+            "open_source_verified_pct": "100%",
+            "project_domains": domain_counts,
+            "project_status_breakdown": status_counts,
+            "certification_tracks": cert_track_counts,
+        },
+        "projects": projects,
+        "hub_widgets": widgets,
+        "certifications": certifications,
+    }
+
+    output_path = os.path.join(DATA_DIR, "projects_certification.json")
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+
+    print(
+        f"Exported {len(projects)} projects, {len(widgets)} hub widgets, and {len(certifications)} certifications to {output_path}"
+    )
+    return payload
+
+
 def main():
     print("=== Exporting All Portfolio Sections to Individual Comprehensive JSON Files ===")
     j = export_judging()
@@ -826,6 +1345,8 @@ def main():
     ma = export_memberships_and_associations()
     ab = export_about()
     pw = export_professional_work()
+    sl = export_slides()
+    pc = export_projects_certification()
 
     print("\nSummary of Exported Files:")
     print(f"1.  data/judging_engagements.json:           {len(j)} records")
@@ -840,6 +1361,8 @@ def main():
     print(f"10. data/memberships_and_associations.json: {len(ma)} records")
     print(f"11. data/about.json:                         {len(ab)} root sections")
     print(f"12. data/professional_work.json:             {len(pw)} root sections")
+    print(f"13. data/slides.json:                        {sl['total_decks']} decks ({sl['total_slides']} slides)")
+    print(f"14. data/projects_certification.json:        {pc['summary_stats']['total_projects']} projects, {pc['summary_stats']['total_hub_widgets']} widgets, {pc['summary_stats']['total_certifications']} certifications")
     print("================================================================================")
 
 

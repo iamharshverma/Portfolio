@@ -570,6 +570,75 @@ badges = {
   <text x="200" y="174" fill="#DDD6FE" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle">MILESTONE CERTIFICATE OF ACHIEVEMENT</text>
   <text x="200" y="202" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">Volunteer Mentorship to 1M+ Global Learning Community</text>
 </svg>''',
+
+    "adplist_mentorship_milestones.svg": '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g-adp-merged" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1128"/>
+      <stop offset="55%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
+    <linearGradient id="adp-merged-coral" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7A6E"/>
+      <stop offset="100%" stop-color="#FF4336"/>
+    </linearGradient>
+    <linearGradient id="adp-merged-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#9333EA"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#g-adp-merged)"/>
+  <rect x="8" y="8" width="384" height="224" rx="12" fill="none" stroke="url(#adp-merged-coral)" stroke-width="2" stroke-opacity="0.85"/>
+  <!-- Dual Clock & Verified Check Emblem -->
+  <g transform="translate(172, 50) scale(0.8)">
+    <circle cx="0" cy="0" r="22" fill="none" stroke="url(#adp-merged-coral)" stroke-width="3"/>
+    <line x1="0" y1="0" x2="0" y2="-12" stroke="url(#adp-merged-coral)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="10" y2="0" stroke="url(#adp-merged-coral)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(228, 50) scale(0.8)">
+    <circle cx="0" cy="0" r="22" fill="none" stroke="url(#adp-merged-purple)" stroke-width="3"/>
+    <polyline points="-10,0 -3,8 11,-6" fill="none" stroke="url(#adp-merged-purple)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="200" y="114" fill="url(#adp-merged-coral)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" letter-spacing="2">ADPLIST GLOBAL MENTORSHIP</text>
+  <text x="200" y="144" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17.5" font-weight="800" text-anchor="middle">1,000+ MINUTES · 50+ SESSIONS</text>
+  <text x="200" y="172" fill="#DDD6FE" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" letter-spacing="0.6">6 COMMUNITY CERTIFICATION MILESTONES</text>
+  <text x="200" y="200" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" text-anchor="middle">100 · 500 · 1,000+ Mins &amp; 10 · 25 · 50+ 1-on-1 Sessions</text>
+</svg>''',
+
+    "adplist_community_recognition.svg": '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g-adp-rec" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1128"/>
+      <stop offset="55%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
+    <linearGradient id="adp-rec-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E879F9"/>
+      <stop offset="50%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#9333EA"/>
+    </linearGradient>
+    <linearGradient id="adp-rec-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#g-adp-rec)"/>
+  <rect x="8" y="8" width="384" height="224" rx="12" fill="none" stroke="url(#adp-rec-purple)" stroke-width="2" stroke-opacity="0.9"/>
+  <!-- Crown & Star Recognition Emblem -->
+  <g transform="translate(200, 48) scale(0.88)">
+    <circle cx="0" cy="0" r="26" fill="none" stroke="url(#adp-rec-purple)" stroke-width="2" opacity="0.65"/>
+    <path d="M-20,10 L-14,-10 L-4,2 L0,-14 L4,2 L14,-10 L20,10 Z" fill="url(#adp-rec-gold)"/>
+    <circle cx="-14" cy="-13" r="2.5" fill="url(#adp-rec-purple)"/>
+    <circle cx="0" cy="-17" r="3" fill="url(#adp-rec-gold)"/>
+    <circle cx="14" cy="-13" r="2.5" fill="url(#adp-rec-purple)"/>
+    <rect x="-20" y="13" width="40" height="4" rx="2" fill="url(#adp-rec-purple)"/>
+  </g>
+  <text x="200" y="112" fill="url(#adp-rec-purple)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" letter-spacing="2">ADPLIST COMMUNITY RECOGNITION</text>
+  <text x="200" y="142" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="800" text-anchor="middle">TOP 1% AI · TOP 50 ENGINEERING</text>
+  <text x="200" y="170" fill="url(#adp-rec-gold)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="0.8">TOP 10 FRESH AI &amp; ML MENTOR</text>
+  <text x="200" y="198" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" text-anchor="middle">Oct · Sep · Jun 2026 Verified Certifications</text>
+</svg>''',
     "nvtc_cyber50.svg": '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
   <defs>
     <linearGradient id="bg-nvtc" x1="0%" y1="0%" x2="100%" y2="100%">

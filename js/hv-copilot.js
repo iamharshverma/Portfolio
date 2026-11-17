@@ -673,7 +673,7 @@ I am your intelligent liaison grounded in Harsh Verma's **27 Global Awards**, **
 
 How can I assist you today? You can ask about:
 - **Executive Biography & Technical Focus**
-- **27 Prestigious Recognitions & Fellowships**
+- **27 Prestigious Recognitions &amp; Fellowships**
 - **Authored AI Agent & Cyber Defense Books**
 - **Speaking Engagements & Keynote Bookings**`;
 
@@ -1085,6 +1085,7 @@ Harsh Verma brings over **12+ years of proven technical leadership** across ente
 
 Harsh's verified keynote slide decks are available via an interactive slide player with slide-by-slide citations and downloads:
 
+- **Security Without Humans: Designing Systems That Defend Themselves**: 21-slide framework on autonomous cyber resilience, Intent/Time/Interaction guardrails, closed-loop containment, and the L0–L3 risk envelope (EasyChair: NZ5R, linked with RSA Conference).
 - **Why Multi-Agent Systems Are a Cybersecurity Nightmare**: Deep-dive into inter-agent trust chains, cascade injections, memory poisoning, and agentic IAM architecture (EasyChair: JSZf, linked with RSA Conference).
 - **Agents Don't Break Rules, They Redefine Them**: RSA Conference analysis on autonomous AI agents, policy drift, and continuous runtime governance (EasyChair: X2qH).
 - **The Death of Authentication**: Why identity isn't enough for AI systems (EasyChair: xJKk).

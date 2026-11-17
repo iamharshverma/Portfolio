@@ -28,10 +28,10 @@
     <priority>0.90</priority>
   </url>
 
-  <!-- 5. 27 International Honors, Forttuna Global 100, Nobel Technology Gold, TITAN -->
+  <!-- 5. 26 International Honors, Forttuna Global 100, Nobel Technology Gold, TITAN -->
   <url>
     <loc>https://www.harshverma.me/page-awards</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -79,7 +79,7 @@
   <!-- 11. Interactive Keynote Slide Showcases & AI Architecture Decks -->
   <url>
     <loc>https://www.harshverma.me/page-smart-slides</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -87,7 +87,7 @@
   <!-- 12. Keynote Presentations & Technical Slide Decks -->
   <url>
     <loc>https://www.harshverma.me/page-slides</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>

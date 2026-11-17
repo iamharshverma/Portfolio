@@ -15,6 +15,12 @@ DATA_DIR = os.path.join(ROOT_DIR, "data")
 os.makedirs(DATA_DIR, exist_ok=True)
 
 def generate_about_json():
+    awards_path = os.path.join(ROOT_DIR, "awards_data.json")
+    awards_count = 27
+    if os.path.exists(awards_path):
+        with open(awards_path, "r", encoding="utf-8") as af:
+            awards_count = len(json.load(af))
+
     about_data = {
         "metadata": {
             "document_title": "Harsh Verma - Official Executive Profile & About Dossier",
@@ -33,7 +39,7 @@ def generate_about_json():
             "location": "Silicon Valley, California, United States",
             "official_website": "https://www.harshverma.me",
             "email_contact": "contact@harshverma.me",
-            "short_bio": "Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, an elected Fellow of the British Computer Society (FBCS), Senior Member of IEEE (SMIEEE), and Forbes Technology Council member. With 27 peer-reviewed papers, 6 patents, 2 authored books, and 27 global awards, he pioneers autonomous agent architectures and enterprise AI cyber defense."
+            "short_bio": f"Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, an elected Fellow of the British Computer Society (FBCS), Senior Member of IEEE (SMIEEE), and Forbes Technology Council member. With 27 peer-reviewed papers, 6 patents, 2 authored books, and {awards_count} global awards, he pioneers autonomous agent architectures and enterprise AI cyber defense."
         },
         "authority_identifiers": {
             "wikidata_id": "Q139827028",
@@ -215,7 +221,7 @@ def generate_about_json():
             "patents_total": 6,
             "patents_granted": 2,
             "patents_in_process": 4,
-            "prestigious_awards_and_honors": 27,
+            "prestigious_awards_and_honors": awards_count,
             "tier1_media_features": 44,
             "verified_directory_profiles": 57,
             "fellowships_and_councils": 26,

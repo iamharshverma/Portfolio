@@ -15,7 +15,8 @@
       "Self-Healing Agent Workflows",
       "Enterprise AI Governance"
     ],
-    "catalog_url": "https://www.harshverma.me/page-books#beyond-ai-engineering",
+    "catalog_url": "https://www.beyondaiengineering.com/",
+    "website_url": "https://www.beyondaiengineering.com/",
     "cover_image": "images/books/book_creator_to_curator.png"
   },
   {
@@ -34,7 +35,8 @@
       "Zero-Trust Agent Governance",
       "Enterprise Security Architecture"
     ],
-    "catalog_url": "https://www.harshverma.me/page-books#ai-vs-ai",
+    "catalog_url": "https://www.beyondaivsai.com/",
+    "website_url": "https://www.beyondaivsai.com/",
     "cover_image": "images/books/book_cybersecurity_counteroffensive.png"
   },
   {
@@ -53,7 +55,7 @@
       "Explainable AI (XAI)",
       "Responsible AI"
     ],
-    "catalog_url": "https://www.packtpub.com/",
+    "catalog_url": "https://packt.link/MuEPg",
     "cover_image": "images/books/review_ai_ethics.png"
   },
   {
@@ -72,7 +74,7 @@
       "Production AI",
       "Distributed Systems"
     ],
-    "catalog_url": "https://www.packtpub.com/",
+    "catalog_url": "https://packt.link/pZ2C5",
     "cover_image": "images/books/review_hands_on_ai.png"
   },
   {
@@ -110,7 +112,7 @@
       "Real-Time Streaming",
       "Python FinTech"
     ],
-    "catalog_url": "https://www.packtpub.com/",
+    "catalog_url": "https://packt.link/8jmuy",
     "cover_image": "images/books/review_python_trading.png"
   },
   {

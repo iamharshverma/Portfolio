@@ -346,6 +346,31 @@ def sync_html_and_generators(stats):
                 content
             )
             content = re.sub(
+                r'\b(?:24|25|26|27)\s+Global Honors\s*(?:&amp;|&)\s*Distinctions\b',
+                f'{a_num} Global Honors &amp; Distinctions',
+                content
+            )
+            content = re.sub(
+                r'\b(?:24|25|26|27)\s+Prestigious Recognitions\s*(?:&amp;|&)\s*Fellowships\b',
+                f'{a_num} Prestigious Recognitions &amp; Fellowships',
+                content
+            )
+            content = re.sub(
+                r'\[View\s+(?:24|25|26|27)\s+Awards\]',
+                f'[View {a_num} Awards]',
+                content
+            )
+            content = re.sub(
+                r'\bover\s+(?:24|25|26|27)\s+global awards\b',
+                f'over {a_num} global awards',
+                content
+            )
+            content = re.sub(
+                r'\blist of\s+(?:24|25|26|27)\+?\s+awards,',
+                f'list of {a_num} awards,',
+                content
+            )
+            content = re.sub(
                 r'\b(?:24|25|26|27)\+?\s+Major Accreditations\b',
                 f'{a_disp_plus} Major Accreditations',
                 content

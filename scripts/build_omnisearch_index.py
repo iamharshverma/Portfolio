@@ -5,11 +5,11 @@ Builds the unified 226-record Executive Omnisearch Index from:
 - research_publications.json (27)
 - media_features.json (45)
 - speaking_engagements.json (12) + judging_engagements.json (22) = 34 speaking & keynote records
-- awards_and_honors.json (27)
+- awards_and_honors.json (26)
 - verified_profiles.json (57)
 - memberships_and_associations.json (28)
 - books_and_volumes.json (8)
-Total = 226 records.
+Total = 225 records.
 """
 
 import os
@@ -137,7 +137,7 @@ def build_index():
             "description": desc[:180] + ("..." if len(desc) > 180 else "")
         })
 
-    # 4. Awards & Honors (27 records)
+    # 4. Awards & Honors (26 records)
     with open(os.path.join(DATA_DIR, "awards_and_honors.json"), "r", encoding="utf-8") as f:
         awards = json.load(f)
     for a in awards:

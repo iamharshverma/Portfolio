@@ -1,0 +1,1216 @@
+{
+  "section": "Portfolio Projects & Verified Certifications",
+  "author": "Harsh Verma",
+  "page_url": "https://www.harshverma.me/page-portfolio",
+  "github_profile": "https://github.com/iamharshverma",
+  "certificates_archive_repo": "https://github.com/iamharshverma/CertificatesAccomplishment",
+  "summary_stats": {
+    "total_projects": 13,
+    "total_hub_widgets": 2,
+    "total_certifications": 24,
+    "completed_specializations_total": "30+",
+    "github_repositories_total": "60+",
+    "open_source_verified_pct": "100%",
+    "project_domains": {
+      "ai": {
+        "label": "AI & ML",
+        "count": 5
+      },
+      "software": {
+        "label": "Software & Systems",
+        "count": 6
+      },
+      "bigdata": {
+        "label": "Big Data",
+        "count": 4
+      },
+      "nlp": {
+        "label": "NLP & Speech",
+        "count": 3
+      },
+      "vision": {
+        "label": "Computer Vision",
+        "count": 1
+      }
+    },
+    "project_status_breakdown": {
+      "Open Source": 7,
+      "Research": 5,
+      "Specialization": 1
+    },
+    "certification_tracks": {
+      "gcp": {
+        "label": "Google Cloud & GCP",
+        "count": 6
+      },
+      "ai": {
+        "label": "AI & Deep Learning",
+        "count": 8
+      },
+      "bigdata": {
+        "label": "Data Science & Big Data",
+        "count": 4
+      },
+      "software": {
+        "label": "Software & DevOps",
+        "count": 6
+      }
+    }
+  },
+  "projects": [
+    {
+      "id": "proj-agentic-security-nhi-guardrails",
+      "title": "Agentic Security & NHI Guardrails",
+      "domain": "Agentic AI • Zero Trust",
+      "status": "Open Source",
+      "status_type": "open-source",
+      "metric": "Enterprise Grade",
+      "categories": [
+        "ai",
+        "software"
+      ],
+      "category_labels": [
+        "AI & ML",
+        "Software & Systems"
+      ],
+      "description": "Zero-Trust Non-Human Identity (NHI) boundary and runtime prompt firewall protecting autonomous multi-agent tool execution with cryptographic SPIFFE/SPIRE attestation and policy enforcement.",
+      "tags": [
+        "Agentic AI",
+        "SPIFFE/SPIRE",
+        "Zero-Trust",
+        "FastAPI"
+      ],
+      "url": "https://github.com/iamharshverma",
+      "github_url": "https://github.com/iamharshverma",
+      "repository_name": null,
+      "preview_image": "images/portfolio/agentic_security_thumb.svg",
+      "actions": [
+        {
+          "label": "View Project",
+          "url": "https://github.com/iamharshverma"
+        },
+        {
+          "label": "Preview",
+          "url": "images/portfolio/agentic_security_thumb.svg"
+        }
+      ],
+      "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
+      "project_number": 1
+    },
+    {
+      "id": "proj-pyspark-streaming-multinews-classification",
+      "title": "PySpark Streaming MultiNews Classification",
+      "domain": "Big Data • Distributed Streaming",
+      "status": "Open Source",
+      "status_type": "open-source",
+      "metric": "Real-Time DAG",
+      "categories": [
+        "bigdata"
+      ],
+      "category_labels": [
+        "Big Data"
+      ],
+      "description": "Distributed Apache Spark Streaming architecture with Kafka event ingestion, tokenization DAG, and real-time multilingual topic classification across worker nodes.",
+      "tags": [
+        "PySpark",
+        "Apache Kafka",
+        "NLP DAG",
+        "Micro-batch"
+      ],
+      "url": "https://github.com/iamharshverma/PySparkStreaming-MultiNewsClassification",
+      "github_url": "https://github.com/iamharshverma/PySparkStreaming-MultiNewsClassification",
+      "repository_name": "PySparkStreaming-MultiNewsClassification",
+      "preview_image": "images/portfolio/spark_streaming_thumb.svg",
+      "actions": [
+        {
+          "label": "View Project",
+          "url": "https://github.com/iamharshverma/PySparkStreaming-MultiNewsClassification"
+        },
+        {
+          "label": "Preview",
+          "url": "images/portfolio/spark_streaming_thumb.svg"
+        }
+      ],
+      "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
+      "project_number": 2
+    },
+    {
+      "id": "proj-nlp-automatic-speech-recognition",
+      "title": "NLP Automatic Speech Recognition",
+      "domain": "Speech AI • Neural Acoustics",
+      "status": "Research",
+      "status_type": "research",
+      "metric": "CTC Neural Net",
+      "categories": [
+        "nlp",
+        "ai"
+      ],
+      "category_labels": [
+        "NLP & Speech",
+        "AI & ML"
+      ],
+      "description": "End-to-end acoustic spectrogram feature extraction and Connectionist Temporal Classification (CTC) neural speech-to-text decoding engine.",
+      "tags": [
+        "PyTorch",
+        "CTC Loss",
+        "Spectrogram",
+        "Transformers"
+      ],
+      "url": "https://github.com/iamharshverma/NLP-Automatic-Speech-Recognization",
+      "github_url": "https://github.com/iamharshverma/NLP-Automatic-Speech-Recognization",
+      "repository_name": "NLP-Automatic-Speech-Recognization",
+      "preview_image": "images/portfolio/speech_ai_thumb.svg",
+      "actions": [
+        {
+          "label": "View Project",
+          "url": "https://github.com/iamharshverma/NLP-Automatic-Speech-Recognization"
+        },
+        {
+          "label": "Preview",
+          "url": "images/portfolio/speech_ai_thumb.svg"
+        }
+      ],
+      "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
+      "project_number": 3
+    },
+    {
+      "id": "proj-nlp-bilstm-sentiment-analysis",
+      "title": "NLP BiLSTM Sentiment Analysis",
+      "domain": "NLP • Deep Learning",
+      "status": "Research",
+      "status_type": "research",
+      "metric": "Self-Attention",
+      "categories": [
+        "nlp",
+        "ai"
+      ],
+      "category_labels": [
+        "NLP & Speech",
+        "AI & ML"
+      ],
+      "description": "Bidirectional LSTM recurrent network paired with self-attention mechanisms for deep contextual sentiment polarity evaluation.",
+      "tags": [
+        "BiLSTM",
+        "Attention",
+        "TensorFlow",
+        "Word Embeddings"
+      ],
+      "url": "https://github.com/iamharshverma/NLP-BiLSTM_SentimentAnalysis",
+      "github_url": "https://github.com/iamharshverma/NLP-BiLSTM_SentimentAnalysis",
+      "repository_name": "NLP-BiLSTM_SentimentAnalysis",
+      "preview_image": "images/portfolio/bilstm_sentiment_thumb.svg",
+      "actions": [
+        {
+          "label": "View Project",
+          "url": "https://github.com/iamharshverma/NLP-BiLSTM_SentimentAnalysis"
+        },
+        {
+          "label": "Preview",
+          "url": "images/portfolio/bilstm_sentiment_thumb.svg"
+        }
+      ],
+      "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
+      "project_number": 4
+    },
+    {
+      "id": "proj-pyspark-cross-language-duplication-detection",
+      "title": "PySpark Cross-Language Duplication Detection",
+      "domain": "Distributed Computing • LSH",
+      "status": "Research",
+      "status_type": "research",
+      "metric": "MinHash LSH",
+      "categories": [
+        "bigdata"
+      ],
+      "category_labels": [
+        "Big Data"
+      ],
+      "description": "Distributed MinHash Locality-Sensitive Hashing (LSH) and Jaccard similarity DAG in Apache Spark for high-throughput multilingual document deduplication.",
+      "tags": [
+        "PySpark",
+        "MinHash LSH",
+        "Jaccard Similarity",
+        "Big Data"
+      ],
+      "url": "https://github.com/iamharshverma/PySpark-LargeScaleDataCollection_Preprocessing_Cross_language_Articles_Duplication_Detection",
+      "github_url": "https://github.com/iamharshverma/PySpark-LargeScaleDataCollection_Preprocessing_Cross_language_Articles_Duplication_Detection",
+      "repository_name": "PySpark-LargeScaleDataCollection_Preprocessing_Cross_language_Articles_Duplication_Detection",
+      "preview_image": "images/portfolio/cross_lingual_spark_thumb.svg",
+      "actions": [
+        {
+          "label": "View Project",
+          "url": "https://github.com/iamharshverma/PySpark-LargeScaleDataCollection_Preprocessing_Cross_language_Articles_Duplication_Detection"
+        },
+        {
+          "label": "Preview",
+          "url": "images/portfolio/cross_lingual_spark_thumb.svg"
+        }
+      ],
+      "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
+      "project_number": 5
+    },
+    {
+      "id": "proj-yelp-business-social-network-graph-analytics",
+      "title": "Yelp Business & Social Network Graph Analytics",
+      "domain": "Graph Analytics • Spark GraphX",
+      "status": "Research",
+      "status_type": "research",
+      "metric": "Pregel API",
+      "categories": [
+        "bigdata"
+      ],
+      "category_labels": [
+        "Big Data"
+      ],
+      "description": "Large-scale graph analytics using Apache Spark GraphX and Pregel API for PageRank influence calculation, community detection, and geospatial clustering.",
+      "tags": [
+        "Spark GraphX",
+        "Pregel API",
+        "PageRank",
+        "Community Detection"
+      ],
+      "url": "https://github.com/iamharshverma/BigData-Yelp-Business-Data-and-Social-Network-Analysis",
+      "github_url": "https://github.com/iamharshverma/BigData-Yelp-Business-Data-and-Social-Network-Analysis",
+      "repository_name": "BigData-Yelp-Business-Data-and-Social-Network-Analysis",
+      "preview_image": "images/portfolio/graph_analytics_thumb.svg",
+      "actions": [
+        {
+          "label": "View Project",
+          "url": "https://github.com/iamharshverma/BigData-Yelp-Business-Data-and-Social-Network-Analysis"
+        },
+        {
+          "label": "Preview",
+          "url": "images/portfolio/graph_analytics_thumb.svg"
+        }
+      ],
+      "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
+      "project_number": 6
+    },
+    {
+      "id": "proj-certificates-accomplishment-specializations",
+      "title": "Certificates Accomplishment & Specializations",
+      "domain": "Professional Credentials",
+      "status": "Specialization",
+      "status_type": "specialization",
+      "metric": "30+ Verified",
+      "categories": [
+        "ai",
+        "software"
+      ],
+      "category_labels": [
+        "AI & ML",
+        "Software & Systems"
+      ],
+      "description": "Curated repository of 30+ completed specializations spanning DeepLearning.AI, Google Cloud MLOps, Stanford GSB Executive Education, and Big Data Architecture.",
+      "tags": [
+        "Stanford GSB",
+        "Google Cloud",
+        "DeepLearning.AI",
+        "MLOps"
+      ],
+      "url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "github_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "repository_name": "CertificatesAccomplishment",
+      "preview_image": "images/portfolio/certificates_accomplishment_thumb.svg",
+      "actions": [
+        {
+          "label": "View Project",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Preview",
+          "url": "images/portfolio/certificates_accomplishment_thumb.svg"
+        }
+      ],
+      "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
+      "project_number": 7
+    },
+    {
+      "id": "proj-deep-learning-cnn-image-classifier",
+      "title": "Deep Learning CNN Image Classifier",
+      "domain": "Computer Vision • CNN",
+      "status": "Research",
+      "status_type": "research",
+      "metric": "Feature Maps",
+      "categories": [
+        "vision",
+        "ai"
+      ],
+      "category_labels": [
+        "Computer Vision",
+        "AI & ML"
+      ],
+      "description": "Multi-layer convolutional neural network featuring automated feature map extraction, batch normalization, spatial dropout, and dense softmax classification.",
+      "tags": [
+        "CNN",
+        "Computer Vision",
+        "Feature Maps",
+        "TensorFlow"
+      ],
+      "url": "https://github.com/iamharshverma/Deep_Learning-CNN_MultiClass_ImageClassifier",
+      "github_url": "https://github.com/iamharshverma/Deep_Learning-CNN_MultiClass_ImageClassifier",
+      "repository_name": "Deep_Learning-CNN_MultiClass_ImageClassifier",
+      "preview_image": "images/portfolio/cnn_vision_thumb.svg",
+      "actions": [
+        {
+          "label": "View Project",
+          "url": "https://github.com/iamharshverma/Deep_Learning-CNN_MultiClass_ImageClassifier"
+        },
+        {
+          "label": "Preview",
+          "url": "images/portfolio/cnn_vision_thumb.svg"
+        }
+      ],
+      "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
+      "project_number": 8
+    },
+    {
+      "id": "proj-api-micro-service-worddoc-counter",
+      "title": "API Micro-Service WordDoc Counter",
+      "domain": "Distributed Systems • Microservices",
+      "status": "Open Source",
+      "status_type": "open-source",
+      "metric": "Sub-ms Latency",
+      "categories": [
+        "software"
+      ],
+      "category_labels": [
+        "Software & Systems"
+      ],
+      "description": "High-concurrency RESTful microservice gateway with Redis inverted-index caching, thread-pool worker distribution, and MapReduce-style frequency aggregation.",
+      "tags": [
+        "Microservices",
+        "Redis Cache",
+        "Reverse Proxy",
+        "Worker Pool"
+      ],
+      "url": "https://github.com/iamharshverma/APIMicroServiceForWordDocFrequencyCount",
+      "github_url": "https://github.com/iamharshverma/APIMicroServiceForWordDocFrequencyCount",
+      "repository_name": "APIMicroServiceForWordDocFrequencyCount",
+      "preview_image": "images/portfolio/microservice_gateway_thumb.svg",
+      "actions": [
+        {
+          "label": "View Project",
+          "url": "https://github.com/iamharshverma/APIMicroServiceForWordDocFrequencyCount"
+        },
+        {
+          "label": "Preview",
+          "url": "images/portfolio/microservice_gateway_thumb.svg"
+        }
+      ],
+      "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
+      "project_number": 9
+    },
+    {
+      "id": "proj-bigdata-hadoop-distributed-social-graph",
+      "title": "BigData Hadoop Distributed Social Graph",
+      "domain": "Big Data • Hadoop HDFS",
+      "status": "Open Source",
+      "status_type": "open-source",
+      "metric": "MapReduce DAG",
+      "categories": [
+        "bigdata"
+      ],
+      "category_labels": [
+        "Big Data"
+      ],
+      "description": "Multi-node Apache Hadoop cluster architecture running custom MapReduce jobs for social graph traversal, mutual friend recommendation, and degree distribution.",
+      "tags": [
+        "Hadoop HDFS",
+        "MapReduce",
+        "Cluster Topology",
+        "Social Graph"
+      ],
+      "url": "https://github.com/iamharshverma/BigData-Hadoop_SocialNetwork",
+      "github_url": "https://github.com/iamharshverma/BigData-Hadoop_SocialNetwork",
+      "repository_name": "BigData-Hadoop_SocialNetwork",
+      "preview_image": "images/portfolio/hadoop_cluster_thumb.svg",
+      "actions": [
+        {
+          "label": "View Project",
+          "url": "https://github.com/iamharshverma/BigData-Hadoop_SocialNetwork"
+        },
+        {
+          "label": "Preview",
+          "url": "images/portfolio/hadoop_cluster_thumb.svg"
+        }
+      ],
+      "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
+      "project_number": 10
+    },
+    {
+      "id": "proj-lock-free-concurrent-hash-table",
+      "title": "Lock-Free Concurrent Hash Table",
+      "domain": "Systems • High Concurrency",
+      "status": "Open Source",
+      "status_type": "open-source",
+      "metric": "CAS Lock-Free",
+      "categories": [
+        "software"
+      ],
+      "category_labels": [
+        "Software & Systems"
+      ],
+      "description": "High-performance non-blocking concurrent hash table utilizing atomic Compare-And-Swap (CAS) primitives, striped memory buckets, and dynamic thread-safe resizing.",
+      "tags": [
+        "Lock-Free",
+        "CAS Atomics",
+        "Memory Striping",
+        "Concurrency"
+      ],
+      "url": "https://github.com/iamharshverma/JavaHashTableCustomImplementation",
+      "github_url": "https://github.com/iamharshverma/JavaHashTableCustomImplementation",
+      "repository_name": "JavaHashTableCustomImplementation",
+      "preview_image": "images/portfolio/lockfree_hashtable_thumb.svg",
+      "actions": [
+        {
+          "label": "View Project",
+          "url": "https://github.com/iamharshverma/JavaHashTableCustomImplementation"
+        },
+        {
+          "label": "Preview",
+          "url": "images/portfolio/lockfree_hashtable_thumb.svg"
+        }
+      ],
+      "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
+      "project_number": 11
+    },
+    {
+      "id": "proj-lexical-tokenizer-porter-stemmer",
+      "title": "Lexical Tokenizer & Porter Stemmer",
+      "domain": "NLP • Information Retrieval",
+      "status": "Open Source",
+      "status_type": "open-source",
+      "metric": "Porter Stemmer",
+      "categories": [
+        "nlp",
+        "software"
+      ],
+      "category_labels": [
+        "NLP & Speech",
+        "Software & Systems"
+      ],
+      "description": "Finite-state lexical tokenizer and Porter Stemming automaton designed for high-speed indexing, stopword elimination, and inverted posting list generation.",
+      "tags": [
+        "Lexer",
+        "Porter Stemmer",
+        "Inverted Index",
+        "IR"
+      ],
+      "url": "https://github.com/iamharshverma/TokanizeAndStemming",
+      "github_url": "https://github.com/iamharshverma/TokanizeAndStemming",
+      "repository_name": "TokanizeAndStemming",
+      "preview_image": "images/portfolio/ir_tokenizer_thumb.svg",
+      "actions": [
+        {
+          "label": "View Project",
+          "url": "https://github.com/iamharshverma/TokanizeAndStemming"
+        },
+        {
+          "label": "Preview",
+          "url": "images/portfolio/ir_tokenizer_thumb.svg"
+        }
+      ],
+      "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
+      "project_number": 12
+    },
+    {
+      "id": "proj-skip-list-probabilistic-index",
+      "title": "Skip-List Probabilistic Index",
+      "domain": "Data Structures • Algorithms",
+      "status": "Open Source",
+      "status_type": "open-source",
+      "metric": "O(log N)",
+      "categories": [
+        "software"
+      ],
+      "category_labels": [
+        "Software & Systems"
+      ],
+      "description": "Multi-level probabilistic skip-list indexing engine achieving O(log n) search, insertion, and deletion complexity with optimal cache line locality.",
+      "tags": [
+        "Skip-List",
+        "Probabilistic Index",
+        "O(log n)",
+        "Cache Locality"
+      ],
+      "url": "https://github.com/iamharshverma/SkipLists",
+      "github_url": "https://github.com/iamharshverma/SkipLists",
+      "repository_name": "SkipLists",
+      "preview_image": "images/portfolio/skiplist_index_thumb.svg",
+      "actions": [
+        {
+          "label": "View Project",
+          "url": "https://github.com/iamharshverma/SkipLists"
+        },
+        {
+          "label": "Preview",
+          "url": "images/portfolio/skiplist_index_thumb.svg"
+        }
+      ],
+      "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
+      "project_number": 13
+    }
+  ],
+  "hub_widgets": [
+    {
+      "id": "projectWidgetGithub",
+      "title": "GitHub Systems & AI Repositories Hub",
+      "domain": "Engineering Activity • Open Source",
+      "status": "Open Source Hub",
+      "status_type": "open-source",
+      "metric": "60+ Repos",
+      "categories": [
+        "ai",
+        "bigdata",
+        "vision"
+      ],
+      "category_labels": [
+        "AI & ML",
+        "Big Data",
+        "Computer Vision"
+      ],
+      "description": "Comprehensive open-source repositories spanning zero-trust agentic security, high-throughput distributed streaming, probabilistic algorithms, and reproducible research baselines.",
+      "tags": [
+        "60+ Repositories",
+        "Python & Go",
+        "CI/CD Pipelines",
+        "MIT / Apache-2.0"
+      ],
+      "url": "https://github.com/iamharshverma",
+      "github_url": "https://github.com/iamharshverma",
+      "repository_name": null,
+      "preview_image": "images/portfolio/widget_github_pulse.svg",
+      "actions": [
+        {
+          "label": "Explore Repos",
+          "url": "https://github.com/iamharshverma"
+        },
+        {
+          "label": "Preview",
+          "url": "images/portfolio/widget_github_pulse.svg"
+        }
+      ],
+      "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
+      "widget_type": "github-pulse"
+    },
+    {
+      "id": "projectWidgetAdvisory",
+      "title": "Research Collaboration & AI Security Advisory",
+      "domain": "Advisory • Peer-Reviewed Research",
+      "status": "Technical Advisory",
+      "status_type": "open-source",
+      "metric": "IEEE Senior",
+      "categories": [
+        "bigdata",
+        "vision"
+      ],
+      "category_labels": [
+        "Big Data",
+        "Computer Vision"
+      ],
+      "description": "Collaborative research opportunities in autonomous agent safety, non-human identity frameworks, SecOps runtime defenses, and executive technical mentorship.",
+      "tags": [
+        "Forbes Tech Council",
+        "IEEE Senior Member",
+        "Stanford GSB",
+        "SecOps Audits"
+      ],
+      "url": "mailto:harshverma59@gmail.com",
+      "github_url": null,
+      "repository_name": null,
+      "preview_image": "images/portfolio/widget_research_advisory.svg",
+      "actions": [
+        {
+          "label": "Propose Research",
+          "url": "mailto:harshverma59@gmail.com"
+        },
+        {
+          "label": "Preview",
+          "url": "images/portfolio/widget_research_advisory.svg"
+        }
+      ],
+      "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
+      "widget_type": "research-advisory"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cert-google-cloud-advance-machine-learning",
+      "certificate_number": 1,
+      "title": "Google Cloud Advance Machine Learning",
+      "full_title": "Google Cloud Advance Machine Learning",
+      "category": "gcp",
+      "category_label": "Google Cloud & GCP",
+      "topic_badge": "Google Cloud & AI",
+      "issuer": "Google Cloud Platform",
+      "issuer_badge": "Google Cloud",
+      "platform": "Coursera",
+      "issuer_line": "Google Cloud Platform • Coursera",
+      "status": "Verified Specialization",
+      "tags": [
+        "TensorFlow",
+        "Vertex AI",
+        "Enterprise ML"
+      ],
+      "search_keywords": "google cloud advance machine learning specialization gcp tensorflow vertex ai production mlops enterprise ai coursera",
+      "image": "images/certificates/29.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/29.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-deep-learning-specialization-5-course-track",
+      "certificate_number": 2,
+      "title": "Deep Learning Specialization (5-Course Track)",
+      "full_title": "Deep Learning Specialization (5-Course Track)",
+      "category": "ai",
+      "category_label": "AI & Deep Learning",
+      "topic_badge": "AI & Deep Learning",
+      "issuer": "DeepLearning.AI",
+      "issuer_badge": "DeepLearning.AI",
+      "platform": "Andrew Ng",
+      "issuer_line": "DeepLearning.AI • Andrew Ng",
+      "status": "Verified Credential",
+      "tags": [
+        "CNNs",
+        "RNNs",
+        "Transformers",
+        "Optimization"
+      ],
+      "search_keywords": "deep learning specialization andrew ng deeplearning.ai neural networks cnn rnn lstm optimization hyperparameter tuning backprop",
+      "image": "images/certificates/deep_learning.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/deep_learning.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-advance-ml-with-tensorflow-on-gcp",
+      "certificate_number": 3,
+      "title": "Advance ML with TensorFlow on GCP",
+      "full_title": "Advance Machine Learning with TensorFlow on GCP",
+      "category": "gcp",
+      "category_label": "Google Cloud & GCP",
+      "topic_badge": "Google Cloud & AI",
+      "issuer": "Google Cloud Training",
+      "issuer_badge": "Google Cloud",
+      "platform": "Coursera",
+      "issuer_line": "Google Cloud Training • Coursera",
+      "status": "Verified Credential",
+      "tags": [
+        "TensorFlow 2.x",
+        "GCP Distributed",
+        "Custom Models"
+      ],
+      "search_keywords": "advance machine learning with tensorflow on google cloud platform gcp tpu vertex distributed ml training",
+      "image": "images/certificates/22.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/22.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-end-to-end-ml-with-tensorflow-on-gcp",
+      "certificate_number": 4,
+      "title": "End to End ML with TensorFlow on GCP",
+      "full_title": "End to End Machine Learning with TensorFlow on GCP",
+      "category": "gcp",
+      "category_label": "Google Cloud & GCP",
+      "topic_badge": "Google Cloud & AI",
+      "issuer": "Google Cloud Training",
+      "issuer_badge": "Google Cloud",
+      "platform": "Coursera",
+      "issuer_line": "Google Cloud Training • Coursera",
+      "status": "Verified Credential",
+      "tags": [
+        "Pipelines",
+        "Dataflow",
+        "Cloud Storage"
+      ],
+      "search_keywords": "end to end machine learning with tensorflow on gcp google cloud pipelines tfx dataflow",
+      "image": "images/certificates/25.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/25.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-production-machine-learning-systems",
+      "certificate_number": 5,
+      "title": "Production Machine Learning Systems",
+      "full_title": "Production Machine Learning Systems",
+      "category": "gcp",
+      "category_label": "Google Cloud & GCP",
+      "topic_badge": "Google Cloud & AI",
+      "issuer": "Google Cloud Training",
+      "issuer_badge": "Google Cloud",
+      "platform": "Coursera",
+      "issuer_line": "Google Cloud Training • Coursera",
+      "status": "Verified Credential",
+      "tags": [
+        "MLOps",
+        "Model Serving",
+        "Drift Detection"
+      ],
+      "search_keywords": "production machine learning system mlops google cloud serving model monitoring scalability",
+      "image": "images/certificates/28.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/28.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-uc-san-diego-big-data-specialization",
+      "certificate_number": 6,
+      "title": "UC San Diego: Big Data Specialization",
+      "full_title": "UC San Diego: Big Data Specialization",
+      "category": "bigdata",
+      "category_label": "Data Science & Big Data",
+      "topic_badge": "Big Data & Distributed",
+      "issuer": "UC San Diego",
+      "issuer_badge": "UC San Diego",
+      "platform": "Coursera",
+      "issuer_line": "UC San Diego • Coursera",
+      "status": "Verified Credential",
+      "tags": [
+        "Hadoop",
+        "Spark",
+        "Distributed Data"
+      ],
+      "search_keywords": "uc san diego big data ucsd distributed computing hadoop mapreduce spark data modeling",
+      "image": "images/certificates/19.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/19.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-sequence-models-for-time-series-nlp",
+      "certificate_number": 7,
+      "title": "Sequence Models for Time Series & NLP",
+      "full_title": "Sequence Models for Time Series & NLP",
+      "category": "ai",
+      "category_label": "AI & Deep Learning",
+      "topic_badge": "AI & NLP",
+      "issuer": "DeepLearning.AI",
+      "issuer_badge": "DeepLearning.AI",
+      "platform": "Coursera",
+      "issuer_line": "DeepLearning.AI • Coursera",
+      "status": "Verified Credential",
+      "tags": [
+        "Attention",
+        "LSTM / GRU",
+        "NLP Pipelines"
+      ],
+      "search_keywords": "sequence model for time series & natural language processing nlp deeplearning.ai lstm gru attention mechanism",
+      "image": "images/certificates/24.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/24.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-recommendation-systems-on-gcp",
+      "certificate_number": 8,
+      "title": "Recommendation Systems on GCP",
+      "full_title": "Recommendation Systems with TensorFlow on GCP",
+      "category": "gcp",
+      "category_label": "Google Cloud & GCP",
+      "topic_badge": "Google Cloud & AI",
+      "issuer": "Google Cloud Training",
+      "issuer_badge": "Google Cloud",
+      "platform": "Coursera",
+      "issuer_line": "Google Cloud Training • Coursera",
+      "status": "Verified Credential",
+      "tags": [
+        "Collaborative Filtering",
+        "Embeddings",
+        "Ranking"
+      ],
+      "search_keywords": "recommendation system with tensorflow on gcp google cloud collaborative filtering embeddings neural collaborative",
+      "image": "images/certificates/26.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/26.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-image-understanding-on-gcp",
+      "certificate_number": 9,
+      "title": "Image Understanding on GCP",
+      "full_title": "Image Understanding with TensorFlow on GCP",
+      "category": "gcp",
+      "category_label": "Google Cloud & GCP",
+      "topic_badge": "Computer Vision & GCP",
+      "issuer": "Google Cloud Training",
+      "issuer_badge": "Google Cloud",
+      "platform": "Coursera",
+      "issuer_line": "Google Cloud Training • Coursera",
+      "status": "Verified Credential",
+      "tags": [
+        "Computer Vision",
+        "CNNs",
+        "AutoML Vision"
+      ],
+      "search_keywords": "image understanding with tensorflow on gcp computer vision object detection automl vision",
+      "image": "images/certificates/27.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/27.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-niit-advance-java-j2ee-architecture",
+      "certificate_number": 10,
+      "title": "NIIT Advance Java-J2EE Architecture",
+      "full_title": "NIIT Advance Java-J2EE Architecture",
+      "category": "software",
+      "category_label": "Software & DevOps",
+      "topic_badge": "Software Architecture",
+      "issuer": "NIIT Technologies",
+      "issuer_badge": "NIIT",
+      "platform": "Professional Diploma",
+      "issuer_line": "NIIT Technologies • Professional Diploma",
+      "status": "Verified Credential",
+      "tags": [
+        "Enterprise Java",
+        "J2EE",
+        "Spring"
+      ],
+      "search_keywords": "niit advance java j2ee enterprise architecture spring hibernate servlets backend",
+      "image": "images/certificates/NIITJ2EECertificate.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/NIITJ2EECertificate.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-google-machine-learning-foundation",
+      "certificate_number": 11,
+      "title": "Google Machine Learning Foundation",
+      "full_title": "Google Machine Learning Foundation",
+      "category": "ai",
+      "category_label": "AI & Deep Learning",
+      "topic_badge": "Machine Learning",
+      "issuer": "Google AI",
+      "issuer_badge": "Google",
+      "platform": "Coursera",
+      "issuer_line": "Google AI • Coursera",
+      "status": "Verified Credential",
+      "tags": [
+        "Supervised Learning",
+        "Loss Optimization",
+        "Feature Crosses"
+      ],
+      "search_keywords": "google machine learning artificial intelligence supervised learning regression classification",
+      "image": "images/certificates/20.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/20.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-microservices-with-java-spring",
+      "certificate_number": 12,
+      "title": "Microservices with Java & Spring",
+      "full_title": "Microservices Architecture with Java",
+      "category": "software",
+      "category_label": "Software & DevOps",
+      "topic_badge": "Software Engineering",
+      "issuer": "Coursera Specialization",
+      "issuer_badge": "Coursera",
+      "platform": "Coursera",
+      "issuer_line": "Coursera Specialization",
+      "status": "Verified Credential",
+      "tags": [
+        "Microservices",
+        "REST APIs",
+        "Spring Boot"
+      ],
+      "search_keywords": "microservices with java spring boot rest apis service discovery containerization",
+      "image": "images/certificates/12.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/12.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-docker-for-java-developers",
+      "certificate_number": 13,
+      "title": "Docker for Java Developers",
+      "full_title": "Docker for Java Developers",
+      "category": "software",
+      "category_label": "Software & DevOps",
+      "topic_badge": "DevOps & Containers",
+      "issuer": "Coursera Specialization",
+      "issuer_badge": "Docker",
+      "platform": "Coursera",
+      "issuer_line": "Coursera Specialization",
+      "status": "Verified Credential",
+      "tags": [
+        "Docker",
+        "Compose",
+        "CI/CD"
+      ],
+      "search_keywords": "docker for java developers containerization devops kubernetes dockerfile compose",
+      "image": "images/certificates/8.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/8.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-elasticsearch-distributed-search",
+      "certificate_number": 14,
+      "title": "Elasticsearch: Distributed Search",
+      "full_title": "Elasticsearch: Distributed Search Engine",
+      "category": "software",
+      "category_label": "Software & DevOps",
+      "topic_badge": "Search & Analytics",
+      "issuer": "Coursera Specialization",
+      "issuer_badge": "Elasticsearch",
+      "platform": "Coursera",
+      "issuer_line": "Coursera Specialization",
+      "status": "Verified Credential",
+      "tags": [
+        "Elasticsearch",
+        "Indexing",
+        "Query DSL"
+      ],
+      "search_keywords": "elastic search elasticsearch distributed search indexing query dsl lucene logstash",
+      "image": "images/certificates/9.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/9.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-big-data-modeling-management",
+      "certificate_number": 15,
+      "title": "Big Data Modeling & Management",
+      "full_title": "Big Data Modeling & Management Systems",
+      "category": "bigdata",
+      "category_label": "Data Science & Big Data",
+      "topic_badge": "Big Data Architecture",
+      "issuer": "UC San Diego",
+      "issuer_badge": "UC San Diego",
+      "platform": "Coursera",
+      "issuer_line": "UC San Diego • Coursera",
+      "status": "Verified Credential",
+      "tags": [
+        "NoSQL",
+        "Data Modeling",
+        "Distributed DB"
+      ],
+      "search_keywords": "big data modelling and management system uc san diego ucsd nosql graph databases postgresql",
+      "image": "images/certificates/21.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/21.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-nlp-for-machine-learning",
+      "certificate_number": 16,
+      "title": "NLP for Machine Learning",
+      "full_title": "NLP for Machine Learning",
+      "category": "ai",
+      "category_label": "AI & Deep Learning",
+      "topic_badge": "Natural Language Processing",
+      "issuer": "Coursera Specialization",
+      "issuer_badge": "NLP",
+      "platform": "Coursera",
+      "issuer_line": "Coursera Specialization",
+      "status": "Verified Credential",
+      "tags": [
+        "Embeddings",
+        "Text Classifiers",
+        "TF-IDF"
+      ],
+      "search_keywords": "nlp for machine learning natural language processing word2vec tf-idf sentiment analysis tokenization",
+      "image": "images/certificates/13.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/13.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-deep-learning-image-recognition",
+      "certificate_number": 17,
+      "title": "Deep Learning: Image Recognition",
+      "full_title": "Deep Learning: Image Recognition",
+      "category": "ai",
+      "category_label": "AI & Deep Learning",
+      "topic_badge": "Computer Vision",
+      "issuer": "Coursera Specialization",
+      "issuer_badge": "Computer Vision",
+      "platform": "Coursera",
+      "issuer_line": "Coursera Specialization",
+      "status": "Verified Credential",
+      "tags": [
+        "ResNet",
+        "Object Detection",
+        "CNNs"
+      ],
+      "search_keywords": "deep learning image recognition computer vision resnet vgg inception segmentation",
+      "image": "images/certificates/7.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/7.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-machine-learning-a-z-hands-on",
+      "certificate_number": 18,
+      "title": "Machine Learning A-Z: Hands-On",
+      "full_title": "Machine Learning A-Z: Hands-On Python",
+      "category": "ai",
+      "category_label": "AI & Deep Learning",
+      "topic_badge": "Data Science & ML",
+      "issuer": "Udemy SuperDataScience",
+      "issuer_badge": "Udemy",
+      "platform": "Udemy",
+      "issuer_line": "Udemy SuperDataScience",
+      "status": "Verified Credential",
+      "tags": [
+        "Scikit-Learn",
+        "Regression",
+        "Clustering"
+      ],
+      "search_keywords": "a-z ml python udemy machine learning data science scikit-learn superdatascience",
+      "image": "images/certificates/udemy_ml.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/udemy_ml.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-data-science-data-engineering",
+      "certificate_number": 19,
+      "title": "Data Science: Data Engineering",
+      "full_title": "Data Science Foundation: Data Engineering",
+      "category": "bigdata",
+      "category_label": "Data Science & Big Data",
+      "topic_badge": "Data Engineering",
+      "issuer": "Coursera Specialization",
+      "issuer_badge": "Data Engineering",
+      "platform": "Coursera",
+      "issuer_line": "Coursera Specialization",
+      "status": "Verified Credential",
+      "tags": [
+        "ETL Pipelines",
+        "Data Warehousing",
+        "SQL"
+      ],
+      "search_keywords": "data science foundation data engineering etl pipelines sql distributed processing coursera",
+      "image": "images/certificates/4.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/4.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-pandas-for-high-performance-data-science",
+      "certificate_number": 20,
+      "title": "Pandas for High-Performance Data Science",
+      "full_title": "Pandas for High-Performance Data Science",
+      "category": "bigdata",
+      "category_label": "Data Science & Big Data",
+      "topic_badge": "Data Analysis",
+      "issuer": "Coursera Specialization",
+      "issuer_badge": "Pandas",
+      "platform": "Coursera",
+      "issuer_line": "Coursera Specialization",
+      "status": "Verified Credential",
+      "tags": [
+        "Data Wrangling",
+        "Time Series",
+        "Aggregations"
+      ],
+      "search_keywords": "pandas data science python data wrangling analytics feature engineering series dataframes",
+      "image": "images/certificates/16.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/16.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-python-design-patterns-clean-architecture",
+      "certificate_number": 21,
+      "title": "Python Design Patterns & Clean Architecture",
+      "full_title": "Python Design Patterns & Clean Architecture",
+      "category": "software",
+      "category_label": "Software & DevOps",
+      "topic_badge": "Software Architecture",
+      "issuer": "Coursera Specialization",
+      "issuer_badge": "Python",
+      "platform": "Coursera",
+      "issuer_line": "Coursera Specialization",
+      "status": "Verified Credential",
+      "tags": [
+        "SOLID Principles",
+        "Design Patterns",
+        "Clean OOP"
+      ],
+      "search_keywords": "python design pattern architecture clean code solid oop factory singleton observer",
+      "image": "images/certificates/17.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/17.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-java-build-automation-with-maven",
+      "certificate_number": 22,
+      "title": "Java: Build Automation with Maven",
+      "full_title": "Java: Build Automation with Maven",
+      "category": "software",
+      "category_label": "Software & DevOps",
+      "topic_badge": "Build Systems & CI/CD",
+      "issuer": "Coursera Specialization",
+      "issuer_badge": "Java",
+      "platform": "Coursera",
+      "issuer_line": "Coursera Specialization",
+      "status": "Verified Credential",
+      "tags": [
+        "Maven",
+        "Dependency Mgt",
+        "Build Plugins"
+      ],
+      "search_keywords": "java build automation with maven dependency management plugins lifecycle ci cd",
+      "image": "images/certificates/10.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/10.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-ai-foundation-neural-networks",
+      "certificate_number": 23,
+      "title": "AI Foundation: Neural Networks",
+      "full_title": "AI Foundation: Neural Networks",
+      "category": "ai",
+      "category_label": "AI & Deep Learning",
+      "topic_badge": "Neural Computation",
+      "issuer": "Coursera Track",
+      "issuer_badge": "Coursera",
+      "platform": "Coursera",
+      "issuer_line": "Coursera Track",
+      "status": "Verified Credential",
+      "tags": [
+        "Perceptrons",
+        "Gradient Descent",
+        "Vectorization"
+      ],
+      "search_keywords": "ai foundation neural networks deep learning backpropagation perceptrons matrix operations",
+      "image": "images/certificates/1.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/1.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    },
+    {
+      "id": "cert-ai-foundation-thinking-machines",
+      "certificate_number": 24,
+      "title": "AI Foundation: Thinking Machines",
+      "full_title": "AI Foundation: Thinking Machines",
+      "category": "ai",
+      "category_label": "AI & Deep Learning",
+      "topic_badge": "Cognitive AI",
+      "issuer": "Coursera Track",
+      "issuer_badge": "Coursera",
+      "platform": "Coursera",
+      "issuer_line": "Coursera Track",
+      "status": "Verified Credential",
+      "tags": [
+        "Intelligent Agents",
+        "Heuristics",
+        "State Space"
+      ],
+      "search_keywords": "ai foundation thinking machines intelligent agents heuristic search knowledge representation",
+      "image": "images/certificates/2.png",
+      "preview_url": "https://www.harshverma.me/images/certificates/2.png",
+      "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+    }
+  ]
+}

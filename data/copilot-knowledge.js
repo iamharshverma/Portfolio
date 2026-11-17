@@ -206,6 +206,14 @@ const harshKnowledge = {
 
   smartSlides: [
     {
+      title: "Security Without Humans: Designing Systems That Defend Themselves",
+      slidesCount: 21,
+      easyChairUrl: "https://easychair.org/smart-slide/slide/NZ5R#{sn:1}",
+      articleUrl: "https://www.rsaconference.com/Library/blog/security-without-humans-designing-systems-that-defend-themselves",
+      pageUrl: "page-smart-slides#deck=NZ5R",
+      summary: "21 slides companion deck to the RSA Conference Official Library article examining autonomous cyber defense, Intent/Time/Interaction guardrails, closed-loop containment, the L0-L3 risk envelope, and a 90-day implementation roadmap."
+    },
+    {
       title: "Agents Don't Break Rules, They Redefine Them",
       slidesCount: 9,
       easyChairUrl: "https://easychair.org/smart-slide/slide/X2qH#{sn:1}",

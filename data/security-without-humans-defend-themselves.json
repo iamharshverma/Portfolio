@@ -1,0 +1,317 @@
+[
+  {
+    "slide": 1,
+    "title": "Security Without Humans: Designing Systems That Defend Themselves",
+    "takeaways": [
+      "From visibility to autonomous resilience—with Intent, Time, and Interaction as structural guardrails for machine-speed cyber defense.",
+      "RSA Conference Official Library companion presentation by Harsh Verma, Principal Software Engineer - AI."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Autonomous Cyber Defense",
+      "RSA Conference",
+      "Agentic AI Security",
+      "Self-Healing Systems"
+    ]
+  },
+  {
+    "slide": 2,
+    "title": "Visibility Is Not Resilience: Moving Beyond Alert-Centric Security",
+    "takeaways": [
+      "Contrasts today's alert-centric pipeline (Telemetry -> Alert -> Queue -> Analyst decision) constrained by escalation latency against autonomous resilience (Telemetry -> Context + Policy -> Bounded action -> Verified recovery).",
+      "Core design goal: remove repetitive delay—not human accountability—allowing routine, reversible threats to be contained at machine speed inside explicit policy boundaries."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Alert-Centric Security",
+      "Autonomous Resilience",
+      "Human Accountability",
+      "The Shift"
+    ]
+  },
+  {
+    "slide": 3,
+    "title": "The Response Loop Is Being Outpaced",
+    "takeaways": [
+      "Traces autonomous attack progression across Signal (anomalous behavior), Decision (context evaluation), Delegation (tool or peer agent invocation), and Impact (data, identity, or workflow changes).",
+      "Explains why a human approval loop at every step becomes a bottleneck—especially for low-risk, repeatable containment."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Response Loop",
+      "Machine-Speed Threats",
+      "Delegation Latency",
+      "Repeatable Containment"
+    ]
+  },
+  {
+    "slide": 4,
+    "title": "Security Is a Property of the Whole System: Intent, Time, and Interaction",
+    "takeaways": [
+      "Frames autonomous-system security across three interacting dimensions: Intent (does the action match the approved objective?), Time (how does risk change as context and state evolve?), and Interaction (how can trust and privilege propagate between actors?).",
+      "No single control can guarantee safety when the system continuously changes through delegation and autonomous action."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "RSA Frame",
+      "Intent",
+      "Time",
+      "Interaction"
+    ]
+  },
+  {
+    "slide": 5,
+    "title": "Threat Path: How Compromises Travel Through Trusted Workflows",
+    "takeaways": [
+      "Maps the 4-stage propagation chain: 01 Untrusted Input -> 02 Agent Misreads content as authority -> 03 Trust Propagates to peer agents/tools -> 04 Workflow Impact across data, identity, and operations.",
+      "Highlights the core defensive question: where can the execution chain be interrupted before trust becomes transitive?"
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Threat Path",
+      "Transitive Trust",
+      "Prompt Injection",
+      "Trusted Workflows"
+    ]
+  },
+  {
+    "slide": 6,
+    "title": "Closing the Loop: The 6-Stage Self-Defending System Lifecycle",
+    "takeaways": [
+      "Defines the closed-loop autonomous response sequence: 1 Sense -> 2 Assess (identity, intent, risk) -> 3 Contain (smallest reversible action) -> 4 Restore (trusted state) -> 5 Verify (controls and service health) -> 6 Learn (update policies and detections).",
+      "Enforces a strict Policy Gate: every autonomous action must be explainable, scoped, logged, and reversible where possible."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Autonomous Response",
+      "Policy Gate",
+      "Verified Recovery",
+      "Closed-Loop Control"
+    ]
+  },
+  {
+    "slide": 7,
+    "title": "A Reference Architecture for Autonomous Defense",
+    "takeaways": [
+      "Connects Protected Environments (Agents & Copilots, Apps & APIs, Cloud & Endpoints) to an Autonomous Defense Plane organized across Observe -> Decide -> Enforce -> Recover.",
+      "Spans continuous Governance across every layer via risk appetite tiers, policy ownership & exceptions, immutable audit trails, and human escalation & override."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Reference Architecture",
+      "Defense Plane",
+      "Observability",
+      "Governance"
+    ]
+  },
+  {
+    "slide": 8,
+    "title": "Guardrail 01 — Intent: Bind Every Action to an Approved Purpose",
+    "takeaways": [
+      "Identity alone answers who; Intent answers why an actor is acting and what it is allowed to accomplish via an explicit Intent Contract (Purpose, Actor, Resource, Allowed Action, Data Scope, Expiry).",
+      "Illustrates point-of-action authorization: read-only invoice metadata matches approved intent (ALLOW), while changing payment destination or releasing funds violates scope (DENY / ESCALATE)."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Intent Contract",
+      "Guardrail 01",
+      "Purpose-Bound Auth",
+      "Zero Trust"
+    ]
+  },
+  {
+    "slide": 9,
+    "title": "Guardrail 02 — Time: Trust Has a Half-Life",
+    "takeaways": [
+      "Addresses permissions that were safe at task start becoming unsafe after state changes, anomalies, or context shifts across Issue -> Re-Evaluate -> Expire -> Revoke / Renew.",
+      "Establishes three temporal controls: Short Leases (reduce stale authority), Event-Driven Checks (reassess after drift), and Safe Expiry (fail closed for sensitive actions)."
+    ],
+    "category": "Governance",
+    "tags": [
+      "Temporal Trust",
+      "Short Leases",
+      "Event-Driven Checks",
+      "Safe Expiry"
+    ]
+  },
+  {
+    "slide": 10,
+    "title": "Guardrail 03 — Interaction: Stop Trust from Becoming Contagious",
+    "takeaways": [
+      "Models multi-hop delegation graphs (User -> Orchestrator -> Data Agent / Payment Agent -> Resource) protected by per-hop authorization, provenance, and scope preservation.",
+      "Enforces non-transitive trust by default: permission to call one agent does not imply permission to use every capability reachable through it."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Interaction Guardrail",
+      "Per-Hop Authorization",
+      "Provenance Preservation",
+      "Non-Transitive Trust"
+    ]
+  },
+  {
+    "slide": 11,
+    "title": "Adaptive Defense Framework: Five Building Blocks of Continuous Control",
+    "takeaways": [
+      "Details the five continuous building blocks: 01 Behavioral Monitoring -> 02 Policy Enforcement -> 03 Contextual Trust -> 04 Autonomous Remediation -> 05 Self-Adjusting Controls.",
+      "Reinforces that adaptive defense does not mean unconstrained: every policy update must be tested, explainable, and reversible."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Adaptive Defense Framework",
+      "Behavioral Security",
+      "Contextual Trust",
+      "Autonomous Remediation"
+    ]
+  },
+  {
+    "slide": 12,
+    "title": "Governance by Design: The L0–L3 Autonomy Risk Envelope",
+    "takeaways": [
+      "Defines a four-tier operating envelope: L0 Observe (collect evidence), L1 Recommend (human review), L2 Bounded Auto (preapproved reversible containment), and L3 Approval Required (high-impact or irreversible actions).",
+      "Core operating rule: default to the narrowest authority that can safely achieve the defensive objective."
+    ],
+    "category": "Governance",
+    "tags": [
+      "Risk Envelope",
+      "Governance by Design",
+      "Bounded Autonomy",
+      "Action Tiers"
+    ]
+  },
+  {
+    "slide": 13,
+    "title": "Illustrative Scenario Walkthrough: Containing a Compromised Workflow",
+    "takeaways": [
+      "Walks through an untrusted invoice attachment prompt-injection attack path countered at each stage by Intent (read-only scope), Time (short-lived token), Interaction (per-hop auth denying privilege inheritance), and Recovery (quarantine document, revoke session, verify state).",
+      "Demonstrates containing the workflow before payment state mutation while preserving forensic evidence for review."
+    ],
+    "category": "Threat Landscape",
+    "tags": [
+      "Scenario Walkthrough",
+      "Containment",
+      "Workflow Recovery",
+      "Token Revocation"
+    ]
+  },
+  {
+    "slide": 14,
+    "title": "Industry Applications: Same Resilience Pattern Across Critical Sectors",
+    "takeaways": [
+      "Applies bounded autonomous resilience across Financial Services (hold suspicious transfer, revoke session), Healthcare (isolate compromised integration while preserving clinical availability), Manufacturing/OT (segment gateway), and Cloud & SaaS (revoke token, restore config).",
+      "Synthesizes the cross-sector pattern: detect context -> choose smallest safe action -> verify service health -> recover."
+    ],
+    "category": "Applications",
+    "tags": [
+      "Financial Services",
+      "Healthcare",
+      "Manufacturing OT",
+      "Cloud & SaaS"
+    ]
+  },
+  {
+    "slide": 15,
+    "title": "Operating Metrics: Measure Resilience, Not Just Alert Volume",
+    "takeaways": [
+      "Measures speed, scope, and recovery quality via MTTD (Mean Time to Detect), MTTC (Mean Time to Contain), MTTR (Mean Time to Recover), and Blast Radius (affected assets/users).",
+      "Tracks automation safety metrics: false-containment rate, successful rollback/restore rate, policy override and escalation rate, and audit-evidenced action coverage."
+    ],
+    "category": "Governance",
+    "tags": [
+      "Operating Metrics",
+      "MTTC & MTTR",
+      "Blast Radius",
+      "Safety Metrics"
+    ]
+  },
+  {
+    "slide": 16,
+    "title": "Human Governance: How Autonomy Changes the Work Humans Do",
+    "takeaways": [
+      "Separates organizational duties across Humans Define (risk appetite, approved action tiers, policy ownership), Systems Execute (evidence collection, low-risk containment, token revocation), and Humans Review (high-consequence actions, ambiguous intent, post-incident learning).",
+      "Establishes the governing principle: delegate execution—never delegate accountability."
+    ],
+    "category": "Governance",
+    "tags": [
+      "Human Governance",
+      "Accountability",
+      "Human-in-the-Loop",
+      "Executive Oversight"
+    ]
+  },
+  {
+    "slide": 17,
+    "title": "Implementation Roadmap: A Practical 90-Day Path to Bounded Autonomy",
+    "takeaways": [
+      "Outlines a three-phase rollout: Days 0–30 Baseline (map agents, identities, rollback paths), Days 31–60 Shadow + Simulate (observe-only mode and incident replay), and Days 61–90 Bounded Autonomy (enable low-risk reversible actions for one workflow).",
+      "Mandates disciplined scaling: never scale autonomy faster than you can measure, audit, and reverse it."
+    ],
+    "category": "Governance",
+    "tags": [
+      "90-Day Roadmap",
+      "Bounded Autonomy",
+      "Shadow Mode",
+      "Enterprise Rollout"
+    ]
+  },
+  {
+    "slide": 18,
+    "title": "Design Checklist: Seven Principles for Systems That Defend Themselves",
+    "takeaways": [
+      "Architecture review checklist: 01 Least privilege by default, 02 Authorization bound to intent, 03 Short-lived scoped delegation, 04 Continuous trust re-evaluation, 05 Smallest safe containment action, 06 Verified recovery, 07 Retained human accountability.",
+      "A system is not self-defending because it can act—it is self-defending when it can act safely, prove what happened, and recover."
+    ],
+    "category": "Architecture",
+    "tags": [
+      "Design Checklist",
+      "Seven Principles",
+      "Least Privilege",
+      "Verified Recovery"
+    ]
+  },
+  {
+    "slide": 19,
+    "title": "The Next Security Model: Machine-Speed Defense Within Human Boundaries",
+    "takeaways": [
+      "Don't remove humans from responsibility—remove humans from repetitive delay.",
+      "Build systems that can defend, recover, and explain—at machine speed, within human-defined boundaries."
+    ],
+    "category": "Governance",
+    "tags": [
+      "Cyber Resilience",
+      "Machine-Speed Defense",
+      "Human Boundaries",
+      "Next Security Model"
+    ]
+  },
+  {
+    "slide": 20,
+    "title": "References & Further Reading: Primary Source + Foundational Standards",
+    "takeaways": [
+      "Cites the primary RSA Conference Blog article ('Security Without Humans: Designing Systems that Defend Themselves', Nov 13, 2026) as the source for the Intent, Time, and Interaction framing.",
+      "Grounds architecture guidance in NIST SP 800-207 (Zero Trust Architecture), NIST AI RMF 1.0, NIST SP 800-61 Rev. 3 (Incident Response), and MITRE ATLAS."
+    ],
+    "category": "Applications",
+    "tags": [
+      "RSA Conference",
+      "NIST SP 800-207",
+      "NIST AI RMF",
+      "MITRE ATLAS"
+    ]
+  },
+  {
+    "slide": 21,
+    "title": "References & Further Reading: Security Practice + Industry Frameworks",
+    "takeaways": [
+      "Connects OWASP GenAI LLM Top 10 (excessive agency and prompt injection) and CISA Secure by Design principles to autonomous cyber defense.",
+      "References industry initiatives including DARPA AI Cyber Challenge (AIxCC) and autonomous security copilot patterns."
+    ],
+    "category": "Applications",
+    "tags": [
+      "OWASP LLM Top 10",
+      "CISA Secure by Design",
+      "DARPA AIxCC",
+      "Citations"
+    ]
+  }
+]

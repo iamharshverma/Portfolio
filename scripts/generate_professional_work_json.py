@@ -16,9 +16,12 @@ DATA_DIR = os.path.join(ROOT_DIR, "data")
 os.makedirs(DATA_DIR, exist_ok=True)
 
 def generate_professional_work():
-    # Load papers
+    # Load papers and awards
     with open(os.path.join(ROOT_DIR, "papers_data.json"), "r", encoding="utf-8") as f:
         papers = json.load(f)
+    awards_path = os.path.join(ROOT_DIR, "awards_data.json")
+    with open(awards_path, "r", encoding="utf-8") as f:
+        awards_list = json.load(f)
 
     work_dossier = {
         "metadata": {
@@ -46,11 +49,11 @@ def generate_professional_work():
                 "property enabling Fortune 500 enterprises to safely deploy autonomous AI at global scale."
             ),
             "high_level_metrics": {
-                "peer_reviewed_publications": 27,
+                "peer_reviewed_publications": len(papers),
                 "patents_portfolio": 6,
                 "patents_granted": 2,
                 "patents_pending_in_process": 4,
-                "global_honors_and_awards": 27,
+                "global_honors_and_awards": len(awards_list),
                 "tier1_media_features": 45,
                 "verified_directory_profiles": 57,
                 "invited_fellowships_and_councils": 26,

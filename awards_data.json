@@ -694,66 +694,93 @@
     "citation": "Verma, H. (2020). Lead Hackathon Mentor Recognition: Global Hack Digital Defense. Google & Hackmakers (Badgr Assertion: wvReoDSRTjCJsBqI9A4LMg)."
   },
   {
-    "id": "award-adplist-1000-minutes",
-    "title": "ADPList Milestone: 1,000+ Completed Mentorship Minutes",
+    "id": "award-adplist-mentorship-milestones",
+    "title": "ADPList Mentorship Milestones: 1,000+ Minutes & 50+ Sessions",
     "organization": "ADPList (Amazing Design People List)",
     "category": "mentorship-advisory",
     "category_label": "Mentorship, Ecosystem & Advisory",
-    "tier": "1,000+ Minutes",
+    "tier": "1,000+ Mins \u00b7 50+ Sessions",
     "tier_class": "tier-coral",
     "year": "2025",
-    "image": "images/awards/adplist_1000min.svg",
-    "description": "Awarded Certificate of Achievement from ADPList for completing over 1,000 minutes (16+ hours) of 1-on-1 mentorship sessions, guiding emerging engineers, AI researchers, and founders across ADPList's 1M+ global community.",
+    "image": "images/awards/adplist_mentorship_milestones.svg",
+    "description": "Awarded six progressive Community Certification Milestones from ADPList (100, 500 & 1,000+ Minutes; 10, 25 & 50+ Sessions) for sustained 1-on-1 mentorship guiding emerging AI engineers, researchers, and startup founders across ADPList's 1M+ global community.",
     "tags": [
       "ADPList",
-      "1,000 Minutes",
+      "1,000+ Minutes",
+      "50+ Sessions",
       "Global Mentorship",
       "Community Impact"
     ],
     "links": [
       {
-        "label": "ADPList 1,000 Minutes Certificate",
-        "url": "https://adplist.org/community-certifications/minutes-1000-b42201",
-        "icon": "mdi-certificate"
+        "label": "100 Minutes Milestone",
+        "url": "https://adplist.org/community-certifications/minutes-100-b42201",
+        "icon": "mdi-clock-outline"
       },
       {
-        "label": "ADPList 500 Minutes Milestone",
-        "url": "https://adplist.org/community-certifications/minutes-500-b42201",
-        "icon": "mdi-clock-check"
-      }
-    ],
-    "citation": "Verma, H. (2025). Certificate of Achievement: 1,000 Minutes of Global Mentorship. ADPList Platform."
-  },
-  {
-    "id": "award-adplist-25-sessions",
-    "title": "ADPList Milestone: 25+ Completed Mentorship Sessions",
-    "organization": "ADPList (Amazing Design People List)",
-    "category": "mentorship-advisory",
-    "category_label": "Mentorship, Ecosystem & Advisory",
-    "tier": "25+ Sessions",
-    "tier_class": "tier-purple",
-    "year": "2025",
-    "image": "images/awards/adplist_25sessions.svg",
-    "description": "Milestone Certificate of Achievement recognizing 25+ completed individual mentorship sessions, empowering technical practitioners with architectural insights in scalable machine learning and engineering career advancement.",
-    "tags": [
-      "ADPList",
-      "25+ Sessions",
-      "Volunteer Mentorship",
-      "Community Growth"
-    ],
-    "links": [
+        "label": "10 Sessions Milestone",
+        "url": "https://adplist.org/community-certifications/sessions-10-b42201",
+        "icon": "mdi-account-check-outline"
+      },
       {
-        "label": "ADPList 25 Sessions Certificate",
+        "label": "500 Minutes Milestone",
+        "url": "https://adplist.org/community-certifications/minutes-500-b42201",
+        "icon": "mdi-clock-check-outline"
+      },
+      {
+        "label": "25 Sessions Milestone",
         "url": "https://adplist.org/community-certifications/sessions-25-b42201",
         "icon": "mdi-account-multiple-check"
       },
       {
-        "label": "ADPList 10 Sessions Milestone",
-        "url": "https://adplist.org/community-certifications/sessions-10-b42201",
-        "icon": "mdi-account-check"
+        "label": "1,000 Minutes Milestone",
+        "url": "https://adplist.org/community-certifications/minutes-1000-b42201",
+        "icon": "mdi-certificate"
+      },
+      {
+        "label": "50 Sessions Milestone",
+        "url": "https://adplist.org/community-certifications/sessions-50-b42201",
+        "icon": "mdi-trophy-award"
       }
     ],
-    "citation": "Verma, H. (2025). Certificate of Achievement: 25 Completed Mentorship Sessions. ADPList Platform."
+    "citation": "Verma, H. (2025). Community Certification Milestones: 1,000+ Minutes & 50+ Completed Mentorship Sessions (100/500/1,000 Mins; 10/25/50 Sessions). ADPList Platform."
+  },
+  {
+    "id": "award-adplist-community-recognition",
+    "title": "ADPList Community Recognition: Top 1% AI & Top 50 Engineering Mentor",
+    "organization": "ADPList (Amazing Design People List)",
+    "category": "mentorship-advisory",
+    "category_label": "Mentorship, Ecosystem & Advisory",
+    "tier": "Top 1% AI Mentor",
+    "tier_class": "tier-purple",
+    "year": "2026",
+    "image": "images/awards/adplist_community_recognition.svg",
+    "description": "Awarded elite ADPList Community Recognition honors across 2026: Top 1% AI Mentor (Oct 2026), Top 50 AI & ML Engineering Mentor (Sep 2026), and Top 10 Fresh AI & ML Engineering Mentor (Jun 2026) for high-impact global mentorship in enterprise AI architectures, machine learning engineering, and technical career growth.",
+    "tags": [
+      "ADPList",
+      "Top 1% AI Mentor",
+      "Top 50 AI/ML",
+      "Top 10 Fresh Mentor",
+      "Global Mentorship"
+    ],
+    "links": [
+      {
+        "label": "Top 1% AI Mentor (Oct 2026)",
+        "url": "https://adplist.org/community-certifications/top1percent-oct-2026-ai-b42201",
+        "icon": "mdi-star-circle"
+      },
+      {
+        "label": "Top 50 AI & ML Engineering Mentor (Sep 2026)",
+        "url": "https://adplist.org/community-certifications/top50-sep-2026-ai-ml-engineering-b42201",
+        "icon": "mdi-trophy-award"
+      },
+      {
+        "label": "Top 10 Fresh AI & ML Mentor (Jun 2026)",
+        "url": "https://adplist.org/community-certifications/top10fresh-jun-2026-ai-ml-engineering-b42201",
+        "icon": "mdi-certificate"
+      }
+    ],
+    "citation": "Verma, H. (2026). ADPList Community Recognition: Top 1% AI Mentor (Oct 2026), Top 50 AI & ML Engineering Mentor (Sep 2026), & Top 10 Fresh AI & ML Engineering Mentor (Jun 2026). ADPList Platform."
   },
   {
     "id": "award-jrtcse-peer-review-excellence",

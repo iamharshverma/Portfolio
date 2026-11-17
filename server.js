@@ -1267,6 +1267,23 @@ app.post('/api/wiki-sync', (req, res) => {
 // API endpoint for Smart Slides metadata
 app.get('/api/smart-slides', (req, res) => {
   try {
+    const slidesJsonPath = path.join(__dirname, 'data', 'slides.json');
+    if (fs.existsSync(slidesJsonPath)) {
+      const unified = JSON.parse(fs.readFileSync(slidesJsonPath, 'utf8'));
+      if (unified && Array.isArray(unified.decks) && unified.decks.length > 0) {
+        const decksMap = {};
+        for (const d of unified.decks) {
+          decksMap[d.id] = d;
+        }
+        return res.json({
+          success: true,
+          total_decks: unified.total_decks,
+          total_slides: unified.total_slides,
+          decks: decksMap
+        });
+      }
+    }
+
     const deck1 = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'agentic-security-governance.json'), 'utf8'));
     const deck2 = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'powering-cybersecurity-genai.json'), 'utf8'));
     const deck3Path = path.join(__dirname, 'data', 'enterprises-multi-agent-systems.json');
@@ -1276,6 +1293,7 @@ app.get('/api/smart-slides', (req, res) => {
     const deck7Path = path.join(__dirname, 'data', 'death-of-authentication-ai-systems.json');
     const deck8Path = path.join(__dirname, 'data', 'agents-dont-break-rules-they-redefine-them.json');
     const deck9Path = path.join(__dirname, 'data', 'why-multi-agent-systems-cybersecurity-nightmare.json');
+    const deck10Path = path.join(__dirname, 'data', 'security-without-humans-defend-themselves.json');
     const deck3 = fs.existsSync(deck3Path) ? JSON.parse(fs.readFileSync(deck3Path, 'utf8')) : [];
     const deck4 = fs.existsSync(deck4Path) ? JSON.parse(fs.readFileSync(deck4Path, 'utf8')) : [];
     const deck5 = fs.existsSync(deck5Path) ? JSON.parse(fs.readFileSync(deck5Path, 'utf8')) : [];
@@ -1283,6 +1301,7 @@ app.get('/api/smart-slides', (req, res) => {
     const deck7 = fs.existsSync(deck7Path) ? JSON.parse(fs.readFileSync(deck7Path, 'utf8')) : [];
     const deck8 = fs.existsSync(deck8Path) ? JSON.parse(fs.readFileSync(deck8Path, 'utf8')) : [];
     const deck9 = fs.existsSync(deck9Path) ? JSON.parse(fs.readFileSync(deck9Path, 'utf8')) : [];
+    const deck10 = fs.existsSync(deck10Path) ? JSON.parse(fs.readFileSync(deck10Path, 'utf8')) : [];
 
     res.json({
       success: true,
@@ -1364,6 +1383,15 @@ app.get('/api/smart-slides', (req, res) => {
           easyChairUrl: 'https://easychair.org/smart-slide/slide/JSZf#{sn:1}',
           blogUrl: 'https://www.rsaconference.com/Library/blog/why-multi-agent-systems-are-a-cybersecurity-nightmare',
           slides: deck9
+        },
+        'NZ5R': {
+          id: 'NZ5R',
+          title: 'Security Without Humans: Designing Systems That Defend Themselves',
+          folder: 'security-without-humans-defend-themselves',
+          count: deck10.length,
+          easyChairUrl: 'https://easychair.org/smart-slide/slide/NZ5R#{sn:1}',
+          blogUrl: 'https://www.rsaconference.com/Library/blog/security-without-humans-designing-systems-that-defend-themselves',
+          slides: deck10
         }
       }
     });

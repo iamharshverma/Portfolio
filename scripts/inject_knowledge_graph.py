@@ -266,8 +266,11 @@ def build_identity_page(kg):
                         <p class="kg-node-desc mb-0">{desc}</p>
                     </div>
                 </div>
-                <div class="mt-auto pt-2 border-top d-flex justify-content-between align-items-center">
-                    <a href="page-books" class="kg-node-link"><i class="mdi mdi-book-multiple mr-1"></i>Explore Official Book Hub <i class="mdi mdi-arrow-right ml-1"></i></a>
+                <div class="mt-auto pt-2 border-top d-flex justify-content-between align-items-center flex-wrap" style="gap:6px;">
+                    <div class="d-flex align-items-center flex-wrap" style="gap:10px;">
+                        <a href="page-books" class="kg-node-link"><i class="mdi mdi-book-multiple mr-1"></i>Explore Official Book Hub <i class="mdi mdi-arrow-right ml-1"></i></a>
+                        {f'<a href="{html_lib.escape(b["url"])}" target="_blank" rel="noopener noreferrer" class="kg-node-link text-success"><i class="mdi mdi-open-in-new mr-1"></i>View Book</a>' if b.get("url") and not b["url"].startswith("https://www.harshverma.me") else ''}
+                    </div>
                     <span class="text-muted font-monospace" style="font-size:11px;">Schema: {schema_type}</span>
                 </div>
             </div>
@@ -2146,7 +2149,7 @@ HUB_FAQ_DATA = {
     "awards": [
         (
             "What major awards has Harsh Verma won for AI engineering?",
-            "Harsh Verma has received over 27 global awards honoring engineering excellence, innovative software architecture, artificial intelligence research, and leadership in technology."
+            "Harsh Verma has received 27 global awards honoring engineering excellence, innovative software architecture, artificial intelligence research, and leadership in technology."
         ),
         (
             "What organizations have recognized Harsh Verma with honors?",
@@ -2158,7 +2161,7 @@ HUB_FAQ_DATA = {
         ),
         (
             "Where are Harsh Verma's awards and trophies documented?",
-            "The complete verified list of 27+ awards, certificates, and year-by-year recognitions is showcased on the official Awards page at harshverma.me/page-awards."
+            "The complete verified list of 27 awards, certificates, and year-by-year recognitions is showcased on the official Awards page at harshverma.me/page-awards."
         ),
         (
             "How does Harsh Verma's fellowship record reflect his awards?",
