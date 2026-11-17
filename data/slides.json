@@ -19,7 +19,7 @@
       "badge": "Verified Academic Ref",
       "author": "Harsh Verma",
       "year": "2026",
-      "easyChairUrl": "https://easychair.org/smart-slide/slide/ntzm5",
+      "easyChairUrl": "https://easychair.org/smart-slide/slide/ntzm5#{sn:1}",
       "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=ntzm5&slide=1",
       "blogUrl": null,
       "blogTitle": null,
@@ -91,6 +91,17 @@
         "Reference",
         "Links",
         "Q&A"
+      ],
+      "primary_url": "https://easychair.org/smart-slide/slide/ntzm5#{sn:1}",
+      "links": [
+        {
+          "label": "EasyChair Smart Slide",
+          "url": "https://easychair.org/smart-slide/slide/ntzm5#{sn:1}"
+        },
+        {
+          "label": "Portfolio Interactive Viewer",
+          "url": "https://www.harshverma.me/page-smart-slides#deck=ntzm5&slide=1"
+        }
       ],
       "slides": [
         {
@@ -508,7 +519,7 @@
       "badge": "Case Study Included",
       "author": "Harsh Verma",
       "year": "2026",
-      "easyChairUrl": "https://easychair.org/smart-slide/slide/T45r",
+      "easyChairUrl": "https://easychair.org/smart-slide/slide/T45r#{sn:1}",
       "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=T45r&slide=1",
       "blogUrl": null,
       "blogTitle": null,
@@ -566,6 +577,17 @@
         "Demo",
         "Rakshak-AI",
         "Q&A"
+      ],
+      "primary_url": "https://easychair.org/smart-slide/slide/T45r#{sn:1}",
+      "links": [
+        {
+          "label": "EasyChair Smart Slide",
+          "url": "https://easychair.org/smart-slide/slide/T45r#{sn:1}"
+        },
+        {
+          "label": "Portfolio Interactive Viewer",
+          "url": "https://www.harshverma.me/page-smart-slides#deck=T45r&slide=1"
+        }
       ],
       "slides": [
         {
@@ -892,6 +914,17 @@
         "Attribution",
         "References"
       ],
+      "primary_url": "https://easychair.org/smart-slide/slide/r92g#{sn:1}",
+      "links": [
+        {
+          "label": "EasyChair Smart Slide",
+          "url": "https://easychair.org/smart-slide/slide/r92g#{sn:1}"
+        },
+        {
+          "label": "Portfolio Interactive Viewer",
+          "url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1"
+        }
+      ],
       "slides": [
         {
           "slide": 1,
@@ -1211,6 +1244,17 @@
         "Q&A",
         "Engagement",
         "Summary"
+      ],
+      "primary_url": "https://easychair.org/smart-slide/slide/GxwP#{sn:1}",
+      "links": [
+        {
+          "label": "EasyChair Smart Slide",
+          "url": "https://easychair.org/smart-slide/slide/GxwP#{sn:1}"
+        },
+        {
+          "label": "Portfolio Interactive Viewer",
+          "url": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1"
+        }
       ],
       "slides": [
         {
@@ -1837,6 +1881,17 @@
         "Production Impact",
         "Future Work"
       ],
+      "primary_url": "https://easychair.org/smart-slide/slide/8WpM#{sn:1}",
+      "links": [
+        {
+          "label": "EasyChair Smart Slide",
+          "url": "https://easychair.org/smart-slide/slide/8WpM#{sn:1}"
+        },
+        {
+          "label": "Portfolio Interactive Viewer",
+          "url": "https://www.harshverma.me/page-smart-slides#deck=8WpM&slide=1"
+        }
+      ],
       "slides": [
         {
           "slide": 1,
@@ -2079,6 +2134,21 @@
         "Resilience",
         "Strategic Roadmap"
       ],
+      "primary_url": "https://easychair.org/smart-slide/slide/tHbS#{sn:1}",
+      "links": [
+        {
+          "label": "EasyChair Smart Slide",
+          "url": "https://easychair.org/smart-slide/slide/tHbS#{sn:1}"
+        },
+        {
+          "label": "Portfolio Interactive Viewer",
+          "url": "https://www.harshverma.me/page-smart-slides#deck=tHbS&slide=1"
+        },
+        {
+          "label": "RSA Conference: The Clean Attack Problem",
+          "url": "https://www.rsaconference.com/library/blog/the-clean-attack-problem"
+        }
+      ],
       "slides": [
         {
           "slide": 1,
@@ -2313,6 +2383,21 @@
         "Outcome Verification",
         "Future of Security",
         "Executive Summary"
+      ],
+      "primary_url": "https://easychair.org/smart-slide/slide/xJKk#{sn:1}",
+      "links": [
+        {
+          "label": "EasyChair Smart Slide",
+          "url": "https://easychair.org/smart-slide/slide/xJKk#{sn:1}"
+        },
+        {
+          "label": "Portfolio Interactive Viewer",
+          "url": "https://www.harshverma.me/page-smart-slides#deck=xJKk&slide=1"
+        },
+        {
+          "label": "RSA Conference: The Death of Authentication",
+          "url": "https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems"
+        }
       ],
       "slides": [
         {
@@ -2643,6 +2728,21 @@
         "Dual-Control Auth",
         "Strategic Roadmap"
       ],
+      "primary_url": "https://easychair.org/smart-slide/slide/X2qH#{sn:1}",
+      "links": [
+        {
+          "label": "EasyChair Smart Slide",
+          "url": "https://easychair.org/smart-slide/slide/X2qH#{sn:1}"
+        },
+        {
+          "label": "Portfolio Interactive Viewer",
+          "url": "https://www.harshverma.me/page-smart-slides#deck=X2qH&slide=1"
+        },
+        {
+          "label": "RSA Conference: Agents Don't Break Rules",
+          "url": "https://www.rsaconference.com/Library/blog/agents-dont-break-rules-they-redefine-them"
+        }
+      ],
       "slides": [
         {
           "slide": 1,
@@ -2890,6 +2990,21 @@
         "Attribution",
         "References",
         "Sources"
+      ],
+      "primary_url": "https://easychair.org/smart-slide/slide/JSZf#{sn:1}",
+      "links": [
+        {
+          "label": "EasyChair Smart Slide",
+          "url": "https://easychair.org/smart-slide/slide/JSZf#{sn:1}"
+        },
+        {
+          "label": "Portfolio Interactive Viewer",
+          "url": "https://www.harshverma.me/page-smart-slides#deck=JSZf&slide=1"
+        },
+        {
+          "label": "RSA Conference: Why Multi-Agent Systems Are a Cybersecurity Nightmare",
+          "url": "https://www.rsaconference.com/Library/blog/why-multi-agent-systems-are-a-cybersecurity-nightmare"
+        }
       ],
       "slides": [
         {
@@ -3275,6 +3390,21 @@
         "CISA Secure by Design",
         "DARPA AIxCC",
         "Citations"
+      ],
+      "primary_url": "https://easychair.org/smart-slide/slide/NZ5R#{sn:1}",
+      "links": [
+        {
+          "label": "EasyChair Smart Slide",
+          "url": "https://easychair.org/smart-slide/slide/NZ5R#{sn:1}"
+        },
+        {
+          "label": "Portfolio Interactive Viewer",
+          "url": "https://www.harshverma.me/page-smart-slides#deck=NZ5R&slide=1"
+        },
+        {
+          "label": "RSA Conference: Security Without Humans: Designing Systems that Defend Themselves",
+          "url": "https://www.rsaconference.com/Library/blog/security-without-humans-designing-systems-that-defend-themselves"
+        }
       ],
       "slides": [
         {

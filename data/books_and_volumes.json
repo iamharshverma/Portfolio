@@ -17,7 +17,25 @@
     ],
     "catalog_url": "https://www.beyondaiengineering.com/",
     "website_url": "https://www.beyondaiengineering.com/",
-    "cover_image": "images/books/book_creator_to_curator.png"
+    "url": "https://www.beyondaiengineering.com/",
+    "page_url": "https://www.harshverma.me/page-books#book1",
+    "partner_url": "https://profilegenius.careeraccelerator.net/",
+    "cover_image": "images/books/book_creator_to_curator.png",
+    "links": [
+      {
+        "label": "Official Book Website",
+        "url": "https://www.beyondaiengineering.com/"
+      },
+      {
+        "label": "ProfileGenius by Career Accelerator (Featured Platform)",
+        "url": "https://profilegenius.careeraccelerator.net/"
+      },
+      {
+        "label": "Portfolio Books Hub",
+        "url": "https://www.harshverma.me/page-books#book1"
+      }
+    ],
+    "primary_url": "https://www.beyondaiengineering.com/"
   },
   {
     "id": "book-autonomous-cyber-defense",
@@ -37,7 +55,20 @@
     ],
     "catalog_url": "https://www.beyondaivsai.com/",
     "website_url": "https://www.beyondaivsai.com/",
-    "cover_image": "images/books/book_cybersecurity_counteroffensive.png"
+    "url": "https://www.beyondaivsai.com/",
+    "page_url": "https://www.harshverma.me/page-books#book2",
+    "cover_image": "images/books/book_cybersecurity_counteroffensive.png",
+    "links": [
+      {
+        "label": "Official Book Website",
+        "url": "https://www.beyondaivsai.com/"
+      },
+      {
+        "label": "Portfolio Books Hub",
+        "url": "https://www.harshverma.me/page-books#book2"
+      }
+    ],
+    "primary_url": "https://www.beyondaivsai.com/"
   },
   {
     "id": "book-review-ai-ethics-in-action",
@@ -56,7 +87,20 @@
       "Responsible AI"
     ],
     "catalog_url": "https://packt.link/MuEPg",
-    "cover_image": "images/books/review_ai_ethics.png"
+    "url": "https://packt.link/MuEPg",
+    "page_url": "https://www.harshverma.me/page-books#reviewed-books",
+    "cover_image": "images/books/review_ai_ethics.png",
+    "links": [
+      {
+        "label": "View Book (Packt)",
+        "url": "https://packt.link/MuEPg"
+      },
+      {
+        "label": "Portfolio Reviewed Volumes",
+        "url": "https://www.harshverma.me/page-books#reviewed-books"
+      }
+    ],
+    "primary_url": "https://packt.link/MuEPg"
   },
   {
     "id": "book-review-hands-on-ai-dev",
@@ -75,7 +119,20 @@
       "Distributed Systems"
     ],
     "catalog_url": "https://packt.link/pZ2C5",
-    "cover_image": "images/books/review_hands_on_ai.png"
+    "url": "https://packt.link/pZ2C5",
+    "page_url": "https://www.harshverma.me/page-books#reviewed-books",
+    "cover_image": "images/books/review_hands_on_ai.png",
+    "links": [
+      {
+        "label": "View Book (Packt)",
+        "url": "https://packt.link/pZ2C5"
+      },
+      {
+        "label": "Portfolio Reviewed Volumes",
+        "url": "https://www.harshverma.me/page-books#reviewed-books"
+      }
+    ],
+    "primary_url": "https://packt.link/pZ2C5"
   },
   {
     "id": "book-review-leadership-ai",
@@ -94,7 +151,20 @@
       "AI ROI"
     ],
     "catalog_url": "https://www.packtpub.com/",
-    "cover_image": "images/books/review_leadership_ai.png"
+    "url": "https://www.packtpub.com/",
+    "page_url": "https://www.harshverma.me/page-books#reviewed-books",
+    "cover_image": "images/books/review_leadership_ai.png",
+    "links": [
+      {
+        "label": "Packt Publishing Catalog",
+        "url": "https://www.packtpub.com/"
+      },
+      {
+        "label": "Portfolio Reviewed Volumes",
+        "url": "https://www.harshverma.me/page-books#reviewed-books"
+      }
+    ],
+    "primary_url": "https://www.packtpub.com/"
   },
   {
     "id": "book-review-python-algo-trading",
@@ -113,7 +183,20 @@
       "Python FinTech"
     ],
     "catalog_url": "https://packt.link/8jmuy",
-    "cover_image": "images/books/review_python_trading.png"
+    "url": "https://packt.link/8jmuy",
+    "page_url": "https://www.harshverma.me/page-books#reviewed-books",
+    "cover_image": "images/books/review_python_trading.png",
+    "links": [
+      {
+        "label": "View Book (Packt)",
+        "url": "https://packt.link/8jmuy"
+      },
+      {
+        "label": "Portfolio Reviewed Volumes",
+        "url": "https://www.harshverma.me/page-books#reviewed-books"
+      }
+    ],
+    "primary_url": "https://packt.link/8jmuy"
   },
   {
     "id": "book-review-ml-genai-marketing",
@@ -132,7 +215,20 @@
       "Predictive Analytics"
     ],
     "catalog_url": "https://www.packtpub.com/",
-    "cover_image": "images/books/review_genai_marketing.png"
+    "url": "https://www.packtpub.com/",
+    "page_url": "https://www.harshverma.me/page-books#reviewed-books",
+    "cover_image": "images/books/review_genai_marketing.png",
+    "links": [
+      {
+        "label": "Packt Publishing Catalog",
+        "url": "https://www.packtpub.com/"
+      },
+      {
+        "label": "Portfolio Reviewed Volumes",
+        "url": "https://www.harshverma.me/page-books#reviewed-books"
+      }
+    ],
+    "primary_url": "https://www.packtpub.com/"
   },
   {
     "id": "book-review-tensorflow-workshop",
@@ -151,6 +247,19 @@
       "Distributed Training"
     ],
     "catalog_url": "https://www.packtpub.com/",
-    "cover_image": "images/books/review_tensorflow.png"
+    "url": "https://www.packtpub.com/",
+    "page_url": "https://www.harshverma.me/page-books#reviewed-books",
+    "cover_image": "images/books/review_tensorflow.png",
+    "links": [
+      {
+        "label": "Packt Publishing Catalog",
+        "url": "https://www.packtpub.com/"
+      },
+      {
+        "label": "Portfolio Reviewed Volumes",
+        "url": "https://www.harshverma.me/page-books#reviewed-books"
+      }
+    ],
+    "primary_url": "https://www.packtpub.com/"
   }
 ]

@@ -24,7 +24,22 @@
     "mediaType": "image",
     "mediaUrl": "images/media/influencer_uk_badge.svg",
     "isPinned": true,
-    "source": "fetched_from_url"
+    "source": "fetched_from_url",
+    "primary_url": "https://www.linkedin.com/feed/update/urn:li:activity:7527288512111501312",
+    "links": [
+      {
+        "label": "LinkedIn Post",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7527288512111501312"
+      },
+      {
+        "label": "Featured Article / Video",
+        "url": "https://influencermagazine.uk/2026/11/harsh-verma-the-future-of-ai-is-not-justt-about-making-machines-more-intelligent-it-is-about-making-intelligent-machines-worthy-of-our-trust/"
+      },
+      {
+        "label": "Post Media Asset",
+        "url": "https://www.harshverma.me/images/media/influencer_uk_badge.svg"
+      }
+    ]
   },
   {
     "id": "post-ig-influencer-uk-trust-2026",
@@ -51,7 +66,18 @@
     "mediaType": "image",
     "mediaUrl": "images/media/influencer_uk_badge.svg",
     "isPinned": true,
-    "source": "fetched_from_url"
+    "source": "fetched_from_url",
+    "primary_url": "https://www.instagram.com/p/DftthWtK70s/",
+    "links": [
+      {
+        "label": "Instagram Post",
+        "url": "https://www.instagram.com/p/DftthWtK70s/"
+      },
+      {
+        "label": "Post Media Asset",
+        "url": "https://www.harshverma.me/images/media/influencer_uk_badge.svg"
+      }
+    ]
   },
   {
     "id": "post-li-forbes",
@@ -78,7 +104,18 @@
     "mediaType": "image",
     "mediaUrl": "images/blog/thumbnails/forbes-intelligence-dollar.jpg",
     "isPinned": true,
-    "source": "fetched_from_url"
+    "source": "fetched_from_url",
+    "primary_url": "https://www.linkedin.com/feed/update/urn:li:activity:7462604082080276482/",
+    "links": [
+      {
+        "label": "LinkedIn Post",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7462604082080276482/"
+      },
+      {
+        "label": "Post Media Asset",
+        "url": "https://www.harshverma.me/images/blog/thumbnails/forbes-intelligence-dollar.jpg"
+      }
+    ]
   },
   {
     "id": "post-ig-xraised",
@@ -104,7 +141,22 @@
     "mediaType": "image",
     "mediaUrl": "images/blog/thumbnails/forbes-beyond-code.jpg",
     "isPinned": true,
-    "source": "fetched_from_url"
+    "source": "fetched_from_url",
+    "primary_url": "https://www.instagram.com/reel/DYcnn4hOfxe/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==",
+    "links": [
+      {
+        "label": "Instagram Post",
+        "url": "https://www.instagram.com/reel/DYcnn4hOfxe/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA=="
+      },
+      {
+        "label": "Featured Article / Video",
+        "url": "https://xraised.com/videos/ai-engineering-beyond-code/"
+      },
+      {
+        "label": "Post Media Asset",
+        "url": "https://www.harshverma.me/images/blog/thumbnails/forbes-beyond-code.jpg"
+      }
+    ]
   },
   {
     "id": "post-li-gra2026",
@@ -131,7 +183,18 @@
     "mediaType": "image",
     "mediaUrl": "images/awards/global_recognition_award.svg",
     "isPinned": false,
-    "source": "fetched_from_url"
+    "source": "fetched_from_url",
+    "primary_url": "https://www.linkedin.com/in/harshverma59/",
+    "links": [
+      {
+        "label": "LinkedIn Post",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      },
+      {
+        "label": "Post Media Asset",
+        "url": "https://www.harshverma.me/images/awards/global_recognition_award.svg"
+      }
+    ]
   },
   {
     "id": "post-ig-award-reel",
@@ -157,7 +220,18 @@
     "mediaType": "image",
     "mediaUrl": "images/blog/thumbnails/aij-nomination.jpg",
     "isPinned": false,
-    "source": "fetched_from_url"
+    "source": "fetched_from_url",
+    "primary_url": "https://www.instagram.com/reel/DYSEXmMswXj/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==",
+    "links": [
+      {
+        "label": "Instagram Post",
+        "url": "https://www.instagram.com/reel/DYSEXmMswXj/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA=="
+      },
+      {
+        "label": "Post Media Asset",
+        "url": "https://www.harshverma.me/images/blog/thumbnails/aij-nomination.jpg"
+      }
+    ]
   },
   {
     "id": "post-li-stanford",
@@ -183,7 +257,18 @@
     "mediaType": "image",
     "mediaUrl": "images/harsh_stanford.jpg",
     "isPinned": false,
-    "source": "fetched_from_url"
+    "source": "fetched_from_url",
+    "primary_url": "https://www.linkedin.com/in/harshverma59/",
+    "links": [
+      {
+        "label": "LinkedIn Post",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      },
+      {
+        "label": "Post Media Asset",
+        "url": "https://www.harshverma.me/images/harsh_stanford.jpg"
+      }
+    ]
   },
   {
     "id": "post-ig-morning-run",
@@ -210,7 +295,18 @@
     "mediaType": "image",
     "mediaUrl": "images/harsh_stanford.jpg",
     "isPinned": false,
-    "source": "fetched_from_url"
+    "source": "fetched_from_url",
+    "primary_url": "https://www.instagram.com/aiwithharsh/",
+    "links": [
+      {
+        "label": "Instagram Post",
+        "url": "https://www.instagram.com/aiwithharsh/"
+      },
+      {
+        "label": "Post Media Asset",
+        "url": "https://www.harshverma.me/images/harsh_stanford.jpg"
+      }
+    ]
   },
   {
     "id": "post-li-ieee-keynote",
@@ -236,7 +332,18 @@
     "mediaType": "image",
     "mediaUrl": "images/blog/thumbnails/hn-distributed-intelligence.png",
     "isPinned": false,
-    "source": "fetched_from_url"
+    "source": "fetched_from_url",
+    "primary_url": "https://www.linkedin.com/in/harshverma59/",
+    "links": [
+      {
+        "label": "LinkedIn Post",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      },
+      {
+        "label": "Post Media Asset",
+        "url": "https://www.harshverma.me/images/blog/thumbnails/hn-distributed-intelligence.png"
+      }
+    ]
   },
   {
     "id": "post-li-zero-trust-agents",
@@ -263,7 +370,18 @@
     "mediaType": "image",
     "mediaUrl": "images/blog/thumbnails/rsac-death-of-authentication.jpg",
     "isPinned": false,
-    "source": "fetched_from_url"
+    "source": "fetched_from_url",
+    "primary_url": "https://www.linkedin.com/in/harshverma59/",
+    "links": [
+      {
+        "label": "LinkedIn Post",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      },
+      {
+        "label": "Post Media Asset",
+        "url": "https://www.harshverma.me/images/blog/thumbnails/rsac-death-of-authentication.jpg"
+      }
+    ]
   },
   {
     "id": "post-li-book-launch",
@@ -290,7 +408,18 @@
     "mediaType": "image",
     "mediaUrl": "images/books/beyond_ai_engineering_cover.jpg",
     "isPinned": false,
-    "source": "fetched_from_url"
+    "source": "fetched_from_url",
+    "primary_url": "https://www.linkedin.com/in/harshverma59/",
+    "links": [
+      {
+        "label": "LinkedIn Post",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      },
+      {
+        "label": "Post Media Asset",
+        "url": "https://www.harshverma.me/images/books/beyond_ai_engineering_cover.jpg"
+      }
+    ]
   },
   {
     "id": "post-ig-podcast-bts",
@@ -316,6 +445,17 @@
     "mediaType": "image",
     "mediaUrl": "images/blog/thumbnails/aij-beyond-code.jpg",
     "isPinned": false,
-    "source": "fetched_from_url"
+    "source": "fetched_from_url",
+    "primary_url": "https://www.instagram.com/aiwithharsh/",
+    "links": [
+      {
+        "label": "Instagram Post",
+        "url": "https://www.instagram.com/aiwithharsh/"
+      },
+      {
+        "label": "Post Media Asset",
+        "url": "https://www.harshverma.me/images/blog/thumbnails/aij-beyond-code.jpg"
+      }
+    ]
   }
 ]

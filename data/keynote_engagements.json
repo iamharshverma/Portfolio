@@ -18,7 +18,17 @@
       "Multi-Agent Systems",
       "Smart Slides"
     ],
-    "primary_url": "https://www.youtube.com/watch?v=RS_BKcbeV3o"
+    "primary_url": "https://www.youtube.com/watch?v=RS_BKcbeV3o",
+    "links": [
+      {
+        "label": "Watch Recording",
+        "url": "https://www.youtube.com/watch?v=RS_BKcbeV3o"
+      },
+      {
+        "label": "Interactive Slides",
+        "url": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1"
+      }
+    ]
   },
   {
     "id": "keynote-IZvHxEtMMnw",
@@ -39,7 +49,17 @@
       "SkyDeck B21",
       "Enterprise AI"
     ],
-    "primary_url": "https://www.youtube.com/watch?v=IZvHxEtMMnw"
+    "primary_url": "https://www.youtube.com/watch?v=IZvHxEtMMnw",
+    "links": [
+      {
+        "label": "Watch Recording",
+        "url": "https://www.youtube.com/watch?v=IZvHxEtMMnw"
+      },
+      {
+        "label": "Interactive Slides",
+        "url": "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1"
+      }
+    ]
   },
   {
     "id": "keynote-E6kA_o57DrM",
@@ -60,7 +80,17 @@
       "Quantum Security",
       "Autonomous Defense"
     ],
-    "primary_url": "https://www.youtube.com/watch?v=E6kA_o57DrM"
+    "primary_url": "https://www.youtube.com/watch?v=E6kA_o57DrM",
+    "links": [
+      {
+        "label": "Watch Recording",
+        "url": "https://www.youtube.com/watch?v=E6kA_o57DrM"
+      },
+      {
+        "label": "Interactive Slides",
+        "url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1"
+      }
+    ]
   },
   {
     "id": "keynote-xraised-ai-beyond-code",
@@ -81,7 +111,17 @@
       "Autonomous Systems",
       "Beyond Code"
     ],
-    "primary_url": "https://xraised.com/videos/ai-engineering-beyond-code/"
+    "primary_url": "https://xraised.com/videos/ai-engineering-beyond-code/",
+    "links": [
+      {
+        "label": "Watch Recording",
+        "url": "https://xraised.com/videos/ai-engineering-beyond-code/"
+      },
+      {
+        "label": "Interactive Slides",
+        "url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1"
+      }
+    ]
   },
   {
     "id": "keynote-MPhFC1h5GIc",
@@ -102,7 +142,17 @@
       "Intelligent Agents",
       "SF Tech Week"
     ],
-    "primary_url": "https://www.youtube.com/watch?v=MPhFC1h5GIc"
+    "primary_url": "https://www.youtube.com/watch?v=MPhFC1h5GIc",
+    "links": [
+      {
+        "label": "Watch Recording",
+        "url": "https://www.youtube.com/watch?v=MPhFC1h5GIc"
+      },
+      {
+        "label": "Interactive Slides",
+        "url": "https://www.harshverma.me/page-smart-slides#deck=u8k2&slide=1"
+      }
+    ]
   },
   {
     "id": "keynote-nIgJ99Bihsw",
@@ -123,7 +173,17 @@
       "Security & Scale",
       "Trustworthy Systems"
     ],
-    "primary_url": "https://www.youtube.com/watch?v=nIgJ99Bihsw"
+    "primary_url": "https://www.youtube.com/watch?v=nIgJ99Bihsw",
+    "links": [
+      {
+        "label": "Watch Recording",
+        "url": "https://www.youtube.com/watch?v=nIgJ99Bihsw"
+      },
+      {
+        "label": "Interactive Slides",
+        "url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1"
+      }
+    ]
   },
   {
     "id": "keynote-yXy_zYlhnfc",
@@ -144,7 +204,17 @@
       "Builders Behind Models",
       "Observability"
     ],
-    "primary_url": "https://www.youtube.com/watch?v=yXy_zYlhnfc"
+    "primary_url": "https://www.youtube.com/watch?v=yXy_zYlhnfc",
+    "links": [
+      {
+        "label": "Watch Recording",
+        "url": "https://www.youtube.com/watch?v=yXy_zYlhnfc"
+      },
+      {
+        "label": "Interactive Slides",
+        "url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1"
+      }
+    ]
   },
   {
     "id": "keynote-iZkx6Ewq6wU",
@@ -165,7 +235,17 @@
       "Career Strategy",
       "Tech Leadership"
     ],
-    "primary_url": "https://www.youtube.com/watch?v=iZkx6Ewq6wU"
+    "primary_url": "https://www.youtube.com/watch?v=iZkx6Ewq6wU",
+    "links": [
+      {
+        "label": "Watch Recording",
+        "url": "https://www.youtube.com/watch?v=iZkx6Ewq6wU"
+      },
+      {
+        "label": "Interactive Slides",
+        "url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1"
+      }
+    ]
   },
   {
     "id": "keynote-1DxjMiOe580",
@@ -186,7 +266,17 @@
       "Big Data ML",
       "Model Serving"
     ],
-    "primary_url": "https://www.youtube.com/watch?v=1DxjMiOe580"
+    "primary_url": "https://www.youtube.com/watch?v=1DxjMiOe580",
+    "links": [
+      {
+        "label": "Watch Recording",
+        "url": "https://www.youtube.com/watch?v=1DxjMiOe580"
+      },
+      {
+        "label": "Interactive Slides",
+        "url": "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1"
+      }
+    ]
   },
   {
     "id": "keynote-bggw4JTFjgA",
@@ -207,7 +297,17 @@
       "Job Scope",
       "Tech Careers"
     ],
-    "primary_url": "https://www.youtube.com/watch?v=bggw4JTFjgA"
+    "primary_url": "https://www.youtube.com/watch?v=bggw4JTFjgA",
+    "links": [
+      {
+        "label": "Watch Recording",
+        "url": "https://www.youtube.com/watch?v=bggw4JTFjgA"
+      },
+      {
+        "label": "Interactive Slides",
+        "url": "https://www.harshverma.me/page-smart-slides#deck=m74k&slide=1"
+      }
+    ]
   },
   {
     "id": "conf-ieee-icacsdf-2026",
@@ -219,7 +319,7 @@
     "format": "In-Person / Virtual Conference Keynote",
     "youtube_id": "",
     "recording_url": "",
-    "slides_url": "",
+    "slides_url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1",
     "thumbnail_url": "",
     "synopsis": "Delivered keynote address on 'When Enterprises Become Multi-Agent Systems', analyzing adversarial resilience, security perimeters, and autonomous decisioning in modern enterprise AI. Also served as Technical Session Chair presiding over conference research paper presentations, alongside evaluating manuscripts on the Microsoft CMT research review board.",
     "key_takeaways": [
@@ -230,7 +330,21 @@
       "Digital Forensics",
       "Multi-Agent Systems"
     ],
-    "primary_url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1"
+    "primary_url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1",
+    "links": [
+      {
+        "label": "Keynote Smart Slides (Deck r92g)",
+        "url": "https://www.harshverma.me/page-smart-slides#deck=r92g&slide=1"
+      },
+      {
+        "label": "ICACSDF Keynote Page",
+        "url": "https://www.icacsdf.org/keynotes.html"
+      },
+      {
+        "label": "Microsoft CMT Portal",
+        "url": "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F"
+      }
+    ]
   },
   {
     "id": "conf-iciotcaa-2026",
@@ -252,6 +366,16 @@
       "Keynote",
       "Science Tech Xplore"
     ],
-    "primary_url": "https://sciencetechxplore.org/fellow-members1.php"
+    "primary_url": "https://sciencetechxplore.org/fellow-members1.php",
+    "links": [
+      {
+        "label": "Fellow Member Directory",
+        "url": "https://sciencetechxplore.org/fellow-members1.php"
+      },
+      {
+        "label": "Keynote Announcement",
+        "url": "https://sciencetechxplore.org/conference/keynoteby-ICIoTCAA-2026.php"
+      }
+    ]
   }
 ]

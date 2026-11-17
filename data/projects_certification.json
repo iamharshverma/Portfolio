@@ -81,6 +81,7 @@
         "FastAPI"
       ],
       "url": "https://github.com/iamharshverma",
+      "primary_url": "https://github.com/iamharshverma",
       "github_url": "https://github.com/iamharshverma",
       "repository_name": null,
       "preview_image": "images/portfolio/agentic_security_thumb.svg",
@@ -92,6 +93,16 @@
         {
           "label": "Preview",
           "url": "images/portfolio/agentic_security_thumb.svg"
+        }
+      ],
+      "links": [
+        {
+          "label": "Primary URL",
+          "url": "https://github.com/iamharshverma"
+        },
+        {
+          "label": "Preview",
+          "url": "https://www.harshverma.me/images/portfolio/agentic_security_thumb.svg"
         }
       ],
       "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
@@ -118,6 +129,7 @@
         "Micro-batch"
       ],
       "url": "https://github.com/iamharshverma/PySparkStreaming-MultiNewsClassification",
+      "primary_url": "https://github.com/iamharshverma/PySparkStreaming-MultiNewsClassification",
       "github_url": "https://github.com/iamharshverma/PySparkStreaming-MultiNewsClassification",
       "repository_name": "PySparkStreaming-MultiNewsClassification",
       "preview_image": "images/portfolio/spark_streaming_thumb.svg",
@@ -129,6 +141,16 @@
         {
           "label": "Preview",
           "url": "images/portfolio/spark_streaming_thumb.svg"
+        }
+      ],
+      "links": [
+        {
+          "label": "Primary URL",
+          "url": "https://github.com/iamharshverma/PySparkStreaming-MultiNewsClassification"
+        },
+        {
+          "label": "Preview",
+          "url": "https://www.harshverma.me/images/portfolio/spark_streaming_thumb.svg"
         }
       ],
       "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
@@ -157,6 +179,7 @@
         "Transformers"
       ],
       "url": "https://github.com/iamharshverma/NLP-Automatic-Speech-Recognization",
+      "primary_url": "https://github.com/iamharshverma/NLP-Automatic-Speech-Recognization",
       "github_url": "https://github.com/iamharshverma/NLP-Automatic-Speech-Recognization",
       "repository_name": "NLP-Automatic-Speech-Recognization",
       "preview_image": "images/portfolio/speech_ai_thumb.svg",
@@ -168,6 +191,16 @@
         {
           "label": "Preview",
           "url": "images/portfolio/speech_ai_thumb.svg"
+        }
+      ],
+      "links": [
+        {
+          "label": "Primary URL",
+          "url": "https://github.com/iamharshverma/NLP-Automatic-Speech-Recognization"
+        },
+        {
+          "label": "Preview",
+          "url": "https://www.harshverma.me/images/portfolio/speech_ai_thumb.svg"
         }
       ],
       "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
@@ -196,6 +229,7 @@
         "Word Embeddings"
       ],
       "url": "https://github.com/iamharshverma/NLP-BiLSTM_SentimentAnalysis",
+      "primary_url": "https://github.com/iamharshverma/NLP-BiLSTM_SentimentAnalysis",
       "github_url": "https://github.com/iamharshverma/NLP-BiLSTM_SentimentAnalysis",
       "repository_name": "NLP-BiLSTM_SentimentAnalysis",
       "preview_image": "images/portfolio/bilstm_sentiment_thumb.svg",
@@ -207,6 +241,16 @@
         {
           "label": "Preview",
           "url": "images/portfolio/bilstm_sentiment_thumb.svg"
+        }
+      ],
+      "links": [
+        {
+          "label": "Primary URL",
+          "url": "https://github.com/iamharshverma/NLP-BiLSTM_SentimentAnalysis"
+        },
+        {
+          "label": "Preview",
+          "url": "https://www.harshverma.me/images/portfolio/bilstm_sentiment_thumb.svg"
         }
       ],
       "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
@@ -233,6 +277,7 @@
         "Big Data"
       ],
       "url": "https://github.com/iamharshverma/PySpark-LargeScaleDataCollection_Preprocessing_Cross_language_Articles_Duplication_Detection",
+      "primary_url": "https://github.com/iamharshverma/PySpark-LargeScaleDataCollection_Preprocessing_Cross_language_Articles_Duplication_Detection",
       "github_url": "https://github.com/iamharshverma/PySpark-LargeScaleDataCollection_Preprocessing_Cross_language_Articles_Duplication_Detection",
       "repository_name": "PySpark-LargeScaleDataCollection_Preprocessing_Cross_language_Articles_Duplication_Detection",
       "preview_image": "images/portfolio/cross_lingual_spark_thumb.svg",
@@ -244,6 +289,16 @@
         {
           "label": "Preview",
           "url": "images/portfolio/cross_lingual_spark_thumb.svg"
+        }
+      ],
+      "links": [
+        {
+          "label": "Primary URL",
+          "url": "https://github.com/iamharshverma/PySpark-LargeScaleDataCollection_Preprocessing_Cross_language_Articles_Duplication_Detection"
+        },
+        {
+          "label": "Preview",
+          "url": "https://www.harshverma.me/images/portfolio/cross_lingual_spark_thumb.svg"
         }
       ],
       "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
@@ -270,6 +325,7 @@
         "Community Detection"
       ],
       "url": "https://github.com/iamharshverma/BigData-Yelp-Business-Data-and-Social-Network-Analysis",
+      "primary_url": "https://github.com/iamharshverma/BigData-Yelp-Business-Data-and-Social-Network-Analysis",
       "github_url": "https://github.com/iamharshverma/BigData-Yelp-Business-Data-and-Social-Network-Analysis",
       "repository_name": "BigData-Yelp-Business-Data-and-Social-Network-Analysis",
       "preview_image": "images/portfolio/graph_analytics_thumb.svg",
@@ -281,6 +337,16 @@
         {
           "label": "Preview",
           "url": "images/portfolio/graph_analytics_thumb.svg"
+        }
+      ],
+      "links": [
+        {
+          "label": "Primary URL",
+          "url": "https://github.com/iamharshverma/BigData-Yelp-Business-Data-and-Social-Network-Analysis"
+        },
+        {
+          "label": "Preview",
+          "url": "https://www.harshverma.me/images/portfolio/graph_analytics_thumb.svg"
         }
       ],
       "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
@@ -309,6 +375,7 @@
         "MLOps"
       ],
       "url": "https://github.com/iamharshverma/CertificatesAccomplishment",
+      "primary_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
       "github_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
       "repository_name": "CertificatesAccomplishment",
       "preview_image": "images/portfolio/certificates_accomplishment_thumb.svg",
@@ -320,6 +387,16 @@
         {
           "label": "Preview",
           "url": "images/portfolio/certificates_accomplishment_thumb.svg"
+        }
+      ],
+      "links": [
+        {
+          "label": "Primary URL",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Preview",
+          "url": "https://www.harshverma.me/images/portfolio/certificates_accomplishment_thumb.svg"
         }
       ],
       "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
@@ -348,6 +425,7 @@
         "TensorFlow"
       ],
       "url": "https://github.com/iamharshverma/Deep_Learning-CNN_MultiClass_ImageClassifier",
+      "primary_url": "https://github.com/iamharshverma/Deep_Learning-CNN_MultiClass_ImageClassifier",
       "github_url": "https://github.com/iamharshverma/Deep_Learning-CNN_MultiClass_ImageClassifier",
       "repository_name": "Deep_Learning-CNN_MultiClass_ImageClassifier",
       "preview_image": "images/portfolio/cnn_vision_thumb.svg",
@@ -359,6 +437,16 @@
         {
           "label": "Preview",
           "url": "images/portfolio/cnn_vision_thumb.svg"
+        }
+      ],
+      "links": [
+        {
+          "label": "Primary URL",
+          "url": "https://github.com/iamharshverma/Deep_Learning-CNN_MultiClass_ImageClassifier"
+        },
+        {
+          "label": "Preview",
+          "url": "https://www.harshverma.me/images/portfolio/cnn_vision_thumb.svg"
         }
       ],
       "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
@@ -385,6 +473,7 @@
         "Worker Pool"
       ],
       "url": "https://github.com/iamharshverma/APIMicroServiceForWordDocFrequencyCount",
+      "primary_url": "https://github.com/iamharshverma/APIMicroServiceForWordDocFrequencyCount",
       "github_url": "https://github.com/iamharshverma/APIMicroServiceForWordDocFrequencyCount",
       "repository_name": "APIMicroServiceForWordDocFrequencyCount",
       "preview_image": "images/portfolio/microservice_gateway_thumb.svg",
@@ -396,6 +485,16 @@
         {
           "label": "Preview",
           "url": "images/portfolio/microservice_gateway_thumb.svg"
+        }
+      ],
+      "links": [
+        {
+          "label": "Primary URL",
+          "url": "https://github.com/iamharshverma/APIMicroServiceForWordDocFrequencyCount"
+        },
+        {
+          "label": "Preview",
+          "url": "https://www.harshverma.me/images/portfolio/microservice_gateway_thumb.svg"
         }
       ],
       "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
@@ -422,6 +521,7 @@
         "Social Graph"
       ],
       "url": "https://github.com/iamharshverma/BigData-Hadoop_SocialNetwork",
+      "primary_url": "https://github.com/iamharshverma/BigData-Hadoop_SocialNetwork",
       "github_url": "https://github.com/iamharshverma/BigData-Hadoop_SocialNetwork",
       "repository_name": "BigData-Hadoop_SocialNetwork",
       "preview_image": "images/portfolio/hadoop_cluster_thumb.svg",
@@ -433,6 +533,16 @@
         {
           "label": "Preview",
           "url": "images/portfolio/hadoop_cluster_thumb.svg"
+        }
+      ],
+      "links": [
+        {
+          "label": "Primary URL",
+          "url": "https://github.com/iamharshverma/BigData-Hadoop_SocialNetwork"
+        },
+        {
+          "label": "Preview",
+          "url": "https://www.harshverma.me/images/portfolio/hadoop_cluster_thumb.svg"
         }
       ],
       "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
@@ -459,6 +569,7 @@
         "Concurrency"
       ],
       "url": "https://github.com/iamharshverma/JavaHashTableCustomImplementation",
+      "primary_url": "https://github.com/iamharshverma/JavaHashTableCustomImplementation",
       "github_url": "https://github.com/iamharshverma/JavaHashTableCustomImplementation",
       "repository_name": "JavaHashTableCustomImplementation",
       "preview_image": "images/portfolio/lockfree_hashtable_thumb.svg",
@@ -470,6 +581,16 @@
         {
           "label": "Preview",
           "url": "images/portfolio/lockfree_hashtable_thumb.svg"
+        }
+      ],
+      "links": [
+        {
+          "label": "Primary URL",
+          "url": "https://github.com/iamharshverma/JavaHashTableCustomImplementation"
+        },
+        {
+          "label": "Preview",
+          "url": "https://www.harshverma.me/images/portfolio/lockfree_hashtable_thumb.svg"
         }
       ],
       "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
@@ -498,6 +619,7 @@
         "IR"
       ],
       "url": "https://github.com/iamharshverma/TokanizeAndStemming",
+      "primary_url": "https://github.com/iamharshverma/TokanizeAndStemming",
       "github_url": "https://github.com/iamharshverma/TokanizeAndStemming",
       "repository_name": "TokanizeAndStemming",
       "preview_image": "images/portfolio/ir_tokenizer_thumb.svg",
@@ -509,6 +631,16 @@
         {
           "label": "Preview",
           "url": "images/portfolio/ir_tokenizer_thumb.svg"
+        }
+      ],
+      "links": [
+        {
+          "label": "Primary URL",
+          "url": "https://github.com/iamharshverma/TokanizeAndStemming"
+        },
+        {
+          "label": "Preview",
+          "url": "https://www.harshverma.me/images/portfolio/ir_tokenizer_thumb.svg"
         }
       ],
       "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
@@ -535,6 +667,7 @@
         "Cache Locality"
       ],
       "url": "https://github.com/iamharshverma/SkipLists",
+      "primary_url": "https://github.com/iamharshverma/SkipLists",
       "github_url": "https://github.com/iamharshverma/SkipLists",
       "repository_name": "SkipLists",
       "preview_image": "images/portfolio/skiplist_index_thumb.svg",
@@ -546,6 +679,16 @@
         {
           "label": "Preview",
           "url": "images/portfolio/skiplist_index_thumb.svg"
+        }
+      ],
+      "links": [
+        {
+          "label": "Primary URL",
+          "url": "https://github.com/iamharshverma/SkipLists"
+        },
+        {
+          "label": "Preview",
+          "url": "https://www.harshverma.me/images/portfolio/skiplist_index_thumb.svg"
         }
       ],
       "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
@@ -578,6 +721,7 @@
         "MIT / Apache-2.0"
       ],
       "url": "https://github.com/iamharshverma",
+      "primary_url": "https://github.com/iamharshverma",
       "github_url": "https://github.com/iamharshverma",
       "repository_name": null,
       "preview_image": "images/portfolio/widget_github_pulse.svg",
@@ -589,6 +733,16 @@
         {
           "label": "Preview",
           "url": "images/portfolio/widget_github_pulse.svg"
+        }
+      ],
+      "links": [
+        {
+          "label": "Primary URL",
+          "url": "https://github.com/iamharshverma"
+        },
+        {
+          "label": "Preview",
+          "url": "https://www.harshverma.me/images/portfolio/widget_github_pulse.svg"
         }
       ],
       "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
@@ -617,6 +771,7 @@
         "SecOps Audits"
       ],
       "url": "mailto:harshverma59@gmail.com",
+      "primary_url": "https://www.harshverma.me/page-portfolio#projectWidgetAdvisory",
       "github_url": null,
       "repository_name": null,
       "preview_image": "images/portfolio/widget_research_advisory.svg",
@@ -628,6 +783,20 @@
         {
           "label": "Preview",
           "url": "images/portfolio/widget_research_advisory.svg"
+        }
+      ],
+      "links": [
+        {
+          "label": "Primary URL",
+          "url": "https://www.harshverma.me/page-portfolio#projectWidgetAdvisory"
+        },
+        {
+          "label": "Inquire via Email",
+          "url": "mailto:harshverma59@gmail.com"
+        },
+        {
+          "label": "Preview",
+          "url": "https://www.harshverma.me/images/portfolio/widget_research_advisory.svg"
         }
       ],
       "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
@@ -657,7 +826,22 @@
       "image": "images/certificates/29.png",
       "preview_url": "https://www.harshverma.me/images/certificates/29.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/29.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/29.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-deep-learning-specialization-5-course-track",
@@ -682,7 +866,22 @@
       "image": "images/certificates/deep_learning.png",
       "preview_url": "https://www.harshverma.me/images/certificates/deep_learning.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/deep_learning.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/deep_learning.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-advance-ml-with-tensorflow-on-gcp",
@@ -706,7 +905,22 @@
       "image": "images/certificates/22.png",
       "preview_url": "https://www.harshverma.me/images/certificates/22.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/22.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/22.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-end-to-end-ml-with-tensorflow-on-gcp",
@@ -730,7 +944,22 @@
       "image": "images/certificates/25.png",
       "preview_url": "https://www.harshverma.me/images/certificates/25.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/25.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/25.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-production-machine-learning-systems",
@@ -754,7 +983,22 @@
       "image": "images/certificates/28.png",
       "preview_url": "https://www.harshverma.me/images/certificates/28.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/28.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/28.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-uc-san-diego-big-data-specialization",
@@ -778,7 +1022,22 @@
       "image": "images/certificates/19.png",
       "preview_url": "https://www.harshverma.me/images/certificates/19.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/19.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/19.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-sequence-models-for-time-series-nlp",
@@ -802,7 +1061,22 @@
       "image": "images/certificates/24.png",
       "preview_url": "https://www.harshverma.me/images/certificates/24.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/24.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/24.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-recommendation-systems-on-gcp",
@@ -826,7 +1100,22 @@
       "image": "images/certificates/26.png",
       "preview_url": "https://www.harshverma.me/images/certificates/26.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/26.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/26.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-image-understanding-on-gcp",
@@ -850,7 +1139,22 @@
       "image": "images/certificates/27.png",
       "preview_url": "https://www.harshverma.me/images/certificates/27.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/27.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/27.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-niit-advance-java-j2ee-architecture",
@@ -874,7 +1178,22 @@
       "image": "images/certificates/NIITJ2EECertificate.png",
       "preview_url": "https://www.harshverma.me/images/certificates/NIITJ2EECertificate.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/NIITJ2EECertificate.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/NIITJ2EECertificate.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-google-machine-learning-foundation",
@@ -898,7 +1217,22 @@
       "image": "images/certificates/20.png",
       "preview_url": "https://www.harshverma.me/images/certificates/20.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/20.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/20.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-microservices-with-java-spring",
@@ -922,7 +1256,22 @@
       "image": "images/certificates/12.png",
       "preview_url": "https://www.harshverma.me/images/certificates/12.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/12.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/12.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-docker-for-java-developers",
@@ -946,7 +1295,22 @@
       "image": "images/certificates/8.png",
       "preview_url": "https://www.harshverma.me/images/certificates/8.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/8.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/8.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-elasticsearch-distributed-search",
@@ -970,7 +1334,22 @@
       "image": "images/certificates/9.png",
       "preview_url": "https://www.harshverma.me/images/certificates/9.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/9.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/9.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-big-data-modeling-management",
@@ -994,7 +1373,22 @@
       "image": "images/certificates/21.png",
       "preview_url": "https://www.harshverma.me/images/certificates/21.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/21.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/21.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-nlp-for-machine-learning",
@@ -1018,7 +1412,22 @@
       "image": "images/certificates/13.png",
       "preview_url": "https://www.harshverma.me/images/certificates/13.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/13.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/13.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-deep-learning-image-recognition",
@@ -1042,7 +1451,22 @@
       "image": "images/certificates/7.png",
       "preview_url": "https://www.harshverma.me/images/certificates/7.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/7.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/7.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-machine-learning-a-z-hands-on",
@@ -1066,7 +1490,22 @@
       "image": "images/certificates/udemy_ml.png",
       "preview_url": "https://www.harshverma.me/images/certificates/udemy_ml.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/udemy_ml.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/udemy_ml.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-data-science-data-engineering",
@@ -1090,7 +1529,22 @@
       "image": "images/certificates/4.png",
       "preview_url": "https://www.harshverma.me/images/certificates/4.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/4.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/4.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-pandas-for-high-performance-data-science",
@@ -1114,7 +1568,22 @@
       "image": "images/certificates/16.png",
       "preview_url": "https://www.harshverma.me/images/certificates/16.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/16.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/16.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-python-design-patterns-clean-architecture",
@@ -1138,7 +1607,22 @@
       "image": "images/certificates/17.png",
       "preview_url": "https://www.harshverma.me/images/certificates/17.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/17.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/17.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-java-build-automation-with-maven",
@@ -1162,7 +1646,22 @@
       "image": "images/certificates/10.png",
       "preview_url": "https://www.harshverma.me/images/certificates/10.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/10.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/10.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-ai-foundation-neural-networks",
@@ -1186,7 +1685,22 @@
       "image": "images/certificates/1.png",
       "preview_url": "https://www.harshverma.me/images/certificates/1.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/1.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/1.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     },
     {
       "id": "cert-ai-foundation-thinking-machines",
@@ -1210,7 +1724,22 @@
       "image": "images/certificates/2.png",
       "preview_url": "https://www.harshverma.me/images/certificates/2.png",
       "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-      "page_url": "https://www.harshverma.me/page-portfolio#certifications"
+      "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+      "primary_url": "https://www.harshverma.me/images/certificates/2.png",
+      "links": [
+        {
+          "label": "Certificate Image",
+          "url": "https://www.harshverma.me/images/certificates/2.png"
+        },
+        {
+          "label": "All Certificates Repository (GitHub)",
+          "url": "https://github.com/iamharshverma/CertificatesAccomplishment"
+        },
+        {
+          "label": "Portfolio Certifications Section",
+          "url": "https://www.harshverma.me/page-portfolio#certifications"
+        }
+      ]
     }
   ]
 }

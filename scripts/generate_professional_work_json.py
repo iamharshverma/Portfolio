@@ -15,13 +15,64 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT_DIR, "data")
 os.makedirs(DATA_DIR, exist_ok=True)
 
+def _count_data(rel_path, default_val):
+    p = os.path.join(ROOT_DIR, rel_path)
+    if os.path.exists(p):
+        try:
+            with open(p, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            if isinstance(data, list):
+                return len(data)
+        except Exception:
+            pass
+    return default_val
+
+
 def generate_professional_work():
-    # Load papers and awards
-    with open(os.path.join(ROOT_DIR, "papers_data.json"), "r", encoding="utf-8") as f:
+    # Load enriched publications when available, fallback to papers_data.json
+    enriched_pub_path = os.path.join(DATA_DIR, "research_publications.json")
+    raw_pub_path = os.path.join(ROOT_DIR, "papers_data.json")
+    with open(enriched_pub_path if os.path.exists(enriched_pub_path) else raw_pub_path, "r", encoding="utf-8") as f:
         papers = json.load(f)
     awards_path = os.path.join(ROOT_DIR, "awards_data.json")
     with open(awards_path, "r", encoding="utf-8") as f:
         awards_list = json.load(f)
+
+    media_count = _count_data("media_data.json", 45)
+    profiles_count = _count_data("data/verified_profiles.json", 57)
+    assocs_count = _count_data("data/memberships_and_associations.json", 28)
+    judging_count = _count_data("data/judging_engagements.json", 22)
+    keynotes_count = _count_data("data/keynote_engagements.json", 12)
+
+    papers_by_title = {p.get("title", "").strip().lower(): p for p in papers}
+
+    def attach_paper_links(fp):
+        t = fp.get("title", "").strip().lower()
+        src = papers_by_title.get(t)
+        if not src:
+            for k, v in papers_by_title.items():
+                if t[:30] in k or k[:30] in t:
+                    src = v
+                    break
+        if src:
+            doi = (src.get("doi") or "").strip()
+            doi_url = f"https://doi.org/{doi}" if (doi and not doi.startswith("http")) else doi
+            link = src.get("link", "").strip()
+            links = src.get("links") or [x for x in ([{"label": "Read Paper", "url": link}] if link else []) + ([{"label": "DOI", "url": doi_url}] if doi_url else [])]
+            out = dict(fp)
+            out["venue"] = src.get("venue") or fp.get("venue")
+            if doi:
+                out["doi"] = doi
+                out["doi_url"] = doi_url
+            else:
+                out.pop("doi", None)
+                out.pop("doi_url", None)
+            if link:
+                out["link"] = link
+                out["primary_url"] = link
+            out["links"] = links
+            return out
+        return fp
 
     work_dossier = {
         "metadata": {
@@ -29,7 +80,7 @@ def generate_professional_work():
             "subject": "Harsh Verma, FBCS, SMIEEE, FRSA",
             "current_role": "Principal Software Engineer (AI) at Palo Alto Networks",
             "target_audience": "Executive Leadership, Corporate Boards, Venture Capitalists, Technical Program Committees, and Academic Institutions",
-            "version": "2026.1",
+            "version": "2026.2",
             "publication_year": "2026",
             "canonical_url": "https://www.harshverma.me/page-about"
         },
@@ -54,12 +105,12 @@ def generate_professional_work():
                 "patents_granted": 2,
                 "patents_pending_in_process": 4,
                 "global_honors_and_awards": len(awards_list),
-                "tier1_media_features": 45,
-                "verified_directory_profiles": 57,
-                "invited_fellowships_and_councils": 26,
+                "tier1_media_features": media_count,
+                "verified_directory_profiles": profiles_count,
+                "invited_fellowships_and_councils": assocs_count,
                 "global_media_audience_reach": "3.75B+",
-                "keynote_addresses_delivered": 12,
-                "hackathon_and_pitch_judging_panels": 21,
+                "keynote_addresses_delivered": keynotes_count,
+                "hackathon_and_pitch_judging_panels": judging_count,
                 "authored_books": 2,
                 "technical_peer_reviewed_volumes": 6
             }
@@ -405,6 +456,10 @@ def generate_professional_work():
                     "authority": "Indian Patent Office (IPO)",
                     "assignee_or_origin": "Hike Messenger / Independent Research",
                     "portal_url": "https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/",
+                    "links": [
+                        {"label": "Indian Patent Office Public Search", "url": "https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/"},
+                        {"label": "Portfolio Publications & Patents", "url": "https://www.harshverma.me/page-publications#patents"}
+                    ],
                     "abstract": (
                         "A novel architecture and methodology for orchestrating automated, high-throughput load simulation, performance stress "
                         "benchmarking, and real-time telemetry testing across social networking applications and distributed service topologies. "
@@ -422,6 +477,10 @@ def generate_professional_work():
                     "authority": "Indian Patent Office (IPO)",
                     "assignee_or_origin": "Cyber-Physical Innovations",
                     "portal_url": "https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/",
+                    "links": [
+                        {"label": "Indian Patent Office Public Search", "url": "https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/"},
+                        {"label": "Portfolio Publications & Patents", "url": "https://www.harshverma.me/page-publications#patents"}
+                    ],
                     "abstract": (
                         "An integrated automated screening checkpoint system incorporating multi-tier sensor subsystems for non-contact thermal "
                         "scanning, sanitization misting, and intelligent automated entrance symptomatic verification. Coordinates real-time edge "
@@ -439,6 +498,10 @@ def generate_professional_work():
                     "authority": "United States Patent and Trademark Office (USPTO)",
                     "assignee_or_origin": "Palo Alto Networks",
                     "portal_url": "https://www.paloaltonetworks.com/",
+                    "links": [
+                        {"label": "Palo Alto Networks", "url": "https://www.paloaltonetworks.com/"},
+                        {"label": "Portfolio Publications & Patents", "url": "https://www.harshverma.me/page-publications#patents"}
+                    ],
                     "abstract": (
                         "Proprietary suite of four in-process patent applications developing foundational intellectual property in autonomous Agentic AI "
                         "orchestration workflows, Enterprise Copilot reasoning loops, and intelligent multi-modal Copilot Navigation architectures for "
@@ -465,8 +528,16 @@ def generate_professional_work():
                     "publisher": "Palo Alto Technical Press & Enterprise AI Publishing",
                     "publication_year": "2026",
                     "role": "Lead Author",
-                    "catalog_url": "https://www.harshverma.me/page-books#beyond-ai-engineering",
+                    "catalog_url": "https://www.beyondaiengineering.com/",
+                    "website_url": "https://www.beyondaiengineering.com/",
+                    "url": "https://www.beyondaiengineering.com/",
+                    "page_url": "https://www.harshverma.me/page-books#book1",
                     "cover_image": "images/books/book_creator_to_curator.png",
+                    "links": [
+                        {"label": "Official Book Website", "url": "https://www.beyondaiengineering.com/"},
+                        {"label": "ProfileGenius by Career Accelerator (Featured Platform)", "url": "https://profilegenius.careeraccelerator.net/"},
+                        {"label": "Portfolio Books Hub", "url": "https://www.harshverma.me/page-books#book1"}
+                    ],
                     "synopsis": (
                         "Comprehensive treatise on the architectural transition from generative prompt wrappers to autonomous agentic architectures. "
                         "Details multi-agent topologies, tool execution protocols, deterministic self-healing loops, zero-trust verification harnesses, "
@@ -494,8 +565,15 @@ def generate_professional_work():
                     "publisher": "Cyber Defense Press",
                     "publication_year": "2026",
                     "role": "Lead Author",
-                    "catalog_url": "https://www.harshverma.me/page-books#ai-vs-ai",
+                    "catalog_url": "https://www.beyondaivsai.com/",
+                    "website_url": "https://www.beyondaivsai.com/",
+                    "url": "https://www.beyondaivsai.com/",
+                    "page_url": "https://www.harshverma.me/page-books#book2",
                     "cover_image": "images/books/book_cybersecurity_counteroffensive.png",
+                    "links": [
+                        {"label": "Official Book Website", "url": "https://www.beyondaivsai.com/"},
+                        {"label": "Portfolio Books Hub", "url": "https://www.harshverma.me/page-books#book2"}
+                    ],
                     "synopsis": (
                         "Blueprint for designing autonomous machine-speed cyber defense fabrics capable of neutralizing automated adversarial agents. "
                         "Formulates proactive prompt provenance, multi-agent behavioral containment, decentralized threat sharing, and automated runtime mitigation."
@@ -522,6 +600,9 @@ def generate_professional_work():
                     "publisher": "Packt Publishing",
                     "year": "2025",
                     "role": "Technical Book Reviewer",
+                    "catalog_url": "https://packt.link/MuEPg",
+                    "url": "https://packt.link/MuEPg",
+                    "links": [{"label": "View Book (Packt)", "url": "https://packt.link/MuEPg"}],
                     "relevance": "Rigorous technical evaluation of operational AI fairness metrics, algorithmic auditing, and human-in-the-loop oversight."
                 },
                 {
@@ -529,6 +610,9 @@ def generate_professional_work():
                     "publisher": "Packt Publishing",
                     "year": "2025",
                     "role": "Technical Book Reviewer",
+                    "catalog_url": "https://packt.link/pZ2C5",
+                    "url": "https://packt.link/pZ2C5",
+                    "links": [{"label": "View Book (Packt)", "url": "https://packt.link/pZ2C5"}],
                     "relevance": "Architectural review of microservice model serving, distributed caching, and production benchmarking for enterprise ML."
                 },
                 {
@@ -536,6 +620,9 @@ def generate_professional_work():
                     "publisher": "Packt Publishing",
                     "year": "2025",
                     "role": "Technical Book Reviewer",
+                    "catalog_url": "https://www.packtpub.com/",
+                    "url": "https://www.packtpub.com/",
+                    "links": [{"label": "Packt Publishing Catalog", "url": "https://www.packtpub.com/"}],
                     "relevance": "Evaluation of executive strategy, ROI measurement, and organizational governance for disruptive enterprise AI adoption."
                 },
                 {
@@ -543,6 +630,9 @@ def generate_professional_work():
                     "publisher": "Packt Publishing",
                     "year": "2024",
                     "role": "Technical Book Reviewer",
+                    "catalog_url": "https://packt.link/8jmuy",
+                    "url": "https://packt.link/8jmuy",
+                    "links": [{"label": "View Book (Packt)", "url": "https://packt.link/8jmuy"}],
                     "relevance": "Low-latency streaming quantitative architectures, real-time market telemetry, and risk models."
                 },
                 {
@@ -550,6 +640,9 @@ def generate_professional_work():
                     "publisher": "Packt Publishing",
                     "year": "2024",
                     "role": "Technical Book Reviewer",
+                    "catalog_url": "https://www.packtpub.com/",
+                    "url": "https://www.packtpub.com/",
+                    "links": [{"label": "Packt Publishing Catalog", "url": "https://www.packtpub.com/"}],
                     "relevance": "Multi-modal campaign personalization, predictive churn intelligence, and high-throughput customer embeddings."
                 },
                 {
@@ -557,6 +650,9 @@ def generate_professional_work():
                     "publisher": "Packt Publishing",
                     "year": "2023",
                     "role": "Technical Book Reviewer",
+                    "catalog_url": "https://www.packtpub.com/",
+                    "url": "https://www.packtpub.com/",
+                    "links": [{"label": "Packt Publishing Catalog", "url": "https://www.packtpub.com/"}],
                     "relevance": "Deep neural network fundamentals, distributed GPU/TPU cluster training, and TensorFlow Lite edge deployments."
                 }
             ]
@@ -611,6 +707,9 @@ def generate_professional_work():
             ]
         }
     }
+
+    for theme in work_dossier["publication_themes_and_research_summary"]["research_themes"]:
+        theme["flagship_papers"] = [attach_paper_links(fp) for fp in theme.get("flagship_papers", [])]
 
     output_path = os.path.join(DATA_DIR, "professional_work.json")
     with open(output_path, "w", encoding="utf-8") as f:

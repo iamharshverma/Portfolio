@@ -47,6 +47,42 @@ def clean_text(html_str):
     return re.sub(r"\s+", " ", text).strip()
 
 
+CANONICAL_BASE = "https://www.harshverma.me"
+
+
+def to_canonical_url(url):
+    if not url:
+        return ""
+    u = url.strip()
+    if not u or u.startswith("javascript:") or u.startswith("mailto:"):
+        return ""
+    if u.startswith("http://") or u.startswith("https://"):
+        return u
+    if u.startswith("#"):
+        return f"{CANONICAL_BASE}/{u}"
+    return f"{CANONICAL_BASE}/{u.lstrip('/')}"
+
+
+def dedup_links(raw_links):
+    seen = set()
+    out = []
+    for item in raw_links:
+        if not isinstance(item, dict):
+            continue
+        url = (item.get("url") or "").strip()
+        if not url:
+            continue
+        norm_key = url.rstrip("/")
+        if norm_key in seen:
+            continue
+        seen.add(norm_key)
+        entry = {"label": (item.get("label") or "Open Link").strip(), "url": url}
+        if item.get("icon"):
+            entry["icon"] = item["icon"]
+        out.append(entry)
+    return out
+
+
 def parse_event_cards():
     """Parse all 33 event cards from page-events.html / page-speaker.html."""
     events_path = os.path.join(ROOT_DIR, "page-events.html")
@@ -99,10 +135,11 @@ def parse_event_cards():
         # Links
         links = []
         for l_match in re.finditer(r'<a\s+[^>]*href="([^"]+)"[^>]*>([\s\S]*?)</a>', chunk):
-            url = l_match.group(1).strip()
-            label = clean_text(l_match.group(2))
-            if url and label:
+            url = to_canonical_url(l_match.group(1).strip())
+            label = clean_text(l_match.group(2)) or "View Details"
+            if url:
                 links.append({"label": label, "url": url})
+        links = dedup_links(links)
 
         primary_url = links[0]["url"] if links else "https://www.harshverma.me/page-events"
 
@@ -209,6 +246,12 @@ def export_keynotes():
     keynotes_list = []
 
     for v in videos:
+        rec_url = to_canonical_url(v.get("recording_url", ""))
+        slides_url = to_canonical_url(v.get("slides_url", ""))
+        links = dedup_links([
+            {"label": "Watch Recording", "url": rec_url},
+            {"label": "Interactive Slides", "url": slides_url},
+        ])
         keynotes_list.append({
             "id": f"keynote-{v.get('id', '')}",
             "keynote_title": v.get("title", ""),
@@ -218,18 +261,21 @@ def export_keynotes():
             "duration": v.get("duration", ""),
             "format": "Keynote Cinema & Recorded Address",
             "youtube_id": v.get("id", ""),
-            "recording_url": v.get("recording_url", ""),
-            "slides_url": v.get("slides_url", ""),
+            "recording_url": rec_url,
+            "slides_url": slides_url,
             "thumbnail_url": v.get("thumb", ""),
             "synopsis": v.get("desc", ""),
             "key_takeaways": v.get("tags", []),
-            "primary_url": v.get("recording_url") or v.get("slides_url", ""),
+            "primary_url": rec_url or slides_url,
+            "links": links,
         })
 
     # Also include the conference keynotes from event cards
     all_events = parse_event_cards()
     for ev in all_events:
         if "keynote" in ev["title"].lower() and not any(k["keynote_title"] == ev["title"] for k in keynotes_list):
+            ev_links = dedup_links(ev.get("links", []) + ([{"label": "Session Link", "url": ev["primary_url"]}] if ev.get("primary_url") else []))
+            inferred_slides = next((l["url"] for l in ev_links if "smart-slides" in l["url"]), "")
             keynotes_list.append({
                 "id": ev["id"],
                 "keynote_title": ev["title"],
@@ -240,11 +286,12 @@ def export_keynotes():
                 "format": "In-Person / Virtual Conference Keynote",
                 "youtube_id": "",
                 "recording_url": "",
-                "slides_url": "",
+                "slides_url": inferred_slides,
                 "thumbnail_url": "",
                 "synopsis": ev["description"],
                 "key_takeaways": ev["tags"],
                 "primary_url": ev["primary_url"],
+                "links": ev_links,
             })
 
     output_path = os.path.join(DATA_DIR, "keynote_engagements.json")
@@ -255,42 +302,109 @@ def export_keynotes():
 
 
 def export_media():
-    """4. Export 45 media features and press features."""
+    """4. Export 45 media features and press features with normalized canonical links."""
     media_path = os.path.join(ROOT_DIR, "media_data.json")
     with open(media_path, "r", encoding="utf-8") as f:
         media = json.load(f)
 
+    enriched_media = []
+    for item in media:
+        entry = dict(item)
+        purl = to_canonical_url(entry.get("primary_url", ""))
+        if purl:
+            entry["primary_url"] = purl
+        if entry.get("distribution_report_url"):
+            entry["distribution_report_url"] = to_canonical_url(entry["distribution_report_url"])
+
+        raw_links = []
+        if purl:
+            raw_links.append({"label": f"Read on {entry.get('outlet', 'Source')}", "url": purl})
+        for lk in entry.get("links", []):
+            lk_copy = dict(lk)
+            lk_copy["url"] = to_canonical_url(lk_copy.get("url", ""))
+            raw_links.append(lk_copy)
+        if entry.get("distribution_report_url"):
+            raw_links.append({
+                "label": "Distribution Report (PDF)",
+                "url": entry["distribution_report_url"],
+                "icon": "mdi-file-pdf-box",
+            })
+        # Preserve original order of item['links'] first, then ensure primary & distribution report included
+        ordered_links = []
+        for lk in entry.get("links", []):
+            lk_copy = dict(lk)
+            lk_copy["url"] = to_canonical_url(lk_copy.get("url", ""))
+            ordered_links.append(lk_copy)
+        ordered_links.extend(raw_links)
+        entry["links"] = dedup_links(ordered_links)
+        enriched_media.append(entry)
+
     output_path = os.path.join(DATA_DIR, "media_features.json")
     with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(media, f, indent=2, ensure_ascii=False)
-    print(f"Exported {len(media)} media features to {output_path}")
-    return media
+        json.dump(enriched_media, f, indent=2, ensure_ascii=False)
+    print(f"Exported {len(enriched_media)} media features to {output_path}")
+    return enriched_media
 
 
 def export_awards():
-    """5. Export 26 prestigious awards and global technology honors."""
+    """5. Export 27 prestigious awards and global technology honors with primary_url & complete links."""
     awards_path = os.path.join(ROOT_DIR, "awards_data.json")
     with open(awards_path, "r", encoding="utf-8") as f:
         awards = json.load(f)
 
+    enriched_awards = []
+    for a in awards:
+        entry = dict(a)
+        norm_links = []
+        for lk in entry.get("links", []):
+            lk_copy = dict(lk)
+            lk_copy["url"] = to_canonical_url(lk_copy.get("url", ""))
+            norm_links.append(lk_copy)
+        norm_links = dedup_links(norm_links)
+        purl = to_canonical_url(entry.get("primary_url") or "") or (norm_links[0]["url"] if norm_links else f"{CANONICAL_BASE}/page-awards")
+        entry["primary_url"] = purl
+        entry["url"] = purl
+        entry["links"] = norm_links
+        enriched_awards.append(entry)
+
     output_path = os.path.join(DATA_DIR, "awards_and_honors.json")
     with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(awards, f, indent=2, ensure_ascii=False)
-    print(f"Exported {len(awards)} awards & honors to {output_path}")
-    return awards
+        json.dump(enriched_awards, f, indent=2, ensure_ascii=False)
+    print(f"Exported {len(enriched_awards)} awards & honors to {output_path}")
+    return enriched_awards
 
 
 def export_publications():
-    """6. Export 27 peer-reviewed publications and patents."""
+    """6. Export 27 peer-reviewed publications and patents with full DOI, venue, PDF & ResearchGate links."""
     papers_path = os.path.join(ROOT_DIR, "papers_data.json")
     with open(papers_path, "r", encoding="utf-8") as f:
         papers = json.load(f)
 
+    enriched_papers = []
+    for p in papers:
+        entry = dict(p)
+        primary_link = to_canonical_url(entry.get("link", ""))
+        doi = (entry.get("doi") or "").strip()
+        doi_url = f"https://doi.org/{doi}" if (doi and not doi.startswith("http")) else to_canonical_url(doi)
+        alt_link = to_canonical_url(entry.get("alt_link", ""))
+        alt_label = (entry.get("alt_label") or "Alternate Link").strip()
+
+        links = dedup_links([
+            {"label": "Read Paper", "url": primary_link},
+            {"label": "DOI", "url": doi_url},
+            {"label": alt_label, "url": alt_link},
+        ])
+        entry["primary_url"] = primary_link or doi_url or alt_link
+        if doi_url:
+            entry["doi_url"] = doi_url
+        entry["links"] = links
+        enriched_papers.append(entry)
+
     output_path = os.path.join(DATA_DIR, "research_publications.json")
     with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(papers, f, indent=2, ensure_ascii=False)
-    print(f"Exported {len(papers)} research publications & patents to {output_path}")
-    return papers
+        json.dump(enriched_papers, f, indent=2, ensure_ascii=False)
+    print(f"Exported {len(enriched_papers)} research publications & patents to {output_path}")
+    return enriched_papers
 
 
 def export_books():
@@ -320,7 +434,15 @@ def export_books():
             ],
             "catalog_url": "https://www.beyondaiengineering.com/",
             "website_url": "https://www.beyondaiengineering.com/",
-            "cover_image": "images/books/book_creator_to_curator.png"
+            "url": "https://www.beyondaiengineering.com/",
+            "page_url": "https://www.harshverma.me/page-books#book1",
+            "partner_url": "https://profilegenius.careeraccelerator.net/",
+            "cover_image": "images/books/book_creator_to_curator.png",
+            "links": [
+                {"label": "Official Book Website", "url": "https://www.beyondaiengineering.com/"},
+                {"label": "ProfileGenius by Career Accelerator (Featured Platform)", "url": "https://profilegenius.careeraccelerator.net/"},
+                {"label": "Portfolio Books Hub", "url": "https://www.harshverma.me/page-books#book1"}
+            ]
         },
         {
             "id": "book-autonomous-cyber-defense",
@@ -340,7 +462,13 @@ def export_books():
             ],
             "catalog_url": "https://www.beyondaivsai.com/",
             "website_url": "https://www.beyondaivsai.com/",
-            "cover_image": "images/books/book_cybersecurity_counteroffensive.png"
+            "url": "https://www.beyondaivsai.com/",
+            "page_url": "https://www.harshverma.me/page-books#book2",
+            "cover_image": "images/books/book_cybersecurity_counteroffensive.png",
+            "links": [
+                {"label": "Official Book Website", "url": "https://www.beyondaivsai.com/"},
+                {"label": "Portfolio Books Hub", "url": "https://www.harshverma.me/page-books#book2"}
+            ]
         },
         {
             "id": "book-review-ai-ethics-in-action",
@@ -354,7 +482,13 @@ def export_books():
             "synopsis": "Official peer-reviewed technical evaluation of operational AI ethics frameworks, examining fairness metrics, algorithmic auditing, explainability in production deployments, and human-in-the-loop oversight.",
             "key_themes": ["AI Ethics", "Algorithmic Transparency", "Explainable AI (XAI)", "Responsible AI"],
             "catalog_url": "https://packt.link/MuEPg",
-            "cover_image": "images/books/review_ai_ethics.png"
+            "url": "https://packt.link/MuEPg",
+            "page_url": "https://www.harshverma.me/page-books#reviewed-books",
+            "cover_image": "images/books/review_ai_ethics.png",
+            "links": [
+                {"label": "View Book (Packt)", "url": "https://packt.link/MuEPg"},
+                {"label": "Portfolio Reviewed Volumes", "url": "https://www.harshverma.me/page-books#reviewed-books"}
+            ]
         },
         {
             "id": "book-review-hands-on-ai-dev",
@@ -368,7 +502,13 @@ def export_books():
             "synopsis": "Rigorous technical review of end-to-end Python machine learning architectures, microservice model serving, distributed caching, and performance benchmarking for high-scale enterprise systems.",
             "key_themes": ["Python ML", "High-Throughput Pipelines", "Production AI", "Distributed Systems"],
             "catalog_url": "https://packt.link/pZ2C5",
-            "cover_image": "images/books/review_hands_on_ai.png"
+            "url": "https://packt.link/pZ2C5",
+            "page_url": "https://www.harshverma.me/page-books#reviewed-books",
+            "cover_image": "images/books/review_hands_on_ai.png",
+            "links": [
+                {"label": "View Book (Packt)", "url": "https://packt.link/pZ2C5"},
+                {"label": "Portfolio Reviewed Volumes", "url": "https://www.harshverma.me/page-books#reviewed-books"}
+            ]
         },
         {
             "id": "book-review-leadership-ai",
@@ -382,7 +522,13 @@ def export_books():
             "synopsis": "Technical evaluation of executive strategies for organizational AI adoption, balancing ROI velocity against architectural resilience, technical debt, and enterprise workforce upskilling.",
             "key_themes": ["AI Leadership", "Enterprise Strategy", "Organizational Transformation", "AI ROI"],
             "catalog_url": "https://www.packtpub.com/",
-            "cover_image": "images/books/review_leadership_ai.png"
+            "url": "https://www.packtpub.com/",
+            "page_url": "https://www.harshverma.me/page-books#reviewed-books",
+            "cover_image": "images/books/review_leadership_ai.png",
+            "links": [
+                {"label": "Packt Publishing Catalog", "url": "https://www.packtpub.com/"},
+                {"label": "Portfolio Reviewed Volumes", "url": "https://www.harshverma.me/page-books#reviewed-books"}
+            ]
         },
         {
             "id": "book-review-python-algo-trading",
@@ -396,7 +542,13 @@ def export_books():
             "synopsis": "Comprehensive technical review of low-latency algorithmic trading backends, real-time market data streaming with Kafka and NumPy, and quantitative risk management architectures.",
             "key_themes": ["Algorithmic Trading", "Quantitative Systems", "Real-Time Streaming", "Python FinTech"],
             "catalog_url": "https://packt.link/8jmuy",
-            "cover_image": "images/books/review_python_trading.png"
+            "url": "https://packt.link/8jmuy",
+            "page_url": "https://www.harshverma.me/page-books#reviewed-books",
+            "cover_image": "images/books/review_python_trading.png",
+            "links": [
+                {"label": "View Book (Packt)", "url": "https://packt.link/8jmuy"},
+                {"label": "Portfolio Reviewed Volumes", "url": "https://www.harshverma.me/page-books#reviewed-books"}
+            ]
         },
         {
             "id": "book-review-ml-genai-marketing",
@@ -410,7 +562,13 @@ def export_books():
             "synopsis": "Expert peer review of generative AI workflows for personalized customer experiences, predictive churn analytics, and multi-modal campaign orchestration at scale.",
             "key_themes": ["Generative AI", "Customer Intelligence", "Multi-Modal AI", "Predictive Analytics"],
             "catalog_url": "https://www.packtpub.com/",
-            "cover_image": "images/books/review_genai_marketing.png"
+            "url": "https://www.packtpub.com/",
+            "page_url": "https://www.harshverma.me/page-books#reviewed-books",
+            "cover_image": "images/books/review_genai_marketing.png",
+            "links": [
+                {"label": "Packt Publishing Catalog", "url": "https://www.packtpub.com/"},
+                {"label": "Portfolio Reviewed Volumes", "url": "https://www.harshverma.me/page-books#reviewed-books"}
+            ]
         },
         {
             "id": "book-review-tensorflow-workshop",
@@ -424,9 +582,18 @@ def export_books():
             "synopsis": "Thorough technical review covering deep neural network fundamentals, convolutional and recurrent layers, distributed training on GPUs/TPUs, and TensorFlow Lite edge deployments.",
             "key_themes": ["TensorFlow", "Deep Learning", "Edge AI", "Distributed Training"],
             "catalog_url": "https://www.packtpub.com/",
-            "cover_image": "images/books/review_tensorflow.png"
+            "url": "https://www.packtpub.com/",
+            "page_url": "https://www.harshverma.me/page-books#reviewed-books",
+            "cover_image": "images/books/review_tensorflow.png",
+            "links": [
+                {"label": "Packt Publishing Catalog", "url": "https://www.packtpub.com/"},
+                {"label": "Portfolio Reviewed Volumes", "url": "https://www.harshverma.me/page-books#reviewed-books"}
+            ]
         }
     ]
+
+    for b in books_detailed:
+        b["primary_url"] = b.get("url") or b.get("catalog_url") or b.get("page_url", "")
 
     output_path = os.path.join(DATA_DIR, "books_and_volumes.json")
     with open(output_path, "w", encoding="utf-8") as f:
@@ -436,53 +603,93 @@ def export_books():
 
 
 def export_blogs():
-    """8. Export 32 articles and executive thought leadership essays."""
+    """8. Export all 31 articles and executive thought leadership essays with complete card, Spotify, Substack, and slide links."""
     kg_path = os.path.join(ROOT_DIR, "data", "knowledge-graph.json")
     with open(kg_path, "r", encoding="utf-8") as f:
         kg = json.load(f)
 
-    blogs = kg.get("entities", {}).get("blogs", [])
-    blogs_list = list(blogs)
+    # Parse actual blog cards from page-blog.html to extract any secondary links (e.g. Substack, Spotify, Author profile)
+    html_card_links_by_url = {}
+    blog_html_path = os.path.join(ROOT_DIR, "page-blog.html")
+    if os.path.exists(blog_html_path):
+        with open(blog_html_path, "r", encoding="utf-8") as bf:
+            bhtml = bf.read()
+        bl_cards = re.split(r'(?=<div class="col-lg-4 col-md-6 mb-4 pb-2 blog-card-item")', bhtml)
+        for card in bl_cards:
+            if 'blog-card-item' not in card:
+                continue
+            if '</section>' in card:
+                card = card.split('</section>')[0]
+            anchors = []
+            for url, lbl in re.findall(r'<a\s+[^>]*href="([^"]+)"[^>]*>([\s\S]*?)</a>', card):
+                u = to_canonical_url(url)
+                if u:
+                    anchors.append({"label": clean_text(lbl) or "Read Article", "url": u})
+            anchors = dedup_links(anchors)
+            for a in anchors:
+                html_card_links_by_url[a["url"].rstrip("/")] = anchors
 
-    existing_urls = {b.get("url") for b in blogs_list}
-
-    # Add the latest Forbes pieces and Substack articles if missing
-    additional_blogs = [
-        {
-            "id": "forbes-physical-ai-coming",
-            "title": "Physical AI Is Coming: When AI Stops Generating Content And Starts Acting On The World",
-            "platform": "Forbes Technology Council",
-            "platform_short": "Forbes",
-            "category": "Physical AI & Robotics",
-            "date": "October 27, 2026",
-            "read_time": "7 min read",
-            "url": "https://www.forbes.com/councils/forbestechcouncil/2026/10/27/physical-ai-is-coming-when-ai-stops-generating-content-and-starts-acting-on-the-world/",
-            "spotify_url": "",
-            "author_profile": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/",
-            "image": "images/blog/thumbnails/forbes-physical-ai.jpg",
-            "description": "Explores the frontier transition from digital chat models to embodied, actuator-driven physical AI systems. Analyzes irreversible physical consequences, real-time cyber-physical security, sensor provenance, and latency requirements in robotic enterprise workflows.",
-            "tags": ["Forbes Tech Council", "Physical AI", "Robotics", "Embodied AI", "Cyber-Physical Safety"]
+    # Map known RSAC/tech blog URLs to Smart Slides decks
+    slides_by_blog_url = {
+        "https://www.rsaconference.com/library/blog/the-clean-attack-problem": {
+            "slides_url": "https://www.harshverma.me/page-smart-slides#deck=tHbS&slide=1",
+            "easychair_url": "https://easychair.org/smart-slide/slide/tHbS#{sn:1}",
         },
-        {
-            "id": "founders-creative-corporate-startup-co-innovation",
-            "title": "Unlocking Corporate-Startup Co-Innovation: Tactical Playbook for Enterprise Growth",
-            "platform": "Founders' Creative Substack",
-            "platform_short": "Substack",
-            "category": "Venture & Innovation Strategy",
-            "date": "September 15, 2026",
-            "read_time": "5 min read",
-            "url": "https://founderscreative.substack.com/p/unlocking-corporatestartup-co-innovation",
-            "spotify_url": "",
-            "author_profile": "https://founderscreative.substack.com/",
-            "image": "images/blog/thumbnails/founders-creative-innovation.jpg",
-            "description": "Strategic blueprint on aligning enterprise risk tolerances with early-stage founder agility. Formulates joint proof-of-concept roadmaps, sandboxed AI evaluation environments, and scalable IP co-ownership models.",
-            "tags": ["Founders Creative", "Co-Innovation", "Venture Strategy", "Enterprise AI Adoption"]
-        }
-    ]
+        "https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems": {
+            "slides_url": "https://www.harshverma.me/page-smart-slides#deck=xJKk&slide=1",
+            "easychair_url": "https://easychair.org/smart-slide/slide/xJKk#{sn:1}",
+        },
+        "https://www.rsaconference.com/Library/blog/agents-dont-break-rules-they-redefine-them": {
+            "slides_url": "https://www.harshverma.me/page-smart-slides#deck=X2qH&slide=1",
+            "easychair_url": "https://easychair.org/smart-slide/slide/X2qH#{sn:1}",
+        },
+        "https://www.rsaconference.com/Library/blog/security-without-humans-designing-systems-that-defend-themselves": {
+            "slides_url": "https://www.harshverma.me/page-smart-slides#deck=NZ5R&slide=1",
+            "easychair_url": "https://easychair.org/smart-slide/slide/NZ5R#{sn:1}",
+        },
+    }
 
-    for ab in additional_blogs:
-        if ab["url"] not in existing_urls:
-            blogs_list.append(ab)
+    blogs = kg.get("entities", {}).get("blogs", [])
+    blogs_list = []
+    seen_urls = set()
+
+    for b in blogs:
+        entry = dict(b)
+        url = to_canonical_url(entry.get("url", ""))
+        if not url or url.rstrip("/") in seen_urls:
+            continue
+        seen_urls.add(url.rstrip("/"))
+        entry["url"] = url
+
+        card_links = html_card_links_by_url.get(url.rstrip("/"), [])
+        # Extract Substack URL if present on HTML card
+        substack_url = entry.get("substack_url", "")
+        for cl in card_links:
+            if "substack.com" in cl["url"]:
+                substack_url = cl["url"]
+                break
+        if substack_url:
+            entry["substack_url"] = substack_url
+
+        slide_ref = slides_by_blog_url.get(url)
+        if slide_ref:
+            entry["slides_url"] = slide_ref["slides_url"]
+            entry["easychair_url"] = slide_ref["easychair_url"]
+
+        combined_links = [
+            {"label": "Read Article", "url": url},
+            {"label": "Read on Substack", "url": substack_url},
+            {"label": "Spotify Podcast", "url": to_canonical_url(entry.get("spotify_url", ""))},
+            {"label": f"{entry.get('platform_short') or entry.get('platform', 'Platform')} Author Profile", "url": to_canonical_url(entry.get("author_profile", ""))},
+        ]
+        if slide_ref:
+            combined_links.append({"label": "Interactive Smart Slides", "url": slide_ref["slides_url"]})
+            combined_links.append({"label": "EasyChair Smart Slide", "url": slide_ref["easychair_url"]})
+        combined_links.extend(card_links)
+
+        entry["primary_url"] = url
+        entry["links"] = dedup_links(combined_links)
+        blogs_list.append(entry)
 
     output_path = os.path.join(DATA_DIR, "blog_articles.json")
     with open(output_path, "w", encoding="utf-8") as f:
@@ -492,7 +699,7 @@ def export_blogs():
 
 
 def export_verified_profiles():
-    """9. Export all 57 verified directory profiles."""
+    """9. Export all 57 verified directory profiles including all secondary links on multi-link cards."""
     about_path = os.path.join(ROOT_DIR, "page-about.html")
     with open(about_path, "r", encoding="utf-8") as f:
         html = f.read()
@@ -503,7 +710,7 @@ def export_verified_profiles():
     )
 
     profiles = []
-    seen_urls = set()
+    seen_ids = set()
 
     for match in card_matches:
         category = match.group(1).strip()
@@ -525,23 +732,38 @@ def export_verified_profiles():
         thumb_match = re.search(r'<img[^>]*src="([^"]+)"', chunk)
         thumb = thumb_match.group(1).strip() if thumb_match else ""
 
-        url_match = re.search(r'<a\s+[^>]*href="([^"]+)"[^>]*class="btn-hub-action', chunk)
-        url = url_match.group(1).strip() if url_match else ""
+        # Collect ALL links on the profile card
+        raw_card_links = []
+        primary_action = re.search(r'<a\s+[^>]*href="([^"]+)"[^>]*class="btn-hub-action[^"]*"[^>]*>([\s\S]*?)</a>', chunk)
+        if primary_action:
+            raw_card_links.append({
+                "label": clean_text(primary_action.group(2)) or f"Open {title}",
+                "url": to_canonical_url(primary_action.group(1)),
+            })
+        for am in re.finditer(r'<a\s+[^>]*href="([^"]+)"[^>]*>([\s\S]*?)</a>', chunk):
+            u = to_canonical_url(am.group(1))
+            if u:
+                raw_card_links.append({
+                    "label": clean_text(am.group(2)) or f"Open {title}",
+                    "url": u,
+                })
 
-        if not url:
-            generic_url = re.search(r'href="([^"]+)"', chunk)
-            url = generic_url.group(1).strip() if generic_url else ""
+        card_links = dedup_links(raw_card_links)
+        url = card_links[0]["url"] if card_links else ""
+        pid = "profile-" + re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
 
-        if url and url not in seen_urls:
-            seen_urls.add(url)
+        if url and pid not in seen_ids:
+            seen_ids.add(pid)
             profiles.append({
-                "id": "profile-" + re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-"),
+                "id": pid,
                 "name": title,
                 "category": category,
                 "category_label": category_label,
                 "identifier": identifier,
                 "description": description,
                 "url": url,
+                "primary_url": url,
+                "links": card_links,
                 "icon_svg": thumb,
                 "search_keywords": search_kw,
             })
@@ -764,12 +986,20 @@ def export_memberships_and_associations():
     for a in assocs:
         title = a.get("title", "")
         m = meta_map.get(title, {})
+        primary_link = to_canonical_url(m.get("link", a.get("url", "")))
+        org_name = m.get("organization_name", title)
+        raw_links = [{"url": primary_link, "label": f"View {org_name} Profile"}]
+        for lk in (a.get("links") or []):
+            u = to_canonical_url(lk.get("url", ""))
+            if u:
+                raw_links.append({"url": u, "label": (lk.get("label") or f"View {org_name}").strip()})
         item = {
-            "organization_name": m.get("organization_name", title),
+            "organization_name": org_name,
             "membership_role": m.get("membership_role", a.get("role", "")),
             "membership_id": m.get("membership_id", a.get("credential_id", "")),
             "date_joined": m.get("date_joined", "2024"),
-            "link": m.get("link", a.get("url", "")),
+            "link": primary_link,
+            "primary_url": primary_link,
             "title": title,
             "role": a.get("role", ""),
             "tier": a.get("tier", ""),
@@ -777,13 +1007,8 @@ def export_memberships_and_associations():
             "category": a.get("category", ""),
             "image": a.get("image", ""),
             "description": a.get("description", ""),
-            "url": m.get("link", a.get("url", "")),
-            "links": a.get("links") if a.get("links") else [
-                {
-                    "url": m.get("link", a.get("url", "")),
-                    "label": f"View {m.get('organization_name', title)} Profile"
-                }
-            ]
+            "url": primary_link,
+            "links": dedup_links(raw_links),
         }
         enriched.append(item)
 
@@ -835,7 +1060,7 @@ def export_slides():
             "badge": "Verified Academic Ref",
             "author": "Harsh Verma",
             "year": "2026",
-            "easyChairUrl": "https://easychair.org/smart-slide/slide/ntzm5",
+            "easyChairUrl": "https://easychair.org/smart-slide/slide/ntzm5#{sn:1}",
             "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=ntzm5&slide=1",
             "blogUrl": None,
             "blogTitle": None,
@@ -854,7 +1079,7 @@ def export_slides():
             "badge": "Case Study Included",
             "author": "Harsh Verma",
             "year": "2026",
-            "easyChairUrl": "https://easychair.org/smart-slide/slide/T45r",
+            "easyChairUrl": "https://easychair.org/smart-slide/slide/T45r#{sn:1}",
             "portfolioUrl": "https://www.harshverma.me/page-smart-slides#deck=T45r&slide=1",
             "blogUrl": None,
             "blogTitle": None,
@@ -1053,6 +1278,12 @@ def export_slides():
         deck_entry["thumbnail_image"] = f"images/smart-slides/{folder}/thumb-1.jpg"
         deck_entry["categories"] = categories
         deck_entry["tags"] = all_tags
+        deck_entry["primary_url"] = meta["easyChairUrl"]
+        deck_entry["links"] = dedup_links([
+            {"label": "EasyChair Smart Slide", "url": meta["easyChairUrl"]},
+            {"label": "Portfolio Interactive Viewer", "url": meta["portfolioUrl"]},
+            {"label": meta.get("blogTitle") or "Associated Article", "url": meta.get("blogUrl") or ""},
+        ])
         deck_entry["slides"] = enriched_slides
         decks_out.append(deck_entry)
 
@@ -1170,6 +1401,22 @@ def export_projects_certification():
             else "proj-" + re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
         )
 
+        widget_or_proj_anchor = f"https://www.harshverma.me/page-portfolio#{slug_id}" if id_match else "https://www.harshverma.me/page-portfolio#projects-section"
+        resolved_primary_url = to_canonical_url(primary_url) or widget_or_proj_anchor
+
+        raw_proj_links = [{"label": "Primary URL", "url": resolved_primary_url}]
+        if primary_url.startswith("mailto:"):
+            raw_proj_links.append({"label": "Inquire via Email", "url": primary_url})
+        for a in actions:
+            u = a["url"]
+            if u.startswith("mailto:"):
+                raw_proj_links.append({"label": a["label"], "url": u})
+            else:
+                cu = to_canonical_url(u)
+                if cu:
+                    raw_proj_links.append({"label": a["label"], "url": cu})
+        norm_links = dedup_links(raw_proj_links)
+
         entry = {
             "id": slug_id,
             "title": title,
@@ -1182,10 +1429,12 @@ def export_projects_certification():
             "description": description,
             "tags": tags,
             "url": primary_url,
+            "primary_url": resolved_primary_url,
             "github_url": primary_url if "github.com" in primary_url else None,
             "repository_name": repo_name or None,
             "preview_image": image,
             "actions": actions,
+            "links": norm_links,
             "page_url": "https://www.harshverma.me/page-portfolio#projects-section",
         }
 
@@ -1257,6 +1506,9 @@ def export_projects_certification():
         status_label = clean_text(status_match.group(1)) if status_match else "Verified Credential"
 
         cert_slug = "cert-" + re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+        preview_url = f"https://www.harshverma.me/{image}" if image else ""
+        archive_repo = "https://github.com/iamharshverma/CertificatesAccomplishment"
+        cert_page_url = "https://www.harshverma.me/page-portfolio#certifications"
 
         certifications.append({
             "id": cert_slug,
@@ -1274,9 +1526,15 @@ def export_projects_certification():
             "tags": tags,
             "search_keywords": search_keywords,
             "image": image,
-            "preview_url": f"https://www.harshverma.me/{image}" if image else "",
-            "archive_repo_url": "https://github.com/iamharshverma/CertificatesAccomplishment",
-            "page_url": "https://www.harshverma.me/page-portfolio#certifications",
+            "preview_url": preview_url,
+            "archive_repo_url": archive_repo,
+            "page_url": cert_page_url,
+            "primary_url": preview_url or archive_repo,
+            "links": dedup_links([
+                {"label": "Certificate Image", "url": preview_url},
+                {"label": "All Certificates Repository (GitHub)", "url": archive_repo},
+                {"label": "Portfolio Certifications Section", "url": cert_page_url},
+            ]),
         })
 
     # Compute structured summary breakdowns
@@ -1331,6 +1589,35 @@ def export_projects_certification():
     return payload
 
 
+def enrich_social_posts():
+    """15. Ensure every entry in data/social_posts.json has canonical primary_url and links[]."""
+    sp_path = os.path.join(DATA_DIR, "social_posts.json")
+    if not os.path.exists(sp_path):
+        return []
+    with open(sp_path, "r", encoding="utf-8") as f:
+        posts = json.load(f)
+
+    updated = []
+    for post in posts:
+        entry = dict(post)
+        post_url = to_canonical_url(entry.get("postUrl", ""))
+        platform_label = "LinkedIn Post" if entry.get("platform") == "linkedin" else "Instagram Post"
+        raw_links = [{"label": platform_label, "url": post_url}] if post_url else []
+        for u in re.findall(r'https?://[^\s"\'<>]+', entry.get("content", "")):
+            u_clean = u.rstrip(".,);")
+            raw_links.append({"label": "Featured Article / Video", "url": u_clean})
+        if entry.get("mediaUrl"):
+            raw_links.append({"label": "Post Media Asset", "url": to_canonical_url(entry["mediaUrl"])})
+        entry["primary_url"] = post_url
+        entry["links"] = dedup_links(raw_links)
+        updated.append(entry)
+
+    with open(sp_path, "w", encoding="utf-8") as f:
+        json.dump(updated, f, indent=2, ensure_ascii=False)
+    print(f"Enriched {len(updated)} social posts with complete links in {sp_path}")
+    return updated
+
+
 def main():
     print("=== Exporting All Portfolio Sections to Individual Comprehensive JSON Files ===")
     j = export_judging()
@@ -1347,6 +1634,7 @@ def main():
     pw = export_professional_work()
     sl = export_slides()
     pc = export_projects_certification()
+    sp = enrich_social_posts()
 
     print("\nSummary of Exported Files:")
     print(f"1.  data/judging_engagements.json:           {len(j)} records")
@@ -1363,9 +1651,9 @@ def main():
     print(f"12. data/professional_work.json:             {len(pw)} root sections")
     print(f"13. data/slides.json:                        {sl['total_decks']} decks ({sl['total_slides']} slides)")
     print(f"14. data/projects_certification.json:        {pc['summary_stats']['total_projects']} projects, {pc['summary_stats']['total_hub_widgets']} widgets, {pc['summary_stats']['total_certifications']} certifications")
+    print(f"15. data/social_posts.json:                  {len(sp)} records")
     print("================================================================================")
 
 
 if __name__ == "__main__":
     main()
-

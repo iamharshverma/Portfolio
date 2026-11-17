@@ -14,17 +14,33 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT_DIR, "data")
 os.makedirs(DATA_DIR, exist_ok=True)
 
+def _count_json(rel_path, default_val):
+    p = os.path.join(ROOT_DIR, rel_path)
+    if os.path.exists(p):
+        try:
+            with open(p, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            if isinstance(data, list):
+                return len(data)
+        except Exception:
+            pass
+    return default_val
+
+
 def generate_about_json():
-    awards_path = os.path.join(ROOT_DIR, "awards_data.json")
-    awards_count = 27
-    if os.path.exists(awards_path):
-        with open(awards_path, "r", encoding="utf-8") as af:
-            awards_count = len(json.load(af))
+    awards_count = _count_json("awards_data.json", 27)
+    papers_count = _count_json("papers_data.json", 27)
+    media_count = _count_json("media_data.json", 45)
+    profiles_count = _count_json("data/verified_profiles.json", 57)
+    assocs_count = _count_json("data/memberships_and_associations.json", 28)
+    judging_count = _count_json("data/judging_engagements.json", 22)
+    keynotes_count = _count_json("data/keynote_engagements.json", 12)
+    blogs_count = _count_json("data/blog_articles.json", 31)
 
     about_data = {
         "metadata": {
             "document_title": "Harsh Verma - Official Executive Profile & About Dossier",
-            "version": "2026.1",
+            "version": "2026.2",
             "canonical_url": "https://www.harshverma.me/page-about",
             "last_updated": "2026"
         },
@@ -39,40 +55,60 @@ def generate_about_json():
             "location": "Silicon Valley, California, United States",
             "official_website": "https://www.harshverma.me",
             "email_contact": "contact@harshverma.me",
-            "short_bio": f"Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, an elected Fellow of the British Computer Society (FBCS), Senior Member of IEEE (SMIEEE), and Forbes Technology Council member. With 27 peer-reviewed papers, 6 patents, 2 authored books, and {awards_count} global awards, he pioneers autonomous agent architectures and enterprise AI cyber defense."
+            "short_bio": f"Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, an elected Fellow of the British Computer Society (FBCS), Senior Member of IEEE (SMIEEE), and Forbes Technology Council member. With {papers_count} peer-reviewed papers, 6 patents, 2 authored books, and {awards_count} global awards, he pioneers autonomous agent architectures and enterprise AI cyber defense."
         },
         "authority_identifiers": {
             "wikidata_id": "Q139827028",
             "wikidata_url": "https://www.wikidata.org/wiki/Q139827028",
             "google_knowledge_graph_id": "/g/11njtn74r4",
             "google_kg_url": "https://www.google.com/search?kgmid=/g/11njtn74r4",
-            "orcid": "0000-0002-8600-4740",
-            "orcid_url": "https://orcid.org/0000-0002-8600-4740",
+            "everybodywiki_url": "https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)",
+            "orcid": "0000-0003-2134-2600",
+            "orcid_url": "https://orcid.org/0000-0003-2134-2600",
             "ieee_author_id": "37089143797",
             "ieee_author_url": "https://ieeexplore.ieee.org/author/37089143797",
-            "google_scholar_url": "https://scholar.google.com/citations?user=d_E7TzUAAAAJ",
-            "crunchbase_url": "https://www.crunchbase.com/person/harsh-verma-024c",
-            "acm_profile": "https://dl.acm.org/profile/99661413661",
-            "dblp_profile": "https://dblp.org/pid/344/5799.html",
+            "google_scholar_url": "https://scholar.google.com/citations?user=zSt9oRMAAAAJ&hl=en",
+            "crunchbase_url": "https://www.crunchbase.com/person/harsh-verma-f153",
             "forbes_profile": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/",
+            "forbes_council_url": "https://councils.forbes.com/profile/Harsh-Verma-Principal-Software-Engineer-AI-Palo-Alto-Networks/2a1e2c7a-5541-4c49-acee-0ec37da532a5",
             "bcs_profile": "https://www.bcs.org/membership-and-registrations/our-members/harsh-verma-fbcs",
-            "semantic_scholar": "https://www.semanticscholar.org/author/Harsh-Verma/2290459392",
-            "researchgate": "https://www.researchgate.net/profile/Harsh-Verma-48",
+            "semantic_scholar": "https://www.semanticscholar.org/author/H.-Verma/145004805",
+            "researchgate": "https://www.researchgate.net/profile/Harsh-Verma-43",
+            "academia_edu": "https://mygsb.academia.edu/harshverma",
             "github": "https://github.com/iamharshverma",
-            "linkedin": "https://www.linkedin.com/in/harsh-verma/"
+            "linkedin": "https://www.linkedin.com/in/harshverma59/",
+            "easychair_slides": "https://easychair.org/smart-slide/author/v5zJ",
+            "links": [
+                {"label": "Official Portfolio", "url": "https://www.harshverma.me"},
+                {"label": "Wikidata Q139827028", "url": "https://www.wikidata.org/wiki/Q139827028"},
+                {"label": "Google Knowledge Graph", "url": "https://www.google.com/search?kgmid=/g/11njtn74r4"},
+                {"label": "EverybodyWiki Biography", "url": "https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)"},
+                {"label": "ORCID", "url": "https://orcid.org/0000-0003-2134-2600"},
+                {"label": "IEEE Xplore Author", "url": "https://ieeexplore.ieee.org/author/37089143797"},
+                {"label": "Google Scholar", "url": "https://scholar.google.com/citations?user=zSt9oRMAAAAJ&hl=en"},
+                {"label": "Semantic Scholar", "url": "https://www.semanticscholar.org/author/H.-Verma/145004805"},
+                {"label": "ResearchGate", "url": "https://www.researchgate.net/profile/Harsh-Verma-43"},
+                {"label": "Academia.edu", "url": "https://mygsb.academia.edu/harshverma"},
+                {"label": "Crunchbase", "url": "https://www.crunchbase.com/person/harsh-verma-f153"},
+                {"label": "Forbes Technology Council", "url": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/"},
+                {"label": "British Computer Society (FBCS)", "url": "https://www.bcs.org/membership-and-registrations/our-members/harsh-verma-fbcs"},
+                {"label": "GitHub", "url": "https://github.com/iamharshverma"},
+                {"label": "LinkedIn", "url": "https://www.linkedin.com/in/harshverma59/"},
+                {"label": "EasyChair Smart Slides", "url": "https://easychair.org/smart-slide/author/v5zJ"}
+            ]
         },
         "executive_biographies": {
             "comprehensive_bio": (
-                "Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, focused on advancing autonomous "
-                "agent systems, multi-agent reasoning topologies, and intelligent AI defense strategies. As an elected Fellow of "
-                "the British Computer Society (FBCS), Senior Member of the IEEE (SMIEEE), Fellow of the Royal Society of Arts (FRSA), "
-                "and official Forbes Technology Council member, he brings deep technical rigor and strategic guidance to enterprise "
-                "leaders adopting next-generation AI capabilities. Harsh leads the operationalization of responsible, deterministic AI "
-                "systems across Fortune 500 environments, architecting high-scale telemetry ingestion platforms, intelligent multi-agent "
-                "guardrails, and real-time copilot navigation engines. Over his decade-long career spanning ISRO, Hike Messenger, "
-                "Reliance Jio, Worlds, and Hypergiant, he has published 27 peer-reviewed papers across IEEE, Springer, and Oxford University "
-                "Press venues, authored 2 landmark books on autonomous agents and AI cyber defense, and developed an intellectual property "
-                "portfolio of 6 patents (2 granted, 4 pending at Palo Alto Networks)."
+                f"Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, focused on advancing autonomous "
+                f"agent systems, multi-agent reasoning topologies, and intelligent AI defense strategies. As an elected Fellow of "
+                f"the British Computer Society (FBCS), Senior Member of the IEEE (SMIEEE), Fellow of the Royal Society of Arts (FRSA), "
+                f"and official Forbes Technology Council member, he brings deep technical rigor and strategic guidance to enterprise "
+                f"leaders adopting next-generation AI capabilities. Harsh leads the operationalization of responsible, deterministic AI "
+                f"systems across Fortune 500 environments, architecting high-scale telemetry ingestion platforms, intelligent multi-agent "
+                f"guardrails, and real-time copilot navigation engines. Over his decade-long career spanning ISRO, Hike Messenger, "
+                f"Reliance Jio, Worlds, and Hypergiant, he has published {papers_count} peer-reviewed papers across IEEE, Springer, and Oxford University "
+                f"Press venues, authored 2 landmark books on autonomous agents and AI cyber defense, and developed an intellectual property "
+                f"portfolio of 6 patents (2 granted, 4 pending at Palo Alto Networks)."
             ),
             "speaking_and_event_bio": (
                 "Harsh Verma is a Silicon Valley AI systems architect, author, and keynote speaker serving as Principal AI Engineer at "
@@ -217,19 +253,20 @@ def generate_about_json():
             }
         ],
         "verified_metrics": {
-            "peer_reviewed_publications": 27,
+            "peer_reviewed_publications": papers_count,
             "patents_total": 6,
             "patents_granted": 2,
             "patents_in_process": 4,
             "prestigious_awards_and_honors": awards_count,
-            "tier1_media_features": 44,
-            "verified_directory_profiles": 57,
-            "fellowships_and_councils": 26,
+            "tier1_media_features": media_count,
+            "verified_directory_profiles": profiles_count,
+            "fellowships_and_councils": assocs_count,
             "global_audience_reach": "3.75B+",
-            "keynote_addresses_delivered": 12,
-            "judging_appointments": 21,
+            "keynote_addresses_delivered": keynotes_count,
+            "judging_appointments": judging_count,
             "authored_books": 2,
-            "technical_peer_reviewed_volumes": 6
+            "technical_peer_reviewed_volumes": 6,
+            "thought_leadership_articles": blogs_count
         },
         "speaking_and_advisory_guidelines": {
             "keynote_topics": [
