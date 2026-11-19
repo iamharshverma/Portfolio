@@ -556,7 +556,7 @@ projects_html = '''        <!-- Projects/Work Start -->
                             <p class="text-muted small mb-3">View all open-source libraries, benchmarks, and research implementations across AI security and distributed systems.</p>
                             <div class="d-flex flex-wrap justify-content-center align-items-center" style="gap: 12px;">
                                 <a href="page-portfolio" class="btn btn-primary rounded-pill px-4 py-2 font-weight-bold shadow-sm">
-                                    <i class="mdi mdi-folder-multiple-outline mr-1"></i> Browse Complete Portfolio (25+) <i class="mdi mdi-arrow-right ml-1"></i>
+                                    <i class="mdi mdi-folder-multiple-outline mr-1"></i> Browse Complete Portfolio (37+ Projects &amp; Certs) <i class="mdi mdi-arrow-right ml-1"></i>
                                 </a>
                                 <a href="page-publications" class="btn btn-outline-primary rounded-pill px-4 py-2 font-weight-bold">
                                     <i class="mdi mdi-book-open-page-variant mr-1"></i> Scientific Papers &amp; Patents

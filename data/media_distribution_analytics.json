@@ -1,0 +1,201 @@
+{
+  "section": "Media Distribution Analytics & Career Trajectory",
+  "author": "Harsh Verma",
+  "page_url": "https://www.harshverma.me/page-media-distribution-analytics",
+  "headline_metrics": {
+    "total_media_features": 45,
+    "total_media_features_display": "45+",
+    "cumulative_potential_views": "3.75B+",
+    "estimated_monthly_reach": "100M+",
+    "premier_platforms_count": "7+",
+    "syndicated_outlets_sampled": "100+",
+    "linkedin_followers": 16816,
+    "instagram_engagement_posts": 170,
+    "interaction_rate": "7.3%",
+    "career_span": "2013 - 2026"
+  },
+  "tier1_platform_anchors": [
+    "Forbes Technology Council",
+    "Bloomberg Markets & Tech",
+    "AP News Wire",
+    "Business Insider",
+    "Yahoo Finance",
+    "VentureBeat AI",
+    "HackerNoon Tech",
+    "TechCrunch / Disrupt Coverage",
+    "Reuters Technology Wire",
+    "Nasdaq Times Square Billboard"
+  ],
+  "career_journey_timeline": [
+    {
+      "period_label": "2013 &ndash; 2016",
+      "phase": "Foundation",
+      "subtitle": "Systems Engineering, Performance Tools & Early Research",
+      "description": "Mastered low-level systems programming, concurrent memory architectures, and compiler optimizations. Built high-throughput performance benchmarking tools that laid the empirical groundwork for large-scale distributed computing.",
+      "highlights": [
+        "Low-level systems programming & memory models",
+        "High-throughput performance profiling & tools",
+        "Foundational CS & machine learning research"
+      ]
+    },
+    {
+      "period_label": "2017 &ndash; 2019",
+      "phase": "Academic Contribution",
+      "subtitle": "IEEE Paper, Refereed Research & Early Talks",
+      "description": "Translated systems engineering into rigorous peer-reviewed academic literature. Published influential research in IEEE CogML, delivered university research colloquia, and established algorithmic benchmarking frameworks.",
+      "highlights": [
+        "IEEE Cognitive Machine Learning (CogML) paper",
+        "Refereed machine learning performance research",
+        "Early academic colloquia & technical talks"
+      ]
+    },
+    {
+      "period_label": "2020 &ndash; 2022",
+      "phase": "Applied AI at Scale",
+      "subtitle": "Palo Alto Networks & Large-Scale Systems",
+      "description": "Architected and scaled mission-critical cloud security pipelines at Palo Alto Networks. Deployed deep learning classifiers and stream-processing infrastructure operating at petabyte scale across millions of global enterprise users.",
+      "highlights": [
+        "Palo Alto Networks enterprise AI security pipelines",
+        "Petabyte-scale real-time stream processing",
+        "Low-latency threat detection for millions of users"
+      ]
+    },
+    {
+      "period_label": "2022 &ndash; 2023",
+      "phase": "Public Influence",
+      "subtitle": "YouTube Talks, Keynotes & Publications",
+      "description": "Extended impact from enterprise perimeters to broad public tech education. Delivered high-yield YouTube masterclasses, keynotes on Generative AI internals, and established an authoritative digital presence across global developer hubs.",
+      "highlights": [
+        "YouTube tech lectures & deep-dive masterclasses",
+        "Keynote presentations at global technical summits",
+        "Demystifying LLMs, transformers & agentic workflows"
+      ]
+    },
+    {
+      "period_label": "2023 &ndash; 2024",
+      "phase": "Research & Writing",
+      "subtitle": "HackerNoon Top Contributor, Books & Papers",
+      "description": "Authored definitive industry books including AI vs AI and Beyond AI . Ranked as HackerNoon Top Contributor in AI & Cybersecurity, publishing landmark papers on Agentic Security Governance and The Death of Authentication.",
+      "highlights": [
+        "Authored books: AI vs AI & Beyond AI",
+        "HackerNoon Top Contributor in AI & Cybersecurity",
+        "Seminal papers on Agentic Security Governance"
+      ]
+    },
+    {
+      "period_label": "2024 &ndash; 2025",
+      "phase": "Industry Leadership",
+      "subtitle": "Global Events, Mentoring & Hackathon Judging",
+      "description": "Elevated to prestigious industry leadership positions. Served as official judge for premier competitions including Google AI Hackathon and HackMIT, delivered 1,000+ minutes of executive mentoring on ADPList, and chaired summit panels.",
+      "highlights": [
+        "Official Judge: Google AI Hackathon & HackMIT",
+        "1,000+ minutes executive mentoring on ADPList",
+        "Summit steering committees & panel moderator"
+      ]
+    },
+    {
+      "period_label": "2025 &ndash; 2026+",
+      "phase": "Global Recognition",
+      "subtitle": "Media Publications, Awards & Advisor Roles",
+      "description": "Reached peak international acclaim with 3.75B+ syndicated media reach across Yahoo Finance, Business Insider, and AP News. Awarded Stevie Gold & Bronze honors, Global Recognition Award, IFGICT Fellowship, and strategic startup advisory posts.",
+      "highlights": [
+        "3.75B+ syndicated reach across 100+ major journals",
+        "Stevie Gold & Bronze Awards & Global Recognition",
+        "IFGICT Fellowship & Strategic Advisor to AI startups"
+      ]
+    }
+  ],
+  "audience_cohorts": [
+    {
+      "cohort": "Engineers",
+      "profile": "Systems Architects & ML Practitioners",
+      "share_estimate": "32%",
+      "summary": "Engaged through code-level patterns, multi-agent orchestration frameworks, deterministic pipeline designs, and zero-trust perimeter implementations."
+    },
+    {
+      "cohort": "Founders",
+      "profile": "Tech Entrepreneurs & Enterprise CTOs",
+      "share_estimate": "26%",
+      "summary": "Focusing on enterprise AI transition, scaling agent systems, talent architecture, competitive moats, and operational resilience."
+    },
+    {
+      "cohort": "Investors",
+      "profile": "VC Partners & Financial Analysts",
+      "share_estimate": "24%",
+      "summary": "Tracking compute unit economics, cybersecurity risk vectors, AI infrastructure capex, valuation inflection points, and market moats."
+    },
+    {
+      "cohort": "General Consumers",
+      "profile": "Informed Public & Tech Enthusiasts",
+      "share_estimate": "18%",
+      "summary": "Absorbing perspectives on ethical AI, identity theft prevention, personal data sovereignty, and the everyday impact of automation."
+    }
+  ],
+  "flywheel_stages": [
+    "1. Build Systems",
+    "2. Publish Research",
+    "3. Media Syndication",
+    "4. Keynote Stage",
+    "5. Venture & Board Advisory",
+    "6. Global Compounding Influence"
+  ],
+  "primary_url": "https://www.harshverma.me/page-media-distribution-analytics",
+  "links": [
+    {
+      "label": "Media Distribution Analytics Dossier",
+      "url": "https://www.harshverma.me/page-media-distribution-analytics"
+    },
+    {
+      "label": "Full Media Hub",
+      "url": "https://www.harshverma.me/page-media"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/harshverma59/"
+    },
+    {
+      "label": "Instagram (@aiwithharsh)",
+      "url": "https://www.instagram.com/aiwithharsh/"
+    },
+    {
+      "label": "Instagram (@iamharshverma)",
+      "url": "https://www.instagram.com/iamharshverma/"
+    },
+    {
+      "label": "Twitter / X",
+      "url": "https://twitter.com/harshverma59"
+    },
+    {
+      "label": "Medium",
+      "url": "https://medium.com/@harshverma59"
+    },
+    {
+      "label": "Mastodon",
+      "url": "https://mastodon.social/@harshverma59"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/iamharshverma"
+    },
+    {
+      "label": "ORCID",
+      "url": "https://orcid.org/0000-0003-2134-2600"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+    },
+    {
+      "label": "Wikidata Q139827028",
+      "url": "https://www.wikidata.org/wiki/Q139827028"
+    },
+    {
+      "label": "EverybodyWiki",
+      "url": "https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)"
+    },
+    {
+      "label": "Google Knowledge Graph",
+      "url": "https://www.google.com/search?kgmid=/g/11njtn74r4"
+    }
+  ]
+}

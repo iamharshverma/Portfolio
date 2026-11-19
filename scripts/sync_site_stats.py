@@ -52,7 +52,44 @@ def load_canonical_stats():
             about_html = f.read()
         profiles_count = len(re.findall(r'class="[^"]*profile-card-item', about_html))
     else:
-        profiles_count = 53
+        profiles_count = 57
+
+    # 5. Additional section counts from data JSONs / HTML
+    data_dir = os.path.join(ROOT_DIR, "data")
+    def read_json_len(rel_path, key=None, fallback=0):
+        p = os.path.join(data_dir, rel_path)
+        if os.path.exists(p):
+            try:
+                with open(p, "r", encoding="utf-8") as f:
+                    d = json.load(f)
+                if key and isinstance(d, dict):
+                    return len(d.get(key, []))
+                if isinstance(d, list):
+                    return len(d)
+            except Exception:
+                pass
+        return fallback
+
+    associations_count = read_json_len("memberships_and_associations.json", fallback=28)
+    judging_count = read_json_len("judging_engagements.json", fallback=24)
+    speaking_count = read_json_len("speaking_engagements.json", fallback=12)
+    blogs_count = read_json_len("blog_articles.json", fallback=31)
+    projects_count = read_json_len("projects_certification.json", key="projects", fallback=13)
+    certifications_count = read_json_len("projects_certification.json", key="certifications", fallback=24)
+    slides_decks = read_json_len("slides.json", key="decks", fallback=10)
+    social_posts_count = read_json_len("social_posts.json", fallback=12)
+
+    slides_total = 169
+    slides_path = os.path.join(data_dir, "slides.json")
+    if os.path.exists(slides_path):
+        try:
+            with open(slides_path, "r", encoding="utf-8") as f:
+                slides_total = int(json.load(f).get("total_slides", 169))
+        except Exception:
+            pass
+
+    videos_count = 10
+    total_engagements = judging_count + speaking_count + videos_count
 
     return {
         "papers_count": papers_count,
@@ -66,7 +103,22 @@ def load_canonical_stats():
         "media_count": media_count,
         "media_display": f"{media_count}+",
         "profiles_count": profiles_count,
-        "profiles_display": f"{profiles_count}"
+        "profiles_display": f"{profiles_count}",
+        "associations_count": associations_count,
+        "associations_display_plus": f"{associations_count}+",
+        "judging_count": judging_count,
+        "judging_display_plus": f"{judging_count}+",
+        "speaking_count": speaking_count,
+        "videos_count": videos_count,
+        "total_engagements": total_engagements,
+        "total_engagements_plus": f"{total_engagements}+",
+        "blogs_count": blogs_count,
+        "projects_count": projects_count,
+        "certifications_count": certifications_count,
+        "portfolio_total": projects_count + certifications_count,
+        "slides_decks": slides_decks,
+        "slides_total": slides_total,
+        "social_posts_count": social_posts_count,
     }
 
 def update_client_stats_js(stats):
@@ -90,7 +142,22 @@ def update_client_stats_js(stats):
         patentsCount: {stats['patents_count']},
         mediaCount: {stats['media_count']},
         mediaDisplay: "{stats['media_display']}",
-        profilesCount: {stats['profiles_count']}
+        profilesCount: {stats['profiles_count']},
+        associationsCount: {stats['associations_count']},
+        associationsDisplayPlus: "{stats['associations_display_plus']}",
+        judgingCount: {stats['judging_count']},
+        judgingDisplayPlus: "{stats['judging_display_plus']}",
+        speakingCount: {stats['speaking_count']},
+        videosCount: {stats['videos_count']},
+        totalEngagements: {stats['total_engagements']},
+        totalEngagementsDisplay: "{stats['total_engagements_plus']}",
+        blogsCount: {stats['blogs_count']},
+        projectsCount: {stats['projects_count']},
+        certificationsCount: {stats['certifications_count']},
+        portfolioTotal: {stats['portfolio_total']},
+        slidesDecks: {stats['slides_decks']},
+        slidesTotal: {stats['slides_total']},
+        socialPostsCount: {stats['social_posts_count']}
     }};
 
     function applyStatsToDOM() {{
@@ -153,12 +220,16 @@ def sync_html_and_generators(stats):
     m_num = str(stats["media_count"])
     m_disp = stats["media_display"]
     prof_num = str(stats["profiles_count"])
+    assoc_disp = stats["associations_display_plus"]
+    judg_disp = stats["judging_display_plus"]
+    eng_disp = stats["total_engagements_plus"]
+    port_num = str(stats["portfolio_total"])
 
     target_extensions = (".html", ".py", ".js", ".ts", ".json")
     updated_files = []
 
     for root, dirs, files in os.walk(ROOT_DIR):
-        if "node_modules" in root or ".git" in root or "bun.lock" in root:
+        if any(skip in root for skip in ("node_modules", ".git", "dist", "build", ".dist_tmp", "bun.lock")):
             continue
         for filename in files:
             if not filename.endswith(target_extensions):
@@ -516,12 +587,86 @@ def sync_html_and_generators(stats):
                 content
             )
 
+            # 22b. Explore Full Media Hub CTA & Home metrics
+            content = re.sub(
+                r'(Explore Full Media Hub \()\d+\+?(\s*Features\))',
+                rf'\g<1>{m_disp}\g<2>',
+                content
+            )
+
+            # --- ADDITIONAL PAPERS, ASSOCIATIONS, JUDGING, SPEAKER & PORTFOLIO SYNC ---
+            content = re.sub(
+                r'\b\d+\+?\s+(peer-reviewed\s+(?:&amp;|&)\s+conference\s+research\s+papers)',
+                rf'{p_disp} \1',
+                content
+            )
+            content = re.sub(
+                r'(indexing\s+)\d+\+?(\s+peer-reviewed papers)',
+                rf'\g<1>{p_disp}\g<2>',
+                content
+            )
+            content = re.sub(
+                r'(published\s+(?:\*\*)?)\d+\+?(\s+peer-reviewed(?:\s+(?:&amp;|&|and)\s+conference)?\s+papers(?:\*\*)?)',
+                rf'\g<1>{p_disp}\g<2>',
+                content,
+                flags=re.IGNORECASE
+            )
+            content = re.sub(
+                r'\b\d+\+?(\s+Research Papers\s*(?:&rarr;|->))',
+                rf'{p_disp}\g<1>',
+                content
+            )
+            content = re.sub(
+                r'(Grounded in:\s*<strong>)\d+\+?(\s+Published Research Papers)',
+                rf'\g<1>{p_disp}\g<2>',
+                content
+            )
+            content = re.sub(
+                r'(Explore\s+)\d+\+?(\s+Research Publications)',
+                rf'\g<1>{p_disp}\g<2>',
+                content
+            )
+            content = re.sub(
+                r'(\*\*)\d+\+?(\s+Research Publications\*\*)',
+                rf'\g<1>{p_disp}\g<2>',
+                content
+            )
+            content = re.sub(
+                r'(Explore\s+)\d+\+?(\s+Associations\s*(?:&amp;|&)\s*Councils)',
+                rf'\g<1>{assoc_disp}\g<2>',
+                content
+            )
+            content = re.sub(
+                r'(<div class="ecosystem-stat-number text-success">)\s*\d+\+?\s*(</div>\s*<div class="ecosystem-stat-label">\s*Accelerators\s*(?:&amp;|&)\s*Judging Panels)',
+                rf'\g<1>{judg_disp}\g<2>',
+                content
+            )
+            content = re.sub(
+                r'(<div class="hv-speaker-stat-number text-warning">)\s*\d+\+?\s*(</div>\s*<div class="hv-speaker-stat-label">\s*Keynotes,\s*Summits\s*(?:&amp;|&)\s*Panels)',
+                rf'\g<1>{eng_disp}\g<2>',
+                content
+            )
+            content = re.sub(
+                r'(Review\s+)\d+\+?(\s+appearances across keynotes)',
+                rf'\g<1>{eng_disp}\g<2>',
+                content
+            )
+            content = re.sub(
+                r'(Browse Complete Portfolio \()\d+\+?(?:\s+Projects\s*(?:&amp;|&)\s*Certs)?(\))',
+                rf'\g<1>{port_num}+ Projects &amp; Certs\g<2>',
+                content
+            )
+
             # --- PATENTS METRICS ---
-            # 22. Update Patents in publications page
+            # 22. Update Patents in publications/awards pages
             content = re.sub(
                 r'Patents \((?:1 Granted,\s*4 In Process|1 Granted,\s*1 Published,\s*4 Pending)\)',
                 'Patents (2 Granted, 4 Pending)',
                 content
+            )
+            content = content.replace(
+                '6 patents (1 granted, 4 in-process',
+                '6 patents (2 granted, 4 in-process'
             )
 
             # 23. Ensure favicon_new.ico is used
@@ -547,8 +692,8 @@ def sync_html_and_generators(stats):
                 content = content.replace('Invited Memberships &amp; Fellowships', 'Invited Associations &amp; Fellowships')
                 content = content.replace('Invited Memberships & Fellowships', 'Invited Associations & Fellowships')
                 content = re.sub(
-                    r'Explore All \d+\+? Invited Memberships &amp; Fellowships',
-                    'Explore All 27+ Invited Associations &amp; Fellowships',
+                    r'Explore All \d+\+? Invited (?:Memberships|Associations) &amp; Fellowships',
+                    f'Explore All {assoc_disp} Invited Associations &amp; Fellowships',
                     content
                 )
 

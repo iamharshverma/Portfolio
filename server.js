@@ -133,18 +133,19 @@ Harsh Verma has received **27 international awards and recognitions** celebratin
 
 Harsh Verma has authored authoritative volumes bridging academic rigor and mission-critical enterprise production:
 
-1. **Enterprise AI Agents: Build Your Authority and Lead the AI Agent Revolution**
-   - *Focus*: Designing and orchestrating resilient multi-agent frameworks, deterministic guardrails, and enterprise memory architectures.
-   - *Audience*: AI architects, engineering leaders, and enterprise strategists.
+1. **[Beyond AI Engineering: From Creator to Curator](https://www.beyondaiengineering.com/)**
+   - *Focus*: Transitioning from creator to Super Engineer curating multi-agent AI frameworks, deterministic guardrails, and enterprise AI systems.
+   - *Website*: [beyondaiengineering.com](https://www.beyondaiengineering.com/)
 
-2. **Autonomous Cyber Defense: Adversarial Intelligence and Battleground Systems**
-   - *Focus*: Zero-Trust architectures, threat vector modeling, and autonomous threat mitigation in high-throughput distributed networks.
+2. **[AI vs. AI: Engineering the Cybersecurity Counteroffensive](https://www.beyondaivsai.com/)**
+   - *Focus*: Intent-based security, defending against clean attacks, and building autonomous machine-speed AI counteroffensives against adversarial threats.
+   - *Website*: [beyondaivsai.com](https://www.beyondaivsai.com/)
 
-👉 Read chapter outlines and access reading previews: **[Explore Authored Books](page-books)**`;
+👉 Read chapter outlines, Packt technical reviews, and previews: **[Explore Authored Books](page-books)**`;
   }
 
   if (q.includes('paper') || q.includes('publication') || q.includes('research') || q.includes('scholar') || q.includes('citation') || q.includes('ieee') || q.includes('springer')) {
-    const paperCount = (harshKnowledge && harshKnowledge.papersSummary && harshKnowledge.papersSummary.length) || 25;
+    const paperCount = (harshKnowledge && harshKnowledge.papersSummary && harshKnowledge.papersSummary.length) || 27;
     return `### 🔬 ${paperCount}+ Peer-Reviewed Research Publications & Academic Citations
 
 Harsh Verma has published **${paperCount}+ peer-reviewed and conference papers** across leading IEEE conferences, ICACCM, Springer Nature, and international computer science journals with over **150+ academic citations**:
@@ -174,9 +175,9 @@ Harsh Verma actively authors high-impact technical articles across major global 
 
 👉 Explore all 31 articles and syndicated feeds: **[Visit Blog & Articles Hub](page-blog)**`;
     }
-    return `### 🎖️ Invited Fellowships & Professional Memberships
+    return `### 🎖️ Invited Fellowships & Professional Memberships (28+ Appointments)
 
-Harsh Verma holds prestigious fellowships and senior leadership appointments across global technology and scientific bodies:
+Harsh Verma holds 28+ prestigious fellowships and senior leadership appointments across global technology and scientific bodies:
 
 - **Official Member, Forbes Technology Council**: Published thought leader on enterprise AI and technology metrics.
 - **Fellow, Harvard Square Leaders Excellence**: Elected Fellow recognized for visionary technology stewardship.
@@ -184,7 +185,7 @@ Harsh Verma holds prestigious fellowships and senior leadership appointments acr
 - **Fellow, British Computer Society (BCS / FBCS)**: Honoring sustained leadership in computing.
 - **Editorial Review Board Member**: Peer reviewer for international journals and academic symposia.
 
-👉 View full membership credentials: **[Invited Memberships & Fellowships](page-memberships)**`;
+👉 View full membership credentials: **[Invited Associations & Fellowships](page-memberships)**`;
   }
 
   if (q.includes('experience') || q.includes('career') || q.includes('role') || q.includes('job') || q.includes('work') || q.includes('history') || q.includes('background')) {
@@ -221,7 +222,7 @@ Harsh Verma is a sought-after international keynote speaker, panelist, and start
 - **Autonomous Cyber Defense**: Battleground machine learning against zero-day threats.
 - **High-Throughput Cloud Distributed Architectures**: Lessons from enterprise-scale data platforms.
 
-👉 Review 35+ appearances across keynotes, panels & hackathon judging: **[Speaking Engagements](page-events)** or book an executive hold: **[Contact & Booking Form](index#contact)**.`;
+👉 Review 46+ appearances across keynotes, panels & hackathon judging: **[Speaking Engagements](page-events)** or book an executive hold: **[Contact & Booking Form](index#contact)**.`;
   }
 
   if (q.includes('contact') || q.includes('email') || q.includes('collaborate') || q.includes('hire') || q.includes('advisory') || q.includes('consult')) {

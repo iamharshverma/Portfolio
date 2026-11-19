@@ -33,9 +33,35 @@
       {
         "label": "Portfolio Books Hub",
         "url": "https://www.harshverma.me/page-books#book1"
+      },
+      {
+        "label": "Author LinkedIn",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      },
+      {
+        "label": "Author Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+      },
+      {
+        "label": "Author Portfolio Books Hub",
+        "url": "https://www.harshverma.me/page-books"
       }
     ],
-    "primary_url": "https://www.beyondaiengineering.com/"
+    "primary_url": "https://www.beyondaiengineering.com/",
+    "author_links": [
+      {
+        "label": "Author LinkedIn",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      },
+      {
+        "label": "Author Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+      },
+      {
+        "label": "Author Portfolio Books Hub",
+        "url": "https://www.harshverma.me/page-books"
+      }
+    ]
   },
   {
     "id": "book-autonomous-cyber-defense",
@@ -66,9 +92,35 @@
       {
         "label": "Portfolio Books Hub",
         "url": "https://www.harshverma.me/page-books#book2"
+      },
+      {
+        "label": "Author LinkedIn",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      },
+      {
+        "label": "Author Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+      },
+      {
+        "label": "Author Portfolio Books Hub",
+        "url": "https://www.harshverma.me/page-books"
       }
     ],
-    "primary_url": "https://www.beyondaivsai.com/"
+    "primary_url": "https://www.beyondaivsai.com/",
+    "author_links": [
+      {
+        "label": "Author LinkedIn",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      },
+      {
+        "label": "Author Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+      },
+      {
+        "label": "Author Portfolio Books Hub",
+        "url": "https://www.harshverma.me/page-books"
+      }
+    ]
   },
   {
     "id": "book-review-ai-ethics-in-action",
@@ -100,7 +152,21 @@
         "url": "https://www.harshverma.me/page-books#reviewed-books"
       }
     ],
-    "primary_url": "https://packt.link/MuEPg"
+    "primary_url": "https://packt.link/MuEPg",
+    "author_links": [
+      {
+        "label": "Author LinkedIn",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      },
+      {
+        "label": "Author Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+      },
+      {
+        "label": "Author Portfolio Books Hub",
+        "url": "https://www.harshverma.me/page-books"
+      }
+    ]
   },
   {
     "id": "book-review-hands-on-ai-dev",
@@ -132,7 +198,21 @@
         "url": "https://www.harshverma.me/page-books#reviewed-books"
       }
     ],
-    "primary_url": "https://packt.link/pZ2C5"
+    "primary_url": "https://packt.link/pZ2C5",
+    "author_links": [
+      {
+        "label": "Author LinkedIn",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      },
+      {
+        "label": "Author Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+      },
+      {
+        "label": "Author Portfolio Books Hub",
+        "url": "https://www.harshverma.me/page-books"
+      }
+    ]
   },
   {
     "id": "book-review-leadership-ai",
@@ -164,7 +244,21 @@
         "url": "https://www.harshverma.me/page-books#reviewed-books"
       }
     ],
-    "primary_url": "https://www.packtpub.com/"
+    "primary_url": "https://www.packtpub.com/",
+    "author_links": [
+      {
+        "label": "Author LinkedIn",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      },
+      {
+        "label": "Author Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+      },
+      {
+        "label": "Author Portfolio Books Hub",
+        "url": "https://www.harshverma.me/page-books"
+      }
+    ]
   },
   {
     "id": "book-review-python-algo-trading",
@@ -196,7 +290,21 @@
         "url": "https://www.harshverma.me/page-books#reviewed-books"
       }
     ],
-    "primary_url": "https://packt.link/8jmuy"
+    "primary_url": "https://packt.link/8jmuy",
+    "author_links": [
+      {
+        "label": "Author LinkedIn",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      },
+      {
+        "label": "Author Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+      },
+      {
+        "label": "Author Portfolio Books Hub",
+        "url": "https://www.harshverma.me/page-books"
+      }
+    ]
   },
   {
     "id": "book-review-ml-genai-marketing",
@@ -228,7 +336,21 @@
         "url": "https://www.harshverma.me/page-books#reviewed-books"
       }
     ],
-    "primary_url": "https://www.packtpub.com/"
+    "primary_url": "https://www.packtpub.com/",
+    "author_links": [
+      {
+        "label": "Author LinkedIn",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      },
+      {
+        "label": "Author Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+      },
+      {
+        "label": "Author Portfolio Books Hub",
+        "url": "https://www.harshverma.me/page-books"
+      }
+    ]
   },
   {
     "id": "book-review-tensorflow-workshop",
@@ -260,6 +382,20 @@
         "url": "https://www.harshverma.me/page-books#reviewed-books"
       }
     ],
-    "primary_url": "https://www.packtpub.com/"
+    "primary_url": "https://www.packtpub.com/",
+    "author_links": [
+      {
+        "label": "Author LinkedIn",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      },
+      {
+        "label": "Author Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+      },
+      {
+        "label": "Author Portfolio Books Hub",
+        "url": "https://www.harshverma.me/page-books"
+      }
+    ]
   }
 ]

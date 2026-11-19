@@ -1,16 +1,16 @@
 {
   "metadata": {
     "title": "Executive Command Palette (Cmd+K Global Omnisearch) Search Analytics",
-    "version": "2026.1",
+    "version": "2026.2",
     "environment": "Production",
     "search_engine": "In-Memory Client-Side Fuzzy Trie & Inverted Token Index",
-    "total_records_indexed": 226,
+    "total_records_indexed": 312,
     "total_queries_logged": 16840,
     "unique_search_terms": 348,
     "average_response_time_ms": 0.65,
     "average_click_through_rate": "81.6%",
     "keyboard_shortcut_adoption_pct": "66.4%",
-    "last_synced": "2026-11-14T12:00:00Z"
+    "last_synced": "2026-11-18T12:00:00Z"
   },
   "interest_areas_overview": [
     {
@@ -274,7 +274,9 @@
   ],
   "category_metrics": {
     "publications_and_patents": {
-      "records_count": 27,
+      "records_count": 33,
+      "papers_count": 27,
+      "patents_count": 6,
       "searches_count": 5420,
       "avg_click_rate": "87.3%",
       "top_term": "Clean Attacks"
@@ -286,7 +288,9 @@
       "top_term": "Business Insider"
     },
     "speaking_and_keynotes": {
-      "records_count": 34,
+      "records_count": 36,
+      "speaking_count": 12,
+      "judging_count": 24,
       "searches_count": 2180,
       "avg_click_rate": "84.5%",
       "top_term": "TrueML Keynote"
@@ -314,6 +318,26 @@
       "searches_count": 1060,
       "avg_click_rate": "85.8%",
       "top_term": "Beyond AI Engineering"
+    },
+    "blog_articles": {
+      "records_count": 31,
+      "searches_count": 1240,
+      "avg_click_rate": "83.4%",
+      "top_term": "Physical AI"
+    },
+    "projects_and_certifications": {
+      "records_count": 37,
+      "projects_count": 13,
+      "certifications_count": 24,
+      "searches_count": 1180,
+      "avg_click_rate": "80.9%",
+      "top_term": "ADPList Top 1%"
+    },
+    "smart_slides": {
+      "records_count": 10,
+      "searches_count": 960,
+      "avg_click_rate": "88.2%",
+      "top_term": "Security Without Humans"
     }
   }
 }

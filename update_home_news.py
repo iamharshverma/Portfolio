@@ -719,7 +719,7 @@ def build_home_news_section():
                 <div class="row mt-4 pt-3">
                     <div class="col-12 text-center">
                         <a href="page-media" class="btn btn-primary rounded font-weight-bold px-4 py-2 mr-2 mb-2" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); border: none; box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);">
-                            <i class="mdi mdi-newspaper-variant-outline mr-1"></i> Explore Full Media Hub (37+ Features) <i class="mdi mdi-arrow-right ml-1"></i>
+                            <i class="mdi mdi-newspaper-variant-outline mr-1"></i> Explore Full Media Hub (45+ Features) <i class="mdi mdi-arrow-right ml-1"></i>
                         </a>
                         <a href="page-publications" class="btn btn-outline-primary rounded font-weight-bold px-4 py-2 mr-2 mb-2">
                             <i class="mdi mdi-book-open-page-variant mr-1"></i> View Publications &amp; Patents

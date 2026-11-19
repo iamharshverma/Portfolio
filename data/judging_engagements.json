@@ -1,5 +1,59 @@
 [
   {
+    "id": "judge-google-agents-for-impact-2026",
+    "event_title": "GDE: Google Agents for Impact Hackathon Challenge Judge",
+    "role": "GDE Hackathon Judging",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "GDE Hackathon Judging",
+    "description": "Serving as an official Google Developer Expert (GDE) Hackathon Challenge Judge for the Google Cloud Agents for Impact 2026 challenge in Silicon Valley. Evaluating production-grade autonomous AI agent architectures, multi-agent orchestration pipelines, and enterprise impact solutions.",
+    "evaluation_focus": [
+      "Google Developer Expert (GDE)",
+      "Google Cloud",
+      "Agents for Impact",
+      "Hackathon Judge",
+      "Silicon Valley"
+    ],
+    "primary_url": "https://cloud.google.com/events/agents-for-impact-svl",
+    "links": [
+      {
+        "label": "SVL Event Page",
+        "url": "https://cloud.google.com/events/agents-for-impact-svl"
+      },
+      {
+        "label": "Agents for Impact 2026",
+        "url": "https://cloud.google.com/resources/agents-for-impact-2026"
+      }
+    ]
+  },
+  {
+    "id": "judge-berkeley-citris-cdss-aic-2026",
+    "event_title": "UC Berkeley CITRIS-CDSS Innovation Fellowship & AIC Awards Judge",
+    "role": "Fellowship & Research Selection",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "Fellowship & Research Selection",
+    "description": "Appointed Judge & Selector for the UC Berkeley Vice Chancellor for Research (VCR) CITRIS-CDSS Innovation Fellowship and CITRIS AI Innovation Challenge (AIC) Awards applications, evaluating translational AI research, scientific rigor, and societal impact.",
+    "evaluation_focus": [
+      "UC Berkeley CITRIS",
+      "CDSS Innovation Fellowship",
+      "AIC Awards",
+      "VCR Research",
+      "Judge & Selector"
+    ],
+    "primary_url": "https://citris-uc.org/labs-programs/citris-aic-awards/",
+    "links": [
+      {
+        "label": "CITRIS AIC Awards",
+        "url": "https://citris-uc.org/labs-programs/citris-aic-awards/"
+      }
+    ]
+  },
+  {
     "id": "judge-big-awards-2026",
     "event_title": "2026 BIG Awards for Business Judge",
     "role": "Official Awards Judge",

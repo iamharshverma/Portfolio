@@ -105,7 +105,7 @@ PROFILE_LINKS = [
         "icon": "mdi-school",
         "badgeColor": "#2563eb",
         "tag": "Scholar Profile",
-        "description": "Author citation profile indexing 25+ peer-reviewed papers across IEEE, cognitive ML, agentic AI, and cybersecurity."
+        "description": "Author citation profile indexing 27+ peer-reviewed papers across IEEE, cognitive ML, agentic AI, and cybersecurity."
     },
     {
         "id": "semantic-scholar",

@@ -7,7 +7,7 @@ for Harsh Verma's executive portfolio.
 Includes:
 - 2 Primary Authored Books with full chapter outlines, previews, waitlist triggers
 - 6 Reviewed & Peer-Reviewed Volumes (perfect 3x2 grid with no whitespace gaps)
-- Synchronized author metrics (2 Authored Books, 25+ Research Papers, 6 Technical Reviews, 6 Enterprise Patents)
+- Synchronized author metrics (2 Authored Books, 27+ Research Papers, 6 Technical Reviews, 6 Enterprise Patents)
 - DOM structure matching CSS Selector 1 & 2 perfectly:
   Selector 1: section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(4) > div:nth-of-type(2) > div:nth-of-type(1)
   Selector 2: section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(4) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1)
@@ -586,7 +586,7 @@ def generate_books_html():
                                 <i class="mdi mdi-file-check mr-1"></i> Technical Editorial Reviews (6)
                             </a>
                             <a href="page-publications" class="btn btn-outline-light rounded px-3 py-2 mb-2 font-weight-bold">
-                                <i class="mdi mdi-school mr-1"></i> 25+ Research Papers &rarr;
+                                <i class="mdi mdi-school mr-1"></i> 27+ Research Papers &rarr;
                             </a>
                         </div>
                     </div>
@@ -598,7 +598,7 @@ def generate_books_html():
                 </div>
             </div>
 
-            <!-- div:nth-of-type(2) : Author Metrics Quick Ribbon (Research Paper counter updated to 25+!) -->
+            <!-- div:nth-of-type(2) : Author Metrics Quick Ribbon (Research Paper counter updated to 27+!) -->
             <div class="row mb-5 justify-content-center">
                 <div class="col-12">
                     <div class="p-3 p-md-4 rounded-xl border bg-white shadow-sm stat-metric-pill" style="border-radius: 16px;">
@@ -709,7 +709,7 @@ def generate_books_html():
                                         A technical deep dive with empirical case studies on building autonomous, real-time AI counteroffensive architectures to defend against adversaries wielding weaponized AI.
                                     </p>
                                     <div class="mb-3 p-2.5 rounded bg-light border d-flex align-items-center justify-content-between" style="font-size: 12px;">
-                                        <span class="text-dark font-weight-bold"><i class="mdi mdi-shield-check text-info mr-1"></i> Grounded in: <strong>25+ Published Research Papers</strong></span>
+                                        <span class="text-dark font-weight-bold"><i class="mdi mdi-shield-check text-info mr-1"></i> Grounded in: <strong>27+ Published Research Papers</strong></span>
                                         <a href="page-publications#pub-13" class="text-info font-weight-bold">View Paper <i class="mdi mdi-arrow-right"></i></a>
                                     </div>
                                     <div class="mt-auto pt-2">
@@ -749,7 +749,7 @@ def generate_books_html():
                         <i class="mdi mdi-calendar-check mr-1"></i> Propose Editorial Collaboration
                     </button>
                     <a href="page-publications" class="btn btn-outline-light rounded font-weight-bold px-4 py-2">
-                        <i class="mdi mdi-school mr-1"></i> Explore 25+ Research Publications
+                        <i class="mdi mdi-school mr-1"></i> Explore 27+ Research Publications
                     </a>
                 </div>
             </div>

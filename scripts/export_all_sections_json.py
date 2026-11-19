@@ -18,6 +18,12 @@ across Harsh Verma's portfolio website:
 12. data/professional_work.json
 13. data/slides.json
 14. data/projects_certification.json
+15. data/social_posts.json
+16. data/advisory_and_board.json
+17. data/patents.json
+18. data/media_distribution_analytics.json
+19. data/social_partnerships.json
+20. data/speaker_profile.json
 
 Every entry is structured as a direct key-value object containing verified links,
 dates, engagement types, detailed descriptions, organizers, and all related details.
@@ -84,7 +90,7 @@ def dedup_links(raw_links):
 
 
 def parse_event_cards():
-    """Parse all 33 event cards from page-events.html / page-speaker.html."""
+    """Parse all event cards from page-events.html / page-speaker.html."""
     events_path = os.path.join(ROOT_DIR, "page-events.html")
     with open(events_path, "r", encoding="utf-8") as f:
         html = f.read()
@@ -393,10 +399,19 @@ def export_publications():
             {"label": "Read Paper", "url": primary_link},
             {"label": "DOI", "url": doi_url},
             {"label": alt_label, "url": alt_link},
+            {"label": "Google Scholar Profile", "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"},
+            {"label": "ORCID Record", "url": "https://orcid.org/0000-0003-2134-2600"},
         ])
         entry["primary_url"] = primary_link or doi_url or alt_link
         if doi_url:
             entry["doi_url"] = doi_url
+        entry["author_profiles"] = [
+            {"label": "Google Scholar", "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"},
+            {"label": "ORCID", "url": "https://orcid.org/0000-0003-2134-2600"},
+            {"label": "Academia.edu", "url": "https://mygsb.academia.edu/harshverma"},
+            {"label": "ResearchGate", "url": "https://www.researchgate.net/profile/Harsh-Verma-43"},
+            {"label": "IEEE Xplore Author", "url": "https://ieeexplore.ieee.org/author/37089143797"},
+        ]
         entry["links"] = links
         enriched_papers.append(entry)
 
@@ -592,8 +607,16 @@ def export_books():
         }
     ]
 
+    author_profile_links = [
+        {"label": "Author LinkedIn", "url": "https://www.linkedin.com/in/harshverma59/"},
+        {"label": "Author Google Scholar", "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"},
+        {"label": "Author Portfolio Books Hub", "url": "https://www.harshverma.me/page-books"},
+    ]
     for b in books_detailed:
         b["primary_url"] = b.get("url") or b.get("catalog_url") or b.get("page_url", "")
+        b["author_links"] = author_profile_links
+        if "Authored Book" in b.get("role", ""):
+            b["links"] = dedup_links(b.get("links", []) + author_profile_links)
 
     output_path = os.path.join(DATA_DIR, "books_and_volumes.json")
     with open(output_path, "w", encoding="utf-8") as f:
@@ -776,7 +799,7 @@ def export_verified_profiles():
 
 
 def export_memberships_and_associations():
-    """10. Export all 26 verified associations, fellowships & memberships with enriched schema."""
+    """10. Export all verified associations, fellowships & memberships with enriched schema."""
     kg_path = os.path.join(ROOT_DIR, "data", "knowledge-graph.json")
     with open(kg_path, "r", encoding="utf-8") as f:
         kg = json.load(f)
@@ -1589,6 +1612,547 @@ def export_projects_certification():
     return payload
 
 
+def export_advisory_and_board():
+    """16. Export complete Board & Strategic Advisory data, models, roadmap, case studies, ecosystem, and links to data/advisory_and_board.json."""
+    adv_path = os.path.join(ROOT_DIR, "page-advisory.html")
+    html = open(adv_path, "r", encoding="utf-8").read() if os.path.exists(adv_path) else ""
+
+    # 1. Governance Flywheel 4 Pillars
+    flywheel_pillars = []
+    for blk in html.split('class="flywheel-quadrant')[1:]:
+        blk = blk.split("<!-- Quadrant")[0].split("</section>")[0]
+        t_m = re.search(r'<h4[^>]*>([\s\S]*?)</h4>', blk)
+        bullets = [clean_text(li) for li in re.findall(r'<li[^>]*>([\s\S]*?)</li>', blk) if clean_text(li)]
+        if t_m:
+            flywheel_pillars.append({
+                "title": clean_text(t_m.group(1)),
+                "highlights": bullets,
+            })
+
+    # 2. Core Advisory Expertise Pillars
+    expertise_pillars = []
+    for cm in re.finditer(r'<h3 class="advisory-card-title"[^>]*>([\s\S]*?)</h3>\s*<div class="advisory-card-tagline"[^>]*>([\s\S]*?)</div>\s*<p class="advisory-card-desc"[^>]*>([\s\S]*?)</p>([\s\S]{0,1200}?)(?=<div class="advisory-card-footer"|</section>)', html):
+        bullets = [clean_text(li) for li in re.findall(r'<li[^>]*>([\s\S]*?)</li>', cm.group(4)) if clean_text(li)]
+        expertise_pillars.append({
+            "title": clean_text(cm.group(1)),
+            "tagline": clean_text(cm.group(2)),
+            "summary": clean_text(cm.group(3)),
+            "highlights": bullets,
+        })
+
+    # 3. Three Advisory Engagement Models
+    engagement_models = []
+    for blk in html.split('id="advisoryFormatCard-')[1:]:
+        blk = blk.split("<!-- Format ")[0].split("<!-- 30")[0].split("</section>")[0][:2500]
+        title_m = re.search(r'<h4 class="advisory-format-card-title"[^>]*>([\s\S]*?)</h4>', blk)
+        tag_m = re.search(r'<div class="advisory-format-tagline"[^>]*>([\s\S]*?)</div>', blk)
+        desc_m = re.search(r'<p class="advisory-format-card-desc"[^>]*>([\s\S]*?)</p>', blk)
+        details = []
+        for dm in re.finditer(r'<span class="advisory-detail-label"[^>]*>([\s\S]*?)</span>\s*<span class="advisory-detail-val"[^>]*>([\s\S]*?)</span>', blk):
+            details.append({"label": clean_text(dm.group(1)).rstrip(":"), "value": clean_text(dm.group(2))})
+        if title_m:
+            engagement_models.append({
+                "model": clean_text(title_m.group(1)),
+                "tagline": clean_text(tag_m.group(1)) if tag_m else "",
+                "summary": clean_text(desc_m.group(1)) if desc_m else "",
+                "specifications": details,
+            })
+
+    # 4. 30-60-90 Day Board Integration Roadmap
+    roadmap_phases = []
+    for blk in html.split('class="cadence-step-box')[1:]:
+        blk = blk[:900]
+        days_m = re.search(r'<span class="roadmap-days-badge[^"]*"[^>]*>([\s\S]*?)</span>', blk)
+        title_m = re.search(r'<h5 class="step-phase-title"[^>]*>([\s\S]*?)</h5>', blk)
+        desc_m = re.search(r'<p class="step-phase-desc"[^>]*>([\s\S]*?)</p>', blk)
+        if title_m:
+            roadmap_phases.append({
+                "phase": clean_text(days_m.group(1)) if days_m else "",
+                "title": clean_text(title_m.group(1)),
+                "description": clean_text(desc_m.group(1)) if desc_m else "",
+            })
+
+    # 5. Executive Case Studies
+    case_studies = []
+    for cs_title in ("Escaping the LLM Wrapper Trap", "Securing Autonomous Agent Actions", "Inference Unit Economics"):
+        cm = re.search(rf'(<h3[^>]*>\s*{re.escape(cs_title)}\s*</h3>[\s\S]{{0,2500}}?)(?=<div class="col-lg-4|</section>|<section|<!-- )', html)
+        if cm:
+            blk = cm.group(1)
+            paras = [clean_text(p) for p in re.findall(r'<p[^>]*>([\s\S]*?)</p>', blk) if clean_text(p)]
+            metrics = [clean_text(s) for s in re.findall(r'<span class="badge[^"]*"[^>]*>([\s\S]*?)</span>', blk) if clean_text(s)]
+            case_studies.append({
+                "title": cs_title,
+                "challenge": paras[0] if len(paras) > 0 else "",
+                "advisory_contribution": paras[1] if len(paras) > 1 else "",
+                "strategic_outcome": paras[2] if len(paras) > 2 else "",
+                "summary": " ".join(paras),
+                "badges": metrics,
+            })
+
+    # 6. Ecosystem Accelerator & Governance Anchor Cards
+    ecosystem_cards = []
+    eco_idx = html.find("ecosystem-card-col")
+    if eco_idx != -1:
+        eco_blk = html[eco_idx:eco_idx + 18000]
+        for ec in re.split(r'(?=<div class="col-lg-4 col-md-6 mb-4 d-flex ecosystem-card-col")', eco_blk):
+            if "ecosystem-card-col" not in ec:
+                continue
+            ec = ec.split("</section>")[0]
+            cat_m = re.search(r'data-category="([^"]+)"', ec)
+            t_m = re.search(r'<h3[^>]*>([\s\S]*?)</h3>', ec)
+            sub_m = re.search(r'<div class="eco-subtitle[^"]*"[^>]*>([\s\S]*?)</div>', ec)
+            p_m = re.search(r'<p[^>]*>([\s\S]*?)</p>', ec)
+            if t_m:
+                ecosystem_cards.append({
+                    "organization": clean_text(t_m.group(1)),
+                    "category": cat_m.group(1).strip() if cat_m else "ecosystem",
+                    "role": clean_text(sub_m.group(1)) if sub_m else "",
+                    "description": clean_text(p_m.group(1)) if p_m else "",
+                })
+
+    # 7. Board Mandate Opportunities
+    board_mandates = []
+    bm_idx = html.find("Startup Advisory Boards")
+    if bm_idx != -1:
+        bm_blk = html[max(0, bm_idx - 500):bm_idx + 12000]
+        for bm in re.finditer(r'<h3[^>]*>([\s\S]*?)</h3>[\s\S]{0,600}?<p[^>]*>([\s\S]*?)</p>', bm_blk):
+            bt = clean_text(bm.group(1))
+            bd = clean_text(bm.group(2))
+            if any(k in bt for k in ("Advisory", "Board", "Committee", "Due Diligence", "Director")):
+                board_mandates.append({"title": bt, "description": bd})
+
+    all_event_cards = parse_event_cards()
+    judging_only = sum(1 for e in all_event_cards if e.get("category") == "judging")
+    speaking_only = sum(1 for e in all_event_cards if e.get("category") in ("conferences", "panels"))
+    videos_only = len(parse_keynote_cinema_videos())
+    events_total_display = f"{judging_only + speaking_only + videos_only}+"
+
+    links = dedup_links([
+        {"label": "Board & Strategic Advisory Hub", "url": f"{CANONICAL_BASE}/page-advisory"},
+        {"label": "Board Executive Biography View", "url": f"{CANONICAL_BASE}/board"},
+        {"label": "Executive Board Biography (PDF)", "url": f"{CANONICAL_BASE}/files/Harsh_Verma_Board_Biography.pdf"},
+        {"label": "UC Berkeley SkyDeck Advisors", "url": "https://skydeck.berkeley.edu/advisors/"},
+        {"label": "LinkedIn", "url": "https://www.linkedin.com/in/harshverma59/"},
+        {"label": "Wikidata Q139827028", "url": "https://www.wikidata.org/wiki/Q139827028"},
+        {"label": "Google Knowledge Graph", "url": "https://www.google.com/search?kgmid=/g/11njtn74r4"},
+        {"label": "EverybodyWiki Biography", "url": "https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)"},
+        {"label": "ORCID", "url": "https://orcid.org/0000-0003-2134-2600"},
+        {"label": "Google Scholar", "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"},
+        {"label": "GitHub", "url": "https://github.com/iamharshverma"},
+        {"label": "Medium", "url": "https://medium.com/@harshverma59"},
+        {"label": "Twitter / X", "url": "https://twitter.com/harshverma59"},
+        {"label": "Mastodon", "url": "https://mastodon.social/@harshverma59"},
+        {"label": "Instagram", "url": "https://www.instagram.com/aiwithharsh/"},
+    ])
+
+    payload = {
+        "section": "Board & Strategic Advisory",
+        "author": "Harsh Verma, FBCS, SMIEEE, FRSA",
+        "page_url": f"{CANONICAL_BASE}/page-advisory",
+        "alternate_urls": [f"{CANONICAL_BASE}/advisory", f"{CANONICAL_BASE}/board"],
+        "board_biography_pdf": "files/Harsh_Verma_Board_Biography.pdf",
+        "board_biography_pdf_url": f"{CANONICAL_BASE}/files/Harsh_Verma_Board_Biography.pdf",
+        "ecosystem_stats": {
+            "startups_and_ventures_evaluated": "120+",
+            "accelerators_and_judging_panels": f"{judging_only}+",
+            "total_keynotes_panels_and_judging": events_total_display,
+            "enterprise_ai_capital_impacted": "$50M+",
+            "technical_fellowship_tier": "Top 8%",
+            "peer_reviewed_papers": 27,
+            "patents": 6,
+            "media_features": "45+",
+            "global_awards": 27,
+        },
+        "governance_flywheel_pillars": flywheel_pillars,
+        "core_expertise_pillars": expertise_pillars,
+        "advisory_engagement_models": engagement_models,
+        "onboarding_roadmap_30_60_90": roadmap_phases,
+        "case_studies": case_studies,
+        "ecosystem_organizations": ecosystem_cards,
+        "board_mandates": board_mandates,
+        "primary_url": f"{CANONICAL_BASE}/page-advisory",
+        "links": links,
+    }
+
+    output_path = os.path.join(DATA_DIR, "advisory_and_board.json")
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    print(f"Exported Board & Strategic Advisory data to {output_path}")
+    return payload
+
+
+def export_patents():
+    """17. Export full 6-patent intellectual property portfolio (2 Granted + 4 Palo Alto Networks In-Process) to data/patents.json."""
+    patents_list = [
+        {
+            "id": "patent-555747",
+            "patent_number": "555747",
+            "application_number": "201711003607",
+            "title": "SYSTEMS AND METHODS FOR PERFORMING LOAD TESTING OF A SOCIAL NETWORKING APPLICATION",
+            "status": "Granted Patent",
+            "issued_date": "Dec 3, 2024",
+            "authority": "Indian Patent Office",
+            "organization": "Hike Messenger",
+            "description": "Novel architecture and methodology for orchestrating automated, high-throughput load simulation, performance stress benchmarking, and real-time telemetry testing across social networking applications and distributed service topologies.",
+            "primary_url": "https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/",
+            "links": [
+                {"label": "Official Patent Search (555747)", "url": "https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/"},
+                {"label": "Portfolio Patents Section", "url": f"{CANONICAL_BASE}/page-publications"},
+            ],
+        },
+        {
+            "id": "patent-606481",
+            "patent_number": "606481",
+            "application_number": "202011024968",
+            "title": "COVID PREVENTIVE AUTOMATED ENTRY POINT (COPAEP)",
+            "status": "Granted Patent",
+            "issued_date": "Granted",
+            "authority": "Indian Patent Office",
+            "organization": "Independent / Research Invention",
+            "description": "An integrated automated screening checkpoint system incorporating multi-tier hardware and sensor subsystems for automated non-contact thermal scanning and public health facility entry control.",
+            "primary_url": "https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/",
+            "links": [
+                {"label": "Official Patent Search (606481)", "url": "https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/"},
+                {"label": "Portfolio Patents Section", "url": f"{CANONICAL_BASE}/page-publications"},
+            ],
+        },
+        {
+            "id": "patent-panw-1",
+            "patent_number": "In Process (PANW-1 of 4)",
+            "application_number": "Undisclosed (Enterprise Review)",
+            "title": "Autonomous Agentic AI Security & Orchestration Architecture",
+            "status": "In Process / Pending",
+            "issued_date": "In Process",
+            "authority": "USPTO / Enterprise Patent Filings",
+            "organization": "Palo Alto Networks",
+            "description": "Proprietary enterprise intellectual property in autonomous agentic AI reasoning guardrails and multi-agent cybersecurity workflows at Palo Alto Networks.",
+            "primary_url": "https://www.paloaltonetworks.com/",
+            "links": [
+                {"label": "Palo Alto Networks", "url": "https://www.paloaltonetworks.com/"},
+                {"label": "Portfolio Patents Overview", "url": f"{CANONICAL_BASE}/page-publications"},
+            ],
+        },
+        {
+            "id": "patent-panw-2",
+            "patent_number": "In Process (PANW-2 of 4)",
+            "application_number": "Undisclosed (Enterprise Review)",
+            "title": "Enterprise Copilot Navigation & Guided Workflow Engine",
+            "status": "In Process / Pending",
+            "issued_date": "In Process",
+            "authority": "USPTO / Enterprise Patent Filings",
+            "organization": "Palo Alto Networks",
+            "description": "Proprietary copilot navigation and contextual UI/API orchestration mechanisms engineered for mission-critical enterprise security consoles.",
+            "primary_url": "https://www.paloaltonetworks.com/",
+            "links": [
+                {"label": "Palo Alto Networks", "url": "https://www.paloaltonetworks.com/"},
+                {"label": "Portfolio Patents Overview", "url": f"{CANONICAL_BASE}/page-publications"},
+            ],
+        },
+        {
+            "id": "patent-panw-3",
+            "patent_number": "In Process (PANW-3 of 4)",
+            "application_number": "Undisclosed (Enterprise Review)",
+            "title": "Intent-Based Agent Telemetry & Runtime Threat Containment",
+            "status": "In Process / Pending",
+            "issued_date": "In Process",
+            "authority": "USPTO / Enterprise Patent Filings",
+            "organization": "Palo Alto Networks",
+            "description": "Behavioral intent verification and real-time runtime anomaly containment for autonomous multi-agent enterprise AI deployments.",
+            "primary_url": "https://www.paloaltonetworks.com/",
+            "links": [
+                {"label": "Palo Alto Networks", "url": "https://www.paloaltonetworks.com/"},
+                {"label": "Portfolio Patents Overview", "url": f"{CANONICAL_BASE}/page-publications"},
+            ],
+        },
+        {
+            "id": "patent-panw-4",
+            "patent_number": "In Process (PANW-4 of 4)",
+            "application_number": "Undisclosed (Enterprise Review)",
+            "title": "Distributed Real-Time Copilot State Synchronization & Guardrail Enforcement",
+            "status": "In Process / Pending",
+            "issued_date": "In Process",
+            "authority": "USPTO / Enterprise Patent Filings",
+            "organization": "Palo Alto Networks",
+            "description": "Low-latency distributed policy enforcement and verifiable audit pipelines for enterprise AI copilot platforms.",
+            "primary_url": "https://www.paloaltonetworks.com/",
+            "links": [
+                {"label": "Palo Alto Networks", "url": "https://www.paloaltonetworks.com/"},
+                {"label": "Portfolio Patents Overview", "url": f"{CANONICAL_BASE}/page-publications"},
+            ],
+        },
+    ]
+
+    payload = {
+        "section": "Patents & Intellectual Property",
+        "inventor": "Harsh Verma",
+        "page_url": f"{CANONICAL_BASE}/page-publications",
+        "summary_stats": {
+            "total_patents": 6,
+            "granted_patents": 2,
+            "in_process_patents": 4,
+            "granted_patent_numbers": ["555747", "606481"],
+            "in_process_assignee": "Palo Alto Networks",
+        },
+        "academic_and_registry_links": [
+            {"label": "Indian Patent Office Public Search", "url": "https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/"},
+            {"label": "Google Scholar", "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"},
+            {"label": "ORCID", "url": "https://orcid.org/0000-0003-2134-2600"},
+            {"label": "Academia.edu", "url": "https://mygsb.academia.edu/harshverma"},
+            {"label": "ResearchGate", "url": "https://www.researchgate.net/profile/Harsh-Verma-43"},
+            {"label": "Palo Alto Networks", "url": "https://www.paloaltonetworks.com/"},
+        ],
+        "patents": patents_list,
+    }
+
+    output_path = os.path.join(DATA_DIR, "patents.json")
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    print(f"Exported {len(patents_list)} patents to {output_path}")
+    return payload
+
+
+def export_media_distribution_analytics():
+    """18. Export Media Distribution Analytics & Career Trajectory Dossier to data/media_distribution_analytics.json."""
+    mda_path = os.path.join(ROOT_DIR, "page-media-distribution-analytics.html")
+    html = open(mda_path, "r", encoding="utf-8").read() if os.path.exists(mda_path) else ""
+
+    # Career trajectory milestones (2013 - 2026)
+    career_milestones = []
+    for blk in html.split('class="timeline-phase-card')[1:]:
+        blk = blk.split("<!-- Phase ")[0][:3000]
+        yr_m = re.search(r'<span class="timeline-phase-year"[^>]*>([\s\S]*?)</span>', blk)
+        t_m = re.search(r'<h5 class="timeline-phase-title"[^>]*>([\s\S]*?)</h5>', blk)
+        sub_m = re.search(r'<div class="timeline-phase-subtitle"[^>]*>([\s\S]*?)</div>', blk)
+        p_m = re.search(r'<p class="timeline-phase-desc"[^>]*>([\s\S]*?)</p>', blk)
+        bullets = [clean_text(li) for li in re.findall(r'<li[^>]*>([\s\S]*?)</li>', blk) if clean_text(li)]
+        if t_m:
+            career_milestones.append({
+                "period_label": clean_text(yr_m.group(1)) if yr_m else "",
+                "phase": clean_text(t_m.group(1)),
+                "subtitle": clean_text(sub_m.group(1)) if sub_m else "",
+                "description": clean_text(p_m.group(1)) if p_m else "",
+                "highlights": bullets,
+            })
+
+    # Audience cohorts
+    cohorts = []
+    for cohort_name in ("Engineers", "Founders", "Investors", "General Consumers"):
+        cm = re.search(rf'<h3 class="audience-title"[^>]*>\s*{cohort_name}\s*</h3>([\s\S]{{0,1200}}?)(?=<h3 class="audience-title"|<section|<!-- )', html)
+        if cm:
+            blk = cm.group(1)
+            prof_m = re.search(r'<div class="audience-profile"[^>]*>([\s\S]*?)</div>', blk)
+            pct_m = re.search(r'width:\s*(\d+%)', blk)
+            desc_m = re.search(r'<p class="audience-desc"[^>]*>([\s\S]*?)</p>', blk)
+            cohorts.append({
+                "cohort": cohort_name,
+                "profile": clean_text(prof_m.group(1)) if prof_m else "",
+                "share_estimate": pct_m.group(1) if pct_m else "",
+                "summary": clean_text(desc_m.group(1)) if desc_m else "",
+            })
+
+    media_count = len(json.load(open(os.path.join(ROOT_DIR, "media_data.json"), "r", encoding="utf-8"))) if os.path.exists(os.path.join(ROOT_DIR, "media_data.json")) else 45
+
+    links = dedup_links([
+        {"label": "Media Distribution Analytics Dossier", "url": f"{CANONICAL_BASE}/page-media-distribution-analytics"},
+        {"label": "Full Media Hub", "url": f"{CANONICAL_BASE}/page-media"},
+        {"label": "LinkedIn", "url": "https://www.linkedin.com/in/harshverma59/"},
+        {"label": "Instagram (@aiwithharsh)", "url": "https://www.instagram.com/aiwithharsh/"},
+        {"label": "Instagram (@iamharshverma)", "url": "https://www.instagram.com/iamharshverma/"},
+        {"label": "Twitter / X", "url": "https://twitter.com/harshverma59"},
+        {"label": "Medium", "url": "https://medium.com/@harshverma59"},
+        {"label": "Mastodon", "url": "https://mastodon.social/@harshverma59"},
+        {"label": "GitHub", "url": "https://github.com/iamharshverma"},
+        {"label": "ORCID", "url": "https://orcid.org/0000-0003-2134-2600"},
+        {"label": "Google Scholar", "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"},
+        {"label": "Wikidata Q139827028", "url": "https://www.wikidata.org/wiki/Q139827028"},
+        {"label": "EverybodyWiki", "url": "https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)"},
+        {"label": "Google Knowledge Graph", "url": "https://www.google.com/search?kgmid=/g/11njtn74r4"},
+    ])
+
+    payload = {
+        "section": "Media Distribution Analytics & Career Trajectory",
+        "author": "Harsh Verma",
+        "page_url": f"{CANONICAL_BASE}/page-media-distribution-analytics",
+        "headline_metrics": {
+            "total_media_features": media_count,
+            "total_media_features_display": f"{media_count}+",
+            "cumulative_potential_views": "3.75B+",
+            "estimated_monthly_reach": "100M+",
+            "premier_platforms_count": "7+",
+            "syndicated_outlets_sampled": "100+",
+            "linkedin_followers": 16816,
+            "instagram_engagement_posts": 170,
+            "interaction_rate": "7.3%",
+            "career_span": "2013 - 2026",
+        },
+        "tier1_platform_anchors": [
+            "Forbes Technology Council",
+            "Bloomberg Markets & Tech",
+            "AP News Wire",
+            "Business Insider",
+            "Yahoo Finance",
+            "VentureBeat AI",
+            "HackerNoon Tech",
+            "TechCrunch / Disrupt Coverage",
+            "Reuters Technology Wire",
+            "Nasdaq Times Square Billboard",
+        ],
+        "career_journey_timeline": career_milestones,
+        "audience_cohorts": cohorts,
+        "flywheel_stages": [
+            "1. Build Systems",
+            "2. Publish Research",
+            "3. Media Syndication",
+            "4. Keynote Stage",
+            "5. Venture & Board Advisory",
+            "6. Global Compounding Influence",
+        ],
+        "primary_url": f"{CANONICAL_BASE}/page-media-distribution-analytics",
+        "links": links,
+    }
+
+    output_path = os.path.join(DATA_DIR, "media_distribution_analytics.json")
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    print(f"Exported Media Distribution Analytics dossier to {output_path}")
+    return payload
+
+
+def export_social_partnerships():
+    """19. Export Partnerships, Creator Authority & Social Hub metadata to data/social_partnerships.json."""
+    social_path = os.path.join(ROOT_DIR, "page-social.html")
+    html = open(social_path, "r", encoding="utf-8").read() if os.path.exists(social_path) else ""
+
+    partnership_models = []
+    for blk in html.split('class="collab-package-card')[1:]:
+        blk = blk.split("<!-- Collaboration Card")[0].split("</section>")[0]
+        cat_m = re.search(r'<span class="collab-category-badge[^"]*"[^>]*>([\s\S]*?)</span>', blk)
+        t_m = re.search(r'<h4 class="collab-card-title"[^>]*>([\s\S]*?)</h4>', blk)
+        p_m = re.search(r'<p class="collab-card-desc"[^>]*>([\s\S]*?)</p>', blk)
+        bullets = [clean_text(li) for li in re.findall(r'<li[^>]*>([\s\S]*?)</li>', blk) if clean_text(li)]
+        if t_m:
+            partnership_models.append({
+                "title": clean_text(t_m.group(1)),
+                "category": clean_text(cat_m.group(1)) if cat_m else "",
+                "description": clean_text(p_m.group(1)) if p_m else "",
+                "deliverables": bullets,
+            })
+
+    links = dedup_links([
+        {"label": "Partnerships & Social Hub", "url": f"{CANONICAL_BASE}/page-social"},
+        {"label": "ADPList Mentor Profile (Top 1% AI/ML)", "url": "https://adplist.org/mentors/harsh-verma"},
+        {"label": "ADPList Community Swag Recognition", "url": "https://adplist-users-production.s3.us-east-1.amazonaws.com/bf7f5f217d25ad3c2eb26b16a6b42201/swags/d9276a51-144d-5fb0-b046-9e03f78fcc1f.webp"},
+        {"label": "Favikon Creator Spotlight", "url": "https://spotlight.favikon.com/harshverma59/"},
+        {"label": "LinkedIn (@harshverma59)", "url": "https://www.linkedin.com/in/harshverma59/"},
+        {"label": "Instagram (@aiwithharsh)", "url": "https://www.instagram.com/aiwithharsh/"},
+        {"label": "Instagram (@iamharshverma)", "url": "https://www.instagram.com/iamharshverma/"},
+        {"label": "Twitter / X (@harshverma59)", "url": "https://twitter.com/harshverma59"},
+        {"label": "Medium (@harshverma59)", "url": "https://medium.com/@harshverma59"},
+        {"label": "Mastodon (@harshverma59)", "url": "https://mastodon.social/@harshverma59"},
+        {"label": "GitHub (iamharshverma)", "url": "https://github.com/iamharshverma"},
+        {"label": "ORCID", "url": "https://orcid.org/0000-0003-2134-2600"},
+        {"label": "Google Scholar", "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"},
+        {"label": "Wikidata Q139827028", "url": "https://www.wikidata.org/wiki/Q139827028"},
+        {"label": "EverybodyWiki", "url": "https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)"},
+        {"label": "Google Knowledge Graph", "url": "https://www.google.com/search?kgmid=/g/11njtn74r4"},
+    ])
+
+    sp_path = os.path.join(DATA_DIR, "social_posts.json")
+    posts_count = len(json.load(open(sp_path, "r", encoding="utf-8"))) if os.path.exists(sp_path) else 12
+
+    payload = {
+        "section": "Brand Partnerships, Creator Authority & Social Hub",
+        "author": "Harsh Verma",
+        "page_url": f"{CANONICAL_BASE}/page-social",
+        "creator_metrics": {
+            "total_social_posts_indexed": posts_count,
+            "linkedin_followers": "16,800+",
+            "favikon_authority_score": "79/100",
+            "adplist_percentile": "Top 1% AI & ML Engineering Mentor",
+            "audience_demographics": {
+                "enterprise_tech_leadership_and_vps": "42%",
+                "ai_architects_and_engineers": "36%",
+                "founders_vcs_and_investors": "22%",
+            },
+        },
+        "partnership_models": partnership_models,
+        "primary_url": f"{CANONICAL_BASE}/page-social",
+        "links": links,
+    }
+
+    output_path = os.path.join(DATA_DIR, "social_partnerships.json")
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    print(f"Exported Social & Partnerships data to {output_path}")
+    return payload
+
+
+def export_speaker_profile():
+    """20. Export Speaker Kit stats, speaking formats, audience segments, and streaming links to data/speaker_profile.json."""
+    events = parse_event_cards()
+    videos = parse_keynote_cinema_videos()
+    judging_cnt = sum(1 for e in events if e.get("category") == "judging")
+    conferences_cnt = sum(1 for e in events if e.get("category") == "conferences")
+    panels_cnt = sum(1 for e in events if e.get("category") == "panels")
+    videos_cnt = len(videos)
+    total_engagements = judging_cnt + conferences_cnt + panels_cnt + videos_cnt
+
+    links = dedup_links([
+        {"label": "Speaker Dossier Hub", "url": f"{CANONICAL_BASE}/page-speaker"},
+        {"label": "Events & Keynotes Calendar", "url": f"{CANONICAL_BASE}/page-events"},
+        {"label": "Interactive Smart Slides Hub", "url": f"{CANONICAL_BASE}/page-smart-slides"},
+        {"label": "Board & Speaker Biography PDF", "url": f"{CANONICAL_BASE}/files/Harsh_Verma_Board_Biography.pdf"},
+        {"label": "Xraised: Beyond the Code Video Stream", "url": "https://xraised.com/videos/ai-engineering-beyond-code/stream"},
+        {"label": "EasyChair Smart Slides Author Profile", "url": "https://easychair.org/smart-slide/author/v5zJ"},
+    ])
+
+    payload = {
+        "section": "Executive Speaking Dossier, Keynote Formats & Audience Reach",
+        "speaker": "Harsh Verma, FBCS, SMIEEE, FRSA",
+        "page_url": f"{CANONICAL_BASE}/page-speaker",
+        "events_url": f"{CANONICAL_BASE}/page-events",
+        "stats": {
+            "judging_and_committees": judging_cnt,
+            "conference_keynotes": conferences_cnt,
+            "industry_panels_and_salons": panels_cnt,
+            "featured_keynote_videos": videos_cnt,
+            "total_engagements": total_engagements,
+            "total_engagements_display": f"{total_engagements}+",
+            "leaders_and_engineers_reached": "5,000+",
+            "senior_csuite_founders_pct": "85%+",
+            "organizer_recommendation_rate": "98%",
+        },
+        "audience_segments": [
+            {"segment": "CEOs & Board Directors", "share": "35%", "focus": "AI governance, unit economics, enterprise transformation"},
+            {"segment": "CISOs & Security Architects", "share": "32%", "focus": "Autonomous cyber defense, agentic security, zero-trust"},
+            {"segment": "Founders & Venture Investors", "share": "23%", "focus": "Technical moats, GTM scaling, agentic architectures"},
+            {"segment": "Scholars & Principal Engineers", "share": "10%", "focus": "Multi-agent systems, research translation, distributed AI"},
+        ],
+        "speaking_formats": [
+            "Flagship Conference Keynotes (30-60 min)",
+            "Executive Fireside Chats & Panels",
+            "Corporate AI & Security Masterclasses (Half/Full-Day)",
+            "Boardroom Briefings & C-Suite Roundtables",
+            "Global Hackathon & Startup Pitch Judging",
+        ],
+        "subject_matter_expertise": [
+            "Autonomous Agentic AI Architectures",
+            "AI vs. AI Cybersecurity Counteroffensives",
+            "Clean Attacks & Intent-Based Security",
+            "Distributed Cloud & Real-Time Telemetry Pipelines",
+            "From Creator to Curator: Future of Software Engineering",
+        ],
+        "primary_url": f"{CANONICAL_BASE}/page-speaker",
+        "links": links,
+    }
+
+    output_path = os.path.join(DATA_DIR, "speaker_profile.json")
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    print(f"Exported Speaker Profile dossier ({total_engagements} total engagements) to {output_path}")
+    return payload
+
+
 def enrich_social_posts():
     """15. Ensure every entry in data/social_posts.json has canonical primary_url and links[]."""
     sp_path = os.path.join(DATA_DIR, "social_posts.json")
@@ -1635,23 +2199,33 @@ def main():
     sl = export_slides()
     pc = export_projects_certification()
     sp = enrich_social_posts()
+    adv = export_advisory_and_board()
+    pat = export_patents()
+    mda = export_media_distribution_analytics()
+    sop = export_social_partnerships()
+    spk = export_speaker_profile()
 
     print("\nSummary of Exported Files:")
-    print(f"1.  data/judging_engagements.json:           {len(j)} records")
-    print(f"2.  data/speaking_engagements.json:          {len(s)} records")
-    print(f"3.  data/keynote_engagements.json:           {len(k)} records")
-    print(f"4.  data/media_features.json:                {len(m)} records")
-    print(f"5.  data/awards_and_honors.json:             {len(a)} records")
-    print(f"6.  data/research_publications.json:         {len(p)} records")
-    print(f"7.  data/books_and_volumes.json:             {len(b)} records")
-    print(f"8.  data/blog_articles.json:                 {len(bl)} records")
-    print(f"9.  data/verified_profiles.json:             {len(vp)} records")
-    print(f"10. data/memberships_and_associations.json: {len(ma)} records")
-    print(f"11. data/about.json:                         {len(ab)} root sections")
-    print(f"12. data/professional_work.json:             {len(pw)} root sections")
-    print(f"13. data/slides.json:                        {sl['total_decks']} decks ({sl['total_slides']} slides)")
-    print(f"14. data/projects_certification.json:        {pc['summary_stats']['total_projects']} projects, {pc['summary_stats']['total_hub_widgets']} widgets, {pc['summary_stats']['total_certifications']} certifications")
-    print(f"15. data/social_posts.json:                  {len(sp)} records")
+    print(f"1.  data/judging_engagements.json:            {len(j)} records")
+    print(f"2.  data/speaking_engagements.json:           {len(s)} records")
+    print(f"3.  data/keynote_engagements.json:            {len(k)} records")
+    print(f"4.  data/media_features.json:                 {len(m)} records")
+    print(f"5.  data/awards_and_honors.json:              {len(a)} records")
+    print(f"6.  data/research_publications.json:          {len(p)} records")
+    print(f"7.  data/books_and_volumes.json:              {len(b)} records")
+    print(f"8.  data/blog_articles.json:                  {len(bl)} records")
+    print(f"9.  data/verified_profiles.json:              {len(vp)} records")
+    print(f"10. data/memberships_and_associations.json:   {len(ma)} records")
+    print(f"11. data/about.json:                          {len(ab)} root sections")
+    print(f"12. data/professional_work.json:              {len(pw)} root sections")
+    print(f"13. data/slides.json:                         {sl['total_decks']} decks ({sl['total_slides']} slides)")
+    print(f"14. data/projects_certification.json:         {pc['summary_stats']['total_projects']} projects, {pc['summary_stats']['total_hub_widgets']} widgets, {pc['summary_stats']['total_certifications']} certifications")
+    print(f"15. data/social_posts.json:                   {len(sp)} records")
+    print(f"16. data/advisory_and_board.json:             {len(adv['ecosystem_organizations'])} ecosystem orgs, {len(adv['board_mandates'])} mandates")
+    print(f"17. data/patents.json:                        {pat['summary_stats']['total_patents']} patents ({pat['summary_stats']['granted_patents']} granted, {pat['summary_stats']['in_process_patents']} pending)")
+    print(f"18. data/media_distribution_analytics.json:   {mda['headline_metrics']['total_media_features_display']} media features ({mda['headline_metrics']['cumulative_potential_views']} views)")
+    print(f"19. data/social_partnerships.json:            {len(sop['partnership_models'])} partnership models")
+    print(f"20. data/speaker_profile.json:                {spk['stats']['total_engagements_display']} total engagements")
     print("================================================================================")
 
 

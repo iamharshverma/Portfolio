@@ -17,7 +17,22 @@
         patentsCount: 6,
         mediaCount: 45,
         mediaDisplay: "45+",
-        profilesCount: 57
+        profilesCount: 57,
+        associationsCount: 28,
+        associationsDisplayPlus: "28+",
+        judgingCount: 24,
+        judgingDisplayPlus: "24+",
+        speakingCount: 12,
+        videosCount: 10,
+        totalEngagements: 46,
+        totalEngagementsDisplay: "46+",
+        blogsCount: 31,
+        projectsCount: 13,
+        certificationsCount: 24,
+        portfolioTotal: 37,
+        slidesDecks: 10,
+        slidesTotal: 169,
+        socialPostsCount: 12
     };
 
     function applyStatsToDOM() {

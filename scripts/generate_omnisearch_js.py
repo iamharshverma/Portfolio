@@ -2,9 +2,9 @@
 """
 scripts/generate_omnisearch_js.py
 Generates js/hv-omnisearch.js with:
-- Inlined 223 verified records for instantaneous 0ms display on load
+- Inlined verified portfolio records for instantaneous 0ms display on load
 - Asynchronous data fetching fallback and background synchronization
-- Consistent canonical category icons for all 7 sections
+- Consistent canonical category icons for all 10 portfolio sections
 - Non-bold italic search input formatting
 - Sticky top alignment of the Search bar within the central modal dialog div
 """
@@ -29,7 +29,7 @@ OMNI_JS = r"""/**
  * File: js/hv-omnisearch.js
  * 
  * Features:
- * - __TOTAL__ Verified Records Indexed Across All 7 Categories
+ * - __TOTAL__ Verified Records Indexed Across All 10 Categories
  * - Inlined default index for instantaneous 0ms rendering
  * - Dual-layer data fetching logic with background synchronization
  * - Consistent canonical Material Design Icons for all categories
@@ -40,7 +40,7 @@ OMNI_JS = r"""/**
 (function () {
   'use strict';
 
-  // Master pre-indexed dataset (__TOTAL__ records across 7 categories)
+  // Master pre-indexed dataset (__TOTAL__ records across 10 categories)
   var DEFAULT_OMNI_INDEX = """ + index_json_str + r""";
 
   var omnisearchRecords = DEFAULT_OMNI_INDEX || [];
@@ -58,7 +58,10 @@ OMNI_JS = r"""/**
     { key: 'awards', label: 'Awards & Honors', count: __AWARDS__, icon: 'mdi-trophy-award' },
     { key: 'profiles', label: 'Verified Profiles', count: __PROFILES__, icon: 'mdi-account-check' },
     { key: 'memberships', label: 'Memberships & Fellowships', count: __MEMBERSHIPS__, icon: 'mdi-shield-account' },
-    { key: 'books', label: 'Books & Volumes', count: __BOOKS__, icon: 'mdi-book-open-page-variant' }
+    { key: 'books', label: 'Books & Volumes', count: __BOOKS__, icon: 'mdi-book-open-page-variant' },
+    { key: 'blogs', label: 'Blog & Articles', count: __BLOGS__, icon: 'mdi-post-outline' },
+    { key: 'portfolio', label: 'Projects & Certs', count: __PORTFOLIO__, icon: 'mdi-cube-outline' },
+    { key: 'slides', label: 'Smart Slides', count: __SLIDES__, icon: 'mdi-presentation-play' }
   ];
 
   var SUGGESTED_QUERIES = [
@@ -561,6 +564,9 @@ OMNI_JS = (
     .replace("__PROFILES__", str(cat_cnt("profiles")))
     .replace("__MEMBERSHIPS__", str(cat_cnt("memberships")))
     .replace("__BOOKS__", str(cat_cnt("books")))
+    .replace("__BLOGS__", str(cat_cnt("blogs")))
+    .replace("__PORTFOLIO__", str(cat_cnt("portfolio")))
+    .replace("__SLIDES__", str(cat_cnt("slides")))
 )
 
 with open(os.path.join(JS_DIR, "hv-omnisearch.js"), "w", encoding="utf-8") as f:

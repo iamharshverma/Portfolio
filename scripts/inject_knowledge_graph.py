@@ -1989,7 +1989,7 @@ HUB_FAQ_DATA = {
         ),
         (
             "What books and scholarly papers has Harsh Verma authored?",
-            "Harsh Verma has authored books including 'Enterprise AI: Architectures and Systems' and 'AI Agents in Cybersecurity: The Next Defense Paradigm', alongside 27+ peer-reviewed scholarly articles indexed on Google Scholar and IEEE."
+            "Harsh Verma has authored 'Beyond AI Engineering: From Creator to Curator' (beyondaiengineering.com) and 'AI vs. AI: Engineering the Cybersecurity Counteroffensive' (beyondaivsai.com), alongside 27+ peer-reviewed scholarly articles indexed on Google Scholar and IEEE."
         ),
         (
             "How can organizations contact or book Harsh Verma?",
@@ -2023,7 +2023,7 @@ HUB_FAQ_DATA = {
         ),
         (
             "Where can I find Harsh Verma's verified academic and professional directory profiles?",
-            "Harsh Verma maintains 55 verified professional and academic profiles cataloged across Wikidata (Q139827028), Google Knowledge Graph (/g/11njtn74r4), Google Scholar, ORCID (0000-0003-2134-2600), IEEE Xplore, and Forbes Technology Council."
+            "Harsh Verma maintains 57 verified professional and academic profiles cataloged across Wikidata (Q139827028), Google Knowledge Graph (/g/11njtn74r4), Google Scholar, ORCID (0000-0003-2134-2600), IEEE Xplore, and Forbes Technology Council."
         ),
     ],
     "publications": [
@@ -2093,15 +2093,15 @@ HUB_FAQ_DATA = {
     "books": [
         (
             "What books has Harsh Verma authored on artificial intelligence?",
-            "Harsh Verma has authored 'Enterprise AI: Architectures and Systems' and 'AI Agents in Cybersecurity: The Next Defense Paradigm', with forthcoming titles in production."
+            "Harsh Verma has authored 'Beyond AI Engineering: From Creator to Curator' and 'AI vs. AI: Engineering the Cybersecurity Counteroffensive', alongside serving as Technical Reviewer on six published Packt volumes."
         ),
         (
-            "What is 'Enterprise AI: Architectures and Systems' about?",
-            "This book provides a definitive architectural blueprint for operationalizing large language models, agentic workflows, and distributed inference engines across Fortune 500 enterprise environments."
+            "What is 'Beyond AI Engineering: From Creator to Curator' about?",
+            "Beyond AI Engineering (beyondaiengineering.com) provides a definitive architectural treatise for transitioning from prompt creation to enterprise AI system curation, covering multi-agent orchestration, deterministic guardrails, and production scalability."
         ),
         (
-            "What is 'AI Agents in Cybersecurity: The Next Defense Paradigm' about?",
-            "This title explores multi-agent vulnerabilities, cryptographic intent auditing, defense-in-depth for autonomous pipelines, and safeguarding critical infrastructure from agentic threats."
+            "What is 'AI vs. AI: Engineering the Cybersecurity Counteroffensive' about?",
+            "AI vs. AI (beyondaivsai.com) explores multi-agent threat landscapes, intent-based security, defending against clean attacks, and building autonomous machine-speed cyber defense systems for critical enterprise infrastructure."
         ),
         (
             "How can readers join the VIP pre-order waitlist?",

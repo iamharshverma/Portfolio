@@ -1,0 +1,80 @@
+{
+  "section": "Executive Speaking Dossier, Keynote Formats & Audience Reach",
+  "speaker": "Harsh Verma, FBCS, SMIEEE, FRSA",
+  "page_url": "https://www.harshverma.me/page-speaker",
+  "events_url": "https://www.harshverma.me/page-events",
+  "stats": {
+    "judging_and_committees": 24,
+    "conference_keynotes": 6,
+    "industry_panels_and_salons": 6,
+    "featured_keynote_videos": 10,
+    "total_engagements": 46,
+    "total_engagements_display": "46+",
+    "leaders_and_engineers_reached": "5,000+",
+    "senior_csuite_founders_pct": "85%+",
+    "organizer_recommendation_rate": "98%"
+  },
+  "audience_segments": [
+    {
+      "segment": "CEOs & Board Directors",
+      "share": "35%",
+      "focus": "AI governance, unit economics, enterprise transformation"
+    },
+    {
+      "segment": "CISOs & Security Architects",
+      "share": "32%",
+      "focus": "Autonomous cyber defense, agentic security, zero-trust"
+    },
+    {
+      "segment": "Founders & Venture Investors",
+      "share": "23%",
+      "focus": "Technical moats, GTM scaling, agentic architectures"
+    },
+    {
+      "segment": "Scholars & Principal Engineers",
+      "share": "10%",
+      "focus": "Multi-agent systems, research translation, distributed AI"
+    }
+  ],
+  "speaking_formats": [
+    "Flagship Conference Keynotes (30-60 min)",
+    "Executive Fireside Chats & Panels",
+    "Corporate AI & Security Masterclasses (Half/Full-Day)",
+    "Boardroom Briefings & C-Suite Roundtables",
+    "Global Hackathon & Startup Pitch Judging"
+  ],
+  "subject_matter_expertise": [
+    "Autonomous Agentic AI Architectures",
+    "AI vs. AI Cybersecurity Counteroffensives",
+    "Clean Attacks & Intent-Based Security",
+    "Distributed Cloud & Real-Time Telemetry Pipelines",
+    "From Creator to Curator: Future of Software Engineering"
+  ],
+  "primary_url": "https://www.harshverma.me/page-speaker",
+  "links": [
+    {
+      "label": "Speaker Dossier Hub",
+      "url": "https://www.harshverma.me/page-speaker"
+    },
+    {
+      "label": "Events & Keynotes Calendar",
+      "url": "https://www.harshverma.me/page-events"
+    },
+    {
+      "label": "Interactive Smart Slides Hub",
+      "url": "https://www.harshverma.me/page-smart-slides"
+    },
+    {
+      "label": "Board & Speaker Biography PDF",
+      "url": "https://www.harshverma.me/files/Harsh_Verma_Board_Biography.pdf"
+    },
+    {
+      "label": "Xraised: Beyond the Code Video Stream",
+      "url": "https://xraised.com/videos/ai-engineering-beyond-code/stream"
+    },
+    {
+      "label": "EasyChair Smart Slides Author Profile",
+      "url": "https://easychair.org/smart-slide/author/v5zJ"
+    }
+  ]
+}

@@ -41,8 +41,33 @@ def generate_professional_work():
     media_count = _count_data("media_data.json", 45)
     profiles_count = _count_data("data/verified_profiles.json", 57)
     assocs_count = _count_data("data/memberships_and_associations.json", 28)
-    judging_count = _count_data("data/judging_engagements.json", 22)
+    judging_count = _count_data("data/judging_engagements.json", 24)
+    speaking_count = _count_data("data/speaking_engagements.json", 12)
     keynotes_count = _count_data("data/keynote_engagements.json", 12)
+    blogs_count = _count_data("data/blog_articles.json", 31)
+    social_posts_count = _count_data("data/social_posts.json", 12)
+
+    projects_count, certs_count = 13, 24
+    pc_path = os.path.join(DATA_DIR, "projects_certification.json")
+    if os.path.exists(pc_path):
+        try:
+            with open(pc_path, "r", encoding="utf-8") as f:
+                pc_data = json.load(f)
+            projects_count = pc_data.get("summary_stats", {}).get("total_projects", 13)
+            certs_count = pc_data.get("summary_stats", {}).get("total_certifications", 24)
+        except Exception:
+            pass
+
+    slides_decks, slides_total = 10, 169
+    sl_path = os.path.join(DATA_DIR, "slides.json")
+    if os.path.exists(sl_path):
+        try:
+            with open(sl_path, "r", encoding="utf-8") as f:
+                sl_data = json.load(f)
+            slides_decks = sl_data.get("total_decks", 10)
+            slides_total = sl_data.get("total_slides", 169)
+        except Exception:
+            pass
 
     papers_by_title = {p.get("title", "").strip().lower(): p for p in papers}
 
@@ -82,7 +107,18 @@ def generate_professional_work():
             "target_audience": "Executive Leadership, Corporate Boards, Venture Capitalists, Technical Program Committees, and Academic Institutions",
             "version": "2026.2",
             "publication_year": "2026",
-            "canonical_url": "https://www.harshverma.me/page-about"
+            "canonical_url": "https://www.harshverma.me/page-about",
+            "links": [
+                {"label": "Official Website", "url": "https://www.harshverma.me/"},
+                {"label": "Board Biography PDF", "url": "https://www.harshverma.me/files/Harsh_Verma_Board_Biography.pdf"},
+                {"label": "Google Scholar", "url": "https://scholar.google.com/citations?user=zSt9oRMAAAAJ&hl=en"},
+                {"label": "ORCID", "url": "https://orcid.org/0000-0003-2134-2600"},
+                {"label": "IEEE Xplore", "url": "https://ieeexplore.ieee.org/author/37089143797"},
+                {"label": "Wikidata Q139827028", "url": "https://www.wikidata.org/wiki/Q139827028"},
+                {"label": "Forbes Technology Council", "url": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/"},
+                {"label": "GitHub", "url": "https://github.com/iamharshverma"},
+                {"label": "LinkedIn", "url": "https://www.linkedin.com/in/harshverma59/"}
+            ]
         },
         "executive_summary": {
             "title": "Architecting Autonomous Intelligence and Machine-Speed Cyber Defense for the Global Enterprise",
@@ -110,9 +146,17 @@ def generate_professional_work():
                 "invited_fellowships_and_councils": assocs_count,
                 "global_media_audience_reach": "3.75B+",
                 "keynote_addresses_delivered": keynotes_count,
+                "speaking_and_panel_engagements": speaking_count,
                 "hackathon_and_pitch_judging_panels": judging_count,
+                "total_event_engagements": f"{judging_count + speaking_count + 10}+",
                 "authored_books": 2,
-                "technical_peer_reviewed_volumes": 6
+                "technical_peer_reviewed_volumes": 6,
+                "thought_leadership_articles": blogs_count,
+                "portfolio_projects": projects_count,
+                "verified_certifications": certs_count,
+                "smart_slides_decks": slides_decks,
+                "smart_slides_total": slides_total,
+                "social_posts": social_posts_count
             }
         },
         "what_kind_of_work_i_do": {

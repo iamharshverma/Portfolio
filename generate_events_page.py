@@ -14,6 +14,59 @@ import os
 events_data = {
     "judging": [
         {
+            "id": "judge-google-agents-for-impact-2026",
+            "title": "GDE: Google Agents for Impact Hackathon Challenge Judge",
+            "organization": "Google Cloud & Google Developer Experts (GDE)",
+            "role": "Hackathon Challenge Judge",
+            "category": "GDE Hackathon Judging",
+            "date": "2026",
+            "location": "Silicon Valley / Sunnyvale, CA",
+            "description": "Serving as an official Google Developer Expert (GDE) Hackathon Challenge Judge for the Google Cloud Agents for Impact 2026 challenge in Silicon Valley. Evaluating production-grade autonomous AI agent architectures, multi-agent orchestration pipelines, and enterprise impact solutions.",
+            "links": [
+                {"name": "SVL Event Page", "url": "https://cloud.google.com/events/agents-for-impact-svl", "icon": "mdi-calendar-check"},
+                {"name": "Agents for Impact 2026", "url": "https://cloud.google.com/resources/agents-for-impact-2026", "icon": "mdi-open-in-new"}
+            ],
+            "tags": ["Google Developer Expert (GDE)", "Google Cloud", "Agents for Impact", "Hackathon Judge", "Silicon Valley"],
+            "gradient": "from-blue-600 to-indigo-600",
+            "badge_color": "#2563eb",
+            "icon": "mdi-gavel"
+        },
+        {
+            "id": "judge-berkeley-citris-cdss-aic-2026",
+            "title": "UC Berkeley CITRIS-CDSS Innovation Fellowship & AIC Awards Judge",
+            "organization": "UC Berkeley CITRIS, CDSS & VCR Research",
+            "role": "Judge & Selector",
+            "category": "Fellowship & Research Selection",
+            "date": "2026",
+            "location": "UC Berkeley, CA",
+            "description": "Appointed Judge & Selector for the UC Berkeley Vice Chancellor for Research (VCR) CITRIS-CDSS Innovation Fellowship and CITRIS AI Innovation Challenge (AIC) Awards applications, evaluating translational AI research, scientific rigor, and societal impact.",
+            "links": [
+                {"name": "CITRIS AIC Awards", "url": "https://citris-uc.org/labs-programs/citris-aic-awards/", "icon": "mdi-school-outline"}
+            ],
+            "tags": ["UC Berkeley CITRIS", "CDSS Innovation Fellowship", "AIC Awards", "VCR Research", "Judge & Selector"],
+            "gradient": "from-blue-900 to-indigo-800",
+            "badge_color": "#003262",
+            "icon": "mdi-gavel"
+        },
+        {
+            "id": "judge-big-awards-2026",
+            "title": "2026 BIG Awards for Business Judge",
+            "organization": "Business Intelligence Group",
+            "role": "Official Awards Judge",
+            "category": "Global Business Awards Jury",
+            "date": "2026",
+            "location": "Global / United States",
+            "description": "Appointed as an official judge for the prestigious 2026 BIG Awards for Business hosted by Business Intelligence Group. Serving on the executive judging panel evaluating global enterprise innovations, market-defining software solutions, leadership excellence, and transformative commercial technologies.",
+            "links": [
+                {"name": "Official Judge Profile", "url": "https://judges.bintelligence.com/harsh-verma", "icon": "mdi-certificate-outline"},
+                {"name": "Business Intelligence Group", "url": "https://www.bintelligence.com/", "icon": "mdi-open-in-new"}
+            ],
+            "tags": ["Business Intelligence Group", "BIG Awards", "Judge", "Enterprise Innovation", "Global Awards"],
+            "gradient": "from-red-700 to-red-600",
+            "badge_color": "#b91c1c",
+            "icon": "mdi-gavel"
+        },
+        {
             "id": "judge-dent-demos-dimsum",
             "title": "Demos & Dim Sum — #SFTechWeek",
             "organization": "Dent Capital, The MBA Fund, Deel & Manatt",
@@ -1332,6 +1385,10 @@ def get_event_thumbnail(item):
         ("silicon-zombies", "images/events/silicon_zombies.svg"),
         ("silicon zombies", "images/events/silicon_zombies.svg"),
         ("zombie", "images/events/silicon_zombies.svg"),
+        ("citris", "images/events/citris_berkeley.svg"),
+        ("google developer", "images/events/google_gde.svg"),
+        ("google cloud", "images/events/google_gde.svg"),
+        ("business intelligence group", "images/judging/big_awards_judge.png"),
         ("skydeck", "images/events/skydeck.svg"),
         ("berkeley", "images/events/skydeck.svg"),
         ("dent", "images/events/dent.svg"),
@@ -2665,8 +2722,8 @@ def build_full_page():
 
         var speakerBios = {{
             short: "Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, Forbes Technology Council Member, IEEE Senior Member, and author of two books on Enterprise AI. Recognized on the Forttuna Global 100 Power List and Nobel Technology Awards Gold (#145), he architects deterministic agentic systems, zero-trust cloud perimeters, and high-throughput data platforms, keynoting across UC Berkeley SkyDeck and international AI symposiums.",
-            medium: "Harsh Verma is an internationally recognized Enterprise AI Architect, Principal Software Engineer in AI at Palo Alto Networks, and Forbes Technology Council Member. With over a decade of systems leadership, Harsh has authored 2 seminal industry books on Enterprise AI Agents and Autonomous Cyber Defense, published 26+ peer-reviewed papers on IEEE and international journals with 150+ academic citations, and earned 27 global technology honors including the 2026 NVTC Cyber50 Honoree, Forttuna Global 100 Power List, Nobel Technology Awards Gold (#145), and Global Recognition Award for AI Innovation. He serves as an elected Fellow of Harvard Square Leaders Excellence and IEEE Senior Member. Harsh is a distinguished keynote speaker—frequently headlining UC Berkeley SkyDeck, international AI summits, and venture accelerators on agentic security architectures, distributed AI infrastructure, and autonomous enterprise defense.",
-            full: "Harsh Verma is a distinguished Enterprise AI Architect, Principal Software Engineer in AI at Palo Alto Networks, Forbes Technology Council Member, and prolific author. A pioneer in agentic security architectures and deterministic AI guardrails, Harsh has architected mission-critical data platforms, distributed feature pipelines, and autonomous defense perimeters protecting global enterprise networks.\\n\\nHe is the recipient of 27 international honors including the 2026 NVTC Cyber50 Honoree, Forttuna Global 100 Power List (2026), Nobel Technology Awards Gold (#145), Global Recognition Award for Enterprise AI Innovation, and multiple Globee & Stevie Awards. A dedicated researcher and thought leader, Harsh has published 26+ peer-reviewed papers across IEEE and international engineering journals, accumulating over 150+ academic citations, alongside authoring two seminal books on Enterprise AI Agents and Autonomous Cyber Defense. He holds senior fellowships including Harvard Square Leaders Excellence Fellow and IEEE Senior Member.\\n\\nAs an invited keynote speaker and technical advisor, Harsh headlines major technology symposiums, university venture accelerators including UC Berkeley SkyDeck, and global executive forums, delivering actionable frameworks on generative AI, zero-trust cloud security, and resilient autonomous systems."
+            medium: "Harsh Verma is an internationally recognized Enterprise AI Architect, Principal Software Engineer in AI at Palo Alto Networks, and Forbes Technology Council Member. With over a decade of systems leadership, Harsh has authored 2 seminal industry books ('Beyond AI Engineering: From Creator to Curator' and 'AI vs. AI: Engineering the Cybersecurity Counteroffensive'), published 27+ peer-reviewed papers on IEEE and international journals with 150+ academic citations, and earned 27 global technology honors including the 2026 NVTC Cyber50 Honoree, Forttuna Global 100 Power List, Nobel Technology Awards Gold (#145), and Global Recognition Award for AI Innovation. He serves as an elected Fellow of BCS (FBCS), Fellow of Harvard Square Leaders Excellence, and IEEE Senior Member. Harsh is a distinguished keynote speaker—frequently headlining UC Berkeley SkyDeck, international AI summits, and venture accelerators on agentic security architectures, distributed AI infrastructure, and autonomous enterprise defense.",
+            full: "Harsh Verma is a distinguished Enterprise AI Architect, Principal Software Engineer in AI at Palo Alto Networks, Forbes Technology Council Member, and prolific author. A pioneer in agentic security architectures and deterministic AI guardrails, Harsh has architected mission-critical data platforms, distributed feature pipelines, and autonomous defense perimeters protecting global enterprise networks.\\n\\nHe is the recipient of 27 international honors including the 2026 NVTC Cyber50 Honoree, Forttuna Global 100 Power List (2026), Nobel Technology Awards Gold (#145), Global Recognition Award for Enterprise AI Innovation, and multiple Globee & Stevie Awards. A dedicated researcher and thought leader, Harsh has published 27+ peer-reviewed papers across IEEE and international engineering journals, accumulating over 150+ academic citations, alongside authoring two seminal books ('Beyond AI Engineering: From Creator to Curator' and 'AI vs. AI: Engineering the Cybersecurity Counteroffensive'). He holds senior fellowships including Fellow of the British Computer Society (FBCS), Harvard Square Leaders Excellence Fellow, and IEEE Senior Member.\\n\\nAs an invited keynote speaker and technical advisor, Harsh headlines major technology symposiums, university venture accelerators including UC Berkeley SkyDeck, and global executive forums, delivering actionable frameworks on generative AI, zero-trust cloud security, and resilient autonomous systems."
         }};
 
         var currentBioType = 'short';

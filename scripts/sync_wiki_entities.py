@@ -97,7 +97,7 @@ def parse_iso_date(raw_date):
 
 
 def extract_verified_profiles():
-    """Extract all 54 verified profile cards (with SVG/PNG images and all links) from page-about.html."""
+    """Extract all verified profile cards (with SVG/PNG images and all links) from page-about.html."""
     about_path = os.path.join(ROOT_DIR, "page-about.html")
     profiles = []
     seen_keys = set()
@@ -136,6 +136,20 @@ def extract_verified_profiles():
             if url and not url.startswith("http"):
                 url = f"{CANONICAL_SITE_URL}/{url.lstrip('/')}"
 
+            links = []
+            seen_urls = set()
+            for a_m in re.finditer(r'<a\s+[^>]*href="([^"]+)"[^>]*>(.*?)</a>', chunk, re.DOTALL):
+                lu = a_m.group(1).strip()
+                if not lu or lu.startswith("javascript:") or lu.startswith("#"):
+                    continue
+                if not lu.startswith("http"):
+                    lu = f"{CANONICAL_SITE_URL}/{lu.lstrip('/')}"
+                if lu not in seen_urls:
+                    seen_urls.add(lu)
+                    links.append({"label": clean_html(a_m.group(2)) or title, "url": lu})
+            if url and url not in seen_urls:
+                links.insert(0, {"label": title, "url": url})
+
             key = f"{title}|{url}"
             if url and key not in seen_keys:
                 seen_keys.add(key)
@@ -147,6 +161,7 @@ def extract_verified_profiles():
                     "description": desc,
                     "image": image_path,
                     "url": url,
+                    "links": links,
                 })
 
     return profiles
@@ -187,6 +202,9 @@ def extract_blogs():
                             "read_time": item.get("read_time", "5 min read"),
                             "url": item.get("url", ""),
                             "spotify_url": item.get("spotify_url", ""),
+                            "substack_url": item.get("substack_url", ""),
+                            "slides_url": item.get("slides_url", ""),
+                            "easychair_url": item.get("easychair_url", ""),
                             "author_profile": item.get("author_profile", ""),
                             "image": item.get("thumbnail", "images/blog/thumbnails/forbes-real-ai-moat.jpg"),
                             "description": item.get("description", ""),
@@ -1733,7 +1751,7 @@ def query_and_sync_everybodywiki(wikitext):
             "action": "edit",
             "title": EVERYBODYWIKI_TITLE,
             "text": wikitext,
-            "summary": "Comprehensive biography update: Palo Alto Networks AI role, Stanford/UTD/UTU education, 2 authored books, 27+ papers, 27 awards, 26 fellowships, 45+ media features, and Wikidata Q139827028 authority links",
+            "summary": "Comprehensive biography update: Palo Alto Networks AI role, Stanford/UTD/UTU education, 2 authored books, 27+ papers, 27 awards, 28 fellowships, 45+ media features, and Wikidata Q139827028 authority links",
             "token": csrf_token,
             "format": "json",
         }).encode("utf-8")
@@ -1812,6 +1830,7 @@ def main():
     parser.add_argument("--wikidata-2fa", dest="wikidata_2fa", default=os.environ.get("WIKIDATA_2FA_TOKEN"), help="6-digit Wikidata Email 2FA token")
     parser.add_argument("--bot-user", dest="bot_user", default=os.environ.get("WIKIDATA_BOT_USER"), help="Wikidata Bot Username")
     parser.add_argument("--bot-pass", dest="bot_pass", default=os.environ.get("WIKIDATA_BOT_PASS"), help="Wikidata Bot Password")
+    parser.add_argument("--local-only", dest="local_only", action="store_true", help="Rebuild local knowledge-graph and wiki artifacts without live network calls")
     args, _ = parser.parse_known_args()
 
     # EverybodyWiki username
@@ -1851,28 +1870,47 @@ def main():
 
     schema_graph = build_schema_org_graph(profiles, media, awards, blogs, books, papers, associations)
 
-    print(f"Querying & syncing Wikidata ({WIKIDATA_QID})...")
-    wd_sync = query_and_sync_wikidata(
-        wd_claims,
-        bot_user=args.bot_user,
-        bot_pass=args.bot_pass,
-        two_factor_token=args.wikidata_2fa,
-    )
-    print(f"  -> Wikidata Status: {wd_sync['api_write_status']} | {wd_sync['api_write_message']}")
-
-    print(f"Querying & syncing EverybodyWiki ({EVERYBODYWIKI_TITLE})...")
-    ew_sync = query_and_sync_everybodywiki(wikitext)
-    print(f"  -> EverybodyWiki Status: {ew_sync['api_write_status']} | {ew_sync['api_write_message']}")
-
-    # Preserve previous synced status if EverybodyWiki was already synced earlier and current run had no env vars
     sync_status_path = os.path.join(DATA_DIR, "wiki-sync-status.json")
-    if ew_sync["api_write_status"].startswith("requires_auth") and os.path.exists(sync_status_path):
-        try:
-            prev_status = json.load(open(sync_status_path, "r", encoding="utf-8"))
-            if prev_status.get("everybodywiki", {}).get("api_write_status") == "synced":
-                ew_sync = prev_status["everybodywiki"]
-        except Exception:
-            pass
+    if args.local_only:
+        prev_status = {}
+        if os.path.exists(sync_status_path):
+            try:
+                prev_status = json.load(open(sync_status_path, "r", encoding="utf-8"))
+            except Exception:
+                prev_status = {}
+        wd_sync = prev_status.get("wikidata") or {
+            "qid": WIKIDATA_QID,
+            "api_write_status": "local_only",
+            "api_write_message": "Skipped live Wikidata network call (--local-only)."
+        }
+        ew_sync = prev_status.get("everybodywiki") or {
+            "title": EVERYBODYWIKI_TITLE,
+            "api_write_status": "local_only",
+            "api_write_message": "Skipped live EverybodyWiki network call (--local-only)."
+        }
+        print("Skipped live remote wiki HTTP calls (--local-only).")
+    else:
+        print(f"Querying & syncing Wikidata ({WIKIDATA_QID})...")
+        wd_sync = query_and_sync_wikidata(
+            wd_claims,
+            bot_user=args.bot_user,
+            bot_pass=args.bot_pass,
+            two_factor_token=args.wikidata_2fa,
+        )
+        print(f"  -> Wikidata Status: {wd_sync['api_write_status']} | {wd_sync['api_write_message']}")
+
+        print(f"Querying & syncing EverybodyWiki ({EVERYBODYWIKI_TITLE})...")
+        ew_sync = query_and_sync_everybodywiki(wikitext)
+        print(f"  -> EverybodyWiki Status: {ew_sync['api_write_status']} | {ew_sync['api_write_message']}")
+
+        # Preserve previous synced status if EverybodyWiki was already synced earlier and current run had no env vars
+        if ew_sync["api_write_status"].startswith("requires_auth") and os.path.exists(sync_status_path):
+            try:
+                prev_status = json.load(open(sync_status_path, "r", encoding="utf-8"))
+                if prev_status.get("everybodywiki", {}).get("api_write_status") == "synced":
+                    ew_sync = prev_status["everybodywiki"]
+            except Exception:
+                pass
 
     sync_status = {
         "updated_at": datetime.now(timezone.utc).isoformat(),

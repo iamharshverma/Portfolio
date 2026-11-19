@@ -13,12 +13,14 @@ try {
   process.exit(1);
 }
 
-// 1. Run site synchronization
+// 1. Run core JSON generators & wiki local sync before metric synchronization
 try {
-  console.log('[Build] Synchronizing site statistics and metrics...');
-  execSync('python3 scripts/sync_site_stats.py', { stdio: 'inherit' });
+  console.log('[Build] Generating about, professional work, and local knowledge graph data...');
+  execSync('python3 scripts/generate_about_and_work.py', { stdio: 'inherit' });
+  execSync('python3 scripts/generate_professional_work_json.py', { stdio: 'inherit' });
+  execSync('python3 scripts/sync_wiki_entities.py --local-only', { stdio: 'inherit' });
 } catch (err) {
-  console.warn('[Build] Warning during sync_site_stats:', err.message);
+  console.warn('[Build] Warning during core data generation:', err.message);
 }
 
 // 1a. Export all portfolio sections to individual detailed JSON files
@@ -29,10 +31,20 @@ try {
   console.warn('[Build] Warning during export_all_sections_json:', err.message);
 }
 
-// 1a-2. Build Executive Omnisearch index (226 records) and Search Analytics
+// 1b. Run site synchronization across HTML, JS, TS, Python, and JSON
 try {
-  console.log('[Build] Building Executive Omnisearch index (226 records) and Search Analytics...');
+  console.log('[Build] Synchronizing site statistics and metrics...');
+  execSync('python3 scripts/sync_site_stats.py', { stdio: 'inherit' });
+} catch (err) {
+  console.warn('[Build] Warning during sync_site_stats:', err.message);
+}
+
+// 1c. Build Executive Omnisearch index, Command Palette scripts, and Search Analytics
+try {
+  console.log('[Build] Building Executive Omnisearch index, Command Palette, and Search Analytics...');
   execSync('python3 scripts/build_omnisearch_index.py', { stdio: 'inherit' });
+  execSync('python3 scripts/generate_omnisearch_js.py', { stdio: 'inherit' });
+  execSync('python3 scripts/build_command_palette_js.py', { stdio: 'inherit' });
   execSync('python3 scripts/generate_search_analytics.py', { stdio: 'inherit' });
 } catch (err) {
   console.warn('[Build] Warning during omnisearch build:', err.message);

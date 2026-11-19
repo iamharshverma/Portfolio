@@ -53,51 +53,29 @@ def compile_index():
             "search_text": f"{title} {p.get('venue', '')} {patent_id} {p.get('doi', '')} {p.get('abstract', '')} {p.get('year', '')} patent publication research ieee springer".lower()
         })
 
-    # Also explicitly ensure Granted Patent 555747 and 606481 and In-Process Suite are indexable
-    patent_entries = [
-        {
-            "id": "patent-555747",
-            "title": "SYSTEMS AND METHODS FOR PERFORMING LOAD TESTING OF A SOCIAL NETWORKING APPLICATION",
-            "subtitle": "Granted Patent · Patent No: 555747 · App No: 201711003607",
-            "category": "pubs",
-            "categoryLabel": "Publications & Patents",
-            "icon": "mdi-certificate",
-            "date": "Dec 3, 2024",
-            "url": "https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/",
-            "identifier": "Patent No: 555747",
-            "desc": "Granted Patent for automated high-throughput load simulation, performance stress benchmarking, and real-time telemetry testing across distributed service topologies.",
-            "search_text": "patent 555747 201711003607 load testing performance simulation hike social networking distributed systems granted".lower()
-        },
-        {
-            "id": "patent-606481",
-            "title": "COVID PREVENTIVE AUTOMATED ENTRY POINT (COPAEP)",
-            "subtitle": "Granted Patent · Patent No: 606481 · App No: 202011024968",
-            "category": "pubs",
-            "categoryLabel": "Publications & Patents",
-            "icon": "mdi-certificate",
-            "date": "Granted",
-            "url": "https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/",
-            "identifier": "Patent No: 606481",
-            "desc": "Granted Patent for integrated automated screening checkpoint system incorporating multi-tier sensor subsystems for non-contact thermal scanning.",
-            "search_text": "patent 606481 202011024968 copaep thermal sensor screening checkpoint cyber-physical granted".lower()
-        },
-        {
-            "id": "patent-panw-suite",
-            "title": "AGENTIC AI, ENTERPRISE COPILOT SYSTEMS & COPILOT NAVIGATION ARCHITECTURES",
-            "subtitle": "Palo Alto Networks · Suite of 4 Patent Applications (In-Process)",
-            "category": "pubs",
-            "categoryLabel": "Publications & Patents",
-            "icon": "mdi-shield-lock-outline",
-            "date": "In Process",
-            "url": "https://www.paloaltonetworks.com/",
-            "identifier": "4 Patents In Process · Palo Alto Networks",
-            "desc": "Proprietary suite of four in-process patent applications developing foundational intellectual property in autonomous Agentic AI orchestration and Copilot Navigation.",
-            "search_text": "palo alto networks patent agentic ai copilot navigation enterprise copilot autonomous reasoning".lower()
-        }
-    ]
-    for pe in patent_entries:
-        if not any(it.get("identifier") == pe["identifier"] for it in index_items):
-            index_items.append(pe)
+    # Also load all 6 Patents from data/patents.json (or fallback to core entries)
+    patents_path = os.path.join(DATA_DIR, "patents.json")
+    if os.path.exists(patents_path):
+        with open(patents_path, "r", encoding="utf-8") as f:
+            pat_data = json.load(f)
+        for pat in pat_data.get("patents", []):
+            pat_no = pat.get("patent_number", "")
+            ident = f"Patent No: {pat_no}" if pat_no and "PANW" not in pat_no else pat_no
+            if any(it.get("identifier") == ident and ident for it in index_items):
+                continue
+            index_items.append({
+                "id": pat.get("id", f"patent-{len(index_items)}"),
+                "title": pat.get("title", ""),
+                "subtitle": f"{pat.get('status', 'Patent')} · {ident} · {pat.get('organization', '')}",
+                "category": "pubs",
+                "categoryLabel": "Publications & Patents",
+                "icon": "mdi-certificate" if "granted" in pat.get("status", "").lower() else "mdi-shield-lock-outline",
+                "date": pat.get("issued_date", "2026"),
+                "url": pat.get("primary_url", "page-publications"),
+                "identifier": ident,
+                "desc": pat.get("description", "")[:180] + ("..." if len(pat.get("description", "")) > 180 else ""),
+                "search_text": f"{pat.get('title', '')} {pat_no} {pat.get('application_number', '')} {pat.get('organization', '')} {pat.get('description', '')} patent intellectual property".lower()
+            })
 
     # 2. Tier-1 Media Features (45 records)
     with open(os.path.join(DATA_DIR, "media_features.json"), "r", encoding="utf-8") as f:
@@ -120,7 +98,7 @@ def compile_index():
             "search_text": f"{title} {outlet} {m.get('date', '')} {m.get('excerpt', '')} business insider ap news yahoo finance times square techtimes press media".lower()
         })
 
-    # 3. Speaking, Keynotes & Judging (33 records)
+    # 3. Speaking, Keynotes & Judging (36 records: 12 speaking + 24 judging)
     event_cards = parse_event_cards()
     for ev in event_cards:
         category = ev.get("category", "")
@@ -141,7 +119,7 @@ def compile_index():
             "search_text": f"{ev.get('title', '')} {ev.get('organizer', '')} {role} {ev.get('date', '')} {ev.get('location', '')} {ev.get('description', '')} {' '.join(ev.get('tags', []))} keynote speaking judging panel hackathon".lower()
         })
 
-    # 4. Awards & Honors (26 records)
+    # 4. Awards & Honors (27 records)
     with open(os.path.join(DATA_DIR, "awards_and_honors.json"), "r", encoding="utf-8") as f:
         awards = json.load(f)
     for a in awards:
@@ -225,6 +203,92 @@ def compile_index():
             "search_text": f"{title} {b.get('subtitle', '')} {role} {b.get('publisher', '')} {b.get('synopsis', '')} {' '.join(b.get('key_themes', []))} beyond ai engineering ai vs ai packt author book".lower()
         })
 
+    # 8. Blog Articles & Columns (31 records)
+    blogs_path = os.path.join(DATA_DIR, "blog_articles.json")
+    if os.path.exists(blogs_path):
+        with open(blogs_path, "r", encoding="utf-8") as f:
+            blogs = json.load(f)
+        for bl in blogs:
+            title = bl.get("title", "")
+            pub = bl.get("publication", "Technical Blog")
+            desc = bl.get("summary") or bl.get("description") or ""
+            index_items.append({
+                "id": f"blog-{bl.get('id', len(index_items))}",
+                "title": title,
+                "subtitle": f"{pub} · {bl.get('date', '')}",
+                "category": "blogs",
+                "categoryLabel": "Blog & Articles",
+                "icon": "mdi-post-outline",
+                "date": str(bl.get("date", "2026")),
+                "url": bl.get("primary_url") or bl.get("url") or "page-blog",
+                "identifier": pub,
+                "desc": desc[:180] + ("..." if len(desc) > 180 else ""),
+                "search_text": f"{title} {pub} {bl.get('date', '')} {desc} blog article column forbes rsa".lower()
+            })
+
+    # 9. Projects & Certifications (13 projects + 24 certifications)
+    pc_path = os.path.join(DATA_DIR, "projects_certification.json")
+    if os.path.exists(pc_path):
+        with open(pc_path, "r", encoding="utf-8") as f:
+            pc_data = json.load(f)
+        for pr in pc_data.get("projects", []):
+            title = pr.get("title", "")
+            desc = pr.get("description", "")
+            index_items.append({
+                "id": f"proj-{pr.get('id', len(index_items))}",
+                "title": title,
+                "subtitle": f"{pr.get('role', 'Project')} · {pr.get('status', '')}",
+                "category": "portfolio",
+                "categoryLabel": "Projects & Certs",
+                "icon": "mdi-cube-outline",
+                "date": pr.get("status", "Portfolio"),
+                "url": pr.get("primary_url", "page-portfolio"),
+                "identifier": "Project",
+                "desc": desc[:180] + ("..." if len(desc) > 180 else ""),
+                "search_text": f"{title} {pr.get('role', '')} {pr.get('status', '')} {' '.join(pr.get('tags', []))} {desc} project portfolio".lower()
+            })
+        for cert in pc_data.get("certifications", []):
+            title = cert.get("title", "")
+            issuer = cert.get("issuer", "")
+            desc = cert.get("description") or f"Verified certification issued by {issuer}"
+            index_items.append({
+                "id": f"cert-{cert.get('id', len(index_items))}",
+                "title": title,
+                "subtitle": f"{issuer} · Verified Credential",
+                "category": "portfolio",
+                "categoryLabel": "Projects & Certs",
+                "icon": "mdi-certificate-outline",
+                "date": str(cert.get("issued", "") or cert.get("date", "Verified")),
+                "url": cert.get("primary_url") or cert.get("verify_url") or "page-portfolio#certifications",
+                "identifier": issuer,
+                "desc": desc[:180] + ("..." if len(desc) > 180 else ""),
+                "search_text": f"{title} {issuer} {cert.get('credential_id', '')} {desc} certification credential".lower()
+            })
+
+    # 10. Smart Slides (10 decks)
+    slides_path = os.path.join(DATA_DIR, "slides.json")
+    if os.path.exists(slides_path):
+        with open(slides_path, "r", encoding="utf-8") as f:
+            slides_data = json.load(f)
+        for deck in slides_data.get("decks", []):
+            title = deck.get("title", "")
+            deck_id = deck.get("id", "")
+            count = deck.get("count", 0)
+            desc = deck.get("description", "")
+            index_items.append({
+                "id": f"slide-{deck_id or len(index_items)}",
+                "title": title,
+                "subtitle": f"EasyChair Smart Slide Ref. {deck_id} · {count} Slides",
+                "category": "slides",
+                "categoryLabel": "Smart Slides",
+                "icon": "mdi-presentation-play",
+                "date": str(deck.get("year", "2026")),
+                "url": deck.get("portfolioUrl") or deck.get("primary_url") or "page-smart-slides",
+                "identifier": f"{count} Slides",
+                "desc": desc[:180] + ("..." if len(desc) > 180 else ""),
+                "search_text": f"{title} {deck.get('subtitle', '')} {deck_id} {' '.join(deck.get('tags', []))} {desc} smart slides deck".lower()
+            })
+
     print(f"Total compiled index items: {len(index_items)}")
     return index_items
 
@@ -264,7 +328,10 @@ def generate_js_file():
     {{ id: 'awards', label: 'Awards', count: recordsIndex.filter(function(r) {{ return r.category === 'awards'; }}).length }},
     {{ id: 'profiles', label: 'Profiles', count: recordsIndex.filter(function(r) {{ return r.category === 'profiles'; }}).length }},
     {{ id: 'memberships', label: 'Memberships', count: recordsIndex.filter(function(r) {{ return r.category === 'memberships'; }}).length }},
-    {{ id: 'books', label: 'Books', count: recordsIndex.filter(function(r) {{ return r.category === 'books'; }}).length }}
+    {{ id: 'books', label: 'Books', count: recordsIndex.filter(function(r) {{ return r.category === 'books'; }}).length }},
+    {{ id: 'blogs', label: 'Blogs', count: recordsIndex.filter(function(r) {{ return r.category === 'blogs'; }}).length }},
+    {{ id: 'portfolio', label: 'Portfolio', count: recordsIndex.filter(function(r) {{ return r.category === 'portfolio'; }}).length }},
+    {{ id: 'slides', label: 'Slides', count: recordsIndex.filter(function(r) {{ return r.category === 'slides'; }}).length }}
   ];
 
   function createModalHtml() {{

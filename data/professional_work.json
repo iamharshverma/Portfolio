@@ -6,7 +6,45 @@
     "target_audience": "Executive Leadership, Corporate Boards, Venture Capitalists, Technical Program Committees, and Academic Institutions",
     "version": "2026.2",
     "publication_year": "2026",
-    "canonical_url": "https://www.harshverma.me/page-about"
+    "canonical_url": "https://www.harshverma.me/page-about",
+    "links": [
+      {
+        "label": "Official Website",
+        "url": "https://www.harshverma.me/"
+      },
+      {
+        "label": "Board Biography PDF",
+        "url": "https://www.harshverma.me/files/Harsh_Verma_Board_Biography.pdf"
+      },
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=zSt9oRMAAAAJ&hl=en"
+      },
+      {
+        "label": "ORCID",
+        "url": "https://orcid.org/0000-0003-2134-2600"
+      },
+      {
+        "label": "IEEE Xplore",
+        "url": "https://ieeexplore.ieee.org/author/37089143797"
+      },
+      {
+        "label": "Wikidata Q139827028",
+        "url": "https://www.wikidata.org/wiki/Q139827028"
+      },
+      {
+        "label": "Forbes Technology Council",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/iamharshverma"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/harshverma59/"
+      }
+    ]
   },
   "executive_summary": {
     "title": "Architecting Autonomous Intelligence and Machine-Speed Cyber Defense for the Global Enterprise",
@@ -23,9 +61,17 @@
       "invited_fellowships_and_councils": 28,
       "global_media_audience_reach": "3.75B+",
       "keynote_addresses_delivered": 12,
-      "hackathon_and_pitch_judging_panels": 22,
+      "speaking_and_panel_engagements": 12,
+      "hackathon_and_pitch_judging_panels": 24,
+      "total_event_engagements": "46+",
       "authored_books": 2,
-      "technical_peer_reviewed_volumes": 6
+      "technical_peer_reviewed_volumes": 6,
+      "thought_leadership_articles": 31,
+      "portfolio_projects": 13,
+      "verified_certifications": 24,
+      "smart_slides_decks": 10,
+      "smart_slides_total": 169,
+      "social_posts": 12
     }
   },
   "what_kind_of_work_i_do": {
@@ -220,6 +266,14 @@
               {
                 "label": "DOI",
                 "url": "https://doi.org/10.18535/ijsrm/v14i06.ec3"
+              },
+              {
+                "label": "Google Scholar Profile",
+                "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+              },
+              {
+                "label": "ORCID Record",
+                "url": "https://orcid.org/0000-0003-2134-2600"
               }
             ]
           },
@@ -240,6 +294,14 @@
               {
                 "label": "DOI",
                 "url": "https://doi.org/10.15662/IJEETR.2024.0605021"
+              },
+              {
+                "label": "Google Scholar Profile",
+                "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+              },
+              {
+                "label": "ORCID Record",
+                "url": "https://orcid.org/0000-0003-2134-2600"
               }
             ]
           },
@@ -260,6 +322,14 @@
               {
                 "label": "DOI",
                 "url": "https://doi.org/10.15662/IJRAI.2024.0706041"
+              },
+              {
+                "label": "Google Scholar Profile",
+                "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+              },
+              {
+                "label": "ORCID Record",
+                "url": "https://orcid.org/0000-0003-2134-2600"
               }
             ]
           }
@@ -288,6 +358,14 @@
               {
                 "label": "DOI",
                 "url": "https://doi.org/10.18535/ijsrm/v13i10.ec03"
+              },
+              {
+                "label": "Google Scholar Profile",
+                "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+              },
+              {
+                "label": "ORCID Record",
+                "url": "https://orcid.org/0000-0003-2134-2600"
               }
             ]
           },
@@ -308,6 +386,14 @@
               {
                 "label": "DOI",
                 "url": "https://doi.org/10.18535/ijsrm/v14i06.ec3"
+              },
+              {
+                "label": "Google Scholar Profile",
+                "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+              },
+              {
+                "label": "ORCID Record",
+                "url": "https://orcid.org/0000-0003-2134-2600"
               }
             ]
           },
@@ -328,6 +414,14 @@
               {
                 "label": "DOI",
                 "url": "https://doi.org/10.18535/ijsrm/v14i04.ec04"
+              },
+              {
+                "label": "Google Scholar Profile",
+                "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+              },
+              {
+                "label": "ORCID Record",
+                "url": "https://orcid.org/0000-0003-2134-2600"
               }
             ]
           },
@@ -348,6 +442,14 @@
               {
                 "label": "DOI",
                 "url": "https://doi.org/10.18535/ijsrm/v13i07.ec08"
+              },
+              {
+                "label": "Google Scholar Profile",
+                "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+              },
+              {
+                "label": "ORCID Record",
+                "url": "https://orcid.org/0000-0003-2134-2600"
               }
             ]
           }
@@ -376,6 +478,14 @@
               {
                 "label": "DOI",
                 "url": "https://doi.org/10.1109/CogML.2019.9014355"
+              },
+              {
+                "label": "Google Scholar Profile",
+                "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+              },
+              {
+                "label": "ORCID Record",
+                "url": "https://orcid.org/0000-0003-2134-2600"
               }
             ]
           },
@@ -396,6 +506,14 @@
               {
                 "label": "DOI",
                 "url": "https://doi.org/10.5120/ijca2017915532"
+              },
+              {
+                "label": "Google Scholar Profile",
+                "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+              },
+              {
+                "label": "ORCID Record",
+                "url": "https://orcid.org/0000-0003-2134-2600"
               }
             ]
           },
@@ -416,6 +534,14 @@
               {
                 "label": "DOI",
                 "url": "https://doi.org/10.37745/ejcsit.2013/vol8n56986"
+              },
+              {
+                "label": "Google Scholar Profile",
+                "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+              },
+              {
+                "label": "ORCID Record",
+                "url": "https://orcid.org/0000-0003-2134-2600"
               }
             ]
           }
@@ -438,6 +564,14 @@
               {
                 "label": "Read Paper",
                 "url": "https://www.icaccm.in/index.php"
+              },
+              {
+                "label": "Google Scholar Profile",
+                "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+              },
+              {
+                "label": "ORCID Record",
+                "url": "https://orcid.org/0000-0003-2134-2600"
               }
             ]
           },
@@ -452,6 +586,14 @@
               {
                 "label": "Read Paper",
                 "url": "https://ieeeaccess.ieee.org/"
+              },
+              {
+                "label": "Google Scholar Profile",
+                "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+              },
+              {
+                "label": "ORCID Record",
+                "url": "https://orcid.org/0000-0003-2134-2600"
               }
             ]
           }
@@ -484,6 +626,14 @@
               {
                 "label": "ResearchGate",
                 "url": "https://www.researchgate.net/publication/401693316_Explainable_AI_XAI_for_Software_Engineering_Decision-Making"
+              },
+              {
+                "label": "Google Scholar Profile",
+                "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+              },
+              {
+                "label": "ORCID Record",
+                "url": "https://orcid.org/0000-0003-2134-2600"
               }
             ]
           },
@@ -504,6 +654,14 @@
               {
                 "label": "DOI",
                 "url": "https://doi.org/10.30574/wjarr.2025.28.3.3904"
+              },
+              {
+                "label": "Google Scholar Profile",
+                "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+              },
+              {
+                "label": "ORCID Record",
+                "url": "https://orcid.org/0000-0003-2134-2600"
               }
             ]
           }
@@ -535,6 +693,28 @@
         "bibtex": "@inproceedings{verma2019secure,\n  title={Secure Real Time Heterogenous Data Management Tool},\n  author={Verma, Harsh},\n  booktitle={2019 IEEE International Conference on Cognitive Machine Learning (CogML)},\n  pages={1--6},\n  year={2019},\n  organization={IEEE},\n  doi={10.1109/CogML.2019.9014355}\n}",
         "primary_url": "https://ieeexplore.ieee.org/document/9014355",
         "doi_url": "https://doi.org/10.1109/CogML.2019.9014355",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -543,6 +723,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.1109/CogML.2019.9014355"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -571,6 +759,28 @@
         "bibtex": "@article{verma2017real,\n  title={Real Time Analytics Performance Load Simulation and Scaling},\n  author={Verma, Harsh},\n  journal={International Journal of Computer Applications},\n  volume={176},\n  number={2},\n  pages={1--7},\n  year={2017},\n  publisher={Foundation of Computer Science},\n  doi={10.5120/ijca2017915532}\n}",
         "primary_url": "https://www.ijcaonline.org/archives/volume176/number2/28523-2017915532/",
         "doi_url": "https://doi.org/10.5120/ijca2017915532",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -579,6 +789,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.5120/ijca2017915532"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -608,6 +826,28 @@
         "bibtex": "@article{verma2024explainable,\n  title={Explainable AI (XAI) for Software Engineering Decision-Making},\n  author={Verma, Harsh},\n  journal={International Journal of Innovative Research in Computer and Communication Engineering (IJIRCCE)},\n  volume={12},\n  pages={18479--18486},\n  year={2024},\n  publisher={IJIRCCE}\n}",
         "primary_url": "https://www.ijircce.com/article/explainable-ai-xai-for-software-engineering-decision-making-18479",
         "doi_url": "https://doi.org/10.15680/IJIRCCE.2024.1205018",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -620,6 +860,14 @@
           {
             "label": "ResearchGate",
             "url": "https://www.researchgate.net/publication/401693316_Explainable_AI_XAI_for_Software_Engineering_Decision-Making"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -648,6 +896,28 @@
         "bibtex": "@article{verma2025ethical,\n  title={Ethical Challenges and Bias Mitigation in Artificial Intelligence Systems},\n  author={Verma, Harsh},\n  journal={World Journal of Advanced Research and Reviews},\n  volume={28},\n  number={3},\n  pages={3904--3915},\n  year={2025},\n  publisher={WJARR},\n  doi={10.30574/wjarr.2025.28.3.3904}\n}",
         "primary_url": "https://wjarr.com/content/ethical-challenges-and-bias-mitigation-artificial-intelligence-systems",
         "doi_url": "https://doi.org/10.30574/wjarr.2025.28.3.3904",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -656,6 +926,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.30574/wjarr.2025.28.3.3904"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -684,6 +962,28 @@
         "bibtex": "@article{verma2026cloud,\n  title={Cloud-Based AI Systems for Scalable and Intelligent Software Applications},\n  author={Verma, Harsh},\n  journal={World Journal of Advanced Research and Reviews},\n  volume={29},\n  number={1},\n  pages={77--89},\n  year={2026},\n  publisher={WJARR},\n  doi={10.30574/wjarr.2026.29.1.0077}\n}",
         "primary_url": "https://wjarr.com/content/cloud-based-ai-systems-scalable-and-intelligent-software-applications",
         "doi_url": "https://doi.org/10.30574/wjarr.2026.29.1.0077",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -692,6 +992,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.30574/wjarr.2026.29.1.0077"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -720,6 +1028,28 @@
         "bibtex": "@article{verma2025aidriven,\n  title={AI-Driven Cybersecurity in Software Engineering},\n  author={Verma, Harsh},\n  journal={World Journal of Advanced Research and Reviews},\n  volume={27},\n  number={3},\n  pages={3347--3358},\n  year={2025},\n  publisher={WJARR},\n  doi={10.30574/wjarr.2025.27.3.3347}\n}",
         "primary_url": "https://wjarr.com/content/ai-driven-cybersecurity-software-engineering",
         "doi_url": "https://doi.org/10.30574/wjarr.2025.27.3.3347",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -728,6 +1058,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.30574/wjarr.2025.27.3.3347"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -756,6 +1094,28 @@
         "bibtex": "@article{verma2025future,\n  title={Future Trends in AI, Machine Learning, and Big Data: Implications for Technical Leadership},\n  author={Verma, Harsh},\n  journal={International Journal of Engineering \\& Extended Technologies Research},\n  volume={7},\n  number={4},\n  pages={17--28},\n  year={2025},\n  publisher={IJEETR},\n  doi={10.15662/IJEETR.2025.0704017}\n}",
         "primary_url": "https://www.ijeetr.com/index.php/ijeetr/article/view/925",
         "doi_url": "https://doi.org/10.15662/IJEETR.2025.0704017",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -764,6 +1124,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.15662/IJEETR.2025.0704017"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -792,6 +1160,28 @@
         "bibtex": "@article{verma2025agentic,\n  title={Agentic Workflows for End-to-End Software Engineering Automation},\n  author={Verma, Harsh},\n  journal={World Journal of Advanced Research and Reviews},\n  volume={25},\n  number={3},\n  pages={887--899},\n  year={2025},\n  publisher={WJARR},\n  doi={10.30574/wjarr.2025.25.3.0887}\n}",
         "primary_url": "https://wjarr.com/content/agentic-workflows-end-end-software-engineering-automation",
         "doi_url": "https://doi.org/10.30574/wjarr.2025.25.3.0887",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -800,6 +1190,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.30574/wjarr.2025.25.3.0887"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -828,6 +1226,28 @@
         "bibtex": "@article{verma2025economic,\n  title={Economic Impact and Productivity Modeling of AI Agents},\n  author={Verma, Harsh},\n  journal={World Journal of Advanced Research and Reviews},\n  volume={26},\n  number={3},\n  pages={2304--2317},\n  year={2025},\n  publisher={WJARR},\n  doi={10.30574/wjarr.2025.26.3.2304}\n}",
         "primary_url": "https://wjarr.com/content/economic-impact-and-productivity-modeling-ai-agents",
         "doi_url": "https://doi.org/10.30574/wjarr.2025.26.3.2304",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -836,6 +1256,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.30574/wjarr.2025.26.3.2304"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -864,6 +1292,28 @@
         "bibtex": "@article{verma2024agenticdata,\n  title={AI Agentic Architectures for Autonomous Data Engineering Pipelines},\n  author={Verma, Harsh},\n  journal={International Journal of Research and Applied Innovations},\n  volume={7},\n  number={6},\n  pages={41--52},\n  year={2024},\n  publisher={IJRAI},\n  doi={10.15662/IJRAI.2024.0706041}\n}",
         "primary_url": "https://ijrai.org/index.php/ijrai/article/view/589",
         "doi_url": "https://doi.org/10.15662/IJRAI.2024.0706041",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -872,6 +1322,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.15662/IJRAI.2024.0706041"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -900,6 +1358,28 @@
         "bibtex": "@article{verma2024autonomousmultiagent,\n  title={Autonomous Multi-Agent Systems for Enterprise Decision-Making},\n  author={Verma, Harsh},\n  journal={International Journal of Engineering \\& Extended Technologies Research},\n  volume={6},\n  number={5},\n  pages={21--33},\n  year={2024},\n  publisher={IJEETR},\n  doi={10.15662/IJEETR.2024.0605021}\n}",
         "primary_url": "https://ijeetr.com/index.php/ijeetr/article/view/958/895",
         "doi_url": "https://doi.org/10.15662/IJEETR.2024.0605021",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -908,6 +1388,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.15662/IJEETR.2024.0605021"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -936,6 +1424,28 @@
         "bibtex": "@article{verma2026securitytrustgraphs,\n  title={Security in Multi-Agent AI Systems: Modeling Emergent Vulnerabilities via Trust Graphs},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={14},\n  number={4},\n  pages={ec04},\n  year={2026},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v14i04.ec04}\n}",
         "primary_url": "https://ijsrm.net/index.php/ijsrm/article/view/6666",
         "doi_url": "https://doi.org/10.18535/ijsrm/v14i04.ec04",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -944,6 +1454,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.18535/ijsrm/v14i04.ec04"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -972,6 +1490,28 @@
         "bibtex": "@article{verma2025cleanattacks,\n  title={Clean Attacks: Formalizing Semantically Valid Adversarial Behavior in Autonomous AI Agent Systems},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={13},\n  number={10},\n  pages={ec03},\n  year={2025},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v13i10.ec03}\n}",
         "primary_url": "https://ijsrm.net/index.php/ijsrm/article/view/6755",
         "doi_url": "https://doi.org/10.18535/ijsrm/v13i10.ec03",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -980,6 +1520,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.18535/ijsrm/v13i10.ec03"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -1008,6 +1556,28 @@
         "bibtex": "@article{verma2026selfhealing,\n  title={Designing Self-Healing AI Agentic Systems: A Framework for Autonomous Detection and Response},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={14},\n  number={6},\n  pages={ec3},\n  year={2026},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v14i06.ec3}\n}",
         "primary_url": "https://ijsrm.net/index.php/ijsrm/article/view/6868",
         "doi_url": "https://doi.org/10.18535/ijsrm/v14i06.ec3",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -1016,6 +1586,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.18535/ijsrm/v14i06.ec3"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -1044,6 +1622,28 @@
         "bibtex": "@article{verma2026intentsecurity,\n  title={Intent-Based Security: Replacing Identity-Centric Trust in Autonomous AI Agentic Systems},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={14},\n  number={6},\n  pages={ec3},\n  year={2026},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v14i06.ec3}\n}",
         "primary_url": "https://ijsrm.net/index.php/ijsrm/article/view/6977",
         "doi_url": "https://doi.org/10.18535/ijsrm/v14i06.ec3",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -1052,6 +1652,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.18535/ijsrm/v14i06.ec3"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -1080,6 +1688,28 @@
         "bibtex": "@article{verma2025policydrift,\n  title={Policy Drift in Learning AI Agents: A Dynamical Systems Perspective on Security Degradation},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={13},\n  number={7},\n  pages={ec08},\n  year={2025},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v13i07.ec08}\n}",
         "primary_url": "https://ijsrm.net/index.php/ijsrm/article/view/6710",
         "doi_url": "https://doi.org/10.18535/ijsrm/v13i07.ec08",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -1088,6 +1718,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.18535/ijsrm/v13i07.ec08"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -1116,6 +1754,28 @@
         "bibtex": "@article{verma2026unifiedtheory,\n  title={Toward a Unified Security Systems Theory for Autonomous AI Systems},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={14},\n  number={6},\n  pages={ec4},\n  year={2026},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v14i06.ec4}\n}",
         "primary_url": "https://ijsrm.net/index.php/ijsrm/article/view/7251",
         "doi_url": "https://doi.org/10.18535/ijsrm/v14i06.ec4",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -1124,6 +1784,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.18535/ijsrm/v14i06.ec4"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -1152,6 +1820,28 @@
         "bibtex": "@article{verma2024anomalydetection,\n  title={AI-Powered Anomaly Detection in Cloud-Based Applications},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={12},\n  number={1},\n  pages={ec07},\n  year={2024},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v12i01.ec07}\n}",
         "primary_url": "https://ijsrm.net/index.php/ijsrm/article/view/4774",
         "doi_url": "https://doi.org/10.18535/ijsrm/v12i01.ec07",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -1160,6 +1850,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.18535/ijsrm/v12i01.ec07"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -1188,6 +1886,28 @@
         "bibtex": "@article{verma2025securesystems,\n  title={Secure AI Systems Protecting Machine Learning Models from Emerging Cyber Threats},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={13},\n  number={10},\n  pages={ec04},\n  year={2025},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v13i10.ec04}\n}",
         "primary_url": "https://www.ijsrm.net/index.php/ijsrm/article/view/6677",
         "doi_url": "https://doi.org/10.18535/ijsrm/v13i10.ec04",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -1196,6 +1916,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.18535/ijsrm/v13i10.ec04"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -1224,6 +1952,28 @@
         "bibtex": "@article{verma2026adversarialml,\n  title={Adversarial Machine Learning: Security Risks and Defense Strategies in AI-Driven Applications},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={14},\n  number={2},\n  pages={ec04},\n  year={2026},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v14i02.ec04}\n}",
         "primary_url": "https://www.ijsrm.net/index.php/ijsrm/article/view/7002",
         "doi_url": "https://doi.org/10.18535/ijsrm/v14i02.ec04",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -1232,6 +1982,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.18535/ijsrm/v14i02.ec04"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -1260,6 +2018,28 @@
         "bibtex": "@article{verma2026blockchainai,\n  title={Blockchain-Enabled Artificial Intelligence and AI Agents for Secure Data Sharing and Cybersecurity Applications},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={14},\n  number={8},\n  pages={ec03},\n  year={2026},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v14i08.ec03}\n}",
         "primary_url": "https://ijsrm.net/index.php/ijsrm/article/view/7958",
         "doi_url": "https://doi.org/10.18535/ijsrm/v14i08.ec03",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -1268,6 +2048,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.18535/ijsrm/v14i08.ec03"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -1296,6 +2084,28 @@
         "bibtex": "@article{verma2026automatedpatching,\n  title={Automated Vulnerability Patching in Legacy Code Using LLMs and Multi-AI Agents},\n  author={Verma, Harsh},\n  journal={International Journal of Scientific Research and Management},\n  volume={14},\n  number={4},\n  pages={ec05},\n  year={2026},\n  publisher={IJSRM},\n  doi={10.18535/ijsrm/v14i04.ec05}\n}",
         "primary_url": "https://ijsrm.net/index.php/ijsrm/article/view/7194",
         "doi_url": "https://doi.org/10.18535/ijsrm/v14i04.ec05",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -1304,6 +2114,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.18535/ijsrm/v14i04.ec05"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -1333,10 +2151,40 @@
         ],
         "bibtex": "@inproceedings{verma2026madebtp,\n  title={Multi-Agent Differential Evolution-Based Trajectory Planning (MA-DEBTP) for Delay-Sensitive Data Collection in Intermittently Connected Delay Tolerant Wireless Sensor Networks},\n  author={Verma, Harsh},\n  booktitle={2026 International Conference on Advances in Computing, Communication and Materials (ICACCM)},\n  year={2026},\n  month={November},\n  organization={ICACCM},\n  url={https://www.icaccm.in/index.php}\n}",
         "primary_url": "https://www.icaccm.in/index.php",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
             "url": "https://www.icaccm.in/index.php"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -1367,6 +2215,28 @@
         "bibtex": "@article{verma2021dataquality,\n  title={Data Quality, Feature Engineering, and Model Reliability in Large-Scale AI Multi-Agentic Systems},\n  author={Verma, Harsh},\n  journal={European Journal of Computer Science and Information Technology},\n  volume={9},\n  number={4},\n  pages={91--110},\n  year={2021},\n  month={May},\n  publisher={European Centre for Research Training and Development UK},\n  doi={10.37745/ejcsit.2013/vol9n491110}\n}",
         "primary_url": "https://eajournals.org/ejcsit/vol-9-issue-4-2021/data-quality-feature-engineering-and-model-reliability-in-large-scale-ai-multi-agentic-systems/",
         "doi_url": "https://doi.org/10.37745/ejcsit.2013/vol9n491110",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -1375,6 +2245,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.37745/ejcsit.2013/vol9n491110"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -1405,6 +2283,28 @@
         "bibtex": "@article{verma2020scalable,\n  title={Scalable Real-Time Data Pipelines for AI and Machine Learning--Driven Enterprise Systems},\n  author={Verma, Harsh},\n  journal={European Journal of Computer Science and Information Technology},\n  volume={8},\n  number={5},\n  pages={69--86},\n  year={2020},\n  month={December},\n  publisher={European Centre for Research Training and Development UK},\n  doi={10.37745/ejcsit.2013/vol8n56986},\n  url={https://eajournals.org/ejcsit/vol-8-issue-5-november-2020/scalable-real-time-data-pipelines-for-ai-and-machine-learning-driven-enterprise-systems/}\n}",
         "primary_url": "https://eajournals.org/ejcsit/vol-8-issue-5-november-2020/scalable-real-time-data-pipelines-for-ai-and-machine-learning-driven-enterprise-systems/",
         "doi_url": "https://doi.org/10.37745/ejcsit.2013/vol8n56986",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -1413,6 +2313,14 @@
           {
             "label": "DOI",
             "url": "https://doi.org/10.37745/ejcsit.2013/vol8n56986"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -1446,6 +2354,28 @@
         "bibtex": "@inproceedings{verma2026beyondmodels,\n  title={Beyond Models: Building Trusted AI in the Age of Autonomous Agents},\n  author={Verma, Harsh},\n  booktitle={Proceedings of the Raptors Conference (Raptors Conference 2026)},\n  volume={1},\n  year={2026},\n  month={September},\n  publisher={Hackathon Raptors},\n  doi={10.68495/rc.2026.C025},\n  url={https://proceedings.raptors.dev/verma-trusted-ai-autonomous-agents/}\n}",
         "primary_url": "https://proceedings.raptors.dev/verma-trusted-ai-autonomous-agents/",
         "doi_url": "https://doi.org/10.68495/rc.2026.C025",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
@@ -1458,6 +2388,14 @@
           {
             "label": "PDF Full Text",
             "url": "https://proceedings.raptors.dev/pdf/verma-trusted-ai-autonomous-agents.pdf"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       },
@@ -1488,10 +2426,40 @@
         ],
         "bibtex": "@article{verma2026deica,\n  title={DEICA-ML: A Multi-Layer Differential Evolution-Based Improved Clustering Algorithm for IoT-Based Heterogeneous Wireless Sensor Networks},\n  author={Verma, Harsh},\n  journal={IEEE Access},\n  year={2026},\n  note={Manuscript ID: Access-2026-52653, Submitted October 13, 2026}\n}",
         "primary_url": "https://ieeeaccess.ieee.org/",
+        "author_profiles": [
+          {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0003-2134-2600"
+          },
+          {
+            "label": "Academia.edu",
+            "url": "https://mygsb.academia.edu/harshverma"
+          },
+          {
+            "label": "ResearchGate",
+            "url": "https://www.researchgate.net/profile/Harsh-Verma-43"
+          },
+          {
+            "label": "IEEE Xplore Author",
+            "url": "https://ieeexplore.ieee.org/author/37089143797"
+          }
+        ],
         "links": [
           {
             "label": "Read Paper",
             "url": "https://ieeeaccess.ieee.org/"
+          },
+          {
+            "label": "Google Scholar Profile",
+            "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+          },
+          {
+            "label": "ORCID Record",
+            "url": "https://orcid.org/0000-0003-2134-2600"
           }
         ]
       }

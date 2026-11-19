@@ -669,7 +669,7 @@
     if (messageHistory.length === 0) {
       // Welcome message
       const welcomeContent = `### 👋 Welcome to Harsh Verma's AI Copilot!
-I am your intelligent liaison grounded in Harsh Verma's **27 Global Awards**, **25+ Research Publications**, **Authored Books on AI Agents**, and executive advisory background.
+I am your intelligent liaison grounded in Harsh Verma's **27 Global Awards**, **27+ Research Publications**, **Authored Books on AI Engineering & Cyber Defense**, and executive advisory background.
 
 How can I assist you today? You can ask about:
 - **Executive Biography & Technical Focus**
@@ -951,16 +951,17 @@ Harsh Verma has received **27 international awards and recognitions** celebratin
     ) {
       return `### 📚 Authored Books by Harsh Verma
 
-Harsh Verma is the author of two definitive technical volumes bridging academic rigor and mission-critical enterprise engineering:
+Harsh Verma is the author of two definitive technical volumes bridging academic rigor and mission-critical enterprise engineering (plus Technical Reviewer for 6 Packt books):
 
-1. **Enterprise AI Agents: Build Your Authority and Lead the AI Agent Revolution**
-   - *Focus*: Architectural patterns, production protocols, deterministic guardrails, and memory graphs for enterprise multi-agent systems.
-   - *Target Readers*: AI architects, engineering leaders, and enterprise strategists.
+1. **[Beyond AI Engineering: From Creator to Curator](https://www.beyondaiengineering.com/)**
+   - *Focus*: Transitioning from raw code writing to a Super Engineer orchestrating multi-agent workflows, deterministic guardrails, and enterprise AI systems.
+   - *Official Website*: [beyondaiengineering.com](https://www.beyondaiengineering.com/)
 
-2. **Autonomous Cyber Defense: Adversarial Intelligence and Battleground Systems**
-   - *Focus*: Zero-Trust architectures, threat vector modeling, and autonomous threat mitigation in high-throughput distributed networks.
+2. **[AI vs. AI: Engineering the Cybersecurity Counteroffensive](https://www.beyondaivsai.com/)**
+   - *Focus*: Intent-based security, defending against clean attacks, and building autonomous, real-time AI counteroffensive architectures against weaponized adversarial AI.
+   - *Official Website*: [beyondaivsai.com](https://www.beyondaivsai.com/)
 
-👉 Read chapter outlines and access reading previews: **[Explore Authored Books](page-books)**`;
+👉 Read chapter outlines, verified Packt technical reviews, and previews: **[Explore Authored Books](page-books)**`;
     }
 
     // 3. Publications & Academic Citations
@@ -978,9 +979,9 @@ Harsh Verma is the author of two definitive technical volumes bridging academic 
       q.includes('article') ||
       q.includes('journal')
     ) {
-      return `### 🔬 25+ Peer-Reviewed Research Publications & Academic Citations
+      return `### 🔬 27+ Peer-Reviewed Research Publications & Academic Citations
 
-Harsh Verma has published **25+ peer-reviewed and conference papers** across leading IEEE conferences, ICACCM, Springer Nature, and international computer science journals with over **150+ academic citations**:
+Harsh Verma has published **27+ peer-reviewed and conference papers** across leading IEEE conferences, ICACCM, Springer Nature, and international computer science journals with over **150+ academic citations**, plus **6 patents (2 granted, 4 in-process at Palo Alto Networks)**:
 
 - **Data Quality, Feature Engineering, and Model Reliability in Large-Scale AI Multi-Agentic Systems** (EJCSIT, May 30, 2021).
 - **Scalable Real-Time Data Pipelines for AI and Machine Learning–Driven Enterprise Systems** (EJCSIT, December 30, 2020).
@@ -990,7 +991,7 @@ Harsh Verma has published **25+ peer-reviewed and conference papers** across lea
 - **Real-Time Analytics Performance Load Simulation & Scaling** for High-Frequency FinTech.
 - **Autonomous Zero-Trust Defense Protocols** for Cloud Microservice Ecosystems.
 
-👉 Access full abstracts, DOIs, and citation downloads: **[Explore 25+ Research Publications](page-publications)** or review the **[Google Scholar Profile](https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ)**.`;
+👉 Access full abstracts, DOIs, and citation downloads: **[Explore 27+ Research Publications](page-publications)** or review the **[Google Scholar Profile](https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ)**.`;
     }
 
     // 4. Articles & Thought Leadership
@@ -1124,7 +1125,7 @@ Harsh Verma is an international keynote speaker, panelist, and startup judge:
 - **High-Throughput Cloud Distributed Architectures**: Lessons from enterprise-scale data platforms.
 - **Featured Appearances**: Keynote speaker at @#ATAGTR2017 (Global Testing Retreat), IEEE Symposia, and global engineering conferences.
 
-👉 Review 35+ appearances across keynotes, panels & hackathon judging: **[Speaking Engagements](page-events)** or book an executive hold: **[Contact & Booking Form](index#contact)**.`;
+👉 Review 46+ appearances across keynotes, panels & hackathon judging: **[Speaking Engagements](page-events)** or book an executive hold: **[Contact & Booking Form](index#contact)**.`;
     }
 
     // 8. Media Coverage & Distribution Analytics
@@ -1143,7 +1144,7 @@ Harsh Verma is an international keynote speaker, panelist, and startup judge:
     ) {
       return `### 📰 Media Coverage & Global Distribution Reach
 
-Harsh Verma's technical thought leadership has reached an aggregate global audience of over **3.85+ Billion potential views** across **45+ media features**:
+Harsh Verma's technical thought leadership has reached an aggregate global audience of over **3.75+ Billion potential views** across **45+ media features**:
 
 - **Major Syndication Platforms**: Featured on **Yahoo Finance, Business Insider, USA TODAY, AP News, NewsBreak, Barchart, and StreetInsider**, supported by audited transmission reports from **Xraised**.
 - **Geographic Reach**: 48% US, 18% UK, 14% India, 12% Canada, 8% Asia & Middle East.
@@ -1228,7 +1229,7 @@ All verified inquiries submitted through this portfolio are delivered directly w
 
 **Explore further:**
 - 🏆 **[27 Prestigious Awards](page-awards)**
-- 🔬 **[25+ Research Publications](page-publications)**
+- 🔬 **[27+ Research Publications](page-publications)**
 - 💼 **[Professional Experience & Roles](index#experience)**
 - 📚 **[Authored Books](page-books)**
 - 👥 **[Invited Memberships](page-memberships)**

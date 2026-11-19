@@ -33,9 +33,31 @@ def generate_about_json():
     media_count = _count_json("media_data.json", 45)
     profiles_count = _count_json("data/verified_profiles.json", 57)
     assocs_count = _count_json("data/memberships_and_associations.json", 28)
-    judging_count = _count_json("data/judging_engagements.json", 22)
+    judging_count = _count_json("data/judging_engagements.json", 24)
+    speaking_count = _count_json("data/speaking_engagements.json", 12)
     keynotes_count = _count_json("data/keynote_engagements.json", 12)
     blogs_count = _count_json("data/blog_articles.json", 31)
+    social_posts_count = _count_json("data/social_posts.json", 12)
+
+    projects_count, certs_count = 13, 24
+    pc_path = os.path.join(DATA_DIR, "projects_certification.json")
+    if os.path.exists(pc_path):
+        try:
+            pc_data = json.load(open(pc_path, "r", encoding="utf-8"))
+            projects_count = pc_data.get("summary_stats", {}).get("total_projects", 13)
+            certs_count = pc_data.get("summary_stats", {}).get("total_certifications", 24)
+        except Exception:
+            pass
+
+    slides_decks, slides_total = 10, 169
+    sl_path = os.path.join(DATA_DIR, "slides.json")
+    if os.path.exists(sl_path):
+        try:
+            sl_data = json.load(open(sl_path, "r", encoding="utf-8"))
+            slides_decks = sl_data.get("total_decks", 10)
+            slides_total = sl_data.get("total_slides", 169)
+        except Exception:
+            pass
 
     about_data = {
         "metadata": {
@@ -71,12 +93,15 @@ def generate_about_json():
             "crunchbase_url": "https://www.crunchbase.com/person/harsh-verma-f153",
             "forbes_profile": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/",
             "forbes_council_url": "https://councils.forbes.com/profile/Harsh-Verma-Principal-Software-Engineer-AI-Palo-Alto-Networks/2a1e2c7a-5541-4c49-acee-0ec37da532a5",
+            "forbes_council_alt_url": "https://councils.forbes.com/profile/Harsh-Verma-Principal-Software-Engineer-Palo-Alto-Networks/30528e57-2e1a-4f51-8664-16a7a0368b6b",
             "bcs_profile": "https://www.bcs.org/membership-and-registrations/our-members/harsh-verma-fbcs",
             "semantic_scholar": "https://www.semanticscholar.org/author/H.-Verma/145004805",
             "researchgate": "https://www.researchgate.net/profile/Harsh-Verma-43",
             "academia_edu": "https://mygsb.academia.edu/harshverma",
             "github": "https://github.com/iamharshverma",
             "linkedin": "https://www.linkedin.com/in/harshverma59/",
+            "instagram_aiwithharsh": "https://www.instagram.com/aiwithharsh/",
+            "instagram_personal": "https://www.instagram.com/iamharshverma/",
             "easychair_slides": "https://easychair.org/smart-slide/author/v5zJ",
             "links": [
                 {"label": "Official Portfolio", "url": "https://www.harshverma.me"},
@@ -91,10 +116,17 @@ def generate_about_json():
                 {"label": "Academia.edu", "url": "https://mygsb.academia.edu/harshverma"},
                 {"label": "Crunchbase", "url": "https://www.crunchbase.com/person/harsh-verma-f153"},
                 {"label": "Forbes Technology Council", "url": "https://www.forbes.com/councils/forbestechcouncil/people/harshverma/"},
+                {"label": "Forbes Technology Council Executive Profile", "url": "https://councils.forbes.com/profile/Harsh-Verma-Principal-Software-Engineer-Palo-Alto-Networks/30528e57-2e1a-4f51-8664-16a7a0368b6b"},
                 {"label": "British Computer Society (FBCS)", "url": "https://www.bcs.org/membership-and-registrations/our-members/harsh-verma-fbcs"},
+                {"label": "IFGICT Official Federation", "url": "https://www.ifgict.org"},
+                {"label": "Stanford GSB LEAD Executive Program", "url": "https://www.gsb.stanford.edu/exec-ed/programs/stanford-lead"},
                 {"label": "GitHub", "url": "https://github.com/iamharshverma"},
                 {"label": "LinkedIn", "url": "https://www.linkedin.com/in/harshverma59/"},
-                {"label": "EasyChair Smart Slides", "url": "https://easychair.org/smart-slide/author/v5zJ"}
+                {"label": "Instagram (@aiwithharsh)", "url": "https://www.instagram.com/aiwithharsh/"},
+                {"label": "Instagram (@iamharshverma)", "url": "https://www.instagram.com/iamharshverma/"},
+                {"label": "EasyChair Smart Slides", "url": "https://easychair.org/smart-slide/author/v5zJ"},
+                {"label": "Board Biography PDF", "url": "https://www.harshverma.me/files/Harsh_Verma_Board_Biography.pdf"},
+                {"label": "Location (San Francisco Bay Area)", "url": "https://maps.google.com/?q=San+Francisco+Bay+Area+California"}
             ]
         },
         "executive_biographies": {
@@ -263,11 +295,26 @@ def generate_about_json():
             "fellowships_and_councils": assocs_count,
             "global_audience_reach": "3.75B+",
             "keynote_addresses_delivered": keynotes_count,
+            "speaking_and_panel_engagements": speaking_count,
             "judging_appointments": judging_count,
+            "total_event_engagements": f"{judging_count + speaking_count + 10}+",
             "authored_books": 2,
             "technical_peer_reviewed_volumes": 6,
-            "thought_leadership_articles": blogs_count
+            "thought_leadership_articles": blogs_count,
+            "portfolio_projects": projects_count,
+            "verified_certifications": certs_count,
+            "smart_slides_decks": slides_decks,
+            "smart_slides_total": slides_total,
+            "social_posts": social_posts_count
         },
+        "domain_reference_links": [
+            {"label": "Artificial Intelligence Reference", "url": "https://builtin.com/artificial-intelligence"},
+            {"label": "Computer Vision Reference", "url": "https://machinelearningmastery.com/what-is-computer-vision/"},
+            {"label": "Software Development Reference", "url": "https://www.ibm.com/topics/software-development"},
+            {"label": "Project Management Reference", "url": "https://www.pmi.org/about/learn-about-pmi/what-is-project-management"},
+            {"label": "Big Data Analytics Reference", "url": "https://www.sas.com/en_us/insights/big-data/what-is-big-data.html"},
+            {"label": "Systems Design Reference", "url": "https://en.wikipedia.org/wiki/Systems_design#:~:text=Systems%20design%20is%20the%20process,systems%20theory%20to%20product%20development."}
+        ],
         "speaking_and_advisory_guidelines": {
             "keynote_topics": [
                 "Beyond AI Engineering: Curation, Autonomous Agents, and the Future of Software Systems",

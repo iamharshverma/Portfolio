@@ -34,11 +34,24 @@ const harshKnowledge = {
     summaryStats: {
       awardsCount: 27,
       publicationsCount: 27,
+      patentsCount: 6,
       citationsCount: "150+",
-      verifiedProfilesCount: 53,
-      mediaFeaturesCount: 41,
+      verifiedProfilesCount: 57,
+      mediaFeaturesCount: 45,
+      associationsCount: 28,
+      judgingCount: 24,
+      speakingCount: 12,
+      videosCount: 10,
+      totalEngagementsCount: "46+",
+      blogsCount: 31,
+      projectsCount: 13,
+      certificationsCount: 24,
+      smartSlidesDecks: 10,
+      smartSlidesTotal: 169,
+      socialPostsCount: 12,
       potentialViewsCount: "3.75+ Billion",
-      booksCount: 2
+      booksCount: 2,
+      reviewedVolumesCount: 6
     }
   },
 
@@ -77,18 +90,20 @@ const harshKnowledge = {
   
   books: [
     {
-      title: "Enterprise AI Agents: Build Your Authority and Lead the AI Agent Revolution",
-      subtitle: "Architectures, Production Protocols, and Operational Multi-Agent Systems",
+      title: "Beyond AI Engineering: From Creator to Curator",
+      subtitle: "From Creator to Curator: Build Your Authority and Lead the AI Agent Revolution",
       author: "Harsh Verma",
-      pageUrl: "page-books",
-      description: "A definitive guide to designing, architecting, and deploying resilient autonomous AI agents at enterprise scale. Covers multi-agent coordination, memory graphs, deterministic guardrails, and real-world deployment patterns."
+      websiteUrl: "https://www.beyondaiengineering.com/",
+      pageUrl: "page-books#book1",
+      description: "A definitive guide to transitioning from raw code creation to curating resilient multi-agent AI systems as a Super Engineer operating across product, architecture, and sales engineering."
     },
     {
-      title: "Autonomous Cyber Defense: Adversarial Intelligence and Battleground Systems",
-      subtitle: "Zero-Trust Architecture, Threat Vector Modeling, and Autonomous Response",
+      title: "AI vs. AI: Engineering the Cybersecurity Counteroffensive",
+      subtitle: "Engineering the Cybersecurity Counteroffensive",
       author: "Harsh Verma",
-      pageUrl: "page-books",
-      description: "Examines modern threat landscapes and how autonomous machine intelligence can dynamically detect, isolate, and neutralize cyber threats in high-throughput enterprise environments."
+      websiteUrl: "https://www.beyondaivsai.com/",
+      pageUrl: "page-books#book2",
+      description: "Technical deep dive with empirical case studies on building autonomous, real-time AI counteroffensive architectures and intent-based security to defend against weaponized adversarial AI."
     }
   ],
 
@@ -184,15 +199,16 @@ const harshKnowledge = {
     { name: "Google Scholar", url: "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ", count: "27+ Papers" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/harshverma59/", handle: "harshverma59" },
     { name: "GitHub", url: "https://github.com/iamharshverma", handle: "iamharshverma" },
-    { name: "ORCID", url: "page-about#verified-profiles", id: "0000-0003-2134-2600" },
+    { name: "ORCID", url: "https://orcid.org/0000-0003-2134-2600", id: "0000-0003-2134-2600" },
     { name: "Wikidata Knowledge Graph", url: "https://www.wikidata.org/wiki/Q139827028", id: "Q139827028" },
     { name: "EverybodyWiki Biography", url: "https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)", id: "Biography" },
     { name: "LocalWiki Global Hub", url: "https://localwiki.org/main/Harsh_Verma", id: "main/Harsh_Verma" },
     { name: "WikiAlpha Biography", url: "https://wikialpha.co/wiki/Harsh_Verma_(Software_Engineer)", id: "Biography" },
     { name: "WikiFlux Biography", url: "https://en.wikiflux.org/wiki/index.php/Harsh_Verma_(Software_Engineer)", id: "Biography" },
-    { name: "IEEE Xplore", url: "page-about#verified-profiles" },
-    { name: "ResearchGate", url: "page-about#verified-profiles" },
-    { name: "DBLP Computer Science Bibliography", url: "page-about#verified-profiles" }
+    { name: "IEEE Xplore", url: "https://ieeexplore.ieee.org/author/37089143797", id: "Author ID: 37089143797" },
+    { name: "ResearchGate", url: "https://www.researchgate.net/profile/Harsh-Verma-43", id: "Researcher Profile" },
+    { name: "Semantic Scholar", url: "https://www.semanticscholar.org/author/H.-Verma/145004805", id: "Author ID: 145004805" },
+    { name: "Academia.edu", url: "https://mygsb.academia.edu/harshverma", id: "Stanford GSB" }
   ],
 
   suggestedQuestions: [
@@ -252,6 +268,37 @@ const harshKnowledge = {
       externalKeynoteUrl: "https://www.harshverma.me/page-smart-slides#deck=GxwP&slide=1",
       conference: "ACM Sacramento Chapter Keynote: Secure & Trustworthy ML/AI",
       summary: "33 slides detailing secure and trustworthy ML/AI, enterprise LLM defense, zero-trust validation, and agent alignment, delivered as Distinguished Keynote Address for ACM Sacramento Chapter."
+    },
+    {
+      title: "Why Multi-Agent Systems Are a Cybersecurity Nightmare",
+      slidesCount: 16,
+      easyChairUrl: "https://easychair.org/smart-slide/slide/JSZf#{sn:1}",
+      articleUrl: "https://www.rsaconference.com/Library/blog/why-multi-agent-systems-are-a-cybersecurity-nightmare",
+      pageUrl: "page-smart-slides#deck=JSZf",
+      summary: "16 slides published alongside RSA Conference examining inter-agent trust chains, cascade prompt injections, memory poisoning, and agentic IAM architecture."
+    },
+    {
+      title: "The Death of Authentication: Why Identity Isn't Enough for AI Systems",
+      slidesCount: 12,
+      easyChairUrl: "https://easychair.org/smart-slide/slide/xJKk#{sn:1}",
+      articleUrl: "https://www.rsaconference.com/Library/blog/the-death-of-authentication-why-identity-isnt-enough-for-ai-systems",
+      pageUrl: "page-smart-slides#deck=xJKk",
+      summary: "12 slides companion deck to RSA Conference analysis examining post-authentication risk and shifting Zero Trust toward continuous behavioral monitoring and runtime intent analysis."
+    },
+    {
+      title: "The Evolution of Cybersecurity: From Anomaly Detection to Intent-Based Security (Clean Attack Problem)",
+      slidesCount: 14,
+      easyChairUrl: "https://easychair.org/smart-slide/slide/tHbS#{sn:1}",
+      articleUrl: "https://www.rsaconference.com/library/blog/the-clean-attack-problem",
+      pageUrl: "page-smart-slides#deck=tHbS",
+      summary: "14 slides formalizing the Clean Attack Problem and transitioning from static anomaly detection to intent reasoning and behavioral sequencing."
+    },
+    {
+      title: "HikeRunner: LoadTestFramework",
+      slidesCount: 10,
+      easyChairUrl: "https://easychair.org/smart-slide/slide/8WpM#{sn:1}",
+      pageUrl: "page-smart-slides#deck=8WpM",
+      summary: "10 slides presenting an automated high-throughput distributed load testing framework for stress benchmarking databases, caches, queues, and CI/CD pipelines."
     }
   ]
 };
@@ -280,13 +327,15 @@ HARSH VERMA'S CORE PROFILE:
 
 KEY ACHIEVEMENTS & DATA TO DRAW FROM:
 1. 27 Prestigious Awards: Includes 2026 TITAN Innovation Awards (AI Innovation & Leadership Impact Award), 2026 NVTC Cyber50 Honoree, Forttuna Global 100 Power List (2026), Nobel Technology Awards Gold Winner (2026), Global Recognition Award AI Innovator of the Year (2026), Globee Leadership Awards, Stevie International Business Awards, Brandon Hall Group Honors, and Tech Titans.
-2. 26+ Peer-Reviewed & Conference Publications: Key topics in Autonomous Multi-Agent Frameworks, Trajectory Planning in Delay Tolerant Wireless Sensor Networks (ICACCM 2026), Explainable AI (XAI), Heterogeneous Distributed Data Management, Real-Time Load Simulation, Zero-Trust Threat Modeling, and Cloud Microservice Security. (Available on Google Scholar, IEEE & ICACCM).
-3. Authored Books:
-   - "Enterprise AI Agents: Build Your Authority and Lead the AI Agent Revolution"
-   - "Autonomous Cyber Defense: Adversarial Intelligence and Battleground Systems"
-4. Fellowships & Memberships (27+ Invited Appointments): Fellow of BCS (FBCS), Fellow of IFGICT (Fellow Number: 06042Z26HV), Senior Member of IEEE (SMIEEE 95132014) & IEEE Technical Societies (CIS011, YP060, IEEE500), IEEE Xplore Verified Author (ID: 37089143797), Peer Reviewer for Oxford University Press Interacting with Computers via ScholarOne Manuscripts, Palo Alto Networks verified organization profile on The Org (theorg.com/org/palo-alto-networks/person/harsh-verma), Python Software Foundation Contributing Member (harshverma59), OWASP Global Member (3981139), ISACA Member & Verified Expert / Volunteer (2394223), Forbes Technology Council, Fellow of Royal Society of Arts (FRSA), and Full Elected Member of Sigma Xi. Listed on page-memberships and page-about.
-5. Inquiries & Booking: Inquiries for executive advisory, enterprise consulting, keynote speeches, or media interviews should be sent to harshverma59@gmail.com or submitted through the portfolio contact form (index#contact).
-6. Newsletter & Executive Briefing: "The Agentic Systems & AI Dispatch" — a monthly curated executive newsletter by Harsh Verma covering deep dives on Agentic AI & Autonomous Copilots, Zero-Trust Cyber Defense, and Enterprise High-Scale Systems Architecture. Visitors can subscribe on the Blog page ([Explore Blog](page-blog)) via the newsletter popup modal or the "Newsletter" button on the toolbar. Over 3,240+ engineers, researchers, and technology executives read the dispatch.
+2. 27+ Peer-Reviewed & Conference Publications + 6 Patents: Key topics in Autonomous Multi-Agent Frameworks, Trajectory Planning in Delay Tolerant Wireless Sensor Networks (ICACCM 2026), Explainable AI (XAI), Heterogeneous Distributed Data Management, Real-Time Load Simulation, Zero-Trust Threat Modeling, and Cloud Microservice Security. (Available on Google Scholar, IEEE & ICACCM). Also includes 2 Granted Patents (555747, 606481) and 4 in-process patent applications at Palo Alto Networks.
+3. Authored Books & Technical Reviews (8 Total Volumes):
+   - "Beyond AI Engineering: From Creator to Curator" (https://www.beyondaiengineering.com/)
+   - "AI vs. AI: Engineering the Cybersecurity Counteroffensive" (https://www.beyondaivsai.com/)
+   - Technical Reviewer for 6 published Packt volumes.
+4. Fellowships & Memberships (28+ Invited Appointments): Fellow of BCS (FBCS), Fellow of IFGICT (Fellow Number: 06042Z26HV), Senior Member of IEEE (SMIEEE 95132014) & IEEE Technical Societies (CIS011, YP060, IEEE500), IEEE Xplore Verified Author (ID: 37089143797), Peer Reviewer for Oxford University Press Interacting with Computers via ScholarOne Manuscripts, Palo Alto Networks verified organization profile on The Org (theorg.com/org/palo-alto-networks/person/harsh-verma), Python Software Foundation Contributing Member (harshverma59), OWASP Global Member (3981139), ISACA Member & Verified Expert / Volunteer (2394223), Forbes Technology Council, Fellow of Royal Society of Arts (FRSA), and Full Elected Member of Sigma Xi. Listed on page-memberships and page-about.
+5. Speaking, Judging & Smart Slides (46+ Engagements): 12 Speaking & Panel Appearances, 24+ Judging & Accelerator Committees (UC Berkeley SkyDeck, CITRIS-AIC, Google Agents for Impact GDE), 10 Featured Video Keynotes, and 10 EasyChair Smart Slide Decks (169 slides total).
+6. Inquiries & Booking: Inquiries for executive advisory, enterprise consulting, keynote speeches, or media interviews should be sent to harshverma59@gmail.com or submitted through the portfolio contact form (index#contact).
+7. Newsletter & Executive Briefing: "The Agentic Systems & AI Dispatch" — a monthly curated executive newsletter by Harsh Verma covering deep dives on Agentic AI & Autonomous Copilots, Zero-Trust Cyber Defense, and Enterprise High-Scale Systems Architecture. Visitors can subscribe on the Blog page ([Explore Blog](page-blog)) via the newsletter popup modal or the "Newsletter" button on the toolbar. Over 3,240+ engineers, researchers, and technology executives read the dispatch.
 
 RESPONSE GUIDELINES:
 - Tone: Professional, courteous, articulate, authoritative, and helpful.

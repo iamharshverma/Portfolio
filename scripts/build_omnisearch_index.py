@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 """
 scripts/build_omnisearch_index.py
-Builds the unified 226-record Executive Omnisearch Index from:
-- research_publications.json (27)
+Builds the unified Executive Omnisearch Index across all portfolio sections:
+- research_publications.json (27) + patents.json (6 patents)
 - media_features.json (45)
-- speaking_engagements.json (12) + judging_engagements.json (22) = 34 speaking & keynote records
-- awards_and_honors.json (26)
+- speaking_engagements.json (12) + judging_engagements.json (24)
+- awards_and_honors.json (27)
 - verified_profiles.json (57)
 - memberships_and_associations.json (28)
 - books_and_volumes.json (8)
-Total = 225 records.
+- blog_articles.json (31)
+- projects_certification.json (13 projects + 24 certifications)
+- slides.json (10 interactive Smart Slide decks)
 """
 
 import os
@@ -54,6 +56,38 @@ def build_index():
             "description": p.get("abstract", "").strip()[:180] + ("..." if len(p.get("abstract", "").strip()) > 180 else "")
         })
 
+    # 1b. Patents (6 records from data/patents.json)
+    patents_path = os.path.join(DATA_DIR, "patents.json")
+    if os.path.exists(patents_path):
+        with open(patents_path, "r", encoding="utf-8") as f:
+            pat_data = json.load(f)
+        for pat in pat_data.get("patents", []):
+            title = pat.get("title", "").strip()
+            pat_no = pat.get("patent_number", "").strip()
+            app_no = pat.get("application_number", "").strip()
+            org = pat.get("organization", "").strip()
+            status = pat.get("status", "Patent").strip()
+            issued = pat.get("issued_date", "").strip()
+            url = pat.get("primary_url", "").strip() or "page-publications"
+            desc = pat.get("description", "").strip()
+            subtitle_parts = [part for part in [status, f"Patent No: {pat_no}" if pat_no else "", f"App: {app_no}" if app_no else "", org] if part]
+            badge = "Granted Patent" if "granted" in status.lower() else "In-Process Patent"
+            badge_class = "badge-success" if "granted" in status.lower() else "badge-warning text-dark"
+            index.append({
+                "id": pat.get("id", f"patent-{len(index)+1}"),
+                "category": "Publications & Patents",
+                "category_pill": "publications",
+                "title": title,
+                "subtitle": " · ".join(subtitle_parts),
+                "badge": badge,
+                "badge_class": badge_class,
+                "icon": "mdi-certificate",
+                "keywords": f"{title} {pat_no} {app_no} {org} {status} {issued} {desc} patent intellectual property",
+                "url": url,
+                "external": url.startswith("http"),
+                "description": desc[:180] + ("..." if len(desc) > 180 else "")
+            })
+
     # 2. Tier-1 Media Features (45 records)
     with open(os.path.join(DATA_DIR, "media_features.json"), "r", encoding="utf-8") as f:
         media = json.load(f)
@@ -82,7 +116,7 @@ def build_index():
             "description": summary[:180] + ("..." if len(summary) > 180 else "")
         })
 
-    # 3. Speaking & Keynotes (33 records: 12 speaking + 21 judging)
+    # 3. Speaking & Keynotes (12 speaking + 24 judging = 36 records)
     with open(os.path.join(DATA_DIR, "speaking_engagements.json"), "r", encoding="utf-8") as f:
         speaking = json.load(f)
     for s in speaking:
@@ -137,7 +171,7 @@ def build_index():
             "description": desc[:180] + ("..." if len(desc) > 180 else "")
         })
 
-    # 4. Awards & Honors (26 records)
+    # 4. Awards & Honors (27 records)
     with open(os.path.join(DATA_DIR, "awards_and_honors.json"), "r", encoding="utf-8") as f:
         awards = json.load(f)
     for a in awards:
@@ -147,7 +181,8 @@ def build_index():
         tier = a.get("tier", "International Honoree").strip()
         desc = a.get("description", "").strip()
         links = a.get("links", [])
-        url = links[0].get("url") if links and isinstance(links, list) and isinstance(links[0], dict) else "page-awards"
+        first_link = links[0].get("url") if links and isinstance(links, list) and isinstance(links[0], dict) else ""
+        url = (a.get("primary_url") or first_link or "page-awards").strip()
 
         keywords = f"{title} {org} {year} {tier} {desc}"
 
@@ -252,6 +287,107 @@ def build_index():
             "description": synopsis[:180] + ("..." if len(synopsis) > 180 else "")
         })
 
+    # 8. Blog Articles & Columns (31 records)
+    blogs_path = os.path.join(DATA_DIR, "blog_articles.json")
+    if os.path.exists(blogs_path):
+        with open(blogs_path, "r", encoding="utf-8") as f:
+            blogs = json.load(f)
+        for bl in blogs:
+            title = bl.get("title", "").strip()
+            pub = bl.get("publication", "Technical Blog").strip()
+            date_str = str(bl.get("date", "")).strip()
+            url = (bl.get("primary_url") or bl.get("url") or "page-blog").strip()
+            desc = (bl.get("summary") or bl.get("description") or "").strip()
+            tags_str = " ".join(bl.get("tags", [])) if isinstance(bl.get("tags"), list) else str(bl.get("tags", ""))
+            index.append({
+                "id": bl.get("id", f"blog-{len(index)+1}"),
+                "category": "Blog & Articles",
+                "category_pill": "blogs",
+                "title": title,
+                "subtitle": f"{pub} · {date_str}" if date_str else pub,
+                "badge": pub,
+                "badge_class": "badge-info",
+                "icon": "mdi-post-outline",
+                "keywords": f"{title} {pub} {date_str} {tags_str} {desc} blog article column",
+                "url": url,
+                "external": url.startswith("http"),
+                "description": desc[:180] + ("..." if len(desc) > 180 else "")
+            })
+
+    # 9. Projects & Certifications (13 projects + 24 certifications)
+    pc_path = os.path.join(DATA_DIR, "projects_certification.json")
+    if os.path.exists(pc_path):
+        with open(pc_path, "r", encoding="utf-8") as f:
+            pc_data = json.load(f)
+        for pr in pc_data.get("projects", []):
+            title = pr.get("title", "").strip()
+            role = pr.get("role", "Enterprise Project").strip()
+            status = pr.get("status", "Project").strip()
+            tags = " ".join(pr.get("tags", [])) if isinstance(pr.get("tags"), list) else ""
+            url = (pr.get("primary_url") or "page-portfolio").strip()
+            desc = (pr.get("description") or "").strip()
+            index.append({
+                "id": pr.get("id", f"proj-{len(index)+1}"),
+                "category": "Projects & Certifications",
+                "category_pill": "portfolio",
+                "title": title,
+                "subtitle": f"{role} · {status}",
+                "badge": "Featured Project",
+                "badge_class": "badge-primary",
+                "icon": "mdi-cube-outline",
+                "keywords": f"{title} {role} {status} {tags} {desc} project portfolio architecture",
+                "url": url,
+                "external": url.startswith("http"),
+                "description": desc[:180] + ("..." if len(desc) > 180 else "")
+            })
+        for cert in pc_data.get("certifications", []):
+            title = cert.get("title", "").strip()
+            issuer = cert.get("issuer", "Verified Credential").strip()
+            date_str = str(cert.get("issued", "") or cert.get("date", "")).strip()
+            cred_id = cert.get("credential_id", "").strip()
+            url = (cert.get("primary_url") or cert.get("verify_url") or "page-portfolio#certifications").strip()
+            desc = (cert.get("description") or f"Verified certification issued by {issuer}.").strip()
+            index.append({
+                "id": cert.get("id", f"cert-{len(index)+1}"),
+                "category": "Projects & Certifications",
+                "category_pill": "portfolio",
+                "title": title,
+                "subtitle": f"{issuer}" + (f" · {date_str}" if date_str else ""),
+                "badge": "Verified Certification",
+                "badge_class": "badge-success",
+                "icon": "mdi-certificate-outline",
+                "keywords": f"{title} {issuer} {date_str} {cred_id} {desc} certification credential",
+                "url": url,
+                "external": url.startswith("http"),
+                "description": desc[:180] + ("..." if len(desc) > 180 else "")
+            })
+
+    # 10. Smart Slides & Decks (10 interactive decks)
+    slides_path = os.path.join(DATA_DIR, "slides.json")
+    if os.path.exists(slides_path):
+        with open(slides_path, "r", encoding="utf-8") as f:
+            slides_data = json.load(f)
+        for deck in slides_data.get("decks", []):
+            title = deck.get("title", "").strip()
+            deck_id = deck.get("id", "").strip()
+            count = deck.get("count", 0)
+            url = (deck.get("portfolioUrl") or deck.get("primary_url") or "page-smart-slides").strip()
+            desc = (deck.get("description") or deck.get("subtitle") or "").strip()
+            index.append({
+                "id": f"slide-{deck_id or len(index)+1}",
+                "category": "Smart Slides & Decks",
+                "category_pill": "slides",
+                "title": title,
+                "subtitle": f"EasyChair Smart Slide Ref. {deck_id} · {count} Slides",
+                "badge": f"{count} Slides",
+                "badge_class": "badge-warning text-dark",
+                "icon": "mdi-presentation-play",
+                "keywords": f"{title} {deck.get('subtitle', '')} {deck_id} {' '.join(deck.get('tags', []))} {desc} smart slides deck presentation",
+                "url": url,
+                "external": url.startswith("http"),
+                "description": desc[:180] + ("..." if len(desc) > 180 else "")
+            })
+
     # Verify no empty titles or fields
     missing_titles = [r for r in index if not r.get("title")]
     if missing_titles:
@@ -263,7 +399,7 @@ def build_index():
         json.dump(index, f, indent=2, ensure_ascii=False)
 
     print(f"Total Omnisearch Records Indexed: {len(index)}")
-    for cat in ["publications", "media", "keynotes", "awards", "profiles", "memberships", "books"]:
+    for cat in ["publications", "media", "keynotes", "awards", "profiles", "memberships", "books", "blogs", "portfolio", "slides"]:
         count = sum(1 for item in index if item["category_pill"] == cat)
         print(f" - {cat}: {count} records")
 

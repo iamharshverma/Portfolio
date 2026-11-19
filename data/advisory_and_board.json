@@ -1,0 +1,370 @@
+{
+  "section": "Board & Strategic Advisory",
+  "author": "Harsh Verma, FBCS, SMIEEE, FRSA",
+  "page_url": "https://www.harshverma.me/page-advisory",
+  "alternate_urls": [
+    "https://www.harshverma.me/advisory",
+    "https://www.harshverma.me/board"
+  ],
+  "board_biography_pdf": "files/Harsh_Verma_Board_Biography.pdf",
+  "board_biography_pdf_url": "https://www.harshverma.me/files/Harsh_Verma_Board_Biography.pdf",
+  "ecosystem_stats": {
+    "startups_and_ventures_evaluated": "120+",
+    "accelerators_and_judging_panels": "24+",
+    "total_keynotes_panels_and_judging": "46+",
+    "enterprise_ai_capital_impacted": "$50M+",
+    "technical_fellowship_tier": "Top 8%",
+    "peer_reviewed_papers": 27,
+    "patents": 6,
+    "media_features": "45+",
+    "global_awards": 27
+  },
+  "governance_flywheel_pillars": [
+    {
+      "title": "Defensible Architecture",
+      "highlights": [
+        "Proprietary streaming data pipelines",
+        "Non-wrapper custom evaluation benchmarks",
+        "Elimination of fragile API dependencies"
+      ]
+    },
+    {
+      "title": "Zero-Trust Agent Security",
+      "highlights": [
+        "Continuous behavioral authorization",
+        "Ephemeral MCP tool sandboxing",
+        "Protection against prompt injection"
+      ]
+    },
+    {
+      "title": "AI Governance & Safety",
+      "highlights": [
+        "EU AI Act & NIST AI RMF compliance",
+        "Continuous regression evaluation harnesses",
+        "SEC & audit committee disclosure readiness"
+      ]
+    },
+    {
+      "title": "Unit Economics & Scale",
+      "highlights": [
+        "Multi-cloud tiered inference routing",
+        "40%+ reduction in token burn rate",
+        "Institutional venture syndicate readiness",
+        "AI Investment Capital Allocation",
+        "Token & Compute Unit Economics",
+        "Multi-Cloud Inference Routing",
+        "Continuous Behavioral Authorization",
+        "Ephemeral Agent Sandboxing",
+        "Attack Surface Perimeterization",
+        "Autonomous Escalation Guardrails",
+        "Automated Red-Teaming Harness",
+        "EU AI Act & SEC Readiness",
+        "Data Moat & IP Differentiation Audits",
+        "Scalability & Technical Debt Review",
+        "Engineering Team Execution Velocity",
+        "Architecture Sprint Advisory",
+        "Technical Founder Mentorship",
+        "Executive Engineering Recruitment",
+        "Multi-Agent Orchestration Patterns",
+        "Long-Context Memory Stores",
+        "Human-in-the-Loop Safeguards"
+      ]
+    }
+  ],
+  "core_expertise_pillars": [
+    {
+      "title": "AI Strategy & Transformation",
+      "tagline": "Capital Discipline & Adoption Roadmaps",
+      "summary": "Enterprise AI adoption roadmaps, technology investment decisions, token unit economics, and phased integration cascades.",
+      "highlights": [
+        "AI Investment Capital Allocation",
+        "Token & Compute Unit Economics",
+        "Multi-Cloud Inference Routing"
+      ]
+    },
+    {
+      "title": "Cybersecurity & Enterprise Risk",
+      "tagline": "Zero-Trust Defense in Autonomous Era",
+      "summary": "Securing autonomous multi-agent environments against prompt injections, privilege escalation, and unvetted MCP tool risks.",
+      "highlights": [
+        "Continuous Behavioral Authorization",
+        "Ephemeral Agent Sandboxing",
+        "Attack Surface Perimeterization"
+      ]
+    },
+    {
+      "title": "AI Governance & Accountability",
+      "tagline": "Safety, Audits & Fiduciary Oversight",
+      "summary": "Institutional governance frameworks, algorithmic transparency, automated regression evaluations, and EU AI Act alignment.",
+      "highlights": [
+        "Autonomous Escalation Guardrails",
+        "Automated Red-Teaming Harness",
+        "EU AI Act & SEC Readiness"
+      ]
+    },
+    {
+      "title": "Venture & Technical Diligence",
+      "tagline": "Separating Moats from Wrapper Traps",
+      "summary": "Evaluating proprietary data flywheels, software architecture, defensibility, switching costs, and security maturity for investors.",
+      "highlights": [
+        "Data Moat & IP Differentiation Audits",
+        "Scalability & Technical Debt Review",
+        "Engineering Team Execution Velocity"
+      ]
+    },
+    {
+      "title": "Startup Growth & Tech Leadership",
+      "tagline": "Prototype to Sovereign Enterprise Scale",
+      "summary": "Mentoring technical founders on organizational scaling, hiring engineering leaders, and structuring high-velocity engineering cultures.",
+      "highlights": [
+        "Architecture Sprint Advisory",
+        "Technical Founder Mentorship",
+        "Executive Engineering Recruitment"
+      ]
+    },
+    {
+      "title": "Agentic AI & Emerging Tech",
+      "tagline": "Multi-Agent Systems & Automation",
+      "summary": "Multi-agent deliberation networks, stateful coordination loops, memory architectures, tool-calling safety, and distributed pipelines.",
+      "highlights": [
+        "Multi-Agent Orchestration Patterns",
+        "Long-Context Memory Stores",
+        "Human-in-the-Loop Safeguards"
+      ]
+    }
+  ],
+  "advisory_engagement_models": [
+    {
+      "model": "Startup Board",
+      "tagline": "Fractional Technical & Board Advisory",
+      "summary": "Direct technical sounding board for high-growth venture founders building frontier autonomous AI and security infrastructure.",
+      "specifications": [
+        {
+          "label": "Cadence",
+          "value": "Monthly Sparring + Qtrly Board"
+        },
+        {
+          "label": "Terms",
+          "value": "FAST Equity (0.25%–1.0%)"
+        },
+        {
+          "label": "Stakeholders",
+          "value": "Founders, CEO & Syndicate VCs"
+        }
+      ]
+    },
+    {
+      "model": "Tech Advisory",
+      "tagline": "C-Suite Strategic Technology Roadmap",
+      "summary": "External strategic technology council guiding executive teams on enterprise AI adoption, multi-cloud inference economics, and sovereign roadmaps.",
+      "specifications": [
+        {
+          "label": "Cadence",
+          "value": "Qtrly Briefings + On-Call"
+        },
+        {
+          "label": "Terms",
+          "value": "Annual Retainer / Advisory Seat"
+        },
+        {
+          "label": "Stakeholders",
+          "value": "CTO, CIO & Chief Architect"
+        }
+      ]
+    },
+    {
+      "model": "Governance Committee",
+      "tagline": "Fiduciary Risk & Compliance Oversight",
+      "summary": "Fiduciary boardroom oversight on mission-critical AI deployments, regulatory compliance (EU AI Act & NIST AI RMF), and automated risk evaluation.",
+      "specifications": [
+        {
+          "label": "Cadence",
+          "value": "Quarterly Board + Annual Audit"
+        },
+        {
+          "label": "Terms",
+          "value": "Board Committee Retainer / Equity"
+        },
+        {
+          "label": "Stakeholders",
+          "value": "Board, Audit Comm., General Counsel"
+        }
+      ]
+    }
+  ],
+  "onboarding_roadmap_30_60_90": [
+    {
+      "phase": "Days 1–30",
+      "title": "Diagnostic & Moat Triage",
+      "description": "In-depth technical debt audit, data moat defensibility, and security triage."
+    },
+    {
+      "phase": "Days 31–60",
+      "title": "Governance Baseline",
+      "description": "Deploy automated evaluation harnesses, risk thresholds, and EU AI Act telemetry."
+    },
+    {
+      "phase": "Days 61–90",
+      "title": "High-Conviction Cadence",
+      "description": "Quarterly boardroom technology steering, executive vetting, and cloud contract triage."
+    },
+    {
+      "phase": "Day 90+ & Ongoing",
+      "title": "Fiduciary Scale & Diligence",
+      "description": "Annual risk audit, investor syndicate diligence readiness, and sovereign scale."
+    }
+  ],
+  "case_studies": [
+    {
+      "title": "Escaping the LLM Wrapper Trap",
+      "challenge": "Venture risked commoditization and margin collapse due to reliance on basic foundation model prompt wraps.",
+      "advisory_contribution": "Re-architected core IP around real-time streaming data ingestion, custom evaluation benchmarks, and specialized agent routing.",
+      "strategic_outcome": "65% reduction in third-party vendor dependency and successfully closed institutional Series A round.",
+      "summary": "Venture risked commoditization and margin collapse due to reliance on basic foundation model prompt wraps. Re-architected core IP around real-time streaming data ingestion, custom evaluation benchmarks, and specialized agent routing. 65% reduction in third-party vendor dependency and successfully closed institutional Series A round.",
+      "badges": []
+    },
+    {
+      "title": "Securing Autonomous Agent Actions",
+      "challenge": "Autonomous multi-agent system was executing privileged tool calls with broad, unisolated database write privileges.",
+      "advisory_contribution": "Introduced Zero-Trust behavioral authorization and ephemeral execution sandboxes for external MCP tools.",
+      "strategic_outcome": "Cleared enterprise SOC2 Type II audit without high-severity findings, unlocking Fortune 500 financial contracts.",
+      "summary": "Autonomous multi-agent system was executing privileged tool calls with broad, unisolated database write privileges. Introduced Zero-Trust behavioral authorization and ephemeral execution sandboxes for external MCP tools. Cleared enterprise SOC2 Type II audit without high-severity findings, unlocking Fortune 500 financial contracts.",
+      "badges": []
+    },
+    {
+      "title": "Inference Unit Economics",
+      "challenge": "Rapid product growth caused cloud inference token burn to erode gross margins from 72% down to 34% within two quarters.",
+      "advisory_contribution": "Structured tiered model routing (small-model task routing + frontier escalation) and semantic embedding caching.",
+      "strategic_outcome": "Reduced annual token spend by 48% , improved p95 response latency by 3x, and restored margins above 70%.",
+      "summary": "Rapid product growth caused cloud inference token burn to erode gross margins from 72% down to 34% within two quarters. Structured tiered model routing (small-model task routing + frontier escalation) and semantic embedding caching. Reduced annual token spend by 48% , improved p95 response latency by 3x, and restored margins above 70%.",
+      "badges": []
+    }
+  ],
+  "ecosystem_organizations": [
+    {
+      "organization": "UC Berkeley SkyDeck",
+      "category": "venture",
+      "role": "",
+      "description": "Advising high-growth startup cohorts on deterministic autonomous architectures, reducing inference unit economics, and navigating venture capital milestones."
+    },
+    {
+      "organization": "Techstars Global Network",
+      "category": "venture",
+      "role": "",
+      "description": "Architectural sounding board and technical diligence for early-stage founders building AI, distributed systems, and cybersecurity applications."
+    },
+    {
+      "organization": "Forbes Tech Council",
+      "category": "fellowship",
+      "role": "",
+      "description": "Invitation-only executive council for world-class technology executives. Contributing research and dispatches on autonomous multi-agent systems and enterprise security."
+    },
+    {
+      "organization": "BCS Fellow (FBCS)",
+      "category": "fellowship",
+      "role": "",
+      "description": "Awarded highest professional membership grade by the Chartered Institute for IT, recognizing senior executive leadership, ethical computing stewardship, and authoritative impact."
+    },
+    {
+      "organization": "IEEE Senior Member",
+      "category": "fellowship",
+      "role": "",
+      "description": "Conferred to less than 8% of IEEE members worldwide based on significant performance, peer scholarship reviews, and technical innovation in autonomous systems and security."
+    },
+    {
+      "organization": "Palo Alto Networks",
+      "category": "enterprise",
+      "role": "",
+      "description": "Architecting mission-critical, enterprise-grade AI security products, zero-trust perimeter defense, and distributed agentic evaluation pipelines protecting global enterprises."
+    }
+  ],
+  "board_mandates": [
+    {
+      "title": "Startup Advisory Boards",
+      "description": "Hands-on technical advisory for founders building AI and security ventures. Quarterly board reviews, architectural sounding board, and syndicate access."
+    },
+    {
+      "title": "Technology Advisory Councils",
+      "description": "External advisory councils guiding CTOs, CIOs, and executive teams on AI roadmap prioritization, multi-cloud strategy, and risk de-risking."
+    },
+    {
+      "title": "AI Governance Committees",
+      "description": "Fiduciary advisory on responsible AI deployments, compliance with global regulations (EU AI Act, NIST), and algorithmic audit trails."
+    },
+    {
+      "title": "Cybersecurity Advisory Roles",
+      "description": "Strategic cyber risk oversight, zero-trust transformation counsel, third-party vendor risk assessment, and incident response governance."
+    },
+    {
+      "title": "VC / PE Technical Due Diligence",
+      "description": "Technical due diligence for pre-investment deal evaluation, portfolio architectural health checks, and technology moat validation."
+    },
+    {
+      "title": "Independent Director Opportunities",
+      "description": "Independent director service bringing technical engineering acumen, cybersecurity fluency, and AI governance depth to corporate boards."
+    }
+  ],
+  "primary_url": "https://www.harshverma.me/page-advisory",
+  "links": [
+    {
+      "label": "Board & Strategic Advisory Hub",
+      "url": "https://www.harshverma.me/page-advisory"
+    },
+    {
+      "label": "Board Executive Biography View",
+      "url": "https://www.harshverma.me/board"
+    },
+    {
+      "label": "Executive Board Biography (PDF)",
+      "url": "https://www.harshverma.me/files/Harsh_Verma_Board_Biography.pdf"
+    },
+    {
+      "label": "UC Berkeley SkyDeck Advisors",
+      "url": "https://skydeck.berkeley.edu/advisors/"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/harshverma59/"
+    },
+    {
+      "label": "Wikidata Q139827028",
+      "url": "https://www.wikidata.org/wiki/Q139827028"
+    },
+    {
+      "label": "Google Knowledge Graph",
+      "url": "https://www.google.com/search?kgmid=/g/11njtn74r4"
+    },
+    {
+      "label": "EverybodyWiki Biography",
+      "url": "https://en.everybodywiki.com/Harsh_Verma_(Software_Engineer)"
+    },
+    {
+      "label": "ORCID",
+      "url": "https://orcid.org/0000-0003-2134-2600"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?hl=en&user=zSt9oRMAAAAJ"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/iamharshverma"
+    },
+    {
+      "label": "Medium",
+      "url": "https://medium.com/@harshverma59"
+    },
+    {
+      "label": "Twitter / X",
+      "url": "https://twitter.com/harshverma59"
+    },
+    {
+      "label": "Mastodon",
+      "url": "https://mastodon.social/@harshverma59"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/aiwithharsh/"
+    }
+  ]
+}
