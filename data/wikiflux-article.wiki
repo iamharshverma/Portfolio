@@ -234,7 +234,7 @@ In addition to his engineering leadership, Verma serves as an official contribut
 * [https://www.einnews.com/pr_news/950989244/ai-agent-security-and-virtual-cell-ai-lead-ai-insiders-sf-tech-week-nights "AI Agent Security and Virtual Cell AI Lead AI Insiders' SF Tech Week Nights"] – ''EIN Presswire Wire'' (October 2026)
 * [https://influencermagazine.uk/2026/11/harsh-verma-the-future-of-ai-is-not-justt-about-making-machines-more-intelligent-it-is-about-making-intelligent-machines-worthy-of-our-trust/ "Influencer Magazine UK: Harsh Verma — The Future of AI Is About Making Intelligent Machines Worthy of Our Trust"] – ''Influencer Magazine UK'' (November 2026)
 
-== Verified Authority Profiles & External Links (59 Registries) ==
+== Verified Authority Profiles & External Links (57 Registries) ==
 * [https://www.harshverma.me/ Official Portfolio Website (www.harshverma.me)]
 * [https://www.harshverma.me/page-identity Official Google Knowledge Graph & Entity Verification Hub]
 * [https://councils.forbes.com/profile/Harsh-Verma-Principal-Software-Engineer-AI-Palo-Alto-Networks/2a1e2c7a-5541-4c49-acee-0ec37da532a5 Forbes Technology Council] (Executive & Tech Councils – <code>Official Council Member</code>)
@@ -292,8 +292,6 @@ In addition to his engineering leadership, Verma serves as an official contribut
 * [https://mastodon.social/@harshverma59 Mastodon Social] (Direct Connect & Networks – <code>@harshverma59</code>)
 * [https://loop.frontiersin.org/people/3757183/overview Frontiers in Education Editorial] (Research & Citations – <code>Review Editor</code>)
 * [https://app.usefoam.com/shared/media-kits/0d3617d7 Foam Speaker & Media Kit] (Media Features & Press – <code>Verified Media Kit</code>)
-* [https://champions-speakers.co.uk/speaker-agent/harsh-verma Champions Speakers] (Media Features & Press – <code>Verified Speaker Profile</code>)
-* [https://www.allamericanspeakers.com/speakers/470303/Harsh-Verma All American Speakers] (Media Features & Press – <code>Roster ID: 470303</code>)
 * [https://maven.com/harshverma Maven Instructor Profile] (Developer & AI Hubs – <code>AI Instructor</code>)
 * [https://bsky.app/profile/harshverma59.bsky.social Bluesky Social] (Direct Connect & Networks – <code>@harshverma59.bsky.social</code>)
 

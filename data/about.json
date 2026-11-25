@@ -16,7 +16,7 @@
     "location": "Silicon Valley, California, United States",
     "official_website": "https://www.harshverma.me",
     "email_contact": "contact@harshverma.me",
-    "short_bio": "Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, an elected Fellow of the British Computer Society (FBCS), Senior Member of IEEE (SMIEEE), and Forbes Technology Council member. With 27 peer-reviewed papers, 7 patents, 2 authored books, and 27 global awards, he pioneers autonomous agent architectures and enterprise AI cyber defense."
+    "short_bio": "Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, an elected Fellow of the British Computer Society (FBCS), Senior Member of IEEE (SMIEEE), and Forbes Technology Council member. With 27 peer-reviewed papers, 6 patents, 2 authored books, and 27 global awards, he pioneers autonomous agent architectures and enterprise AI cyber defense."
   },
   "authority_identifiers": {
     "wikidata_id": "Q139827028",
@@ -138,7 +138,7 @@
     ]
   },
   "executive_biographies": {
-    "comprehensive_bio": "Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, focused on advancing autonomous agent systems, multi-agent reasoning topologies, and intelligent AI defense strategies. As an elected Fellow of the British Computer Society (FBCS), Senior Member of the IEEE (SMIEEE), Fellow of the Royal Society of Arts (FRSA), and official Forbes Technology Council member, he brings deep technical rigor and strategic guidance to enterprise leaders adopting next-generation AI capabilities. Harsh leads the operationalization of responsible, deterministic AI systems across Fortune 500 environments, architecting high-scale telemetry ingestion platforms, intelligent multi-agent guardrails, and real-time copilot navigation engines. Over his decade-long career spanning ISRO, Hike Messenger, Reliance Jio, Worlds, and Hypergiant, he has published 27+ peer-reviewed papers across IEEE, Springer, and Oxford University Press venues, authored 2 landmark books on autonomous agents and AI cyber defense, and developed an intellectual property portfolio of 7 patents (2 granted, 5 filed-pending at Palo Alto Networks).",
+    "comprehensive_bio": "Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, focused on advancing autonomous agent systems, multi-agent reasoning topologies, and intelligent AI defense strategies. As an elected Fellow of the British Computer Society (FBCS), Senior Member of the IEEE (SMIEEE), Fellow of the Royal Society of Arts (FRSA), and official Forbes Technology Council member, he brings deep technical rigor and strategic guidance to enterprise leaders adopting next-generation AI capabilities. Harsh leads the operationalization of responsible, deterministic AI systems across Fortune 500 environments, architecting high-scale telemetry ingestion platforms, intelligent multi-agent guardrails, and real-time copilot navigation engines. Over his decade-long career spanning ISRO, Hike Messenger, Reliance Jio, Worlds, and Hypergiant, he has published 27+ peer-reviewed papers across IEEE, Springer, and Oxford University Press venues, authored 2 landmark books on autonomous agents and AI cyber defense, and developed an intellectual property portfolio of 6 patents (2 granted, 4 pending at Palo Alto Networks).",
     "speaking_and_event_bio": "Harsh Verma is a Silicon Valley AI systems architect, author, and keynote speaker serving as Principal AI Engineer at Palo Alto Networks. Recognized globally as an IEEE Senior Member, BCS Fellow, and Forbes Technology Council columnist, Harsh speaks internationally on autonomous multi-agent systems, machine-speed cybersecurity counteroffensives, and the evolution from AI creator to AI curator. His work has reached over 3.75 billion people worldwide through tier-1 media features, Times Square broadcasts, and leading technical conferences.",
     "board_and_governance_bio": "Harsh Verma advises corporate boards, sovereign entities, and high-growth venture ecosystems on artificial intelligence governance, algorithmic risk mitigation, and enterprise technical transformation. A global advisor at UC Berkeley SkyDeck, Stanford GSB LEAD alumnus, and MS Computer Science graduate from UT Dallas, Harsh combines deep architectural fluency in distributed cloud infrastructure with proven governance frameworks for mission-critical, highly regulated deployments."
   },
@@ -286,7 +286,7 @@
       "organization": "Palo Alto Networks",
       "role": "Principal Software Engineer (AI | ML)",
       "location": "Santa Clara, California, USA",
-      "description": "Spearheading flagship enterprise AI security architectures protecting Global 2000 organizations. Architecting autonomous agentic AI perimeters, enterprise copilot reasoning loops, copilot navigation architectures (5 patents filed-pending), and real-time firewall machine learning engines.",
+      "description": "Spearheading flagship enterprise AI security architectures protecting Global 2000 organizations. Architecting autonomous agentic AI perimeters, enterprise copilot reasoning loops, copilot navigation architectures (4 patents in-process), and real-time firewall machine learning engines.",
       "technologies": [
         "Autonomous Agent Systems",
         "Copilot Navigation",
@@ -295,7 +295,7 @@
         "GCP Cloud Infrastructure",
         "Zero-Trust Guardrails"
       ],
-      "highlight": "Invented 5 proprietary filed-pending Copilot Navigation and Agentic AI architectures."
+      "highlight": "Invented 4 proprietary patent-pending Copilot Navigation and Agentic AI architectures."
     }
   ],
   "education_and_executive_credentials": [
@@ -316,13 +316,12 @@
   ],
   "verified_metrics": {
     "peer_reviewed_publications": 27,
-    "patents_total": 7,
+    "patents_total": 6,
     "patents_granted": 2,
-    "patents_in_process": 5,
-    "patents_filed_pending": 5,
+    "patents_in_process": 4,
     "prestigious_awards_and_honors": 27,
     "tier1_media_features": 45,
-    "verified_directory_profiles": 59,
+    "verified_directory_profiles": 57,
     "fellowships_and_councils": 28,
     "global_audience_reach": "3.75B+",
     "keynote_addresses_delivered": 12,

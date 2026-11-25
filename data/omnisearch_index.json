@@ -410,11 +410,11 @@
     "category": "Publications & Patents",
     "category_pill": "publications",
     "title": "Autonomous Agentic AI Security & Orchestration Architecture",
-    "subtitle": "Filed-Pending · Patent No: Filed-Pending (PANW-1 of 5) · App: Undisclosed (Enterprise Review) · Palo Alto Networks",
-    "badge": "Filed-Pending Patent",
+    "subtitle": "In Process / Pending · Patent No: In Process (PANW-1 of 4) · App: Undisclosed (Enterprise Review) · Palo Alto Networks",
+    "badge": "In-Process Patent",
     "badge_class": "badge-warning text-dark",
     "icon": "mdi-certificate",
-    "keywords": "Autonomous Agentic AI Security & Orchestration Architecture Filed-Pending (PANW-1 of 5) Undisclosed (Enterprise Review) Palo Alto Networks Filed-Pending Filed-Pending Proprietary enterprise intellectual property in autonomous agentic AI reasoning guardrails and multi-agent cybersecurity workflows at Palo Alto Networks. patent intellectual property",
+    "keywords": "Autonomous Agentic AI Security & Orchestration Architecture In Process (PANW-1 of 4) Undisclosed (Enterprise Review) Palo Alto Networks In Process / Pending In Process Proprietary enterprise intellectual property in autonomous agentic AI reasoning guardrails and multi-agent cybersecurity workflows at Palo Alto Networks. patent intellectual property",
     "url": "https://www.paloaltonetworks.com/",
     "external": true,
     "description": "Proprietary enterprise intellectual property in autonomous agentic AI reasoning guardrails and multi-agent cybersecurity workflows at Palo Alto Networks."
@@ -424,11 +424,11 @@
     "category": "Publications & Patents",
     "category_pill": "publications",
     "title": "Enterprise Copilot Navigation & Guided Workflow Engine",
-    "subtitle": "Filed-Pending · Patent No: Filed-Pending (PANW-2 of 5) · App: Undisclosed (Enterprise Review) · Palo Alto Networks",
-    "badge": "Filed-Pending Patent",
+    "subtitle": "In Process / Pending · Patent No: In Process (PANW-2 of 4) · App: Undisclosed (Enterprise Review) · Palo Alto Networks",
+    "badge": "In-Process Patent",
     "badge_class": "badge-warning text-dark",
     "icon": "mdi-certificate",
-    "keywords": "Enterprise Copilot Navigation & Guided Workflow Engine Filed-Pending (PANW-2 of 5) Undisclosed (Enterprise Review) Palo Alto Networks Filed-Pending Filed-Pending Proprietary copilot navigation and contextual UI/API orchestration mechanisms engineered for mission-critical enterprise security consoles. patent intellectual property",
+    "keywords": "Enterprise Copilot Navigation & Guided Workflow Engine In Process (PANW-2 of 4) Undisclosed (Enterprise Review) Palo Alto Networks In Process / Pending In Process Proprietary copilot navigation and contextual UI/API orchestration mechanisms engineered for mission-critical enterprise security consoles. patent intellectual property",
     "url": "https://www.paloaltonetworks.com/",
     "external": true,
     "description": "Proprietary copilot navigation and contextual UI/API orchestration mechanisms engineered for mission-critical enterprise security consoles."
@@ -438,11 +438,11 @@
     "category": "Publications & Patents",
     "category_pill": "publications",
     "title": "Intent-Based Agent Telemetry & Runtime Threat Containment",
-    "subtitle": "Filed-Pending · Patent No: Filed-Pending (PANW-3 of 5) · App: Undisclosed (Enterprise Review) · Palo Alto Networks",
-    "badge": "Filed-Pending Patent",
+    "subtitle": "In Process / Pending · Patent No: In Process (PANW-3 of 4) · App: Undisclosed (Enterprise Review) · Palo Alto Networks",
+    "badge": "In-Process Patent",
     "badge_class": "badge-warning text-dark",
     "icon": "mdi-certificate",
-    "keywords": "Intent-Based Agent Telemetry & Runtime Threat Containment Filed-Pending (PANW-3 of 5) Undisclosed (Enterprise Review) Palo Alto Networks Filed-Pending Filed-Pending Behavioral intent verification and real-time runtime anomaly containment for autonomous multi-agent enterprise AI deployments. patent intellectual property",
+    "keywords": "Intent-Based Agent Telemetry & Runtime Threat Containment In Process (PANW-3 of 4) Undisclosed (Enterprise Review) Palo Alto Networks In Process / Pending In Process Behavioral intent verification and real-time runtime anomaly containment for autonomous multi-agent enterprise AI deployments. patent intellectual property",
     "url": "https://www.paloaltonetworks.com/",
     "external": true,
     "description": "Behavioral intent verification and real-time runtime anomaly containment for autonomous multi-agent enterprise AI deployments."
@@ -452,28 +452,14 @@
     "category": "Publications & Patents",
     "category_pill": "publications",
     "title": "Distributed Real-Time Copilot State Synchronization & Guardrail Enforcement",
-    "subtitle": "Filed-Pending · Patent No: Filed-Pending (PANW-4 of 5) · App: Undisclosed (Enterprise Review) · Palo Alto Networks",
-    "badge": "Filed-Pending Patent",
+    "subtitle": "In Process / Pending · Patent No: In Process (PANW-4 of 4) · App: Undisclosed (Enterprise Review) · Palo Alto Networks",
+    "badge": "In-Process Patent",
     "badge_class": "badge-warning text-dark",
     "icon": "mdi-certificate",
-    "keywords": "Distributed Real-Time Copilot State Synchronization & Guardrail Enforcement Filed-Pending (PANW-4 of 5) Undisclosed (Enterprise Review) Palo Alto Networks Filed-Pending Filed-Pending Low-latency distributed policy enforcement and verifiable audit pipelines for enterprise AI copilot platforms. patent intellectual property",
+    "keywords": "Distributed Real-Time Copilot State Synchronization & Guardrail Enforcement In Process (PANW-4 of 4) Undisclosed (Enterprise Review) Palo Alto Networks In Process / Pending In Process Low-latency distributed policy enforcement and verifiable audit pipelines for enterprise AI copilot platforms. patent intellectual property",
     "url": "https://www.paloaltonetworks.com/",
     "external": true,
     "description": "Low-latency distributed policy enforcement and verifiable audit pipelines for enterprise AI copilot platforms."
-  },
-  {
-    "id": "patent-panw-5",
-    "category": "Publications & Patents",
-    "category_pill": "publications",
-    "title": "Zero-Trust Multi-Agent Execution Verification & Contextual Policy Synthesis",
-    "subtitle": "Filed-Pending · Patent No: Filed-Pending (PANW-5 of 5) · App: Undisclosed (Enterprise Review) · Palo Alto Networks",
-    "badge": "Filed-Pending Patent",
-    "badge_class": "badge-warning text-dark",
-    "icon": "mdi-certificate",
-    "keywords": "Zero-Trust Multi-Agent Execution Verification & Contextual Policy Synthesis Filed-Pending (PANW-5 of 5) Undisclosed (Enterprise Review) Palo Alto Networks Filed-Pending Filed-Pending Deterministic zero-trust verification and adaptive contextual policy synthesis for enterprise multi-agent security operations at Palo Alto Networks. patent intellectual property",
-    "url": "https://www.paloaltonetworks.com/",
-    "external": true,
-    "description": "Deterministic zero-trust verification and adaptive contextual policy synthesis for enterprise multi-agent security operations at Palo Alto Networks."
   },
   {
     "id": "media-lifepage-interview",
@@ -1277,12 +1263,12 @@
     "id": "judge-ieee-sac-awards-2026",
     "category": "Speaking & Keynotes",
     "category_pill": "keynotes",
-    "title": "IEEE SAC Awards 2026 Judging — Official Judge",
+    "title": "IEEE SAC Awards 2026 Judging &mdash; Official Judge",
     "subtitle": "IEEE Global Awards Judging",
     "badge": "Jury & Judging",
     "badge_class": "badge-secondary",
     "icon": "mdi-gavel",
-    "keywords": "IEEE SAC Awards 2026 Judging — Official Judge IEEE Global Awards Judging   Serving as an official judge for the IEEE Student Activities Committee (SAC) Awards 2026 program, evaluating global student leadership, technical innovation branches, exemplary chapter excellence, and engineering community impact worldwide.",
+    "keywords": "IEEE SAC Awards 2026 Judging &mdash; Official Judge IEEE Global Awards Judging   Serving as an official judge for the IEEE Student Activities Committee (SAC) Awards 2026 program, evaluating global student leadership, technical innovation branches, exemplary chapter excellence, and engineering community impact worldwide.",
     "url": "https://students.ieee.org/student-opportunities/sac-awards-programs/",
     "external": true,
     "description": "Serving as an official judge for the IEEE Student Activities Committee (SAC) Awards 2026 program, evaluating global student leadership, technical innovation branches, exemplary cha..."
@@ -1305,12 +1291,12 @@
     "id": "judge-berkeley-citris-cdss-aic-2026",
     "category": "Speaking & Keynotes",
     "category_pill": "keynotes",
-    "title": "UC Berkeley CITRIS-CDSS Innovation Fellowship & AIC Awards Application — VCR Research",
+    "title": "UC Berkeley CITRIS-CDSS Innovation Fellowship & AIC Awards Application &mdash; VCR Research",
     "subtitle": "Fellowship & Research Selection",
     "badge": "Jury & Judging",
     "badge_class": "badge-secondary",
     "icon": "mdi-gavel",
-    "keywords": "UC Berkeley CITRIS-CDSS Innovation Fellowship & AIC Awards Application — VCR Research Fellowship & Research Selection   Appointed Judge & Selection Committee member for the UC Berkeley Vice Chancellor for Research (VCR Research) CITRIS-CDSS Innovation Fellowship and CITRIS AI Innovation Challenge (AIC) Awards applications, evaluating translational AI research, scientific rigor, and societal impact.",
+    "keywords": "UC Berkeley CITRIS-CDSS Innovation Fellowship & AIC Awards Application &mdash; VCR Research Fellowship & Research Selection   Appointed Judge & Selection Committee member for the UC Berkeley Vice Chancellor for Research (VCR Research) CITRIS-CDSS Innovation Fellowship and CITRIS AI Innovation Challenge (AIC) Awards applications, evaluating translational AI research, scientific rigor, and societal impact.",
     "url": "https://citris-uc.org/labs-programs/citris-aic-awards/",
     "external": true,
     "description": "Appointed Judge & Selection Committee member for the UC Berkeley Vice Chancellor for Research (VCR Research) CITRIS-CDSS Innovation Fellowship and CITRIS AI Innovation Challenge (A..."
@@ -2772,34 +2758,6 @@
     "description": "Official interactive speaker one-sheet and digital press kit on Foam, detailing executive bio, keynote availability, topics, and broadcast assets."
   },
   {
-    "id": "profile-champions-speakers",
-    "category": "Verified Profiles",
-    "category_pill": "profiles",
-    "title": "Champions Speakers",
-    "subtitle": "Media Features & Press · Verified Speaker Profile UK & Global Bureau",
-    "badge": "Verified Registry",
-    "badge_class": "badge-success",
-    "icon": "mdi-account-check",
-    "keywords": "Champions Speakers Media Features & Press Verified Speaker Profile UK & Global Bureau Official represented speaker roster profile at Champions Speakers UK, showcasing Harsh Verma's keynote engagements, enterprise AI expertise, and conference booking availability. champions speakers champions-speakers.co.uk speaker-agent harsh-verma uk global keynote speaker bureau enterprise ai cybersecurity media features & press",
-    "url": "https://champions-speakers.co.uk/speaker-agent/harsh-verma",
-    "external": true,
-    "description": "Official represented speaker roster profile at Champions Speakers UK, showcasing Harsh Verma's keynote engagements, enterprise AI expertise, and conference booking availability."
-  },
-  {
-    "id": "profile-all-american-speakers",
-    "category": "Verified Profiles",
-    "category_pill": "profiles",
-    "title": "All American Speakers",
-    "subtitle": "Media Features & Press · Roster ID: 470303 Keynote Bureau",
-    "badge": "Verified Registry",
-    "badge_class": "badge-success",
-    "icon": "mdi-account-check",
-    "keywords": "All American Speakers Media Features & Press Roster ID: 470303 Keynote Bureau Verified international speaker profile (#470303) on All American Speakers Bureau, connecting enterprise conferences and summits with Harsh Verma for AI & cyber defense keynotes. all american speakers bureau allamericanspeakers.com 470303 harsh verma keynote speaker booking enterprise ai cybersecurity media features & press",
-    "url": "https://www.allamericanspeakers.com/speakers/470303/Harsh-Verma",
-    "external": true,
-    "description": "Verified international speaker profile (#470303) on All American Speakers Bureau, connecting enterprise conferences and summits with Harsh Verma for AI & cyber defense keynotes."
-  },
-  {
     "id": "profile-maven-instructor-profile",
     "category": "Verified Profiles",
     "category_pill": "profiles",
@@ -2828,7 +2786,7 @@
     "description": "Official decentralized social channel on Bluesky sharing real-time perspectives on autonomous agent security, AI engineering research, and tech leadership."
   },
   {
-    "id": "membership-203",
+    "id": "membership-200",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "Forbes Technology Council",
@@ -2842,7 +2800,7 @@
     "description": "Invitation-only community for world-class CIOs, CTOs, and senior technology leaders. Contributing author publishing peer-reviewed thought leadership on Enterprise AI systems, auton..."
   },
   {
-    "id": "membership-204",
+    "id": "membership-201",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "IEEE & IEEE Computer Society",
@@ -2856,7 +2814,7 @@
     "description": "Senior Member is the highest professional grade of IEEE, achieved by fewer than 10% of IEEE's 400,000+ members worldwide. Honors significant performance, technical leadership, and ..."
   },
   {
-    "id": "membership-205",
+    "id": "membership-202",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "British Computer Society (BCS)",
@@ -2870,7 +2828,7 @@
     "description": "Elected Fellow of the British Computer Society (FBCS), the UK's Royal Chartered institute for computing. Fellowship represents the pinnacle professional grade of BCS, awarded to di..."
   },
   {
-    "id": "membership-206",
+    "id": "membership-203",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "IEEE Computational Intelligence Society & Young Professionals",
@@ -2884,7 +2842,7 @@
     "description": "Active member across specialized IEEE Technical Societies and Affinity Groups: IEEE Computational Intelligence Society (CIS011) advancing neural networks and evolutionary computati..."
   },
   {
-    "id": "membership-207",
+    "id": "membership-204",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "IEEE Xplore Digital Library & Author Center",
@@ -2898,7 +2856,7 @@
     "description": "Verified author profile indexed across the IEEE Xplore Digital Library and IEEE Author Center registry. Author of peer-reviewed research papers and technical proceedings spanning A..."
   },
   {
-    "id": "membership-208",
+    "id": "membership-205",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "Interacting with Computers (Oxford University Press & BCS)",
@@ -2912,7 +2870,7 @@
     "description": "Peer reviewer and manuscript reviewer for Interacting with Computers (IwC), the peer-reviewed Oxford University Press academic journal published on behalf of BCS, The Chartered Ins..."
   },
   {
-    "id": "membership-209",
+    "id": "membership-206",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "Raptors.Dev Elite Engineering Fellowship",
@@ -2926,7 +2884,7 @@
     "description": "Elite, invite-only fellowship recognizing top-tier software engineering leaders and AI researchers shaping next-generation software architectures, resilient cloud microservices, an..."
   },
   {
-    "id": "membership-210",
+    "id": "membership-207",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "UC Berkeley SkyDeck",
@@ -2940,7 +2898,7 @@
     "description": "Advising venture-backed startups and deep-tech founders at UC Berkeley's premier startup accelerator. Mentoring on AI product architecture, scalable enterprise systems, and technic..."
   },
   {
-    "id": "membership-211",
+    "id": "membership-208",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "Information Systems Audit and Control Association (ISACA)",
@@ -2954,7 +2912,7 @@
     "description": "Professional member, verified industry expert, and volunteer contributor at ISACA (Information Systems Audit and Control Association), the leading global authority in digital trust..."
   },
   {
-    "id": "membership-212",
+    "id": "membership-209",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "Sigma Xi (The Scientific Research Honor Society)",
@@ -2968,7 +2926,7 @@
     "description": "Elected member of one of the world's most historic research honor societies (whose historic members include over 200 Nobel laureates), recognizing demonstrated research excellence ..."
   },
   {
-    "id": "membership-213",
+    "id": "membership-210",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "Royal Society of Arts (RSA)",
@@ -2982,7 +2940,7 @@
     "description": "Awarded the fellowship distinction (FRSA) for demonstrated impact in technology innovation, ethical artificial intelligence governance, and advancing solutions for global technolog..."
   },
   {
-    "id": "membership-214",
+    "id": "membership-211",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "International Organization for Academic and Scientific Development (IOASD)",
@@ -2996,7 +2954,7 @@
     "description": "Awarded the prestigious Royal Fellowship (FRIOASD) by the International Organization for Academic and Scientific Development for distinguished contributions in Artificial Intellige..."
   },
   {
-    "id": "membership-215",
+    "id": "membership-212",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "Science Tech Xplore",
@@ -3010,7 +2968,7 @@
     "description": "Honored as an elected Fellow Member of Science Tech Xplore, recognizing distinguished research contributions, scientific innovation, and engineering leadership in advancing digital..."
   },
   {
-    "id": "membership-216",
+    "id": "membership-213",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "Forttuna Global Technical Council",
@@ -3024,7 +2982,7 @@
     "description": "Global executive council uniting industry innovators, enterprise leaders, and cybersecurity pioneers to guide cross-industry AI ethics, digital modernization, and scalable technolo..."
   },
   {
-    "id": "membership-217",
+    "id": "membership-214",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "Association for the Advancement of Artificial Intelligence (AAAI)",
@@ -3038,7 +2996,7 @@
     "description": "The premier international scientific body devoted to promoting research in artificial intelligence, neural architectures, autonomous agents, and their responsible deployment across..."
   },
   {
-    "id": "membership-218",
+    "id": "membership-215",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "American Association for the Advancement of Science (AAAS)",
@@ -3052,7 +3010,7 @@
     "description": "Supporting member of the world's largest multidisciplinary scientific society and publisher of the *Science* family of journals, advancing scientific literacy, computational discov..."
   },
   {
-    "id": "membership-219",
+    "id": "membership-216",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "Python Software Foundation (PSF)",
@@ -3066,7 +3024,7 @@
     "description": "Contributing Member of the Python Software Foundation (PSF), the non-profit corporation holding intellectual property rights behind Python and supporting the global open-source Pyt..."
   },
   {
-    "id": "membership-220",
+    "id": "membership-217",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "Open Web Application Security Project (OWASP Foundation)",
@@ -3080,7 +3038,7 @@
     "description": "OWASP is a global community of developers, technologists, and advocates dedicated to improving software security. We provide open source projects with the visibility, credibility, ..."
   },
   {
-    "id": "membership-221",
+    "id": "membership-218",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "International Federation of Global Green ICT (IFGICT)",
@@ -3094,7 +3052,7 @@
     "description": "Awarded fellowship by the International Federation of Global Green ICT for contributions to energy-efficient AI architectures, sustainable compute paradigms, and enterprise technol..."
   },
   {
-    "id": "membership-222",
+    "id": "membership-219",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "Google Developer Groups & Experts",
@@ -3108,7 +3066,7 @@
     "description": "Recognized by Google as a global subject matter expert and community leader in AI and Google Cloud, speaking at premier tech events and guiding engineering communities worldwide."
   },
   {
-    "id": "membership-223",
+    "id": "membership-220",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "RSA Conference (RSAC)",
@@ -3122,7 +3080,7 @@
     "description": "Selected member of RSA Conference's curated cybersecurity library network, publishing research on autonomous AI agent threat models, zero-trust architectures, and \"Clean Attack\" fo..."
   },
   {
-    "id": "membership-224",
+    "id": "membership-221",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "ADPList Global Mentorship Network",
@@ -3136,7 +3094,7 @@
     "description": "Top-rated global mentor on ADPList, providing 1-on-1 mentoring, AI architecture reviews, and engineering leadership guidance to practitioners and engineering leaders across 30+ cou..."
   },
   {
-    "id": "membership-225",
+    "id": "membership-222",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "Dent Capital & Venture Network",
@@ -3150,7 +3108,7 @@
     "description": "Serving on the Dent Capital Expert List, advising emerging venture capital funds, incubators, and enterprise founders on cutting-edge AI product strategies and technical roadmaps."
   },
   {
-    "id": "membership-226",
+    "id": "membership-223",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "HackUTD (University of Texas at Dallas) & Hackmakers Global",
@@ -3164,7 +3122,7 @@
     "description": "Serving as technical judge and AI mentor at major hackathons including HackUTD (Texas's largest collegiate hackathon) and Hackmakers international challenges, evaluating multi-agen..."
   },
   {
-    "id": "membership-227",
+    "id": "membership-224",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "Open Data Science Conference (ODSC) & SIIM",
@@ -3178,7 +3136,7 @@
     "description": "Active contributor and speaker across Open Data Science Conference (ODSC) and the Society for Imaging Informatics in Medicine (SIIM), presenting on machine learning pipelines and m..."
   },
   {
-    "id": "membership-228",
+    "id": "membership-225",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "Screna.ai",
@@ -3192,7 +3150,7 @@
     "description": "Serving as Technical Mentor and Advisor at Screna.ai, guiding emerging engineers and evaluating AI talent, system design competencies, and enterprise engineering capabilities."
   },
   {
-    "id": "membership-229",
+    "id": "membership-226",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "American Institute for Information Technology & Engineering",
@@ -3206,7 +3164,7 @@
     "description": "Serving as official Reviewer and Ambassador at the American Institute for Information Technology & Engineering (AIITE), contributing to peer review, engineering research standards,..."
   },
   {
-    "id": "membership-230",
+    "id": "membership-227",
     "category": "Memberships & Fellowships",
     "category_pill": "memberships",
     "title": "Business Intelligence Group",

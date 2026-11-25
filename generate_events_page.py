@@ -136,7 +136,8 @@ events_data = {
             "highlight_badge_label": "<strong>Techstars Fall 2026</strong> · 70 Mentors Cohort Collage",
             "links": [
                 {"name": "Techstars NYC Accelerator", "url": "https://www.techstars.com/accelerators/nyc", "icon": "mdi-link-variant"},
-                {"name": "Mentor Highlight", "url": "/assets/aistudio/mentor_thank_you_collage_70c5abdb.png", "icon": "mdi-star-circle-outline", "is_image_modal": True, "modal_title": "Techstars NYC Fall 2026 — Mentor Highlight (70 Mentors)", "modal_caption": "Techstars · Fall 2026 #GiveFirst"}
+                {"name": "Mentor Highlight", "url": "/assets/aistudio/mentor_thank_you_collage_70c5abdb.png", "icon": "mdi-star-circle-outline", "is_image_modal": True, "modal_title": "Techstars NYC Fall 2026 — Mentor Highlight (70 Mentors)", "modal_caption": "Techstars · Fall 2026 #GiveFirst"},
+                {"name": "LinkedIn Feature", "url": "https://lnkd.in/p/gqwex-PG", "icon": "mdi-linkedin"}
             ],
             "tags": ["Techstars NYC", "Accelerator", "Enterprise AI", "Venture Mentor"],
             "gradient": "from-blue-600 to-indigo-600",
@@ -152,8 +153,13 @@ events_data = {
             "date": "2024 - Present",
             "location": "Berkeley, CA",
             "description": "Advised and mentored global high-growth startups at UC Berkeley SkyDeck on building secure enterprise AI architectures, scalable agentic workflows, LLM observability, and cybersecurity compliance.",
+            "highlight_image": "/assets/aistudio/Gemini_Generated_Image_o5hyx0o5hyx0o5hy_5e07bb9e.jpeg",
+            "highlight_title": "UC Berkeley SkyDeck — Mentor Highlight",
+            "highlight_caption": "UC Berkeley SkyDeck · Advisor & Technical Mentor",
+            "highlight_badge_label": "<strong>UC Berkeley SkyDeck</strong> · Official Advisor Highlight",
             "links": [
-                {"name": "Berkeley SkyDeck", "url": "https://skydeck.berkeley.edu/", "icon": "mdi-link-variant"}
+                {"name": "Berkeley SkyDeck", "url": "https://skydeck.berkeley.edu/", "icon": "mdi-link-variant"},
+                {"name": "Mentor Highlight", "url": "/assets/aistudio/Gemini_Generated_Image_o5hyx0o5hyx0o5hy_5e07bb9e.jpeg", "icon": "mdi-star-circle-outline", "is_image_modal": True, "modal_title": "UC Berkeley SkyDeck — Mentor Highlight", "modal_caption": "UC Berkeley SkyDeck · Advisor & Technical Mentor"}
             ],
             "tags": ["Berkeley SkyDeck", "UC Berkeley", "Enterprise AI", "Security Advisor"],
             "gradient": "from-blue-800 to-sky-600",

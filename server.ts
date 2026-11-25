@@ -1561,16 +1561,23 @@ app.use((err, req, res, next) => {
   }
 });
 
-// Start HTTP server
+// Start HTTP server with brief EADDRINUSE retry for rapid restarts
+let listenAttempts = 0;
 const server = app.listen(PORT, HOST, () => {
   console.log(`Portfolio server running on http://${HOST}:${PORT}`);
 });
 
 server.on('error', (err) => {
-  if (err && err.code === 'EADDRINUSE') {
-    console.warn(`[Server] Port ${PORT} is already in use. Another instance may be running.`);
+  if (err && err.code === 'EADDRINUSE' && listenAttempts < 6) {
+    listenAttempts += 1;
+    console.warn(`[Server] Port ${PORT} busy, retrying bind (${listenAttempts}/6)...`);
+    setTimeout(() => {
+      server.close();
+      server.listen(PORT, HOST);
+    }, 500);
   } else {
     console.error('[Server Listen Error]', err);
+    process.exit(1);
   }
 });
 
@@ -1582,16 +1589,17 @@ process.on('unhandledRejection', (reason) => {
   console.error('[Unhandled Rejection]', reason);
 });
 
+function shutdownServer(signal) {
+  console.log(`${signal} signal received: closing HTTP server`);
+  if (typeof server.closeAllConnections === 'function') {
+    server.closeAllConnections();
+  }
+  server.close(() => {
+    process.exit(0);
+  });
+  setTimeout(() => process.exit(0), 1000).unref();
+}
+
 // Graceful shutdown handling for Cloud Run container lifecycle
-process.on('SIGTERM', () => {
-  console.log('SIGTERM signal received: closing HTTP server');
-  server.close(() => {
-    process.exit(0);
-  });
-});
-process.on('SIGINT', () => {
-  console.log('SIGINT signal received: closing HTTP server');
-  server.close(() => {
-    process.exit(0);
-  });
-});
+process.on('SIGTERM', () => shutdownServer('SIGTERM'));
+process.on('SIGINT', () => shutdownServer('SIGINT'));

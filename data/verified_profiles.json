@@ -998,42 +998,6 @@
     "search_keywords": "foam speaker media kit app.usefoam.com shared media-kits 0d3617d7 press kit keynote bio headshots broadcast media features & press"
   },
   {
-    "id": "profile-champions-speakers",
-    "name": "Champions Speakers",
-    "category": "media",
-    "category_label": "Media Features & Press",
-    "identifier": "Verified Speaker Profile UK & Global Bureau",
-    "description": "Official represented speaker roster profile at Champions Speakers UK, showcasing Harsh Verma's keynote engagements, enterprise AI expertise, and conference booking availability.",
-    "url": "https://champions-speakers.co.uk/speaker-agent/harsh-verma",
-    "primary_url": "https://champions-speakers.co.uk/speaker-agent/harsh-verma",
-    "links": [
-      {
-        "label": "Open Profile",
-        "url": "https://champions-speakers.co.uk/speaker-agent/harsh-verma"
-      }
-    ],
-    "icon_svg": "images/profiles/champions_speakers.svg",
-    "search_keywords": "champions speakers champions-speakers.co.uk speaker-agent harsh-verma uk global keynote speaker bureau enterprise ai cybersecurity media features & press"
-  },
-  {
-    "id": "profile-all-american-speakers",
-    "name": "All American Speakers",
-    "category": "media",
-    "category_label": "Media Features & Press",
-    "identifier": "Roster ID: 470303 Keynote Bureau",
-    "description": "Verified international speaker profile (#470303) on All American Speakers Bureau, connecting enterprise conferences and summits with Harsh Verma for AI & cyber defense keynotes.",
-    "url": "https://www.allamericanspeakers.com/speakers/470303/Harsh-Verma",
-    "primary_url": "https://www.allamericanspeakers.com/speakers/470303/Harsh-Verma",
-    "links": [
-      {
-        "label": "Open Profile",
-        "url": "https://www.allamericanspeakers.com/speakers/470303/Harsh-Verma"
-      }
-    ],
-    "icon_svg": "images/profiles/all_american_speakers.svg",
-    "search_keywords": "all american speakers bureau allamericanspeakers.com 470303 harsh verma keynote speaker booking enterprise ai cybersecurity media features & press"
-  },
-  {
     "id": "profile-maven-instructor-profile",
     "name": "Maven Instructor Profile",
     "category": "developer",

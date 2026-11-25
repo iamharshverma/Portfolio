@@ -15,7 +15,6 @@
         booksCount: 2,
         booksReviewed: 6,
         patentsCount: 7,
-        patentsDisplayPlus: "7+",
         mediaCount: 45,
         mediaDisplay: "45+",
         profilesCount: 59,
@@ -74,9 +73,6 @@
         // 5. Patents
         document.querySelectorAll('[data-stat="patents-count"]').forEach(function(el) {
             el.textContent = s.patentsCount;
-        });
-        document.querySelectorAll('[data-stat="patents-count-plus"]').forEach(function(el) {
-            el.textContent = s.patentsDisplayPlus;
         });
     }
 
