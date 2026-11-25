@@ -34,15 +34,15 @@ const harshKnowledge = {
     summaryStats: {
       awardsCount: 27,
       publicationsCount: 27,
-      patentsCount: 6,
+      patentsCount: 7,
       citationsCount: "150+",
-      verifiedProfilesCount: 57,
+      verifiedProfilesCount: 59,
       mediaFeaturesCount: 45,
       associationsCount: 28,
-      judgingCount: 24,
+      judgingCount: 25,
       speakingCount: 12,
       videosCount: 10,
-      totalEngagementsCount: "46+",
+      totalEngagementsCount: "47+",
       blogsCount: 31,
       projectsCount: 13,
       certificationsCount: 24,
@@ -193,6 +193,8 @@ const harshKnowledge = {
   })),
 
   verifiedProfiles: [
+    { name: "Champions Speakers", url: "https://champions-speakers.co.uk/speaker-agent/harsh-verma", id: "Verified Speaker Bureau" },
+    { name: "All American Speakers", url: "https://www.allamericanspeakers.com/speakers/470303/Harsh-Verma", id: "Roster ID: 470303" },
     { name: "Frontiers in Education Editorial", url: "https://loop.frontiersin.org/people/3757183/overview", id: "Review Editor" },
     { name: "Business Intelligence Group (BIG) Judges", url: "https://judges.bintelligence.com/harsh-verma", id: "Official Awards Judge" },
     { name: "Soundverse AI", url: "https://www.soundverse.ai/@harshverma59", id: "@harshverma59" },
@@ -312,7 +314,7 @@ HARSH VERMA'S CORE PROFILE:
 - Professional Roles: Enterprise AI Architect, Principal Technologist, Author, Keynote Speaker, and Fellow.
 - Contact Email: harshverma59@gmail.com
 - Main Website Pages:
-  * Biography & Profiles: "page-about" (or "page-about#verified-profiles" for the 57 Verified Academic &amp; Industry Hubs)
+  * Biography & Profiles: "page-about" (or "page-about#verified-profiles" for the 59 Verified Academic &amp; Industry Hubs)
   * 27 Prestigious Awards: "page-awards"
   * 27+ Peer-Reviewed Publications: "page-publications"
   * Authored Books: "page-books"
@@ -327,13 +329,13 @@ HARSH VERMA'S CORE PROFILE:
 
 KEY ACHIEVEMENTS & DATA TO DRAW FROM:
 1. 27 Prestigious Awards: Includes 2026 TITAN Innovation Awards (AI Innovation & Leadership Impact Award), 2026 NVTC Cyber50 Honoree, Forttuna Global 100 Power List (2026), Nobel Technology Awards Gold Winner (2026), Global Recognition Award AI Innovator of the Year (2026), Globee Leadership Awards, Stevie International Business Awards, Brandon Hall Group Honors, and Tech Titans.
-2. 27+ Peer-Reviewed & Conference Publications + 6 Patents: Key topics in Autonomous Multi-Agent Frameworks, Trajectory Planning in Delay Tolerant Wireless Sensor Networks (ICACCM 2026), Explainable AI (XAI), Heterogeneous Distributed Data Management, Real-Time Load Simulation, Zero-Trust Threat Modeling, and Cloud Microservice Security. (Available on Google Scholar, IEEE & ICACCM). Also includes 2 Granted Patents (555747, 606481) and 4 in-process patent applications at Palo Alto Networks.
+2. 27+ Peer-Reviewed & Conference Publications + 7 Patents: Key topics in Autonomous Multi-Agent Frameworks, Trajectory Planning in Delay Tolerant Wireless Sensor Networks (ICACCM 2026), Explainable AI (XAI), Heterogeneous Distributed Data Management, Real-Time Load Simulation, Zero-Trust Threat Modeling, and Cloud Microservice Security. (Available on Google Scholar, IEEE & ICACCM). Also includes 2 Granted Patents (555747, 606481) and 5 filed-pending patent applications at Palo Alto Networks.
 3. Authored Books & Technical Reviews (8 Total Volumes):
    - "Beyond AI Engineering: From Creator to Curator" (https://www.beyondaiengineering.com/)
    - "AI vs. AI: Engineering the Cybersecurity Counteroffensive" (https://www.beyondaivsai.com/)
    - Technical Reviewer for 6 published Packt volumes.
 4. Fellowships & Memberships (28+ Invited Appointments): Fellow of BCS (FBCS), Fellow of IFGICT (Fellow Number: 06042Z26HV), Senior Member of IEEE (SMIEEE 95132014) & IEEE Technical Societies (CIS011, YP060, IEEE500), IEEE Xplore Verified Author (ID: 37089143797), Peer Reviewer for Oxford University Press Interacting with Computers via ScholarOne Manuscripts, Palo Alto Networks verified organization profile on The Org (theorg.com/org/palo-alto-networks/person/harsh-verma), Python Software Foundation Contributing Member (harshverma59), OWASP Global Member (3981139), ISACA Member & Verified Expert / Volunteer (2394223), Forbes Technology Council, Fellow of Royal Society of Arts (FRSA), and Full Elected Member of Sigma Xi. Listed on page-memberships and page-about.
-5. Speaking, Judging & Smart Slides (46+ Engagements): 12 Speaking & Panel Appearances, 24+ Judging & Accelerator Committees (UC Berkeley SkyDeck, CITRIS-AIC, Google Agents for Impact GDE), 10 Featured Video Keynotes, and 10 EasyChair Smart Slide Decks (169 slides total).
+5. Speaking, Judging & Smart Slides (47+ Engagements): 12 Speaking & Panel Appearances, 25+ Judging & Accelerator Committees (IEEE SAC Awards 2026 Judging, UC Berkeley SkyDeck, UC Berkeley CITRIS-CDSS Innovation Fellowship & AIC Awards Application — VCR Research, Google Agents for Impact GDE, BIG Awards for Business), 10 Featured Video Keynotes, and 10 EasyChair Smart Slide Decks (169 slides total).
 6. Inquiries & Booking: Inquiries for executive advisory, enterprise consulting, keynote speeches, or media interviews should be sent to harshverma59@gmail.com or submitted through the portfolio contact form (index#contact).
 7. Newsletter & Executive Briefing: "The Agentic Systems & AI Dispatch" — a monthly curated executive newsletter by Harsh Verma covering deep dives on Agentic AI & Autonomous Copilots, Zero-Trust Cyber Defense, and Enterprise High-Scale Systems Architecture. Visitors can subscribe on the Blog page ([Explore Blog](page-blog)) via the newsletter popup modal or the "Newsletter" button on the toolbar. Over 3,240+ engineers, researchers, and technology executives read the dispatch.
 

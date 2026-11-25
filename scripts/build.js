@@ -122,6 +122,11 @@ for (const item of itemsToCopy) {
     copyRecursive(srcPath, path.join(distTmp, item));
   }
 }
+const publicDir = path.join(rootDir, 'public');
+if (fs.existsSync(publicDir)) {
+  console.log('[Build] Staging public/ assets into dist root...');
+  copyRecursive(publicDir, distTmp);
+}
 
 // Copy all root HTML, JSON, JS, TS, XML, ICO, TXT, SVG files
 const rootEntries = fs.readdirSync(rootDir);

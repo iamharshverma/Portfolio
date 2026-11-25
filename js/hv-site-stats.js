@@ -14,18 +14,19 @@
         awardsDisplayPlus: "27+",
         booksCount: 2,
         booksReviewed: 6,
-        patentsCount: 6,
+        patentsCount: 7,
+        patentsDisplayPlus: "7+",
         mediaCount: 45,
         mediaDisplay: "45+",
-        profilesCount: 57,
+        profilesCount: 59,
         associationsCount: 28,
         associationsDisplayPlus: "28+",
-        judgingCount: 24,
-        judgingDisplayPlus: "24+",
+        judgingCount: 25,
+        judgingDisplayPlus: "25+",
         speakingCount: 12,
         videosCount: 10,
-        totalEngagements: 46,
-        totalEngagementsDisplay: "46+",
+        totalEngagements: 47,
+        totalEngagementsDisplay: "47+",
         blogsCount: 31,
         projectsCount: 13,
         certificationsCount: 24,
@@ -73,6 +74,9 @@
         // 5. Patents
         document.querySelectorAll('[data-stat="patents-count"]').forEach(function(el) {
             el.textContent = s.patentsCount;
+        });
+        document.querySelectorAll('[data-stat="patents-count-plus"]').forEach(function(el) {
+            el.textContent = s.patentsDisplayPlus;
         });
     }
 

@@ -4,7 +4,7 @@
     "version": "2026.2",
     "environment": "Production",
     "search_engine": "In-Memory Client-Side Fuzzy Trie & Inverted Token Index",
-    "total_records_indexed": 312,
+    "total_records_indexed": 316,
     "total_queries_logged": 16840,
     "unique_search_terms": 348,
     "average_response_time_ms": 0.65,
@@ -23,7 +23,7 @@
       "area_name": "Intellectual Property & Patents",
       "query_share_pct": 23.1,
       "engagement_level": "Exceptional",
-      "summary": "Searches for Granted Patent 555747 (Load Testing), Granted Patent 606481 (COPAEP), and Palo Alto Networks' 4 in-process patent applications."
+      "summary": "Searches for Granted Patent 555747 (Load Testing), Granted Patent 606481 (COPAEP), and Palo Alto Networks' 5 filed-pending patent applications."
     },
     {
       "area_name": "Enterprise AI Cybersecurity & Cyber Defense",
@@ -274,9 +274,9 @@
   ],
   "category_metrics": {
     "publications_and_patents": {
-      "records_count": 33,
+      "records_count": 34,
       "papers_count": 27,
-      "patents_count": 6,
+      "patents_count": 7,
       "searches_count": 5420,
       "avg_click_rate": "87.3%",
       "top_term": "Clean Attacks"
@@ -288,9 +288,9 @@
       "top_term": "Business Insider"
     },
     "speaking_and_keynotes": {
-      "records_count": 36,
+      "records_count": 37,
       "speaking_count": 12,
-      "judging_count": 24,
+      "judging_count": 25,
       "searches_count": 2180,
       "avg_click_rate": "84.5%",
       "top_term": "TrueML Keynote"
@@ -302,7 +302,7 @@
       "top_term": "AI Innovator of the Year"
     },
     "verified_directory_profiles": {
-      "records_count": 57,
+      "records_count": 59,
       "searches_count": 1640,
       "avg_click_rate": "79.6%",
       "top_term": "Google Scholar"

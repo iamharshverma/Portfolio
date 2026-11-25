@@ -222,7 +222,7 @@ Harsh Verma is a sought-after international keynote speaker, panelist, and start
 - **Autonomous Cyber Defense**: Battleground machine learning against zero-day threats.
 - **High-Throughput Cloud Distributed Architectures**: Lessons from enterprise-scale data platforms.
 
-👉 Review 46+ appearances across keynotes, panels & hackathon judging: **[Speaking Engagements](page-events)** or book an executive hold: **[Contact & Booking Form](index#contact)**.`;
+👉 Review 47+ appearances across keynotes, panels & hackathon judging: **[Speaking Engagements](page-events)** or book an executive hold: **[Contact & Booking Form](index#contact)**.`;
   }
 
   if (q.includes('contact') || q.includes('email') || q.includes('collaborate') || q.includes('hire') || q.includes('advisory') || q.includes('consult')) {
@@ -245,7 +245,7 @@ All verified inquiries submitted through this portfolio are delivered directly w
 
 - **Specializations**: Enterprise Generative AI, Multi-Agent Architectures, Zero-Trust Cyber Resilience, and Cloud Distributed Systems.
 - **Recognitions**: **27 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
-- **Academic Impact**: **27+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **57 Verified Academic/Professional Registries**.
+- **Academic Impact**: **27+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **59 Verified Academic/Professional Registries**.
 - **Fellowships**: Harvard Square Leaders Excellence Fellow, IEEE Senior Member, and Forbes Technology Council Member.
 
 **Explore further:**
@@ -1436,7 +1436,12 @@ app.post('/api/admin/logout', (req, res) => {
   return res.json({ success: true, message: 'Logged out successfully' });
 });
 
-// Serve static assets: prefer project root (for zero-latency development assets) then dist
+// Serve static assets: prefer public (uploaded assets), then project root, then dist
+if (fs.existsSync(path.join(__dirname, 'public'))) {
+  app.use(express.static(path.join(__dirname, 'public'), {
+    extensions: ['html', 'htm']
+  }));
+}
 app.use(express.static(__dirname, {
   extensions: ['html', 'htm']
 }));

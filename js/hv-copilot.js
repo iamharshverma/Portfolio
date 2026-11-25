@@ -981,7 +981,7 @@ Harsh Verma is the author of two definitive technical volumes bridging academic 
     ) {
       return `### 🔬 27+ Peer-Reviewed Research Publications & Academic Citations
 
-Harsh Verma has published **27+ peer-reviewed and conference papers** across leading IEEE conferences, ICACCM, Springer Nature, and international computer science journals with over **150+ academic citations**, plus **6 patents (2 granted, 4 in-process at Palo Alto Networks)**:
+Harsh Verma has published **27+ peer-reviewed and conference papers** across leading IEEE conferences, ICACCM, Springer Nature, and international computer science journals with over **150+ academic citations**, plus **7 patents (2 granted, 5 filed-pending at Palo Alto Networks)**:
 
 - **Data Quality, Feature Engineering, and Model Reliability in Large-Scale AI Multi-Agentic Systems** (EJCSIT, May 30, 2021).
 - **Scalable Real-Time Data Pipelines for AI and Machine Learning–Driven Enterprise Systems** (EJCSIT, December 30, 2020).
@@ -1043,7 +1043,7 @@ Harsh Verma holds prestigious fellowships and elected senior memberships across 
 - **Full Elected Member of Sigma Xi** (The Scientific Research Honor Society)
 - **OWASP Global Member & Cloud Security Alliance (CSA) Member**
 
-👉 Deep dive into all citations, certifications, and appointments on the **[Invited Memberships Page](page-memberships)** and **[57 Verified Academic &amp; Industry Hubs](page-about#verified-profiles)**.`;
+👉 Deep dive into all citations, certifications, and appointments on the **[Invited Memberships Page](page-memberships)** and **[59 Verified Academic &amp; Industry Hubs](page-about#verified-profiles)**.`;
     }
 
     // 5. Professional Career & Experience
@@ -1125,7 +1125,7 @@ Harsh Verma is an international keynote speaker, panelist, and startup judge:
 - **High-Throughput Cloud Distributed Architectures**: Lessons from enterprise-scale data platforms.
 - **Featured Appearances**: Keynote speaker at @#ATAGTR2017 (Global Testing Retreat), IEEE Symposia, and global engineering conferences.
 
-👉 Review 46+ appearances across keynotes, panels & hackathon judging: **[Speaking Engagements](page-events)** or book an executive hold: **[Contact & Booking Form](index#contact)**.`;
+👉 Review 47+ appearances across keynotes, panels & hackathon judging: **[Speaking Engagements](page-events)** or book an executive hold: **[Contact & Booking Form](index#contact)**.`;
     }
 
     // 8. Media Coverage & Distribution Analytics
@@ -1224,7 +1224,7 @@ All verified inquiries submitted through this portfolio are delivered directly w
 
 - **Specializations**: Enterprise Generative AI, Autonomous Multi-Agent Architectures, Zero-Trust Cyber Resilience, and Cloud Distributed Systems.
 - **Recognitions**: **27 Global Awards** (Forttuna Global 100, Nobel Technology Awards Gold Winner, AI Innovator of the Year, Globee & Stevie Awards).
-- **Academic Impact**: **27+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **57 Verified Academic/Professional Registries**.
+- **Academic Impact**: **27+ Peer-Reviewed Publications** on IEEE/Google Scholar, **2 Published Books**, and **59 Verified Academic/Professional Registries**.
 - **Fellowships**: Harvard Square Leaders Excellence Fellow, IEEE Senior Member, and Forbes Technology Council Member.
 
 **Explore further:**

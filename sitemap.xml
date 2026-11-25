@@ -7,15 +7,15 @@
   <!-- 1. Executive Home & Portfolio -->
   <url>
     <loc>https://www.harshverma.me/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- 2. Full Career Dossier, Stanford & UTD Education, 57 Verified Profiles -->
+  <!-- 2. Full Career Dossier, Stanford & UTD Education, 59 Verified Profiles -->
   <url>
     <loc>https://www.harshverma.me/page-about</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -23,7 +23,7 @@
   <!-- 4. 27+ Peer-Reviewed Research Publications (IEEE, Springer Nature, Oxford) -->
   <url>
     <loc>https://www.harshverma.me/page-publications</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -60,18 +60,18 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- 9. Executive Keynotes, Speaking Dossier & RSAC Panels -->
+  <!-- 9. Executive Keynotes, Speaking Dossier & RSAC Panels (47+ Total Engagements) -->
   <url>
     <loc>https://www.harshverma.me/page-speaker</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
-  <!-- 10. Keynote Video Showcases & Interactive Speaking Calendar -->
+  <!-- 10. Keynote Video Showcases, 25+ Judging Committees & Interactive Speaking Calendar -->
   <url>
     <loc>https://www.harshverma.me/page-events</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -100,10 +100,10 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- 14. UC Berkeley SkyDeck, Startup Advisory & Venture Mentorship -->
+  <!-- 14. UC Berkeley SkyDeck, CITRIS-CDSS, IEEE SAC, 25+ Startup Advisory & Judging Panels -->
   <url>
     <loc>https://www.harshverma.me/page-advisory</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>

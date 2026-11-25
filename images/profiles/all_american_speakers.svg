@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="aasProfBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1f3a"/>
+      <stop offset="55%" stop-color="#173866"/>
+      <stop offset="100%" stop-color="#09162a"/>
+    </linearGradient>
+    <linearGradient id="aasProfRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="18" fill="url(#aasProfBg)"/>
+  <rect x="2" y="2" width="96" height="96" rx="16" stroke="rgba(96, 165, 250, 0.45)" stroke-width="1.5" fill="none"/>
+
+  <!-- Star & Ribbon Emblem -->
+  <g transform="translate(27, 13)">
+    <rect x="1" y="3" width="44" height="44" rx="10" fill="rgba(255, 255, 255, 0.08)" stroke="rgba(147, 197, 253, 0.5)" stroke-width="1.8"/>
+    <path d="M23 11 L26 19 L34.5 19.5 L27.8 24.5 L30.2 33 L23 28 L15.8 33 L18.2 24.5 L11.5 19.5 L20 19 Z" fill="#ffffff"/>
+    <rect x="8" y="37" width="30" height="4" rx="2" fill="url(#aasProfRed)"/>
+  </g>
+
+  <!-- Label Pill -->
+  <rect x="10" y="70" width="80" height="18" rx="9" fill="#0f294d" stroke="#60a5fa" stroke-width="1.2"/>
+  <text x="50" y="82" fill="#e0f2fe" font-family="system-ui, -apple-system, sans-serif" font-size="7.5" font-weight="800" text-anchor="middle" letter-spacing="0.6">AASB #470303</text>
+</svg>

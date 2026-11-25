@@ -2,9 +2,9 @@
 """
 scripts/build_omnisearch_index.py
 Builds the unified Executive Omnisearch Index across all portfolio sections:
-- research_publications.json (27) + patents.json (6 patents)
+- research_publications.json (27) + patents.json (7 patents)
 - media_features.json (45)
-- speaking_engagements.json (12) + judging_engagements.json (24)
+- speaking_engagements.json (12) + judging_engagements.json (25)
 - awards_and_honors.json (27)
 - verified_profiles.json (57)
 - memberships_and_associations.json (28)
@@ -56,7 +56,7 @@ def build_index():
             "description": p.get("abstract", "").strip()[:180] + ("..." if len(p.get("abstract", "").strip()) > 180 else "")
         })
 
-    # 1b. Patents (6 records from data/patents.json)
+    # 1b. Patents (7 records from data/patents.json)
     patents_path = os.path.join(DATA_DIR, "patents.json")
     if os.path.exists(patents_path):
         with open(patents_path, "r", encoding="utf-8") as f:
@@ -71,7 +71,7 @@ def build_index():
             url = pat.get("primary_url", "").strip() or "page-publications"
             desc = pat.get("description", "").strip()
             subtitle_parts = [part for part in [status, f"Patent No: {pat_no}" if pat_no else "", f"App: {app_no}" if app_no else "", org] if part]
-            badge = "Granted Patent" if "granted" in status.lower() else "In-Process Patent"
+            badge = "Granted Patent" if "granted" in status.lower() else "Filed-Pending Patent"
             badge_class = "badge-success" if "granted" in status.lower() else "badge-warning text-dark"
             index.append({
                 "id": pat.get("id", f"patent-{len(index)+1}"),
@@ -116,7 +116,7 @@ def build_index():
             "description": summary[:180] + ("..." if len(summary) > 180 else "")
         })
 
-    # 3. Speaking & Keynotes (12 speaking + 24 judging = 36 records)
+    # 3. Speaking & Keynotes (12 speaking + 25 judging = 37 records)
     with open(os.path.join(DATA_DIR, "speaking_engagements.json"), "r", encoding="utf-8") as f:
         speaking = json.load(f)
     for s in speaking:

@@ -1,5 +1,30 @@
 [
   {
+    "id": "judge-ieee-sac-awards-2026",
+    "event_title": "IEEE SAC Awards 2026 Judging — Official Judge",
+    "role": "IEEE Global Awards Judging",
+    "organizer": "",
+    "date": "",
+    "location": "",
+    "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
+    "badge": "IEEE Global Awards Judging",
+    "description": "Serving as an official judge for the IEEE Student Activities Committee (SAC) Awards 2026 program, evaluating global student leadership, technical innovation branches, exemplary chapter excellence, and engineering community impact worldwide.",
+    "evaluation_focus": [
+      "IEEE SAC Awards 2026",
+      "IEEE",
+      "Global Awards Judging",
+      "Student Activities Committee",
+      "Engineering Leadership"
+    ],
+    "primary_url": "https://students.ieee.org/student-opportunities/sac-awards-programs/",
+    "links": [
+      {
+        "label": "IEEE SAC Awards Program",
+        "url": "https://students.ieee.org/student-opportunities/sac-awards-programs/"
+      }
+    ]
+  },
+  {
     "id": "judge-google-agents-for-impact-2026",
     "event_title": "GDE: Google Agents for Impact Hackathon Challenge Judge",
     "role": "GDE Hackathon Judging",
@@ -30,20 +55,20 @@
   },
   {
     "id": "judge-berkeley-citris-cdss-aic-2026",
-    "event_title": "UC Berkeley CITRIS-CDSS Innovation Fellowship & AIC Awards Judge",
+    "event_title": "UC Berkeley CITRIS-CDSS Innovation Fellowship & AIC Awards Application — VCR Research",
     "role": "Fellowship & Research Selection",
     "organizer": "",
     "date": "",
     "location": "",
     "engagement_type": "Hackathon & Pitch Competition Judging / Startup Evaluation",
     "badge": "Fellowship & Research Selection",
-    "description": "Appointed Judge & Selector for the UC Berkeley Vice Chancellor for Research (VCR) CITRIS-CDSS Innovation Fellowship and CITRIS AI Innovation Challenge (AIC) Awards applications, evaluating translational AI research, scientific rigor, and societal impact.",
+    "description": "Appointed Judge & Selection Committee member for the UC Berkeley Vice Chancellor for Research (VCR Research) CITRIS-CDSS Innovation Fellowship and CITRIS AI Innovation Challenge (AIC) Awards applications, evaluating translational AI research, scientific rigor, and societal impact.",
     "evaluation_focus": [
       "UC Berkeley CITRIS",
       "CDSS Innovation Fellowship",
-      "AIC Awards",
+      "AIC Awards Application",
       "VCR Research",
-      "Judge & Selector"
+      "Judge & Selection"
     ],
     "primary_url": "https://citris-uc.org/labs-programs/citris-aic-awards/",
     "links": [
@@ -75,6 +100,10 @@
       {
         "label": "Official Judge Profile",
         "url": "https://judges.bintelligence.com/harsh-verma"
+      },
+      {
+        "label": "Verify Judge Credential",
+        "url": "https://judges.bintelligence.com/verify/big-awards-for-business-2026/harsh-verma"
       },
       {
         "label": "Business Intelligence Group",
@@ -165,6 +194,10 @@
       {
         "label": "Techstars NYC Accelerator",
         "url": "https://www.techstars.com/accelerators/nyc"
+      },
+      {
+        "label": "Mentor Highlight",
+        "url": "https://www.harshverma.me/assets/aistudio/mentor_thank_you_collage_70c5abdb.png"
       }
     ]
   },

@@ -3,9 +3,10 @@
   "inventor": "Harsh Verma",
   "page_url": "https://www.harshverma.me/page-publications",
   "summary_stats": {
-    "total_patents": 6,
+    "total_patents": 7,
     "granted_patents": 2,
-    "in_process_patents": 4,
+    "in_process_patents": 5,
+    "filed_pending_patents": 5,
     "granted_patent_numbers": [
       "555747",
       "606481"
@@ -85,11 +86,11 @@
     },
     {
       "id": "patent-panw-1",
-      "patent_number": "In Process (PANW-1 of 4)",
+      "patent_number": "Filed-Pending (PANW-1 of 5)",
       "application_number": "Undisclosed (Enterprise Review)",
       "title": "Autonomous Agentic AI Security & Orchestration Architecture",
-      "status": "In Process / Pending",
-      "issued_date": "In Process",
+      "status": "Filed-Pending",
+      "issued_date": "Filed-Pending",
       "authority": "USPTO / Enterprise Patent Filings",
       "organization": "Palo Alto Networks",
       "description": "Proprietary enterprise intellectual property in autonomous agentic AI reasoning guardrails and multi-agent cybersecurity workflows at Palo Alto Networks.",
@@ -107,11 +108,11 @@
     },
     {
       "id": "patent-panw-2",
-      "patent_number": "In Process (PANW-2 of 4)",
+      "patent_number": "Filed-Pending (PANW-2 of 5)",
       "application_number": "Undisclosed (Enterprise Review)",
       "title": "Enterprise Copilot Navigation & Guided Workflow Engine",
-      "status": "In Process / Pending",
-      "issued_date": "In Process",
+      "status": "Filed-Pending",
+      "issued_date": "Filed-Pending",
       "authority": "USPTO / Enterprise Patent Filings",
       "organization": "Palo Alto Networks",
       "description": "Proprietary copilot navigation and contextual UI/API orchestration mechanisms engineered for mission-critical enterprise security consoles.",
@@ -129,11 +130,11 @@
     },
     {
       "id": "patent-panw-3",
-      "patent_number": "In Process (PANW-3 of 4)",
+      "patent_number": "Filed-Pending (PANW-3 of 5)",
       "application_number": "Undisclosed (Enterprise Review)",
       "title": "Intent-Based Agent Telemetry & Runtime Threat Containment",
-      "status": "In Process / Pending",
-      "issued_date": "In Process",
+      "status": "Filed-Pending",
+      "issued_date": "Filed-Pending",
       "authority": "USPTO / Enterprise Patent Filings",
       "organization": "Palo Alto Networks",
       "description": "Behavioral intent verification and real-time runtime anomaly containment for autonomous multi-agent enterprise AI deployments.",
@@ -151,14 +152,36 @@
     },
     {
       "id": "patent-panw-4",
-      "patent_number": "In Process (PANW-4 of 4)",
+      "patent_number": "Filed-Pending (PANW-4 of 5)",
       "application_number": "Undisclosed (Enterprise Review)",
       "title": "Distributed Real-Time Copilot State Synchronization & Guardrail Enforcement",
-      "status": "In Process / Pending",
-      "issued_date": "In Process",
+      "status": "Filed-Pending",
+      "issued_date": "Filed-Pending",
       "authority": "USPTO / Enterprise Patent Filings",
       "organization": "Palo Alto Networks",
       "description": "Low-latency distributed policy enforcement and verifiable audit pipelines for enterprise AI copilot platforms.",
+      "primary_url": "https://www.paloaltonetworks.com/",
+      "links": [
+        {
+          "label": "Palo Alto Networks",
+          "url": "https://www.paloaltonetworks.com/"
+        },
+        {
+          "label": "Portfolio Patents Overview",
+          "url": "https://www.harshverma.me/page-publications"
+        }
+      ]
+    },
+    {
+      "id": "patent-panw-5",
+      "patent_number": "Filed-Pending (PANW-5 of 5)",
+      "application_number": "Undisclosed (Enterprise Review)",
+      "title": "Zero-Trust Multi-Agent Execution Verification & Contextual Policy Synthesis",
+      "status": "Filed-Pending",
+      "issued_date": "Filed-Pending",
+      "authority": "USPTO / Enterprise Patent Filings",
+      "organization": "Palo Alto Networks",
+      "description": "Deterministic zero-trust verification and adaptive contextual policy synthesis for enterprise multi-agent security operations at Palo Alto Networks.",
       "primary_url": "https://www.paloaltonetworks.com/",
       "links": [
         {

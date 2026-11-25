@@ -7,7 +7,7 @@ for Harsh Verma's executive portfolio.
 Includes:
 - 2 Primary Authored Books with full chapter outlines, previews, waitlist triggers
 - 6 Reviewed & Peer-Reviewed Volumes (perfect 3x2 grid with no whitespace gaps)
-- Synchronized author metrics (2 Authored Books, 27+ Research Papers, 6 Technical Reviews, 6 Enterprise Patents)
+- Synchronized author metrics (2 Authored Books, 27+ Research Papers, 6 Technical Reviews, 7 Enterprise Patents)
 - DOM structure matching CSS Selector 1 & 2 perfectly:
   Selector 1: section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(4) > div:nth-of-type(2) > div:nth-of-type(1)
   Selector 2: section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(4) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1)
@@ -619,7 +619,7 @@ def generate_books_html():
                             </div>
                             <div class="col-6 col-md-3">
                                 <a href="page-publications#patents" class="text-decoration-none">
-                                    <div class="stat-val text-success" style="font-size: 28px; font-weight: 800; color: #059669 !important;" data-stat="patents-count">6</div>
+                                    <div class="stat-val text-success" style="font-size: 28px; font-weight: 800; color: #059669 !important;" data-stat="patents-count">7</div>
                                     <div class="stat-lbl text-muted small text-uppercase font-weight-bold">Enterprise Patents</div>
                                 </a>
                             </div>

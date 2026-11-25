@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="csProfBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1329"/>
+    </linearGradient>
+    <linearGradient id="csProfGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="18" fill="url(#csProfBg)"/>
+  <rect x="2" y="2" width="96" height="96" rx="16" stroke="rgba(245, 158, 11, 0.48)" stroke-width="1.5" fill="none"/>
+
+  <!-- Shield & Crest Emblem -->
+  <g transform="translate(27, 13)">
+    <path d="M23 3 L42 10 L42 28 C42 40 32.5 48.5 23 52 C13.5 48.5 4 40 4 28 L4 10 Z" fill="rgba(245, 158, 11, 0.14)" stroke="url(#csProfGold)" stroke-width="2"/>
+    <path d="M23 13 L26.2 21 L34.8 21.5 L28 26.8 L30.2 35.2 L23 30.3 L15.8 35.2 L18 26.8 L11.2 21.5 L19.8 21 Z" fill="url(#csProfGold)"/>
+  </g>
+
+  <!-- Label Pill -->
+  <rect x="10" y="70" width="80" height="18" rx="9" fill="#1e293b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="50" y="82" fill="#fef3c7" font-family="system-ui, -apple-system, sans-serif" font-size="7.5" font-weight="800" text-anchor="middle" letter-spacing="0.7">CHAMPIONS</text>
+</svg>

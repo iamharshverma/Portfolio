@@ -12,15 +12,15 @@
       id: 'pillar-agentic-systems',
       title: 'Autonomous Multi-Agent Systems & Agentic Workflows',
       icon: 'mdi-robot',
-      badge: '6 Papers • 4 Patents • 1 Book',
+      badge: '6 Papers • 5 Patents • 1 Book',
       tagline: 'Deterministic execution, self-healing state machines, and dynamic consensus topologies.',
       description: 'Establishes theoretical and architectural foundations for autonomous multi-agent orchestration in enterprise environments, eliminating LLM nondeterminism through closed-loop validation.',
       items: [
         {
-          type: 'PATENT SUITE (PENDING)',
+          type: 'PATENT SUITE (FILED-PENDING)',
           badgeClass: 'badge-primary',
           title: 'Agentic AI, Enterprise Copilot Systems & Copilot Navigation Architectures',
-          desc: 'Suite of 4 in-process patent applications developing foundational intellectual property in autonomous copilot reasoning and contextual security operations at Palo Alto Networks.',
+          desc: 'Suite of 5 filed-pending patent applications developing foundational intellectual property in autonomous copilot reasoning and contextual security operations at Palo Alto Networks.',
           url: 'https://www.paloaltonetworks.com/',
           actionText: 'Review Patent Suite'
         },
@@ -232,7 +232,7 @@
           '</div>' +
           '<div class="mt-2 mt-md-0">' +
             '<a href="page-publications" class="btn btn-outline-primary btn-sm font-weight-bold rounded">' +
-              '<i class="mdi mdi-book-open-page-variant mr-1"></i> All 27 Publications & 6 Patents' +
+              '<i class="mdi mdi-book-open-page-variant mr-1"></i> All 27 Publications & 7 Patents' +
             '</a>' +
           '</div>' +
         '</div>' +

@@ -53,7 +53,7 @@ def compile_index():
             "search_text": f"{title} {p.get('venue', '')} {patent_id} {p.get('doi', '')} {p.get('abstract', '')} {p.get('year', '')} patent publication research ieee springer".lower()
         })
 
-    # Also load all 6 Patents from data/patents.json (or fallback to core entries)
+    # Also load all 7 Patents from data/patents.json (or fallback to core entries)
     patents_path = os.path.join(DATA_DIR, "patents.json")
     if os.path.exists(patents_path):
         with open(patents_path, "r", encoding="utf-8") as f:

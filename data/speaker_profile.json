@@ -4,16 +4,45 @@
   "page_url": "https://www.harshverma.me/page-speaker",
   "events_url": "https://www.harshverma.me/page-events",
   "stats": {
-    "judging_and_committees": 24,
+    "judging_and_committees": 25,
     "conference_keynotes": 6,
     "industry_panels_and_salons": 6,
     "featured_keynote_videos": 10,
-    "total_engagements": 46,
-    "total_engagements_display": "46+",
+    "total_engagements": 47,
+    "total_engagements_display": "47+",
     "leaders_and_engineers_reached": "5,000+",
     "senior_csuite_founders_pct": "85%+",
     "organizer_recommendation_rate": "98%"
   },
+  "verified_speaker_profiles": [
+    {
+      "bureau": "Champions Speakers",
+      "region": "UK & International",
+      "url": "https://champions-speakers.co.uk/speaker-agent/harsh-verma",
+      "logo": "https://www.harshverma.me/images/events/champions_speakers.svg",
+      "image": "https://www.harshverma.me/images/harsh/Harsh_portfolio_pic.png"
+    },
+    {
+      "bureau": "All American Speakers",
+      "region": "North America",
+      "speaker_id": "470303",
+      "url": "https://www.allamericanspeakers.com/speakers/470303/Harsh-Verma",
+      "logo": "https://www.harshverma.me/images/events/all_american_speakers.svg",
+      "image": "https://www.harshverma.me/images/harsh/harsh_kg_primary.jpg"
+    }
+  ],
+  "upcoming_events": [
+    {
+      "title": "Health Tech Week 2027 — HealthTech Summit (#HTSummit27)",
+      "date": "January 2027",
+      "location": "San Francisco, CA",
+      "role": "Featured Speaker",
+      "speaker_profile_url": "https://healthtechweek.org/speakers/harsh-verma",
+      "event_portal_url": "https://healthtechweek.org/",
+      "luma_url": "https://luma.com/HTSummit27",
+      "linkedin_feature_url": "https://lnkd.in/p/gZdmbTmf"
+    }
+  ],
   "audience_segments": [
     {
       "segment": "CEOs & Board Directors",
@@ -67,6 +96,30 @@
     {
       "label": "Board & Speaker Biography PDF",
       "url": "https://www.harshverma.me/files/Harsh_Verma_Board_Biography.pdf"
+    },
+    {
+      "label": "Champions Speakers Verified Profile",
+      "url": "https://champions-speakers.co.uk/speaker-agent/harsh-verma"
+    },
+    {
+      "label": "All American Speakers Verified Profile (#470303)",
+      "url": "https://www.allamericanspeakers.com/speakers/470303/Harsh-Verma"
+    },
+    {
+      "label": "Upcoming: Health Tech Week 2027 Speaker Profile (Jan 2027)",
+      "url": "https://healthtechweek.org/speakers/harsh-verma"
+    },
+    {
+      "label": "Upcoming: Health Tech Week Portal",
+      "url": "https://healthtechweek.org/"
+    },
+    {
+      "label": "Upcoming: HealthTech Summit 2027 Luma Event (#HTSummit27)",
+      "url": "https://luma.com/HTSummit27"
+    },
+    {
+      "label": "Upcoming: HealthTech Summit 2027 LinkedIn Feature",
+      "url": "https://lnkd.in/p/gZdmbTmf"
     },
     {
       "label": "Xraised: Beyond the Code Video Stream",

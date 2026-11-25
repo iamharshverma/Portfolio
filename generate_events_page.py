@@ -14,6 +14,23 @@ import os
 events_data = {
     "judging": [
         {
+            "id": "judge-ieee-sac-awards-2026",
+            "title": "IEEE SAC Awards 2026 Judging — Official Judge",
+            "organization": "IEEE Student Activities Committee (SAC)",
+            "role": "Official Awards Judge",
+            "category": "IEEE Global Awards Judging",
+            "date": "2026",
+            "location": "Global / IEEE Worldwide",
+            "description": "Serving as an official judge for the IEEE Student Activities Committee (SAC) Awards 2026 program, evaluating global student leadership, technical innovation branches, exemplary chapter excellence, and engineering community impact worldwide.",
+            "links": [
+                {"name": "IEEE SAC Awards Program", "url": "https://students.ieee.org/student-opportunities/sac-awards-programs/", "icon": "mdi-trophy-award"}
+            ],
+            "tags": ["IEEE SAC Awards 2026", "IEEE", "Global Awards Judging", "Student Activities Committee", "Engineering Leadership"],
+            "gradient": "from-sky-700 to-blue-900",
+            "badge_color": "#0369a1",
+            "icon": "mdi-gavel"
+        },
+        {
             "id": "judge-google-agents-for-impact-2026",
             "title": "GDE: Google Agents for Impact Hackathon Challenge Judge",
             "organization": "Google Cloud & Google Developer Experts (GDE)",
@@ -33,17 +50,17 @@ events_data = {
         },
         {
             "id": "judge-berkeley-citris-cdss-aic-2026",
-            "title": "UC Berkeley CITRIS-CDSS Innovation Fellowship & AIC Awards Judge",
+            "title": "UC Berkeley CITRIS-CDSS Innovation Fellowship & AIC Awards Application — VCR Research",
             "organization": "UC Berkeley CITRIS, CDSS & VCR Research",
-            "role": "Judge & Selector",
+            "role": "Judge & Selection Committee",
             "category": "Fellowship & Research Selection",
             "date": "2026",
             "location": "UC Berkeley, CA",
-            "description": "Appointed Judge & Selector for the UC Berkeley Vice Chancellor for Research (VCR) CITRIS-CDSS Innovation Fellowship and CITRIS AI Innovation Challenge (AIC) Awards applications, evaluating translational AI research, scientific rigor, and societal impact.",
+            "description": "Appointed Judge & Selection Committee member for the UC Berkeley Vice Chancellor for Research (VCR Research) CITRIS-CDSS Innovation Fellowship and CITRIS AI Innovation Challenge (AIC) Awards applications, evaluating translational AI research, scientific rigor, and societal impact.",
             "links": [
                 {"name": "CITRIS AIC Awards", "url": "https://citris-uc.org/labs-programs/citris-aic-awards/", "icon": "mdi-school-outline"}
             ],
-            "tags": ["UC Berkeley CITRIS", "CDSS Innovation Fellowship", "AIC Awards", "VCR Research", "Judge & Selector"],
+            "tags": ["UC Berkeley CITRIS", "CDSS Innovation Fellowship", "AIC Awards Application", "VCR Research", "Judge & Selection"],
             "gradient": "from-blue-900 to-indigo-800",
             "badge_color": "#003262",
             "icon": "mdi-gavel"
@@ -59,6 +76,7 @@ events_data = {
             "description": "Appointed as an official judge for the prestigious 2026 BIG Awards for Business hosted by Business Intelligence Group. Serving on the executive judging panel evaluating global enterprise innovations, market-defining software solutions, leadership excellence, and transformative commercial technologies.",
             "links": [
                 {"name": "Official Judge Profile", "url": "https://judges.bintelligence.com/harsh-verma", "icon": "mdi-certificate-outline"},
+                {"name": "Verify Judge Credential", "url": "https://judges.bintelligence.com/verify/big-awards-for-business-2026/harsh-verma", "icon": "mdi-check-decagram"},
                 {"name": "Business Intelligence Group", "url": "https://www.bintelligence.com/", "icon": "mdi-open-in-new"}
             ],
             "tags": ["Business Intelligence Group", "BIG Awards", "Judge", "Enterprise Innovation", "Global Awards"],
@@ -112,8 +130,13 @@ events_data = {
             "date": "Fall 2026",
             "location": "New York, NY",
             "description": "Appointed Startup Mentor for the Techstars NYC Fall 2026 cohort, guiding cutting-edge tech founders in agentic AI architecture, scalable cloud infrastructure, and enterprise go-to-market strategies.",
+            "highlight_image": "/assets/aistudio/mentor_thank_you_collage_70c5abdb.png",
+            "highlight_title": "Techstars NYC Fall 2026 — Mentor Highlight (70 Mentors)",
+            "highlight_caption": "Techstars · Fall 2026 #GiveFirst",
+            "highlight_badge_label": "<strong>Techstars Fall 2026</strong> · 70 Mentors Cohort Collage",
             "links": [
-                {"name": "Techstars NYC Accelerator", "url": "https://www.techstars.com/accelerators/nyc", "icon": "mdi-link-variant"}
+                {"name": "Techstars NYC Accelerator", "url": "https://www.techstars.com/accelerators/nyc", "icon": "mdi-link-variant"},
+                {"name": "Mentor Highlight", "url": "/assets/aistudio/mentor_thank_you_collage_70c5abdb.png", "icon": "mdi-star-circle-outline", "is_image_modal": True, "modal_title": "Techstars NYC Fall 2026 — Mentor Highlight (70 Mentors)", "modal_caption": "Techstars · Fall 2026 #GiveFirst"}
             ],
             "tags": ["Techstars NYC", "Accelerator", "Enterprise AI", "Venture Mentor"],
             "gradient": "from-blue-600 to-indigo-600",
@@ -1008,6 +1031,32 @@ def render_keynote_hub():
             </div>
         </div>
 
+        <!-- Event Highlight Image Modal Component -->
+        <div class="hv-video-modal-overlay" id="eventImageHighlightModal" onclick="closeEventImageModal(event)">
+            <div class="hv-video-modal-card" onclick="event.stopPropagation()" style="max-width: 760px;">
+                <div class="d-flex justify-content-between align-items-center p-3 border-bottom border-secondary bg-dark text-white">
+                    <div class="d-flex align-items-center">
+                        <span class="badge badge-success font-weight-bold px-2 py-1 mr-2" style="font-size: 11px;">
+                            <i class="mdi mdi-star-circle-outline mr-1"></i> MENTOR HIGHLIGHT
+                        </span>
+                        <h5 class="mb-0 font-weight-bold text-truncate" id="eventImageModalTitle" style="max-width: 520px; font-size: 15px;">Mentor Highlight</h5>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-light rounded-circle" onclick="closeEventImageModal()" style="width: 32px; height: 32px; padding: 0;" title="Close Modal">
+                        <i class="mdi mdi-close"></i>
+                    </button>
+                </div>
+                <div class="p-3 bg-dark text-center">
+                    <img id="eventImageModalImg" src="" alt="Mentor Highlight" style="max-width: 100%; max-height: 72vh; object-fit: contain; border-radius: 8px;" />
+                </div>
+                <div class="p-3 bg-dark text-light border-top border-secondary d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="small text-muted" id="eventImageModalCaption">Techstars · Fall 2026 #GiveFirst</div>
+                    <a id="eventImageModalDirectLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light font-weight-bold px-3 py-1">
+                        <i class="mdi mdi-open-in-new mr-1"></i> Open Full Image
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <!-- Speaker Bio Press Kit Bar -->
         <div class="hv-press-kit-box mt-4">
             <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
@@ -1339,7 +1388,15 @@ def render_links(links):
     for link in links:
         url = link.get('url', '')
         is_video = 'youtube.com' in url or 'youtu.be' in url or 'xraised.com/videos' in url
-        if is_video:
+        if link.get('is_image_modal'):
+            m_title = link.get('modal_title', link['name']).replace("'", "\\'")
+            m_caption = link.get('modal_caption', '').replace("'", "\\'")
+            html += f"""
+        <a href="{url}" target="_blank" rel="noopener noreferrer" onclick="if(window.openEventImageModal){{window.openEventImageModal('{url}', '{m_title}', '{m_caption}'); return false;}}" class="btn-event-link mr-2 mb-2" title="{link['name']}">
+            <i class="mdi {link['icon']} mr-1"></i> {link['name']}
+        </a>
+        """
+        elif is_video:
             html += f"""
         <a href="{url}" onclick="playUrlOnStage('{url}'); return false;" class="btn-event-link mr-2 mb-2" title="Play on Keynote Stage: {link['name']}">
             <i class="mdi {link['icon']} mr-1"></i> {link['name']}
@@ -1347,7 +1404,7 @@ def render_links(links):
         """
         else:
             html += f"""
-        <a href="{url}" target="_blank" class="btn-event-link mr-2 mb-2" title="{link['name']}">
+        <a href="{url}" target="_blank" class="btn-event-link mr-2 mb-2" title="{link['name']}" rel="noopener noreferrer">
             <i class="mdi {link['icon']} mr-1"></i> {link['name']}
         </a>
         """
@@ -1515,6 +1572,22 @@ def generate_card(item, event_type):
             </div>
         """
 
+    highlight_img = item.get("highlight_image")
+    highlight_block = ""
+    if highlight_img:
+        h_title = (item.get("highlight_title") or item["title"]).replace("'", "\\'")
+        h_caption = (item.get("highlight_caption") or "").replace("'", "\\'")
+        h_label = item.get("highlight_badge_label") or item["title"]
+        highlight_block = f"""
+                <div class="mb-3 rounded overflow-hidden border" style="background: #0b0f19; cursor: pointer;" onclick="if(window.openEventImageModal){{window.openEventImageModal('{highlight_img}', '{h_title}', '{h_caption}');}}">
+                    <img src="{highlight_img}" alt="{item.get('highlight_title') or item['title']}" class="img-fluid w-100" loading="lazy" style="max-height: 240px; object-fit: contain; display: block; margin: 0 auto;" />
+                    <div class="px-3 py-2 d-flex align-items-center justify-content-between" style="background: rgba(15, 23, 42, 0.92); color: #e2e8f0; font-size: 12px;">
+                        <span><i class="mdi mdi-account-group mr-1 text-success"></i> {h_label}</span>
+                        <span class="text-success font-weight-bold"><i class="mdi mdi-magnify-plus-outline mr-1"></i> Expand</span>
+                    </div>
+                </div>
+        """
+
     return f"""
     <div class="col-lg-6 col-md-12 mb-4 event-card-item" data-category="{event_type}" data-search="{search_keywords}">
         <div class="event-hub-card h-100 d-flex flex-column">
@@ -1529,6 +1602,7 @@ def generate_card(item, event_type):
                 <p class="event-card-desc mb-3">
                     {item['description']}
                 </p>
+                {highlight_block}
 
                 <div class="event-tags-wrap mb-3">
                     {tags_html}
@@ -2705,9 +2779,35 @@ def build_full_page():
             }}
         }};
 
+        window.openEventImageModal = function(imgSrc, title, caption) {{
+            var modal = document.getElementById('eventImageHighlightModal');
+            var imgEl = document.getElementById('eventImageModalImg');
+            var titleEl = document.getElementById('eventImageModalTitle');
+            var captionEl = document.getElementById('eventImageModalCaption');
+            var directLink = document.getElementById('eventImageModalDirectLink');
+            if (modal && imgEl) {{
+                imgEl.src = imgSrc;
+                imgEl.alt = title || 'Mentor Highlight';
+                if (titleEl) titleEl.innerText = title || 'Mentor Highlight';
+                if (captionEl) captionEl.innerText = caption || 'Techstars · Fall 2026 #GiveFirst';
+                if (directLink) directLink.href = imgSrc;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }}
+        }};
+
+        window.closeEventImageModal = function(e) {{
+            var modal = document.getElementById('eventImageHighlightModal');
+            if (modal) {{
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }}
+        }};
+
         $(document).keyup(function(e) {{
             if (e.key === "Escape") {{
                 window.closeKeynoteVideoModal();
+                window.closeEventImageModal();
             }}
         }});
 

@@ -41,7 +41,7 @@ def generate_professional_work():
     media_count = _count_data("media_data.json", 45)
     profiles_count = _count_data("data/verified_profiles.json", 57)
     assocs_count = _count_data("data/memberships_and_associations.json", 28)
-    judging_count = _count_data("data/judging_engagements.json", 24)
+    judging_count = _count_data("data/judging_engagements.json", 25)
     speaking_count = _count_data("data/speaking_engagements.json", 12)
     keynotes_count = _count_data("data/keynote_engagements.json", 12)
     blogs_count = _count_data("data/blog_articles.json", 31)
@@ -137,9 +137,10 @@ def generate_professional_work():
             ),
             "high_level_metrics": {
                 "peer_reviewed_publications": len(papers),
-                "patents_portfolio": 6,
+                "patents_portfolio": 7,
                 "patents_granted": 2,
-                "patents_pending_in_process": 4,
+                "patents_pending_in_process": 5,
+                "patents_filed_pending": 5,
                 "global_honors_and_awards": len(awards_list),
                 "tier1_media_features": media_count,
                 "verified_directory_profiles": profiles_count,
@@ -196,7 +197,7 @@ def generate_professional_work():
                     "domain_name": "Enterprise Copilot Reasoning & Copilot Navigation Architectures",
                     "focus": "Contextual Security Operations and Multi-Tier Decision Execution",
                     "in_depth_description": (
-                        "Primary inventor of a proprietary suite of 4 in-process patent applications at Palo Alto Networks covering Agentic AI, "
+                        "Primary inventor of a proprietary suite of 5 filed-pending patent applications at Palo Alto Networks covering Agentic AI, "
                         "Enterprise Copilot Systems, and Copilot Navigation Architectures. Designs multi-modal reasoning loops that synthesize "
                         "telemetry across cloud environments, security policy engines, and threat intelligence streams to navigate human operators "
                         "through automated security triage and incident remediation."
@@ -257,7 +258,7 @@ def generate_professional_work():
                     "scope_and_scale": "Global 2000 Enterprise Cyber Defense & Cloud Security",
                     "achievements": [
                         "Spearheads enterprise AI architectures spanning next-generation firewall ML models, autonomous agentic defense perimeters, and cloud security platforms.",
-                        "Primary inventor on a suite of 4 in-process patent applications covering Agentic AI, Enterprise Copilot Systems, and Copilot Navigation Architectures.",
+                        "Primary inventor on a suite of 5 filed-pending patent applications covering Agentic AI, Enterprise Copilot Systems, and Copilot Navigation Architectures.",
                         "Engineers real-time telemetry streaming pipelines processing petabytes of security telemetry with high concurrency across Google Cloud Platform.",
                         "Serves as internal and external technical authority on autonomous agent security, authoring 2 books and leading key industry panels."
                     ]
@@ -487,8 +488,8 @@ def generate_professional_work():
         },
         "patents_portfolio_and_enterprise_impact": {
             "portfolio_summary": (
-                "Harsh Verma holds a strategic intellectual property portfolio comprising 6 patents: 2 granted patents and a suite of "
-                "4 proprietary in-process patent applications assigned to Palo Alto Networks."
+                "Harsh Verma holds a strategic intellectual property portfolio comprising 7 patents: 2 granted patents and a suite of "
+                "5 proprietary filed-pending patent applications assigned to Palo Alto Networks."
             ),
             "patents": [
                 {
@@ -534,11 +535,11 @@ def generate_professional_work():
                     "enterprise_relevance": "Provides a production blueprint for touchless cyber-physical building access security and enterprise health compliance."
                 },
                 {
-                    "patent_identifier": "Patent Suite: 4 Applications (In-Process)",
+                    "patent_identifier": "Patent Suite: 5 Applications (Filed-Pending)",
                     "application_number": "Undisclosed Patent Office Filings",
                     "title": "AGENTIC AI, ENTERPRISE COPILOT SYSTEMS & COPILOT NAVIGATION ARCHITECTURES",
-                    "status": "In Process / Active Patent Office Review",
-                    "grant_date": "Pending Review (2025-2026)",
+                    "status": "Filed-Pending / Active Patent Office Review",
+                    "grant_date": "Filed-Pending Review (2025-2026)",
                     "authority": "United States Patent and Trademark Office (USPTO)",
                     "assignee_or_origin": "Palo Alto Networks",
                     "portal_url": "https://www.paloaltonetworks.com/",
@@ -547,7 +548,7 @@ def generate_professional_work():
                         {"label": "Portfolio Publications & Patents", "url": "https://www.harshverma.me/page-publications#patents"}
                     ],
                     "abstract": (
-                        "Proprietary suite of four in-process patent applications developing foundational intellectual property in autonomous Agentic AI "
+                        "Proprietary suite of five filed-pending patent applications developing foundational intellectual property in autonomous Agentic AI "
                         "orchestration workflows, Enterprise Copilot reasoning loops, and intelligent multi-modal Copilot Navigation architectures for "
                         "automated contextual security operations and multi-tier enterprise decision execution."
                     ),

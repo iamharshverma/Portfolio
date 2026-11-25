@@ -160,7 +160,7 @@ def build_board_dossier():
         ("120+ Startups", "Evaluated & Diligenced"),
         ("10+ Programs", "SkyDeck, Techstars, etc."),
         ("27+ Papers", "Peer-Reviewed Research"),
-        ("6 Patents", "Systems Architecture")
+        ("7 Patents", "Systems Architecture")
     ]
     col_w = 532 / len(metrics)
     for idx, (m_val, m_lbl) in enumerate(metrics):
@@ -262,7 +262,7 @@ def build_board_dossier():
         ("IEEE (Senior Member):", "Elevated to the Top 8% of worldwide engineering professional membership (SMIEEE)"),
         ("Palo Alto Networks:", "Principal Software Engineer in AI & Distributed Systems Architecture"),
         ("UC Berkeley SkyDeck & Techstars:", "Keynote Speaker, Technical Mentor & Startup Cohort Evaluator"),
-        ("Scholarly Record:", "27+ Peer-Reviewed Research Papers published in IEEE, ACM, Springer & international proceedings; 6 Patents")
+        ("Scholarly Record:", "27+ Peer-Reviewed Research Papers published in IEEE, ACM, Springer & international proceedings; 7 Patents")
     ]
     for d_title, d_desc in distinctions:
         s2.append(f"BT /F2 8.2 Tf 0.059 0.090 0.165 rg 40 {y2} Td ({escape_pdf_str(d_title)}) Tj ET")

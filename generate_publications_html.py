@@ -630,8 +630,8 @@ html_template = """<!DOCTYPE html>
                                 <div class="row">
                                     <div class="col-6 mb-3">
                                         <div class="scholar-stat-box" id="scholar-stat-patents">
-                                            <div class="scholar-stat-number" id="scholar-stat-patents-count">6</div>
-                                            <div class="scholar-stat-label">Patents (2 Granted, 4 Pending)</div>
+                                            <div class="scholar-stat-number" id="scholar-stat-patents-count">7</div>
+                                            <div class="scholar-stat-label">Patents (2 Granted, 5 Filed-Pending)</div>
                                         </div>
                                     </div>
                                     <div class="col-6 mb-3">
@@ -666,10 +666,10 @@ html_template = """<!DOCTYPE html>
                         <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
                             <div>
                                 <span class="badge badge-pill text-white px-3 py-1 font-weight-bold mb-1" style="background: linear-gradient(135deg, #2563eb 0%, #16a34a 100%);">
-                                    <i class="mdi mdi-certificate mr-1"></i> Intellectual Property Portfolio (6 Patents Total)
+                                    <i class="mdi mdi-certificate mr-1"></i> Intellectual Property Portfolio (7 Patents Total)
                                 </span>
                                 <h3 class="font-weight-bold text-dark mb-0 mt-1" style="font-size: 1.4rem;">Patents &amp; Inventions</h3>
-                                <p class="text-muted mb-0 small">2 Granted Patents · 4 Pending/In-Process Applications at Palo Alto Networks</p>
+                                <p class="text-muted mb-0 small">2 Granted Patents · 5 Filed-Pending Applications at Palo Alto Networks</p>
                             </div>
                             <a href="https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/" target="_blank" class="btn btn-outline-primary btn-sm rounded font-weight-bold mt-2 mt-sm-0">
                                 <i class="mdi mdi-shield-search mr-1"></i> IP India Patent Search Portal <i class="mdi mdi-open-in-new ml-1"></i>
@@ -677,14 +677,14 @@ html_template = """<!DOCTYPE html>
                         </div>
                         
                         <div class="row">
-                            <!-- In-Process Patents Card: Palo Alto Networks -->
+                            <!-- Filed-Pending Patents Card: Palo Alto Networks -->
                             <div class="col-12 mb-3">
                                 <div class="patent-card" style="border: 1.5px solid #6366f1; background: linear-gradient(180deg, rgba(99, 102, 241, 0.04) 0%, rgba(248, 250, 252, 1) 100%);">
                                     <div>
                                         <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
                                             <div class="d-flex flex-wrap align-items-center">
                                                 <span class="badge text-white font-weight-bold px-2.5 py-1 mr-2 mb-1" style="background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%); font-size: 11.5px;">
-                                                    <i class="mdi mdi-progress-clock mr-1"></i> 4 Patents In Process · Undisclosed
+                                                    <i class="mdi mdi-progress-clock mr-1"></i> 5 Patents Filed-Pending · Undisclosed
                                                 </span>
                                                 <span class="badge badge-light border text-dark font-weight-bold mb-1" style="font-size: 11px;">
                                                     <i class="mdi mdi-domain mr-1 text-primary"></i> Assignee: Palo Alto Networks
@@ -701,7 +701,7 @@ html_template = """<!DOCTYPE html>
                                         
                                         <div class="patent-meta d-flex flex-wrap align-items-center">
                                             <span class="patent-number" style="color: #4f46e5;">
-                                                <i class="mdi mdi-file-tree-outline mr-1"></i> Suite: <strong>4 Patent Applications</strong>
+                                                <i class="mdi mdi-file-tree-outline mr-1"></i> Suite: <strong>5 Patent Applications</strong>
                                             </span>
                                             <span class="mx-2 text-muted">•</span>
                                             <span class="text-muted">Filing Organization: <strong>Palo Alto Networks</strong></span>
@@ -710,7 +710,7 @@ html_template = """<!DOCTYPE html>
                                         </div>
 
                                         <div class="patent-desc mb-3">
-                                            Proprietary suite of four in-process patent applications developing foundational intellectual property in autonomous <strong>Agentic AI</strong> orchestration workflows, <strong>Enterprise Copilot</strong> reasoning loops, and intelligent multi-modal <strong>Copilot Navigation</strong> architectures for automated contextual security operations and multi-tier enterprise decision execution.
+                                            Proprietary suite of five filed-pending patent applications developing foundational intellectual property in autonomous <strong>Agentic AI</strong> orchestration workflows, <strong>Enterprise Copilot</strong> reasoning loops, and intelligent multi-modal <strong>Copilot Navigation</strong> architectures for automated contextual security operations and multi-tier enterprise decision execution.
                                         </div>
 
                                         <div class="d-flex flex-wrap align-items-center" style="gap: 6px;">

@@ -71,7 +71,7 @@ def load_canonical_stats():
         return fallback
 
     associations_count = read_json_len("memberships_and_associations.json", fallback=28)
-    judging_count = read_json_len("judging_engagements.json", fallback=24)
+    judging_count = read_json_len("judging_engagements.json", fallback=25)
     speaking_count = read_json_len("speaking_engagements.json", fallback=12)
     blogs_count = read_json_len("blog_articles.json", fallback=31)
     projects_count = read_json_len("projects_certification.json", key="projects", fallback=13)
@@ -99,7 +99,8 @@ def load_canonical_stats():
         "awards_display_plus": f"{awards_count}+",
         "books_count": 2,
         "books_reviewed": 6,
-        "patents_count": 6,
+        "patents_count": 7,
+        "patents_display_plus": "7+",
         "media_count": media_count,
         "media_display": f"{media_count}+",
         "profiles_count": profiles_count,
@@ -140,6 +141,7 @@ def update_client_stats_js(stats):
         booksCount: {stats['books_count']},
         booksReviewed: {stats['books_reviewed']},
         patentsCount: {stats['patents_count']},
+        patentsDisplayPlus: "{stats['patents_display_plus']}",
         mediaCount: {stats['media_count']},
         mediaDisplay: "{stats['media_display']}",
         profilesCount: {stats['profiles_count']},
@@ -199,6 +201,9 @@ def update_client_stats_js(stats):
         document.querySelectorAll('[data-stat="patents-count"]').forEach(function(el) {{
             el.textContent = s.patentsCount;
         }});
+        document.querySelectorAll('[data-stat="patents-count-plus"]').forEach(function(el) {{
+            el.textContent = s.patentsDisplayPlus;
+        }});
     }}
 
     if (document.readyState === 'loading') {{
@@ -221,7 +226,9 @@ def sync_html_and_generators(stats):
     m_disp = stats["media_display"]
     prof_num = str(stats["profiles_count"])
     assoc_disp = stats["associations_display_plus"]
+    judg_num = str(stats["judging_count"])
     judg_disp = stats["judging_display_plus"]
+    eng_num = str(stats["total_engagements"])
     eng_disp = stats["total_engagements_plus"]
     port_num = str(stats["portfolio_total"])
 
@@ -229,6 +236,7 @@ def sync_html_and_generators(stats):
     updated_files = []
 
     for root, dirs, files in os.walk(ROOT_DIR):
+        dirs[:] = [d for d in dirs if d not in ("node_modules", ".git", "dist", "build", ".dist_tmp", "bun.lock")]
         if any(skip in root for skip in ("node_modules", ".git", "dist", "build", ".dist_tmp", "bun.lock")):
             continue
         for filename in files:
@@ -301,10 +309,10 @@ def sync_html_and_generators(stats):
                     content
                 )
 
-            # 7. Update "View All XX Publications & 6 Patents" in index.html
+            # 7. Update "View All XX Publications & 7 Patents" in index.html
             content = re.sub(
-                r'(\bView All\s+)\d+(\s+Publications\s*(?:&amp;|&)\s*6\s*Patents\b)',
-                rf'\g<1>{p_num}\g<2>',
+                r'(\bView All\s+)\d+(\s+Publications\s*(?:&amp;|&)\s*[67]\s*Patents\b)',
+                r'\g<1>{0} Publications &amp; 7 Patents'.format(p_num),
                 content
             )
 
@@ -652,21 +660,65 @@ def sync_html_and_generators(stats):
                 content
             )
             content = re.sub(
+                r'(All Engagements \()\d+(\))',
+                rf'\g<1>{eng_num}\g<2>',
+                content
+            )
+            content = re.sub(
+                r'(Judging\s*(?:&amp;|&)\s*Mentorship \()\d+(\))',
+                rf'\g<1>{judg_num}\g<2>',
+                content
+            )
+            content = re.sub(
+                r'(<div class="stat-metric-val">)\s*\d+\s*(</div>\s*<div class="stat-metric-label">\s*Judging\s*(?:&amp;|&)\s*Mentorship\s*</div>)',
+                rf'\g<1>{judg_num}\g<2>',
+                content
+            )
+            content = re.sub(
+                r'(<div class="stat-metric-val">)\s*\d+\+?\s*(</div>\s*<div class="stat-metric-label">\s*Total Engagements\s*</div>)',
+                rf'\g<1>{eng_disp}\g<2>',
+                content
+            )
+            content = re.sub(
                 r'(Browse Complete Portfolio \()\d+\+?(?:\s+Projects\s*(?:&amp;|&)\s*Certs)?(\))',
                 rf'\g<1>{port_num}+ Projects &amp; Certs\g<2>',
                 content
             )
 
             # --- PATENTS METRICS ---
-            # 22. Update Patents in publications/awards pages
+            # 22. Update Patents in publications/awards/about pages
             content = re.sub(
-                r'Patents \((?:1 Granted,\s*4 In Process|1 Granted,\s*1 Published,\s*4 Pending)\)',
-                'Patents (2 Granted, 4 Pending)',
+                r'Patents \((?:1 Granted,\s*4 In Process|1 Granted,\s*1 Published,\s*4 Pending|2 Granted,\s*4 Pending)\)',
+                'Patents (2 Granted, 5 Filed-Pending)',
                 content
             )
             content = content.replace(
                 '6 patents (1 granted, 4 in-process',
-                '6 patents (2 granted, 4 in-process'
+                '7 patents (2 granted, 5 filed-pending'
+            )
+            content = content.replace(
+                '6 patents (2 granted, 4 in-process',
+                '7 patents (2 granted, 5 filed-pending'
+            )
+            content = re.sub(
+                r'(<h3[^>]*>)\s*\d+\+?\s*(</h3>\s*<span[^>]*>\s*Enterprise Patents\s*</span>)',
+                rf'\g<1>{stats["patents_display_plus"]}\g<2>',
+                content
+            )
+            content = re.sub(
+                r'(<[^>]+data-stat="patents-count"[^>]*>)\s*\d+\s*(</)',
+                rf'\g<1>{stats["patents_count"]}\g<2>',
+                content
+            )
+            content = re.sub(
+                r'(<[^>]+data-stat="patents-count-plus"[^>]*>)\s*\d+\+?\s*(</)',
+                rf'\g<1>{stats["patents_display_plus"]}\g<2>',
+                content
+            )
+            content = re.sub(
+                r'(<h3[^>]*>)\s*\d+\+?\s*(</h3>\s*<span[^>]*>\s*Global Press Features\s*</span>)',
+                rf'\g<1>{m_disp}\g<2>',
+                content
             )
 
             # 23. Ensure favicon_new.ico is used

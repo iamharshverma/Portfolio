@@ -33,7 +33,7 @@ def generate_about_json():
     media_count = _count_json("media_data.json", 45)
     profiles_count = _count_json("data/verified_profiles.json", 57)
     assocs_count = _count_json("data/memberships_and_associations.json", 28)
-    judging_count = _count_json("data/judging_engagements.json", 24)
+    judging_count = _count_json("data/judging_engagements.json", 25)
     speaking_count = _count_json("data/speaking_engagements.json", 12)
     keynotes_count = _count_json("data/keynote_engagements.json", 12)
     blogs_count = _count_json("data/blog_articles.json", 31)
@@ -77,7 +77,7 @@ def generate_about_json():
             "location": "Silicon Valley, California, United States",
             "official_website": "https://www.harshverma.me",
             "email_contact": "contact@harshverma.me",
-            "short_bio": f"Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, an elected Fellow of the British Computer Society (FBCS), Senior Member of IEEE (SMIEEE), and Forbes Technology Council member. With {papers_count} peer-reviewed papers, 6 patents, 2 authored books, and {awards_count} global awards, he pioneers autonomous agent architectures and enterprise AI cyber defense."
+            "short_bio": f"Harsh Verma is a Principal Software Engineer in AI at Palo Alto Networks, an elected Fellow of the British Computer Society (FBCS), Senior Member of IEEE (SMIEEE), and Forbes Technology Council member. With {papers_count} peer-reviewed papers, 7 patents, 2 authored books, and {awards_count} global awards, he pioneers autonomous agent architectures and enterprise AI cyber defense."
         },
         "authority_identifiers": {
             "wikidata_id": "Q139827028",
@@ -140,7 +140,7 @@ def generate_about_json():
                 f"guardrails, and real-time copilot navigation engines. Over his decade-long career spanning ISRO, Hike Messenger, "
                 f"Reliance Jio, Worlds, and Hypergiant, he has published {papers_count} peer-reviewed papers across IEEE, Springer, and Oxford University "
                 f"Press venues, authored 2 landmark books on autonomous agents and AI cyber defense, and developed an intellectual property "
-                f"portfolio of 6 patents (2 granted, 4 pending at Palo Alto Networks)."
+                f"portfolio of 7 patents (2 granted, 5 filed-pending at Palo Alto Networks)."
             ),
             "speaking_and_event_bio": (
                 "Harsh Verma is a Silicon Valley AI systems architect, author, and keynote speaker serving as Principal AI Engineer at "
@@ -263,9 +263,9 @@ def generate_about_json():
                 "organization": "Palo Alto Networks",
                 "role": "Principal Software Engineer (AI | ML)",
                 "location": "Santa Clara, California, USA",
-                "description": "Spearheading flagship enterprise AI security architectures protecting Global 2000 organizations. Architecting autonomous agentic AI perimeters, enterprise copilot reasoning loops, copilot navigation architectures (4 patents in-process), and real-time firewall machine learning engines.",
+                "description": "Spearheading flagship enterprise AI security architectures protecting Global 2000 organizations. Architecting autonomous agentic AI perimeters, enterprise copilot reasoning loops, copilot navigation architectures (5 patents filed-pending), and real-time firewall machine learning engines.",
                 "technologies": ["Autonomous Agent Systems", "Copilot Navigation", "Apache Spark", "Apache Kafka", "GCP Cloud Infrastructure", "Zero-Trust Guardrails"],
-                "highlight": "Invented 4 proprietary patent-pending Copilot Navigation and Agentic AI architectures."
+                "highlight": "Invented 5 proprietary filed-pending Copilot Navigation and Agentic AI architectures."
             }
         ],
         "education_and_executive_credentials": [
@@ -286,9 +286,10 @@ def generate_about_json():
         ],
         "verified_metrics": {
             "peer_reviewed_publications": papers_count,
-            "patents_total": 6,
+            "patents_total": 7,
             "patents_granted": 2,
-            "patents_in_process": 4,
+            "patents_in_process": 5,
+            "patents_filed_pending": 5,
             "prestigious_awards_and_honors": awards_count,
             "tier1_media_features": media_count,
             "verified_directory_profiles": profiles_count,

@@ -722,7 +722,7 @@ def export_blogs():
 
 
 def export_verified_profiles():
-    """9. Export all 57 verified directory profiles including all secondary links on multi-link cards."""
+    """9. Export all 59 verified directory profiles including all secondary links on multi-link cards."""
     about_path = os.path.join(ROOT_DIR, "page-about.html")
     with open(about_path, "r", encoding="utf-8") as f:
         html = f.read()
@@ -1759,7 +1759,7 @@ def export_advisory_and_board():
             "enterprise_ai_capital_impacted": "$50M+",
             "technical_fellowship_tier": "Top 8%",
             "peer_reviewed_papers": 27,
-            "patents": 6,
+            "patents": 7,
             "media_features": "45+",
             "global_awards": 27,
         },
@@ -1782,7 +1782,7 @@ def export_advisory_and_board():
 
 
 def export_patents():
-    """17. Export full 6-patent intellectual property portfolio (2 Granted + 4 Palo Alto Networks In-Process) to data/patents.json."""
+    """17. Export full 7-patent intellectual property portfolio (2 Granted + 5 Palo Alto Networks Filed-Pending) to data/patents.json."""
     patents_list = [
         {
             "id": "patent-555747",
@@ -1818,11 +1818,11 @@ def export_patents():
         },
         {
             "id": "patent-panw-1",
-            "patent_number": "In Process (PANW-1 of 4)",
+            "patent_number": "Filed-Pending (PANW-1 of 5)",
             "application_number": "Undisclosed (Enterprise Review)",
             "title": "Autonomous Agentic AI Security & Orchestration Architecture",
-            "status": "In Process / Pending",
-            "issued_date": "In Process",
+            "status": "Filed-Pending",
+            "issued_date": "Filed-Pending",
             "authority": "USPTO / Enterprise Patent Filings",
             "organization": "Palo Alto Networks",
             "description": "Proprietary enterprise intellectual property in autonomous agentic AI reasoning guardrails and multi-agent cybersecurity workflows at Palo Alto Networks.",
@@ -1834,11 +1834,11 @@ def export_patents():
         },
         {
             "id": "patent-panw-2",
-            "patent_number": "In Process (PANW-2 of 4)",
+            "patent_number": "Filed-Pending (PANW-2 of 5)",
             "application_number": "Undisclosed (Enterprise Review)",
             "title": "Enterprise Copilot Navigation & Guided Workflow Engine",
-            "status": "In Process / Pending",
-            "issued_date": "In Process",
+            "status": "Filed-Pending",
+            "issued_date": "Filed-Pending",
             "authority": "USPTO / Enterprise Patent Filings",
             "organization": "Palo Alto Networks",
             "description": "Proprietary copilot navigation and contextual UI/API orchestration mechanisms engineered for mission-critical enterprise security consoles.",
@@ -1850,11 +1850,11 @@ def export_patents():
         },
         {
             "id": "patent-panw-3",
-            "patent_number": "In Process (PANW-3 of 4)",
+            "patent_number": "Filed-Pending (PANW-3 of 5)",
             "application_number": "Undisclosed (Enterprise Review)",
             "title": "Intent-Based Agent Telemetry & Runtime Threat Containment",
-            "status": "In Process / Pending",
-            "issued_date": "In Process",
+            "status": "Filed-Pending",
+            "issued_date": "Filed-Pending",
             "authority": "USPTO / Enterprise Patent Filings",
             "organization": "Palo Alto Networks",
             "description": "Behavioral intent verification and real-time runtime anomaly containment for autonomous multi-agent enterprise AI deployments.",
@@ -1866,14 +1866,30 @@ def export_patents():
         },
         {
             "id": "patent-panw-4",
-            "patent_number": "In Process (PANW-4 of 4)",
+            "patent_number": "Filed-Pending (PANW-4 of 5)",
             "application_number": "Undisclosed (Enterprise Review)",
             "title": "Distributed Real-Time Copilot State Synchronization & Guardrail Enforcement",
-            "status": "In Process / Pending",
-            "issued_date": "In Process",
+            "status": "Filed-Pending",
+            "issued_date": "Filed-Pending",
             "authority": "USPTO / Enterprise Patent Filings",
             "organization": "Palo Alto Networks",
             "description": "Low-latency distributed policy enforcement and verifiable audit pipelines for enterprise AI copilot platforms.",
+            "primary_url": "https://www.paloaltonetworks.com/",
+            "links": [
+                {"label": "Palo Alto Networks", "url": "https://www.paloaltonetworks.com/"},
+                {"label": "Portfolio Patents Overview", "url": f"{CANONICAL_BASE}/page-publications"},
+            ],
+        },
+        {
+            "id": "patent-panw-5",
+            "patent_number": "Filed-Pending (PANW-5 of 5)",
+            "application_number": "Undisclosed (Enterprise Review)",
+            "title": "Zero-Trust Multi-Agent Execution Verification & Contextual Policy Synthesis",
+            "status": "Filed-Pending",
+            "issued_date": "Filed-Pending",
+            "authority": "USPTO / Enterprise Patent Filings",
+            "organization": "Palo Alto Networks",
+            "description": "Deterministic zero-trust verification and adaptive contextual policy synthesis for enterprise multi-agent security operations at Palo Alto Networks.",
             "primary_url": "https://www.paloaltonetworks.com/",
             "links": [
                 {"label": "Palo Alto Networks", "url": "https://www.paloaltonetworks.com/"},
@@ -1887,9 +1903,10 @@ def export_patents():
         "inventor": "Harsh Verma",
         "page_url": f"{CANONICAL_BASE}/page-publications",
         "summary_stats": {
-            "total_patents": 6,
+            "total_patents": 7,
             "granted_patents": 2,
-            "in_process_patents": 4,
+            "in_process_patents": 5,
+            "filed_pending_patents": 5,
             "granted_patent_numbers": ["555747", "606481"],
             "in_process_assignee": "Palo Alto Networks",
         },
@@ -2102,6 +2119,12 @@ def export_speaker_profile():
         {"label": "Events & Keynotes Calendar", "url": f"{CANONICAL_BASE}/page-events"},
         {"label": "Interactive Smart Slides Hub", "url": f"{CANONICAL_BASE}/page-smart-slides"},
         {"label": "Board & Speaker Biography PDF", "url": f"{CANONICAL_BASE}/files/Harsh_Verma_Board_Biography.pdf"},
+        {"label": "Champions Speakers Verified Profile", "url": "https://champions-speakers.co.uk/speaker-agent/harsh-verma"},
+        {"label": "All American Speakers Verified Profile (#470303)", "url": "https://www.allamericanspeakers.com/speakers/470303/Harsh-Verma"},
+        {"label": "Upcoming: Health Tech Week 2027 Speaker Profile (Jan 2027)", "url": "https://healthtechweek.org/speakers/harsh-verma"},
+        {"label": "Upcoming: Health Tech Week Portal", "url": "https://healthtechweek.org/"},
+        {"label": "Upcoming: HealthTech Summit 2027 Luma Event (#HTSummit27)", "url": "https://luma.com/HTSummit27"},
+        {"label": "Upcoming: HealthTech Summit 2027 LinkedIn Feature", "url": "https://lnkd.in/p/gZdmbTmf"},
         {"label": "Xraised: Beyond the Code Video Stream", "url": "https://xraised.com/videos/ai-engineering-beyond-code/stream"},
         {"label": "EasyChair Smart Slides Author Profile", "url": "https://easychair.org/smart-slide/author/v5zJ"},
     ])
@@ -2122,6 +2145,35 @@ def export_speaker_profile():
             "senior_csuite_founders_pct": "85%+",
             "organizer_recommendation_rate": "98%",
         },
+        "verified_speaker_profiles": [
+            {
+                "bureau": "Champions Speakers",
+                "region": "UK & International",
+                "url": "https://champions-speakers.co.uk/speaker-agent/harsh-verma",
+                "logo": f"{CANONICAL_BASE}/images/events/champions_speakers.svg",
+                "image": f"{CANONICAL_BASE}/images/harsh/Harsh_portfolio_pic.png",
+            },
+            {
+                "bureau": "All American Speakers",
+                "region": "North America",
+                "speaker_id": "470303",
+                "url": "https://www.allamericanspeakers.com/speakers/470303/Harsh-Verma",
+                "logo": f"{CANONICAL_BASE}/images/events/all_american_speakers.svg",
+                "image": f"{CANONICAL_BASE}/images/harsh/harsh_kg_primary.jpg",
+            },
+        ],
+        "upcoming_events": [
+            {
+                "title": "Health Tech Week 2027 — HealthTech Summit (#HTSummit27)",
+                "date": "January 2027",
+                "location": "San Francisco, CA",
+                "role": "Featured Speaker",
+                "speaker_profile_url": "https://healthtechweek.org/speakers/harsh-verma",
+                "event_portal_url": "https://healthtechweek.org/",
+                "luma_url": "https://luma.com/HTSummit27",
+                "linkedin_feature_url": "https://lnkd.in/p/gZdmbTmf",
+            }
+        ],
         "audience_segments": [
             {"segment": "CEOs & Board Directors", "share": "35%", "focus": "AI governance, unit economics, enterprise transformation"},
             {"segment": "CISOs & Security Architects", "share": "32%", "focus": "Autonomous cyber defense, agentic security, zero-trust"},

@@ -46,9 +46,9 @@
           '<div class="col-lg-3 col-sm-6 mb-3">' +
             '<div class="hv-impact-stat-card">' +
               '<div>' +
-                '<div class="hv-impact-stat-num">27 + 6</div>' +
+                '<div class="hv-impact-stat-num">27 + 7</div>' +
                 '<div class="hv-impact-stat-label">Publications & Patents</div>' +
-                '<p class="hv-impact-stat-desc mb-0">27 Peer-reviewed scientific papers across IEEE & Springer, plus 6 patents (2 granted, 4 in-process).</p>' +
+                '<p class="hv-impact-stat-desc mb-0">27 Peer-reviewed scientific papers across IEEE & Springer, plus 7 patents (2 granted, 5 filed-pending).</p>' +
               '</div>' +
             '</div>' +
           '</div>' +

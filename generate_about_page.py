@@ -675,6 +675,32 @@ PROFILE_LINKS = [
         "description": "Official interactive speaker one-sheet and digital press kit on Foam, detailing executive bio, keynote availability, topics, and broadcast assets."
     },
     {
+        "id": "champions-speakers",
+        "category": "media",
+        "categoryLabel": "Media Features & Press",
+        "name": "Champions Speakers",
+        "identifier": "Verified Speaker Profile",
+        "url": "https://champions-speakers.co.uk/speaker-agent/harsh-verma",
+        "icon": "mdi-microphone",
+        "thumb": "images/profiles/champions_speakers.svg",
+        "badgeColor": "#d97706",
+        "tag": "UK & Global Bureau",
+        "description": "Official represented speaker roster profile at Champions Speakers UK, showcasing Harsh Verma's keynote engagements, enterprise AI expertise, and conference booking availability."
+    },
+    {
+        "id": "all-american-speakers",
+        "category": "media",
+        "categoryLabel": "Media Features & Press",
+        "name": "All American Speakers",
+        "identifier": "Roster ID: 470303",
+        "url": "https://www.allamericanspeakers.com/speakers/470303/Harsh-Verma",
+        "icon": "mdi-microphone-variant",
+        "thumb": "images/profiles/all_american_speakers.svg",
+        "badgeColor": "#1d4ed8",
+        "tag": "Keynote Bureau",
+        "description": "Verified international speaker profile (#470303) on All American Speakers Bureau, connecting enterprise conferences and summits with Harsh Verma for AI & cyber defense keynotes."
+    },
+    {
         "id": "maven-instructor",
         "category": "developer",
         "categoryLabel": "Developer & AI Hubs",
@@ -1560,8 +1586,8 @@ def generate_html():
                                             <small class="text-white-50 font-weight-bold">Published Papers</small>
                                         </div>
                                         <div class="col-4 col-md-3 mb-2">
-                                            <h4 class="font-weight-bold text-white mb-0">6</h4>
-                                            <small class="text-white-50 font-weight-bold">Patents (2 Granted, 4 Pending)</small>
+                                            <h4 class="font-weight-bold text-white mb-0">7</h4>
+                                            <small class="text-white-50 font-weight-bold">Patents (2 Granted, 5 Filed-Pending)</small>
                                         </div>
                                         <div class="col-12 col-md-3 mb-2 mt-2 mt-md-0 d-flex align-items-center justify-content-center">
                                             <a href="https://www.linkedin.com/in/harshverma59/" target="_blank" class="btn btn-primary btn-sm rounded font-weight-bold px-3 w-100" style="background: linear-gradient(135deg, #2563eb 0%, #0284c7 100%); border: none;">
@@ -1817,8 +1843,8 @@ def generate_html():
                     <div class="p-4 bg-white rounded border shadow-sm h-100 d-flex flex-column justify-content-between">
                         <div>
                             <span class="badge badge-info text-white px-3 py-1 font-weight-bold mb-2">Research &amp; IP</span>
-                            <h4 class="font-weight-bold text-dark mb-2">Browse 27+ published papers &amp; 6 Patents</h4>
-                            <p class="text-muted" style="font-size: 14px;">Review peer-reviewed IEEE publications, CogML datasets, granted patents, and 4 in-process Palo Alto Networks patents on Agentic AI and Copilot Navigation.</p>
+                            <h4 class="font-weight-bold text-dark mb-2">Browse 27+ published papers &amp; 7 Patents</h4>
+                            <p class="text-muted" style="font-size: 14px;">Review peer-reviewed IEEE publications, CogML datasets, granted patents, and 5 filed-pending Palo Alto Networks patents on Agentic AI and Copilot Navigation.</p>
                         </div>
                         <div>
                             <a href="page-publications" class="btn btn-outline-primary btn-sm rounded font-weight-bold px-3">

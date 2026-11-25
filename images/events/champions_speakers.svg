@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" width="240" height="120">
+  <defs>
+    <linearGradient id="csBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1329"/>
+    </linearGradient>
+    <linearGradient id="csGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="120" rx="16" fill="url(#csBg)"/>
+  <rect x="2" y="2" width="236" height="116" rx="14" fill="none" stroke="rgba(245,158,11,0.4)" stroke-width="2"/>
+  <!-- Shield & Crest Icon -->
+  <g transform="translate(22, 28)">
+    <path d="M24 4 L44 12 L44 32 C44 46 34 56 24 60 C14 56 4 46 4 32 L4 12 Z" fill="rgba(245,158,11,0.14)" stroke="url(#csGold)" stroke-width="2.5"/>
+    <path d="M24 14 L27.5 23 L37 23.5 L29.5 29.5 L32 39 L24 33.5 L16 39 L18.5 29.5 L11 23.5 L20.5 23 Z" fill="url(#csGold)"/>
+  </g>
+  <text x="82" y="47" fill="#ffffff" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" letter-spacing="1.2">CHAMPIONS</text>
+  <text x="82" y="68" fill="#fbbf24" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" letter-spacing="2.4">SPEAKERS</text>
+  <rect x="82" y="79" width="128" height="1.5" fill="rgba(255,255,255,0.18)"/>
+  <text x="82" y="96" fill="#cbd5e1" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="600" letter-spacing="0.8">UK &amp; GLOBAL BUREAU</text>
+</svg>

@@ -43,10 +43,10 @@ def generate_analytics():
             omni_records = []
 
     papers_cnt = _count_json_items("research_publications.json", default=27)
-    patents_cnt = _count_json_items("patents.json", key="patents", default=6)
+    patents_cnt = _count_json_items("patents.json", key="patents", default=7)
     media_cnt = _count_json_items("media_features.json", default=45)
     speaking_cnt = _count_json_items("speaking_engagements.json", default=12)
-    judging_cnt = _count_json_items("judging_engagements.json", default=24)
+    judging_cnt = _count_json_items("judging_engagements.json", default=25)
     awards_cnt = _count_json_items("awards_and_honors.json", default=27)
     profiles_cnt = _count_json_items("verified_profiles.json", default=57)
     memberships_cnt = _count_json_items("memberships_and_associations.json", default=28)
@@ -87,7 +87,7 @@ def generate_analytics():
                 "area_name": "Intellectual Property & Patents",
                 "query_share_pct": 23.1,
                 "engagement_level": "Exceptional",
-                "summary": "Searches for Granted Patent 555747 (Load Testing), Granted Patent 606481 (COPAEP), and Palo Alto Networks' 4 in-process patent applications."
+                "summary": "Searches for Granted Patent 555747 (Load Testing), Granted Patent 606481 (COPAEP), and Palo Alto Networks' 5 filed-pending patent applications."
             },
             {
                 "area_name": "Enterprise AI Cybersecurity & Cyber Defense",
